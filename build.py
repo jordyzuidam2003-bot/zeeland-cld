@@ -1,18 +1,14 @@
-"""Check the CLD and build the files Kumu reads.
+"""Check the CLD and build docs/, the files GitHub Pages serves.
 
-    python3 build.py           # check, write dist/, print the report
-    python3 build.py --check   # fail if dist/ is out of date (the pre-commit hook runs this)
+    python3 build.py           # check, write docs/, print the report
+    python3 build.py --check   # fail if docs/ is out of date (the pre-commit hook runs this)
 
 Edit cld.json (elements, connections, loops, layout), references.json (sources) and
-view.scss (style). Never edit dist/, which this script writes:
+view.scss (the Kumu view). Never edit docs/, which this script writes:
 
-    dist/project.json  a full Kumu project export: import it into a Kumu project without maps
+    docs/project.json  a full Kumu project export: import it into an emptied Kumu project
                        (green + > Import > Advanced > Import JSON file) and Kumu restores the
                        elements at their positions, the curved links and the view
-    dist/kumu.json     the blueprint form (elements and connections only), for a map linked to
-                       its raw GitHub URL; such a map cannot hold a layout, so it is force-directed
-    dist/view.scss     view.scss plus each link's curvature, to paste into the Advanced Editor
-                       of a map built from the blueprint
 """
 
 import argparse
@@ -21,7 +17,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-DIST = ROOT / "dist"
+DOCS = ROOT / "docs"
 
 ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
 MODEL_TEXTS = ["purpose", "spatial scale", "time horizon", "system boundary"]
@@ -212,24 +208,14 @@ def project(cld, refs, template):
                   "center": {"x": 0, "y": 0}, "defaultPerspective": "pers-cld",
                   "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
                   "elements": nodes, "connections": edges, "loops": []}],
-        # the view without the generated curvature rules: the map's edges carry the curves
+        # the map's edges carry the curves, so the view holds no curvature rules
         "perspectives": [{"_id": "pers-cld", "name": "CLD", "style": template.rstrip() + "\n"}],
     }
 
 
-def view(template, cld):
-    # A linked connection has no Kumu id, so "#id" cannot select it: the id field can.
-    # Every link is listed, since Kumu's default curvature is 0.25, not 0. No comment goes
-    # above these rules: Kumu turns a comment above a rule into a legend entry.
-    lines = [""]
-    for c in cld["connections"]:
-        lines.append(f'connection["id"="{c["from"]}--{c["to"]}"] {{ curvature: {c["curvature"]}; }}')
-    return template.rstrip() + "\n" + "\n".join(lines) + "\n"
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    parser.add_argument("--check", action="store_true", help="fail if dist/ is out of date")
+    parser.add_argument("--check", action="store_true", help="fail if docs/ is out of date")
     args = parser.parse_args()
 
     cld, refs, template = load()
@@ -238,21 +224,19 @@ def main():
         sys.exit("cld.json has errors:\n  " + "\n  ".join(errors))
 
     outputs = {
-        "kumu.json": json.dumps(blueprint(cld, refs), indent=2, ensure_ascii=False) + "\n",
         "project.json": json.dumps(project(cld, refs, template), indent=2, ensure_ascii=False) + "\n",
-        "view.scss": view(template, cld),
     }
 
     if args.check:
         stale = [name for name, text in outputs.items()
-                 if not (DIST / name).exists() or (DIST / name).read_text() != text]
+                 if not (DOCS / name).exists() or (DOCS / name).read_text() != text]
         if stale:
-            sys.exit(f"dist/ is out of date ({', '.join(stale)}): run build.py and commit dist/")
+            sys.exit(f"docs/ is out of date ({', '.join(stale)}): run build.py and commit docs/")
         return
 
-    DIST.mkdir(exist_ok=True)
+    DOCS.mkdir(exist_ok=True)
     for name, text in outputs.items():
-        (DIST / name).write_text(text)
+        (DOCS / name).write_text(text)
 
     loops = cycles(cld)
     n_el, n_conn = len(cld["elements"]), len(cld["connections"])

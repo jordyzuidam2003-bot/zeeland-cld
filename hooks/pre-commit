@@ -1,3 +1,3 @@
 #!/bin/sh
-# Kumu reads dist/ from GitHub, so a commit whose dist/ does not match the source shows stale data
+# GitHub Pages serves docs/ from the repository, so a commit whose docs/ does not match the source publishes stale data
 exec python3 build.py --check

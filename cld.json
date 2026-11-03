@@ -832,9 +832,9 @@
       "from": "wisselpolder-land-raising",
       "to": "polder-surface-elevation-nap",
       "polarity": "+",
-      "delay": false,
+      "delay": true,
       "loop id": "R3_Wisselpolder",
-      "description": "Tidal siltation raises the polder surface by 1.5–3 m over 50–100 years.",
+      "description": "Tidal siltation raises the polder surface by 1.5–3 m over 50–100 years, so the decision falls inside the 2050 horizon and most of the effect outside it. Whether a polder on Schouwen-Duiveland gets this siltation is unchecked: the evidence is from the Westerschelde, and the Oosterschelde and the Grevelingen differ; the link needs a sedimentation source for the Oosterschelde, or goes.",
       "sources": [],
       "curvature": 0.0
     },

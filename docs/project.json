@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version f083d72, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 42b06d8, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -153,7 +153,8 @@
       "prompt": "list",
       "locked": false,
       "values": [
-        "no"
+        "no",
+        "yes"
       ],
       "sort": false,
       "cluster": true
@@ -1496,14 +1497,14 @@
     {
       "_id": "conn-wisselpolder-land-raising--polder-surface-elevation-nap",
       "direction": "directed",
-      "delayed": false,
+      "delayed": true,
       "reversed": false,
       "attributes": {
         "label": "+",
         "polarity": "positive",
-        "delay": "no",
+        "delay": "yes",
         "loop id": "R3_Wisselpolder",
-        "description": "Tidal siltation raises the polder surface by 1.5–3 m over 50–100 years.",
+        "description": "Tidal siltation raises the polder surface by 1.5–3 m over 50–100 years, so the decision falls inside the 2050 horizon and most of the effect outside it. Whether a polder on Schouwen-Duiveland gets this siltation is unchecked: the evidence is from the Westerschelde, and the Oosterschelde and the Grevelingen differ; the link needs a sedimentation source for the Oosterschelde, or goes.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
         "sources": "",
@@ -1938,7 +1939,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model f083d72",
+      "name": "CLD, model 42b06d8",
       "description": "",
       "scale": 1,
       "center": {

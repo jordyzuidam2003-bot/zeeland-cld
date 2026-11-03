@@ -8,9 +8,10 @@ const list = Array.isArray(nodes) ? nodes : nodes.models || Object.values(nodes)
 let placed = 0;
 for (const node of list) {
   const fields = node.entity.ownAttrs || {};
-  if (typeof fields.x !== "number" || typeof fields.y !== "number") continue;
-  node.position.x = fields.x;
-  node.position.y = fields.y;
+  const x = Number(fields.x), y = Number(fields.y); // Kumu may hold the fields as text
+  if (!Number.isFinite(x) || !Number.isFinite(y)) continue;
+  node.position.x = x;
+  node.position.y = y;
   node.set("pinned", true);
   node.savePosition();
   placed++;

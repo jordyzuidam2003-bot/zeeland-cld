@@ -16,6 +16,8 @@ import json
 import sys
 from pathlib import Path
 
+import draw
+
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
 
@@ -225,6 +227,7 @@ def main():
 
     outputs = {
         "project.json": json.dumps(project(cld, refs, template), indent=2, ensure_ascii=False) + "\n",
+        "cld.svg": draw.svg(cld),
     }
 
     if args.check:

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "name": "Zeeland CLD",
+  "name": "cbp-cld",
   "description": "Model version 52c4c67, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",

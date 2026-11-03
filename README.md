@@ -109,10 +109,11 @@ drawing marks the loop at the centre of its elements, and the page gets a button
 Kumu holds a copy for milestones, at <https://kumu.io/JordyZuidam/cbp-cld>, and is never edited.
 An import never updates what a project already holds, and Kumu cannot empty a project, so each
 update is a new project under the same name, which keeps the URL. Jordy renames the previous
-`cbp-cld`, creates a new project `cbp-cld`, then: green `+` → Import → Advanced → "Import JSON
-file" → `docs/project.json`
-→ "Import JSON" → "Save Changes". Kumu restores the elements at their positions, the curved
-links and the view from `view.scss`.
+`cbp-cld`, then on the Kumu dashboard: New Project → name `cbp-cld`, public → the next screen →
+"restore backup" (the link at the bottom) → `docs/project.json`. Only a brand-new project restores
+a project export; the green `+` → Import route brings in the elements and connections alone.
+Kumu restores the map with the elements at their positions, the view from `view.scss`, and the
+project's name, which the export sets to `cbp-cld`.
 
 The view follows the page's look as far as Kumu can: white boxes with the label inside, square
 corners for a stock and a pill for the others, a second outer border for a constant (Kumu has no

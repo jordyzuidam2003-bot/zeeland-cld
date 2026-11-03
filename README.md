@@ -19,6 +19,10 @@ web page, served by GitHub Pages from `docs/`, so a push publishes the current m
 
 ## Working on the diagram
 
+Teammates work through the page: read it, click elements and links, and send Jordy the change
+in words (a new or wrong link, a better description, a source). Jordy edits the repository,
+builds and pushes, so nobody else needs git or Python.
+
 1. Edit `cld.json` (or `references.json`, `view.scss`, `page/`).
 2. `python3 build.py` checks the model and rebuilds `docs/`. It stops on an error (an unknown
    element, a source missing from `references.json`, a named loop that is not closed or whose

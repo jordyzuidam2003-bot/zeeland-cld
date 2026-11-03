@@ -100,9 +100,9 @@
 <path class="link-path" d="M -1344.8 3665.0 Q -451.0 3469.4 320.1 2974.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="306.2" y="3001.1" text-anchor="middle" dominant-baseline="central" font-size="34" font-weight="bold" fill="#B2182B">−</text>
 </g>
-<g class="link" data-from="saline-seepage-kwel" data-to="root-zone-salinity" data-sign="+" data-delay="false" data-curvature="-0.5">
-<path class="link-path" d="M -1424.0 3717.0 Q 273.2 4641.4 1239.2 2954.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="1237.6" y="2984.5" text-anchor="middle" dominant-baseline="central" font-size="34" font-weight="bold" fill="#2166AC">+</text>
+<g class="link" data-from="saline-seepage-kwel" data-to="root-zone-salinity" data-sign="+" data-delay="false" data-curvature="-0.2">
+<path class="link-path" d="M -1301.2 3706.0 Q 91.1 3800.8 1219.7 2954.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="1207.0" y="2981.8" text-anchor="middle" dominant-baseline="central" font-size="34" font-weight="bold" fill="#2166AC">+</text>
 </g>
 <g class="link" data-from="soil-structure-usability" data-to="freshwater-lens-recharge" data-sign="+" data-delay="false" data-curvature="0.19">
 <path class="link-path" d="M 1886.3 3464.4 Q 479.4 3860.0 -869.5 3289.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>

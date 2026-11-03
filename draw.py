@@ -386,7 +386,8 @@ def svg(cld):
 
 # --- overlap warnings -----------------------------------------------------------------------
 def overlaps(cld):
-    """Pairs of element boxes that intersect, and pairs of SETS regions that do."""
+    """Pairs of element boxes that intersect, pairs of SETS regions that do, and links within one
+    domain that leave its region."""
     bxs = boxes(cld)
     ids = [e["id"] for e in cld["elements"]]
     out = []
@@ -407,7 +408,23 @@ def overlaps(cld):
             # come closer than twice that
             if polygons_intersect(hulls[a], hulls[b]) or polygon_distance(hulls[a], hulls[b]) < 2 * REGION_PAD:
                 out.append(f"regions overlap: {a} and {b}")
+    # a link between two elements of one domain stays inside that domain's region (Jordy)
+    domain = {e["id"]: e["sets domain"] for e in cld["elements"]}
+    for c in cld["connections"]:
+        h = hulls[domain[c["from"]]]
+        if domain[c["to"]] != domain[c["from"]] or len(h) < 3:
+            continue
+        p0, ctrl, p2 = link_path(bxs[c["from"]], bxs[c["to"]], c["curvature"])
+        if any(beyond(bezier(p0, ctrl, p2, k / 40), h) > 0 for k in range(41)):
+            out.append(f"link leaves its region: {c['from']} -> {c['to']} (curvature {c['curvature']})")
     return out
+
+
+def beyond(pt, h):
+    """How far pt lies outside the region around the convex hull h (the hull grown by REGION_PAD)."""
+    if all(cross(h[i], h[(i + 1) % len(h)], pt) >= 0 for i in range(len(h))):
+        return 0
+    return max(0, min(segment_distance(pt, h[i], h[(i + 1) % len(h)]) for i in range(len(h))) - REGION_PAD)
 
 
 def polygons_intersect(p, q):

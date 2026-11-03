@@ -636,7 +636,7 @@
       "loop id": "R1_Biophysical",
       "description": "Capillary rise brings saline seepage water into the root zone.",
       "sources": [],
-      "curvature": -0.5
+      "curvature": -0.2
     },
     {
       "from": "soil-structure-usability",

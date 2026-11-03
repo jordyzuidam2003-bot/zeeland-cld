@@ -90,7 +90,7 @@ An element:
 - `x` and `y` are positions in the drawing; y grows downwards.
 
 A connection: `from` and `to` (element ids), `polarity` (`"+"` or `"-"`), `delay` (true/false,
-drawn as two strokes across the link), `loop id` (the old Kumu tag), `description`, `sources`,
+drawn as two strokes across the link), `description`, `sources`,
 `curvature` (0 is straight; a positive value bows the link to the left of its direction).
 The SETS fields the page and Kumu show ("Cross-domain", "E to S" …) are derived by `build.py`,
 never typed.
@@ -112,8 +112,9 @@ update is a new project under the same name, which keeps the URL. Jordy renames 
 `cbp-cld`, then on the Kumu dashboard: New Project → name `cbp-cld`, public → the next screen →
 "restore backup" (the link at the bottom) → `docs/project.json`. Only a brand-new project restores
 a project export; the green `+` → Import route brings in the elements and connections alone.
-Kumu restores the map with the elements at their positions, the view from `view.scss`, and the
-project's name, which the export sets to `cbp-cld`.
+Kumu restores the map with the elements at their positions, the view from `view.scss`, the named
+loops (each its links, labelled "R1 …" at the centre of its elements), and the project's name,
+which the export sets to `cbp-cld`.
 
 The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label
 inside, square corners for a stock and rounded ones for the others, an italic label for a

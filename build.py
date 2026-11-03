@@ -177,14 +177,11 @@ def blueprint(cld, refs):
             "type": c["polarity"],  # Kumu's connection type: it draws the sign at the arrowhead
             "polarity": "positive" if c["polarity"] == "+" else "negative",
             "delay": "yes" if c["delay"] else "no",
-            "loop id": c["loop id"],
             "description": c["description"],
             "sets link": f"Within {SETS_LETTER[sa]}" if sa == sb else f"{SETS_LETTER[sa]} to {SETS_LETTER[sb]}",
             "sets scope": "Within domain" if sa == sb else "Cross-domain",
             **sourced(c),
         })
-    # the named loops are not exported to Kumu: the shape of a loop in a Kumu project export is not
-    # known here, and a guessed one would break the restore
     return {"elements": elements, "connections": connections}
 
 
@@ -258,6 +255,20 @@ def project(cld, refs, template, version):
              for i, x, y in [(e["id"], e["x"], e["y"]) for e in cld["elements"]]]
     edges = [{"_id": f'edge-{c["from"]}--{c["to"]}', "curvature": c["curvature"], "style": {},
               "connection": f'conn-{c["from"]}--{c["to"]}'} for c in cld["connections"]]
+    # A Kumu loop is its connections by id, its label and description as attributes; the map places
+    # the loop's label. Kumu does not document its export: this is the shape its exports hold (read
+    # in Loopweft's Kumu importer, checked there on real exports), with the label where the page
+    # draws the loop's mark, the centre of its elements.
+    by_id = {e["id"]: e for e in cld["elements"]}
+    loops, map_loops = [], []
+    for loop in cld["loops"]:
+        path = loop["path"]
+        loops.append({"_id": f'loop-{loop["id"]}',
+                      "attributes": {"label": f'{loop["id"]} {loop["name"]}', "description": ""},
+                      "connections": [f'conn-{a}--{b}' for a, b in zip(path, path[1:] + path[:1])]})
+        map_loops.append({"_id": f'mloop-{loop["id"]}', "loop": f'loop-{loop["id"]}', "style": {},
+                          "position": {"x": round(sum(by_id[i]["x"] for i in path) / len(path)),
+                                       "y": round(sum(by_id[i]["y"] for i in path) / len(path))}})
     description = (f"Model version {version}, the first seven characters of the SHA-256 of cld.json. "
                    "A copy for milestones: the current model is the page "
                    "https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from "
@@ -268,11 +279,11 @@ def project(cld, refs, template, version):
     return {
         "version": 1, "name": "cbp-cld", "description": description, "proxyImages": True,
         "defaultMap": "map-cld", "defaultPerspective": None, "attributeRelevance": {},
-        "attributes": attributes, "elements": elements, "connections": connections, "loops": [],
+        "attributes": attributes, "elements": elements, "connections": connections, "loops": loops,
         "maps": [{"_id": "map-cld", "name": f"CLD, model {version}", "description": "", "scale": 1,
                   "center": {"x": 0, "y": 0}, "defaultPerspective": "pers-cld",
                   "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
-                  "elements": nodes, "connections": edges, "loops": []}],
+                  "elements": nodes, "connections": edges, "loops": map_loops}],
         # the map's edges carry the curves, so the view holds no curvature rules
         "perspectives": [{"_id": "pers-cld", "name": "CLD", "style": style}],
     }

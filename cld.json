@@ -447,7 +447,6 @@
       "to": "crop-water-demand",
       "polarity": "+",
       "delay": false,
-      "loop id": "Exogenous",
       "description": "Higher temperatures increase evapotranspiration and crop water requirements.",
       "sources": [],
       "curvature": 0.0
@@ -457,7 +456,6 @@
       "to": "estuary-salt-intrusion",
       "polarity": "+",
       "delay": false,
-      "loop id": "Exogenous",
       "description": "Low summer river discharge allows seawater to penetrate further inland.",
       "sources": [],
       "curvature": 0.0
@@ -467,7 +465,6 @@
       "to": "freshwater-lens-recharge",
       "polarity": "-",
       "delay": false,
-      "loop id": "Exogenous",
       "description": "Summer precipitation deficit and high evaporation reduce natural recharge.",
       "sources": [],
       "curvature": 0.0
@@ -477,7 +474,6 @@
       "to": "estuary-salt-intrusion",
       "polarity": "+",
       "delay": false,
-      "loop id": "Exogenous",
       "description": "Rising sea level pushes marine water further into estuaries.",
       "sources": [],
       "curvature": 0.0
@@ -487,7 +483,6 @@
       "to": "saline-seepage-kwel",
       "polarity": "+",
       "delay": false,
-      "loop id": "Exogenous",
       "description": "Higher sea level increases hydrostatic pressure beneath dikes.",
       "sources": [],
       "curvature": 0.0
@@ -497,7 +492,6 @@
       "to": "freshwater-lens-recharge",
       "polarity": "+",
       "delay": false,
-      "loop id": "Exogenous",
       "description": "More winter precipitation increases potential infiltration into the soil.",
       "sources": [],
       "curvature": 0.0
@@ -507,7 +501,6 @@
       "to": "winter-rain-drained-away",
       "polarity": "+",
       "delay": false,
-      "loop id": "Exogenous",
       "description": "Higher winter rainfall peaks are mostly discharged under conventional drainage.",
       "sources": [],
       "curvature": 0.0
@@ -517,7 +510,6 @@
       "to": "soil-structure-usability",
       "polarity": "-",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Sodification destroys soil aggregates, porosity, aeration, and workability.",
       "sources": [],
       "curvature": 0.0
@@ -527,7 +519,6 @@
       "to": "groundwater-extraction-for-irrigation",
       "polarity": "+",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Higher crop water need drives farmers to pump more groundwater.",
       "sources": [],
       "curvature": 0.0
@@ -537,7 +528,6 @@
       "to": "brackish-irrigation-water-use",
       "polarity": "+",
       "delay": false,
-      "loop id": "Exogenous",
       "description": "Salinisation of surface canals makes intake water for irrigation brackish.",
       "sources": [],
       "curvature": 0.0
@@ -547,7 +537,6 @@
       "to": "freshwater-lens-thickness",
       "polarity": "+",
       "delay": true,
-      "loop id": "R1_Biophysical",
       "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In the thin polder lenses of Schouwen-Duiveland the mixing zone shifts at most 0.1 m within a year, with vertical flow of at most 1.2 mm per day (de Louw et al., 2011). Under a creek ridge, raising the winter water table 0.5 m thickened a 13–15 m lens by 6–8 m in ten years, and the lens had not reached its new thickness yet (Pauw et al., 2015, a model result for Walcheren). So a change in recharge takes years to a decade to show in the lens.",
       "sources": [
         "de-louw-2011",
@@ -560,7 +549,6 @@
       "to": "root-zone-salinity",
       "polarity": "-",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "A thick freshwater lens keeps saline groundwater safely below the root zone.",
       "sources": [],
       "curvature": 0.0
@@ -570,7 +558,6 @@
       "to": "upconing-of-salt-groundwater",
       "polarity": "-",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "A thicker freshwater lens buffers against salt upconing under wells.",
       "sources": [],
       "curvature": 0.0
@@ -580,7 +567,6 @@
       "to": "freshwater-availability-for-crops",
       "polarity": "+",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "A thicker lens provides a larger buffer of fresh soil moisture in summer.",
       "sources": [],
       "curvature": 0.0
@@ -590,7 +576,6 @@
       "to": "polder-surface-elevation-nap",
       "polarity": "-",
       "delay": true,
-      "loop id": "R1_Biophysical",
       "description": "Peat oxidation and clay settling lower the land surface relative to NAP at millimetres a year, so a decimetre takes decades: Dutch land below sea level is still subsiding up to 1 m per century, fastest in peat areas (Oude Essink et al., 2010). A rate for Schouwen-Duiveland's clay polders is not yet sourced.",
       "sources": [
         "oude-essink-2010"
@@ -602,7 +587,6 @@
       "to": "saline-seepage-kwel",
       "polarity": "-",
       "delay": false,
-      "loop id": "R3_Wisselpolder",
       "description": "Higher polder elevation reduces the hydraulic head difference driving upward saline seepage.",
       "sources": [],
       "curvature": 0.0
@@ -612,7 +596,6 @@
       "to": "clay-dispersion-sodification",
       "polarity": "+",
       "delay": true,
-      "loop id": "R1_Biophysical",
       "description": "High sodium (Na+) concentrations displace calcium (Ca2+), causing clay particles to disperse. The delay is on the way back: structure collapses within the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year, which takes 5 to 10 years on heavy clay and about a year on light soil (van Beekom et al., 1953, after the 1945 and 1953 floods in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster.",
       "sources": [
         "van-beekom-1953"
@@ -624,7 +607,6 @@
       "to": "crop-yield",
       "polarity": "-",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "Osmotic stress and chloride toxicity reduce yields of salt-sensitive cash crops.",
       "sources": [],
       "curvature": 0.0
@@ -634,7 +616,6 @@
       "to": "salt-tolerant-crop-adoption",
       "polarity": "+",
       "delay": false,
-      "loop id": "B2_Crop_Adaptation",
       "description": "Rising salinity increases agronomic pressure to switch to tolerant varieties.",
       "sources": [],
       "curvature": 0.0
@@ -644,7 +625,6 @@
       "to": "freshwater-lens-thickness",
       "polarity": "-",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Upward saline groundwater erodes and thins the floating freshwater lens from below.",
       "sources": [],
       "curvature": 0.0
@@ -654,7 +634,6 @@
       "to": "root-zone-salinity",
       "polarity": "+",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Capillary rise brings saline seepage water into the root zone.",
       "sources": [],
       "curvature": 0.0
@@ -664,7 +643,6 @@
       "to": "freshwater-lens-recharge",
       "polarity": "+",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Healthy porous soil allows winter rainwater to infiltrate rather than run off.",
       "sources": [],
       "curvature": 0.0
@@ -674,7 +652,6 @@
       "to": "crop-yield",
       "polarity": "+",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "Good soil structure supports root development, emergence, and safe harvesting of tubers/bulbs.",
       "sources": [],
       "curvature": 0.0
@@ -684,7 +661,6 @@
       "to": "agricultural-land-value",
       "polarity": "+",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "Structural soil health and low salinity determine the intrinsic value of arable land.",
       "sources": [],
       "curvature": 0.0
@@ -694,7 +670,6 @@
       "to": "root-zone-salinity",
       "polarity": "+",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Salt water drawn upward contaminates the upper soil and irrigation wells.",
       "sources": [],
       "curvature": 0.0
@@ -704,7 +679,6 @@
       "to": "root-zone-salinity",
       "polarity": "+",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Evaporation of brackish irrigation water leaves salt behind in the topsoil.",
       "sources": [],
       "curvature": 0.0
@@ -714,7 +688,6 @@
       "to": "land-subsidence",
       "polarity": "+",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Low water tables expose peat to oxygen and cause clay shrinkage.",
       "sources": [],
       "curvature": 0.0
@@ -724,7 +697,6 @@
       "to": "saline-seepage-kwel",
       "polarity": "+",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Lower ditch levels increase the pressure gradient between deep saline groundwater and the polder.",
       "sources": [],
       "curvature": 0.0
@@ -734,7 +706,6 @@
       "to": "winter-rain-drained-away",
       "polarity": "+",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Intensive drainage networks rapidly discharge winter surplus water to the sea.",
       "sources": [],
       "curvature": 0.0
@@ -744,7 +715,6 @@
       "to": "freshwater-availability-for-crops",
       "polarity": "+",
       "delay": false,
-      "loop id": "Exogenous",
       "description": "External supply directly supplements fresh water available to farms.",
       "sources": [],
       "curvature": 0.0
@@ -754,7 +724,6 @@
       "to": "groundwater-extraction-for-irrigation",
       "polarity": "-",
       "delay": false,
-      "loop id": "Exogenous",
       "description": "Where external freshwater pipelines exist, farmers rely less on pumping from local lenses.",
       "sources": [],
       "curvature": 0.0
@@ -764,7 +733,6 @@
       "to": "brackish-irrigation-water-use",
       "polarity": "-",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "When fresh water is scarce, farmers are forced to irrigate with brackish surface/well water.",
       "sources": [],
       "curvature": 0.0
@@ -774,7 +742,6 @@
       "to": "crop-yield",
       "polarity": "+",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "Adequate freshwater supply prevents drought stress and yield loss.",
       "sources": [],
       "curvature": 0.3
@@ -784,7 +751,6 @@
       "to": "freshwater-lens-recharge",
       "polarity": "+",
       "delay": false,
-      "loop id": "B1_Water_Retention",
       "description": "Active infiltration and drainage retention directly build up the freshwater lens.",
       "sources": [],
       "curvature": 0.0
@@ -794,7 +760,6 @@
       "to": "winter-rain-drained-away",
       "polarity": "-",
       "delay": false,
-      "loop id": "B1_Water_Retention",
       "description": "Smart/adjustable drains and storage retain winter water instead of discharging it.",
       "sources": [],
       "curvature": 0.0
@@ -804,7 +769,6 @@
       "to": "freshwater-lens-thickness",
       "polarity": "-",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Extracting groundwater directly depletes the limited freshwater lens.",
       "sources": [],
       "curvature": 0.0
@@ -814,7 +778,6 @@
       "to": "upconing-of-salt-groundwater",
       "polarity": "+",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Pumping groundwater draws the underlying salt-fresh interface upward into a cone.",
       "sources": [],
       "curvature": -0.1
@@ -824,7 +787,6 @@
       "to": "demand-for-deep-polder-drainage",
       "polarity": "+",
       "delay": false,
-      "loop id": "B3_Governance_Delay",
       "description": "While objections hold up a change to the water level plan, the current low ditch levels stay.",
       "sources": [],
       "curvature": 0.0
@@ -834,7 +796,6 @@
       "to": "wisselpolder-land-raising",
       "polarity": "-",
       "delay": false,
-      "loop id": "B3_Governance_Delay",
       "description": "Objections and appeals slow or stop plans for a wisselpolder; depoldering farmland is contested in Zeeland.",
       "sources": [],
       "curvature": 0.0
@@ -844,7 +805,6 @@
       "to": "freshwater-lens-recharge",
       "polarity": "-",
       "delay": false,
-      "loop id": "R1_Biophysical",
       "description": "Water evacuated via drains cannot infiltrate to refill the freshwater lens.",
       "sources": [],
       "curvature": 0.0
@@ -854,7 +814,6 @@
       "to": "polder-surface-elevation-nap",
       "polarity": "+",
       "delay": true,
-      "loop id": "R3_Wisselpolder",
       "description": "Tidal siltation raises the polder surface by 1.5–3 m over 50–100 years, so the decision falls inside the 2050 horizon and most of the effect outside it. Whether a polder on Schouwen-Duiveland gets this siltation is unchecked: the evidence is from the Westerschelde, and the Oosterschelde and the Grevelingen differ; the link needs a sedimentation source for the Oosterschelde, or goes.",
       "sources": [],
       "curvature": 0.0
@@ -864,7 +823,6 @@
       "to": "farm-revenue",
       "polarity": "+",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "Higher physical yield increases sales revenue per hectare.",
       "sources": [],
       "curvature": 0.0
@@ -874,7 +832,6 @@
       "to": "processing-capacity-for-alternative-crops",
       "polarity": "+",
       "delay": false,
-      "loop id": "R4_Market_Scale",
       "description": "Stable demand and offtake contracts justify investment in processing and supply chains.",
       "sources": [],
       "curvature": 0.0
@@ -884,7 +841,6 @@
       "to": "salt-tolerant-crop-adoption",
       "polarity": "+",
       "delay": false,
-      "loop id": "R4_Market_Scale",
       "description": "Assured offtake makes salt-tolerant and alternative crops commercially attractive to farmers.",
       "sources": [],
       "curvature": 0.0
@@ -894,7 +850,6 @@
       "to": "salt-tolerant-crop-adoption",
       "polarity": "+",
       "delay": false,
-      "loop id": "R4_Market_Scale",
       "description": "Established processing plants and offtake contracts make salt-tolerant crops viable for farmers.",
       "sources": [],
       "curvature": -0.2
@@ -904,7 +859,6 @@
       "to": "crop-water-demand",
       "polarity": "-",
       "delay": false,
-      "loop id": "B2_Crop_Adaptation",
       "description": "Salt-tolerant crops and halophytes require less fresh water.",
       "sources": [],
       "curvature": 0.0
@@ -914,7 +868,6 @@
       "to": "crop-yield",
       "polarity": "+",
       "delay": false,
-      "loop id": "B2_Crop_Adaptation",
       "description": "Tolerant crops stabilize farm yields and revenue under saline conditions.",
       "sources": [],
       "curvature": 0.0
@@ -924,7 +877,6 @@
       "to": "processing-capacity-for-alternative-crops",
       "polarity": "+",
       "delay": false,
-      "loop id": "R4_Market_Scale",
       "description": "Growing cultivation volume attracts processors, breeding investment, and supply chain scale.",
       "sources": [],
       "curvature": -0.15
@@ -934,7 +886,6 @@
       "to": "bank-credit-freeze-risk-premiums",
       "polarity": "-",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "Declining land collateral values trigger higher bank risk premiums and credit freezes.",
       "sources": [],
       "curvature": 0.0
@@ -944,7 +895,6 @@
       "to": "fear-of-expropriation-planning-blight",
       "polarity": "-",
       "delay": false,
-      "loop id": "B3_Governance_Delay",
       "description": "The more land values fall, or the more a plan for re-wetting or depoldering threatens to lower them, the greater farmers' concern about devaluation.",
       "sources": [],
       "curvature": 0.0
@@ -954,7 +904,6 @@
       "to": "mortgage-debt-financial-leverage",
       "polarity": "-",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "With the same mortgage, a lower land value is a higher debt relative to the farm's assets: land is 70% of an arable farm's balance sheet, and its rise in value is what made arable farms' solvency 81% in 2018 (van der Meulen et al., 2020). A high solvency makes new credit easier and cheaper to get; the debt itself does not shrink when the land loses value.",
       "sources": [
         "van-der-meulen-2020"
@@ -966,7 +915,6 @@
       "to": "farmers-capacity-to-invest",
       "polarity": "-",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "Restricted credit and higher interest rates prevent farmers from financing adaptation measures.",
       "sources": [],
       "curvature": 0.0
@@ -976,7 +924,6 @@
       "to": "bank-credit-freeze-risk-premiums",
       "polarity": "+",
       "delay": false,
-      "loop id": "Exogenous",
       "description": "Stricter European banking rules mandate higher capital buffers for climate-exposed loans.",
       "sources": [],
       "curvature": 0.0
@@ -986,7 +933,6 @@
       "to": "demand-for-deep-polder-drainage",
       "polarity": "+",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "Potatoes and onions require dry, warm soils in early spring to bear heavy machinery.",
       "sources": [],
       "curvature": 0.0
@@ -996,7 +942,6 @@
       "to": "groundwater-extraction-for-irrigation",
       "polarity": "+",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "High-value salt-sensitive crops require intensive freshwater irrigation during dry spells.",
       "sources": [],
       "curvature": -0.4
@@ -1006,7 +951,6 @@
       "to": "salt-tolerant-crop-adoption",
       "polarity": "-",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "A farm that relies on high margins can give fewer hectares to lower-margin salt-tolerant alternatives.",
       "sources": [],
       "curvature": 0.0
@@ -1016,7 +960,6 @@
       "to": "agricultural-land-value",
       "polarity": "+",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "Sustained productivity and profitability underpin high market prices for farmland.",
       "sources": [],
       "curvature": 0.0
@@ -1026,7 +969,6 @@
       "to": "farmers-capacity-to-invest",
       "polarity": "+",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "Higher farm income generates internal cash flow for adaptive investments.",
       "sources": [],
       "curvature": 0.0
@@ -1036,7 +978,6 @@
       "to": "freshwater-storage-measures",
       "polarity": "+",
       "delay": false,
-      "loop id": "B1_Water_Retention",
       "description": "Financial room allows investment in ASR, Freshmaker, and adjustable drainage.",
       "sources": [],
       "curvature": 0.0
@@ -1046,7 +987,6 @@
       "to": "salt-tolerant-crop-adoption",
       "polarity": "+",
       "delay": false,
-      "loop id": "B2_Crop_Adaptation",
       "description": "Investment capacity enables transition costs and new machinery for novel crops.",
       "sources": [],
       "curvature": 0.0
@@ -1056,7 +996,6 @@
       "to": "policy-resistance-legal-delays",
       "polarity": "+",
       "delay": false,
-      "loop id": "B3_Governance_Delay",
       "description": "Concern about uncompensated loss leads farmers and their organisations to object, appeal and lobby against such plans.",
       "sources": [],
       "curvature": 0.0
@@ -1066,7 +1005,6 @@
       "to": "dependence-on-high-margin-salt-sensitive-crops",
       "polarity": "+",
       "delay": false,
-      "loop id": "R2_Financial_LockIn",
       "description": "A highly leveraged farm keeps its lucrative but salt-sensitive crops (seed potatoes, onions) to meet its debt payments.",
       "sources": [],
       "curvature": 0.0
@@ -1076,7 +1014,6 @@
       "to": "farmland-leaving-arable-use",
       "polarity": "-",
       "delay": false,
-      "loop id": "",
       "description": "When farming the land no longer pays, more farms end or sell when the generation turns.",
       "sources": [],
       "curvature": 0
@@ -1086,7 +1023,6 @@
       "to": "farmland-leaving-arable-use",
       "polarity": "+",
       "delay": false,
-      "loop id": "",
       "description": "When credit tightens, farms that cannot refinance are sold or wound down.",
       "sources": [],
       "curvature": 0
@@ -1096,7 +1032,6 @@
       "to": "demand-for-deep-polder-drainage",
       "polarity": "-",
       "delay": false,
-      "loop id": "",
       "description": "The fewer hectares of arable land in a polder, the less pressure on the water board to keep its ditch levels low in spring.",
       "sources": [],
       "curvature": 0

@@ -80,7 +80,7 @@ function applyHighlight() {
 const panel = document.getElementById("panel");
 const panelBody = document.getElementById("panel-body");
 const SHOWN_ELEMENT = ["element type", "adaptive practice", "sets domain", "subquestion", "description"];
-const SHOWN_LINK = ["delay", "loop id", "sets link", "description"];
+const SHOWN_LINK = ["delay", "sets link", "description"];
 function row(dl, name, value, className) {
   const dt = document.createElement("dt");
   dt.textContent = name;

@@ -1,0 +1,136 @@
+@controls {
+  top {
+    showcase {
+      by: "Focus area";
+      as: buttons;
+      multiple: true;
+      mode: loose;
+    }
+  }
+
+  bottom-left {
+    showcase {
+      as: buttons;
+      mode: loose;
+
+      option {
+        label: "Social";
+        selector: ["sets subsystem"="social"];
+      }
+
+      option {
+        label: "Ecological";
+        selector: ["sets subsystem"="ecological"];
+      }
+
+      option {
+        label: "Technological";
+        selector: ["sets subsystem"="technological"];
+      }
+
+      option {
+        label: "Cross-SETS links";
+        selector: ["sets scope"="cross-domain"];
+      }
+
+      option {
+        label: "Cross-focus links";
+        selector: ["focus scope"="cross-focus area"];
+      }
+
+      option {
+        label: "Unsourced";
+        selector: ["sourced"="no"];
+      }
+    }
+
+    text {
+      value: "**Glow** = SETS domain: pink = Social, green = Ecological, orange = Technological<br>**Fill** = focus area: grey = Climate drivers, dark green = Biophysical system, teal = Water governance, olive = Crops and market, wine = Finance and land<br>**Links:** blue = + (same direction), red = − (opposite direction); thicker = crosses a SETS boundary<br>**Shape:** square = stock, white centre = adaptive practice";
+    }
+  }
+}
+
+/* positions come from each element's x and y fields in dist/kumu.json */
+@settings {
+  layout: scatter;
+  layout-x: "x";
+  layout-y: "y";
+  theme: light;
+  background-color: #FFFFFF;
+  culling: false;
+}
+
+/* ---------- SETS glow: one image behind the whole map (size: generated below) ---------- */
+#background {
+  layer: background;
+  shape: square;
+  color: transparent;
+  border-width: 0;
+  shadow-visibility: hidden;
+  image-size: contain;
+  image-resolution: original;
+  label-visibility: hidden;
+}
+
+/* ---------- Elements: fill = focus area ---------- */
+element {
+  size: 120;
+  font-size: 60;
+  font-weight: bold;
+  border-width: 0;
+  shadow-visibility: hidden;
+}
+
+["focus area"="climate drivers"] {
+  color: #555555;
+}
+
+["focus area"="biophysical system"] {
+  color: #117733;
+}
+
+["focus area"="water governance"] {
+  color: #44AA99;
+}
+
+["focus area"="crops and market"] {
+  color: #999933;
+}
+
+["focus area"="finance and land"] {
+  color: #882255;
+}
+
+["element type"="stock"] {
+  shape: square;
+}
+
+/* adaptive practices: white centre */
+["element type"="adaptation"] {
+  bullseye-visibility: visible;
+  bullseye-color: #FFFFFF;
+  bullseye-size: 0.5;
+  bullseye-opacity: 1;
+}
+
+/* (no global curvature: each link keeps its own curve from the map) */
+connection {
+  size: 7;
+  style: solid;
+  arrow-visibility: visible;
+  label: none;
+  font-size: 100;
+  font-weight: bold;
+}
+
+["polarity"="positive"] {
+  color: #2166AC;
+}
+
+["polarity"="negative"] {
+  color: #B2182B;
+}
+
+["sets scope"="cross-domain"] {
+  size: 10;
+}

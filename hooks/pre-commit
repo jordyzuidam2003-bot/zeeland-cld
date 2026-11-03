@@ -1,0 +1,4 @@
+#!/bin/sh
+# Kumu reads dist/ from GitHub, so a commit whose dist/ does not match the source shows stale data
+[ -x .venv/bin/python ] && PY=.venv/bin/python || PY=python3
+exec "$PY" build.py --check

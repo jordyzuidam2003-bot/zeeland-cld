@@ -7,8 +7,8 @@ const nodes = window.currentMap.graph.nodes;
 const list = Array.isArray(nodes) ? nodes : nodes.models || Object.values(nodes);
 let placed = 0;
 for (const node of list) {
-  const fields = node.entity.ownAttrs || {};
-  const x = Number(fields.x), y = Number(fields.y); // Kumu may hold the fields as text
+  const fields = node.entity.ownAttrs; // a Backbone model: the fields are behind get()
+  const x = Number(fields.get("x")), y = Number(fields.get("y"));
   if (!Number.isFinite(x) || !Number.isFinite(y)) continue;
   node.position.x = x;
   node.position.y = y;

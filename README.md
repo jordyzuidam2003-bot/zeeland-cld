@@ -46,7 +46,8 @@ close to the SVG's `viewBox`.
 
 ### The page
 
-Buttons highlight a part of the diagram: a SETS domain, the links that cross a SETS boundary,
+The drawing is larger than a screen: scroll or pinch to zoom at the cursor, drag the
+background to pan, "Fit" shows the whole drawing again. Buttons highlight a part of the diagram: a SETS domain, the links that cross a SETS boundary,
 the adaptive practices, what has no source yet, the links with a delay, and each named loop;
 several pressed show their union. A click on an element or a link opens a panel with its fields
 and sources; Esc or a click on the background closes it. The footer shows the model version, the

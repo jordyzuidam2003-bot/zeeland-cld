@@ -213,23 +213,57 @@ moveToggle.addEventListener("change", () => {
   map.classList.toggle("moving", moveToggle.checked);
   download.disabled = !moveToggle.checked;
 });
+
+// --- pan and zoom ---------------------------------------------------------------------------
+// The drawing is far larger than a screen: the viewBox is the window onto it. Wheel or pinch
+// zooms at the cursor, dragging the background pans, "Fit" shows the whole drawing again.
+const base = (() => { const v = svg.viewBox.baseVal; return { x: v.x, y: v.y, w: v.width, h: v.height }; })();
+const view = { ...base };
+const applyView = () => svg.setAttribute("viewBox", `${view.x} ${view.y} ${view.w} ${view.h}`);
+const unitsPerPixel = () => Math.max(view.w / svg.clientWidth, view.h / svg.clientHeight);
+function zoomAt(point, factor) {
+  view.w /= factor;
+  view.h /= factor;
+  view.x = point[0] - (point[0] - view.x) / factor;
+  view.y = point[1] - (point[1] - view.y) / factor;
+  applyView();
+}
+svg.addEventListener("wheel", ev => {
+  ev.preventDefault();
+  zoomAt(toSvg(ev), Math.exp(-ev.deltaY * 0.002));
+}, { passive: false });
+const centre = () => [view.x + view.w / 2, view.y + view.h / 2];
+document.getElementById("zoom-in").addEventListener("click", () => zoomAt(centre(), 1.4));
+document.getElementById("zoom-out").addEventListener("click", () => zoomAt(centre(), 1 / 1.4));
+document.getElementById("fit").addEventListener("click", () => { Object.assign(view, base); applyView(); });
+
 svg.addEventListener("pointerdown", ev => {
-  if (!moveToggle.checked) return;
   const g = ev.target.closest("g.element");
-  if (!g) return;
-  drag = { g, last: toSvg(ev) };
+  if (moveToggle.checked && g) drag = { kind: "element", g, last: toSvg(ev) };
+  else drag = { kind: "pan", last: [ev.clientX, ev.clientY] };
   dragged = false;
   svg.setPointerCapture(ev.pointerId);
   ev.preventDefault();
 });
 svg.addEventListener("pointermove", ev => {
   if (!drag) return;
-  const p = toSvg(ev);
-  const dx = p[0] - drag.last[0], dy = p[1] - drag.last[1];
-  if (dx === 0 && dy === 0) return;
-  dragged = true;
-  moveElement(drag.g, dx, dy);
-  drag.last = p;
+  if (drag.kind === "element") {
+    const p = toSvg(ev);
+    const dx = p[0] - drag.last[0], dy = p[1] - drag.last[1];
+    if (dx === 0 && dy === 0) return;
+    dragged = true;
+    moveElement(drag.g, dx, dy);
+    drag.last = p;
+  } else {
+    const k = unitsPerPixel();
+    const dx = (ev.clientX - drag.last[0]) * k, dy = (ev.clientY - drag.last[1]) * k;
+    if (dx === 0 && dy === 0) return;
+    dragged = true;
+    view.x -= dx;
+    view.y -= dy;
+    applyView();
+    drag.last = [ev.clientX, ev.clientY];
+  }
 });
 svg.addEventListener("pointerup", () => { drag = null; setTimeout(() => { dragged = false; }, 0); });
 download.addEventListener("click", () => {

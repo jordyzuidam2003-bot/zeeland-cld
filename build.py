@@ -150,7 +150,7 @@ def blueprint(cld, refs):
             "id": f'{c["from"]}--{c["to"]}', "from": c["from"], "to": c["to"],
             "direction": "directed",
             "label": "+" if c["polarity"] == "+" else "−",
-            "connection type": c["polarity"],  # Kumu draws this sign at the arrowhead
+            "type": c["polarity"],  # Kumu's connection type: it draws the sign at the arrowhead
             "polarity": "positive" if c["polarity"] == "+" else "negative",
             "delay": "yes" if c["delay"] else "no",
             "loop id": c["loop id"],

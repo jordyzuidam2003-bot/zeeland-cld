@@ -46,27 +46,28 @@ const rules = [
     links: new Set(data.connections.filter(c => c.sourced === "no").map(linkKey)),
   })],
   ["Delays", linkRule(c => c.delay === "yes")],
-  ...data.loops.map(loop => [loop.id, () => {
+  // a loop's button reads "R1 Its name"; its key is the id, which the drawing's mark carries too
+  ...data.loops.map(loop => [`${loop.id} ${loop.name}`, () => {
     const path = loop.path;
     const keys = path.map((id, i) => `${id}--${path[(i + 1) % path.length]}`);
     return { elements: new Set(path), links: new Set(keys) };
-  }]),
+  }, loop.id]),
 ];
 const nav = document.getElementById("buttons");
-const pressed = new Set();
-for (const [label, rule] of rules) {
+const pressed = new Set();  // the keys of the pressed rules: a rule's key is its label unless it names one
+for (const [label, rule, key = label] of rules) {
   const button = document.createElement("button");
   button.textContent = label;
   button.setAttribute("aria-pressed", "false");
   button.addEventListener("click", () => {
-    if (pressed.has(label)) pressed.delete(label); else pressed.add(label);
-    button.setAttribute("aria-pressed", String(pressed.has(label)));
+    if (pressed.has(key)) pressed.delete(key); else pressed.add(key);
+    button.setAttribute("aria-pressed", String(pressed.has(key)));
     applyHighlight();
   });
   nav.append(button);
 }
 function applyHighlight() {
-  const active = rules.filter(([label]) => pressed.has(label)).map(([, rule]) => rule());
+  const active = rules.filter(([label, , key = label]) => pressed.has(key)).map(([, rule]) => rule());
   const none = active.length === 0;
   const keepE = new Set(active.flatMap(r => [...r.elements]));
   const keepL = new Set(active.flatMap(r => [...r.links]));

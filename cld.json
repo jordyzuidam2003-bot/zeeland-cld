@@ -416,13 +416,15 @@
     },
     {
       "id": "mortgage-debt-financial-leverage",
-      "label": "Mortgage debt & financial leverage",
+      "label": "Financial leverage",
       "element type": "Stock",
       "adaptive practice": false,
       "sets domain": "Social",
       "subquestion": "SQ2",
-      "description": "Total bank debt per hectare (€/ha) and Loan-to-Value (LTV) ratio of agricultural enterprises.",
-      "sources": [],
+      "description": "The farm's debt relative to the value of its assets, the inverse of its solvency (equity as a share of total capital). Land is 70% of an arable farm's balance sheet, so the ratio moves with the land price: arable farms' solvency was 81% in 2018 because their land had risen in value, while their long-term debt had tripled since 2001 to 770,000 euro per farm (van der Meulen et al., 2020).",
+      "sources": [
+        "van-der-meulen-2020"
+      ],
       "x": 2400,
       "y": 1080
     },
@@ -950,11 +952,13 @@
     {
       "from": "agricultural-land-value",
       "to": "mortgage-debt-financial-leverage",
-      "polarity": "+",
+      "polarity": "-",
       "delay": false,
       "loop id": "R2_Financial_LockIn",
-      "description": "High historical land prices required large mortgages; subsequent land devaluation worsens Leverage/LTV.",
-      "sources": [],
+      "description": "With the same mortgage, a lower land value is a higher debt relative to the farm's assets: land is 70% of an arable farm's balance sheet, and its rise in value is what made arable farms' solvency 81% in 2018 (van der Meulen et al., 2020). A high solvency makes new credit easier and cheaper to get; the debt itself does not shrink when the land loses value.",
+      "sources": [
+        "van-der-meulen-2020"
+      ],
       "curvature": 0.0
     },
     {
@@ -1063,7 +1067,7 @@
       "polarity": "+",
       "delay": false,
       "loop id": "R2_Financial_LockIn",
-      "description": "High debt payments make a farm keep its lucrative but salt-sensitive crops (seed potatoes, onions).",
+      "description": "A highly leveraged farm keeps its lucrative but salt-sensitive crops (seed potatoes, onions) to meet its debt payments.",
       "sources": [],
       "curvature": 0.0
     },
@@ -1098,5 +1102,101 @@
       "curvature": 0
     }
   ],
-  "loops": []
+  "loops": [
+    {
+      "id": "R1",
+      "name": "Salty soil takes in less rain",
+      "path": [
+        "root-zone-salinity",
+        "clay-dispersion-sodification",
+        "soil-structure-usability",
+        "freshwater-lens-recharge",
+        "freshwater-lens-thickness"
+      ]
+    },
+    {
+      "id": "B1",
+      "name": "Salt-tolerant crops need less pumping",
+      "path": [
+        "root-zone-salinity",
+        "salt-tolerant-crop-adoption",
+        "crop-water-demand",
+        "groundwater-extraction-for-irrigation",
+        "freshwater-lens-thickness"
+      ]
+    },
+    {
+      "id": "R2",
+      "name": "Growers and processors",
+      "path": [
+        "salt-tolerant-crop-adoption",
+        "processing-capacity-for-alternative-crops"
+      ]
+    },
+    {
+      "id": "R3",
+      "name": "Farm income and water storage",
+      "path": [
+        "farmers-capacity-to-invest",
+        "freshwater-storage-measures",
+        "freshwater-lens-recharge",
+        "freshwater-lens-thickness",
+        "freshwater-availability-for-crops",
+        "crop-yield",
+        "farm-revenue"
+      ]
+    },
+    {
+      "id": "R4",
+      "name": "Land value and bank credit",
+      "path": [
+        "agricultural-land-value",
+        "bank-credit-freeze-risk-premiums",
+        "farmers-capacity-to-invest",
+        "salt-tolerant-crop-adoption",
+        "crop-yield",
+        "farm-revenue"
+      ]
+    },
+    {
+      "id": "R5",
+      "name": "Leverage and deep drainage",
+      "path": [
+        "mortgage-debt-financial-leverage",
+        "dependence-on-high-margin-salt-sensitive-crops",
+        "demand-for-deep-polder-drainage",
+        "saline-seepage-kwel",
+        "root-zone-salinity",
+        "crop-yield",
+        "farm-revenue",
+        "agricultural-land-value"
+      ]
+    },
+    {
+      "id": "R6",
+      "name": "Land value, objections and ditch levels",
+      "path": [
+        "agricultural-land-value",
+        "fear-of-expropriation-planning-blight",
+        "policy-resistance-legal-delays",
+        "demand-for-deep-polder-drainage",
+        "saline-seepage-kwel",
+        "root-zone-salinity",
+        "crop-yield",
+        "farm-revenue"
+      ]
+    },
+    {
+      "id": "B2",
+      "name": "Less arable land, less deep drainage",
+      "path": [
+        "root-zone-salinity",
+        "crop-yield",
+        "farm-revenue",
+        "farmland-leaving-arable-use",
+        "demand-for-deep-polder-drainage",
+        "saline-seepage-kwel"
+      ]
+    }
+  ]
 }

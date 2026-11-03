@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 92d68c8, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 620db8f, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -685,14 +685,14 @@
     {
       "_id": "elem-mortgage-debt-financial-leverage",
       "attributes": {
-        "label": "Mortgage debt &  financial leverage",
+        "label": "Financial leverage",
         "element type": "Stock",
         "adaptive practice": "no",
         "sets domain": "Social",
         "subquestion": "SQ2",
-        "description": "Total bank debt per hectare (€/ha) and Loan-to-Value (LTV) ratio of agricultural enterprises.",
-        "sources": "",
-        "sourced": "no"
+        "description": "The farm's debt relative to the value of its assets, the inverse of its solvency (equity as a share of total capital). Land is 70% of an arable farm's balance sheet, so the ratio moves with the land price: arable farms' solvency was 81% in 2018 because their land had risen in value, while their long-term debt had tripled since 2001 to 770,000 euro per farm (van der Meulen et al., 2020).",
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092",
+        "sourced": "yes"
       }
     },
     {
@@ -1716,16 +1716,16 @@
       "delayed": false,
       "reversed": false,
       "attributes": {
-        "label": "+",
-        "polarity": "positive",
+        "label": "−",
+        "polarity": "negative",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
-        "description": "High historical land prices required large mortgages; subsequent land devaluation worsens Leverage/LTV.",
+        "description": "With the same mortgage, a lower land value is a higher debt relative to the farm's assets: land is 70% of an arable farm's balance sheet, and its rise in value is what made arable farms' solvency 81% in 2018 (van der Meulen et al., 2020). A high solvency makes new credit easier and cheaper to get; the debt itself does not shrink when the land loses value.",
         "sets link": "Within S",
         "sets scope": "Within domain",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "+"
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092",
+        "sourced": "yes",
+        "connection type": "-"
       },
       "from": "elem-agricultural-land-value",
       "to": "elem-mortgage-debt-financial-leverage"
@@ -1940,7 +1940,7 @@
         "polarity": "positive",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
-        "description": "High debt payments make a farm keep its lucrative but salt-sensitive crops (seed potatoes, onions).",
+        "description": "A highly leveraged farm keeps its lucrative but salt-sensitive crops (seed potatoes, onions) to meet its debt payments.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "sources": "",
@@ -2015,7 +2015,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 92d68c8",
+      "name": "CLD, model 620db8f",
       "description": "",
       "scale": 1,
       "center": {
@@ -2786,7 +2786,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      mode: loose;\n\n      option {\n        label: \"Social\";\n        selector: [\"sets domain\"=\"social\"];\n      }\n\n      option {\n        label: \"Ecological\";\n        selector: [\"sets domain\"=\"ecological\"];\n      }\n\n      option {\n        label: \"Technological\";\n        selector: [\"sets domain\"=\"technological\"];\n      }\n\n      option {\n        label: \"Cross-SETS links\";\n        selector: [\"sets scope\"=\"cross-domain\"];\n      }\n\n      option {\n        label: \"Unsourced\";\n        selector: [\"sourced\"=\"no\"];\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: false;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- generated by build.py: tints, box sizes ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-clay-dispersion-sodification { width: 280; height: 86; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 265; height: 86; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 354; height: 86; }\n#elem-external-freshwater-supply { width: 310; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-wisselpolder-land-raising { width: 280; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 340; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 295; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 206; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 280; height: 120; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 86; }\n#elem-farmland-leaving-arable-use { width: 265; height: 86; }\n"
+      "style": "@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      mode: loose;\n\n      option {\n        label: \"Social\";\n        selector: [\"sets domain\"=\"social\"];\n      }\n\n      option {\n        label: \"Ecological\";\n        selector: [\"sets domain\"=\"ecological\"];\n      }\n\n      option {\n        label: \"Technological\";\n        selector: [\"sets domain\"=\"technological\"];\n      }\n\n      option {\n        label: \"Cross-SETS links\";\n        selector: [\"sets scope\"=\"cross-domain\"];\n      }\n\n      option {\n        label: \"Unsourced\";\n        selector: [\"sourced\"=\"no\"];\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: false;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- generated by build.py: tints, box sizes ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-clay-dispersion-sodification { width: 280; height: 86; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 265; height: 86; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 354; height: 86; }\n#elem-external-freshwater-supply { width: 310; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-wisselpolder-land-raising { width: 280; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 340; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 295; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 206; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 280; height: 120; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 265; height: 86; }\n"
     }
   ]
 }

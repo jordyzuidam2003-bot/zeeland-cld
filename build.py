@@ -183,7 +183,8 @@ def blueprint(cld, refs):
             "sets scope": "Within domain" if sa == sb else "Cross-domain",
             **sourced(c),
         })
-    # Kumu loops are added here once cld.json defines loops; build.py already checks them
+    # the named loops are not exported to Kumu: the shape of a loop in a Kumu project export is not
+    # known here, and a guessed one would break the restore
     return {"elements": elements, "connections": connections}
 
 

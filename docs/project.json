@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 6efff2a, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version b2cd648, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -342,9 +342,9 @@
         "adaptive practice": "no",
         "sets domain": "Ecological",
         "subquestion": "SQ1",
-        "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence or raised via sedimentation.",
-        "sources": "",
-        "sourced": "no"
+        "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence. Tidal silt, let in through a wisselpolder, would barely raise it on this island: the Grevelingen has no tide, and the Oosterschelde has too little silt to raise polders on a large scale (De Mesel et al., 2013). Since the storm surge barrier its channels carry 52–70% less suspended sediment (Ma et al., 2014), under 10 mg/l near Zierikzee, and its salt marshes rise 3–10 mm a year (van Maldegem & de Jong, 2004), against 16–32 mm on young marshes along the Westerschelde (De Mesel et al., 2013).",
+        "sources": "De Mesel, I., Ysebaert, T., & Kamermans, P. (2013). Klimaatbestendige dijken: Het concept wisselpolders (Rapport C072/13). IMARES Wageningen UR. https://www.vliz.be/imisdocs/publications/289823.pdf\nMa, Z., Ysebaert, T., van der Wal, D., de Jong, D. J., Li, X., & Herman, P. M. J. (2014). Long-term salt marsh vertical accretion in a tidal bay with reduced sediment supply. Estuarine, Coastal and Shelf Science, 146, 14–23. https://doi.org/10.1016/j.ecss.2014.05.001\nvan Maldegem, D., & de Jong, D. (2004). Opwassen of verdrinken: Sedimentaanvoer naar schorren in de Oosterschelde, een zandhongerig gedempt getijdesysteem (Werkdocument RIKZ/AB/2003/826x). Rijkswaterstaat, Rijksinstituut voor Kust en Zee. https://edepot.wur.nl/174582",
+        "sourced": "yes"
       }
     },
     {
@@ -485,7 +485,7 @@
         "adaptive practice": "no",
         "sets domain": "Social",
         "subquestion": "SQ2",
-        "description": "Opposition to plans for re-wetting land or for wisselpolders through political and legal channels: objections, appeals at the Council of State (Raad van State) and political pressure, which slow or stop a plan.",
+        "description": "Opposition to plans for re-wetting land through political and legal channels: objections, appeals at the Council of State (Raad van State) and political pressure, which slow or stop a plan.",
         "sources": "",
         "sourced": "no"
       }
@@ -499,19 +499,6 @@
         "sets domain": "Technological",
         "subquestion": "SQ1",
         "description": "Winter precipitation rapidly discharged to sea via field drains and pumping stations instead of recharging the lens.",
-        "sources": "",
-        "sourced": "no"
-      }
-    },
-    {
-      "_id": "elem-wisselpolder-land-raising",
-      "attributes": {
-        "label": "Wisselpolder land  raising",
-        "element type": "Auxiliary",
-        "adaptive practice": "yes",
-        "sets domain": "Technological",
-        "subquestion": "SQ2",
-        "description": "Temporary tidal inundation along the Westerschelde allowing marine sediment to raise polder land by 1.5–3 m over 50–100 years.",
         "sources": "",
         "sourced": "no"
       }
@@ -1410,25 +1397,6 @@
       "to": "elem-demand-for-deep-polder-drainage"
     },
     {
-      "_id": "conn-policy-resistance-legal-delays--wisselpolder-land-raising",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "−",
-        "polarity": "negative",
-        "delay": "no",
-        "description": "Objections and appeals slow or stop plans for a wisselpolder; depoldering farmland is contested in Zeeland.",
-        "sets link": "S to T",
-        "sets scope": "Cross-domain",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "-"
-      },
-      "from": "elem-policy-resistance-legal-delays",
-      "to": "elem-wisselpolder-land-raising"
-    },
-    {
       "_id": "conn-winter-rain-drained-away--freshwater-lens-recharge",
       "direction": "directed",
       "delayed": false,
@@ -1446,25 +1414,6 @@
       },
       "from": "elem-winter-rain-drained-away",
       "to": "elem-freshwater-lens-recharge"
-    },
-    {
-      "_id": "conn-wisselpolder-land-raising--polder-surface-elevation-nap",
-      "direction": "directed",
-      "delayed": true,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "yes",
-        "description": "Tidal siltation raises the polder surface by 1.5–3 m over 50–100 years, so the decision falls inside the 2050 horizon and most of the effect outside it. Whether a polder on Schouwen-Duiveland gets this siltation is unchecked: the evidence is from the Westerschelde, and the Oosterschelde and the Grevelingen differ; the link needs a sedimentation source for the Oosterschelde, or goes.",
-        "sets link": "T to E",
-        "sets scope": "Cross-domain",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "+"
-      },
-      "from": "elem-wisselpolder-land-raising",
-      "to": "elem-polder-surface-elevation-nap"
     },
     {
       "_id": "conn-crop-yield--farm-revenue",
@@ -2047,7 +1996,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 6efff2a",
+      "name": "CLD, model b2cd648",
       "description": "",
       "scale": 1,
       "center": {
@@ -2277,16 +2226,6 @@
           "pinned": true,
           "style": {},
           "element": "elem-winter-rain-drained-away"
-        },
-        {
-          "_id": "node-wisselpolder-land-raising",
-          "position": {
-            "x": 1440,
-            "y": 2160
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-wisselpolder-land-raising"
         },
         {
           "_id": "node-crop-yield",
@@ -2649,22 +2588,10 @@
           "connection": "conn-policy-resistance-legal-delays--demand-for-deep-polder-drainage"
         },
         {
-          "_id": "edge-policy-resistance-legal-delays--wisselpolder-land-raising",
-          "curvature": 0.0,
-          "style": {},
-          "connection": "conn-policy-resistance-legal-delays--wisselpolder-land-raising"
-        },
-        {
           "_id": "edge-winter-rain-drained-away--freshwater-lens-recharge",
           "curvature": 0.0,
           "style": {},
           "connection": "conn-winter-rain-drained-away--freshwater-lens-recharge"
-        },
-        {
-          "_id": "edge-wisselpolder-land-raising--polder-surface-elevation-nap",
-          "curvature": 0.0,
-          "style": {},
-          "connection": "conn-wisselpolder-land-raising--polder-surface-elevation-nap"
         },
         {
           "_id": "edge-crop-yield--farm-revenue",
@@ -2891,7 +2818,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      mode: loose;\n\n      option {\n        label: \"Social\";\n        selector: [\"sets domain\"=\"social\"];\n      }\n\n      option {\n        label: \"Ecological\";\n        selector: [\"sets domain\"=\"ecological\"];\n      }\n\n      option {\n        label: \"Technological\";\n        selector: [\"sets domain\"=\"technological\"];\n      }\n\n      option {\n        label: \"Cross-SETS links\";\n        selector: [\"sets scope\"=\"cross-domain\"];\n      }\n\n      option {\n        label: \"Unsourced\";\n        selector: [\"sourced\"=\"no\"];\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: false;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- generated by build.py: tints, box sizes ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-clay-dispersion-sodification { width: 280; height: 86; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 265; height: 86; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 354; height: 86; }\n#elem-external-freshwater-supply { width: 310; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-wisselpolder-land-raising { width: 280; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 340; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 295; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 206; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 280; height: 120; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 265; height: 86; }\n"
+      "style": "@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      mode: loose;\n\n      option {\n        label: \"Social\";\n        selector: [\"sets domain\"=\"social\"];\n      }\n\n      option {\n        label: \"Ecological\";\n        selector: [\"sets domain\"=\"ecological\"];\n      }\n\n      option {\n        label: \"Technological\";\n        selector: [\"sets domain\"=\"technological\"];\n      }\n\n      option {\n        label: \"Cross-SETS links\";\n        selector: [\"sets scope\"=\"cross-domain\"];\n      }\n\n      option {\n        label: \"Unsourced\";\n        selector: [\"sourced\"=\"no\"];\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: false;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- generated by build.py: tints, box sizes ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-clay-dispersion-sodification { width: 280; height: 86; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 265; height: 86; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 354; height: 86; }\n#elem-external-freshwater-supply { width: 310; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 340; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 295; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 206; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 280; height: 120; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 265; height: 86; }\n"
     }
   ]
 }

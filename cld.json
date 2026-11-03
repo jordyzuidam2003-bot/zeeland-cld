@@ -1,9 +1,9 @@
 {
   "model": {
-    "purpose": "Draft, for the team to check. What keeps arable farmers on Schouwen-Duiveland growing salt-sensitive crops and draining their land deeply, even as the soil and water get saltier and fresh water gets scarcer towards 2050? And which feedback loops keep them there, blocking the alternatives: storing fresh water, growing salt-tolerant crops, and wisselpolders? These three are the adaptive practices in the model because each works on a different part of the chain (the water supply, the crop's sensitivity, the land's height) and each is held back by something in the system; a practice that farmers raise in the group model building session and that fits neither of the three is a candidate to add. The CLD is the picture of the system the whole group works from in the next steps, the semi-quantitative analysis (SIP) and the multi-criteria analysis of LVVN's policy levers. It is not built around one outcome or one set of levers: the group picks those when that step starts.",
+    "purpose": "Draft, for the team to check. What keeps arable farmers on Schouwen-Duiveland growing salt-sensitive crops and draining their land deeply, even as the soil and water get saltier and fresh water gets scarcer towards 2050? And which feedback loops keep them there, blocking the alternatives: storing fresh water and growing salt-tolerant crops? These two are the adaptive practices in the model because each works on a different part of the chain (the water supply, the crop's sensitivity) and each is held back by something in the system; a practice that farmers raise in the group model building session and that fits neither is a candidate to add. The CLD is the picture of the system the whole group works from in the next steps, the semi-quantitative analysis (SIP) and the multi-criteria analysis of LVVN's policy levers. It is not built around one outcome or one set of levers: the group picks those when that step starts.",
     "spatial scale": "Draft, for the team to check. The island of Schouwen-Duiveland: its farmland polders, the rainwater lenses under them, the soils, the farms and the land market, and how the water board manages water levels. The island gets no fresh water from elsewhere, so all its fresh water is winter rain stored in the lenses. What is decided at provincial and national level (the water board's funding, LVVN, the Deltaprogramma Zoetwater) comes from outside the boundary: it enters as a policy input, and the CLD shows how it reaches the island.",
-    "time horizon": "Draft, for the team to check. 2050, the year the KNMI'23 climate scenarios and the project look ahead to. The slow parts of the system are judged against that date: the freshwater lens and land subsidence react within years, but raising land with a wisselpolder takes 50 to 100 years, so the decision to start one falls before 2050 while most of its effect comes after.",
-    "system boundary": "Draft, for the team to check. Inside the model (endogenous, explained by its loops): the water and salt system (recharge, lens thickness, seepage, upconing, salt in the root zone, soil structure), crop yield and farm finances (revenue, land value, debt, credit, room to invest), whether farmers adopt the adaptive practices, and the objections to re-wetting land and to wisselpolders. Outside the model (exogenous: they drive it, the model does not explain them): the climate (hotter, drier summers, wetter winters, sea-level rise), EU banking rules (Basel IV), market demand for alternative crops, fresh water supplied from outside and national water policy, and LVVN's levers. Farmland leaving arable use (a buy-out, stopping, another land use) is in the model as one variable, because the land market and succession drive it and water management follows it; what the land becomes afterwards is not. Left out: nature and energy, world prices of conventional crops, and other land uses (livestock, vertical farming), which replace arable farming rather than adapt it. We assume the adaptive practices work rather than model whether they do: the CLD shows what stops farmers adopting them, not whether each one works on the island."
+    "time horizon": "Draft, for the team to check. 2050, the year the KNMI'23 climate scenarios and the project look ahead to. The slow parts of the system are judged against that date: the freshwater lens, which a year's recharge barely moves, and land subsidence, which lowers the polders by millimetres a year.",
+    "system boundary": "Draft, for the team to check. Inside the model (endogenous, explained by its loops): the water and salt system (recharge, lens thickness, seepage, upconing, salt in the root zone, soil structure), crop yield and farm finances (revenue, land value, debt, credit, room to invest), whether farmers adopt the adaptive practices, and the objections to re-wetting land. Outside the model (exogenous: they drive it, the model does not explain them): the climate (hotter, drier summers, wetter winters, sea-level rise), EU banking rules (Basel IV), market demand for alternative crops, fresh water supplied from outside and national water policy, and LVVN's levers. Farmland leaving arable use (a buy-out, stopping, another land use) is in the model as one variable, because the land market and succession drive it and water management follows it; what the land becomes afterwards is not. Left out: nature and energy, world prices of conventional crops, and other land uses (livestock, vertical farming), which replace arable farming rather than adapt it; and wisselpolders, because the island's waters carry too little silt to raise its polders (see Polder surface elevation). We assume the adaptive practices work rather than model whether they do: the CLD shows what stops farmers adopting them, not whether each one works on the island."
   },
   "elements": [
     {
@@ -121,8 +121,12 @@
       "adaptive practice": false,
       "sets domain": "Ecological",
       "subquestion": "SQ1",
-      "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence or raised via sedimentation.",
-      "sources": [],
+      "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence. Tidal silt, let in through a wisselpolder, would barely raise it on this island: the Grevelingen has no tide, and the Oosterschelde has too little silt to raise polders on a large scale (De Mesel et al., 2013). Since the storm surge barrier its channels carry 52–70% less suspended sediment (Ma et al., 2014), under 10 mg/l near Zierikzee, and its salt marshes rise 3–10 mm a year (van Maldegem & de Jong, 2004), against 16–32 mm on young marshes along the Westerschelde (De Mesel et al., 2013).",
+      "sources": [
+        "de-mesel-2013",
+        "ma-2014",
+        "van-maldegem-2004"
+      ],
       "x": 480,
       "y": 2160
     },
@@ -253,7 +257,7 @@
       "adaptive practice": false,
       "sets domain": "Social",
       "subquestion": "SQ2",
-      "description": "Opposition to plans for re-wetting land or for wisselpolders through political and legal channels: objections, appeals at the Council of State (Raad van State) and political pressure, which slow or stop a plan.",
+      "description": "Opposition to plans for re-wetting land through political and legal channels: objections, appeals at the Council of State (Raad van State) and political pressure, which slow or stop a plan.",
       "sources": [],
       "x": 2160,
       "y": 1890
@@ -269,18 +273,6 @@
       "sources": [],
       "x": 960,
       "y": 1620
-    },
-    {
-      "id": "wisselpolder-land-raising",
-      "label": "Wisselpolder land raising",
-      "element type": "Auxiliary",
-      "adaptive practice": true,
-      "sets domain": "Technological",
-      "subquestion": "SQ2",
-      "description": "Temporary tidal inundation along the Westerschelde allowing marine sediment to raise polder land by 1.5–3 m over 50–100 years.",
-      "sources": [],
-      "x": 1440,
-      "y": 2160
     },
     {
       "id": "crop-yield",
@@ -792,29 +784,11 @@
       "curvature": 0.0
     },
     {
-      "from": "policy-resistance-legal-delays",
-      "to": "wisselpolder-land-raising",
-      "polarity": "-",
-      "delay": false,
-      "description": "Objections and appeals slow or stop plans for a wisselpolder; depoldering farmland is contested in Zeeland.",
-      "sources": [],
-      "curvature": 0.0
-    },
-    {
       "from": "winter-rain-drained-away",
       "to": "freshwater-lens-recharge",
       "polarity": "-",
       "delay": false,
       "description": "Water evacuated via drains cannot infiltrate to refill the freshwater lens.",
-      "sources": [],
-      "curvature": 0.0
-    },
-    {
-      "from": "wisselpolder-land-raising",
-      "to": "polder-surface-elevation-nap",
-      "polarity": "+",
-      "delay": true,
-      "description": "Tidal siltation raises the polder surface by 1.5–3 m over 50–100 years, so the decision falls inside the 2050 horizon and most of the effect outside it. Whether a polder on Schouwen-Duiveland gets this siltation is unchecked: the evidence is from the Westerschelde, and the Oosterschelde and the Grevelingen differ; the link needs a sedimentation source for the Oosterschelde, or goes.",
       "sources": [],
       "curvature": 0.0
     },

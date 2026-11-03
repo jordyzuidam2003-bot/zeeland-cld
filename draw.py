@@ -1,8 +1,8 @@
 """Draw the CLD as an SVG, from cld.json's own coordinates (y downwards).
 
 Imported by build.py, which writes docs/cld.svg and puts the same drawing inline in
-docs/index.html. svg(cld) returns the drawing as a string; boxes(cld) the box of every element,
-which build.py uses for its overlap warnings.
+docs/index.html. svg(cld) returns the drawing as a string; overlaps(cld) the warnings about
+boxes and regions that intersect, for build.py's report.
 
 What is drawn, from back to front:
   regions   one per SETS domain: the padded convex hull of its elements' boxes, corners rounded,
@@ -338,3 +338,60 @@ def svg(cld):
         "</svg>",
     ]
     return "\n".join(parts) + "\n"
+
+
+# --- overlap warnings -----------------------------------------------------------------------
+def overlaps(cld):
+    """Pairs of element boxes that intersect, and pairs of SETS regions that do."""
+    bxs = boxes(cld)
+    ids = [e["id"] for e in cld["elements"]]
+    out = []
+    for i, a in enumerate(ids):
+        for b in ids[i + 1:]:
+            p, q = bxs[a], bxs[b]
+            if p[0] < q[2] and q[0] < p[2] and p[1] < q[3] and q[1] < p[3]:
+                out.append(f"boxes overlap: {a} and {b}")
+    hulls = {}
+    for e in cld["elements"]:
+        x0, y0, x1, y1, _ = bxs[e["id"]]
+        hulls.setdefault(e["sets domain"], []).extend([(x0, y0), (x1, y0), (x0, y1), (x1, y1)])
+    hulls = {d: hull(pts) for d, pts in hulls.items()}
+    names = list(hulls)
+    for i, a in enumerate(names):
+        for b in names[i + 1:]:
+            # each region is its hull grown by REGION_PAD, so two intersect when the hulls
+            # come closer than twice that
+            if polygons_intersect(hulls[a], hulls[b]) or polygon_distance(hulls[a], hulls[b]) < 2 * REGION_PAD:
+                out.append(f"regions overlap: {a} and {b}")
+    return out
+
+
+def polygons_intersect(p, q):
+    """Separating axis test for two convex polygons."""
+    for poly in (p, q):
+        for i in range(len(poly)):
+            ax, ay = poly[i]
+            bx, by = poly[(i + 1) % len(poly)]
+            nx, ny = by - ay, ax - bx
+            proj_p = [nx * x + ny * y for x, y in p]
+            proj_q = [nx * x + ny * y for x, y in q]
+            if max(proj_p) < min(proj_q) or max(proj_q) < min(proj_p):
+                return False
+    return True
+
+
+def polygon_distance(p, q):
+    """The shortest distance between the borders of two polygons that do not intersect."""
+    def segment_distance(pt, a, b):
+        ax, ay = a
+        dx, dy = b[0] - ax, b[1] - ay
+        length2 = dx * dx + dy * dy
+        t = 0 if length2 == 0 else max(0, min(1, ((pt[0] - ax) * dx + (pt[1] - ay) * dy) / length2))
+        return hypot(pt[0] - (ax + t * dx), pt[1] - (ay + t * dy))
+
+    best = float("inf")
+    for poly, other in ((p, q), (q, p)):
+        for pt in poly:
+            for i in range(len(other)):
+                best = min(best, segment_distance(pt, other[i], other[(i + 1) % len(other)]))
+    return best

@@ -1,11 +1,19 @@
 """Check the CLD and build docs/, the files GitHub Pages serves.
 
-    python3 build.py           # check, write docs/, print the report
-    python3 build.py --check   # fail if docs/ is out of date (the pre-commit hook runs this)
+    python3 build.py                  # check, write docs/, print the report
+    python3 build.py --check          # fail if docs/ is out of date (the pre-commit hook runs this)
+    python3 build.py --layout FILE    # write the positions of FILE (layout.json, downloaded from
+                                      # the page's drag mode) into cld.json, then build
 
-Edit cld.json (elements, connections, loops, layout), references.json (sources) and
-view.scss (the Kumu view). Never edit docs/, which this script writes:
+Sources, edited by hand: cld.json (model texts, elements, connections, named loops, layout and
+link curvature), references.json (sources), view.scss (the Kumu view inside project.json) and
+page/ (index.html, a template with the placeholders <!-- SVG --> and <!-- DATA -->; app.js;
+style.css). draw.py draws the SVG. Never edit docs/, which this script writes:
 
+    docs/index.html    the page: the template with the drawing inline and the data as JSON
+    docs/app.js        copied from page/
+    docs/style.css     copied from page/
+    docs/cld.svg       the drawing on its own, the picture for the report
     docs/project.json  a full Kumu project export: import it into an emptied Kumu project
                        (green + > Import > Advanced > Import JSON file) and Kumu restores the
                        elements at their positions, the curved links and the view
@@ -107,6 +115,7 @@ def check(cld, refs):
                 warnings.append(f"{e['id']}: a Constant, yet links drive it")
         cited = {k for item in cld["elements"] + cld["connections"] for k in item.get("sources", [])}
         warnings += [f"reference {k!r} is cited nowhere" for k in refs if k not in cited]
+        warnings += draw.overlaps(cld)
     return errors, warnings
 
 

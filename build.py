@@ -171,8 +171,11 @@ def project(cld, refs, template):
     keep = lambda item, drop: {k: v for k, v in item.items() if k not in drop}
     elements = [{"_id": f'elem-{e["id"]}', "attributes": keep(e, {"id", "x", "y"})}
                 for e in bp["elements"]]
+    # the blueprint key "type" is "connection type" in a project export: the +/- at the arrowhead
     connections = [{"_id": f'conn-{c["id"]}', "direction": "directed", "delayed": c["delay"] == "yes",
-                    "reversed": False, "attributes": keep(c, {"id", "from", "to", "direction"}),
+                    "reversed": False,
+                    "attributes": {**keep(c, {"id", "from", "to", "direction", "type"}),
+                                   "connection type": c["type"]},
                     "from": f'elem-{c["from"]}', "to": f'elem-{c["to"]}'}
                    for c in bp["connections"]]
 

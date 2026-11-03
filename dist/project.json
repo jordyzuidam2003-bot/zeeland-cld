@@ -132,22 +132,6 @@
       "cluster": true
     },
     {
-      "_id": "attr-type",
-      "name": "Type",
-      "format": "string",
-      "private": false,
-      "limit": 1,
-      "category": "General",
-      "prompt": "list",
-      "locked": false,
-      "values": [
-        "+",
-        "-"
-      ],
-      "sort": false,
-      "cluster": true
-    },
-    {
       "_id": "attr-polarity",
       "name": "Polarity",
       "format": "string",
@@ -279,6 +263,22 @@
       "values": [
         "Cross-focus area",
         "Within focus area"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-connection-type",
+      "name": "Connection type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "+",
+        "-"
       ],
       "sort": false,
       "cluster": true
@@ -749,7 +749,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "Exogenous",
@@ -759,7 +758,8 @@
         "focus link": "Climate drivers to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-hotter-drier-summers",
       "to": "elem-crop-water-demand"
@@ -771,7 +771,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "Exogenous",
@@ -781,7 +780,8 @@
         "focus link": "Climate drivers to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-hotter-drier-summers",
       "to": "elem-estuary-salt-intrusion"
@@ -793,7 +793,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "Exogenous",
@@ -803,7 +802,8 @@
         "focus link": "Climate drivers to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-hotter-drier-summers",
       "to": "elem-freshwater-lens-recharge"
@@ -815,7 +815,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "Exogenous",
@@ -825,7 +824,8 @@
         "focus link": "Climate drivers to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-sea-level-rise",
       "to": "elem-estuary-salt-intrusion"
@@ -837,7 +837,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "Exogenous",
@@ -847,7 +846,8 @@
         "focus link": "Climate drivers to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-sea-level-rise",
       "to": "elem-saline-seepage-kwel"
@@ -859,7 +859,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "Exogenous",
@@ -869,7 +868,8 @@
         "focus link": "Climate drivers to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-wetter-winters",
       "to": "elem-freshwater-lens-recharge"
@@ -881,7 +881,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "Exogenous",
@@ -891,7 +890,8 @@
         "focus link": "Climate drivers to Water governance",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-wetter-winters",
       "to": "elem-winter-rain-drained-away"
@@ -903,7 +903,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -913,7 +912,8 @@
         "focus link": "Within Biophysical system",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-clay-dispersion-sodification",
       "to": "elem-soil-structure-usability"
@@ -925,7 +925,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -935,7 +934,8 @@
         "focus link": "Biophysical system to Water governance",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-crop-water-demand",
       "to": "elem-groundwater-extraction-for-irrigation"
@@ -947,7 +947,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "Exogenous",
@@ -957,7 +956,8 @@
         "focus link": "Biophysical system to Water governance",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-estuary-salt-intrusion",
       "to": "elem-brackish-irrigation-water-use"
@@ -969,7 +969,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -979,7 +978,8 @@
         "focus link": "Within Biophysical system",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-freshwater-lens-recharge",
       "to": "elem-freshwater-lens-thickness"
@@ -991,7 +991,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1001,7 +1000,8 @@
         "focus link": "Within Biophysical system",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-freshwater-lens-thickness",
       "to": "elem-root-zone-salinity"
@@ -1013,7 +1013,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1023,7 +1022,8 @@
         "focus link": "Within Biophysical system",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-freshwater-lens-thickness",
       "to": "elem-upconing-of-salt-groundwater"
@@ -1035,7 +1035,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1045,7 +1044,8 @@
         "focus link": "Biophysical system to Water governance",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-freshwater-lens-thickness",
       "to": "elem-freshwater-availability-for-crops"
@@ -1057,7 +1057,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1067,7 +1066,8 @@
         "focus link": "Within Biophysical system",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-land-subsidence",
       "to": "elem-polder-surface-elevation-nap"
@@ -1079,7 +1079,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R3_Wisselpolder",
@@ -1089,7 +1088,8 @@
         "focus link": "Within Biophysical system",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-polder-surface-elevation-nap",
       "to": "elem-saline-seepage-kwel"
@@ -1101,7 +1101,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1111,7 +1110,8 @@
         "focus link": "Within Biophysical system",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-root-zone-salinity",
       "to": "elem-clay-dispersion-sodification"
@@ -1123,7 +1123,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -1133,7 +1132,8 @@
         "focus link": "Biophysical system to Crops and market",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-root-zone-salinity",
       "to": "elem-crop-yield"
@@ -1145,7 +1145,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "B2_Crop_Adaptation",
@@ -1155,7 +1154,8 @@
         "focus link": "Biophysical system to Crops and market",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-root-zone-salinity",
       "to": "elem-salt-tolerant-crop-adoption"
@@ -1167,7 +1167,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1177,7 +1176,8 @@
         "focus link": "Within Biophysical system",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-saline-seepage-kwel",
       "to": "elem-freshwater-lens-thickness"
@@ -1189,7 +1189,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1199,7 +1198,8 @@
         "focus link": "Within Biophysical system",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-saline-seepage-kwel",
       "to": "elem-root-zone-salinity"
@@ -1211,7 +1211,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1221,7 +1220,8 @@
         "focus link": "Within Biophysical system",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-soil-structure-usability",
       "to": "elem-freshwater-lens-recharge"
@@ -1233,7 +1233,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -1243,7 +1242,8 @@
         "focus link": "Biophysical system to Crops and market",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-soil-structure-usability",
       "to": "elem-crop-yield"
@@ -1255,7 +1255,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -1265,7 +1264,8 @@
         "focus link": "Biophysical system to Finance and land",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-soil-structure-usability",
       "to": "elem-agricultural-land-value"
@@ -1277,7 +1277,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1287,7 +1286,8 @@
         "focus link": "Within Biophysical system",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-upconing-of-salt-groundwater",
       "to": "elem-root-zone-salinity"
@@ -1299,7 +1299,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1309,7 +1308,8 @@
         "focus link": "Water governance to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-brackish-irrigation-water-use",
       "to": "elem-root-zone-salinity"
@@ -1321,7 +1321,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1331,7 +1330,8 @@
         "focus link": "Water governance to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-demand-for-deep-polder-drainage",
       "to": "elem-land-subsidence"
@@ -1343,7 +1343,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1353,7 +1352,8 @@
         "focus link": "Water governance to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-demand-for-deep-polder-drainage",
       "to": "elem-saline-seepage-kwel"
@@ -1365,7 +1365,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1375,7 +1374,8 @@
         "focus link": "Within Water governance",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-demand-for-deep-polder-drainage",
       "to": "elem-winter-rain-drained-away"
@@ -1387,7 +1387,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "Exogenous",
@@ -1397,7 +1396,8 @@
         "focus link": "Within Water governance",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-external-freshwater-supply",
       "to": "elem-freshwater-availability-for-crops"
@@ -1409,7 +1409,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "Exogenous",
@@ -1419,7 +1418,8 @@
         "focus link": "Within Water governance",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-external-freshwater-supply",
       "to": "elem-groundwater-extraction-for-irrigation"
@@ -1431,7 +1431,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1441,7 +1440,8 @@
         "focus link": "Within Water governance",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-freshwater-availability-for-crops",
       "to": "elem-brackish-irrigation-water-use"
@@ -1453,7 +1453,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -1463,7 +1462,8 @@
         "focus link": "Water governance to Crops and market",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-freshwater-availability-for-crops",
       "to": "elem-crop-yield"
@@ -1475,7 +1475,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "B1_Water_Retention",
@@ -1485,7 +1484,8 @@
         "focus link": "Water governance to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-freshwater-storage-measures",
       "to": "elem-freshwater-lens-recharge"
@@ -1497,7 +1497,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "B1_Water_Retention",
@@ -1507,7 +1506,8 @@
         "focus link": "Within Water governance",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-freshwater-storage-measures",
       "to": "elem-winter-rain-drained-away"
@@ -1519,7 +1519,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1529,7 +1528,8 @@
         "focus link": "Water governance to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-groundwater-extraction-for-irrigation",
       "to": "elem-freshwater-lens-thickness"
@@ -1541,7 +1541,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1551,7 +1550,8 @@
         "focus link": "Water governance to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-groundwater-extraction-for-irrigation",
       "to": "elem-upconing-of-salt-groundwater"
@@ -1563,7 +1563,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "B3_Governance_Delay",
@@ -1573,7 +1572,8 @@
         "focus link": "Within Water governance",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-policy-resistance-legal-delays",
       "to": "elem-demand-for-deep-polder-drainage"
@@ -1585,7 +1585,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "B3_Governance_Delay",
@@ -1595,7 +1594,8 @@
         "focus link": "Within Water governance",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-policy-resistance-legal-delays",
       "to": "elem-wisselpolder-land-raising"
@@ -1607,7 +1607,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R1_Biophysical",
@@ -1617,7 +1616,8 @@
         "focus link": "Water governance to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-winter-rain-drained-away",
       "to": "elem-freshwater-lens-recharge"
@@ -1629,7 +1629,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R3_Wisselpolder",
@@ -1639,7 +1638,8 @@
         "focus link": "Water governance to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-wisselpolder-land-raising",
       "to": "elem-polder-surface-elevation-nap"
@@ -1651,7 +1651,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -1661,7 +1660,8 @@
         "focus link": "Crops and market to Finance and land",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-crop-yield",
       "to": "elem-farm-revenue"
@@ -1673,7 +1673,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R4_Market_Scale",
@@ -1683,7 +1682,8 @@
         "focus link": "Within Crops and market",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-market-demand-for-alternative-crops",
       "to": "elem-processing-capacity-for-alternative-crops"
@@ -1695,7 +1695,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R4_Market_Scale",
@@ -1705,7 +1704,8 @@
         "focus link": "Within Crops and market",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-market-demand-for-alternative-crops",
       "to": "elem-salt-tolerant-crop-adoption"
@@ -1717,7 +1717,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R4_Market_Scale",
@@ -1727,7 +1726,8 @@
         "focus link": "Within Crops and market",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-processing-capacity-for-alternative-crops",
       "to": "elem-salt-tolerant-crop-adoption"
@@ -1739,7 +1739,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "B2_Crop_Adaptation",
@@ -1749,7 +1748,8 @@
         "focus link": "Crops and market to Biophysical system",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-salt-tolerant-crop-adoption",
       "to": "elem-crop-water-demand"
@@ -1761,7 +1761,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "B2_Crop_Adaptation",
@@ -1771,7 +1770,8 @@
         "focus link": "Within Crops and market",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-salt-tolerant-crop-adoption",
       "to": "elem-crop-yield"
@@ -1783,7 +1783,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R4_Market_Scale",
@@ -1793,7 +1792,8 @@
         "focus link": "Within Crops and market",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-salt-tolerant-crop-adoption",
       "to": "elem-processing-capacity-for-alternative-crops"
@@ -1805,7 +1805,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -1815,7 +1814,8 @@
         "focus link": "Within Finance and land",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-agricultural-land-value",
       "to": "elem-bank-credit-freeze-risk-premiums"
@@ -1827,7 +1827,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "B3_Governance_Delay",
@@ -1837,7 +1836,8 @@
         "focus link": "Within Finance and land",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-agricultural-land-value",
       "to": "elem-fear-of-expropriation-planning-blight"
@@ -1849,7 +1849,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -1859,7 +1858,8 @@
         "focus link": "Within Finance and land",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-agricultural-land-value",
       "to": "elem-mortgage-debt-financial-leverage"
@@ -1871,7 +1871,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -1881,7 +1880,8 @@
         "focus link": "Within Finance and land",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-bank-credit-freeze-risk-premiums",
       "to": "elem-farmers-capacity-to-invest"
@@ -1893,7 +1893,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "Exogenous",
@@ -1903,7 +1902,8 @@
         "focus link": "Within Finance and land",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-basel-iv-capital-requirements",
       "to": "elem-bank-credit-freeze-risk-premiums"
@@ -1915,7 +1915,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -1925,7 +1924,8 @@
         "focus link": "Finance and land to Water governance",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-dependence-on-high-margin-salt-sensitive-crops",
       "to": "elem-demand-for-deep-polder-drainage"
@@ -1937,7 +1937,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -1947,7 +1946,8 @@
         "focus link": "Finance and land to Water governance",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-dependence-on-high-margin-salt-sensitive-crops",
       "to": "elem-groundwater-extraction-for-irrigation"
@@ -1959,7 +1959,6 @@
       "reversed": false,
       "attributes": {
         "label": "−",
-        "type": "-",
         "polarity": "negative",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -1969,7 +1968,8 @@
         "focus link": "Finance and land to Crops and market",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "-"
       },
       "from": "elem-dependence-on-high-margin-salt-sensitive-crops",
       "to": "elem-salt-tolerant-crop-adoption"
@@ -1981,7 +1981,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -1991,7 +1990,8 @@
         "focus link": "Within Finance and land",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-farm-revenue",
       "to": "elem-agricultural-land-value"
@@ -2003,7 +2003,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -2013,7 +2012,8 @@
         "focus link": "Within Finance and land",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-farm-revenue",
       "to": "elem-farmers-capacity-to-invest"
@@ -2025,7 +2025,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "B1_Water_Retention",
@@ -2035,7 +2034,8 @@
         "focus link": "Finance and land to Water governance",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-farmers-capacity-to-invest",
       "to": "elem-freshwater-storage-measures"
@@ -2047,7 +2047,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "B2_Crop_Adaptation",
@@ -2057,7 +2056,8 @@
         "focus link": "Finance and land to Crops and market",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-farmers-capacity-to-invest",
       "to": "elem-salt-tolerant-crop-adoption"
@@ -2069,7 +2069,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "B3_Governance_Delay",
@@ -2079,7 +2078,8 @@
         "focus link": "Finance and land to Water governance",
         "focus scope": "Cross-focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-fear-of-expropriation-planning-blight",
       "to": "elem-policy-resistance-legal-delays"
@@ -2091,7 +2091,6 @@
       "reversed": false,
       "attributes": {
         "label": "+",
-        "type": "+",
         "polarity": "positive",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
@@ -2101,7 +2100,8 @@
         "focus link": "Within Finance and land",
         "focus scope": "Within focus area",
         "sources": "",
-        "sourced": "no"
+        "sourced": "no",
+        "connection type": "+"
       },
       "from": "elem-mortgage-debt-financial-leverage",
       "to": "elem-dependence-on-high-margin-salt-sensitive-crops"

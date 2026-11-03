@@ -50,11 +50,12 @@
   }
 }
 
-/* positions come from each element's x and y fields in dist/kumu.json */
+/* positions come from each element's x and y fields in dist/kumu.json; scatter's y axis
+   points up and cld.json's points down, hence -y */
 @settings {
   layout: scatter;
   layout-x: "x";
-  layout-y: "y";
+  layout-y: "-y";
   theme: light;
   background-color: #FFFFFF;
   culling: false;

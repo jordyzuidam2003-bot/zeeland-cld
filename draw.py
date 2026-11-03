@@ -33,9 +33,9 @@ STROKE_COLOUR = "#444444"
 LINK_WIDTH = 2.5
 LINK_COLOUR = {"+": "#2166AC", "-": "#B2182B"}
 SIGN_TEXT = {"+": "+", "-": "−"}
-SIGN_SIZE = 34
+SIGN_SIZE = 42
 LEGEND_SIZE = 36               # the legend reads at a glance, so larger than the labels (Jordy)
-ARROW = 14                     # arrowhead length, in drawing units
+ARROW = 22                     # arrowhead length, in drawing units
 TINT = {  # each box's fill: the hue of Figure 1 in the group's Project Plan, as a pale tint
     "Ecological": "#9DD9AC", "Social": "#ABC9F4", "Technological": "#FBC07C"}
 # a new TINT first passes the dataviz skill's validator: black text and both link colours read
@@ -158,14 +158,14 @@ def link_svg(c, a, b):
              f'fill="none" stroke="{colour}" stroke-width="{LINK_WIDTH}" marker-end="url(#arrow-{"plus" if c["polarity"] == "+" else "minus"})"/>']
     sx, sy = sign_position(p0, ctrl, p2)
     parts.append(f'<text class="sign" x="{sx:.1f}" y="{sy:.1f}" text-anchor="middle" dominant-baseline="central" '
-                 f'font-size="{SIGN_SIZE}" font-weight="bold" fill="{colour}">{SIGN_TEXT[c["polarity"]]}</text>')
+                 f'font-size="{SIGN_SIZE}" font-weight="bold" fill="{colour}" stroke="white" stroke-width="6" paint-order="stroke">{SIGN_TEXT[c["polarity"]]}</text>')
     if c["delay"]:
         parts.append(f'<path class="delay" d="{delay_path(p0, ctrl, p2)}" stroke="{STROKE_COLOUR}" stroke-width="2.5" fill="none"/>')
     parts.append("</g>")
     return "\n".join(parts)
 
 
-def sign_position(p0, ctrl, p2, back=26, out=16):
+def sign_position(p0, ctrl, p2, back=36, out=20):
     """Beside the arrowhead: `back` units before the end, `out` units to the outside of the curve."""
     tx, ty = tangent(p0, ctrl, p2, 0.92)
     n = hypot(tx, ty) or 1

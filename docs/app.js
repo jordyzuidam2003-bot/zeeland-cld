@@ -128,7 +128,7 @@ svg.addEventListener("click", ev => {
 
 // --- drag mode ------------------------------------------------------------------------------
 // The link formula is draw.py's link_path(), sign_position() and delay_path(): keep them the same.
-const ARROW = 14;
+const ARROW = 22;
 const bezier = (p0, p1, p2, t) => {
   const s = 1 - t;
   return [s * s * p0[0] + 2 * s * t * p1[0] + t * t * p2[0], s * s * p0[1] + 2 * s * t * p1[1] + t * t * p2[1]];
@@ -157,7 +157,7 @@ function linkPath(a, b, curvature) {
   const s = t0 < 1 ? (t1 - t0) / (1 - t0) : 0;
   return [r0, lerp(r0, r1, s), bezier(ca, ctrl, cb, t1)];
 }
-function signPosition(p0, ctrl, p2, back = 26, out = 16) {
+function signPosition(p0, ctrl, p2, back = 36, out = 20) {
   const [tx, ty] = tangent(p0, ctrl, p2, 0.92);
   const n = Math.hypot(tx, ty) || 1;
   const ux = tx / n, uy = ty / n;

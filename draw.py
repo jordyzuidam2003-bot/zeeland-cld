@@ -5,8 +5,10 @@ docs/index.html. svg(cld) returns the drawing as a string; overlaps(cld) the war
 boxes and regions that intersect, for build.py's report.
 
 What is drawn, from back to front:
-  regions   one per SETS domain: the padded convex hull of its elements' boxes, corners rounded,
-            filled with a pale tint of the domain's hue, the domain's name in large faint text
+  regions   one per SETS domain: a blob around its elements' boxes (their convex hull, padded,
+            corners rounded, the border wobbling a little so it reads as hand-drawn (Jordy),
+            deterministically so a rebuild is byte-identical), filled with a pale tint of the
+            domain's hue, the domain's name in large faint text
   links     a quadratic Bezier from box border to box border, the sign beside the arrowhead on
             the outside of the curve, a delay as two short strokes across the midpoint
   elements  the label in a white box: square corners for a Stock, rounded for an Auxiliary,
@@ -18,13 +20,14 @@ The link formula is duplicated in page/app.js (drag mode recomputes a moved elem
 keep link_path() and its JS twin the same.
 """
 
+from hashlib import sha256
 from math import atan2, cos, hypot, pi, sin
 
 # --- style -------------------------------------------------------------------------------
 FONT = "Helvetica Neue, Helvetica, Arial, sans-serif"
-FONT_SIZE = 22
-LINE_HEIGHT = 27
-CHAR_WIDTH = 0.56 * FONT_SIZE  # average glyph width of the font stack, an estimate the page checks
+FONT_SIZE = 28
+LINE_HEIGHT = 34
+CHAR_WIDTH = 0.53 * FONT_SIZE  # average glyph width of the font stack, an estimate the page checks
 WRAP = 22                      # characters per line, about
 PAD_X, PAD_Y = 14, 9
 STROKE, STROKE_THICK = 1.5, 5
@@ -32,13 +35,15 @@ STROKE_COLOUR = "#444444"
 LINK_WIDTH = 2.5
 LINK_COLOUR = {"+": "#2166AC", "-": "#B2182B"}
 SIGN_TEXT = {"+": "+", "-": "−"}
-SIGN_SIZE = 28
+SIGN_SIZE = 34
+LEGEND_SIZE = 36               # the legend reads at a glance, so larger than the labels (Jordy)
 ARROW = 14                     # arrowhead length, in drawing units
-REGION_PAD = 70
+REGION_PAD = 90
+REGION_WOBBLE = 0.3            # of REGION_PAD: how far a region's border strays, for a hand-drawn look
 REGION = {  # the hue of Figure 1 in the group's Project Plan, as a pale tint
     "Ecological": "#BDE3C7", "Social": "#C5DAF4", "Technological": "#F9D2AB"}
 REGION_NAME_COLOUR = "#777777"
-REGION_NAME_SIZE = 96
+REGION_NAME_SIZE = 120
 MARGIN = 40
 
 
@@ -214,32 +219,55 @@ def cross(o, a, b):
     return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])
 
 
-def region_path(points, pad):
-    """The hull offset outward by `pad`, corners as arcs of radius `pad`: one smooth closed curve."""
+def region_path(points, pad, seed=""):
+    """A blob around the points: the hull grown by `pad` with rounded corners, sampled, each
+    sample moved in or out by a wobble that `seed` fixes, and a closed Catmull-Rom spline through
+    the samples (as cubic Beziers). Returns (path, hull)."""
     h = hull(points)
     if len(h) < 3:
         return "", h
     n = len(h)
-    d = []
+    samples = []  # (point, outward unit normal)
     for i in range(n):
         p, q = h[i], h[(i + 1) % n]
         ex, ey = q[0] - p[0], q[1] - p[1]
         length = hypot(ex, ey) or 1
-        # outward normal of a counter-clockwise (y-up) hull is to the right of the edge on a
-        # y-down canvas: (ey, -ex)
-        nx, ny = ey / length * pad, -ex / length * pad
-        a = (p[0] + nx, p[1] + ny)
-        b = (q[0] + nx, q[1] + ny)
-        d.append(f"{'M' if i == 0 else 'A ' + str(pad) + ' ' + str(pad) + ' 0 0 0'} {a[0]:.1f} {a[1]:.1f}")
-        d.append(f"L {b[0]:.1f} {b[1]:.1f}")
-    first = d[0].split()
-    d.append(f"A {pad} {pad} 0 0 0 {first[1]} {first[2]} Z")
-    return " ".join(d), h
+        nx, ny = ey / length, -ex / length  # outward normal of the edge (hull is counter-clockwise, y-up)
+        r = h[i - 1]
+        px, py = p[0] - r[0], p[1] - r[1]
+        plen = hypot(px, py) or 1
+        mx, my = py / plen, -px / plen  # outward normal of the edge before p
+        # the corner at p: an arc from the previous edge's normal to this edge's normal
+        a0, a1 = atan2(my, mx), atan2(ny, nx)
+        while a1 < a0:
+            a1 += 2 * pi
+        steps = max(1, round((a1 - a0) / (pi / 4)))
+        for k in range(steps + 1):
+            a = a0 + (a1 - a0) * k / steps
+            samples.append(((p[0] + cos(a) * pad, p[1] + sin(a) * pad), (cos(a), sin(a))))
+        # along the edge, a sample every 350 units or so
+        pieces = max(1, round(length / 350))
+        for k in range(1, pieces):
+            t = k / pieces
+            samples.append(((p[0] + ex * t + nx * pad, p[1] + ey * t + ny * pad), (nx, ny)))
+    pts = []
+    for i, ((x, y), (nx, ny)) in enumerate(samples):
+        digest = sha256(f"{seed}:{i}".encode()).digest()
+        wobble = (digest[0] / 255 - 0.5) * 2 * REGION_WOBBLE * pad
+        pts.append((x + nx * wobble, y + ny * wobble))
+    m = len(pts)
+    d = [f"M {pts[0][0]:.1f} {pts[0][1]:.1f}"]
+    for i in range(m):
+        p0, p1, p2, p3 = pts[i - 1], pts[i], pts[(i + 1) % m], pts[(i + 2) % m]
+        c1 = (p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6)
+        c2 = (p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6)
+        d.append(f"C {c1[0]:.1f} {c1[1]:.1f} {c2[0]:.1f} {c2[1]:.1f} {p2[0]:.1f} {p2[1]:.1f}")
+    return " ".join(d) + " Z", h
 
 
 def region_svg(domain, bxs):
     corners = [p for (x0, y0, x1, y1, _) in bxs for p in ((x0, y0), (x1, y0), (x0, y1), (x1, y1))]
-    path, h = region_path(corners, REGION_PAD)
+    path, h = region_path(corners, REGION_PAD, seed=domain)
     cx = sum(p[0] for p in h) / len(h)
     cy = sum(p[1] for p in h) / len(h)
     return "\n".join([
@@ -252,8 +280,9 @@ def region_svg(domain, bxs):
 
 def region_bounds(bxs):
     corners = [p for (x0, y0, x1, y1, _) in bxs for p in ((x0, y0), (x1, y0), (x0, y1), (x1, y1))]
-    return (min(p[0] for p in corners) - REGION_PAD, min(p[1] for p in corners) - REGION_PAD,
-            max(p[0] for p in corners) + REGION_PAD, max(p[1] for p in corners) + REGION_PAD)
+    reach = REGION_PAD * (1 + REGION_WOBBLE)
+    return (min(p[0] for p in corners) - reach, min(p[1] for p in corners) - reach,
+            max(p[0] for p in corners) + reach, max(p[1] for p in corners) + reach)
 
 
 # --- loops ----------------------------------------------------------------------------------
@@ -278,31 +307,35 @@ def loop_svg(loop, bxs):
 # --- legend ---------------------------------------------------------------------------------
 def legend_svg(x, y):
     """Bottom-left legend; returns (svg, width, height)."""
-    row, sw = 34, 56  # row height, swatch width
+    f = LEGEND_SIZE
+    row, sw, sh = f * 1.5, f * 2.6, f * 0.9  # row height, swatch width and height
     items = []
+
     def swatch(i, body, text):
-        yy = y + 30 + i * row
+        yy = y + f * 1.4 + i * row
         items.append(body(x, yy))
-        items.append(f'<text x="{x + sw + 14:.1f}" y="{yy + 6:.1f}">{text}</text>')
-    items.append(f'<text x="{x:.1f}" y="{y + 4:.1f}" font-weight="bold">Legend</text>')
+        items.append(f'<text x="{x + sw + f * 0.6:.1f}" y="{yy + f * 0.35:.1f}" font-size="{f}">{text}</text>')
+
+    items.append(f'<text x="{x:.1f}" y="{y:.1f}" font-size="{f}" font-weight="bold">Legend</text>')
     for i, (domain, tint) in enumerate(REGION.items()):
-        swatch(i, lambda xx, yy, t=tint: f'<rect x="{xx}" y="{yy - 11}" width="{sw}" height="22" rx="8" fill="{t}"/>', f"{domain} domain")
+        swatch(i, lambda xx, yy, t=tint: f'<rect x="{xx:.1f}" y="{yy - sh / 2:.1f}" width="{sw:.1f}" height="{sh:.1f}" rx="{sh / 2:.1f}" fill="{t}"/>', f"{domain} domain")
     n = len(REGION)
-    box = lambda xx, yy, extra, rx, width=STROKE: (f'<rect x="{xx}" y="{yy - 11}" width="{sw}" height="22" rx="{rx}" fill="white" '
+    box = lambda xx, yy, extra, rx, width=STROKE: (f'<rect x="{xx:.1f}" y="{yy - sh / 2:.1f}" width="{sw:.1f}" height="{sh:.1f}" rx="{rx}" fill="white" '
                                                    f'stroke="{STROKE_COLOUR}" stroke-width="{width}" {extra}/>')
     swatch(n, lambda xx, yy: box(xx, yy, "", 0), "Stock")
-    swatch(n + 1, lambda xx, yy: box(xx, yy, "", 6), "Auxiliary")
-    swatch(n + 2, lambda xx, yy: box(xx, yy, 'stroke-dasharray="8 5"', 6), "Constant (exogenous)")
-    swatch(n + 3, lambda xx, yy: box(xx, yy, "", 6, STROKE_THICK), "Adaptive practice")
-    line = lambda xx, yy, colour, name: (f'<path d="M {xx} {yy} L {xx + sw - ARROW} {yy}" stroke="{colour}" '
+    swatch(n + 1, lambda xx, yy: box(xx, yy, "", 9), "Auxiliary")
+    swatch(n + 2, lambda xx, yy: box(xx, yy, 'stroke-dasharray="8 5"', 9), "Constant (exogenous)")
+    swatch(n + 3, lambda xx, yy: box(xx, yy, "", 9, STROKE_THICK), "Adaptive practice")
+    line = lambda xx, yy, colour, name: (f'<path d="M {xx:.1f} {yy:.1f} L {xx + sw - ARROW:.1f} {yy:.1f}" stroke="{colour}" '
                                          f'stroke-width="{LINK_WIDTH}" fill="none" marker-end="url(#arrow-{name})"/>')
     swatch(n + 4, lambda xx, yy: line(xx, yy, LINK_COLOUR["+"], "plus"), "+ : change in the same direction")
     swatch(n + 5, lambda xx, yy: line(xx, yy, LINK_COLOUR["-"], "minus"), "− : change in the opposite direction")
-    swatch(n + 6, lambda xx, yy: (f'<path d="M {xx} {yy} L {xx + sw} {yy}" stroke="{STROKE_COLOUR}" stroke-width="{LINK_WIDTH}"/>'
-                                  f'<path d="M {xx + sw / 2 - 4} {yy - 9} L {xx + sw / 2 - 4} {yy + 9} M {xx + sw / 2 + 4} {yy - 9} L {xx + sw / 2 + 4} {yy + 9}" '
+    swatch(n + 6, lambda xx, yy: (f'<path d="M {xx:.1f} {yy:.1f} L {xx + sw:.1f} {yy:.1f}" stroke="{STROKE_COLOUR}" stroke-width="{LINK_WIDTH}"/>'
+                                  f'<path d="M {xx + sw / 2 - 4:.1f} {yy - 9:.1f} L {xx + sw / 2 - 4:.1f} {yy + 9:.1f} M {xx + sw / 2 + 4:.1f} {yy - 9:.1f} L {xx + sw / 2 + 4:.1f} {yy + 9:.1f}" '
                                   f'stroke="{STROKE_COLOUR}" stroke-width="2.5"/>'), "Delay")
-    height = 30 + (n + 7) * row
-    return f'<g class="legend">\n' + "\n".join(items) + "\n</g>", 420, height
+    height = f * 1.4 + (n + 7) * row
+    width = sw + f * 0.6 + len("− : change in the opposite direction") * CHAR_WIDTH / FONT_SIZE * f
+    return '<g class="legend">\n' + "\n".join(items) + "\n</g>", width, height
 
 
 # --- the drawing ----------------------------------------------------------------------------

@@ -37,7 +37,7 @@ SIGN_SIZE = 34
 LEGEND_SIZE = 36               # the legend reads at a glance, so larger than the labels (Jordy)
 ARROW = 14                     # arrowhead length, in drawing units
 TINT = {  # each box's fill: the hue of Figure 1 in the group's Project Plan, as a pale tint
-    "Ecological": "#BDE3C7", "Social": "#C5DAF4", "Technological": "#F9D2AB"}
+    "Ecological": "#9DD9AC", "Social": "#ABC9F4", "Technological": "#FBC07C"}
 MARGIN = 40
 
 

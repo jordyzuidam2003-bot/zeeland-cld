@@ -28,7 +28,8 @@ builds and pushes, so nobody else needs git or Python.
 2. `python3 build.py` checks the model and rebuilds `docs/`. It stops on an error (an unknown
    element, a source missing from `references.json`, a named loop that is not closed or whose
    R/B does not match its polarities) and prints the source coverage and any warnings: a model
-   text still empty, an element without links, two boxes that overlap.
+   text still empty, an element without links, two boxes that overlap, a link and its reverse
+   drawn on one curve.
 3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
    a commit whose `docs/` is out of date.
 

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 42b06d8, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 1a08082, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -1939,7 +1939,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 42b06d8",
+      "name": "CLD, model 1a08082",
       "description": "",
       "scale": 1,
       "center": {
@@ -2586,7 +2586,7 @@
         },
         {
           "_id": "edge-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
-          "curvature": 0.2,
+          "curvature": -0.15,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops"
         },

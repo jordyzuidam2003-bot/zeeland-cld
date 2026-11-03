@@ -195,9 +195,9 @@
 <path class="link-path" d="M 1881.8 583.0 Q 1792.4 683.5 1703.1 784.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="1732.3" y="775.2" text-anchor="middle" dominant-baseline="central" font-size="34" font-weight="bold" fill="#2166AC">+</text>
 </g>
-<g class="link" data-from="salt-tolerant-crop-adoption" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="false" data-curvature="0.2">
-<path class="link-path" d="M 1969.9 497.0 Q 2192.9 315.7 2470.2 279.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="2441.8" y="267.8" text-anchor="middle" dominant-baseline="central" font-size="34" font-weight="bold" fill="#2166AC">+</text>
+<g class="link" data-from="salt-tolerant-crop-adoption" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="false" data-curvature="-0.15">
+<path class="link-path" d="M 2067.6 522.2 Q 2345.0 473.6 2580.4 313.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="2567.0" y="340.4" text-anchor="middle" dominant-baseline="central" font-size="34" font-weight="bold" fill="#2166AC">+</text>
 </g>
 <g class="link" data-from="agricultural-land-value" data-to="bank-credit-freeze-risk-premiums" data-sign="-" data-delay="false" data-curvature="0.0">
 <path class="link-path" d="M 2652.7 1307.0 Q 2760.0 945.0 2867.3 583.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>

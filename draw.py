@@ -277,7 +277,7 @@ def svg(cld):
 
 # --- overlap warnings -----------------------------------------------------------------------
 def overlaps(cld):
-    """Pairs of element boxes that intersect."""
+    """Pairs of element boxes that intersect, and a link and its reverse drawn on one curve."""
     bxs = boxes(cld)
     ids = [e["id"] for e in cld["elements"]]
     out = []
@@ -286,4 +286,14 @@ def overlaps(cld):
             p, q = bxs[a], bxs[b]
             if p[0] < q[2] and q[0] < p[2] and p[1] < q[3] and q[1] < p[3]:
                 out.append(f"boxes overlap: {a} and {b}")
+    # a -> b at curvature k and b -> a at -k share one curve, so the loop reads as one line with
+    # two arrowheads; they read as two once their middles lie a sign's height apart
+    paths = {(c["from"], c["to"]): link_path(bxs[c["from"]], bxs[c["to"]], c["curvature"])
+             for c in cld["connections"]}
+    for (a, b), p in paths.items():
+        q = paths.get((b, a))
+        if q and a < b:
+            m, n = bezier(*p, 0.5), bezier(*q, 0.5)
+            if hypot(m[0] - n[0], m[1] - n[1]) < SIGN_SIZE:
+                out.append(f"links on one curve: {a} -> {b} and back (give both curvatures one sign)")
     return out

@@ -184,11 +184,13 @@ def project(cld, refs, template):
     for item in [e["attributes"] for e in elements] + [c["attributes"] for c in connections]:
         for k, v in item.items():
             values.setdefault(k, set()).add(v)
+    # Kumu's own type fields are spelled this way; "Connection type" would be a second field
+    builtin = {"element type": "Element Type", "connection type": "Connection Type"}
     attributes = []
     for k, seen in values.items():
         text = k in ("description", "sources")
         listed = not text and k != "label" and len(seen) <= 20
-        attributes.append({"_id": "attr-" + k.replace(" ", "-"), "name": k[0].upper() + k[1:],
+        attributes.append({"_id": "attr-" + k.replace(" ", "-"), "name": builtin.get(k, k[0].upper() + k[1:]),
                            "format": "text" if text else "string", "private": False, "limit": 1,
                            "category": "General", "prompt": "list" if listed else "autocomplete",
                            "locked": False, "values": sorted(seen) if listed else [],

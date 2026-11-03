@@ -22,7 +22,7 @@
     },
     {
       "_id": "attr-element-type",
-      "name": "Element type",
+      "name": "Element Type",
       "format": "string",
       "private": false,
       "limit": 1,
@@ -269,7 +269,7 @@
     },
     {
       "_id": "attr-connection-type",
-      "name": "Connection type",
+      "name": "Connection Type",
       "format": "string",
       "private": false,
       "limit": 1,

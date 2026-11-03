@@ -25,7 +25,6 @@ import argparse
 import hashlib
 import json
 import sys
-from math import pi
 from pathlib import Path
 
 import draw
@@ -207,24 +206,12 @@ def page(cld, refs, version):
 
 
 def region_shape(h):
-    """The pill Kumu draws for a SETS region: centred on the hull's bounding box, a segment along
-    its longer side grown by the smallest radius that covers the region (the hull grown by
-    draw.REGION_PAD), the segment's length chosen for the least area. Returns (x, y, w, h)."""
+    """The box Kumu draws for a SETS region: the bounding box of the region (the hull grown by
+    draw.REGION_PAD). Kumu's pill is a rectangle with rounded corners. Returns (x, y, w, h)."""
     xs, ys = [p[0] for p in h], [p[1] for p in h]
-    cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
-    wide = max(xs) - min(xs) >= max(ys) - min(ys)
-    longest = (max(xs) - min(xs) if wide else max(ys) - min(ys)) / 2
-    best = None
-    for k in range(101):
-        half = longest * k / 100
-        a, b = ((cx - half, cy), (cx + half, cy)) if wide else ((cx, cy - half), (cx, cy + half))
-        r = draw.REGION_PAD + max(draw.segment_distance(p, a, b) for p in h)
-        area = 4 * r * half + pi * r * r
-        if best is None or area < best[0]:
-            best = (area, half, r)
-    _, half, r = best
-    size = (round(2 * (half + r)), round(2 * r))
-    return round(cx), round(cy), *(size if wide else size[::-1])
+    pad = draw.REGION_PAD
+    return (round((min(xs) + max(xs)) / 2), round((min(ys) + max(ys)) / 2),
+            round(max(xs) - min(xs) + 2 * pad), round(max(ys) - min(ys) + 2 * pad))
 
 
 def project(cld, refs, template, version):

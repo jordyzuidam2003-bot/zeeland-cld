@@ -116,10 +116,10 @@ Kumu restores the map with the elements at their positions, the view from `view.
 project's name, which the export sets to `cbp-cld`.
 
 The view follows the page's look as far as Kumu can: white boxes with the label inside, square
-corners for a stock and a pill for the others, a second outer border for a constant (Kumu has no
-dashed border), a thick border for an adaptive practice; links of one width, blue `+` and red
-`−`. Each SETS region is a background element: a pill in the region's tint that covers the
-page's region, with the domain's name. `build.py` adds the rules that size each box and each
+corners for a stock and rounded ones for the others, an italic label for a constant (Kumu has
+no dashed border), a thick border for an adaptive practice; links of one width, blue `+` and red
+`−`. Each SETS region is a background element: a box with rounded corners in the region's tint
+over the page's region, with the domain's name. `build.py` adds the rules that size each box and each
 region below `view.scss`, and a double space where the page breaks a label's line (Kumu's manual
 line break). The project's description and the map's name carry the model version, so Kumu says
 which model it holds.

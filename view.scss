@@ -31,7 +31,7 @@
     }
 
     text {
-      value: "**Regions** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded = auxiliary, double border = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay";
+      value: "**Regions** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay";
     }
   }
 }
@@ -45,13 +45,15 @@
 
 /* ---------- Elements: the page's look, values from draw.py ---------- */
 /* each box's width and height, and each SETS region's size and tint, are rules build.py
-   generates below this view in docs/project.json */
+   generates below this view in docs/project.json. Kumu draws text at about 0.6 of its
+   font-size in map units, so each font-size is the page's x 1.5, to fill the box draw.py fits */
+/* pill: Kumu's rectangle with rounded corners */
 element {
   shape: pill;
   color: #FFFFFF;
   border-color: #444444;
   border-width: 1.5;
-  font-size: 28;
+  font-size: 42;
   font-weight: normal;
   font-color: #000000;
   text-align: center;
@@ -64,11 +66,9 @@ element {
   shape: rectangle;
 }
 
-/* Kumu has no dashed border: a constant gets a second, outer one */
+/* Kumu has no dashed border: a constant gets an italic label */
 ["element type"="constant"] {
-  outline-color: #444444;
-  outline-width: 1.5;
-  outline-offset: 6;
+  font-style: italic;
 }
 
 ["adaptive practice"="yes"] {
@@ -79,7 +79,7 @@ element {
 ["element type"="sets region"] {
   layer: background;
   border-width: 0;
-  font-size: 120;
+  font-size: 180;
   font-weight: bold;
   font-color: #777777;
 }
@@ -91,7 +91,7 @@ connection {
   style: solid;
   arrow-visibility: visible;
   label: none;
-  font-size: 34;
+  font-size: 51;
   font-weight: bold;
 }
 

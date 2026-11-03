@@ -151,7 +151,7 @@ def link_svg(c, a, b):
     p0, ctrl, p2 = link_path(a, b, c["curvature"])
     colour = LINK_COLOUR[c["polarity"]]
     parts = [f'<g class="link" data-from="{c["from"]}" data-to="{c["to"]}" data-sign="{c["polarity"]}" '
-             f'data-delay="{"true" if c["delay"] else "false"}">',
+             f'data-delay="{"true" if c["delay"] else "false"}" data-curvature="{c["curvature"]}">',
              f'<path class="link-path" d="M {p0[0]:.1f} {p0[1]:.1f} Q {ctrl[0]:.1f} {ctrl[1]:.1f} {p2[0]:.1f} {p2[1]:.1f}" '
              f'fill="none" stroke="{colour}" stroke-width="{LINK_WIDTH}" marker-end="url(#arrow-{"plus" if c["polarity"] == "+" else "minus"})"/>']
     sx, sy = sign_position(p0, ctrl, p2)

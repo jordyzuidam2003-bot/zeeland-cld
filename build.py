@@ -12,6 +12,7 @@ view.scss (the Kumu view). Never edit docs/, which this script writes:
 """
 
 import argparse
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -20,6 +21,7 @@ import draw
 
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
+PAGE = ROOT / "page"
 
 ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
 MODEL_TEXTS = ["purpose", "spatial scale", "time horizon", "system boundary"]
@@ -167,6 +169,31 @@ def blueprint(cld, refs):
     return {"elements": elements, "connections": connections}
 
 
+def page_data(cld, refs, version):
+    """What the page shows per element and link: the blueprint without the drawing's numbers."""
+    bp = blueprint(cld, refs)
+    drop = {"x", "y", "curvature"}
+    return {
+        "model": cld["model"],
+        "elements": [{k: v for k, v in e.items() if k not in drop} for e in bp["elements"]],
+        "connections": [{k: v for k, v in c.items() if k not in drop} for c in bp["connections"]],
+        "loops": cld["loops"],
+        "version": version,
+    }
+
+
+def page(cld, refs, version):
+    """docs/index.html: the template with the drawing inline and the data as JSON."""
+    template = (PAGE / "index.html").read_text()
+    svg = draw.svg(cld)
+    # "</" inside a <script> would end it early; "<\/" is the same string to JSON
+    data = json.dumps(page_data(cld, refs, version), ensure_ascii=False).replace("</", "<\\/")
+    for marker in ("<!-- SVG -->", "<!-- DATA -->"):
+        assert template.count(marker) == 1, f"page/index.html must hold {marker} once"
+    return (template.replace("<!-- SVG -->", svg.rstrip())
+            .replace("<!-- DATA -->", f'<script type="application/json" id="data">{data}</script>'))
+
+
 def project(cld, refs, template):
     """A full Kumu project export, the shape of Kumu's own "Export JSON" of a project."""
     bp = blueprint(cld, refs)
@@ -215,19 +242,40 @@ def project(cld, refs, template):
     }
 
 
+def apply_layout(path):
+    """Write the positions of a layout.json ({id: {x, y}}) into cld.json, in its own formatting."""
+    layout = json.loads(path.read_text())
+    cld = json.loads((ROOT / "cld.json").read_text())
+    by_id = {e["id"]: e for e in cld["elements"]}
+    unknown = [i for i in layout if i not in by_id]
+    if unknown:
+        sys.exit(f"--layout: unknown element id {', '.join(unknown)}")
+    for i, pos in layout.items():
+        by_id[i]["x"], by_id[i]["y"] = int(pos["x"]), int(pos["y"])
+    (ROOT / "cld.json").write_text(json.dumps(cld, indent=2, ensure_ascii=False) + "\n")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--check", action="store_true", help="fail if docs/ is out of date")
+    parser.add_argument("--layout", metavar="FILE", help="write the x, y of FILE (layout.json from the page) into cld.json, then build")
     args = parser.parse_args()
 
+    if args.layout:
+        apply_layout(Path(args.layout))
     cld, refs, template = load()
     errors, warnings = check(cld, refs)
     if errors:
         sys.exit("cld.json has errors:\n  " + "\n  ".join(errors))
 
+    # the model version teammates compare: the first seven characters of cld.json's SHA-256
+    version = hashlib.sha256((ROOT / "cld.json").read_bytes()).hexdigest()[:7]
     outputs = {
         "project.json": json.dumps(project(cld, refs, template), indent=2, ensure_ascii=False) + "\n",
         "cld.svg": draw.svg(cld),
+        "index.html": page(cld, refs, version),
+        "app.js": (PAGE / "app.js").read_text(),
+        "style.css": (PAGE / "style.css").read_text(),
     }
 
     if args.check:

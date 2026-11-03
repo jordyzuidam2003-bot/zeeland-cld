@@ -1,9 +1,9 @@
 {
   "model": {
-    "purpose": "",
-    "spatial scale": "Schouwen-Duiveland",
-    "time horizon": "2050",
-    "system boundary": ""
+    "purpose": "Preliminary draft for team review. To show why arable farmers on Schouwen-Duiveland stay locked into salt-sensitive cropping and deep drainage while salinisation and freshwater scarcity grow towards 2050, and where the feedback loops behind this lock-in block the adaptive practices (freshwater storage, salt-tolerant crops, wisselpolders). The CLD is the shared system picture for the semi-quantitative analysis (SIP) and the multi-criteria analysis of LVVN's levers that follow; it is shaped for no single outcome variable or lever set, which the group chooses when that step starts.",
+    "spatial scale": "Preliminary draft for team review. Schouwen-Duiveland: the island's arable polders, their rainwater lenses, soils, farms and land market, and the water board's level management. The island has no external freshwater supply, so its fresh water is winter rain stored in lenses. Actors at provincial and national level (the water board's funding, LVVN, the Deltaprogramma Zoetwater) act on the island from outside the boundary, as policy inputs with their pathway drawn.",
+    "time horizon": "Preliminary draft for team review. 2050, the horizon of the KNMI'23 climate scenarios and of the project. The slow stocks are read against it: the freshwater lens and land subsidence respond within years; wisselpolder land raising takes 50 to 100 years, so its decision falls inside the horizon and most of its effect outside.",
+    "system boundary": "Preliminary draft for team review. Endogenous: the water and salt system (recharge, lens thickness, seepage, upconing, root-zone salinity, soil structure), crop yield and farm finance (revenue, land value, debt, credit, capacity to invest), the adoption of adaptive practices, and governance resistance to re-wetting and wisselpolders. Exogenous: climate (hotter and drier summers, wetter winters, sea-level rise), EU banking rules (Basel IV), market demand for alternative crops, external freshwater supply and national water policy, and LVVN's levers. Excluded: nature and energy, world prices of conventional crops, farmers leaving or selling land (the national land bank is under discussion). The effectiveness of the adaptive practices is assumed, not modelled: the CLD shows the barriers to adopting them, not whether each works on the island."
   },
   "elements": [
     {

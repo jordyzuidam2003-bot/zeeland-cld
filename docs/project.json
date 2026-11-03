@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 83b29d4, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 92d68c8, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -443,7 +443,7 @@
         "adaptive practice": "no",
         "sets domain": "Social",
         "subquestion": "SQ2",
-        "description": "Agricultural pressure to keep ditch water levels artificially low in spring so heavy machinery can access fields early.",
+        "description": "Farmers' need for low ditch water levels in spring, so heavy machinery can work the fields early.",
         "sources": "",
         "sourced": "no"
       }
@@ -503,12 +503,12 @@
     {
       "_id": "elem-policy-resistance-legal-delays",
       "attributes": {
-        "label": "Policy resistance &  legal delays",
+        "label": "Objections to land-use  plans",
         "element type": "Stock",
         "adaptive practice": "no",
         "sets domain": "Social",
         "subquestion": "SQ2",
-        "description": "Accumulated delays from lobbying, political deadlock, and Council of State (Raad van State) litigation.",
+        "description": "Opposition to plans for re-wetting land or for wisselpolders through political and legal channels: objections, appeals at the Council of State (Raad van State) and political pressure, which slow or stop a plan.",
         "sources": "",
         "sourced": "no"
       }
@@ -638,7 +638,7 @@
         "adaptive practice": "no",
         "sets domain": "Social",
         "subquestion": "SQ2",
-        "description": "Financial lock-in forcing farmers to grow high-revenue, salt-sensitive cash crops (seed potatoes, onions) to service high debt.",
+        "description": "The share of high-value, salt-sensitive cash crops (seed potatoes, onions) in the rotation, which a farm with high debt needs to keep up its income.",
         "sources": "",
         "sourced": "no"
       }
@@ -672,12 +672,12 @@
     {
       "_id": "elem-fear-of-expropriation-planning-blight",
       "attributes": {
-        "label": "Fear of expropriation  & planning blight",
+        "label": "Concern about  expropriation and  devaluation",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Social",
         "subquestion": "SQ2",
-        "description": "Farmer anxiety over uncompensated land devaluation (planschade) and loss of autonomy (ontpolderen stigma).",
+        "description": "Farmers' concern that plans for re-wetting or depoldering lower their land's value without compensation (planschade), or take away their land or their say over it.",
         "sources": "",
         "sourced": "no"
       }
@@ -1460,7 +1460,7 @@
         "polarity": "positive",
         "delay": "no",
         "loop id": "B3_Governance_Delay",
-        "description": "Institutional gridlock preserves the status quo of deep polder drainage.",
+        "description": "While objections hold up a change to the water level plan, the current low ditch levels stay.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "sources": "",
@@ -1480,7 +1480,7 @@
         "polarity": "negative",
         "delay": "no",
         "loop id": "B3_Governance_Delay",
-        "description": "Legal appeals and anti-ontpolderen sentiment block the creation of wisselpolders.",
+        "description": "Objections and appeals slow or stop plans for a wisselpolder; depoldering farmland is contested in Zeeland.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
         "sources": "",
@@ -1700,7 +1700,7 @@
         "polarity": "negative",
         "delay": "no",
         "loop id": "B3_Governance_Delay",
-        "description": "Threat of falling land values due to re-wetting or ontpolderen fuels farmer anxiety.",
+        "description": "The more land values fall, or the more a plan for re-wetting or depoldering threatens to lower them, the greater farmers' concern about devaluation.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "sources": "",
@@ -1820,7 +1820,7 @@
         "polarity": "negative",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
-        "description": "Need for immediate high margins locks farmers out of lower-margin salt-tolerant alternatives.",
+        "description": "A farm that relies on high margins can give fewer hectares to lower-margin salt-tolerant alternatives.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
         "sources": "",
@@ -1920,7 +1920,7 @@
         "polarity": "positive",
         "delay": "no",
         "loop id": "B3_Governance_Delay",
-        "description": "Uncompensated loss fears trigger fierce lobbying (ZLTO), local political resistance, and lawsuits.",
+        "description": "Concern about uncompensated loss leads farmers and their organisations to object, appeal and lobby against such plans.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "sources": "",
@@ -1940,7 +1940,7 @@
         "polarity": "positive",
         "delay": "no",
         "loop id": "R2_Financial_LockIn",
-        "description": "High debt service forces farmers to cultivate lucrative but salt-sensitive crops (seed potatoes, onions).",
+        "description": "High debt payments make a farm keep its lucrative but salt-sensitive crops (seed potatoes, onions).",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "sources": "",
@@ -2015,7 +2015,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 83b29d4",
+      "name": "CLD, model 92d68c8",
       "description": "",
       "scale": 1,
       "center": {
@@ -2786,7 +2786,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      mode: loose;\n\n      option {\n        label: \"Social\";\n        selector: [\"sets domain\"=\"social\"];\n      }\n\n      option {\n        label: \"Ecological\";\n        selector: [\"sets domain\"=\"ecological\"];\n      }\n\n      option {\n        label: \"Technological\";\n        selector: [\"sets domain\"=\"technological\"];\n      }\n\n      option {\n        label: \"Cross-SETS links\";\n        selector: [\"sets scope\"=\"cross-domain\"];\n      }\n\n      option {\n        label: \"Unsourced\";\n        selector: [\"sourced\"=\"no\"];\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: false;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- generated by build.py: tints, box sizes ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-clay-dispersion-sodification { width: 280; height: 86; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 265; height: 86; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 354; height: 86; }\n#elem-external-freshwater-supply { width: 310; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 310; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-wisselpolder-land-raising { width: 280; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 340; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 295; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 206; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 340; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 86; }\n#elem-farmland-leaving-arable-use { width: 265; height: 86; }\n"
+      "style": "@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      mode: loose;\n\n      option {\n        label: \"Social\";\n        selector: [\"sets domain\"=\"social\"];\n      }\n\n      option {\n        label: \"Ecological\";\n        selector: [\"sets domain\"=\"ecological\"];\n      }\n\n      option {\n        label: \"Technological\";\n        selector: [\"sets domain\"=\"technological\"];\n      }\n\n      option {\n        label: \"Cross-SETS links\";\n        selector: [\"sets scope\"=\"cross-domain\"];\n      }\n\n      option {\n        label: \"Unsourced\";\n        selector: [\"sourced\"=\"no\"];\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: false;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- generated by build.py: tints, box sizes ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-clay-dispersion-sodification { width: 280; height: 86; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 265; height: 86; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 354; height: 86; }\n#elem-external-freshwater-supply { width: 310; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-wisselpolder-land-raising { width: 280; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 340; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 295; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 206; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 280; height: 120; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 86; }\n#elem-farmland-leaving-arable-use { width: 265; height: 86; }\n"
     }
   ]
 }

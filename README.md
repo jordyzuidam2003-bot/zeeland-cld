@@ -14,18 +14,18 @@ from GitHub; nothing is edited in Kumu itself.
 | `view.scss` | the Kumu view: colours, shapes, legend, buttons | yes |
 | `build.py` | checks the model and writes `dist/` (how: its docstring) | — |
 | `import_kumu.py` | pulls a Kumu project export into `cld.json`, or only its layout | — |
-| `dist/` | what Kumu reads: `kumu.json`, `view.scss`, `glow.png` | never: `build.py` writes it |
+| `dist/` | what Kumu reads: `kumu.json`, `view.scss` | never: `build.py` writes it |
 
 ## Working on the diagram
 
 1. Edit `cld.json` (or `references.json`, `view.scss`).
-2. `.venv/bin/python build.py` checks the model and rebuilds `dist/`. It stops on an error (an
+2. `python3 build.py` checks the model and rebuilds `dist/`. It stops on an error (an
    unknown element, a source missing from `references.json`, a named loop that is not closed or
    whose R/B does not match its polarities) and prints the source coverage and any warnings.
 3. Commit, `dist/` included, and push. The pre-commit hook refuses a commit whose `dist/` is
    out of date.
 4. Refresh the Kumu map. GitHub caches the raw file for up to 5 minutes.
-5. Only when `dist/view.scss` changed (style, curvature, or the glow's size): paste it into Kumu's
+5. Only when `dist/view.scss` changed (style or curvature): paste it into Kumu's
    Advanced Editor and save. Kumu cannot fetch a view.
 
 ### `cld.json`
@@ -63,10 +63,7 @@ connection and that the id starts with R for an even number of `-` links, B for 
 
 ## Setup after cloning
 
-```sh
-python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-git config core.hooksPath hooks
-```
+`git config core.hooksPath hooks` turns on the pre-commit check. The scripts need only Python 3.
 
 ## How Kumu is connected
 
@@ -74,9 +71,8 @@ Kumu's "Link map to remote JSON" (green + → Import) points the map at
 <https://raw.githubusercontent.com/jordyzuidam2003-bot/zeeland-cld/main/dist/kumu.json>.
 A remote blueprint carries elements, connections and loops only, not positions or a view. So the
 view uses Kumu's scatter layout, which places every element at its `x` and `y` fields, and the
-view code lives in `view.scss`. The SETS glow is the image of one extra element, `background`,
-which `build.py` adds and sizes.
+view code lives in `view.scss`.
 
 To tune the layout by dragging: drag in a copy of the map with a fixed layout, export that
-project (JSON), then `.venv/bin/python import_kumu.py <export.json> --layout` copies only the
+project (JSON), then `python3 import_kumu.py <export.json> --layout` copies only the
 positions and curvature back into `cld.json`.

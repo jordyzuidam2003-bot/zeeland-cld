@@ -1,7 +1,7 @@
 """Import a full Kumu project export ("Export JSON") into cld.json.
 
-    .venv/bin/python import_kumu.py ~/Downloads/kumu-cld.json            # rewrite cld.json
-    .venv/bin/python import_kumu.py ~/Downloads/kumu-cld.json --layout   # only x, y and curvature
+    python3 import_kumu.py ~/Downloads/kumu-cld.json            # rewrite cld.json
+    python3 import_kumu.py ~/Downloads/kumu-cld.json --layout   # only x, y and curvature
 
 Positions and curvature come from the export's default map (its "defaultMap" id), which is
 not necessarily maps[0]. Elements are matched to an existing cld.json by label, so their ids

@@ -45,7 +45,7 @@
     }
 
     text {
-      value: "**Glow** = SETS domain: pink = Social, green = Ecological, orange = Technological<br>**Fill** = focus area: grey = Climate drivers, dark green = Biophysical system, teal = Water governance, olive = Crops and market, wine = Finance and land<br>**Links:** blue = + (same direction), red = − (opposite direction); thicker = crosses a SETS boundary<br>**Shape:** square = stock, white centre = adaptive practice";
+      value: "**Fill** = focus area: grey = Climate drivers, dark green = Biophysical system, teal = Water governance, olive = Crops and market, wine = Finance and land<br>**Links:** blue = + (same direction), red = − (opposite direction); thicker = crosses a SETS boundary<br>**Shape:** square = stock, white centre = adaptive practice";
     }
   }
 }
@@ -59,18 +59,6 @@
   theme: light;
   background-color: #FFFFFF;
   culling: false;
-}
-
-/* ---------- SETS glow: one image behind the whole map (size: generated below) ---------- */
-#background {
-  layer: background;
-  shape: square;
-  color: transparent;
-  border-width: 0;
-  shadow-visibility: hidden;
-  image-size: contain;
-  image-resolution: original;
-  label-visibility: hidden;
 }
 
 /* ---------- Elements: fill = focus area ---------- */

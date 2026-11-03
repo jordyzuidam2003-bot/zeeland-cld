@@ -23,6 +23,7 @@ style.css). draw.py draws the SVG. Never edit docs/, which this script writes:
 import argparse
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -120,7 +121,7 @@ def check(cld, refs):
         # The CLD describes mechanisms and is shaped for no lever set, so no element or link names one.
         warnings += [f"{item.get('id') or item['from'] + ' -> ' + item['to']}: names a policy lever"
                      for item in cld["elements"] + cld["connections"]
-                     if any(w in item["description"].lower() for w in ("lever", "buy-out", "buyout", "land bank"))]
+                     if re.search(r"\b(levers?|buy-?outs?|land bank)\b", item["description"], re.I)]
         cited = {k for item in cld["elements"] + cld["connections"] for k in item.get("sources", [])}
         warnings += [f"reference {k!r} is cited nowhere" for k in refs if k not in cited]
         warnings += draw.overlaps(cld)

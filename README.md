@@ -38,8 +38,8 @@ An element:
   "id": "root-zone-salinity",
   "label": "Root zone salinity",
   "element type": "Auxiliary",
-  "sets subsystem": "Ecological",
-  "focus area": "Biophysical system",
+  "adaptive practice": false,
+  "sets domain": "Ecological",
   "subquestion": "SQ1",
   "description": "…",
   "sources": ["key-in-references-json"],
@@ -49,14 +49,17 @@ An element:
 ```
 
 - `id` never changes, so a label can: connections and loops refer to the id.
-- `element type`: `Constant`, `Auxiliary`, `Stock` or `Adaptation`. `sets subsystem`: `Social`,
-  `Ecological` or `Technological`. `focus area`: one of the five in `build.py`.
+- `element type`: `Constant`, `Auxiliary` or `Stock`. `adaptive practice`: true on an auxiliary
+  that is an adaptive practice (a measure farmers take). `sets domain`: `Social`, `Ecological` or `Technological`.
 - `x` and `y` are map positions; y grows downwards.
 
 A connection: `from` and `to` (element ids), `polarity` (`"+"` or `"-"`), `delay` (true/false),
 `loop id` (the old Kumu tag), `description`, `sources`, `curvature` (0 is straight; the sign picks
-the side). The SETS and focus-area fields Kumu shows ("Cross-domain", "E to S" …) are derived by
-`build.py`, never typed.
+the side). The SETS fields Kumu shows ("Cross-domain", "E to S" …) are derived by `build.py`,
+never typed.
+
+The top-level `model` object holds the texts the group writes: `purpose`, `spatial scale`,
+`time horizon`, `system boundary`. `build.py` warns while one is empty.
 
 A named loop: `{"id": "R1", "name": "…", "path": ["element-a", "element-b", …]}`, the path in
 causal order without repeating the first element. `build.py` checks that every step is a

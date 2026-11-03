@@ -1,13 +1,4 @@
 @controls {
-  top {
-    showcase {
-      by: "Focus area";
-      as: buttons;
-      multiple: true;
-      mode: loose;
-    }
-  }
-
   bottom-left {
     showcase {
       as: buttons;
@@ -15,27 +6,22 @@
 
       option {
         label: "Social";
-        selector: ["sets subsystem"="social"];
+        selector: ["sets domain"="social"];
       }
 
       option {
         label: "Ecological";
-        selector: ["sets subsystem"="ecological"];
+        selector: ["sets domain"="ecological"];
       }
 
       option {
         label: "Technological";
-        selector: ["sets subsystem"="technological"];
+        selector: ["sets domain"="technological"];
       }
 
       option {
         label: "Cross-SETS links";
         selector: ["sets scope"="cross-domain"];
-      }
-
-      option {
-        label: "Cross-focus links";
-        selector: ["focus scope"="cross-focus area"];
       }
 
       option {
@@ -45,7 +31,7 @@
     }
 
     text {
-      value: "**Fill** = focus area: grey = Climate drivers, dark green = Biophysical system, teal = Water governance, olive = Crops and market, wine = Finance and land<br>**Links:** blue = + (same direction), red = − (opposite direction); thicker = crosses a SETS boundary<br>**Shape:** square = stock, white centre = adaptive practice";
+      value: "**Fill** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Links:** blue = + (same direction), red = − (opposite direction); thicker = crosses a SETS boundary<br>**Shape:** square = stock, white centre = adaptive practice";
     }
   }
 }
@@ -57,7 +43,7 @@
   culling: false;
 }
 
-/* ---------- Elements: fill = focus area ---------- */
+/* ---------- Elements: fill = SETS domain ---------- */
 element {
   size: 120;
   font-size: 60;
@@ -66,24 +52,16 @@ element {
   shadow-visibility: hidden;
 }
 
-["focus area"="climate drivers"] {
-  color: #555555;
+["sets domain"="ecological"] {
+  color: #2E8B57;
 }
 
-["focus area"="biophysical system"] {
-  color: #117733;
+["sets domain"="social"] {
+  color: #3B82C4;
 }
 
-["focus area"="water governance"] {
-  color: #44AA99;
-}
-
-["focus area"="crops and market"] {
-  color: #999933;
-}
-
-["focus area"="finance and land"] {
-  color: #882255;
+["sets domain"="technological"] {
+  color: #E07B2A;
 }
 
 ["element type"="stock"] {
@@ -91,7 +69,7 @@ element {
 }
 
 /* adaptive practices: white centre */
-["element type"="adaptation"] {
+["adaptive practice"="yes"] {
   bullseye-visibility: visible;
   bullseye-color: #FFFFFF;
   bullseye-size: 0.5;

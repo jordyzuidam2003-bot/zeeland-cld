@@ -23,9 +23,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DIST = ROOT / "dist"
 
-ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock", "Adaptation"]
-FOCUS_AREAS = ["Climate drivers", "Biophysical system", "Water governance",
-               "Crops and market", "Finance and land"]
+ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
+MODEL_TEXTS = ["purpose", "spatial scale", "time horizon", "system boundary"]
 SUBQUESTIONS = ["SQ1", "SQ2", "SQ3"]
 SETS_LETTER = {"Social": "S", "Ecological": "E", "Technological": "T"}
 
@@ -46,10 +45,12 @@ def check(cld, refs):
         if name in els:
             errors.append(f"duplicate element id {name}")
         els[name] = e
-        for key, allowed in [("element type", ELEMENT_TYPES), ("sets subsystem", list(SETS_LETTER)),
-                             ("focus area", FOCUS_AREAS), ("subquestion", SUBQUESTIONS)]:
+        for key, allowed in [("element type", ELEMENT_TYPES), ("sets domain", list(SETS_LETTER)),
+                             ("subquestion", SUBQUESTIONS)]:
             if e.get(key) not in allowed:
                 errors.append(f"{name}: {key} {e.get(key)!r} not in {allowed}")
+        if not isinstance(e.get("adaptive practice"), bool):
+            errors.append(f"{name}: adaptive practice must be true/false")
         if not all(isinstance(e.get(k), (int, float)) for k in ("x", "y")):
             errors.append(f"{name}: x and y must be numbers")
     labels = [e["label"] for e in cld["elements"]]
@@ -89,7 +90,12 @@ def check(cld, refs):
             errors.append(f"loop {loop['id']} is {'balancing' if kind == 'B' else 'reinforcing'} "
                           f"as drawn, so its id must start with {kind}")
 
+    for key in MODEL_TEXTS:
+        if not isinstance(cld.get("model", {}).get(key), str):
+            errors.append(f"model: {key} must be a string")
+
     if not errors:
+        warnings += [f"model: {key} is not written yet" for key in MODEL_TEXTS if not cld["model"][key]]
         has_in = {c["to"] for c in cld["connections"]}
         has_out = {c["from"] for c in cld["connections"]}
         for e in cld["elements"]:
@@ -138,14 +144,14 @@ def blueprint(cld, refs):
     elements = []
     for e in cld["elements"]:
         item = {k: v for k, v in e.items() if k != "sources"}
+        item["adaptive practice"] = "yes" if e["adaptive practice"] else "no"
         item.update(sourced(e))
         elements.append(item)
 
     connections = []
     for c in cld["connections"]:
         a, b = els[c["from"]], els[c["to"]]
-        sa, sb = a["sets subsystem"], b["sets subsystem"]
-        fa, fb = a["focus area"], b["focus area"]
+        sa, sb = a["sets domain"], b["sets domain"]
         connections.append({
             "id": f'{c["from"]}--{c["to"]}', "from": c["from"], "to": c["to"],
             "direction": "directed",
@@ -157,8 +163,6 @@ def blueprint(cld, refs):
             "description": c["description"],
             "sets link": f"Within {SETS_LETTER[sa]}" if sa == sb else f"{SETS_LETTER[sa]} to {SETS_LETTER[sb]}",
             "sets scope": "Within domain" if sa == sb else "Cross-domain",
-            "focus link": f"Within {fa}" if fa == fb else f"{fa} to {fb}",
-            "focus scope": "Within focus area" if fa == fb else "Cross-focus area",
             **sourced(c),
         })
     # Kumu loops are added here once cld.json defines loops; build.py already checks them

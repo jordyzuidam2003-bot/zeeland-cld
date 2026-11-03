@@ -31,7 +31,7 @@
     }
 
     text {
-      value: "**Fill** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Links:** blue = + (same direction), red = − (opposite direction); thicker = crosses a SETS boundary<br>**Shape:** square = stock, white centre = adaptive practice";
+      value: "**Regions** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded = auxiliary, double border = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay";
     }
   }
 }
@@ -43,57 +43,64 @@
   culling: false;
 }
 
-/* ---------- Elements: fill = SETS domain ---------- */
+/* ---------- Elements: the page's look, values from draw.py ---------- */
+/* each box's width and height, and each SETS region's size and tint, are rules build.py
+   generates below this view in docs/project.json */
 element {
-  size: 120;
-  font-size: 60;
-  font-weight: bold;
-  border-width: 0;
+  shape: pill;
+  color: #FFFFFF;
+  border-color: #444444;
+  border-width: 1.5;
+  font-size: 28;
+  font-weight: normal;
+  font-color: #000000;
+  text-align: center;
+  /* build.py puts a double space where the page breaks a label's line */
+  text-overflow: manual;
   shadow-visibility: hidden;
 }
 
-["sets domain"="ecological"] {
-  color: #2E8B57;
-}
-
-["sets domain"="social"] {
-  color: #3B82C4;
-}
-
-["sets domain"="technological"] {
-  color: #E07B2A;
-}
-
 ["element type"="stock"] {
-  shape: square;
+  shape: rectangle;
 }
 
-/* adaptive practices: white centre */
+/* Kumu has no dashed border: a constant gets a second, outer one */
+["element type"="constant"] {
+  outline-color: #444444;
+  outline-width: 1.5;
+  outline-offset: 6;
+}
+
 ["adaptive practice"="yes"] {
-  bullseye-visibility: visible;
-  bullseye-color: #FFFFFF;
-  bullseye-size: 0.5;
-  bullseye-opacity: 1;
+  border-width: 5;
 }
 
+/* the SETS regions: one background element each, behind the others */
+["element type"="sets region"] {
+  layer: background;
+  border-width: 0;
+  font-size: 120;
+  font-weight: bold;
+  font-color: #777777;
+}
+
+/* ---------- Links: one width, the sign's colour ---------- */
 /* (no global curvature: each link keeps its own curve from the map) */
 connection {
-  size: 7;
+  size: 2.5;
   style: solid;
   arrow-visibility: visible;
   label: none;
-  font-size: 100;
+  font-size: 34;
   font-weight: bold;
 }
 
 ["polarity"="positive"] {
   color: #2166AC;
+  font-color: #2166AC;
 }
 
 ["polarity"="negative"] {
   color: #B2182B;
-}
-
-["sets scope"="cross-domain"] {
-  size: 10;
+  font-color: #B2182B;
 }

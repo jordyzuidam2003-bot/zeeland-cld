@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "Zeeland CLD",
-  "description": "",
+  "description": "Model version 52c4c67, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -32,6 +32,7 @@
       "values": [
         "Auxiliary",
         "Constant",
+        "SETS region",
         "Stock"
       ],
       "sort": false,
@@ -278,7 +279,7 @@
     {
       "_id": "elem-clay-dispersion-sodification",
       "attributes": {
-        "label": "Clay dispersion & sodification",
+        "label": "Clay dispersion &  sodification",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Ecological",
@@ -317,7 +318,7 @@
     {
       "_id": "elem-freshwater-lens-recharge",
       "attributes": {
-        "label": "Freshwater lens recharge",
+        "label": "Freshwater lens  recharge",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Ecological",
@@ -330,7 +331,7 @@
     {
       "_id": "elem-freshwater-lens-thickness",
       "attributes": {
-        "label": "Freshwater lens thickness",
+        "label": "Freshwater lens  thickness",
         "element type": "Stock",
         "adaptive practice": "no",
         "sets domain": "Ecological",
@@ -356,7 +357,7 @@
     {
       "_id": "elem-polder-surface-elevation-nap",
       "attributes": {
-        "label": "Polder surface elevation (NAP)",
+        "label": "Polder surface  elevation (NAP)",
         "element type": "Stock",
         "adaptive practice": "no",
         "sets domain": "Ecological",
@@ -395,7 +396,7 @@
     {
       "_id": "elem-soil-structure-usability",
       "attributes": {
-        "label": "Soil structure & usability",
+        "label": "Soil structure &  usability",
         "element type": "Stock",
         "adaptive practice": "no",
         "sets domain": "Ecological",
@@ -408,7 +409,7 @@
     {
       "_id": "elem-upconing-of-salt-groundwater",
       "attributes": {
-        "label": "Upconing of salt groundwater",
+        "label": "Upconing of salt  groundwater",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Ecological",
@@ -421,7 +422,7 @@
     {
       "_id": "elem-brackish-irrigation-water-use",
       "attributes": {
-        "label": "Brackish irrigation water use",
+        "label": "Brackish irrigation  water use",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Technological",
@@ -434,7 +435,7 @@
     {
       "_id": "elem-demand-for-deep-polder-drainage",
       "attributes": {
-        "label": "Demand for deep polder drainage",
+        "label": "Demand for deep polder  drainage",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Social",
@@ -447,7 +448,7 @@
     {
       "_id": "elem-external-freshwater-supply",
       "attributes": {
-        "label": "External freshwater supply",
+        "label": "External freshwater  supply",
         "element type": "Constant",
         "adaptive practice": "no",
         "sets domain": "Technological",
@@ -460,7 +461,7 @@
     {
       "_id": "elem-freshwater-availability-for-crops",
       "attributes": {
-        "label": "Freshwater availability for crops",
+        "label": "Freshwater  availability for crops",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Ecological",
@@ -473,7 +474,7 @@
     {
       "_id": "elem-freshwater-storage-measures",
       "attributes": {
-        "label": "Freshwater storage measures",
+        "label": "Freshwater storage  measures",
         "element type": "Auxiliary",
         "adaptive practice": "yes",
         "sets domain": "Technological",
@@ -486,7 +487,7 @@
     {
       "_id": "elem-groundwater-extraction-for-irrigation",
       "attributes": {
-        "label": "Groundwater extraction for irrigation",
+        "label": "Groundwater extraction  for irrigation",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Technological",
@@ -499,7 +500,7 @@
     {
       "_id": "elem-policy-resistance-legal-delays",
       "attributes": {
-        "label": "Policy resistance & legal delays",
+        "label": "Policy resistance &  legal delays",
         "element type": "Stock",
         "adaptive practice": "no",
         "sets domain": "Social",
@@ -512,7 +513,7 @@
     {
       "_id": "elem-winter-rain-drained-away",
       "attributes": {
-        "label": "Winter rain drained away",
+        "label": "Winter rain drained  away",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Technological",
@@ -525,7 +526,7 @@
     {
       "_id": "elem-wisselpolder-land-raising",
       "attributes": {
-        "label": "Wisselpolder land raising",
+        "label": "Wisselpolder land  raising",
         "element type": "Auxiliary",
         "adaptive practice": "yes",
         "sets domain": "Technological",
@@ -551,7 +552,7 @@
     {
       "_id": "elem-market-demand-for-alternative-crops",
       "attributes": {
-        "label": "Market demand for alternative crops",
+        "label": "Market demand for  alternative crops",
         "element type": "Constant",
         "adaptive practice": "no",
         "sets domain": "Social",
@@ -564,7 +565,7 @@
     {
       "_id": "elem-processing-capacity-for-alternative-crops",
       "attributes": {
-        "label": "Processing capacity for alternative crops",
+        "label": "Processing capacity  for alternative crops",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Technological",
@@ -577,7 +578,7 @@
     {
       "_id": "elem-salt-tolerant-crop-adoption",
       "attributes": {
-        "label": "Salt-tolerant crop adoption",
+        "label": "Salt-tolerant crop  adoption",
         "element type": "Auxiliary",
         "adaptive practice": "yes",
         "sets domain": "Technological",
@@ -590,7 +591,7 @@
     {
       "_id": "elem-agricultural-land-value",
       "attributes": {
-        "label": "Agricultural land value",
+        "label": "Agricultural land  value",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Social",
@@ -603,7 +604,7 @@
     {
       "_id": "elem-bank-credit-freeze-risk-premiums",
       "attributes": {
-        "label": "Bank credit freeze & risk premiums",
+        "label": "Bank credit freeze &  risk premiums",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Social",
@@ -616,7 +617,7 @@
     {
       "_id": "elem-basel-iv-capital-requirements",
       "attributes": {
-        "label": "Basel IV capital requirements",
+        "label": "Basel IV capital  requirements",
         "element type": "Constant",
         "adaptive practice": "no",
         "sets domain": "Social",
@@ -629,7 +630,7 @@
     {
       "_id": "elem-dependence-on-high-margin-salt-sensitive-crops",
       "attributes": {
-        "label": "Dependence on high-margin salt-sensitive crops",
+        "label": "Dependence on  high-margin  salt-sensitive crops",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Social",
@@ -655,7 +656,7 @@
     {
       "_id": "elem-farmers-capacity-to-invest",
       "attributes": {
-        "label": "Farmers' capacity to invest",
+        "label": "Farmers' capacity to  invest",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Social",
@@ -668,7 +669,7 @@
     {
       "_id": "elem-fear-of-expropriation-planning-blight",
       "attributes": {
-        "label": "Fear of expropriation & planning blight",
+        "label": "Fear of expropriation  & planning blight",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Social",
@@ -681,7 +682,7 @@
     {
       "_id": "elem-mortgage-debt-financial-leverage",
       "attributes": {
-        "label": "Mortgage debt & financial leverage",
+        "label": "Mortgage debt &  financial leverage",
         "element type": "Stock",
         "adaptive practice": "no",
         "sets domain": "Social",
@@ -689,6 +690,30 @@
         "description": "Total bank debt per hectare (€/ha) and Loan-to-Value (LTV) ratio of agricultural enterprises.",
         "sources": "",
         "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-region-ecological",
+      "attributes": {
+        "label": "Ecological",
+        "element type": "SETS region",
+        "sets domain": "Ecological"
+      }
+    },
+    {
+      "_id": "elem-region-technological",
+      "attributes": {
+        "label": "Technological",
+        "element type": "SETS region",
+        "sets domain": "Technological"
+      }
+    },
+    {
+      "_id": "elem-region-social",
+      "attributes": {
+        "label": "Social",
+        "element type": "SETS region",
+        "sets domain": "Social"
       }
     }
   ],
@@ -1938,7 +1963,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD",
+      "name": "CLD, model 52c4c67",
       "description": "",
       "scale": 1,
       "center": {
@@ -2298,6 +2323,36 @@
           "pinned": true,
           "style": {},
           "element": "elem-mortgage-debt-financial-leverage"
+        },
+        {
+          "_id": "node-region-ecological",
+          "position": {
+            "x": -64,
+            "y": 2942
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-region-ecological"
+        },
+        {
+          "_id": "node-region-technological",
+          "position": {
+            "x": -308,
+            "y": 1610
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-region-technological"
+        },
+        {
+          "_id": "node-region-social",
+          "position": {
+            "x": 23,
+            "y": 274
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-region-social"
         }
       ],
       "connections": [
@@ -2681,7 +2736,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      mode: loose;\n\n      option {\n        label: \"Social\";\n        selector: [\"sets domain\"=\"social\"];\n      }\n\n      option {\n        label: \"Ecological\";\n        selector: [\"sets domain\"=\"ecological\"];\n      }\n\n      option {\n        label: \"Technological\";\n        selector: [\"sets domain\"=\"technological\"];\n      }\n\n      option {\n        label: \"Cross-SETS links\";\n        selector: [\"sets scope\"=\"cross-domain\"];\n      }\n\n      option {\n        label: \"Unsourced\";\n        selector: [\"sourced\"=\"no\"];\n      }\n    }\n\n    text {\n      value: \"**Fill** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Links:** blue = + (same direction), red = − (opposite direction); thicker = crosses a SETS boundary<br>**Shape:** square = stock, white centre = adaptive practice\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: false;\n}\n\n/* ---------- Elements: fill = SETS domain ---------- */\nelement {\n  size: 120;\n  font-size: 60;\n  font-weight: bold;\n  border-width: 0;\n  shadow-visibility: hidden;\n}\n\n[\"sets domain\"=\"ecological\"] {\n  color: #2E8B57;\n}\n\n[\"sets domain\"=\"social\"] {\n  color: #3B82C4;\n}\n\n[\"sets domain\"=\"technological\"] {\n  color: #E07B2A;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: square;\n}\n\n/* adaptive practices: white centre */\n[\"adaptive practice\"=\"yes\"] {\n  bullseye-visibility: visible;\n  bullseye-color: #FFFFFF;\n  bullseye-size: 0.5;\n  bullseye-opacity: 1;\n}\n\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 7;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 100;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n}\n\n[\"sets scope\"=\"cross-domain\"] {\n  size: 10;\n}\n"
+      "style": "@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      mode: loose;\n\n      option {\n        label: \"Social\";\n        selector: [\"sets domain\"=\"social\"];\n      }\n\n      option {\n        label: \"Ecological\";\n        selector: [\"sets domain\"=\"ecological\"];\n      }\n\n      option {\n        label: \"Technological\";\n        selector: [\"sets domain\"=\"technological\"];\n      }\n\n      option {\n        label: \"Cross-SETS links\";\n        selector: [\"sets scope\"=\"cross-domain\"];\n      }\n\n      option {\n        label: \"Unsourced\";\n        selector: [\"sourced\"=\"no\"];\n      }\n    }\n\n    text {\n      value: \"**Regions** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded = auxiliary, double border = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: false;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's width and height, and each SETS region's size and tint, are rules build.py\n   generates below this view in docs/project.json */\nelement {\n  shape: pill;\n  color: #FFFFFF;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 28;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets a second, outer one */\n[\"element type\"=\"constant\"] {\n  outline-color: #444444;\n  outline-width: 1.5;\n  outline-offset: 6;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* the SETS regions: one background element each, behind the others */\n[\"element type\"=\"sets region\"] {\n  layer: background;\n  border-width: 0;\n  font-size: 120;\n  font-weight: bold;\n  font-color: #777777;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 34;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- generated by build.py: box sizes, SETS regions ---------- */\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-clay-dispersion-sodification { width: 280; height: 86; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 265; height: 86; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 354; height: 86; }\n#elem-external-freshwater-supply { width: 310; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 310; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-wisselpolder-land-raising { width: 280; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 340; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 295; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 206; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 340; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 86; }\n#elem-region-ecological { width: 5018; height: 1739; color: #BDE3C7; }\n#elem-region-technological { width: 4687; height: 915; color: #F9D2AB; }\n#elem-region-social { width: 4870; height: 1043; color: #C5DAF4; }\n"
     }
   ]
 }

@@ -16,13 +16,16 @@ style.css). draw.py draws the SVG. Never edit docs/, which this script writes:
     docs/cld.svg       the drawing on its own, the picture for the report
     docs/project.json  a full Kumu project export: import it into an emptied Kumu project
                        (green + > Import > Advanced > Import JSON file) and Kumu restores the
-                       elements at their positions, the curved links and the view
+                       elements at their positions, the curved links and the view, with a
+                       background element per SETS region; the model version is in the
+                       project's description and the map's name
 """
 
 import argparse
 import hashlib
 import json
 import sys
+from math import pi
 from pathlib import Path
 
 import draw
@@ -203,12 +206,49 @@ def page(cld, refs, version):
             .replace("<!-- DATA -->", f'<script type="application/json" id="data">{data}</script>'))
 
 
-def project(cld, refs, template):
-    """A full Kumu project export, the shape of Kumu's own "Export JSON" of a project."""
+def region_shape(h):
+    """The pill Kumu draws for a SETS region: centred on the hull's bounding box, a segment along
+    its longer side grown by the smallest radius that covers the region (the hull grown by
+    draw.REGION_PAD), the segment's length chosen for the least area. Returns (x, y, w, h)."""
+    xs, ys = [p[0] for p in h], [p[1] for p in h]
+    cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
+    wide = max(xs) - min(xs) >= max(ys) - min(ys)
+    longest = (max(xs) - min(xs) if wide else max(ys) - min(ys)) / 2
+    best = None
+    for k in range(101):
+        half = longest * k / 100
+        a, b = ((cx - half, cy), (cx + half, cy)) if wide else ((cx, cy - half), (cx, cy + half))
+        r = draw.REGION_PAD + max(draw.segment_distance(p, a, b) for p in h)
+        area = 4 * r * half + pi * r * r
+        if best is None or area < best[0]:
+            best = (area, half, r)
+    _, half, r = best
+    size = (round(2 * (half + r)), round(2 * r))
+    return round(cx), round(cy), *(size if wide else size[::-1])
+
+
+def project(cld, refs, template, version):
+    """A full Kumu project export, the shape of Kumu's own "Export JSON" of a project.
+
+    The view is view.scss plus rules generated here, by Kumu system id: each element's box
+    size from draw.boxes(), and three background elements, one per SETS region, sized by
+    region_shape() from draw.hulls(). Each label holds a double space where the page breaks its
+    line, Kumu's manual line break, so its box fits it."""
     bp = blueprint(cld, refs)
     keep = lambda item, drop: {k: v for k, v in item.items() if k not in drop}
-    elements = [{"_id": f'elem-{e["id"]}', "attributes": keep(e, {"id", "x", "y"})}
+    bxs = draw.boxes(cld)
+    elements = [{"_id": f'elem-{e["id"]}',
+                 "attributes": {**keep(e, {"id", "x", "y"}), "label": "  ".join(bxs[e["id"]][4])}}
                 for e in bp["elements"]]
+    rules = [f'#elem-{i} {{ width: {round(b[2] - b[0])}; height: {round(b[3] - b[1])}; }}'
+             for i, b in bxs.items()]
+    regions = []
+    for domain, h in draw.hulls(cld).items():
+        x, y, w, hh = region_shape(h)
+        regions.append((f"region-{domain.lower()}", x, y))
+        elements.append({"_id": f"elem-region-{domain.lower()}",
+                         "attributes": {"label": domain, "element type": "SETS region", "sets domain": domain}})
+        rules.append(f"#elem-region-{domain.lower()} {{ width: {w}; height: {hh}; color: {draw.REGION[domain]}; }}")
     # the blueprint key "type" is "connection type" in a project export: the +/- at the arrowhead
     connections = [{"_id": f'conn-{c["id"]}', "direction": "directed", "delayed": c["delay"] == "yes",
                     "reversed": False,
@@ -234,20 +274,27 @@ def project(cld, refs, template):
                            "locked": False, "values": sorted(seen) if listed else [],
                            "sort": False, "cluster": listed})
 
-    nodes = [{"_id": f'node-{e["id"]}', "position": {"x": e["x"], "y": e["y"]}, "pinned": True,
-              "style": {}, "element": f'elem-{e["id"]}'} for e in cld["elements"]]
+    nodes = [{"_id": f'node-{i}', "position": {"x": x, "y": y}, "pinned": True,
+              "style": {}, "element": f'elem-{i}'}
+             for i, x, y in [(e["id"], e["x"], e["y"]) for e in cld["elements"]] + regions]
     edges = [{"_id": f'edge-{c["from"]}--{c["to"]}', "curvature": c["curvature"], "style": {},
               "connection": f'conn-{c["from"]}--{c["to"]}'} for c in cld["connections"]]
+    description = (f"Model version {version}, the first seven characters of the SHA-256 of cld.json. "
+                   "A copy for milestones: the current model is the page "
+                   "https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from "
+                   "https://github.com/jordyzuidam2003-bot/zeeland-cld.")
+    style = (template.rstrip() + "\n\n/* ---------- generated by build.py: box sizes, SETS regions ---------- */\n"
+             + "\n".join(rules) + "\n")
     return {
-        "version": 1, "name": "Zeeland CLD", "description": "", "proxyImages": True,
+        "version": 1, "name": "Zeeland CLD", "description": description, "proxyImages": True,
         "defaultMap": "map-cld", "defaultPerspective": None, "attributeRelevance": {},
         "attributes": attributes, "elements": elements, "connections": connections, "loops": [],
-        "maps": [{"_id": "map-cld", "name": "CLD", "description": "", "scale": 1,
+        "maps": [{"_id": "map-cld", "name": f"CLD, model {version}", "description": "", "scale": 1,
                   "center": {"x": 0, "y": 0}, "defaultPerspective": "pers-cld",
                   "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
                   "elements": nodes, "connections": edges, "loops": []}],
         # the map's edges carry the curves, so the view holds no curvature rules
-        "perspectives": [{"_id": "pers-cld", "name": "CLD", "style": template.rstrip() + "\n"}],
+        "perspectives": [{"_id": "pers-cld", "name": "CLD", "style": style}],
     }
 
 
@@ -280,7 +327,7 @@ def main():
     # the model version teammates compare: the first seven characters of cld.json's SHA-256
     version = hashlib.sha256((ROOT / "cld.json").read_bytes()).hexdigest()[:7]
     outputs = {
-        "project.json": json.dumps(project(cld, refs, template), indent=2, ensure_ascii=False) + "\n",
+        "project.json": json.dumps(project(cld, refs, template, version), indent=2, ensure_ascii=False) + "\n",
         "cld.svg": draw.svg(cld),
         "index.html": page(cld, refs, version),
         "app.js": (PAGE / "app.js").read_text(),

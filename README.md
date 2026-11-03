@@ -111,3 +111,12 @@ updates what a project already holds, so each update means emptying the project 
 empties `cbp-cld`, then: green `+` → Import → Advanced → "Import JSON file" → `docs/project.json`
 → "Import JSON" → "Save Changes". Kumu restores the elements at their positions, the curved
 links and the view from `view.scss`.
+
+The view follows the page's look as far as Kumu can: white boxes with the label inside, square
+corners for a stock and a pill for the others, a second outer border for a constant (Kumu has no
+dashed border), a thick border for an adaptive practice; links of one width, blue `+` and red
+`−`. Each SETS region is a background element: a pill in the region's tint that covers the
+page's region, with the domain's name. `build.py` adds the rules that size each box and each
+region below `view.scss`, and a double space where the page breaks a label's line (Kumu's manual
+line break). The project's description and the map's name carry the model version, so Kumu says
+which model it holds.

@@ -2,7 +2,8 @@
 
 Imported by build.py, which writes docs/cld.svg and puts the same drawing inline in
 docs/index.html. svg(cld) returns the drawing as a string; overlaps(cld) the warnings about
-boxes and regions that intersect, for build.py's report.
+boxes and regions that intersect, for build.py's report; boxes(cld) and hulls(cld) the geometry
+build.py gives Kumu's elements and region elements.
 
 What is drawn, from back to front:
   regions   one per SETS domain: a smooth closed curve around its elements' boxes (their convex
@@ -396,28 +397,34 @@ def overlaps(cld):
             p, q = bxs[a], bxs[b]
             if p[0] < q[2] and q[0] < p[2] and p[1] < q[3] and q[1] < p[3]:
                 out.append(f"boxes overlap: {a} and {b}")
-    hulls = {}
-    for e in cld["elements"]:
-        x0, y0, x1, y1, _ = bxs[e["id"]]
-        hulls.setdefault(e["sets domain"], []).extend([(x0, y0), (x1, y0), (x0, y1), (x1, y1)])
-    hulls = {d: hull(pts) for d, pts in hulls.items()}
-    names = list(hulls)
+    hs = hulls(cld)
+    names = list(hs)
     for i, a in enumerate(names):
         for b in names[i + 1:]:
             # each region is its hull grown by REGION_PAD, so two intersect when the hulls
             # come closer than twice that
-            if polygons_intersect(hulls[a], hulls[b]) or polygon_distance(hulls[a], hulls[b]) < 2 * REGION_PAD:
+            if polygons_intersect(hs[a], hs[b]) or polygon_distance(hs[a], hs[b]) < 2 * REGION_PAD:
                 out.append(f"regions overlap: {a} and {b}")
     # a link between two elements of one domain stays inside that domain's region (Jordy)
     domain = {e["id"]: e["sets domain"] for e in cld["elements"]}
     for c in cld["connections"]:
-        h = hulls[domain[c["from"]]]
+        h = hs[domain[c["from"]]]
         if domain[c["to"]] != domain[c["from"]] or len(h) < 3:
             continue
         p0, ctrl, p2 = link_path(bxs[c["from"]], bxs[c["to"]], c["curvature"])
         if any(beyond(bezier(p0, ctrl, p2, k / 40), h) > 0 for k in range(41)):
             out.append(f"link leaves its region: {c['from']} -> {c['to']} (curvature {c['curvature']})")
     return out
+
+
+def hulls(cld):
+    """{domain: the convex hull of its elements' box corners}: each SETS region is this hull grown
+    by REGION_PAD. build.py sizes Kumu's region elements from it."""
+    bxs, corners = boxes(cld), {}
+    for e in cld["elements"]:
+        x0, y0, x1, y1, _ = bxs[e["id"]]
+        corners.setdefault(e["sets domain"], []).extend([(x0, y0), (x1, y0), (x0, y1), (x1, y1)])
+    return {d: hull(pts) for d, pts in corners.items()}
 
 
 def beyond(pt, h):

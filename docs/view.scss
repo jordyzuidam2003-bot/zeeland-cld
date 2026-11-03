@@ -1,0 +1,162 @@
+@controls {
+  bottom-left {
+    showcase {
+      as: buttons;
+      mode: loose;
+
+      option {
+        label: "Social";
+        selector: ["sets domain"="social"];
+      }
+
+      option {
+        label: "Ecological";
+        selector: ["sets domain"="ecological"];
+      }
+
+      option {
+        label: "Technological";
+        selector: ["sets domain"="technological"];
+      }
+
+      option {
+        label: "Cross-SETS links";
+        selector: ["sets scope"="cross-domain"];
+      }
+
+      option {
+        label: "Unsourced";
+        selector: ["sourced"="no"];
+      }
+    }
+
+    text {
+      value: "**Fill** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Links:** blue = + (same direction), red = − (opposite direction); thicker = crosses a SETS boundary<br>**Shape:** square = stock, white centre = adaptive practice";
+    }
+  }
+}
+
+@settings {
+  layout: static;
+  theme: light;
+  background-color: #FFFFFF;
+  culling: false;
+}
+
+/* ---------- Elements: fill = SETS domain ---------- */
+element {
+  size: 120;
+  font-size: 60;
+  font-weight: bold;
+  border-width: 0;
+  shadow-visibility: hidden;
+}
+
+["sets domain"="ecological"] {
+  color: #2E8B57;
+}
+
+["sets domain"="social"] {
+  color: #3B82C4;
+}
+
+["sets domain"="technological"] {
+  color: #E07B2A;
+}
+
+["element type"="stock"] {
+  shape: square;
+}
+
+/* adaptive practices: white centre */
+["adaptive practice"="yes"] {
+  bullseye-visibility: visible;
+  bullseye-color: #FFFFFF;
+  bullseye-size: 0.5;
+  bullseye-opacity: 1;
+}
+
+/* (no global curvature: each link keeps its own curve from the map) */
+connection {
+  size: 7;
+  style: solid;
+  arrow-visibility: visible;
+  label: none;
+  font-size: 100;
+  font-weight: bold;
+}
+
+["polarity"="positive"] {
+  color: #2166AC;
+}
+
+["polarity"="negative"] {
+  color: #B2182B;
+}
+
+["sets scope"="cross-domain"] {
+  size: 10;
+}
+
+connection["id"="hotter-drier-summers--crop-water-demand"] { curvature: -0.1; }
+connection["id"="hotter-drier-summers--estuary-salt-intrusion"] { curvature: -0.05; }
+connection["id"="hotter-drier-summers--freshwater-lens-recharge"] { curvature: -0.1; }
+connection["id"="sea-level-rise--estuary-salt-intrusion"] { curvature: -0.1; }
+connection["id"="sea-level-rise--saline-seepage-kwel"] { curvature: 0.1; }
+connection["id"="wetter-winters--freshwater-lens-recharge"] { curvature: -0.1; }
+connection["id"="wetter-winters--winter-rain-drained-away"] { curvature: 0.37; }
+connection["id"="clay-dispersion-sodification--soil-structure-usability"] { curvature: 0.4; }
+connection["id"="crop-water-demand--groundwater-extraction-for-irrigation"] { curvature: 0.35; }
+connection["id"="estuary-salt-intrusion--brackish-irrigation-water-use"] { curvature: -0.05; }
+connection["id"="freshwater-lens-recharge--freshwater-lens-thickness"] { curvature: -0.05; }
+connection["id"="freshwater-lens-thickness--root-zone-salinity"] { curvature: -0.1; }
+connection["id"="freshwater-lens-thickness--upconing-of-salt-groundwater"] { curvature: 0.11; }
+connection["id"="freshwater-lens-thickness--freshwater-availability-for-crops"] { curvature: -0.5; }
+connection["id"="land-subsidence--polder-surface-elevation-nap"] { curvature: -0.1; }
+connection["id"="polder-surface-elevation-nap--saline-seepage-kwel"] { curvature: -0.1; }
+connection["id"="root-zone-salinity--clay-dispersion-sodification"] { curvature: -0.1; }
+connection["id"="root-zone-salinity--crop-yield"] { curvature: -0.1; }
+connection["id"="root-zone-salinity--salt-tolerant-crop-adoption"] { curvature: -0.1; }
+connection["id"="saline-seepage-kwel--freshwater-lens-thickness"] { curvature: -0.1; }
+connection["id"="saline-seepage-kwel--root-zone-salinity"] { curvature: -0.5; }
+connection["id"="soil-structure-usability--freshwater-lens-recharge"] { curvature: 0.19; }
+connection["id"="soil-structure-usability--crop-yield"] { curvature: -0.1; }
+connection["id"="soil-structure-usability--agricultural-land-value"] { curvature: -0.1; }
+connection["id"="upconing-of-salt-groundwater--root-zone-salinity"] { curvature: -0.1; }
+connection["id"="brackish-irrigation-water-use--root-zone-salinity"] { curvature: -0.1; }
+connection["id"="demand-for-deep-polder-drainage--land-subsidence"] { curvature: 0; }
+connection["id"="demand-for-deep-polder-drainage--saline-seepage-kwel"] { curvature: 0; }
+connection["id"="demand-for-deep-polder-drainage--winter-rain-drained-away"] { curvature: -0.1; }
+connection["id"="external-freshwater-supply--freshwater-availability-for-crops"] { curvature: -0.1; }
+connection["id"="external-freshwater-supply--groundwater-extraction-for-irrigation"] { curvature: -0.3; }
+connection["id"="freshwater-availability-for-crops--brackish-irrigation-water-use"] { curvature: -0.1; }
+connection["id"="freshwater-availability-for-crops--crop-yield"] { curvature: -0.1; }
+connection["id"="freshwater-storage-measures--freshwater-lens-recharge"] { curvature: -0.1; }
+connection["id"="freshwater-storage-measures--winter-rain-drained-away"] { curvature: -0.3; }
+connection["id"="groundwater-extraction-for-irrigation--freshwater-lens-thickness"] { curvature: 0; }
+connection["id"="groundwater-extraction-for-irrigation--upconing-of-salt-groundwater"] { curvature: -0.1; }
+connection["id"="policy-resistance-legal-delays--demand-for-deep-polder-drainage"] { curvature: -0.1; }
+connection["id"="policy-resistance-legal-delays--wisselpolder-land-raising"] { curvature: -0.1; }
+connection["id"="winter-rain-drained-away--freshwater-lens-recharge"] { curvature: -0.11; }
+connection["id"="wisselpolder-land-raising--polder-surface-elevation-nap"] { curvature: -0.1; }
+connection["id"="crop-yield--farm-revenue"] { curvature: -0.1; }
+connection["id"="market-demand-for-alternative-crops--processing-capacity-for-alternative-crops"] { curvature: -0.1; }
+connection["id"="market-demand-for-alternative-crops--salt-tolerant-crop-adoption"] { curvature: -0.1; }
+connection["id"="processing-capacity-for-alternative-crops--salt-tolerant-crop-adoption"] { curvature: -0.1; }
+connection["id"="salt-tolerant-crop-adoption--crop-water-demand"] { curvature: 0.1; }
+connection["id"="salt-tolerant-crop-adoption--crop-yield"] { curvature: 0.1; }
+connection["id"="salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops"] { curvature: 0.5; }
+connection["id"="agricultural-land-value--bank-credit-freeze-risk-premiums"] { curvature: -0.05; }
+connection["id"="agricultural-land-value--fear-of-expropriation-planning-blight"] { curvature: -0.11; }
+connection["id"="agricultural-land-value--mortgage-debt-financial-leverage"] { curvature: -0.15; }
+connection["id"="bank-credit-freeze-risk-premiums--farmers-capacity-to-invest"] { curvature: -0.1; }
+connection["id"="basel-iv-capital-requirements--bank-credit-freeze-risk-premiums"] { curvature: -0.1; }
+connection["id"="dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage"] { curvature: -0.1; }
+connection["id"="dependence-on-high-margin-salt-sensitive-crops--groundwater-extraction-for-irrigation"] { curvature: -0.1; }
+connection["id"="dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption"] { curvature: -0.1; }
+connection["id"="farm-revenue--agricultural-land-value"] { curvature: -0.38; }
+connection["id"="farm-revenue--farmers-capacity-to-invest"] { curvature: 0.1; }
+connection["id"="farmers-capacity-to-invest--freshwater-storage-measures"] { curvature: -0.1; }
+connection["id"="farmers-capacity-to-invest--salt-tolerant-crop-adoption"] { curvature: -0.1; }
+connection["id"="fear-of-expropriation-planning-blight--policy-resistance-legal-delays"] { curvature: -0.1; }
+connection["id"="mortgage-debt-financial-leverage--dependence-on-high-margin-salt-sensitive-crops"] { curvature: -0.1; }

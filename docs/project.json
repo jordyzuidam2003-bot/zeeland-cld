@@ -1,0 +1,2687 @@
+{
+  "version": 1,
+  "name": "Zeeland CLD",
+  "description": "",
+  "proxyImages": true,
+  "defaultMap": "map-cld",
+  "defaultPerspective": null,
+  "attributeRelevance": {},
+  "attributes": [
+    {
+      "_id": "attr-label",
+      "name": "Label",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-element-type",
+      "name": "Element Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Auxiliary",
+        "Constant",
+        "Stock"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-adaptive-practice",
+      "name": "Adaptive practice",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "no",
+        "yes"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-sets-domain",
+      "name": "Sets domain",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Ecological",
+        "Social",
+        "Technological"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-subquestion",
+      "name": "Subquestion",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "SQ1",
+        "SQ2"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-description",
+      "name": "Description",
+      "format": "text",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-sources",
+      "name": "Sources",
+      "format": "text",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-sourced",
+      "name": "Sourced",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "no"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-polarity",
+      "name": "Polarity",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "negative",
+        "positive"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-delay",
+      "name": "Delay",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "no"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-loop-id",
+      "name": "Loop id",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "B1_Water_Retention",
+        "B2_Crop_Adaptation",
+        "B3_Governance_Delay",
+        "Exogenous",
+        "R1_Biophysical",
+        "R2_Financial_LockIn",
+        "R3_Wisselpolder",
+        "R4_Market_Scale"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-sets-link",
+      "name": "Sets link",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "E to S",
+        "E to T",
+        "S to E",
+        "S to T",
+        "T to E",
+        "Within E",
+        "Within S",
+        "Within T"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-sets-scope",
+      "name": "Sets scope",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Cross-domain",
+        "Within domain"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-connection-type",
+      "name": "Connection Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "+",
+        "-"
+      ],
+      "sort": false,
+      "cluster": true
+    }
+  ],
+  "elements": [
+    {
+      "_id": "elem-hotter-drier-summers",
+      "attributes": {
+        "label": "Hotter, drier summers",
+        "element type": "Constant",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Meteorological drought (KNMI'23): higher evaporation, summer precipitation deficit, and lower river discharge.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-sea-level-rise",
+      "attributes": {
+        "label": "Sea-level rise",
+        "element type": "Constant",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Rising sea level (KNMI'23 scenarios); increases hydrostatic pressure of marine water on polders and estuaries.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-wetter-winters",
+      "attributes": {
+        "label": "Wetter winters",
+        "element type": "Constant",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Increased winter precipitation, providing potential recharge volume if retained.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-clay-dispersion-sodification",
+      "attributes": {
+        "label": "Clay dispersion & sodification",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Structural degradation of marine clay soils as sodium (Na+) replaces calcium (Ca2+) on clay complexes.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-crop-water-demand",
+      "attributes": {
+        "label": "Crop water demand",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Evapotranspiration and crop water requirement, peaking during hot, dry summers.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-estuary-salt-intrusion",
+      "attributes": {
+        "label": "Estuary salt intrusion",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Marine water penetrating further inland into estuaries and surface canals when sea levels rise and river discharge drops.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-freshwater-lens-recharge",
+      "attributes": {
+        "label": "Freshwater lens recharge",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Infiltration of winter rainwater that refills the shallow rainwater lens.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-freshwater-lens-thickness",
+      "attributes": {
+        "label": "Freshwater lens thickness",
+        "element type": "Stock",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Volume/thickness of the fresh rainwater lens floating on saline groundwater (1–2 m in low clay polders; 5–40 m in creek ridges).",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-land-subsidence",
+      "attributes": {
+        "label": "Land subsidence",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Peat oxidation and clay consolidation caused by low drainage levels, lowering the land surface relative to sea level.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-polder-surface-elevation-nap",
+      "attributes": {
+        "label": "Polder surface elevation (NAP)",
+        "element type": "Stock",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence or raised via sedimentation.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-root-zone-salinity",
+      "attributes": {
+        "label": "Root zone salinity",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Salt and chloride (Cl-) concentration in the crop root zone, causing osmotic stress and ion toxicity.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-saline-seepage-kwel",
+      "attributes": {
+        "label": "Saline seepage (kwel)",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Upward hydrostatic pressure pushing salty groundwater through clay/peat layers (diffuse or via boils).",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-soil-structure-usability",
+      "attributes": {
+        "label": "Soil structure & usability",
+        "element type": "Stock",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Porosity, aeration, infiltration capacity, and workability of the agricultural soil.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-upconing-of-salt-groundwater",
+      "attributes": {
+        "label": "Upconing of salt groundwater",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Upward cone of the salt-freshwater interface beneath pumping irrigation wells as the freshwater lens thins.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-brackish-irrigation-water-use",
+      "attributes": {
+        "label": "Brackish irrigation water use",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Technological",
+        "subquestion": "SQ2",
+        "description": "Emergency or forced use of salinised surface/groundwater for irrigation when fresh water is depleted.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-demand-for-deep-polder-drainage",
+      "attributes": {
+        "label": "Demand for deep polder drainage",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subquestion": "SQ2",
+        "description": "Agricultural pressure to keep ditch water levels artificially low in spring so heavy machinery can access fields early.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-external-freshwater-supply",
+      "attributes": {
+        "label": "External freshwater supply",
+        "element type": "Constant",
+        "adaptive practice": "no",
+        "sets domain": "Technological",
+        "subquestion": "SQ1",
+        "description": "Freshwater pipelines/canals from outside the region (present in Tholen/Zeeuws-Vlaanderen; absent on Walcheren, Bevelanden, Schouwen-Duiveland).",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-freshwater-availability-for-crops",
+      "attributes": {
+        "label": "Freshwater availability for crops",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Available fresh moisture in the root zone and from fresh irrigation sources during the growing season.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-freshwater-storage-measures",
+      "attributes": {
+        "label": "Freshwater storage measures",
+        "element type": "Auxiliary",
+        "adaptive practice": "yes",
+        "sets domain": "Technological",
+        "subquestion": "SQ2",
+        "description": "On-farm and sub-surface water retention: Freshmaker, ASR-Coastal, creek-ridge infiltration, and adjustable/smart drainage.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-groundwater-extraction-for-irrigation",
+      "attributes": {
+        "label": "Groundwater extraction for irrigation",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Technological",
+        "subquestion": "SQ2",
+        "description": "Pumping of freshwater from creek ridges and lenses by farmers during summer droughts.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-policy-resistance-legal-delays",
+      "attributes": {
+        "label": "Policy resistance & legal delays",
+        "element type": "Stock",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subquestion": "SQ2",
+        "description": "Accumulated delays from lobbying, political deadlock, and Council of State (Raad van State) litigation.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-winter-rain-drained-away",
+      "attributes": {
+        "label": "Winter rain drained away",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Technological",
+        "subquestion": "SQ1",
+        "description": "Winter precipitation rapidly discharged to sea via field drains and pumping stations instead of recharging the lens.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-wisselpolder-land-raising",
+      "attributes": {
+        "label": "Wisselpolder land raising",
+        "element type": "Auxiliary",
+        "adaptive practice": "yes",
+        "sets domain": "Technological",
+        "subquestion": "SQ2",
+        "description": "Temporary tidal inundation along the Westerschelde allowing marine sediment to raise polder land by 1.5–3 m over 50–100 years.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-crop-yield",
+      "attributes": {
+        "label": "Crop yield",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Ecological",
+        "subquestion": "SQ1",
+        "description": "Physical yield per hectare of conventional crops (potatoes, onions, sugar beet) under the prevailing salinity, freshwater and soil conditions.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-market-demand-for-alternative-crops",
+      "attributes": {
+        "label": "Market demand for alternative crops",
+        "element type": "Constant",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subquestion": "SQ2",
+        "description": "Consumer demand and offtake contracts for novel salt-tolerant or alternative crops (e.g. protein crops).",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-processing-capacity-for-alternative-crops",
+      "attributes": {
+        "label": "Processing capacity for alternative crops",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Technological",
+        "subquestion": "SQ2",
+        "description": "Processing plants, breeding investment and supply chain infrastructure for novel salt-tolerant or alternative crops.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-salt-tolerant-crop-adoption",
+      "attributes": {
+        "label": "Salt-tolerant crop adoption",
+        "element type": "Auxiliary",
+        "adaptive practice": "yes",
+        "sets domain": "Technological",
+        "subquestion": "SQ2",
+        "description": "Cultivation of salt-tolerant varieties (potato/onion breeds) and halophytes/novel crops (quinoa, samphire, sea aster, field beans).",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-agricultural-land-value",
+      "attributes": {
+        "label": "Agricultural land value",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subquestion": "SQ2",
+        "description": "Market value of conventional farmland (€/ha), serving as the primary collateral for bank loans.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-bank-credit-freeze-risk-premiums",
+      "attributes": {
+        "label": "Bank credit freeze & risk premiums",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subquestion": "SQ2",
+        "description": "Higher interest rates and tighter lending by agricultural banks when land collateral values drop or climate risks rise.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-basel-iv-capital-requirements",
+      "attributes": {
+        "label": "Basel IV capital requirements",
+        "element type": "Constant",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subquestion": "SQ2",
+        "description": "European banking regulations requiring stricter risk weighting on loans when climate/soil risks reduce collateral value.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-dependence-on-high-margin-salt-sensitive-crops",
+      "attributes": {
+        "label": "Dependence on high-margin salt-sensitive crops",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subquestion": "SQ2",
+        "description": "Financial lock-in forcing farmers to grow high-revenue, salt-sensitive cash crops (seed potatoes, onions) to service high debt.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-farm-revenue",
+      "attributes": {
+        "label": "Farm revenue",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subquestion": "SQ2",
+        "description": "Financial return per hectare from crop sales, determined by yield and prices.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-farmers-capacity-to-invest",
+      "attributes": {
+        "label": "Farmers' capacity to invest",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subquestion": "SQ2",
+        "description": "Free cash flow and access to credit needed by farmers to pre-finance climate-adaptive practices.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-fear-of-expropriation-planning-blight",
+      "attributes": {
+        "label": "Fear of expropriation & planning blight",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subquestion": "SQ2",
+        "description": "Farmer anxiety over uncompensated land devaluation (planschade) and loss of autonomy (ontpolderen stigma).",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-mortgage-debt-financial-leverage",
+      "attributes": {
+        "label": "Mortgage debt & financial leverage",
+        "element type": "Stock",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subquestion": "SQ2",
+        "description": "Total bank debt per hectare (€/ha) and Loan-to-Value (LTV) ratio of agricultural enterprises.",
+        "sources": "",
+        "sourced": "no"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "_id": "conn-hotter-drier-summers--crop-water-demand",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "Exogenous",
+        "description": "Higher temperatures increase evapotranspiration and crop water requirements.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-hotter-drier-summers",
+      "to": "elem-crop-water-demand"
+    },
+    {
+      "_id": "conn-hotter-drier-summers--estuary-salt-intrusion",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "Exogenous",
+        "description": "Low summer river discharge allows seawater to penetrate further inland.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-hotter-drier-summers",
+      "to": "elem-estuary-salt-intrusion"
+    },
+    {
+      "_id": "conn-hotter-drier-summers--freshwater-lens-recharge",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "Exogenous",
+        "description": "Summer precipitation deficit and high evaporation reduce natural recharge.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-hotter-drier-summers",
+      "to": "elem-freshwater-lens-recharge"
+    },
+    {
+      "_id": "conn-sea-level-rise--estuary-salt-intrusion",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "Exogenous",
+        "description": "Rising sea level pushes marine water further into estuaries.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-sea-level-rise",
+      "to": "elem-estuary-salt-intrusion"
+    },
+    {
+      "_id": "conn-sea-level-rise--saline-seepage-kwel",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "Exogenous",
+        "description": "Higher sea level increases hydrostatic pressure beneath dikes.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-sea-level-rise",
+      "to": "elem-saline-seepage-kwel"
+    },
+    {
+      "_id": "conn-wetter-winters--freshwater-lens-recharge",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "Exogenous",
+        "description": "More winter precipitation increases potential infiltration into the soil.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-wetter-winters",
+      "to": "elem-freshwater-lens-recharge"
+    },
+    {
+      "_id": "conn-wetter-winters--winter-rain-drained-away",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "Exogenous",
+        "description": "Higher winter rainfall peaks are mostly discharged under conventional drainage.",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-wetter-winters",
+      "to": "elem-winter-rain-drained-away"
+    },
+    {
+      "_id": "conn-clay-dispersion-sodification--soil-structure-usability",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Sodification destroys soil aggregates, porosity, aeration, and workability.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-clay-dispersion-sodification",
+      "to": "elem-soil-structure-usability"
+    },
+    {
+      "_id": "conn-crop-water-demand--groundwater-extraction-for-irrigation",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Higher crop water need drives farmers to pump more groundwater.",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-crop-water-demand",
+      "to": "elem-groundwater-extraction-for-irrigation"
+    },
+    {
+      "_id": "conn-estuary-salt-intrusion--brackish-irrigation-water-use",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "Exogenous",
+        "description": "Salinisation of surface canals makes intake water for irrigation brackish.",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-estuary-salt-intrusion",
+      "to": "elem-brackish-irrigation-water-use"
+    },
+    {
+      "_id": "conn-freshwater-lens-recharge--freshwater-lens-thickness",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Rainwater infiltration builds up the floating freshwater lens.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-freshwater-lens-recharge",
+      "to": "elem-freshwater-lens-thickness"
+    },
+    {
+      "_id": "conn-freshwater-lens-thickness--root-zone-salinity",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "A thick freshwater lens keeps saline groundwater safely below the root zone.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-freshwater-lens-thickness",
+      "to": "elem-root-zone-salinity"
+    },
+    {
+      "_id": "conn-freshwater-lens-thickness--upconing-of-salt-groundwater",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "A thicker freshwater lens buffers against salt upconing under wells.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-freshwater-lens-thickness",
+      "to": "elem-upconing-of-salt-groundwater"
+    },
+    {
+      "_id": "conn-freshwater-lens-thickness--freshwater-availability-for-crops",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "A thicker lens provides a larger buffer of fresh soil moisture in summer.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-freshwater-lens-thickness",
+      "to": "elem-freshwater-availability-for-crops"
+    },
+    {
+      "_id": "conn-land-subsidence--polder-surface-elevation-nap",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Peat oxidation and clay settling lower the physical land surface relative to NAP.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-land-subsidence",
+      "to": "elem-polder-surface-elevation-nap"
+    },
+    {
+      "_id": "conn-polder-surface-elevation-nap--saline-seepage-kwel",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R3_Wisselpolder",
+        "description": "Higher polder elevation reduces the hydraulic head difference driving upward saline seepage.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-polder-surface-elevation-nap",
+      "to": "elem-saline-seepage-kwel"
+    },
+    {
+      "_id": "conn-root-zone-salinity--clay-dispersion-sodification",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "High sodium (Na+) concentrations displace calcium (Ca2+), causing clay particles to disperse.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-root-zone-salinity",
+      "to": "elem-clay-dispersion-sodification"
+    },
+    {
+      "_id": "conn-root-zone-salinity--crop-yield",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "Osmotic stress and chloride toxicity reduce yields of salt-sensitive cash crops.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-root-zone-salinity",
+      "to": "elem-crop-yield"
+    },
+    {
+      "_id": "conn-root-zone-salinity--salt-tolerant-crop-adoption",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "B2_Crop_Adaptation",
+        "description": "Rising salinity increases agronomic pressure to switch to tolerant varieties.",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-root-zone-salinity",
+      "to": "elem-salt-tolerant-crop-adoption"
+    },
+    {
+      "_id": "conn-saline-seepage-kwel--freshwater-lens-thickness",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Upward saline groundwater erodes and thins the floating freshwater lens from below.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-saline-seepage-kwel",
+      "to": "elem-freshwater-lens-thickness"
+    },
+    {
+      "_id": "conn-saline-seepage-kwel--root-zone-salinity",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Capillary rise brings saline seepage water into the root zone.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-saline-seepage-kwel",
+      "to": "elem-root-zone-salinity"
+    },
+    {
+      "_id": "conn-soil-structure-usability--freshwater-lens-recharge",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Healthy porous soil allows winter rainwater to infiltrate rather than run off.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-soil-structure-usability",
+      "to": "elem-freshwater-lens-recharge"
+    },
+    {
+      "_id": "conn-soil-structure-usability--crop-yield",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "Good soil structure supports root development, emergence, and safe harvesting of tubers/bulbs.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-soil-structure-usability",
+      "to": "elem-crop-yield"
+    },
+    {
+      "_id": "conn-soil-structure-usability--agricultural-land-value",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "Structural soil health and low salinity determine the intrinsic value of arable land.",
+        "sets link": "E to S",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-soil-structure-usability",
+      "to": "elem-agricultural-land-value"
+    },
+    {
+      "_id": "conn-upconing-of-salt-groundwater--root-zone-salinity",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Salt water drawn upward contaminates the upper soil and irrigation wells.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-upconing-of-salt-groundwater",
+      "to": "elem-root-zone-salinity"
+    },
+    {
+      "_id": "conn-brackish-irrigation-water-use--root-zone-salinity",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Evaporation of brackish irrigation water leaves salt behind in the topsoil.",
+        "sets link": "T to E",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-brackish-irrigation-water-use",
+      "to": "elem-root-zone-salinity"
+    },
+    {
+      "_id": "conn-demand-for-deep-polder-drainage--land-subsidence",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Low water tables expose peat to oxygen and cause clay shrinkage.",
+        "sets link": "S to E",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-demand-for-deep-polder-drainage",
+      "to": "elem-land-subsidence"
+    },
+    {
+      "_id": "conn-demand-for-deep-polder-drainage--saline-seepage-kwel",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Lower ditch levels increase the pressure gradient between deep saline groundwater and the polder.",
+        "sets link": "S to E",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-demand-for-deep-polder-drainage",
+      "to": "elem-saline-seepage-kwel"
+    },
+    {
+      "_id": "conn-demand-for-deep-polder-drainage--winter-rain-drained-away",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Intensive drainage networks rapidly discharge winter surplus water to the sea.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-demand-for-deep-polder-drainage",
+      "to": "elem-winter-rain-drained-away"
+    },
+    {
+      "_id": "conn-external-freshwater-supply--freshwater-availability-for-crops",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "Exogenous",
+        "description": "External supply directly supplements fresh water available to farms.",
+        "sets link": "T to E",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-external-freshwater-supply",
+      "to": "elem-freshwater-availability-for-crops"
+    },
+    {
+      "_id": "conn-external-freshwater-supply--groundwater-extraction-for-irrigation",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "Exogenous",
+        "description": "Where external freshwater pipelines exist, farmers rely less on pumping from local lenses.",
+        "sets link": "Within T",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-external-freshwater-supply",
+      "to": "elem-groundwater-extraction-for-irrigation"
+    },
+    {
+      "_id": "conn-freshwater-availability-for-crops--brackish-irrigation-water-use",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "When fresh water is scarce, farmers are forced to irrigate with brackish surface/well water.",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-freshwater-availability-for-crops",
+      "to": "elem-brackish-irrigation-water-use"
+    },
+    {
+      "_id": "conn-freshwater-availability-for-crops--crop-yield",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "Adequate freshwater supply prevents drought stress and yield loss.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-freshwater-availability-for-crops",
+      "to": "elem-crop-yield"
+    },
+    {
+      "_id": "conn-freshwater-storage-measures--freshwater-lens-recharge",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "B1_Water_Retention",
+        "description": "Active infiltration and drainage retention directly build up the freshwater lens.",
+        "sets link": "T to E",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-freshwater-storage-measures",
+      "to": "elem-freshwater-lens-recharge"
+    },
+    {
+      "_id": "conn-freshwater-storage-measures--winter-rain-drained-away",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "B1_Water_Retention",
+        "description": "Smart/adjustable drains and storage retain winter water instead of discharging it.",
+        "sets link": "Within T",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-freshwater-storage-measures",
+      "to": "elem-winter-rain-drained-away"
+    },
+    {
+      "_id": "conn-groundwater-extraction-for-irrigation--freshwater-lens-thickness",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Extracting groundwater directly depletes the limited freshwater lens.",
+        "sets link": "T to E",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-groundwater-extraction-for-irrigation",
+      "to": "elem-freshwater-lens-thickness"
+    },
+    {
+      "_id": "conn-groundwater-extraction-for-irrigation--upconing-of-salt-groundwater",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Pumping groundwater draws the underlying salt-fresh interface upward into a cone.",
+        "sets link": "T to E",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-groundwater-extraction-for-irrigation",
+      "to": "elem-upconing-of-salt-groundwater"
+    },
+    {
+      "_id": "conn-policy-resistance-legal-delays--demand-for-deep-polder-drainage",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "B3_Governance_Delay",
+        "description": "Institutional gridlock preserves the status quo of deep polder drainage.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-policy-resistance-legal-delays",
+      "to": "elem-demand-for-deep-polder-drainage"
+    },
+    {
+      "_id": "conn-policy-resistance-legal-delays--wisselpolder-land-raising",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "B3_Governance_Delay",
+        "description": "Legal appeals and anti-ontpolderen sentiment block the creation of wisselpolders.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-policy-resistance-legal-delays",
+      "to": "elem-wisselpolder-land-raising"
+    },
+    {
+      "_id": "conn-winter-rain-drained-away--freshwater-lens-recharge",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R1_Biophysical",
+        "description": "Water evacuated via drains cannot infiltrate to refill the freshwater lens.",
+        "sets link": "T to E",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-winter-rain-drained-away",
+      "to": "elem-freshwater-lens-recharge"
+    },
+    {
+      "_id": "conn-wisselpolder-land-raising--polder-surface-elevation-nap",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R3_Wisselpolder",
+        "description": "Tidal siltation raises the polder surface by 1.5–3 m over 50–100 years.",
+        "sets link": "T to E",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-wisselpolder-land-raising",
+      "to": "elem-polder-surface-elevation-nap"
+    },
+    {
+      "_id": "conn-crop-yield--farm-revenue",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "Higher physical yield increases sales revenue per hectare.",
+        "sets link": "E to S",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-crop-yield",
+      "to": "elem-farm-revenue"
+    },
+    {
+      "_id": "conn-market-demand-for-alternative-crops--processing-capacity-for-alternative-crops",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R4_Market_Scale",
+        "description": "Stable demand and offtake contracts justify investment in processing and supply chains.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-market-demand-for-alternative-crops",
+      "to": "elem-processing-capacity-for-alternative-crops"
+    },
+    {
+      "_id": "conn-market-demand-for-alternative-crops--salt-tolerant-crop-adoption",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R4_Market_Scale",
+        "description": "Assured offtake makes salt-tolerant and alternative crops commercially attractive to farmers.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-market-demand-for-alternative-crops",
+      "to": "elem-salt-tolerant-crop-adoption"
+    },
+    {
+      "_id": "conn-processing-capacity-for-alternative-crops--salt-tolerant-crop-adoption",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R4_Market_Scale",
+        "description": "Established processing plants and offtake contracts make salt-tolerant crops viable for farmers.",
+        "sets link": "Within T",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-processing-capacity-for-alternative-crops",
+      "to": "elem-salt-tolerant-crop-adoption"
+    },
+    {
+      "_id": "conn-salt-tolerant-crop-adoption--crop-water-demand",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "B2_Crop_Adaptation",
+        "description": "Salt-tolerant crops and halophytes require less fresh water.",
+        "sets link": "T to E",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-salt-tolerant-crop-adoption",
+      "to": "elem-crop-water-demand"
+    },
+    {
+      "_id": "conn-salt-tolerant-crop-adoption--crop-yield",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "B2_Crop_Adaptation",
+        "description": "Tolerant crops stabilize farm yields and revenue under saline conditions.",
+        "sets link": "T to E",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-salt-tolerant-crop-adoption",
+      "to": "elem-crop-yield"
+    },
+    {
+      "_id": "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R4_Market_Scale",
+        "description": "Growing cultivation volume attracts processors, breeding investment, and supply chain scale.",
+        "sets link": "Within T",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-salt-tolerant-crop-adoption",
+      "to": "elem-processing-capacity-for-alternative-crops"
+    },
+    {
+      "_id": "conn-agricultural-land-value--bank-credit-freeze-risk-premiums",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "Declining land collateral values trigger higher bank risk premiums and credit freezes.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-agricultural-land-value",
+      "to": "elem-bank-credit-freeze-risk-premiums"
+    },
+    {
+      "_id": "conn-agricultural-land-value--fear-of-expropriation-planning-blight",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "B3_Governance_Delay",
+        "description": "Threat of falling land values due to re-wetting or ontpolderen fuels farmer anxiety.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-agricultural-land-value",
+      "to": "elem-fear-of-expropriation-planning-blight"
+    },
+    {
+      "_id": "conn-agricultural-land-value--mortgage-debt-financial-leverage",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "High historical land prices required large mortgages; subsequent land devaluation worsens Leverage/LTV.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-agricultural-land-value",
+      "to": "elem-mortgage-debt-financial-leverage"
+    },
+    {
+      "_id": "conn-bank-credit-freeze-risk-premiums--farmers-capacity-to-invest",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "Restricted credit and higher interest rates prevent farmers from financing adaptation measures.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-bank-credit-freeze-risk-premiums",
+      "to": "elem-farmers-capacity-to-invest"
+    },
+    {
+      "_id": "conn-basel-iv-capital-requirements--bank-credit-freeze-risk-premiums",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "Exogenous",
+        "description": "Stricter European banking rules mandate higher capital buffers for climate-exposed loans.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-basel-iv-capital-requirements",
+      "to": "elem-bank-credit-freeze-risk-premiums"
+    },
+    {
+      "_id": "conn-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "Potatoes and onions require dry, warm soils in early spring to bear heavy machinery.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-dependence-on-high-margin-salt-sensitive-crops",
+      "to": "elem-demand-for-deep-polder-drainage"
+    },
+    {
+      "_id": "conn-dependence-on-high-margin-salt-sensitive-crops--groundwater-extraction-for-irrigation",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "High-value salt-sensitive crops require intensive freshwater irrigation during dry spells.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-dependence-on-high-margin-salt-sensitive-crops",
+      "to": "elem-groundwater-extraction-for-irrigation"
+    },
+    {
+      "_id": "conn-dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "Need for immediate high margins locks farmers out of lower-margin salt-tolerant alternatives.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-dependence-on-high-margin-salt-sensitive-crops",
+      "to": "elem-salt-tolerant-crop-adoption"
+    },
+    {
+      "_id": "conn-farm-revenue--agricultural-land-value",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "Sustained productivity and profitability underpin high market prices for farmland.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-farm-revenue",
+      "to": "elem-agricultural-land-value"
+    },
+    {
+      "_id": "conn-farm-revenue--farmers-capacity-to-invest",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "Higher farm income generates internal cash flow for adaptive investments.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-farm-revenue",
+      "to": "elem-farmers-capacity-to-invest"
+    },
+    {
+      "_id": "conn-farmers-capacity-to-invest--freshwater-storage-measures",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "B1_Water_Retention",
+        "description": "Financial room allows investment in ASR, Freshmaker, and adjustable drainage.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-farmers-capacity-to-invest",
+      "to": "elem-freshwater-storage-measures"
+    },
+    {
+      "_id": "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "B2_Crop_Adaptation",
+        "description": "Investment capacity enables transition costs and new machinery for novel crops.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-farmers-capacity-to-invest",
+      "to": "elem-salt-tolerant-crop-adoption"
+    },
+    {
+      "_id": "conn-fear-of-expropriation-planning-blight--policy-resistance-legal-delays",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "B3_Governance_Delay",
+        "description": "Uncompensated loss fears trigger fierce lobbying (ZLTO), local political resistance, and lawsuits.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-fear-of-expropriation-planning-blight",
+      "to": "elem-policy-resistance-legal-delays"
+    },
+    {
+      "_id": "conn-mortgage-debt-financial-leverage--dependence-on-high-margin-salt-sensitive-crops",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "R2_Financial_LockIn",
+        "description": "High debt service forces farmers to cultivate lucrative but salt-sensitive crops (seed potatoes, onions).",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-mortgage-debt-financial-leverage",
+      "to": "elem-dependence-on-high-margin-salt-sensitive-crops"
+    }
+  ],
+  "loops": [],
+  "maps": [
+    {
+      "_id": "map-cld",
+      "name": "CLD",
+      "description": "",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "defaultPerspective": "pers-cld",
+      "defaultElementBehavior": "fixed",
+      "defaultConnectionDirection": "directed",
+      "elements": [
+        {
+          "_id": "node-hotter-drier-summers",
+          "position": {
+            "x": -649,
+            "y": 2829
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-hotter-drier-summers"
+        },
+        {
+          "_id": "node-sea-level-rise",
+          "position": {
+            "x": -546,
+            "y": 3641
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-sea-level-rise"
+        },
+        {
+          "_id": "node-wetter-winters",
+          "position": {
+            "x": -1414,
+            "y": 2439
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-wetter-winters"
+        },
+        {
+          "_id": "node-clay-dispersion-sodification",
+          "position": {
+            "x": 1484,
+            "y": 3271
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-clay-dispersion-sodification"
+        },
+        {
+          "_id": "node-crop-water-demand",
+          "position": {
+            "x": -650,
+            "y": 2430
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-crop-water-demand"
+        },
+        {
+          "_id": "node-estuary-salt-intrusion",
+          "position": {
+            "x": 727,
+            "y": 3360
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-estuary-salt-intrusion"
+        },
+        {
+          "_id": "node-freshwater-lens-recharge",
+          "position": {
+            "x": -968,
+            "y": 3246
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-freshwater-lens-recharge"
+        },
+        {
+          "_id": "node-freshwater-lens-thickness",
+          "position": {
+            "x": 386,
+            "y": 2931
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-freshwater-lens-thickness"
+        },
+        {
+          "_id": "node-land-subsidence",
+          "position": {
+            "x": -1890,
+            "y": 2430
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-land-subsidence"
+        },
+        {
+          "_id": "node-polder-surface-elevation-nap",
+          "position": {
+            "x": -2154,
+            "y": 2885
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-polder-surface-elevation-nap"
+        },
+        {
+          "_id": "node-root-zone-salinity",
+          "position": {
+            "x": 1254,
+            "y": 2928
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-root-zone-salinity"
+        },
+        {
+          "_id": "node-saline-seepage-kwel",
+          "position": {
+            "x": -1471,
+            "y": 3691
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-saline-seepage-kwel"
+        },
+        {
+          "_id": "node-soil-structure-usability",
+          "position": {
+            "x": 2019,
+            "y": 3425
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-soil-structure-usability"
+        },
+        {
+          "_id": "node-upconing-of-salt-groundwater",
+          "position": {
+            "x": -139,
+            "y": 2528
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-upconing-of-salt-groundwater"
+        },
+        {
+          "_id": "node-brackish-irrigation-water-use",
+          "position": {
+            "x": 811,
+            "y": 1930
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-brackish-irrigation-water-use"
+        },
+        {
+          "_id": "node-demand-for-deep-polder-drainage",
+          "position": {
+            "x": -1722,
+            "y": 650
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-demand-for-deep-polder-drainage"
+        },
+        {
+          "_id": "node-external-freshwater-supply",
+          "position": {
+            "x": 154,
+            "y": 1479
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-external-freshwater-supply"
+        },
+        {
+          "_id": "node-freshwater-availability-for-crops",
+          "position": {
+            "x": 372,
+            "y": 2211
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-freshwater-availability-for-crops"
+        },
+        {
+          "_id": "node-freshwater-storage-measures",
+          "position": {
+            "x": -840,
+            "y": 1922
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-freshwater-storage-measures"
+        },
+        {
+          "_id": "node-groundwater-extraction-for-irrigation",
+          "position": {
+            "x": -218,
+            "y": 1879
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-groundwater-extraction-for-irrigation"
+        },
+        {
+          "_id": "node-policy-resistance-legal-delays",
+          "position": {
+            "x": -1902,
+            "y": 243
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-policy-resistance-legal-delays"
+        },
+        {
+          "_id": "node-winter-rain-drained-away",
+          "position": {
+            "x": -1230,
+            "y": 1517
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-winter-rain-drained-away"
+        },
+        {
+          "_id": "node-wisselpolder-land-raising",
+          "position": {
+            "x": -2112,
+            "y": 1688
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-wisselpolder-land-raising"
+        },
+        {
+          "_id": "node-crop-yield",
+          "position": {
+            "x": 1404,
+            "y": 2434
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-crop-yield"
+        },
+        {
+          "_id": "node-market-demand-for-alternative-crops",
+          "position": {
+            "x": 1414,
+            "y": 413
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-market-demand-for-alternative-crops"
+        },
+        {
+          "_id": "node-processing-capacity-for-alternative-crops",
+          "position": {
+            "x": 1466,
+            "y": 1290
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-processing-capacity-for-alternative-crops"
+        },
+        {
+          "_id": "node-salt-tolerant-crop-adoption",
+          "position": {
+            "x": 876,
+            "y": 1449
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-salt-tolerant-crop-adoption"
+        },
+        {
+          "_id": "node-agricultural-land-value",
+          "position": {
+            "x": 1626,
+            "y": 5
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-agricultural-land-value"
+        },
+        {
+          "_id": "node-bank-credit-freeze-risk-premiums",
+          "position": {
+            "x": 246,
+            "y": 591
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-bank-credit-freeze-risk-premiums"
+        },
+        {
+          "_id": "node-basel-iv-capital-requirements",
+          "position": {
+            "x": -338,
+            "y": 606
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-basel-iv-capital-requirements"
+        },
+        {
+          "_id": "node-dependence-on-high-margin-salt-sensitive-crops",
+          "position": {
+            "x": -925,
+            "y": 642
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-dependence-on-high-margin-salt-sensitive-crops"
+        },
+        {
+          "_id": "node-farm-revenue",
+          "position": {
+            "x": 2000,
+            "y": 646
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-farm-revenue"
+        },
+        {
+          "_id": "node-farmers-capacity-to-invest",
+          "position": {
+            "x": 827,
+            "y": 650
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-farmers-capacity-to-invest"
+        },
+        {
+          "_id": "node-fear-of-expropriation-planning-blight",
+          "position": {
+            "x": -281,
+            "y": -111
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fear-of-expropriation-planning-blight"
+        },
+        {
+          "_id": "node-mortgage-debt-financial-leverage",
+          "position": {
+            "x": 305,
+            "y": 144
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-mortgage-debt-financial-leverage"
+        }
+      ],
+      "connections": [
+        {
+          "_id": "edge-hotter-drier-summers--crop-water-demand",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-hotter-drier-summers--crop-water-demand"
+        },
+        {
+          "_id": "edge-hotter-drier-summers--estuary-salt-intrusion",
+          "curvature": -0.05,
+          "style": {},
+          "connection": "conn-hotter-drier-summers--estuary-salt-intrusion"
+        },
+        {
+          "_id": "edge-hotter-drier-summers--freshwater-lens-recharge",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-hotter-drier-summers--freshwater-lens-recharge"
+        },
+        {
+          "_id": "edge-sea-level-rise--estuary-salt-intrusion",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-sea-level-rise--estuary-salt-intrusion"
+        },
+        {
+          "_id": "edge-sea-level-rise--saline-seepage-kwel",
+          "curvature": 0.1,
+          "style": {},
+          "connection": "conn-sea-level-rise--saline-seepage-kwel"
+        },
+        {
+          "_id": "edge-wetter-winters--freshwater-lens-recharge",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-wetter-winters--freshwater-lens-recharge"
+        },
+        {
+          "_id": "edge-wetter-winters--winter-rain-drained-away",
+          "curvature": 0.37,
+          "style": {},
+          "connection": "conn-wetter-winters--winter-rain-drained-away"
+        },
+        {
+          "_id": "edge-clay-dispersion-sodification--soil-structure-usability",
+          "curvature": 0.4,
+          "style": {},
+          "connection": "conn-clay-dispersion-sodification--soil-structure-usability"
+        },
+        {
+          "_id": "edge-crop-water-demand--groundwater-extraction-for-irrigation",
+          "curvature": 0.35,
+          "style": {},
+          "connection": "conn-crop-water-demand--groundwater-extraction-for-irrigation"
+        },
+        {
+          "_id": "edge-estuary-salt-intrusion--brackish-irrigation-water-use",
+          "curvature": -0.05,
+          "style": {},
+          "connection": "conn-estuary-salt-intrusion--brackish-irrigation-water-use"
+        },
+        {
+          "_id": "edge-freshwater-lens-recharge--freshwater-lens-thickness",
+          "curvature": -0.05,
+          "style": {},
+          "connection": "conn-freshwater-lens-recharge--freshwater-lens-thickness"
+        },
+        {
+          "_id": "edge-freshwater-lens-thickness--root-zone-salinity",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
+        },
+        {
+          "_id": "edge-freshwater-lens-thickness--upconing-of-salt-groundwater",
+          "curvature": 0.11,
+          "style": {},
+          "connection": "conn-freshwater-lens-thickness--upconing-of-salt-groundwater"
+        },
+        {
+          "_id": "edge-freshwater-lens-thickness--freshwater-availability-for-crops",
+          "curvature": -0.5,
+          "style": {},
+          "connection": "conn-freshwater-lens-thickness--freshwater-availability-for-crops"
+        },
+        {
+          "_id": "edge-land-subsidence--polder-surface-elevation-nap",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-land-subsidence--polder-surface-elevation-nap"
+        },
+        {
+          "_id": "edge-polder-surface-elevation-nap--saline-seepage-kwel",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-polder-surface-elevation-nap--saline-seepage-kwel"
+        },
+        {
+          "_id": "edge-root-zone-salinity--clay-dispersion-sodification",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-root-zone-salinity--clay-dispersion-sodification"
+        },
+        {
+          "_id": "edge-root-zone-salinity--crop-yield",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-root-zone-salinity--crop-yield"
+        },
+        {
+          "_id": "edge-root-zone-salinity--salt-tolerant-crop-adoption",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-root-zone-salinity--salt-tolerant-crop-adoption"
+        },
+        {
+          "_id": "edge-saline-seepage-kwel--freshwater-lens-thickness",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
+        },
+        {
+          "_id": "edge-saline-seepage-kwel--root-zone-salinity",
+          "curvature": -0.5,
+          "style": {},
+          "connection": "conn-saline-seepage-kwel--root-zone-salinity"
+        },
+        {
+          "_id": "edge-soil-structure-usability--freshwater-lens-recharge",
+          "curvature": 0.19,
+          "style": {},
+          "connection": "conn-soil-structure-usability--freshwater-lens-recharge"
+        },
+        {
+          "_id": "edge-soil-structure-usability--crop-yield",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-soil-structure-usability--crop-yield"
+        },
+        {
+          "_id": "edge-soil-structure-usability--agricultural-land-value",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-soil-structure-usability--agricultural-land-value"
+        },
+        {
+          "_id": "edge-upconing-of-salt-groundwater--root-zone-salinity",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-upconing-of-salt-groundwater--root-zone-salinity"
+        },
+        {
+          "_id": "edge-brackish-irrigation-water-use--root-zone-salinity",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-brackish-irrigation-water-use--root-zone-salinity"
+        },
+        {
+          "_id": "edge-demand-for-deep-polder-drainage--land-subsidence",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-demand-for-deep-polder-drainage--land-subsidence"
+        },
+        {
+          "_id": "edge-demand-for-deep-polder-drainage--saline-seepage-kwel",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-demand-for-deep-polder-drainage--saline-seepage-kwel"
+        },
+        {
+          "_id": "edge-demand-for-deep-polder-drainage--winter-rain-drained-away",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-demand-for-deep-polder-drainage--winter-rain-drained-away"
+        },
+        {
+          "_id": "edge-external-freshwater-supply--freshwater-availability-for-crops",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-external-freshwater-supply--freshwater-availability-for-crops"
+        },
+        {
+          "_id": "edge-external-freshwater-supply--groundwater-extraction-for-irrigation",
+          "curvature": -0.3,
+          "style": {},
+          "connection": "conn-external-freshwater-supply--groundwater-extraction-for-irrigation"
+        },
+        {
+          "_id": "edge-freshwater-availability-for-crops--brackish-irrigation-water-use",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-freshwater-availability-for-crops--brackish-irrigation-water-use"
+        },
+        {
+          "_id": "edge-freshwater-availability-for-crops--crop-yield",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-freshwater-availability-for-crops--crop-yield"
+        },
+        {
+          "_id": "edge-freshwater-storage-measures--freshwater-lens-recharge",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-freshwater-storage-measures--freshwater-lens-recharge"
+        },
+        {
+          "_id": "edge-freshwater-storage-measures--winter-rain-drained-away",
+          "curvature": -0.3,
+          "style": {},
+          "connection": "conn-freshwater-storage-measures--winter-rain-drained-away"
+        },
+        {
+          "_id": "edge-groundwater-extraction-for-irrigation--freshwater-lens-thickness",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-groundwater-extraction-for-irrigation--freshwater-lens-thickness"
+        },
+        {
+          "_id": "edge-groundwater-extraction-for-irrigation--upconing-of-salt-groundwater",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-groundwater-extraction-for-irrigation--upconing-of-salt-groundwater"
+        },
+        {
+          "_id": "edge-policy-resistance-legal-delays--demand-for-deep-polder-drainage",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-policy-resistance-legal-delays--demand-for-deep-polder-drainage"
+        },
+        {
+          "_id": "edge-policy-resistance-legal-delays--wisselpolder-land-raising",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-policy-resistance-legal-delays--wisselpolder-land-raising"
+        },
+        {
+          "_id": "edge-winter-rain-drained-away--freshwater-lens-recharge",
+          "curvature": -0.11,
+          "style": {},
+          "connection": "conn-winter-rain-drained-away--freshwater-lens-recharge"
+        },
+        {
+          "_id": "edge-wisselpolder-land-raising--polder-surface-elevation-nap",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-wisselpolder-land-raising--polder-surface-elevation-nap"
+        },
+        {
+          "_id": "edge-crop-yield--farm-revenue",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-crop-yield--farm-revenue"
+        },
+        {
+          "_id": "edge-market-demand-for-alternative-crops--processing-capacity-for-alternative-crops",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-market-demand-for-alternative-crops--processing-capacity-for-alternative-crops"
+        },
+        {
+          "_id": "edge-market-demand-for-alternative-crops--salt-tolerant-crop-adoption",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-market-demand-for-alternative-crops--salt-tolerant-crop-adoption"
+        },
+        {
+          "_id": "edge-processing-capacity-for-alternative-crops--salt-tolerant-crop-adoption",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-processing-capacity-for-alternative-crops--salt-tolerant-crop-adoption"
+        },
+        {
+          "_id": "edge-salt-tolerant-crop-adoption--crop-water-demand",
+          "curvature": 0.1,
+          "style": {},
+          "connection": "conn-salt-tolerant-crop-adoption--crop-water-demand"
+        },
+        {
+          "_id": "edge-salt-tolerant-crop-adoption--crop-yield",
+          "curvature": 0.1,
+          "style": {},
+          "connection": "conn-salt-tolerant-crop-adoption--crop-yield"
+        },
+        {
+          "_id": "edge-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
+          "curvature": 0.5,
+          "style": {},
+          "connection": "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops"
+        },
+        {
+          "_id": "edge-agricultural-land-value--bank-credit-freeze-risk-premiums",
+          "curvature": -0.05,
+          "style": {},
+          "connection": "conn-agricultural-land-value--bank-credit-freeze-risk-premiums"
+        },
+        {
+          "_id": "edge-agricultural-land-value--fear-of-expropriation-planning-blight",
+          "curvature": -0.11,
+          "style": {},
+          "connection": "conn-agricultural-land-value--fear-of-expropriation-planning-blight"
+        },
+        {
+          "_id": "edge-agricultural-land-value--mortgage-debt-financial-leverage",
+          "curvature": -0.15,
+          "style": {},
+          "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
+        },
+        {
+          "_id": "edge-bank-credit-freeze-risk-premiums--farmers-capacity-to-invest",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-bank-credit-freeze-risk-premiums--farmers-capacity-to-invest"
+        },
+        {
+          "_id": "edge-basel-iv-capital-requirements--bank-credit-freeze-risk-premiums",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-basel-iv-capital-requirements--bank-credit-freeze-risk-premiums"
+        },
+        {
+          "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage"
+        },
+        {
+          "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--groundwater-extraction-for-irrigation",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--groundwater-extraction-for-irrigation"
+        },
+        {
+          "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption"
+        },
+        {
+          "_id": "edge-farm-revenue--agricultural-land-value",
+          "curvature": -0.38,
+          "style": {},
+          "connection": "conn-farm-revenue--agricultural-land-value"
+        },
+        {
+          "_id": "edge-farm-revenue--farmers-capacity-to-invest",
+          "curvature": 0.1,
+          "style": {},
+          "connection": "conn-farm-revenue--farmers-capacity-to-invest"
+        },
+        {
+          "_id": "edge-farmers-capacity-to-invest--freshwater-storage-measures",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-farmers-capacity-to-invest--freshwater-storage-measures"
+        },
+        {
+          "_id": "edge-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption"
+        },
+        {
+          "_id": "edge-fear-of-expropriation-planning-blight--policy-resistance-legal-delays",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-fear-of-expropriation-planning-blight--policy-resistance-legal-delays"
+        },
+        {
+          "_id": "edge-mortgage-debt-financial-leverage--dependence-on-high-margin-salt-sensitive-crops",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-mortgage-debt-financial-leverage--dependence-on-high-margin-salt-sensitive-crops"
+        }
+      ],
+      "loops": []
+    }
+  ],
+  "perspectives": [
+    {
+      "_id": "pers-cld",
+      "name": "CLD",
+      "style": "@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      mode: loose;\n\n      option {\n        label: \"Social\";\n        selector: [\"sets domain\"=\"social\"];\n      }\n\n      option {\n        label: \"Ecological\";\n        selector: [\"sets domain\"=\"ecological\"];\n      }\n\n      option {\n        label: \"Technological\";\n        selector: [\"sets domain\"=\"technological\"];\n      }\n\n      option {\n        label: \"Cross-SETS links\";\n        selector: [\"sets scope\"=\"cross-domain\"];\n      }\n\n      option {\n        label: \"Unsourced\";\n        selector: [\"sourced\"=\"no\"];\n      }\n    }\n\n    text {\n      value: \"**Fill** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Links:** blue = + (same direction), red = − (opposite direction); thicker = crosses a SETS boundary<br>**Shape:** square = stock, white centre = adaptive practice\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: false;\n}\n\n/* ---------- Elements: fill = SETS domain ---------- */\nelement {\n  size: 120;\n  font-size: 60;\n  font-weight: bold;\n  border-width: 0;\n  shadow-visibility: hidden;\n}\n\n[\"sets domain\"=\"ecological\"] {\n  color: #2E8B57;\n}\n\n[\"sets domain\"=\"social\"] {\n  color: #3B82C4;\n}\n\n[\"sets domain\"=\"technological\"] {\n  color: #E07B2A;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: square;\n}\n\n/* adaptive practices: white centre */\n[\"adaptive practice\"=\"yes\"] {\n  bullseye-visibility: visible;\n  bullseye-color: #FFFFFF;\n  bullseye-size: 0.5;\n  bullseye-opacity: 1;\n}\n\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 7;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 100;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n}\n\n[\"sets scope\"=\"cross-domain\"] {\n  size: 10;\n}\n"
+    }
+  ]
+}

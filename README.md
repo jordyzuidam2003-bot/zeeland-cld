@@ -3,7 +3,8 @@
 The causal loop diagram of our Challenge Based Project: adapting Zeeland's arable farming to
 salinisation and freshwater scarcity towards 2050, with the Delta Climate Center and the Ministry
 of LVVN. This repository is the single source of truth for the diagram: `build.py` draws it as a
-web page, served by GitHub Pages from `docs/`, so a push publishes the current model.
+web page, <https://jordyzuidam2003-bot.github.io/zeeland-cld/>, served by GitHub Pages from
+`docs/`, so a push publishes the current model.
 
 ## Files
 

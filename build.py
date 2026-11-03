@@ -6,13 +6,13 @@
 Edit cld.json (elements, connections, loops, layout), references.json (sources) and
 view.scss (style). Never edit dist/, which this script writes:
 
-    dist/kumu.json  the blueprint the Kumu map is linked to ("Link map to remote JSON"):
-                    Kumu fetches it from GitHub on every page load
-    dist/view.scss  view.scss plus each link's curvature; paste it into Kumu's Advanced
-                    Editor whenever it changes, since Kumu cannot fetch a view
-
-Kumu's remote JSON holds elements, connections and loops only, no positions or view. The Kumu
-map keeps its own positions (set from cld.json by kumu-place.js, then dragged) and view.
+    dist/project.json  a full Kumu project export: import it into a Kumu project without maps
+                       (green + > Import > Advanced > Import JSON file) and Kumu restores the
+                       elements at their positions, the curved links and the view
+    dist/kumu.json     the blueprint form (elements and connections only), for a map linked to
+                       its raw GitHub URL; such a map cannot hold a layout, so it is force-directed
+    dist/view.scss     view.scss plus each link's curvature, to paste into the Advanced Editor
+                       of a map built from the blueprint
 """
 
 import argparse
@@ -165,6 +165,49 @@ def blueprint(cld, refs):
     return {"elements": elements, "connections": connections}
 
 
+def project(cld, refs, template):
+    """A full Kumu project export, the shape of Kumu's own "Export JSON" of a project."""
+    bp = blueprint(cld, refs)
+    keep = lambda item, drop: {k: v for k, v in item.items() if k not in drop}
+    elements = [{"_id": f'elem-{e["id"]}', "attributes": keep(e, {"id", "x", "y"})}
+                for e in bp["elements"]]
+    connections = [{"_id": f'conn-{c["id"]}', "direction": "directed", "delayed": c["delay"] == "yes",
+                    "reversed": False, "attributes": keep(c, {"id", "from", "to", "direction"}),
+                    "from": f'elem-{c["from"]}', "to": f'elem-{c["to"]}'}
+                   for c in bp["connections"]]
+
+    # one attribute entry per field, a drop-down list where the values are few
+    values = {}
+    for item in [e["attributes"] for e in elements] + [c["attributes"] for c in connections]:
+        for k, v in item.items():
+            values.setdefault(k, set()).add(v)
+    attributes = []
+    for k, seen in values.items():
+        text = k in ("description", "sources")
+        listed = not text and k != "label" and len(seen) <= 20
+        attributes.append({"_id": "attr-" + k.replace(" ", "-"), "name": k[0].upper() + k[1:],
+                           "format": "text" if text else "string", "private": False, "limit": 1,
+                           "category": "General", "prompt": "list" if listed else "autocomplete",
+                           "locked": False, "values": sorted(seen) if listed else [],
+                           "sort": False, "cluster": listed})
+
+    nodes = [{"_id": f'node-{e["id"]}', "position": {"x": e["x"], "y": e["y"]}, "pinned": True,
+              "style": {}, "element": f'elem-{e["id"]}'} for e in cld["elements"]]
+    edges = [{"_id": f'edge-{c["from"]}--{c["to"]}', "curvature": c["curvature"], "style": {},
+              "connection": f'conn-{c["from"]}--{c["to"]}'} for c in cld["connections"]]
+    return {
+        "version": 1, "name": "Zeeland CLD", "description": "", "proxyImages": True,
+        "defaultMap": "map-cld", "defaultPerspective": None, "attributeRelevance": {},
+        "attributes": attributes, "elements": elements, "connections": connections, "loops": [],
+        "maps": [{"_id": "map-cld", "name": "CLD", "description": "", "scale": 1,
+                  "center": {"x": 0, "y": 0}, "defaultPerspective": "pers-cld",
+                  "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
+                  "elements": nodes, "connections": edges, "loops": []}],
+        # the view without the generated curvature rules: the map's edges carry the curves
+        "perspectives": [{"_id": "pers-cld", "name": "CLD", "style": template.rstrip() + "\n"}],
+    }
+
+
 def view(template, cld):
     # A linked connection has no Kumu id, so "#id" cannot select it: the id field can.
     # Every link is listed, since Kumu's default curvature is 0.25, not 0. No comment goes
@@ -187,6 +230,7 @@ def main():
 
     outputs = {
         "kumu.json": json.dumps(blueprint(cld, refs), indent=2, ensure_ascii=False) + "\n",
+        "project.json": json.dumps(project(cld, refs, template), indent=2, ensure_ascii=False) + "\n",
         "view.scss": view(template, cld),
     }
 

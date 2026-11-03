@@ -2,18 +2,16 @@
 
 Imported by build.py, which writes docs/cld.svg and puts the same drawing inline in
 docs/index.html. svg(cld) returns the drawing as a string; overlaps(cld) the warnings about
-boxes and regions that intersect, for build.py's report; boxes(cld) and hulls(cld) the geometry
-build.py gives Kumu's elements and region elements.
+boxes that intersect, for build.py's report; boxes(cld) the geometry build.py gives Kumu's
+elements.
 
 What is drawn, from back to front:
-  regions   one per SETS domain: a smooth closed curve around its elements' boxes (their convex
-            hull, padded, corners rounded, drawn as one spline so no polygon edge shows; nothing
-            random, Jordy's decision against a hand-drawn wobble), filled with a pale tint of the
-            domain's hue, the domain's name in large faint text
   links     a quadratic Bezier from box border to box border, the sign beside the arrowhead on
             the outside of the curve, a delay as two short strokes across the midpoint
-  elements  the label in a white box: square corners for a Stock, rounded for an Auxiliary,
-            dashed for a Constant, a thick stroke for an adaptive practice
+  elements  the label in a box filled with the pale tint of its SETS domain, the one place the
+            domain shows in the drawing (the layout follows the loops, not the domains):
+            square corners for a Stock, rounded for an Auxiliary, dashed for a Constant, a
+            thick stroke for an adaptive practice
   loops     a named loop's id with a circular arrow at the centroid of its path's elements
   legend    bottom-left
 
@@ -21,7 +19,7 @@ The link formula is duplicated in page/app.js (drag mode recomputes a moved elem
 keep link_path() and its JS twin the same.
 """
 
-from math import atan2, cos, hypot, pi, sin
+from math import cos, hypot, pi, sin
 
 # --- style -------------------------------------------------------------------------------
 FONT = "Helvetica Neue, Helvetica, Arial, sans-serif"
@@ -38,12 +36,8 @@ SIGN_TEXT = {"+": "+", "-": "−"}
 SIGN_SIZE = 34
 LEGEND_SIZE = 36               # the legend reads at a glance, so larger than the labels (Jordy)
 ARROW = 14                     # arrowhead length, in drawing units
-REGION_PAD = 90
-REGION_STEP = 40               # spacing of the samples the region's spline runs through
-REGION = {  # the hue of Figure 1 in the group's Project Plan, as a pale tint
+TINT = {  # each box's fill: the hue of Figure 1 in the group's Project Plan, as a pale tint
     "Ecological": "#BDE3C7", "Social": "#C5DAF4", "Technological": "#F9D2AB"}
-REGION_NAME_COLOUR = "#777777"
-REGION_NAME_SIZE = 120
 MARGIN = 40
 
 
@@ -81,7 +75,7 @@ def element_svg(e, box):
     rx = 0 if kind == "Stock" else 9
     parts = [f'<g class="element" data-id="{e["id"]}" data-domain="{e["sets domain"]}" '
              f'data-type="{kind}" data-adaptive="{"true" if e["adaptive practice"] else "false"}">',
-             f'<rect x="{x0:.1f}" y="{y0:.1f}" width="{w:.1f}" height="{h:.1f}" rx="{rx}" fill="white" {style}/>']
+             f'<rect x="{x0:.1f}" y="{y0:.1f}" width="{w:.1f}" height="{h:.1f}" rx="{rx}" fill="{TINT[e["sets domain"]]}" {style}/>']
     top = y0 + PAD_Y + LINE_HEIGHT * 0.75
     for i, line in enumerate(lines):
         parts.append(f'<text x="{e["x"]:.1f}" y="{top + i * LINE_HEIGHT:.1f}" text-anchor="middle">{esc(line)}</text>')
@@ -196,107 +190,6 @@ def delay_path(p0, ctrl, p2, half=9, gap=4):
     return " ".join(d)
 
 
-# --- regions --------------------------------------------------------------------------------
-def hull(points):
-    """Convex hull, counter-clockwise in a y-up sense (Andrew's monotone chain)."""
-    pts = sorted(set(points))
-    if len(pts) <= 2:
-        return pts
-
-    def half(seq):
-        out = []
-        for p in seq:
-            while len(out) >= 2 and cross(out[-2], out[-1], p) <= 0:
-                out.pop()
-            out.append(p)
-        return out
-
-    lower, upper = half(pts), half(reversed(pts))
-    return lower[:-1] + upper[:-1]
-
-
-def cross(o, a, b):
-    return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])
-
-
-def region_path(points, pad):
-    """A smooth curve around the points: the hull grown by `pad` with rounded corners, sampled at
-    equal spacing along its length, and a closed Catmull-Rom spline through the samples (as cubic
-    Beziers). Equal spacing matters: the spline overshoots into a spike where a short gap between
-    samples meets a long one, so it asserts that the curve stays within 5% of `pad` from the hull.
-    Returns (path, hull)."""
-    h = hull(points)
-    if len(h) < 3:
-        return "", h
-    n = len(h)
-    outline = []  # the padded hull, densely: each corner's arc; the straight edge runs to the next arc
-    for i in range(n):
-        p, q = h[i], h[(i + 1) % n]
-        ex, ey = q[0] - p[0], q[1] - p[1]
-        length = hypot(ex, ey) or 1
-        nx, ny = ey / length, -ex / length  # outward normal of the edge (hull is counter-clockwise, y-up)
-        r = h[i - 1]
-        px, py = p[0] - r[0], p[1] - r[1]
-        plen = hypot(px, py) or 1
-        mx, my = py / plen, -px / plen  # outward normal of the edge before p
-        # the corner at p: an arc from the previous edge's normal to this edge's normal
-        a0, a1 = atan2(my, mx), atan2(ny, nx)
-        while a1 < a0:
-            a1 += 2 * pi
-        steps = max(1, round((a1 - a0) / (pi / 32)))
-        for k in range(steps + 1):
-            a = a0 + (a1 - a0) * k / steps
-            outline.append((p[0] + cos(a) * pad, p[1] + sin(a) * pad))
-    pts = resample(outline, REGION_STEP)
-    m = len(pts)
-    d = [f"M {pts[0][0]:.1f} {pts[0][1]:.1f}"]
-    for i in range(m):
-        p0, p1, p2, p3 = pts[i - 1], pts[i], pts[(i + 1) % m], pts[(i + 2) % m]
-        c1 = (p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6)
-        c2 = (p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6)
-        d.append(f"C {c1[0]:.1f} {c1[1]:.1f} {c2[0]:.1f} {c2[1]:.1f} {p2[0]:.1f} {p2[1]:.1f}")
-        for t in (0.25, 0.5, 0.75):
-            s = 1 - t
-            pt = (s ** 3 * p1[0] + 3 * s * s * t * c1[0] + 3 * s * t * t * c2[0] + t ** 3 * p2[0],
-                  s ** 3 * p1[1] + 3 * s * s * t * c1[1] + 3 * s * t * t * c2[1] + t ** 3 * p2[1])
-            gap = min(segment_distance(pt, h[j], h[(j + 1) % n]) for j in range(n))
-            assert abs(gap - pad) <= 0.05 * pad, f"region outline strays {gap - pad:+.1f} from its padded hull"
-    return " ".join(d) + " Z", h
-
-
-def resample(ring, step):
-    """Points at equal distances, about `step` apart, along a closed polyline."""
-    edges = [(ring[i], ring[(i + 1) % len(ring)]) for i in range(len(ring))]
-    total = sum(hypot(b[0] - a[0], b[1] - a[1]) for a, b in edges)
-    m = max(8, round(total / step))
-    out, walked = [], 0.0
-    for a, b in edges:
-        length = hypot(b[0] - a[0], b[1] - a[1])
-        while len(out) < m and len(out) * total / m < walked + length:
-            out.append(lerp(a, b, (len(out) * total / m - walked) / length))
-        walked += length
-    return out
-
-
-def region_svg(domain, bxs):
-    corners = [p for (x0, y0, x1, y1, _) in bxs for p in ((x0, y0), (x1, y0), (x0, y1), (x1, y1))]
-    path, h = region_path(corners, REGION_PAD)
-    cx = sum(p[0] for p in h) / len(h)
-    cy = sum(p[1] for p in h) / len(h)
-    return "\n".join([
-        f'<g class="region" data-domain="{domain}">',
-        f'<path d="{path}" fill="{REGION[domain]}"/>',
-        f'<text class="region-name" x="{cx:.1f}" y="{cy:.1f}" text-anchor="middle" dominant-baseline="central" '
-        f'font-size="{REGION_NAME_SIZE}" font-weight="bold" fill="{REGION_NAME_COLOUR}">{domain}</text>',
-        "</g>"])
-
-
-def region_bounds(bxs):
-    corners = [p for (x0, y0, x1, y1, _) in bxs for p in ((x0, y0), (x1, y0), (x0, y1), (x1, y1))]
-    return (min(p[0] for p in corners) - REGION_PAD, min(p[1] for p in corners) - REGION_PAD,
-            max(p[0] for p in corners) + REGION_PAD, max(p[1] for p in corners) + REGION_PAD)
-
-
 # --- loops ----------------------------------------------------------------------------------
 def loop_svg(loop, bxs):
     pts = [((b[0] + b[2]) / 2, (b[1] + b[3]) / 2) for b in bxs]
@@ -329,11 +222,11 @@ def legend_svg(x, y):
         items.append(f'<text x="{x + sw + f * 0.6:.1f}" y="{yy + f * 0.35:.1f}" font-size="{f}">{text}</text>')
 
     items.append(f'<text x="{x:.1f}" y="{y:.1f}" font-size="{f}" font-weight="bold">Legend</text>')
-    for i, (domain, tint) in enumerate(REGION.items()):
-        swatch(i, lambda xx, yy, t=tint: f'<rect x="{xx:.1f}" y="{yy - sh / 2:.1f}" width="{sw:.1f}" height="{sh:.1f}" rx="{sh / 2:.1f}" fill="{t}"/>', f"{domain} domain")
-    n = len(REGION)
-    box = lambda xx, yy, extra, rx, width=STROKE: (f'<rect x="{xx:.1f}" y="{yy - sh / 2:.1f}" width="{sw:.1f}" height="{sh:.1f}" rx="{rx}" fill="white" '
-                                                   f'stroke="{STROKE_COLOUR}" stroke-width="{width}" {extra}/>')
+    box = lambda xx, yy, extra, rx, width=STROKE, fill="white": (f'<rect x="{xx:.1f}" y="{yy - sh / 2:.1f}" width="{sw:.1f}" height="{sh:.1f}" rx="{rx}" fill="{fill}" '
+                                                                 f'stroke="{STROKE_COLOUR}" stroke-width="{width}" {extra}/>')
+    for i, (domain, tint) in enumerate(TINT.items()):
+        swatch(i, lambda xx, yy, t=tint: box(xx, yy, "", 9, fill=t), f"{domain} domain")
+    n = len(TINT)
     swatch(n, lambda xx, yy: box(xx, yy, "", 0), "Stock")
     swatch(n + 1, lambda xx, yy: box(xx, yy, "", 9), "Auxiliary")
     swatch(n + 2, lambda xx, yy: box(xx, yy, 'stroke-dasharray="8 5"', 9), "Constant (exogenous)")
@@ -353,15 +246,10 @@ def legend_svg(x, y):
 # --- the drawing ----------------------------------------------------------------------------
 def svg(cld):
     bxs = boxes(cld)
-    by_domain = {}
-    for e in cld["elements"]:
-        by_domain.setdefault(e["sets domain"], []).append(bxs[e["id"]])
-
-    bounds = [region_bounds(b) for b in by_domain.values()]
-    x0 = min(b[0] for b in bounds)
-    y0 = min(b[1] for b in bounds)
-    x1 = max(b[2] for b in bounds)
-    y1 = max(b[3] for b in bounds)
+    x0 = min(b[0] for b in bxs.values())
+    y0 = min(b[1] for b in bxs.values())
+    x1 = max(b[2] for b in bxs.values())
+    y1 = max(b[3] for b in bxs.values())
     legend, lw, lh = legend_svg(x0, y1 + MARGIN)
     y1 += MARGIN + lh
     x1 = max(x1, x0 + lw)
@@ -375,7 +263,6 @@ def svg(cld):
         f'font-family="{FONT}" font-size="{FONT_SIZE}" fill="black">',
         "<defs>", arrow("plus", LINK_COLOUR["+"]), arrow("minus", LINK_COLOUR["-"]), arrow("grey", STROKE_COLOUR), "</defs>",
         f'<rect x="{vb[0]:.0f}" y="{vb[1]:.0f}" width="{vb[2]:.0f}" height="{vb[3]:.0f}" fill="white"/>',
-        '<g class="regions">', *(region_svg(d, b) for d, b in by_domain.items()), "</g>",
         '<g class="links">', *(link_svg(c, bxs[c["from"]], bxs[c["to"]]) for c in cld["connections"]), "</g>",
         '<g class="elements">', *(element_svg(e, bxs[e["id"]]) for e in cld["elements"]), "</g>",
         '<g class="loops">', *(loop_svg(l, [bxs[i] for i in l["path"]]) for l in cld["loops"]), "</g>",
@@ -387,8 +274,7 @@ def svg(cld):
 
 # --- overlap warnings -----------------------------------------------------------------------
 def overlaps(cld):
-    """Pairs of element boxes that intersect, pairs of SETS regions that do, and links within one
-    domain that leave its region."""
+    """Pairs of element boxes that intersect."""
     bxs = boxes(cld)
     ids = [e["id"] for e in cld["elements"]]
     out = []
@@ -397,70 +283,4 @@ def overlaps(cld):
             p, q = bxs[a], bxs[b]
             if p[0] < q[2] and q[0] < p[2] and p[1] < q[3] and q[1] < p[3]:
                 out.append(f"boxes overlap: {a} and {b}")
-    hs = hulls(cld)
-    names = list(hs)
-    for i, a in enumerate(names):
-        for b in names[i + 1:]:
-            # each region is its hull grown by REGION_PAD, so two intersect when the hulls
-            # come closer than twice that
-            if polygons_intersect(hs[a], hs[b]) or polygon_distance(hs[a], hs[b]) < 2 * REGION_PAD:
-                out.append(f"regions overlap: {a} and {b}")
-    # a link between two elements of one domain stays inside that domain's region (Jordy)
-    domain = {e["id"]: e["sets domain"] for e in cld["elements"]}
-    for c in cld["connections"]:
-        h = hs[domain[c["from"]]]
-        if domain[c["to"]] != domain[c["from"]] or len(h) < 3:
-            continue
-        p0, ctrl, p2 = link_path(bxs[c["from"]], bxs[c["to"]], c["curvature"])
-        if any(beyond(bezier(p0, ctrl, p2, k / 40), h) > 0 for k in range(41)):
-            out.append(f"link leaves its region: {c['from']} -> {c['to']} (curvature {c['curvature']})")
     return out
-
-
-def hulls(cld):
-    """{domain: the convex hull of its elements' box corners}: each SETS region is this hull grown
-    by REGION_PAD. build.py sizes Kumu's region elements from it."""
-    bxs, corners = boxes(cld), {}
-    for e in cld["elements"]:
-        x0, y0, x1, y1, _ = bxs[e["id"]]
-        corners.setdefault(e["sets domain"], []).extend([(x0, y0), (x1, y0), (x0, y1), (x1, y1)])
-    return {d: hull(pts) for d, pts in corners.items()}
-
-
-def beyond(pt, h):
-    """How far pt lies outside the region around the convex hull h (the hull grown by REGION_PAD)."""
-    if all(cross(h[i], h[(i + 1) % len(h)], pt) >= 0 for i in range(len(h))):
-        return 0
-    return max(0, min(segment_distance(pt, h[i], h[(i + 1) % len(h)]) for i in range(len(h))) - REGION_PAD)
-
-
-def polygons_intersect(p, q):
-    """Separating axis test for two convex polygons."""
-    for poly in (p, q):
-        for i in range(len(poly)):
-            ax, ay = poly[i]
-            bx, by = poly[(i + 1) % len(poly)]
-            nx, ny = by - ay, ax - bx
-            proj_p = [nx * x + ny * y for x, y in p]
-            proj_q = [nx * x + ny * y for x, y in q]
-            if max(proj_p) < min(proj_q) or max(proj_q) < min(proj_p):
-                return False
-    return True
-
-
-def segment_distance(pt, a, b):
-    ax, ay = a
-    dx, dy = b[0] - ax, b[1] - ay
-    length2 = dx * dx + dy * dy
-    t = 0 if length2 == 0 else max(0, min(1, ((pt[0] - ax) * dx + (pt[1] - ay) * dy) / length2))
-    return hypot(pt[0] - (ax + t * dx), pt[1] - (ay + t * dy))
-
-
-def polygon_distance(p, q):
-    """The shortest distance between the borders of two polygons that do not intersect."""
-    best = float("inf")
-    for poly, other in ((p, q), (q, p)):
-        for pt in poly:
-            for i in range(len(other)):
-                best = min(best, segment_distance(pt, other[i], other[(i + 1) % len(other)]))
-    return best

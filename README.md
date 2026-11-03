@@ -27,16 +27,14 @@ builds and pushes, so nobody else needs git or Python.
 2. `python3 build.py` checks the model and rebuilds `docs/`. It stops on an error (an unknown
    element, a source missing from `references.json`, a named loop that is not closed or whose
    R/B does not match its polarities) and prints the source coverage and any warnings: a model
-   text still empty, an element without links, boxes or SETS regions that overlap, a link
-   between two elements of one domain that bows out of its region (fix: a smaller `curvature`).
+   text still empty, an element without links, two boxes that overlap.
 3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
    a commit whose `docs/` is out of date.
 
 Layout tuning: on the page, turn on "Move elements", drag elements, then "Download layout"
 saves `layout.json` with every element's position. `python3 build.py --layout ~/Downloads/layout.json`
 writes those positions into `cld.json` and rebuilds; it fails on an id that is not in
-`cld.json`. Curvature is edited in `cld.json` only. The SETS regions follow the elements only
-after a rebuild.
+`cld.json`. Curvature is edited in `cld.json` only.
 
 A picture for the report: `docs/cld.svg` is the drawing on its own. Google Docs takes no SVG; a
 PNG, with Chrome (not part of the build, since Chrome is not on every machine):
@@ -86,7 +84,7 @@ An element:
 - `element type`: `Constant` (an exogenous driver, drawn dashed), `Auxiliary` (rounded corners)
   or `Stock` (square corners). `adaptive practice`: true on an auxiliary that is a measure
   farmers take, drawn with a thick stroke. `sets domain`: `Social`, `Ecological` or
-  `Technological`; the drawing puts a tinted region around each domain.
+  `Technological`; the drawing fills the box with the domain's tint.
 - `x` and `y` are positions in the drawing; y grows downwards.
 
 A connection: `from` and `to` (element ids), `polarity` (`"+"` or `"-"`), `delay` (true/false,
@@ -115,11 +113,9 @@ a project export; the green `+` → Import route brings in the elements and conn
 Kumu restores the map with the elements at their positions, the view from `view.scss`, and the
 project's name, which the export sets to `cbp-cld`.
 
-The view follows the page's look as far as Kumu can: white boxes with the label inside, square
-corners for a stock and rounded ones for the others, an italic label for a constant (Kumu has
-no dashed border), a thick border for an adaptive practice; links of one width, blue `+` and red
-`−`. Each SETS region is a background element: a box with rounded corners in the region's tint
-over the page's region, with the domain's name. `build.py` adds the rules that size each box and each
-region below `view.scss`, and a double space where the page breaks a label's line (Kumu's manual
-line break). The project's description and the map's name carry the model version, so Kumu says
-which model it holds.
+The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label
+inside, square corners for a stock and rounded ones for the others, an italic label for a
+constant (Kumu has no dashed border), a thick border for an adaptive practice; links of one
+width, blue `+` and red `−`. `build.py` adds the rules that size each box below `view.scss`, and
+a double space where the page breaks a label's line (Kumu's manual line break). The project's
+description and the map's name carry the model version, so Kumu says which model it holds.

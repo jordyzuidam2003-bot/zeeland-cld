@@ -31,7 +31,7 @@
     }
 
     text {
-      value: "**Regions** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay";
+      value: "**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay";
     }
   }
 }
@@ -44,13 +44,12 @@
 }
 
 /* ---------- Elements: the page's look, values from draw.py ---------- */
-/* each box's width and height, and each SETS region's size and tint, are rules build.py
-   generates below this view in docs/project.json. Kumu draws text at about 0.6 of its
-   font-size in map units, so each font-size is the page's x 1.5, to fill the box draw.py fits */
+/* each box's width and height are rules build.py generates below this view in
+   docs/project.json. Kumu draws text at about 0.6 of its font-size in map units, so each
+   font-size is the page's x 1.5, to fill the box draw.py fits */
 /* pill: Kumu's rectangle with rounded corners */
 element {
   shape: pill;
-  color: #FFFFFF;
   border-color: #444444;
   border-width: 1.5;
   font-size: 42;
@@ -75,13 +74,17 @@ element {
   border-width: 5;
 }
 
-/* the SETS regions: one background element each, behind the others */
-["element type"="sets region"] {
-  layer: background;
-  border-width: 0;
-  font-size: 180;
-  font-weight: bold;
-  font-color: #777777;
+/* the box's fill is its SETS domain's tint, draw.py's TINT */
+["sets domain"="ecological"] {
+  color: #BDE3C7;
+}
+
+["sets domain"="social"] {
+  color: #C5DAF4;
+}
+
+["sets domain"="technological"] {
+  color: #F9D2AB;
 }
 
 /* ---------- Links: one width, the sign's colour ---------- */

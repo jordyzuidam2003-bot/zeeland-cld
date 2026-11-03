@@ -106,9 +106,11 @@ drawing marks the loop at the centre of its elements, and the page gets a button
 
 ## Kumu
 
-Kumu holds a copy for milestones, in the project `cbp-cld`, and is never edited: an import never
-updates what a project already holds, so each update means emptying the project first. Jordy
-empties `cbp-cld`, then: green `+` → Import → Advanced → "Import JSON file" → `docs/project.json`
+Kumu holds a copy for milestones, at <https://kumu.io/JordyZuidam/cbp-cld>, and is never edited.
+An import never updates what a project already holds, and Kumu cannot empty a project, so each
+update is a new project under the same name, which keeps the URL. Jordy renames the previous
+`cbp-cld`, creates a new project `cbp-cld`, then: green `+` → Import → Advanced → "Import JSON
+file" → `docs/project.json`
 → "Import JSON" → "Save Changes". Kumu restores the elements at their positions, the curved
 links and the view from `view.scss`.
 

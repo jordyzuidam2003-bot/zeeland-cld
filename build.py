@@ -14,7 +14,7 @@ style.css). draw.py draws the SVG. Never edit docs/, which this script writes:
     docs/app.js        copied from page/
     docs/style.css     copied from page/
     docs/cld.svg       the drawing on its own, the picture for the report
-    docs/project.json  a full Kumu project export: import it into an emptied Kumu project
+    docs/project.json  a full Kumu project export: import it into a new Kumu project
                        (green + > Import > Advanced > Import JSON file) and Kumu restores the
                        elements at their positions, the curved links and the view, with a
                        background element per SETS region; the model version is in the

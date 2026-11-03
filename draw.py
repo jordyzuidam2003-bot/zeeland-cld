@@ -38,6 +38,9 @@ LEGEND_SIZE = 36               # the legend reads at a glance, so larger than th
 ARROW = 14                     # arrowhead length, in drawing units
 TINT = {  # each box's fill: the hue of Figure 1 in the group's Project Plan, as a pale tint
     "Ecological": "#9DD9AC", "Social": "#ABC9F4", "Technological": "#FBC07C"}
+# a new TINT first passes the dataviz skill's validator: black text and both link colours read
+# on each tint, and the three tints read apart, for normal vision and deutan; build.py gives
+# Kumu the same tints
 MARGIN = 40
 
 

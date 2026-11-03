@@ -41,12 +41,13 @@ A picture for the report: `docs/cld.svg` is the drawing on its own. Google Docs 
 PNG, with Chrome (not part of the build, since Chrome is not on every machine):
 
 ```sh
+size=$(python3 -c "import re; w, h = re.search(r'viewBox=\"\S+ \S+ (\S+) (\S+)\"', open('docs/cld.svg').read()).groups(); print(f'{int(w) // 2},{int(h) // 2}')")
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless \
-  --screenshot=cld.png --window-size=2306,2245 file://$PWD/docs/cld.svg
+  --screenshot=cld.png --window-size=$size file://$PWD/docs/cld.svg
 ```
 
-The window size sets the picture's size; the drawing is scaled to fit it, so keep its ratio
-close to the SVG's `viewBox`.
+The window size sets the picture's size; the first line takes half the SVG's `viewBox`, so
+the ratio matches and the layout can change. For a sharper picture, divide by less.
 
 ### The page
 

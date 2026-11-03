@@ -26,7 +26,7 @@ from math import atan2, cos, hypot, pi, sin
 FONT = "Helvetica Neue, Helvetica, Arial, sans-serif"
 FONT_SIZE = 28
 LINE_HEIGHT = 34
-CHAR_WIDTH = 0.53 * FONT_SIZE  # average glyph width of the font stack, an estimate the page checks
+CHAR_WIDTH = 0.53 * FONT_SIZE  # average glyph width of the font stack, an estimate: a label wider than its box shows only on screen
 WRAP = 22                      # characters per line, about
 PAD_X, PAD_Y = 14, 9
 STROKE, STROKE_THICK = 1.5, 5
@@ -38,6 +38,7 @@ SIGN_SIZE = 34
 LEGEND_SIZE = 36               # the legend reads at a glance, so larger than the labels (Jordy)
 ARROW = 14                     # arrowhead length, in drawing units
 REGION_PAD = 90
+REGION_STEP = 40               # spacing of the samples the region's spline runs through
 REGION = {  # the hue of Figure 1 in the group's Project Plan, as a pale tint
     "Ecological": "#BDE3C7", "Social": "#C5DAF4", "Technological": "#F9D2AB"}
 REGION_NAME_COLOUR = "#777777"
@@ -218,13 +219,16 @@ def cross(o, a, b):
 
 
 def region_path(points, pad):
-    """A smooth curve around the points: the hull grown by `pad` with rounded corners, sampled,
-    and a closed Catmull-Rom spline through the samples (as cubic Beziers). Returns (path, hull)."""
+    """A smooth curve around the points: the hull grown by `pad` with rounded corners, sampled at
+    equal spacing along its length, and a closed Catmull-Rom spline through the samples (as cubic
+    Beziers). Equal spacing matters: the spline overshoots into a spike where a short gap between
+    samples meets a long one, so it asserts that the curve stays within 5% of `pad` from the hull.
+    Returns (path, hull)."""
     h = hull(points)
     if len(h) < 3:
         return "", h
     n = len(h)
-    samples = []  # (point, outward unit normal)
+    outline = []  # the padded hull, densely: each corner's arc; the straight edge runs to the next arc
     for i in range(n):
         p, q = h[i], h[(i + 1) % n]
         ex, ey = q[0] - p[0], q[1] - p[1]
@@ -238,16 +242,11 @@ def region_path(points, pad):
         a0, a1 = atan2(my, mx), atan2(ny, nx)
         while a1 < a0:
             a1 += 2 * pi
-        steps = max(1, round((a1 - a0) / (pi / 4)))
+        steps = max(1, round((a1 - a0) / (pi / 32)))
         for k in range(steps + 1):
             a = a0 + (a1 - a0) * k / steps
-            samples.append(((p[0] + cos(a) * pad, p[1] + sin(a) * pad), (cos(a), sin(a))))
-        # along the edge, a sample every 350 units or so
-        pieces = max(1, round(length / 350))
-        for k in range(1, pieces):
-            t = k / pieces
-            samples.append(((p[0] + ex * t + nx * pad, p[1] + ey * t + ny * pad), (nx, ny)))
-    pts = [point for point, _ in samples]
+            outline.append((p[0] + cos(a) * pad, p[1] + sin(a) * pad))
+    pts = resample(outline, REGION_STEP)
     m = len(pts)
     d = [f"M {pts[0][0]:.1f} {pts[0][1]:.1f}"]
     for i in range(m):
@@ -255,7 +254,27 @@ def region_path(points, pad):
         c1 = (p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6)
         c2 = (p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6)
         d.append(f"C {c1[0]:.1f} {c1[1]:.1f} {c2[0]:.1f} {c2[1]:.1f} {p2[0]:.1f} {p2[1]:.1f}")
+        for t in (0.25, 0.5, 0.75):
+            s = 1 - t
+            pt = (s ** 3 * p1[0] + 3 * s * s * t * c1[0] + 3 * s * t * t * c2[0] + t ** 3 * p2[0],
+                  s ** 3 * p1[1] + 3 * s * s * t * c1[1] + 3 * s * t * t * c2[1] + t ** 3 * p2[1])
+            gap = min(segment_distance(pt, h[j], h[(j + 1) % n]) for j in range(n))
+            assert abs(gap - pad) <= 0.05 * pad, f"region outline strays {gap - pad:+.1f} from its padded hull"
     return " ".join(d) + " Z", h
+
+
+def resample(ring, step):
+    """Points at equal distances, about `step` apart, along a closed polyline."""
+    edges = [(ring[i], ring[(i + 1) % len(ring)]) for i in range(len(ring))]
+    total = sum(hypot(b[0] - a[0], b[1] - a[1]) for a, b in edges)
+    m = max(8, round(total / step))
+    out, walked = [], 0.0
+    for a, b in edges:
+        length = hypot(b[0] - a[0], b[1] - a[1])
+        while len(out) < m and len(out) * total / m < walked + length:
+            out.append(lerp(a, b, (len(out) * total / m - walked) / length))
+        walked += length
+    return out
 
 
 def region_svg(domain, bxs):
@@ -405,15 +424,16 @@ def polygons_intersect(p, q):
     return True
 
 
+def segment_distance(pt, a, b):
+    ax, ay = a
+    dx, dy = b[0] - ax, b[1] - ay
+    length2 = dx * dx + dy * dy
+    t = 0 if length2 == 0 else max(0, min(1, ((pt[0] - ax) * dx + (pt[1] - ay) * dy) / length2))
+    return hypot(pt[0] - (ax + t * dx), pt[1] - (ay + t * dy))
+
+
 def polygon_distance(p, q):
     """The shortest distance between the borders of two polygons that do not intersect."""
-    def segment_distance(pt, a, b):
-        ax, ay = a
-        dx, dy = b[0] - ax, b[1] - ay
-        length2 = dx * dx + dy * dy
-        t = 0 if length2 == 0 else max(0, min(1, ((pt[0] - ax) * dx + (pt[1] - ay) * dy) / length2))
-        return hypot(pt[0] - (ax + t * dx), pt[1] - (ay + t * dy))
-
     best = float("inf")
     for poly, other in ((p, q), (q, p)):
         for pt in poly:

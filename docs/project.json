@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 1a08082, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 9c8c4d6, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -81,7 +81,8 @@
       "locked": false,
       "values": [
         "SQ1",
-        "SQ2"
+        "SQ2",
+        "SQ3"
       ],
       "sort": false,
       "cluster": true
@@ -122,7 +123,8 @@
       "prompt": "list",
       "locked": false,
       "values": [
-        "no"
+        "no",
+        "yes"
       ],
       "sort": false,
       "cluster": true
@@ -169,6 +171,7 @@
       "prompt": "list",
       "locked": false,
       "values": [
+        "",
         "B1_Water_Retention",
         "B2_Crop_Adaptation",
         "B3_Governance_Delay",
@@ -691,6 +694,19 @@
         "sources": "",
         "sourced": "no"
       }
+    },
+    {
+      "_id": "elem-farmland-leaving-arable-use",
+      "attributes": {
+        "label": "Farmland leaving  arable use",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subquestion": "SQ3",
+        "description": "Arable land on the island that leaves arable farming: sold through a (voluntary) buy-out, taken out of production, or turned to another use. What the land becomes afterwards (nature, grassland, water storage) is outside the model. LVVN's land levers (buy-outs, a national land bank) act on this variable.",
+        "sources": "",
+        "sourced": "no"
+      }
     }
   ],
   "connections": [
@@ -897,18 +913,18 @@
     {
       "_id": "conn-freshwater-lens-recharge--freshwater-lens-thickness",
       "direction": "directed",
-      "delayed": false,
+      "delayed": true,
       "reversed": false,
       "attributes": {
         "label": "+",
         "polarity": "positive",
-        "delay": "no",
+        "delay": "yes",
         "loop id": "R1_Biophysical",
-        "description": "Rainwater infiltration builds up the floating freshwater lens.",
+        "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In the thin polder lenses of Schouwen-Duiveland the mixing zone shifts at most 0.1 m within a year, with vertical flow of at most 1.2 mm per day (de Louw et al., 2011). Under a creek ridge, raising the winter water table 0.5 m thickened a 13–15 m lens by 6–8 m in ten years, and the lens had not reached its new thickness yet (Pauw et al., 2015, a model result for Walcheren). So a change in recharge takes years to a decade to show in the lens.",
         "sets link": "Within E",
         "sets scope": "Within domain",
-        "sources": "",
-        "sourced": "no",
+        "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nPauw, P. S., van Baaren, E. S., Visser, M., de Louw, P. G. B., & Oude Essink, G. H. P. (2015). Increasing a freshwater lens below a creek ridge using a controlled artificial recharge and drainage system: A case study in the Netherlands. Hydrogeology Journal, 23(7), 1415–1430. https://doi.org/10.1007/s10040-015-1264-z",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-freshwater-lens-recharge",
@@ -977,18 +993,18 @@
     {
       "_id": "conn-land-subsidence--polder-surface-elevation-nap",
       "direction": "directed",
-      "delayed": false,
+      "delayed": true,
       "reversed": false,
       "attributes": {
         "label": "−",
         "polarity": "negative",
-        "delay": "no",
+        "delay": "yes",
         "loop id": "R1_Biophysical",
-        "description": "Peat oxidation and clay settling lower the physical land surface relative to NAP.",
+        "description": "Peat oxidation and clay settling lower the land surface relative to NAP at millimetres a year, so a decimetre takes decades: Dutch land below sea level is still subsiding up to 1 m per century, fastest in peat areas (Oude Essink et al., 2010). A rate for Schouwen-Duiveland's clay polders is not yet sourced.",
         "sets link": "Within E",
         "sets scope": "Within domain",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Oude Essink, G. H. P., van Baaren, E. S., & de Louw, P. G. B. (2010). Effects of climate change on coastal groundwater systems: A modeling study in the Netherlands. Water Resources Research, 46, W00F04. https://doi.org/10.1029/2009WR008719",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-land-subsidence",
@@ -1017,18 +1033,18 @@
     {
       "_id": "conn-root-zone-salinity--clay-dispersion-sodification",
       "direction": "directed",
-      "delayed": false,
+      "delayed": true,
       "reversed": false,
       "attributes": {
         "label": "+",
         "polarity": "positive",
-        "delay": "no",
+        "delay": "yes",
         "loop id": "R1_Biophysical",
-        "description": "High sodium (Na+) concentrations displace calcium (Ca2+), causing clay particles to disperse.",
+        "description": "High sodium (Na+) concentrations displace calcium (Ca2+), causing clay particles to disperse. The delay is on the way back: structure collapses within the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year, which takes 5 to 10 years on heavy clay and about a year on light soil (van Beekom et al., 1953, after the 1945 and 1953 floods in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster.",
         "sets link": "Within E",
         "sets scope": "Within domain",
-        "sources": "",
-        "sourced": "no",
+        "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 224–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-root-zone-salinity",
@@ -1933,13 +1949,73 @@
       },
       "from": "elem-mortgage-debt-financial-leverage",
       "to": "elem-dependence-on-high-margin-salt-sensitive-crops"
+    },
+    {
+      "_id": "conn-farm-revenue--farmland-leaving-arable-use",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "",
+        "description": "When farming the land no longer pays, farmers stop, sell, or accept a buy-out.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-farm-revenue",
+      "to": "elem-farmland-leaving-arable-use"
+    },
+    {
+      "_id": "conn-bank-credit-freeze-risk-premiums--farmland-leaving-arable-use",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "loop id": "",
+        "description": "When credit dries up, farms that cannot refinance are sold or wound down.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-bank-credit-freeze-risk-premiums",
+      "to": "elem-farmland-leaving-arable-use"
+    },
+    {
+      "_id": "conn-farmland-leaving-arable-use--demand-for-deep-polder-drainage",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "loop id": "",
+        "description": "Less arable land in a polder means less pressure on the water board to keep its ditch levels low in spring; the Project Plan's example lever pairs a buy-out with water governance that stops doing so.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-farmland-leaving-arable-use",
+      "to": "elem-demand-for-deep-polder-drainage"
     }
   ],
   "loops": [],
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 1a08082",
+      "name": "CLD, model 9c8c4d6",
       "description": "",
       "scale": 1,
       "center": {
@@ -2299,6 +2375,16 @@
           "pinned": true,
           "style": {},
           "element": "elem-mortgage-debt-financial-leverage"
+        },
+        {
+          "_id": "node-farmland-leaving-arable-use",
+          "position": {
+            "x": 2880,
+            "y": 1620
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-farmland-leaving-arable-use"
         }
       ],
       "connections": [
@@ -2673,6 +2759,24 @@
           "curvature": 0.0,
           "style": {},
           "connection": "conn-mortgage-debt-financial-leverage--dependence-on-high-margin-salt-sensitive-crops"
+        },
+        {
+          "_id": "edge-farm-revenue--farmland-leaving-arable-use",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-farm-revenue--farmland-leaving-arable-use"
+        },
+        {
+          "_id": "edge-bank-credit-freeze-risk-premiums--farmland-leaving-arable-use",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-bank-credit-freeze-risk-premiums--farmland-leaving-arable-use"
+        },
+        {
+          "_id": "edge-farmland-leaving-arable-use--demand-for-deep-polder-drainage",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-farmland-leaving-arable-use--demand-for-deep-polder-drainage"
         }
       ],
       "loops": []
@@ -2682,7 +2786,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      mode: loose;\n\n      option {\n        label: \"Social\";\n        selector: [\"sets domain\"=\"social\"];\n      }\n\n      option {\n        label: \"Ecological\";\n        selector: [\"sets domain\"=\"ecological\"];\n      }\n\n      option {\n        label: \"Technological\";\n        selector: [\"sets domain\"=\"technological\"];\n      }\n\n      option {\n        label: \"Cross-SETS links\";\n        selector: [\"sets scope\"=\"cross-domain\"];\n      }\n\n      option {\n        label: \"Unsourced\";\n        selector: [\"sourced\"=\"no\"];\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: false;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- generated by build.py: tints, box sizes ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-clay-dispersion-sodification { width: 280; height: 86; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 265; height: 86; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 354; height: 86; }\n#elem-external-freshwater-supply { width: 310; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 310; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-wisselpolder-land-raising { width: 280; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 340; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 295; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 206; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 340; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 86; }\n"
+      "style": "@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      mode: loose;\n\n      option {\n        label: \"Social\";\n        selector: [\"sets domain\"=\"social\"];\n      }\n\n      option {\n        label: \"Ecological\";\n        selector: [\"sets domain\"=\"ecological\"];\n      }\n\n      option {\n        label: \"Technological\";\n        selector: [\"sets domain\"=\"technological\"];\n      }\n\n      option {\n        label: \"Cross-SETS links\";\n        selector: [\"sets scope\"=\"cross-domain\"];\n      }\n\n      option {\n        label: \"Unsourced\";\n        selector: [\"sourced\"=\"no\"];\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: false;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- generated by build.py: tints, box sizes ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-clay-dispersion-sodification { width: 280; height: 86; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 265; height: 86; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 354; height: 86; }\n#elem-external-freshwater-supply { width: 310; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 310; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-wisselpolder-land-raising { width: 280; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 340; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 295; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 206; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 340; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 86; }\n#elem-farmland-leaving-arable-use { width: 265; height: 86; }\n"
     }
   ]
 }

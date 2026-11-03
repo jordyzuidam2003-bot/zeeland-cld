@@ -1,9 +1,9 @@
 {
   "model": {
-    "purpose": "Draft, for the team to check. Why do arable farmers on Schouwen-Duiveland keep growing salt-sensitive crops and keep their land deeply drained, even as the soil and water get saltier and fresh water gets scarcer towards 2050? And which feedback loops keep them there, blocking the alternatives: storing fresh water, growing salt-tolerant crops, and wisselpolders? The CLD is the picture of the system the whole group works from in the next steps, the semi-quantitative analysis (SIP) and the multi-criteria analysis of LVVN's policy levers. It is not built around one outcome or one set of levers: the group picks those when that step starts.",
+    "purpose": "Draft, for the team to check. Why do arable farmers on Schouwen-Duiveland keep growing salt-sensitive crops and keep their land deeply drained, even as the soil and water get saltier and fresh water gets scarcer towards 2050? And which feedback loops keep them there, blocking the alternatives: storing fresh water, growing salt-tolerant crops, and wisselpolders? These three are the adaptive practices in the model because each works on a different part of the chain (the water supply, the crop's sensitivity, the land's height) and each is held back by something in the system; a practice that farmers raise in the group model building session and that fits neither of the three is a candidate to add. The CLD is the picture of the system the whole group works from in the next steps, the semi-quantitative analysis (SIP) and the multi-criteria analysis of LVVN's policy levers. It is not built around one outcome or one set of levers: the group picks those when that step starts.",
     "spatial scale": "Draft, for the team to check. The island of Schouwen-Duiveland: its farmland polders, the rainwater lenses under them, the soils, the farms and the land market, and how the water board manages water levels. The island gets no fresh water from elsewhere, so all its fresh water is winter rain stored in the lenses. What is decided at provincial and national level (the water board's funding, LVVN, the Deltaprogramma Zoetwater) comes from outside the boundary: it enters as a policy input, and the CLD shows how it reaches the island.",
     "time horizon": "Draft, for the team to check. 2050, the year the KNMI'23 climate scenarios and the project look ahead to. The slow parts of the system are judged against that date: the freshwater lens and land subsidence react within years, but raising land with a wisselpolder takes 50 to 100 years, so the decision to start one falls before 2050 while most of its effect comes after.",
-    "system boundary": "Draft, for the team to check. Inside the model (endogenous, explained by its loops): the water and salt system (recharge, lens thickness, seepage, upconing, salt in the root zone, soil structure), crop yield and farm finances (revenue, land value, debt, credit, room to invest), whether farmers adopt the adaptive practices, and the resistance in governance to re-wetting land and to wisselpolders. Outside the model (exogenous: they drive it, the model does not explain them): the climate (hotter, drier summers, wetter winters, sea-level rise), EU banking rules (Basel IV), market demand for alternative crops, fresh water supplied from outside and national water policy, and LVVN's levers. Left out: nature and energy, world prices of conventional crops, and farmers stopping or selling their land (the national land bank is still under discussion). We assume the adaptive practices work rather than model whether they do: the CLD shows what stops farmers adopting them, not whether each one works on the island."
+    "system boundary": "Draft, for the team to check. Inside the model (endogenous, explained by its loops): the water and salt system (recharge, lens thickness, seepage, upconing, salt in the root zone, soil structure), crop yield and farm finances (revenue, land value, debt, credit, room to invest), whether farmers adopt the adaptive practices, and the resistance in governance to re-wetting land and to wisselpolders. Outside the model (exogenous: they drive it, the model does not explain them): the climate (hotter, drier summers, wetter winters, sea-level rise), EU banking rules (Basel IV), market demand for alternative crops, fresh water supplied from outside and national water policy, and LVVN's levers. Farmland leaving arable use (a buy-out, stopping, another land use) is in the model as one variable, because LVVN's land levers act on it; what the land becomes afterwards is not. Left out: nature and energy, world prices of conventional crops, and other land uses (livestock, vertical farming), which replace arable farming rather than adapt it. We assume the adaptive practices work rather than model whether they do: the CLD shows what stops farmers adopting them, not whether each one works on the island."
   },
   "elements": [
     {
@@ -425,6 +425,18 @@
       "sources": [],
       "x": 2400,
       "y": 1080
+    },
+    {
+      "id": "farmland-leaving-arable-use",
+      "label": "Farmland leaving arable use",
+      "element type": "Auxiliary",
+      "adaptive practice": false,
+      "sets domain": "Social",
+      "subquestion": "SQ3",
+      "description": "Arable land on the island that leaves arable farming: sold through a (voluntary) buy-out, taken out of production, or turned to another use. What the land becomes afterwards (nature, grassland, water storage) is outside the model. LVVN's land levers (buy-outs, a national land bank) act on this variable.",
+      "sources": [],
+      "x": 2880,
+      "y": 1620
     }
   ],
   "connections": [
@@ -532,10 +544,13 @@
       "from": "freshwater-lens-recharge",
       "to": "freshwater-lens-thickness",
       "polarity": "+",
-      "delay": false,
+      "delay": true,
       "loop id": "R1_Biophysical",
-      "description": "Rainwater infiltration builds up the floating freshwater lens.",
-      "sources": [],
+      "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In the thin polder lenses of Schouwen-Duiveland the mixing zone shifts at most 0.1 m within a year, with vertical flow of at most 1.2 mm per day (de Louw et al., 2011). Under a creek ridge, raising the winter water table 0.5 m thickened a 13–15 m lens by 6–8 m in ten years, and the lens had not reached its new thickness yet (Pauw et al., 2015, a model result for Walcheren). So a change in recharge takes years to a decade to show in the lens.",
+      "sources": [
+        "de-louw-2011",
+        "pauw-2015"
+      ],
       "curvature": 0.0
     },
     {
@@ -572,10 +587,12 @@
       "from": "land-subsidence",
       "to": "polder-surface-elevation-nap",
       "polarity": "-",
-      "delay": false,
+      "delay": true,
       "loop id": "R1_Biophysical",
-      "description": "Peat oxidation and clay settling lower the physical land surface relative to NAP.",
-      "sources": [],
+      "description": "Peat oxidation and clay settling lower the land surface relative to NAP at millimetres a year, so a decimetre takes decades: Dutch land below sea level is still subsiding up to 1 m per century, fastest in peat areas (Oude Essink et al., 2010). A rate for Schouwen-Duiveland's clay polders is not yet sourced.",
+      "sources": [
+        "oude-essink-2010"
+      ],
       "curvature": 0.0
     },
     {
@@ -592,10 +609,12 @@
       "from": "root-zone-salinity",
       "to": "clay-dispersion-sodification",
       "polarity": "+",
-      "delay": false,
+      "delay": true,
       "loop id": "R1_Biophysical",
-      "description": "High sodium (Na+) concentrations displace calcium (Ca2+), causing clay particles to disperse.",
-      "sources": [],
+      "description": "High sodium (Na+) concentrations displace calcium (Ca2+), causing clay particles to disperse. The delay is on the way back: structure collapses within the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year, which takes 5 to 10 years on heavy clay and about a year on light soil (van Beekom et al., 1953, after the 1945 and 1953 floods in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster.",
+      "sources": [
+        "van-beekom-1953"
+      ],
       "curvature": 0.0
     },
     {
@@ -1047,6 +1066,36 @@
       "description": "High debt service forces farmers to cultivate lucrative but salt-sensitive crops (seed potatoes, onions).",
       "sources": [],
       "curvature": 0.0
+    },
+    {
+      "from": "farm-revenue",
+      "to": "farmland-leaving-arable-use",
+      "polarity": "-",
+      "delay": false,
+      "loop id": "",
+      "description": "When farming the land no longer pays, farmers stop, sell, or accept a buy-out.",
+      "sources": [],
+      "curvature": 0
+    },
+    {
+      "from": "bank-credit-freeze-risk-premiums",
+      "to": "farmland-leaving-arable-use",
+      "polarity": "+",
+      "delay": false,
+      "loop id": "",
+      "description": "When credit dries up, farms that cannot refinance are sold or wound down.",
+      "sources": [],
+      "curvature": 0
+    },
+    {
+      "from": "farmland-leaving-arable-use",
+      "to": "demand-for-deep-polder-drainage",
+      "polarity": "-",
+      "delay": false,
+      "loop id": "",
+      "description": "Less arable land in a polder means less pressure on the water board to keep its ditch levels low in spring; the Project Plan's example lever pairs a buy-out with water governance that stops doing so.",
+      "sources": [],
+      "curvature": 0
     }
   ],
   "loops": []

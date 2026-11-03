@@ -114,6 +114,9 @@ def check(cld, refs):
                 warnings.append(f"{e['id']}: nothing drives it, yet it is not a Constant")
             elif e["id"] in has_in and e["element type"] == "Constant":
                 warnings.append(f"{e['id']}: a Constant, yet links drive it")
+        # A delay is a claim about duration, so its description names one (a number: years, m per decade).
+        warnings += [f"{c['from']} -> {c['to']}: a delay, yet its description gives no duration"
+                     for c in cld["connections"] if c["delay"] and not any(ch.isdigit() for ch in c["description"])]
         cited = {k for item in cld["elements"] + cld["connections"] for k in item.get("sources", [])}
         warnings += [f"reference {k!r} is cited nowhere" for k in refs if k not in cited]
         warnings += draw.overlaps(cld)

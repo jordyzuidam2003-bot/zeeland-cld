@@ -242,11 +242,13 @@ svg.addEventListener("pointerdown", ev => {
   if (moveToggle.checked && g) drag = { kind: "element", g, last: toSvg(ev) };
   else drag = { kind: "pan", last: [ev.clientX, ev.clientY] };
   dragged = false;
-  svg.setPointerCapture(ev.pointerId);
   ev.preventDefault();
 });
 svg.addEventListener("pointermove", ev => {
   if (!drag) return;
+  // capture only once the pointer moves: a captured pointer's click goes to the svg itself,
+  // so a plain click on an element or a link would no longer find them
+  if (!svg.hasPointerCapture(ev.pointerId)) svg.setPointerCapture(ev.pointerId);
   if (drag.kind === "element") {
     const p = toSvg(ev);
     const dx = p[0] - drag.last[0], dy = p[1] - drag.last[1];

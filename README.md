@@ -117,6 +117,6 @@ project's name, which the export sets to `cbp-cld`.
 The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label
 inside, square corners for a stock and rounded ones for the others, an italic label for a
 constant (Kumu has no dashed border), a thick border for an adaptive practice; links of one
-width, blue `+` and red `−`. `build.py` adds the rules that size each box below `view.scss`, and
+width, blue `+` and red `−`. `build.py` adds the rules that tint and size each box below `view.scss`, and
 a double space where the page breaks a label's line (Kumu's manual line break). The project's
 description and the map's name carry the model version, so Kumu says which model it holds.

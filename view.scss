@@ -44,9 +44,10 @@
 }
 
 /* ---------- Elements: the page's look, values from draw.py ---------- */
-/* each box's width and height are rules build.py generates below this view in
-   docs/project.json. Kumu draws text at about 0.6 of its font-size in map units, so each
-   font-size is the page's x 1.5, to fill the box draw.py fits */
+/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules
+   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of
+   its font-size in map units, so each font-size is the page's x 1.5, to fill the box
+   draw.py fits */
 /* pill: Kumu's rectangle with rounded corners */
 element {
   shape: pill;
@@ -72,19 +73,6 @@ element {
 
 ["adaptive practice"="yes"] {
   border-width: 5;
-}
-
-/* the box's fill is its SETS domain's tint, draw.py's TINT */
-["sets domain"="ecological"] {
-  color: #9DD9AC;
-}
-
-["sets domain"="social"] {
-  color: #ABC9F4;
-}
-
-["sets domain"="technological"] {
-  color: #FBC07C;
 }
 
 /* ---------- Links: one width, the sign's colour ---------- */

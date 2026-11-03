@@ -3,7 +3,7 @@
     "purpose": "Draft, for the team to check. Why do arable farmers on Schouwen-Duiveland keep growing salt-sensitive crops and keep their land deeply drained, even as the soil and water get saltier and fresh water gets scarcer towards 2050? And which feedback loops keep them there, blocking the alternatives: storing fresh water, growing salt-tolerant crops, and wisselpolders? These three are the adaptive practices in the model because each works on a different part of the chain (the water supply, the crop's sensitivity, the land's height) and each is held back by something in the system; a practice that farmers raise in the group model building session and that fits neither of the three is a candidate to add. The CLD is the picture of the system the whole group works from in the next steps, the semi-quantitative analysis (SIP) and the multi-criteria analysis of LVVN's policy levers. It is not built around one outcome or one set of levers: the group picks those when that step starts.",
     "spatial scale": "Draft, for the team to check. The island of Schouwen-Duiveland: its farmland polders, the rainwater lenses under them, the soils, the farms and the land market, and how the water board manages water levels. The island gets no fresh water from elsewhere, so all its fresh water is winter rain stored in the lenses. What is decided at provincial and national level (the water board's funding, LVVN, the Deltaprogramma Zoetwater) comes from outside the boundary: it enters as a policy input, and the CLD shows how it reaches the island.",
     "time horizon": "Draft, for the team to check. 2050, the year the KNMI'23 climate scenarios and the project look ahead to. The slow parts of the system are judged against that date: the freshwater lens and land subsidence react within years, but raising land with a wisselpolder takes 50 to 100 years, so the decision to start one falls before 2050 while most of its effect comes after.",
-    "system boundary": "Draft, for the team to check. Inside the model (endogenous, explained by its loops): the water and salt system (recharge, lens thickness, seepage, upconing, salt in the root zone, soil structure), crop yield and farm finances (revenue, land value, debt, credit, room to invest), whether farmers adopt the adaptive practices, and the resistance in governance to re-wetting land and to wisselpolders. Outside the model (exogenous: they drive it, the model does not explain them): the climate (hotter, drier summers, wetter winters, sea-level rise), EU banking rules (Basel IV), market demand for alternative crops, fresh water supplied from outside and national water policy, and LVVN's levers. Farmland leaving arable use (a buy-out, stopping, another land use) is in the model as one variable, because LVVN's land levers act on it; what the land becomes afterwards is not. Left out: nature and energy, world prices of conventional crops, and other land uses (livestock, vertical farming), which replace arable farming rather than adapt it. We assume the adaptive practices work rather than model whether they do: the CLD shows what stops farmers adopting them, not whether each one works on the island."
+    "system boundary": "Draft, for the team to check. Inside the model (endogenous, explained by its loops): the water and salt system (recharge, lens thickness, seepage, upconing, salt in the root zone, soil structure), crop yield and farm finances (revenue, land value, debt, credit, room to invest), whether farmers adopt the adaptive practices, and the resistance in governance to re-wetting land and to wisselpolders. Outside the model (exogenous: they drive it, the model does not explain them): the climate (hotter, drier summers, wetter winters, sea-level rise), EU banking rules (Basel IV), market demand for alternative crops, fresh water supplied from outside and national water policy, and LVVN's levers. Farmland leaving arable use (a buy-out, stopping, another land use) is in the model as one variable, because the land market and succession drive it and water management follows it; what the land becomes afterwards is not. Left out: nature and energy, world prices of conventional crops, and other land uses (livestock, vertical farming), which replace arable farming rather than adapt it. We assume the adaptive practices work rather than model whether they do: the CLD shows what stops farmers adopting them, not whether each one works on the island."
   },
   "elements": [
     {
@@ -433,7 +433,7 @@
       "adaptive practice": false,
       "sets domain": "Social",
       "subquestion": "SQ3",
-      "description": "Arable land on the island that leaves arable farming: sold through a (voluntary) buy-out, taken out of production, or turned to another use. What the land becomes afterwards (nature, grassland, water storage) is outside the model. LVVN's land levers (buy-outs, a national land bank) act on this variable.",
+      "description": "Arable land on the island that leaves arable farming: a farm ending without a successor, land sold or taken out of production, or a change of use. What the land becomes afterwards (nature, grassland, water storage) is outside the model.",
       "sources": [],
       "x": 2880,
       "y": 1620
@@ -1073,7 +1073,7 @@
       "polarity": "-",
       "delay": false,
       "loop id": "",
-      "description": "When farming the land no longer pays, farmers stop, sell, or accept a buy-out.",
+      "description": "When farming the land no longer pays, more farms end or sell when the generation turns.",
       "sources": [],
       "curvature": 0
     },
@@ -1083,7 +1083,7 @@
       "polarity": "+",
       "delay": false,
       "loop id": "",
-      "description": "When credit dries up, farms that cannot refinance are sold or wound down.",
+      "description": "When credit tightens, farms that cannot refinance are sold or wound down.",
       "sources": [],
       "curvature": 0
     },
@@ -1093,7 +1093,7 @@
       "polarity": "-",
       "delay": false,
       "loop id": "",
-      "description": "Less arable land in a polder means less pressure on the water board to keep its ditch levels low in spring; the Project Plan's example lever pairs a buy-out with water governance that stops doing so.",
+      "description": "The fewer hectares of arable land in a polder, the less pressure on the water board to keep its ditch levels low in spring.",
       "sources": [],
       "curvature": 0
     }

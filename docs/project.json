@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 9c8c4d6, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 83b29d4, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -703,7 +703,7 @@
         "adaptive practice": "no",
         "sets domain": "Social",
         "subquestion": "SQ3",
-        "description": "Arable land on the island that leaves arable farming: sold through a (voluntary) buy-out, taken out of production, or turned to another use. What the land becomes afterwards (nature, grassland, water storage) is outside the model. LVVN's land levers (buy-outs, a national land bank) act on this variable.",
+        "description": "Arable land on the island that leaves arable farming: a farm ending without a successor, land sold or taken out of production, or a change of use. What the land becomes afterwards (nature, grassland, water storage) is outside the model.",
         "sources": "",
         "sourced": "no"
       }
@@ -1960,7 +1960,7 @@
         "polarity": "negative",
         "delay": "no",
         "loop id": "",
-        "description": "When farming the land no longer pays, farmers stop, sell, or accept a buy-out.",
+        "description": "When farming the land no longer pays, more farms end or sell when the generation turns.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "sources": "",
@@ -1980,7 +1980,7 @@
         "polarity": "positive",
         "delay": "no",
         "loop id": "",
-        "description": "When credit dries up, farms that cannot refinance are sold or wound down.",
+        "description": "When credit tightens, farms that cannot refinance are sold or wound down.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "sources": "",
@@ -2000,7 +2000,7 @@
         "polarity": "negative",
         "delay": "no",
         "loop id": "",
-        "description": "Less arable land in a polder means less pressure on the water board to keep its ditch levels low in spring; the Project Plan's example lever pairs a buy-out with water governance that stops doing so.",
+        "description": "The fewer hectares of arable land in a polder, the less pressure on the water board to keep its ditch levels low in spring.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "sources": "",
@@ -2015,7 +2015,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 9c8c4d6",
+      "name": "CLD, model 83b29d4",
       "description": "",
       "scale": 1,
       "center": {

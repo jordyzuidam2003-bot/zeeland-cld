@@ -14,6 +14,7 @@ from GitHub; nothing is edited in Kumu itself.
 | `view.scss` | the Kumu view: colours, shapes, legend, buttons | yes |
 | `build.py` | checks the model and writes `dist/` (how: its docstring) | — |
 | `import_kumu.py` | pulls a Kumu project export into `cld.json`, or only its layout | — |
+| `kumu-place.js` | sets the Kumu map's positions from `cld.json` (how: its comment) | — |
 | `dist/` | what Kumu reads: `kumu.json`, `view.scss` | never: `build.py` writes it |
 
 ## Working on the diagram
@@ -69,10 +70,13 @@ connection and that the id starts with R for an even number of `-` links, B for 
 
 Kumu's "Link map to remote JSON" (green + → Import) points the map at
 <https://raw.githubusercontent.com/jordyzuidam2003-bot/zeeland-cld/main/dist/kumu.json>.
-A remote blueprint carries elements, connections and loops only, not positions or a view. So the
-view uses Kumu's scatter layout, which places every element at its `x` and `y` fields, and the
-view code lives in `view.scss`.
+A remote blueprint carries elements, connections and loops only, not positions or a view. The
+map itself keeps those: the view code is pasted from `dist/view.scss`, and the positions are
+set from `cld.json` with `kumu-place.js`, pasted into the browser console on the map (Chrome:
+Cmd+Opt+J). It pins every element at its `x` and `y` fields, and Kumu keeps pinned positions
+across refreshes. It uses Kumu's internal objects, so a Kumu update may break it.
 
-To tune the layout by dragging: drag in a copy of the map with a fixed layout, export that
-project (JSON), then `python3 import_kumu.py <export.json> --layout` copies only the
-positions and curvature back into `cld.json`.
+Layout tuning: drag elements in Kumu, export the project (JSON), then
+`python3 import_kumu.py <export.json> --layout` copies the positions back into `cld.json`.
+Curvature is edited in `cld.json` only: the view sets every link's curve, so dragging a curve
+in Kumu has no effect.

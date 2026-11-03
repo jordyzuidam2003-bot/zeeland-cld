@@ -51,9 +51,7 @@
 }
 
 @settings {
-  layout: scatter;
-  layout-x: "x";
-  layout-y: "-y";
+  layout: static;
   theme: light;
   background-color: #FFFFFF;
   culling: false;

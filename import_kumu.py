@@ -1,14 +1,15 @@
 """Import a full Kumu project export ("Export JSON") into cld.json.
 
     python3 import_kumu.py ~/Downloads/kumu-cld.json            # rewrite cld.json
-    python3 import_kumu.py ~/Downloads/kumu-cld.json --layout   # only x, y and curvature
+    python3 import_kumu.py ~/Downloads/kumu-cld.json --layout   # only x and y
 
 Positions and curvature come from the export's default map (its "defaultMap" id), which is
 not necessarily maps[0]. Elements are matched to an existing cld.json by label, so their ids
 survive a re-import; new elements get an id made from their label.
 
---layout is for tuning the layout by dragging in a Kumu project with a fixed layout: export
-that project, then pull only the positions and curves back into cld.json.
+--layout is for tuning the layout by dragging in Kumu: export the project, then pull only the
+positions back into cld.json. Curvature is not pulled: the view sets every link's curve from
+cld.json, so a curve dragged in Kumu never shows.
 """
 
 import argparse
@@ -46,7 +47,7 @@ def load_export(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("export", help="path to the Kumu project export (.json)")
-    parser.add_argument("--layout", action="store_true", help="only update x, y and curvature")
+    parser.add_argument("--layout", action="store_true", help="only update x and y")
     args = parser.parse_args()
 
     elements, connections, positions, curvature = load_export(args.export)
@@ -60,7 +61,6 @@ def main():
 
     if args.layout:
         by_id = {e["id"]: e for e in old["elements"]}
-        by_pair = {(c["from"], c["to"]): c for c in old["connections"]}
         missing = []
         for e in elements:
             target = by_id.get(kumu_to_id[e["_id"]])
@@ -69,12 +69,6 @@ def main():
                 continue
             p = positions[e["_id"]]
             target["x"], target["y"] = round(p["x"]), round(p["y"])
-        for c in connections:
-            target = by_pair.get((kumu_to_id[c["from"]], kumu_to_id[c["to"]]))
-            if target is None:
-                missing.append(f'{c["from"]} -> {c["to"]}')
-                continue
-            target["curvature"] = round(curvature.get(c["_id"], 0), 2)
         new = old
         if missing:
             print("not in cld.json, skipped:", *missing, sep="\n  ")

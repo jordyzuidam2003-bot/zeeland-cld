@@ -11,9 +11,8 @@ view.scss (style). Never edit dist/, which this script writes:
     dist/view.scss  view.scss plus each link's curvature; paste it into Kumu's Advanced
                     Editor whenever it changes, since Kumu cannot fetch a view
 
-Kumu's remote JSON holds elements, connections and loops only, no positions or view. So the
-view uses the scatter layout, which places each element at its own x and y fields. Scatter's
-y axis points up and cld.json's points down, hence layout-y: "-y" in view.scss.
+Kumu's remote JSON holds elements, connections and loops only, no positions or view. The Kumu
+map keeps its own positions (set from cld.json by kumu-place.js, then dragged) and view.
 """
 
 import argparse

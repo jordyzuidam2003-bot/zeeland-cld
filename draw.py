@@ -5,9 +5,9 @@ docs/index.html. svg(cld) returns the drawing as a string; overlaps(cld) the war
 boxes and regions that intersect, for build.py's report.
 
 What is drawn, from back to front:
-  regions   one per SETS domain: a blob around its elements' boxes (their convex hull, padded,
-            corners rounded, the border wobbling a little so it reads as hand-drawn (Jordy),
-            deterministically so a rebuild is byte-identical), filled with a pale tint of the
+  regions   one per SETS domain: a smooth closed curve around its elements' boxes (their convex
+            hull, padded, corners rounded, drawn as one spline so no polygon edge shows; nothing
+            random, Jordy's decision against a hand-drawn wobble), filled with a pale tint of the
             domain's hue, the domain's name in large faint text
   links     a quadratic Bezier from box border to box border, the sign beside the arrowhead on
             the outside of the curve, a delay as two short strokes across the midpoint
@@ -20,7 +20,6 @@ The link formula is duplicated in page/app.js (drag mode recomputes a moved elem
 keep link_path() and its JS twin the same.
 """
 
-from hashlib import sha256
 from math import atan2, cos, hypot, pi, sin
 
 # --- style -------------------------------------------------------------------------------
@@ -39,7 +38,6 @@ SIGN_SIZE = 34
 LEGEND_SIZE = 36               # the legend reads at a glance, so larger than the labels (Jordy)
 ARROW = 14                     # arrowhead length, in drawing units
 REGION_PAD = 90
-REGION_WOBBLE = 0.3            # of REGION_PAD: how far a region's border strays, for a hand-drawn look
 REGION = {  # the hue of Figure 1 in the group's Project Plan, as a pale tint
     "Ecological": "#BDE3C7", "Social": "#C5DAF4", "Technological": "#F9D2AB"}
 REGION_NAME_COLOUR = "#777777"
@@ -219,10 +217,9 @@ def cross(o, a, b):
     return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])
 
 
-def region_path(points, pad, seed=""):
-    """A blob around the points: the hull grown by `pad` with rounded corners, sampled, each
-    sample moved in or out by a wobble that `seed` fixes, and a closed Catmull-Rom spline through
-    the samples (as cubic Beziers). Returns (path, hull)."""
+def region_path(points, pad):
+    """A smooth curve around the points: the hull grown by `pad` with rounded corners, sampled,
+    and a closed Catmull-Rom spline through the samples (as cubic Beziers). Returns (path, hull)."""
     h = hull(points)
     if len(h) < 3:
         return "", h
@@ -250,11 +247,7 @@ def region_path(points, pad, seed=""):
         for k in range(1, pieces):
             t = k / pieces
             samples.append(((p[0] + ex * t + nx * pad, p[1] + ey * t + ny * pad), (nx, ny)))
-    pts = []
-    for i, ((x, y), (nx, ny)) in enumerate(samples):
-        digest = sha256(f"{seed}:{i}".encode()).digest()
-        wobble = (digest[0] / 255 - 0.5) * 2 * REGION_WOBBLE * pad
-        pts.append((x + nx * wobble, y + ny * wobble))
+    pts = [point for point, _ in samples]
     m = len(pts)
     d = [f"M {pts[0][0]:.1f} {pts[0][1]:.1f}"]
     for i in range(m):
@@ -267,7 +260,7 @@ def region_path(points, pad, seed=""):
 
 def region_svg(domain, bxs):
     corners = [p for (x0, y0, x1, y1, _) in bxs for p in ((x0, y0), (x1, y0), (x0, y1), (x1, y1))]
-    path, h = region_path(corners, REGION_PAD, seed=domain)
+    path, h = region_path(corners, REGION_PAD)
     cx = sum(p[0] for p in h) / len(h)
     cy = sum(p[1] for p in h) / len(h)
     return "\n".join([
@@ -280,9 +273,8 @@ def region_svg(domain, bxs):
 
 def region_bounds(bxs):
     corners = [p for (x0, y0, x1, y1, _) in bxs for p in ((x0, y0), (x1, y0), (x0, y1), (x1, y1))]
-    reach = REGION_PAD * (1 + REGION_WOBBLE)
-    return (min(p[0] for p in corners) - reach, min(p[1] for p in corners) - reach,
-            max(p[0] for p in corners) + reach, max(p[1] for p in corners) + reach)
+    return (min(p[0] for p in corners) - REGION_PAD, min(p[1] for p in corners) - REGION_PAD,
+            max(p[0] for p in corners) + REGION_PAD, max(p[1] for p in corners) + REGION_PAD)
 
 
 # --- loops ----------------------------------------------------------------------------------

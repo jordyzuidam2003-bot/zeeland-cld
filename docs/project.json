@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version b2cd648, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 4e67ee5, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -667,7 +667,7 @@
         "adaptive practice": "no",
         "sets domain": "Social",
         "subquestion": "SQ3",
-        "description": "Arable land on the island that leaves arable farming: a farm ending without a successor, land sold or taken out of production, or a change of use. What the land becomes afterwards (nature, grassland, water storage) is outside the model.",
+        "description": "Arable land on the island that stops being farmed as arable land: taken out of production or put to another use, whoever owns it. A sale counts only when the land leaves arable farming: land that another arable farmer takes over stays arable, and land that switches to salt-tolerant crops is Salt-tolerant crop adoption. What the land becomes afterwards (nature, grassland, water storage) is outside the model.",
         "sources": "",
         "sourced": "no"
       }
@@ -1823,7 +1823,7 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "When farming the land no longer pays, more farms end or sell when the generation turns.",
+        "description": "When arable farming on the land no longer pays, fewer farmers take it over, as successor or as buyer, so more of it leaves arable farming.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "sources": "",
@@ -1842,7 +1842,7 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "When credit tightens, farms that cannot refinance are sold or wound down.",
+        "description": "When credit tightens, farms that cannot refinance stop, and fewer arable farmers can borrow to buy their land, so more of it leaves arable farming.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "sources": "",
@@ -1996,7 +1996,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model b2cd648",
+      "name": "CLD, model 4e67ee5",
       "description": "",
       "scale": 1,
       "center": {

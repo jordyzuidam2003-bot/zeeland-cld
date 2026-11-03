@@ -3,7 +3,7 @@
     "purpose": "Draft, for the team to check. What keeps arable farmers on Schouwen-Duiveland growing salt-sensitive crops and draining their land deeply, even as the soil and water get saltier and fresh water gets scarcer towards 2050? And which feedback loops keep them there, blocking the alternatives: storing fresh water and growing salt-tolerant crops? These two are the adaptive practices in the model because each works on a different part of the chain (the water supply, the crop's sensitivity) and each is held back by something in the system; a practice that farmers raise in the group model building session and that fits neither is a candidate to add. The CLD is the picture of the system the whole group works from in the next steps, the semi-quantitative analysis (SIP) and the multi-criteria analysis of LVVN's policy levers. It is not built around one outcome or one set of levers: the group picks those when that step starts.",
     "spatial scale": "Draft, for the team to check. The island of Schouwen-Duiveland: its farmland polders, the rainwater lenses under them, the soils, the farms and the land market, and how the water board manages water levels. The island gets no fresh water from elsewhere, so all its fresh water is winter rain stored in the lenses. What is decided at provincial and national level (the water board's funding, LVVN, the Deltaprogramma Zoetwater) comes from outside the boundary: it enters as a policy input, and the CLD shows how it reaches the island.",
     "time horizon": "Draft, for the team to check. 2050, the year the KNMI'23 climate scenarios and the project look ahead to. The slow parts of the system are judged against that date: the freshwater lens, which a year's recharge barely moves, and land subsidence, which lowers the polders by millimetres a year.",
-    "system boundary": "Draft, for the team to check. Inside the model (endogenous, explained by its loops): the water and salt system (recharge, lens thickness, seepage, upconing, salt in the root zone, soil structure), crop yield and farm finances (revenue, land value, debt, credit, room to invest), whether farmers adopt the adaptive practices, and the objections to re-wetting land. Outside the model (exogenous: they drive it, the model does not explain them): the climate (hotter, drier summers, wetter winters, sea-level rise), EU banking rules (Basel IV), market demand for alternative crops, fresh water supplied from outside and national water policy, and LVVN's levers. Farmland leaving arable use (a buy-out, stopping, another land use) is in the model as one variable, because the land market and succession drive it and water management follows it; what the land becomes afterwards is not. Left out: nature and energy, world prices of conventional crops, and other land uses (livestock, vertical farming), which replace arable farming rather than adapt it; and wisselpolders, because the island's waters carry too little silt to raise its polders (see Polder surface elevation). We assume the adaptive practices work rather than model whether they do: the CLD shows what stops farmers adopting them, not whether each one works on the island."
+    "system boundary": "Draft, for the team to check. Inside the model (endogenous, explained by its loops): the water and salt system (recharge, lens thickness, seepage, upconing, salt in the root zone, soil structure), crop yield and farm finances (revenue, land value, debt, credit, room to invest), whether farmers adopt the adaptive practices, and the objections to re-wetting land. Outside the model (exogenous: they drive it, the model does not explain them): the climate (hotter, drier summers, wetter winters, sea-level rise), EU banking rules (Basel IV), market demand for alternative crops, fresh water supplied from outside and national water policy, and LVVN's levers. Farmland leaving arable use (land no longer farmed as arable land, whoever owns it; a sale to another arable farmer is not part of it) is in the model as one variable, because the land market and succession drive it and water management follows it; what the land becomes afterwards is not. Left out: nature and energy, world prices of conventional crops, and other land uses (livestock, vertical farming), which replace arable farming rather than adapt it; and wisselpolders, because the island's waters carry too little silt to raise its polders (see Polder surface elevation). We assume the adaptive practices work rather than model whether they do: the CLD shows what stops farmers adopting them, not whether each one works on the island."
   },
   "elements": [
     {
@@ -427,7 +427,7 @@
       "adaptive practice": false,
       "sets domain": "Social",
       "subquestion": "SQ3",
-      "description": "Arable land on the island that leaves arable farming: a farm ending without a successor, land sold or taken out of production, or a change of use. What the land becomes afterwards (nature, grassland, water storage) is outside the model.",
+      "description": "Arable land on the island that stops being farmed as arable land: taken out of production or put to another use, whoever owns it. A sale counts only when the land leaves arable farming: land that another arable farmer takes over stays arable, and land that switches to salt-tolerant crops is Salt-tolerant crop adoption. What the land becomes afterwards (nature, grassland, water storage) is outside the model.",
       "sources": [],
       "x": 2880,
       "y": 1620
@@ -988,7 +988,7 @@
       "to": "farmland-leaving-arable-use",
       "polarity": "-",
       "delay": false,
-      "description": "When farming the land no longer pays, more farms end or sell when the generation turns.",
+      "description": "When arable farming on the land no longer pays, fewer farmers take it over, as successor or as buyer, so more of it leaves arable farming.",
       "sources": [],
       "curvature": 0
     },
@@ -997,7 +997,7 @@
       "to": "farmland-leaving-arable-use",
       "polarity": "+",
       "delay": false,
-      "description": "When credit tightens, farms that cannot refinance are sold or wound down.",
+      "description": "When credit tightens, farms that cannot refinance stop, and fewer arable farmers can borrow to buy their land, so more of it leaves arable farming.",
       "sources": [],
       "curvature": 0
     },

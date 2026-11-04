@@ -36,8 +36,8 @@
       "subquestion": "SQ1",
       "description": "Increased winter precipitation, providing potential recharge volume if retained.",
       "sources": [],
-      "x": 546,
-      "y": 1518
+      "x": 589,
+      "y": 1541
     },
     {
       "id": "clay-dispersion-sodification",
@@ -49,8 +49,8 @@
       "subquestion": "SQ1",
       "description": "Structural degradation of marine clay soils as sodium (Na+) replaces calcium (Ca2+) on clay complexes.",
       "sources": [],
-      "x": 1239,
-      "y": 1225
+      "x": 1200,
+      "y": 1246
     },
     {
       "id": "crop-water-demand",
@@ -88,8 +88,8 @@
       "subquestion": "SQ1",
       "description": "Infiltration of winter rainwater that refills the shallow rainwater lens.",
       "sources": [],
-      "x": 760,
-      "y": 1310
+      "x": 755,
+      "y": 1324
     },
     {
       "id": "freshwater-lens-thickness",
@@ -114,8 +114,8 @@
       "subquestion": "SQ1",
       "description": "Peat oxidation and clay consolidation caused by low drainage levels, lowering the land surface relative to sea level.",
       "sources": [],
-      "x": 1163,
-      "y": 2065
+      "x": 1119,
+      "y": 2096
     },
     {
       "id": "polder-surface-elevation-nap",
@@ -183,8 +183,8 @@
       "subquestion": "SQ1",
       "description": "Upward cone of the salt-freshwater interface beneath pumping irrigation wells as the freshwater lens thins.",
       "sources": [],
-      "x": 1239,
-      "y": 799
+      "x": 1172,
+      "y": 808
     },
     {
       "id": "brackish-irrigation-water-use",
@@ -274,8 +274,8 @@
       "subquestion": "SQ2",
       "description": "Opposition to plans for re-wetting land through political and legal channels: objections, appeals at the Council of State (Raad van State) and political pressure, which slow or stop a plan.",
       "sources": [],
-      "x": 2160,
-      "y": 1620
+      "x": 2137,
+      "y": 1632
     },
     {
       "id": "winter-rain-drained-away",
@@ -313,8 +313,8 @@
       "subquestion": "SQ2",
       "description": "Consumer demand and offtake contracts for novel salt-tolerant or alternative crops (e.g. protein crops).",
       "sources": [],
-      "x": 2158,
-      "y": 94
+      "x": 2061,
+      "y": 77
     },
     {
       "id": "processing-capacity-for-alternative-crops",
@@ -378,8 +378,8 @@
       "subquestion": "SQ2",
       "description": "European banking regulations requiring stricter risk weighting on loans when climate/soil risks reduce collateral value.",
       "sources": [],
-      "x": 3290,
-      "y": 881
+      "x": 3312,
+      "y": 868
     },
     {
       "id": "dependence-on-high-margin-salt-sensitive-crops",
@@ -404,8 +404,8 @@
       "subquestion": "SQ2",
       "description": "Financial return per hectare from crop sales, determined by yield and prices.",
       "sources": [],
-      "x": 2575,
-      "y": 823
+      "x": 2576,
+      "y": 795
     },
     {
       "id": "farmers-capacity-to-invest",
@@ -430,8 +430,8 @@
       "subquestion": "SQ2",
       "description": "Farmers' concern that plans for re-wetting or depoldering lower their land's value without compensation (planschade), or take away their land or their say over it.",
       "sources": [],
-      "x": 2530,
-      "y": 1560
+      "x": 2554,
+      "y": 1533
     },
     {
       "id": "mortgage-debt-financial-leverage",
@@ -458,8 +458,8 @@
       "subquestion": "SQ3",
       "description": "Arable land on the island that stops being farmed as arable land: taken out of production or put to another use, whoever owns it. A sale counts only when the land leaves arable farming: land that another arable farmer takes over stays arable, and land that switches to salt-tolerant crops is Salt-tolerant crop adoption. What the land becomes afterwards (nature, grassland, water storage) is outside the model.",
       "sources": [],
-      "x": 2880,
-      "y": 1620
+      "x": 2884,
+      "y": 1645
     }
   ],
   "connections": [
@@ -533,7 +533,7 @@
       "delay": false,
       "description": "Sodification destroys soil aggregates, porosity, aeration, and workability.",
       "sources": [],
-      "curvature": -0.16
+      "curvature": -0.09
     },
     {
       "from": "crop-water-demand",
@@ -639,7 +639,7 @@
       "delay": false,
       "description": "Rising salinity increases agronomic pressure to switch to tolerant varieties.",
       "sources": [],
-      "curvature": 0.02
+      "curvature": 0.06
     },
     {
       "from": "saline-seepage-kwel",
@@ -657,7 +657,7 @@
       "delay": false,
       "description": "Capillary rise brings saline seepage water into the root zone.",
       "sources": [],
-      "curvature": 0.4
+      "curvature": 0.32
     },
     {
       "from": "soil-structure-usability",
@@ -675,7 +675,7 @@
       "delay": false,
       "description": "Good soil structure supports root development, emergence, and safe harvesting of tubers/bulbs.",
       "sources": [],
-      "curvature": -0.16
+      "curvature": -0.1
     },
     {
       "from": "soil-structure-usability",
@@ -702,7 +702,7 @@
       "delay": false,
       "description": "Evaporation of brackish irrigation water leaves salt behind in the topsoil.",
       "sources": [],
-      "curvature": -0.4
+      "curvature": -0.36
     },
     {
       "from": "demand-for-deep-polder-drainage",
@@ -792,7 +792,7 @@
       "delay": false,
       "description": "Extracting groundwater directly depletes the limited freshwater lens.",
       "sources": [],
-      "curvature": 0.1
+      "curvature": 0.14
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -801,7 +801,7 @@
       "delay": false,
       "description": "Pumping groundwater draws the underlying salt-fresh interface upward into a cone.",
       "sources": [],
-      "curvature": 0
+      "curvature": 0.11
     },
     {
       "from": "policy-resistance-legal-delays",
@@ -819,7 +819,7 @@
       "delay": false,
       "description": "Water evacuated via drains cannot infiltrate to refill the freshwater lens.",
       "sources": [],
-      "curvature": 0.04
+      "curvature": 0.15
     },
     {
       "from": "crop-yield",
@@ -828,7 +828,7 @@
       "delay": false,
       "description": "Higher physical yield increases sales revenue per hectare.",
       "sources": [],
-      "curvature": 0.2
+      "curvature": 0.35
     },
     {
       "from": "market-demand-for-alternative-crops",
@@ -1028,7 +1028,7 @@
       "delay": false,
       "description": "When credit tightens, farms that cannot refinance stop, and fewer arable farmers can borrow to buy their land, so more of it leaves arable farming.",
       "sources": [],
-      "curvature": 0.21
+      "curvature": 0.18
     },
     {
       "from": "farmland-leaving-arable-use",

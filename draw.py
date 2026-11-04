@@ -35,7 +35,8 @@ PAD_X, PAD_Y = 14, 9
 STROKE, STROKE_THICK = 1.5, 5
 STROKE_COLOUR = "#444444"
 LINK_WIDTH = 2.5
-LINK_COLOUR = {"+": "#2166AC", "-": "#B2182B"}
+LINK_COLOUR = {"+": "#2166AC", "-": "#B2182B"}  # by polarity (Jordy, chosen against one grey with the signs alone: the eye finds
+                                                   # the − links along a loop, and an odd number makes it balancing)
 SIGN_TEXT = {"+": "+", "-": "−"}
 SIGN_SIZE = 42
 LEGEND_SIZE = 36               # the legend reads at a glance, so larger than the labels (Jordy)

@@ -10,7 +10,7 @@ web page, <https://jordyzuidam2003-bot.github.io/zeeland-cld/>, served by GitHub
 
 | File | What it holds | Edit? |
 | --- | --- | --- |
-| `cld.json` | the model texts, elements, connections, named loops, layout (x, y) and link curvature | yes |
+| `cld.json` | the elements, connections, named loops, layout (x, y) and link curvature | yes |
 | `references.json` | the sources, as `"key": "full APA reference"` | yes |
 | `view.scss` | the Kumu view inside `docs/project.json` | yes |
 | `page/` | the page around the drawing: `index.html` (a template), `app.js`, `style.css` | yes |
@@ -66,8 +66,8 @@ looking at.
 
 ### `cld.json`
 
-The top-level `model` object holds the texts the group writes: `purpose`, `spatial scale`,
-`time horizon`, `system boundary`. The page shows them; `build.py` warns while one is empty.
+The model texts (purpose, spatial scale, time horizon, system boundary) are drafted outside
+this repository and not published for now (Jordy).
 
 An element:
 

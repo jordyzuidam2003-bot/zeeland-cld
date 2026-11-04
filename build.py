@@ -5,7 +5,7 @@
     python3 build.py --layout FILE    # write the positions of FILE (layout.json, downloaded from
                                       # the page's drag mode) into cld.json, then build
 
-Sources, edited by hand: cld.json (model texts, elements, connections, named loops, layout and
+Sources, edited by hand: cld.json (elements, connections, named loops, layout and
 link curvature), references.json (sources), view.scss (the Kumu view inside project.json) and
 page/ (index.html, a template with the placeholders <!-- SVG --> and <!-- DATA -->; app.js;
 style.css). draw.py draws the SVG. Never edit docs/, which this script writes:
@@ -34,7 +34,6 @@ DOCS = ROOT / "docs"
 PAGE = ROOT / "page"
 
 ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
-MODEL_TEXTS = ["purpose", "spatial scale", "time horizon", "system boundary"]
 SUBQUESTIONS = ["SQ1", "SQ2", "SQ3"]
 SETS_LETTER = {"Social": "S", "Ecological": "E", "Technological": "T"}
 
@@ -100,12 +99,7 @@ def check(cld, refs):
             errors.append(f"loop {loop['id']} is {'balancing' if kind == 'B' else 'reinforcing'} "
                           f"as drawn, so its id must start with {kind}")
 
-    for key in MODEL_TEXTS:
-        if not isinstance(cld.get("model", {}).get(key), str):
-            errors.append(f"model: {key} must be a string")
-
     if not errors:
-        warnings += [f"model: {key} is not written yet" for key in MODEL_TEXTS if not cld["model"][key]]
         has_in = {c["to"] for c in cld["connections"]}
         has_out = {c["from"] for c in cld["connections"]}
         for e in cld["elements"]:
@@ -190,7 +184,6 @@ def page_data(cld, refs, version):
     bp = blueprint(cld, refs)
     drop = {"x", "y", "curvature"}
     return {
-        "model": cld["model"],
         "elements": [{k: v for k, v in e.items() if k not in drop} for e in bp["elements"]],
         "connections": [{k: v for k, v in c.items() if k not in drop} for c in bp["connections"]],
         "loops": cld["loops"],

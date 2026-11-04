@@ -11,16 +11,7 @@ const byId = Object.fromEntries(data.elements.map(e => [e.id, e]));
 const linkKey = l => `${l.from}--${l.to}`;
 const byKey = Object.fromEntries(data.connections.map(c => [linkKey(c), c]));
 
-// --- model texts and version --------------------------------------------------------------
-const model = document.getElementById("model");
-for (const [name, text] of Object.entries(data.model)) {
-  const dt = document.createElement("dt");
-  dt.textContent = name[0].toUpperCase() + name.slice(1);
-  const dd = document.createElement("dd");
-  dd.textContent = text || "not written yet";
-  if (!text) dd.className = "empty";
-  model.append(dt, dd);
-}
+// --- version --------------------------------------------------------------------------------
 document.getElementById("version").textContent = data.version;
 
 // --- highlight buttons ----------------------------------------------------------------------

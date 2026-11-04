@@ -2,21 +2,25 @@
 
 Imported by build.py, which writes docs/cld.svg and puts the same drawing inline in
 docs/index.html. svg(cld) returns the drawing as a string; overlaps(cld) the warnings about
-boxes that intersect, for build.py's report; boxes(cld) the geometry build.py gives Kumu's
-elements.
+boxes that intersect and other layout faults, for build.py's report; boxes(cld) the geometry
+build.py gives Kumu's elements.
 
 What is drawn, from back to front:
-  links     a quadratic Bezier from box border to box border, the sign beside the arrowhead on
-            the outside of the curve, a delay as two short strokes across the midpoint
+  regions   one faint region per subsystem, split by one smooth border with a white gap, each
+            named where its name is clearest
+  links     a quadratic Bezier from a point on the source box's edge to one on the target's,
+            the ends on one edge spread along it; the sign beside the arrowhead on the side
+            clear of boxes, a delay as two short strokes across the midpoint
   elements  the label in a box filled with the pale tint of its SETS domain, the one place the
             domain shows in the drawing (the layout follows the loops, not the domains):
             square corners for a Stock, rounded for an Auxiliary, dashed for a Constant, a
             thick stroke for an adaptive practice
-  loops     a named loop's id with a circular arrow at the centroid of its path's elements
   legend    bottom-left
+No loop marks: the page highlights a named loop by its button (loop_svg() is kept for a figure
+of one loop on its own).
 
-The link formula is duplicated in page/app.js (drag mode recomputes a moved element's links):
-keep link_path() and its JS twin the same.
+The link formulas are duplicated in page/app.js (drag mode redraws every link when an element
+moves): keep link_path(), link_paths(), sign_position() and their JS twins the same.
 """
 
 from math import cos, hypot, pi, sin
@@ -137,6 +141,64 @@ def link_path(a, b, curvature):
     return sub_curve(ca, ctrl, cb, t0, t1)
 
 
+# rule 2 of the layout: each link end gets its own point on the box edge it leaves or enters
+GAP = 34    # least distance between two link ends on one box edge
+INSET = 10  # how far a link end keeps from a box corner
+
+
+def edge_of(p, box):
+    """The edge of box that the border point p lies on: 0 top, 1 right, 2 bottom, 3 left."""
+    d = (abs(p[1] - box[1]), abs(p[0] - box[2]), abs(p[1] - box[3]), abs(p[0] - box[0]))
+    return d.index(min(d))
+
+
+def spread(xs, lo, hi, gap):
+    """Positions as near the sorted xs as a forward and a backward pass give, at least gap apart
+    (less when the edge is too short for that), within [lo, hi]."""
+    n = len(xs)
+    gap = min(gap, (hi - lo) / max(n - 1, 1))
+    p = [min(max(x, lo), hi) for x in xs]
+    for i in range(1, n):
+        p[i] = max(p[i], p[i - 1] + gap)
+    if p[-1] > hi:
+        p[-1] = hi
+        for i in range(n - 2, -1, -1):
+            p[i] = min(p[i], p[i + 1] - gap)
+    return p
+
+
+def link_paths(cld, bxs):
+    """{(from, to): (p0, c, p2)} for every connection; see the JS twin linkPaths() in page/app.js.
+
+    Each end starts where link_path() cuts the curve between the two centres; the ends on one
+    edge of a box are then spread along it, in the order they arrive, so arrowheads do not
+    converge on the box's centre. The curve between the two end points has its control point
+    at the chord's midpoint, moved perpendicular by curvature x chord length, as in link_path().
+    """
+    ends = {}
+    for c in cld["connections"]:
+        key = (c["from"], c["to"])
+        p0, _, p2 = link_path(bxs[c["from"]], bxs[c["to"]], c["curvature"])
+        for which, eid, p in ((0, c["from"], p0), (1, c["to"], p2)):
+            e = edge_of(p, bxs[eid])
+            ends.setdefault((eid, e), []).append((p[0] if e in (0, 2) else p[1], key, which))
+    anchor = {}
+    for (eid, e), lst in ends.items():
+        x0, y0, x1, y1 = bxs[eid][:4]
+        lst.sort(key=lambda t: t[0])
+        lo, hi = (x0 + INSET, x1 - INSET) if e in (0, 2) else (y0 + INSET, y1 - INSET)
+        for (_, key, which), v in zip(lst, spread([t[0] for t in lst], lo, hi, GAP)):
+            anchor[key, which] = ((v, y0) if e == 0 else (x1, v) if e == 1 else (v, y1) if e == 2 else (x0, v))
+    out = {}
+    for c in cld["connections"]:
+        key = (c["from"], c["to"])
+        p0, p2 = anchor[key, 0], anchor[key, 1]
+        dx, dy = p2[0] - p0[0], p2[1] - p0[1]
+        k = c["curvature"]
+        out[key] = (p0, ((p0[0] + p2[0]) / 2 + k * dy, (p0[1] + p2[1]) / 2 - k * dx), p2)
+    return out
+
+
 def lerp(p, q, t):
     return (p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t)
 
@@ -149,14 +211,14 @@ def sub_curve(p0, p1, p2, t0, t1):
     return r0, lerp(r0, r1, s), bezier(p0, p1, p2, t1)
 
 
-def link_svg(c, a, b):
-    p0, ctrl, p2 = link_path(a, b, c["curvature"])
+def link_svg(c, path, bxs=()):
+    p0, ctrl, p2 = path
     colour = LINK_COLOUR[c["polarity"]]
     parts = [f'<g class="link" data-from="{c["from"]}" data-to="{c["to"]}" data-sign="{c["polarity"]}" '
              f'data-delay="{"true" if c["delay"] else "false"}" data-curvature="{c["curvature"]}">',
              f'<path class="link-path" d="M {p0[0]:.1f} {p0[1]:.1f} Q {ctrl[0]:.1f} {ctrl[1]:.1f} {p2[0]:.1f} {p2[1]:.1f}" '
              f'fill="none" stroke="{colour}" stroke-width="{LINK_WIDTH}" marker-end="url(#arrow-{"plus" if c["polarity"] == "+" else "minus"})"/>']
-    sx, sy = sign_position(p0, ctrl, p2)
+    sx, sy = sign_position(p0, ctrl, p2, bxs=bxs)
     parts.append(f'<text class="sign" x="{sx:.1f}" y="{sy:.1f}" text-anchor="middle" dominant-baseline="central" '
                  f'font-size="{SIGN_SIZE}" font-weight="bold" fill="{colour}" stroke="white" stroke-width="6" paint-order="stroke">{SIGN_TEXT[c["polarity"]]}</text>')
     if c["delay"]:
@@ -165,8 +227,9 @@ def link_svg(c, a, b):
     return "\n".join(parts)
 
 
-def sign_position(p0, ctrl, p2, back=36, out=20):
-    """Beside the arrowhead: `back` units before the end, `out` units to the outside of the curve."""
+def sign_position(p0, ctrl, p2, back=36, out=20, bxs=()):
+    """Beside the arrowhead: `back` units before the end, `out` units to the outside of the curve,
+    or to the inside when only that side keeps the sign clear of every box in bxs."""
     tx, ty = tangent(p0, ctrl, p2, 0.92)
     n = hypot(tx, ty) or 1
     ux, uy = tx / n, ty / n
@@ -177,7 +240,16 @@ def sign_position(p0, ctrl, p2, back=36, out=20):
         side = -1.0  # a straight link: its left, seen along the arrow
     s = 1 if side > 0 else -1
     nx, ny = -uy * s, ux * s
-    return p2[0] - ux * back + nx * out, p2[1] - uy * back + ny * out
+    outer = (p2[0] - ux * back + nx * out, p2[1] - uy * back + ny * out)
+    inner = (p2[0] - ux * back - nx * out, p2[1] - uy * back - ny * out)
+    if sign_on_box(outer, bxs) and not sign_on_box(inner, bxs):
+        return inner
+    return outer
+
+
+def sign_on_box(p, bxs, clear=SIGN_SIZE / 3):
+    """Whether a sign at p comes within `clear` of a box (its half-height, about)."""
+    return any(b[0] - clear < p[0] < b[2] + clear and b[1] - clear < p[1] < b[3] + clear for b in bxs)
 
 
 def delay_path(p0, ctrl, p2, half=9, gap=4):
@@ -210,6 +282,177 @@ def loop_svg(loop, bxs):
         f'<text class="loop-id" x="{cx:.1f}" y="{cy:.1f}" text-anchor="middle" dominant-baseline="central" '
         f'font-weight="bold">{esc(loop["id"])}</text>',
         "</g>"])
+
+
+# --- regions ----------------------------------------------------------------------------------
+# One region per subsystem behind everything: the first subsystem left of one smooth border, the
+# second right of it, together filling the drawing's rounded frame, a white gap of even width
+# between them (Jordy: the split across the canvas, the border as a gentle wave). The fills are
+# faint so the SETS tints stay the boxes' colour; they differ by OKLab dE 7.3 (normal vision) and
+# 6.7 (protan), under the dataviz validator's floor for marks told apart by colour alone, which is
+# why each region carries its name; both link colours keep 3:1 on both fills.
+REGION = {"Water governance": "#D6E6F5", "Finance and land": "#F7E3C4"}
+REGION_NAME_COLOUR = {"Water governance": "#4F6F91", "Finance and land": "#86663A"}
+REGION_NAME_SIZE = 64
+GRID = 20           # the grid the region outlines are traced on
+FRAME_PAD = 110     # the frame's margin around the boxes
+FRAME_CORNER = 160  # the frame's corner radius
+BORDER_GAP = 40     # the white gap's width
+BORDER_CLEAR = 30   # how far every box keeps from the gap
+BORDER_TENSION = 0.008  # how hard the border is pulled straight: 0.008 a gentle wave (Jordy), 0.05 nearly straight
+
+
+def box_distance(p, b):
+    dx = max(b[0] - p[0], 0, p[0] - b[2])
+    dy = max(b[1] - p[1], 0, p[1] - b[3])
+    return (dx * dx + dy * dy) ** 0.5
+
+
+def corridor(left, right, y0, ny):
+    """Per grid row from y0, the range (lo, hi) the border may take: right of every `left` box and
+    left of every `right` box that reaches the row, each kept BORDER_CLEAR from the gap."""
+    pad = BORDER_GAP / 2 + BORDER_CLEAR
+    lo, hi = [-1e9] * ny, [1e9] * ny
+    for j in range(ny):
+        y = y0 + j * GRID
+        for b in left:
+            if b[1] - pad <= y <= b[3] + pad:
+                lo[j] = max(lo[j], b[2] + pad)
+        for b in right:
+            if b[1] - pad <= y <= b[3] + pad:
+                hi[j] = min(hi[j], b[0] - pad)
+    return lo, hi
+
+
+def region_border(left, right, y0, ny):
+    """Per grid row, the x of the border between the boxes `left` and `right`, and the rows where
+    the two sides leave it no room. The smoothest curve through the corridor: it starts in each
+    row's corridor (between its neighbours where no box constrains a row), is smoothed by its
+    fourth difference and pulled straight by BORDER_TENSION, clamped into the corridor after
+    every step, and runs straight up and down beyond the outermost boxes."""
+    lo, hi = corridor(left, right, y0, ny)
+    known = [(lo[j] + hi[j]) / 2 if lo[j] > -1e9 and hi[j] < 1e9 else lo[j] if lo[j] > -1e9
+             else hi[j] if hi[j] < 1e9 else None for j in range(ny)]
+    rows = [j for j in range(ny) if known[j] is not None]
+    j0, j1 = rows[0], rows[-1]
+    x = known[:]
+    for j in range(j0, j1 + 1):
+        if x[j] is None:
+            a = max(k for k in rows if k < j)
+            b = min(k for k in rows if k > j)
+            x[j] = known[a] + (known[b] - known[a]) * (j - a) / (b - a)
+    g = lambda k: x[2 * j0 - k if k < j0 else 2 * j1 - k if k > j1 else k]  # mirrored ends
+    for _ in range(20000):
+        nxt = x[:]
+        for j in range(j0, j1 + 1):
+            nxt[j] = (x[j] - 0.04 * (g(j - 2) - 4 * g(j - 1) + 6 * x[j] - 4 * g(j + 1) + g(j + 2))
+                      + BORDER_TENSION * (g(j - 1) - 2 * x[j] + g(j + 1)))
+            nxt[j] = (lo[j] + hi[j]) / 2 if lo[j] > hi[j] else min(max(nxt[j], lo[j]), hi[j])
+        x = nxt
+    x = [x[j0]] * j0 + x[j0:j1 + 1] + [x[j1]] * (ny - 1 - j1)
+    return x, [j for j in range(ny) if lo[j] > hi[j]]
+
+
+def contours(val, nx, ny, x0, y0):
+    """Closed polylines where val crosses 0 (marching squares); val[j][i] at (x0 + i GRID, y0 + j GRID)."""
+    def pt(key):
+        kind, i, j = key
+        a, b = (val[j][i], val[j][i + 1]) if kind == "h" else (val[j][i], val[j + 1][i])
+        t = a / (a - b)
+        return (x0 + (i + t) * GRID, y0 + j * GRID) if kind == "h" else (x0 + i * GRID, y0 + (j + t) * GRID)
+    nb = {}
+    for j in range(ny - 1):
+        for i in range(nx - 1):
+            c = [val[j][i] > 0, val[j][i + 1] > 0, val[j + 1][i + 1] > 0, val[j + 1][i] > 0]
+            top, right, bottom, left = ("h", i, j), ("v", i + 1, j), ("h", i, j + 1), ("v", i, j)
+            edges = [e for e, (p, q) in zip((top, right, bottom, left), ((0, 1), (1, 2), (3, 2), (0, 3))) if c[p] != c[q]]
+            if len(edges) == 2:
+                segs = [edges]
+            elif len(edges) == 4:  # a saddle: the centre decides which corners join
+                centre = (val[j][i] + val[j][i + 1] + val[j + 1][i + 1] + val[j + 1][i]) > 0
+                segs = [[top, left], [right, bottom]] if centre != c[0] else [[top, right], [bottom, left]]
+            else:
+                segs = []
+            for a, b in segs:
+                nb.setdefault(a, []).append(b)
+                nb.setdefault(b, []).append(a)
+    loops, seen = [], set()
+    for start in nb:
+        if start in seen:
+            continue
+        loop, prev, cur = [], None, start
+        while cur not in seen:
+            seen.add(cur)
+            loop.append(pt(cur))
+            nxt = [k for k in nb[cur] if k != prev and k not in seen]
+            if not nxt:
+                break
+            prev, cur = cur, nxt[0]
+        if len(loop) > 8:
+            loops.append(loop)
+    return loops
+
+
+def chaikin(loop, rounds=3):
+    """Corner cutting: the traced outline's grid steps smoothed away."""
+    for _ in range(rounds):
+        out = []
+        for k in range(len(loop)):
+            p, q = loop[k], loop[(k + 1) % len(loop)]
+            out += [(0.75 * p[0] + 0.25 * q[0], 0.75 * p[1] + 0.25 * q[1]),
+                    (0.25 * p[0] + 0.75 * q[0], 0.25 * p[1] + 0.75 * q[1])]
+        loop = out
+    return loop
+
+
+def regions(cld, bxs, paths):
+    """(svg, frame, crowded): the subsystems' regions, their frame (x0, y0, x1, y1), and the grid
+    rows where the boxes leave the border no room. Each name sits where its box is clearest of
+    element boxes and links, with its middle and both ends inside its region."""
+    names = list(REGION)
+    members = {n: [bxs[e["id"]] for e in cld["elements"] if e["subsystem"] == n] for n in names}
+    allb = list(bxs.values())
+    fx0, fy0 = min(b[0] for b in allb) - FRAME_PAD, min(b[1] for b in allb) - FRAME_PAD
+    fx1, fy1 = max(b[2] for b in allb) + FRAME_PAD, max(b[3] for b in allb) + FRAME_PAD
+    x0, y0 = fx0 - 2 * GRID, fy0 - 2 * GRID
+    nx, ny = int((fx1 - fx0) / GRID) + 5, int((fy1 - fy0) / GRID) + 5
+    border, crowded = region_border(members[names[0]], members[names[1]], y0, ny)
+    r = FRAME_CORNER
+
+    def frame(p):
+        qx = max(fx0 + r - p[0], 0, p[0] - (fx1 - r))
+        qy = max(fy0 + r - p[1], 0, p[1] - (fy1 - r))
+        return r - (qx * qx + qy * qy) ** 0.5 if qx and qy else min(p[0] - fx0, fx1 - p[0], p[1] - fy0, fy1 - p[1])
+
+    link_pts = [bezier(*paths[k], t / 80) for k in paths for t in range(81)]
+    parts = []
+    for side, n in ((1, names[0]), (-1, names[1])):
+        val = [[-1.0] * nx for _ in range(ny)]
+        for j in range(1, ny - 1):
+            for i in range(1, nx - 1):
+                p = (x0 + i * GRID, y0 + j * GRID)
+                v = min(frame(p), side * (border[j] - p[0]) - BORDER_GAP / 2)
+                val[j][i] = v if v != 0 else -1e-6
+        d = " ".join("M " + " L ".join(f"{x:.1f} {y:.1f}" for x, y in chaikin(l)) + " Z"
+                     for l in contours(val, nx, ny, x0, y0))
+        hw, hh = len(n) * REGION_NAME_SIZE * 0.29, REGION_NAME_SIZE * 0.5
+        k = int(hw / GRID) + 1
+        best = None
+        for j in range(2, ny - 2, 2):
+            for i in range(2, nx - 2, 2):
+                if min(val[j][i], val[j][max(i - k, 0)], val[j][min(i + k, nx - 1)]) < hh:
+                    continue
+                p = (x0 + i * GRID, y0 + j * GRID)
+                clear = min(min(box_distance(p, (b[0] - hw, b[1] - hh, b[2] + hw, b[3] + hh)) for b in allb),
+                            min(max(abs(q[0] - p[0]) - hw, 0) ** 2 + max(abs(q[1] - p[1]) - hh, 0) ** 2
+                                for q in link_pts) ** 0.5)
+                if best is None or clear > best[0]:
+                    best = (clear, p)
+        name = (f'<text class="region-name" x="{best[1][0]:.1f}" y="{best[1][1]:.1f}" text-anchor="middle" '
+                f'dominant-baseline="central" font-size="{REGION_NAME_SIZE}" font-weight="bold" '
+                f'fill="{REGION_NAME_COLOUR[n]}">{esc(n)}</text>') if best else ""
+        parts.append(f'<g class="region" data-subsystem="{n}"><path d="{d}" fill="{REGION[n]}" fill-rule="evenodd"/>{name}</g>')
+    return "\n".join(parts), (fx0, fy0, fx1, fy1), crowded
 
 
 # --- legend ---------------------------------------------------------------------------------
@@ -249,10 +492,13 @@ def legend_svg(x, y):
 # --- the drawing ----------------------------------------------------------------------------
 def svg(cld):
     bxs = boxes(cld)
+    paths = link_paths(cld, bxs)
     x0 = min(b[0] for b in bxs.values())
     y0 = min(b[1] for b in bxs.values())
     x1 = max(b[2] for b in bxs.values())
     y1 = max(b[3] for b in bxs.values())
+    region_svg, frame, _ = regions(cld, bxs, paths)
+    x0, y0, x1, y1 = min(x0, frame[0]), min(y0, frame[1]), max(x1, frame[2]), max(y1, frame[3])
     legend, lw, lh = legend_svg(x0, y1 + MARGIN)
     y1 += MARGIN + lh
     x1 = max(x1, x0 + lw)
@@ -266,9 +512,9 @@ def svg(cld):
         f'font-family="{FONT}" font-size="{FONT_SIZE}" fill="black">',
         "<defs>", arrow("plus", LINK_COLOUR["+"]), arrow("minus", LINK_COLOUR["-"]), arrow("grey", STROKE_COLOUR), "</defs>",
         f'<rect x="{vb[0]:.0f}" y="{vb[1]:.0f}" width="{vb[2]:.0f}" height="{vb[3]:.0f}" fill="white"/>',
-        '<g class="links">', *(link_svg(c, bxs[c["from"]], bxs[c["to"]]) for c in cld["connections"]), "</g>",
+        '<g class="regions">', region_svg, "</g>",
+        '<g class="links">', *(link_svg(c, paths[c["from"], c["to"]], list(bxs.values())) for c in cld["connections"]), "</g>",
         '<g class="elements">', *(element_svg(e, bxs[e["id"]]) for e in cld["elements"]), "</g>",
-        '<g class="loops">', *(loop_svg(l, [bxs[i] for i in l["path"]]) for l in cld["loops"]), "</g>",
         legend,
         "</svg>",
     ]
@@ -277,10 +523,21 @@ def svg(cld):
 
 # --- overlap warnings -----------------------------------------------------------------------
 def overlaps(cld):
-    """Pairs of element boxes that intersect, and a link and its reverse drawn on one curve."""
+    """Pairs of element boxes that intersect, a link and its reverse drawn on one curve, and an
+    element on the wrong side of the regions' border."""
     bxs = boxes(cld)
     ids = [e["id"] for e in cld["elements"]]
     out = []
+    # the regions' border needs room between the two subsystems in every row: an element of the
+    # first subsystem right of one of the second, at about the same height, leaves it none
+    names = list(REGION)
+    left = [(e["id"], bxs[e["id"]]) for e in cld["elements"] if e["subsystem"] == names[0]]
+    right = [(e["id"], bxs[e["id"]]) for e in cld["elements"] if e["subsystem"] == names[1]]
+    pad = BORDER_GAP / 2 + BORDER_CLEAR
+    for a, p in left:
+        for b, q in right:
+            if p[1] - pad < q[3] + pad and q[1] - pad < p[3] + pad and p[2] + pad > q[0] - pad:
+                out.append(f"regions: {a} ({names[0]}) is not left of {b} ({names[1]}) with room for the border")
     for i, a in enumerate(ids):
         for b in ids[i + 1:]:
             p, q = bxs[a], bxs[b]
@@ -288,8 +545,7 @@ def overlaps(cld):
                 out.append(f"boxes overlap: {a} and {b}")
     # a -> b at curvature k and b -> a at -k share one curve, so the loop reads as one line with
     # two arrowheads; they read as two once their middles lie a sign's height apart
-    paths = {(c["from"], c["to"]): link_path(bxs[c["from"]], bxs[c["to"]], c["curvature"])
-             for c in cld["connections"]}
+    paths = link_paths(cld, bxs)
     for (a, b), p in paths.items():
         q = paths.get((b, a))
         if q and a < b:

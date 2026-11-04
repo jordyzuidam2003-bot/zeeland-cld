@@ -56,7 +56,7 @@ def check(cld, refs):
             errors.append(f"duplicate element id {name}")
         els[name] = e
         for key, allowed in [("element type", ELEMENT_TYPES), ("sets domain", list(SETS_LETTER)),
-                             ("subquestion", SUBQUESTIONS)]:
+                             ("subsystem", list(draw.REGION)), ("subquestion", SUBQUESTIONS)]:
             if e.get(key) not in allowed:
                 errors.append(f"{name}: {key} {e.get(key)!r} not in {allowed}")
         if not isinstance(e.get("adaptive practice"), bool):
@@ -257,8 +257,8 @@ def project(cld, refs, template, version):
               "connection": f'conn-{c["from"]}--{c["to"]}'} for c in cld["connections"]]
     # A Kumu loop is its connections by id, its label and description as attributes; the map places
     # the loop's label. Kumu does not document its export: this is the shape its exports hold (read
-    # in Loopweft's Kumu importer, checked there on real exports), with the label where the page
-    # draws the loop's mark, the centre of its elements.
+    # in Loopweft's Kumu importer, checked there on real exports), with the label at the centre of
+    # the loop's elements.
     by_id = {e["id"]: e for e in cld["elements"]}
     loops, map_loops = [], []
     for loop in cld["loops"]:

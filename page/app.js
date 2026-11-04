@@ -79,7 +79,7 @@ function applyHighlight() {
 // --- the panel ------------------------------------------------------------------------------
 const panel = document.getElementById("panel");
 const panelBody = document.getElementById("panel-body");
-const SHOWN_ELEMENT = ["element type", "adaptive practice", "sets domain", "subquestion", "description"];
+const SHOWN_ELEMENT = ["element type", "adaptive practice", "sets domain", "subsystem", "subquestion", "description"];
 const SHOWN_LINK = ["delay", "sets link", "description"];
 function row(dl, name, value, className) {
   const dt = document.createElement("dt");
@@ -128,7 +128,7 @@ svg.addEventListener("click", ev => {
 });
 
 // --- drag mode ------------------------------------------------------------------------------
-// The link formula is draw.py's link_path(), sign_position() and delay_path(): keep them the same.
+// The link formula is draw.py's link_path(), link_paths(), sign_position() and delay_path(): keep them the same.
 const ARROW = 22;
 const bezier = (p0, p1, p2, t) => {
   const s = 1 - t;
@@ -158,7 +158,7 @@ function linkPath(a, b, curvature) {
   const s = t0 < 1 ? (t1 - t0) / (1 - t0) : 0;
   return [r0, lerp(r0, r1, s), bezier(ca, ctrl, cb, t1)];
 }
-function signPosition(p0, ctrl, p2, back = 36, out = 20) {
+function signPosition(p0, ctrl, p2, back = 36, out = 20, boxes = []) {
   const [tx, ty] = tangent(p0, ctrl, p2, 0.92);
   const n = Math.hypot(tx, ty) || 1;
   const ux = tx / n, uy = ty / n;
@@ -166,8 +166,12 @@ function signPosition(p0, ctrl, p2, back = 36, out = 20) {
   let side = (ctrl[0] - mx) * -(p2[1] - p0[1]) + (ctrl[1] - my) * (p2[0] - p0[0]);
   if (Math.abs(side) < 1e-6) side = -1;
   const s = side > 0 ? 1 : -1;
-  return [p2[0] - ux * back + -uy * s * out, p2[1] - uy * back + ux * s * out];
+  const outer = [p2[0] - ux * back + -uy * s * out, p2[1] - uy * back + ux * s * out];
+  const inner = [p2[0] - ux * back - -uy * s * out, p2[1] - uy * back - ux * s * out];
+  return signOnBox(outer, boxes) && !signOnBox(inner, boxes) ? inner : outer;
 }
+const SIGN_CLEAR = 42 / 3;  // draw.py's SIGN_SIZE / 3
+const signOnBox = (p, boxes) => boxes.some(b => b[0] - SIGN_CLEAR < p[0] && p[0] < b[2] + SIGN_CLEAR && b[1] - SIGN_CLEAR < p[1] && p[1] < b[3] + SIGN_CLEAR);
 function delayPath(p0, ctrl, p2, half = 9, gap = 4) {
   const [x, y] = bezier(p0, ctrl, p2, 0.5);
   const [tx, ty] = tangent(p0, ctrl, p2, 0.5);
@@ -184,11 +188,54 @@ const boxOf = g => {
   return [x, y, x + +r.getAttribute("width"), y + +r.getAttribute("height")];
 };
 const groupOf = Object.fromEntries(elements.map(g => [g.dataset.id, g]));
-function redrawLink(g) {
-  const [p0, ctrl, p2] = linkPath(boxOf(groupOf[g.dataset.from]), boxOf(groupOf[g.dataset.to]), +g.dataset.curvature);
+const GAP = 34, INSET = 10;
+function edgeOf(p, box) {
+  const d = [Math.abs(p[1] - box[1]), Math.abs(p[0] - box[2]), Math.abs(p[1] - box[3]), Math.abs(p[0] - box[0])];
+  return d.indexOf(Math.min(...d));
+}
+function spread(xs, lo, hi, gap) {
+  const n = xs.length;
+  gap = Math.min(gap, (hi - lo) / Math.max(n - 1, 1));
+  const p = xs.map(x => Math.min(Math.max(x, lo), hi));
+  for (let i = 1; i < n; i++) p[i] = Math.max(p[i], p[i - 1] + gap);
+  if (p[n - 1] > hi) {
+    p[n - 1] = hi;
+    for (let i = n - 2; i >= 0; i--) p[i] = Math.min(p[i], p[i + 1] - gap);
+  }
+  return p;
+}
+// every link's [p0, ctrl, p2]: the ends spread along the box edges, as draw.py's link_paths()
+function linkPaths() {
+  const ends = new Map();
+  for (const g of links) {
+    const a = boxOf(groupOf[g.dataset.from]), b = boxOf(groupOf[g.dataset.to]);
+    const [p0, , p2] = linkPath(a, b, +g.dataset.curvature);
+    for (const [which, id, box, p] of [[0, g.dataset.from, a, p0], [1, g.dataset.to, b, p2]]) {
+      const e = edgeOf(p, box), k = `${id} ${e}`;
+      if (!ends.has(k)) ends.set(k, { box, e, list: [] });
+      ends.get(k).list.push([e % 2 === 0 ? p[0] : p[1], g, which]);
+    }
+  }
+  const anchor = new Map();
+  for (const { box, e, list } of ends.values()) {
+    const [x0, y0, x1, y1] = box;
+    list.sort((u, v) => u[0] - v[0]);
+    const [lo, hi] = e % 2 === 0 ? [x0 + INSET, x1 - INSET] : [y0 + INSET, y1 - INSET];
+    spread(list.map(t => t[0]), lo, hi, GAP).forEach((v, i) => {
+      const [, g, which] = list[i];
+      anchor.set(g, Object.assign(anchor.get(g) || [], { [which]: e === 0 ? [v, y0] : e === 1 ? [x1, v] : e === 2 ? [v, y1] : [x0, v] }));
+    });
+  }
+  return new Map(links.map(g => {
+    const [p0, p2] = anchor.get(g), k = +g.dataset.curvature;
+    const dx = p2[0] - p0[0], dy = p2[1] - p0[1];
+    return [g, [p0, [(p0[0] + p2[0]) / 2 + k * dy, (p0[1] + p2[1]) / 2 - k * dx], p2]];
+  }));
+}
+function redrawLink(g, [p0, ctrl, p2], boxes) {
   const f = v => v.toFixed(1);
   g.querySelector("path.link-path").setAttribute("d", `M ${f(p0[0])} ${f(p0[1])} Q ${f(ctrl[0])} ${f(ctrl[1])} ${f(p2[0])} ${f(p2[1])}`);
-  const [sx, sy] = signPosition(p0, ctrl, p2);
+  const [sx, sy] = signPosition(p0, ctrl, p2, 36, 20, boxes);
   const sign = g.querySelector("text.sign");
   sign.setAttribute("x", f(sx));
   sign.setAttribute("y", f(sy));
@@ -200,7 +247,9 @@ function moveElement(g, dx, dy) {
     node.setAttribute("x", (+node.getAttribute("x") + dx).toFixed(1));
     node.setAttribute("y", (+node.getAttribute("y") + dy).toFixed(1));
   }
-  for (const l of links) if (l.dataset.from === g.dataset.id || l.dataset.to === g.dataset.id) redrawLink(l);
+  // a moved box changes where the other links on its edges end, so every link is redrawn
+  const boxes = elements.map(boxOf);
+  for (const [l, path] of linkPaths()) redrawLink(l, path, boxes);
 }
 const toSvg = ev => {
   const p = new DOMPoint(ev.clientX, ev.clientY).matrixTransform(svg.getScreenCTM().inverse());

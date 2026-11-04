@@ -29,14 +29,18 @@ builds and pushes, so nobody else needs git or Python.
    element, a source missing from `references.json`, a named loop that is not closed or whose
    R/B does not match its polarities) and prints the source coverage and any warnings: a model
    text still empty, an element without links, two boxes that overlap, a link and its reverse
-   drawn on one curve.
+   drawn on one curve, an element on the wrong side of the border between the two subsystems.
 3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
    a commit whose `docs/` is out of date.
 
 Layout tuning: on the page, turn on "Move elements", drag elements, then "Download layout"
 saves `layout.json` with every element's position. `python3 build.py --layout ~/Downloads/layout.json`
 writes those positions into `cld.json` and rebuilds; it fails on an id that is not in
-`cld.json`. Curvature is edited in `cld.json` only.
+`cld.json`. Curvature is edited in `cld.json` only. Dragging redraws the links but not the
+regions, which `build.py` draws again from the new positions. Each link has its own bow, chosen
+so a reader can follow every connection: every arrowhead and sign clear, as few crossings as
+possible, and no link through an element it does not connect, which would read as if that
+element mediates it.
 
 A picture for the report: `docs/cld.svg` is the drawing on its own. Google Docs takes no SVG; a
 PNG, with Chrome (not part of the build, since Chrome is not on every machine):
@@ -74,6 +78,7 @@ An element:
   "element type": "Auxiliary",
   "adaptive practice": false,
   "sets domain": "Ecological",
+  "subsystem": "Water governance",
   "subquestion": "SQ1",
   "description": "…",
   "sources": ["key-in-references-json"],
@@ -86,19 +91,25 @@ An element:
 - `element type`: `Constant` (an exogenous driver, drawn dashed), `Auxiliary` (rounded corners)
   or `Stock` (square corners). `adaptive practice`: true on an auxiliary that is a measure
   farmers take, drawn with a thick stroke. `sets domain`: `Social`, `Ecological` or
-  `Technological`; the drawing fills the box with the domain's tint.
+  `Technological`; the drawing fills the box with the domain's tint. `subsystem`: `Water
+  governance` or `Finance and land`, the project's two subsystems, drawn as two faint regions
+  behind the boxes split by one smooth border (water governance left); the group proposes the
+  split from the CLD, and the Project Plan follows it.
 - `x` and `y` are positions in the drawing; y grows downwards.
 
 A connection: `from` and `to` (element ids), `polarity` (`"+"` or `"-"`), `delay` (true/false,
 drawn as two strokes across the link), `description`, `sources`,
 `curvature` (0 is straight; a positive value bows the link to the left of its direction).
+The drawing runs a link from a point on its source box's edge to one on its target's, the ends
+on one edge spread along it, and puts the sign on the side of the arrowhead clear of boxes.
 The SETS fields the page and Kumu show ("Cross-domain", "E to S" …) are derived by `build.py`,
 never typed.
 
 A named loop: `{"id": "R1", "name": "…", "path": ["element-a", "element-b", …]}`, the path in
 causal order without repeating the first element. `build.py` checks that every step is a
 connection and that the id starts with R for an even number of `-` links, B for an odd one; the
-drawing marks the loop at the centre of its elements, and the page gets a button for it.
+page gets a button for it, which highlights its elements and links. The full drawing carries
+no loop marks: of its 353 feedback loops no mark could be traced there.
 
 ## Setup after cloning
 
@@ -119,6 +130,7 @@ which the export sets to `cbp-cld`.
 The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label
 inside, square corners for a stock and rounded ones for the others, an italic label for a
 constant (Kumu has no dashed border), a thick border for an adaptive practice; links of one
-width, blue `+` and red `−`. `build.py` adds the rules that tint and size each box below `view.scss`, and
+width, blue `+` and red `−`. Kumu draws each link from centre to centre and no regions; the
+subsystem is a field there. `build.py` adds the rules that tint and size each box below `view.scss`, and
 a double space where the page breaks a label's line (Kumu's manual line break). The project's
 description and the map's name carry the model version, so Kumu says which model it holds.

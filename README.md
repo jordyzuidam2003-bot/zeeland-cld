@@ -30,7 +30,8 @@ builds and pushes, so nobody else needs git or Python.
    R/B does not match its polarities) and prints the source coverage and any warnings: a model
    text still empty, an element without links, two boxes that overlap, a link and its reverse
    drawn on one curve, an element on the wrong side of the border between the two subsystems,
-   a named loop whose own links cross, a link under a region's name.
+   a named loop whose own links cross, a link under a region's name, a loop's figure with no
+   room inside the loop for its mark.
 3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
    a commit whose `docs/` is out of date.
 

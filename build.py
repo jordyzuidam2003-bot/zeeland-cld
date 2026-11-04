@@ -347,6 +347,10 @@ def main():
         "style.css": (PAGE / "style.css").read_text(),
         **{f"loops/{loop['id']}.svg": draw.loop_figure(cld, loop) for loop in cld["loops"]},
     }
+    # Kumu shows regions.svg stretched to the frame: with a viewBox alone a browser sizes it 250 by
+    # 150 pixels, which Kumu blurred (draw.regions_svg())
+    if not re.match(r'<svg [^>]*\bwidth="\d+" height="\d+"', outputs["regions.svg"]):
+        sys.exit("docs/regions.svg needs a width and a height besides its viewBox: draw.regions_svg() writes them")
     # a figure whose loop is gone or renamed would stay published
     extra = sorted(f"loops/{f.name}" for f in (DOCS / "loops").glob("*") if f"loops/{f.name}" not in outputs) \
         if (DOCS / "loops").is_dir() else []

@@ -273,7 +273,7 @@ def loop_svg(loop, centre, clockwise):
     """The loop's mark at centre: its id in a three-quarter circle that ends in an arrowhead,
     turning clockwise on the page or not, as the loop runs."""
     cx, cy = centre
-    r = 48  # the figure's one mark reads at the size of the signs
+    r = MARK_R
     # from the top round to the left (clockwise) or to the right (anticlockwise); y grows downwards
     a0, a1 = -pi / 2, pi if clockwise else 0
     start = (cx + r * cos(a0), cy + r * sin(a0))
@@ -502,7 +502,8 @@ def legend_svg(x, y):
 
 
 def clearest_point(ring, bxs):
-    """The point inside the closed polyline ring farthest from it and from every box: where a
+    """(point, clearance): the point inside the closed polyline ring farthest from it and from
+    every box, and that distance: where a
     loop's mark reads on its own (the centroid of a loop's elements can fall on one of its boxes or
     links, Jordy chose this between rendered versions). A 40-unit grid, then an 8-unit one around
     its best point."""
@@ -530,7 +531,8 @@ def clearest_point(ring, bxs):
     x0, x1 = min(p[0] for p in ring), max(p[0] for p in ring)
     y0, y1 = min(p[1] for p in ring), max(p[1] for p in ring)
     cx, cy = best(range(int(x0), int(x1), 40), range(int(y0), int(y1), 40))
-    return best(range(int(cx) - 40, int(cx) + 41, 8), range(int(cy) - 40, int(cy) + 41, 8))
+    p = best(range(int(cx) - 40, int(cx) + 41, 8), range(int(cy) - 40, int(cy) + 41, 8))
+    return p, clearance(p)
 
 
 # --- the drawing ----------------------------------------------------------------------------
@@ -569,34 +571,44 @@ def svg(cld):
     return "\n".join(parts) + "\n"
 
 
-def loop_figure(cld, loop):
-    """One named loop on its own, for the report: its elements at their places in cld.json and only
-    its links, drawn as svg() draws them (each link's curvature from cld.json, its ends spread over
-    the box edges among the loop's own links), and its mark at the clearest point inside the drawn
-    loop, turning the way it runs. No regions and no legend: the figure stands beside the full drawing."""
+MARK_R = 48  # the loop mark's radius: it reads at the size of the signs
+
+
+def loop_parts(cld, loop):
+    """(sub, bxs, paths, ring): the loop's own elements and links as a CLD, their boxes and drawn
+    curves, and the curves sampled in the loop's order as one closed polyline."""
     path = loop["path"]
     steps = list(zip(path, path[1:] + path[:1]))
     sub = {"elements": [e for e in cld["elements"] if e["id"] in path],
            "connections": [c for c in cld["connections"] if (c["from"], c["to"]) in steps]}
     bxs = boxes(sub)
     paths = link_paths(sub, bxs)
+    return sub, bxs, paths, [bezier(*paths[step], t / 20) for step in steps for t in range(20)]
+
+
+def loop_figure(cld, loop):
+    """One named loop on its own, for the report: its elements at their places in cld.json and only
+    its links, drawn as svg() draws them (each link's curvature from cld.json, its ends spread over
+    the box edges among the loop's own links), and its mark at the clearest point inside the drawn
+    loop, turning the way it runs. No regions and no legend: the figure stands beside the full drawing."""
+    sub, bxs, paths, pts = loop_parts(cld, loop)
     # the way round: the sign of the area the drawn links enclose, taken in the loop's order; with y
     # downwards a positive shoelace sum turns clockwise on the page
-    pts = [bezier(*paths[step], t / 20) for step in steps for t in range(20)]
     area = sum(p[0] * q[1] - q[0] * p[1] for p, q in zip(pts, pts[1:] + pts[:1]))
     # the frame: the boxes and the curves, with room for a sign beside a curve
     xs = [b[k] for b in bxs.values() for k in (0, 2)] + [p[0] for p in pts]
     ys = [b[k] for b in bxs.values() for k in (1, 3)] + [p[1] for p in pts]
     pad = MARGIN + SIGN_SIZE
     vb = (min(xs) - pad, min(ys) - pad, max(xs) - min(xs) + 2 * pad, max(ys) - min(ys) + 2 * pad)
-    parts = [*head(vb), *links_and_elements(sub, bxs, paths), loop_svg(loop, clearest_point(pts, list(bxs.values())), area > 0), "</svg>"]
+    parts = [*head(vb), *links_and_elements(sub, bxs, paths), loop_svg(loop, clearest_point(pts, list(bxs.values()))[0], area > 0), "</svg>"]
     return "\n".join(parts) + "\n"
 
 
 # --- overlap warnings -----------------------------------------------------------------------
 def overlaps(cld):
     """Pairs of element boxes that intersect, a link and its reverse drawn on one curve, an
-    element on the wrong side of the regions' border, and a named loop whose own links cross."""
+    element on the wrong side of the regions' border, a named loop whose own links cross, and a
+    loop figure with no room for its mark."""
     bxs = boxes(cld)
     ids = [e["id"] for e in cld["elements"]]
     out = []
@@ -646,4 +658,11 @@ def overlaps(cld):
                 p, q = pts[a], pts[b]
                 if any(meet(p[u], p[u + 1], q[v], q[v + 1]) for u in range(30) for v in range(30)):
                     out.append(f"loop crosses itself: {loop['id']}, {a[0]} -> {a[1]} and {b[0]} -> {b[1]}")
+    # a loop's figure (loop_figure()) needs room inside the loop for its mark, clear of its links
+    # and boxes: a loop drawn as a narrow band has none
+    for loop in cld["loops"]:
+        _, bxs_l, _, ring = loop_parts(cld, loop)
+        room = clearest_point(ring, list(bxs_l.values()))[1]
+        if room < MARK_R + 10:
+            out.append(f"loop mark crowded: {loop['id']}'s figure has {room:.0f} units of room inside the loop, its mark needs {MARK_R + 10}")
     return out

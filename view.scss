@@ -1,3 +1,7 @@
+/* Each property here is one that Kumu's property reference gives the selector's type (element,
+   connection or loop: its table marks which type takes which property); check a new one there
+   before writing it, and see it work in a test import. */
+
 @controls {
   bottom-left {
     showcase {

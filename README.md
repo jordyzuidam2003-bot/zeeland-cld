@@ -48,9 +48,9 @@ followed round; `build.py` warns on the last. A Constant's links run straight, a
 warns on a bent one.
 
 A picture for the report: `docs/cld.svg` is the drawing on its own, and `docs/loops/<id>.svg`
-each named loop on its own, `docs/loops/R1.svg` for R1: its elements at their places in the
-drawing, only its links, bent as in the drawing, and its mark, turning the way the loop runs, at
-the point inside it farthest from its links and boxes. Google Docs takes no SVG; a PNG, with
+each named loop on its own, `docs/loops/R1.svg` for R1: its elements evenly round one oval in
+the loop's order, turned about as they sit round the loop in the drawing, its links along the
+oval, and its mark, turning the way the loop runs, at the oval's centre. Google Docs takes no SVG; a PNG, with
 Chrome (not part of the build, since Chrome is not on every machine), `svg` the file to convert:
 
 ```sh

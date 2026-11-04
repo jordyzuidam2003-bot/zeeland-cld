@@ -252,7 +252,8 @@ function bendLink(g, p) {
   const dx = p2[0] - p0[0], dy = p2[1] - p0[1];
   const mid = [(p0[0] + p2[0]) / 2, (p0[1] + p2[1]) / 2];
   const k = 2 * ((p[0] - mid[0]) * dy - (p[1] - mid[1]) * dx) / (dx * dx + dy * dy || 1);
-  g.dataset.curvature = String(Math.round(Math.max(-1, Math.min(1, k)) * 100) / 100);
+  // within 0.03 of straight it snaps to straight: a hand cannot reach 0 exactly
+  g.dataset.curvature = String(Math.abs(k) < 0.03 ? 0 : Math.round(Math.max(-1, Math.min(1, k)) * 100) / 100);
   const boxes = elements.map(boxOf);
   for (const [l, path] of linkPaths()) redrawLink(l, path, boxes);
 }

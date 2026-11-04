@@ -109,6 +109,10 @@ def check(cld, refs):
                 warnings.append(f"{e['id']}: nothing drives it, yet it is not a Constant")
             elif e["id"] in has_in and e["element type"] == "Constant":
                 warnings.append(f"{e['id']}: a Constant, yet links drive it")
+        # A Constant drives from outside the system, so its links run straight (Jordy's decision).
+        constant = {e["id"] for e in cld["elements"] if e["element type"] == "Constant"}
+        warnings += [f"{c['from']} -> {c['to']}: a Constant's link, yet bent (curvature {c['curvature']})"
+                     for c in cld["connections"] if c["from"] in constant and c["curvature"] != 0]
         # A delay is a claim about duration, so its description names one (a number: years, m per decade).
         warnings += [f"{c['from']} -> {c['to']}: a delay, yet its description gives no duration"
                      for c in cld["connections"] if c["delay"] and not any(ch.isdigit() for ch in c["description"])]

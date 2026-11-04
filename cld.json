@@ -10,8 +10,8 @@
       "subquestion": "SQ1",
       "description": "Meteorological drought (KNMI'23): higher evaporation, summer precipitation deficit, and lower river discharge.",
       "sources": [],
-      "x": 0,
-      "y": 540
+      "x": 1,
+      "y": 500
     },
     {
       "id": "sea-level-rise",
@@ -23,8 +23,8 @@
       "subquestion": "SQ1",
       "description": "Rising sea level (KNMI'23 scenarios); increases hydrostatic pressure of marine water on polders and estuaries.",
       "sources": [],
-      "x": 240,
-      "y": 1350
+      "x": 1,
+      "y": 1419
     },
     {
       "id": "wetter-winters",
@@ -36,8 +36,8 @@
       "subquestion": "SQ1",
       "description": "Increased winter precipitation, providing potential recharge volume if retained.",
       "sources": [],
-      "x": 720,
-      "y": 1890
+      "x": 546,
+      "y": 1518
     },
     {
       "id": "clay-dispersion-sodification",
@@ -49,8 +49,8 @@
       "subquestion": "SQ1",
       "description": "Structural degradation of marine clay soils as sodium (Na+) replaces calcium (Ca2+) on clay complexes.",
       "sources": [],
-      "x": 1080,
-      "y": 1220
+      "x": 1239,
+      "y": 1225
     },
     {
       "id": "crop-water-demand",
@@ -62,8 +62,8 @@
       "subquestion": "SQ1",
       "description": "Evapotranspiration and crop water requirement, peaking during hot, dry summers.",
       "sources": [],
-      "x": 1440,
-      "y": 0
+      "x": 1348,
+      "y": 83
     },
     {
       "id": "estuary-salt-intrusion",
@@ -75,8 +75,8 @@
       "subquestion": "SQ1",
       "description": "Marine water penetrating further inland into estuaries and surface canals when sea levels rise and river discharge drops.",
       "sources": [],
-      "x": 0,
-      "y": 1080
+      "x": -7,
+      "y": 1079
     },
     {
       "id": "freshwater-lens-recharge",
@@ -101,8 +101,8 @@
       "subquestion": "SQ1",
       "description": "Volume/thickness of the fresh rainwater lens floating on saline groundwater (1–2 m in low clay polders; 5–40 m in creek ridges).",
       "sources": [],
-      "x": 720,
-      "y": 810
+      "x": 747,
+      "y": 771
     },
     {
       "id": "land-subsidence",
@@ -114,8 +114,8 @@
       "subquestion": "SQ1",
       "description": "Peat oxidation and clay consolidation caused by low drainage levels, lowering the land surface relative to sea level.",
       "sources": [],
-      "x": 1200,
-      "y": 1890
+      "x": 1163,
+      "y": 2065
     },
     {
       "id": "polder-surface-elevation-nap",
@@ -131,8 +131,8 @@
         "ma-2014",
         "van-maldegem-2004"
       ],
-      "x": 480,
-      "y": 2160
+      "x": 540,
+      "y": 1967
     },
     {
       "id": "root-zone-salinity",
@@ -144,8 +144,8 @@
       "subquestion": "SQ1",
       "description": "Salt and chloride (Cl-) concentration in the crop root zone, causing osmotic stress and ion toxicity.",
       "sources": [],
-      "x": 960,
-      "y": 1080
+      "x": 1066,
+      "y": 1039
     },
     {
       "id": "saline-seepage-kwel",
@@ -157,8 +157,8 @@
       "subquestion": "SQ1",
       "description": "Upward hydrostatic pressure pushing salty groundwater through clay/peat layers (diffuse or via boils).",
       "sources": [],
-      "x": 480,
-      "y": 1620
+      "x": 344,
+      "y": 1681
     },
     {
       "id": "soil-structure-usability",
@@ -170,8 +170,8 @@
       "subquestion": "SQ1",
       "description": "Porosity, aeration, infiltration capacity, and workability of the agricultural soil.",
       "sources": [],
-      "x": 1480,
-      "y": 1080
+      "x": 1624,
+      "y": 1097
     },
     {
       "id": "upconing-of-salt-groundwater",
@@ -183,8 +183,8 @@
       "subquestion": "SQ1",
       "description": "Upward cone of the salt-freshwater interface beneath pumping irrigation wells as the freshwater lens thins.",
       "sources": [],
-      "x": 1200,
-      "y": 810
+      "x": 1239,
+      "y": 799
     },
     {
       "id": "brackish-irrigation-water-use",
@@ -196,8 +196,8 @@
       "subquestion": "SQ2",
       "description": "Emergency or forced use of salinised surface/groundwater for irrigation when fresh water is depleted.",
       "sources": [],
-      "x": 480,
-      "y": 540
+      "x": 486,
+      "y": 554
     },
     {
       "id": "demand-for-deep-polder-drainage",
@@ -222,8 +222,8 @@
       "subquestion": "SQ1",
       "description": "Freshwater pipelines/canals from outside Zeeland (present in Tholen/Zeeuws-Vlaanderen; absent on Walcheren, Bevelanden, Schouwen-Duiveland).",
       "sources": [],
-      "x": 1200,
-      "y": 270
+      "x": 1179,
+      "y": 299
     },
     {
       "id": "freshwater-availability-for-crops",
@@ -248,8 +248,8 @@
       "subquestion": "SQ2",
       "description": "On-farm and sub-surface water retention: Freshmaker, ASR-Coastal, creek-ridge infiltration, and adjustable/smart drainage.",
       "sources": [],
-      "x": 1440,
-      "y": 1640
+      "x": 1553,
+      "y": 1460
     },
     {
       "id": "groundwater-extraction-for-irrigation",
@@ -313,8 +313,8 @@
       "subquestion": "SQ2",
       "description": "Consumer demand and offtake contracts for novel salt-tolerant or alternative crops (e.g. protein crops).",
       "sources": [],
-      "x": 2400,
-      "y": 0
+      "x": 2158,
+      "y": 94
     },
     {
       "id": "processing-capacity-for-alternative-crops",
@@ -339,8 +339,8 @@
       "subquestion": "SQ2",
       "description": "Cultivation of salt-tolerant varieties (potato/onion breeds) and halophytes/novel crops (quinoa, samphire, sea aster, field beans).",
       "sources": [],
-      "x": 1920,
-      "y": 500
+      "x": 1987,
+      "y": 451
     },
     {
       "id": "agricultural-land-value",
@@ -365,8 +365,8 @@
       "subquestion": "SQ2",
       "description": "Higher interest rates and tighter lending by agricultural banks when land collateral values drop or climate risks rise.",
       "sources": [],
-      "x": 3130,
-      "y": 970
+      "x": 3083,
+      "y": 1082
     },
     {
       "id": "basel-iv-capital-requirements",
@@ -378,8 +378,8 @@
       "subquestion": "SQ2",
       "description": "European banking regulations requiring stricter risk weighting on loans when climate/soil risks reduce collateral value.",
       "sources": [],
-      "x": 3220,
-      "y": 640
+      "x": 3290,
+      "y": 881
     },
     {
       "id": "dependence-on-high-margin-salt-sensitive-crops",
@@ -404,8 +404,8 @@
       "subquestion": "SQ2",
       "description": "Financial return per hectare from crop sales, determined by yield and prices.",
       "sources": [],
-      "x": 2640,
-      "y": 810
+      "x": 2575,
+      "y": 823
     },
     {
       "id": "farmers-capacity-to-invest",
@@ -417,8 +417,8 @@
       "subquestion": "SQ2",
       "description": "Free cash flow and access to credit needed by farmers to pre-finance climate-adaptive practices.",
       "sources": [],
-      "x": 2990,
-      "y": 770
+      "x": 2965,
+      "y": 732
     },
     {
       "id": "fear-of-expropriation-planning-blight",
@@ -470,7 +470,7 @@
       "delay": false,
       "description": "Higher temperatures increase evapotranspiration and crop water requirements.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0
     },
     {
       "from": "hotter-drier-summers",
@@ -479,7 +479,7 @@
       "delay": false,
       "description": "Low summer river discharge allows seawater to penetrate further inland.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0
     },
     {
       "from": "hotter-drier-summers",
@@ -488,7 +488,7 @@
       "delay": false,
       "description": "Summer precipitation deficit and high evaporation reduce natural recharge.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0
     },
     {
       "from": "sea-level-rise",
@@ -506,7 +506,7 @@
       "delay": false,
       "description": "Higher sea level increases hydrostatic pressure beneath dikes.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0
     },
     {
       "from": "wetter-winters",
@@ -515,7 +515,7 @@
       "delay": false,
       "description": "More winter precipitation increases potential infiltration into the soil.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0
     },
     {
       "from": "wetter-winters",
@@ -524,7 +524,7 @@
       "delay": false,
       "description": "Higher winter rainfall peaks are mostly discharged under conventional drainage.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0
     },
     {
       "from": "clay-dispersion-sodification",
@@ -542,7 +542,7 @@
       "delay": false,
       "description": "Higher crop water need drives farmers to pump more groundwater.",
       "sources": [],
-      "curvature": 0.16
+      "curvature": 0.3
     },
     {
       "from": "estuary-salt-intrusion",
@@ -551,7 +551,7 @@
       "delay": false,
       "description": "Salinisation of surface canals makes intake water for irrigation brackish.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0.29
     },
     {
       "from": "freshwater-lens-recharge",
@@ -581,7 +581,7 @@
       "delay": false,
       "description": "A thicker freshwater lens buffers against salt upconing under wells.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": -0.16
     },
     {
       "from": "freshwater-lens-thickness",
@@ -601,7 +601,7 @@
       "sources": [
         "oude-essink-2010"
       ],
-      "curvature": 0.0
+      "curvature": 0.14
     },
     {
       "from": "polder-surface-elevation-nap",
@@ -610,7 +610,7 @@
       "delay": false,
       "description": "Higher polder elevation reduces the hydraulic head difference driving upward saline seepage.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0.3
     },
     {
       "from": "root-zone-salinity",
@@ -630,7 +630,7 @@
       "delay": false,
       "description": "Osmotic stress and chloride toxicity reduce yields of salt-sensitive cash crops.",
       "sources": [],
-      "curvature": 0.04
+      "curvature": -0.17
     },
     {
       "from": "root-zone-salinity",
@@ -639,7 +639,7 @@
       "delay": false,
       "description": "Rising salinity increases agronomic pressure to switch to tolerant varieties.",
       "sources": [],
-      "curvature": -0.04
+      "curvature": 0.02
     },
     {
       "from": "saline-seepage-kwel",
@@ -648,7 +648,7 @@
       "delay": false,
       "description": "Upward saline groundwater erodes and thins the floating freshwater lens from below.",
       "sources": [],
-      "curvature": 0.16
+      "curvature": 0.24
     },
     {
       "from": "saline-seepage-kwel",
@@ -666,7 +666,7 @@
       "delay": false,
       "description": "Healthy porous soil allows winter rainwater to infiltrate rather than run off.",
       "sources": [],
-      "curvature": 0.25
+      "curvature": 0.29
     },
     {
       "from": "soil-structure-usability",
@@ -675,7 +675,7 @@
       "delay": false,
       "description": "Good soil structure supports root development, emergence, and safe harvesting of tubers/bulbs.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": -0.16
     },
     {
       "from": "soil-structure-usability",
@@ -693,7 +693,7 @@
       "delay": false,
       "description": "Salt water drawn upward contaminates the upper soil and irrigation wells.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0.1
     },
     {
       "from": "brackish-irrigation-water-use",
@@ -711,7 +711,7 @@
       "delay": false,
       "description": "Low water tables expose peat to oxygen and cause clay shrinkage.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0.18
     },
     {
       "from": "demand-for-deep-polder-drainage",
@@ -720,7 +720,7 @@
       "delay": false,
       "description": "Lower ditch levels increase the pressure gradient between deep saline groundwater and the polder.",
       "sources": [],
-      "curvature": 0.04
+      "curvature": 0.19
     },
     {
       "from": "demand-for-deep-polder-drainage",
@@ -756,7 +756,7 @@
       "delay": false,
       "description": "When fresh water is scarce, farmers are forced to irrigate with brackish surface/well water.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": -0.06
     },
     {
       "from": "freshwater-availability-for-crops",
@@ -783,7 +783,7 @@
       "delay": false,
       "description": "Smart/adjustable drains and storage retain winter water instead of discharging it.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0.23
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -792,7 +792,7 @@
       "delay": false,
       "description": "Extracting groundwater directly depletes the limited freshwater lens.",
       "sources": [],
-      "curvature": 0.04
+      "curvature": 0.1
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -846,7 +846,7 @@
       "delay": false,
       "description": "Assured offtake makes salt-tolerant and alternative crops commercially attractive to farmers.",
       "sources": [],
-      "curvature": -0.12
+      "curvature": 0
     },
     {
       "from": "processing-capacity-for-alternative-crops",
@@ -920,7 +920,7 @@
       "delay": false,
       "description": "Restricted credit and higher interest rates prevent farmers from financing adaptation measures.",
       "sources": [],
-      "curvature": -0.16
+      "curvature": -0.22
     },
     {
       "from": "basel-iv-capital-requirements",
@@ -947,7 +947,7 @@
       "delay": false,
       "description": "High-value salt-sensitive crops require intensive freshwater irrigation during dry spells.",
       "sources": [],
-      "curvature": 0
+      "curvature": -0.21
     },
     {
       "from": "dependence-on-high-margin-salt-sensitive-crops",
@@ -956,7 +956,7 @@
       "delay": false,
       "description": "A farm that relies on high margins can give fewer hectares to lower-margin salt-tolerant alternatives.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": -0.27
     },
     {
       "from": "farm-revenue",
@@ -983,7 +983,7 @@
       "delay": false,
       "description": "Financial room allows investment in ASR, Freshmaker, and adjustable drainage.",
       "sources": [],
-      "curvature": 0.08
+      "curvature": 0.18
     },
     {
       "from": "farmers-capacity-to-invest",
@@ -992,7 +992,7 @@
       "delay": false,
       "description": "Investment capacity enables transition costs and new machinery for novel crops.",
       "sources": [],
-      "curvature": -0.04
+      "curvature": -0.13
     },
     {
       "from": "fear-of-expropriation-planning-blight",
@@ -1028,7 +1028,7 @@
       "delay": false,
       "description": "When credit tightens, farms that cannot refinance stop, and fewer arable farmers can borrow to buy their land, so more of it leaves arable farming.",
       "sources": [],
-      "curvature": 0.04
+      "curvature": 0.21
     },
     {
       "from": "farmland-leaving-arable-use",

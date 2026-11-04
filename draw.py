@@ -3,11 +3,11 @@
 Imported by build.py, which writes docs/cld.svg and puts the same drawing inline in
 docs/index.html. svg(cld) returns the drawing as a string; overlaps(cld) the warnings about
 boxes that intersect and other layout faults, for build.py's report; boxes(cld) the geometry
-build.py gives Kumu's elements.
+build.py gives Kumu's elements; regions_svg(cld) the regions alone, Kumu's background image.
 
 What is drawn, from back to front:
   regions   one faint region per subsystem, split by one smooth border with a white gap, each
-            named where its name is clearest
+            named in its top outer corner
   links     a quadratic Bezier from a point on the source box's edge to one on the target's,
             the ends on one edge spread along it; the sign beside the arrowhead on the side
             clear of boxes, a delay as two short strokes across the midpoint
@@ -292,9 +292,15 @@ def loop_svg(loop, bxs):
 # faint so the SETS tints stay the boxes' colour; they differ by OKLab dE 7.3 (normal vision) and
 # 6.7 (protan), under the dataviz validator's floor for marks told apart by colour alone, which is
 # why each region carries its name; both link colours keep 3:1 on both fills.
-REGION = {"Water governance": "#D6E6F5", "Finance and land": "#F7E3C4"}
-REGION_NAME_COLOUR = {"Water governance": "#4F6F91", "Finance and land": "#86663A"}
-REGION_NAME_SIZE = 64
+REGION = {"Water and soil": "#D6E6F5", "Farm economy and land": "#F7E3C4"}
+# Each name in spaced bold capitals at its region's top outer corner, a darker shade of its fill
+# (Jordy, chosen between rendered versions: inside the region, standing out a little; contrast on
+# its fill 6.3:1 and 5.8:1)
+REGION_NAME_COLOUR = {"Water and soil": "#2C5378", "Farm economy and land": "#74501F"}
+REGION_NAME_SIZE = 56
+REGION_NAME_SPACING = 8   # letter spacing
+REGION_NAME_INSET = 120   # from the frame's side to the name's outer end
+REGION_NAME_TOP = 80      # from the frame's top to the name's middle
 GRID = 20           # the grid the region outlines are traced on
 FRAME_PAD = 110     # the frame's margin around the boxes
 FRAME_CORNER = 160  # the frame's corner radius
@@ -303,10 +309,13 @@ BORDER_CLEAR = 30   # how far every box keeps from the gap
 BORDER_TENSION = 0.008  # how hard the border is pulled straight: 0.008 a gentle wave (Jordy), 0.05 nearly straight
 
 
-def box_distance(p, b):
-    dx = max(b[0] - p[0], 0, p[0] - b[2])
-    dy = max(b[1] - p[1], 0, p[1] - b[3])
-    return (dx * dx + dy * dy) ** 0.5
+def name_box(n, frame, first):
+    """(x0, y0, x1, y1): the box of the region name n, at the top left of the frame for the
+    first subsystem, the top right for the second; its width estimated from the capitals' glyphs."""
+    w = len(n) * (REGION_NAME_SIZE * 0.68 + REGION_NAME_SPACING)
+    y = frame[1] + REGION_NAME_TOP
+    x0 = frame[0] + REGION_NAME_INSET if first else frame[2] - REGION_NAME_INSET - w
+    return (x0, y - REGION_NAME_SIZE / 2, x0 + w, y + REGION_NAME_SIZE / 2)
 
 
 def corridor(left, right, y0, ny):
@@ -406,10 +415,10 @@ def chaikin(loop, rounds=3):
     return loop
 
 
-def regions(cld, bxs, paths):
+def regions(cld, bxs):
     """(svg, frame, crowded): the subsystems' regions, their frame (x0, y0, x1, y1), and the grid
-    rows where the boxes leave the border no room. Each name sits where its box is clearest of
-    element boxes and links, with its middle and both ends inside its region."""
+    rows where the boxes leave the border no room. Each name sits at its region's top outer
+    corner (name_box()); overlaps() warns when a link runs under it."""
     names = list(REGION)
     members = {n: [bxs[e["id"]] for e in cld["elements"] if e["subsystem"] == n] for n in names}
     allb = list(bxs.values())
@@ -425,7 +434,6 @@ def regions(cld, bxs, paths):
         qy = max(fy0 + r - p[1], 0, p[1] - (fy1 - r))
         return r - (qx * qx + qy * qy) ** 0.5 if qx and qy else min(p[0] - fx0, fx1 - p[0], p[1] - fy0, fy1 - p[1])
 
-    link_pts = [bezier(*paths[k], t / 80) for k in paths for t in range(81)]
     parts = []
     for side, n in ((1, names[0]), (-1, names[1])):
         val = [[-1.0] * nx for _ in range(ny)]
@@ -436,24 +444,22 @@ def regions(cld, bxs, paths):
                 val[j][i] = v if v != 0 else -1e-6
         d = " ".join("M " + " L ".join(f"{x:.1f} {y:.1f}" for x, y in chaikin(l)) + " Z"
                      for l in contours(val, nx, ny, x0, y0))
-        hw, hh = len(n) * REGION_NAME_SIZE * 0.29, REGION_NAME_SIZE * 0.5
-        k = int(hw / GRID) + 1
-        best = None
-        for j in range(2, ny - 2, 2):
-            for i in range(2, nx - 2, 2):
-                if min(val[j][i], val[j][max(i - k, 0)], val[j][min(i + k, nx - 1)]) < hh:
-                    continue
-                p = (x0 + i * GRID, y0 + j * GRID)
-                clear = min(min(box_distance(p, (b[0] - hw, b[1] - hh, b[2] + hw, b[3] + hh)) for b in allb),
-                            min(max(abs(q[0] - p[0]) - hw, 0) ** 2 + max(abs(q[1] - p[1]) - hh, 0) ** 2
-                                for q in link_pts) ** 0.5)
-                if best is None or clear > best[0]:
-                    best = (clear, p)
-        name = (f'<text class="region-name" x="{best[1][0]:.1f}" y="{best[1][1]:.1f}" text-anchor="middle" '
+        nb = name_box(n, (fx0, fy0, fx1, fy1), side == 1)
+        name = (f'<text class="region-name" x="{nb[0]:.1f}" y="{(nb[1] + nb[3]) / 2:.1f}" '
                 f'dominant-baseline="central" font-size="{REGION_NAME_SIZE}" font-weight="bold" '
-                f'fill="{REGION_NAME_COLOUR[n]}">{esc(n)}</text>') if best else ""
+                f'letter-spacing="{REGION_NAME_SPACING}" fill="{REGION_NAME_COLOUR[n]}">{esc(n.upper())}</text>')
         parts.append(f'<g class="region" data-subsystem="{n}"><path d="{d}" fill="{REGION[n]}" fill-rule="evenodd"/>{name}</g>')
     return "\n".join(parts), (fx0, fy0, fx1, fy1), crowded
+
+
+def regions_svg(cld):
+    """(svg, frame): the regions alone, their viewBox the frame in the elements' coordinates, for
+    Kumu's background image (build.py writes it as docs/regions.svg)."""
+    bxs = boxes(cld)
+    region_svg, frame, _ = regions(cld, bxs)
+    x0, y0, x1, y1 = frame
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{x0:.0f} {y0:.0f} {x1 - x0:.0f} {y1 - y0:.0f}" '
+            f'font-family="{FONT}">\n{region_svg}\n</svg>\n'), frame
 
 
 # --- legend ---------------------------------------------------------------------------------
@@ -498,7 +504,7 @@ def svg(cld):
     y0 = min(b[1] for b in bxs.values())
     x1 = max(b[2] for b in bxs.values())
     y1 = max(b[3] for b in bxs.values())
-    region_svg, frame, _ = regions(cld, bxs, paths)
+    region_svg, frame, _ = regions(cld, bxs)
     x0, y0, x1, y1 = min(x0, frame[0]), min(y0, frame[1]), max(x1, frame[2]), max(y1, frame[3])
     legend, lw, lh = legend_svg(x0, y1 + MARGIN)
     y1 += MARGIN + lh
@@ -553,6 +559,15 @@ def overlaps(cld):
             m, n = bezier(*p, 0.5), bezier(*q, 0.5)
             if hypot(m[0] - n[0], m[1] - n[1]) < SIGN_SIZE:
                 out.append(f"links on one curve: {a} -> {b} and back (give both curvatures one sign)")
+    # a region name over a link hides it; no box reaches a name, which sits in the frame's margin
+    allb = list(bxs.values())
+    frame = (min(b[0] for b in allb) - FRAME_PAD, min(b[1] for b in allb) - FRAME_PAD,
+             max(b[2] for b in allb) + FRAME_PAD, max(b[3] for b in allb) + FRAME_PAD)
+    for k, n in enumerate(names):
+        nb = name_box(n, frame, k == 0)
+        hit = lambda p: nb[0] < p[0] < nb[2] and nb[1] < p[1] < nb[3]
+        out += [f"region name {n!r} over the link {a} -> {b}" for (a, b), p in paths.items()
+                if any(hit(bezier(*p, t / 40)) for t in range(41))]
     # a named loop whose own links cross reads as a figure eight, which cannot be followed round;
     # each link sampled at 30 points, every pair of the loop's links tested segment by segment
     pts = {k: [bezier(*p, i / 30) for i in range(31)] for k, p in paths.items()}

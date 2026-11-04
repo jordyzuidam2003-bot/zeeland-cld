@@ -6,27 +6,27 @@
 
       option {
         label: "Social";
-        selector: ["sets domain"="social"];
+        selector: ["sets domain"="social"], #background;
       }
 
       option {
         label: "Ecological";
-        selector: ["sets domain"="ecological"];
+        selector: ["sets domain"="ecological"], #background;
       }
 
       option {
         label: "Technological";
-        selector: ["sets domain"="technological"];
+        selector: ["sets domain"="technological"], #background;
       }
 
       option {
         label: "Cross-SETS links";
-        selector: ["sets scope"="cross-domain"];
+        selector: ["sets scope"="cross-domain"], #background;
       }
 
       option {
         label: "Unsourced";
-        selector: ["sourced"="no"];
+        selector: ["sourced"="no"], #background;
       }
     }
 
@@ -40,7 +40,7 @@
   layout: static;
   theme: light;
   background-color: #FFFFFF;
-  culling: false;
+  culling: off;
 }
 
 /* ---------- Elements: the page's look, values from draw.py ---------- */
@@ -73,6 +73,21 @@ element {
 
 ["adaptive practice"="yes"] {
   border-width: 5;
+}
+
+/* ---------- Regions: the page's two subsystem regions as a background image ---------- */
+/* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,
+   pinned at the centre of the regions' frame, and its width and height, the frame's. A showcase
+   fades all it does not select, so every showcase option above selects #background too */
+#background {
+  image-url: url(https://jordyzuidam2003-bot.github.io/zeeland-cld/regions.svg);
+  layer: background;
+  shape: rectangle;
+  color: transparent;
+  image-size: contain;
+  image-resolution: original;
+  label-visibility: none;
+  border-width: 0;
 }
 
 /* ---------- Links: one width, the sign's colour ---------- */

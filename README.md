@@ -16,7 +16,7 @@ web page, <https://jordyzuidam2003-bot.github.io/zeeland-cld/>, served by GitHub
 | `page/` | the page around the drawing: `index.html` (a template), `app.js`, `style.css` | yes |
 | `build.py` | checks the model and writes `docs/` (how: its docstring) | — |
 | `draw.py` | draws the SVG, imported by `build.py` | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `project.json` | never: `build.py` writes it |
+| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `regions.svg`, `project.json` | never: `build.py` writes it |
 
 ## Working on the diagram
 
@@ -30,7 +30,7 @@ builds and pushes, so nobody else needs git or Python.
    R/B does not match its polarities) and prints the source coverage and any warnings: a model
    text still empty, an element without links, two boxes that overlap, a link and its reverse
    drawn on one curve, an element on the wrong side of the border between the two subsystems,
-   a named loop whose own links cross.
+   a named loop whose own links cross, a link under a region's name.
 3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
    a commit whose `docs/` is out of date.
 
@@ -82,7 +82,7 @@ An element:
   "element type": "Auxiliary",
   "adaptive practice": false,
   "sets domain": "Ecological",
-  "subsystem": "Water governance",
+  "subsystem": "Water and soil",
   "subquestion": "SQ1",
   "description": "…",
   "sources": ["key-in-references-json"],
@@ -95,10 +95,11 @@ An element:
 - `element type`: `Constant` (an exogenous driver, drawn dashed), `Auxiliary` (rounded corners)
   or `Stock` (square corners). `adaptive practice`: true on an auxiliary that is a measure
   farmers take, drawn with a thick stroke. `sets domain`: `Social`, `Ecological` or
-  `Technological`; the drawing fills the box with the domain's tint. `subsystem`: `Water
-  governance` or `Finance and land`, the project's two subsystems, drawn as two faint regions
-  behind the boxes split by one smooth border (water governance left); the group proposes the
-  split from the CLD, and the Project Plan follows it.
+  `Technological`; the drawing fills the box with the domain's tint. `subsystem`: `Water and
+  soil` or `Farm economy and land`, the project's two subsystems, drawn as two faint regions
+  behind the boxes split by one smooth border (water and soil left), each named in its top
+  corner; the group proposes the split and the names from the CLD, and the Project Plan
+  follows it.
 - `x` and `y` are positions in the drawing; y grows downwards.
 
 A connection: `from` and `to` (element ids), `polarity` (`"+"` or `"-"`), `delay` (true/false,
@@ -134,7 +135,12 @@ which the export sets to `cbp-cld`.
 The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label
 inside, square corners for a stock and rounded ones for the others, an italic label for a
 constant (Kumu has no dashed border), a thick border for an adaptive practice; links of one
-width, blue `+` and red `−`. Kumu draws each link from centre to centre and no regions; the
-subsystem is a field there. `build.py` adds the rules that tint and size each box below `view.scss`, and
+width, blue `+` and red `−`. Kumu draws each link from centre to centre. The regions reach Kumu
+as a background image: `build.py` writes them alone as `docs/regions.svg`, in the elements'
+coordinates, and `project.json` holds an element labelled `background`, pinned at the centre of
+the regions' frame with the frame's width and height, which the `#background` rule in
+`view.scss` shows as that image, from its URL on the published page, behind the map. Every
+showcase button selects it too, so it stays when a button fades the rest. The subsystem is also
+a field there. `build.py` adds the rules that tint and size each box below `view.scss`, and
 a double space where the page breaks a label's line (Kumu's manual line break). The project's
 description and the map's name carry the model version, so Kumu says which model it holds.

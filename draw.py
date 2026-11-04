@@ -16,8 +16,10 @@ What is drawn, from back to front:
             square corners for a Stock, rounded for an Auxiliary, dashed for a Constant, a
             thick stroke for an adaptive practice
   legend    bottom-left
-No loop marks: the page highlights a named loop by its button (loop_svg() is kept for a figure
-of one loop on its own).
+No loop marks on the full drawing: the page highlights a named loop by its button.
+loop_figure(cld, loop) draws one named loop on its own (build.py writes docs/loops/<id>.svg): its
+elements and links as svg() draws them, with its mark, turning the way the loop runs, at the
+clearest point inside it.
 
 The link formulas are duplicated in page/app.js (drag mode redraws every link when an element
 moves): keep link_path(), link_paths(), sign_position() and their JS twins the same.
@@ -267,21 +269,21 @@ def delay_path(p0, ctrl, p2, half=9, gap=4):
 
 
 # --- loops ----------------------------------------------------------------------------------
-def loop_svg(loop, bxs):
-    pts = [((b[0] + b[2]) / 2, (b[1] + b[3]) / 2) for b in bxs]
-    cx = sum(p[0] for p in pts) / len(pts)
-    cy = sum(p[1] for p in pts) / len(pts)
-    r = 24
-    # a three-quarter circle, clockwise, ending with the arrowhead
-    a0, a1 = -pi / 2, pi
+def loop_svg(loop, centre, clockwise):
+    """The loop's mark at centre: its id in a three-quarter circle that ends in an arrowhead,
+    turning clockwise on the page or not, as the loop runs."""
+    cx, cy = centre
+    r = 48  # the figure's one mark reads at the size of the signs
+    # from the top round to the left (clockwise) or to the right (anticlockwise); y grows downwards
+    a0, a1 = -pi / 2, pi if clockwise else 0
     start = (cx + r * cos(a0), cy + r * sin(a0))
     end = (cx + r * cos(a1), cy + r * sin(a1))
     return "\n".join([
         f'<g class="loop" data-id="{loop["id"]}">',
-        f'<path d="M {start[0]:.1f} {start[1]:.1f} A {r} {r} 0 1 1 {end[0]:.1f} {end[1]:.1f}" fill="none" '
-        f'stroke="{STROKE_COLOUR}" stroke-width="2" marker-end="url(#arrow-grey)"/>',
+        f'<path d="M {start[0]:.1f} {start[1]:.1f} A {r} {r} 0 1 {1 if clockwise else 0} {end[0]:.1f} {end[1]:.1f}" fill="none" '
+        f'stroke="{STROKE_COLOUR}" stroke-width="{LINK_WIDTH}" marker-end="url(#arrow-grey)"/>',
         f'<text class="loop-id" x="{cx:.1f}" y="{cy:.1f}" text-anchor="middle" dominant-baseline="central" '
-        f'font-weight="bold">{esc(loop["id"])}</text>',
+        f'font-size="{SIGN_SIZE}" font-weight="bold">{esc(loop["id"])}</text>',
         "</g>"])
 
 
@@ -499,7 +501,57 @@ def legend_svg(x, y):
     return '<g class="legend">\n' + "\n".join(items) + "\n</g>", width, height
 
 
+def clearest_point(ring, bxs):
+    """The point inside the closed polyline ring farthest from it and from every box: where a
+    loop's mark reads on its own (the centroid of a loop's elements can fall on one of its boxes or
+    links, Jordy chose this between rendered versions). A 40-unit grid, then an 8-unit one around
+    its best point."""
+    segs = list(zip(ring, ring[1:] + ring[:1]))
+
+    def clearance(p):
+        def seg(a, b):
+            dx, dy = b[0] - a[0], b[1] - a[1]
+            t = max(0, min(1, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / (dx * dx + dy * dy or 1)))
+            return hypot(p[0] - a[0] - t * dx, p[1] - a[1] - t * dy)
+        box = lambda b: hypot(max(b[0] - p[0], 0, p[0] - b[2]), max(b[1] - p[1], 0, p[1] - b[3]))
+        return min(min(seg(a, b) for a, b in segs), min(box(b) for b in bxs))
+
+    def within(p):  # ray casting
+        odd = False
+        for a, b in segs:
+            if (a[1] > p[1]) != (b[1] > p[1]) and p[0] < a[0] + (p[1] - a[1]) * (b[0] - a[0]) / (b[1] - a[1]):
+                odd = not odd
+        return odd
+
+    def best(xs, ys):
+        cands = [(x, y) for x in xs for y in ys if within((x, y))]
+        return max(cands, key=clearance)
+
+    x0, x1 = min(p[0] for p in ring), max(p[0] for p in ring)
+    y0, y1 = min(p[1] for p in ring), max(p[1] for p in ring)
+    cx, cy = best(range(int(x0), int(x1), 40), range(int(y0), int(y1), 40))
+    return best(range(int(cx) - 40, int(cx) + 41, 8), range(int(cy) - 40, int(cy) + 41, 8))
+
+
 # --- the drawing ----------------------------------------------------------------------------
+def head(vb):
+    """The opening of a drawing with the viewBox vb: the svg tag, the arrowheads, a white ground."""
+    arrow = lambda name, colour: (f'<marker id="arrow-{name}" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="{ARROW}" '
+                                  f'markerHeight="{ARROW}" markerUnits="userSpaceOnUse" orient="auto">'
+                                  f'<path d="M 0 0 L 10 5 L 0 10 z" fill="{colour}"/></marker>')
+    return [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{vb[0]:.0f} {vb[1]:.0f} {vb[2]:.0f} {vb[3]:.0f}" '
+        f'font-family="{FONT}" font-size="{FONT_SIZE}" fill="black">',
+        "<defs>", arrow("plus", LINK_COLOUR["+"]), arrow("minus", LINK_COLOUR["-"]), arrow("grey", STROKE_COLOUR), "</defs>",
+        f'<rect x="{vb[0]:.0f}" y="{vb[1]:.0f}" width="{vb[2]:.0f}" height="{vb[3]:.0f}" fill="white"/>']
+
+
+def links_and_elements(cld, bxs, paths):
+    """The links, then the elements over them: what svg() and loop_figure() both draw."""
+    return ['<g class="links">', *(link_svg(c, paths[c["from"], c["to"]], list(bxs.values())) for c in cld["connections"]), "</g>",
+            '<g class="elements">', *(element_svg(e, bxs[e["id"]]) for e in cld["elements"]), "</g>"]
+
+
 def svg(cld):
     bxs = boxes(cld)
     paths = link_paths(cld, bxs)
@@ -513,21 +565,31 @@ def svg(cld):
     y1 += MARGIN + lh
     x1 = max(x1, x0 + lw)
     vb = (x0 - MARGIN, y0 - MARGIN, x1 - x0 + 2 * MARGIN, y1 - y0 + 2 * MARGIN)
+    parts = [*head(vb), '<g class="regions">', region_svg, "</g>", *links_and_elements(cld, bxs, paths), legend, "</svg>"]
+    return "\n".join(parts) + "\n"
 
-    arrow = lambda name, colour: (f'<marker id="arrow-{name}" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="{ARROW}" '
-                                  f'markerHeight="{ARROW}" markerUnits="userSpaceOnUse" orient="auto">'
-                                  f'<path d="M 0 0 L 10 5 L 0 10 z" fill="{colour}"/></marker>')
-    parts = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{vb[0]:.0f} {vb[1]:.0f} {vb[2]:.0f} {vb[3]:.0f}" '
-        f'font-family="{FONT}" font-size="{FONT_SIZE}" fill="black">',
-        "<defs>", arrow("plus", LINK_COLOUR["+"]), arrow("minus", LINK_COLOUR["-"]), arrow("grey", STROKE_COLOUR), "</defs>",
-        f'<rect x="{vb[0]:.0f}" y="{vb[1]:.0f}" width="{vb[2]:.0f}" height="{vb[3]:.0f}" fill="white"/>',
-        '<g class="regions">', region_svg, "</g>",
-        '<g class="links">', *(link_svg(c, paths[c["from"], c["to"]], list(bxs.values())) for c in cld["connections"]), "</g>",
-        '<g class="elements">', *(element_svg(e, bxs[e["id"]]) for e in cld["elements"]), "</g>",
-        legend,
-        "</svg>",
-    ]
+
+def loop_figure(cld, loop):
+    """One named loop on its own, for the report: its elements at their places in cld.json and only
+    its links, drawn as svg() draws them (each link's curvature from cld.json, its ends spread over
+    the box edges among the loop's own links), and its mark at the clearest point inside the drawn
+    loop, turning the way it runs. No regions and no legend: the figure stands beside the full drawing."""
+    path = loop["path"]
+    steps = list(zip(path, path[1:] + path[:1]))
+    sub = {"elements": [e for e in cld["elements"] if e["id"] in path],
+           "connections": [c for c in cld["connections"] if (c["from"], c["to"]) in steps]}
+    bxs = boxes(sub)
+    paths = link_paths(sub, bxs)
+    # the way round: the sign of the area the drawn links enclose, taken in the loop's order; with y
+    # downwards a positive shoelace sum turns clockwise on the page
+    pts = [bezier(*paths[step], t / 20) for step in steps for t in range(20)]
+    area = sum(p[0] * q[1] - q[0] * p[1] for p, q in zip(pts, pts[1:] + pts[:1]))
+    # the frame: the boxes and the curves, with room for a sign beside a curve
+    xs = [b[k] for b in bxs.values() for k in (0, 2)] + [p[0] for p in pts]
+    ys = [b[k] for b in bxs.values() for k in (1, 3)] + [p[1] for p in pts]
+    pad = MARGIN + SIGN_SIZE
+    vb = (min(xs) - pad, min(ys) - pad, max(xs) - min(xs) + 2 * pad, max(ys) - min(ys) + 2 * pad)
+    parts = [*head(vb), *links_and_elements(sub, bxs, paths), loop_svg(loop, clearest_point(pts, list(bxs.values())), area > 0), "</svg>"]
     return "\n".join(parts) + "\n"
 
 

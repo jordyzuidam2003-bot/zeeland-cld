@@ -16,7 +16,7 @@ web page, <https://jordyzuidam2003-bot.github.io/zeeland-cld/>, served by GitHub
 | `page/` | the page around the drawing: `index.html` (a template), `app.js`, `style.css` | yes |
 | `build.py` | checks the model and writes `docs/` (how: its docstring) | — |
 | `draw.py` | draws the SVG, imported by `build.py` | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `regions.svg`, `project.json` | never: `build.py` writes it |
+| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json` | never: `build.py` writes it |
 
 ## Working on the diagram
 
@@ -46,23 +46,28 @@ mediates it, and no named loop whose links cross each other, a figure eight that
 followed round; `build.py` warns on the last. A Constant's links run straight, and `build.py`
 warns on a bent one.
 
-A picture for the report: `docs/cld.svg` is the drawing on its own. Google Docs takes no SVG; a
-PNG, with Chrome (not part of the build, since Chrome is not on every machine):
+A picture for the report: `docs/cld.svg` is the drawing on its own, and `docs/loops/<id>.svg`
+each named loop on its own, `docs/loops/R1.svg` for R1: its elements at their places in the
+drawing, only its links, bent as in the drawing, and its mark, turning the way the loop runs, at
+the point inside it farthest from its links and boxes. Google Docs takes no SVG; a PNG, with
+Chrome (not part of the build, since Chrome is not on every machine), `svg` the file to convert:
 
 ```sh
-size=$(python3 -c "import re; w, h = re.search(r'viewBox=\"\S+ \S+ (\S+) (\S+)\"', open('docs/cld.svg').read()).groups(); print(f'{int(w) // 2},{int(h) // 2}')")
+svg=docs/cld.svg  # or docs/loops/R1.svg
+size=$(python3 -c "import re, sys; w, h = re.search(r'viewBox=\"\S+ \S+ (\S+) (\S+)\"', open(sys.argv[1]).read()).groups(); print(f'{int(w) // 2},{int(h) // 2}')" $svg)
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless \
-  --screenshot=cld.png --window-size=$size file://$PWD/docs/cld.svg
+  --screenshot=$(basename $svg .svg).png --window-size=$size file://$PWD/$svg
 ```
 
-The window size sets the picture's size; the first line takes half the SVG's `viewBox`, so
+The window size sets the picture's size; the second line takes half the SVG's `viewBox`, so
 the ratio matches and the layout can change. For a sharper picture, divide by less.
 
 ### The page
 
 The drawing is larger than a screen: scroll or pinch to zoom at the cursor, drag the
 background to pan, "Fit" shows the whole drawing again. A button per named loop highlights its
-elements and links; several pressed show their union. A click on an element or a link opens a panel with its fields
+elements and links, several pressed show their union, and opens a panel with the loop's figure
+on its own, `docs/loops/<id>.svg`. A click on an element or a link opens a panel with its fields
 and sources; Esc or a click on the background closes it. The footer shows the model version, the
 first seven characters of the SHA-256 of `cld.json`, so teammates can tell which model they are
 looking at.
@@ -112,8 +117,9 @@ never typed.
 A named loop: `{"id": "R1", "name": "…", "path": ["element-a", "element-b", …]}`, the path in
 causal order without repeating the first element. `build.py` checks that every step is a
 connection and that the id starts with R for an even number of `-` links, B for an odd one; the
-page gets a button for it, which highlights its elements and links. The full drawing carries
-no loop marks: of its 353 feedback loops no mark could be traced there.
+page gets a button for it, which highlights its elements and links, and `docs/loops/<id>.svg`
+draws it on its own, with its mark. The full drawing carries no loop marks: of its 353 feedback
+loops no mark could be traced there.
 
 ## Setup after cloning
 

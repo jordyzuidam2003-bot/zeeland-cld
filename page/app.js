@@ -17,7 +17,8 @@ document.getElementById("version").textContent = data.version;
 
 // --- highlight buttons ----------------------------------------------------------------------
 // A button per named loop names its elements and links; pressed loops are united, none means all.
-// A loop's button reads "R1 Its name"; its key is the id, which the drawing's mark carries too.
+// A loop's button reads "R1 Its name"; its key is the loop's id. Pressing it also opens the loop's
+// panel, its figure on its own (docs/loops/<id>.svg); releasing it closes that panel.
 const rules = data.loops.map(loop => [`${loop.id} ${loop.name}`, () => {
   const path = loop.path;
   const keys = path.map((id, i) => `${id}--${path[(i + 1) % path.length]}`);
@@ -33,6 +34,8 @@ for (const [label, rule, key = label] of rules) {
     if (pressed.has(key)) pressed.delete(key); else pressed.add(key);
     button.setAttribute("aria-pressed", String(pressed.has(key)));
     applyHighlight();
+    if (pressed.has(key)) showLoop(key);
+    else if (panel.dataset.loop === key) closePanel();
   });
   nav.append(button);
 }
@@ -61,6 +64,7 @@ function row(dl, name, value, className) {
 }
 function showPanel(title, item, fields) {
   panelBody.replaceChildren();
+  delete panel.dataset.loop;
   const h2 = document.createElement("h2");
   h2.append(...title);
   const dl = document.createElement("dl");
@@ -80,11 +84,30 @@ function showLink(from, to) {
   sign.textContent = c.label;
   showPanel([byId[from].label, " → ", byId[to].label, " ", sign], c, SHOWN_LINK);
 }
-function closePanel() { panel.hidden = true; }
+function showLoop(id) {
+  const loop = data.loops.find(l => l.id === id);
+  panelBody.replaceChildren();
+  const h2 = document.createElement("h2");
+  h2.textContent = `${loop.id} ${loop.name}`;
+  const a = document.createElement("a");
+  a.href = `loops/${loop.id}.svg`;
+  a.target = "_blank";
+  const img = document.createElement("img");
+  img.src = a.href;
+  img.alt = `The loop ${loop.id} on its own`;
+  a.append(img);
+  const p = document.createElement("p");
+  p.className = "note";
+  p.textContent = "The loop on its own, the figure for the report: click it to open it full size.";
+  panelBody.append(h2, a, p);
+  panel.dataset.loop = loop.id;
+  panel.hidden = false;
+}
+function closePanel() { panel.hidden = true; delete panel.dataset.loop; }
 document.getElementById("close").addEventListener("click", closePanel);
 document.addEventListener("keydown", ev => { if (ev.key === "Escape") closePanel(); });
 document.addEventListener("click", ev => {
-  if (panel.contains(ev.target)) return;
+  if (panel.contains(ev.target) || nav.contains(ev.target)) return;  // a loop's button opens its own panel
   const g = ev.target.closest("g.element, g.link");
   if (g && svg.contains(g)) return;  // handled on the svg, below
   closePanel();

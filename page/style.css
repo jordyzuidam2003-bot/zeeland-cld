@@ -65,6 +65,8 @@ main { position: relative; }
 .panel dt { font-weight: bold; }
 .panel dd { margin: 0; }
 .panel .none { color: var(--muted); font-style: italic; }
+.panel img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 4px; }
+.panel .note { margin: 8px 0 0; color: var(--muted); }
 .panel .sign-plus { color: #2166AC; font-weight: bold; }
 .panel .sign-minus { color: #B2182B; font-weight: bold; }
 footer {

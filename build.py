@@ -14,6 +14,8 @@ style.css). draw.py draws the SVG. Never edit docs/, which this script writes:
     docs/app.js        copied from page/
     docs/style.css     copied from page/
     docs/cld.svg       the drawing on its own, the picture for the report
+    docs/loops/<id>.svg  each named loop on its own (draw.loop_figure()), its figure for the
+                       report; the page's panel for the loop shows it
     docs/regions.svg   the subsystem regions alone, the background image of the Kumu map
     docs/project.json  a full Kumu project export: restore it into a brand-new Kumu project
                        (New Project > the next screen > restore backup) and Kumu restores the
@@ -343,16 +345,22 @@ def main():
         "index.html": page(cld, refs, version),
         "app.js": (PAGE / "app.js").read_text(),
         "style.css": (PAGE / "style.css").read_text(),
+        **{f"loops/{loop['id']}.svg": draw.loop_figure(cld, loop) for loop in cld["loops"]},
     }
+    # a figure whose loop is gone or renamed would stay published
+    extra = sorted(f"loops/{f.name}" for f in (DOCS / "loops").glob("*") if f"loops/{f.name}" not in outputs) \
+        if (DOCS / "loops").is_dir() else []
 
     if args.check:
         stale = [name for name, text in outputs.items()
                  if not (DOCS / name).exists() or (DOCS / name).read_text() != text]
-        if stale:
-            sys.exit(f"docs/ is out of date ({', '.join(stale)}): run build.py and commit docs/")
+        if stale or extra:
+            sys.exit(f"docs/ is out of date ({', '.join(stale + extra)}): run build.py and commit docs/")
         return
 
-    DOCS.mkdir(exist_ok=True)
+    (DOCS / "loops").mkdir(parents=True, exist_ok=True)
+    for name in extra:
+        (DOCS / name).unlink()
     for name, text in outputs.items():
         (DOCS / name).write_text(text)
 

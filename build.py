@@ -2,8 +2,8 @@
 
     python3 build.py                  # check, write docs/, print the report
     python3 build.py --check          # fail if docs/ is out of date (the pre-commit hook runs this)
-    python3 build.py --layout FILE    # write the positions of FILE (layout.json, downloaded from
-                                      # the page's drag mode) into cld.json, then build
+    python3 build.py --layout FILE    # write the positions and curvatures of FILE (layout.json,
+                                      # downloaded from the page's drag mode) into cld.json, then build
 
 Sources, edited by hand: cld.json (elements, connections, named loops, layout and
 link curvature), references.json (sources), view.scss (the Kumu view inside project.json) and
@@ -283,22 +283,29 @@ def project(cld, refs, template, version):
 
 
 def apply_layout(path):
-    """Write the positions of a layout.json ({id: {x, y}}) into cld.json, in its own formatting."""
+    """Write the positions and curvatures of a layout.json ({id: {x, y}, "curvature": {"from->to": k}},
+    from the page's drag mode) into cld.json, in its own formatting; a file without "curvature"
+    moves the elements only."""
     layout = json.loads(path.read_text())
+    curvature = layout.pop("curvature", {})
     cld = json.loads((ROOT / "cld.json").read_text())
     by_id = {e["id"]: e for e in cld["elements"]}
-    unknown = [i for i in layout if i not in by_id]
+    by_link = {f'{c["from"]}->{c["to"]}': c for c in cld["connections"]}
+    unknown = [i for i in layout if i not in by_id] + [k for k in curvature if k not in by_link]
     if unknown:
-        sys.exit(f"--layout: unknown element id {', '.join(unknown)}")
+        sys.exit(f"--layout: unknown element or link {', '.join(unknown)}")
     for i, pos in layout.items():
         by_id[i]["x"], by_id[i]["y"] = int(pos["x"]), int(pos["y"])
+    for k, v in curvature.items():
+        if by_link[k]["curvature"] != v:  # an unchanged value keeps its spelling (0 or 0.0)
+            by_link[k]["curvature"] = v
     (ROOT / "cld.json").write_text(json.dumps(cld, indent=2, ensure_ascii=False) + "\n")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--check", action="store_true", help="fail if docs/ is out of date")
-    parser.add_argument("--layout", metavar="FILE", help="write the x, y of FILE (layout.json from the page) into cld.json, then build")
+    parser.add_argument("--layout", metavar="FILE", help="write the x, y and curvatures of FILE (layout.json from the page) into cld.json, then build")
     args = parser.parse_args()
 
     if args.layout:

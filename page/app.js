@@ -1,4 +1,5 @@
-// The page around the drawing: highlight buttons, the panel per element or link, and drag mode.
+// The page around the drawing: highlight buttons, the panel per element or link, and drag mode
+// (elements move, links bend).
 // The data is the JSON in <script id="data"> (build.py writes it); the drawing is the inline SVG.
 "use strict";
 
@@ -225,13 +226,35 @@ function linkPaths() {
 }
 function redrawLink(g, [p0, ctrl, p2], boxes) {
   const f = v => v.toFixed(1);
-  g.querySelector("path.link-path").setAttribute("d", `M ${f(p0[0])} ${f(p0[1])} Q ${f(ctrl[0])} ${f(ctrl[1])} ${f(p2[0])} ${f(p2[1])}`);
+  const d = `M ${f(p0[0])} ${f(p0[1])} Q ${f(ctrl[0])} ${f(ctrl[1])} ${f(p2[0])} ${f(p2[1])}`;
+  g.querySelector("path.link-path").setAttribute("d", d);
+  g.querySelector("path.link-grip").setAttribute("d", d);
   const [sx, sy] = signPosition(p0, ctrl, p2, 36, 20, boxes);
   const sign = g.querySelector("text.sign");
   sign.setAttribute("x", f(sx));
   sign.setAttribute("y", f(sy));
   const delay = g.querySelector("path.delay");
   if (delay) delay.setAttribute("d", delayPath(p0, ctrl, p2));
+}
+// each link gets a wide invisible copy of its path under it, so the 2.5-unit line can be grabbed
+for (const g of links) {
+  const grip = g.querySelector("path.link-path").cloneNode();
+  grip.setAttribute("class", "link-grip");
+  grip.removeAttribute("marker-end");
+  grip.setAttribute("stroke", "transparent");
+  grip.setAttribute("stroke-width", "18");
+  g.insertBefore(grip, g.firstChild);
+}
+// a dragged link bends so its middle follows the pointer: the middle of the curve lies half
+// the control point's offset from the chord, so curvature = 2 (p - mid) . (dy, -dx) / chord²
+function bendLink(g, p) {
+  const [p0, , p2] = linkPaths().get(g);
+  const dx = p2[0] - p0[0], dy = p2[1] - p0[1];
+  const mid = [(p0[0] + p2[0]) / 2, (p0[1] + p2[1]) / 2];
+  const k = 2 * ((p[0] - mid[0]) * dy - (p[1] - mid[1]) * dx) / (dx * dx + dy * dy || 1);
+  g.dataset.curvature = String(Math.round(Math.max(-1, Math.min(1, k)) * 100) / 100);
+  const boxes = elements.map(boxOf);
+  for (const [l, path] of linkPaths()) redrawLink(l, path, boxes);
 }
 function moveElement(g, dx, dy) {
   for (const node of g.querySelectorAll("rect, text")) {
@@ -279,8 +302,9 @@ document.getElementById("zoom-out").addEventListener("click", () => zoomAt(centr
 document.getElementById("fit").addEventListener("click", () => { Object.assign(view, base); applyView(); });
 
 svg.addEventListener("pointerdown", ev => {
-  const g = ev.target.closest("g.element");
+  const g = ev.target.closest("g.element"), l = ev.target.closest("g.link");
   if (moveToggle.checked && g) drag = { kind: "element", g, last: toSvg(ev) };
+  else if (moveToggle.checked && l) drag = { kind: "link", g: l };
   else drag = { kind: "pan", last: [ev.clientX, ev.clientY] };
   dragged = false;
   ev.preventDefault();
@@ -290,7 +314,10 @@ svg.addEventListener("pointermove", ev => {
   // capture only once the pointer moves: a captured pointer's click goes to the svg itself,
   // so a plain click on an element or a link would no longer find them
   if (!svg.hasPointerCapture(ev.pointerId)) svg.setPointerCapture(ev.pointerId);
-  if (drag.kind === "element") {
+  if (drag.kind === "link") {
+    dragged = true;
+    bendLink(drag.g, toSvg(ev));
+  } else if (drag.kind === "element") {
     const p = toSvg(ev);
     const dx = p[0] - drag.last[0], dy = p[1] - drag.last[1];
     if (dx === 0 && dy === 0) return;
@@ -315,6 +342,7 @@ download.addEventListener("click", () => {
     const b = boxOf(g);
     layout[g.dataset.id] = { x: Math.round((b[0] + b[2]) / 2), y: Math.round((b[1] + b[3]) / 2) };
   }
+  layout.curvature = Object.fromEntries(links.map(g => [`${g.dataset.from}->${g.dataset.to}`, +g.dataset.curvature]));
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([JSON.stringify(layout, null, 2) + "\n"], { type: "application/json" }));
   a.download = "layout.json";

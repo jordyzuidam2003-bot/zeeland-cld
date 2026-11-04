@@ -35,6 +35,7 @@ main { position: relative; }
 .map svg { display: block; width: 100%; height: 88vh; cursor: grab; touch-action: none; }
 .map g.element, .map g.link { cursor: pointer; }
 .map.moving g.element { cursor: move; }
+.map.moving g.link { cursor: crosshair; }
 .zoom { display: inline-flex; gap: 4px; }
 .map g.element.faded, .map g.link.faded, .map g.loop.faded { opacity: var(--fade); }
 .panel {

@@ -34,14 +34,16 @@ builds and pushes, so nobody else needs git or Python.
 3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
    a commit whose `docs/` is out of date.
 
-Layout tuning: on the page, turn on "Move elements", drag elements, then "Download layout"
-saves `layout.json` with every element's position. `python3 build.py --layout ~/Downloads/layout.json`
-writes those positions into `cld.json` and rebuilds; it fails on an id that is not in
-`cld.json`. Curvature is edited in `cld.json` only. Dragging redraws the links but not the
+Layout tuning: on the page, turn on "Move elements and links": drag an element to move it, drag
+a link to bend it (its middle follows the pointer), then "Download layout" saves `layout.json`
+with every element's position and every link's curvature.
+`python3 build.py --layout ~/Downloads/layout.json` writes both into `cld.json` and rebuilds; it
+fails on an id or a link that is not in `cld.json`. Dragging redraws the links but not the
 regions, which `build.py` draws again from the new positions. Each link has its own bow, chosen
 so a reader can follow every connection: every arrowhead and sign clear, as few crossings as
-possible, and no link through an element it does not connect, which would read as if that
-element mediates it.
+possible, no link through an element it does not connect, which would read as if that element
+mediates it, and no named loop whose links cross each other, a figure eight that cannot be
+followed round; `build.py` warns on the last.
 
 A picture for the report: `docs/cld.svg` is the drawing on its own. Google Docs takes no SVG; a
 PNG, with Chrome (not part of the build, since Chrome is not on every machine):

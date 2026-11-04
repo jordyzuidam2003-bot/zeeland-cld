@@ -2,32 +2,12 @@
   bottom-left {
     showcase {
       as: buttons;
-      mode: loose;
+      /* strict shows only what an option selects: normal adds the links among its elements and
+         loose their neighbours, which are not the loop */
+      mode: strict;
 
-      option {
-        label: "Social";
-        selector: ["sets domain"="social"], #background;
-      }
-
-      option {
-        label: "Ecological";
-        selector: ["sets domain"="ecological"], #background;
-      }
-
-      option {
-        label: "Technological";
-        selector: ["sets domain"="technological"], #background;
-      }
-
-      option {
-        label: "Cross-SETS links";
-        selector: ["sets scope"="cross-domain"], #background;
-      }
-
-      option {
-        label: "Unsourced";
-        selector: ["sourced"="no"], #background;
-      }
+      /* build.py replaces the next line with an option per named loop */
+      /* LOOP OPTIONS */
     }
 
     text {

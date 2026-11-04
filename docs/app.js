@@ -16,37 +16,15 @@ const byKey = Object.fromEntries(data.connections.map(c => [linkKey(c), c]));
 document.getElementById("version").textContent = data.version;
 
 // --- highlight buttons ----------------------------------------------------------------------
-// A rule names the elements and the links that match; pressed rules are united, none means all.
-const linksAmong = ids => data.connections.filter(c => ids.has(c.from) && ids.has(c.to)).map(linkKey);
-const endsOf = keys => new Set(keys.flatMap(k => [byKey[k].from, byKey[k].to]));
-const elementRule = test => () => {
-  const ids = new Set(data.elements.filter(test).map(e => e.id));
-  return { elements: ids, links: new Set(linksAmong(ids)) };
-};
-const linkRule = test => () => {
-  const keys = data.connections.filter(test).map(linkKey);
-  return { elements: endsOf(keys), links: new Set(keys) };
-};
-const rules = [
-  ["Social", elementRule(e => e["sets domain"] === "Social")],
-  ["Ecological", elementRule(e => e["sets domain"] === "Ecological")],
-  ["Technological", elementRule(e => e["sets domain"] === "Technological")],
-  ["Cross-SETS links", linkRule(c => c["sets scope"] === "Cross-domain")],
-  ["Adaptive practices", elementRule(e => e["adaptive practice"] === "yes")],
-  ["Unsourced", () => ({
-    elements: new Set(data.elements.filter(e => e.sourced === "no").map(e => e.id)),
-    links: new Set(data.connections.filter(c => c.sourced === "no").map(linkKey)),
-  })],
-  ["Delays", linkRule(c => c.delay === "yes")],
-  // a loop's button reads "R1 Its name"; its key is the id, which the drawing's mark carries too
-  ...data.loops.map(loop => [`${loop.id} ${loop.name}`, () => {
-    const path = loop.path;
-    const keys = path.map((id, i) => `${id}--${path[(i + 1) % path.length]}`);
-    return { elements: new Set(path), links: new Set(keys) };
-  }, loop.id]),
-];
+// A button per named loop names its elements and links; pressed loops are united, none means all.
+// A loop's button reads "R1 Its name"; its key is the id, which the drawing's mark carries too.
+const rules = data.loops.map(loop => [`${loop.id} ${loop.name}`, () => {
+  const path = loop.path;
+  const keys = path.map((id, i) => `${id}--${path[(i + 1) % path.length]}`);
+  return { elements: new Set(path), links: new Set(keys) };
+}, loop.id]);
 const nav = document.getElementById("buttons");
-const pressed = new Set();  // the keys of the pressed rules: a rule's key is its label unless it names one
+const pressed = new Set();  // the ids of the pressed loops
 for (const [label, rule, key = label] of rules) {
   const button = document.createElement("button");
   button.textContent = label;

@@ -61,9 +61,8 @@ the ratio matches and the layout can change. For a sharper picture, divide by le
 ### The page
 
 The drawing is larger than a screen: scroll or pinch to zoom at the cursor, drag the
-background to pan, "Fit" shows the whole drawing again. Buttons highlight a part of the diagram: a SETS domain, the links that cross a SETS boundary,
-the adaptive practices, what has no source yet, the links with a delay, and each named loop;
-several pressed show their union. A click on an element or a link opens a panel with its fields
+background to pan, "Fit" shows the whole drawing again. A button per named loop highlights its
+elements and links; several pressed show their union. A click on an element or a link opens a panel with its fields
 and sources; Esc or a click on the background closes it. The footer shows the model version, the
 first seven characters of the SHA-256 of `cld.json`, so teammates can tell which model they are
 looking at.
@@ -130,7 +129,7 @@ update is a new project under the same name, which keeps the URL. Jordy renames 
 a project export; the green `+` → Import route brings in the elements and connections alone.
 Kumu restores the map with the elements at their positions, the view from `view.scss`, the named
 loops (each its links, its "R1 …" label hidden on the map by the view, as the page has no loop
-marks), and the project's name,
+marks, and a showcase button per named loop, as on the page), and the project's name,
 which the export sets to `cbp-cld`.
 
 The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label

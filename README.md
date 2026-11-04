@@ -96,7 +96,7 @@ An element:
   or `Stock` (square corners). `adaptive practice`: true on an auxiliary that is a measure
   farmers take, drawn with a thick stroke. `sets domain`: `Social`, `Ecological` or
   `Technological`; the drawing fills the box with the domain's tint. `subsystem`: `Water and
-  soil` or `Farm economy and land`, the project's two subsystems, drawn as two faint regions
+  soil` or `Agricultural economy`, the project's two subsystems, drawn as two faint regions
   behind the boxes split by one smooth border (water and soil left), each named in its top
   corner; the group proposes the split and the names from the CLD, and the Project Plan
   follows it.

@@ -292,11 +292,11 @@ def loop_svg(loop, bxs):
 # faint so the SETS tints stay the boxes' colour; they differ by OKLab dE 7.3 (normal vision) and
 # 6.7 (protan), under the dataviz validator's floor for marks told apart by colour alone, which is
 # why each region carries its name; both link colours keep 3:1 on both fills.
-REGION = {"Water and soil": "#D6E6F5", "Farm economy and land": "#F7E3C4"}
+REGION = {"Water and soil": "#D6E6F5", "Agricultural economy": "#F7E3C4"}
 # Each name in spaced bold capitals at its region's top outer corner, a darker shade of its fill
 # (Jordy, chosen between rendered versions: inside the region, standing out a little; contrast on
 # its fill 6.3:1 and 5.8:1)
-REGION_NAME_COLOUR = {"Water and soil": "#2C5378", "Farm economy and land": "#74501F"}
+REGION_NAME_COLOUR = {"Water and soil": "#2C5378", "Agricultural economy": "#74501F"}
 REGION_NAME_SIZE = 56
 REGION_NAME_SPACING = 8   # letter spacing
 REGION_NAME_INSET = 120   # from the frame's side to the name's outer end

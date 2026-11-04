@@ -129,7 +129,8 @@ update is a new project under the same name, which keeps the URL. Jordy renames 
 "restore backup" (the link at the bottom) → `docs/project.json`. Only a brand-new project restores
 a project export; the green `+` → Import route brings in the elements and connections alone.
 Kumu restores the map with the elements at their positions, the view from `view.scss`, the named
-loops (each its links, labelled "R1 …" at the centre of its elements), and the project's name,
+loops (each its links, its "R1 …" label hidden on the map by the view, as the page has no loop
+marks), and the project's name,
 which the export sets to `cbp-cld`.
 
 The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label

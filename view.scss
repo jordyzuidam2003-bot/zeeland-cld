@@ -110,3 +110,10 @@ connection {
   color: #B2182B;
   font-color: #B2182B;
 }
+
+/* ---------- Loops: Kumu's named loops, no label on the map ---------- */
+/* the full drawing has no loop marks (the router's layout decision); Kumu's property reference
+   gives loops `label`, not `label-visibility` */
+loop {
+  label: none;
+}

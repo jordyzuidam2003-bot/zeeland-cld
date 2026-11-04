@@ -454,12 +454,15 @@ def regions(cld, bxs):
 
 def regions_svg(cld):
     """(svg, frame): the regions alone, their viewBox the frame in the elements' coordinates, for
-    Kumu's background image (build.py writes it as docs/regions.svg)."""
+    Kumu's background image (build.py writes it as docs/regions.svg). Its width and height are the
+    frame's, one pixel per unit: with a viewBox alone a browser gives the image 250 by 150 pixels,
+    and Kumu stretched that to the frame, blurring the region names and the border."""
     bxs = boxes(cld)
     region_svg, frame, _ = regions(cld, bxs)
     x0, y0, x1, y1 = frame
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{x0:.0f} {y0:.0f} {x1 - x0:.0f} {y1 - y0:.0f}" '
-            f'font-family="{FONT}">\n{region_svg}\n</svg>\n'), frame
+    w, h = x1 - x0, y1 - y0
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{x0:.0f} {y0:.0f} {w:.0f} {h:.0f}" '
+            f'width="{w:.0f}" height="{h:.0f}" font-family="{FONT}">\n{region_svg}\n</svg>\n'), frame
 
 
 # --- legend ---------------------------------------------------------------------------------

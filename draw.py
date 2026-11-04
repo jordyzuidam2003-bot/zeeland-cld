@@ -524,8 +524,8 @@ def svg(cld):
 
 # --- overlap warnings -----------------------------------------------------------------------
 def overlaps(cld):
-    """Pairs of element boxes that intersect, a link and its reverse drawn on one curve, and an
-    element on the wrong side of the regions' border."""
+    """Pairs of element boxes that intersect, a link and its reverse drawn on one curve, an
+    element on the wrong side of the regions' border, and a named loop whose own links cross."""
     bxs = boxes(cld)
     ids = [e["id"] for e in cld["elements"]]
     out = []
@@ -553,4 +553,17 @@ def overlaps(cld):
             m, n = bezier(*p, 0.5), bezier(*q, 0.5)
             if hypot(m[0] - n[0], m[1] - n[1]) < SIGN_SIZE:
                 out.append(f"links on one curve: {a} -> {b} and back (give both curvatures one sign)")
+    # a named loop whose own links cross reads as a figure eight, which cannot be followed round;
+    # each link sampled at 30 points, every pair of the loop's links tested segment by segment
+    pts = {k: [bezier(*p, i / 30) for i in range(31)] for k, p in paths.items()}
+    turn = lambda a, b, c: (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])
+    meet = lambda p, q, r, s: turn(p, q, r) * turn(p, q, s) < 0 and turn(r, s, p) * turn(r, s, q) < 0
+    for loop in cld["loops"]:
+        path = loop["path"]
+        steps = [(path[i], path[(i + 1) % len(path)]) for i in range(len(path))]
+        for i, a in enumerate(steps):
+            for b in steps[i + 1:]:
+                p, q = pts[a], pts[b]
+                if any(meet(p[u], p[u + 1], q[v], q[v + 1]) for u in range(30) for v in range(30)):
+                    out.append(f"loop crosses itself: {loop['id']}, {a[0]} -> {a[1]} and {b[0]} -> {b[1]}")
     return out

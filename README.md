@@ -29,7 +29,8 @@ builds and pushes, so nobody else needs git or Python.
    element, a source missing from `references.json`, a named loop that is not closed or whose
    R/B does not match its polarities) and prints the source coverage and any warnings: a model
    text still empty, an element without links, two boxes that overlap, a link and its reverse
-   drawn on one curve, an element on the wrong side of the border between the two subsystems.
+   drawn on one curve, an element on the wrong side of the border between the two subsystems,
+   a named loop whose own links cross.
 3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
    a commit whose `docs/` is out of date.
 

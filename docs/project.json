@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 98ec411, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 6557eb7, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -2047,7 +2047,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 98ec411",
+      "name": "CLD, model 6557eb7",
       "description": "",
       "scale": 1,
       "center": {
@@ -2091,8 +2091,8 @@
         {
           "_id": "node-clay-dispersion-sodification",
           "position": {
-            "x": 1200,
-            "y": 1350
+            "x": 1080,
+            "y": 1220
           },
           "pinned": true,
           "style": {},
@@ -2242,7 +2242,7 @@
           "_id": "node-freshwater-storage-measures",
           "position": {
             "x": 1440,
-            "y": 1620
+            "y": 1640
           },
           "pinned": true,
           "style": {},
@@ -2262,7 +2262,7 @@
           "_id": "node-policy-resistance-legal-delays",
           "position": {
             "x": 2160,
-            "y": 1890
+            "y": 1620
           },
           "pinned": true,
           "style": {},
@@ -2331,8 +2331,8 @@
         {
           "_id": "node-bank-credit-freeze-risk-premiums",
           "position": {
-            "x": 2880,
-            "y": 540
+            "x": 3130,
+            "y": 970
           },
           "pinned": true,
           "style": {},
@@ -2341,8 +2341,8 @@
         {
           "_id": "node-basel-iv-capital-requirements",
           "position": {
-            "x": 3120,
-            "y": 810
+            "x": 3220,
+            "y": 640
           },
           "pinned": true,
           "style": {},
@@ -2371,8 +2371,8 @@
         {
           "_id": "node-farmers-capacity-to-invest",
           "position": {
-            "x": 2400,
-            "y": 540
+            "x": 2990,
+            "y": 770
           },
           "pinned": true,
           "style": {},
@@ -2381,8 +2381,8 @@
         {
           "_id": "node-fear-of-expropriation-planning-blight",
           "position": {
-            "x": 2400,
-            "y": 1620
+            "x": 2530,
+            "y": 1560
           },
           "pinned": true,
           "style": {},
@@ -2391,8 +2391,8 @@
         {
           "_id": "node-mortgage-debt-financial-leverage",
           "position": {
-            "x": 2400,
-            "y": 1080
+            "x": 2380,
+            "y": 1030
           },
           "pinned": true,
           "style": {},
@@ -2472,7 +2472,7 @@
         },
         {
           "_id": "edge-freshwater-lens-recharge--freshwater-lens-thickness",
-          "curvature": 0.0,
+          "curvature": 0.16,
           "style": {},
           "connection": "conn-freshwater-lens-recharge--freshwater-lens-thickness"
         },
@@ -2514,7 +2514,7 @@
         },
         {
           "_id": "edge-root-zone-salinity--crop-yield",
-          "curvature": 0.16,
+          "curvature": 0.04,
           "style": {},
           "connection": "conn-root-zone-salinity--crop-yield"
         },
@@ -2526,7 +2526,7 @@
         },
         {
           "_id": "edge-saline-seepage-kwel--freshwater-lens-thickness",
-          "curvature": 0.0,
+          "curvature": 0.16,
           "style": {},
           "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
         },
@@ -2538,7 +2538,7 @@
         },
         {
           "_id": "edge-soil-structure-usability--freshwater-lens-recharge",
-          "curvature": 0.08,
+          "curvature": 0.25,
           "style": {},
           "connection": "conn-soil-structure-usability--freshwater-lens-recharge"
         },
@@ -2610,7 +2610,7 @@
         },
         {
           "_id": "edge-freshwater-storage-measures--freshwater-lens-recharge",
-          "curvature": 0.12,
+          "curvature": 0.16,
           "style": {},
           "connection": "conn-freshwater-storage-measures--freshwater-lens-recharge"
         },
@@ -2640,7 +2640,7 @@
         },
         {
           "_id": "edge-winter-rain-drained-away--freshwater-lens-recharge",
-          "curvature": 0.0,
+          "curvature": 0.04,
           "style": {},
           "connection": "conn-winter-rain-drained-away--freshwater-lens-recharge"
         },
@@ -2676,7 +2676,7 @@
         },
         {
           "_id": "edge-salt-tolerant-crop-adoption--crop-yield",
-          "curvature": -0.3,
+          "curvature": -0.16,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--crop-yield"
         },
@@ -2688,7 +2688,7 @@
         },
         {
           "_id": "edge-agricultural-land-value--bank-credit-freeze-risk-premiums",
-          "curvature": -0.2,
+          "curvature": -0.16,
           "style": {},
           "connection": "conn-agricultural-land-value--bank-credit-freeze-risk-premiums"
         },
@@ -2712,7 +2712,7 @@
         },
         {
           "_id": "edge-basel-iv-capital-requirements--bank-credit-freeze-risk-premiums",
-          "curvature": -0.04,
+          "curvature": 0,
           "style": {},
           "connection": "conn-basel-iv-capital-requirements--bank-credit-freeze-risk-premiums"
         },
@@ -2742,19 +2742,19 @@
         },
         {
           "_id": "edge-farm-revenue--farmers-capacity-to-invest",
-          "curvature": -0.16,
+          "curvature": 0.16,
           "style": {},
           "connection": "conn-farm-revenue--farmers-capacity-to-invest"
         },
         {
           "_id": "edge-farmers-capacity-to-invest--freshwater-storage-measures",
-          "curvature": 0.04,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--freshwater-storage-measures"
         },
         {
           "_id": "edge-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
-          "curvature": -0.2,
+          "curvature": -0.04,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption"
         },
@@ -2772,19 +2772,19 @@
         },
         {
           "_id": "edge-farm-revenue--farmland-leaving-arable-use",
-          "curvature": 0.04,
+          "curvature": 0.16,
           "style": {},
           "connection": "conn-farm-revenue--farmland-leaving-arable-use"
         },
         {
           "_id": "edge-bank-credit-freeze-risk-premiums--farmland-leaving-arable-use",
-          "curvature": 0,
+          "curvature": 0.04,
           "style": {},
           "connection": "conn-bank-credit-freeze-risk-premiums--farmland-leaving-arable-use"
         },
         {
           "_id": "edge-farmland-leaving-arable-use--demand-for-deep-polder-drainage",
-          "curvature": 0,
+          "curvature": 0.12,
           "style": {},
           "connection": "conn-farmland-leaving-arable-use--demand-for-deep-polder-drainage"
         }
@@ -2795,8 +2795,8 @@
           "loop": "loop-R1",
           "style": {},
           "position": {
-            "x": 1024,
-            "y": 1126
+            "x": 1000,
+            "y": 1100
           }
         },
         {
@@ -2822,8 +2822,8 @@
           "loop": "loop-R3",
           "style": {},
           "position": {
-            "x": 1514,
-            "y": 920
+            "x": 1599,
+            "y": 956
           }
         },
         {
@@ -2831,8 +2831,8 @@
           "loop": "loop-R4",
           "style": {},
           "position": {
-            "x": 2360,
-            "y": 758
+            "x": 2500,
+            "y": 868
           }
         },
         {
@@ -2840,8 +2840,8 @@
           "loop": "loop-R5",
           "style": {},
           "position": {
-            "x": 1830,
-            "y": 1181
+            "x": 1828,
+            "y": 1175
           }
         },
         {
@@ -2849,8 +2849,8 @@
           "loop": "loop-R6",
           "style": {},
           "position": {
-            "x": 1830,
-            "y": 1384
+            "x": 1846,
+            "y": 1342
           }
         },
         {

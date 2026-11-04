@@ -49,8 +49,8 @@
       "subquestion": "SQ1",
       "description": "Structural degradation of marine clay soils as sodium (Na+) replaces calcium (Ca2+) on clay complexes.",
       "sources": [],
-      "x": 1200,
-      "y": 1350
+      "x": 1080,
+      "y": 1220
     },
     {
       "id": "crop-water-demand",
@@ -249,7 +249,7 @@
       "description": "On-farm and sub-surface water retention: Freshmaker, ASR-Coastal, creek-ridge infiltration, and adjustable/smart drainage.",
       "sources": [],
       "x": 1440,
-      "y": 1620
+      "y": 1640
     },
     {
       "id": "groundwater-extraction-for-irrigation",
@@ -275,7 +275,7 @@
       "description": "Opposition to plans for re-wetting land through political and legal channels: objections, appeals at the Council of State (Raad van State) and political pressure, which slow or stop a plan.",
       "sources": [],
       "x": 2160,
-      "y": 1890
+      "y": 1620
     },
     {
       "id": "winter-rain-drained-away",
@@ -365,8 +365,8 @@
       "subquestion": "SQ2",
       "description": "Higher interest rates and tighter lending by agricultural banks when land collateral values drop or climate risks rise.",
       "sources": [],
-      "x": 2880,
-      "y": 540
+      "x": 3130,
+      "y": 970
     },
     {
       "id": "basel-iv-capital-requirements",
@@ -378,8 +378,8 @@
       "subquestion": "SQ2",
       "description": "European banking regulations requiring stricter risk weighting on loans when climate/soil risks reduce collateral value.",
       "sources": [],
-      "x": 3120,
-      "y": 810
+      "x": 3220,
+      "y": 640
     },
     {
       "id": "dependence-on-high-margin-salt-sensitive-crops",
@@ -417,8 +417,8 @@
       "subquestion": "SQ2",
       "description": "Free cash flow and access to credit needed by farmers to pre-finance climate-adaptive practices.",
       "sources": [],
-      "x": 2400,
-      "y": 540
+      "x": 2990,
+      "y": 770
     },
     {
       "id": "fear-of-expropriation-planning-blight",
@@ -430,8 +430,8 @@
       "subquestion": "SQ2",
       "description": "Farmers' concern that plans for re-wetting or depoldering lower their land's value without compensation (planschade), or take away their land or their say over it.",
       "sources": [],
-      "x": 2400,
-      "y": 1620
+      "x": 2530,
+      "y": 1560
     },
     {
       "id": "mortgage-debt-financial-leverage",
@@ -445,8 +445,8 @@
       "sources": [
         "van-der-meulen-2020"
       ],
-      "x": 2400,
-      "y": 1080
+      "x": 2380,
+      "y": 1030
     },
     {
       "id": "farmland-leaving-arable-use",
@@ -563,7 +563,7 @@
         "de-louw-2011",
         "pauw-2015"
       ],
-      "curvature": 0.0
+      "curvature": 0.16
     },
     {
       "from": "freshwater-lens-thickness",
@@ -630,7 +630,7 @@
       "delay": false,
       "description": "Osmotic stress and chloride toxicity reduce yields of salt-sensitive cash crops.",
       "sources": [],
-      "curvature": 0.16
+      "curvature": 0.04
     },
     {
       "from": "root-zone-salinity",
@@ -648,7 +648,7 @@
       "delay": false,
       "description": "Upward saline groundwater erodes and thins the floating freshwater lens from below.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0.16
     },
     {
       "from": "saline-seepage-kwel",
@@ -666,7 +666,7 @@
       "delay": false,
       "description": "Healthy porous soil allows winter rainwater to infiltrate rather than run off.",
       "sources": [],
-      "curvature": 0.08
+      "curvature": 0.25
     },
     {
       "from": "soil-structure-usability",
@@ -774,7 +774,7 @@
       "delay": false,
       "description": "Active infiltration and drainage retention directly build up the freshwater lens.",
       "sources": [],
-      "curvature": 0.12
+      "curvature": 0.16
     },
     {
       "from": "freshwater-storage-measures",
@@ -819,7 +819,7 @@
       "delay": false,
       "description": "Water evacuated via drains cannot infiltrate to refill the freshwater lens.",
       "sources": [],
-      "curvature": 0.0
+      "curvature": 0.04
     },
     {
       "from": "crop-yield",
@@ -873,7 +873,7 @@
       "delay": false,
       "description": "Tolerant crops stabilize farm yields and revenue under saline conditions.",
       "sources": [],
-      "curvature": -0.3
+      "curvature": -0.16
     },
     {
       "from": "salt-tolerant-crop-adoption",
@@ -891,7 +891,7 @@
       "delay": false,
       "description": "Declining land collateral values trigger higher bank risk premiums and credit freezes.",
       "sources": [],
-      "curvature": -0.2
+      "curvature": -0.16
     },
     {
       "from": "agricultural-land-value",
@@ -929,7 +929,7 @@
       "delay": false,
       "description": "Stricter European banking rules mandate higher capital buffers for climate-exposed loans.",
       "sources": [],
-      "curvature": -0.04
+      "curvature": 0
     },
     {
       "from": "dependence-on-high-margin-salt-sensitive-crops",
@@ -974,7 +974,7 @@
       "delay": false,
       "description": "Higher farm income generates internal cash flow for adaptive investments.",
       "sources": [],
-      "curvature": -0.16
+      "curvature": 0.16
     },
     {
       "from": "farmers-capacity-to-invest",
@@ -983,7 +983,7 @@
       "delay": false,
       "description": "Financial room allows investment in ASR, Freshmaker, and adjustable drainage.",
       "sources": [],
-      "curvature": 0.04
+      "curvature": 0.08
     },
     {
       "from": "farmers-capacity-to-invest",
@@ -992,7 +992,7 @@
       "delay": false,
       "description": "Investment capacity enables transition costs and new machinery for novel crops.",
       "sources": [],
-      "curvature": -0.2
+      "curvature": -0.04
     },
     {
       "from": "fear-of-expropriation-planning-blight",
@@ -1019,7 +1019,7 @@
       "delay": false,
       "description": "When arable farming on the land no longer pays, fewer farmers take it over, as successor or as buyer, so more of it leaves arable farming.",
       "sources": [],
-      "curvature": 0.04
+      "curvature": 0.16
     },
     {
       "from": "bank-credit-freeze-risk-premiums",
@@ -1028,7 +1028,7 @@
       "delay": false,
       "description": "When credit tightens, farms that cannot refinance stop, and fewer arable farmers can borrow to buy their land, so more of it leaves arable farming.",
       "sources": [],
-      "curvature": 0
+      "curvature": 0.04
     },
     {
       "from": "farmland-leaving-arable-use",
@@ -1037,7 +1037,7 @@
       "delay": false,
       "description": "The fewer hectares of arable land in a polder, the less pressure on the water board to keep its ditch levels low in spring.",
       "sources": [],
-      "curvature": 0
+      "curvature": 0.12
     }
   ],
   "loops": [

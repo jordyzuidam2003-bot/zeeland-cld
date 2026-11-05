@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld-v2",
-  "description": "Model version 2e48ed8, the first seven characters of the SHA-256 of cld-v2.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 6265197, the first seven characters of the SHA-256 of cld-v2.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -311,20 +311,6 @@
       }
     },
     {
-      "_id": "elem-clay-dispersion-sodification",
-      "attributes": {
-        "label": "Sodium on the clay",
-        "element type": "Stock",
-        "adaptive practice": "no",
-        "sets domain": "Ecological",
-        "subsystem": "Water and soil",
-        "subquestion": "SQ1",
-        "description": "The share of the clay's exchange sites that sodium (Na+) holds in place of calcium (Ca2+). It rises while salt water wets the soil and falls only as calcium replaces it, over years; the clay disperses, losing its structure, once fresh water has washed the salt out while the sodium is still there.",
-        "sources": "",
-        "sourced": "no"
-      }
-    },
-    {
       "_id": "elem-crop-water-demand",
       "attributes": {
         "label": "Crop water demand",
@@ -531,7 +517,7 @@
         "sets domain": "Technological",
         "subsystem": "Water and soil",
         "subquestion": "SQ2",
-        "description": "On-farm and sub-surface water retention: Freshmaker, ASR-Coastal, creek-ridge infiltration, and adjustable/smart drainage. Whether a farm decides a measure alone or with the water board is a question for a source.",
+        "description": "On-farm and sub-surface water retention: Freshmaker, ASR-Coastal, creek-ridge infiltration, and adjustable/smart drainage. Whether a farm decides a measure alone or with the water board is a question for a source. Whether a farm wants to store weighs storing against its other ways through a dry summer (pumping, brackish water, other crops), where capacity to invest is whether it can. Stored water pays back over years, which suits a farm that owns its land more than one on a short lease; and where stored water spreads under the neighbours, one farm pays and others gain. Whether either holds a farm back is a question for the group model building session.",
         "actor": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
@@ -617,7 +603,7 @@
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Plants and supply chains on or near the island that store, process or sell new salt-tolerant crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer.",
+        "description": "Plants and supply chains on or near the island that store, process or sell new salt-tolerant crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer. Buyers and processors build or keep it where they find it worthwhile against processing the crops elsewhere.",
         "actor": "Buyers and processors of the island's crops",
         "sources": "",
         "sourced": "no"
@@ -632,7 +618,7 @@
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Hectares under crops new to the island's rotations that tolerate salt (quinoa, samphire, sea aster, field beans), which need other machines, knowledge and buyers than the current crops.",
+        "description": "Hectares under crops new to the island's rotations that tolerate salt (quinoa, samphire, sea aster, field beans), which need other machines, knowledge and buyers than the current crops. Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them.",
         "actor": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
@@ -811,20 +797,6 @@
       }
     },
     {
-      "_id": "elem-water-available-for-supply-in-drought",
-      "attributes": {
-        "label": "Fresh water available  for supply in drought",
-        "element type": "Auxiliary",
-        "adaptive practice": "no",
-        "sets domain": "Ecological",
-        "subsystem": "Water and soil",
-        "subquestion": "SQ1",
-        "description": "River water that could reach a supply route to the island in a dry summer: what summer river discharge and the national distribution in drought (the verdringingsreeks, IenW and Rijkswaterstaat) leave for the region. Outside the CLD's scale.",
-        "sources": "",
-        "sourced": "no"
-      }
-    },
-    {
       "_id": "elem-spring-workability-of-the-fields",
       "attributes": {
         "label": "Spring workability of  the fields",
@@ -861,7 +833,7 @@
         "sets domain": "Social",
         "subsystem": "Water and soil",
         "subquestion": "SQ2",
-        "description": "Draft or adopted water level plans in which Waterschap Scheldestromen raises a polder's ditch levels, weighing farmers' demand against seepage, subsidence and its pumping costs.",
+        "description": "Draft or adopted water level plans in which Waterschap Scheldestromen raises a polder's ditch levels, weighing farmers' demand against seepage, subsidence and its pumping costs. Farmers weigh in on these decisions through the seats on its general board reserved for agricultural landowners (the session's understanding, unsourced: on the facts list under Demand for deep polder drainage).",
         "actor": "Waterschap Scheldestromen",
         "sources": "",
         "sourced": "no"
@@ -897,20 +869,6 @@
       }
     },
     {
-      "_id": "elem-agricultural-seats-on-the-water-board",
-      "attributes": {
-        "label": "Agricultural seats on  the water board",
-        "element type": "Constant",
-        "adaptive practice": "no",
-        "sets domain": "Social",
-        "subsystem": "Water and soil",
-        "subquestion": "SQ2",
-        "description": "Seats on Waterschap Scheldestromen's general board reserved for agricultural landowners, through which farmers take part in its decisions (the session's understanding, unsourced: on the facts list under Demand for deep polder drainage).",
-        "sources": "",
-        "sourced": "no"
-      }
-    },
-    {
       "_id": "elem-harvest-lost-to-salt",
       "attributes": {
         "label": "Harvest lost to salt",
@@ -939,20 +897,6 @@
       }
     },
     {
-      "_id": "elem-attractiveness-of-storing-water",
-      "attributes": {
-        "label": "Relative  attractiveness of  storing water",
-        "element type": "Auxiliary",
-        "adaptive practice": "no",
-        "sets domain": "Social",
-        "subsystem": "Water and soil",
-        "subquestion": "SQ2",
-        "description": "How worthwhile farmers find storing fresh water for the summer against their other ways through a dry summer (pumping, brackish water, other crops): whether a farm wants to, where capacity to invest is whether it can. Where stored water spreads under the neighbours, one farm pays and others gain: whether that holds a farm back is a question for the group model building session.",
-        "sources": "",
-        "sourced": "no"
-      }
-    },
-    {
       "_id": "elem-farms-with-a-successor",
       "attributes": {
         "label": "Farms with a successor",
@@ -967,20 +911,6 @@
       }
     },
     {
-      "_id": "elem-owner-farmed-arable-land",
-      "attributes": {
-        "label": "Arable land farmed by  its owner",
-        "element type": "Constant",
-        "adaptive practice": "no",
-        "sets domain": "Social",
-        "subsystem": "Agricultural economy",
-        "subquestion": "SQ3",
-        "description": "The share of the island's arable land farmed by the farmer who owns it rather than leased. Whether the land market moves it by 2050 is a question for a source.",
-        "sources": "",
-        "sourced": "no"
-      }
-    },
-    {
       "_id": "elem-harvest-of-new-crops-to-process",
       "attributes": {
         "label": "Harvest of new crops  to process",
@@ -990,20 +920,6 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "The volume of new salt-tolerant crops within reach of a processing plant on or near the island, from the island's growers and from growers elsewhere.",
-        "sources": "",
-        "sourced": "no"
-      }
-    },
-    {
-      "_id": "elem-attractiveness-of-local-processing",
-      "attributes": {
-        "label": "Attractiveness of  processing new crops  locally",
-        "element type": "Auxiliary",
-        "adaptive practice": "no",
-        "sets domain": "Social",
-        "subsystem": "Agricultural economy",
-        "subquestion": "SQ2",
-        "description": "How worthwhile buyers and processors find building or keeping capacity for new crops on or near the island, against processing them elsewhere.",
         "sources": "",
         "sourced": "no"
       }
@@ -1059,36 +975,8 @@
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Hectares under salt-tolerant varieties of the current crops (potato, onion), which use the same machines, storage and know-how.",
+        "description": "Hectares under salt-tolerant varieties of the current crops (potato, onion), which use the same machines, storage and know-how. Farmers grow one where they find it worthwhile against the variety they grow now.",
         "actor": "Arable farmers on Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
-      }
-    },
-    {
-      "_id": "elem-attractiveness-of-tolerant-varieties",
-      "attributes": {
-        "label": "Relative  attractiveness of  salt-tolerant  varieties",
-        "element type": "Auxiliary",
-        "adaptive practice": "no",
-        "sets domain": "Social",
-        "subsystem": "Agricultural economy",
-        "subquestion": "SQ2",
-        "description": "How worthwhile farmers find a salt-tolerant variety against the variety they grow now: whether they want to switch.",
-        "sources": "",
-        "sourced": "no"
-      }
-    },
-    {
-      "_id": "elem-attractiveness-of-new-crops",
-      "attributes": {
-        "label": "Relative  attractiveness of new  salt-tolerant crops",
-        "element type": "Auxiliary",
-        "adaptive practice": "no",
-        "sets domain": "Social",
-        "subsystem": "Agricultural economy",
-        "subquestion": "SQ2",
-        "description": "How worthwhile farmers find a new salt-tolerant crop against their current crops: whether they want to switch, where capacity to invest is whether they can and dependence on the current crops what holds them.",
         "sources": "",
         "sourced": "no"
       }
@@ -1117,20 +1005,6 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "The planters, harvesters and stores farms own for their current crops, built up over years and renewed when worn.",
-        "sources": "",
-        "sourced": "no"
-      }
-    },
-    {
-      "_id": "elem-know-how-of-current-crops",
-      "attributes": {
-        "label": "Know-how of the  current crops",
-        "element type": "Stock",
-        "adaptive practice": "no",
-        "sets domain": "Social",
-        "subsystem": "Agricultural economy",
-        "subquestion": "SQ2",
-        "description": "What farmers know about growing, storing and selling their current crops, built up over years of growing them.",
         "sources": "",
         "sourced": "no"
       }
@@ -1245,20 +1119,6 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "How far the island's farmers expect public bodies to keep their commitments on water and land (compensation, their say over their land).",
-        "sources": "",
-        "sourced": "no"
-      }
-    },
-    {
-      "_id": "elem-plans-changed-or-dropped",
-      "attributes": {
-        "label": "Plans changed or  dropped",
-        "element type": "Auxiliary",
-        "adaptive practice": "no",
-        "sets domain": "Social",
-        "subsystem": "Agricultural economy",
-        "subquestion": "SQ2",
-        "description": "Plans for the island's water and land that public bodies change, delay or drop after announcing them.",
         "sources": "",
         "sourced": "no"
       }
@@ -1454,26 +1314,6 @@
       "to": "elem-winter-rain-drained-away"
     },
     {
-      "_id": "conn-clay-dispersion-sodification--soil-structure-usability",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "−",
-        "polarity": "negative",
-        "delay": "no",
-        "description": "Once fresh water washes the salt out, clay that holds much sodium disperses: its aggregates and pores collapse.",
-        "sets link": "Within E",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "-"
-      },
-      "from": "elem-clay-dispersion-sodification",
-      "to": "elem-soil-structure-usability"
-    },
-    {
       "_id": "conn-estuary-salt-intrusion--brackish-irrigation-water-use",
       "direction": "directed",
       "delayed": false,
@@ -1614,24 +1454,24 @@
       "to": "elem-saline-seepage-kwel"
     },
     {
-      "_id": "conn-root-zone-salinity--clay-dispersion-sodification",
+      "_id": "conn-root-zone-salinity--soil-structure-usability",
       "direction": "directed",
       "delayed": true,
       "reversed": false,
       "attributes": {
-        "label": "+",
-        "polarity": "positive",
+        "label": "−",
+        "polarity": "negative",
         "delay": "yes",
-        "description": "Salt in the root zone puts sodium (Na+) on the clay in place of calcium (Ca2+). The delay is on the way back: structure collapses within the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year, which takes 5 to 10 years on heavy clay and about a year on light soil (van Beekom et al., 1953, after the 1945 and 1953 floods in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster.",
+        "description": "Salt in the root zone puts sodium (Na+) on the clay in place of calcium (Ca2+); once fresh water washes the salt out, clay that holds much sodium disperses: its aggregates and pores collapse. The delay is on the way back: structure collapses within the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year, which takes 5 to 10 years on heavy clay and about a year on light soil (van Beekom et al., 1953, after the 1945 and 1953 floods in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster.",
         "sets link": "Within E",
         "sets scope": "Within domain",
         "hypothesis": "no",
         "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 224–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860",
         "sourced": "yes",
-        "connection type": "+"
+        "connection type": "-"
       },
       "from": "elem-root-zone-salinity",
-      "to": "elem-clay-dispersion-sodification"
+      "to": "elem-soil-structure-usability"
     },
     {
       "_id": "conn-saline-seepage-kwel--freshwater-lens-thickness",
@@ -2394,27 +2234,7 @@
       "to": "elem-external-freshwater-supply"
     },
     {
-      "_id": "conn-water-available-for-supply-in-drought--external-freshwater-supply",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "A route can only carry the water the river and the distribution in drought leave for it.",
-        "sets link": "E to T",
-        "sets scope": "Cross-domain",
-        "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "+"
-      },
-      "from": "elem-water-available-for-supply-in-drought",
-      "to": "elem-external-freshwater-supply"
-    },
-    {
-      "_id": "conn-hotter-drier-summers--water-available-for-supply-in-drought",
+      "_id": "conn-hotter-drier-summers--external-freshwater-supply",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -2422,16 +2242,16 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Dry summers lower river discharge, so less river water is left to supply.",
-        "sets link": "Within E",
-        "sets scope": "Within domain",
+        "description": "Dry summers lower river discharge, so less river water is left to supply: a route can only carry what summer discharge and the national distribution in drought (the verdringingsreeks, IenW and Rijkswaterstaat) leave for the region, outside the CLD's scale.",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
         "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
       },
       "from": "elem-hotter-drier-summers",
-      "to": "elem-water-available-for-supply-in-drought"
+      "to": "elem-external-freshwater-supply"
     },
     {
       "_id": "conn-crop-water-shortfall--freshwater-supply-route",
@@ -2691,26 +2511,6 @@
         "connection type": "+"
       },
       "from": "elem-water-board-pumping-costs",
-      "to": "elem-plans-to-raise-ditch-levels"
-    },
-    {
-      "_id": "conn-agricultural-seats-on-the-water-board--plans-to-raise-ditch-levels",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "−",
-        "polarity": "negative",
-        "delay": "no",
-        "description": "Through their seats on its board, farmers weigh in on the water board's level decisions.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "-"
-      },
-      "from": "elem-agricultural-seats-on-the-water-board",
       "to": "elem-plans-to-raise-ditch-levels"
     },
     {
@@ -3014,7 +2814,7 @@
       "to": "elem-farm-revenue"
     },
     {
-      "_id": "conn-crop-yield--attractiveness-of-storing-water",
+      "_id": "conn-crop-yield--freshwater-storage-measures",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -3022,8 +2822,8 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "As harvests get worse, farmers find storing water more worthwhile.",
-        "sets link": "E to S",
+        "description": "As harvests get worse, farmers find storing water more worthwhile, and those who can pay for it store more.",
+        "sets link": "E to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
         "sources": "",
@@ -3031,10 +2831,10 @@
         "connection type": "-"
       },
       "from": "elem-crop-yield",
-      "to": "elem-attractiveness-of-storing-water"
+      "to": "elem-freshwater-storage-measures"
     },
     {
-      "_id": "conn-farms-with-a-successor--attractiveness-of-storing-water",
+      "_id": "conn-farms-with-a-successor--freshwater-storage-measures",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -3043,46 +2843,6 @@
         "polarity": "positive",
         "delay": "no",
         "description": "Water stored now pays back over years, which suits a farm with a successor.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "+"
-      },
-      "from": "elem-farms-with-a-successor",
-      "to": "elem-attractiveness-of-storing-water"
-    },
-    {
-      "_id": "conn-owner-farmed-arable-land--attractiveness-of-storing-water",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "Water stored now pays back over years, which suits a farm that owns its land more than one on a short lease.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "+"
-      },
-      "from": "elem-owner-farmed-arable-land",
-      "to": "elem-attractiveness-of-storing-water"
-    },
-    {
-      "_id": "conn-attractiveness-of-storing-water--freshwater-storage-measures",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "Farmers who find storing worthwhile, and can pay for it, store more.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
@@ -3090,7 +2850,7 @@
         "sourced": "no",
         "connection type": "+"
       },
-      "from": "elem-attractiveness-of-storing-water",
+      "from": "elem-farms-with-a-successor",
       "to": "elem-freshwater-storage-measures"
     },
     {
@@ -3114,7 +2874,7 @@
       "to": "elem-farmers-capacity-to-invest"
     },
     {
-      "_id": "conn-root-zone-salinity--attractiveness-of-tolerant-varieties",
+      "_id": "conn-root-zone-salinity--tolerant-varieties-adoption",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -3122,8 +2882,8 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "The saltier the field, the more a tolerant variety is worth against the current one.",
-        "sets link": "E to S",
+        "description": "The saltier the field, the more a tolerant variety is worth against the current one, so the more farmers grow it, perhaps only past a threshold.",
+        "sets link": "E to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
         "sources": "",
@@ -3131,10 +2891,10 @@
         "connection type": "+"
       },
       "from": "elem-root-zone-salinity",
-      "to": "elem-attractiveness-of-tolerant-varieties"
+      "to": "elem-tolerant-varieties-adoption"
     },
     {
-      "_id": "conn-root-zone-salinity--attractiveness-of-new-crops",
+      "_id": "conn-tolerant-varieties-on-offer--tolerant-varieties-adoption",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -3142,59 +2902,19 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "The saltier the field, the more a new salt-tolerant crop is worth against the current crops.",
-        "sets link": "E to S",
-        "sets scope": "Cross-domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "+"
-      },
-      "from": "elem-root-zone-salinity",
-      "to": "elem-attractiveness-of-new-crops"
-    },
-    {
-      "_id": "conn-tolerant-varieties-on-offer--attractiveness-of-tolerant-varieties",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "Better tolerant varieties on the market make switching more worthwhile.",
-        "sets link": "T to S",
-        "sets scope": "Cross-domain",
+        "description": "Better tolerant varieties on the market make switching more worthwhile, so more farmers grow them.",
+        "sets link": "Within T",
+        "sets scope": "Within domain",
         "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
       },
       "from": "elem-tolerant-varieties-on-offer",
-      "to": "elem-attractiveness-of-tolerant-varieties"
-    },
-    {
-      "_id": "conn-attractiveness-of-tolerant-varieties--tolerant-varieties-adoption",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "Farmers who find a tolerant variety worthwhile grow it, perhaps only past a threshold.",
-        "sets link": "S to T",
-        "sets scope": "Cross-domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "+"
-      },
-      "from": "elem-attractiveness-of-tolerant-varieties",
       "to": "elem-tolerant-varieties-adoption"
     },
     {
-      "_id": "conn-attractiveness-of-new-crops--salt-tolerant-crop-adoption",
+      "_id": "conn-root-zone-salinity--salt-tolerant-crop-adoption",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -3202,19 +2922,19 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Farmers who find a new crop worthwhile, and can pay for the switch, grow it, perhaps only past a threshold.",
-        "sets link": "S to T",
+        "description": "The saltier the field, the more a new salt-tolerant crop is worth against the current crops, so the more farmers grow it, perhaps only past a threshold.",
+        "sets link": "E to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
       },
-      "from": "elem-attractiveness-of-new-crops",
+      "from": "elem-root-zone-salinity",
       "to": "elem-salt-tolerant-crop-adoption"
     },
     {
-      "_id": "conn-market-demand-for-alternative-crops--attractiveness-of-new-crops",
+      "_id": "conn-market-demand-for-alternative-crops--salt-tolerant-crop-adoption",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -3222,19 +2942,19 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Assured offtake lowers the risk of a new crop.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
+        "description": "Assured offtake lowers the risk of a new crop, so more farmers grow it.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
         "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
       },
       "from": "elem-market-demand-for-alternative-crops",
-      "to": "elem-attractiveness-of-new-crops"
+      "to": "elem-salt-tolerant-crop-adoption"
     },
     {
-      "_id": "conn-net-price-for-new-crops--attractiveness-of-new-crops",
+      "_id": "conn-net-price-for-new-crops--salt-tolerant-crop-adoption",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -3242,19 +2962,19 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "A better price after transport makes a new crop more worthwhile.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
+        "description": "A better price after transport makes a new crop more worthwhile, so more farmers grow it.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
         "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
       },
       "from": "elem-net-price-for-new-crops",
-      "to": "elem-attractiveness-of-new-crops"
+      "to": "elem-salt-tolerant-crop-adoption"
     },
     {
-      "_id": "conn-knowledge-of-new-crops--attractiveness-of-new-crops",
+      "_id": "conn-knowledge-of-new-crops--salt-tolerant-crop-adoption",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -3262,16 +2982,16 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Farmers who know how to grow and sell a new crop find it less risky.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
+        "description": "Farmers who know how to grow and sell a new crop find it less risky, so more of them grow it.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
         "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
       },
       "from": "elem-knowledge-of-new-crops",
-      "to": "elem-attractiveness-of-new-crops"
+      "to": "elem-salt-tolerant-crop-adoption"
     },
     {
       "_id": "conn-salt-tolerant-crop-adoption--knowledge-of-new-crops",
@@ -3354,7 +3074,7 @@
       "to": "elem-harvest-of-new-crops-to-process"
     },
     {
-      "_id": "conn-harvest-of-new-crops-to-process--attractiveness-of-local-processing",
+      "_id": "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -3362,19 +3082,19 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "More harvest within reach makes a local plant more worthwhile for its processor.",
-        "sets link": "T to S",
-        "sets scope": "Cross-domain",
+        "description": "More harvest within reach makes a local plant more worthwhile, so processors build or keep capacity on or near the island rather than process the crops elsewhere.",
+        "sets link": "Within T",
+        "sets scope": "Within domain",
         "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
       },
       "from": "elem-harvest-of-new-crops-to-process",
-      "to": "elem-attractiveness-of-local-processing"
+      "to": "elem-processing-capacity-for-alternative-crops"
     },
     {
-      "_id": "conn-market-demand-for-alternative-crops--attractiveness-of-local-processing",
+      "_id": "conn-market-demand-for-alternative-crops--processing-capacity-for-alternative-crops",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -3383,26 +3103,6 @@
         "polarity": "positive",
         "delay": "no",
         "description": "Stable demand makes investing in processing more worthwhile.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "+"
-      },
-      "from": "elem-market-demand-for-alternative-crops",
-      "to": "elem-attractiveness-of-local-processing"
-    },
-    {
-      "_id": "conn-attractiveness-of-local-processing--processing-capacity-for-alternative-crops",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "Processors build or keep capacity where they find it worthwhile.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
@@ -3410,7 +3110,7 @@
         "sourced": "no",
         "connection type": "+"
       },
-      "from": "elem-attractiveness-of-local-processing",
+      "from": "elem-market-demand-for-alternative-crops",
       "to": "elem-processing-capacity-for-alternative-crops"
     },
     {
@@ -3474,7 +3174,7 @@
       "to": "elem-machines-and-storage-for-current-crops"
     },
     {
-      "_id": "conn-dependence-on-high-margin-salt-sensitive-crops--know-how-of-current-crops",
+      "_id": "conn-dependence-on-high-margin-salt-sensitive-crops--capital-lost-on-switching",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -3482,7 +3182,7 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Growing the current crops year after year builds up know-how in them.",
+        "description": "Growing the current crops year after year builds up know-how in growing, storing and selling them, and that know-how is of little use for a new crop.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "yes",
@@ -3491,7 +3191,7 @@
         "connection type": "+"
       },
       "from": "elem-dependence-on-high-margin-salt-sensitive-crops",
-      "to": "elem-know-how-of-current-crops"
+      "to": "elem-capital-lost-on-switching"
     },
     {
       "_id": "conn-machines-and-storage-for-current-crops--capital-lost-on-switching",
@@ -3511,26 +3211,6 @@
         "connection type": "+"
       },
       "from": "elem-machines-and-storage-for-current-crops",
-      "to": "elem-capital-lost-on-switching"
-    },
-    {
-      "_id": "conn-know-how-of-current-crops--capital-lost-on-switching",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "Know-how of the current crops is of little use for a new crop.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "+"
-      },
-      "from": "elem-know-how-of-current-crops",
       "to": "elem-capital-lost-on-switching"
     },
     {
@@ -4094,27 +3774,7 @@
       "to": "elem-policy-resistance-legal-delays"
     },
     {
-      "_id": "conn-policy-resistance-legal-delays--plans-changed-or-dropped",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "Objections and appeals delay, change or stop plans.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "+"
-      },
-      "from": "elem-policy-resistance-legal-delays",
-      "to": "elem-plans-changed-or-dropped"
-    },
-    {
-      "_id": "conn-plans-changed-or-dropped--farmers-trust-in-government",
+      "_id": "conn-policy-resistance-legal-delays--farmers-trust-in-government",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4122,7 +3782,7 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Plans changed or dropped after they were announced teach farmers not to count on the next one.",
+        "description": "Objections and appeals delay, change or stop plans for the island's water and land after public bodies announced them, and plans changed or dropped teach farmers not to count on the next one.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "yes",
@@ -4130,7 +3790,7 @@
         "sourced": "no",
         "connection type": "-"
       },
-      "from": "elem-plans-changed-or-dropped",
+      "from": "elem-policy-resistance-legal-delays",
       "to": "elem-farmers-trust-in-government"
     },
     {
@@ -4182,8 +3842,7 @@
         "description": ""
       },
       "connections": [
-        "conn-root-zone-salinity--clay-dispersion-sodification",
-        "conn-clay-dispersion-sodification--soil-structure-usability",
+        "conn-root-zone-salinity--soil-structure-usability",
         "conn-soil-structure-usability--freshwater-lens-recharge",
         "conn-freshwater-lens-recharge--freshwater-lens-thickness",
         "conn-freshwater-lens-thickness--root-zone-salinity"
@@ -4196,8 +3855,7 @@
         "description": ""
       },
       "connections": [
-        "conn-root-zone-salinity--attractiveness-of-new-crops",
-        "conn-attractiveness-of-new-crops--salt-tolerant-crop-adoption",
+        "conn-root-zone-salinity--salt-tolerant-crop-adoption",
         "conn-salt-tolerant-crop-adoption--crop-water-demand",
         "conn-crop-water-demand--crop-water-shortfall",
         "conn-crop-water-shortfall--groundwater-extraction-for-irrigation",
@@ -4213,11 +3871,9 @@
       },
       "connections": [
         "conn-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process",
-        "conn-harvest-of-new-crops-to-process--attractiveness-of-local-processing",
-        "conn-attractiveness-of-local-processing--processing-capacity-for-alternative-crops",
+        "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
         "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops",
-        "conn-net-price-for-new-crops--attractiveness-of-new-crops",
-        "conn-attractiveness-of-new-crops--salt-tolerant-crop-adoption"
+        "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
       ]
     },
     {
@@ -4336,8 +3992,7 @@
         "description": ""
       },
       "connections": [
-        "conn-crop-yield--attractiveness-of-storing-water",
-        "conn-attractiveness-of-storing-water--freshwater-storage-measures",
+        "conn-crop-yield--freshwater-storage-measures",
         "conn-freshwater-storage-measures--freshwater-lens-recharge",
         "conn-freshwater-lens-recharge--freshwater-lens-thickness",
         "conn-freshwater-lens-thickness--freshwater-availability-for-crops",
@@ -4450,8 +4105,7 @@
         "description": ""
       },
       "connections": [
-        "conn-policy-resistance-legal-delays--plans-changed-or-dropped",
-        "conn-plans-changed-or-dropped--farmers-trust-in-government",
+        "conn-policy-resistance-legal-delays--farmers-trust-in-government",
         "conn-farmers-trust-in-government--policy-resistance-legal-delays"
       ]
     },
@@ -4483,7 +4137,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD version 2, model 2e48ed8",
+      "name": "CLD version 2, model 6265197",
       "description": "",
       "scale": 1,
       "center": {
@@ -4523,16 +4177,6 @@
           "pinned": true,
           "style": {},
           "element": "elem-wetter-winters"
-        },
-        {
-          "_id": "node-clay-dispersion-sodification",
-          "position": {
-            "x": -810,
-            "y": 190
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-clay-dispersion-sodification"
         },
         {
           "_id": "node-crop-water-demand",
@@ -4875,16 +4519,6 @@
           "element": "elem-freshwater-supply-route"
         },
         {
-          "_id": "node-water-available-for-supply-in-drought",
-          "position": {
-            "x": -1260,
-            "y": 1110
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-water-available-for-supply-in-drought"
-        },
-        {
           "_id": "node-spring-workability-of-the-fields",
           "position": {
             "x": -570,
@@ -4935,16 +4569,6 @@
           "element": "elem-water-board-levy-on-farmland"
         },
         {
-          "_id": "node-agricultural-seats-on-the-water-board",
-          "position": {
-            "x": -610,
-            "y": -1630
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-agricultural-seats-on-the-water-board"
-        },
-        {
           "_id": "node-harvest-lost-to-salt",
           "position": {
             "x": 20,
@@ -4965,16 +4589,6 @@
           "element": "elem-margin-given-up-on-high-margin-crops"
         },
         {
-          "_id": "node-attractiveness-of-storing-water",
-          "position": {
-            "x": -320,
-            "y": -590
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-attractiveness-of-storing-water"
-        },
-        {
           "_id": "node-farms-with-a-successor",
           "position": {
             "x": 640,
@@ -4985,16 +4599,6 @@
           "element": "elem-farms-with-a-successor"
         },
         {
-          "_id": "node-owner-farmed-arable-land",
-          "position": {
-            "x": -90,
-            "y": -1640
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-owner-farmed-arable-land"
-        },
-        {
           "_id": "node-harvest-of-new-crops-to-process",
           "position": {
             "x": 870,
@@ -5003,16 +4607,6 @@
           "pinned": true,
           "style": {},
           "element": "elem-harvest-of-new-crops-to-process"
-        },
-        {
-          "_id": "node-attractiveness-of-local-processing",
-          "position": {
-            "x": 1350,
-            "y": 1200
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-attractiveness-of-local-processing"
         },
         {
           "_id": "node-net-price-for-new-crops",
@@ -5055,26 +4649,6 @@
           "element": "elem-tolerant-varieties-adoption"
         },
         {
-          "_id": "node-attractiveness-of-tolerant-varieties",
-          "position": {
-            "x": 30,
-            "y": 1600
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-attractiveness-of-tolerant-varieties"
-        },
-        {
-          "_id": "node-attractiveness-of-new-crops",
-          "position": {
-            "x": 1000,
-            "y": 560
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-attractiveness-of-new-crops"
-        },
-        {
           "_id": "node-tolerant-varieties-on-offer",
           "position": {
             "x": 200,
@@ -5093,16 +4667,6 @@
           "pinned": true,
           "style": {},
           "element": "elem-machines-and-storage-for-current-crops"
-        },
-        {
-          "_id": "node-know-how-of-current-crops",
-          "position": {
-            "x": 1520,
-            "y": -60
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-know-how-of-current-crops"
         },
         {
           "_id": "node-capital-lost-on-switching",
@@ -5185,16 +4749,6 @@
           "element": "elem-farmers-trust-in-government"
         },
         {
-          "_id": "node-plans-changed-or-dropped",
-          "position": {
-            "x": 90,
-            "y": -1470
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-plans-changed-or-dropped"
-        },
-        {
           "_id": "node-expropriation-of-farmland",
           "position": {
             "x": 610,
@@ -5228,7 +4782,7 @@
           "_id": "node-background",
           "position": {
             "x": 71,
-            "y": 80
+            "y": 160
           },
           "pinned": true,
           "style": {},
@@ -5279,12 +4833,6 @@
           "connection": "conn-wetter-winters--winter-rain-drained-away"
         },
         {
-          "_id": "edge-clay-dispersion-sodification--soil-structure-usability",
-          "curvature": 0.1,
-          "style": {},
-          "connection": "conn-clay-dispersion-sodification--soil-structure-usability"
-        },
-        {
           "_id": "edge-estuary-salt-intrusion--brackish-irrigation-water-use",
           "curvature": 0,
           "style": {},
@@ -5327,10 +4875,10 @@
           "connection": "conn-polder-surface-elevation-nap--saline-seepage-kwel"
         },
         {
-          "_id": "edge-root-zone-salinity--clay-dispersion-sodification",
-          "curvature": -0.05,
+          "_id": "edge-root-zone-salinity--soil-structure-usability",
+          "curvature": -0.12,
           "style": {},
-          "connection": "conn-root-zone-salinity--clay-dispersion-sodification"
+          "connection": "conn-root-zone-salinity--soil-structure-usability"
         },
         {
           "_id": "edge-saline-seepage-kwel--freshwater-lens-thickness",
@@ -5561,16 +5109,10 @@
           "connection": "conn-freshwater-supply-route--external-freshwater-supply"
         },
         {
-          "_id": "edge-water-available-for-supply-in-drought--external-freshwater-supply",
+          "_id": "edge-hotter-drier-summers--external-freshwater-supply",
           "curvature": 0.0,
           "style": {},
-          "connection": "conn-water-available-for-supply-in-drought--external-freshwater-supply"
-        },
-        {
-          "_id": "edge-hotter-drier-summers--water-available-for-supply-in-drought",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-hotter-drier-summers--water-available-for-supply-in-drought"
+          "connection": "conn-hotter-drier-summers--external-freshwater-supply"
         },
         {
           "_id": "edge-crop-water-shortfall--freshwater-supply-route",
@@ -5649,12 +5191,6 @@
           "curvature": 0.0,
           "style": {},
           "connection": "conn-water-board-pumping-costs--plans-to-raise-ditch-levels"
-        },
-        {
-          "_id": "edge-agricultural-seats-on-the-water-board--plans-to-raise-ditch-levels",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-agricultural-seats-on-the-water-board--plans-to-raise-ditch-levels"
         },
         {
           "_id": "edge-policy-resistance-legal-delays--plans-to-raise-ditch-levels",
@@ -5747,28 +5283,16 @@
           "connection": "conn-world-prices-of-conventional-crops--farm-revenue"
         },
         {
-          "_id": "edge-crop-yield--attractiveness-of-storing-water",
-          "curvature": -0.45,
+          "_id": "edge-crop-yield--freshwater-storage-measures",
+          "curvature": -0.12,
           "style": {},
-          "connection": "conn-crop-yield--attractiveness-of-storing-water"
+          "connection": "conn-crop-yield--freshwater-storage-measures"
         },
         {
-          "_id": "edge-farms-with-a-successor--attractiveness-of-storing-water",
-          "curvature": 0,
+          "_id": "edge-farms-with-a-successor--freshwater-storage-measures",
+          "curvature": 0.12,
           "style": {},
-          "connection": "conn-farms-with-a-successor--attractiveness-of-storing-water"
-        },
-        {
-          "_id": "edge-owner-farmed-arable-land--attractiveness-of-storing-water",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-owner-farmed-arable-land--attractiveness-of-storing-water"
-        },
-        {
-          "_id": "edge-attractiveness-of-storing-water--freshwater-storage-measures",
-          "curvature": 0.15,
-          "style": {},
-          "connection": "conn-attractiveness-of-storing-water--freshwater-storage-measures"
+          "connection": "conn-farms-with-a-successor--freshwater-storage-measures"
         },
         {
           "_id": "edge-freshwater-storage-measures--farmers-capacity-to-invest",
@@ -5777,56 +5301,44 @@
           "connection": "conn-freshwater-storage-measures--farmers-capacity-to-invest"
         },
         {
-          "_id": "edge-root-zone-salinity--attractiveness-of-tolerant-varieties",
+          "_id": "edge-root-zone-salinity--tolerant-varieties-adoption",
+          "curvature": 0.12,
+          "style": {},
+          "connection": "conn-root-zone-salinity--tolerant-varieties-adoption"
+        },
+        {
+          "_id": "edge-tolerant-varieties-on-offer--tolerant-varieties-adoption",
           "curvature": 0.0,
           "style": {},
-          "connection": "conn-root-zone-salinity--attractiveness-of-tolerant-varieties"
+          "connection": "conn-tolerant-varieties-on-offer--tolerant-varieties-adoption"
         },
         {
-          "_id": "edge-root-zone-salinity--attractiveness-of-new-crops",
-          "curvature": 0.15,
+          "_id": "edge-root-zone-salinity--salt-tolerant-crop-adoption",
+          "curvature": 0.12,
           "style": {},
-          "connection": "conn-root-zone-salinity--attractiveness-of-new-crops"
+          "connection": "conn-root-zone-salinity--salt-tolerant-crop-adoption"
         },
         {
-          "_id": "edge-tolerant-varieties-on-offer--attractiveness-of-tolerant-varieties",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-tolerant-varieties-on-offer--attractiveness-of-tolerant-varieties"
-        },
-        {
-          "_id": "edge-attractiveness-of-tolerant-varieties--tolerant-varieties-adoption",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-attractiveness-of-tolerant-varieties--tolerant-varieties-adoption"
-        },
-        {
-          "_id": "edge-attractiveness-of-new-crops--salt-tolerant-crop-adoption",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-attractiveness-of-new-crops--salt-tolerant-crop-adoption"
-        },
-        {
-          "_id": "edge-market-demand-for-alternative-crops--attractiveness-of-new-crops",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-market-demand-for-alternative-crops--attractiveness-of-new-crops"
-        },
-        {
-          "_id": "edge-net-price-for-new-crops--attractiveness-of-new-crops",
-          "curvature": -0.08,
-          "style": {},
-          "connection": "conn-net-price-for-new-crops--attractiveness-of-new-crops"
-        },
-        {
-          "_id": "edge-knowledge-of-new-crops--attractiveness-of-new-crops",
+          "_id": "edge-market-demand-for-alternative-crops--salt-tolerant-crop-adoption",
           "curvature": 0.0,
           "style": {},
-          "connection": "conn-knowledge-of-new-crops--attractiveness-of-new-crops"
+          "connection": "conn-market-demand-for-alternative-crops--salt-tolerant-crop-adoption"
+        },
+        {
+          "_id": "edge-net-price-for-new-crops--salt-tolerant-crop-adoption",
+          "curvature": -0.12,
+          "style": {},
+          "connection": "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
+        },
+        {
+          "_id": "edge-knowledge-of-new-crops--salt-tolerant-crop-adoption",
+          "curvature": 0.12,
+          "style": {},
+          "connection": "conn-knowledge-of-new-crops--salt-tolerant-crop-adoption"
         },
         {
           "_id": "edge-salt-tolerant-crop-adoption--knowledge-of-new-crops",
-          "curvature": 0,
+          "curvature": 0.12,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--knowledge-of-new-crops"
         },
@@ -5849,22 +5361,16 @@
           "connection": "conn-growers-of-new-crops-elsewhere--harvest-of-new-crops-to-process"
         },
         {
-          "_id": "edge-harvest-of-new-crops-to-process--attractiveness-of-local-processing",
-          "curvature": -0.08,
+          "_id": "edge-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
+          "curvature": -0.12,
           "style": {},
-          "connection": "conn-harvest-of-new-crops-to-process--attractiveness-of-local-processing"
+          "connection": "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops"
         },
         {
-          "_id": "edge-market-demand-for-alternative-crops--attractiveness-of-local-processing",
-          "curvature": 0,
+          "_id": "edge-market-demand-for-alternative-crops--processing-capacity-for-alternative-crops",
+          "curvature": 0.0,
           "style": {},
-          "connection": "conn-market-demand-for-alternative-crops--attractiveness-of-local-processing"
-        },
-        {
-          "_id": "edge-attractiveness-of-local-processing--processing-capacity-for-alternative-crops",
-          "curvature": -0.08,
-          "style": {},
-          "connection": "conn-attractiveness-of-local-processing--processing-capacity-for-alternative-crops"
+          "connection": "conn-market-demand-for-alternative-crops--processing-capacity-for-alternative-crops"
         },
         {
           "_id": "edge-processing-capacity-for-alternative-crops--net-price-for-new-crops",
@@ -5885,22 +5391,16 @@
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--machines-and-storage-for-current-crops"
         },
         {
-          "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--know-how-of-current-crops",
-          "curvature": 0.0,
+          "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--capital-lost-on-switching",
+          "curvature": 0.12,
           "style": {},
-          "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--know-how-of-current-crops"
+          "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--capital-lost-on-switching"
         },
         {
           "_id": "edge-machines-and-storage-for-current-crops--capital-lost-on-switching",
           "curvature": -0.25,
           "style": {},
           "connection": "conn-machines-and-storage-for-current-crops--capital-lost-on-switching"
-        },
-        {
-          "_id": "edge-know-how-of-current-crops--capital-lost-on-switching",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-know-how-of-current-crops--capital-lost-on-switching"
         },
         {
           "_id": "edge-capital-lost-on-switching--dependence-on-high-margin-salt-sensitive-crops",
@@ -6071,16 +5571,10 @@
           "connection": "conn-farmers-wish-to-keep-their-land--policy-resistance-legal-delays"
         },
         {
-          "_id": "edge-policy-resistance-legal-delays--plans-changed-or-dropped",
-          "curvature": 0.45,
+          "_id": "edge-policy-resistance-legal-delays--farmers-trust-in-government",
+          "curvature": -0.12,
           "style": {},
-          "connection": "conn-policy-resistance-legal-delays--plans-changed-or-dropped"
-        },
-        {
-          "_id": "edge-plans-changed-or-dropped--farmers-trust-in-government",
-          "curvature": 0.45,
-          "style": {},
-          "connection": "conn-plans-changed-or-dropped--farmers-trust-in-government"
+          "connection": "conn-policy-resistance-legal-delays--farmers-trust-in-government"
         },
         {
           "_id": "edge-policy-resistance-legal-delays--expropriation-of-farmland",
@@ -6101,8 +5595,8 @@
           "loop": "loop-R1",
           "style": {},
           "position": {
-            "x": -914,
-            "y": 228
+            "x": -940,
+            "y": 238
           }
         },
         {
@@ -6110,8 +5604,8 @@
           "loop": "loop-B1",
           "style": {},
           "position": {
-            "x": -277,
-            "y": 636
+            "x": -490,
+            "y": 648
           }
         },
         {
@@ -6119,7 +5613,7 @@
           "loop": "loop-R2",
           "style": {},
           "position": {
-            "x": 1167,
+            "x": 1162,
             "y": 878
           }
         },
@@ -6182,8 +5676,8 @@
           "loop": "loop-B4",
           "style": {},
           "position": {
-            "x": -691,
-            "y": 194
+            "x": -753,
+            "y": 325
           }
         },
         {
@@ -6263,8 +5757,8 @@
           "loop": "loop-R9",
           "style": {},
           "position": {
-            "x": 220,
-            "y": -1417
+            "x": 285,
+            "y": -1390
           }
         },
         {
@@ -6292,7 +5786,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "/* Each property here is one that Kumu's property reference gives the selector's type (element,\n   connection or loop: its table marks which type takes which property); check a new one there\n   before writing it, and see it work in a test import. */\n\n@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      /* strict shows only what an option selects: normal adds the links among its elements and\n         loose their neighbours, which are not the loop */\n      mode: strict;\n\n      /* build.py replaces the next line with an option per named loop */\n      option {\n        label: \"R1 Salty soil takes in less rain\";\n        selector: *:loop([\"label\"=\"R1 Salty soil takes in less rain\"]), #background;\n      }\n\n      option {\n        label: \"B1 Salt-tolerant crops need less pumping\";\n        selector: *:loop([\"label\"=\"B1 Salt-tolerant crops need less pumping\"]), #background;\n      }\n\n      option {\n        label: \"R2 Growers and processors\";\n        selector: *:loop([\"label\"=\"R2 Growers and processors\"]), #background;\n      }\n\n      option {\n        label: \"R3 Farm income and water storage\";\n        selector: *:loop([\"label\"=\"R3 Farm income and water storage\"]), #background;\n      }\n\n      option {\n        label: \"R4 Land value and bank credit\";\n        selector: *:loop([\"label\"=\"R4 Land value and bank credit\"]), #background;\n      }\n\n      option {\n        label: \"R5 Leverage and deep drainage\";\n        selector: *:loop([\"label\"=\"R5 Leverage and deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"R6 Land value, objections and ditch levels\";\n        selector: *:loop([\"label\"=\"R6 Land value, objections and ditch levels\"]), #background;\n      }\n\n      option {\n        label: \"B2 Less arable land, less deep drainage\";\n        selector: *:loop([\"label\"=\"B2 Less arable land, less deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"B3 Switching gives up margin\";\n        selector: *:loop([\"label\"=\"B3 Switching gives up margin\"]), #background;\n      }\n\n      option {\n        label: \"B4 Storing water when harvests fall\";\n        selector: *:loop([\"label\"=\"B4 Storing water when harvests fall\"]), #background;\n      }\n\n      option {\n        label: \"B5 Pumping relieves the shortfall\";\n        selector: *:loop([\"label\"=\"B5 Pumping relieves the shortfall\"]), #background;\n      }\n\n      option {\n        label: \"R7 Pumping thins the lens\";\n        selector: *:loop([\"label\"=\"R7 Pumping thins the lens\"]), #background;\n      }\n\n      option {\n        label: \"B6 Flushing salt out\";\n        selector: *:loop([\"label\"=\"B6 Flushing salt out\"]), #background;\n      }\n\n      option {\n        label: \"R8 Flushing draws down the lens\";\n        selector: *:loop([\"label\"=\"R8 Flushing draws down the lens\"]), #background;\n      }\n\n      option {\n        label: \"B7 Deep drainage keeps fields workable\";\n        selector: *:loop([\"label\"=\"B7 Deep drainage keeps fields workable\"]), #background;\n      }\n\n      option {\n        label: \"B8 The water board raises levels against seepage\";\n        selector: *:loop([\"label\"=\"B8 The water board raises levels against seepage\"]), #background;\n      }\n\n      option {\n        label: \"B9 Objections hold back plans\";\n        selector: *:loop([\"label\"=\"B9 Objections hold back plans\"]), #background;\n      }\n\n      option {\n        label: \"B10 Banks lend less as leverage rises\";\n        selector: *:loop([\"label\"=\"B10 Banks lend less as leverage rises\"]), #background;\n      }\n\n      option {\n        label: \"R9 Changed plans erode trust\";\n        selector: *:loop([\"label\"=\"R9 Changed plans erode trust\"]), #background;\n      }\n\n      option {\n        label: \"R10 Capital ties farms to their crops\";\n        selector: *:loop([\"label\"=\"R10 Capital ties farms to their crops\"]), #background;\n      }\n\n      option {\n        label: \"R11 Expropriation and trust\";\n        selector: *:loop([\"label\"=\"R11 Expropriation and trust\"]), #background;\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Regions: the page's two subsystem regions as a background image ---------- */\n/* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,\n   pinned at the centre of the regions' frame, and its width and height, the frame's. A showcase\n   fades all it does not select, so every showcase option above selects #background too */\n#background {\n  image-url: url(https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/regions.svg);\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- Loops: Kumu's named loops, no label on the map ---------- */\n/* the full drawing has no loop marks (the router's layout decision); Kumu's property reference\n   gives loops `label`, not `label-visibility` */\nloop {\n  label: none;\n}\n\n/* ---------- generated by build.py: tints, box sizes, the regions' size ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-clay-dispersion-sodification { width: 295; height: 52; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 340; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-flushing-salt-from-the-root-zone { width: 354; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-water-available-for-supply-in-drought { width: 340; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-agricultural-seats-on-the-water-board { width: 340; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-attractiveness-of-storing-water { width: 280; height: 120; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-owner-farmed-arable-land { width: 340; height: 86; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-attractiveness-of-local-processing { width: 325; height: 120; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-attractiveness-of-tolerant-varieties { width: 280; height: 154; }\n#elem-attractiveness-of-new-crops { width: 340; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-know-how-of-current-crops { width: 251; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-plans-changed-or-dropped { width: 265; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#background { width: 4198; height: 3746; }\n"
+      "style": "/* Each property here is one that Kumu's property reference gives the selector's type (element,\n   connection or loop: its table marks which type takes which property); check a new one there\n   before writing it, and see it work in a test import. */\n\n@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      /* strict shows only what an option selects: normal adds the links among its elements and\n         loose their neighbours, which are not the loop */\n      mode: strict;\n\n      /* build.py replaces the next line with an option per named loop */\n      option {\n        label: \"R1 Salty soil takes in less rain\";\n        selector: *:loop([\"label\"=\"R1 Salty soil takes in less rain\"]), #background;\n      }\n\n      option {\n        label: \"B1 Salt-tolerant crops need less pumping\";\n        selector: *:loop([\"label\"=\"B1 Salt-tolerant crops need less pumping\"]), #background;\n      }\n\n      option {\n        label: \"R2 Growers and processors\";\n        selector: *:loop([\"label\"=\"R2 Growers and processors\"]), #background;\n      }\n\n      option {\n        label: \"R3 Farm income and water storage\";\n        selector: *:loop([\"label\"=\"R3 Farm income and water storage\"]), #background;\n      }\n\n      option {\n        label: \"R4 Land value and bank credit\";\n        selector: *:loop([\"label\"=\"R4 Land value and bank credit\"]), #background;\n      }\n\n      option {\n        label: \"R5 Leverage and deep drainage\";\n        selector: *:loop([\"label\"=\"R5 Leverage and deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"R6 Land value, objections and ditch levels\";\n        selector: *:loop([\"label\"=\"R6 Land value, objections and ditch levels\"]), #background;\n      }\n\n      option {\n        label: \"B2 Less arable land, less deep drainage\";\n        selector: *:loop([\"label\"=\"B2 Less arable land, less deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"B3 Switching gives up margin\";\n        selector: *:loop([\"label\"=\"B3 Switching gives up margin\"]), #background;\n      }\n\n      option {\n        label: \"B4 Storing water when harvests fall\";\n        selector: *:loop([\"label\"=\"B4 Storing water when harvests fall\"]), #background;\n      }\n\n      option {\n        label: \"B5 Pumping relieves the shortfall\";\n        selector: *:loop([\"label\"=\"B5 Pumping relieves the shortfall\"]), #background;\n      }\n\n      option {\n        label: \"R7 Pumping thins the lens\";\n        selector: *:loop([\"label\"=\"R7 Pumping thins the lens\"]), #background;\n      }\n\n      option {\n        label: \"B6 Flushing salt out\";\n        selector: *:loop([\"label\"=\"B6 Flushing salt out\"]), #background;\n      }\n\n      option {\n        label: \"R8 Flushing draws down the lens\";\n        selector: *:loop([\"label\"=\"R8 Flushing draws down the lens\"]), #background;\n      }\n\n      option {\n        label: \"B7 Deep drainage keeps fields workable\";\n        selector: *:loop([\"label\"=\"B7 Deep drainage keeps fields workable\"]), #background;\n      }\n\n      option {\n        label: \"B8 The water board raises levels against seepage\";\n        selector: *:loop([\"label\"=\"B8 The water board raises levels against seepage\"]), #background;\n      }\n\n      option {\n        label: \"B9 Objections hold back plans\";\n        selector: *:loop([\"label\"=\"B9 Objections hold back plans\"]), #background;\n      }\n\n      option {\n        label: \"B10 Banks lend less as leverage rises\";\n        selector: *:loop([\"label\"=\"B10 Banks lend less as leverage rises\"]), #background;\n      }\n\n      option {\n        label: \"R9 Changed plans erode trust\";\n        selector: *:loop([\"label\"=\"R9 Changed plans erode trust\"]), #background;\n      }\n\n      option {\n        label: \"R10 Capital ties farms to their crops\";\n        selector: *:loop([\"label\"=\"R10 Capital ties farms to their crops\"]), #background;\n      }\n\n      option {\n        label: \"R11 Expropriation and trust\";\n        selector: *:loop([\"label\"=\"R11 Expropriation and trust\"]), #background;\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Regions: the page's two subsystem regions as a background image ---------- */\n/* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,\n   pinned at the centre of the regions' frame, and its width and height, the frame's. A showcase\n   fades all it does not select, so every showcase option above selects #background too */\n#background {\n  image-url: url(https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/regions.svg);\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- Loops: Kumu's named loops, no label on the map ---------- */\n/* the full drawing has no loop marks (the router's layout decision); Kumu's property reference\n   gives loops `label`, not `label-visibility` */\nloop {\n  label: none;\n}\n\n/* ---------- generated by build.py: tints, box sizes, the regions' size ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 340; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-flushing-salt-from-the-root-zone { width: 354; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#background { width: 4198; height: 3586; }\n"
     }
   ]
 }

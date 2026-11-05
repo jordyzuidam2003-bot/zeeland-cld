@@ -53,19 +53,6 @@
       "y": -80
     },
     {
-      "id": "clay-dispersion-sodification",
-      "label": "Sodium on the clay",
-      "element type": "Stock",
-      "adaptive practice": false,
-      "sets domain": "Ecological",
-      "subsystem": "Water and soil",
-      "subquestion": "SQ1",
-      "description": "The share of the clay's exchange sites that sodium (Na+) holds in place of calcium (Ca2+). It rises while salt water wets the soil and falls only as calcium replaces it, over years; the clay disperses, losing its structure, once fresh water has washed the salt out while the sodium is still there.",
-      "sources": [],
-      "x": -810,
-      "y": 190
-    },
-    {
       "id": "crop-water-demand",
       "label": "Crop water demand",
       "element type": "Auxiliary",
@@ -261,7 +248,7 @@
       "sets domain": "Technological",
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
-      "description": "On-farm and sub-surface water retention: Freshmaker, ASR-Coastal, creek-ridge infiltration, and adjustable/smart drainage. Whether a farm decides a measure alone or with the water board is a question for a source.",
+      "description": "On-farm and sub-surface water retention: Freshmaker, ASR-Coastal, creek-ridge infiltration, and adjustable/smart drainage. Whether a farm decides a measure alone or with the water board is a question for a source. Whether a farm wants to store weighs storing against its other ways through a dry summer (pumping, brackish water, other crops), where capacity to invest is whether it can. Stored water pays back over years, which suits a farm that owns its land more than one on a short lease; and where stored water spreads under the neighbours, one farm pays and others gain. Whether either holds a farm back is a question for the group model building session.",
       "sources": [],
       "x": -380,
       "y": 0,
@@ -341,7 +328,7 @@
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Plants and supply chains on or near the island that store, process or sell new salt-tolerant crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer.",
+      "description": "Plants and supply chains on or near the island that store, process or sell new salt-tolerant crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer. Buyers and processors build or keep it where they find it worthwhile against processing the crops elsewhere.",
       "sources": [],
       "x": 1590,
       "y": 970,
@@ -355,7 +342,7 @@
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Hectares under crops new to the island's rotations that tolerate salt (quinoa, samphire, sea aster, field beans), which need other machines, knowledge and buyers than the current crops.",
+      "description": "Hectares under crops new to the island's rotations that tolerate salt (quinoa, samphire, sea aster, field beans), which need other machines, knowledge and buyers than the current crops. Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them.",
       "sources": [],
       "x": 580,
       "y": 700,
@@ -524,19 +511,6 @@
       "actor": "Provincie Zeeland"
     },
     {
-      "id": "water-available-for-supply-in-drought",
-      "label": "Fresh water available for supply in drought",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Ecological",
-      "subsystem": "Water and soil",
-      "subquestion": "SQ1",
-      "description": "River water that could reach a supply route to the island in a dry summer: what summer river discharge and the national distribution in drought (the verdringingsreeks, IenW and Rijkswaterstaat) leave for the region. Outside the CLD's scale.",
-      "sources": [],
-      "x": -1260,
-      "y": 1110
-    },
-    {
       "id": "spring-workability-of-the-fields",
       "label": "Spring workability of the fields",
       "element type": "Auxiliary",
@@ -570,7 +544,7 @@
       "sets domain": "Social",
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
-      "description": "Draft or adopted water level plans in which Waterschap Scheldestromen raises a polder's ditch levels, weighing farmers' demand against seepage, subsidence and its pumping costs.",
+      "description": "Draft or adopted water level plans in which Waterschap Scheldestromen raises a polder's ditch levels, weighing farmers' demand against seepage, subsidence and its pumping costs. Farmers weigh in on these decisions through the seats on its general board reserved for agricultural landowners (the session's understanding, unsourced: on the facts list under Demand for deep polder drainage).",
       "sources": [],
       "x": -570,
       "y": -1090,
@@ -604,19 +578,6 @@
       "actor": "Waterschap Scheldestromen"
     },
     {
-      "id": "agricultural-seats-on-the-water-board",
-      "label": "Agricultural seats on the water board",
-      "element type": "Constant",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Water and soil",
-      "subquestion": "SQ2",
-      "description": "Seats on Waterschap Scheldestromen's general board reserved for agricultural landowners, through which farmers take part in its decisions (the session's understanding, unsourced: on the facts list under Demand for deep polder drainage).",
-      "sources": [],
-      "x": -610,
-      "y": -1630
-    },
-    {
       "id": "harvest-lost-to-salt",
       "label": "Harvest lost to salt",
       "element type": "Auxiliary",
@@ -643,19 +604,6 @@
       "y": 930
     },
     {
-      "id": "attractiveness-of-storing-water",
-      "label": "Relative attractiveness of storing water",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Water and soil",
-      "subquestion": "SQ2",
-      "description": "How worthwhile farmers find storing fresh water for the summer against their other ways through a dry summer (pumping, brackish water, other crops): whether a farm wants to, where capacity to invest is whether it can. Where stored water spreads under the neighbours, one farm pays and others gain: whether that holds a farm back is a question for the group model building session.",
-      "sources": [],
-      "x": -320,
-      "y": -590
-    },
-    {
       "id": "farms-with-a-successor",
       "label": "Farms with a successor",
       "element type": "Auxiliary",
@@ -669,19 +617,6 @@
       "y": -390
     },
     {
-      "id": "owner-farmed-arable-land",
-      "label": "Arable land farmed by its owner",
-      "element type": "Constant",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ3",
-      "description": "The share of the island's arable land farmed by the farmer who owns it rather than leased. Whether the land market moves it by 2050 is a question for a source.",
-      "sources": [],
-      "x": -90,
-      "y": -1640
-    },
-    {
       "id": "harvest-of-new-crops-to-process",
       "label": "Harvest of new crops to process",
       "element type": "Auxiliary",
@@ -693,19 +628,6 @@
       "sources": [],
       "x": 870,
       "y": 1220
-    },
-    {
-      "id": "attractiveness-of-local-processing",
-      "label": "Attractiveness of processing new crops locally",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ2",
-      "description": "How worthwhile buyers and processors find building or keeping capacity for new crops on or near the island, against processing them elsewhere.",
-      "sources": [],
-      "x": 1350,
-      "y": 1200
     },
     {
       "id": "net-price-for-new-crops",
@@ -754,37 +676,11 @@
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Hectares under salt-tolerant varieties of the current crops (potato, onion), which use the same machines, storage and know-how.",
+      "description": "Hectares under salt-tolerant varieties of the current crops (potato, onion), which use the same machines, storage and know-how. Farmers grow one where they find it worthwhile against the variety they grow now.",
       "sources": [],
       "x": 370,
       "y": 1180,
       "actor": "Arable farmers on Schouwen-Duiveland"
-    },
-    {
-      "id": "attractiveness-of-tolerant-varieties",
-      "label": "Relative attractiveness of salt-tolerant varieties",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ2",
-      "description": "How worthwhile farmers find a salt-tolerant variety against the variety they grow now: whether they want to switch.",
-      "sources": [],
-      "x": 30,
-      "y": 1600
-    },
-    {
-      "id": "attractiveness-of-new-crops",
-      "label": "Relative attractiveness of new salt-tolerant crops",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ2",
-      "description": "How worthwhile farmers find a new salt-tolerant crop against their current crops: whether they want to switch, where capacity to invest is whether they can and dependence on the current crops what holds them.",
-      "sources": [],
-      "x": 1000,
-      "y": 560
     },
     {
       "id": "tolerant-varieties-on-offer",
@@ -811,19 +707,6 @@
       "sources": [],
       "x": 1180,
       "y": 280
-    },
-    {
-      "id": "know-how-of-current-crops",
-      "label": "Know-how of the current crops",
-      "element type": "Stock",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ2",
-      "description": "What farmers know about growing, storing and selling their current crops, built up over years of growing them.",
-      "sources": [],
-      "x": 1520,
-      "y": -60
     },
     {
       "id": "capital-lost-on-switching",
@@ -932,19 +815,6 @@
       "y": -1480
     },
     {
-      "id": "plans-changed-or-dropped",
-      "label": "Plans changed or dropped",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ2",
-      "description": "Plans for the island's water and land that public bodies change, delay or drop after announcing them.",
-      "sources": [],
-      "x": 90,
-      "y": -1470
-    },
-    {
       "id": "expropriation-of-farmland",
       "label": "Expropriation of farmland",
       "element type": "Auxiliary",
@@ -1049,15 +919,6 @@
       "curvature": 0
     },
     {
-      "from": "clay-dispersion-sodification",
-      "to": "soil-structure-usability",
-      "polarity": "-",
-      "delay": false,
-      "description": "Once fresh water washes the salt out, clay that holds much sodium disperses: its aggregates and pores collapse.",
-      "sources": [],
-      "curvature": 0.1
-    },
-    {
       "from": "estuary-salt-intrusion",
       "to": "brackish-irrigation-water-use",
       "polarity": "+",
@@ -1127,14 +988,14 @@
     },
     {
       "from": "root-zone-salinity",
-      "to": "clay-dispersion-sodification",
-      "polarity": "+",
+      "to": "soil-structure-usability",
+      "polarity": "-",
       "delay": true,
-      "description": "Salt in the root zone puts sodium (Na+) on the clay in place of calcium (Ca2+). The delay is on the way back: structure collapses within the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year, which takes 5 to 10 years on heavy clay and about a year on light soil (van Beekom et al., 1953, after the 1945 and 1953 floods in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster.",
+      "description": "Salt in the root zone puts sodium (Na+) on the clay in place of calcium (Ca2+); once fresh water washes the salt out, clay that holds much sodium disperses: its aggregates and pores collapse. The delay is on the way back: structure collapses within the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year, which takes 5 to 10 years on heavy clay and about a year on light soil (van Beekom et al., 1953, after the 1945 and 1953 floods in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster.",
       "sources": [
         "van-beekom-1953"
       ],
-      "curvature": -0.05
+      "curvature": -0.12
     },
     {
       "from": "saline-seepage-kwel",
@@ -1489,22 +1350,13 @@
       "curvature": 0
     },
     {
-      "from": "water-available-for-supply-in-drought",
-      "to": "external-freshwater-supply",
-      "polarity": "+",
-      "delay": false,
-      "description": "A route can only carry the water the river and the distribution in drought leave for it.",
-      "sources": [],
-      "curvature": 0.0
-    },
-    {
       "from": "hotter-drier-summers",
-      "to": "water-available-for-supply-in-drought",
+      "to": "external-freshwater-supply",
       "polarity": "-",
       "delay": false,
-      "description": "Dry summers lower river discharge, so less river water is left to supply.",
+      "description": "Dry summers lower river discharge, so less river water is left to supply: a route can only carry what summer discharge and the national distribution in drought (the verdringingsreeks, IenW and Rijkswaterstaat) leave for the region, outside the CLD's scale.",
       "sources": [],
-      "curvature": 0
+      "curvature": 0.0
     },
     {
       "from": "crop-water-shortfall",
@@ -1627,16 +1479,6 @@
       "description": "Rising pumping costs give the water board a reason to raise the levels.",
       "sources": [],
       "curvature": 0.0,
-      "hypothesis": true
-    },
-    {
-      "from": "agricultural-seats-on-the-water-board",
-      "to": "plans-to-raise-ditch-levels",
-      "polarity": "-",
-      "delay": false,
-      "description": "Through their seats on its board, farmers weigh in on the water board's level decisions.",
-      "sources": [],
-      "curvature": 0,
       "hypothesis": true
     },
     {
@@ -1777,43 +1619,23 @@
     },
     {
       "from": "crop-yield",
-      "to": "attractiveness-of-storing-water",
+      "to": "freshwater-storage-measures",
       "polarity": "-",
       "delay": false,
-      "description": "As harvests get worse, farmers find storing water more worthwhile.",
+      "description": "As harvests get worse, farmers find storing water more worthwhile, and those who can pay for it store more.",
       "sources": [],
-      "curvature": -0.45,
-      "hypothesis": true
+      "hypothesis": true,
+      "curvature": -0.12
     },
     {
       "from": "farms-with-a-successor",
-      "to": "attractiveness-of-storing-water",
+      "to": "freshwater-storage-measures",
       "polarity": "+",
       "delay": false,
       "description": "Water stored now pays back over years, which suits a farm with a successor.",
       "sources": [],
-      "curvature": 0,
-      "hypothesis": true
-    },
-    {
-      "from": "owner-farmed-arable-land",
-      "to": "attractiveness-of-storing-water",
-      "polarity": "+",
-      "delay": false,
-      "description": "Water stored now pays back over years, which suits a farm that owns its land more than one on a short lease.",
-      "sources": [],
-      "curvature": 0,
-      "hypothesis": true
-    },
-    {
-      "from": "attractiveness-of-storing-water",
-      "to": "freshwater-storage-measures",
-      "polarity": "+",
-      "delay": false,
-      "description": "Farmers who find storing worthwhile, and can pay for it, store more.",
-      "sources": [],
-      "curvature": 0.15,
-      "hypothesis": true
+      "hypothesis": true,
+      "curvature": 0.12
     },
     {
       "from": "freshwater-storage-measures",
@@ -1826,83 +1648,63 @@
     },
     {
       "from": "root-zone-salinity",
-      "to": "attractiveness-of-tolerant-varieties",
-      "polarity": "+",
-      "delay": false,
-      "description": "The saltier the field, the more a tolerant variety is worth against the current one.",
-      "sources": [],
-      "curvature": 0.0,
-      "hypothesis": true
-    },
-    {
-      "from": "root-zone-salinity",
-      "to": "attractiveness-of-new-crops",
-      "polarity": "+",
-      "delay": false,
-      "description": "The saltier the field, the more a new salt-tolerant crop is worth against the current crops.",
-      "sources": [],
-      "curvature": 0.15,
-      "hypothesis": true
-    },
-    {
-      "from": "tolerant-varieties-on-offer",
-      "to": "attractiveness-of-tolerant-varieties",
-      "polarity": "+",
-      "delay": false,
-      "description": "Better tolerant varieties on the market make switching more worthwhile.",
-      "sources": [],
-      "curvature": 0,
-      "hypothesis": true
-    },
-    {
-      "from": "attractiveness-of-tolerant-varieties",
       "to": "tolerant-varieties-adoption",
       "polarity": "+",
       "delay": false,
-      "description": "Farmers who find a tolerant variety worthwhile grow it, perhaps only past a threshold.",
+      "description": "The saltier the field, the more a tolerant variety is worth against the current one, so the more farmers grow it, perhaps only past a threshold.",
       "sources": [],
-      "curvature": 0,
-      "hypothesis": true
+      "hypothesis": true,
+      "curvature": 0.12
     },
     {
-      "from": "attractiveness-of-new-crops",
+      "from": "tolerant-varieties-on-offer",
+      "to": "tolerant-varieties-adoption",
+      "polarity": "+",
+      "delay": false,
+      "description": "Better tolerant varieties on the market make switching more worthwhile, so more farmers grow them.",
+      "sources": [],
+      "hypothesis": true,
+      "curvature": 0.0
+    },
+    {
+      "from": "root-zone-salinity",
       "to": "salt-tolerant-crop-adoption",
       "polarity": "+",
       "delay": false,
-      "description": "Farmers who find a new crop worthwhile, and can pay for the switch, grow it, perhaps only past a threshold.",
+      "description": "The saltier the field, the more a new salt-tolerant crop is worth against the current crops, so the more farmers grow it, perhaps only past a threshold.",
       "sources": [],
-      "curvature": 0,
-      "hypothesis": true
+      "hypothesis": true,
+      "curvature": 0.12
     },
     {
       "from": "market-demand-for-alternative-crops",
-      "to": "attractiveness-of-new-crops",
+      "to": "salt-tolerant-crop-adoption",
       "polarity": "+",
       "delay": false,
-      "description": "Assured offtake lowers the risk of a new crop.",
+      "description": "Assured offtake lowers the risk of a new crop, so more farmers grow it.",
       "sources": [],
-      "curvature": 0,
-      "hypothesis": true
+      "hypothesis": true,
+      "curvature": 0.0
     },
     {
       "from": "net-price-for-new-crops",
-      "to": "attractiveness-of-new-crops",
+      "to": "salt-tolerant-crop-adoption",
       "polarity": "+",
       "delay": false,
-      "description": "A better price after transport makes a new crop more worthwhile.",
+      "description": "A better price after transport makes a new crop more worthwhile, so more farmers grow it.",
       "sources": [],
-      "curvature": -0.08,
-      "hypothesis": true
+      "hypothesis": true,
+      "curvature": -0.12
     },
     {
       "from": "knowledge-of-new-crops",
-      "to": "attractiveness-of-new-crops",
+      "to": "salt-tolerant-crop-adoption",
       "polarity": "+",
       "delay": false,
-      "description": "Farmers who know how to grow and sell a new crop find it less risky.",
+      "description": "Farmers who know how to grow and sell a new crop find it less risky, so more of them grow it.",
       "sources": [],
-      "curvature": 0.0,
-      "hypothesis": true
+      "hypothesis": true,
+      "curvature": 0.12
     },
     {
       "from": "salt-tolerant-crop-adoption",
@@ -1911,7 +1713,7 @@
       "delay": false,
       "description": "Growing a new crop, on their own fields or their neighbours', teaches farmers how.",
       "sources": [],
-      "curvature": 0,
+      "curvature": 0.12,
       "hypothesis": true
     },
     {
@@ -1943,33 +1745,23 @@
     },
     {
       "from": "harvest-of-new-crops-to-process",
-      "to": "attractiveness-of-local-processing",
+      "to": "processing-capacity-for-alternative-crops",
       "polarity": "+",
       "delay": false,
-      "description": "More harvest within reach makes a local plant more worthwhile for its processor.",
+      "description": "More harvest within reach makes a local plant more worthwhile, so processors build or keep capacity on or near the island rather than process the crops elsewhere.",
       "sources": [],
-      "curvature": -0.08,
-      "hypothesis": true
+      "hypothesis": true,
+      "curvature": -0.12
     },
     {
       "from": "market-demand-for-alternative-crops",
-      "to": "attractiveness-of-local-processing",
+      "to": "processing-capacity-for-alternative-crops",
       "polarity": "+",
       "delay": false,
       "description": "Stable demand makes investing in processing more worthwhile.",
       "sources": [],
-      "curvature": 0,
-      "hypothesis": true
-    },
-    {
-      "from": "attractiveness-of-local-processing",
-      "to": "processing-capacity-for-alternative-crops",
-      "polarity": "+",
-      "delay": false,
-      "description": "Processors build or keep capacity where they find it worthwhile.",
-      "sources": [],
-      "curvature": -0.08,
-      "hypothesis": true
+      "hypothesis": true,
+      "curvature": 0.0
     },
     {
       "from": "processing-capacity-for-alternative-crops",
@@ -2001,13 +1793,13 @@
     },
     {
       "from": "dependence-on-high-margin-salt-sensitive-crops",
-      "to": "know-how-of-current-crops",
+      "to": "capital-lost-on-switching",
       "polarity": "+",
       "delay": false,
-      "description": "Growing the current crops year after year builds up know-how in them.",
+      "description": "Growing the current crops year after year builds up know-how in growing, storing and selling them, and that know-how is of little use for a new crop.",
       "sources": [],
-      "curvature": 0.0,
-      "hypothesis": true
+      "hypothesis": true,
+      "curvature": 0.12
     },
     {
       "from": "machines-and-storage-for-current-crops",
@@ -2017,15 +1809,6 @@
       "description": "The more a farm owns for its current crops, the more a switch to a new crop writes off.",
       "sources": [],
       "curvature": -0.25
-    },
-    {
-      "from": "know-how-of-current-crops",
-      "to": "capital-lost-on-switching",
-      "polarity": "+",
-      "delay": false,
-      "description": "Know-how of the current crops is of little use for a new crop.",
-      "sources": [],
-      "curvature": 0
     },
     {
       "from": "capital-lost-on-switching",
@@ -2294,23 +2077,13 @@
     },
     {
       "from": "policy-resistance-legal-delays",
-      "to": "plans-changed-or-dropped",
-      "polarity": "+",
-      "delay": false,
-      "description": "Objections and appeals delay, change or stop plans.",
-      "sources": [],
-      "curvature": 0.45,
-      "hypothesis": true
-    },
-    {
-      "from": "plans-changed-or-dropped",
       "to": "farmers-trust-in-government",
       "polarity": "-",
       "delay": false,
-      "description": "Plans changed or dropped after they were announced teach farmers not to count on the next one.",
+      "description": "Objections and appeals delay, change or stop plans for the island's water and land after public bodies announced them, and plans changed or dropped teach farmers not to count on the next one.",
       "sources": [],
-      "curvature": 0.45,
-      "hypothesis": true
+      "hypothesis": true,
+      "curvature": -0.12
     },
     {
       "from": "policy-resistance-legal-delays",
@@ -2339,7 +2112,6 @@
       "name": "Salty soil takes in less rain",
       "path": [
         "root-zone-salinity",
-        "clay-dispersion-sodification",
         "soil-structure-usability",
         "freshwater-lens-recharge",
         "freshwater-lens-thickness"
@@ -2350,7 +2122,6 @@
       "name": "Salt-tolerant crops need less pumping",
       "path": [
         "root-zone-salinity",
-        "attractiveness-of-new-crops",
         "salt-tolerant-crop-adoption",
         "crop-water-demand",
         "crop-water-shortfall",
@@ -2364,10 +2135,8 @@
       "path": [
         "salt-tolerant-crop-adoption",
         "harvest-of-new-crops-to-process",
-        "attractiveness-of-local-processing",
         "processing-capacity-for-alternative-crops",
-        "net-price-for-new-crops",
-        "attractiveness-of-new-crops"
+        "net-price-for-new-crops"
       ]
     },
     {
@@ -2466,7 +2235,6 @@
       "name": "Storing water when harvests fall",
       "path": [
         "crop-yield",
-        "attractiveness-of-storing-water",
         "freshwater-storage-measures",
         "freshwater-lens-recharge",
         "freshwater-lens-thickness",
@@ -2553,7 +2321,6 @@
       "name": "Changed plans erode trust",
       "path": [
         "policy-resistance-legal-delays",
-        "plans-changed-or-dropped",
         "farmers-trust-in-government"
       ]
     },

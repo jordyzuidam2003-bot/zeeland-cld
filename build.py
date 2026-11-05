@@ -33,6 +33,7 @@ docs/, which this script writes (per version):
 import argparse
 import hashlib
 import json
+import math
 import re
 import sys
 from pathlib import Path
@@ -53,6 +54,7 @@ VERSIONS = [
 ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
 SUBQUESTIONS = ["SQ1", "SQ2", "SQ3"]
 SETS_LETTER = {"Social": "S", "Ecological": "E", "Technological": "T"}
+CONSTANT_REACH = 300  # the most a Constant's box keeps from a box it drives: about one box's width
 
 
 def versions():
@@ -138,6 +140,15 @@ def check(cld, refs):
         constant = {e["id"] for e in cld["elements"] if e["element type"] == "Constant"}
         warnings += [f"{c['from']} -> {c['to']}: a Constant's link, yet bent (curvature {c['curvature']})"
                      for c in cld["connections"] if c["from"] in constant and c["curvature"] != 0]
+        # ... and it sits beside what it drives (Jordy's decision), so its link reads as its own.
+        bxs = draw.boxes(cld)
+        for c in cld["connections"]:
+            if c["from"] in constant:
+                a, b = bxs[c["from"]], bxs[c["to"]]
+                gap = math.hypot(max(a[0] - b[2], b[0] - a[2], 0), max(a[1] - b[3], b[1] - a[3], 0))
+                if gap > CONSTANT_REACH:
+                    warnings.append(f"{c['from']} -> {c['to']}: a Constant {gap:.0f} from what it drives, "
+                                    f"more than {CONSTANT_REACH}")
         # Every other link has some bend (Jordy), so a reader can follow it; under 0.03 reads as
         # straight, the bend page/app.js keeps a dragged link from going below.
         warnings += [f"{c['from']} -> {c['to']}: not a Constant's link, yet straight (curvature {c['curvature']})"

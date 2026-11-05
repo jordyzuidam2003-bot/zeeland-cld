@@ -6,7 +6,7 @@
 </defs>
 <rect x="-504" y="-282" width="1023" height="607" fill="white"/>
 <g class="links">
-<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="machines-and-storage-for-current-crops" data-sign="+" data-delay="false" data-curvature="-0.22">
+<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="machines-and-storage-for-current-crops" data-sign="+" data-delay="false" data-curvature="0.0">
 <path class="link-path" d="M -293.9 -40.0 Q -312.0 19.0 -278.2 74.9 Q -244.3 130.8 -169.8 164.9" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-211.0" y="166.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
 </g>

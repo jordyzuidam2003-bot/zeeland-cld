@@ -2,7 +2,8 @@
 
 Imported by build.py, which writes docs/cld.svg and puts the same drawing inline in
 docs/index.html. svg(cld) returns the drawing as a string; overlaps(cld) the warnings about
-boxes that intersect and other layout faults, for build.py's report; boxes(cld) the geometry
+boxes that intersect and other layout faults, and tangles(cld) the crossings between links and
+the links through a box, for build.py's report; boxes(cld) the geometry
 build.py gives Kumu's elements; regions_svg(cld) the regions alone, Kumu's background image.
 
 What is drawn, from back to front:
@@ -635,6 +636,40 @@ def loop_figure(cld, loop):
 
 
 # --- overlap warnings -----------------------------------------------------------------------
+def turn(a, b, c):
+    return (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])
+
+
+def meet(p, q, r, s):
+    """Whether the segments p-q and r-s cross."""
+    return turn(p, q, r) * turn(p, q, s) < 0 and turn(r, s, p) * turn(r, s, q) < 0
+
+
+def tangles(cld):
+    """(crossings, through): the points where two links cross, as pairs of links, and each link
+    that passes through a box it does not connect, which reads as if that element mediates it, as
+    (link, element); build.py's report counts both, the eye's measure of a layout. Each link is
+    sampled at 30 points and tested segment by segment, a pair of links only where their frames meet."""
+    bxs = boxes(cld)
+    pts = {k: [bezier(*p, i / 30) for i in range(31)] for k, p in link_paths(cld, bxs).items()}
+    frame = {k: (min(x for x, _ in p), min(y for _, y in p), max(x for x, _ in p), max(y for _, y in p))
+             for k, p in pts.items()}
+    apart = lambda f, g: f[2] < g[0] or g[2] < f[0] or f[3] < g[1] or g[3] < f[1]
+    keys = list(pts)
+    crossings = [(a, b) for i, a in enumerate(keys) for b in keys[i + 1:] if not apart(frame[a], frame[b])
+                 for u in range(30) for v in range(30) if meet(pts[a][u], pts[a][u + 1], pts[b][v], pts[b][v + 1])]
+
+    def cuts(p, q, box):
+        """Whether the segment p-q enters box: an end inside it, or a crossing with one of its sides."""
+        x0, y0, x1, y1 = box[:4]
+        corners = [(x0, y0), (x1, y0), (x1, y1), (x0, y1)]
+        return (inside(p, box) or inside(q, box)
+                or any(meet(p, q, corners[k], corners[(k + 1) % 4]) for k in range(4)))
+    through = [(k, e) for k in keys for e, b in bxs.items() if e not in k and not apart(frame[k], b)
+               and any(cuts(pts[k][u], pts[k][u + 1], b) for u in range(30))]
+    return crossings, through
+
+
 def overlaps(cld):
     """Pairs of element boxes that intersect, a link and its reverse drawn on one curve, an
     element on the wrong side of the regions' border, and a named loop whose own links cross."""
@@ -677,8 +712,6 @@ def overlaps(cld):
     # a named loop whose own links cross reads as a figure eight, which cannot be followed round;
     # each link sampled at 30 points, every pair of the loop's links tested segment by segment
     pts = {k: [bezier(*p, i / 30) for i in range(31)] for k, p in paths.items()}
-    turn = lambda a, b, c: (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])
-    meet = lambda p, q, r, s: turn(p, q, r) * turn(p, q, s) < 0 and turn(r, s, p) * turn(r, s, q) < 0
     for loop in cld["loops"]:
         path = loop["path"]
         steps = [(path[i], path[(i + 1) % len(path)]) for i in range(len(path))]

@@ -420,6 +420,11 @@ def main():
         print(f"feedback loops in the diagram: {len(loops)} "
               f"({sum(k == 'R' for k, _ in loops)} R, {sum(k == 'B' for k, _ in loops)} B), "
               f"shortest {min((len(p) for _, p in loops), default=0)} links")
+        # the layout's measure: the eye found crossings and links over boxes that no warning named
+        crossings, through = draw.tangles(cld)
+        print(f"layout: {len(crossings)} crossings between links, "
+              f"{len(through)} links through a box they do not connect")
+        warnings = warnings + [f"link through a box: {a} -> {b} passes through {e}" for (a, b), e in through]
         if warnings:
             print("warnings:\n  " + "\n  ".join(warnings))
     # a reference is shared by the versions, so it is cited nowhere only when no version cites it

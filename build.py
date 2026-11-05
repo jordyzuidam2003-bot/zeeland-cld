@@ -7,14 +7,15 @@
     python3 build.py --layout FILE --v2   # the same into cld-v2.json
 
 Sources, edited by hand: cld.json (elements, connections, named loops, layout and
-link curvature), references.json (sources), view.scss (the Kumu view inside project.json) and
-page/ (index.html, a template with the placeholders <!-- SVG --> and <!-- DATA -->; app.js;
-style.css). draw.py draws the SVG. Version 2, cld-v2.json, stands beside version 1 until the
+link curvature), references.json (sources), model-texts.md (the model texts each page shows),
+view.scss (the Kumu view inside project.json) and page/ (index.html, a template with the
+placeholders <!-- SVG -->, <!-- FACTS -->, <!-- TEXTS --> and <!-- DATA -->; app.js; style.css). draw.py draws the SVG. Version 2, cld-v2.json, stands beside version 1 until the
 group makes the final CLD from both (VERSIONS); each version is checked and built into its own
-folder, version 2's docs/v2/, sharing references.json, view.scss, page/ and draw.py. Never edit
+folder, version 2's docs/v2/, sharing references.json, model-texts.md, view.scss, page/ and draw.py. Never edit
 docs/, which this script writes (per version):
 
-    docs/index.html    the page: the template with the drawing inline and the data as JSON
+    docs/index.html    the page: the template with the drawing inline, the model texts (their
+                       numbers counted in the version) and the data as JSON
     docs/app.js        copied from page/
     docs/style.css     copied from page/
     docs/cld.svg       the drawing on its own, the picture for the report
@@ -41,6 +42,7 @@ import draw
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
 PAGE = ROOT / "page"
+TEXTS = ROOT / "model-texts.md"
 PAGES_URL = "https://jordyzuidam2003-bot.github.io/zeeland-cld/"
 # version 1 stays as Lenne approved it, its page unchanged, while version 2 is built beside it
 VERSIONS = [
@@ -217,9 +219,71 @@ def page_data(cld, refs, version):
     }
 
 
-def page(cld, refs, version, v):
-    """docs/index.html: the template with the drawing inline and the data as JSON; a version
-    other than 1 names itself and links to version 1."""
+def core(cld):
+    """The largest set of elements that each reach every other along the links (the model's
+    feedback core), as a set of ids."""
+    out, back = {e["id"]: set() for e in cld["elements"]}, {e["id"]: set() for e in cld["elements"]}
+    for c in cld["connections"]:
+        out[c["from"]].add(c["to"])
+        back[c["to"]].add(c["from"])
+
+    def reach(start, step):
+        seen, todo = {start}, [start]
+        while todo:
+            for nxt in step[todo.pop()] - seen:
+                seen.add(nxt)
+                todo.append(nxt)
+        return seen
+    return max((reach(i, out) & reach(i, back) for i in out), key=len)
+
+
+def counts(cld, loops):
+    """The numbers model-texts.md names in braces, counted in this version."""
+    inner = core(cld)
+    links = sum(c["from"] in inner and c["to"] in inner for c in cld["connections"])
+    rest = [e for e in cld["elements"] if e["id"] not in inner]
+    return {"elements": len(cld["elements"]), "links": len(cld["connections"]), "named loops": len(cld["loops"]),
+            "sourced links": sum(bool(c["sources"]) for c in cld["connections"]),
+            "hypotheses": sum(bool(c.get("hypothesis")) for c in cld["connections"]),
+            "feedback loops": len(loops), "core elements": len(inner), "core links": links,
+            "independent loops": links - len(inner) + 1, "other elements": len(rest),
+            "other constants": sum(e["element type"] == "Constant" for e in rest)}
+
+
+def inline(text):
+    """A line of model-texts.md as HTML: **strong**, *em*, `code`, and bare URLs as links."""
+    text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
+    text = re.sub(r"\*(.+?)\*", r"<em>\1</em>", text)
+    text = re.sub(r"`(.+?)`", r"<code>\1</code>", text)
+    return re.sub(r"https?://[^\s<]+[^\s<.,;)]", lambda m: f'<a href="{m[0]}">{m[0]}</a>', text)
+
+
+def model_texts(cld, loops):
+    """(facts, texts): model-texts.md as HTML, its numbers counted in this version. The facts are
+    the list before its first heading; the texts are its sections, each a ## heading with
+    paragraphs or a - list. A <!-- comment --> is not shown."""
+    text = re.sub(r"<!--.*?-->\n?", "", TEXTS.read_text(), flags=re.S)
+    for name, n in counts(cld, loops).items():
+        text = text.replace("{" + name + "}", f"{n:,}")
+    if re.search(r"\{[a-z ]+\}", text):
+        sys.exit(f"model-texts.md names a number build.py does not count: {re.search(r'{[a-z ]+}', text)[0]}")
+    html = []
+    for block in re.split(r"\n\s*\n", text.strip()):
+        lines = block.split("\n")
+        if lines[0].startswith("## "):
+            html.append(f"<h2>{inline(lines[0][3:])}</h2>")
+        elif lines[0].startswith("- "):
+            html.append("<ul>" + "".join(f"<li>{inline(l[2:])}</li>" for l in lines) + "</ul>")
+        else:
+            html.append(f"<p>{inline(' '.join(lines))}</p>")
+    first = next(i for i, h in enumerate(html) if h.startswith("<h2>"))
+    return "\n".join(html[:first]), "\n".join(html[first:])
+
+
+def page(cld, refs, version, v, loops):
+    """docs/index.html: the template with the drawing inline, the model texts and the data as
+    JSON; a version other than 1 names itself and links to version 1."""
     template = (PAGE / "index.html").read_text()
     if v["name"] != "1":
         for old, new in [("<title>Zeeland CLD</title>", f'<title>Zeeland CLD, version {v["name"]}</title>'),
@@ -231,9 +295,11 @@ def page(cld, refs, version, v):
     svg = draw.svg(cld)
     # "</" inside a <script> would end it early; "<\/" is the same string to JSON
     data = json.dumps(page_data(cld, refs, version), ensure_ascii=False).replace("</", "<\\/")
-    for marker in ("<!-- SVG -->", "<!-- DATA -->"):
+    facts, texts = model_texts(cld, loops)
+    for marker in ("<!-- SVG -->", "<!-- DATA -->", "<!-- FACTS -->", "<!-- TEXTS -->"):
         assert template.count(marker) == 1, f"page/index.html must hold {marker} once"
-    return (template.replace("<!-- SVG -->", svg.rstrip())
+    return (template.replace("<!-- SVG -->", svg.rstrip()).replace("<!-- FACTS -->", facts)
+            .replace("<!-- TEXTS -->", texts)
             .replace("<!-- DATA -->", f'<script type="application/json" id="data">{data}</script>'))
 
 
@@ -370,13 +436,14 @@ def main():
 
         # the model version teammates compare: the first seven characters of the file's SHA-256
         version = hashlib.sha256((ROOT / v["file"]).read_bytes()).hexdigest()[:7]
+        loops = cycles(cld)  # the page's texts count them, and the report
         rel = v["docs"].relative_to(DOCS).as_posix()
         at = lambda name: name if rel == "." else f"{rel}/{name}"
         files = {
             "project.json": json.dumps(project(cld, refs, template, version, v), indent=2, ensure_ascii=False) + "\n",
             "cld.svg": draw.svg(cld),
             "regions.svg": draw.regions_svg(cld)[0],
-            "index.html": page(cld, refs, version, v),
+            "index.html": page(cld, refs, version, v, loops),
             "app.js": (PAGE / "app.js").read_text(),
             "style.css": (PAGE / "style.css").read_text(),
             **{f"loops/{loop['id']}.svg": draw.loop_figure(cld, loop) for loop in cld["loops"]},
@@ -390,7 +457,7 @@ def main():
         loops_dir = v["docs"] / "loops"
         extra += sorted(at(f"loops/{f.name}") for f in loops_dir.glob("*") if f"loops/{f.name}" not in files) \
             if loops_dir.is_dir() else []
-        reports.append((v, cld, warnings))
+        reports.append((v, cld, warnings, loops))
 
     if args.check:
         stale = [name for name, text in outputs.items()
@@ -406,10 +473,9 @@ def main():
     for name, text in outputs.items():
         (DOCS / name).write_text(text)
 
-    for v, cld, warnings in reports:
+    for v, cld, warnings, loops in reports:
         if len(built) > 1:
             print(f"version {v['name']} ({v['file']}):")
-        loops = cycles(cld)
         n_el, n_conn = len(cld["elements"]), len(cld["connections"])
         print(f"{n_el} elements, {n_conn} connections, {len(cld['loops'])} named loops")
         hypotheses = sum(bool(c.get("hypothesis")) for c in cld["connections"])
@@ -430,6 +496,10 @@ def main():
     # a reference is shared by the versions, so it is cited nowhere only when no version cites it
     cited = {k for v in built for item in v["cld"]["elements"] + v["cld"]["connections"] for k in item.get("sources", [])}
     uncited = [f"reference {k!r} is cited nowhere" for k in refs if k not in cited]
+    # a section the page would show with nothing under its heading
+    uncited += [f"model-texts.md: the section {h!r} is still empty" for h, body in
+                re.findall(r"^## (.+)\n((?:(?!## ).*\n?)*)", re.sub(r"<!--.*?-->", "", TEXTS.read_text(), flags=re.S), re.M)
+                if not body.strip()]
     if uncited:
         print("warnings:\n  " + "\n  ".join(uncited))
 

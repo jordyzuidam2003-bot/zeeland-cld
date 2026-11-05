@@ -78,3 +78,11 @@ footer {
   color: var(--muted);
 }
 footer code { font-size: 13px; }
+.facts { padding: 0 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 24px; margin: 0 0 12px; }
+.facts ul { display: contents; }
+.facts li { list-style: none; }
+.facts a { color: var(--accent); }
+.about { max-width: 80ch; padding: 8px 16px 8px; }
+.about h2 { font-size: 17px; margin: 20px 0 6px; }
+.about p, .about li { margin: 0 0 8px; }
+.about ul { padding-left: 20px; }

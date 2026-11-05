@@ -13,6 +13,7 @@ web page, <https://jordyzuidam2003-bot.github.io/zeeland-cld/>, served by GitHub
 | `cld.json` | the elements, connections, named loops, layout (x, y) and link curvature | yes |
 | `cld-v2.json` | version 2, built beside version 1 (below), in the same form | yes |
 | `references.json` | the sources, as `"key": "full APA reference"` | yes |
+| `model-texts.md` | the model texts each version's page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
 | `view.scss` | the Kumu view inside `docs/project.json` | yes |
 | `page/` | the page around the drawing: `index.html` (a template), `app.js`, `style.css` | yes |
 | `build.py` | checks the model and writes `docs/` (how: its docstring) | — |
@@ -22,13 +23,15 @@ web page, <https://jordyzuidam2003-bot.github.io/zeeland-cld/>, served by GitHub
 ## Two versions
 
 Version 2, `cld-v2.json`, is built beside version 1 until Jordy and Lenne make the final CLD from
-both; version 1, `cld.json`, stays as it was approved, kept by the git tag `v1`. `build.py` checks
+both; version 1, `cld.json`, stays as it was approved, kept by the git tag `v1`, and its page
+gains only what both pages show, the model texts. `build.py` checks
 and builds both, version 2 into `docs/v2/`, published at
 <https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/>, whose page links to version 1;
 `--check`, and so the pre-commit hook, covers both, and `--layout FILE --v2` writes a layout into
-`cld-v2.json`. `references.json`, `view.scss`, `page/` and `draw.py` are shared, so a change to
-them leaves version 1's page as it is: `git diff --stat v1 -- cld.json docs ':!docs/v2' ':!docs/app.js'`
-prints nothing, and `page/app.js` shows a field only where an element has it.
+`cld-v2.json`. `references.json`, `model-texts.md`, `view.scss`, `page/` and `draw.py` are shared, so a
+change to them leaves version 1's model and drawing as they are:
+`git diff --stat v1 -- cld.json docs/cld.svg docs/loops docs/regions.svg docs/project.json` prints
+nothing, and `page/app.js` shows a field only where an element has it.
 
 ## Working on the diagram
 
@@ -89,8 +92,11 @@ looking at.
 
 ### `cld.json`
 
-The model texts (purpose, spatial scale, time horizon, system boundary) are drafted outside
-this repository and not published for now (Jordy).
+The model texts are in `model-texts.md`, which `build.py` renders on the page of each version
+(Jordy: someone opening the page reads the scale, horizon and assumptions with the drawing). A
+word in braces, such as `{feedback loops}`, is a number `build.py` counts in that version; a
+`<!-- comment -->` is not shown, and `<!-- Draft, for the team to check. -->` marks a text the
+team has not checked yet.
 
 An element:
 

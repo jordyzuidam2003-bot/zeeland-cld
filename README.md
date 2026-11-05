@@ -60,7 +60,8 @@ fails on an id or a link that is not in `cld.json`. Dragging redraws the links b
 regions, which `build.py` draws again from the new positions. Each link has its own bow, chosen
 so a reader can follow every connection: every arrowhead and sign clear, each crossing at a wide
 angle and away from the arrowheads and signs (how links cross matters more than how often), no
-two links running close side by side, the whole drawing readable on one A4 page, no link through
+two links running close side by side, a named loop leaving each element about the way it
+arrived, the whole drawing readable on one A4 page, no link through
 an element it does not connect, which would read as if that element
 mediates it, and no named loop whose links cross each other, a figure eight that cannot be
 followed round; `build.py` warns on the last. A Constant's links run straight, and `build.py`

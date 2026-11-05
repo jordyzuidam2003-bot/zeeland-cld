@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version e32189c, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version c71efbc, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -211,6 +211,22 @@
       "values": [
         "Cross-domain",
         "Within domain"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-hypothesis",
+      "name": "Hypothesis",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "no",
+        "yes"
       ],
       "sort": false,
       "cluster": true
@@ -743,6 +759,7 @@
         "description": "Higher temperatures increase evapotranspiration and crop water requirements.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -762,6 +779,7 @@
         "description": "Low summer river discharge allows seawater to penetrate further inland.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -781,6 +799,7 @@
         "description": "Summer precipitation deficit and high evaporation reduce natural recharge.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -800,6 +819,7 @@
         "description": "Rising sea level pushes marine water further into estuaries.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -819,6 +839,7 @@
         "description": "Higher sea level increases hydrostatic pressure beneath dikes.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -838,6 +859,7 @@
         "description": "More winter precipitation increases potential infiltration into the soil.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -857,6 +879,7 @@
         "description": "Higher winter rainfall peaks are mostly discharged under conventional drainage.",
         "sets link": "E to T",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -876,6 +899,7 @@
         "description": "Sodification destroys soil aggregates, porosity, aeration, and workability.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -895,6 +919,7 @@
         "description": "Higher crop water need drives farmers to pump more groundwater.",
         "sets link": "E to T",
         "sets scope": "Cross-domain",
+        "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -914,6 +939,7 @@
         "description": "Salinisation of surface canals makes intake water for irrigation brackish.",
         "sets link": "E to T",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -933,6 +959,7 @@
         "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In the thin polder lenses of Schouwen-Duiveland the mixing zone shifts at most 0.1 m within a year, with vertical flow of at most 1.2 mm per day (de Louw et al., 2011). Under a creek ridge, raising the winter water table 0.5 m thickened a 13–15 m lens by 6–8 m in ten years, and the lens had not reached its new thickness yet (Pauw et al., 2015, a model result for Walcheren). So a change in recharge takes years to a decade to show in the lens.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nPauw, P. S., van Baaren, E. S., Visser, M., de Louw, P. G. B., & Oude Essink, G. H. P. (2015). Increasing a freshwater lens below a creek ridge using a controlled artificial recharge and drainage system: A case study in the Netherlands. Hydrogeology Journal, 23(7), 1415–1430. https://doi.org/10.1007/s10040-015-1264-z",
         "sourced": "yes",
         "connection type": "+"
@@ -952,6 +979,7 @@
         "description": "A thick freshwater lens keeps saline groundwater safely below the root zone.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -971,6 +999,7 @@
         "description": "A thicker freshwater lens buffers against salt upconing under wells.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -990,6 +1019,7 @@
         "description": "A thicker lens provides a larger buffer of fresh soil moisture in summer.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1009,6 +1039,7 @@
         "description": "Peat oxidation and clay settling lower the land surface relative to NAP at millimetres a year, so a decimetre takes decades: Dutch land below sea level is still subsiding up to 1 m per century, fastest in peat areas (Oude Essink et al., 2010). A rate for Schouwen-Duiveland's clay polders is not yet sourced.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "Oude Essink, G. H. P., van Baaren, E. S., & de Louw, P. G. B. (2010). Effects of climate change on coastal groundwater systems: A modeling study in the Netherlands. Water Resources Research, 46, W00F04. https://doi.org/10.1029/2009WR008719",
         "sourced": "yes",
         "connection type": "-"
@@ -1028,6 +1059,7 @@
         "description": "Higher polder elevation reduces the hydraulic head difference driving upward saline seepage.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1047,6 +1079,7 @@
         "description": "High sodium (Na+) concentrations displace calcium (Ca2+), causing clay particles to disperse. The delay is on the way back: structure collapses within the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year, which takes 5 to 10 years on heavy clay and about a year on light soil (van Beekom et al., 1953, after the 1945 and 1953 floods in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 224–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860",
         "sourced": "yes",
         "connection type": "+"
@@ -1066,6 +1099,7 @@
         "description": "Osmotic stress and chloride toxicity reduce yields of salt-sensitive cash crops.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1085,6 +1119,7 @@
         "description": "Rising salinity increases agronomic pressure to switch to tolerant varieties.",
         "sets link": "E to T",
         "sets scope": "Cross-domain",
+        "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1104,6 +1139,7 @@
         "description": "Upward saline groundwater erodes and thins the floating freshwater lens from below.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1123,6 +1159,7 @@
         "description": "Capillary rise brings saline seepage water into the root zone.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1142,6 +1179,7 @@
         "description": "Healthy porous soil allows winter rainwater to infiltrate rather than run off.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1161,6 +1199,7 @@
         "description": "Good soil structure supports root development, emergence, and safe harvesting of tubers/bulbs.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1180,6 +1219,7 @@
         "description": "Structural soil health and low salinity determine the intrinsic value of arable land.",
         "sets link": "E to S",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1199,6 +1239,7 @@
         "description": "Salt water drawn upward contaminates the upper soil and irrigation wells.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1218,6 +1259,7 @@
         "description": "Evaporation of brackish irrigation water leaves salt behind in the topsoil.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1237,6 +1279,7 @@
         "description": "Low water tables expose peat to oxygen and cause clay shrinkage.",
         "sets link": "S to E",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1256,6 +1299,7 @@
         "description": "Lower ditch levels increase the pressure gradient between deep saline groundwater and the polder.",
         "sets link": "S to E",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1275,6 +1319,7 @@
         "description": "Intensive drainage networks rapidly discharge winter surplus water to the sea.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1294,6 +1339,7 @@
         "description": "External supply directly supplements fresh water available to farms.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1313,6 +1359,7 @@
         "description": "Where external freshwater pipelines exist, farmers rely less on pumping from local lenses.",
         "sets link": "Within T",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1332,6 +1379,7 @@
         "description": "When fresh water is scarce, farmers are forced to irrigate with brackish surface/well water.",
         "sets link": "E to T",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1351,6 +1399,7 @@
         "description": "Adequate freshwater supply prevents drought stress and yield loss.",
         "sets link": "Within E",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1370,6 +1419,7 @@
         "description": "Active infiltration and drainage retention directly build up the freshwater lens.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1389,6 +1439,7 @@
         "description": "Smart/adjustable drains and storage retain winter water instead of discharging it.",
         "sets link": "Within T",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1408,6 +1459,7 @@
         "description": "Extracting groundwater directly depletes the limited freshwater lens.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1427,6 +1479,7 @@
         "description": "Pumping groundwater draws the underlying salt-fresh interface upward into a cone.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1446,6 +1499,7 @@
         "description": "While objections hold up a change to the water level plan, the current low ditch levels stay.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1465,6 +1519,7 @@
         "description": "Water evacuated via drains cannot infiltrate to refill the freshwater lens.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1484,6 +1539,7 @@
         "description": "Higher physical yield increases sales revenue per hectare.",
         "sets link": "E to S",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1503,6 +1559,7 @@
         "description": "Stable demand and offtake contracts justify investment in processing and supply chains.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1522,6 +1579,7 @@
         "description": "Assured offtake makes salt-tolerant and alternative crops commercially attractive to farmers.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1541,6 +1599,7 @@
         "description": "Established processing plants and offtake contracts make salt-tolerant crops viable for farmers.",
         "sets link": "Within T",
         "sets scope": "Within domain",
+        "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1560,6 +1619,7 @@
         "description": "Salt-tolerant crops and halophytes require less fresh water.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1579,6 +1639,7 @@
         "description": "Tolerant crops stabilize farm yields and revenue under saline conditions.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1598,6 +1659,7 @@
         "description": "Growing cultivation volume attracts processors, breeding investment, and supply chain scale.",
         "sets link": "Within T",
         "sets scope": "Within domain",
+        "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1617,6 +1679,7 @@
         "description": "Declining land collateral values trigger higher bank risk premiums and credit freezes.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1636,6 +1699,7 @@
         "description": "The more land values fall, or the more a plan for re-wetting or depoldering threatens to lower them, the greater farmers' concern about devaluation.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1655,6 +1719,7 @@
         "description": "With the same mortgage, a lower land value is a higher debt relative to the farm's assets: land is 70% of an arable farm's balance sheet, and its rise in value is what made arable farms' solvency 81% in 2018 (van der Meulen et al., 2020). A high solvency makes new credit easier and cheaper to get; the debt itself does not shrink when the land loses value.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092",
         "sourced": "yes",
         "connection type": "-"
@@ -1674,6 +1739,7 @@
         "description": "Restricted credit and higher interest rates prevent farmers from financing adaptation measures.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1693,6 +1759,7 @@
         "description": "Stricter European banking rules mandate higher capital buffers for climate-exposed loans.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1712,6 +1779,7 @@
         "description": "Potatoes and onions require dry, warm soils in early spring to bear heavy machinery.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1731,6 +1799,7 @@
         "description": "High-value salt-sensitive crops require intensive freshwater irrigation during dry spells.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1750,6 +1819,7 @@
         "description": "A farm that relies on high margins can give fewer hectares to lower-margin salt-tolerant alternatives.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1769,6 +1839,7 @@
         "description": "Sustained productivity and profitability underpin high market prices for farmland.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1788,6 +1859,7 @@
         "description": "Higher farm income generates internal cash flow for adaptive investments.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1807,6 +1879,7 @@
         "description": "Financial room allows investment in ASR, Freshmaker, and adjustable drainage.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
+        "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1826,6 +1899,7 @@
         "description": "Investment capacity enables transition costs and new machinery for novel crops.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
+        "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1845,6 +1919,7 @@
         "description": "Concern about uncompensated loss leads farmers and their organisations to object, appeal and lobby against such plans.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1864,6 +1939,7 @@
         "description": "A highly leveraged farm keeps its lucrative but salt-sensitive crops (seed potatoes, onions) to meet its debt payments.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1883,6 +1959,7 @@
         "description": "When arable farming on the land no longer pays, fewer farmers take it over, as successor or as buyer, so more of it leaves arable farming.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -1902,6 +1979,7 @@
         "description": "When credit tightens, farms that cannot refinance stop, and fewer arable farmers can borrow to buy their land, so more of it leaves arable farming.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "no",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -1921,6 +1999,7 @@
         "description": "The fewer hectares of arable land in a polder, the less pressure on the water board to keep its ditch levels low in spring.",
         "sets link": "Within S",
         "sets scope": "Within domain",
+        "hypothesis": "yes",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -2053,7 +2132,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model e32189c",
+      "name": "CLD, model c71efbc",
       "description": "",
       "scale": 1,
       "center": {

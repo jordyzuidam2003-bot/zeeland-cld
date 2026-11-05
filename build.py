@@ -85,6 +85,12 @@ def check(cld, refs):
             errors.append(f"{name}: polarity must be '+' or '-'")
         if not isinstance(c.get("delay"), bool) or not isinstance(c.get("curvature"), (int, float)):
             errors.append(f"{name}: delay must be true/false and curvature a number")
+        # A behavioural claim with no source is a hypothesis for the group model building session;
+        # one that finds a source takes it and loses the mark.
+        if not isinstance(c.get("hypothesis", False), bool):
+            errors.append(f"{name}: hypothesis must be true/false")
+        elif c.get("hypothesis") and c.get("sources"):
+            errors.append(f"{name}: a hypothesis with sources: a sourced link loses its hypothesis mark")
 
     for item in cld["elements"] + cld["connections"]:
         for key in item.get("sources", []):
@@ -183,6 +189,7 @@ def blueprint(cld, refs):
             "description": c["description"],
             "sets link": f"Within {SETS_LETTER[sa]}" if sa == sb else f"{SETS_LETTER[sa]} to {SETS_LETTER[sb]}",
             "sets scope": "Within domain" if sa == sb else "Cross-domain",
+            "hypothesis": "yes" if c.get("hypothesis") else "no",
             **sourced(c),
         })
     return {"elements": elements, "connections": connections}
@@ -371,8 +378,11 @@ def main():
     loops = cycles(cld)
     n_el, n_conn = len(cld["elements"]), len(cld["connections"])
     print(f"{n_el} elements, {n_conn} connections, {len(cld['loops'])} named loops")
+    hypotheses = sum(bool(c.get("hypothesis")) for c in cld["connections"])
+    sourced = sum(bool(c["sources"]) for c in cld["connections"])
     print(f"sourced: {sum(bool(e['sources']) for e in cld['elements'])}/{n_el} elements, "
-          f"{sum(bool(c['sources']) for c in cld['connections'])}/{n_conn} connections")
+          f"{sourced}/{n_conn} connections; {hypotheses} connections are hypotheses, "
+          f"{n_conn - sourced - hypotheses} have neither")
     print(f"feedback loops in the diagram: {len(loops)} "
           f"({sum(k == 'R' for k, _ in loops)} R, {sum(k == 'B' for k, _ in loops)} B), "
           f"shortest {min((len(p) for _, p in loops), default=0)} links")

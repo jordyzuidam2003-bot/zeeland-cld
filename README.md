@@ -26,8 +26,9 @@ builds and pushes, so nobody else needs git or Python.
 
 1. Edit `cld.json` (or `references.json`, `view.scss`, `page/`).
 2. `python3 build.py` checks the model and rebuilds `docs/`. It stops on an error (an unknown
-   element, a source missing from `references.json`, a named loop that is not closed or whose
-   R/B does not match its polarities) and prints the source coverage and any warnings: a model
+   element, a source missing from `references.json`, a link marked a hypothesis that has
+   sources, a named loop that is not closed or whose
+   R/B does not match its polarities) and prints the source coverage, hypotheses apart, and any warnings: a model
    text still empty, an element without links, two boxes that overlap, a link and its reverse
    drawn on one curve, an element on the wrong side of the border between the two subsystems,
    a named loop whose own links cross, a link under a region's name, a loop's figure with no
@@ -108,8 +109,11 @@ An element:
 - `x` and `y` are positions in the drawing; y grows downwards.
 
 A connection: `from` and `to` (element ids), `polarity` (`"+"` or `"-"`), `delay` (true/false,
-drawn as two strokes across the link), `description`, `sources`,
-`curvature` (0 is straight; a positive value bows the link to the left of its direction).
+drawn as two strokes across the link), `description`, `sources`, `hypothesis` (optional, `true`
+on a claim about why an actor decides as it does that has no source: a question for the group
+model building session, shown in the link's panel and in Kumu's fields, never on the drawing;
+a link that finds a source loses it), `curvature` (0 is straight; a positive value bows the
+link to the left of its direction).
 The drawing runs a link from a point on its source box's edge to one on its target's, the ends
 on one edge spread along it, and puts the sign on the side of the arrowhead clear of boxes.
 The SETS fields the page and Kumu show ("Cross-domain", "E to S" …) are derived by `build.py`,

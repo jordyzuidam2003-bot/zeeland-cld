@@ -542,6 +542,7 @@
       "delay": false,
       "description": "Higher crop water need drives farmers to pump more groundwater.",
       "sources": [],
+      "hypothesis": true,
       "curvature": 0.3
     },
     {
@@ -639,6 +640,7 @@
       "delay": false,
       "description": "Rising salinity increases agronomic pressure to switch to tolerant varieties.",
       "sources": [],
+      "hypothesis": true,
       "curvature": 0.06
     },
     {
@@ -810,6 +812,7 @@
       "delay": false,
       "description": "While objections hold up a change to the water level plan, the current low ditch levels stay.",
       "sources": [],
+      "hypothesis": true,
       "curvature": 0.16
     },
     {
@@ -855,6 +858,7 @@
       "delay": false,
       "description": "Established processing plants and offtake contracts make salt-tolerant crops viable for farmers.",
       "sources": [],
+      "hypothesis": true,
       "curvature": -0.16
     },
     {
@@ -882,6 +886,7 @@
       "delay": false,
       "description": "Growing cultivation volume attracts processors, breeding investment, and supply chain scale.",
       "sources": [],
+      "hypothesis": true,
       "curvature": -0.16
     },
     {
@@ -900,6 +905,7 @@
       "delay": false,
       "description": "The more land values fall, or the more a plan for re-wetting or depoldering threatens to lower them, the greater farmers' concern about devaluation.",
       "sources": [],
+      "hypothesis": true,
       "curvature": 0.16
     },
     {
@@ -983,6 +989,7 @@
       "delay": false,
       "description": "Financial room allows investment in ASR, Freshmaker, and adjustable drainage.",
       "sources": [],
+      "hypothesis": true,
       "curvature": 0.18
     },
     {
@@ -992,6 +999,7 @@
       "delay": false,
       "description": "Investment capacity enables transition costs and new machinery for novel crops.",
       "sources": [],
+      "hypothesis": true,
       "curvature": -0.13
     },
     {
@@ -1001,6 +1009,7 @@
       "delay": false,
       "description": "Concern about uncompensated loss leads farmers and their organisations to object, appeal and lobby against such plans.",
       "sources": [],
+      "hypothesis": true,
       "curvature": 0.16
     },
     {
@@ -1010,6 +1019,7 @@
       "delay": false,
       "description": "A highly leveraged farm keeps its lucrative but salt-sensitive crops (seed potatoes, onions) to meet its debt payments.",
       "sources": [],
+      "hypothesis": true,
       "curvature": -0.16
     },
     {
@@ -1019,6 +1029,7 @@
       "delay": false,
       "description": "When arable farming on the land no longer pays, fewer farmers take it over, as successor or as buyer, so more of it leaves arable farming.",
       "sources": [],
+      "hypothesis": true,
       "curvature": 0.16
     },
     {
@@ -1037,6 +1048,7 @@
       "delay": false,
       "description": "The fewer hectares of arable land in a polder, the less pressure on the water board to keep its ditch levels low in spring.",
       "sources": [],
+      "hypothesis": true,
       "curvature": 0.12
     }
   ],

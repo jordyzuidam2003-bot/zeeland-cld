@@ -69,7 +69,9 @@ function showPanel(title, item, fields) {
   h2.append(...title);
   const dl = document.createElement("dl");
   for (const name of fields) row(dl, name, item[name]);
-  if (item.sources) row(dl, "sources", item.sources); else row(dl, "sources", "no source yet", "none");
+  if (item.sources) row(dl, "sources", item.sources);
+  else if (item.hypothesis === "yes") row(dl, "sources", "none: a hypothesis about behaviour, for the group model building session", "none");
+  else row(dl, "sources", "no source yet", "none");
   panelBody.append(h2, dl);
   panel.hidden = false;
 }

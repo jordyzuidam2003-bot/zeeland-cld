@@ -1,4 +1,17 @@
 {
+  "actors": [
+    "Arable farmers on Schouwen-Duiveland",
+    "Waterschap Scheldestromen",
+    "Gemeente Schouwen-Duiveland",
+    "Provincie Zeeland",
+    "Banks lending to the island's farmers",
+    "Buyers and processors of the island's crops",
+    "Consumers",
+    "EU",
+    "LVVN",
+    "IenW",
+    "Rijkswaterstaat"
+  ],
   "elements": [
     {
       "id": "hotter-drier-summers",

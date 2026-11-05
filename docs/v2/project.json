@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld-v2",
-  "description": "Model version c71efbc, the first seven characters of the SHA-256 of cld-v2.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 9165f09, the first seven characters of the SHA-256 of cld-v2.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -2132,7 +2132,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD version 2, model c71efbc",
+      "name": "CLD version 2, model 9165f09",
       "description": "",
       "scale": 1,
       "center": {

@@ -119,6 +119,10 @@ An element:
   corner; the group proposes the split and the names from the CLD, and the Project Plan
   follows it.
 - `x` and `y` are positions in the drawing; y grows downwards.
+- `actor` (version 2): on a decision variable, the one actor that decides it, from the model's
+  top-level `actors` list, which names every actor at the grain the group set (a public body by
+  its name, the island's arable farmers as one); `build.py` stops on an actor not on the list.
+  The page's panel shows it, and Kumu gets it as a field.
 
 A connection: `from` and `to` (element ids), `polarity` (`"+"` or `"-"`), `delay` (true/false,
 drawn as two strokes across the link), `description`, `sources`, `hypothesis` (optional, `true`

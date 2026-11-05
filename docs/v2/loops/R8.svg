@@ -6,19 +6,19 @@
 </defs>
 <rect x="-474" y="-312" width="977" height="624" fill="white"/>
 <g class="links">
-<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="-0.45">
+<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="-0.101">
 <path class="link-path" d="M -294.7 119.6 Q -349.3 59.8 -344.7 -10.2 Q -340.0 -80.3 -277.5 -136.6" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-311.2" y="-99.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="groundwater-extraction-for-irrigation" data-to="freshwater-lens-thickness" data-sign="-" data-delay="false" data-curvature="-0.08">
+<g class="link" data-from="groundwater-extraction-for-irrigation" data-to="freshwater-lens-thickness" data-sign="-" data-delay="false" data-curvature="0.16">
 <path class="link-path" d="M 154.5 205.6 Q 81.6 230.0 -0.0 230.0 Q -81.6 230.0 -154.5 205.6" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-106.3" y="218.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="root-zone-salinity" data-to="flushing-salt-from-the-root-zone" data-sign="+" data-delay="false" data-curvature="-0.3">
+<g class="link" data-from="root-zone-salinity" data-to="flushing-salt-from-the-root-zone" data-sign="+" data-delay="false" data-curvature="-0.164">
 <path class="link-path" d="M -197.4 -188.6 Q -119.6 -224.8 -24.9 -229.4 Q 69.7 -234.0 154.5 -205.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="106.3" y="-218.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="flushing-salt-from-the-root-zone" data-to="groundwater-extraction-for-irrigation" data-sign="+" data-delay="false" data-curvature="-0.35">
+<g class="link" data-from="flushing-salt-from-the-root-zone" data-to="groundwater-extraction-for-irrigation" data-sign="+" data-delay="false" data-curvature="0.211">
 <path class="link-path" d="M 294.7 -119.6 Q 345.0 -64.5 345.0 0.0 Q 345.0 64.5 294.7 119.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="324.1" y="79.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

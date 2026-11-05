@@ -6,15 +6,15 @@
 </defs>
 <rect x="-489" y="-282" width="1008" height="590" fill="white"/>
 <g class="links">
-<g class="link" data-from="mortgage-debt-financial-leverage" data-to="banks-risk-assessment" data-sign="+" data-delay="false" data-curvature="0.15">
+<g class="link" data-from="mortgage-debt-financial-leverage" data-to="banks-risk-assessment" data-sign="+" data-delay="false" data-curvature="0.274">
 <path class="link-path" d="M -233.0 -126.0 Q -179.2 -170.2 -98.6 -188.9 Q -17.9 -207.6 65.4 -195.2 Q 148.7 -182.8 209.7 -143.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="165.8" y="-166.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="banks-risk-assessment" data-to="bank-credit-to-farms" data-sign="-" data-delay="false" data-curvature="0.45">
+<g class="link" data-from="banks-risk-assessment" data-to="bank-credit-to-farms" data-sign="-" data-delay="false" data-curvature="0.378">
 <path class="link-path" d="M 287.6 -57.0 Q 317.4 10.0 278.3 74.8 Q 239.1 139.6 147.9 174.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="193.4" y="153.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="bank-credit-to-farms" data-to="mortgage-debt-financial-leverage" data-sign="+" data-delay="false" data-curvature="0.45">
+<g class="link" data-from="bank-credit-to-farms" data-to="mortgage-debt-financial-leverage" data-sign="+" data-delay="false" data-curvature="0.198">
 <path class="link-path" d="M -147.9 174.0 Q -245.7 137.0 -283.0 66.3 Q -320.3 -4.4 -278.7 -74.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-297.6" y="-27.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

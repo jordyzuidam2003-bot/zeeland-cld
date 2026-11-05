@@ -8,35 +8,35 @@
 <g class="links">
 <g class="link" data-from="root-zone-salinity" data-to="crop-yield" data-sign="-" data-delay="false" data-curvature="-0.17">
 <path class="link-path" d="M -349.4 408.2 Q -538.4 336.3 -633.8 205.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-626.5" y="246.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<text class="sign" x="-602.2" y="244.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="saline-seepage-kwel" data-to="root-zone-salinity" data-sign="+" data-delay="false" data-curvature="0.32">
 <path class="link-path" d="M 143.0 460.2 Q 0.0 480.0 -143.0 460.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-109.6" y="484.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="-93.4" y="465.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="demand-for-deep-polder-drainage" data-to="saline-seepage-kwel" data-sign="+" data-delay="false" data-curvature="0.19">
 <path class="link-path" d="M 620.7 222.9 Q 524.9 341.5 349.4 408.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="374.9" y="375.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="395.6" y="389.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="policy-resistance-legal-delays" data-to="demand-for-deep-polder-drainage" data-sign="+" data-delay="false" data-curvature="0.16">
 <path class="link-path" d="M 674.4 -136.9 Q 736.9 0.0 674.4 136.9" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="706.0" y="110.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="692.2" y="90.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="crop-yield" data-to="farm-revenue" data-sign="+" data-delay="false" data-curvature="0.35">
 <path class="link-path" d="M -666.2 153.9 Q -746.1 0.0 -666.2 -153.9" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-698.9" y="-128.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="-686.4" y="-108.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="agricultural-land-value" data-to="fear-of-expropriation-planning-blight" data-sign="-" data-delay="false" data-curvature="0.16">
 <path class="link-path" d="M -129.7 -462.0 Q 0.0 -478.2 129.7 -462.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="95.9" y="-485.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<text class="sign" x="79.9" y="-467.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="false" data-curvature="0.16">
 <path class="link-path" d="M -633.8 -205.9 Q -550.0 -320.5 -390.7 -391.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-431.8" y="-393.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="-435.8" y="-369.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="fear-of-expropriation-planning-blight" data-to="policy-resistance-legal-delays" data-sign="+" data-delay="false" data-curvature="0.16">
 <path class="link-path" d="M 409.9 -382.4 Q 543.1 -318.9 620.7 -222.9" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="612.0" y="-263.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="587.3" y="-260.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 </g>
 <g class="elements">

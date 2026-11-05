@@ -10,8 +10,8 @@ What is drawn, from back to front:
   regions   one faint region per subsystem, split by one smooth border with a white gap, each
             named in its top outer corner
   links     a quadratic Bezier from a point on the source box's edge to one on the target's,
-            the ends on one edge spread along it; the sign beside the arrowhead on the side
-            clear of boxes, a delay as two short strokes across the midpoint
+            the ends on one edge spread along it; the sign on the link just before the
+            arrowhead, a delay as two short strokes across the midpoint
   elements  the label in a box filled with the pale tint of its SETS domain, the one place the
             domain shows in the drawing (the layout follows the loops, not the domains):
             square corners for a Stock, rounded for an Auxiliary, dashed for a Constant, a
@@ -42,6 +42,8 @@ LINK_COLOUR = {"+": "#2166AC", "-": "#B2182B"}  # by polarity (Jordy, chosen aga
                                                    # the − links along a loop, and an odd number makes it balancing)
 SIGN_TEXT = {"+": "+", "-": "−"}
 SIGN_SIZE = 42
+SIGN_BACK = 50                 # a sign's centre on its link: the arrowhead (ARROW) and half a sign before the end
+SIGN_HALO = 10                 # the white round a sign, which cuts its own line round it
 LEGEND_SIZE = 36               # the legend reads at a glance, so larger than the labels (Jordy)
 ARROW = 22                     # arrowhead length, in drawing units
 TINT = {  # each box's fill: the hue of Figure 1 in the group's Project Plan, as a pale tint
@@ -215,47 +217,38 @@ def sub_curve(p0, p1, p2, t0, t1):
     return r0, lerp(r0, r1, s), bezier(p0, p1, p2, t1)
 
 
-def link_svg(c, pieces, bxs=()):
+def link_svg(c, pieces):
     """The link as joined quadratic Beziers, pieces [(p0, ctrl, p2), ...]: one in the full drawing,
-    several along a one-loop figure's oval; the sign beside the last piece, a delay on the middle one."""
+    several along a one-loop figure's oval; the sign on the last piece, a delay on the middle one."""
     colour = LINK_COLOUR[c["polarity"]]
     d = f"M {pieces[0][0][0]:.1f} {pieces[0][0][1]:.1f} " + " ".join(f"Q {q[0]:.1f} {q[1]:.1f} {r[0]:.1f} {r[1]:.1f}" for _, q, r in pieces)
     parts = [f'<g class="link" data-from="{c["from"]}" data-to="{c["to"]}" data-sign="{c["polarity"]}" '
              f'data-delay="{"true" if c["delay"] else "false"}" data-curvature="{c["curvature"]}">',
              f'<path class="link-path" d="{d}" '
              f'fill="none" stroke="{colour}" stroke-width="{LINK_WIDTH}" marker-end="url(#arrow-{"plus" if c["polarity"] == "+" else "minus"})"/>']
-    sx, sy = sign_position(*pieces[-1], bxs=bxs)
+    sx, sy = sign_position(*pieces[-1])
     parts.append(f'<text class="sign" x="{sx:.1f}" y="{sy:.1f}" text-anchor="middle" dominant-baseline="central" '
-                 f'font-size="{SIGN_SIZE}" font-weight="bold" fill="{colour}" stroke="white" stroke-width="6" paint-order="stroke">{SIGN_TEXT[c["polarity"]]}</text>')
+                 f'font-size="{SIGN_SIZE}" font-weight="bold" fill="{colour}" stroke="white" stroke-width="{SIGN_HALO}" paint-order="stroke">{SIGN_TEXT[c["polarity"]]}</text>')
     if c["delay"]:
         parts.append(f'<path class="delay" d="{delay_path(*pieces[len(pieces) // 2])}" stroke="{STROKE_COLOUR}" stroke-width="2.5" fill="none"/>')
     parts.append("</g>")
     return "\n".join(parts)
 
 
-def sign_position(p0, ctrl, p2, back=36, out=20, bxs=()):
-    """Beside the arrowhead: `back` units before the end, `out` units to the outside of the curve,
-    or to the inside when only that side keeps the sign clear of every box in bxs."""
-    tx, ty = tangent(p0, ctrl, p2, 0.92)
-    n = hypot(tx, ty) or 1
-    ux, uy = tx / n, ty / n
-    # the outside of the bow is the side the control point lies on, relative to the chord
-    mx, my = (p0[0] + p2[0]) / 2, (p0[1] + p2[1]) / 2
-    side = (ctrl[0] - mx) * -(p2[1] - p0[1]) + (ctrl[1] - my) * (p2[0] - p0[0])
-    if abs(side) < 1e-6:
-        side = -1.0  # a straight link: its left, seen along the arrow
-    s = 1 if side > 0 else -1
-    nx, ny = -uy * s, ux * s
-    outer = (p2[0] - ux * back + nx * out, p2[1] - uy * back + ny * out)
-    inner = (p2[0] - ux * back - nx * out, p2[1] - uy * back - ny * out)
-    if sign_on_box(outer, bxs) and not sign_on_box(inner, bxs):
-        return inner
-    return outer
-
-
-def sign_on_box(p, bxs, clear=SIGN_SIZE / 3):
-    """Whether a sign at p comes within `clear` of a box (its half-height, about)."""
-    return any(b[0] - clear < p[0] < b[2] + clear and b[1] - clear < p[1] < b[3] + clear for b in bxs)
+def sign_position(p0, ctrl, p2, back=SIGN_BACK):
+    """On the link itself, `back` units (straight line) before its end, by bisection on t: a sign
+    on its own line can only be read as that link's, wherever the boxes move (Jordy, chosen
+    between rendered versions; rejected: beside the arrowhead, on the outside of the bow or on the
+    side clear of other links, where heads that land close together share their signs)."""
+    lo, hi = 0.0, 1.0
+    for _ in range(40):
+        mid = (lo + hi) / 2
+        q = bezier(p0, ctrl, p2, mid)
+        if hypot(q[0] - p2[0], q[1] - p2[1]) > back:
+            lo = mid
+        else:
+            hi = mid
+    return bezier(p0, ctrl, p2, hi)
 
 
 def delay_path(p0, ctrl, p2, half=9, gap=4):
@@ -520,7 +513,7 @@ def head(vb):
 def links_and_elements(cld, bxs, paths):
     """The links, then the elements over them: what svg() and loop_figure() both draw; paths gives
     each link its pieces (link_svg())."""
-    return ['<g class="links">', *(link_svg(c, paths[c["from"], c["to"]], list(bxs.values())) for c in cld["connections"]), "</g>",
+    return ['<g class="links">', *(link_svg(c, paths[c["from"], c["to"]]) for c in cld["connections"]), "</g>",
             '<g class="elements">', *(element_svg(e, bxs[e["id"]]) for e in cld["elements"]), "</g>"]
 
 
@@ -607,7 +600,7 @@ def loop_figure(cld, loop):
     els, bxs, pieces = oval(cld, loop)
     sub = {"elements": els, "connections": [c for c in cld["connections"] if (c["from"], c["to"]) in pieces]}
     ring = [bezier(*p, t / 10) for ps in pieces.values() for p in ps for t in range(11)]
-    # the frame: the boxes and the curves, with room for a sign beside a curve
+    # the frame: the boxes and the curves, with room for a sign on a curve
     xs = [b[k] for b in bxs.values() for k in (0, 2)] + [p[0] for p in ring]
     ys = [b[k] for b in bxs.values() for k in (1, 3)] + [p[1] for p in ring]
     pad = MARGIN + SIGN_SIZE

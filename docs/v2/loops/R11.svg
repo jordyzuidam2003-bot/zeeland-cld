@@ -8,15 +8,15 @@
 <g class="links">
 <g class="link" data-from="farmers-trust-in-government" data-to="policy-resistance-legal-delays" data-sign="-" data-delay="false" data-curvature="0">
 <path class="link-path" d="M -140.1 176.8 Q -235.0 143.4 -276.6 77.5 Q -318.1 11.6 -287.6 -57.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-318.6" y="-30.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<text class="sign" x="-300.2" y="-8.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="policy-resistance-legal-delays" data-to="expropriation-of-farmland" data-sign="+" data-delay="false" data-curvature="0.0">
+<g class="link" data-from="policy-resistance-legal-delays" data-to="expropriation-of-farmland" data-sign="+" data-delay="false" data-curvature="-0.25">
 <path class="link-path" d="M -209.7 -143.0 Q -122.3 -200.0 0.0 -200.0 Q 122.3 -200.0 209.7 -143.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="188.7" y="-178.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="165.9" y="-167.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="expropriation-of-farmland" data-to="farmers-trust-in-government" data-sign="-" data-delay="false" data-curvature="0.0">
+<g class="link" data-from="expropriation-of-farmland" data-to="farmers-trust-in-government" data-sign="-" data-delay="false" data-curvature="-0.45">
 <path class="link-path" d="M 287.6 -57.0 Q 318.1 11.6 276.6 77.5 Q 235.0 143.4 140.1 176.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="181.0" y="182.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<text class="sign" x="186.1" y="157.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 </g>
 <g class="elements">

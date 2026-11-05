@@ -6,27 +6,27 @@
 </defs>
 <rect x="-621" y="-372" width="1235" height="787" fill="white"/>
 <g class="links">
-<g class="link" data-from="clay-dispersion-sodification" data-to="soil-structure-usability" data-sign="-" data-delay="false" data-curvature="0.0">
+<g class="link" data-from="clay-dispersion-sodification" data-to="soil-structure-usability" data-sign="-" data-delay="false" data-curvature="0.1">
 <path class="link-path" d="M 302.2 -208.6 Q 384.1 -155.9 416.7 -83.2 Q 449.4 -10.4 424.4 63.6" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="453.2" y="34.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<text class="sign" x="434.6" y="14.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="freshwater-lens-recharge" data-to="freshwater-lens-thickness" data-sign="+" data-delay="true" data-curvature="0">
+<g class="link" data-from="freshwater-lens-recharge" data-to="freshwater-lens-thickness" data-sign="+" data-delay="true" data-curvature="-0.35">
 <path class="link-path" d="M -125.3 277.7 Q -210.1 260.7 -278.2 222.9 Q -346.3 185.1 -386.9 132.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-379.2" y="173.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="-353.1" y="169.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay" d="M -342.1 190.9 L -330.6 177.1 M -348.3 185.8 L -336.8 172.0" stroke="#444444" stroke-width="2.5" fill="none"/>
 </g>
-<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="0">
+<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="-0.45">
 <path class="link-path" d="M -429.3 46.6 Q -446.5 -23.8 -412.8 -91.4 Q -379.1 -159.1 -302.2 -208.6" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-320.3" y="-171.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<text class="sign" x="-342.4" y="-179.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="root-zone-salinity" data-to="clay-dispersion-sodification" data-sign="+" data-delay="true" data-curvature="0">
+<g class="link" data-from="root-zone-salinity" data-to="clay-dispersion-sodification" data-sign="+" data-delay="true" data-curvature="-0.05">
 <path class="link-path" d="M -190.8 -260.6 Q -100.5 -290.0 0.0 -290.0 Q 100.5 -290.0 190.8 -260.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="162.0" y="-290.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="142.6" y="-274.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay" d="M 95.4 -292.2 L 92.6 -274.4 M 103.3 -290.9 L 100.5 -273.1" stroke="#444444" stroke-width="2.5" fill="none"/>
 </g>
-<g class="link" data-from="soil-structure-usability" data-to="freshwater-lens-recharge" data-sign="+" data-delay="false" data-curvature="0.0">
+<g class="link" data-from="soil-structure-usability" data-to="freshwater-lens-recharge" data-sign="+" data-delay="false" data-curvature="-0.35">
 <path class="link-path" d="M 398.9 115.6 Q 360.7 174.3 288.9 216.8 Q 217.2 259.3 125.3 277.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="164.8" y="289.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="173.9" y="265.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 </g>
 <g class="elements">

@@ -6,21 +6,21 @@
 </defs>
 <rect x="-514" y="-322" width="1028" height="644" fill="white"/>
 <g class="links">
-<g class="link" data-from="freshwater-lens-thickness" data-to="freshwater-availability-for-crops" data-sign="+" data-delay="false" data-curvature="-0.15">
+<g class="link" data-from="freshwater-lens-thickness" data-to="freshwater-availability-for-crops" data-sign="+" data-delay="false" data-curvature="-0.25">
 <path class="link-path" d="M 166.7 212.7 Q 88.4 240.0 -0.0 240.0 Q -88.4 240.0 -166.7 212.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-138.5" y="242.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="-118.7" y="226.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="groundwater-extraction-for-irrigation" data-to="freshwater-lens-thickness" data-sign="-" data-delay="false" data-curvature="0">
+<g class="link" data-from="groundwater-extraction-for-irrigation" data-to="freshwater-lens-thickness" data-sign="-" data-delay="false" data-curvature="-0.08">
 <path class="link-path" d="M 305.7 -126.7 Q 360.0 -68.5 360.0 0.0 Q 360.0 68.5 305.7 126.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="344.3" y="112.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<text class="sign" x="335.9" y="86.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="freshwater-availability-for-crops" data-to="crop-water-shortfall" data-sign="-" data-delay="false" data-curvature="0">
+<g class="link" data-from="freshwater-availability-for-crops" data-to="crop-water-shortfall" data-sign="-" data-delay="false" data-curvature="0.1">
 <path class="link-path" d="M -305.7 126.7 Q -364.4 63.8 -359.7 -10.3 Q -354.9 -84.3 -288.3 -143.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-300.0" y="-104.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<text class="sign" x="-322.4" y="-107.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="crop-water-shortfall" data-to="groundwater-extraction-for-irrigation" data-sign="+" data-delay="false" data-curvature="0">
+<g class="link" data-from="crop-water-shortfall" data-to="groundwater-extraction-for-irrigation" data-sign="+" data-delay="false" data-curvature="-0.45">
 <path class="link-path" d="M -208.4 -195.7 Q -125.6 -234.9 -24.4 -239.4 Q 76.8 -244.0 166.7 -212.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="138.4" y="-242.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="118.7" y="-226.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 </g>
 <g class="elements">

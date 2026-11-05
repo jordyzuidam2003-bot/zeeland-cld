@@ -8,27 +8,27 @@
 <g class="links">
 <g class="link" data-from="root-zone-salinity" data-to="crop-yield" data-sign="-" data-delay="false" data-curvature="-0.17">
 <path class="link-path" d="M -145.3 -294.5 Q 0.0 -326.4 145.3 -294.5" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="113.6" y="-320.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<text class="sign" x="96.2" y="-303.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="saline-seepage-kwel" data-to="root-zone-salinity" data-sign="+" data-delay="false" data-curvature="0.32">
 <path class="link-path" d="M -463.4 -26.0 Q -455.3 -89.8 -410.1 -146.2 Q -364.8 -202.6 -289.7 -242.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-311.2" y="-207.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="-332.6" y="-216.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="demand-for-deep-polder-drainage" data-to="saline-seepage-kwel" data-sign="+" data-delay="false" data-curvature="0.19">
 <path class="link-path" d="M -319.1 225.5 Q -448.4 144.1 -463.4 26.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-475.6" y="65.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="-451.8" y="74.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="crop-yield" data-to="farm-revenue" data-sign="+" data-delay="false" data-curvature="0.35">
 <path class="link-path" d="M 289.7 -242.5 Q 364.8 -202.6 410.1 -146.2 Q 455.3 -89.8 463.4 -26.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="476.9" y="-64.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="451.4" y="-74.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="farm-revenue" data-to="farmland-leaving-arable-use" data-sign="-" data-delay="false" data-curvature="0.16">
 <path class="link-path" d="M 463.4 26.0 Q 448.4 144.1 319.1 225.5" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="337.1" y="188.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<text class="sign" x="360.0" y="196.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="farmland-leaving-arable-use" data-to="demand-for-deep-polder-drainage" data-sign="-" data-delay="false" data-curvature="0.12">
 <path class="link-path" d="M 99.8 302.8 Q 22.9 314.0 -55.3 307.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-20.6" y="330.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<text class="sign" x="-5.3" y="310.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 </g>
 <g class="elements">

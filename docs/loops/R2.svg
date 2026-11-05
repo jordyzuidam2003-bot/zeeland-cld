@@ -8,11 +8,11 @@
 <g class="links">
 <g class="link" data-from="processing-capacity-for-alternative-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="-0.16">
 <path class="link-path" d="M 262.2 43.0 Q 239.9 103.3 166.6 141.7 Q 93.2 180.0 0.0 180.0 Q -93.2 180.0 -166.6 141.7 Q -239.9 103.3 -262.2 43.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-265.7" y="84.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="-237.3" y="86.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="salt-tolerant-crop-adoption" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="false" data-curvature="-0.16">
 <path class="link-path" d="M -262.2 -43.0 Q -239.9 -103.3 -166.6 -141.7 Q -93.2 -180.0 0.0 -180.0 Q 93.2 -180.0 166.6 -141.7 Q 239.9 -103.3 262.2 -43.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="265.7" y="-84.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<text class="sign" x="237.3" y="-86.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 </g>
 <g class="elements">

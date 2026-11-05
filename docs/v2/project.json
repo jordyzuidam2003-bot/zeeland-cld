@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld-v2",
-  "description": "Model version 5a1cfc0, the first seven characters of the SHA-256 of cld-v2.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 2e48ed8, the first seven characters of the SHA-256 of cld-v2.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -4483,7 +4483,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD version 2, model 5a1cfc0",
+      "name": "CLD version 2, model 2e48ed8",
       "description": "",
       "scale": 1,
       "center": {
@@ -4497,8 +4497,8 @@
         {
           "_id": "node-hotter-drier-summers",
           "position": {
-            "x": -1350,
-            "y": 1200
+            "x": -1330,
+            "y": 950
           },
           "pinned": true,
           "style": {},
@@ -4507,8 +4507,8 @@
         {
           "_id": "node-sea-level-rise",
           "position": {
-            "x": -1690,
-            "y": 600
+            "x": -1800,
+            "y": 550
           },
           "pinned": true,
           "style": {},
@@ -4517,8 +4517,8 @@
         {
           "_id": "node-wetter-winters",
           "position": {
-            "x": -950,
-            "y": -20
+            "x": -1370,
+            "y": -80
           },
           "pinned": true,
           "style": {},
@@ -4527,7 +4527,7 @@
         {
           "_id": "node-clay-dispersion-sodification",
           "position": {
-            "x": -760,
+            "x": -810,
             "y": 190
           },
           "pinned": true,
@@ -4537,8 +4537,8 @@
         {
           "_id": "node-crop-water-demand",
           "position": {
-            "x": -440,
-            "y": 1220
+            "x": -820,
+            "y": 1140
           },
           "pinned": true,
           "style": {},
@@ -4547,8 +4547,8 @@
         {
           "_id": "node-estuary-salt-intrusion",
           "position": {
-            "x": -1540,
-            "y": 1020
+            "x": -1700,
+            "y": 760
           },
           "pinned": true,
           "style": {},
@@ -4557,8 +4557,8 @@
         {
           "_id": "node-freshwater-lens-recharge",
           "position": {
-            "x": -1150,
-            "y": 180
+            "x": -1190,
+            "y": 120
           },
           "pinned": true,
           "style": {},
@@ -4567,8 +4567,8 @@
         {
           "_id": "node-freshwater-lens-thickness",
           "position": {
-            "x": -1030,
-            "y": 410
+            "x": -1450,
+            "y": 400
           },
           "pinned": true,
           "style": {},
@@ -4577,8 +4577,8 @@
         {
           "_id": "node-land-subsidence",
           "position": {
-            "x": -1440,
-            "y": -740
+            "x": -1080,
+            "y": -1030
           },
           "pinned": true,
           "style": {},
@@ -4587,8 +4587,8 @@
         {
           "_id": "node-polder-surface-elevation-nap",
           "position": {
-            "x": -1550,
-            "y": -330
+            "x": -1620,
+            "y": -730
           },
           "pinned": true,
           "style": {},
@@ -4597,8 +4597,8 @@
         {
           "_id": "node-root-zone-salinity",
           "position": {
-            "x": -630,
-            "y": 760
+            "x": -620,
+            "y": 610
           },
           "pinned": true,
           "style": {},
@@ -4607,8 +4607,8 @@
         {
           "_id": "node-saline-seepage-kwel",
           "position": {
-            "x": -1550,
-            "y": 130
+            "x": -1740,
+            "y": -40
           },
           "pinned": true,
           "style": {},
@@ -4617,8 +4617,8 @@
         {
           "_id": "node-soil-structure-usability",
           "position": {
-            "x": -570,
-            "y": -90
+            "x": -500,
+            "y": -180
           },
           "pinned": true,
           "style": {},
@@ -4627,8 +4627,8 @@
         {
           "_id": "node-upconing-of-salt-groundwater",
           "position": {
-            "x": -670,
-            "y": 550
+            "x": -1080,
+            "y": 590
           },
           "pinned": true,
           "style": {},
@@ -4638,7 +4638,7 @@
           "_id": "node-brackish-irrigation-water-use",
           "position": {
             "x": -820,
-            "y": 1150
+            "y": 980
           },
           "pinned": true,
           "style": {},
@@ -4647,8 +4647,8 @@
         {
           "_id": "node-demand-for-deep-polder-drainage",
           "position": {
-            "x": -780,
-            "y": -530
+            "x": -520,
+            "y": -850
           },
           "pinned": true,
           "style": {},
@@ -4657,8 +4657,8 @@
         {
           "_id": "node-external-freshwater-supply",
           "position": {
-            "x": -1050,
-            "y": 1350
+            "x": -960,
+            "y": 1290
           },
           "pinned": true,
           "style": {},
@@ -4668,7 +4668,7 @@
           "_id": "node-freshwater-availability-for-crops",
           "position": {
             "x": -1100,
-            "y": 960
+            "y": 790
           },
           "pinned": true,
           "style": {},
@@ -4677,8 +4677,8 @@
         {
           "_id": "node-freshwater-storage-measures",
           "position": {
-            "x": -330,
-            "y": 70
+            "x": -380,
+            "y": 0
           },
           "pinned": true,
           "style": {},
@@ -4687,8 +4687,8 @@
         {
           "_id": "node-groundwater-extraction-for-irrigation",
           "position": {
-            "x": -410,
-            "y": 360
+            "x": -400,
+            "y": 250
           },
           "pinned": true,
           "style": {},
@@ -4697,8 +4697,8 @@
         {
           "_id": "node-policy-resistance-legal-delays",
           "position": {
-            "x": 190,
-            "y": -1060
+            "x": 120,
+            "y": -1300
           },
           "pinned": true,
           "style": {},
@@ -4707,8 +4707,8 @@
         {
           "_id": "node-winter-rain-drained-away",
           "position": {
-            "x": -1080,
-            "y": -170
+            "x": -1140,
+            "y": -230
           },
           "pinned": true,
           "style": {},
@@ -4717,8 +4717,8 @@
         {
           "_id": "node-crop-yield",
           "position": {
-            "x": -280,
-            "y": -80
+            "x": -170,
+            "y": -150
           },
           "pinned": true,
           "style": {},
@@ -4727,8 +4727,8 @@
         {
           "_id": "node-market-demand-for-alternative-crops",
           "position": {
-            "x": 1340,
-            "y": 940
+            "x": 1420,
+            "y": 790
           },
           "pinned": true,
           "style": {},
@@ -4737,8 +4737,8 @@
         {
           "_id": "node-processing-capacity-for-alternative-crops",
           "position": {
-            "x": 1550,
-            "y": 770
+            "x": 1590,
+            "y": 970
           },
           "pinned": true,
           "style": {},
@@ -4747,8 +4747,8 @@
         {
           "_id": "node-salt-tolerant-crop-adoption",
           "position": {
-            "x": 530,
-            "y": 920
+            "x": 580,
+            "y": 700
           },
           "pinned": true,
           "style": {},
@@ -4757,8 +4757,8 @@
         {
           "_id": "node-agricultural-land-value",
           "position": {
-            "x": 420,
-            "y": -370
+            "x": 270,
+            "y": -620
           },
           "pinned": true,
           "style": {},
@@ -4767,8 +4767,8 @@
         {
           "_id": "node-bank-credit-freeze-risk-premiums",
           "position": {
-            "x": 1270,
-            "y": -530
+            "x": 1390,
+            "y": -710
           },
           "pinned": true,
           "style": {},
@@ -4777,8 +4777,8 @@
         {
           "_id": "node-basel-iv-capital-requirements",
           "position": {
-            "x": 1370,
-            "y": -360
+            "x": 1510,
+            "y": -540
           },
           "pinned": true,
           "style": {},
@@ -4787,8 +4787,8 @@
         {
           "_id": "node-dependence-on-high-margin-salt-sensitive-crops",
           "position": {
-            "x": 940,
-            "y": 70
+            "x": 1140,
+            "y": -80
           },
           "pinned": true,
           "style": {},
@@ -4797,8 +4797,8 @@
         {
           "_id": "node-farm-revenue",
           "position": {
-            "x": 210,
-            "y": 40
+            "x": 170,
+            "y": -130
           },
           "pinned": true,
           "style": {},
@@ -4807,8 +4807,8 @@
         {
           "_id": "node-farmers-capacity-to-invest",
           "position": {
-            "x": 530,
-            "y": 430
+            "x": 460,
+            "y": 300
           },
           "pinned": true,
           "style": {},
@@ -4817,8 +4817,8 @@
         {
           "_id": "node-fear-of-expropriation-planning-blight",
           "position": {
-            "x": 170,
-            "y": -710
+            "x": 110,
+            "y": -960
           },
           "pinned": true,
           "style": {},
@@ -4827,8 +4827,8 @@
         {
           "_id": "node-mortgage-debt-financial-leverage",
           "position": {
-            "x": 740,
-            "y": -560
+            "x": 930,
+            "y": -800
           },
           "pinned": true,
           "style": {},
@@ -4837,8 +4837,8 @@
         {
           "_id": "node-farmland-leaving-arable-use",
           "position": {
-            "x": 270,
-            "y": -540
+            "x": 190,
+            "y": -790
           },
           "pinned": true,
           "style": {},
@@ -4847,8 +4847,8 @@
         {
           "_id": "node-crop-water-shortfall",
           "position": {
-            "x": -640,
-            "y": 1000
+            "x": -230,
+            "y": 790
           },
           "pinned": true,
           "style": {},
@@ -4857,8 +4857,8 @@
         {
           "_id": "node-flushing-salt-from-the-root-zone",
           "position": {
-            "x": -280,
-            "y": 650
+            "x": -470,
+            "y": 460
           },
           "pinned": true,
           "style": {},
@@ -4867,8 +4867,8 @@
         {
           "_id": "node-freshwater-supply-route",
           "position": {
-            "x": -640,
-            "y": 1370
+            "x": -440,
+            "y": 1200
           },
           "pinned": true,
           "style": {},
@@ -4877,8 +4877,8 @@
         {
           "_id": "node-water-available-for-supply-in-drought",
           "position": {
-            "x": -1470,
-            "y": 1350
+            "x": -1260,
+            "y": 1110
           },
           "pinned": true,
           "style": {},
@@ -4887,8 +4887,8 @@
         {
           "_id": "node-spring-workability-of-the-fields",
           "position": {
-            "x": -750,
-            "y": -360
+            "x": -570,
+            "y": -380
           },
           "pinned": true,
           "style": {},
@@ -4897,8 +4897,8 @@
         {
           "_id": "node-polder-drainage-depth",
           "position": {
-            "x": -1280,
-            "y": -600
+            "x": -960,
+            "y": -530
           },
           "pinned": true,
           "style": {},
@@ -4907,8 +4907,8 @@
         {
           "_id": "node-plans-to-raise-ditch-levels",
           "position": {
-            "x": -890,
-            "y": -870
+            "x": -570,
+            "y": -1090
           },
           "pinned": true,
           "style": {},
@@ -4917,8 +4917,8 @@
         {
           "_id": "node-water-board-pumping-costs",
           "position": {
-            "x": -1170,
-            "y": -340
+            "x": -1240,
+            "y": -750
           },
           "pinned": true,
           "style": {},
@@ -4927,8 +4927,8 @@
         {
           "_id": "node-water-board-levy-on-farmland",
           "position": {
-            "x": 100,
-            "y": -140
+            "x": 200,
+            "y": -300
           },
           "pinned": true,
           "style": {},
@@ -4937,8 +4937,8 @@
         {
           "_id": "node-agricultural-seats-on-the-water-board",
           "position": {
-            "x": -730,
-            "y": -1040
+            "x": -610,
+            "y": -1630
           },
           "pinned": true,
           "style": {},
@@ -4947,8 +4947,8 @@
         {
           "_id": "node-harvest-lost-to-salt",
           "position": {
-            "x": -110,
-            "y": 800
+            "x": 20,
+            "y": 640
           },
           "pinned": true,
           "style": {},
@@ -4957,8 +4957,8 @@
         {
           "_id": "node-margin-given-up-on-high-margin-crops",
           "position": {
-            "x": 330,
-            "y": 750
+            "x": 400,
+            "y": 930
           },
           "pinned": true,
           "style": {},
@@ -4968,7 +4968,7 @@
           "_id": "node-attractiveness-of-storing-water",
           "position": {
             "x": -320,
-            "y": -310
+            "y": -590
           },
           "pinned": true,
           "style": {},
@@ -4977,8 +4977,8 @@
         {
           "_id": "node-farms-with-a-successor",
           "position": {
-            "x": 590,
-            "y": -220
+            "x": 640,
+            "y": -390
           },
           "pinned": true,
           "style": {},
@@ -4987,8 +4987,8 @@
         {
           "_id": "node-owner-farmed-arable-land",
           "position": {
-            "x": -240,
-            "y": -1120
+            "x": -90,
+            "y": -1640
           },
           "pinned": true,
           "style": {},
@@ -4997,8 +4997,8 @@
         {
           "_id": "node-harvest-of-new-crops-to-process",
           "position": {
-            "x": 1000,
-            "y": 1240
+            "x": 870,
+            "y": 1220
           },
           "pinned": true,
           "style": {},
@@ -5007,8 +5007,8 @@
         {
           "_id": "node-attractiveness-of-local-processing",
           "position": {
-            "x": 1460,
-            "y": 1140
+            "x": 1350,
+            "y": 1200
           },
           "pinned": true,
           "style": {},
@@ -5017,8 +5017,8 @@
         {
           "_id": "node-net-price-for-new-crops",
           "position": {
-            "x": 1400,
-            "y": 600
+            "x": 1610,
+            "y": 620
           },
           "pinned": true,
           "style": {},
@@ -5027,8 +5027,8 @@
         {
           "_id": "node-growers-of-new-crops-elsewhere",
           "position": {
-            "x": 980,
-            "y": 1410
+            "x": 820,
+            "y": 1500
           },
           "pinned": true,
           "style": {},
@@ -5037,8 +5037,8 @@
         {
           "_id": "node-processing-of-new-crops-elsewhere",
           "position": {
-            "x": 1470,
-            "y": 430
+            "x": 1920,
+            "y": 450
           },
           "pinned": true,
           "style": {},
@@ -5047,8 +5047,8 @@
         {
           "_id": "node-tolerant-varieties-adoption",
           "position": {
-            "x": 290,
-            "y": 1110
+            "x": 370,
+            "y": 1180
           },
           "pinned": true,
           "style": {},
@@ -5057,8 +5057,8 @@
         {
           "_id": "node-attractiveness-of-tolerant-varieties",
           "position": {
-            "x": 330,
-            "y": 1330
+            "x": 30,
+            "y": 1600
           },
           "pinned": true,
           "style": {},
@@ -5067,8 +5067,8 @@
         {
           "_id": "node-attractiveness-of-new-crops",
           "position": {
-            "x": 910,
-            "y": 640
+            "x": 1000,
+            "y": 560
           },
           "pinned": true,
           "style": {},
@@ -5077,8 +5077,8 @@
         {
           "_id": "node-tolerant-varieties-on-offer",
           "position": {
-            "x": 340,
-            "y": 1530
+            "x": 200,
+            "y": 1800
           },
           "pinned": true,
           "style": {},
@@ -5087,8 +5087,8 @@
         {
           "_id": "node-machines-and-storage-for-current-crops",
           "position": {
-            "x": 1060,
-            "y": 350
+            "x": 1180,
+            "y": 280
           },
           "pinned": true,
           "style": {},
@@ -5097,8 +5097,8 @@
         {
           "_id": "node-know-how-of-current-crops",
           "position": {
-            "x": 1310,
-            "y": -40
+            "x": 1520,
+            "y": -60
           },
           "pinned": true,
           "style": {},
@@ -5107,8 +5107,8 @@
         {
           "_id": "node-capital-lost-on-switching",
           "position": {
-            "x": 1360,
-            "y": 130
+            "x": 1430,
+            "y": 110
           },
           "pinned": true,
           "style": {},
@@ -5117,8 +5117,8 @@
         {
           "_id": "node-knowledge-of-new-crops",
           "position": {
-            "x": 940,
-            "y": 850
+            "x": 1000,
+            "y": 770
           },
           "pinned": true,
           "style": {},
@@ -5127,8 +5127,8 @@
         {
           "_id": "node-spending-on-keeping-current-crops",
           "position": {
-            "x": 630,
-            "y": 260
+            "x": 590,
+            "y": 110
           },
           "pinned": true,
           "style": {},
@@ -5137,8 +5137,8 @@
         {
           "_id": "node-banks-risk-assessment",
           "position": {
-            "x": 960,
-            "y": -750
+            "x": 1160,
+            "y": -950
           },
           "pinned": true,
           "style": {},
@@ -5147,8 +5147,8 @@
         {
           "_id": "node-bank-credit-to-farms",
           "position": {
-            "x": 960,
-            "y": -370
+            "x": 930,
+            "y": -530
           },
           "pinned": true,
           "style": {},
@@ -5157,8 +5157,8 @@
         {
           "_id": "node-debt-payments",
           "position": {
-            "x": 1050,
-            "y": -200
+            "x": 1120,
+            "y": -330
           },
           "pinned": true,
           "style": {},
@@ -5167,8 +5167,8 @@
         {
           "_id": "node-world-prices-of-conventional-crops",
           "position": {
-            "x": 540,
-            "y": 50
+            "x": 520,
+            "y": -110
           },
           "pinned": true,
           "style": {},
@@ -5177,8 +5177,8 @@
         {
           "_id": "node-farmers-trust-in-government",
           "position": {
-            "x": 430,
-            "y": -1320
+            "x": 450,
+            "y": -1480
           },
           "pinned": true,
           "style": {},
@@ -5187,8 +5187,8 @@
         {
           "_id": "node-plans-changed-or-dropped",
           "position": {
-            "x": 70,
-            "y": -1320
+            "x": 90,
+            "y": -1470
           },
           "pinned": true,
           "style": {},
@@ -5197,8 +5197,8 @@
         {
           "_id": "node-expropriation-of-farmland",
           "position": {
-            "x": 580,
-            "y": -1050
+            "x": 610,
+            "y": -1300
           },
           "pinned": true,
           "style": {},
@@ -5207,8 +5207,8 @@
         {
           "_id": "node-farmers-wish-to-keep-their-land",
           "position": {
-            "x": 380,
-            "y": -880
+            "x": 350,
+            "y": -1130
           },
           "pinned": true,
           "style": {},
@@ -5218,7 +5218,7 @@
           "_id": "node-farmland-changing-hands",
           "position": {
             "x": 560,
-            "y": -710
+            "y": -860
           },
           "pinned": true,
           "style": {},
@@ -5227,8 +5227,8 @@
         {
           "_id": "node-background",
           "position": {
-            "x": -40,
-            "y": 105
+            "x": 71,
+            "y": 80
           },
           "pinned": true,
           "style": {},
@@ -5280,7 +5280,7 @@
         },
         {
           "_id": "edge-clay-dispersion-sodification--soil-structure-usability",
-          "curvature": 0.0,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-clay-dispersion-sodification--soil-structure-usability"
         },
@@ -5292,13 +5292,13 @@
         },
         {
           "_id": "edge-freshwater-lens-recharge--freshwater-lens-thickness",
-          "curvature": 0,
+          "curvature": -0.35,
           "style": {},
           "connection": "conn-freshwater-lens-recharge--freshwater-lens-thickness"
         },
         {
           "_id": "edge-freshwater-lens-thickness--root-zone-salinity",
-          "curvature": 0,
+          "curvature": -0.45,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
         },
@@ -5310,7 +5310,7 @@
         },
         {
           "_id": "edge-freshwater-lens-thickness--freshwater-availability-for-crops",
-          "curvature": -0.15,
+          "curvature": -0.25,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--freshwater-availability-for-crops"
         },
@@ -5328,25 +5328,25 @@
         },
         {
           "_id": "edge-root-zone-salinity--clay-dispersion-sodification",
-          "curvature": 0,
+          "curvature": -0.05,
           "style": {},
           "connection": "conn-root-zone-salinity--clay-dispersion-sodification"
         },
         {
           "_id": "edge-saline-seepage-kwel--freshwater-lens-thickness",
-          "curvature": 0,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
         },
         {
           "_id": "edge-saline-seepage-kwel--root-zone-salinity",
-          "curvature": -0.15,
+          "curvature": 0.0,
           "style": {},
           "connection": "conn-saline-seepage-kwel--root-zone-salinity"
         },
         {
           "_id": "edge-soil-structure-usability--freshwater-lens-recharge",
-          "curvature": 0.0,
+          "curvature": -0.35,
           "style": {},
           "connection": "conn-soil-structure-usability--freshwater-lens-recharge"
         },
@@ -5364,13 +5364,13 @@
         },
         {
           "_id": "edge-upconing-of-salt-groundwater--root-zone-salinity",
-          "curvature": -0.1,
+          "curvature": 0.0,
           "style": {},
           "connection": "conn-upconing-of-salt-groundwater--root-zone-salinity"
         },
         {
           "_id": "edge-brackish-irrigation-water-use--root-zone-salinity",
-          "curvature": 0.3,
+          "curvature": 0.2,
           "style": {},
           "connection": "conn-brackish-irrigation-water-use--root-zone-salinity"
         },
@@ -5388,43 +5388,43 @@
         },
         {
           "_id": "edge-freshwater-storage-measures--winter-rain-drained-away",
-          "curvature": 0.0,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-freshwater-storage-measures--winter-rain-drained-away"
         },
         {
           "_id": "edge-groundwater-extraction-for-irrigation--freshwater-lens-thickness",
-          "curvature": 0,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-groundwater-extraction-for-irrigation--freshwater-lens-thickness"
         },
         {
           "_id": "edge-groundwater-extraction-for-irrigation--upconing-of-salt-groundwater",
-          "curvature": 0.0,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-groundwater-extraction-for-irrigation--upconing-of-salt-groundwater"
         },
         {
           "_id": "edge-winter-rain-drained-away--freshwater-lens-recharge",
-          "curvature": 0,
+          "curvature": 0.4,
           "style": {},
           "connection": "conn-winter-rain-drained-away--freshwater-lens-recharge"
         },
         {
           "_id": "edge-crop-yield--farm-revenue",
-          "curvature": 0.0,
+          "curvature": 0.45,
           "style": {},
           "connection": "conn-crop-yield--farm-revenue"
         },
         {
           "_id": "edge-salt-tolerant-crop-adoption--crop-water-demand",
-          "curvature": 0,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--crop-water-demand"
         },
         {
           "_id": "edge-agricultural-land-value--fear-of-expropriation-planning-blight",
-          "curvature": 0,
+          "curvature": 0.7,
           "style": {},
           "connection": "conn-agricultural-land-value--fear-of-expropriation-planning-blight"
         },
@@ -5448,7 +5448,7 @@
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--groundwater-extraction-for-irrigation",
-          "curvature": 0.0,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--groundwater-extraction-for-irrigation"
         },
@@ -5460,55 +5460,55 @@
         },
         {
           "_id": "edge-farm-revenue--agricultural-land-value",
-          "curvature": 0.0,
+          "curvature": -0.65,
           "style": {},
           "connection": "conn-farm-revenue--agricultural-land-value"
         },
         {
           "_id": "edge-farm-revenue--farmers-capacity-to-invest",
-          "curvature": 0,
+          "curvature": 0.15,
           "style": {},
           "connection": "conn-farm-revenue--farmers-capacity-to-invest"
         },
         {
           "_id": "edge-farmers-capacity-to-invest--freshwater-storage-measures",
-          "curvature": 0.12,
+          "curvature": 0.15,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--freshwater-storage-measures"
         },
         {
           "_id": "edge-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
-          "curvature": 0.12,
+          "curvature": -0.3,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption"
         },
         {
           "_id": "edge-fear-of-expropriation-planning-blight--policy-resistance-legal-delays",
-          "curvature": 0,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-fear-of-expropriation-planning-blight--policy-resistance-legal-delays"
         },
         {
           "_id": "edge-crop-water-demand--crop-water-shortfall",
-          "curvature": 0.0,
+          "curvature": -0.15,
           "style": {},
           "connection": "conn-crop-water-demand--crop-water-shortfall"
         },
         {
           "_id": "edge-freshwater-availability-for-crops--crop-water-shortfall",
-          "curvature": 0,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-freshwater-availability-for-crops--crop-water-shortfall"
         },
         {
           "_id": "edge-crop-water-shortfall--groundwater-extraction-for-irrigation",
-          "curvature": 0,
+          "curvature": -0.45,
           "style": {},
           "connection": "conn-crop-water-shortfall--groundwater-extraction-for-irrigation"
         },
         {
           "_id": "edge-groundwater-extraction-for-irrigation--freshwater-availability-for-crops",
-          "curvature": -0.35,
+          "curvature": -0.45,
           "style": {},
           "connection": "conn-groundwater-extraction-for-irrigation--freshwater-availability-for-crops"
         },
@@ -5532,25 +5532,25 @@
         },
         {
           "_id": "edge-root-zone-salinity--flushing-salt-from-the-root-zone",
-          "curvature": 0.12,
+          "curvature": -0.3,
           "style": {},
           "connection": "conn-root-zone-salinity--flushing-salt-from-the-root-zone"
         },
         {
           "_id": "edge-flushing-salt-from-the-root-zone--root-zone-salinity",
-          "curvature": 0.12,
+          "curvature": -0.3,
           "style": {},
           "connection": "conn-flushing-salt-from-the-root-zone--root-zone-salinity"
         },
         {
           "_id": "edge-flushing-salt-from-the-root-zone--groundwater-extraction-for-irrigation",
-          "curvature": 0,
+          "curvature": -0.35,
           "style": {},
           "connection": "conn-flushing-salt-from-the-root-zone--groundwater-extraction-for-irrigation"
         },
         {
           "_id": "edge-groundwater-extraction-for-irrigation--farm-revenue",
-          "curvature": 0.0,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-groundwater-extraction-for-irrigation--farm-revenue"
         },
@@ -5586,19 +5586,19 @@
         },
         {
           "_id": "edge-polder-drainage-depth--spring-workability-of-the-fields",
-          "curvature": 0,
+          "curvature": -0.45,
           "style": {},
           "connection": "conn-polder-drainage-depth--spring-workability-of-the-fields"
         },
         {
           "_id": "edge-spring-workability-of-the-fields--crop-yield",
-          "curvature": -0.1,
+          "curvature": 0.0,
           "style": {},
           "connection": "conn-spring-workability-of-the-fields--crop-yield"
         },
         {
           "_id": "edge-spring-workability-of-the-fields--demand-for-deep-polder-drainage",
-          "curvature": 0.0,
+          "curvature": -0.25,
           "style": {},
           "connection": "conn-spring-workability-of-the-fields--demand-for-deep-polder-drainage"
         },
@@ -5622,13 +5622,13 @@
         },
         {
           "_id": "edge-plans-to-raise-ditch-levels--polder-drainage-depth",
-          "curvature": 0.0,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
         },
         {
           "_id": "edge-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels",
-          "curvature": 0,
+          "curvature": -0.35,
           "style": {},
           "connection": "conn-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels"
         },
@@ -5658,7 +5658,7 @@
         },
         {
           "_id": "edge-policy-resistance-legal-delays--plans-to-raise-ditch-levels",
-          "curvature": 0,
+          "curvature": -0.25,
           "style": {},
           "connection": "conn-policy-resistance-legal-delays--plans-to-raise-ditch-levels"
         },
@@ -5676,7 +5676,7 @@
         },
         {
           "_id": "edge-winter-rain-drained-away--water-board-pumping-costs",
-          "curvature": 0.3,
+          "curvature": 0.0,
           "style": {},
           "connection": "conn-winter-rain-drained-away--water-board-pumping-costs"
         },
@@ -5700,19 +5700,19 @@
         },
         {
           "_id": "edge-root-zone-salinity--harvest-lost-to-salt",
-          "curvature": 0,
+          "curvature": -0.25,
           "style": {},
           "connection": "conn-root-zone-salinity--harvest-lost-to-salt"
         },
         {
           "_id": "edge-harvest-lost-to-salt--farm-revenue",
-          "curvature": 0,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-harvest-lost-to-salt--farm-revenue"
         },
         {
           "_id": "edge-salt-tolerant-crop-adoption--harvest-lost-to-salt",
-          "curvature": 0.0,
+          "curvature": 0.35,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt"
         },
@@ -5724,7 +5724,7 @@
         },
         {
           "_id": "edge-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops",
-          "curvature": 0,
+          "curvature": 0.35,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops"
         },
@@ -5736,7 +5736,7 @@
         },
         {
           "_id": "edge-margin-given-up-on-high-margin-crops--farm-revenue",
-          "curvature": 0.0,
+          "curvature": 0.15,
           "style": {},
           "connection": "conn-margin-given-up-on-high-margin-crops--farm-revenue"
         },
@@ -5748,7 +5748,7 @@
         },
         {
           "_id": "edge-crop-yield--attractiveness-of-storing-water",
-          "curvature": 0,
+          "curvature": -0.45,
           "style": {},
           "connection": "conn-crop-yield--attractiveness-of-storing-water"
         },
@@ -5766,25 +5766,25 @@
         },
         {
           "_id": "edge-attractiveness-of-storing-water--freshwater-storage-measures",
-          "curvature": 0.0,
+          "curvature": 0.15,
           "style": {},
           "connection": "conn-attractiveness-of-storing-water--freshwater-storage-measures"
         },
         {
           "_id": "edge-freshwater-storage-measures--farmers-capacity-to-invest",
-          "curvature": 0.12,
+          "curvature": 0.15,
           "style": {},
           "connection": "conn-freshwater-storage-measures--farmers-capacity-to-invest"
         },
         {
           "_id": "edge-root-zone-salinity--attractiveness-of-tolerant-varieties",
-          "curvature": 0.1,
+          "curvature": 0.0,
           "style": {},
           "connection": "conn-root-zone-salinity--attractiveness-of-tolerant-varieties"
         },
         {
           "_id": "edge-root-zone-salinity--attractiveness-of-new-crops",
-          "curvature": 0,
+          "curvature": 0.15,
           "style": {},
           "connection": "conn-root-zone-salinity--attractiveness-of-new-crops"
         },
@@ -5814,7 +5814,7 @@
         },
         {
           "_id": "edge-net-price-for-new-crops--attractiveness-of-new-crops",
-          "curvature": 0.0,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-net-price-for-new-crops--attractiveness-of-new-crops"
         },
@@ -5832,13 +5832,13 @@
         },
         {
           "_id": "edge-salt-tolerant-crop-adoption--farmers-capacity-to-invest",
-          "curvature": 0.12,
+          "curvature": -0.3,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--farmers-capacity-to-invest"
         },
         {
           "_id": "edge-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process",
-          "curvature": 0,
+          "curvature": -0.35,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process"
         },
@@ -5850,7 +5850,7 @@
         },
         {
           "_id": "edge-harvest-of-new-crops-to-process--attractiveness-of-local-processing",
-          "curvature": 0,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-harvest-of-new-crops-to-process--attractiveness-of-local-processing"
         },
@@ -5862,13 +5862,13 @@
         },
         {
           "_id": "edge-attractiveness-of-local-processing--processing-capacity-for-alternative-crops",
-          "curvature": 0,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-attractiveness-of-local-processing--processing-capacity-for-alternative-crops"
         },
         {
           "_id": "edge-processing-capacity-for-alternative-crops--net-price-for-new-crops",
-          "curvature": 0.0,
+          "curvature": -0.35,
           "style": {},
           "connection": "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops"
         },
@@ -5880,7 +5880,7 @@
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--machines-and-storage-for-current-crops",
-          "curvature": 0.0,
+          "curvature": -0.45,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--machines-and-storage-for-current-crops"
         },
@@ -5892,7 +5892,7 @@
         },
         {
           "_id": "edge-machines-and-storage-for-current-crops--capital-lost-on-switching",
-          "curvature": 0,
+          "curvature": -0.25,
           "style": {},
           "connection": "conn-machines-and-storage-for-current-crops--capital-lost-on-switching"
         },
@@ -5904,25 +5904,25 @@
         },
         {
           "_id": "edge-capital-lost-on-switching--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": 0,
+          "curvature": -0.35,
           "style": {},
           "connection": "conn-capital-lost-on-switching--dependence-on-high-margin-salt-sensitive-crops"
         },
         {
           "_id": "edge-farmers-capacity-to-invest--spending-on-keeping-current-crops",
-          "curvature": 0.12,
+          "curvature": 0.3,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--spending-on-keeping-current-crops"
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--spending-on-keeping-current-crops",
-          "curvature": 0,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--spending-on-keeping-current-crops"
         },
         {
           "_id": "edge-spending-on-keeping-current-crops--farmers-capacity-to-invest",
-          "curvature": 0.12,
+          "curvature": 0.3,
           "style": {},
           "connection": "conn-spending-on-keeping-current-crops--farmers-capacity-to-invest"
         },
@@ -5934,13 +5934,13 @@
         },
         {
           "_id": "edge-spending-on-keeping-current-crops--groundwater-extraction-for-irrigation",
-          "curvature": 0.0,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-spending-on-keeping-current-crops--groundwater-extraction-for-irrigation"
         },
         {
           "_id": "edge-mortgage-debt-financial-leverage--banks-risk-assessment",
-          "curvature": 0.0,
+          "curvature": 0.15,
           "style": {},
           "connection": "conn-mortgage-debt-financial-leverage--banks-risk-assessment"
         },
@@ -5952,25 +5952,25 @@
         },
         {
           "_id": "edge-banks-risk-assessment--bank-credit-to-farms",
-          "curvature": 0.0,
+          "curvature": 0.45,
           "style": {},
           "connection": "conn-banks-risk-assessment--bank-credit-to-farms"
         },
         {
           "_id": "edge-banks-risk-assessment--bank-credit-freeze-risk-premiums",
-          "curvature": 0.0,
+          "curvature": 0.45,
           "style": {},
           "connection": "conn-banks-risk-assessment--bank-credit-freeze-risk-premiums"
         },
         {
           "_id": "edge-bank-credit-to-farms--farmers-capacity-to-invest",
-          "curvature": 0,
+          "curvature": 0.45,
           "style": {},
           "connection": "conn-bank-credit-to-farms--farmers-capacity-to-invest"
         },
         {
           "_id": "edge-bank-credit-to-farms--mortgage-debt-financial-leverage",
-          "curvature": 0,
+          "curvature": 0.45,
           "style": {},
           "connection": "conn-bank-credit-to-farms--mortgage-debt-financial-leverage"
         },
@@ -5982,7 +5982,7 @@
         },
         {
           "_id": "edge-bank-credit-freeze-risk-premiums--debt-payments",
-          "curvature": 0,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-bank-credit-freeze-risk-premiums--debt-payments"
         },
@@ -5994,13 +5994,13 @@
         },
         {
           "_id": "edge-debt-payments--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": 0.0,
+          "curvature": 0.15,
           "style": {},
           "connection": "conn-debt-payments--dependence-on-high-margin-salt-sensitive-crops"
         },
         {
           "_id": "edge-bank-credit-to-farms--farmland-changing-hands",
-          "curvature": -0.4,
+          "curvature": 0.0,
           "style": {},
           "connection": "conn-bank-credit-to-farms--farmland-changing-hands"
         },
@@ -6036,13 +6036,13 @@
         },
         {
           "_id": "edge-agricultural-land-value--farmland-leaving-arable-use",
-          "curvature": 0,
+          "curvature": -0.35,
           "style": {},
           "connection": "conn-agricultural-land-value--farmland-leaving-arable-use"
         },
         {
           "_id": "edge-farmland-leaving-arable-use--demand-for-deep-polder-drainage",
-          "curvature": -0.15,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-farmland-leaving-arable-use--demand-for-deep-polder-drainage"
         },
@@ -6054,7 +6054,7 @@
         },
         {
           "_id": "edge-plans-to-raise-ditch-levels--fear-of-expropriation-planning-blight",
-          "curvature": 0.0,
+          "curvature": -0.15,
           "style": {},
           "connection": "conn-plans-to-raise-ditch-levels--fear-of-expropriation-planning-blight"
         },
@@ -6072,25 +6072,25 @@
         },
         {
           "_id": "edge-policy-resistance-legal-delays--plans-changed-or-dropped",
-          "curvature": 0,
+          "curvature": 0.45,
           "style": {},
           "connection": "conn-policy-resistance-legal-delays--plans-changed-or-dropped"
         },
         {
           "_id": "edge-plans-changed-or-dropped--farmers-trust-in-government",
-          "curvature": 0,
+          "curvature": 0.45,
           "style": {},
           "connection": "conn-plans-changed-or-dropped--farmers-trust-in-government"
         },
         {
           "_id": "edge-policy-resistance-legal-delays--expropriation-of-farmland",
-          "curvature": 0.0,
+          "curvature": -0.25,
           "style": {},
           "connection": "conn-policy-resistance-legal-delays--expropriation-of-farmland"
         },
         {
           "_id": "edge-expropriation-of-farmland--farmers-trust-in-government",
-          "curvature": 0.0,
+          "curvature": -0.45,
           "style": {},
           "connection": "conn-expropriation-of-farmland--farmers-trust-in-government"
         }
@@ -6101,8 +6101,8 @@
           "loop": "loop-R1",
           "style": {},
           "position": {
-            "x": -828,
-            "y": 290
+            "x": -914,
+            "y": 228
           }
         },
         {
@@ -6110,8 +6110,8 @@
           "loop": "loop-B1",
           "style": {},
           "position": {
-            "x": -244,
-            "y": 759
+            "x": -277,
+            "y": 636
           }
         },
         {
@@ -6119,8 +6119,8 @@
           "loop": "loop-R2",
           "style": {},
           "position": {
-            "x": 1142,
-            "y": 885
+            "x": 1167,
+            "y": 878
           }
         },
         {
@@ -6128,8 +6128,8 @@
           "loop": "loop-R3",
           "style": {},
           "position": {
-            "x": -474,
-            "y": 376
+            "x": -486,
+            "y": 265
           }
         },
         {
@@ -6137,8 +6137,8 @@
           "loop": "loop-R4",
           "style": {},
           "position": {
-            "x": 530,
-            "y": 18
+            "x": 565,
+            "y": -174
           }
         },
         {
@@ -6146,8 +6146,8 @@
           "loop": "loop-R5",
           "style": {},
           "position": {
-            "x": 27,
-            "y": -201
+            "x": 138,
+            "y": -375
           }
         },
         {
@@ -6155,8 +6155,8 @@
           "loop": "loop-R6",
           "style": {},
           "position": {
-            "x": -386,
-            "y": -209
+            "x": -356,
+            "y": -380
           }
         },
         {
@@ -6164,8 +6164,8 @@
           "loop": "loop-B2",
           "style": {},
           "position": {
-            "x": -482,
-            "y": -131
+            "x": -418,
+            "y": -311
           }
         },
         {
@@ -6173,8 +6173,8 @@
           "loop": "loop-B3",
           "style": {},
           "position": {
-            "x": 585,
-            "y": 11
+            "x": 612,
+            "y": -138
           }
         },
         {
@@ -6182,8 +6182,8 @@
           "loop": "loop-B4",
           "style": {},
           "position": {
-            "x": -693,
-            "y": 319
+            "x": -691,
+            "y": 194
           }
         },
         {
@@ -6191,8 +6191,8 @@
           "loop": "loop-B5",
           "style": {},
           "position": {
-            "x": -717,
-            "y": 773
+            "x": -577,
+            "y": 610
           }
         },
         {
@@ -6201,7 +6201,7 @@
           "style": {},
           "position": {
             "x": -795,
-            "y": 682
+            "y": 558
           }
         },
         {
@@ -6209,8 +6209,8 @@
           "loop": "loop-B6",
           "style": {},
           "position": {
-            "x": -455,
-            "y": 705
+            "x": -545,
+            "y": 535
           }
         },
         {
@@ -6218,8 +6218,8 @@
           "loop": "loop-R8",
           "style": {},
           "position": {
-            "x": -588,
-            "y": 545
+            "x": -735,
+            "y": 430
           }
         },
         {
@@ -6227,8 +6227,8 @@
           "loop": "loop-B7",
           "style": {},
           "position": {
-            "x": -925,
-            "y": -590
+            "x": -655,
+            "y": -712
           }
         },
         {
@@ -6236,8 +6236,8 @@
           "loop": "loop-B8",
           "style": {},
           "position": {
-            "x": -1240,
-            "y": -447
+            "x": -1090,
+            "y": -553
           }
         },
         {
@@ -6245,8 +6245,8 @@
           "loop": "loop-B9",
           "style": {},
           "position": {
-            "x": -177,
-            "y": -880
+            "x": -113,
+            "y": -1117
           }
         },
         {
@@ -6254,8 +6254,8 @@
           "loop": "loop-B10",
           "style": {},
           "position": {
-            "x": 887,
-            "y": -560
+            "x": 1007,
+            "y": -760
           }
         },
         {
@@ -6263,8 +6263,8 @@
           "loop": "loop-R9",
           "style": {},
           "position": {
-            "x": 230,
-            "y": -1233
+            "x": 220,
+            "y": -1417
           }
         },
         {
@@ -6272,8 +6272,8 @@
           "loop": "loop-R10",
           "style": {},
           "position": {
-            "x": 1120,
-            "y": 183
+            "x": 1250,
+            "y": 103
           }
         },
         {
@@ -6281,8 +6281,8 @@
           "loop": "loop-R11",
           "style": {},
           "position": {
-            "x": 400,
-            "y": -1143
+            "x": 393,
+            "y": -1360
           }
         }
       ]
@@ -6292,7 +6292,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "/* Each property here is one that Kumu's property reference gives the selector's type (element,\n   connection or loop: its table marks which type takes which property); check a new one there\n   before writing it, and see it work in a test import. */\n\n@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      /* strict shows only what an option selects: normal adds the links among its elements and\n         loose their neighbours, which are not the loop */\n      mode: strict;\n\n      /* build.py replaces the next line with an option per named loop */\n      option {\n        label: \"R1 Salty soil takes in less rain\";\n        selector: *:loop([\"label\"=\"R1 Salty soil takes in less rain\"]), #background;\n      }\n\n      option {\n        label: \"B1 Salt-tolerant crops need less pumping\";\n        selector: *:loop([\"label\"=\"B1 Salt-tolerant crops need less pumping\"]), #background;\n      }\n\n      option {\n        label: \"R2 Growers and processors\";\n        selector: *:loop([\"label\"=\"R2 Growers and processors\"]), #background;\n      }\n\n      option {\n        label: \"R3 Farm income and water storage\";\n        selector: *:loop([\"label\"=\"R3 Farm income and water storage\"]), #background;\n      }\n\n      option {\n        label: \"R4 Land value and bank credit\";\n        selector: *:loop([\"label\"=\"R4 Land value and bank credit\"]), #background;\n      }\n\n      option {\n        label: \"R5 Leverage and deep drainage\";\n        selector: *:loop([\"label\"=\"R5 Leverage and deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"R6 Land value, objections and ditch levels\";\n        selector: *:loop([\"label\"=\"R6 Land value, objections and ditch levels\"]), #background;\n      }\n\n      option {\n        label: \"B2 Less arable land, less deep drainage\";\n        selector: *:loop([\"label\"=\"B2 Less arable land, less deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"B3 Switching gives up margin\";\n        selector: *:loop([\"label\"=\"B3 Switching gives up margin\"]), #background;\n      }\n\n      option {\n        label: \"B4 Storing water when harvests fall\";\n        selector: *:loop([\"label\"=\"B4 Storing water when harvests fall\"]), #background;\n      }\n\n      option {\n        label: \"B5 Pumping relieves the shortfall\";\n        selector: *:loop([\"label\"=\"B5 Pumping relieves the shortfall\"]), #background;\n      }\n\n      option {\n        label: \"R7 Pumping thins the lens\";\n        selector: *:loop([\"label\"=\"R7 Pumping thins the lens\"]), #background;\n      }\n\n      option {\n        label: \"B6 Flushing salt out\";\n        selector: *:loop([\"label\"=\"B6 Flushing salt out\"]), #background;\n      }\n\n      option {\n        label: \"R8 Flushing draws down the lens\";\n        selector: *:loop([\"label\"=\"R8 Flushing draws down the lens\"]), #background;\n      }\n\n      option {\n        label: \"B7 Deep drainage keeps fields workable\";\n        selector: *:loop([\"label\"=\"B7 Deep drainage keeps fields workable\"]), #background;\n      }\n\n      option {\n        label: \"B8 The water board raises levels against seepage\";\n        selector: *:loop([\"label\"=\"B8 The water board raises levels against seepage\"]), #background;\n      }\n\n      option {\n        label: \"B9 Objections hold back plans\";\n        selector: *:loop([\"label\"=\"B9 Objections hold back plans\"]), #background;\n      }\n\n      option {\n        label: \"B10 Banks lend less as leverage rises\";\n        selector: *:loop([\"label\"=\"B10 Banks lend less as leverage rises\"]), #background;\n      }\n\n      option {\n        label: \"R9 Changed plans erode trust\";\n        selector: *:loop([\"label\"=\"R9 Changed plans erode trust\"]), #background;\n      }\n\n      option {\n        label: \"R10 Capital ties farms to their crops\";\n        selector: *:loop([\"label\"=\"R10 Capital ties farms to their crops\"]), #background;\n      }\n\n      option {\n        label: \"R11 Expropriation and trust\";\n        selector: *:loop([\"label\"=\"R11 Expropriation and trust\"]), #background;\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Regions: the page's two subsystem regions as a background image ---------- */\n/* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,\n   pinned at the centre of the regions' frame, and its width and height, the frame's. A showcase\n   fades all it does not select, so every showcase option above selects #background too */\n#background {\n  image-url: url(https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/regions.svg);\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- Loops: Kumu's named loops, no label on the map ---------- */\n/* the full drawing has no loop marks (the router's layout decision); Kumu's property reference\n   gives loops `label`, not `label-visibility` */\nloop {\n  label: none;\n}\n\n/* ---------- generated by build.py: tints, box sizes, the regions' size ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-clay-dispersion-sodification { width: 295; height: 52; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 340; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-flushing-salt-from-the-root-zone { width: 354; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-water-available-for-supply-in-drought { width: 340; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-agricultural-seats-on-the-water-board { width: 340; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-attractiveness-of-storing-water { width: 280; height: 120; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-owner-farmed-arable-land { width: 340; height: 86; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-attractiveness-of-local-processing { width: 325; height: 120; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-attractiveness-of-tolerant-varieties { width: 280; height: 154; }\n#elem-attractiveness-of-new-crops { width: 340; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-know-how-of-current-crops { width: 251; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-plans-changed-or-dropped { width: 265; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#background { width: 3755; height: 3156; }\n"
+      "style": "/* Each property here is one that Kumu's property reference gives the selector's type (element,\n   connection or loop: its table marks which type takes which property); check a new one there\n   before writing it, and see it work in a test import. */\n\n@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      /* strict shows only what an option selects: normal adds the links among its elements and\n         loose their neighbours, which are not the loop */\n      mode: strict;\n\n      /* build.py replaces the next line with an option per named loop */\n      option {\n        label: \"R1 Salty soil takes in less rain\";\n        selector: *:loop([\"label\"=\"R1 Salty soil takes in less rain\"]), #background;\n      }\n\n      option {\n        label: \"B1 Salt-tolerant crops need less pumping\";\n        selector: *:loop([\"label\"=\"B1 Salt-tolerant crops need less pumping\"]), #background;\n      }\n\n      option {\n        label: \"R2 Growers and processors\";\n        selector: *:loop([\"label\"=\"R2 Growers and processors\"]), #background;\n      }\n\n      option {\n        label: \"R3 Farm income and water storage\";\n        selector: *:loop([\"label\"=\"R3 Farm income and water storage\"]), #background;\n      }\n\n      option {\n        label: \"R4 Land value and bank credit\";\n        selector: *:loop([\"label\"=\"R4 Land value and bank credit\"]), #background;\n      }\n\n      option {\n        label: \"R5 Leverage and deep drainage\";\n        selector: *:loop([\"label\"=\"R5 Leverage and deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"R6 Land value, objections and ditch levels\";\n        selector: *:loop([\"label\"=\"R6 Land value, objections and ditch levels\"]), #background;\n      }\n\n      option {\n        label: \"B2 Less arable land, less deep drainage\";\n        selector: *:loop([\"label\"=\"B2 Less arable land, less deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"B3 Switching gives up margin\";\n        selector: *:loop([\"label\"=\"B3 Switching gives up margin\"]), #background;\n      }\n\n      option {\n        label: \"B4 Storing water when harvests fall\";\n        selector: *:loop([\"label\"=\"B4 Storing water when harvests fall\"]), #background;\n      }\n\n      option {\n        label: \"B5 Pumping relieves the shortfall\";\n        selector: *:loop([\"label\"=\"B5 Pumping relieves the shortfall\"]), #background;\n      }\n\n      option {\n        label: \"R7 Pumping thins the lens\";\n        selector: *:loop([\"label\"=\"R7 Pumping thins the lens\"]), #background;\n      }\n\n      option {\n        label: \"B6 Flushing salt out\";\n        selector: *:loop([\"label\"=\"B6 Flushing salt out\"]), #background;\n      }\n\n      option {\n        label: \"R8 Flushing draws down the lens\";\n        selector: *:loop([\"label\"=\"R8 Flushing draws down the lens\"]), #background;\n      }\n\n      option {\n        label: \"B7 Deep drainage keeps fields workable\";\n        selector: *:loop([\"label\"=\"B7 Deep drainage keeps fields workable\"]), #background;\n      }\n\n      option {\n        label: \"B8 The water board raises levels against seepage\";\n        selector: *:loop([\"label\"=\"B8 The water board raises levels against seepage\"]), #background;\n      }\n\n      option {\n        label: \"B9 Objections hold back plans\";\n        selector: *:loop([\"label\"=\"B9 Objections hold back plans\"]), #background;\n      }\n\n      option {\n        label: \"B10 Banks lend less as leverage rises\";\n        selector: *:loop([\"label\"=\"B10 Banks lend less as leverage rises\"]), #background;\n      }\n\n      option {\n        label: \"R9 Changed plans erode trust\";\n        selector: *:loop([\"label\"=\"R9 Changed plans erode trust\"]), #background;\n      }\n\n      option {\n        label: \"R10 Capital ties farms to their crops\";\n        selector: *:loop([\"label\"=\"R10 Capital ties farms to their crops\"]), #background;\n      }\n\n      option {\n        label: \"R11 Expropriation and trust\";\n        selector: *:loop([\"label\"=\"R11 Expropriation and trust\"]), #background;\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Regions: the page's two subsystem regions as a background image ---------- */\n/* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,\n   pinned at the centre of the regions' frame, and its width and height, the frame's. A showcase\n   fades all it does not select, so every showcase option above selects #background too */\n#background {\n  image-url: url(https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/regions.svg);\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- Loops: Kumu's named loops, no label on the map ---------- */\n/* the full drawing has no loop marks (the router's layout decision); Kumu's property reference\n   gives loops `label`, not `label-visibility` */\nloop {\n  label: none;\n}\n\n/* ---------- generated by build.py: tints, box sizes, the regions' size ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-clay-dispersion-sodification { width: 295; height: 52; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 340; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-flushing-salt-from-the-root-zone { width: 354; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-water-available-for-supply-in-drought { width: 340; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-agricultural-seats-on-the-water-board { width: 340; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-attractiveness-of-storing-water { width: 280; height: 120; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-owner-farmed-arable-land { width: 340; height: 86; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-attractiveness-of-local-processing { width: 325; height: 120; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-attractiveness-of-tolerant-varieties { width: 280; height: 154; }\n#elem-attractiveness-of-new-crops { width: 340; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-know-how-of-current-crops { width: 251; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-plans-changed-or-dropped { width: 265; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#background { width: 4198; height: 3746; }\n"
     }
   ]
 }

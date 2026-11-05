@@ -154,20 +154,14 @@ function linkPath(a, b, curvature) {
   const s = t0 < 1 ? (t1 - t0) / (1 - t0) : 0;
   return [r0, lerp(r0, r1, s), bezier(ca, ctrl, cb, t1)];
 }
-function signPosition(p0, ctrl, p2, back = 36, out = 20, boxes = []) {
-  const [tx, ty] = tangent(p0, ctrl, p2, 0.92);
-  const n = Math.hypot(tx, ty) || 1;
-  const ux = tx / n, uy = ty / n;
-  const mx = (p0[0] + p2[0]) / 2, my = (p0[1] + p2[1]) / 2;
-  let side = (ctrl[0] - mx) * -(p2[1] - p0[1]) + (ctrl[1] - my) * (p2[0] - p0[0]);
-  if (Math.abs(side) < 1e-6) side = -1;
-  const s = side > 0 ? 1 : -1;
-  const outer = [p2[0] - ux * back + -uy * s * out, p2[1] - uy * back + ux * s * out];
-  const inner = [p2[0] - ux * back - -uy * s * out, p2[1] - uy * back - ux * s * out];
-  return signOnBox(outer, boxes) && !signOnBox(inner, boxes) ? inner : outer;
+function signPosition(p0, ctrl, p2, back = 50) {
+  let lo = 0, hi = 1;
+  for (let i = 0; i < 40; i++) {
+    const mid = (lo + hi) / 2, q = bezier(p0, ctrl, p2, mid);
+    if (Math.hypot(q[0] - p2[0], q[1] - p2[1]) > back) lo = mid; else hi = mid;
+  }
+  return bezier(p0, ctrl, p2, hi);
 }
-const SIGN_CLEAR = 42 / 3;  // draw.py's SIGN_SIZE / 3
-const signOnBox = (p, boxes) => boxes.some(b => b[0] - SIGN_CLEAR < p[0] && p[0] < b[2] + SIGN_CLEAR && b[1] - SIGN_CLEAR < p[1] && p[1] < b[3] + SIGN_CLEAR);
 function delayPath(p0, ctrl, p2, half = 9, gap = 4) {
   const [x, y] = bezier(p0, ctrl, p2, 0.5);
   const [tx, ty] = tangent(p0, ctrl, p2, 0.5);
@@ -228,12 +222,12 @@ function linkPaths() {
     return [g, [p0, [(p0[0] + p2[0]) / 2 + k * dy, (p0[1] + p2[1]) / 2 - k * dx], p2]];
   }));
 }
-function redrawLink(g, [p0, ctrl, p2], boxes) {
+function redrawLink(g, [p0, ctrl, p2]) {
   const f = v => v.toFixed(1);
   const d = `M ${f(p0[0])} ${f(p0[1])} Q ${f(ctrl[0])} ${f(ctrl[1])} ${f(p2[0])} ${f(p2[1])}`;
   g.querySelector("path.link-path").setAttribute("d", d);
   g.querySelector("path.link-grip").setAttribute("d", d);
-  const [sx, sy] = signPosition(p0, ctrl, p2, 36, 20, boxes);
+  const [sx, sy] = signPosition(p0, ctrl, p2);
   const sign = g.querySelector("text.sign");
   sign.setAttribute("x", f(sx));
   sign.setAttribute("y", f(sy));
@@ -258,8 +252,7 @@ function bendLink(g, p) {
   const k = 2 * ((p[0] - mid[0]) * dy - (p[1] - mid[1]) * dx) / (dx * dx + dy * dy || 1);
   // within 0.03 of straight it snaps to straight: a hand cannot reach 0 exactly
   g.dataset.curvature = String(Math.abs(k) < 0.03 ? 0 : Math.round(Math.max(-1, Math.min(1, k)) * 100) / 100);
-  const boxes = elements.map(boxOf);
-  for (const [l, path] of linkPaths()) redrawLink(l, path, boxes);
+  for (const [l, path] of linkPaths()) redrawLink(l, path);
 }
 function moveElement(g, dx, dy) {
   for (const node of g.querySelectorAll("rect, text")) {
@@ -267,8 +260,7 @@ function moveElement(g, dx, dy) {
     node.setAttribute("y", (+node.getAttribute("y") + dy).toFixed(1));
   }
   // a moved box changes where the other links on its edges end, so every link is redrawn
-  const boxes = elements.map(boxOf);
-  for (const [l, path] of linkPaths()) redrawLink(l, path, boxes);
+  for (const [l, path] of linkPaths()) redrawLink(l, path);
 }
 const toSvg = ev => {
   const p = new DOMPoint(ev.clientX, ev.clientY).matrixTransform(svg.getScreenCTM().inverse());

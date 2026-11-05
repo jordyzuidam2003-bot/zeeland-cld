@@ -11,12 +11,24 @@ web page, <https://jordyzuidam2003-bot.github.io/zeeland-cld/>, served by GitHub
 | File | What it holds | Edit? |
 | --- | --- | --- |
 | `cld.json` | the elements, connections, named loops, layout (x, y) and link curvature | yes |
+| `cld-v2.json` | version 2, built beside version 1 (below), in the same form | yes |
 | `references.json` | the sources, as `"key": "full APA reference"` | yes |
 | `view.scss` | the Kumu view inside `docs/project.json` | yes |
 | `page/` | the page around the drawing: `index.html` (a template), `app.js`, `style.css` | yes |
 | `build.py` | checks the model and writes `docs/` (how: its docstring) | — |
 | `draw.py` | draws the SVG, imported by `build.py` | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json` | never: `build.py` writes it |
+| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json`, and the same for version 2 in `docs/v2/` | never: `build.py` writes it |
+
+## Two versions
+
+Version 2, `cld-v2.json`, is built beside version 1 until Jordy and Lenne make the final CLD from
+both; version 1, `cld.json`, stays as it was approved, kept by the git tag `v1`. `build.py` checks
+and builds both, version 2 into `docs/v2/`, published at
+<https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/>, whose page links to version 1;
+`--check`, and so the pre-commit hook, covers both, and `--layout FILE --v2` writes a layout into
+`cld-v2.json`. `references.json`, `view.scss`, `page/` and `draw.py` are shared, so a change to
+them leaves version 1's page as it is: `git diff --stat v1 -- cld.json docs ':!docs/v2' ':!docs/app.js'`
+prints nothing, and `page/app.js` shows a field only where an element has it.
 
 ## Working on the diagram
 

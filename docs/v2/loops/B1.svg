@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-664 -402 1350 830" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<defs>
+<marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
+<marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
+<marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
+</defs>
+<rect x="-664" y="-402" width="1350" height="830" fill="white"/>
+<g class="links">
+<g class="link" data-from="crop-water-demand" data-to="groundwater-extraction-for-irrigation" data-sign="+" data-delay="false" data-curvature="0.3">
+<path class="link-path" d="M 218.6 -284.9 Q 130.8 -314.8 32.3 -319.3 Q -66.1 -323.7 -159.2 -301.9" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-128.1" y="-328.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="-0.16">
+<path class="link-path" d="M -430.2 141.9 Q -387.2 199.9 -313.6 242.3 Q -240.0 284.6 -147.6 304.5" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-187.2" y="315.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+</g>
+<g class="link" data-from="root-zone-salinity" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.06">
+<path class="link-path" d="M 147.6 304.5 Q 240.0 284.6 313.6 242.3 Q 387.2 199.9 430.2 141.9" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="423.3" y="182.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="groundwater-extraction-for-irrigation" data-to="freshwater-lens-thickness" data-sign="-" data-delay="false" data-curvature="0.14">
+<path class="link-path" d="M -354.3 -215.9 Q -429.8 -160.8 -461.0 -89.2 Q -492.2 -17.6 -472.6 55.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-499.6" y="24.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+</g>
+<g class="link" data-from="salt-tolerant-crop-adoption" data-to="crop-water-demand" data-sign="-" data-delay="false" data-curvature="-0.16">
+<path class="link-path" d="M 472.6 55.9 Q 493.8 -23.8 455.7 -100.6 Q 417.5 -177.4 329.2 -232.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="347.8" y="-196.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+</g>
+</g>
+<g class="elements">
+<g class="element" data-id="root-zone-salinity" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
+<rect x="-147.6" y="294.0" width="295.1" height="52.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="0.0" y="328.5" text-anchor="middle">Root zone salinity</text>
+</g>
+<g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Auxiliary" data-adaptive="true">
+<rect x="308.9" y="55.9" width="295.1" height="86.0" rx="9" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<text x="456.5" y="90.4" text-anchor="middle">Salt-tolerant crop</text>
+<text x="456.5" y="124.4" text-anchor="middle">adoption</text>
+</g>
+<g class="element" data-id="crop-water-demand" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
+<rect x="142.0" y="-284.9" width="280.3" height="52.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="282.1" y="-250.4" text-anchor="middle">Crop water demand</text>
+</g>
+<g class="element" data-id="groundwater-extraction-for-irrigation" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
+<rect x="-459.4" y="-301.9" width="354.5" height="86.0" rx="9" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="-282.1" y="-267.4" text-anchor="middle">Groundwater extraction</text>
+<text x="-282.1" y="-233.4" text-anchor="middle">for irrigation</text>
+</g>
+<g class="element" data-id="freshwater-lens-thickness" data-domain="Ecological" data-type="Stock" data-adaptive="false">
+<rect x="-581.8" y="55.9" width="250.6" height="86.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="-456.5" y="90.4" text-anchor="middle">Freshwater lens</text>
+<text x="-456.5" y="124.4" text-anchor="middle">thickness</text>
+</g>
+</g>
+<g class="loop" data-id="B1">
+<path d="M 0.0 -48.0 A 48 48 0 1 0 48.0 0.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="0.0" y="0.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B1</text>
+</g>
+</svg>

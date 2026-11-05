@@ -138,6 +138,10 @@ def check(cld, refs):
         constant = {e["id"] for e in cld["elements"] if e["element type"] == "Constant"}
         warnings += [f"{c['from']} -> {c['to']}: a Constant's link, yet bent (curvature {c['curvature']})"
                      for c in cld["connections"] if c["from"] in constant and c["curvature"] != 0]
+        # Every other link has some bend (Jordy), so a reader can follow it; under 0.03 reads as
+        # straight, the bend page/app.js keeps a dragged link from going below.
+        warnings += [f"{c['from']} -> {c['to']}: not a Constant's link, yet straight (curvature {c['curvature']})"
+                     for c in cld["connections"] if c["from"] not in constant and abs(c["curvature"]) < 0.03]
         # A delay is a claim about duration, so its description names one (a number: years, m per decade).
         warnings += [f"{c['from']} -> {c['to']}: a delay, yet its description gives no duration"
                      for c in cld["connections"] if c["delay"] and not any(ch.isdigit() for ch in c["description"])]

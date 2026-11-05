@@ -16,7 +16,7 @@ What is drawn, from back to front:
             domain shows in the drawing (the layout follows the loops, not the domains):
             square corners for a Stock, rounded for an Auxiliary, dashed for a Constant, a
             thick stroke for an adaptive practice
-  legend    bottom-left
+  legend    in the first bottom corner inside the frame with room for it, else below the frame
 No loop marks on the full drawing: the page highlights a named loop by its button.
 loop_figure(cld, loop) draws one named loop on its own (build.py writes docs/loops/<id>.svg): its
 elements evenly round one oval, clockwise from the top left, its links along it, drawn as svg()
@@ -414,9 +414,10 @@ def chaikin(loop, rounds=3):
 
 
 def regions(cld, bxs):
-    """(svg, frame, crowded): the subsystems' regions, their frame (x0, y0, x1, y1), and the grid
-    rows where the boxes leave the border no room. Each name sits at its region's top outer
-    corner (name_box()); overlaps() warns when a link runs under it."""
+    """(svg, frame, crowded, border): the subsystems' regions, their frame (x0, y0, x1, y1), the
+    grid rows where the boxes leave the border no room, and the border as (y of its first grid row,
+    its x per row). Each name sits at its region's top outer corner (name_box()); overlaps() warns
+    when a link runs under it."""
     names = list(REGION)
     members = {n: [bxs[e["id"]] for e in cld["elements"] if e["subsystem"] == n] for n in names}
     allb = list(bxs.values())
@@ -447,7 +448,7 @@ def regions(cld, bxs):
                 f'dominant-baseline="central" font-size="{REGION_NAME_SIZE}" font-weight="bold" '
                 f'letter-spacing="{REGION_NAME_SPACING}" fill="{REGION_NAME_COLOUR[n]}">{esc(n.upper())}</text>')
         parts.append(f'<g class="region" data-subsystem="{n}"><path d="{d}" fill="{REGION[n]}" fill-rule="evenodd"/>{name}</g>')
-    return "\n".join(parts), (fx0, fy0, fx1, fy1), crowded
+    return "\n".join(parts), (fx0, fy0, fx1, fy1), crowded, (y0, border)
 
 
 def regions_svg(cld):
@@ -456,7 +457,7 @@ def regions_svg(cld):
     frame's, one pixel per unit: with a viewBox alone a browser gives the image 250 by 150 pixels,
     and Kumu stretched that to the frame, blurring the region names and the border."""
     bxs = boxes(cld)
-    region_svg, frame, _ = regions(cld, bxs)
+    region_svg, frame, _, _ = regions(cld, bxs)
     x0, y0, x1, y1 = frame
     w, h = x1 - x0, y1 - y0
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{x0:.0f} {y0:.0f} {w:.0f} {h:.0f}" '
@@ -465,7 +466,7 @@ def regions_svg(cld):
 
 # --- legend ---------------------------------------------------------------------------------
 def legend_svg(x, y):
-    """Bottom-left legend; returns (svg, width, height)."""
+    """The legend, its title's baseline at (x, y); returns (svg, width, height)."""
     f = LEGEND_SIZE
     row, sw, sh = f * 1.5, f * 2.6, f * 0.9  # row height, swatch width and height
     items = []
@@ -517,18 +518,46 @@ def links_and_elements(cld, bxs, paths):
             '<g class="elements">', *(element_svg(e, bxs[e["id"]]) for e in cld["elements"]), "</g>"]
 
 
+LEGEND_INSET = 70  # the legend inside the frame: clear of its rounded corner
+LEGEND_CLEAR = 30  # ... and this far from every box, link and the border's gap
+
+
+def legend_spot(bxs, paths, frame, border, lw, lh):
+    """(x, y) for legend_svg() in the first bottom corner inside the frame, left then right, where
+    the legend keeps clear of every box and link and lies wholly in one region; None when neither
+    has room (Jordy, chosen between rendered versions: inside the frame where the drawing leaves
+    room, so the drawing takes no more of an A4 page than it needs)."""
+    fx0, fy0, fx1, fy1 = frame
+    gy0, xs = border
+    pts = [bezier(*p, t / 40) for p in paths.values() for t in range(41)]
+    for left in (True, False):
+        x0 = fx0 + LEGEND_INSET if left else fx1 - LEGEND_INSET - lw
+        y0 = fy1 - LEGEND_INSET - lh
+        r = (x0 - LEGEND_CLEAR, y0 - LEGEND_CLEAR, x0 + lw + LEGEND_CLEAR, y0 + lh + LEGEND_CLEAR)
+        if any(b[0] < r[2] and r[0] < b[2] and b[1] < r[3] and r[1] < b[3] for b in bxs.values()):
+            continue
+        if any(r[0] < p[0] < r[2] and r[1] < p[1] < r[3] for p in pts):
+            continue
+        rows = [x for j, x in enumerate(xs) if r[1] <= gy0 + j * GRID <= r[3]]
+        if any((r[2] > x - BORDER_GAP / 2) if left else (r[0] < x + BORDER_GAP / 2) for x in rows):
+            continue
+        return x0, y0 + LEGEND_SIZE  # legend_svg()'s y is the title's baseline
+    return None
+
+
 def svg(cld):
     bxs = boxes(cld)
     paths = link_paths(cld, bxs)
-    x0 = min(b[0] for b in bxs.values())
-    y0 = min(b[1] for b in bxs.values())
-    x1 = max(b[2] for b in bxs.values())
-    y1 = max(b[3] for b in bxs.values())
-    region_svg, frame, _ = regions(cld, bxs)
-    x0, y0, x1, y1 = min(x0, frame[0]), min(y0, frame[1]), max(x1, frame[2]), max(y1, frame[3])
-    legend, lw, lh = legend_svg(x0, y1 + MARGIN)
-    y1 += MARGIN + lh
-    x1 = max(x1, x0 + lw)
+    region_svg, frame, _, border = regions(cld, bxs)
+    x0, y0, x1, y1 = frame  # the frame holds every box
+    _, lw, lh = legend_svg(0, 0)
+    spot = legend_spot(bxs, paths, frame, border, lw, lh)
+    if spot:
+        legend, _, _ = legend_svg(*spot)
+    else:
+        legend, lw, lh = legend_svg(x0, y1 + MARGIN)
+        y1 += MARGIN + lh
+        x1 = max(x1, x0 + lw)
     vb = (x0 - MARGIN, y0 - MARGIN, x1 - x0 + 2 * MARGIN, y1 - y0 + 2 * MARGIN)
     parts = [*head(vb), '<g class="regions">', region_svg, "</g>", *links_and_elements(cld, bxs, {k: [p] for k, p in paths.items()}), legend, "</svg>"]
     return "\n".join(parts) + "\n"

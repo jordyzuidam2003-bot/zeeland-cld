@@ -53,7 +53,8 @@ builds and pushes, so nobody else needs git or Python.
    a commit whose `docs/` is out of date.
 
 Layout tuning: on the page, turn on "Move elements and links": drag an element to move it, drag
-a link to bend it (its middle follows the pointer; near straight it snaps to straight), then "Download layout" saves `layout.json`
+a link to bend it (its middle follows the pointer; within 0.03 of straight a Constant's link snaps to
+straight and any other keeps that bend), then "Download layout" saves `layout.json`
 with every element's position and every link's curvature.
 `python3 build.py --layout ~/Downloads/layout.json` writes both into `cld.json` and rebuilds; it
 fails on an id or a link that is not in `cld.json`. Dragging redraws the links but not the
@@ -65,7 +66,7 @@ arrived, the whole drawing readable on one A4 page, no link through
 an element it does not connect, which would read as if that element
 mediates it, and no named loop whose links cross each other, a figure eight that cannot be
 followed round; `build.py` warns on the last. A Constant's links run straight, and `build.py`
-warns on a bent one.
+warns on a bent one; every other link has some bend (Jordy), and it warns on a straight one.
 
 A picture for the report: `docs/cld.svg` is the drawing on its own, and `docs/loops/<id>.svg`
 each named loop on its own, `docs/loops/R1.svg` for R1: its elements evenly round one oval in

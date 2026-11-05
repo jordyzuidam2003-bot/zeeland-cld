@@ -1,43 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-519 -325 994 607" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-519 -282 994 607" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
 <defs>
 <marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
 <marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
 <marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
 </defs>
-<rect x="-519" y="-325" width="994" height="607" fill="white"/>
+<rect x="-519" y="-282" width="994" height="607" fill="white"/>
 <g class="links">
 <g class="link" data-from="farmers-trust-in-government" data-to="policy-resistance-legal-delays" data-sign="-" data-delay="false" data-curvature="0">
-<path class="link-path" d="M -140.1 -176.8 Q -235.0 -143.4 -276.6 -77.5 Q -318.1 -11.6 -287.6 57.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-318.6" y="30.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<path class="link-path" d="M -140.1 176.8 Q -235.0 143.4 -276.6 77.5 Q -318.1 11.6 -287.6 -57.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-318.6" y="-30.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="policy-resistance-legal-delays" data-to="expropriation-of-farmland" data-sign="+" data-delay="false" data-curvature="0.0">
-<path class="link-path" d="M -209.7 143.0 Q -122.3 200.0 0.0 200.0 Q 122.3 200.0 209.7 143.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="188.7" y="178.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
+<path class="link-path" d="M -209.7 -143.0 Q -122.3 -200.0 0.0 -200.0 Q 122.3 -200.0 209.7 -143.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="188.7" y="-178.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="6" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="expropriation-of-farmland" data-to="farmers-trust-in-government" data-sign="-" data-delay="false" data-curvature="0.0">
-<path class="link-path" d="M 287.6 57.0 Q 318.1 -11.6 276.6 -77.5 Q 235.0 -143.4 140.1 -176.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="181.0" y="-182.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
+<path class="link-path" d="M 287.6 -57.0 Q 318.1 11.6 276.6 77.5 Q 235.0 143.4 140.1 176.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="181.0" y="182.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="6" paint-order="stroke">−</text>
 </g>
 </g>
 <g class="elements">
 <g class="element" data-id="policy-resistance-legal-delays" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-437.0" y="57.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-259.8" y="91.5" text-anchor="middle">Objections to land-use</text>
-<text x="-259.8" y="125.5" text-anchor="middle">plans</text>
+<rect x="-437.0" y="-143.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-259.8" y="-108.5" text-anchor="middle">Objections to land-use</text>
+<text x="-259.8" y="-74.5" text-anchor="middle">plans</text>
 </g>
 <g class="element" data-id="expropriation-of-farmland" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="127.1" y="57.0" width="265.4" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="259.8" y="91.5" text-anchor="middle">Expropriation of</text>
-<text x="259.8" y="125.5" text-anchor="middle">farmland</text>
+<rect x="127.1" y="-143.0" width="265.4" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="259.8" y="-108.5" text-anchor="middle">Expropriation of</text>
+<text x="259.8" y="-74.5" text-anchor="middle">farmland</text>
 </g>
 <g class="element" data-id="farmers-trust-in-government" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-140.1" y="-243.0" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="0.0" y="-208.5" text-anchor="middle">Farmers' trust in</text>
-<text x="0.0" y="-174.5" text-anchor="middle">government</text>
+<rect x="-140.1" y="157.0" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="0.0" y="191.5" text-anchor="middle">Farmers' trust in</text>
+<text x="0.0" y="225.5" text-anchor="middle">government</text>
 </g>
 </g>
 <g class="loop" data-id="R11">
-<path d="M 0.0 -48.0 A 48 48 0 1 0 48.0 0.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<path d="M 0.0 -48.0 A 48 48 0 1 1 -48.0 0.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
 <text class="loop-id" x="0.0" y="0.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R11</text>
 </g>
 </svg>

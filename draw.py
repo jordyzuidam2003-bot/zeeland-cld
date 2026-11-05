@@ -19,15 +19,14 @@ What is drawn, from back to front:
   legend    bottom-left
 No loop marks on the full drawing: the page highlights a named loop by its button.
 loop_figure(cld, loop) draws one named loop on its own (build.py writes docs/loops/<id>.svg): its
-elements evenly round one oval, its links along it, drawn as svg() draws them, with its mark,
-turning the way the loop runs, at the oval's centre.
+elements evenly round one oval, clockwise from the top left, its links along it, drawn as svg()
+draws them, with its mark, turning clockwise, at the oval's centre.
 
 The link formulas are duplicated in page/app.js (drag mode redraws every link when an element
 moves): keep link_path(), link_paths(), sign_position() and their JS twins the same.
 """
 
-import cmath
-from math import atan2, ceil, cos, hypot, pi, sin
+from math import ceil, cos, hypot, pi, sin
 
 # --- style -------------------------------------------------------------------------------
 FONT = "Helvetica Neue, Helvetica, Arial, sans-serif"
@@ -273,18 +272,18 @@ def delay_path(p0, ctrl, p2, half=9, gap=4):
 
 
 # --- loops ----------------------------------------------------------------------------------
-def loop_svg(loop, centre, clockwise):
+def loop_svg(loop, centre):
     """The loop's mark at centre: its id in a three-quarter circle that ends in an arrowhead,
-    turning clockwise on the page or not, as the loop runs."""
+    turning clockwise on the page, as the one-loop figure runs."""
     cx, cy = centre
     r = MARK_R
-    # from the top round to the left (clockwise) or to the right (anticlockwise); y grows downwards
-    a0, a1 = -pi / 2, pi if clockwise else 0
+    # from the top clockwise round to the left; y grows downwards
+    a0, a1 = -pi / 2, pi
     start = (cx + r * cos(a0), cy + r * sin(a0))
     end = (cx + r * cos(a1), cy + r * sin(a1))
     return "\n".join([
         f'<g class="loop" data-id="{loop["id"]}">',
-        f'<path d="M {start[0]:.1f} {start[1]:.1f} A {r} {r} 0 1 {1 if clockwise else 0} {end[0]:.1f} {end[1]:.1f}" fill="none" '
+        f'<path d="M {start[0]:.1f} {start[1]:.1f} A {r} {r} 0 1 1 {end[0]:.1f} {end[1]:.1f}" fill="none" '
         f'stroke="{STROKE_COLOUR}" stroke-width="{LINK_WIDTH}" marker-end="url(#arrow-grey)"/>',
         f'<text class="loop-id" x="{cx:.1f}" y="{cy:.1f}" text-anchor="middle" dominant-baseline="central" '
         f'font-size="{SIGN_SIZE}" font-weight="bold">{esc(loop["id"])}</text>',
@@ -545,28 +544,17 @@ def svg(cld):
 MARK_R = 48  # the loop mark's radius: it reads at the size of the signs
 
 
-def loop_parts(cld, loop):
-    """(sub, bxs, paths, ring): the loop's own elements and links as a CLD, their boxes and drawn
-    curves, and the curves sampled in the loop's order as one closed polyline."""
-    path = loop["path"]
-    steps = list(zip(path, path[1:] + path[:1]))
-    sub = {"elements": [e for e in cld["elements"] if e["id"] in path],
-           "connections": [c for c in cld["connections"] if (c["from"], c["to"]) in steps]}
-    bxs = boxes(sub)
-    paths = link_paths(sub, bxs)
-    return sub, bxs, paths, [bezier(*paths[step], t / 20) for step in steps for t in range(20)]
-
-
 OVAL_ASPECT = 1.5  # a one-loop figure's oval, its width over its height: the boxes are wider than tall
 OVAL_GAP = 150     # the least gap between two boxes of a one-loop figure: room for an arrowhead and its sign
 
 
 def oval(cld, loop):
-    """(elements, bxs, pieces, clockwise): one named loop laid out as an oval for its figure.
+    """(elements, bxs, pieces): one named loop laid out as an oval for its figure.
 
-    Its elements evenly spaced on an ellipse round (0, 0), in the loop's order, turning the way the
-    loop runs in the full drawing, at the rotation nearest to where they sit round the loop there
-    that is mirror-symmetric left to right; the ellipse just large enough that every two boxes keep
+    Its elements evenly spaced on an ellipse round (0, 0), in the loop's order, clockwise, the
+    path's first element at the top left and the second at the top right, so the eye starts left
+    and reads to the right (Jordy, who disliked the anticlockwise figures that turning the way
+    the loop runs in the full drawing gave); the ellipse just large enough that every two boxes keep
     OVAL_GAP apart and the mark has room at its centre. Each link is the piece of the ellipse from
     its source's box border to its target's, as quadratic Beziers of at most 45 degrees, each with
     its control point where the ellipse's tangents at its two ends meet, so the links run along the
@@ -574,17 +562,10 @@ def oval(cld, loop):
     R3 and R6 lopsided, with long sweeping links)."""
     path = loop["path"]
     n = len(path)
-    pts = loop_parts(cld, loop)[3]
-    # the way round: the sign of the area the drawn links enclose, taken in the loop's order; with y
-    # downwards a positive shoelace sum turns clockwise on the page, as a growing angle does
-    s = 1 if sum(p[0] * q[1] - q[0] * p[1] for p, q in zip(pts, pts[1:] + pts[:1])) > 0 else -1
     E = {e["id"]: e for e in cld["elements"]}
-    cx, cy = sum(E[i]["x"] for i in path) / n, sum(E[i]["y"] for i in path) / n
-    # the rotation: the mean over the elements of their angle round the loop's centre less their
-    # step round the ring, then the nearest one with an element or a gap at the top
-    phi = cmath.phase(sum(cmath.exp(1j * (atan2(E[i]["y"] - cy, E[i]["x"] - cx) - s * 2 * pi * k / n)) for k, i in enumerate(path)))
-    phi = -pi / 2 + round((phi + pi / 2) / (pi / n)) * pi / n
-    ang = [phi + s * 2 * pi * k / n for k in range(n)]
+    # with y downwards a growing angle turns clockwise on the page; the first element half a step
+    # left of the top, the second half a step right of it
+    ang = [-pi / 2 - pi / n + 2 * pi * k / n for k in range(n)]
     els = [dict(E[i]) for i in path]
     gap = lambda p, q: max(p[0] - q[2], q[0] - p[2], p[1] - q[3], q[1] - p[3])
     ry = 100
@@ -608,7 +589,7 @@ def oval(cld, loop):
 
     pieces = {}
     for k in range(n):
-        a, b, step = path[k], path[(k + 1) % n], s * 2 * pi / n
+        a, b, step = path[k], path[(k + 1) % n], 2 * pi / n
         t0, t1 = border(ang[k], ang[k] + step, bxs[a]), border(ang[k] + step, ang[k], bxs[b])
         m = ceil(abs(t1 - t0) / (pi / 4))
         h = (t1 - t0) / (2 * m)
@@ -616,14 +597,14 @@ def oval(cld, loop):
         # the ellipse is a stretched circle, and stretching keeps where tangents meet
         pieces[a, b] = [(at(t0 + 2 * h * i), (rx * cos(t0 + 2 * h * i + h) / cos(h), ry * sin(t0 + 2 * h * i + h) / cos(h)),
                          at(t0 + 2 * h * (i + 1))) for i in range(m)]
-    return els, bxs, pieces, s > 0
+    return els, bxs, pieces
 
 
 def loop_figure(cld, loop):
     """One named loop on its own, for the report: laid out as an oval (oval()), its elements and links
-    drawn as svg() draws them, its mark at the oval's centre, turning the way the loop runs. No
+    drawn as svg() draws them, its mark at the oval's centre, turning clockwise as the oval does. No
     regions and no legend: the figure stands beside the full drawing."""
-    els, bxs, pieces, clockwise = oval(cld, loop)
+    els, bxs, pieces = oval(cld, loop)
     sub = {"elements": els, "connections": [c for c in cld["connections"] if (c["from"], c["to"]) in pieces]}
     ring = [bezier(*p, t / 10) for ps in pieces.values() for p in ps for t in range(11)]
     # the frame: the boxes and the curves, with room for a sign beside a curve
@@ -631,7 +612,7 @@ def loop_figure(cld, loop):
     ys = [b[k] for b in bxs.values() for k in (1, 3)] + [p[1] for p in ring]
     pad = MARGIN + SIGN_SIZE
     vb = (min(xs) - pad, min(ys) - pad, max(xs) - min(xs) + 2 * pad, max(ys) - min(ys) + 2 * pad)
-    parts = [*head(vb), *links_and_elements(sub, bxs, pieces), loop_svg(loop, (0, 0), clockwise), "</svg>"]
+    parts = [*head(vb), *links_and_elements(sub, bxs, pieces), loop_svg(loop, (0, 0)), "</svg>"]
     return "\n".join(parts) + "\n"
 
 

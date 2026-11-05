@@ -24,13 +24,13 @@ web page, <https://jordyzuidam2003-bot.github.io/zeeland-cld/>, served by GitHub
 
 Version 2, `cld-v2.json`, is built beside version 1 until Jordy and Lenne make the final CLD from
 both; version 1, `cld.json`, stays as it was approved, kept by the git tag `v1`, and its page
-gains only what both pages show, the model texts. `build.py` checks
+gains only what both pages show: the model texts, and the look Jordy chooses for both drawings
+(its loop figures run clockwise). `build.py` checks
 and builds both, version 2 into `docs/v2/`, published at
 <https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/>, whose page links to version 1;
 `--check`, and so the pre-commit hook, covers both, and `--layout FILE --v2` writes a layout into
 `cld-v2.json`. `references.json`, `model-texts.md`, `view.scss`, `page/` and `draw.py` are shared, so a
-change to them leaves version 1's model and drawing as they are:
-`git diff --stat v1 -- cld.json docs/cld.svg docs/loops docs/regions.svg docs/project.json` prints
+change to them leaves version 1's model as it is: `git diff --stat v1 -- cld.json` prints
 nothing, and `page/app.js` shows a field only where an element has it.
 
 ## Working on the diagram
@@ -66,8 +66,8 @@ warns on a bent one.
 
 A picture for the report: `docs/cld.svg` is the drawing on its own, and `docs/loops/<id>.svg`
 each named loop on its own, `docs/loops/R1.svg` for R1: its elements evenly round one oval in
-the loop's order, turned about as they sit round the loop in the drawing, its links along the
-oval, and its mark, turning the way the loop runs, at the oval's centre. Google Docs takes no SVG; a PNG, with
+the loop's order, clockwise, its path's first element at the top left and the second at the top
+right, its links along the oval, and its mark, turning clockwise, at the oval's centre. Google Docs takes no SVG; a PNG, with
 Chrome (not part of the build, since Chrome is not on every machine), `svg` the file to convert:
 
 ```sh

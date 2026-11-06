@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="437 73 2393 1869" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<defs>
+<marker id="arrow-authority-over" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#333333"/></marker>
+<marker id="arrow-finances" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#EB6834"/></marker>
+<marker id="arrow-buys-from" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#EB6834"/></marker>
+<marker id="arrow-advises" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6250D6"/></marker>
+<marker id="arrow-represents" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6250D6"/></marker>
+<marker id="arrow-works-with" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1BAF7A"/></marker>
+</defs>
+<rect x="437" y="73" width="2393" height="1869" fill="white"/>
+<g class="bands">
+<rect x="476.6" y="113.0" width="2312.8" height="231.5" fill="#EEF2F6"/>
+<text x="516.6" y="228.8" font-size="40" font-weight="bold" letter-spacing="5" fill="#4A5560" dominant-baseline="central">GLOBAL</text>
+<rect x="476.6" y="344.5" width="2312.8" height="178.0" fill="#F8F6F1"/>
+<text x="516.6" y="433.5" font-size="40" font-weight="bold" letter-spacing="5" fill="#4A5560" dominant-baseline="central">INTERNATIONAL</text>
+<rect x="476.6" y="522.5" width="2312.8" height="597.5" fill="#EEF2F6"/>
+<text x="516.6" y="821.2" font-size="40" font-weight="bold" letter-spacing="5" fill="#4A5560" dominant-baseline="central">NATIONAL</text>
+<rect x="476.6" y="1120.0" width="2312.8" height="602.0" fill="#F8F6F1"/>
+<text x="516.6" y="1373.0" font-size="40" font-weight="bold" letter-spacing="5" fill="#4A5560" dominant-baseline="central">LOCAL/</text>
+<text x="516.6" y="1421.0" font-size="40" font-weight="bold" letter-spacing="5" fill="#4A5560" dominant-baseline="central">PROVINCIAL/</text>
+<text x="516.6" y="1469.0" font-size="40" font-weight="bold" letter-spacing="5" fill="#4A5560" dominant-baseline="central">REGIONAL</text>
+</g>
+<g class="relations">
+<g class="relation" data-from="waterschap-scheldestromen" data-to="arable-farmers" data-kind="authority over"><title>Waterschap Scheldestromen authority over Arable farmers on Schouwen-Duiveland: Sets the ditch levels the island's farms drain to, in its water level plans for Schouwen and Duiveland, and the rules for their groundwater extraction for irrigation.</title><path d="M 2110.1 1206.4 Q 2053.0 1196.2 1995.6 1204.3" fill="none" stroke="#333333" stroke-width="4" marker-end="url(#arrow-authority-over)"/></g>
+<g class="relation" data-from="waterschap-scheldestromen" data-to="provincie-zeeland" data-kind="works with"><title>Waterschap Scheldestromen works with Provincie Zeeland: Takes part with the province in the Zeeuws Deltaplan Zoet Water, and sets up with it a network measuring the boundary between fresh and salt groundwater.</title><path d="M 2248.5 1263.0 Q 2284.8 1343.7 2344.6 1409.0" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+<g class="relation" data-from="gemeente-schouwen-duiveland" data-to="arable-farmers" data-kind="authority over"><title>Gemeente Schouwen-Duiveland authority over Arable farmers on Schouwen-Duiveland: Sets in its omgevingsplan what the island's farmland and farm buildings may be used for, and where a farm may build a water basin outside its building plot.</title><path d="M 1770.6 1486.0 Q 1780.0 1369.1 1825.4 1261.0" fill="none" stroke="#333333" stroke-width="4" marker-end="url(#arrow-authority-over)"/></g>
+<g class="relation" data-from="gemeente-schouwen-duiveland" data-to="arable-farmers" data-kind="finances"><title>Gemeente Schouwen-Duiveland finances Arable farmers on Schouwen-Duiveland: Pays up to half, at most 25,000 euros, of a farm's costs of advice, research and machines for fresh water and climate-proof farming, from the Living Lab.</title><path d="M 1804.6 1486.0 Q 1850.0 1377.9 1859.4 1261.0" fill="none" stroke="#EB6834" stroke-width="4" marker-end="url(#arrow-finances)"/></g>
+<g class="relation" data-from="gemeente-schouwen-duiveland" data-to="waterschap-scheldestromen" data-kind="works with"><title>Gemeente Schouwen-Duiveland works with Waterschap Scheldestromen: Leads the Living Lab Schouwen-Duiveland, in which the water board is a core partner.</title><path d="M 1838.6 1486.0 Q 1968.4 1350.9 2133.9 1263.0" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+<g class="relation" data-from="gemeente-schouwen-duiveland" data-to="provincie-zeeland" data-kind="works with"><title>Gemeente Schouwen-Duiveland works with Provincie Zeeland: Leads the Living Lab Schouwen-Duiveland, in which the province is a core partner.</title><path d="M 1882.6 1529.0 Q 2085.6 1526.6 2277.8 1461.0" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+<g class="relation" data-from="gemeente-schouwen-duiveland" data-to="zlto" data-kind="works with"><title>Gemeente Schouwen-Duiveland works with ZLTO: Leads the Living Lab Schouwen-Duiveland, in which ZLTO and its island branch, Agrarisch Schouwen-Duiveland, are core partners.</title><path d="M 1872.6 1486.0 Q 1940.0 1443.3 2017.3 1423.8" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+<g class="relation" data-from="gemeente-schouwen-duiveland" data-to="deltares" data-kind="works with"><title>Gemeente Schouwen-Duiveland works with Deltares: Carried out with Deltares the Living Lab's project Samenwerken voor Zoet Water (2020–2022), on storing fresh water in the subsoil.</title><path d="M 1634.6 1486.0 Q 1292.4 1298.2 1025.9 1013.0" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+<g class="relation" data-from="gemeente-schouwen-duiveland" data-to="kwr" data-kind="works with"><title>Gemeente Schouwen-Duiveland works with KWR: Carried out with KWR the Living Lab's project Samenwerken voor Zoet Water (2020–2022), on storing fresh water in the subsoil.</title><path d="M 1668.6 1486.0 Q 1456.1 1301.5 1311.9 1060.0" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+<g class="relation" data-from="gemeente-schouwen-duiveland" data-to="acacia-water" data-kind="works with"><title>Gemeente Schouwen-Duiveland works with Acacia Water: Carried out with Acacia Water the Living Lab's project Samenwerken voor Zoet Water (2020–2022), on storing fresh water in the subsoil.</title><path d="M 1736.6 1486.0 Q 1693.5 1257.6 1581.3 1054.0" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+<g class="relation" data-from="gemeente-schouwen-duiveland" data-to="delphy" data-kind="works with"><title>Gemeente Schouwen-Duiveland works with Delphy: Leads the Living Lab Schouwen-Duiveland, in which Delphy is a practice partner.</title><path d="M 1702.6 1486.0 Q 1537.5 1121.7 1267.1 827.0" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+<g class="relation" data-from="provincie-zeeland" data-to="waterschap-scheldestromen" data-kind="authority over"><title>Provincie Zeeland authority over Waterschap Scheldestromen: Sets the water board's area, tasks and rules of organisation by provincial regulation, sets rules in its omgevingsverordening for the water board's water level plans, and supervises it.</title><path d="M 2378.6 1409.0 Q 2342.2 1328.3 2282.5 1263.0" fill="none" stroke="#333333" stroke-width="4" marker-end="url(#arrow-authority-over)"/></g>
+<g class="relation" data-from="provincie-zeeland" data-to="gemeente-schouwen-duiveland" data-kind="authority over"><title>Provincie Zeeland authority over Gemeente Schouwen-Duiveland: Sets instruction rules in its omgevingsverordening that the municipality's omgevingsplan follows, such as the rule on water basins on farmland.</title><path d="M 2311.8 1461.0 Q 2105.3 1545.8 1882.6 1562.0" fill="none" stroke="#333333" stroke-width="4" marker-end="url(#arrow-authority-over)"/></g>
+<g class="relation" data-from="provincie-zeeland" data-to="gemeente-schouwen-duiveland" data-kind="finances"><title>Provincie Zeeland finances Gemeente Schouwen-Duiveland: Co-financed, beside an EU contribution, the Living Lab's project Samenwerken voor Zoet Water (2020–2022), which the municipality leads.</title><path d="M 2226.9 1451.0 Q 2051.1 1446.0 1882.6 1496.0" fill="none" stroke="#EB6834" stroke-width="4" marker-end="url(#arrow-finances)"/></g>
+<g class="relation" data-from="provincie-zeeland" data-to="dcc" data-kind="finances"><title>Provincie Zeeland finances Delta Climate Center: Provided, with the national government, the €88 million budget the Delta Climate Center started with in mid-2023, part of the national compensation package Wind in de Zeilen.</title><path d="M 2386.5 1461.0 Q 2435.4 1529.8 2503.3 1580.0" fill="none" stroke="#EB6834" stroke-width="4" marker-end="url(#arrow-finances)"/></g>
+<g class="relation" data-from="banks" data-to="arable-farmers" data-kind="finances"><title>Banks lending to the island's farmers finances Arable farmers on Schouwen-Duiveland: Lend to farms: in the Netherlands, 90% of farms' borrowed capital comes from banks, almost 1 million euro of bank loans per arable farm on average in 2018.</title><path d="M 1605.7 803.0 Q 1680.5 1005.7 1814.8 1175.0" fill="none" stroke="#EB6834" stroke-width="4" marker-end="url(#arrow-finances)"/></g>
+<g class="relation" data-from="buyers-and-processors" data-to="arable-farmers" data-kind="buys from"><title>Buyers and processors of the island's crops buys from Arable farmers on Schouwen-Duiveland: Cosun Beet Company buys the island's sugar beet, 1,336 ha on 110 farms in 2025, as it processes all beet grown in the Netherlands, from growers who are its members, each up to its allocation; the potato processors buy most of their potatoes under contract or in a pool, measured nationally.</title><path d="M 2139.7 645.0 Q 2087.7 925.1 1950.8 1175.0" fill="none" stroke="#EB6834" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-buys-from)"/></g>
+<g class="relation" data-from="buyers-and-processors" data-to="arable-farmers" data-kind="advises"><title>Buyers and processors of the island's crops advises Arable farmers on Schouwen-Duiveland: Cosun Beet Company advises its beet growers field by field through its BAS app, from their crop records in Unitip, soil maps and satellite images, in line with the cultivation guide of the IRS, the Dutch sugar beet research centre it works with.</title><path d="M 2105.7 645.0 Q 1968.9 894.9 1916.8 1175.0" fill="none" stroke="#6250D6" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-advises)"/></g>
+<g class="relation" data-from="zlto" data-to="arable-farmers" data-kind="represents"><title>ZLTO represents Arable farmers on Schouwen-Duiveland: Speaks for its members among the island's farmers, through its branch on the island, to the municipality, the water board and the province; its board appoints the water board's two members for unbuilt land, farmland included.</title><path d="M 2039.8 1389.0 Q 1983.8 1314.4 1907.3 1261.0" fill="none" stroke="#6250D6" stroke-width="4" marker-end="url(#arrow-represents)"/></g>
+<g class="relation" data-from="zlto" data-to="waterschap-scheldestromen" data-kind="works with"><title>ZLTO works with Waterschap Scheldestromen: Takes the initiative in the plan that carries out the Deltaplan Agrarisch Waterbeheer in Zeeland, the measures farmers take of their own accord for the water board's water quality and quantity tasks, working with the water board.</title><path d="M 2090.2 1389.0 Q 2155.1 1334.8 2199.8 1263.0" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+<g class="relation" data-from="zlto" data-to="provincie-zeeland" data-kind="works with"><title>ZLTO works with Provincie Zeeland: Takes the initiative in the plan that carries out the Deltaplan Agrarisch Waterbeheer in Zeeland, working with the province.</title><path d="M 2104.7 1423.9 Q 2166.2 1431.2 2226.9 1419.0" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+<g class="relation" data-from="consumers" data-to="buyers-and-processors" data-kind="buys from"><title>Consumers buys from Buyers and processors of the island's crops: Buy the processors' frozen potato products, about 80% of them abroad, through catering and fast food; when these closed worldwide in 2020, the processors could take far fewer potatoes for the rest of the season. Measured nationally.</title><path d="M 2182.1 255.0 Q 2133.9 403.2 2134.3 559.0" fill="none" stroke="#EB6834" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-buys-from)"/></g>
+<g class="relation" data-from="eu" data-to="lvvn" data-kind="authority over"><title>EU authority over LVVN: Sets the Common Agricultural Policy within which the Netherlands draws up its national CAP Strategic Plan, from the toolbox of measures the Commission provides; the CAP is funded from the EU budget and its payments are managed nationally.</title><path d="M 1778.8 486.0 Q 1868.0 614.3 1912.8 764.0" fill="none" stroke="#333333" stroke-width="4" marker-end="url(#arrow-authority-over)"/></g>
+<g class="relation" data-from="eu" data-to="arable-farmers" data-kind="authority over"><title>EU authority over Arable farmers on Schouwen-Duiveland: Ties its income support to conditionality: every farmer must respect the statutory management requirements, and a farmer receiving CAP support also the good agricultural and environmental conditions, or the support is reduced.</title><path d="M 1760.0 486.0 Q 1749.3 837.6 1848.8 1175.0" fill="none" stroke="#333333" stroke-width="4" marker-end="url(#arrow-authority-over)"/></g>
+<g class="relation" data-from="eu" data-to="banks" data-kind="authority over"><title>EU authority over Banks lending to the island's farmers: Sets the banks' capital requirements in the Capital Requirements Regulation, whose final Basel III elements apply from 1 January 2025.</title><path d="M 1741.2 486.0 Q 1655.2 590.7 1606.2 717.0" fill="none" stroke="#333333" stroke-width="4" marker-end="url(#arrow-authority-over)"/></g>
+<g class="relation" data-from="lvvn" data-to="arable-farmers" data-kind="finances"><title>LVVN finances Arable farmers on Schouwen-Duiveland: Pays the farms that apply the CAP's income support and eco-scheme premium per hectare, at the tariffs its minister sets (for 2025: €174 basic income support, €50.35 more on the first 40 hectares, €60 to €200 for the eco-scheme), paid out by RVO; measured nationally.</title><path d="M 1912.4 816.0 Q 1868.9 993.1 1882.8 1175.0" fill="none" stroke="#EB6834" stroke-width="4" marker-end="url(#arrow-finances)"/></g>
+<g class="relation" data-from="ienw" data-to="rijkswaterstaat" data-kind="authority over"><title>IenW authority over Rijkswaterstaat: Is responsible for managing the main water system, which Rijkswaterstaat carries out for it.</title><path d="M 2437.3 1023.0 Q 2373.4 1012.1 2309.3 1021.6" fill="none" stroke="#333333" stroke-width="4" marker-end="url(#arrow-authority-over)"/></g>
+<g class="relation" data-from="ienw" data-to="waterschap-scheldestromen" data-kind="authority over"><title>IenW authority over Waterschap Scheldestromen: Ranks the uses of water in a shortage by the verdringingsreeks of its freshwater policy, which every water manager, the water board among them, follows; may instruct water boards on regional water management where international obligations or interests beyond a region require it.</title><path d="M 2437.3 1055.0 Q 2346.1 1103.0 2274.3 1177.0" fill="none" stroke="#333333" stroke-width="4" marker-end="url(#arrow-authority-over)"/></g>
+<g class="relation" data-from="ienw" data-to="provincie-zeeland" data-kind="authority over"><title>IenW authority over Provincie Zeeland: May instruct provinces on regional water management where international obligations or interests beyond a region require it; under the verdringingsreeks a province may rank the uses within its last two categories in its omgevingsverordening, never between them.</title><path d="M 2469.1 1065.0 Q 2413.3 1232.5 2412.6 1409.0" fill="none" stroke="#333333" stroke-width="4" marker-end="url(#arrow-authority-over)"/></g>
+<g class="relation" data-from="ienw" data-to="lvvn" data-kind="works with"><title>IenW works with LVVN: Its minister coordinates the Delta Programme for Fresh Water, whose Bestuurlijk Platform Zoetwater seats LVVN's directors beside IenW's, Rijkswaterstaat's and the freshwater regions'; the two ministries publish the Delta Programme with VRO.</title><path d="M 2447.3 1013.0 Q 2222.9 869.0 1964.7 802.1" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+<g class="relation" data-from="rijkswaterstaat" data-to="waterschap-scheldestromen" data-kind="works with"><title>Rijkswaterstaat works with Waterschap Scheldestromen: Agreed with Waterschap Scheldestromen, Brabantse Delta and Hollandse Delta a renewed Waterakkoord Volkerak-Zoommeer (2026, for 15 years) on the lake's water management in normal, wet and dry conditions, so that enough fresh water stays available for nature and agriculture.</title><path d="M 2186.3 1055.0 Q 2189.6 1118.1 2212.4 1177.0" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+<g class="relation" data-from="acacia-water" data-to="arable-farmers" data-kind="works with"><title>Acacia Water works with Arable farmers on Schouwen-Duiveland: Its hydrologists led the farmers taking part in Natuurlijk Zoet (2019–2021) in measuring the salinity of the ditches round their fields, the results in the water board's database.</title><path d="M 1615.3 1054.0 Q 1680.7 1126.5 1765.5 1175.0" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arrow-works-with)"/></g>
+</g>
+<g class="actors">
+<g class="actor" data-id="arable-farmers"><title>Arable farmers on Schouwen-Duiveland</title>
+<rect x="1700.4" y="1175.0" width="295.1" height="86.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="1848.0" y="1209.5" text-anchor="middle">Arable farmers on</text>
+<text x="1848.0" y="1243.5" text-anchor="middle">Schouwen-Duiveland</text>
+</g>
+<g class="actor" data-id="waterschap-scheldestromen"><title>Waterschap Scheldestromen</title>
+<rect x="2110.1" y="1177.0" width="235.8" height="86.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="2228.0" y="1211.5" text-anchor="middle">Waterschap</text>
+<text x="2228.0" y="1245.5" text-anchor="middle">Scheldestromen</text>
+</g>
+<g class="actor" data-id="gemeente-schouwen-duiveland"><title>Gemeente Schouwen-Duiveland</title>
+<rect x="1587.4" y="1486.0" width="295.1" height="86.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="1735.0" y="1520.5" text-anchor="middle">Gemeente</text>
+<text x="1735.0" y="1554.5" text-anchor="middle">Schouwen-Duiveland</text>
+</g>
+<g class="actor" data-id="provincie-zeeland"><title>Provincie Zeeland</title>
+<rect x="2226.9" y="1409.0" width="280.3" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="2367.0" y="1443.5" text-anchor="middle">Provincie Zeeland</text>
+</g>
+<g class="actor" data-id="banks"><title>Banks lending to the island's farmers</title>
+<rect x="1426.6" y="717.0" width="324.8" height="86.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="1589.0" y="751.5" text-anchor="middle">Banks lending to the</text>
+<text x="1589.0" y="785.5" text-anchor="middle">island's farmers</text>
+</g>
+<g class="actor" data-id="buyers-and-processors"><title>Buyers and processors of the island's crops</title>
+<rect x="1964.2" y="559.0" width="339.6" height="86.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="2134.0" y="593.5" text-anchor="middle">Buyers and processors</text>
+<text x="2134.0" y="627.5" text-anchor="middle">of the island's crops</text>
+</g>
+<g class="actor" data-id="zlto"><title>ZLTO</title>
+<rect x="2017.3" y="1389.0" width="87.4" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="2061.0" y="1423.5" text-anchor="middle">ZLTO</text>
+</g>
+<g class="actor" data-id="consumers"><title>Consumers</title>
+<rect x="2109.2" y="203.0" width="161.6" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="2190.0" y="237.5" text-anchor="middle">Consumers</text>
+</g>
+<g class="actor" data-id="eu"><title>EU</title>
+<rect x="1731.2" y="434.0" width="57.7" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="1760.0" y="468.5" text-anchor="middle">EU</text>
+</g>
+<g class="actor" data-id="lvvn"><title>LVVN</title>
+<rect x="1877.3" y="764.0" width="87.4" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="1921.0" y="798.5" text-anchor="middle">LVVN</text>
+</g>
+<g class="actor" data-id="ienw"><title>IenW</title>
+<rect x="2437.3" y="1013.0" width="87.4" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="2481.0" y="1047.5" text-anchor="middle">IenW</text>
+</g>
+<g class="actor" data-id="rijkswaterstaat"><title>Rijkswaterstaat</title>
+<rect x="2058.7" y="1003.0" width="250.6" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="2184.0" y="1037.5" text-anchor="middle">Rijkswaterstaat</text>
+</g>
+<g class="actor" data-id="dcc"><title>Delta Climate Center</title>
+<rect x="2374.6" y="1580.0" width="324.8" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="2537.0" y="1614.5" text-anchor="middle">Delta Climate Center</text>
+</g>
+<g class="actor" data-id="deltares"><title>Deltares</title>
+<rect x="926.6" y="961.0" width="146.7" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="1000.0" y="995.5" text-anchor="middle">Deltares</text>
+</g>
+<g class="actor" data-id="kwr"><title>KWR</title>
+<rect x="1258.7" y="1008.0" width="72.5" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="1295.0" y="1042.5" text-anchor="middle">KWR</text>
+</g>
+<g class="actor" data-id="acacia-water"><title>Acacia Water</title>
+<rect x="1465.0" y="1002.0" width="206.1" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="1568.0" y="1036.5" text-anchor="middle">Acacia Water</text>
+</g>
+<g class="actor" data-id="delphy"><title>Delphy</title>
+<rect x="1184.5" y="775.0" width="117.0" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="1243.0" y="809.5" text-anchor="middle">Delphy</text>
+</g>
+</g>
+<g class="legend">
+<text x="476.6" y="1802.0" font-size="40" font-weight="bold" dominant-baseline="central">Relations</text>
+<path d="M 676.6 1802.0 L 758.6 1802.0" stroke="#333333" stroke-width="4" fill="none" marker-end="url(#arrow-authority-over)"/>
+<text x="796.6" y="1802.0" font-size="40" dominant-baseline="central">authority over</text>
+<path d="M 1133.4 1802.0 L 1215.4 1802.0" stroke="#EB6834" stroke-width="4" fill="none" marker-end="url(#arrow-finances)"/>
+<text x="1253.4" y="1802.0" font-size="40" dominant-baseline="central">finances</text>
+<path d="M 1590.2 1802.0 L 1672.2 1802.0" stroke="#EB6834" stroke-width="4" stroke-dasharray="14 9" fill="none" marker-end="url(#arrow-buys-from)"/>
+<text x="1710.2" y="1802.0" font-size="40" dominant-baseline="central">buys from</text>
+<path d="M 676.6 1862.0 L 758.6 1862.0" stroke="#6250D6" stroke-width="4" stroke-dasharray="14 9" fill="none" marker-end="url(#arrow-advises)"/>
+<text x="796.6" y="1862.0" font-size="40" dominant-baseline="central">advises</text>
+<path d="M 1133.4 1862.0 L 1215.4 1862.0" stroke="#6250D6" stroke-width="4" fill="none" marker-end="url(#arrow-represents)"/>
+<text x="1253.4" y="1862.0" font-size="40" dominant-baseline="central">represents</text>
+<path d="M 1590.2 1862.0 L 1672.2 1862.0" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" fill="none" marker-end="url(#arrow-works-with)"/>
+<text x="1710.2" y="1862.0" font-size="40" dominant-baseline="central">works with</text>
+</g>
+</svg>

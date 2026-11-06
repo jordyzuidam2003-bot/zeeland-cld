@@ -86,3 +86,9 @@ footer code { font-size: 13px; }
 .about h2 { font-size: 17px; margin: 20px 0 6px; }
 .about p, .about li { margin: 0 0 8px; }
 .about ul { padding-left: 20px; }
+/* the Actor Map's page: its drawing fits the screen, with no pan or zoom */
+.actor-map svg { height: auto; max-height: 88vh; cursor: default; }
+.actor-map g.actor, .actor-map g.relation { cursor: pointer; }
+.actor-map g.relation path { pointer-events: stroke; }
+.panel h3 { font-size: 15px; margin: 12px 0 4px; }
+.panel ul { margin: 0; padding-left: 18px; }

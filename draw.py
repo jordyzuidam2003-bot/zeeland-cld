@@ -176,8 +176,10 @@ def spread(xs, lo, hi, gap):
     return p
 
 
-def link_paths(cld, bxs):
+def link_paths(cld, bxs, key=lambda c: (c["from"], c["to"])):
     """{(from, to): (p0, c, p2)} for every connection; see the JS twin linkPaths() in page/app.js.
+    `key` names each connection in the result: the Actor Map (actormap.py), where two actors can
+    hold two relations, names each by its place in the list.
 
     Each end starts where link_path() cuts the curve between the two centres; the ends on one
     edge of a box are then spread along it, in the order they arrive, so arrowheads do not
@@ -186,25 +188,25 @@ def link_paths(cld, bxs):
     """
     ends = {}
     for c in cld["connections"]:
-        key = (c["from"], c["to"])
+        k = key(c)
         p0, _, p2 = link_path(bxs[c["from"]], bxs[c["to"]], c["curvature"])
         for which, eid, p in ((0, c["from"], p0), (1, c["to"], p2)):
             e = edge_of(p, bxs[eid])
-            ends.setdefault((eid, e), []).append((p[0] if e in (0, 2) else p[1], key, which))
+            ends.setdefault((eid, e), []).append((p[0] if e in (0, 2) else p[1], k, which))
     anchor = {}
     for (eid, e), lst in ends.items():
         x0, y0, x1, y1 = bxs[eid][:4]
         lst.sort(key=lambda t: t[0])
         lo, hi = (x0 + INSET, x1 - INSET) if e in (0, 2) else (y0 + INSET, y1 - INSET)
-        for (_, key, which), v in zip(lst, spread([t[0] for t in lst], lo, hi, GAP)):
-            anchor[key, which] = ((v, y0) if e == 0 else (x1, v) if e == 1 else (v, y1) if e == 2 else (x0, v))
+        for (_, k, which), v in zip(lst, spread([t[0] for t in lst], lo, hi, GAP)):
+            anchor[k, which] = ((v, y0) if e == 0 else (x1, v) if e == 1 else (v, y1) if e == 2 else (x0, v))
     out = {}
     for c in cld["connections"]:
-        key = (c["from"], c["to"])
-        p0, p2 = anchor[key, 0], anchor[key, 1]
+        k = key(c)
+        p0, p2 = anchor[k, 0], anchor[k, 1]
         dx, dy = p2[0] - p0[0], p2[1] - p0[1]
-        k = c["curvature"]
-        out[key] = (p0, ((p0[0] + p2[0]) / 2 + k * dy, (p0[1] + p2[1]) / 2 - k * dx), p2)
+        bow = c["curvature"]
+        out[k] = (p0, ((p0[0] + p2[0]) / 2 + bow * dy, (p0[1] + p2[1]) / 2 - bow * dx), p2)
     return out
 
 

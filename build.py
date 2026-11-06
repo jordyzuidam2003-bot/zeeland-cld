@@ -6,11 +6,13 @@
                                       # downloaded from the page's drag mode) into cld.json, then build
 
 Sources, edited by hand: cld.json (elements, connections, named loops, layout and
-link curvature), actors.json (the Actor Map's actors, the one list the CLD's actor fields name),
-references.json (sources), model-texts.md (the model texts each page shows),
-view.scss (the Kumu view inside project.json) and page/ (index.html, a template with the
-placeholders <!-- SVG -->, <!-- FACTS -->, <!-- TEXTS --> and <!-- DATA -->; app.js; style.css). draw.py draws the SVG. Never edit
-docs/, which this script writes:
+link curvature), actors.json (the Actor Map's actors, their relations and places, the one list the
+CLD's actor fields name), references.json (sources), model-texts.md (the model texts each page shows),
+view.scss and actors-view.scss (the Kumu views inside project.json and actors-project.json) and
+page/ (index.html, a template with the placeholders <!-- SVG -->, <!-- FACTS -->, <!-- TEXTS --> and
+<!-- DATA -->; actors.html, the Actor Map's, with <!-- QUESTION -->, <!-- SVG --> and <!-- DATA -->;
+app.js; actors.js; style.css). draw.py draws the CLD, actormap.py the Actor Map and its table,
+xlsx.py writes the table's file. Never edit docs/, which this script writes:
 
     docs/index.html    the page: the template with the drawing inline, the model texts (their
                        numbers counted in the model) and the data as JSON
@@ -26,6 +28,13 @@ docs/, which this script writes:
                        (an element labelled background showing docs/regions.svg as its image,
                        by its URL on the published page); the model version is in the project's
                        description and the map's name
+    docs/actors.html   the Actor Map's page: the network inline, a panel per actor and relation
+    docs/actors.js     copied from page/
+    docs/actors.svg    the Actor Map's network on its own, the picture for the report
+    docs/actors-bands.svg  its level bands alone, the background image of its Kumu map
+    docs/actors-project.json  the Actor Map as a full Kumu project export, restored as project.json is
+    docs/actors.xlsx   the actors' table, which Jordy imports into Google Drive as a Google Sheet:
+                       the Actors, Relations, References and Columns sheets (actormap.sheets())
 """
 
 import argparse
@@ -36,7 +45,9 @@ import re
 import sys
 from pathlib import Path
 
+import actormap
 import draw
+import xlsx
 
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
@@ -66,8 +77,8 @@ ACTOR_SECTORS = ["Aquaculture", "Arable Farming", "Export/distribution", "Extern
                  "Onion Cultivation & Processing", "Water management"]
 RELATION_KINDS = ["authority over", "finances", "buys from", "advises", "represents", "works with"]
 # the fields build.py lists while empty: a field no source carries stays empty, never a guess
-ACTOR_FIELDS = ["label", "scale", "type", "level", "sector", "interest", "influence", "influence score",
-                "relations", "sources"]
+ACTOR_FIELDS = ["label", "scale", "type", "level", "sector", "interest", "influence", "affected",
+                "influence score", "relations", "sources"]
 
 
 def check_actors(actors, refs):
@@ -87,6 +98,10 @@ def check_actors(actors, refs):
                              ("sector", ACTOR_SECTORS), ("client", ["yes", "no"])]:
             if a.get(key) not in allowed + [""]:
                 errors.append(f"{name}: {key} {a.get(key)!r} not in {allowed}")
+        if not all(isinstance(a.get(k), (int, float)) for k in ("x", "y")):
+            errors.append(f"{name}: x and y must be numbers, its place on the Actor Map")
+        if a.get("level") not in actormap.LEVELS:  # the Actor Map draws a band per level
+            errors.append(f"{name}: level {a.get('level')!r} has no band on the Actor Map: {actormap.LEVELS}")
         if a.get("influence score") not in [1, 2, 3, 4, 5, None]:
             errors.append(f"{name}: influence score {a.get('influence score')!r} must be 1 (little) to 5, or null")
         for r in a.get("relations", []):
@@ -94,6 +109,8 @@ def check_actors(actors, refs):
                 errors.append(f"{name}: a relation to {r.get('to')!r}, which is not another actor in actors.json")
             if r.get("kind") not in RELATION_KINDS:
                 errors.append(f"{name}: relation kind {r.get('kind')!r} not in {RELATION_KINDS}")
+            if not isinstance(r.get("curvature"), (int, float)):
+                errors.append(f"{name}: the relation to {r.get('to')!r} needs a curvature, a number (0 is straight)")
         for key in a.get("sources", []) + [k for r in a.get("relations", []) for k in r.get("sources", [])]:
             if key not in refs:
                 errors.append(f"{name}: source {key!r} is not in references.json")
@@ -455,6 +472,66 @@ def project(cld, refs, actors, template, version):
     }
 
 
+def actors_project(actors, refs, decides, cld_labels, template, version):
+    """The Actor Map as a full Kumu project export, the shape project() gives the CLD: each actor an
+    element with its fields, each relation a connection whose type is its kind, the actors at their
+    places, the relations with their curves, and the level bands as the background image (an
+    element labelled background, as the CLD's regions). The view is actors-view.scss plus each
+    kind's colour and dash from actormap.KIND and each box's size."""
+    bxs, rels, _ = actormap.geometry(actors)
+    _, (fx0, fy0, fx1, fy1) = actormap.bands_svg(actors)
+    elements = [{"_id": f'elem-{a["id"]}', "attributes": {
+        "label": "  ".join(bxs[a["id"]][4]), "type": a["type"], "level": a["level"], "sector": a["sector"],
+        "interest": a["interest"], "influence": a["influence"], "affected": a["affected"],
+        "influence score": a["influence score"], "client": a["client"],
+        "decides in the CLD": "\n".join(cld_labels[e] for e in decides[a["id"]]),
+        "sources": "\n".join(refs[k] for k in a["sources"])}} for a in actors["actors"]]
+    elements.append({"_id": "elem-background", "attributes": {"label": "background"}})
+    connections = [{"_id": f'conn-{r["n"]}', "direction": "directed", "delayed": False, "reversed": False,
+                    "attributes": {"connection type": r["kind"], "description": r["description"],
+                                   "sources": "\n".join(refs[k] for k in r["sources"])},
+                    "from": f'elem-{r["from"]}', "to": f'elem-{r["to"]}'} for r in rels]
+    values = {}
+    for item in [e["attributes"] for e in elements] + [c["attributes"] for c in connections]:
+        for k, v in item.items():
+            values.setdefault(k, set()).add(v)
+    builtin = {"type": "Element Type", "connection type": "Connection Type"}
+    attributes = []
+    for k, seen in values.items():
+        text = k in ("interest", "influence", "affected", "description", "sources", "decides in the CLD")
+        listed = not text and k != "label" and len(seen) <= 20
+        attributes.append({"_id": "attr-" + k.replace(" ", "-"), "name": builtin.get(k, k[0].upper() + k[1:]),
+                           "format": "text" if text else "string", "private": False, "limit": 1,
+                           "category": "General", "prompt": "list" if listed else "autocomplete",
+                           "locked": False, "values": sorted(seen, key=str) if listed else [],
+                           "sort": False, "cluster": listed})
+    nodes = [{"_id": f'node-{a["id"]}', "position": {"x": a["x"], "y": a["y"]}, "pinned": True, "style": {},
+              "element": f'elem-{a["id"]}'} for a in actors["actors"]]
+    nodes.append({"_id": "node-background", "position": {"x": round((fx0 + fx1) / 2), "y": round((fy0 + fy1) / 2)},
+                  "pinned": True, "style": {}, "element": "elem-background"})
+    edges = [{"_id": f'edge-{r["n"]}', "curvature": r["curvature"], "style": {}, "connection": f'conn-{r["n"]}'}
+             for r in rels]
+    rules = ([f'["connection type"="{k}"] {{ color: {c}; style: {"dashed" if d else "solid"}; }}'
+              for k, (c, d) in actormap.KIND.items()]
+             + [f'#elem-{i} {{ width: {round(b[2] - b[0])}; height: {round(b[3] - b[1])}; }}' for i, b in bxs.items()]
+             + [f'#background {{ width: {round(fx1 - fx0)}; height: {round(fy1 - fy0)}; }}'])
+    style = (template.rstrip() + "\n\n/* ---------- generated by build.py: the kinds' look, box sizes, the bands' size ---------- */\n"
+             + "\n".join(rules) + "\n")
+    description = (f"Actor Map version {version}, the first seven characters of the SHA-256 of actors.json. "
+                   "A copy for milestones: the current Actor Map is the page "
+                   f"{PAGES_URL}actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.")
+    return {
+        "version": 1, "name": "cbp-actors", "description": description, "proxyImages": True,
+        "defaultMap": "map-actors", "defaultPerspective": None, "attributeRelevance": {},
+        "attributes": attributes, "elements": elements, "connections": connections, "loops": [],
+        "maps": [{"_id": "map-actors", "name": f"Actor Map, version {version}", "description": "", "scale": 1,
+                  "center": {"x": 0, "y": 0}, "defaultPerspective": "pers-actors",
+                  "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
+                  "elements": nodes, "connections": edges, "loops": []}],
+        "perspectives": [{"_id": "pers-actors", "name": "Actor Map", "style": style}],
+    }
+
+
 def apply_layout(path):
     """Write the positions and curvatures of a layout.json ({id: {x, y}, "curvature": {"from->to": k}},
     from the page's drag mode) into cld.json, in its own formatting; a file without "curvature"
@@ -495,8 +572,19 @@ def main():
     # the model version teammates compare: the first seven characters of cld.json's SHA-256
     version = hashlib.sha256(CLD.read_bytes()).hexdigest()[:7]
     loops = cycles(cld)  # the page's texts count them, and the report
+    actors_version = hashlib.sha256(ACTORS.read_bytes()).hexdigest()[:7]
+    decides = decisions(cld, actors)
+    cld_labels = {e["id"]: e["label"] for e in cld["elements"]}
     outputs = {
         "project.json": json.dumps(project(cld, refs, actors, template, version), indent=2, ensure_ascii=False) + "\n",
+        "actors.html": actormap.page(actors, refs, decides, cld_labels, actors_version, (PAGE / "actors.html").read_text()),
+        "actors.js": (PAGE / "actors.js").read_text(),
+        "actors.svg": actormap.svg(actors),
+        "actors-bands.svg": actormap.bands_svg(actors)[0],
+        "actors-project.json": json.dumps(actors_project(actors, refs, decides, cld_labels,
+                                                         (ROOT / "actors-view.scss").read_text(), actors_version),
+                                          indent=2, ensure_ascii=False) + "\n",
+        "actors.xlsx": xlsx.workbook(actormap.sheets(actors, refs, decides, cld_labels)),
         "cld.svg": draw.svg(cld),
         "regions.svg": draw.regions_svg(cld)[0],
         "index.html": page(cld, refs, actors, version, loops),
@@ -513,8 +601,9 @@ def main():
         if (DOCS / "loops").is_dir() else []
 
     if args.check:
-        stale = [name for name, text in outputs.items()
-                 if not (DOCS / name).exists() or (DOCS / name).read_text() != text]
+        # the table is bytes, every other file text
+        stale = [name for name, out in outputs.items() if not (DOCS / name).exists()
+                 or ((DOCS / name).read_bytes() if isinstance(out, bytes) else (DOCS / name).read_text()) != out]
         if stale or extra:
             sys.exit(f"docs/ is out of date ({', '.join(stale + extra)}): run build.py and commit docs/")
         return
@@ -522,8 +611,8 @@ def main():
     (DOCS / "loops").mkdir(parents=True, exist_ok=True)
     for name in extra:
         (DOCS / name).unlink()
-    for name, text in outputs.items():
-        (DOCS / name).write_text(text)
+    for name, out in outputs.items():
+        (DOCS / name).write_bytes(out) if isinstance(out, bytes) else (DOCS / name).write_text(out)
 
     n_el, n_conn = len(cld["elements"]), len(cld["connections"])
     print(f"{n_el} elements, {n_conn} connections, {len(cld['loops'])} named loops")
@@ -540,7 +629,12 @@ def main():
     print(f"layout: {len(crossings)} crossings between links, "
           f"{len(through)} links through a box they do not connect")
     warnings += [f"link through a box: {a} -> {b} passes through {e}" for (a, b), e in through]
-    decides = decisions(cld, actors)
+    a_crossings, a_through = actormap.tangles(actors)
+    print(f"actor map: {len(a_crossings)} crossings between relations, "
+          f"{len(a_through)} relations through a box they do not connect")
+    rel = actormap.relations(actors)
+    warnings += [f"actor map: relation through a box: {rel[n]['from']} {rel[n]['kind']} {rel[n]['to']} passes through {e}"
+                 for n, e in a_through] + actormap.overlaps(actors)
     print(f"actors: {len(actors['actors'])} ({sum(a['scale'] == 'inside' for a in actors['actors'])} inside the scale); "
           "CLD variables each decides: " + ", ".join(f"{i} {len(v)}" for i, v in decides.items() if v))
     if empty:

@@ -1,0 +1,58 @@
+/* The Kumu view of the Actor Map inside docs/actors-project.json, as view.scss is the CLD's. Each
+   property here is one view.scss already uses; check a new one in Kumu's property reference before
+   writing it, and see it work in a test import. build.py adds below it each relation kind's colour
+   and dash (actormap.py's KIND), each box's size and the bands' size. */
+
+@controls {
+  bottom-left {
+    text {
+      value: "**Bands** = level: Global, International, National, Local / Provincial / Regional<br>**Links** = relation, read from the actor at the tail: authority over (dark), finances (orange), buys from (orange, dashed), advises (violet, dashed), represents (violet), works with (green, dashed)";
+    }
+  }
+}
+
+@settings {
+  layout: static;
+  theme: light;
+  background-color: #FFFFFF;
+  culling: off;
+}
+
+/* ---------- Actors: white boxes, the page's look ---------- */
+/* Kumu draws text at about 0.6 of its font-size in map units, so each font-size is the page's x 1.5 */
+element {
+  shape: pill;
+  color: #FFFFFF;
+  border-color: #444444;
+  border-width: 2;
+  font-size: 42;
+  font-weight: normal;
+  font-color: #000000;
+  text-align: center;
+  /* build.py puts a double space where the page breaks a label's line */
+  text-overflow: manual;
+  shadow-visibility: hidden;
+}
+
+/* ---------- Bands: the page's level bands as a background image ---------- */
+/* as view.scss's #background: build.py adds the element, pinned at the centre of the bands'
+   frame, and its width and height, the frame's */
+#background {
+  image-url: url(https://jordyzuidam2003-bot.github.io/zeeland-cld/actors-bands.svg);
+  layer: background;
+  shape: rectangle;
+  color: transparent;
+  image-size: contain;
+  image-resolution: original;
+  label-visibility: none;
+  border-width: 0;
+}
+
+/* ---------- Relations: the kind's colour and dash, generated below ---------- */
+/* (no global curvature: each relation keeps its own curve from the map) */
+connection {
+  size: 4;
+  style: solid;
+  arrow-visibility: visible;
+  label: none;
+}

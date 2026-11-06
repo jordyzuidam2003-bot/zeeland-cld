@@ -4,21 +4,25 @@ The causal loop diagram of our Challenge Based Project: adapting Zeeland's arabl
 salinisation and freshwater scarcity towards 2050, with the Delta Climate Center and the Ministry
 of LVVN. This repository is the single source of truth for the diagram: `build.py` draws it as a
 web page, <https://jordyzuidam2003-bot.github.io/zeeland-cld/>, served by GitHub Pages from
-`docs/`, so a push publishes the current model.
+`docs/`, so a push publishes the current model. Beside it, the same way, the Actor Map:
+<https://jordyzuidam2003-bot.github.io/zeeland-cld/actors.html>, with the actors' table as a
+spreadsheet.
 
 ## Files
 
 | File | What it holds | Edit? |
 | --- | --- | --- |
 | `cld.json` | the elements, connections, named loops, layout (x, y) and link curvature | yes |
-| `actors.json` | the Actor Map: the actors, their columns and their relations, the one list of actors the CLD names | yes |
+| `actors.json` | the Actor Map: the actors, their columns, their relations and places, the one list of actors the CLD names | yes |
 | `references.json` | the sources, as `"key": "full APA reference"` | yes |
 | `model-texts.md` | the model texts the page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
-| `view.scss` | the Kumu view inside `docs/project.json` | yes |
-| `page/` | the page around the drawing: `index.html` (a template), `app.js`, `style.css` | yes |
-| `build.py` | checks the model and writes `docs/` (how: its docstring) | — |
-| `draw.py` | draws the SVG, imported by `build.py` | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json` | never: `build.py` writes it |
+| `view.scss`, `actors-view.scss` | the Kumu views inside `docs/project.json` and `docs/actors-project.json` | yes |
+| `page/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `style.css` | yes |
+| `build.py` | checks the model and the actors and writes `docs/` (how: its docstring) | — |
+| `draw.py` | draws the CLD's SVG, imported by `build.py` | — |
+| `actormap.py` | draws the Actor Map and lays out its table, imported by `build.py` | — |
+| `xlsx.py` | writes the table as an `.xlsx` with the standard library | — |
+| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json`; `actors.html`, `actors.js`, `actors.svg`, `actors-bands.svg`, `actors-project.json`, `actors.xlsx` | never: `build.py` writes it |
 
 ## Version 1
 
@@ -186,12 +190,35 @@ Then `actors`, each:
   such pair twice). A cooperation whose sources name no leader stays in each actor's
   `influence` and is not drawn (Jordy), such as the knowledge programme on salt that LVVN, IenW,
   Rijkswaterstaat and STOWA had drawn up.
+- `affected`: how salinisation and freshwater scarcity on the island, and the farms' adaptation
+  to them, affect the actor (the guidelines ask how each actor influences the issue and how it is
+  affected by it), in words, from sources.
 - `sources`: keys in `references.json`, as for the CLD.
+- `x` and `y`: the actor's place on the Actor Map, y downwards; each relation's `curvature`, its
+  bow, as a CLD link's. An actor sits in its level's band (`build.py` warns otherwise).
 
 A field no source carries stays empty (`""`, `null` or `[]`), never a guess, and `python3
 build.py` lists each one still empty; it stops on a value outside its list, a relation to an
 unknown actor or a source not in `references.json`. The CLD variables each actor decides are
 derived from the CLD's `actor` fields, never typed here.
+
+### The Actor Map
+
+`docs/actors.html` is the Actor Map, a page beside the CLD's and linked from it: the actors'
+network in one band per level, Global at the top and Local / Provincial / Regional at the bottom
+(Jordy, chosen between rendered versions; rejected: rings by the CLD's scale, clusters by type,
+boxes shaded by influence score), each relation in its kind's colour and dash. A click on an actor
+or a relation opens its fields and sources. The CLD's scale is not drawn (Jordy). `docs/actors.svg`
+is the network on its own, the picture for the report (a PNG with the CLD's Chrome command,
+`svg=docs/actors.svg`).
+
+The actors' table is `docs/actors.xlsx` (Jordy: a sheet he imports into Google Drive as a Google
+Sheet; rejected: a table on the page, which took seven printed pages): the Actors sheet, a row per
+actor with its columns, whom it influences and is influenced by, and the CLD variables it decides;
+the Relations sheet, a row per relation, read "From relation To", with its description; the
+References sheet, the full references the two cite, whose in-text citations they carry; the
+Columns sheet, what each column holds. The scale is not a column: the course's actor analysis
+guidelines do not ask for it (Jordy).
 
 ## Setup after cloning
 
@@ -209,6 +236,12 @@ Kumu restores the map with the elements at their positions, the view from `view.
 loops (each its links, its "R1 …" label hidden on the map by the view, as the page has no loop
 marks, and a showcase button per named loop, as on the page), and the project's name,
 which the export sets to `cbp-cld`.
+
+The Actor Map goes the same way, as its own project at <https://kumu.io/JordyZuidam/cbp-actors>:
+New Project → name `cbp-actors`, public → "restore backup" → `docs/actors-project.json`. Kumu
+restores the actors at their places with their fields, the relations with their curves, each kind
+as its connection type in its colour and dash (`actors-view.scss` and the rules `build.py` adds),
+and the level bands as the background image `docs/actors-bands.svg`, as the CLD's regions.
 
 The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label
 inside, square corners for a stock and rounded ones for the others, an italic label for a

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zeeland Actor Map</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Zeeland Actor Map</h1>
+  <p class="intro"><!-- QUESTION --> The actors of our Challenge Based Project and how they influence each other; click an actor or a relation for its fields and sources.</p>
+</header>
+<div class="facts"><a href="index.html">The CLD →</a><a href="actors.xlsx" download>The actors' table (.xlsx) ↓</a></div>
+<main>
+  <div class="map actor-map" id="map">
+<!-- SVG -->
+  </div>
+  <aside class="panel" id="panel" hidden>
+    <button class="close" id="close" aria-label="Close">×</button>
+    <div id="panel-body"></div>
+  </aside>
+</main>
+<footer>
+  <span class="version">Actor Map version <code id="version"></code></span>
+</footer>
+<!-- DATA -->
+<script src="actors.js"></script>
+</body>
+</html>

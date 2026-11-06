@@ -1,17 +1,4 @@
 {
-  "actors": [
-    "Arable farmers on Schouwen-Duiveland",
-    "Waterschap Scheldestromen",
-    "Gemeente Schouwen-Duiveland",
-    "Provincie Zeeland",
-    "Banks lending to the island's farmers",
-    "Buyers and processors of the island's crops",
-    "Consumers",
-    "EU",
-    "LVVN",
-    "IenW",
-    "Rijkswaterstaat"
-  ],
   "elements": [
     {
       "id": "hotter-drier-summers",
@@ -198,7 +185,7 @@
       "sources": [],
       "x": -1334,
       "y": 1771,
-      "actor": "Arable farmers on Schouwen-Duiveland"
+      "actor": "arable-farmers"
     },
     {
       "id": "demand-for-deep-polder-drainage",
@@ -212,7 +199,7 @@
       "sources": [],
       "x": -203,
       "y": -1156,
-      "actor": "Arable farmers on Schouwen-Duiveland"
+      "actor": "arable-farmers"
     },
     {
       "id": "external-freshwater-supply",
@@ -252,7 +239,7 @@
       "sources": [],
       "x": -420,
       "y": -368,
-      "actor": "Arable farmers on Schouwen-Duiveland"
+      "actor": "arable-farmers"
     },
     {
       "id": "groundwater-extraction-for-irrigation",
@@ -266,7 +253,7 @@
       "sources": [],
       "x": -648,
       "y": 1001,
-      "actor": "Arable farmers on Schouwen-Duiveland"
+      "actor": "arable-farmers"
     },
     {
       "id": "policy-resistance-legal-delays",
@@ -332,7 +319,7 @@
       "sources": [],
       "x": 513,
       "y": 1185,
-      "actor": "Buyers and processors of the island's crops"
+      "actor": "buyers-and-processors"
     },
     {
       "id": "salt-tolerant-crop-adoption",
@@ -346,7 +333,7 @@
       "sources": [],
       "x": 588,
       "y": 665,
-      "actor": "Arable farmers on Schouwen-Duiveland"
+      "actor": "arable-farmers"
     },
     {
       "id": "agricultural-land-value",
@@ -373,7 +360,7 @@
       "sources": [],
       "x": 1610,
       "y": -274,
-      "actor": "Banks lending to the island's farmers"
+      "actor": "banks"
     },
     {
       "id": "basel-iv-capital-requirements",
@@ -400,7 +387,7 @@
       "sources": [],
       "x": 1671,
       "y": -913,
-      "actor": "Arable farmers on Schouwen-Duiveland"
+      "actor": "arable-farmers"
     },
     {
       "id": "farm-revenue",
@@ -494,7 +481,7 @@
       "sources": [],
       "x": -512,
       "y": 535,
-      "actor": "Arable farmers on Schouwen-Duiveland"
+      "actor": "arable-farmers"
     },
     {
       "id": "freshwater-supply-route",
@@ -508,7 +495,7 @@
       "sources": [],
       "x": -726,
       "y": 1758,
-      "actor": "Provincie Zeeland"
+      "actor": "provincie-zeeland"
     },
     {
       "id": "spring-workability-of-the-fields",
@@ -548,7 +535,7 @@
       "sources": [],
       "x": -1247,
       "y": -1177,
-      "actor": "Waterschap Scheldestromen"
+      "actor": "waterschap-scheldestromen"
     },
     {
       "id": "water-board-pumping-costs",
@@ -575,7 +562,7 @@
       "sources": [],
       "x": 107,
       "y": -283,
-      "actor": "Waterschap Scheldestromen"
+      "actor": "waterschap-scheldestromen"
     },
     {
       "id": "harvest-lost-to-salt",
@@ -680,7 +667,7 @@
       "sources": [],
       "x": -239,
       "y": 1159,
-      "actor": "Arable farmers on Schouwen-Duiveland"
+      "actor": "arable-farmers"
     },
     {
       "id": "tolerant-varieties-on-offer",
@@ -746,7 +733,7 @@
       "sources": [],
       "x": 1631,
       "y": 390,
-      "actor": "Arable farmers on Schouwen-Duiveland"
+      "actor": "arable-farmers"
     },
     {
       "id": "banks-risk-assessment",
@@ -773,7 +760,7 @@
       "sources": [],
       "x": 1053,
       "y": -739,
-      "actor": "Banks lending to the island's farmers"
+      "actor": "banks"
     },
     {
       "id": "debt-payments",
@@ -865,7 +852,7 @@
       "sources": [],
       "x": -520,
       "y": -1450,
-      "actor": "Gemeente Schouwen-Duiveland"
+      "actor": "gemeente-schouwen-duiveland"
     }
   ],
   "connections": [

@@ -11,6 +11,7 @@ web page, <https://jordyzuidam2003-bot.github.io/zeeland-cld/>, served by GitHub
 | File | What it holds | Edit? |
 | --- | --- | --- |
 | `cld.json` | the elements, connections, named loops, layout (x, y) and link curvature | yes |
+| `actors.json` | the Actor Map: the actors, their columns and their relations, the one list of actors the CLD names | yes |
 | `references.json` | the sources, as `"key": "full APA reference"` | yes |
 | `model-texts.md` | the model texts the page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
 | `view.scss` | the Kumu view inside `docs/project.json` | yes |
@@ -32,9 +33,9 @@ Teammates work through the page: read it, click elements and links, and send Jor
 in words (a new or wrong link, a better description, a source). Jordy edits the repository,
 builds and pushes, so nobody else needs git or Python.
 
-1. Edit `cld.json` (or `references.json`, `view.scss`, `page/`).
+1. Edit `cld.json` (or `actors.json`, `references.json`, `view.scss`, `page/`).
 2. `python3 build.py` checks the model and rebuilds `docs/`. It stops on an error (an unknown
-   element, a source missing from `references.json`, a link marked a hypothesis that has
+   element or actor, a source missing from `references.json`, a link marked a hypothesis that has
    sources, a named loop that is not closed or whose
    R/B does not match its polarities) and prints the source coverage, hypotheses apart, the layout's
    crossings between links and links through a box they do not connect, and any warnings: a model
@@ -125,10 +126,10 @@ An element:
   corner; the group proposes the split and the names from the CLD, and the Project Plan
   follows it.
 - `x` and `y` are positions in the drawing; y grows downwards.
-- `actor`: on a decision variable, the one actor that decides it, from the model's
-  top-level `actors` list, which names every actor at the grain the group set (a public body by
-  its name, the island's arable farmers as one); `build.py` stops on an actor not on the list.
-  The page's panel shows it, and Kumu gets it as a field.
+- `actor`: on a decision variable, the one actor that decides it, by its `id` in
+  `actors.json`, which names every actor at the grain the group set (a public body by its name,
+  the island's arable farmers as one); `build.py` stops on an id not there. The page's panel
+  shows the actor's label, and Kumu gets it as a field.
 
 A connection: `from` and `to` (element ids), `polarity` (`"+"` or `"-"`), `delay` (true/false,
 drawn as two strokes across the link), `description`, `sources`, `hypothesis` (optional, `true`
@@ -147,6 +148,32 @@ connection and that the id starts with R for an even number of `-` links, B for 
 page gets a button for it, which highlights its elements and links, and `docs/loops/<id>.svg`
 draws it on its own, with its mark. The full drawing carries no loop marks: of its 353 feedback
 loops no mark could be traced there.
+
+### `actors.json`
+
+The Actor Map's data, by the course's actor analysis guidelines, and the one list of actors:
+the CLD's `actor` fields name its ids. At the top, `header` (`working title`, `names`, the
+group members as authors, and `partner`) and `question`, the actor analysis's own question.
+Then `actors`, each:
+
+- `id` never changes; `label` is its name on the map.
+- `scale`: `inside` or `outside`, by the CLD's boundary test (`model-texts.md`, System
+  boundary): inside when the island's farms move its decisions and it moves them back before
+  2050.
+- `type`, `level`, `sector`, `influence score` (1, little, to 5) and `client` (`yes` for the
+  group's partners) take the values of the group's old Actor Table, listed in `build.py`;
+  `interest` and `influence` are words, describing, never judging. No paradigm: the course's
+  paradigms are the researchers' own, for the group's positionality statement.
+- `relations`: each `{"to": <actor id>, "kind": …, "description": …, "sources": […]}`, read
+  as "this actor *kind* that one", so the actor holding it influences `to` by it; the kinds are
+  the ones a source names, listed in `build.py`: authority over, finances, buys from, advises,
+  represents, works with.
+- `sources`: keys in `references.json`, as for the CLD.
+
+A field no source carries stays empty (`""`, `null` or `[]`), never a guess, and `python3
+build.py` lists each one still empty; it stops on a value outside its list, a relation to an
+unknown actor or a source not in `references.json`. The CLD variables each actor decides are
+derived from the CLD's `actor` fields, never typed here.
 
 ## Setup after cloning
 

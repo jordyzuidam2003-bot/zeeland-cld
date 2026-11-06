@@ -6,7 +6,8 @@
                                       # downloaded from the page's drag mode) into cld.json, then build
 
 Sources, edited by hand: cld.json (elements, connections, named loops, layout and
-link curvature), references.json (sources), model-texts.md (the model texts each page shows),
+link curvature), actors.json (the Actor Map's actors, the one list the CLD's actor fields name),
+references.json (sources), model-texts.md (the model texts each page shows),
 view.scss (the Kumu view inside project.json) and page/ (index.html, a template with the
 placeholders <!-- SVG -->, <!-- FACTS -->, <!-- TEXTS --> and <!-- DATA -->; app.js; style.css). draw.py draws the SVG. Never edit
 docs/, which this script writes:
@@ -42,6 +43,7 @@ DOCS = ROOT / "docs"
 PAGE = ROOT / "page"
 TEXTS = ROOT / "model-texts.md"
 CLD = ROOT / "cld.json"
+ACTORS = ROOT / "actors.json"
 PAGES_URL = "https://jordyzuidam2003-bot.github.io/zeeland-cld/"
 
 ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
@@ -49,10 +51,68 @@ SUBQUESTIONS = ["SQ1", "SQ2", "SQ3"]
 SETS_LETTER = {"Social": "S", "Ecological": "E", "Technological": "T"}
 CONSTANT_REACH = 300  # the most a Constant's box keeps from a box it drives: about one box's width
 
+# An actor's columns take the values of the group's old Actor Table (Jordy); a relation's kind is
+# one a source names. A new value joins its list once Jordy agrees to it.
+ACTOR_SCALES = ["inside", "outside"]  # by the CLD's boundary test (model-texts.md, System boundary)
+ACTOR_TYPES = ["Business in the food chain", "Citizens & consumers", "Government", "Farmers' organisation",
+               "Water management", "Knowledge institution", "Nature organisation"]
+ACTOR_LEVELS = ["Global", "International", "National", "Local / Provincial / Regional"]
+ACTOR_SECTORS = ["Aquaculture", "Arable Farming", "Export/distribution", "External stakeholder",
+                 "Farmers organisation", "Fruit Cultivation", "Government", "Greenhouse Horticulture",
+                 "Knowledge institution", "Livestock Farming", "Nature preservation",
+                 "Onion Cultivation & Processing", "Water management/ports"]
+RELATION_KINDS = ["authority over", "finances", "buys from", "advises", "represents", "works with"]
+# the fields build.py lists while empty: a field no source carries stays empty, never a guess
+ACTOR_FIELDS = ["label", "scale", "type", "level", "sector", "interest", "influence", "influence score",
+                "relations", "sources"]
 
-def check(cld, refs):
+
+def check_actors(actors, refs):
+    """Return (errors, empty): errors stop the build; empty is each actor's fields still empty."""
+    errors, empty = [], {}
+    ids = [a.get("id") for a in actors["actors"]]
+    errors += [f"actors.json: duplicate actor id {i}" for i in set(ids) if ids.count(i) > 1]
+    labels = [a.get("label") for a in actors["actors"]]
+    errors += [f"actors.json: duplicate label {l!r}" for l in set(labels) if labels.count(l) > 1]
+    for k in ("names", "partner", "working title"):
+        if k not in actors.get("header", {}):
+            errors.append(f"actors.json: the header has no {k!r}")
+    for a in actors["actors"]:
+        name = f"actors.json: {a.get('id', '?')}"
+        # empty is allowed: the content is filled from sources, and listed until then
+        for key, allowed in [("scale", ACTOR_SCALES), ("type", ACTOR_TYPES), ("level", ACTOR_LEVELS),
+                             ("sector", ACTOR_SECTORS), ("client", ["yes", "no"])]:
+            if a.get(key) not in allowed + [""]:
+                errors.append(f"{name}: {key} {a.get(key)!r} not in {allowed}")
+        if a.get("influence score") not in [1, 2, 3, 4, 5, None]:
+            errors.append(f"{name}: influence score {a.get('influence score')!r} must be 1 (little) to 5, or null")
+        for r in a.get("relations", []):
+            if r.get("to") not in ids or r.get("to") == a.get("id"):
+                errors.append(f"{name}: a relation to {r.get('to')!r}, which is not another actor in actors.json")
+            if r.get("kind") not in RELATION_KINDS:
+                errors.append(f"{name}: relation kind {r.get('kind')!r} not in {RELATION_KINDS}")
+        for key in a.get("sources", []) + [k for r in a.get("relations", []) for k in r.get("sources", [])]:
+            if key not in refs:
+                errors.append(f"{name}: source {key!r} is not in references.json")
+        missing = [k for k in ACTOR_FIELDS if a.get(k) in ("", None, [])]
+        if missing:
+            empty[a.get("id", "?")] = missing
+    return errors, empty
+
+
+def decisions(cld, actors):
+    """Per actor id, the CLD variables it decides: derived from the elements' actor fields, never typed."""
+    out = {a["id"]: [] for a in actors["actors"]}
+    for e in cld["elements"]:
+        if "actor" in e and e["actor"] in out:
+            out[e["actor"]].append(e["id"])
+    return out
+
+
+def check(cld, refs, actors):
     """Return (errors, warnings). Errors stop the build; warnings are model smells."""
     errors, warnings = [], []
+    actor_ids = {a["id"] for a in actors["actors"]}
     els = {}
     for e in cld["elements"]:
         name = e.get("id", "?")
@@ -67,9 +127,9 @@ def check(cld, refs):
             errors.append(f"{name}: adaptive practice must be true/false")
         if not all(isinstance(e.get(k), (int, float)) for k in ("x", "y")):
             errors.append(f"{name}: x and y must be numbers")
-        # a decision variable names the one actor that decides it, from the model's list
-        if "actor" in e and e["actor"] not in cld.get("actors", []):
-            errors.append(f"{name}: actor {e['actor']!r} is not in the top-level actors list")
+        # a decision variable names the one actor that decides it, by its id in actors.json
+        if "actor" in e and e["actor"] not in actor_ids:
+            errors.append(f"{name}: actor {e['actor']!r} is not an actor id in actors.json")
     labels = [e["label"] for e in cld["elements"]]
     errors += [f"duplicate label {l!r}" for l in set(labels) if labels.count(l) > 1]
 
@@ -175,8 +235,9 @@ def cycles(cld):
     return found
 
 
-def blueprint(cld, refs):
+def blueprint(cld, refs, actors):
     els = {e["id"]: e for e in cld["elements"]}
+    actor_label = {a["id"]: a["label"] for a in actors["actors"]}
 
     def sourced(item):
         return {"sources": "\n".join(refs[k] for k in item["sources"]),
@@ -186,6 +247,8 @@ def blueprint(cld, refs):
     for e in cld["elements"]:
         item = {k: v for k, v in e.items() if k != "sources"}
         item["adaptive practice"] = "yes" if e["adaptive practice"] else "no"
+        if "actor" in e:  # the page and Kumu show the actor by its label
+            item["actor"] = actor_label[e["actor"]]
         item.update(sourced(e))
         elements.append(item)
 
@@ -209,9 +272,9 @@ def blueprint(cld, refs):
     return {"elements": elements, "connections": connections}
 
 
-def page_data(cld, refs, version):
+def page_data(cld, refs, actors, version):
     """What the page shows per element and link: the blueprint without the drawing's numbers."""
-    bp = blueprint(cld, refs)
+    bp = blueprint(cld, refs, actors)
     drop = {"x", "y", "curvature"}
     return {
         "elements": [{k: v for k, v in e.items() if k not in drop} for e in bp["elements"]],
@@ -283,13 +346,13 @@ def model_texts(cld, loops):
     return "\n".join(html[:first]), "\n".join(html[first:])
 
 
-def page(cld, refs, version, loops):
+def page(cld, refs, actors, version, loops):
     """docs/index.html: the template with the drawing inline, the model texts and the data as
     JSON."""
     template = (PAGE / "index.html").read_text()
     svg = draw.svg(cld)
     # "</" inside a <script> would end it early; "<\/" is the same string to JSON
-    data = json.dumps(page_data(cld, refs, version), ensure_ascii=False).replace("</", "<\\/")
+    data = json.dumps(page_data(cld, refs, actors, version), ensure_ascii=False).replace("</", "<\\/")
     facts, texts = model_texts(cld, loops)
     for marker in ("<!-- SVG -->", "<!-- DATA -->", "<!-- FACTS -->", "<!-- TEXTS -->"):
         assert template.count(marker) == 1, f"page/index.html must hold {marker} once"
@@ -298,14 +361,14 @@ def page(cld, refs, version, loops):
             .replace("<!-- DATA -->", f'<script type="application/json" id="data">{data}</script>'))
 
 
-def project(cld, refs, template, version):
+def project(cld, refs, actors, template, version):
     """A full Kumu project export, the shape of Kumu's own "Export JSON" of a project.
 
     The view is view.scss plus what is generated here: a showcase button per named loop, in
     view.scss's place for it, each SETS domain's tint from draw.TINT,
     and by Kumu system id each element's box size from draw.boxes(). Each label holds a double space where the page breaks its line,
     Kumu's manual line break, so its box fits it."""
-    bp = blueprint(cld, refs)
+    bp = blueprint(cld, refs, actors)
     keep = lambda item, drop: {k: v for k, v in item.items() if k not in drop}
     bxs = draw.boxes(cld)
     elements = [{"_id": f'elem-{e["id"]}',
@@ -419,19 +482,21 @@ def main():
         apply_layout(Path(args.layout))
     cld = json.loads(CLD.read_text())
     refs = json.loads((ROOT / "references.json").read_text())
+    actors = json.loads(ACTORS.read_text())
     template = (ROOT / "view.scss").read_text()
-    errors, warnings = check(cld, refs)
-    if errors:
-        sys.exit("cld.json has errors:\n  " + "\n  ".join(errors))
+    actor_errors, empty = check_actors(actors, refs)
+    errors, warnings = check(cld, refs, actors)
+    if errors or actor_errors:
+        sys.exit("cld.json or actors.json has errors:\n  " + "\n  ".join(actor_errors + errors))
 
     # the model version teammates compare: the first seven characters of cld.json's SHA-256
     version = hashlib.sha256(CLD.read_bytes()).hexdigest()[:7]
     loops = cycles(cld)  # the page's texts count them, and the report
     outputs = {
-        "project.json": json.dumps(project(cld, refs, template, version), indent=2, ensure_ascii=False) + "\n",
+        "project.json": json.dumps(project(cld, refs, actors, template, version), indent=2, ensure_ascii=False) + "\n",
         "cld.svg": draw.svg(cld),
         "regions.svg": draw.regions_svg(cld)[0],
-        "index.html": page(cld, refs, version, loops),
+        "index.html": page(cld, refs, actors, version, loops),
         "app.js": (PAGE / "app.js").read_text(),
         "style.css": (PAGE / "style.css").read_text(),
         **{f"loops/{loop['id']}.svg": draw.loop_figure(cld, loop) for loop in cld["loops"]},
@@ -472,7 +537,13 @@ def main():
     print(f"layout: {len(crossings)} crossings between links, "
           f"{len(through)} links through a box they do not connect")
     warnings += [f"link through a box: {a} -> {b} passes through {e}" for (a, b), e in through]
-    cited = {k for item in cld["elements"] + cld["connections"] for k in item.get("sources", [])}
+    decides = decisions(cld, actors)
+    print(f"actors: {len(actors['actors'])} ({sum(a['scale'] == 'inside' for a in actors['actors'])} inside the scale); "
+          "CLD variables each decides: " + ", ".join(f"{i} {len(v)}" for i, v in decides.items() if v))
+    if empty:
+        print("actor fields still empty:\n  " + "\n  ".join(f"{i}: {', '.join(ks)}" for i, ks in empty.items()))
+    cited = {k for item in cld["elements"] + cld["connections"] + actors["actors"] for k in item.get("sources", [])}
+    cited |= {k for a in actors["actors"] for r in a.get("relations", []) for k in r.get("sources", [])}
     warnings += [f"reference {k!r} is cited nowhere" for k in refs if k not in cited]
     # a section the page would show with nothing under its heading
     warnings += [f"model-texts.md: the section {h!r} is still empty" for h, body in

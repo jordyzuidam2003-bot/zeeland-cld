@@ -9,7 +9,8 @@
 <g class="link" data-from="freshwater-lens-recharge" data-to="freshwater-lens-thickness" data-sign="+" data-delay="true" data-curvature="-0.223">
 <path class="link-path" d="M 632.6 -125.4 Q 688.5 0.0 632.6 125.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="649.7" y="78.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay" d="M 669.6 -4.0 L 651.6 -4.0 M 669.6 4.0 L 651.6 4.0" stroke="#444444" stroke-width="2.5" fill="none"/>
+<path class="delay-cut" d="M 684.6 -8.0 L 636.6 -8.0 M 684.6 8.0 L 636.6 8.0" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 684.6 -8.0 L 636.6 -8.0 M 684.6 8.0 L 636.6 8.0" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="freshwater-lens-thickness" data-to="freshwater-availability-for-crops" data-sign="+" data-delay="false" data-curvature="-0.547">
 <path class="link-path" d="M 578.8 211.4 Q 502.7 304.0 371.9 363.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -42,17 +43,17 @@
 </g>
 <g class="elements">
 <g class="element" data-id="farmers-capacity-to-invest" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-415.0" y="-449.5" width="324.8" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="-415.0" y="-449.5" width="324.8" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-252.6" y="-415.0" text-anchor="middle">Farmers' capacity to</text>
 <text x="-252.6" y="-381.0" text-anchor="middle">invest</text>
 </g>
 <g class="element" data-id="freshwater-storage-measures" data-domain="Technological" data-type="Auxiliary" data-adaptive="true">
-<rect x="105.0" y="-449.5" width="295.1" height="86.0" rx="9" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<rect x="105.0" y="-449.5" width="295.1" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
 <text x="252.6" y="-415.0" text-anchor="middle">Freshwater storage</text>
 <text x="252.6" y="-381.0" text-anchor="middle">measures</text>
 </g>
 <g class="element" data-id="freshwater-lens-recharge" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="484.5" y="-211.4" width="250.6" height="86.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="484.5" y="-211.4" width="250.6" height="86.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="609.8" y="-176.9" text-anchor="middle">Freshwater lens</text>
 <text x="609.8" y="-142.9" text-anchor="middle">recharge</text>
 </g>
@@ -62,20 +63,20 @@
 <text x="609.8" y="193.9" text-anchor="middle">thickness</text>
 </g>
 <g class="element" data-id="freshwater-availability-for-crops" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="75.3" y="363.5" width="354.5" height="86.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="75.3" y="363.5" width="354.5" height="86.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="252.6" y="398.0" text-anchor="middle">Freshwater</text>
 <text x="252.6" y="432.0" text-anchor="middle">availability for crops</text>
 </g>
 <g class="element" data-id="crop-water-shortfall" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-415.0" y="380.5" width="324.8" height="52.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="-415.0" y="380.5" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="-252.6" y="415.0" text-anchor="middle">Crop water shortfall</text>
 </g>
 <g class="element" data-id="crop-yield" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-698.0" y="142.4" width="176.4" height="52.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="-698.0" y="142.4" width="176.4" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="-609.8" y="176.9" text-anchor="middle">Crop yield</text>
 </g>
 <g class="element" data-id="farm-revenue" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-705.4" y="-194.4" width="191.2" height="52.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="-705.4" y="-194.4" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-609.8" y="-159.9" text-anchor="middle">Farm income</text>
 </g>
 </g>

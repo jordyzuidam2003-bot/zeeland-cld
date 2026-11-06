@@ -25,11 +25,11 @@
 <text x="-246.8" y="-86.5" text-anchor="middle">Polder drainage depth</text>
 </g>
 <g class="element" data-id="saline-seepage-kwel" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="77.0" y="-121.0" width="339.6" height="52.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="77.0" y="-121.0" width="339.6" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="246.8" y="-86.5" text-anchor="middle">Saline seepage (kwel)</text>
 </g>
 <g class="element" data-id="plans-to-raise-ditch-levels" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-177.2" y="147.0" width="354.5" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="-177.2" y="147.0" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="0.0" y="181.5" text-anchor="middle">Water board's plans to</text>
 <text x="0.0" y="215.5" text-anchor="middle">raise ditch levels</text>
 </g>

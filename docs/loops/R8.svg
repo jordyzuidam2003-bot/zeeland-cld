@@ -25,16 +25,16 @@
 </g>
 <g class="elements">
 <g class="element" data-id="root-zone-salinity" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-391.5" y="-188.6" width="295.1" height="52.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="-391.5" y="-188.6" width="295.1" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="-244.0" y="-154.1" text-anchor="middle">Root zone salinity</text>
 </g>
 <g class="element" data-id="flushing-salt-from-the-root-zone" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
-<rect x="66.7" y="-205.6" width="354.5" height="86.0" rx="9" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<rect x="66.7" y="-205.6" width="354.5" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
 <text x="244.0" y="-171.1" text-anchor="middle">Flushing salt from the</text>
 <text x="244.0" y="-137.1" text-anchor="middle">root zone</text>
 </g>
 <g class="element" data-id="groundwater-extraction-for-irrigation" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
-<rect x="66.7" y="119.6" width="354.5" height="86.0" rx="9" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<rect x="66.7" y="119.6" width="354.5" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
 <text x="244.0" y="154.1" text-anchor="middle">Groundwater extraction</text>
 <text x="244.0" y="188.1" text-anchor="middle">for irrigation</text>
 </g>

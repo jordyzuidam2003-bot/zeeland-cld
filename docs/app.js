@@ -162,7 +162,7 @@ function signPosition(p0, ctrl, p2, back = 50) {
   }
   return bezier(p0, ctrl, p2, hi);
 }
-function delayPath(p0, ctrl, p2, half = 9, gap = 4) {
+function delayPath(p0, ctrl, p2, half = 24, gap = 8) {
   const [x, y] = bezier(p0, ctrl, p2, 0.5);
   const [tx, ty] = tangent(p0, ctrl, p2, 0.5);
   const n = Math.hypot(tx, ty) || 1;
@@ -231,8 +231,7 @@ function redrawLink(g, [p0, ctrl, p2]) {
   const sign = g.querySelector("text.sign");
   sign.setAttribute("x", f(sx));
   sign.setAttribute("y", f(sy));
-  const delay = g.querySelector("path.delay");
-  if (delay) delay.setAttribute("d", delayPath(p0, ctrl, p2));
+  for (const delay of g.querySelectorAll("path.delay, path.delay-cut")) delay.setAttribute("d", delayPath(p0, ctrl, p2));
 }
 // each link gets a wide invisible copy of its path under it, so the 2.5-unit line can be grabbed
 for (const g of links) {

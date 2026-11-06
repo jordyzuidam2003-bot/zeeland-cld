@@ -25,12 +25,12 @@
 <text x="-259.8" y="-91.5" text-anchor="middle">Financial leverage</text>
 </g>
 <g class="element" data-id="banks-risk-assessment" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="82.6" y="-143.0" width="354.5" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="82.6" y="-143.0" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="259.8" y="-108.5" text-anchor="middle">Banks' risk assessment</text>
 <text x="259.8" y="-74.5" text-anchor="middle">of farm loans</text>
 </g>
 <g class="element" data-id="bank-credit-to-farms" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-162.4" y="174.0" width="324.8" height="52.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="-162.4" y="174.0" width="324.8" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="0.0" y="208.5" text-anchor="middle">Bank credit to farms</text>
 </g>
 </g>

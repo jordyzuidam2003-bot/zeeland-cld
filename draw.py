@@ -44,6 +44,9 @@ SIGN_TEXT = {"+": "+", "-": "−"}
 SIGN_SIZE = 42
 SIGN_BACK = 50                 # a sign's centre on its link: the arrowhead (ARROW) and half a sign before the end
 SIGN_HALO = 10                 # the white round a sign, which cuts its own line round it
+DELAY_HALF, DELAY_GAP = 24, 8  # a delay's two strokes the height of a sign, a white cut round them, so they read at the
+DELAY_WIDTH, DELAY_CUT = 5, 11  # report's print size where the signs do (Jordy, chosen between rendered versions)
+CORNER = 18                    # an Auxiliary's and a Constant's corner radius (Jordy, chosen between rendered versions)
 LEGEND_SIZE = 52               # the legend reads at a glance, so larger than the labels (Jordy, chosen between rendered versions)
 ARROW = 22                     # arrowhead length, in drawing units
 TINT = {  # each box's fill: the hue of Figure 1 in the group's Project Plan, as a pale tint
@@ -85,7 +88,7 @@ def element_svg(e, box):
     style = f'stroke="{STROKE_COLOUR}" stroke-width="{STROKE_THICK if e["adaptive practice"] else STROKE}"'
     if kind == "Constant":
         style += ' stroke-dasharray="8 5"'
-    rx = 0 if kind == "Stock" else 9
+    rx = 0 if kind == "Stock" else CORNER
     parts = [f'<g class="element" data-id="{e["id"]}" data-domain="{e["sets domain"]}" '
              f'data-type="{kind}" data-adaptive="{"true" if e["adaptive practice"] else "false"}">',
              f'<rect x="{x0:.1f}" y="{y0:.1f}" width="{w:.1f}" height="{h:.1f}" rx="{rx}" fill="{TINT[e["sets domain"]]}" {style}/>']
@@ -230,7 +233,9 @@ def link_svg(c, pieces):
     parts.append(f'<text class="sign" x="{sx:.1f}" y="{sy:.1f}" text-anchor="middle" dominant-baseline="central" '
                  f'font-size="{SIGN_SIZE}" font-weight="bold" fill="{colour}" stroke="white" stroke-width="{SIGN_HALO}" paint-order="stroke">{SIGN_TEXT[c["polarity"]]}</text>')
     if c["delay"]:
-        parts.append(f'<path class="delay" d="{delay_path(*pieces[len(pieces) // 2])}" stroke="{STROKE_COLOUR}" stroke-width="2.5" fill="none"/>')
+        d = delay_path(*pieces[len(pieces) // 2])
+        parts.append(f'<path class="delay-cut" d="{d}" stroke="white" stroke-width="{DELAY_CUT}" fill="none"/>')
+        parts.append(f'<path class="delay" d="{d}" stroke="{STROKE_COLOUR}" stroke-width="{DELAY_WIDTH}" fill="none"/>')
     parts.append("</g>")
     return "\n".join(parts)
 
@@ -251,7 +256,7 @@ def sign_position(p0, ctrl, p2, back=SIGN_BACK):
     return bezier(p0, ctrl, p2, hi)
 
 
-def delay_path(p0, ctrl, p2, half=9, gap=4):
+def delay_path(p0, ctrl, p2, half=DELAY_HALF, gap=DELAY_GAP):
     x, y = bezier(p0, ctrl, p2, 0.5)
     tx, ty = tangent(p0, ctrl, p2, 0.5)
     n = hypot(tx, ty) or 1
@@ -480,19 +485,21 @@ def legend_svg(x, y):
     box = lambda xx, yy, extra, rx, width=STROKE, fill="white": (f'<rect x="{xx:.1f}" y="{yy - sh / 2:.1f}" width="{sw:.1f}" height="{sh:.1f}" rx="{rx}" fill="{fill}" '
                                                                  f'stroke="{STROKE_COLOUR}" stroke-width="{width}" {extra}/>')
     for i, (domain, tint) in enumerate(TINT.items()):
-        swatch(i, lambda xx, yy, t=tint: box(xx, yy, "", 9, fill=t), f"{domain} domain")
+        swatch(i, lambda xx, yy, t=tint: box(xx, yy, "", CORNER, fill=t), f"{domain} domain")
     n = len(TINT)
     swatch(n, lambda xx, yy: box(xx, yy, "", 0), "Stock")
-    swatch(n + 1, lambda xx, yy: box(xx, yy, "", 9), "Auxiliary")
-    swatch(n + 2, lambda xx, yy: box(xx, yy, 'stroke-dasharray="8 5"', 9), "Constant (exogenous)")
-    swatch(n + 3, lambda xx, yy: box(xx, yy, "", 9, STROKE_THICK), "Adaptive practice")
+    swatch(n + 1, lambda xx, yy: box(xx, yy, "", CORNER), "Auxiliary")
+    swatch(n + 2, lambda xx, yy: box(xx, yy, 'stroke-dasharray="8 5"', CORNER), "Constant (exogenous)")
+    swatch(n + 3, lambda xx, yy: box(xx, yy, "", CORNER, STROKE_THICK), "Adaptive practice")
     line = lambda xx, yy, colour, name: (f'<path d="M {xx:.1f} {yy:.1f} L {xx + sw - ARROW:.1f} {yy:.1f}" stroke="{colour}" '
                                          f'stroke-width="{LINK_WIDTH}" fill="none" marker-end="url(#arrow-{name})"/>')
     swatch(n + 4, lambda xx, yy: line(xx, yy, LINK_COLOUR["+"], "plus"), "+ : change in the same direction")
     swatch(n + 5, lambda xx, yy: line(xx, yy, LINK_COLOUR["-"], "minus"), "− : change in the opposite direction")
+    marks = lambda xx, yy: " ".join(f"M {xx + sw / 2 + k:.1f} {yy - DELAY_HALF:.1f} L {xx + sw / 2 + k:.1f} {yy + DELAY_HALF:.1f}"
+                                    for k in (-DELAY_GAP, DELAY_GAP))
     swatch(n + 6, lambda xx, yy: (f'<path d="M {xx:.1f} {yy:.1f} L {xx + sw:.1f} {yy:.1f}" stroke="{STROKE_COLOUR}" stroke-width="{LINK_WIDTH}"/>'
-                                  f'<path d="M {xx + sw / 2 - 4:.1f} {yy - 9:.1f} L {xx + sw / 2 - 4:.1f} {yy + 9:.1f} M {xx + sw / 2 + 4:.1f} {yy - 9:.1f} L {xx + sw / 2 + 4:.1f} {yy + 9:.1f}" '
-                                  f'stroke="{STROKE_COLOUR}" stroke-width="2.5"/>'), "Delay")
+                                  f'<path d="{marks(xx, yy)}" stroke="white" stroke-width="{DELAY_CUT}" fill="none"/>'
+                                  f'<path d="{marks(xx, yy)}" stroke="{STROKE_COLOUR}" stroke-width="{DELAY_WIDTH}" fill="none"/>'), "Delay")
     height = f * 1.4 + (n + 7) * row
     width = sw + f * 0.6 + len("− : change in the opposite direction") * CHAR_WIDTH / FONT_SIZE * f
     return '<g class="legend">\n' + "\n".join(items) + "\n</g>", width, height

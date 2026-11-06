@@ -9,7 +9,8 @@
 <g class="link" data-from="freshwater-lens-recharge" data-to="freshwater-lens-thickness" data-sign="+" data-delay="true" data-curvature="-0.223">
 <path class="link-path" d="M 460.5 43.0 Q 437.9 150.8 319.1 225.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="359.9" y="196.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay" d="M 423.4 144.9 L 409.2 133.8 M 418.5 151.2 L 404.3 140.2" stroke="#444444" stroke-width="2.5" fill="none"/>
+<path class="delay-cut" d="M 437.7 150.9 L 399.8 121.5 M 427.9 163.5 L 390.0 134.1" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 437.7 150.9 L 399.8 121.5 M 427.9 163.5 L 390.0 134.1" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="freshwater-lens-thickness" data-to="freshwater-availability-for-crops" data-sign="+" data-delay="false" data-curvature="-0.547">
 <path class="link-path" d="M 107.2 301.6 Q 26.8 314.4 -55.3 307.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -34,16 +35,16 @@
 </g>
 <g class="elements">
 <g class="element" data-id="crop-yield" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-320.7" y="-294.5" width="176.4" height="52.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="-320.7" y="-294.5" width="176.4" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="-232.5" y="-260.0" text-anchor="middle">Crop yield</text>
 </g>
 <g class="element" data-id="freshwater-storage-measures" data-domain="Technological" data-type="Auxiliary" data-adaptive="true">
-<rect x="84.9" y="-311.5" width="295.1" height="86.0" rx="9" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<rect x="84.9" y="-311.5" width="295.1" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
 <text x="232.5" y="-277.0" text-anchor="middle">Freshwater storage</text>
 <text x="232.5" y="-243.0" text-anchor="middle">measures</text>
 </g>
 <g class="element" data-id="freshwater-lens-recharge" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="339.7" y="-43.0" width="250.6" height="86.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="339.7" y="-43.0" width="250.6" height="86.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="465.0" y="-8.5" text-anchor="middle">Freshwater lens</text>
 <text x="465.0" y="25.5" text-anchor="middle">recharge</text>
 </g>
@@ -53,12 +54,12 @@
 <text x="232.5" y="294.0" text-anchor="middle">thickness</text>
 </g>
 <g class="element" data-id="freshwater-availability-for-crops" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-409.7" y="225.5" width="354.5" height="86.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="-409.7" y="225.5" width="354.5" height="86.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="-232.5" y="260.0" text-anchor="middle">Freshwater</text>
 <text x="-232.5" y="294.0" text-anchor="middle">availability for crops</text>
 </g>
 <g class="element" data-id="crop-water-shortfall" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-627.4" y="-26.0" width="324.8" height="52.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="-627.4" y="-26.0" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="-465.0" y="8.5" text-anchor="middle">Crop water shortfall</text>
 </g>
 </g>

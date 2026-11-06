@@ -25,12 +25,12 @@
 </g>
 <g class="elements">
 <g class="element" data-id="demand-for-deep-polder-drainage" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-417.0" y="-212.7" width="324.8" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="-417.0" y="-212.7" width="324.8" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-254.6" y="-178.2" text-anchor="middle">Farmers' demand for</text>
 <text x="-254.6" y="-144.2" text-anchor="middle">deep polder drainage</text>
 </g>
 <g class="element" data-id="plans-to-raise-ditch-levels" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="77.3" y="-212.7" width="354.5" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="77.3" y="-212.7" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="254.6" y="-178.2" text-anchor="middle">Water board's plans to</text>
 <text x="254.6" y="-144.2" text-anchor="middle">raise ditch levels</text>
 </g>
@@ -39,7 +39,7 @@
 <text x="254.6" y="178.2" text-anchor="middle">Polder drainage depth</text>
 </g>
 <g class="element" data-id="spring-workability-of-the-fields" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-424.4" y="126.7" width="339.6" height="86.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="-424.4" y="126.7" width="339.6" height="86.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="-254.6" y="161.2" text-anchor="middle">Spring workability of</text>
 <text x="-254.6" y="195.2" text-anchor="middle">the fields</text>
 </g>

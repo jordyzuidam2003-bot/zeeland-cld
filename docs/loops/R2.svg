@@ -25,22 +25,22 @@
 </g>
 <g class="elements">
 <g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Auxiliary" data-adaptive="true">
-<rect x="-409.5" y="-212.7" width="310.0" height="86.0" rx="9" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<rect x="-409.5" y="-212.7" width="310.0" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
 <text x="-254.6" y="-178.2" text-anchor="middle">Adoption of new</text>
 <text x="-254.6" y="-144.2" text-anchor="middle">salt-tolerant crops</text>
 </g>
 <g class="element" data-id="harvest-of-new-crops-to-process" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
-<rect x="92.2" y="-212.7" width="324.8" height="86.0" rx="9" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<rect x="92.2" y="-212.7" width="324.8" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
 <text x="254.6" y="-178.2" text-anchor="middle">Harvest of new crops</text>
 <text x="254.6" y="-144.2" text-anchor="middle">to process</text>
 </g>
 <g class="element" data-id="processing-capacity-for-alternative-crops" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
-<rect x="77.3" y="126.7" width="354.5" height="86.0" rx="9" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<rect x="77.3" y="126.7" width="354.5" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
 <text x="254.6" y="161.2" text-anchor="middle">Local processing</text>
 <text x="254.6" y="195.2" text-anchor="middle">capacity for new crops</text>
 </g>
 <g class="element" data-id="net-price-for-new-crops" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-424.4" y="126.7" width="339.6" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="-424.4" y="126.7" width="339.6" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-254.6" y="161.2" text-anchor="middle">Net price for new</text>
 <text x="-254.6" y="195.2" text-anchor="middle">crops after transport</text>
 </g>

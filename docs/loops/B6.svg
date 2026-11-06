@@ -17,11 +17,11 @@
 </g>
 <g class="elements">
 <g class="element" data-id="root-zone-salinity" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-432.6" y="-26.0" width="295.1" height="52.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="-432.6" y="-26.0" width="295.1" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="-285.0" y="8.5" text-anchor="middle">Root zone salinity</text>
 </g>
 <g class="element" data-id="flushing-salt-from-the-root-zone" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
-<rect x="107.8" y="-43.0" width="354.5" height="86.0" rx="9" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<rect x="107.8" y="-43.0" width="354.5" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
 <text x="285.0" y="-8.5" text-anchor="middle">Flushing salt from the</text>
 <text x="285.0" y="25.5" text-anchor="middle">root zone</text>
 </g>

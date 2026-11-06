@@ -21,16 +21,16 @@
 </g>
 <g class="elements">
 <g class="element" data-id="crop-water-shortfall" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-422.2" y="-126.0" width="324.8" height="52.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="-422.2" y="-126.0" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="-259.8" y="-91.5" text-anchor="middle">Crop water shortfall</text>
 </g>
 <g class="element" data-id="groundwater-extraction-for-irrigation" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
-<rect x="82.6" y="-143.0" width="354.5" height="86.0" rx="9" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<rect x="82.6" y="-143.0" width="354.5" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
 <text x="259.8" y="-108.5" text-anchor="middle">Groundwater extraction</text>
 <text x="259.8" y="-74.5" text-anchor="middle">for irrigation</text>
 </g>
 <g class="element" data-id="freshwater-availability-for-crops" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-177.2" y="157.0" width="354.5" height="86.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="-177.2" y="157.0" width="354.5" height="86.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="0.0" y="191.5" text-anchor="middle">Freshwater</text>
 <text x="0.0" y="225.5" text-anchor="middle">availability for crops</text>
 </g>

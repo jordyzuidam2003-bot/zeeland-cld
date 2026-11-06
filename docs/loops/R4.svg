@@ -41,7 +41,7 @@
 </g>
 <g class="elements">
 <g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-375.5" y="-421.8" width="280.3" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="-375.5" y="-421.8" width="280.3" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-235.4" y="-387.3" text-anchor="middle">Agricultural land</text>
 <text x="-235.4" y="-353.3" text-anchor="middle">value</text>
 </g>
@@ -50,30 +50,30 @@
 <text x="235.4" y="-370.3" text-anchor="middle">Financial leverage</text>
 </g>
 <g class="element" data-id="banks-risk-assessment" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="390.9" y="-199.9" width="354.5" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="390.9" y="-199.9" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="568.2" y="-165.4" text-anchor="middle">Banks' risk assessment</text>
 <text x="568.2" y="-131.4" text-anchor="middle">of farm loans</text>
 </g>
 <g class="element" data-id="bank-credit-to-farms" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="405.8" y="130.9" width="324.8" height="52.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="405.8" y="130.9" width="324.8" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="568.2" y="165.4" text-anchor="middle">Bank credit to farms</text>
 </g>
 <g class="element" data-id="farmers-capacity-to-invest" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="73.0" y="335.8" width="324.8" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="73.0" y="335.8" width="324.8" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="235.4" y="370.3" text-anchor="middle">Farmers' capacity to</text>
 <text x="235.4" y="404.3" text-anchor="middle">invest</text>
 </g>
 <g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Auxiliary" data-adaptive="true">
-<rect x="-390.3" y="335.8" width="310.0" height="86.0" rx="9" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<rect x="-390.3" y="335.8" width="310.0" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
 <text x="-235.4" y="370.3" text-anchor="middle">Adoption of new</text>
 <text x="-235.4" y="404.3" text-anchor="middle">salt-tolerant crops</text>
 </g>
 <g class="element" data-id="harvest-lost-to-salt" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-730.6" y="130.9" width="324.8" height="52.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="-730.6" y="130.9" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="-568.2" y="165.4" text-anchor="middle">Harvest lost to salt</text>
 </g>
 <g class="element" data-id="farm-revenue" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-663.8" y="-182.9" width="191.2" height="52.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="-663.8" y="-182.9" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-568.2" y="-148.4" text-anchor="middle">Farm income</text>
 </g>
 </g>

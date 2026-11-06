@@ -21,7 +21,7 @@
 </g>
 <g class="elements">
 <g class="element" data-id="dependence-on-high-margin-salt-sensitive-crops" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-422.2" y="-160.0" width="324.8" height="120.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="-422.2" y="-160.0" width="324.8" height="120.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-259.8" y="-125.5" text-anchor="middle">Dependence on</text>
 <text x="-259.8" y="-91.5" text-anchor="middle">high-margin</text>
 <text x="-259.8" y="-57.5" text-anchor="middle">salt-sensitive crops</text>
@@ -32,7 +32,7 @@
 <text x="259.8" y="-74.5" text-anchor="middle">for the current crops</text>
 </g>
 <g class="element" data-id="capital-lost-on-switching" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-177.2" y="157.0" width="354.5" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="-177.2" y="157.0" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="0.0" y="191.5" text-anchor="middle">Capital lost on</text>
 <text x="0.0" y="225.5" text-anchor="middle">switching to new crops</text>
 </g>

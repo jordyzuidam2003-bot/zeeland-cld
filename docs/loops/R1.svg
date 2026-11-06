@@ -9,7 +9,8 @@
 <g class="link" data-from="freshwater-lens-recharge" data-to="freshwater-lens-thickness" data-sign="+" data-delay="true" data-curvature="-0.223">
 <path class="link-path" d="M 116.1 184.4 Q 60.4 200.0 0.0 200.0 Q -60.4 200.0 -116.1 184.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-67.2" y="195.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay" d="M -56.4 205.6 L -54.1 187.7 M -64.4 204.5 L -62.0 186.7" stroke="#444444" stroke-width="2.5" fill="none"/>
+<path class="delay-cut" d="M -54.5 221.0 L -48.1 173.4 M -70.3 218.8 L -64.0 171.3" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -54.5 221.0 L -48.1 173.4 M -70.3 218.8 L -64.0 171.3" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="-0.101">
 <path class="link-path" d="M -261.2 98.4 Q -304.0 47.9 -299.6 -10.1 Q -295.2 -68.0 -245.0 -115.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -18,7 +19,8 @@
 <g class="link" data-from="root-zone-salinity" data-to="soil-structure-usability" data-sign="-" data-delay="true" data-curvature="-0.131">
 <path class="link-path" d="M -164.1 -167.4 Q -89.3 -200.0 0.0 -200.0 Q 89.3 -200.0 164.1 -167.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="117.0" y="-184.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-<path class="delay" d="M 83.5 -201.5 L 80.0 -183.8 M 91.4 -199.9 L 87.9 -182.2" stroke="#444444" stroke-width="2.5" fill="none"/>
+<path class="delay-cut" d="M 82.5 -217.0 L 73.2 -169.9 M 98.2 -213.8 L 88.9 -166.8" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 82.5 -217.0 L 73.2 -169.9 M 98.2 -213.8 L 88.9 -166.8" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="soil-structure-usability" data-to="freshwater-lens-recharge" data-sign="+" data-delay="false" data-curvature="-0.12">
 <path class="link-path" d="M 245.0 -115.4 Q 295.2 -68.0 299.6 -10.1 Q 304.0 47.9 261.2 98.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -27,7 +29,7 @@
 </g>
 <g class="elements">
 <g class="element" data-id="root-zone-salinity" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-359.7" y="-167.4" width="295.1" height="52.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="-359.7" y="-167.4" width="295.1" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="-212.1" y="-132.9" text-anchor="middle">Root zone salinity</text>
 </g>
 <g class="element" data-id="soil-structure-usability" data-domain="Ecological" data-type="Stock" data-adaptive="false">
@@ -35,7 +37,7 @@
 <text x="212.1" y="-132.9" text-anchor="middle">Soil structure</text>
 </g>
 <g class="element" data-id="freshwater-lens-recharge" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="86.8" y="98.4" width="250.6" height="86.0" rx="9" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<rect x="86.8" y="98.4" width="250.6" height="86.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="212.1" y="132.9" text-anchor="middle">Freshwater lens</text>
 <text x="212.1" y="166.9" text-anchor="middle">recharge</text>
 </g>

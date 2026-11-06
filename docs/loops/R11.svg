@@ -26,7 +26,7 @@
 <text x="-259.8" y="-74.5" text-anchor="middle">plans</text>
 </g>
 <g class="element" data-id="expropriation-of-farmland" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="127.1" y="-143.0" width="265.4" height="86.0" rx="9" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<rect x="127.1" y="-143.0" width="265.4" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="259.8" y="-108.5" text-anchor="middle">Expropriation of</text>
 <text x="259.8" y="-74.5" text-anchor="middle">farmland</text>
 </g>

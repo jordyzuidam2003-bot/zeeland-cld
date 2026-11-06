@@ -23,8 +23,8 @@ web page, <https://jordyzuidam2003-bot.github.io/zeeland-cld/>, served by GitHub
 
 `cld.json` is version 2, built from version 1 and Jordy's review of it, which Jordy and Lenne
 chose whole as the final CLD before the group model building session. Version 1, the one Lenne
-approved first, is kept only by the git tag `v1` (`git show v1:cld.json`), its page no longer
-published.
+approved first, is kept only by the git tag `v1` (`git show v1:cld.json`), with no published
+page.
 
 ## Working on the diagram
 

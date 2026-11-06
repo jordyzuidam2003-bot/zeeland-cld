@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version ccbced8, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version cbc9ae8, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -158,6 +158,7 @@
         "Arable farmers on Schouwen-Duiveland",
         "Banks lending to the island's farmers",
         "Buyers and processors of the island's crops",
+        "Gemeente Schouwen-Duiveland",
         "Provincie Zeeland",
         "Waterschap Scheldestromen"
       ],
@@ -1161,6 +1162,21 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ3",
         "description": "Hectares of the island's farmland sold, expropriated or passed on to a new holder in a year: at a forced sale, a retirement without a successor, or otherwise.",
+        "sources": "",
+        "sourced": "no"
+      }
+    },
+    {
+      "_id": "elem-municipality-plans-for-farmland",
+      "attributes": {
+        "label": "Farmland planned for  other uses",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subsystem": "Agricultural economy",
+        "subquestion": "SQ2",
+        "description": "Hectares of the island's farmland that Gemeente Schouwen-Duiveland's land-use plan (its omgevingsplan, with the changes it drafts to it) designates for a use other than arable farming, such as nature, water storage, housing or recreation. Which plans the municipality makes for the island's farmland, and where objections enter them, is on the facts list under Objections to land-use plans.",
+        "actor": "Gemeente Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -3832,6 +3848,66 @@
       },
       "from": "elem-expropriation-of-farmland",
       "to": "elem-farmers-trust-in-government"
+    },
+    {
+      "_id": "conn-policy-resistance-legal-delays--municipality-plans-for-farmland",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "description": "Objections delay, change or stop a plan in which the municipality designates farmland for another use, while it is pending; with none pending, they change nothing.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "hypothesis": "yes",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-policy-resistance-legal-delays",
+      "to": "elem-municipality-plans-for-farmland"
+    },
+    {
+      "_id": "conn-municipality-plans-for-farmland--policy-resistance-legal-delays",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "A plan that designates farmland for another use leads its owners and the farmers who work it to object, appeal and lobby against it.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "hypothesis": "yes",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-municipality-plans-for-farmland",
+      "to": "elem-policy-resistance-legal-delays"
+    },
+    {
+      "_id": "conn-municipality-plans-for-farmland--farmland-leaving-arable-use",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "description": "Farmland the plan designates for another use leaves arable farming once the plan is carried out on it; how long that takes waits for a source.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-municipality-plans-for-farmland",
+      "to": "elem-farmland-leaving-arable-use"
     }
   ],
   "loops": [
@@ -4137,7 +4213,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model ccbced8",
+      "name": "CLD, model cbc9ae8",
       "description": "",
       "scale": 1,
       "center": {
@@ -4777,6 +4853,16 @@
           "pinned": true,
           "style": {},
           "element": "elem-farmland-changing-hands"
+        },
+        {
+          "_id": "node-municipality-plans-for-farmland",
+          "position": {
+            "x": -520,
+            "y": -1450
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-municipality-plans-for-farmland"
         },
         {
           "_id": "node-background",
@@ -5587,6 +5673,24 @@
           "curvature": 0.33,
           "style": {},
           "connection": "conn-expropriation-of-farmland--farmers-trust-in-government"
+        },
+        {
+          "_id": "edge-policy-resistance-legal-delays--municipality-plans-for-farmland",
+          "curvature": -0.12,
+          "style": {},
+          "connection": "conn-policy-resistance-legal-delays--municipality-plans-for-farmland"
+        },
+        {
+          "_id": "edge-municipality-plans-for-farmland--policy-resistance-legal-delays",
+          "curvature": -0.12,
+          "style": {},
+          "connection": "conn-municipality-plans-for-farmland--policy-resistance-legal-delays"
+        },
+        {
+          "_id": "edge-municipality-plans-for-farmland--farmland-leaving-arable-use",
+          "curvature": -0.4,
+          "style": {},
+          "connection": "conn-municipality-plans-for-farmland--farmland-leaving-arable-use"
         }
       ],
       "loops": [
@@ -5786,7 +5890,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "/* Each property here is one that Kumu's property reference gives the selector's type (element,\n   connection or loop: its table marks which type takes which property); check a new one there\n   before writing it, and see it work in a test import. */\n\n@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      /* strict shows only what an option selects: normal adds the links among its elements and\n         loose their neighbours, which are not the loop */\n      mode: strict;\n\n      /* build.py replaces the next line with an option per named loop */\n      option {\n        label: \"R1 Salty soil takes in less rain\";\n        selector: *:loop([\"label\"=\"R1 Salty soil takes in less rain\"]), #background;\n      }\n\n      option {\n        label: \"B1 Salt-tolerant crops need less pumping\";\n        selector: *:loop([\"label\"=\"B1 Salt-tolerant crops need less pumping\"]), #background;\n      }\n\n      option {\n        label: \"R2 Growers and processors\";\n        selector: *:loop([\"label\"=\"R2 Growers and processors\"]), #background;\n      }\n\n      option {\n        label: \"R3 Farm income and water storage\";\n        selector: *:loop([\"label\"=\"R3 Farm income and water storage\"]), #background;\n      }\n\n      option {\n        label: \"R4 Land value and bank credit\";\n        selector: *:loop([\"label\"=\"R4 Land value and bank credit\"]), #background;\n      }\n\n      option {\n        label: \"R5 Leverage and deep drainage\";\n        selector: *:loop([\"label\"=\"R5 Leverage and deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"R6 Land value, objections and ditch levels\";\n        selector: *:loop([\"label\"=\"R6 Land value, objections and ditch levels\"]), #background;\n      }\n\n      option {\n        label: \"B2 Less arable land, less deep drainage\";\n        selector: *:loop([\"label\"=\"B2 Less arable land, less deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"B3 Switching gives up margin\";\n        selector: *:loop([\"label\"=\"B3 Switching gives up margin\"]), #background;\n      }\n\n      option {\n        label: \"B4 Storing water when harvests fall\";\n        selector: *:loop([\"label\"=\"B4 Storing water when harvests fall\"]), #background;\n      }\n\n      option {\n        label: \"B5 Pumping relieves the shortfall\";\n        selector: *:loop([\"label\"=\"B5 Pumping relieves the shortfall\"]), #background;\n      }\n\n      option {\n        label: \"R7 Pumping thins the lens\";\n        selector: *:loop([\"label\"=\"R7 Pumping thins the lens\"]), #background;\n      }\n\n      option {\n        label: \"B6 Flushing salt out\";\n        selector: *:loop([\"label\"=\"B6 Flushing salt out\"]), #background;\n      }\n\n      option {\n        label: \"R8 Flushing draws down the lens\";\n        selector: *:loop([\"label\"=\"R8 Flushing draws down the lens\"]), #background;\n      }\n\n      option {\n        label: \"B7 Deep drainage keeps fields workable\";\n        selector: *:loop([\"label\"=\"B7 Deep drainage keeps fields workable\"]), #background;\n      }\n\n      option {\n        label: \"B8 The water board raises levels against seepage\";\n        selector: *:loop([\"label\"=\"B8 The water board raises levels against seepage\"]), #background;\n      }\n\n      option {\n        label: \"B9 Objections hold back plans\";\n        selector: *:loop([\"label\"=\"B9 Objections hold back plans\"]), #background;\n      }\n\n      option {\n        label: \"B10 Banks lend less as leverage rises\";\n        selector: *:loop([\"label\"=\"B10 Banks lend less as leverage rises\"]), #background;\n      }\n\n      option {\n        label: \"R9 Changed plans erode trust\";\n        selector: *:loop([\"label\"=\"R9 Changed plans erode trust\"]), #background;\n      }\n\n      option {\n        label: \"R10 Capital ties farms to their crops\";\n        selector: *:loop([\"label\"=\"R10 Capital ties farms to their crops\"]), #background;\n      }\n\n      option {\n        label: \"R11 Expropriation and trust\";\n        selector: *:loop([\"label\"=\"R11 Expropriation and trust\"]), #background;\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Regions: the page's two subsystem regions as a background image ---------- */\n/* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,\n   pinned at the centre of the regions' frame, and its width and height, the frame's. A showcase\n   fades all it does not select, so every showcase option above selects #background too */\n#background {\n  image-url: url(https://jordyzuidam2003-bot.github.io/zeeland-cld/regions.svg);\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- Loops: Kumu's named loops, no label on the map ---------- */\n/* the full drawing has no loop marks (the router's layout decision); Kumu's property reference\n   gives loops `label`, not `label-visibility` */\nloop {\n  label: none;\n}\n\n/* ---------- generated by build.py: tints, box sizes, the regions' size ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 340; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-flushing-salt-from-the-root-zone { width: 354; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#background { width: 5169; height: 3764; }\n"
+      "style": "/* Each property here is one that Kumu's property reference gives the selector's type (element,\n   connection or loop: its table marks which type takes which property); check a new one there\n   before writing it, and see it work in a test import. */\n\n@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      /* strict shows only what an option selects: normal adds the links among its elements and\n         loose their neighbours, which are not the loop */\n      mode: strict;\n\n      /* build.py replaces the next line with an option per named loop */\n      option {\n        label: \"R1 Salty soil takes in less rain\";\n        selector: *:loop([\"label\"=\"R1 Salty soil takes in less rain\"]), #background;\n      }\n\n      option {\n        label: \"B1 Salt-tolerant crops need less pumping\";\n        selector: *:loop([\"label\"=\"B1 Salt-tolerant crops need less pumping\"]), #background;\n      }\n\n      option {\n        label: \"R2 Growers and processors\";\n        selector: *:loop([\"label\"=\"R2 Growers and processors\"]), #background;\n      }\n\n      option {\n        label: \"R3 Farm income and water storage\";\n        selector: *:loop([\"label\"=\"R3 Farm income and water storage\"]), #background;\n      }\n\n      option {\n        label: \"R4 Land value and bank credit\";\n        selector: *:loop([\"label\"=\"R4 Land value and bank credit\"]), #background;\n      }\n\n      option {\n        label: \"R5 Leverage and deep drainage\";\n        selector: *:loop([\"label\"=\"R5 Leverage and deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"R6 Land value, objections and ditch levels\";\n        selector: *:loop([\"label\"=\"R6 Land value, objections and ditch levels\"]), #background;\n      }\n\n      option {\n        label: \"B2 Less arable land, less deep drainage\";\n        selector: *:loop([\"label\"=\"B2 Less arable land, less deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"B3 Switching gives up margin\";\n        selector: *:loop([\"label\"=\"B3 Switching gives up margin\"]), #background;\n      }\n\n      option {\n        label: \"B4 Storing water when harvests fall\";\n        selector: *:loop([\"label\"=\"B4 Storing water when harvests fall\"]), #background;\n      }\n\n      option {\n        label: \"B5 Pumping relieves the shortfall\";\n        selector: *:loop([\"label\"=\"B5 Pumping relieves the shortfall\"]), #background;\n      }\n\n      option {\n        label: \"R7 Pumping thins the lens\";\n        selector: *:loop([\"label\"=\"R7 Pumping thins the lens\"]), #background;\n      }\n\n      option {\n        label: \"B6 Flushing salt out\";\n        selector: *:loop([\"label\"=\"B6 Flushing salt out\"]), #background;\n      }\n\n      option {\n        label: \"R8 Flushing draws down the lens\";\n        selector: *:loop([\"label\"=\"R8 Flushing draws down the lens\"]), #background;\n      }\n\n      option {\n        label: \"B7 Deep drainage keeps fields workable\";\n        selector: *:loop([\"label\"=\"B7 Deep drainage keeps fields workable\"]), #background;\n      }\n\n      option {\n        label: \"B8 The water board raises levels against seepage\";\n        selector: *:loop([\"label\"=\"B8 The water board raises levels against seepage\"]), #background;\n      }\n\n      option {\n        label: \"B9 Objections hold back plans\";\n        selector: *:loop([\"label\"=\"B9 Objections hold back plans\"]), #background;\n      }\n\n      option {\n        label: \"B10 Banks lend less as leverage rises\";\n        selector: *:loop([\"label\"=\"B10 Banks lend less as leverage rises\"]), #background;\n      }\n\n      option {\n        label: \"R9 Changed plans erode trust\";\n        selector: *:loop([\"label\"=\"R9 Changed plans erode trust\"]), #background;\n      }\n\n      option {\n        label: \"R10 Capital ties farms to their crops\";\n        selector: *:loop([\"label\"=\"R10 Capital ties farms to their crops\"]), #background;\n      }\n\n      option {\n        label: \"R11 Expropriation and trust\";\n        selector: *:loop([\"label\"=\"R11 Expropriation and trust\"]), #background;\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Regions: the page's two subsystem regions as a background image ---------- */\n/* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,\n   pinned at the centre of the regions' frame, and its width and height, the frame's. A showcase\n   fades all it does not select, so every showcase option above selects #background too */\n#background {\n  image-url: url(https://jordyzuidam2003-bot.github.io/zeeland-cld/regions.svg);\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- Loops: Kumu's named loops, no label on the map ---------- */\n/* the full drawing has no loop marks (the router's layout decision); Kumu's property reference\n   gives loops `label`, not `label-visibility` */\nloop {\n  label: none;\n}\n\n/* ---------- generated by build.py: tints, box sizes, the regions' size ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-crop-water-demand { width: 280; height: 52; }\n#elem-estuary-salt-intrusion { width: 354; height: 52; }\n#elem-freshwater-lens-recharge { width: 251; height: 86; }\n#elem-freshwater-lens-thickness { width: 251; height: 86; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-brackish-irrigation-water-use { width: 310; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-fear-of-expropriation-planning-blight { width: 340; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-flushing-salt-from-the-root-zone { width: 354; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#background { width: 5169; height: 3764; }\n"
     }
   ]
 }

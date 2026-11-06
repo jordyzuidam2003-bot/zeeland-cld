@@ -852,6 +852,20 @@
       "sources": [],
       "x": 446,
       "y": -938
+    },
+    {
+      "id": "municipality-plans-for-farmland",
+      "label": "Farmland planned for other uses",
+      "element type": "Auxiliary",
+      "adaptive practice": false,
+      "sets domain": "Social",
+      "subsystem": "Agricultural economy",
+      "subquestion": "SQ2",
+      "description": "Hectares of the island's farmland that Gemeente Schouwen-Duiveland's land-use plan (its omgevingsplan, with the changes it drafts to it) designates for a use other than arable farming, such as nature, water storage, housing or recreation. Which plans the municipality makes for the island's farmland, and where objections enter them, is on the facts list under Objections to land-use plans.",
+      "sources": [],
+      "x": -520,
+      "y": -1450,
+      "actor": "Gemeente Schouwen-Duiveland"
     }
   ],
   "connections": [
@@ -2104,6 +2118,35 @@
       "sources": [],
       "curvature": 0.33,
       "hypothesis": true
+    },
+    {
+      "from": "policy-resistance-legal-delays",
+      "to": "municipality-plans-for-farmland",
+      "polarity": "-",
+      "delay": false,
+      "description": "Objections delay, change or stop a plan in which the municipality designates farmland for another use, while it is pending; with none pending, they change nothing.",
+      "sources": [],
+      "curvature": -0.12,
+      "hypothesis": true
+    },
+    {
+      "from": "municipality-plans-for-farmland",
+      "to": "policy-resistance-legal-delays",
+      "polarity": "+",
+      "delay": false,
+      "description": "A plan that designates farmland for another use leads its owners and the farmers who work it to object, appeal and lobby against it.",
+      "sources": [],
+      "curvature": -0.12,
+      "hypothesis": true
+    },
+    {
+      "from": "municipality-plans-for-farmland",
+      "to": "farmland-leaving-arable-use",
+      "polarity": "-",
+      "delay": false,
+      "description": "Farmland the plan designates for another use leaves arable farming once the plan is carried out on it; how long that takes waits for a source.",
+      "sources": [],
+      "curvature": -0.4
     }
   ],
   "loops": [

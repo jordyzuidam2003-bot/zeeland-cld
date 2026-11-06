@@ -169,7 +169,8 @@ Then `actors`, each:
   actor analysis's question (Jordy; no source scores an actor, so `influence` gives each score's
   reason):
   - 5: decides binding rules or plans for the island's farms (the water board's water levels,
-    the municipality's land-use plans, EU banking rules);
+    the municipality's land-use plans, EU banking rules), or decides the adaptation itself (the
+    farmers);
   - 4: decides something many of the island's farms depend on, without binding them (banks'
     credit, buyers' contracts);
   - 3: shapes those decisions directly: advice, representation, funding;

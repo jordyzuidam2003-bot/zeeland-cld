@@ -20,8 +20,8 @@
       "level": "Local / Provincial / Regional",
       "sector": "Arable Farming",
       "interest": "Enough fresh water when their crops need it, above all as they germinate, to lower their farms' risk or to raise production. Many want to invest in measures that hold fresh water, once the technique, its costs, its risks and its gain in yield are known for the island's conditions; while supply from outside and measures on the island are both still debated, they hold back.",
-      "influence": "Decide what the island's farmland grows and how each field is drained, irrigated and supplied with water: in 2025, 200 farms registered on the island grew arable crops on 9,094 ha, of the 13,752 ha of farmland of its 240 farms. A measure in the subsoil can serve several neighbouring farms, which collect and tap its water together; the study of the island's farms explored measures for clusters of one to three.",
-      "influence score": null,
+      "influence": "Decide what the island's farmland grows and how each field is drained, irrigated and supplied with water: in 2025, 200 farms registered on the island grew arable crops on 9,094 ha, of the 13,752 ha of farmland of its 240 farms. A measure in the subsoil can serve several neighbouring farms, which collect and tap its water together; the study of the island's farms explored measures for clusters of one to three. Score 5: they decide the adaptation itself.",
+      "influence score": 5,
       "client": "no",
       "relations": [],
       "sources": [

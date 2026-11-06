@@ -11,27 +11,20 @@ web page, <https://jordyzuidam2003-bot.github.io/zeeland-cld/>, served by GitHub
 | File | What it holds | Edit? |
 | --- | --- | --- |
 | `cld.json` | the elements, connections, named loops, layout (x, y) and link curvature | yes |
-| `cld-v2.json` | version 2, built beside version 1 (below), in the same form | yes |
 | `references.json` | the sources, as `"key": "full APA reference"` | yes |
-| `model-texts.md` | the model texts each version's page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
+| `model-texts.md` | the model texts the page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
 | `view.scss` | the Kumu view inside `docs/project.json` | yes |
 | `page/` | the page around the drawing: `index.html` (a template), `app.js`, `style.css` | yes |
 | `build.py` | checks the model and writes `docs/` (how: its docstring) | — |
 | `draw.py` | draws the SVG, imported by `build.py` | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json`, and the same for version 2 in `docs/v2/` | never: `build.py` writes it |
+| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json` | never: `build.py` writes it |
 
-## Two versions
+## Version 1
 
-Version 2, `cld-v2.json`, is built beside version 1 until Jordy and Lenne make the final CLD from
-both; version 1, `cld.json`, stays as it was approved, kept by the git tag `v1`, and its page
-gains only what both pages show: the model texts, and the look Jordy chooses for both drawings
-(its loop figures run clockwise). `build.py` checks
-and builds both, version 2 into `docs/v2/`, published at
-<https://jordyzuidam2003-bot.github.io/zeeland-cld/v2/>, whose page links to version 1;
-`--check`, and so the pre-commit hook, covers both, and `--layout FILE --v2` writes a layout into
-`cld-v2.json`. `references.json`, `model-texts.md`, `view.scss`, `page/` and `draw.py` are shared, so a
-change to them leaves version 1's model as it is: `git diff --stat v1 -- cld.json` prints
-nothing, and `page/app.js` shows a field only where an element has it.
+`cld.json` is version 2, built from version 1 and Jordy's review of it, which Jordy and Lenne
+chose whole as the final CLD before the group model building session. Version 1, the one Lenne
+approved first, is kept only by the git tag `v1` (`git show v1:cld.json`), its page no longer
+published.
 
 ## Working on the diagram
 
@@ -98,9 +91,9 @@ looking at.
 
 ### `cld.json`
 
-The model texts are in `model-texts.md`, which `build.py` renders on the page of each version
+The model texts are in `model-texts.md`, which `build.py` renders on the page
 (Jordy: someone opening the page reads the scale, horizon and assumptions with the drawing). A
-word in braces, such as `{feedback loops}`, is a number `build.py` counts in that version; a
+word in braces, such as `{feedback loops}`, is a number `build.py` counts in the model; a
 `<!-- comment -->` is not shown, and `<!-- Draft, for the team to check. -->` marks a text the
 team has not checked yet.
 
@@ -132,7 +125,7 @@ An element:
   corner; the group proposes the split and the names from the CLD, and the Project Plan
   follows it.
 - `x` and `y` are positions in the drawing; y grows downwards.
-- `actor` (version 2): on a decision variable, the one actor that decides it, from the model's
+- `actor`: on a decision variable, the one actor that decides it, from the model's
   top-level `actors` list, which names every actor at the grain the group set (a public body by
   its name, the island's arable farmers as one); `build.py` stops on an actor not on the list.
   The page's panel shows it, and Kumu gets it as a field.

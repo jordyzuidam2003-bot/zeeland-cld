@@ -68,7 +68,7 @@ function showPanel(title, item, fields) {
   const h2 = document.createElement("h2");
   h2.append(...title);
   const dl = document.createElement("dl");
-  // a field only some elements have (actor, version 2's) shows where an element has it
+  // a field only some elements have (actor, on a decision variable) shows where an element has it
   for (const name of fields) if (name in item) row(dl, name, item[name]);
   if (item.sources) row(dl, "sources", item.sources);
   else if (item.hypothesis === "yes") row(dl, "sources", "none: a hypothesis about behaviour, for the group model building session", "none");

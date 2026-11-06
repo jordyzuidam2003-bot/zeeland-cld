@@ -4,18 +4,15 @@
     python3 build.py --check          # fail if docs/ is out of date (the pre-commit hook runs this)
     python3 build.py --layout FILE    # write the positions and curvatures of FILE (layout.json,
                                       # downloaded from the page's drag mode) into cld.json, then build
-    python3 build.py --layout FILE --v2   # the same into cld-v2.json
 
 Sources, edited by hand: cld.json (elements, connections, named loops, layout and
 link curvature), references.json (sources), model-texts.md (the model texts each page shows),
 view.scss (the Kumu view inside project.json) and page/ (index.html, a template with the
-placeholders <!-- SVG -->, <!-- FACTS -->, <!-- TEXTS --> and <!-- DATA -->; app.js; style.css). draw.py draws the SVG. Version 2, cld-v2.json, stands beside version 1 until the
-group makes the final CLD from both (VERSIONS); each version is checked and built into its own
-folder, version 2's docs/v2/, sharing references.json, model-texts.md, view.scss, page/ and draw.py. Never edit
-docs/, which this script writes (per version):
+placeholders <!-- SVG -->, <!-- FACTS -->, <!-- TEXTS --> and <!-- DATA -->; app.js; style.css). draw.py draws the SVG. Never edit
+docs/, which this script writes:
 
     docs/index.html    the page: the template with the drawing inline, the model texts (their
-                       numbers counted in the version) and the data as JSON
+                       numbers counted in the model) and the data as JSON
     docs/app.js        copied from page/
     docs/style.css     copied from page/
     docs/cld.svg       the drawing on its own, the picture for the report
@@ -44,23 +41,13 @@ ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
 PAGE = ROOT / "page"
 TEXTS = ROOT / "model-texts.md"
+CLD = ROOT / "cld.json"
 PAGES_URL = "https://jordyzuidam2003-bot.github.io/zeeland-cld/"
-# version 1 stays as Lenne approved it, its page unchanged, while version 2 is built beside it
-VERSIONS = [
-    {"name": "1", "file": "cld.json", "docs": DOCS, "url": PAGES_URL, "kumu": "cbp-cld"},
-    {"name": "2", "file": "cld-v2.json", "docs": DOCS / "v2", "url": PAGES_URL + "v2/", "kumu": "cbp-cld-v2"},
-]
 
 ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
 SUBQUESTIONS = ["SQ1", "SQ2", "SQ3"]
 SETS_LETTER = {"Social": "S", "Ecological": "E", "Technological": "T"}
 CONSTANT_REACH = 300  # the most a Constant's box keeps from a box it drives: about one box's width
-
-
-def versions():
-    """The versions whose file exists, each with its model loaded."""
-    return [{**v, "cld": json.loads((ROOT / v["file"]).read_text())}
-            for v in VERSIONS if (ROOT / v["file"]).exists()]
 
 
 def check(cld, refs):
@@ -253,7 +240,7 @@ def core(cld):
 
 
 def counts(cld, loops):
-    """The numbers model-texts.md names in braces, counted in this version."""
+    """The numbers model-texts.md names in braces, counted in the model."""
     inner = core(cld)
     links = sum(c["from"] in inner and c["to"] in inner for c in cld["connections"])
     rest = [e for e in cld["elements"] if e["id"] not in inner]
@@ -275,7 +262,7 @@ def inline(text):
 
 
 def model_texts(cld, loops):
-    """(facts, texts): model-texts.md as HTML, its numbers counted in this version. The facts are
+    """(facts, texts): model-texts.md as HTML, its numbers counted in the model. The facts are
     the list before its first heading; the texts are its sections, each a ## heading with
     paragraphs or a - list. A <!-- comment --> is not shown."""
     text = re.sub(r"<!--.*?-->\n?", "", TEXTS.read_text(), flags=re.S)
@@ -296,17 +283,10 @@ def model_texts(cld, loops):
     return "\n".join(html[:first]), "\n".join(html[first:])
 
 
-def page(cld, refs, version, v, loops):
+def page(cld, refs, version, loops):
     """docs/index.html: the template with the drawing inline, the model texts and the data as
-    JSON; a version other than 1 names itself and links to version 1."""
+    JSON."""
     template = (PAGE / "index.html").read_text()
-    if v["name"] != "1":
-        for old, new in [("<title>Zeeland CLD</title>", f'<title>Zeeland CLD, version {v["name"]}</title>'),
-                         ("<h1>Zeeland CLD</h1>", f'<h1>Zeeland CLD, version {v["name"]}</h1>'),
-                         ('</p>\n</header>', f'</p>\n  <p class="intro">Version {v["name"]}, built from version 1 and '
-                          'its review; <a href="../">version 1</a> stays beside it, unchanged.</p>\n</header>')]:
-            assert template.count(old) == 1, f"page/index.html must hold {old!r} once"
-            template = template.replace(old, new)
     svg = draw.svg(cld)
     # "</" inside a <script> would end it early; "<\/" is the same string to JSON
     data = json.dumps(page_data(cld, refs, version), ensure_ascii=False).replace("</", "<\\/")
@@ -318,7 +298,7 @@ def page(cld, refs, version, v, loops):
             .replace("<!-- DATA -->", f'<script type="application/json" id="data">{data}</script>'))
 
 
-def project(cld, refs, template, version, ver):
+def project(cld, refs, template, version):
     """A full Kumu project export, the shape of Kumu's own "Export JSON" of a project.
 
     The view is view.scss plus what is generated here: a showcase button per named loop, in
@@ -383,9 +363,9 @@ def project(cld, refs, template, version, ver):
         map_loops.append({"_id": f'mloop-{loop["id"]}', "loop": f'loop-{loop["id"]}', "style": {},
                           "position": {"x": round(sum(by_id[i]["x"] for i in path) / len(path)),
                                        "y": round(sum(by_id[i]["y"] for i in path) / len(path))}})
-    description = (f"Model version {version}, the first seven characters of the SHA-256 of {ver['file']}. "
+    description = (f"Model version {version}, the first seven characters of the SHA-256 of cld.json. "
                    "A copy for milestones: the current model is the page "
-                   f"{ver['url']}, built from "
+                   f"{PAGES_URL}, built from "
                    "https://github.com/jordyzuidam2003-bot/zeeland-cld.")
     # a showcase button per named loop: its elements and links (Kumu's :loop selector, by the
     # loop's label), and the regions, which a showcase fades unless it selects them
@@ -393,15 +373,14 @@ def project(cld, refs, template, version, ver):
                           f'        selector: *:loop(["label"="{label}"]), #background;\n      }}'
                           for label in (f'{loop["id"]} {loop["name"]}' for loop in cld["loops"]))
     template = template.replace("      /* LOOP OPTIONS */", options)
-    template = template.replace(PAGES_URL + "regions.svg", ver["url"] + "regions.svg")
     style = (template.rstrip() + "\n\n/* ---------- generated by build.py: tints, box sizes, the regions' size ---------- */\n"
              + "\n".join(rules) + "\n")
     # a restore sets the project's name, so it is the name of the project the group's URL names
     return {
-        "version": 1, "name": ver["kumu"], "description": description, "proxyImages": True,
+        "version": 1, "name": "cbp-cld", "description": description, "proxyImages": True,
         "defaultMap": "map-cld", "defaultPerspective": None, "attributeRelevance": {},
         "attributes": attributes, "elements": elements, "connections": connections, "loops": loops,
-        "maps": [{"_id": "map-cld", "name": f"CLD{'' if ver['name'] == '1' else ' version ' + ver['name']}, model {version}", "description": "", "scale": 1,
+        "maps": [{"_id": "map-cld", "name": f"CLD, model {version}", "description": "", "scale": 1,
                   "center": {"x": 0, "y": 0}, "defaultPerspective": "pers-cld",
                   "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
                   "elements": nodes, "connections": edges, "loops": map_loops}],
@@ -410,13 +389,13 @@ def project(cld, refs, template, version, ver):
     }
 
 
-def apply_layout(path, file):
+def apply_layout(path):
     """Write the positions and curvatures of a layout.json ({id: {x, y}, "curvature": {"from->to": k}},
     from the page's drag mode) into cld.json, in its own formatting; a file without "curvature"
     moves the elements only."""
     layout = json.loads(path.read_text())
     curvature = layout.pop("curvature", {})
-    cld = json.loads((ROOT / file).read_text())
+    cld = json.loads(CLD.read_text())
     by_id = {e["id"]: e for e in cld["elements"]}
     by_link = {f'{c["from"]}->{c["to"]}': c for c in cld["connections"]}
     unknown = [i for i in layout if i not in by_id] + [k for k in curvature if k not in by_link]
@@ -427,52 +406,43 @@ def apply_layout(path, file):
     for k, v in curvature.items():
         if by_link[k]["curvature"] != v:  # an unchanged value keeps its spelling (0 or 0.0)
             by_link[k]["curvature"] = v
-    (ROOT / file).write_text(json.dumps(cld, indent=2, ensure_ascii=False) + "\n")
+    CLD.write_text(json.dumps(cld, indent=2, ensure_ascii=False) + "\n")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--check", action="store_true", help="fail if docs/ is out of date")
     parser.add_argument("--layout", metavar="FILE", help="write the x, y and curvatures of FILE (layout.json from the page) into cld.json, then build")
-    parser.add_argument("--v2", action="store_true", help="with --layout: write into cld-v2.json")
     args = parser.parse_args()
 
     if args.layout:
-        apply_layout(Path(args.layout), "cld-v2.json" if args.v2 else "cld.json")
+        apply_layout(Path(args.layout))
+    cld = json.loads(CLD.read_text())
     refs = json.loads((ROOT / "references.json").read_text())
     template = (ROOT / "view.scss").read_text()
-    built = versions()
-    outputs, extra, reports = {}, [], []
-    for v in built:
-        cld = v["cld"]
-        errors, warnings = check(cld, refs)
-        if errors:
-            sys.exit(f"{v['file']} has errors:\n  " + "\n  ".join(errors))
+    errors, warnings = check(cld, refs)
+    if errors:
+        sys.exit("cld.json has errors:\n  " + "\n  ".join(errors))
 
-        # the model version teammates compare: the first seven characters of the file's SHA-256
-        version = hashlib.sha256((ROOT / v["file"]).read_bytes()).hexdigest()[:7]
-        loops = cycles(cld)  # the page's texts count them, and the report
-        rel = v["docs"].relative_to(DOCS).as_posix()
-        at = lambda name: name if rel == "." else f"{rel}/{name}"
-        files = {
-            "project.json": json.dumps(project(cld, refs, template, version, v), indent=2, ensure_ascii=False) + "\n",
-            "cld.svg": draw.svg(cld),
-            "regions.svg": draw.regions_svg(cld)[0],
-            "index.html": page(cld, refs, version, v, loops),
-            "app.js": (PAGE / "app.js").read_text(),
-            "style.css": (PAGE / "style.css").read_text(),
-            **{f"loops/{loop['id']}.svg": draw.loop_figure(cld, loop) for loop in cld["loops"]},
-        }
-        # Kumu shows regions.svg stretched to the frame: with a viewBox alone a browser sizes it 250 by
-        # 150 pixels, which Kumu blurred (draw.regions_svg())
-        if not re.match(r'<svg [^>]*\bwidth="\d+" height="\d+"', files["regions.svg"]):
-            sys.exit("docs/regions.svg needs a width and a height besides its viewBox: draw.regions_svg() writes them")
-        outputs.update({at(name): text for name, text in files.items()})
-        # a figure whose loop is gone or renamed would stay published
-        loops_dir = v["docs"] / "loops"
-        extra += sorted(at(f"loops/{f.name}") for f in loops_dir.glob("*") if f"loops/{f.name}" not in files) \
-            if loops_dir.is_dir() else []
-        reports.append((v, cld, warnings, loops))
+    # the model version teammates compare: the first seven characters of cld.json's SHA-256
+    version = hashlib.sha256(CLD.read_bytes()).hexdigest()[:7]
+    loops = cycles(cld)  # the page's texts count them, and the report
+    outputs = {
+        "project.json": json.dumps(project(cld, refs, template, version), indent=2, ensure_ascii=False) + "\n",
+        "cld.svg": draw.svg(cld),
+        "regions.svg": draw.regions_svg(cld)[0],
+        "index.html": page(cld, refs, version, loops),
+        "app.js": (PAGE / "app.js").read_text(),
+        "style.css": (PAGE / "style.css").read_text(),
+        **{f"loops/{loop['id']}.svg": draw.loop_figure(cld, loop) for loop in cld["loops"]},
+    }
+    # Kumu shows regions.svg stretched to the frame: with a viewBox alone a browser sizes it 250 by
+    # 150 pixels, which Kumu blurred (draw.regions_svg())
+    if not re.match(r'<svg [^>]*\bwidth="\d+" height="\d+"', outputs["regions.svg"]):
+        sys.exit("docs/regions.svg needs a width and a height besides its viewBox: draw.regions_svg() writes them")
+    # a figure whose loop is gone or renamed would stay published
+    extra = sorted(f"loops/{f.name}" for f in (DOCS / "loops").glob("*") if f"loops/{f.name}" not in outputs) \
+        if (DOCS / "loops").is_dir() else []
 
     if args.check:
         stale = [name for name, text in outputs.items()
@@ -481,42 +451,35 @@ def main():
             sys.exit(f"docs/ is out of date ({', '.join(stale + extra)}): run build.py and commit docs/")
         return
 
-    for v in built:
-        (v["docs"] / "loops").mkdir(parents=True, exist_ok=True)
+    (DOCS / "loops").mkdir(parents=True, exist_ok=True)
     for name in extra:
         (DOCS / name).unlink()
     for name, text in outputs.items():
         (DOCS / name).write_text(text)
 
-    for v, cld, warnings, loops in reports:
-        if len(built) > 1:
-            print(f"version {v['name']} ({v['file']}):")
-        n_el, n_conn = len(cld["elements"]), len(cld["connections"])
-        print(f"{n_el} elements, {n_conn} connections, {len(cld['loops'])} named loops")
-        hypotheses = sum(bool(c.get("hypothesis")) for c in cld["connections"])
-        sourced = sum(bool(c["sources"]) for c in cld["connections"])
-        print(f"sourced: {sum(bool(e['sources']) for e in cld['elements'])}/{n_el} elements, "
-              f"{sourced}/{n_conn} connections; {hypotheses} connections are hypotheses, "
-              f"{n_conn - sourced - hypotheses} have neither")
-        print(f"feedback loops in the diagram: {len(loops)} "
-              f"({sum(k == 'R' for k, _ in loops)} R, {sum(k == 'B' for k, _ in loops)} B), "
-              f"shortest {min((len(p) for _, p in loops), default=0)} links")
-        # the layout's measure: the eye found crossings and links over boxes that no warning named
-        crossings, through = draw.tangles(cld)
-        print(f"layout: {len(crossings)} crossings between links, "
-              f"{len(through)} links through a box they do not connect")
-        warnings = warnings + [f"link through a box: {a} -> {b} passes through {e}" for (a, b), e in through]
-        if warnings:
-            print("warnings:\n  " + "\n  ".join(warnings))
-    # a reference is shared by the versions, so it is cited nowhere only when no version cites it
-    cited = {k for v in built for item in v["cld"]["elements"] + v["cld"]["connections"] for k in item.get("sources", [])}
-    uncited = [f"reference {k!r} is cited nowhere" for k in refs if k not in cited]
+    n_el, n_conn = len(cld["elements"]), len(cld["connections"])
+    print(f"{n_el} elements, {n_conn} connections, {len(cld['loops'])} named loops")
+    hypotheses = sum(bool(c.get("hypothesis")) for c in cld["connections"])
+    sourced = sum(bool(c["sources"]) for c in cld["connections"])
+    print(f"sourced: {sum(bool(e['sources']) for e in cld['elements'])}/{n_el} elements, "
+          f"{sourced}/{n_conn} connections; {hypotheses} connections are hypotheses, "
+          f"{n_conn - sourced - hypotheses} have neither")
+    print(f"feedback loops in the diagram: {len(loops)} "
+          f"({sum(k == 'R' for k, _ in loops)} R, {sum(k == 'B' for k, _ in loops)} B), "
+          f"shortest {min((len(p) for _, p in loops), default=0)} links")
+    # the layout's measure: the eye found crossings and links over boxes that no warning named
+    crossings, through = draw.tangles(cld)
+    print(f"layout: {len(crossings)} crossings between links, "
+          f"{len(through)} links through a box they do not connect")
+    warnings += [f"link through a box: {a} -> {b} passes through {e}" for (a, b), e in through]
+    cited = {k for item in cld["elements"] + cld["connections"] for k in item.get("sources", [])}
+    warnings += [f"reference {k!r} is cited nowhere" for k in refs if k not in cited]
     # a section the page would show with nothing under its heading
-    uncited += [f"model-texts.md: the section {h!r} is still empty" for h, body in
-                re.findall(r"^## (.+)\n((?:(?!## ).*\n?)*)", re.sub(r"<!--.*?-->", "", TEXTS.read_text(), flags=re.S), re.M)
-                if not body.strip()]
-    if uncited:
-        print("warnings:\n  " + "\n  ".join(uncited))
+    warnings += [f"model-texts.md: the section {h!r} is still empty" for h, body in
+                 re.findall(r"^## (.+)\n((?:(?!## ).*\n?)*)", re.sub(r"<!--.*?-->", "", TEXTS.read_text(), flags=re.S), re.M)
+                 if not body.strip()]
+    if warnings:
+        print("warnings:\n  " + "\n  ".join(warnings))
 
 
 if __name__ == "__main__":

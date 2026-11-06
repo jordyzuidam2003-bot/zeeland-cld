@@ -1,5 +1,5 @@
-<!-- The model texts, shown on the page of each version: build.py renders this file into it.
-A word in braces, such as {feedback loops}, is a number build.py counts in that version.
+<!-- The model texts, shown on the page: build.py renders this file into it.
+A word in braces, such as {feedback loops}, is a number build.py counts in the model.
 A comment like this one is not shown: "Draft" marks a text the team has not checked yet. -->
 
 - Spatial scale: the island of Schouwen-Duiveland

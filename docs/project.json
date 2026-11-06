@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 9210f86, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version c4beec2, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -320,9 +320,9 @@
         "sets domain": "Ecological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "Evapotranspiration and crop water requirement, peaking during hot, dry summers.",
-        "sources": "",
-        "sourced": "no"
+        "description": "The water the crops use in the growing season when they have enough, whatever its origin: the crop's evapotranspiration, set by the weather (radiation, air temperature, humidity and wind speed) and by the crop and its stage of growth (Allen et al., 1998, FAO-56, a guide to crop water use that holds wherever the crop grows). It follows the weather within the season, highest in sunny, warm and dry weather: an Auxiliary.",
+        "sources": "Allen, R. G., Pereira, L. S., Raes, D., & Smith, M. (1998). Crop evapotranspiration: Guidelines for computing crop water requirements (FAO Irrigation and Drainage Paper 56). FAO. https://www.fao.org/4/x0490e/x0490e00.htm",
+        "sourced": "yes"
       }
     },
     {
@@ -533,10 +533,10 @@
         "sets domain": "Technological",
         "subsystem": "Water and soil",
         "subquestion": "SQ2",
-        "description": "Fresh water farmers pump from the lens through their own wells, to irrigate or to flush their fields in summer; the water board's pumping stations belong to drainage. Whose lens a well draws on, the farm's own or one it shares with its neighbours, so that a farm pumping less leaves water to them, is a hypothesis for the group model building session.",
+        "description": "Fresh water farmers pump from the fresh groundwater through their own wells, to irrigate or to flush their fields in summer; the water board's pumping stations belong to drainage. The water board sets the rules: a horizontal well at most 6 m below the surface and 80 to 200 m long, at least 200 m from the next well and 50 m from a neighbour's field, pumping at most 800 m³ per hectare and 8,000 m³ per well a year (Waterschap Scheldestromen, 2026); in Zeeland only from fresh groundwater more than 15 m thick, outside vulnerable areas (Kaandorp et al., 2022, p. 26). Whose lens a well draws on, the farm's own or one it shares with its neighbours, so that a farm pumping less leaves water to them, is a hypothesis for the group model building session; the rules are written so that a well's effects stay within the farm's own field (Gedeputeerde Staten van Zeeland, 2021), an aim of the rules rather than a measurement. Pumping follows the season's shortfall within the year: an Auxiliary.",
         "actor": "Arable farmers on Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Waterschap Scheldestromen. (2026, May 29). Besluit wijziging artikel 2.9 van de Waterschapsverordening waterschap Scheldestromen (Waterschapsblad 2026, nr. 13978). https://zoek.officielebekendmakingen.nl/wsb-2026-13978.html\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nGedeputeerde Staten van Zeeland. (2021, June 9). Antwoorden op vragen van de statenleden Heerschop en Van der Vliet (PvdA) inzake onttrekkingen grondwater (zaaknummer 54188, aanhangsel tot de notulen van Provinciale Staten nr. 191). https://www.zeeland.nl/sites/default/files/digitaalarchief/IB21_ae4d5ac6.pdf",
+        "sourced": "yes"
       }
     },
     {
@@ -762,9 +762,9 @@
         "sets domain": "Ecological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "What crops need in the growing season beyond the water they get, fresh or brackish: the gap farmers' water decisions respond to.",
-        "sources": "",
-        "sourced": "no"
+        "description": "What crops need in the growing season beyond the water they get, fresh or brackish: the gap farmers' water decisions respond to. The island's farms depend wholly on rain and on the fresh groundwater under the dunes, the creek ridges and the thin rainwater lenses of the low polders; with no link to the main freshwater system, no fresh water can be brought in and no ditches flushed in dry periods, so the farms run short of water, as the dry years 2018, 2019 and 2020 showed (Kaandorp et al., 2022, p. 8). It follows the weather within the season: an Auxiliary.",
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes"
       }
     },
     {
@@ -1698,12 +1698,12 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Extracting groundwater directly depletes the limited freshwater lens.",
+        "description": "What farmers pump beyond what the rain puts back thins the lens, the boundary with the saline groundwater below rising: the water board's limit of 800 m³ per hectare a year rests on the balance between recharge by rain, irrigation water and extraction, set to keep the fresh groundwater in stock and the fresh-salt boundary from rising (Waterschap Scheldestromen, 2026), and pumping too fast risks salinisation (Kaandorp et al., 2022, pp. 20–21). Within those rules the effects are meant to stay within the farm's field, with in principle no depletion, and Deltares's modelling of the rules (2018) found them generally enough to prevent strong salinisation under and around the well (Gedeputeerde Staten van Zeeland, 2021, for Zeeland). How fast the lens responds to pumping, no source read shows.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Waterschap Scheldestromen. (2026, May 29). Besluit wijziging artikel 2.9 van de Waterschapsverordening waterschap Scheldestromen (Waterschapsblad 2026, nr. 13978). https://zoek.officielebekendmakingen.nl/wsb-2026-13978.html\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nGedeputeerde Staten van Zeeland. (2021, June 9). Antwoorden op vragen van de statenleden Heerschop en Van der Vliet (PvdA) inzake onttrekkingen grondwater (zaaknummer 54188, aanhangsel tot de notulen van Provinciale Staten nr. 191). https://www.zeeland.nl/sites/default/files/digitaalarchief/IB21_ae4d5ac6.pdf",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-groundwater-extraction-for-irrigation",
@@ -1778,7 +1778,7 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "New salt-tolerant crops and halophytes need less fresh water than the current crops.",
+        "description": "New salt-tolerant crops need less water than the current crops: no source read shows it. FAO-56 gives field beans the same peak water use as potatoes and wheat (a mid-season crop coefficient of 1.15, against 1.20 for sugar beet and 1.05 for onions), over a shorter season in Europe, about 90 days sown in May against 145 for potatoes planted in April (Allen et al., 1998, Tables 11 and 12, values for a sub-humid climate and a general guide); it lists neither quinoa, samphire nor sea aster, and no source read shows whether the halophytes need less water or take salt water instead.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
@@ -2018,12 +2018,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "The more water crops need, the larger the part rain, soil moisture and irrigation leave unmet.",
+        "description": "Once a crop has drawn the root zone down beyond the water it can take up easily, it uses less water than it needs, in proportion to what is left in the root zone (Allen et al., 1998, ch. 8): the shortfall is the part of the demand that rain, soil moisture and irrigation leave unmet, so the more the crops need, the larger it is. On Schouwen-Duiveland's clay a crop that has come up well gets through the summer on the soil's good supply of moisture, so the shortfall falls mostly at germination early in the season, when a small gift of about 20 mm would cover it; onions also need water while they grow (Kaandorp et al., 2022, pp. 27, 31, 38, from talks with the island's farmers). Within the year.",
         "sets link": "Within E",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Allen, R. G., Pereira, L. S., Raes, D., & Smith, M. (1998). Crop evapotranspiration: Guidelines for computing crop water requirements (FAO Irrigation and Drainage Paper 56). FAO. https://www.fao.org/4/x0490e/x0490e00.htm\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-crop-water-demand",
@@ -2058,12 +2058,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Farmers pump more from the lens as the shortfall grows.",
+        "description": "Farmers pump more fresh groundwater as the shortfall grows: the water board registered a considerable increase in extractions in recent years, which the more extreme drought certainly influenced, so the volume pumped rises in dry years (Gedeputeerde Staten van Zeeland, 2021, for Zeeland, whose farms pump under the same rules as the island's). On Schouwen-Duiveland the farms get their fresh water from rain and from the fresh groundwater; the shallow groundwater and the ditches are brackish to salt, and no water can be brought in (Kaandorp et al., 2022, p. 8). They may pump only from fresh groundwater more than 15 m thick, under the creek ridges and the dunes (p. 26): in the low polders the farmers talked to do not irrigate, while on the creek ridges a few pump from deep drains, an arable farmer about 20 mm at germination and a livestock farmer for grassland through the summer (pp. 27–28, 43). So the link runs where a farm has fresh groundwater under it. Within the year.",
         "sets link": "E to T",
         "sets scope": "Cross-domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
+        "hypothesis": "no",
+        "sources": "Gedeputeerde Staten van Zeeland. (2021, June 9). Antwoorden op vragen van de statenleden Heerschop en Van der Vliet (PvdA) inzake onttrekkingen grondwater (zaaknummer 54188, aanhangsel tot de notulen van Provinciale Staten nr. 191). https://www.zeeland.nl/sites/default/files/digitaalarchief/IB21_ae4d5ac6.pdf\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-crop-water-shortfall",
@@ -4213,7 +4213,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 9210f86",
+      "name": "CLD, model c4beec2",
       "description": "",
       "scale": 1,
       "center": {

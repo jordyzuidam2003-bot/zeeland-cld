@@ -30,43 +30,185 @@
       "id": "waterschap-scheldestromen",
       "label": "Waterschap Scheldestromen",
       "scale": "inside",
-      "type": "",
-      "level": "",
-      "sector": "",
-      "interest": "",
-      "influence": "",
-      "influence score": null,
+      "type": "Water management",
+      "level": "Local / Provincial / Regional",
+      "sector": "Water management/ports",
+      "interest": "Safe dikes and dunes first; then an optimal use of the water system, its ditch levels matched to soil and land use, fresh water kept available where it can and fresh groundwater kept in stock, within costs society accepts. It has no task as a supplier of fresh water: measures beyond its regular water management are for the users of the fresh water to pay.",
+      "influence": "Sets the island's ditch levels in its water level plans (peilbesluiten: Duiveland 2021, Schouwen 2022), matched as far as it can to soil type and land use such as farming, after a process with the people of the area; sets and enforces the rules for farms' groundwater extraction for irrigation in its waterschapsverordening, a notification within limits per hectare and per well, a permit beyond them. Score 5: it decides binding rules for the island's farms.",
+      "influence score": 5,
       "client": "no",
-      "relations": [],
-      "sources": []
+      "relations": [
+        {
+          "to": "arable-farmers",
+          "kind": "authority over",
+          "description": "Sets the ditch levels the island's farms drain to, in its water level plans for Schouwen and Duiveland, and the rules for their groundwater extraction for irrigation.",
+          "sources": [
+            "scheldestromen-2021-peilbesluit-duiveland",
+            "scheldestromen-2022-peilbesluit-schouwen",
+            "scheldestromen-2026-grondwater",
+            "omgevingswet-2026"
+          ]
+        },
+        {
+          "to": "provincie-zeeland",
+          "kind": "works with",
+          "description": "Takes part with the province in the Zeeuws Deltaplan Zoet Water, and sets up with it a network measuring the boundary between fresh and salt groundwater.",
+          "sources": [
+            "scheldestromen-2021-wbp"
+          ]
+        }
+      ],
+      "sources": [
+        "scheldestromen-2021-wbp",
+        "scheldestromen-2021-peilbesluit-duiveland",
+        "scheldestromen-2022-peilbesluit-schouwen",
+        "scheldestromen-2026-grondwater",
+        "waterschapswet-2026",
+        "omgevingswet-2026"
+      ]
     },
     {
       "id": "gemeente-schouwen-duiveland",
       "label": "Gemeente Schouwen-Duiveland",
       "scale": "inside",
-      "type": "",
-      "level": "",
-      "sector": "",
-      "interest": "",
-      "influence": "",
-      "influence score": null,
+      "type": "Government",
+      "level": "Local / Provincial / Regional",
+      "sector": "Government",
+      "interest": "A vital and liveable countryside, with farming, one of the island's main economic pillars, made climate-proof against salinisation, subsidence and extreme weather, and a reliable water system; water basins on farmland fitted into the landscape.",
+      "influence": "Its council sets the omgevingsplan, since 1 January 2024 the one plan for the use of all land and buildings on the island, farmland included; its executive decides where a farm may build a water basin outside its building plot; it pays part of farms' advice, research and machines for fresh water and climate-proof farming, and leads the Living Lab Schouwen-Duiveland. Score 5: it decides binding plans for the island's farms.",
+      "influence score": 5,
       "client": "no",
-      "relations": [],
-      "sources": []
+      "relations": [
+        {
+          "to": "arable-farmers",
+          "kind": "authority over",
+          "description": "Sets in its omgevingsplan what the island's farmland and farm buildings may be used for, and where a farm may build a water basin outside its building plot.",
+          "sources": [
+            "omgevingswet-2026",
+            "schouwen-duiveland-omgevingsplan",
+            "schouwen-duiveland-2024-waterbassins"
+          ]
+        },
+        {
+          "to": "arable-farmers",
+          "kind": "finances",
+          "description": "Pays up to half, at most 25,000 euros, of a farm's costs of advice, research and machines for fresh water and climate-proof farming, from the Living Lab.",
+          "sources": [
+            "schouwen-duiveland-subsidie-zoet-water"
+          ]
+        },
+        {
+          "to": "waterschap-scheldestromen",
+          "kind": "works with",
+          "description": "Leads the Living Lab Schouwen-Duiveland, in which the water board is a core partner.",
+          "sources": [
+            "living-lab-partners"
+          ]
+        },
+        {
+          "to": "provincie-zeeland",
+          "kind": "works with",
+          "description": "Leads the Living Lab Schouwen-Duiveland, in which the province is a core partner.",
+          "sources": [
+            "living-lab-partners"
+          ]
+        },
+        {
+          "to": "zlto",
+          "kind": "works with",
+          "description": "Leads the Living Lab Schouwen-Duiveland, in which ZLTO and its island branch, Agrarisch Schouwen-Duiveland, are core partners.",
+          "sources": [
+            "living-lab-partners"
+          ]
+        },
+        {
+          "to": "deltares",
+          "kind": "works with",
+          "description": "Carried out with Deltares the Living Lab's project Samenwerken voor Zoet Water (2020–2022), on storing fresh water in the subsoil.",
+          "sources": [
+            "living-lab-samenwerken-voor-zoet-water"
+          ]
+        },
+        {
+          "to": "kwr",
+          "kind": "works with",
+          "description": "Carried out with KWR the Living Lab's project Samenwerken voor Zoet Water (2020–2022), on storing fresh water in the subsoil.",
+          "sources": [
+            "living-lab-samenwerken-voor-zoet-water"
+          ]
+        },
+        {
+          "to": "acacia-water",
+          "kind": "works with",
+          "description": "Carried out with Acacia Water the Living Lab's project Samenwerken voor Zoet Water (2020–2022), on storing fresh water in the subsoil.",
+          "sources": [
+            "living-lab-samenwerken-voor-zoet-water"
+          ]
+        },
+        {
+          "to": "delphy",
+          "kind": "works with",
+          "description": "Leads the Living Lab Schouwen-Duiveland, in which Delphy is a practice partner.",
+          "sources": [
+            "living-lab-partners"
+          ]
+        }
+      ],
+      "sources": [
+        "omgevingswet-2026",
+        "schouwen-duiveland-omgevingsplan",
+        "schouwen-duiveland-2024-waterbassins",
+        "schouwen-duiveland-subsidie-zoet-water",
+        "living-lab-partners"
+      ]
     },
     {
       "id": "provincie-zeeland",
       "label": "Provincie Zeeland",
       "scale": "inside",
-      "type": "",
-      "level": "",
-      "sector": "",
-      "interest": "",
-      "influence": "",
-      "influence score": null,
+      "type": "Government",
+      "level": "Local / Provincial / Regional",
+      "sector": "Government",
+      "interest": "Keeping agriculture in the delta, for the fertile deltas' part in world food production, and strengthening nature; enough fresh water and good water quality, worked out with stakeholders in the Zeeuws Deltaplan Zoet Water; groundwater extraction in balance with its recharge.",
+      "influence": "Sets regional water policy and the omgevingsverordening, whose rules reach the water board, the municipalities, residents and businesses, among them instruction rules the water board's water level plans and the municipality's omgevingsplan follow; sets the water board's tasks and rules of organisation and supervises it; grants the permits for groundwater extraction above 150,000 m³ a year, for drinking water and for open soil energy systems. Score 5: it decides binding rules for the island's farms, mostly through the water board's and the municipality's decisions.",
+      "influence score": 5,
       "client": "no",
-      "relations": [],
-      "sources": []
+      "relations": [
+        {
+          "to": "waterschap-scheldestromen",
+          "kind": "authority over",
+          "description": "Sets the water board's area, tasks and rules of organisation by provincial regulation, sets rules in its omgevingsverordening for the water board's water level plans, and supervises it.",
+          "sources": [
+            "waterschapswet-2026",
+            "omgevingswet-2026",
+            "provincie-zeeland-2025-rwp",
+            "scheldestromen-2021-wbp"
+          ]
+        },
+        {
+          "to": "gemeente-schouwen-duiveland",
+          "kind": "authority over",
+          "description": "Sets instruction rules in its omgevingsverordening that the municipality's omgevingsplan follows, such as the rule on water basins on farmland.",
+          "sources": [
+            "omgevingswet-2026",
+            "schouwen-duiveland-2024-waterbassins"
+          ]
+        },
+        {
+          "to": "gemeente-schouwen-duiveland",
+          "kind": "finances",
+          "description": "Co-financed, beside an EU contribution, the Living Lab's project Samenwerken voor Zoet Water (2020–2022), which the municipality leads.",
+          "sources": [
+            "living-lab-samenwerken-voor-zoet-water",
+            "living-lab-partners"
+          ]
+        }
+      ],
+      "sources": [
+        "provincie-zeeland-2025-rwp",
+        "waterschapswet-2026",
+        "omgevingswet-2026"
+      ]
     },
     {
       "id": "banks",

@@ -47,8 +47,8 @@
 <text x="-252.6" y="-415.0" text-anchor="middle">Farmers' capacity to</text>
 <text x="-252.6" y="-381.0" text-anchor="middle">invest</text>
 </g>
-<g class="element" data-id="freshwater-storage-measures" data-domain="Technological" data-type="Auxiliary" data-adaptive="true">
-<rect x="105.0" y="-449.5" width="295.1" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<g class="element" data-id="freshwater-storage-measures" data-domain="Technological" data-type="Stock" data-adaptive="true">
+<rect x="105.0" y="-449.5" width="295.1" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
 <text x="252.6" y="-415.0" text-anchor="middle">Freshwater storage</text>
 <text x="252.6" y="-381.0" text-anchor="middle">measures</text>
 </g>

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version c4beec2, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version d9e81bc, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -504,24 +504,24 @@
         "sets domain": "Ecological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "Fresh water crops can draw on in the growing season: soil moisture over the lens, and what farmers pump or have supplied.",
-        "sources": "",
-        "sourced": "no"
+        "description": "Fresh water crops can draw on in the growing season: rain, the soil moisture and groundwater of the field above the lens, water farmers pump or have stored, and water supplied from outside, which reaches the island nowhere now (Kaandorp et al., 2022, pp. 4, 8). It follows the weather within the season: an Auxiliary.",
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes"
       }
     },
     {
       "_id": "elem-freshwater-storage-measures",
       "attributes": {
         "label": "Freshwater storage  measures",
-        "element type": "Auxiliary",
+        "element type": "Stock",
         "adaptive practice": "yes",
         "sets domain": "Technological",
         "subsystem": "Water and soil",
         "subquestion": "SQ2",
-        "description": "On-farm and sub-surface water retention: Freshmaker, ASR-Coastal, creek-ridge infiltration, and adjustable/smart drainage. Whether a farm decides a measure alone or with the water board is a question for a source. Whether a farm wants to store weighs storing against its other ways through a dry summer (pumping, brackish water, other crops), where capacity to invest is whether it can. Stored water pays back over years, which suits a farm that owns its land more than one on a short lease; and where stored water spreads under the neighbours, one farm pays and others gain. Whether either holds a farm back is a question for the group model building session.",
+        "description": "The fresh water a year that the measures in place on the island's farms keep, store or collect for the growing season. They work three ways (Kaandorp et al., 2022, pp. 16–23, 53, for the island): in the low polders, controlled drainage, anti-salinisation drainage (Drains2Buffer) and weirs in ditches keep the thin rainwater lens against salt, the water staying in the field's own soil, where it cannot be pumped (pp. 33, 53); on the creek ridges, the dunes and where a sand layer lies under the clay, the creek-ridge infiltration system, the Freshmaker and underground storage under a clay layer infiltrate winter water to pump in summer (pp. 20–22, 38); and double drainage collects fresh drain water into a basin to irrigate from (pp. 23, 29, 32). An adaptive practice: measures to keep more fresh water in the ground as drought and salinisation increase (p. 4). The study found them not yet fitted to the island and too risky for many farms to invest in alone (pp. 4, 11). A Stock: a measure, once built, lasts 15 to 30 years (pp. 17–22, 34). The farm decides a measure; infiltrating water needs the water board's permit or a notification, a weir the neighbours' consent, and raising a ditch's level the water board's cooperation (pp. 26, 44–45). Whether a farm wants to store weighs storing against its other ways through a dry summer (pumping, brackish water, other crops), where capacity to invest is whether it can. Stored water pays back over years, which suits a farm that owns its land more than one on a short lease; and where stored water spreads under the neighbours, one farm pays and others gain. Whether either holds a farm back is a question for the group model building session.",
         "actor": "Arable farmers on Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes"
       }
     },
     {
@@ -576,9 +576,9 @@
         "sets domain": "Ecological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "Physical yield per hectare of conventional crops (potatoes, onions, sugar beet) under the prevailing freshwater, soil and workability conditions; what salt takes from their harvest is Harvest lost to salt.",
-        "sources": "",
-        "sourced": "no"
+        "description": "Physical yield per hectare of conventional crops (potatoes, onions, sugar beet) under the prevailing freshwater, soil and workability conditions; what salt takes from their harvest is Harvest lost to salt. The island's arable farms grow potatoes, onions, sugar beet, cereals, grass seed and vegetables in rotation (Kaandorp et al., 2022, pp. 30, 38, from the farms studied), and some in the low polders have stopped growing sown onions for the salt (p. 31). A season's harvest: an Auxiliary.",
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes"
       }
     },
     {
@@ -1358,11 +1358,11 @@
         "label": "+",
         "polarity": "positive",
         "delay": "yes",
-        "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In the thin polder lenses of Schouwen-Duiveland the mixing zone shifts at most 0.1 m within a year, with vertical flow of at most 1.2 mm per day (de Louw et al., 2011). Under a creek ridge, raising the winter water table 0.5 m thickened a 13–15 m lens by 6–8 m in ten years, and the lens had not reached its new thickness yet (Pauw et al., 2015, a model result for a creek ridge on Walcheren, which transfers since the island's sandy creek ridges also take in rain over saline groundwater: de Louw et al., 2011). So a change in recharge takes years to a decade to show in the lens.",
+        "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In the thin polder lenses of Schouwen-Duiveland the mixing zone shifts at most 0.1 m within a year, with vertical flow of at most 1.2 mm per day (de Louw et al., 2011). Under a creek ridge, raising the winter water table 0.5 m thickened a 13–15 m lens by 6–8 m in ten years, and the lens had not reached its new thickness yet (Pauw et al., 2015, a model result for a creek ridge on Walcheren, which transfers since the island's sandy creek ridges also take in rain over saline groundwater: de Louw et al., 2011). On the island's own creek ridge, infiltration with controlled drainage thickened the lens under a 9.5-ha field by up to 3.5 m in ten years (Kaandorp et al., 2022, p. 44, a groundwater model of 2020–2050). So a change in recharge takes years to a decade to show in the lens.",
         "sets link": "Within E",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nPauw, P. S., van Baaren, E. S., Visser, M., de Louw, P. G. B., & Oude Essink, G. H. P. (2015). Increasing a freshwater lens below a creek ridge using a controlled artificial recharge and drainage system: A case study in the Netherlands. Hydrogeology Journal, 23(7), 1415–1430. https://doi.org/10.1007/s10040-015-1264-z",
+        "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nPauw, P. S., van Baaren, E. S., Visser, M., de Louw, P. G. B., & Oude Essink, G. H. P. (2015). Increasing a freshwater lens below a creek ridge using a controlled artificial recharge and drainage system: A case study in the Netherlands. Hydrogeology Journal, 23(7), 1415–1430. https://doi.org/10.1007/s10040-015-1264-z\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
         "sourced": "yes",
         "connection type": "+"
       },
@@ -1418,12 +1418,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "A thicker lens provides a larger buffer of fresh soil moisture in summer.",
+        "description": "Holds in the low polders, where the thin rainwater lens keeps the topsoil fresh, which makes farming possible there (Kaandorp et al., 2022, p. 10, for the island): water a measure keeps in the lens reaches only the crop on that field, as groundwater and soil moisture, and lies too deep for its roots at germination (p. 33), when most of the island's shortfall falls (pp. 27, 31); later in the summer the soil supplies a well-established crop (p. 27). Under the creek ridges and the dunes the lens is thick, and crops get its water when farms pump it from wells, where it is more than 15 m thick (pp. 26, 38), which is Groundwater extraction for irrigation → Freshwater availability for crops. Within the season.",
         "sets link": "Within E",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-freshwater-lens-thickness",
@@ -1658,12 +1658,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Active infiltration (creek-ridge infiltration, Freshmaker, ASR-Coastal) builds up the freshwater lens; retained drain water reaches it through Winter rain drained away.",
+        "description": "Active infiltration adds winter water to the lens, on the creek ridges, the dunes and where a sand layer lies under the clay: the creek-ridge infiltration system raises the groundwater through the drains in winter so the lens grows, and the Freshmaker and underground storage inject winter water through a deep drain or a well, all to pump in summer (Kaandorp et al., 2022, pp. 20–22, 38, for the island). On a creek ridge on the island, infiltration with controlled drainage added about 60,000 m³ of fresh water under a 9.5-ha field in ten years (p. 44, a groundwater model). What limits it on most of the island is fresh water to infiltrate, since the surface water is mostly saline and drain water the likeliest source (pp. 38, 43, 55), and the permit (pp. 26, 45). Within the year: a measure infiltrates from its first winter, and how fast the lens then grows is Freshwater lens recharge → Freshwater lens thickness. The polders' measures keep rain in the field instead, through Winter rain drained away.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-freshwater-storage-measures",
@@ -2038,12 +2038,12 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "The more fresh water crops can draw on, the smaller the shortfall.",
+        "description": "Rain, irrigation and capillary rise from the groundwater add water to the root zone and lower its depletion; once the depletion passes the readily available water, the crop uses less water than it needs (Allen et al., 1998, FAO-56 ch. 8, eqs. 84–85, a daily water balance). So the more fresh water crops can draw on, the smaller the shortfall, within the season. On the island's farms a gift of 20 to 25 mm at germination makes the difference where none can be given now (Kaandorp et al., 2022, pp. 27, 55).",
         "sets link": "Within E",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Allen, R. G., Pereira, L. S., Raes, D., & Smith, M. (1998). Crop evapotranspiration: Guidelines for computing crop water requirements (FAO Irrigation and Drainage Paper 56). FAO. https://www.fao.org/4/x0490e/x0490e00.htm\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-freshwater-availability-for-crops",
@@ -2138,12 +2138,12 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Crops that get too little water yield less; not irrigating means taking that loss.",
+        "description": "A crop that uses less water than it needs yields less, in proportion: its relative yield falls by a crop's yield response factor times its relative shortfall in evapotranspiration, over the season 1.1 for potatoes and onions, 1.0 for sugar beet and 1.05 for winter wheat, the loss small in the vegetative and ripening periods and large in flowering and yield formation (Allen et al., 1998, FAO-56 ch. 8, eq. 90 and Table 24, after FAO paper 33, general). On the island, farmers in the western low polders find the shortfall falls mostly at germination, and a crop that emerged well loses little to drought later in the summer (Kaandorp et al., 2022, p. 27); a potato grower at Nieuwerkerk lost a fifth of his 2026 harvest, the potatoes smaller too, when growth stopped in the June heat and the rain came too late, his ditch water too saline to irrigate from (van Essen, 2026). Within the season.",
         "sets link": "Within E",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Allen, R. G., Pereira, L. S., Raes, D., & Smith, M. (1998). Crop evapotranspiration: Guidelines for computing crop water requirements (FAO Irrigation and Drainage Paper 56). FAO. https://www.fao.org/4/x0490e/x0490e00.htm\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nvan Essen, C. (2026, October 15). Aardappeloogst valt flink tegen door droogte: 'We missen 20 procent'. Omroep Zeeland. https://www.omroepzeeland.nl/nieuws/18862756/aardappeloogst-valt-flink-tegen-door-droogte-we-missen-20-procent",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-crop-water-shortfall",
@@ -4213,7 +4213,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model c4beec2",
+      "name": "CLD, model d9e81bc",
       "description": "",
       "scale": 1,
       "center": {

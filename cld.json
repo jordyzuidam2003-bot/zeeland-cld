@@ -73,8 +73,11 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "Infiltration of winter rainwater that refills the shallow rainwater lens.",
-      "sources": [],
+      "description": "The rain that soaks in and refills the rainwater lens: mostly the winter's rain surplus, since in summer most of the rain evaporates (van Beekom et al., 1953a, for the Netherlands). On Schouwen-Duiveland it soaks deep into the dunes and the sandy creek ridges, while in the low polders upward saline seepage keeps it within the clay top layer and tile drains carry much of it off during each rain; recharge, seepage and drainage depth together set the lens's thickness (de Louw et al., 2011, measured on the island).",
+      "sources": [
+        "van-beekom-1953-salt",
+        "de-louw-2011"
+      ],
       "x": -979,
       "y": 327
     },
@@ -86,8 +89,11 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "Volume/thickness of the fresh rainwater lens floating on saline groundwater (1–2 m in low clay polders; 5–40 m in creek ridges).",
-      "sources": [],
+      "description": "The thickness of the fresh rainwater lens on top of the saline groundwater, from the surface to the middle of the mixing zone between them. On Schouwen-Duiveland it is about 2 m on average in the low-lying polders with saline seepage, under 2 m over more than half of the 56 km² surveyed, and 5 to 15 m under the sandy creek ridges (de Louw et al., 2011, measured on the island from a helicopter and on the ground); lenses reach about 30 m under the creek ridges and the dunes, and nearly 100 m under the dunes (Kaandorp et al., 2022, p. 10). A Stock: a year's recharge barely moves it (Freshwater lens recharge → Freshwater lens thickness).",
+      "sources": [
+        "de-louw-2011",
+        "kaandorp-2022"
+      ],
       "x": -1313,
       "y": 426
     },
@@ -129,8 +135,11 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "Salt and chloride (Cl-) concentration in the crop root zone, causing osmotic stress and ion toxicity.",
-      "sources": [],
+      "description": "The salt concentration of the soil water in the crop root zone. Salt harms a crop in two phases: at once osmotically, slowing the growth of young leaves, and more slowly as sodium (Na+) or chloride (Cl-) builds up in the leaves, ageing the older ones early (Munns & Tester, 2008, a review of plant physiology, which holds wherever the crop grows). It rises in a dry summer as the soil dries out and salt rises by capillary rise, and falls with the winter's rain surplus, which washes the topsoil of well-drained soil free of salt in one winter and that of badly drained soil in two or three (van Beekom et al., 1953a, measured after the floods in Zeeland): within the year where the soil drains well, so an Auxiliary.",
+      "sources": [
+        "munns-tester-2008",
+        "van-beekom-1953-salt"
+      ],
       "x": -788,
       "y": 731
     },
@@ -155,8 +164,11 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "The soil's aggregates and pores, which set how fast water infiltrates and how well roots grow. Workability, which structure and wetness both shape, is Spring workability of the fields.",
-      "sources": [],
+      "description": "The soil's aggregates and pores, which set how fast water soaks in: well-drained clay with its structure intact let the winter's rain surplus soak through almost completely, while clay whose structure sodium had broken down became impervious and sticky when wet (van Beekom et al., 1953a, 1953b, measured after the floods in Zeeland). A Stock: once broken down, it recovers over years (Root zone salinity → Soil structure). Workability, which structure and wetness both shape, is Spring workability of the fields.",
+      "sources": [
+        "van-beekom-1953-salt",
+        "van-beekom-1953"
+      ],
       "x": -637,
       "y": 0
     },
@@ -933,7 +945,7 @@
       "to": "freshwater-lens-thickness",
       "polarity": "+",
       "delay": true,
-      "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In the thin polder lenses of Schouwen-Duiveland the mixing zone shifts at most 0.1 m within a year, with vertical flow of at most 1.2 mm per day (de Louw et al., 2011). Under a creek ridge, raising the winter water table 0.5 m thickened a 13–15 m lens by 6–8 m in ten years, and the lens had not reached its new thickness yet (Pauw et al., 2015, a model result for Walcheren). So a change in recharge takes years to a decade to show in the lens.",
+      "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In the thin polder lenses of Schouwen-Duiveland the mixing zone shifts at most 0.1 m within a year, with vertical flow of at most 1.2 mm per day (de Louw et al., 2011). Under a creek ridge, raising the winter water table 0.5 m thickened a 13–15 m lens by 6–8 m in ten years, and the lens had not reached its new thickness yet (Pauw et al., 2015, a model result for a creek ridge on Walcheren, which transfers since the island's sandy creek ridges also take in rain over saline groundwater: de Louw et al., 2011). So a change in recharge takes years to a decade to show in the lens.",
       "sources": [
         "de-louw-2011",
         "pauw-2015"
@@ -945,8 +957,11 @@
       "to": "root-zone-salinity",
       "polarity": "-",
       "delay": false,
-      "description": "A thick freshwater lens keeps saline groundwater safely below the root zone.",
-      "sources": [],
+      "description": "Where the lens is thin, saline groundwater lies just below the roots and reaches the root zone by capillary rise. In the island's low polders with saline seepage the lens is about 2 m thick, its mixing zone in the clay top layer, and capillary rise of saline groundwater is very likely now, possibly damaging crops (de Louw et al., 2011, measured on Schouwen-Duiveland); the topsoil there is fresh thanks to the rainwater lens, which makes farming possible, and these low polders of heavy clay make up a large part of the island (Kaandorp et al., 2022, pp. 4, 10). Under the creek ridges and the dunes the lens is 5 m thick or more (Freshwater lens thickness), so the link holds in the low polders. Within the year: in a dry season, with the groundwater below the drains, the flow there is only upward (de Louw et al., 2011).",
+      "sources": [
+        "de-louw-2011",
+        "kaandorp-2022"
+      ],
       "curvature": -0.101
     },
     {
@@ -992,7 +1007,7 @@
       "to": "soil-structure-usability",
       "polarity": "-",
       "delay": true,
-      "description": "Salt in the root zone puts sodium (Na+) on the clay in place of calcium (Ca2+); once fresh water washes the salt out, clay that holds much sodium disperses: its aggregates and pores collapse. The delay is on the way back: structure collapses within the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year, which takes 5 to 10 years on heavy clay and about a year on light soil (van Beekom et al., 1953, after the 1945 and 1953 floods in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster.",
+      "description": "Salt in the root zone puts sodium (Na+) on the clay in place of calcium (Ca2+); once fresh water washes the salt out, clay that holds much sodium disperses: its aggregates and pores collapse, with troubles to be expected above 1 m.e. of exchangeable sodium per 100 g of dry soil. The delay is on the way back: structure collapses within the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year, which takes 5 to 10 years on heavy clay and about a year on light soil (van Beekom et al., 1953b, after the 1945 and 1953 floods in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster, and no source read shows how much sodium the island's seepage puts on its clay.",
       "sources": [
         "van-beekom-1953"
       ],
@@ -1021,8 +1036,12 @@
       "to": "freshwater-lens-recharge",
       "polarity": "+",
       "delay": false,
-      "description": "Healthy porous soil allows winter rainwater to infiltrate rather than run off.",
-      "sources": [],
+      "description": "Rain recharges the lens only once it has soaked into the soil. Before the floods, Zeeland's well-drained clay let the winter's rain surplus soak through almost completely; once sodium had broken down the structure of the topsoil, it became impervious and sticky when wet, part of the rain ran off over the surface and pools stood on the land, the more so the heavier the clay (van Beekom et al., 1953a, p. 157; 1953b, p. 233, measured in the flooded polders of Zeeland, by R1's own mechanism). Within the year: the structure a soil has in a winter sets how much of that winter's rain soaks in. Whether what soaks in reaches the lens or leaves through the drains is set by the drainage depth and the seepage (de Louw et al., 2011).",
+      "sources": [
+        "van-beekom-1953-salt",
+        "van-beekom-1953",
+        "de-louw-2011"
+      ],
       "curvature": -0.12
     },
     {

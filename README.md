@@ -183,7 +183,9 @@ Then `actors`, each:
   represents, works with. A cooperation runs both ways, so "works with" is recorded once, on the
   actor that leads it (the municipality for the Living Lab Schouwen-Duiveland), and the table
   shows the other side as influenced by it (Jordy; rejected: on both actors, which draws every
-  such pair twice).
+  such pair twice). A cooperation whose sources name no leader stays in each actor's
+  `influence` and is not drawn (Jordy), such as the knowledge programme on salt that LVVN, IenW,
+  Rijkswaterstaat and STOWA had drawn up.
 - `sources`: keys in `references.json`, as for the CLD.
 
 A field no source carries stays empty (`""`, `null` or `[]`), never a guess, and `python3

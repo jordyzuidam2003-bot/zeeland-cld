@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-actors",
-  "description": "Actor Map version 989a7f2, the first seven characters of the SHA-256 of actors.json. A copy for milestones: the current Actor Map is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Actor Map version 8777134, the first seven characters of the SHA-256 of actors.json. A copy for milestones: the current Actor Map is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-actors",
   "defaultPerspective": null,
@@ -226,11 +226,11 @@
         "sector": "Arable Farming",
         "interest": "Enough fresh water when their crops need it, above all as they germinate, to lower their farms' risk or to raise production. Many want to invest in measures that hold fresh water, once the technique, its costs, its risks and its gain in yield are known for the island's conditions; while supply from outside and measures on the island are both still debated, they hold back.",
         "influence": "Decide what the island's farmland grows and how each field is drained, irrigated and supplied with water: in 2025, 200 farms registered on the island grew arable crops on 9,094 ha, of the 13,752 ha of farmland of its 240 farms. A measure in the subsoil can serve several neighbouring farms, which collect and tap its water together; the study of the island's farms explored measures for clusters of one to three. Score 5: they decide the adaptation itself.",
-        "affected": "",
+        "affected": "Their farms depend wholly on rain and on the fresh groundwater under the dunes, the creek ridges and the thin rainwater lenses of the low polders: the island has no link to the main freshwater system, so in dry periods no water can be brought in and no ditches flushed, its shallow groundwater and ditches carry much salt, and the farms run short of water; drought in the growing season, subsidence and sea level rise make this worse, and the dry years 2018–2020 showed the farms vulnerable. A report ZLTO commissioned (2023) finds farming on the island impossible without more fresh water; in 2026 a potato grower at Nieuwerkerk lost a fifth of his harvest to drought, had stopped growing onions for want of fresh water, and found ditch water at times nearly as salt as the Oosterschelde. Adapting is uncertain for them: the measures that store fresh water in the subsoil are not yet fitted to the island's conditions, their costs, risks and gain in yield unknown, so many farmers find the investment too risky to make alone.",
         "influence score": 5,
         "client": "no",
         "decides in the CLD": "Brackish irrigation water use\nFarmers' demand for deep polder drainage\nFreshwater storage measures\nGroundwater extraction for irrigation\nAdoption of new salt-tolerant crops\nDependence on high-margin salt-sensitive crops\nFlushing salt from the root zone\nAdoption of salt-tolerant varieties\nSpending on keeping the current crops",
-        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nCBS. (2026). Landbouw; gewassen, dieren en grondgebruik naar gemeente (StatLine table 80781ned, final figures for 2025, 30 March 2026). https://opendata.cbs.nl/statline/#/CBS/nl/dataset/80781ned"
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nCBS. (2026). Landbouw; gewassen, dieren en grondgebruik naar gemeente (StatLine table 80781ned, final figures for 2025, 30 March 2026). https://opendata.cbs.nl/statline/#/CBS/nl/dataset/80781ned\nOmroep Zeeland. (2023, May 31). Sombere toekomst voor boeren op Schouwen-Duiveland door tekort aan zoet water. https://www.omroepzeeland.nl/nieuws/15614167/sombere-toekomst-voor-boeren-op-schouwen-duiveland-door-tekort-aan-zoet-water\nvan Essen, C. (2026, October 15). Aardappeloogst valt flink tegen door droogte: 'We missen 20 procent'. Omroep Zeeland. https://www.omroepzeeland.nl/nieuws/18862756/aardappeloogst-valt-flink-tegen-door-droogte-we-missen-20-procent"
       }
     },
     {
@@ -322,11 +322,11 @@
         "sector": "Farmers organisation",
         "interest": "The continuity of farming and horticulture and a future for farmers and growers. On the island, more fresh water: in its island branch's words (2023), catching more rain and a collective system that brings fresh water to the island, a pipeline from the Haringvliet shared among the farmers.",
         "influence": "The association of 11,500 farmers and growers in Zeeland, Noord-Brabant and Zuid-Gelderland, in 44 local branches that speak for their members to the municipality and the water board; its board appoints the two members for unbuilt land, farmland included, of the water board's general board of 30; it takes the initiative in the plan that carries out the Deltaplan Agrarisch Waterbeheer in Zeeland, with the water board and the province; on the island its branch looks for more fresh water with the municipality and the province, and a report ZLTO commissioned (2023) finds that farming there becomes impossible without more fresh water. Score 3: it shapes the water board's, the municipality's and the province's decisions directly by representing farmers, binding none.",
-        "affected": "",
+        "affected": "Its members' farms bear the losses: in a ZLTO board member's words (2022), drought salinised farmland, which harms crops, and made Zeeland's potato harvest considerably smaller; its island branch's chair (2023) expects the farms still active there in 2030 to have almost no income. It answers by asking for fresh water collectively: storage for rain, and pipelines from the rivers to farmland, which need large investments and more from the national government.",
         "influence score": 3,
         "client": "no",
         "decides in the CLD": "",
-        "sources": "ZLTO. (n.d.). Over ZLTO. Retrieved November 6, 2026, from https://www.zlto.nl/over-zlto/\nZLTO. (n.d.). Afdelingen. Retrieved November 6, 2026, from https://www.zlto.nl/over-zlto/afdelingen/\nReglement voor het Waterschap Scheldestromen (version in force from 19 December 2025). https://lokaleregelgeving.overheid.nl/CVDR63880/6\nProvincie Zeeland. (2025). Regionaal Waterprogramma 2022–2027 (Provinciaal blad 2025, 3897). https://lokaleregelgeving.overheid.nl/CVDR736656\nOmroep Zeeland. (2023, May 31). Sombere toekomst voor boeren op Schouwen-Duiveland door tekort aan zoet water. https://www.omroepzeeland.nl/nieuws/15614167/sombere-toekomst-voor-boeren-op-schouwen-duiveland-door-tekort-aan-zoet-water\nvan Essen, C. (2026, October 15). Aardappeloogst valt flink tegen door droogte: 'We missen 20 procent'. Omroep Zeeland. https://www.omroepzeeland.nl/nieuws/18862756/aardappeloogst-valt-flink-tegen-door-droogte-we-missen-20-procent"
+        "sources": "ZLTO. (n.d.). Over ZLTO. Retrieved November 6, 2026, from https://www.zlto.nl/over-zlto/\nZLTO. (n.d.). Afdelingen. Retrieved November 6, 2026, from https://www.zlto.nl/over-zlto/afdelingen/\nReglement voor het Waterschap Scheldestromen (version in force from 19 December 2025). https://lokaleregelgeving.overheid.nl/CVDR63880/6\nProvincie Zeeland. (2025). Regionaal Waterprogramma 2022–2027 (Provinciaal blad 2025, 3897). https://lokaleregelgeving.overheid.nl/CVDR736656\nOmroep Zeeland. (2023, May 31). Sombere toekomst voor boeren op Schouwen-Duiveland door tekort aan zoet water. https://www.omroepzeeland.nl/nieuws/15614167/sombere-toekomst-voor-boeren-op-schouwen-duiveland-door-tekort-aan-zoet-water\nvan Essen, C. (2026, October 15). Aardappeloogst valt flink tegen door droogte: 'We missen 20 procent'. Omroep Zeeland. https://www.omroepzeeland.nl/nieuws/18862756/aardappeloogst-valt-flink-tegen-door-droogte-we-missen-20-procent\nANP. (2022, September 8). Boerenorganisatie: slimmer omgaan met zoetwater tegen droogte. nieuws.nl. https://nieuws.nl/economie/boerenorganisatie-slimmer-omgaan-met-zoetwater-tegen-droogte"
       }
     },
     {
@@ -918,7 +918,7 @@
   "maps": [
     {
       "_id": "map-actors",
-      "name": "Actor Map, version 989a7f2",
+      "name": "Actor Map, version 8777134",
       "description": "",
       "scale": 1,
       "center": {

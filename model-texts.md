@@ -2,7 +2,7 @@
 A word in braces, such as {feedback loops}, is a number build.py counts in the model.
 A comment like this one is not shown: "Draft" marks a text the team has not checked yet. -->
 
-- Spatial scale: the island of Schouwen-Duiveland, as Zeeland's case
+- Spatial scale: the island of Schouwen-Duiveland
 - Time horizon: 2050
 - Time unit: a year
 - Size: {elements} variables, {links} links, {named loops} named loops
@@ -10,13 +10,12 @@ A comment like this one is not shown: "Draft" marks a text the team has not chec
 
 ## Purpose
 
-<!-- Draft, for the team to check. -->
-Which feedback loops drive or hold back the adaptation of arable farming on Schouwen-Duiveland as soil and water get saltier and fresh water scarcer towards 2050, and why do farms facing similar salt and water conditions respond differently from one another? This is the CLD's part of the group's research question, which asks which systemic barriers hold back the adaptation of arable farming in Zeeland to salinisation and freshwater scarcity towards 2050, and which national policy levers the Ministry of LVVN can use to overcome them. The responses in the model are: carrying on with the current crops and drainage, storing fresh water on the farm, growing salt-tolerant crops, bringing in fresh water from outside, and land leaving arable farming. Which feedback loops make one response more likely than another, and for whom? Storing fresh water and growing salt-tolerant crops are the adaptive practices in the model because each works on a different part of the chain (the water supply, the crop's sensitivity) and each is held back by something in the system; a practice that farmers raise in the group model building session and that fits neither is a candidate to add. The CLD is the picture of the system the whole group works from in the next steps, the semi-quantitative analysis (SIP) and the multi-criteria analysis of LVVN's policy levers. It is not built around one outcome or one set of levers: the group picks those when that step starts.
+Which feedback loops drive or hold back the adaptation of arable farming on Schouwen-Duiveland as soil and water get saltier and fresh water scarcer towards 2050, and why do farms facing similar salt and water conditions respond differently from one another? This is the CLD's part of the group's research question: "Which systemic barriers hold back the adaptation of arable farming in Schouwen Duiveland to increasing salinisation and freshwater scarcity towards 2050, and which national policy levers can the Ministry of LVVN use to overcome these barriers?" The responses in the model are: carrying on with the current crops and drainage, storing fresh water on the farm, growing salt-tolerant crops, bringing in fresh water from outside, and land leaving arable farming. Which feedback loops make one response more likely than another, and for whom? Storing fresh water and growing salt-tolerant crops are the adaptive practices in the model because each works on a different part of the chain (the water supply, the crop's sensitivity) and each is held back by something in the system; a practice that farmers raise in the group model building session and that fits neither is a candidate to add. The CLD is the picture of the system the whole group works from in the next steps, the semi-quantitative analysis (SIP) and the multi-criteria analysis of LVVN's policy levers. It is not built around one outcome or one set of levers: the group picks those when that step starts.
 
 ## Spatial scale
 
 <!-- Draft, for the team to check. -->
-The island of Schouwen-Duiveland, the case through which the research looks at Zeeland's arable farming: its farmland polders, the rainwater lenses under them, the soils, the farms and the land market, and how the water board manages water levels. The island gets no fresh water from elsewhere, so all its fresh water is winter rain stored in the lenses. What is decided at provincial and national level (the water board's funding, LVVN, the Deltaprogramma Zoetwater) comes from outside the boundary: it enters as a policy input, and the CLD shows how it reaches the island.
+The island of Schouwen-Duiveland: its farmland polders, the rainwater lenses under them, the soils, the farms and the land market, and how the water board manages water levels. The island gets no fresh water from elsewhere, so all its fresh water is winter rain stored in the lenses. What is decided at provincial and national level (the water board's funding, LVVN, the Deltaprogramma Zoetwater) comes from outside the boundary: it enters as a policy input, and the CLD shows how it reaches the island.
 
 ## Time horizon
 

@@ -160,11 +160,12 @@ Then `actors`, each:
 - `scale`: `inside` or `outside`, by the CLD's boundary test (`model-texts.md`, System
   boundary): inside when the island's farms move its decisions and it moves them back before
   2050.
-- `type`, `level`, `sector`, `influence score` (1, little, to 5) and `client` (`yes` for the
-  group's partners) take the values of the group's old Actor Table, listed in `build.py`, and
-  Financial institution and Finance for the banks, which it lacked (Jordy); `interest` and
-  `influence` are words, describing, never judging. No paradigm: the course's paradigms are
-  the researchers' own, for the group's positionality statement.
+- `type`, `level` and `sector` take a value from their lists in `build.py`, the Actor Map's
+  own, which start from the values the group's old Actor Table used and are bound by none of
+  them (Jordy: the old table gave the columns only); `influence score` is 1, little, to 5, and
+  `client` `yes` for the group's partners; `interest` and `influence` are words, describing,
+  never judging. No paradigm: the course's paradigms are the researchers' own, for the group's
+  positionality statement.
 - `influence score` rates what the actor's `influence` shows, from its sources, against the
   actor analysis's question (Jordy; no source scores an actor, so `influence` gives each score's
   reason):

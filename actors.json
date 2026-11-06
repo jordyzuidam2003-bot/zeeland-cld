@@ -243,15 +243,43 @@
       "id": "buyers-and-processors",
       "label": "Buyers and processors of the island's crops",
       "scale": "inside",
-      "type": "",
-      "level": "",
-      "sector": "",
-      "interest": "",
-      "influence": "",
-      "influence score": null,
+      "type": "Business in the food chain",
+      "level": "National",
+      "sector": "Food processing",
+      "interest": "Raw material of the volume and quality their plants and customers need. Cosun Beet Company, owned by its growers as a cooperative, wants the most value from the beet and good long-term returns for its members, its production in balance with its sales; a potato processor secures its supply through contracts that fix a volume and often its price.",
+      "influence": "Decide what they take from the island's farms, at what price and to what quality. Cosun Beet Company, part of Royal Cosun, the growers' cooperative that also owns the potato processor Aviko, processes all sugar beet grown in the Netherlands: it sets how much beet each member may deliver (for 2026 cut from 100% to 90% of the allocation, after high yields and with sales limited) and advises its growers field by field. The Dutch potato processing industry turns about 4 million tonnes of potatoes a year into frozen products, an estimated 80% of them exported; of the potatoes for the industry, 5 to 10% are sold free and the rest under contract or in a pool (2020), a contract fixing a volume per hectare and often its price, with bonuses for quality and grading and deductions for tare; Aviko, Farm Frites, Lamb Weston/Meijer and McCain are the processors whose contract prices are reported. Measured nationally: no source read shows which buyers take the island's potatoes, onions and vegetables, or their shares there. Score 4: they decide the sales many of the island's farms depend on, without binding them.",
+      "influence score": 4,
       "client": "no",
-      "relations": [],
-      "sources": []
+      "relations": [
+        {
+          "to": "arable-farmers",
+          "kind": "buys from",
+          "description": "Cosun Beet Company buys the island's sugar beet, 1,336 ha on 110 farms in 2025, as it processes all beet grown in the Netherlands, from growers who are its members, each up to its allocation; the potato processors buy most of their potatoes under contract or in a pool, measured nationally.",
+          "sources": [
+            "kamerstuk-2025-cosun",
+            "cbs-2026-landbouw-gemeente",
+            "cosun-2026-beet-campaign",
+            "janssens-2020"
+          ]
+        },
+        {
+          "to": "arable-farmers",
+          "kind": "advises",
+          "description": "Cosun Beet Company advises its beet growers field by field through its BAS app, from their crop records in Unitip, soil maps and satellite images, in line with the cultivation guide of the IRS, the Dutch sugar beet research centre it works with.",
+          "sources": [
+            "cosun-sustainable-beet-production"
+          ]
+        }
+      ],
+      "sources": [
+        "kamerstuk-2025-cosun",
+        "cosun-royal-cosun",
+        "cosun-history",
+        "cosun-2026-beet-campaign",
+        "cosun-sustainable-beet-production",
+        "janssens-2020",
+        "cbs-2026-landbouw-gemeente"
+      ]
     },
     {
       "id": "zlto",

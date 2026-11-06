@@ -57,7 +57,8 @@ CONSTANT_REACH = 300  # the most a Constant's box keeps from a box it drives: ab
 # agrees to it.
 ACTOR_SCALES = ["inside", "outside"]  # by the CLD's boundary test (model-texts.md, System boundary)
 ACTOR_TYPES = ["Business in the food chain", "Citizens & consumers", "Government", "Farmers' organisation",
-               "Water management", "Knowledge institution", "Nature organisation", "Financial institution"]
+               "Water management", "Knowledge institution", "Nature organisation", "Financial institution",
+               "Consultancy"]
 ACTOR_LEVELS = ["Global", "International", "National", "Local / Provincial / Regional"]
 ACTOR_SECTORS = ["Aquaculture", "Arable Farming", "Export/distribution", "External stakeholder",
                  "Farmers organisation", "Finance", "Food processing", "Fruit Cultivation", "Government",

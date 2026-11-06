@@ -161,9 +161,20 @@ Then `actors`, each:
   boundary): inside when the island's farms move its decisions and it moves them back before
   2050.
 - `type`, `level`, `sector`, `influence score` (1, little, to 5) and `client` (`yes` for the
-  group's partners) take the values of the group's old Actor Table, listed in `build.py`;
-  `interest` and `influence` are words, describing, never judging. No paradigm: the course's
-  paradigms are the researchers' own, for the group's positionality statement.
+  group's partners) take the values of the group's old Actor Table, listed in `build.py`, and
+  Financial institution and Finance for the banks, which it lacked (Jordy); `interest` and
+  `influence` are words, describing, never judging. No paradigm: the course's paradigms are
+  the researchers' own, for the group's positionality statement.
+- `influence score` rates what the actor's `influence` shows, from its sources, against the
+  actor analysis's question (Jordy; no source scores an actor, so `influence` gives each score's
+  reason):
+  - 5: decides binding rules or plans for the island's farms (the water board's water levels,
+    the municipality's land-use plans, EU banking rules);
+  - 4: decides something many of the island's farms depend on, without binding them (banks'
+    credit, buyers' contracts);
+  - 3: shapes those decisions directly: advice, representation, funding;
+  - 2: shapes them indirectly;
+  - 1: little effect on the island's adaptation by 2050.
 - `relations`: each `{"to": <actor id>, "kind": …, "description": …, "sources": […]}`, read
   as "this actor *kind* that one", so the actor holding it influences `to` by it; the kinds are
   the ones a source names, listed in `build.py`: authority over, finances, buys from, advises,

@@ -51,14 +51,15 @@ SUBQUESTIONS = ["SQ1", "SQ2", "SQ3"]
 SETS_LETTER = {"Social": "S", "Ecological": "E", "Technological": "T"}
 CONSTANT_REACH = 300  # the most a Constant's box keeps from a box it drives: about one box's width
 
-# An actor's columns take the values of the group's old Actor Table (Jordy); a relation's kind is
-# one a source names. A new value joins its list once Jordy agrees to it.
+# An actor's columns take the values of the group's old Actor Table (Jordy), and Financial
+# institution and Finance for the banks, which it lacked (Jordy); a relation's kind is one a source
+# names. A new value joins its list once Jordy agrees to it.
 ACTOR_SCALES = ["inside", "outside"]  # by the CLD's boundary test (model-texts.md, System boundary)
 ACTOR_TYPES = ["Business in the food chain", "Citizens & consumers", "Government", "Farmers' organisation",
-               "Water management", "Knowledge institution", "Nature organisation"]
+               "Water management", "Knowledge institution", "Nature organisation", "Financial institution"]
 ACTOR_LEVELS = ["Global", "International", "National", "Local / Provincial / Regional"]
 ACTOR_SECTORS = ["Aquaculture", "Arable Farming", "Export/distribution", "External stakeholder",
-                 "Farmers organisation", "Fruit Cultivation", "Government", "Greenhouse Horticulture",
+                 "Farmers organisation", "Finance", "Fruit Cultivation", "Government", "Greenhouse Horticulture",
                  "Knowledge institution", "Livestock Farming", "Nature preservation",
                  "Onion Cultivation & Processing", "Water management/ports"]
 RELATION_KINDS = ["authority over", "finances", "buys from", "advises", "represents", "works with"]

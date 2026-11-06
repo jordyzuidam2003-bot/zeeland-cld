@@ -721,7 +721,7 @@
       "level": "National",
       "sector": "Arable Farming",
       "interest": "Healthy, successful and sustainable cultivation: better performance for growers, through research, data-driven crop management, advice and training.",
-      "influence": "A knowledge company, part of Peterson Solutions, with more than 250 professionals active in over 60 countries and its address in Wageningen; its crop experts advise growers in every plant sector, arable farming among them. It is a practice partner of the Living Lab, its manager for arable farming and field vegetables in the south-west and two soil and water experts among the partners, and with Acacia Water, Deltares, the trial farm Rusthoeve and the municipality it had anti-salinisation and double drainage on the low-lying poelgronden of three farms, at Kerkwerve and Dreischor, demonstrated and monitored (drains laid in 2022, closing meeting in 2024), half paid by the EU. Score 2: the demonstrations give data on the techniques' effects; no source read shows it advising the island's farms.",
+      "influence": "A knowledge company, part of Peterson Solutions, with more than 250 professionals active in over 60 countries and its address in Wageningen; its crop experts advise growers in every plant sector, arable farming among them. It is a practice partner of the Living Lab, its manager for arable farming and field vegetables in the south-west and two soil and water experts among the partners, and with Acacia Water, Deltares, the trial farm Rusthoeve and the municipality it had anti-salinisation and double drainage on the low-lying poelgronden of three farms, at Kerkwerve and Dreischor, demonstrated and monitored (drains laid in 2022, closing meeting in 2024), half paid by the EU. In 2023 it carried out the study of the island's freshwater demand, commissioned by Droogte Oplossingen Regio Schouwen Duiveland in its own account and by ZLTO in Omroep Zeeland's: farming on the island becomes impossible without more fresh water, since the current freshwater measures and innovations supply too little, fit only part of the island, are costly and have not yet proven their value, so a supply of fresh water stays needed and more rain must be stored; ZLTO's island branch draws from it that a supply of fresh water is unavoidable. Score 2: the demonstrations give data on the techniques' effects, and its study informs the island's debate on fresh water; no source read shows it advising individual farms.",
       "affected": "It took part in drainage demonstrations on three of the island's farms (2022–2024). The EU paid half of their cost and the province and the municipality a large part, beside an own contribution from the participating knowledge parties. No source read shows how salinisation on the island, or its farms' adaptation, affects Delphy otherwise.",
       "influence score": 2,
       "client": "no",
@@ -730,7 +730,9 @@
         "delphy-home",
         "delphy-over-delphy",
         "living-lab-partners",
-        "living-lab-innovatieve-drainage"
+        "living-lab-innovatieve-drainage",
+        "wiepkema-2023-zoetwaterbehoefte",
+        "omroep-zeeland-2023-zoet-water"
       ],
       "x": 1243,
       "y": 801

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-actors",
-  "description": "Actor Map version 03b8167, the first seven characters of the SHA-256 of actors.json. A copy for milestones: the current Actor Map is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Actor Map version 329277a, the first seven characters of the SHA-256 of actors.json. A copy for milestones: the current Actor Map is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-actors",
   "defaultPerspective": null,
@@ -481,12 +481,12 @@
         "level": "National",
         "sector": "Arable Farming",
         "interest": "Healthy, successful and sustainable cultivation: better performance for growers, through research, data-driven crop management, advice and training.",
-        "influence": "A knowledge company, part of Peterson Solutions, with more than 250 professionals active in over 60 countries and its address in Wageningen; its crop experts advise growers in every plant sector, arable farming among them. It is a practice partner of the Living Lab, its manager for arable farming and field vegetables in the south-west and two soil and water experts among the partners, and with Acacia Water, Deltares, the trial farm Rusthoeve and the municipality it had anti-salinisation and double drainage on the low-lying poelgronden of three farms, at Kerkwerve and Dreischor, demonstrated and monitored (drains laid in 2022, closing meeting in 2024), half paid by the EU. Score 2: the demonstrations give data on the techniques' effects; no source read shows it advising the island's farms.",
+        "influence": "A knowledge company, part of Peterson Solutions, with more than 250 professionals active in over 60 countries and its address in Wageningen; its crop experts advise growers in every plant sector, arable farming among them. It is a practice partner of the Living Lab, its manager for arable farming and field vegetables in the south-west and two soil and water experts among the partners, and with Acacia Water, Deltares, the trial farm Rusthoeve and the municipality it had anti-salinisation and double drainage on the low-lying poelgronden of three farms, at Kerkwerve and Dreischor, demonstrated and monitored (drains laid in 2022, closing meeting in 2024), half paid by the EU. In 2023 it carried out the study of the island's freshwater demand, commissioned by Droogte Oplossingen Regio Schouwen Duiveland in its own account and by ZLTO in Omroep Zeeland's: farming on the island becomes impossible without more fresh water, since the current freshwater measures and innovations supply too little, fit only part of the island, are costly and have not yet proven their value, so a supply of fresh water stays needed and more rain must be stored; ZLTO's island branch draws from it that a supply of fresh water is unavoidable. Score 2: the demonstrations give data on the techniques' effects, and its study informs the island's debate on fresh water; no source read shows it advising individual farms.",
         "affected": "It took part in drainage demonstrations on three of the island's farms (2022–2024). The EU paid half of their cost and the province and the municipality a large part, beside an own contribution from the participating knowledge parties. No source read shows how salinisation on the island, or its farms' adaptation, affects Delphy otherwise.",
         "influence score": 2,
         "client": "no",
         "decides in the CLD": "",
-        "sources": "Delphy. (n.d.). Delphy [Home page]. Retrieved November 6, 2026, from https://delphy.nl/\nDelphy. (n.d.). Over Delphy. Retrieved November 6, 2026, from https://werkenbij.delphy.nl/over-delphy/\nLiving Lab Schouwen-Duiveland. (n.d.). Partners. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/over-living-lab/partners\nLiving Lab Schouwen-Duiveland. (n.d.). Samenwerken voor Zoetwater: Innovatieve drainage demonstreren, monitoren en evalueren. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/projecten/samenwerken-voor-zoetwater-innovatieve-drainage-demonstreren-monitoren-en-evalueren"
+        "sources": "Delphy. (n.d.). Delphy [Home page]. Retrieved November 6, 2026, from https://delphy.nl/\nDelphy. (n.d.). Over Delphy. Retrieved November 6, 2026, from https://werkenbij.delphy.nl/over-delphy/\nLiving Lab Schouwen-Duiveland. (n.d.). Partners. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/over-living-lab/partners\nLiving Lab Schouwen-Duiveland. (n.d.). Samenwerken voor Zoetwater: Innovatieve drainage demonstreren, monitoren en evalueren. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/projecten/samenwerken-voor-zoetwater-innovatieve-drainage-demonstreren-monitoren-en-evalueren\nWiepkema, F. (2023, May 31). Zonder meer zoet water wordt agrarisch ondernemen op Schouwen Duiveland onmogelijk. Akkerwijzer. https://www.akkerwijzer.nl/artikel/750772-zonder-meer-zoet-water-wordt-agrarisch-ondernemen-op-schouwen-duiveland-onmogelijk/\nOmroep Zeeland. (2023, May 31). Sombere toekomst voor boeren op Schouwen-Duiveland door tekort aan zoet water. https://www.omroepzeeland.nl/nieuws/15614167/sombere-toekomst-voor-boeren-op-schouwen-duiveland-door-tekort-aan-zoet-water"
       }
     },
     {
@@ -918,7 +918,7 @@
   "maps": [
     {
       "_id": "map-actors",
-      "name": "Actor Map, version 03b8167",
+      "name": "Actor Map, version 329277a",
       "description": "",
       "scale": 1,
       "center": {

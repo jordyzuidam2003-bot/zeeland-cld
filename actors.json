@@ -205,12 +205,21 @@
             "living-lab-samenwerken-voor-zoet-water",
             "living-lab-partners"
           ]
+        },
+        {
+          "to": "dcc",
+          "kind": "finances",
+          "description": "Provided, with the national government, the €88 million budget the Delta Climate Center started with in mid-2023, part of the national compensation package Wind in de Zeilen.",
+          "sources": [
+            "nioz-2023-dcc"
+          ]
         }
       ],
       "sources": [
         "provincie-zeeland-2025-rwp",
         "waterschapswet-2026",
-        "omgevingswet-2026"
+        "omgevingswet-2026",
+        "nioz-2023-dcc"
       ]
     },
     {
@@ -333,29 +342,73 @@
       "id": "consumers",
       "label": "Consumers",
       "scale": "outside",
-      "type": "",
-      "level": "",
-      "sector": "",
-      "interest": "",
-      "influence": "",
-      "influence score": null,
+      "type": "Citizens & consumers",
+      "level": "Global",
+      "sector": "External stakeholder",
+      "interest": "Food that is affordable, tastes good, is safe and of a known origin: across the EU, cost (54%), taste (51%), food safety and origin (both 46%) are the factors most often chosen when buying food; in the Netherlands nutrient content comes first (62%), and its impact on the environment and climate is chosen by 29%, among the highest shares in the EU (2022).",
+      "influence": "What they buy reaches the island's farms through the buyers and processors: in the Netherlands about 4 million tonnes of potatoes a year become about 2 million tonnes of frozen products, an estimated 80% exported, sold through catering and fast food worldwide; when these closed in the Covid-19 crisis (2020), the market for processing potatoes collapsed mid-season, with about 1.5 million tonnes left in growers' stores. Dutch household consumption of table potatoes fell 15% from 2014 to 2017, to 13 kg a person, and Dutch production of table potatoes with it, to about 450,000 tonnes a year. Measured nationally. Score 2: they shape the farms' decisions indirectly, through the buyers' demand.",
+      "influence score": 2,
       "client": "no",
-      "relations": [],
-      "sources": []
+      "relations": [
+        {
+          "to": "buyers-and-processors",
+          "kind": "buys from",
+          "description": "Buy the processors' frozen potato products, about 80% of them abroad, through catering and fast food; when these closed worldwide in 2020, the processors could take far fewer potatoes for the rest of the season. Measured nationally.",
+          "sources": [
+            "janssens-2020"
+          ]
+        }
+      ],
+      "sources": [
+        "eurobarometer-2022-food-safety",
+        "janssens-2020"
+      ]
     },
     {
       "id": "eu",
       "label": "EU",
       "scale": "outside",
-      "type": "",
-      "level": "",
-      "sector": "",
-      "interest": "",
-      "influence": "",
-      "influence score": null,
+      "type": "Government",
+      "level": "International",
+      "sector": "Government",
+      "interest": "Through its Common Agricultural Policy: farmers supported and agricultural productivity improved, for a stable supply of affordable food, a reasonable living for farmers, action on climate change and the sustainable management of natural resources, and living rural areas and landscapes. Through its banking rules: a resilient banking sector, financial stability and stable funding of the economy.",
+      "influence": "Its Common Agricultural Policy is managed and funded at European level from the EU budget, through two funds: the EAGF, for direct support and market measures, and the EAFRD, for rural development, €387 billion for 2021–2027. Each EU country draws up a national CAP Strategic Plan from the toolbox of measures the Commission provides, and its payments are managed nationally, in the Netherlands by RVO at the tariffs LVVN's minister sets. To receive EU income support, farmers must respect conditionality: the statutory management requirements, EU rules on public, animal and plant health, animal welfare and the environment that bind every farmer, and the good agricultural and environmental conditions that bind those receiving CAP support; a farmer who violates them has the support reduced. EU funding for rural development co-funded the Living Lab's Samenwerken voor Zoet Water (2020–2022) and paid half of its drainage demonstrations on three of the island's farms (2022–2024). Its banking package (CRR III/CRD VI) puts the final elements of the Basel III standards of 2017 into EU law, the new Capital Requirements Regulation rules applying from 1 January 2025. Score 5: it decides binding rules for the island's farms, through conditionality.",
+      "influence score": 5,
       "client": "no",
-      "relations": [],
-      "sources": []
+      "relations": [
+        {
+          "to": "lvvn",
+          "kind": "authority over",
+          "description": "Sets the Common Agricultural Policy within which the Netherlands draws up its national CAP Strategic Plan, from the toolbox of measures the Commission provides; the CAP is funded from the EU budget and its payments are managed nationally.",
+          "sources": [
+            "ec-cap-at-a-glance"
+          ]
+        },
+        {
+          "to": "arable-farmers",
+          "kind": "authority over",
+          "description": "Ties its income support to conditionality: every farmer must respect the statutory management requirements, and a farmer receiving CAP support also the good agricultural and environmental conditions, or the support is reduced.",
+          "sources": [
+            "ec-cap-conditionality"
+          ]
+        },
+        {
+          "to": "banks",
+          "kind": "authority over",
+          "description": "Sets the banks' capital requirements in the Capital Requirements Regulation, whose final Basel III elements apply from 1 January 2025.",
+          "sources": [
+            "ec-2023-banking-package"
+          ]
+        }
+      ],
+      "sources": [
+        "ec-cap-at-a-glance",
+        "ec-cap-conditionality",
+        "lvvn-2026-tarieven-glb-2025",
+        "living-lab-samenwerken-voor-zoet-water",
+        "living-lab-innovatieve-drainage",
+        "ec-2023-banking-package"
+      ]
     },
     {
       "id": "lvvn",
@@ -480,15 +533,21 @@
       "id": "dcc",
       "label": "Delta Climate Center",
       "scale": "outside",
-      "type": "",
-      "level": "",
-      "sector": "",
-      "interest": "",
-      "influence": "",
-      "influence score": null,
+      "type": "Knowledge institution",
+      "level": "Local / Provincial / Regional",
+      "sector": "Knowledge institution",
+      "interest": "Regional transitions towards sustainable, climate-resilient and prosperous deltas, in Zeeland and worldwide, with Zeeland as its living lab.",
+      "influence": "A partnership of six knowledge institutes, Scalda, HZ University of Applied Sciences, University College Roosevelt, NIOZ, Utrecht University and Wageningen University & Research, at the Kenniswerf in Vlissingen, which started in mid-2023 with a budget of €88 million from the national government and the province, part of the national compensation package Wind in de Zeilen. Its themes for the Zeeland delta are sustainable food, water safety and water availability, and circularity, with three iconic projects from 2024: Delta Protein, the protein transition, mainly marine; Flexible Deltas, flood-defence landscapes that also offer a future for agriculture, salinisation and freshwater availability among their challenges, with living labs on the Westerschelde, the Oosterschelde (from the second half of 2025) and the coastal zone; and ProceZ. Score 1: no source read shows it working on Schouwen-Duiveland or with the island's farmers.",
+      "influence score": 1,
       "client": "yes",
       "relations": [],
-      "sources": []
+      "sources": [
+        "dcc-home",
+        "dcc-about-us",
+        "dcc-research",
+        "dcc-flexible-deltas",
+        "nioz-2023-dcc"
+      ]
     },
     {
       "id": "deltares",

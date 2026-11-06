@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-actors",
-  "description": "Actor Map version 8777134, the first seven characters of the SHA-256 of actors.json. A copy for milestones: the current Actor Map is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Actor Map version 38e4af8, the first seven characters of the SHA-256 of actors.json. A copy for milestones: the current Actor Map is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-actors",
   "defaultPerspective": null,
@@ -290,11 +290,11 @@
         "sector": "Finance",
         "interest": "Loans a farm can repay from its cash flow, with its land and other assets as security; an investment whose returns are not yet proven they often count as a risk. In Rabobank's words, to be a partner of the entrepreneur and help farmers invest in sustainability.",
         "influence": "Supply 90% of the borrowed capital of Dutch farms (2018), Rabobank about 85% of the lending to the Dutch food and agri sector (2021); they decide whether a farm gets a loan and at what rate, judging more and more by its cash flow and the entrepreneur, as the Basel capital rules steer them towards profitability and liquidity, with land still an important security, and they count sustainability in classifying a borrower. Measured nationally: no source shows the banks' shares on the island. Score 4: they decide credit many of the island's farms depend on, without binding them.",
-        "affected": "",
+        "affected": "Among their farm clients, those in Zeeland face the greatest task with drought of the Netherlands' arable regions, in Rabobank's research (2023), above all because the province is relatively vulnerable to salinisation: the average arable farm's income has held up in dry years, higher prices outweighing lower yields, but farms with little access to fresh water or with salinisation problems can come under pressure, and less fresh water could force a switch to far costlier drip irrigation. Measured for the whole bank, Rabobank's provisions for expected credit losses carry an adjustment for the rising probability and intensity of droughts and floods, €87 million at the end of 2024 (€14 million a year earlier), its climate-sensitive sectors judged on five events, drought and water scarcity among them; no source read shows the banks' risk on the island.",
         "influence score": 4,
         "client": "no",
         "decides in the CLD": "Risk premium on farm loans\nBank credit to farms",
-        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nvan Eekeres, L. (2021, February 11). Rabobank: 'Equal amount of credit to farmers in the Netherlands'. Boerenbusiness. https://en.boerenbusiness.nl/agribusiness/artikel/10890988/rabobank-evenveel-krediet-boeren-nederland"
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nvan Eekeres, L. (2021, February 11). Rabobank: 'Equal amount of credit to farmers in the Netherlands'. Boerenbusiness. https://en.boerenbusiness.nl/agribusiness/artikel/10890988/rabobank-evenveel-krediet-boeren-nederland\nBekamp, B., & Bakker-Smit, G. (2023, October 23). Akkerbouwer wordt zoetwatermanager: De invloed van toenemende droogte op de Nederlandse akkerbouw. RaboResearch, Rabobank. https://www.rabobank.nl/kennis/d011398319-akkerbouwer-wordt-zoetwatermanager-de-invloed-van-toenemende-droogte-op-de-nederlandse-akkerbouw\nRabobank. (2025). Annual report 2024. https://vpr.hkma.gov.hk/statics/assets/doc/100197/ar_24/ar_24_eng.pdf"
       }
     },
     {
@@ -918,7 +918,7 @@
   "maps": [
     {
       "_id": "map-actors",
-      "name": "Actor Map, version 8777134",
+      "name": "Actor Map, version 38e4af8",
       "description": "",
       "scale": 1,
       "center": {

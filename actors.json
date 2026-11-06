@@ -261,7 +261,7 @@
       "sector": "Finance",
       "interest": "Loans a farm can repay from its cash flow, with its land and other assets as security; an investment whose returns are not yet proven they often count as a risk. In Rabobank's words, to be a partner of the entrepreneur and help farmers invest in sustainability.",
       "influence": "Supply 90% of the borrowed capital of Dutch farms (2018), Rabobank about 85% of the lending to the Dutch food and agri sector (2021); they decide whether a farm gets a loan and at what rate, judging more and more by its cash flow and the entrepreneur, as the Basel capital rules steer them towards profitability and liquidity, with land still an important security, and they count sustainability in classifying a borrower. Measured nationally: no source shows the banks' shares on the island. Score 4: they decide credit many of the island's farms depend on, without binding them.",
-      "affected": "",
+      "affected": "Among their farm clients, those in Zeeland face the greatest task with drought of the Netherlands' arable regions, in Rabobank's research (2023), above all because the province is relatively vulnerable to salinisation: the average arable farm's income has held up in dry years, higher prices outweighing lower yields, but farms with little access to fresh water or with salinisation problems can come under pressure, and less fresh water could force a switch to far costlier drip irrigation. Measured for the whole bank, Rabobank's provisions for expected credit losses carry an adjustment for the rising probability and intensity of droughts and floods, €87 million at the end of 2024 (€14 million a year earlier), its climate-sensitive sectors judged on five events, drought and water scarcity among them; no source read shows the banks' risk on the island.",
       "influence score": 4,
       "client": "no",
       "relations": [
@@ -277,7 +277,9 @@
       ],
       "sources": [
         "van-der-meulen-2020",
-        "boerenbusiness-2021-rabobank"
+        "boerenbusiness-2021-rabobank",
+        "rabobank-2023-zoetwatermanager",
+        "rabobank-2025-annual-report"
       ],
       "x": 1589,
       "y": 760

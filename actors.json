@@ -361,43 +361,120 @@
       "id": "lvvn",
       "label": "LVVN",
       "scale": "outside",
-      "type": "",
-      "level": "",
-      "sector": "",
-      "interest": "",
-      "influence": "",
-      "influence score": null,
+      "type": "Government",
+      "level": "National",
+      "sector": "Government",
+      "interest": "Sustainable, sufficient and safe food on everyone's plate, valuable nature and a vital countryside, for present and future generations. Agriculture, nature and food quality strengthen each other and sometimes chafe; it makes those dilemmas open to discussion and looks for ways forward together with others in society.",
+      "influence": "Makes national policy, laws and rules for agriculture, fisheries, food and nature, whose compliance the NVWA supervises. Its minister sets the tariffs of the EU's Common Agricultural Policy support in the Netherlands, paid out by RVO to the farms that apply: for 2025, €174 per hectare of basic income support, €50.35 more on a farm's first 40 hectares, and an eco-scheme premium of €60, €100 or €200 per hectare for activities serving climate, soil and air, water, landscape and biodiversity, for a farm that keeps to the CAP's conditionalities. It publishes the Delta Programme with IenW and VRO, has directors on the Bestuurlijk Platform Zoetwater that advises the minister of IenW on the Delta Programme for Fresh Water, and with IenW, Rijkswaterstaat and STOWA had a knowledge programme on salt in agriculture, nature and water management drawn up (2025, €400,000 that year), on the salt tolerance of crops among its questions, carried out with Deltares and KWR among others. Measured nationally: no source read shows its payments on the island. Score 3: it funds the island's farms directly, through the CAP payments.",
+      "influence score": 3,
       "client": "yes",
-      "relations": [],
-      "sources": []
+      "relations": [
+        {
+          "to": "arable-farmers",
+          "kind": "finances",
+          "description": "Pays the farms that apply the CAP's income support and eco-scheme premium per hectare, at the tariffs its minister sets (for 2025: €174 basic income support, €50.35 more on the first 40 hectares, €60 to €200 for the eco-scheme), paid out by RVO; measured nationally.",
+          "sources": [
+            "lvvn-2026-tarieven-glb-2025",
+            "rvo-eco-regeling-2026"
+          ]
+        }
+      ],
+      "sources": [
+        "rijksoverheid-lvvn-verhaal",
+        "lvvn-2026-tarieven-glb-2025",
+        "rvo-eco-regeling-2026",
+        "deltaprogramma-2027",
+        "rekenkamer-2026-zoetwater",
+        "iplo-2025-zout"
+      ]
     },
     {
       "id": "ienw",
       "label": "IenW",
       "scale": "outside",
-      "type": "",
-      "level": "",
-      "sector": "",
-      "interest": "",
-      "influence": "",
-      "influence score": null,
+      "type": "Government",
+      "level": "National",
+      "sector": "Water management",
+      "interest": "A reachable country with strong dikes, where people stay safe and get from A to B, with clean air, soil and water, its living environment cared for and raw materials used sparingly. For fresh water, the goal it set with the regional governments in 2019: in 2050 the Netherlands is resilient against freshwater shortage.",
+      "influence": "Responsible for national water policy, the safety, quality and availability of water among it, and for the working of Dutch water management as a whole; manages the main water system, the large rivers, lakes and seas, with Rijkswaterstaat carrying it out; may instruct provinces and water boards on regional water management where international obligations or interests beyond a region require it. Its freshwater policy ranks the uses of water in a shortage by the verdringingsreeks, which every water manager follows: agriculture in the last of its four categories, temporary irrigation of capital-intensive crops one higher. Its minister coordinates the Delta Programme for Fresh Water, which the six freshwater regions carry out, and manages the Delta Fund, which pays all of Rijkswaterstaat's freshwater measures in the main water system and 25% of a region's (up to 50% for innovative ones or those of several regions): just over €58 million for fresh water in 2026; early in 2027 the Rijk and the regions set the measures for 2028–2033. The Delta Programme 2027, which its minister presents to parliament with the Delta Fund's budget, proposes for the south-west delta that the areas with no supply from outside speed up their way to self-sufficiency, with no extra demand on the Hollandsch Diep and Haringvliet. Score 2: it shapes the island's adaptation through the province, the water board and Rijkswaterstaat; no source read shows the Delta Fund paying for a measure on the island.",
+      "influence score": 2,
       "client": "no",
-      "relations": [],
-      "sources": []
+      "relations": [
+        {
+          "to": "rijkswaterstaat",
+          "kind": "authority over",
+          "description": "Is responsible for managing the main water system, which Rijkswaterstaat carries out for it.",
+          "sources": [
+            "rekenkamer-2026-zoetwater"
+          ]
+        },
+        {
+          "to": "waterschap-scheldestromen",
+          "kind": "authority over",
+          "description": "Ranks the uses of water in a shortage by the verdringingsreeks of its freshwater policy, which every water manager, the water board among them, follows; may instruct water boards on regional water management where international obligations or interests beyond a region require it.",
+          "sources": [
+            "rekenkamer-2026-zoetwater",
+            "iplo-verdringingsreeks"
+          ]
+        },
+        {
+          "to": "provincie-zeeland",
+          "kind": "authority over",
+          "description": "May instruct provinces on regional water management where international obligations or interests beyond a region require it; under the verdringingsreeks a province may rank the uses within its last two categories in its omgevingsverordening, never between them.",
+          "sources": [
+            "rekenkamer-2026-zoetwater",
+            "iplo-verdringingsreeks"
+          ]
+        },
+        {
+          "to": "lvvn",
+          "kind": "works with",
+          "description": "Its minister coordinates the Delta Programme for Fresh Water, whose Bestuurlijk Platform Zoetwater seats LVVN's directors beside IenW's, Rijkswaterstaat's and the freshwater regions'; the two ministries publish the Delta Programme with VRO.",
+          "sources": [
+            "rekenkamer-2026-zoetwater",
+            "deltaprogramma-2027"
+          ]
+        }
+      ],
+      "sources": [
+        "rijksoverheid-ienw",
+        "rekenkamer-2026-zoetwater",
+        "iplo-verdringingsreeks",
+        "deltaprogramma-2027"
+      ]
     },
     {
       "id": "rijkswaterstaat",
       "label": "Rijkswaterstaat",
       "scale": "outside",
-      "type": "",
-      "level": "",
-      "sector": "",
-      "interest": "",
-      "influence": "",
-      "influence score": null,
+      "type": "Water management",
+      "level": "National",
+      "sector": "Water management",
+      "interest": "A safe, liveable and reachable Netherlands, worked on together with others; in drought, the little fresh water of the large rivers and lakes divided as well as it can among all who use it.",
+      "influence": "Manages the main water system for IenW, the large rivers, lakes and seas, the Delta waters outside the island's dikes among them, for national safety and fresh water supply. In drought it judges, as the water board does for its waters, whether water runs short, and divides the fresh water of the Rhine and Meuse through weirs, pumping stations and sluices by the verdringingsreeks. Most of Zeeland lies outside the area it can supply, where users depend on rain and groundwater; the island has no fresh water supplied from outside (the municipality, 2023). A pipeline to the island, which the province had explored (2021), would draw on waters it manages: the Volkerak-Zoommeer, at the Noorder Krammer or the Schelde-Rijnkanaal, or the Haringvliet, the study's most future-proof source. With LVVN, IenW and STOWA it had a knowledge programme on salt in agriculture, nature and water management drawn up (2025). Score 2: it shapes the island's adaptation indirectly, through what a supply route could draw on; none exists.",
+      "influence score": 2,
       "client": "no",
-      "relations": [],
-      "sources": []
+      "relations": [
+        {
+          "to": "waterschap-scheldestromen",
+          "kind": "works with",
+          "description": "Agreed with Waterschap Scheldestromen, Brabantse Delta and Hollandse Delta a renewed Waterakkoord Volkerak-Zoommeer (2026, for 15 years) on the lake's water management in normal, wet and dry conditions, so that enough fresh water stays available for nature and agriculture.",
+          "sources": [
+            "rws-2026-waterakkoord-vzm"
+          ]
+        }
+      ],
+      "sources": [
+        "rws-over-ons",
+        "rws-verdeling-water-bij-droogte",
+        "rekenkamer-2026-zoetwater",
+        "provincie-zeeland-2025-rwp",
+        "iplo-verdringingsreeks",
+        "binnenlands-bestuur-2023-zoetwater",
+        "witteveen-bos-2021",
+        "rws-2026-waterakkoord-vzm",
+        "iplo-2025-zout"
+      ]
     },
     {
       "id": "dcc",

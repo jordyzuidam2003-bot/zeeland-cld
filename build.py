@@ -62,7 +62,7 @@ ACTOR_LEVELS = ["Global", "International", "National", "Local / Provincial / Reg
 ACTOR_SECTORS = ["Aquaculture", "Arable Farming", "Export/distribution", "External stakeholder",
                  "Farmers organisation", "Finance", "Food processing", "Fruit Cultivation", "Government",
                  "Greenhouse Horticulture", "Knowledge institution", "Livestock Farming", "Nature preservation",
-                 "Onion Cultivation & Processing", "Water management/ports"]
+                 "Onion Cultivation & Processing", "Water management"]
 RELATION_KINDS = ["authority over", "finances", "buys from", "advises", "represents", "works with"]
 # the fields build.py lists while empty: a field no source carries stays empty, never a guess
 ACTOR_FIELDS = ["label", "scale", "type", "level", "sector", "interest", "influence", "influence score",

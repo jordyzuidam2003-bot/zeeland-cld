@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-actors",
-  "description": "Actor Map version 4b80e1e, the first seven characters of the SHA-256 of actors.json. A copy for milestones: the current Actor Map is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Actor Map version 989a7f2, the first seven characters of the SHA-256 of actors.json. A copy for milestones: the current Actor Map is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-actors",
   "defaultPerspective": null,
@@ -242,7 +242,7 @@
         "sector": "Water management",
         "interest": "Safe dikes and dunes first; then an optimal use of the water system, its ditch levels matched to soil and land use, fresh water kept available where it can and fresh groundwater kept in stock, within costs society accepts. It has no task as a supplier of fresh water: measures beyond its regular water management are for the users of the fresh water to pay.",
         "influence": "Sets the island's ditch levels in its water level plans (peilbesluiten: Duiveland 2021, Schouwen 2022), matched as far as it can to soil type and land use such as farming, after a process with the people of the area; sets and enforces the rules for farms' groundwater extraction for irrigation in its waterschapsverordening, a notification within limits per hectare and per well, a permit beyond them. Score 5: it decides binding rules for the island's farms.",
-        "affected": "",
+        "affected": "Salinisation and drought enter its tasks: with sea level rise, drought and subsidence, more of its area faces salinisation; drought strengthens saline seepage, which is hard to undo; and drought, warming and salinisation affect the ecology of its waters. Dry springs and summers showed farming's need for fresh water in those seasons: supplying it is no legal duty of the board, yet a clear need in society, which it answers within its core tasks, using its surface water system to counter drought and keep fresh water available, exploring its treatment plants' effluent as a source and the sustainable use of fresh groundwater. Its budget for fresh water is limited, the costs fall to whoever benefits, and its legal means to charge them are limited. Farms' groundwater extraction asks more of its knowledge, monitoring, permits and enforcement, since extracting too much too fast draws up the salt water under the lenses; where too little fresh water is available, drying damages roads, nature and dikes.",
         "influence score": 5,
         "client": "no",
         "decides in the CLD": "Water board's plans to raise ditch levels\nWater board levy on farmland",
@@ -258,11 +258,11 @@
         "sector": "Government",
         "interest": "A vital and liveable countryside, with farming, one of the island's main economic pillars, made climate-proof against salinisation, subsidence and extreme weather, and a reliable water system; water basins on farmland fitted into the landscape.",
         "influence": "Its council sets the omgevingsplan, since 1 January 2024 the one plan for the use of all land and buildings on the island, farmland included; its executive decides where a farm may build a water basin outside its building plot; it pays part of farms' advice, research and machines for fresh water and climate-proof farming, and leads the Living Lab Schouwen-Duiveland. Score 5: it decides binding plans for the island's farms.",
-        "affected": "",
+        "affected": "Salinisation, subsidence and extreme weather put pressure on farming, one of the island's main economic pillars, and with it on the vital and liveable countryside the municipality seeks to keep. It budgets €1.1 million for a new Living Lab programme (2025), so that the farm sector stays diverse and resilient; its subsidy for farms' advice, research and machines for fresh water opens on 1 October 2026. The water basins farms build against drought damage have a spatial impact on the landscape, so the municipality sets how a basin outside a building plot is fitted into it.",
         "influence score": 5,
         "client": "no",
         "decides in the CLD": "Farmland planned for other uses",
-        "sources": "Omgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01\nGemeente Schouwen-Duiveland. (n.d.). Omgevingsplan. Retrieved November 6, 2026, from https://www.schouwen-duiveland.nl/bouwen-verbouwen-en-slopen/bestemmingsplan\nGemeente Schouwen-Duiveland. (2024, September 5). Beleidsregels waterbassins bouwwerken zijnde buiten bouwvlak gemeente Schouwen-Duiveland 2024 (Gemeenteblad 2024, nr. 380475). https://zoek.officielebekendmakingen.nl/gmb-2024-380475.pdf\nGemeente Schouwen-Duiveland. (n.d.). Subsidie Zoet Water en Klimaatbestendige Landbouw. Retrieved November 6, 2026, from https://www.schouwen-duiveland.nl/ondernemen/financiele-hulp-voor-ondernemers/subsidies/subsidie-zoet-water-en-klimaatbestendige-landbouw\nLiving Lab Schouwen-Duiveland. (n.d.). Partners. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/over-living-lab/partners"
+        "sources": "Omgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01\nGemeente Schouwen-Duiveland. (n.d.). Omgevingsplan. Retrieved November 6, 2026, from https://www.schouwen-duiveland.nl/bouwen-verbouwen-en-slopen/bestemmingsplan\nGemeente Schouwen-Duiveland. (2024, September 5). Beleidsregels waterbassins bouwwerken zijnde buiten bouwvlak gemeente Schouwen-Duiveland 2024 (Gemeenteblad 2024, nr. 380475). https://zoek.officielebekendmakingen.nl/gmb-2024-380475.pdf\nGemeente Schouwen-Duiveland. (n.d.). Subsidie Zoet Water en Klimaatbestendige Landbouw. Retrieved November 6, 2026, from https://www.schouwen-duiveland.nl/ondernemen/financiele-hulp-voor-ondernemers/subsidies/subsidie-zoet-water-en-klimaatbestendige-landbouw\nLiving Lab Schouwen-Duiveland. (n.d.). Partners. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/over-living-lab/partners\nLiving Lab Schouwen-Duiveland. (2025, November 5). Gemeente Schouwen-Duiveland investeert 1,1 miljoen in nieuw programma Living Lab. https://livinglabschouwen-duiveland.nl/nieuws/gemeente-schouwen-duiveland-investeert-11-miljoen-nieuw-programma-living-lab"
       }
     },
     {
@@ -274,7 +274,7 @@
         "sector": "Government",
         "interest": "Keeping agriculture in the delta, for the fertile deltas' part in world food production, and strengthening nature; enough fresh water and good water quality, worked out with stakeholders in the Zeeuws Deltaplan Zoet Water; groundwater extraction in balance with its recharge.",
         "influence": "Sets regional water policy and the omgevingsverordening, whose rules reach the water board, the municipalities, residents and businesses, among them instruction rules the water board's water level plans and the municipality's omgevingsplan follow; sets the water board's tasks and rules of organisation and supervises it; grants the permits for groundwater extraction above 150,000 m³ a year, for drinking water and for open soil energy systems. Score 5: it decides binding rules for the island's farms, mostly through the water board's and the municipality's decisions.",
-        "affected": "",
+        "affected": "Zeeland has very little supply of fresh water of its own and salinisation as a specific concern; climate change raises the chance that demand for fresh water outruns supply, with negative consequences for agricultural yields and nature values, against its aim of keeping agriculture in the delta. Long drought causes water shortages, and sea level rise more (saline) seepage. Farms' groundwater extraction bears on its policy of balance between extraction and recharge: it researches registering extractions and extends the groundwater monitoring network to follow the small fresh groundwater stocks better.",
         "influence score": 5,
         "client": "no",
         "decides in the CLD": "Freshwater supply route to the island",
@@ -918,7 +918,7 @@
   "maps": [
     {
       "_id": "map-actors",
-      "name": "Actor Map, version 4b80e1e",
+      "name": "Actor Map, version 989a7f2",
       "description": "",
       "scale": 1,
       "center": {

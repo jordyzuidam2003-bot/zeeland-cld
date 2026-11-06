@@ -222,7 +222,7 @@ def sub_curve(p0, p1, p2, t0, t1):
 
 def link_svg(c, pieces):
     """The link as joined quadratic Beziers, pieces [(p0, ctrl, p2), ...]: one in the full drawing,
-    several along a one-loop figure's oval; the sign on the last piece, a delay on the middle one."""
+    several along a one-loop figure's oval; the sign on the last piece, a delay halfway along it."""
     colour = LINK_COLOUR[c["polarity"]]
     d = f"M {pieces[0][0][0]:.1f} {pieces[0][0][1]:.1f} " + " ".join(f"Q {q[0]:.1f} {q[1]:.1f} {r[0]:.1f} {r[1]:.1f}" for _, q, r in pieces)
     parts = [f'<g class="link" data-from="{c["from"]}" data-to="{c["to"]}" data-sign="{c["polarity"]}" '
@@ -233,7 +233,7 @@ def link_svg(c, pieces):
     parts.append(f'<text class="sign" x="{sx:.1f}" y="{sy:.1f}" text-anchor="middle" dominant-baseline="central" '
                  f'font-size="{SIGN_SIZE}" font-weight="bold" fill="{colour}" stroke="white" stroke-width="{SIGN_HALO}" paint-order="stroke">{SIGN_TEXT[c["polarity"]]}</text>')
     if c["delay"]:
-        d = delay_path(*pieces[len(pieces) // 2])
+        d = delay_path(*halfway(pieces))
         parts.append(f'<path class="delay-cut" d="{d}" stroke="white" stroke-width="{DELAY_CUT}" fill="none"/>')
         parts.append(f'<path class="delay" d="{d}" stroke="{STROKE_COLOUR}" stroke-width="{DELAY_WIDTH}" fill="none"/>')
     parts.append("</g>")
@@ -256,9 +256,28 @@ def sign_position(p0, ctrl, p2, back=SIGN_BACK):
     return bezier(p0, ctrl, p2, hi)
 
 
-def delay_path(p0, ctrl, p2, half=DELAY_HALF, gap=DELAY_GAP):
-    x, y = bezier(p0, ctrl, p2, 0.5)
-    tx, ty = tangent(p0, ctrl, p2, 0.5)
+def halfway(pieces, steps=200):
+    """(p0, ctrl, p2, t): the point halfway along a link by length. A link of several pieces (a
+    loop figure's) is measured along them, since the middle piece's own middle can sit near an
+    end, on the sign (Jordy); one piece keeps its t = 0.5, as app.js's delayPath() draws it."""
+    if len(pieces) == 1:
+        return (*pieces[0], 0.5)
+    walk = []  # (length so far, piece, t)
+    total = 0.0
+    for p in pieces:
+        prev = p[0]
+        for k in range(1, steps + 1):
+            q = bezier(*p, k / steps)
+            total += hypot(q[0] - prev[0], q[1] - prev[1])
+            walk.append((total, p, k / steps))
+            prev = q
+    _, p, t = next(w for w in walk if w[0] >= total / 2)
+    return (*p, t)
+
+
+def delay_path(p0, ctrl, p2, t=0.5, half=DELAY_HALF, gap=DELAY_GAP):
+    x, y = bezier(p0, ctrl, p2, t)
+    tx, ty = tangent(p0, ctrl, p2, t)
     n = hypot(tx, ty) or 1
     ux, uy = tx / n, ty / n
     nx, ny = -uy, ux

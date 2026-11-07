@@ -354,7 +354,7 @@
         ]
       ]
     },
-    "year-suffix": "b",
+    "year-suffix": "c",
     "title": "Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst",
     "URL": "https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf"
   },
@@ -375,7 +375,7 @@
         ]
       ]
     },
-    "year-suffix": "c",
+    "year-suffix": "d",
     "title": "Peilbesluit Duiveland ter inzage",
     "collection-title": "Waterschapsblad",
     "collection-number": "2021, nr. 8486",
@@ -444,6 +444,25 @@
     "year-suffix": "a",
     "title": "Hydrologisch onderzoeksrapport Duiveland",
     "URL": "https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf"
+  },
+  {
+    "id": "scheldestromen-2021-hor-schouwen",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "year-suffix": "b",
+    "title": "Hydrologisch onderzoeksrapport Schouwen",
+    "URL": "https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch_onderzoeksrapport_Schouwen.pdf"
   },
   {
     "id": "scheldestromen-2025-nota-peilbesluiten",

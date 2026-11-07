@@ -117,6 +117,29 @@
       "cluster": false
     },
     {
+      "_id": "attr-actors",
+      "name": "Actors",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "",
+        "Arable farmers on Schouwen-Duiveland",
+        "Arable farmers on Schouwen-Duiveland, Banks lending to the island's farmers",
+        "Arable farmers on Schouwen-Duiveland, Waterschap Scheldestromen",
+        "Banks lending to the island's farmers",
+        "Buyers and processors of the island's crops",
+        "Gemeente Schouwen-Duiveland",
+        "Provincie Zeeland",
+        "Waterschap Scheldestromen"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
       "_id": "attr-sources",
       "name": "Sources",
       "format": "text",
@@ -292,6 +315,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "Meteorological drought (KNMI'23): higher evaporation, summer precipitation deficit, and lower river discharge.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -306,6 +330,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "Rising sea level (KNMI'23 scenarios); increases hydrostatic pressure of marine water on polders and estuaries.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -320,6 +345,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "Increased winter precipitation, providing potential recharge volume if retained.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -334,6 +360,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "The water the crops use in the growing season when they have enough, whatever its origin: the crop's evapotranspiration, set by the weather (radiation, air temperature, humidity and wind speed) and by the crop and its stage of growth (Allen et al., 1998, FAO-56, a guide to crop water use that holds wherever the crop grows). It follows the weather within the season, highest in sunny, warm and dry weather: an Auxiliary.",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "Allen, R. G., Pereira, L. S., Raes, D., & Smith, M. (1998). Crop evapotranspiration: Guidelines for computing crop water requirements (FAO Irrigation and Drainage Paper 56). FAO. https://www.fao.org/4/x0490e/x0490e00.htm",
         "sourced": "yes"
       }
@@ -348,6 +375,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "Marine water penetrating further inland into estuaries and surface canals when sea levels rise and river discharge drops.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -362,6 +390,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "The rain that soaks in and refills the rainwater lens: mostly the winter's rain surplus, since in summer most of the rain evaporates (van Beekom et al., 1953a, for the Netherlands). On Schouwen-Duiveland it soaks deep into the dunes and the sandy creek ridges, while in the low polders upward saline seepage keeps it within the clay top layer and tile drains carry much of it off during each rain; recharge, seepage and drainage depth together set the lens's thickness (de Louw et al., 2011, measured on the island).",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953a). Reclaiming land flooded with salt water: I. Salt. Netherlands Journal of Agricultural Science, 1(3), 153–163. https://library.wur.nl/ojs/index.php/njas/article/view/17866\nde Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011",
         "sourced": "yes"
       }
@@ -376,6 +405,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "The thickness of the fresh rainwater lens on top of the saline groundwater, from the surface to the middle of the mixing zone between them. On Schouwen-Duiveland it is about 2 m on average in the low-lying polders with saline seepage, under 2 m over more than half of the 56 km² surveyed, and 5 to 15 m under the sandy creek ridges (de Louw et al., 2011, measured on the island from a helicopter and on the ground); lenses reach about 30 m under the creek ridges and the dunes, and nearly 100 m under the dunes (Kaandorp et al., 2022, p. 10). A Stock: a year's recharge barely moves it (Freshwater lens recharge → Freshwater lens thickness).",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
         "sourced": "yes"
       }
@@ -390,6 +420,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "Peat oxidation and clay consolidation caused by low drainage levels, lowering the land surface relative to sea level.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -404,6 +435,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence. Tidal silt, let in through a wisselpolder, would barely raise it on this island: the Grevelingen has no tide, and the Oosterschelde has too little silt to raise polders on a large scale (De Mesel et al., 2013). Since the storm surge barrier its channels carry 52–70% less suspended sediment (Ma et al., 2014), under 10 mg/l near Zierikzee, and its salt marshes rise 3–10 mm a year (van Maldegem & de Jong, 2004), against 16–32 mm on young marshes along the Westerschelde (De Mesel et al., 2013).",
+        "actors": "",
         "sources": "De Mesel, I., Ysebaert, T., & Kamermans, P. (2013). Klimaatbestendige dijken: Het concept wisselpolders (Rapport C072/13). IMARES Wageningen UR. https://www.vliz.be/imisdocs/publications/289823.pdf\nMa, Z., Ysebaert, T., van der Wal, D., de Jong, D. J., Li, X., & Herman, P. M. J. (2014). Long-term salt marsh vertical accretion in a tidal bay with reduced sediment supply. Estuarine, Coastal and Shelf Science, 146, 14–23. https://doi.org/10.1016/j.ecss.2014.05.001\nvan Maldegem, D., & de Jong, D. (2004). Opwassen of verdrinken: Sedimentaanvoer naar schorren in de Oosterschelde, een zandhongerig gedempt getijdesysteem (Werkdocument RIKZ/AB/2003/826x). Rijkswaterstaat, Rijksinstituut voor Kust en Zee. https://edepot.wur.nl/174582",
         "sourced": "yes"
       }
@@ -418,6 +450,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "The salt concentration of the soil water in the crop root zone. Salt harms a crop in two phases: at once osmotically, slowing the growth of young leaves, and more slowly as sodium (Na+) or chloride (Cl-) builds up in the leaves, ageing the older ones early (Munns & Tester, 2008, a review of plant physiology, which holds wherever the crop grows). It rises in a dry summer as the soil dries out and salt rises by capillary rise, and falls with the winter's rain surplus, which washes the topsoil of well-drained soil free of salt in one winter and that of badly drained soil in two or three (van Beekom et al., 1953a, measured after the floods in Zeeland): within the year where the soil drains well, so an Auxiliary.",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "Munns, R., & Tester, M. (2008). Mechanisms of salinity tolerance. Annual Review of Plant Biology, 59, 651–681. https://doi.org/10.1146/annurev.arplant.59.032607.092911\nvan Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953a). Reclaiming land flooded with salt water: I. Salt. Netherlands Journal of Agricultural Science, 1(3), 153–163. https://library.wur.nl/ojs/index.php/njas/article/view/17866",
         "sourced": "yes"
       }
@@ -432,6 +465,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "The upward flow of salt groundwater from the sand below into the clay and peat top layer of the island's polders, in mm a day, which leaves through drains, ditches and evaporation (de Louw et al., 2011, p. 3662). The higher water pressure at depth drives it in the low polders, where it keeps the rainwater lenses thin, mostly under 2 m, and the shallow groundwater brackish to salt (Kaandorp et al., 2022, p. 10); below the lens its water holds 10 to 16 g of chloride a litre (de Louw et al., 2011, p. 3675), against about 16 to 17 g in North Sea water (Kaandorp et al., 2022, p. 10). Most of Duiveland gets salt seepage, most in its low parts near the Oosterschelde (Waterschap Scheldestromen, 2021a, p. 27); in the western low polders it is strongest near the Grevelingen and the Oosterschelde (Kaandorp et al., 2022, p. 27). The flow follows the water pressures, which change constantly with recharge and drainage (de Louw et al., 2011, p. 3675): within the year, so an Auxiliary.",
+        "actors": "",
         "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf",
         "sourced": "yes"
       }
@@ -446,6 +480,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "The soil's aggregates and pores, which set how fast water soaks in: well-drained clay with its structure intact let the winter's rain surplus soak through almost completely, while clay whose structure sodium had broken down became impervious and sticky when wet (van Beekom et al., 1953a, 1953b, measured after the floods in Zeeland). A Stock: once broken down, it recovers over years (Root zone salinity → Soil structure). Workability, which structure and wetness both shape, is Spring workability of the fields.",
+        "actors": "",
         "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953a). Reclaiming land flooded with salt water: I. Salt. Netherlands Journal of Agricultural Science, 1(3), 153–163. https://library.wur.nl/ojs/index.php/njas/article/view/17866\nvan Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953b). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 224–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860",
         "sourced": "yes"
       }
@@ -460,6 +495,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "Upward cone of the salt-freshwater interface beneath pumping irrigation wells as the freshwater lens thins.",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -475,6 +511,7 @@
         "subquestion": "SQ2",
         "description": "Irrigation with salinised surface or well water, when fresh water falls short.",
         "actor": "Arable farmers on Schouwen-Duiveland",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -490,6 +527,7 @@
         "subquestion": "SQ2",
         "description": "Farmers' wish for low ditch levels, so that their fields drain: dry enough in spring for heavy machinery to work them, which holding water back for dry times makes hard (Waterschap Scheldestromen, 2021c, p. 44), and free of water damage after heavy rain, which farmers in the island's western low polders often find a bigger problem than drought (Kaandorp et al., 2022, p. 27). They put it to the water board as it prepares its water level plans, which it does with interest groups such as farming, and in views on a draft (Waterschap Scheldestromen, 2025, p. 17): on Duiveland's draft of 2021, four views feared that a raise the plan proposed to study would bring more flooding in extreme rain (Waterschap Scheldestromen, 2021a, p. 53). Within the year, so an Auxiliary.",
         "actor": "Arable farmers on Schouwen-Duiveland",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "Waterschap Scheldestromen. (2021c). Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst. https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nWaterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf",
         "sourced": "yes"
       }
@@ -504,6 +542,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "Fresh water brought to the island's farms from outside it in the growing season (present in Tholen and Zeeuws-Vlaanderen; absent on Walcheren, the Bevelanden and Schouwen-Duiveland). It needs a supply route, and in drought it is what the national distribution leaves for the route to carry.",
+        "actors": "Provincie Zeeland",
         "sources": "",
         "sourced": "no"
       }
@@ -518,6 +557,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "Fresh water crops can draw on in the growing season: rain, the soil moisture and groundwater of the field above the lens, water farmers pump or have stored, and water supplied from outside, which reaches the island nowhere now (Kaandorp et al., 2022, pp. 4, 8). It follows the weather within the season: an Auxiliary.",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
         "sourced": "yes"
       }
@@ -534,6 +574,7 @@
         "description": "The fresh water a year that the measures in place on the island's farms keep, store or collect for the growing season. They work three ways (Kaandorp et al., 2022, pp. 16–23, 53, for the island): in the low polders, controlled drainage, anti-salinisation drainage (Drains2Buffer) and weirs in ditches keep the thin rainwater lens against salt, the water staying in the field's own soil, where it cannot be pumped (pp. 33, 53); on the creek ridges, the dunes and where a sand layer lies under the clay, the creek-ridge infiltration system, the Freshmaker and underground storage under a clay layer infiltrate winter water to pump in summer (pp. 20–22, 38); and double drainage collects fresh drain water into a basin to irrigate from (pp. 23, 29, 32). An adaptive practice: measures to keep more fresh water in the ground as drought and salinisation increase (p. 4). The study found them not yet fitted to the island and too risky for many farms to invest in alone (pp. 4, 11). A Stock: a measure, once built, lasts 15 to 30 years (pp. 17–22, 34). The farm decides a measure; infiltrating water needs the water board's permit or a notification, a weir the neighbours' consent, and raising a ditch's level the water board's cooperation (pp. 26, 44–45). Whether a farm wants to store weighs storing against its other ways through a dry summer (pumping, brackish water, other crops), where capacity to invest is whether it can. Stored water pays back over years, which suits a farm that owns its land more than one on a short lease; and where stored water spreads under the neighbours, one farm pays and others gain. Whether either holds a farm back is a question for the group model building session.",
         "simplification": "Three ways in one element: keeping the low polders' rainwater lens, infiltrating winter water to pump on the creek ridges and the dunes, and collecting drain water in a basin, counted together as the fresh water they keep, store or collect. Each way adds fresh water and none takes it away, so the sum keeps the sign of every link into and out of it, and where a link works through one way only, its description says which. What one element leaves out: the ways work in different places, through different routes and under different permits and consent, which the description names. Arable land farmed by its owner, a Constant that made storing more worthwhile, is in the description instead: no loop runs through a Constant, so none changes, and the share cannot be set as an input of its own.",
         "actor": "Arable farmers on Schouwen-Duiveland",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
         "sourced": "yes"
       }
@@ -549,6 +590,7 @@
         "subquestion": "SQ2",
         "description": "Fresh water farmers pump from the fresh groundwater through their own wells, to irrigate or to flush their fields in summer; the water board's pumping stations belong to drainage. The water board sets the rules: a horizontal well at most 6 m below the surface and 80 to 200 m long, at least 200 m from the next well and 50 m from a neighbour's field, pumping at most 800 m³ per hectare and 8,000 m³ per well a year (Waterschap Scheldestromen, 2026b); in Zeeland only from fresh groundwater more than 15 m thick, outside vulnerable areas (Kaandorp et al., 2022, p. 26). Whose lens a well draws on, the farm's own or one it shares with its neighbours, so that a farm pumping less leaves water to them, is a hypothesis for the group model building session; the rules are written so that a well's effects stay within the farm's own field (Gedeputeerde Staten van Zeeland, 2021), an aim of the rules rather than a measurement. Pumping follows the season's shortfall within the year: an Auxiliary.",
         "actor": "Arable farmers on Schouwen-Duiveland",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "Waterschap Scheldestromen. (2026b, May 29). Besluit wijziging artikel 2.9 van de Waterschapsverordening waterschap Scheldestromen (Waterschapsblad 2026, nr. 13978). https://zoek.officielebekendmakingen.nl/wsb-2026-13978.html\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nGedeputeerde Staten van Zeeland. (2021, June 9). Antwoorden op vragen van de statenleden Heerschop en Van der Vliet (PvdA) inzake onttrekkingen grondwater (zaaknummer 54188, aanhangsel tot de notulen van Provinciale Staten nr. 191). https://www.zeeland.nl/sites/default/files/digitaalarchief/IB21_ae4d5ac6.pdf",
         "sourced": "yes"
       }
@@ -563,6 +605,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "Objections, appeals at the Council of State (Raad van State) and political pressure against plans for the island's water and land, the water board's water level plans among them, which slow, change or stop a plan.",
+        "actors": "Gemeente Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -577,6 +620,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "Winter precipitation rapidly discharged to sea via field drains and pumping stations instead of recharging the lens.",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -592,6 +636,7 @@
         "subquestion": "SQ1",
         "description": "Physical yield per hectare of conventional crops (potatoes, onions, sugar beet) under the prevailing freshwater, soil and workability conditions; what salt takes from their harvest is Harvest lost to salt. The island's arable farms grow potatoes, onions, sugar beet, cereals, grass seed and vegetables in rotation (Kaandorp et al., 2022, pp. 30, 38, from the farms studied), and some in the low polders have stopped growing sown onions for the salt (p. 31). A season's harvest: an Auxiliary.",
         "simplification": "The current crops (potatoes, onions, sugar beet) are one yield per hectare. Each yields less with a larger water shortfall, worse soil structure or fields that cannot be worked in time, so every link into the yield keeps its sign for each crop and no loop through it changes. What one yield leaves out: the crops lose in different proportions (the yield response factors on Crop water shortfall → Crop yield), and farms can shift their rotation among them, as some in the low polders stopped growing sown onions for the salt.",
+        "actors": "",
         "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
         "sourced": "yes"
       }
@@ -606,6 +651,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "Consumer demand and offtake contracts for novel salt-tolerant or alternative crops (e.g. protein crops).",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -621,6 +667,7 @@
         "subquestion": "SQ2",
         "description": "Plants and supply chains on or near the island that store, process or sell new salt-tolerant crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer. Buyers and processors build or keep it where they find it worthwhile against processing the crops elsewhere.",
         "actor": "Buyers and processors of the island's crops",
+        "actors": "Buyers and processors of the island's crops",
         "sources": "",
         "sourced": "no"
       }
@@ -636,6 +683,7 @@
         "subquestion": "SQ2",
         "description": "Hectares under crops new to the island's rotations that tolerate salt (quinoa, samphire, sea aster), which need other machines, knowledge and buyers than the current crops. Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them.",
         "actor": "Arable farmers on Schouwen-Duiveland",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -650,6 +698,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "The price farmland sells for (€/ha), set by what buyers expect it to earn; banks value it as collateral in their own risk assessment.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -665,6 +714,7 @@
         "subquestion": "SQ2",
         "description": "The interest banks charge arable farms above their own funding cost, for the risk they see in the loan.",
         "actor": "Banks lending to the island's farmers",
+        "actors": "Banks lending to the island's farmers",
         "sources": "",
         "sourced": "no"
       }
@@ -679,6 +729,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "European banking regulations requiring stricter risk weighting on loans when climate/soil risks reduce collateral value.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -694,6 +745,7 @@
         "subquestion": "SQ2",
         "description": "The share of high-value, salt-sensitive cash crops (seed potatoes, onions) in the rotation, which a farm with high debt payments needs to keep up its income, and which the machines and know-how it would lose by switching tie it to.",
         "actor": "Arable farmers on Schouwen-Duiveland",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -708,6 +760,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "Farms' revenue from crop sales, set by yield and prices, minus their costs (the water board's levy, interest, their own pumping), per hectare in a year.",
+        "actors": "Arable farmers on Schouwen-Duiveland, Waterschap Scheldestromen",
         "sources": "",
         "sourced": "no"
       }
@@ -722,6 +775,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "What a farm has left to invest after its debt payments and rent, beside the credit a bank will give it.",
+        "actors": "Arable farmers on Schouwen-Duiveland, Banks lending to the island's farmers",
         "sources": "",
         "sourced": "no"
       }
@@ -736,6 +790,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "Landowning farmers' concern that their land loses value, from a fall that has happened or from a plan that would lower it. A tenant's concern, losing the lease, is not part of it.",
+        "actors": "Waterschap Scheldestromen",
         "sources": "",
         "sourced": "no"
       }
@@ -750,6 +805,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "The farm's debt relative to the value of its assets, the inverse of its solvency (equity as a share of total capital). Land is 70% of an arable farm's balance sheet, so the ratio moves with the land price: arable farms' solvency was 81% in 2018 because their land had risen in value, while their long-term debt had tripled since 2001 to 770,000 euro per farm (van der Meulen et al., 2020).",
+        "actors": "Banks lending to the island's farmers",
         "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092",
         "sourced": "yes"
       }
@@ -764,6 +820,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ3",
         "description": "Hectares of the island's land farmed as arable land, with conventional or salt-tolerant crops, whoever owns it. It falls when land that changes hands goes to a holder who does not farm it as arable land; what the land becomes then (nature, grassland, water storage) waits for the group's system boundary.",
+        "actors": "Gemeente Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -778,6 +835,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "What crops need in the growing season beyond the water they get, fresh or brackish: the gap farmers' water decisions respond to. The island's farms depend wholly on rain and on the fresh groundwater under the dunes, the creek ridges and the thin rainwater lenses of the low polders; with no link to the main freshwater system, no fresh water can be brought in and no ditches flushed in dry periods, so the farms run short of water, as the dry years 2018, 2019 and 2020 showed (Kaandorp et al., 2022, p. 8). It follows the weather within the season: an Auxiliary.",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
         "sourced": "yes"
       }
@@ -793,6 +851,7 @@
         "subquestion": "SQ2",
         "description": "Fresh water farmers put on a field to wash salt below the roots, pumped from the lens.",
         "actor": "Arable farmers on Schouwen-Duiveland",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -808,6 +867,7 @@
         "subquestion": "SQ1",
         "description": "Pipes or channels that could bring fresh water to the island, as their capacity in a summer; none exists. Who decides on one and who pays is on the facts list under External freshwater supply; news reports say the province has costed a pipeline (unread at the source).",
         "actor": "Provincie Zeeland",
+        "actors": "Provincie Zeeland",
         "sources": "",
         "sourced": "no"
       }
@@ -822,6 +882,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "Whether heavy machinery can work the fields early in spring without damaging the soil, set by soil structure and by how wet the soil is: soil work done when the soil is too wet smears and compacts it and forms clods, and more rain in spring leaves fewer moments to do it (Verstand et al., 2021, p. 25, from the Dutch cultivation guides, on potatoes). It follows the soil's wetness within the season, so an Auxiliary.",
+        "actors": "",
         "sources": "Verstand, D., Bijker, W., & Simonse, D. (2021). Klimaatrisico’s en kansen in de open teelten (Report WPR-902). Wageningen Research. https://doi.org/10.18174/555534",
         "sourced": "yes"
       }
@@ -836,6 +897,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ2",
         "description": "How far below the surface the water board holds the ditch levels in the island's polders (the drooglegging), as its water level plans set them: Duiveland's plan sets a target level for each of its level areas, from 0.8 to 2.7 m below NAP, in most the summer level higher than the winter one, against nature's order, to prevent water damage in winter and drying in summer (Waterschap Scheldestromen, 2021a, pp. 37, 63–64). It moves from the winter level to the summer one in steps in March and April, as the weather and the farmers' soil work allow (p. 66). On a creek ridge studied for water storage the depth is over 1.5 m in winter in large parts (Kaandorp et al., 2022, p. 42). The depth holds until the board carries out a new plan: Duiveland's plan of 2021 replaced one from 1982 (Waterschap Scheldestromen, 2021a, p. 24), and the board checks each plan every three years and renews it at 17 years or once it no longer fits (Waterschap Scheldestromen, 2025, pp. 16–17), so a Stock. Where the land subsides under a level held, the depth shrinks until a new plan lowers the level, as the board has done where there is peat (2025, p. 13).",
+        "actors": "Waterschap Scheldestromen",
         "sources": "Waterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nWaterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf",
         "sourced": "yes"
       }
@@ -852,6 +914,7 @@
         "description": "The water level plans in which Waterschap Scheldestromen raises a polder's ditch levels, from the draft until their levels take effect. The board matches its levels to the land's use and soil, its principle that the level follows the land use: arable land 80 to 120 cm below the surface by soil, permanent grassland 20 cm less (Waterschap Scheldestromen, 2021a, p. 29; 2025, pp. 5, 7), weighing flooding, drought, fresh water and groundwater (2021c, p. 19), subsidence (2025, pp. 13–14) and a change's costs against its benefits (2025, p. 12). On Duiveland the plan of 2021 proposed studying a raise in 14 level areas, where levels had been kept low to store extreme rain, to enlarge the fresh water in the soil and give crops more moisture (2021a, p. 69). The general board adopts each plan (2025, p. 18); of its 30 members, 26 represent the residents and two the owners of unbuilt land, farmland included, appointed by ZLTO's board (Reglement voor het Waterschap Scheldestromen, 2025, arts. 6–7). A plan waits years for the works its levels need (Water board's plans to raise ditch levels → Polder drainage depth), so a Stock.",
         "simplification": "The two seats on the general board for the owners of unbuilt land, farmland included, were a Constant driving these plans, and are in the description instead: no loop runs through a Constant, so no loop changes. What it leaves out: the seats cannot be set as an input of their own.",
         "actor": "Waterschap Scheldestromen",
+        "actors": "Arable farmers on Schouwen-Duiveland, Waterschap Scheldestromen",
         "sources": "Waterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nWaterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nWaterschap Scheldestromen. (2021c). Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst. https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf\nReglement voor het Waterschap Scheldestromen (version in force from 19 December 2025). https://lokaleregelgeving.overheid.nl/CVDR63880/6",
         "sourced": "yes"
       }
@@ -866,6 +929,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "What Waterschap Scheldestromen spends on its pumping stations to hold the polders' ditch levels: more water to pump the deeper it drains, the more seepage and winter rain come in and the lower the land lies.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -881,6 +945,7 @@
         "subquestion": "SQ2",
         "description": "What the water board charges owners and users of farmland for its water management, pumping included.",
         "actor": "Waterschap Scheldestromen",
+        "actors": "Waterschap Scheldestromen",
         "sources": "",
         "sourced": "no"
       }
@@ -895,6 +960,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "The conventional crops' harvest that salt in the root zone takes, over the island's fields still under them, in a season. On the island, farms where seepage pressure is high and the surface water is salty all year have stopped growing sensitive crops such as sown onions (Kaandorp et al., 2022, p. 31). Zeeland is among the coastal provinces where potatoes and barley lose considerable yield to salt (Deolu-Ajayi et al., 2024, p. 12). Salt's effect on yield builds up over weeks to months and is read over the season (Allen et al., 1998, ch. 8): within the year, so an Auxiliary.",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nDeolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nAllen, R. G., Pereira, L. S., Raes, D., & Smith, M. (1998). Crop evapotranspiration: Guidelines for computing crop water requirements (FAO Irrigation and Drainage Paper 56). FAO. https://www.fao.org/4/x0490e/x0490e00.htm",
         "sourced": "yes"
       }
@@ -909,6 +975,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "The margin a farm forgoes on fields it moves from its high-margin current crops to salt-tolerant ones, largest on fresh land, where the current crops still do well.",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -923,6 +990,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ3",
         "description": "Arable farms on the island whose farmer has someone to take the farm over.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -937,6 +1005,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "The volume of new salt-tolerant crops within reach of a processing plant on or near the island, from the island's growers and from growers elsewhere.",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -951,6 +1020,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "What farmers on the island get for new salt-tolerant crops once transport to the processor is paid, set by processors on and off the island.",
+        "actors": "Buyers and processors of the island's crops",
         "sources": "",
         "sourced": "no"
       }
@@ -965,6 +1035,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "Farmers off the island growing the same new crops, whose harvest a local plant could also process.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -979,6 +1050,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "Plants off the island that buy and process new salt-tolerant crops, which set the price the island's growers can get beside a local plant.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -994,6 +1066,7 @@
         "subquestion": "SQ2",
         "description": "Hectares under salt-tolerant varieties of the current crops (potato, onion), which use the same machines, storage and know-how. Farmers grow one where they find it worthwhile against the variety they grow now.",
         "actor": "Arable farmers on Schouwen-Duiveland",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -1008,6 +1081,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "Salt-tolerant varieties of the current crops that breeders bring to market, and their yield; breeding lies outside the CLD's scale.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -1022,6 +1096,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "The planters, harvesters and stores farms own for their current crops, built up over years and renewed when worn.",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -1036,6 +1111,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "The machines, storage and know-how a farm writes off when it moves fields to a new crop that cannot use them; what it keeps using or sells is not lost. Salt-tolerant varieties of the current crops lose little of it.",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -1050,6 +1126,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "What the island's farmers know about growing and selling new salt-tolerant crops, from their own fields, their neighbours' and advisers.",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -1065,6 +1142,7 @@
         "subquestion": "SQ2",
         "description": "What farms invest in carrying on with their current crops: wells and irrigation, drains, new machines and storage.",
         "actor": "Arable farmers on Schouwen-Duiveland",
+        "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }
@@ -1079,6 +1157,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "The risk a bank sees in lending to an arable farm: its solvency, its collateral at the bank's own valuation, and plans that may change what the land can earn.",
+        "actors": "Waterschap Scheldestromen",
         "sources": "",
         "sourced": "no"
       }
@@ -1094,6 +1173,7 @@
         "subquestion": "SQ2",
         "description": "New loans and refinancing that banks grant the island's arable farms.",
         "actor": "Banks lending to the island's farmers",
+        "actors": "Banks lending to the island's farmers",
         "sources": "",
         "sourced": "no"
       }
@@ -1108,6 +1188,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "Interest and repayments farms owe on their loans in a year.",
+        "actors": "Banks lending to the island's farmers",
         "sources": "",
         "sourced": "no"
       }
@@ -1122,6 +1203,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "The prices of potatoes, onions and sugar beet on the markets the island's crops are sold on, which its farms cannot move: what carrying on is weighed against.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -1136,6 +1218,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "How far the island's farmers expect public bodies to keep their commitments on water and land (compensation, their say over their land).",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -1150,6 +1233,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ3",
         "description": "Farmland a public body takes for a public purpose, with compensation, after a legal procedure; which body can do so on the island is on the facts list under Concern about expropriation and devaluation.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -1164,6 +1248,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ3",
         "description": "How strongly farmers hold on to their land beyond its money value: family land, growing up on it. Whether anything on the map moves it, at succession perhaps, is a question for the group model building session.",
+        "actors": "",
         "sources": "",
         "sourced": "no"
       }
@@ -1178,6 +1263,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ3",
         "description": "Hectares of the island's farmland sold, expropriated or passed on to a new holder in a year: at a forced sale, a retirement without a successor, or otherwise.",
+        "actors": "Banks lending to the island's farmers",
         "sources": "",
         "sourced": "no"
       }
@@ -1193,6 +1279,7 @@
         "subquestion": "SQ2",
         "description": "Hectares of the island's farmland that Gemeente Schouwen-Duiveland's land-use plan (its omgevingsplan, with the changes it drafts to it) designates for a use other than arable farming, such as nature, water storage, housing or recreation. Which plans the municipality makes for the island's farmland, and where objections enter them, is on the facts list under Objections to land-use plans.",
         "actor": "Gemeente Schouwen-Duiveland",
+        "actors": "Gemeente Schouwen-Duiveland",
         "sources": "",
         "sourced": "no"
       }

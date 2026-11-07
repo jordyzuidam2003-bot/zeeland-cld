@@ -11,16 +11,16 @@ CLD's actor fields name), references.json (sources), model-texts.md (the model t
 view.scss and actors-view.scss (the Kumu views inside project.json and actors-project.json) and
 page/ (index.html, a template with the placeholders <!-- SVG -->, <!-- FACTS -->, <!-- TEXTS --> and
 <!-- DATA -->; actors.html, the Actor Map's, with <!-- QUESTION -->, <!-- SVG --> and <!-- DATA -->;
-table.html, the table's, with <!-- CONTENTS -->, <!-- TABLES --> and <!-- VERSION -->; app.js;
-actors.js; style.css). draw.py draws the CLD, actormap.py the Actor Map and its table,
+app.js; actors.js; style.css). draw.py draws the CLD, actormap.py the Actor Map and its table,
 xlsx.py writes the table's file. Never edit docs/, which this script writes:
 
     docs/index.html    the page: the template with the drawing inline, the model texts (their
                        numbers counted in the model) and the data as JSON
     docs/app.js        copied from page/
     docs/style.css     copied from page/
-    docs/table.html    the tables that explain the CLD (table()): per element, link, named loop and
-                       group of loops, and the references they cite; linked from the page
+    docs/table.xlsx    the table that explains the CLD (table_sheets()), which Jordy imports into
+                       Google Drive as a Google Sheet: the Elements, Links, Named loops, Combined
+                       loops (once cld.json holds groups) and References sheets; linked from the page
     docs/cld.svg       the drawing on its own, the picture for the report
     docs/loops/<id>.svg  each named loop on its own (draw.loop_figure()), its figure for the
                        report; the page's panel for the loop shows it
@@ -197,6 +197,7 @@ def check(cld, refs, actors):
     """Return (errors, warnings). Errors stop the build; warnings are model smells."""
     errors, warnings = [], []
     actor_ids = {a["id"] for a in actors["actors"]}
+    scale = {a["id"]: a["scale"] for a in actors["actors"]}
     els = {}
     for e in cld["elements"]:
         name = e.get("id", "?")
@@ -214,9 +215,13 @@ def check(cld, refs, actors):
         # a decision variable names the one actor that decides it, by its id in actors.json
         if "actor" in e and e["actor"] not in actor_ids:
             errors.append(f"{name}: actor {e['actor']!r} is not an actor id in actors.json")
-        # the actors whose decision it is or whose decisions shape it directly, each from a source
+        # the actors outside the scale that shape it directly, each from a source; an actor inside
+        # the scale is derived from the links (element_actors())
         if not isinstance(e.get("actors", []), list) or any(a not in actor_ids for a in e.get("actors", [])):
             errors.append(f"{name}: actors must be a list of actor ids in actors.json, got {e.get('actors')!r}")
+        else:
+            errors += [f"{name}: actors names {a}, inside the scale: an inside actor is derived from the links"
+                       for a in e.get("actors", []) if scale[a] == "inside"]
     labels = [e["label"] for e in cld["elements"]]
     errors += [f"duplicate label {l!r}" for l in set(labels) if labels.count(l) > 1]
 
@@ -334,14 +339,15 @@ def blueprint(cld, refs, actors):
         return {"sources": "\n".join(refs[k] for k in item["sources"]),
                 "sourced": "yes" if item["sources"] else "no"}
 
+    shaped = element_actors(cld, actors)
     elements = []
     for e in cld["elements"]:
         item = {k: v for k, v in e.items() if k != "sources"}
         item["adaptive practice"] = "yes" if e["adaptive practice"] else "no"
         if "actor" in e:  # the page and Kumu show the actor by its label
             item["actor"] = actor_label[e["actor"]]
-        if "actors" in e:  # ... and the actors as one text, which a Kumu field holds
-            item["actors"] = ", ".join(actor_label[a] for a in e["actors"])
+        # ... and the actors that decide or shape it, as one text, which a Kumu field holds
+        item["actors"] = ", ".join(actor_label[a] for a in shaped[e["id"]])
         item.update(sourced(e))
         elements.append(item)
 
@@ -455,66 +461,67 @@ def page(cld, refs, actors, version, loops):
             .replace("<!-- DATA -->", f'<script type="application/json" id="data">{data}</script>'))
 
 
-def table(cld, refs, actors, version):
-    """docs/table.html: the tables that explain the CLD, written from cld.json (the actors' labels
-    from actors.json, the references from references.json): per element, per link, per named loop
-    and per group of loops, then the references they cite, in-text citations in the tables as in
-    the actors' table (actormap.citations()). HTML tables, since one copied from the page keeps its
-    columns pasted into Google Docs or Word (Jordy left the choice to the session)."""
-    esc = actormap.esc
-    els = {e["id"]: e for e in cld["elements"]}
-    actor = {a["id"]: a["label"] for a in actors["actors"]}
-    cites = actormap.citations(sorted({k for i in cld["elements"] + cld["connections"] for k in i["sources"]}), refs)
-    none = '<span class="none">none yet</span>'
+def element_actors(cld, actors):
+    """Per element id, the actors that decide it or shape it directly, in actors.json's order: its
+    own actor, the actor of each decision variable linked into it, and the actors outside the scale
+    its `actors` field names. An actor inside the scale acts through its decisions, so the links,
+    each with its source, already show whom it shapes: derived, never typed, so a link the
+    structural step moves takes its actor along (Jordy: "do what you think is best"; rejected:
+    typing every actor, a second record of the links)."""
+    by = {e["id"]: e for e in cld["elements"]}
+    found = {i: {e["actor"]} if "actor" in e else set() for i, e in by.items()}
+    for c in cld["connections"]:
+        if "actor" in by[c["from"]]:
+            found[c["to"]].add(by[c["from"]]["actor"])
+    for i, e in by.items():
+        found[i] |= set(e.get("actors", []))
+    return {i: [a["id"] for a in actors["actors"] if a["id"] in s] for i, s in found.items()}
 
-    def text(item):  # the description, and what it folds or idealizes where it does
-        return f"<p>{esc(item['description'])}</p>" + (
-            f"<p><strong>Simplification:</strong> {esc(item['simplification'])}</p>" if "simplification" in item else "")
+
+def table_sheets(cld, refs, actors):
+    """[(name, widths, rows)] for docs/table.xlsx, the table that explains the CLD, written from
+    cld.json (the actors' labels from actors.json, the references from references.json): the
+    Elements, Links and Named loops sheets, Combined loops once cld.json holds groups, and the
+    References sheet, the full references the sheets cite in-text (actormap.citations()). A
+    spreadsheet, as the actors' table, which Jordy imports into Google Drive as a Google Sheet
+    (Jordy; rejected: an HTML page, whose tables lost their columns pasted into Google Docs)."""
+    els = {e["id"]: e for e in cld["elements"]}
+    label = {a["id"]: a["label"] for a in actors["actors"]}
+    shaped = element_actors(cld, actors)
+    cites = actormap.citations(sorted({k for i in cld["elements"] + cld["connections"] for k in i["sources"]}), refs)
 
     def sources(item):
         if item.get("hypothesis"):
-            return "<em>Hypothesis for the group model building session</em>"
-        return esc(actormap.cite_list(item["sources"], cites)) or none
-
-    def section(key, title, head, rows):
-        cells = lambda tag, row: "".join(f"<{tag}>{c}</{tag}>" if not c.startswith("<td") else c for c in row)
-        return (f'<h2 id="{key}">{title}</h2>\n<div class="scroll"><table>\n<thead><tr>{cells("th", head)}</tr></thead>\n<tbody>\n'
-                + "\n".join(f"<tr>{cells('td', r)}</tr>" for r in rows) + "\n</tbody></table></div>")
+            return "Hypothesis for the group model building session"
+        return actormap.cite_list(item["sources"], cites) or "none yet"
 
     # the elements by subsystem, as the drawing's regions (water and soil left), then by label
     order = list(draw.REGION)
     elements = sorted(cld["elements"], key=lambda e: (order.index(e["subsystem"]), e["label"].lower()))
-    parts = [("elements", "Elements", section("elements", "Elements", [
-        "Element", "Type", "SETS domain", "Subsystem", "Description", "Decided by", "Actors", "Sources"], [
-        [esc(e["label"]), e["element type"], e["sets domain"], e["subsystem"], text(e),
-         esc(actor[e["actor"]]) if "actor" in e else "", esc(", ".join(actor[a] for a in e.get("actors", []))),
-         esc(actormap.cite_list(e["sources"], cites)) or none] for e in elements]))]
     links = sorted(cld["connections"], key=lambda c: (els[c["from"]]["label"].lower(), els[c["to"]]["label"].lower()))
-    parts.append(("links", "Links", section("links", "Links", [
-        "From", "To", "Polarity", "Delay", "Description", "Sources"], [
-        [esc(els[c["from"]]["label"]), esc(els[c["to"]]["label"]),
-         f'<td class="sign {"sign-plus" if c["polarity"] == "+" else "sign-minus"}">{"+" if c["polarity"] == "+" else "−"}</td>',
-         "yes" if c["delay"] else "no", text(c), sources(c)] for c in links])))
-    parts.append(("loops", "Named loops", section("loops", "Named loops", [
-        "Loop", "Name", "Kind", "Its elements, in order", "Description"], [
-        [L["id"], esc(L["name"]), "Reinforcing" if L["id"].startswith("R") else "Balancing",
-         esc(" → ".join(els[i]["label"] for i in L["path"] + L["path"][:1])), esc(L.get("description", ""))]
-        for L in cld["loops"]])))
+    sheets = [
+        ("Elements", [28, 11, 13, 20, 90, 60, 24, 30, 36],
+         [["Element", "Type", "SETS domain", "Subsystem", "Description", "Simplification", "Decided by", "Actors",
+           "Sources"]]
+         + [[e["label"], e["element type"], e["sets domain"], e["subsystem"], e["description"],
+             e.get("simplification", ""), label[e["actor"]] if "actor" in e else "",
+             "\n".join(label[a] for a in shaped[e["id"]]), sources(e)] for e in elements]),
+        ("Links", [28, 28, 9, 7, 90, 60, 36],
+         [["From", "To", "Polarity", "Delay", "Description", "Simplification", "Sources"]]
+         + [[els[c["from"]]["label"], els[c["to"]]["label"], "+" if c["polarity"] == "+" else "−",
+             "yes" if c["delay"] else "no", c["description"], c.get("simplification", ""), sources(c)] for c in links]),
+        ("Named loops", [6, 34, 12, 70, 80],
+         [["Loop", "Name", "Kind", "Its elements, in order", "Description"]]
+         + [[L["id"], L["name"], "Reinforcing" if L["id"].startswith("R") else "Balancing",
+             " → ".join(els[i]["label"] for i in L["path"] + L["path"][:1]), L.get("description", "")]
+            for L in cld["loops"]]),
+    ]
     if cld.get("groups"):
-        parts.append(("groups", "Combined loops", section("groups", "Combined loops", [
-            "Combined loops", "Its loops", "Description"], [
-            [esc(g["name"]), ", ".join(g["loops"]), esc(g["description"])] for g in cld["groups"]])))
-    link = lambda t: re.sub(r"https?://[^\s<]+[^\s<.,;)]", lambda m: f'<a href="{m[0]}">{m[0]}</a>', t)
-    parts.append(("references", "References", '<h2 id="references">References</h2>\n' + "\n".join(
-        f'<p class="reference">{link(esc(r))}</p>' for r in sorted((c[2] for c in cites.values()), key=str.lower))))
-
-    template = (PAGE / "table.html").read_text()
-    contents = "".join(f'<a href="#{key}">{title}</a>' for key, title, _ in parts)
-    for marker, out in (("<!-- CONTENTS -->", contents), ("<!-- TABLES -->", "\n".join(p for _, _, p in parts)),
-                        ("<!-- VERSION -->", version)):
-        assert template.count(marker) == 1, f"page/table.html must hold {marker} once"
-        template = template.replace(marker, out)
-    return template
+        sheets.append(("Combined loops", [30, 20, 80], [["Combined loops", "Its loops", "Description"]]
+                       + [[g["name"], ", ".join(g["loops"]), g["description"]] for g in cld["groups"]]))
+    sheets.append(("References", [120], [["Reference"]]
+                   + [[r] for r in sorted((c[2] for c in cites.values()), key=str.lower)]))
+    return sheets
 
 
 def project(cld, refs, actors, template, version):
@@ -724,7 +731,7 @@ def main():
         "cld.svg": draw.svg(cld),
         "regions.svg": draw.regions_svg(cld)[0],
         "index.html": page(cld, refs, actors, version, loops),
-        "table.html": table(cld, refs, actors, version),
+        "table.xlsx": xlsx.workbook(table_sheets(cld, refs, actors)),
         "app.js": (PAGE / "app.js").read_text(),
         "style.css": (PAGE / "style.css").read_text(),
         **{f"loops/{loop['id']}.svg": draw.loop_figure(cld, loop) for loop in cld["loops"]},
@@ -776,10 +783,11 @@ def main():
           "CLD variables each decides: " + ", ".join(f"{i} {len(v)}" for i, v in decides.items() if v))
     if empty:
         print("actor fields still empty:\n  " + "\n  ".join(f"{i}: {', '.join(ks)}" for i, ks in empty.items()))
-    # an element's actors stay empty where no source read says who shapes it
-    no_actors = [e["id"] for e in cld["elements"] if not e.get("actors")]
+    # an element no decision variable drives and no source names an outside actor for
+    shaped = element_actors(cld, actors)
+    no_actors = [i for i, s in shaped.items() if not s]
     if no_actors:
-        print(f"elements whose actors no source names yet ({len(no_actors)}): {', '.join(no_actors)}")
+        print(f"elements no actor decides or shapes directly ({len(no_actors)}): {', '.join(no_actors)}")
     cited = {k for item in cld["elements"] + cld["connections"] + actors["actors"] for k in item.get("sources", [])}
     cited |= {k for a in actors["actors"] for r in a.get("relations", []) for k in r.get("sources", [])}
     warnings += [f"reference {k!r} is cited nowhere" for k in refs if k not in cited]

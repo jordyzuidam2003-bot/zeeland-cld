@@ -18,12 +18,12 @@ spreadsheet.
 | `references.zotero.json` | the Use note in Zotero that `push` wrote for each source, with a fingerprint of its text, so a push never replaces a note somebody changed | never: `push` writes it |
 | `model-texts.md` | the model texts the page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
 | `view.scss`, `actors-view.scss` | the Kumu views inside `docs/project.json` and `docs/actors-project.json` | yes |
-| `page/` | the pages around the drawings: `index.html`, `actors.html` and `table.html` (templates), `app.js`, `actors.js`, `style.css` | yes |
+| `page/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `style.css` | yes |
 | `build.py` | checks the model and the actors and writes `docs/` (how: its docstring) | — |
 | `draw.py` | draws the CLD's SVG, imported by `build.py` | — |
 | `actormap.py` | draws the Actor Map and lays out its table, imported by `build.py` | — |
 | `xlsx.py` | writes the table as an `.xlsx` with the standard library | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json`, `table.html`; `actors.html`, `actors.js`, `actors.svg`, `actors-bands.svg`, `actors-project.json`, `actors.xlsx` | never: `build.py` writes it |
+| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json`, `table.xlsx`; `actors.html`, `actors.js`, `actors.svg`, `actors-bands.svg`, `actors-project.json`, `actors.xlsx` | never: `build.py` writes it |
 
 ## Version 1
 
@@ -98,15 +98,16 @@ looking at.
 
 ### The table
 
-`docs/table.html`, linked from the page, holds the tables that explain the CLD, written by
-`build.py` from `cld.json`, so they never drift from the drawing: the elements (by subsystem,
-then by label: type, SETS domain, subsystem, description, the actor that decides it, its
-actors, sources), the links (by their ends: polarity, delay, description, sources or that it
-is a hypothesis), the named loops (R or B, the elements in order, the description) and the
-combined loops once `cld.json` holds them; a simplification sits under its description. The
-sources are in-text citations, the letter after a year the one `year-suffix` sets, with the
-full references below. An HTML page, since a table copied from it keeps its columns pasted into
-Google Docs or Word.
+`docs/table.xlsx`, linked from the page, is the table that explains the CLD, which Jordy imports
+into Google Drive as a Google Sheet, as the actors' table (Jordy; rejected: an HTML page, whose
+tables lost their columns pasted into Google Docs). `build.py` writes it from `cld.json`, so it
+never drifts from the drawing: the Elements sheet (by subsystem, then by label: type, SETS
+domain, subsystem, description, simplification, the actor that decides it, the actors that
+decide or shape it, sources), the Links sheet (by their ends: polarity, delay, description,
+simplification, sources or that it is a hypothesis), the Named loops sheet (R or B, the elements
+in order, the description), the Combined loops sheet once `cld.json` holds them, and the
+References sheet. The sources are in-text citations, the letter after a year the one
+`year-suffix` sets.
 
 ### `cld.json`
 
@@ -148,12 +149,16 @@ An element:
   `actors.json`, which names every actor at the grain the group set (a public body by its name,
   the island's arable farmers as one); `build.py` stops on an id not there. The page's panel
   shows the actor's label, and Kumu gets it as a field.
-- `actors`: the ids in `actors.json` of the actors whose decision the element is or whose
-  decisions shape it directly, each shown by a source in the element's `sources`, a national
-  body only where a source shows a direct effect; no source, no actor, and `build.py` lists each
-  element whose `actors` is still empty. It names who shapes the element, never whose lever it
-  is. `build.py` stops on an id not in `actors.json`; the table shows the actors' labels, and
-  Kumu gets them as a field.
+- `actors`: the ids in `actors.json` of the actors outside the CLD's scale whose decisions
+  shape the element directly, each shown by a source in the element's `sources`, a national body
+  only where a source shows a direct effect. The actors inside the scale are derived, never
+  typed: an element's own `actor` and the `actor` of each decision variable linked into it,
+  since an actor inside the scale acts through its decisions and each link carries its source
+  (Jordy; rejected: typing every actor, a second record of the links that goes stale when a link
+  moves). `build.py` stops on an id not in `actors.json` or an actor inside the scale, and lists
+  each element no actor decides or shapes directly; the table shows the actors, derived and
+  typed, by their labels, and Kumu gets them as a field. It names who shapes the element, never
+  whose lever it is.
 - `simplification`: only on an element or a connection that folds or idealizes something (a
   step of a chain folded into a link, several things counted as one), saying what it leaves out
   or distorts and why the loops through it still hold (Jordy; rejected: the field on every

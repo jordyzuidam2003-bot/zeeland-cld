@@ -92,17 +92,3 @@ footer code { font-size: 13px; }
 .actor-map g.relation path { pointer-events: stroke; }
 .panel h3 { font-size: 15px; margin: 12px 0 4px; }
 .panel ul { margin: 0; padding-left: 18px; }
-/* the table page: real tables, so a copy keeps its columns in Google Docs or Word */
-.tables { padding: 0 16px; }
-.tables h2 { font-size: 17px; margin: 24px 0 8px; }
-.tables .scroll { overflow-x: auto; }
-.tables table { border-collapse: collapse; width: 100%; font-size: 13px; line-height: 1.4; }
-.tables th, .tables td { border: 1px solid var(--line); padding: 4px 6px; text-align: left; vertical-align: top; }
-.tables th { background: #F2F2F2; }
-.tables td p { margin: 0; }
-.tables td p + p { margin-top: 4px; }
-.tables .sign { text-align: center; font-weight: bold; }
-.tables .sign-plus { color: #2166AC; }
-.tables .sign-minus { color: #B2182B; }
-.tables .none { color: var(--muted); font-style: italic; }
-.tables .reference { margin: 0 0 6px; padding-left: 2em; text-indent: -2em; max-width: 100ch; }

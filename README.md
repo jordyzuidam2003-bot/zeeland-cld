@@ -15,6 +15,7 @@ spreadsheet.
 | `cld.json` | the elements, connections, named loops, layout (x, y) and link curvature | yes |
 | `actors.json` | the Actor Map: the actors, their columns, their relations and places, the one list of actors the CLD names | yes |
 | `references.json` | the sources, as CSL JSON, from which `build.py` writes each APA reference | yes |
+| `references.zotero.json` | the Use note in Zotero that `push` wrote for each source, with a fingerprint of its text, so a push never replaces a note somebody changed | never: `push` writes it |
 | `model-texts.md` | the model texts the page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
 | `view.scss`, `actors-view.scss` | the Kumu views inside `docs/project.json` and `docs/actors-project.json` | yes |
 | `page/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `style.css` | yes |
@@ -232,7 +233,7 @@ says):
 python3 ../../.claude/skills/zotero/zotero.py push ChallengeBasedProject1 "CLD and Actor Map" references.json --uses cld.json actors.json
 ```
 
-`diff` with the same arguments lists what changed there, with who and when, for Jordy to take
+`push` records each note it wrote in `references.zotero.json`, committed with it. `diff` with the same arguments lists what changed there, with who and when, for Jordy to take
 into `references.json` or not.
 
 ### The Actor Map

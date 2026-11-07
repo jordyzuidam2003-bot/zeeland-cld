@@ -223,7 +223,17 @@ gazette, and the number in it), `version`, `publisher` (left out where it is the
 the table show; a Dutch law (`legislation`) is cited by the version in force on its `issued`
 date, and `year-suffix` holds a letter a description cites (van Beekom et al., 1953a). Zotero
 holds a copy of each item, in Jordy's group library ChallengeBasedProject1, where the PDFs are
-attached, never here, since this repository is public.
+attached, never here, since this repository is public. A session pushes each new item into its
+collection CLD and Actor Map, with a Use note written from `cld.json` and `actors.json`, by the
+Study repository's `zotero` skill, from this folder (the key through `op run`, as its `SKILL.md`
+says):
+
+```sh
+python3 ../../.claude/skills/zotero/zotero.py push ChallengeBasedProject1 "CLD and Actor Map" references.json --uses cld.json actors.json
+```
+
+`diff` with the same arguments lists what changed there, with who and when, for Jordy to take
+into `references.json` or not.
 
 ### The Actor Map
 

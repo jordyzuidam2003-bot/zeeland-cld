@@ -222,7 +222,7 @@ gazette, and the number in it), `version`, `publisher` (left out where it is the
 `DOI` or `URL`. `build.py` writes each APA reference from them (`apa()`), which the page, Kumu and
 the table show; a Dutch law (`legislation`) is cited by the version in force on its `issued`
 date, and `year-suffix` holds a letter a description cites (van Beekom et al., 1953a). Zotero
-holds a copy of each item, in Jordy's group library Challenge Based Project, where the PDFs are
+holds a copy of each item, in Jordy's group library ChallengeBasedProject1, where the PDFs are
 attached, never here, since this repository is public.
 
 ### The Actor Map

@@ -542,8 +542,10 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "Whether heavy machinery can work the fields early in spring without damaging the soil, set by soil structure and by how wet the soil is.",
-      "sources": [],
+      "description": "Whether heavy machinery can work the fields early in spring without damaging the soil, set by soil structure and by how wet the soil is: soil work done when the soil is too wet smears and compacts it and forms clods, and more rain in spring leaves fewer moments to do it (Verstand et al., 2021, p. 25, from the Dutch cultivation guides, on potatoes). It follows the soil's wetness within the season, so an Auxiliary.",
+      "sources": [
+        "verstand-2021"
+      ],
       "x": -1052,
       "y": -372
     },
@@ -1473,8 +1475,11 @@
       "to": "spring-workability-of-the-fields",
       "polarity": "+",
       "delay": false,
-      "description": "Deeper ditch levels dry the topsoil sooner in spring.",
-      "sources": [],
+      "description": "The deeper the ditch levels lie below the fields, the sooner the fields drain and dry after rain. By the water board's rules for its whole area, the drooglegging is set at an optimum for each use and soil, against both wet and drought damage (Waterschap Scheldestromen, 2025, p. 7); at half the design discharge it must keep a field's drains, laid at their optimal depth, all but above the ditch water (p. 8); and an area 10 cm or more short of its optimum counts as too wet (p. 9). On Duiveland four level areas may run a lower target for a while in wet periods, where the fields' drainage and workability need it (2021a, p. 40), and the move from the winter to the summer level in spring follows the farmers' soil work (p. 66). Within the season, no delay.",
+      "sources": [
+        "scheldestromen-2025-nota-peilbesluiten",
+        "scheldestromen-2021-hor-duiveland"
+      ],
       "curvature": -0.219
     },
     {
@@ -1491,10 +1496,11 @@
       "to": "demand-for-deep-polder-drainage",
       "polarity": "-",
       "delay": false,
-      "description": "Where fields stay too wet to work, farmers ask for lower ditch levels: what deep drainage gains them.",
-      "sources": [],
-      "curvature": -0.153,
-      "hypothesis": true
+      "description": "Where fields stay too wet to work, farmers want lower ditch levels: what deep drainage gains them. In the water board's words, holding water back longer as a buffer for dry times is sometimes hard for farmers who want onto the land with heavy machinery (Waterschap Scheldestromen, 2021c, p. 44, its management programme for its whole area): the board's account of the farmers' interest, not the farmers' own. No source read shows how much a wet spring raises the demand. Within the year.",
+      "sources": [
+        "scheldestromen-2021-wbp"
+      ],
+      "curvature": -0.153
     },
     {
       "from": "polder-drainage-depth",

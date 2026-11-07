@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 8f58a65, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 51dd072, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -821,9 +821,9 @@
         "sets domain": "Ecological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "Whether heavy machinery can work the fields early in spring without damaging the soil, set by soil structure and by how wet the soil is.",
-        "sources": "",
-        "sourced": "no"
+        "description": "Whether heavy machinery can work the fields early in spring without damaging the soil, set by soil structure and by how wet the soil is: soil work done when the soil is too wet smears and compacts it and forms clods, and more rain in spring leaves fewer moments to do it (Verstand et al., 2021, p. 25, from the Dutch cultivation guides, on potatoes). It follows the soil's wetness within the season, so an Auxiliary.",
+        "sources": "Verstand, D., Bijker, W., & Simonse, D. (2021). Klimaatrisico’s en kansen in de open teelten (Report WPR-902). Wageningen Research. https://doi.org/10.18174/555534",
+        "sourced": "yes"
       }
     },
     {
@@ -2336,12 +2336,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Deeper ditch levels dry the topsoil sooner in spring.",
+        "description": "The deeper the ditch levels lie below the fields, the sooner the fields drain and dry after rain. By the water board's rules for its whole area, the drooglegging is set at an optimum for each use and soil, against both wet and drought damage (Waterschap Scheldestromen, 2025, p. 7); at half the design discharge it must keep a field's drains, laid at their optimal depth, all but above the ditch water (p. 8); and an area 10 cm or more short of its optimum counts as too wet (p. 9). On Duiveland four level areas may run a lower target for a while in wet periods, where the fields' drainage and workability need it (2021a, p. 40), and the move from the winter to the summer level in spring follows the farmers' soil work (p. 66). Within the season, no delay.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Waterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-polder-drainage-depth",
@@ -2376,12 +2376,12 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Where fields stay too wet to work, farmers ask for lower ditch levels: what deep drainage gains them.",
+        "description": "Where fields stay too wet to work, farmers want lower ditch levels: what deep drainage gains them. In the water board's words, holding water back longer as a buffer for dry times is sometimes hard for farmers who want onto the land with heavy machinery (Waterschap Scheldestromen, 2021c, p. 44, its management programme for its whole area): the board's account of the farmers' interest, not the farmers' own. No source read shows how much a wet spring raises the demand. Within the year.",
         "sets link": "E to S",
         "sets scope": "Cross-domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
+        "hypothesis": "no",
+        "sources": "Waterschap Scheldestromen. (2021c). Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst. https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-spring-workability-of-the-fields",
@@ -4244,7 +4244,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 8f58a65",
+      "name": "CLD, model 51dd072",
       "description": "",
       "scale": 1,
       "center": {

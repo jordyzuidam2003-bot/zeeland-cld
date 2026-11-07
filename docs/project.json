@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 51dd072, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 46d5da5, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -132,8 +132,10 @@
         "Arable farmers on Schouwen-Duiveland, Waterschap Scheldestromen",
         "Banks lending to the island's farmers",
         "Buyers and processors of the island's crops",
+        "EU",
         "Gemeente Schouwen-Duiveland",
-        "Provincie Zeeland",
+        "Provincie Zeeland, IenW",
+        "Provincie Zeeland, Rijkswaterstaat",
         "Waterschap Scheldestromen"
       ],
       "sort": false,
@@ -541,10 +543,10 @@
         "sets domain": "Technological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "Fresh water brought to the island's farms from outside it in the growing season (present in Tholen and Zeeuws-Vlaanderen; absent on Walcheren, the Bevelanden and Schouwen-Duiveland). It needs a supply route, and in drought it is what the national distribution leaves for the route to carry.",
-        "actors": "Provincie Zeeland",
-        "sources": "",
-        "sourced": "no"
+        "description": "Fresh water brought to the island's farms from outside it in the growing season (present in Tholen and Zeeuws-Vlaanderen; absent on Walcheren, the Bevelanden and Schouwen-Duiveland). It needs a supply route, and in drought it is what the national distribution leaves for the route to carry. Rijkswaterstaat makes that distribution: in drought it divides the little fresh water of the large rivers and lakes among the users through weirs, pumping stations and sluices, by the verdringingsreeks when there is too little for all, and the greater part of Zeeland lies outside the area it can supply (Rijkswaterstaat, n.d.).",
+        "actors": "Provincie Zeeland, Rijkswaterstaat",
+        "sources": "Rijkswaterstaat. (n.d.). Verdeling water bij droogte. Retrieved November 6, 2026, from https://www.rijkswaterstaat.nl/water/waterbeheer/droogte-en-watertekort/verdeling-water-bij-droogte",
+        "sourced": "yes"
       }
     },
     {
@@ -728,10 +730,10 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "European banking regulations requiring stricter risk weighting on loans when climate/soil risks reduce collateral value.",
-        "actors": "",
-        "sources": "",
-        "sourced": "no"
+        "description": "European banking regulations requiring stricter risk weighting on loans when climate/soil risks reduce collateral value. The EU sets them: its banking package (CRR III/CRD VI) puts the final elements of the Basel III standards of 2017 into EU law, the new rules of the Capital Requirements Regulation applying from 1 January 2025, those of the directive once each member state has transposed them (European Commission, Directorate-General for Financial Stability, Financial Services and Capital Markets Union, 2023).",
+        "actors": "EU",
+        "sources": "European Commission, Directorate-General for Financial Stability, Financial Services and Capital Markets Union. (2023, December 14). Latest updates on the banking package. https://finance.ec.europa.eu/news/latest-updates-banking-package-2023-12-14_en",
+        "sourced": "yes"
       }
     },
     {
@@ -865,11 +867,11 @@
         "sets domain": "Technological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "Pipes or channels that could bring fresh water to the island, as their capacity in a summer; none exists. Who decides on one and who pays is on the facts list under External freshwater supply; news reports say the province has costed a pipeline (unread at the source).",
+        "description": "Pipes or channels that could bring fresh water to the island, as their capacity in a summer; none exists. Who decides on one and who pays is on the facts list under External freshwater supply; news reports say the province has costed a pipeline (unread at the source). IenW shapes it twice: its minister allots the Delta Fund, from which a freshwater region can claim 25% of a regional measure's cost, up to 50% for an innovative one or one carried out by several regions (Algemene Rekenkamer, 2026, p. 31); and the Delta Programme 2027, under the Delta Commissioner's direction and presented by the minister with the Delta Fund's budget, proposes that the south-west delta's areas with no supply from outside speed up their way to self-sufficiency, the region open to exploring small extensions of the supplied area that add evident value, are future-proof and keep the extra demand on the Volkerak-Zoommeer limited, the demand on the Hollandsch Diep and Haringvliet not raised (Ministerie van Infrastructuur en Waterstaat et al., 2026, pp. 88–89).",
+        "actors": "Provincie Zeeland, IenW",
         "actor": "Provincie Zeeland",
-        "actors": "Provincie Zeeland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Algemene Rekenkamer. (2026, September 3). Zorgen over zoetwater: Onderzoek naar de voortgang van het Deltaprogramma Zoetwater. https://www.tweedekamer.nl/downloads/document?id=2026D40892\nMinisterie van Infrastructuur en Waterstaat, Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur, & Ministerie van Volkshuisvesting en Ruimtelijke Ordening. (2026). Nationaal Deltaprogramma 2027: Van maakbaar naar weerbaar. https://www.tweedekamer.nl/downloads/document?id=2026D43642",
+        "sourced": "yes"
       }
     },
     {
@@ -4331,7 +4333,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 51dd072",
+      "name": "CLD, model 46d5da5",
       "description": "",
       "scale": 1,
       "center": {

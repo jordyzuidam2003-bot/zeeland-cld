@@ -1,85 +1,1956 @@
-{
-  "de-louw-2011": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011",
-  "pauw-2015": "Pauw, P. S., van Baaren, E. S., Visser, M., de Louw, P. G. B., & Oude Essink, G. H. P. (2015). Increasing a freshwater lens below a creek ridge using a controlled artificial recharge and drainage system: A case study in the Netherlands. Hydrogeology Journal, 23(7), 1415–1430. https://doi.org/10.1007/s10040-015-1264-z",
-  "van-beekom-1953": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953b). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 224–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860",
-  "van-beekom-1953-salt": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953a). Reclaiming land flooded with salt water: I. Salt. Netherlands Journal of Agricultural Science, 1(3), 153–163. https://library.wur.nl/ojs/index.php/njas/article/view/17866",
-  "oude-essink-2010": "Oude Essink, G. H. P., van Baaren, E. S., & de Louw, P. G. B. (2010). Effects of climate change on coastal groundwater systems: A modeling study in the Netherlands. Water Resources Research, 46, W00F04. https://doi.org/10.1029/2009WR008719",
-  "van-der-meulen-2020": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092",
-  "de-mesel-2013": "De Mesel, I., Ysebaert, T., & Kamermans, P. (2013). Klimaatbestendige dijken: Het concept wisselpolders (Rapport C072/13). IMARES Wageningen UR. https://www.vliz.be/imisdocs/publications/289823.pdf",
-  "van-maldegem-2004": "van Maldegem, D., & de Jong, D. (2004). Opwassen of verdrinken: Sedimentaanvoer naar schorren in de Oosterschelde, een zandhongerig gedempt getijdesysteem (Werkdocument RIKZ/AB/2003/826x). Rijkswaterstaat, Rijksinstituut voor Kust en Zee. https://edepot.wur.nl/174582",
-  "ma-2014": "Ma, Z., Ysebaert, T., van der Wal, D., de Jong, D. J., Li, X., & Herman, P. M. J. (2014). Long-term salt marsh vertical accretion in a tidal bay with reduced sediment supply. Estuarine, Coastal and Shelf Science, 146, 14–23. https://doi.org/10.1016/j.ecss.2014.05.001",
-  "scheldestromen-2021-wbp": "Waterschap Scheldestromen. (2021). Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst. https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf",
-  "scheldestromen-2021-peilbesluit-duiveland": "Waterschap Scheldestromen. (2021, July 12). Peilbesluit Duiveland ter inzage (Waterschapsblad 2021, nr. 8486). https://zoek.officielebekendmakingen.nl/wsb-2021-8486.pdf",
-  "scheldestromen-2022-peilbesluit-schouwen": "Waterschap Scheldestromen. (2022, January 3). Peilbesluit Schouwen ter inzage (Waterschapsblad 2022, nr. 10). https://zoek.officielebekendmakingen.nl/wsb-2022-10.pdf",
-  "scheldestromen-2026-grondwater": "Waterschap Scheldestromen. (2026, May 29). Besluit wijziging artikel 2.9 van de Waterschapsverordening waterschap Scheldestromen (Waterschapsblad 2026, nr. 13978). https://zoek.officielebekendmakingen.nl/wsb-2026-13978.html",
-  "waterschapswet-2026": "Waterschapswet (version in force from 1 January 2026). https://wetten.overheid.nl/BWBR0005108/2026-01-01",
-  "omgevingswet-2026": "Omgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01",
-  "provincie-zeeland-2025-rwp": "Provincie Zeeland. (2025). Regionaal Waterprogramma 2022–2027 (Provinciaal blad 2025, 3897). https://lokaleregelgeving.overheid.nl/CVDR736656",
-  "schouwen-duiveland-2024-waterbassins": "Gemeente Schouwen-Duiveland. (2024, September 5). Beleidsregels waterbassins bouwwerken zijnde buiten bouwvlak gemeente Schouwen-Duiveland 2024 (Gemeenteblad 2024, nr. 380475). https://zoek.officielebekendmakingen.nl/gmb-2024-380475.pdf",
-  "schouwen-duiveland-omgevingsplan": "Gemeente Schouwen-Duiveland. (n.d.). Omgevingsplan. Retrieved November 6, 2026, from https://www.schouwen-duiveland.nl/bouwen-verbouwen-en-slopen/bestemmingsplan",
-  "schouwen-duiveland-subsidie-zoet-water": "Gemeente Schouwen-Duiveland. (n.d.). Subsidie Zoet Water en Klimaatbestendige Landbouw. Retrieved November 6, 2026, from https://www.schouwen-duiveland.nl/ondernemen/financiele-hulp-voor-ondernemers/subsidies/subsidie-zoet-water-en-klimaatbestendige-landbouw",
-  "living-lab-partners": "Living Lab Schouwen-Duiveland. (n.d.). Partners. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/over-living-lab/partners",
-  "rabobank-2023-zoetwatermanager": "Bekamp, B., & Bakker-Smit, G. (2023, October 23). Akkerbouwer wordt zoetwatermanager: De invloed van toenemende droogte op de Nederlandse akkerbouw. RaboResearch, Rabobank. https://www.rabobank.nl/kennis/d011398319-akkerbouwer-wordt-zoetwatermanager-de-invloed-van-toenemende-droogte-op-de-nederlandse-akkerbouw",
-  "rabobank-2025-annual-report": "Rabobank. (2025). Annual report 2024. https://vpr.hkma.gov.hk/statics/assets/doc/100197/ar_24/ar_24_eng.pdf",
-  "living-lab-2025-programma": "Living Lab Schouwen-Duiveland. (2025, November 5). Gemeente Schouwen-Duiveland investeert 1,1 miljoen in nieuw programma Living Lab. https://livinglabschouwen-duiveland.nl/nieuws/gemeente-schouwen-duiveland-investeert-11-miljoen-nieuw-programma-living-lab",
-  "living-lab-samenwerken-voor-zoet-water": "Living Lab Schouwen-Duiveland. (n.d.). Samenwerken voor Zoet Water. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/projecten/samenwerken-voor-zoet-water",
-  "kaandorp-2022": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
-  "cbs-2026-landbouw-gemeente": "CBS. (2026). Landbouw; gewassen, dieren en grondgebruik naar gemeente (StatLine table 80781ned, final figures for 2025, 30 March 2026). https://opendata.cbs.nl/statline/#/CBS/nl/dataset/80781ned",
-  "reglement-scheldestromen-2025": "Reglement voor het Waterschap Scheldestromen (version in force from 19 December 2025). https://lokaleregelgeving.overheid.nl/CVDR63880/6",
-  "zlto-over-zlto": "ZLTO. (n.d.). Over ZLTO. Retrieved November 6, 2026, from https://www.zlto.nl/over-zlto/",
-  "zlto-afdelingen": "ZLTO. (n.d.). Afdelingen. Retrieved November 6, 2026, from https://www.zlto.nl/over-zlto/afdelingen/",
-  "anp-2022-zoetwater": "ANP. (2022, September 8). Boerenorganisatie: slimmer omgaan met zoetwater tegen droogte. nieuws.nl. https://nieuws.nl/economie/boerenorganisatie-slimmer-omgaan-met-zoetwater-tegen-droogte",
-  "omroep-zeeland-2023-zoet-water": "Omroep Zeeland. (2023, May 31). Sombere toekomst voor boeren op Schouwen-Duiveland door tekort aan zoet water. https://www.omroepzeeland.nl/nieuws/15614167/sombere-toekomst-voor-boeren-op-schouwen-duiveland-door-tekort-aan-zoet-water",
-  "omroep-zeeland-2026-aardappeloogst": "van Essen, C. (2026, October 15). Aardappeloogst valt flink tegen door droogte: 'We missen 20 procent'. Omroep Zeeland. https://www.omroepzeeland.nl/nieuws/18862756/aardappeloogst-valt-flink-tegen-door-droogte-we-missen-20-procent",
-  "boerenbusiness-2021-rabobank": "van Eekeres, L. (2021, February 11). Rabobank: 'Equal amount of credit to farmers in the Netherlands'. Boerenbusiness. https://en.boerenbusiness.nl/agribusiness/artikel/10890988/rabobank-evenveel-krediet-boeren-nederland",
-  "kamerstuk-2025-cosun": "Minister van Klimaat en Groene Groei, & Staatssecretaris van Infrastructuur en Waterstaat. (2025, December 18). Brief over de ondertekening van de maatwerkafspraak met Royal Cosun (Kamerstukken II 2025/26, 29826, nr. 278). https://zoek.officielebekendmakingen.nl/kst-29826-278.html",
-  "cosun-royal-cosun": "Cosun Beet Company. (n.d.). Royal Cosun. Retrieved November 6, 2026, from https://www.cosunbeetcompany.com/about-us/royal-cosun",
-  "cosun-history": "Cosun Beet Company. (n.d.). History. Retrieved November 6, 2026, from https://www.cosunbeetcompany.com/about-us/history",
-  "cosun-2026-beet-campaign": "Cosun Beet Company. (2026, January 27). Beet campaign 2025 successfully completed. https://www.cosunbeetcompany.com/news/beet-campaign-2025-successfully-completed/485",
-  "cosun-sustainable-beet-production": "Cosun Beet Company. (n.d.). Sustainable beet production. Retrieved November 6, 2026, from https://www.cosunbeetcompany.com/sustainability/sustainable-beet-production",
-  "janssens-2020": "Janssens, B., van der Meer, R., & Smit, B. (2020). Gevolgen van de coronacrisis voor de aardappelsector. Wageningen Economic Research, for the Ministry of LNV. https://edepot.wur.nl/523096",
-  "rekenkamer-2026-zoetwater": "Algemene Rekenkamer. (2026, September 3). Zorgen over zoetwater: Onderzoek naar de voortgang van het Deltaprogramma Zoetwater. https://www.tweedekamer.nl/downloads/document?id=2026D40892",
-  "deltaprogramma-2027": "Ministerie van Infrastructuur en Waterstaat, Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur, & Ministerie van Volkshuisvesting en Ruimtelijke Ordening. (2026). Nationaal Deltaprogramma 2027: Van maakbaar naar weerbaar. https://www.tweedekamer.nl/downloads/document?id=2026D43642",
-  "iplo-verdringingsreeks": "Informatiepunt Leefomgeving. (n.d.). Verdringingsreeks: rangorde bij waterschaarste. Retrieved November 6, 2026, from https://iplo.nl/thema/water/beheer-watersysteem/verdringingsreeks/",
-  "iplo-2025-zout": "Informatiepunt Leefomgeving. (2025, July 9). Hoe zout wordt het, en wat betekent dat voor water, landbouw en natuur? https://iplo.nl/thema/water/nieuws-water/2025/zout-betekent-water-landbouw-natuur/",
-  "rijksoverheid-ienw": "Rijksoverheid. (n.d.). Ministerie van Infrastructuur en Waterstaat. Retrieved November 6, 2026, from https://www.rijksoverheid.nl/ministeries/ministerie-van-infrastructuur-en-waterstaat",
-  "rijksoverheid-lvvn-verhaal": "Rijksoverheid. (n.d.). Het verhaal van Landbouw, Visserij, Voedselzekerheid en Natuur. Retrieved November 6, 2026, from https://www.rijksoverheid.nl/ministeries/ministerie-van-landbouw-visserij-voedselzekerheid-en-natuur/het-verhaal-van-lvvn",
-  "lvvn-2026-tarieven-glb-2025": "Minister van Landbouw, Visserij, Voedselzekerheid en Natuur. (2026, March 7). Besluit vaststelling definitieve tarieven GLB 2025 (nr. WJZ/102571548). https://wetten.overheid.nl/BWBR0052414/2026-03-10",
-  "rvo-eco-regeling-2026": "RVO. (n.d.). Eco-regeling 2026. Retrieved November 6, 2026, from https://www.rvo.nl/subsidies-financiering/glb-2026/eco-regeling",
-  "rws-over-ons": "Rijkswaterstaat. (n.d.). Over ons. Retrieved November 6, 2026, from https://www.rijkswaterstaat.nl/over-ons",
-  "rws-verdeling-water-bij-droogte": "Rijkswaterstaat. (n.d.). Verdeling water bij droogte. Retrieved November 6, 2026, from https://www.rijkswaterstaat.nl/water/waterbeheer/droogte-en-watertekort/verdeling-water-bij-droogte",
-  "rws-2026-waterakkoord-vzm": "Rijkswaterstaat. (2026, May 11). Nieuw waterakkoord Volkerak-Zoommeer. https://www.rijkswaterstaat.nl/nieuws/archief/2026/05/nieuw-waterakkoord-volkerak-zoommeer",
-  "witteveen-bos-2021": "Witteveen+Bos. (2021). Zoetwateraanvoer Schouwen-Duiveland: Verkenning (12460/21-002.663, for Provincie Zeeland). https://acpt.deltaexpertise.hz.nl/images/c/c5/Verkenning_externe_aanvoer_Schouwen-Duiveland.pdf",
-  "binnenlands-bestuur-2023-zoetwater": "Tiekstra, J. (2023, March 30). Zeeland vraagt hulp van Den Haag met zoetwaterprobleem. Binnenlands Bestuur. https://www.binnenlandsbestuur.nl/ruimte-en-milieu/open-overheid/zeeland-vraagt-hulp-van-den-haag-met-zoetwaterprobleem",
-  "rijksoverheid-deltares": "Rijksoverheid. (n.d.). Deltares. Retrieved November 6, 2026, from https://www.rijksoverheid.nl/service/contact/contactgids/d/deltares",
-  "kwr-over-ons": "KWR Water Research Institute. (n.d.). Over ons. Retrieved November 6, 2026, from https://kwrwater.nl/over-ons/",
-  "kwr-organisatie": "KWR Water Research Institute. (n.d.). Organisatie. Retrieved November 6, 2026, from https://www.kwrwater.nl/over-ons/organisatie/",
-  "kwr-regionale-zoetwaterbeschikbaarheid": "KWR Water Research Institute. (n.d.). Regionale zoetwaterbeschikbaarheid. Retrieved November 6, 2026, from https://www.kwrwater.nl/thema/regionale-zoetwaterbeschikbaarheid/",
-  "acacia-water-about-us": "Acacia Water. (n.d.). About us. Retrieved November 6, 2026, from https://www.acaciawater.com/en/about-us/",
-  "acacia-water-home": "Acacia Water. (n.d.). Acacia Water [Home page]. Retrieved November 6, 2026, from https://www.acaciawater.com/",
-  "delphy-home": "Delphy. (n.d.). Delphy [Home page]. Retrieved November 6, 2026, from https://delphy.nl/",
-  "delphy-over-delphy": "Delphy. (n.d.). Over Delphy. Retrieved November 6, 2026, from https://werkenbij.delphy.nl/over-delphy/",
-  "wiepkema-2023-zoetwaterbehoefte": "Wiepkema, F. (2023, May 31). Zonder meer zoet water wordt agrarisch ondernemen op Schouwen Duiveland onmogelijk. Akkerwijzer. https://www.akkerwijzer.nl/artikel/750772-zonder-meer-zoet-water-wordt-agrarisch-ondernemen-op-schouwen-duiveland-onmogelijk/",
-  "living-lab-natuurlijk-zoet": "Living Lab Schouwen-Duiveland. (n.d.). Natuurlijk Zoet. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/projecten/natuurlijk-zoet",
-  "living-lab-ln2050": "Living Lab Schouwen-Duiveland. (n.d.). Klimaat- en waterrobuust Laag-Nederland van nu naar 2050. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/projecten/klimaat-en-waterrobuust-laag-nederland-van-nu-naar-2050",
-  "living-lab-innovatieve-drainage": "Living Lab Schouwen-Duiveland. (n.d.). Samenwerken voor Zoetwater: Innovatieve drainage demonstreren, monitoren en evalueren. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/projecten/samenwerken-voor-zoetwater-innovatieve-drainage-demonstreren-monitoren-en-evalueren",
-  "dcc-home": "Delta Climate Center. (n.d.). Delta Climate Center [Home page]. Retrieved November 6, 2026, from https://deltaclimatecenter.nl/",
-  "dcc-about-us": "Delta Climate Center. (n.d.). About the DCC. Retrieved November 6, 2026, from https://deltaclimatecenter.nl/about-us/",
-  "dcc-research": "Delta Climate Center. (n.d.). Research. Retrieved November 6, 2026, from https://deltaclimatecenter.nl/research/",
-  "dcc-flexible-deltas": "Delta Climate Center. (n.d.). Flexible Deltas. Retrieved November 6, 2026, from https://deltaclimatecenter.nl/flexible-deltas.html",
-  "nioz-2023-dcc": "NIOZ. (2023, February 15). Green light for Delta Climate Center in Vlissingen. https://www.nioz.nl/en/news/green-light-for-delta-climate-center-in-vlissingen",
-  "eurobarometer-2022-food-safety": "European Commission. (2022). Food safety in the EU (Special Eurobarometer Wave EB97.2, fieldwork by Kantar, March–April 2022). European Food Safety Authority. https://www.efsa.europa.eu/sites/default/files/2022-09/EB97.2-food-safety-in-the-EU_report.pdf",
-  "ec-cap-at-a-glance": "European Commission. (n.d.). CAP at a glance. Retrieved November 6, 2026, from https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en",
-  "ec-cap-conditionality": "European Commission. (n.d.). Conditionality. Retrieved November 6, 2026, from https://agriculture.ec.europa.eu/common-agricultural-policy/income-support/conditionality_en",
-  "ec-2023-banking-package": "European Commission, Directorate-General for Financial Stability, Financial Services and Capital Markets Union. (2023, December 14). Latest updates on the banking package. https://finance.ec.europa.eu/news/latest-updates-banking-package-2023-12-14_en",
-  "nos-2018-misoogst": "NOS. (2018, October 31). Misoogst bij uien en aardappelen door droogte. https://nos.nl/artikel/2257205-misoogst-bij-uien-en-aardappelen-door-droogte",
-  "dutchnews-2018-potato-processors": "DutchNews.nl. (2018, August 10). The drought leads to tension between potato farmers and processors. https://www.dutchnews.nl/news/2018/08/the-drought-leads-to-tension-between-potato-farmers-and-processors",
-  "nepg-2018-contracts": "North-Western European Potato Growers. (2018, August 14). Potato growers propose pan-European approach to resolve contract issues with processors due to extreme weather. PotatoPro. https://www.potatopro.com/news/2018/potato-growers-propose-pan-european-approach-resolve-contract-issues-processors-due",
-  "bogosavac-2018": "Bogosavac, N. (2018, October 31). Kleinere aardappelen en duurdere uien: dit merk je in de winkel. NOS. https://nos.nl/artikel/2257266-kleinere-aardappelen-en-duurdere-uien-dit-merk-je-in-de-winkel",
-  "ec-2025-wasserresilienz": "European Commission, Representation in Germany. (2025, June 4). Wasserversorgung für alle sichern: Kommission legt EU-Strategie zur Wasserresilienz vor. https://germany.representation.ec.europa.eu/news/wasserversorgung-fur-alle-sichern-kommission-legt-eu-strategie-zur-wasserresilienz-vor-2025-06-04_de",
-  "munns-tester-2008": "Munns, R., & Tester, M. (2008). Mechanisms of salinity tolerance. Annual Review of Plant Biology, 59, 651–681. https://doi.org/10.1146/annurev.arplant.59.032607.092911",
-  "allen-1998": "Allen, R. G., Pereira, L. S., Raes, D., & Smith, M. (1998). Crop evapotranspiration: Guidelines for computing crop water requirements (FAO Irrigation and Drainage Paper 56). FAO. https://www.fao.org/4/x0490e/x0490e00.htm",
-  "provincie-zeeland-2021-grondwateronttrekkingen": "Gedeputeerde Staten van Zeeland. (2021, June 9). Antwoorden op vragen van de statenleden Heerschop en Van der Vliet (PvdA) inzake onttrekkingen grondwater (zaaknummer 54188, aanhangsel tot de notulen van Provinciale Staten nr. 191). https://www.zeeland.nl/sites/default/files/digitaalarchief/IB21_ae4d5ac6.pdf",
-  "deolu-ajayi-2024": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509",
-  "eu-cap-network-2023": "EU CAP Network. (2023). 'Zeeland's roots for new crops': Growing sea bananas and sea fennel on saline land thanks to LEADER climate adaptation support [Good practice report]. European Commission. https://eu-cap-network.ec.europa.eu/sites/default/files/2023-07/Zeeland%E2%80%99s%20roots%20for%20new%20crops.pdf"
-}
+[
+  {
+    "id": "de-louw-2011",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "de Louw",
+        "given": "P. G. B."
+      },
+      {
+        "family": "Eeman",
+        "given": "S."
+      },
+      {
+        "family": "Siemon",
+        "given": "B."
+      },
+      {
+        "family": "Voortman",
+        "given": "B. R."
+      },
+      {
+        "family": "Gunnink",
+        "given": "J."
+      },
+      {
+        "family": "van Baaren",
+        "given": "E. S."
+      },
+      {
+        "family": "Oude Essink",
+        "given": "G. H. P."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "title": "Shallow rainwater lenses in deltaic areas with saline seepage",
+    "container-title": "Hydrology and Earth System Sciences",
+    "volume": "15",
+    "issue": "12",
+    "page": "3659–3678",
+    "DOI": "10.5194/hess-15-3659-2011"
+  },
+  {
+    "id": "pauw-2015",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Pauw",
+        "given": "P. S."
+      },
+      {
+        "family": "van Baaren",
+        "given": "E. S."
+      },
+      {
+        "family": "Visser",
+        "given": "M."
+      },
+      {
+        "family": "de Louw",
+        "given": "P. G. B."
+      },
+      {
+        "family": "Oude Essink",
+        "given": "G. H. P."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "title": "Increasing a freshwater lens below a creek ridge using a controlled artificial recharge and drainage system: A case study in the Netherlands",
+    "container-title": "Hydrogeology Journal",
+    "volume": "23",
+    "issue": "7",
+    "page": "1415–1430",
+    "DOI": "10.1007/s10040-015-1264-z"
+  },
+  {
+    "id": "van-beekom-1953",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "van Beekom",
+        "given": "C. W. C."
+      },
+      {
+        "family": "van den Berg",
+        "given": "C."
+      },
+      {
+        "family": "de Boer",
+        "given": "Th. A."
+      },
+      {
+        "family": "van der Molen",
+        "given": "W. H."
+      },
+      {
+        "family": "Verhoeven",
+        "given": "B."
+      },
+      {
+        "family": "Westerhof",
+        "given": "J. J."
+      },
+      {
+        "family": "Zuur",
+        "given": "A. J."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1953
+        ]
+      ]
+    },
+    "year-suffix": "b",
+    "title": "Reclaiming land flooded with salt water: II. Exchangeable cations",
+    "container-title": "Netherlands Journal of Agricultural Science",
+    "volume": "1",
+    "issue": "4",
+    "page": "224–244",
+    "URL": "https://library.wur.nl/ojs/index.php/njas/article/view/17860"
+  },
+  {
+    "id": "van-beekom-1953-salt",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "van Beekom",
+        "given": "C. W. C."
+      },
+      {
+        "family": "van den Berg",
+        "given": "C."
+      },
+      {
+        "family": "de Boer",
+        "given": "Th. A."
+      },
+      {
+        "family": "van der Molen",
+        "given": "W. H."
+      },
+      {
+        "family": "Verhoeven",
+        "given": "B."
+      },
+      {
+        "family": "Westerhof",
+        "given": "J. J."
+      },
+      {
+        "family": "Zuur",
+        "given": "A. J."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1953
+        ]
+      ]
+    },
+    "year-suffix": "a",
+    "title": "Reclaiming land flooded with salt water: I. Salt",
+    "container-title": "Netherlands Journal of Agricultural Science",
+    "volume": "1",
+    "issue": "3",
+    "page": "153–163",
+    "URL": "https://library.wur.nl/ojs/index.php/njas/article/view/17866"
+  },
+  {
+    "id": "oude-essink-2010",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Oude Essink",
+        "given": "G. H. P."
+      },
+      {
+        "family": "van Baaren",
+        "given": "E. S."
+      },
+      {
+        "family": "de Louw",
+        "given": "P. G. B."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "title": "Effects of climate change on coastal groundwater systems: A modeling study in the Netherlands",
+    "container-title": "Water Resources Research",
+    "volume": "46",
+    "page": "W00F04",
+    "DOI": "10.1029/2009WR008719"
+  },
+  {
+    "id": "van-der-meulen-2020",
+    "type": "report",
+    "author": [
+      {
+        "family": "van der Meulen",
+        "given": "H."
+      },
+      {
+        "family": "van der Meer",
+        "given": "R."
+      },
+      {
+        "family": "van Asseldonk",
+        "given": "M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen",
+    "genre": "Rapport",
+    "number": "2020-097",
+    "publisher": "Wageningen Economic Research",
+    "URL": "https://edepot.wur.nl/532092"
+  },
+  {
+    "id": "de-mesel-2013",
+    "type": "report",
+    "author": [
+      {
+        "family": "De Mesel",
+        "given": "I."
+      },
+      {
+        "family": "Ysebaert",
+        "given": "T."
+      },
+      {
+        "family": "Kamermans",
+        "given": "P."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "title": "Klimaatbestendige dijken: Het concept wisselpolders",
+    "genre": "Rapport",
+    "number": "C072/13",
+    "publisher": "IMARES Wageningen UR",
+    "URL": "https://www.vliz.be/imisdocs/publications/289823.pdf"
+  },
+  {
+    "id": "van-maldegem-2004",
+    "type": "report",
+    "author": [
+      {
+        "family": "van Maldegem",
+        "given": "D."
+      },
+      {
+        "family": "de Jong",
+        "given": "D."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2004
+        ]
+      ]
+    },
+    "title": "Opwassen of verdrinken: Sedimentaanvoer naar schorren in de Oosterschelde, een zandhongerig gedempt getijdesysteem",
+    "genre": "Werkdocument",
+    "number": "RIKZ/AB/2003/826x",
+    "publisher": "Rijkswaterstaat, Rijksinstituut voor Kust en Zee",
+    "URL": "https://edepot.wur.nl/174582"
+  },
+  {
+    "id": "ma-2014",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Ma",
+        "given": "Z."
+      },
+      {
+        "family": "Ysebaert",
+        "given": "T."
+      },
+      {
+        "family": "van der Wal",
+        "given": "D."
+      },
+      {
+        "family": "de Jong",
+        "given": "D. J."
+      },
+      {
+        "family": "Li",
+        "given": "X."
+      },
+      {
+        "family": "Herman",
+        "given": "P. M. J."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "title": "Long-term salt marsh vertical accretion in a tidal bay with reduced sediment supply",
+    "container-title": "Estuarine, Coastal and Shelf Science",
+    "volume": "146",
+    "page": "14–23",
+    "DOI": "10.1016/j.ecss.2014.05.001"
+  },
+  {
+    "id": "scheldestromen-2021-wbp",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst",
+    "URL": "https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf"
+  },
+  {
+    "id": "scheldestromen-2021-peilbesluit-duiveland",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          7,
+          12
+        ]
+      ]
+    },
+    "title": "Peilbesluit Duiveland ter inzage",
+    "collection-title": "Waterschapsblad",
+    "collection-number": "2021, nr. 8486",
+    "URL": "https://zoek.officielebekendmakingen.nl/wsb-2021-8486.pdf"
+  },
+  {
+    "id": "scheldestromen-2022-peilbesluit-schouwen",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          3
+        ]
+      ]
+    },
+    "title": "Peilbesluit Schouwen ter inzage",
+    "collection-title": "Waterschapsblad",
+    "collection-number": "2022, nr. 10",
+    "URL": "https://zoek.officielebekendmakingen.nl/wsb-2022-10.pdf"
+  },
+  {
+    "id": "scheldestromen-2026-grondwater",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          29
+        ]
+      ]
+    },
+    "title": "Besluit wijziging artikel 2.9 van de Waterschapsverordening waterschap Scheldestromen",
+    "collection-title": "Waterschapsblad",
+    "collection-number": "2026, nr. 13978",
+    "URL": "https://zoek.officielebekendmakingen.nl/wsb-2026-13978.html"
+  },
+  {
+    "id": "waterschapswet-2026",
+    "type": "legislation",
+    "title": "Waterschapswet",
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          1
+        ]
+      ]
+    },
+    "URL": "https://wetten.overheid.nl/BWBR0005108/2026-01-01"
+  },
+  {
+    "id": "omgevingswet-2026",
+    "type": "legislation",
+    "title": "Omgevingswet",
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          1
+        ]
+      ]
+    },
+    "URL": "https://wetten.overheid.nl/BWBR0037885/2026-07-01"
+  },
+  {
+    "id": "provincie-zeeland-2025-rwp",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Provincie Zeeland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Regionaal Waterprogramma 2022–2027",
+    "collection-title": "Provinciaal blad",
+    "collection-number": "2025, 3897",
+    "URL": "https://lokaleregelgeving.overheid.nl/CVDR736656"
+  },
+  {
+    "id": "schouwen-duiveland-2024-waterbassins",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Gemeente Schouwen-Duiveland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          5
+        ]
+      ]
+    },
+    "title": "Beleidsregels waterbassins bouwwerken zijnde buiten bouwvlak gemeente Schouwen-Duiveland 2024",
+    "collection-title": "Gemeenteblad",
+    "collection-number": "2024, nr. 380475",
+    "URL": "https://zoek.officielebekendmakingen.nl/gmb-2024-380475.pdf"
+  },
+  {
+    "id": "schouwen-duiveland-omgevingsplan",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Gemeente Schouwen-Duiveland"
+      }
+    ],
+    "title": "Omgevingsplan",
+    "URL": "https://www.schouwen-duiveland.nl/bouwen-verbouwen-en-slopen/bestemmingsplan",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "schouwen-duiveland-subsidie-zoet-water",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Gemeente Schouwen-Duiveland"
+      }
+    ],
+    "title": "Subsidie Zoet Water en Klimaatbestendige Landbouw",
+    "URL": "https://www.schouwen-duiveland.nl/ondernemen/financiele-hulp-voor-ondernemers/subsidies/subsidie-zoet-water-en-klimaatbestendige-landbouw",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "living-lab-partners",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Living Lab Schouwen-Duiveland"
+      }
+    ],
+    "title": "Partners",
+    "URL": "https://livinglabschouwen-duiveland.nl/over-living-lab/partners",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "rabobank-2023-zoetwatermanager",
+    "type": "webpage",
+    "author": [
+      {
+        "family": "Bekamp",
+        "given": "B."
+      },
+      {
+        "family": "Bakker-Smit",
+        "given": "G."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          10,
+          23
+        ]
+      ]
+    },
+    "title": "Akkerbouwer wordt zoetwatermanager: De invloed van toenemende droogte op de Nederlandse akkerbouw",
+    "container-title": "RaboResearch, Rabobank",
+    "URL": "https://www.rabobank.nl/kennis/d011398319-akkerbouwer-wordt-zoetwatermanager-de-invloed-van-toenemende-droogte-op-de-nederlandse-akkerbouw"
+  },
+  {
+    "id": "rabobank-2025-annual-report",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Rabobank"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Annual report 2024",
+    "URL": "https://vpr.hkma.gov.hk/statics/assets/doc/100197/ar_24/ar_24_eng.pdf"
+  },
+  {
+    "id": "living-lab-2025-programma",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Living Lab Schouwen-Duiveland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          5
+        ]
+      ]
+    },
+    "title": "Gemeente Schouwen-Duiveland investeert 1,1 miljoen in nieuw programma Living Lab",
+    "URL": "https://livinglabschouwen-duiveland.nl/nieuws/gemeente-schouwen-duiveland-investeert-11-miljoen-nieuw-programma-living-lab"
+  },
+  {
+    "id": "living-lab-samenwerken-voor-zoet-water",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Living Lab Schouwen-Duiveland"
+      }
+    ],
+    "title": "Samenwerken voor Zoet Water",
+    "URL": "https://livinglabschouwen-duiveland.nl/projecten/samenwerken-voor-zoet-water",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "kaandorp-2022",
+    "type": "report",
+    "author": [
+      {
+        "family": "Kaandorp",
+        "given": "V. P."
+      },
+      {
+        "family": "Davids",
+        "given": "T."
+      },
+      {
+        "family": "de Louw",
+        "given": "P. G. B."
+      },
+      {
+        "family": "Roelandse",
+        "given": "A."
+      },
+      {
+        "family": "Noordegraaf",
+        "given": "I."
+      },
+      {
+        "family": "Krajenbrink",
+        "given": "H. J."
+      },
+      {
+        "family": "Schout",
+        "given": "G."
+      },
+      {
+        "family": "Raat",
+        "given": "K. J."
+      },
+      {
+        "family": "van Veelen",
+        "given": "P. C."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport",
+    "number": "11205909-000-BGS-0003",
+    "publisher": "Deltares",
+    "URL": "https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF"
+  },
+  {
+    "id": "cbs-2026-landbouw-gemeente",
+    "type": "dataset",
+    "author": [
+      {
+        "literal": "CBS"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          30
+        ]
+      ]
+    },
+    "title": "Landbouw; gewassen, dieren en grondgebruik naar gemeente",
+    "genre": "StatLine table",
+    "number": "80781ned",
+    "version": "final figures for 2025",
+    "URL": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/80781ned"
+  },
+  {
+    "id": "reglement-scheldestromen-2025",
+    "type": "legislation",
+    "title": "Reglement voor het Waterschap Scheldestromen",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          19
+        ]
+      ]
+    },
+    "URL": "https://lokaleregelgeving.overheid.nl/CVDR63880/6"
+  },
+  {
+    "id": "zlto-over-zlto",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "ZLTO"
+      }
+    ],
+    "title": "Over ZLTO",
+    "URL": "https://www.zlto.nl/over-zlto/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "zlto-afdelingen",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "ZLTO"
+      }
+    ],
+    "title": "Afdelingen",
+    "URL": "https://www.zlto.nl/over-zlto/afdelingen/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "anp-2022-zoetwater",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "literal": "ANP"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          8
+        ]
+      ]
+    },
+    "title": "Boerenorganisatie: slimmer omgaan met zoetwater tegen droogte",
+    "container-title": "nieuws.nl",
+    "URL": "https://nieuws.nl/economie/boerenorganisatie-slimmer-omgaan-met-zoetwater-tegen-droogte"
+  },
+  {
+    "id": "omroep-zeeland-2023-zoet-water",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "literal": "Omroep Zeeland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          31
+        ]
+      ]
+    },
+    "title": "Sombere toekomst voor boeren op Schouwen-Duiveland door tekort aan zoet water",
+    "URL": "https://www.omroepzeeland.nl/nieuws/15614167/sombere-toekomst-voor-boeren-op-schouwen-duiveland-door-tekort-aan-zoet-water"
+  },
+  {
+    "id": "omroep-zeeland-2026-aardappeloogst",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "family": "van Essen",
+        "given": "C."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          15
+        ]
+      ]
+    },
+    "title": "Aardappeloogst valt flink tegen door droogte: 'We missen 20 procent'",
+    "container-title": "Omroep Zeeland",
+    "URL": "https://www.omroepzeeland.nl/nieuws/18862756/aardappeloogst-valt-flink-tegen-door-droogte-we-missen-20-procent"
+  },
+  {
+    "id": "boerenbusiness-2021-rabobank",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "family": "van Eekeres",
+        "given": "L."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          2,
+          11
+        ]
+      ]
+    },
+    "title": "Rabobank: 'Equal amount of credit to farmers in the Netherlands'",
+    "container-title": "Boerenbusiness",
+    "URL": "https://en.boerenbusiness.nl/agribusiness/artikel/10890988/rabobank-evenveel-krediet-boeren-nederland"
+  },
+  {
+    "id": "kamerstuk-2025-cosun",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Minister van Klimaat en Groene Groei"
+      },
+      {
+        "literal": "Staatssecretaris van Infrastructuur en Waterstaat"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          18
+        ]
+      ]
+    },
+    "title": "Brief over de ondertekening van de maatwerkafspraak met Royal Cosun",
+    "collection-title": "Kamerstukken II",
+    "collection-number": "2025/26, 29826, nr. 278",
+    "URL": "https://zoek.officielebekendmakingen.nl/kst-29826-278.html"
+  },
+  {
+    "id": "cosun-royal-cosun",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Cosun Beet Company"
+      }
+    ],
+    "title": "Royal Cosun",
+    "URL": "https://www.cosunbeetcompany.com/about-us/royal-cosun",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "cosun-history",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Cosun Beet Company"
+      }
+    ],
+    "title": "History",
+    "URL": "https://www.cosunbeetcompany.com/about-us/history",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "cosun-2026-beet-campaign",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Cosun Beet Company"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          27
+        ]
+      ]
+    },
+    "title": "Beet campaign 2025 successfully completed",
+    "URL": "https://www.cosunbeetcompany.com/news/beet-campaign-2025-successfully-completed/485"
+  },
+  {
+    "id": "cosun-sustainable-beet-production",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Cosun Beet Company"
+      }
+    ],
+    "title": "Sustainable beet production",
+    "URL": "https://www.cosunbeetcompany.com/sustainability/sustainable-beet-production",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "janssens-2020",
+    "type": "report",
+    "author": [
+      {
+        "family": "Janssens",
+        "given": "B."
+      },
+      {
+        "family": "van der Meer",
+        "given": "R."
+      },
+      {
+        "family": "Smit",
+        "given": "B."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Gevolgen van de coronacrisis voor de aardappelsector",
+    "publisher": "Wageningen Economic Research",
+    "URL": "https://edepot.wur.nl/523096"
+  },
+  {
+    "id": "rekenkamer-2026-zoetwater",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Algemene Rekenkamer"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          3
+        ]
+      ]
+    },
+    "title": "Zorgen over zoetwater: Onderzoek naar de voortgang van het Deltaprogramma Zoetwater",
+    "URL": "https://www.tweedekamer.nl/downloads/document?id=2026D40892"
+  },
+  {
+    "id": "deltaprogramma-2027",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Ministerie van Infrastructuur en Waterstaat"
+      },
+      {
+        "literal": "Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur"
+      },
+      {
+        "literal": "Ministerie van Volkshuisvesting en Ruimtelijke Ordening"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "title": "Nationaal Deltaprogramma 2027: Van maakbaar naar weerbaar",
+    "URL": "https://www.tweedekamer.nl/downloads/document?id=2026D43642"
+  },
+  {
+    "id": "iplo-verdringingsreeks",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Informatiepunt Leefomgeving"
+      }
+    ],
+    "title": "Verdringingsreeks: rangorde bij waterschaarste",
+    "URL": "https://iplo.nl/thema/water/beheer-watersysteem/verdringingsreeks/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "iplo-2025-zout",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Informatiepunt Leefomgeving"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          9
+        ]
+      ]
+    },
+    "title": "Hoe zout wordt het, en wat betekent dat voor water, landbouw en natuur?",
+    "URL": "https://iplo.nl/thema/water/nieuws-water/2025/zout-betekent-water-landbouw-natuur/"
+  },
+  {
+    "id": "rijksoverheid-ienw",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Rijksoverheid"
+      }
+    ],
+    "title": "Ministerie van Infrastructuur en Waterstaat",
+    "URL": "https://www.rijksoverheid.nl/ministeries/ministerie-van-infrastructuur-en-waterstaat",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "rijksoverheid-lvvn-verhaal",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Rijksoverheid"
+      }
+    ],
+    "title": "Het verhaal van Landbouw, Visserij, Voedselzekerheid en Natuur",
+    "URL": "https://www.rijksoverheid.nl/ministeries/ministerie-van-landbouw-visserij-voedselzekerheid-en-natuur/het-verhaal-van-lvvn",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "lvvn-2026-tarieven-glb-2025",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Minister van Landbouw, Visserij, Voedselzekerheid en Natuur"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          7
+        ]
+      ]
+    },
+    "title": "Besluit vaststelling definitieve tarieven GLB 2025",
+    "number": "nr. WJZ/102571548",
+    "URL": "https://wetten.overheid.nl/BWBR0052414/2026-03-10"
+  },
+  {
+    "id": "rvo-eco-regeling-2026",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "RVO"
+      }
+    ],
+    "title": "Eco-regeling 2026",
+    "URL": "https://www.rvo.nl/subsidies-financiering/glb-2026/eco-regeling",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "rws-over-ons",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Rijkswaterstaat"
+      }
+    ],
+    "title": "Over ons",
+    "URL": "https://www.rijkswaterstaat.nl/over-ons",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "rws-verdeling-water-bij-droogte",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Rijkswaterstaat"
+      }
+    ],
+    "title": "Verdeling water bij droogte",
+    "URL": "https://www.rijkswaterstaat.nl/water/waterbeheer/droogte-en-watertekort/verdeling-water-bij-droogte",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "rws-2026-waterakkoord-vzm",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Rijkswaterstaat"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          11
+        ]
+      ]
+    },
+    "title": "Nieuw waterakkoord Volkerak-Zoommeer",
+    "URL": "https://www.rijkswaterstaat.nl/nieuws/archief/2026/05/nieuw-waterakkoord-volkerak-zoommeer"
+  },
+  {
+    "id": "witteveen-bos-2021",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Witteveen+Bos"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Zoetwateraanvoer Schouwen-Duiveland: Verkenning",
+    "number": "12460/21-002.663",
+    "URL": "https://acpt.deltaexpertise.hz.nl/images/c/c5/Verkenning_externe_aanvoer_Schouwen-Duiveland.pdf"
+  },
+  {
+    "id": "binnenlands-bestuur-2023-zoetwater",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "family": "Tiekstra",
+        "given": "J."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          30
+        ]
+      ]
+    },
+    "title": "Zeeland vraagt hulp van Den Haag met zoetwaterprobleem",
+    "container-title": "Binnenlands Bestuur",
+    "URL": "https://www.binnenlandsbestuur.nl/ruimte-en-milieu/open-overheid/zeeland-vraagt-hulp-van-den-haag-met-zoetwaterprobleem"
+  },
+  {
+    "id": "rijksoverheid-deltares",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Rijksoverheid"
+      }
+    ],
+    "title": "Deltares",
+    "URL": "https://www.rijksoverheid.nl/service/contact/contactgids/d/deltares",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "kwr-over-ons",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "KWR Water Research Institute"
+      }
+    ],
+    "title": "Over ons",
+    "URL": "https://kwrwater.nl/over-ons/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "kwr-organisatie",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "KWR Water Research Institute"
+      }
+    ],
+    "title": "Organisatie",
+    "URL": "https://www.kwrwater.nl/over-ons/organisatie/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "kwr-regionale-zoetwaterbeschikbaarheid",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "KWR Water Research Institute"
+      }
+    ],
+    "title": "Regionale zoetwaterbeschikbaarheid",
+    "URL": "https://www.kwrwater.nl/thema/regionale-zoetwaterbeschikbaarheid/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "acacia-water-about-us",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Acacia Water"
+      }
+    ],
+    "title": "About us",
+    "URL": "https://www.acaciawater.com/en/about-us/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "acacia-water-home",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Acacia Water"
+      }
+    ],
+    "title": "Acacia Water",
+    "genre": "Home page",
+    "URL": "https://www.acaciawater.com/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "delphy-home",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Delphy"
+      }
+    ],
+    "title": "Delphy",
+    "genre": "Home page",
+    "URL": "https://delphy.nl/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "delphy-over-delphy",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Delphy"
+      }
+    ],
+    "title": "Over Delphy",
+    "URL": "https://werkenbij.delphy.nl/over-delphy/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "wiepkema-2023-zoetwaterbehoefte",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "family": "Wiepkema",
+        "given": "F."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          31
+        ]
+      ]
+    },
+    "title": "Zonder meer zoet water wordt agrarisch ondernemen op Schouwen Duiveland onmogelijk",
+    "container-title": "Akkerwijzer",
+    "URL": "https://www.akkerwijzer.nl/artikel/750772-zonder-meer-zoet-water-wordt-agrarisch-ondernemen-op-schouwen-duiveland-onmogelijk/"
+  },
+  {
+    "id": "living-lab-natuurlijk-zoet",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Living Lab Schouwen-Duiveland"
+      }
+    ],
+    "title": "Natuurlijk Zoet",
+    "URL": "https://livinglabschouwen-duiveland.nl/projecten/natuurlijk-zoet",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "living-lab-ln2050",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Living Lab Schouwen-Duiveland"
+      }
+    ],
+    "title": "Klimaat- en waterrobuust Laag-Nederland van nu naar 2050",
+    "URL": "https://livinglabschouwen-duiveland.nl/projecten/klimaat-en-waterrobuust-laag-nederland-van-nu-naar-2050",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "living-lab-innovatieve-drainage",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Living Lab Schouwen-Duiveland"
+      }
+    ],
+    "title": "Samenwerken voor Zoetwater: Innovatieve drainage demonstreren, monitoren en evalueren",
+    "URL": "https://livinglabschouwen-duiveland.nl/projecten/samenwerken-voor-zoetwater-innovatieve-drainage-demonstreren-monitoren-en-evalueren",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "dcc-home",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Delta Climate Center"
+      }
+    ],
+    "title": "Delta Climate Center",
+    "genre": "Home page",
+    "URL": "https://deltaclimatecenter.nl/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "dcc-about-us",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Delta Climate Center"
+      }
+    ],
+    "title": "About the DCC",
+    "URL": "https://deltaclimatecenter.nl/about-us/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "dcc-research",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Delta Climate Center"
+      }
+    ],
+    "title": "Research",
+    "URL": "https://deltaclimatecenter.nl/research/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "dcc-flexible-deltas",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Delta Climate Center"
+      }
+    ],
+    "title": "Flexible Deltas",
+    "URL": "https://deltaclimatecenter.nl/flexible-deltas.html",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "nioz-2023-dcc",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "NIOZ"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          2,
+          15
+        ]
+      ]
+    },
+    "title": "Green light for Delta Climate Center in Vlissingen",
+    "URL": "https://www.nioz.nl/en/news/green-light-for-delta-climate-center-in-vlissingen"
+  },
+  {
+    "id": "eurobarometer-2022-food-safety",
+    "type": "report",
+    "author": [
+      {
+        "literal": "European Commission"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Food safety in the EU",
+    "collection-title": "Special Eurobarometer",
+    "collection-number": "Wave EB97.2",
+    "publisher": "European Food Safety Authority",
+    "URL": "https://www.efsa.europa.eu/sites/default/files/2022-09/EB97.2-food-safety-in-the-EU_report.pdf"
+  },
+  {
+    "id": "ec-cap-at-a-glance",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "European Commission"
+      }
+    ],
+    "title": "CAP at a glance",
+    "URL": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "ec-cap-conditionality",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "European Commission"
+      }
+    ],
+    "title": "Conditionality",
+    "URL": "https://agriculture.ec.europa.eu/common-agricultural-policy/income-support/conditionality_en",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "ec-2023-banking-package",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "European Commission, Directorate-General for Financial Stability, Financial Services and Capital Markets Union"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          14
+        ]
+      ]
+    },
+    "title": "Latest updates on the banking package",
+    "URL": "https://finance.ec.europa.eu/news/latest-updates-banking-package-2023-12-14_en"
+  },
+  {
+    "id": "nos-2018-misoogst",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "literal": "NOS"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          10,
+          31
+        ]
+      ]
+    },
+    "title": "Misoogst bij uien en aardappelen door droogte",
+    "URL": "https://nos.nl/artikel/2257205-misoogst-bij-uien-en-aardappelen-door-droogte"
+  },
+  {
+    "id": "dutchnews-2018-potato-processors",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "literal": "DutchNews.nl"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          10
+        ]
+      ]
+    },
+    "title": "The drought leads to tension between potato farmers and processors",
+    "URL": "https://www.dutchnews.nl/news/2018/08/the-drought-leads-to-tension-between-potato-farmers-and-processors"
+  },
+  {
+    "id": "nepg-2018-contracts",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "literal": "North-Western European Potato Growers"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          14
+        ]
+      ]
+    },
+    "title": "Potato growers propose pan-European approach to resolve contract issues with processors due to extreme weather",
+    "container-title": "PotatoPro",
+    "URL": "https://www.potatopro.com/news/2018/potato-growers-propose-pan-european-approach-resolve-contract-issues-processors-due"
+  },
+  {
+    "id": "bogosavac-2018",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "family": "Bogosavac",
+        "given": "N."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          10,
+          31
+        ]
+      ]
+    },
+    "title": "Kleinere aardappelen en duurdere uien: dit merk je in de winkel",
+    "container-title": "NOS",
+    "URL": "https://nos.nl/artikel/2257266-kleinere-aardappelen-en-duurdere-uien-dit-merk-je-in-de-winkel"
+  },
+  {
+    "id": "ec-2025-wasserresilienz",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "European Commission, Representation in Germany"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          4
+        ]
+      ]
+    },
+    "title": "Wasserversorgung für alle sichern: Kommission legt EU-Strategie zur Wasserresilienz vor",
+    "URL": "https://germany.representation.ec.europa.eu/news/wasserversorgung-fur-alle-sichern-kommission-legt-eu-strategie-zur-wasserresilienz-vor-2025-06-04_de"
+  },
+  {
+    "id": "munns-tester-2008",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Munns",
+        "given": "R."
+      },
+      {
+        "family": "Tester",
+        "given": "M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2008
+        ]
+      ]
+    },
+    "title": "Mechanisms of salinity tolerance",
+    "container-title": "Annual Review of Plant Biology",
+    "volume": "59",
+    "page": "651–681",
+    "DOI": "10.1146/annurev.arplant.59.032607.092911"
+  },
+  {
+    "id": "allen-1998",
+    "type": "report",
+    "author": [
+      {
+        "family": "Allen",
+        "given": "R. G."
+      },
+      {
+        "family": "Pereira",
+        "given": "L. S."
+      },
+      {
+        "family": "Raes",
+        "given": "D."
+      },
+      {
+        "family": "Smith",
+        "given": "M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1998
+        ]
+      ]
+    },
+    "title": "Crop evapotranspiration: Guidelines for computing crop water requirements",
+    "collection-title": "FAO Irrigation and Drainage Paper",
+    "collection-number": "56",
+    "publisher": "FAO",
+    "URL": "https://www.fao.org/4/x0490e/x0490e00.htm"
+  },
+  {
+    "id": "provincie-zeeland-2021-grondwateronttrekkingen",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Gedeputeerde Staten van Zeeland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          9
+        ]
+      ]
+    },
+    "title": "Antwoorden op vragen van de statenleden Heerschop en Van der Vliet (PvdA) inzake onttrekkingen grondwater",
+    "genre": "zaaknummer",
+    "number": "54188",
+    "collection-title": "aanhangsel tot de notulen van Provinciale Staten",
+    "collection-number": "nr. 191",
+    "URL": "https://www.zeeland.nl/sites/default/files/digitaalarchief/IB21_ae4d5ac6.pdf"
+  },
+  {
+    "id": "deolu-ajayi-2024",
+    "type": "report",
+    "author": [
+      {
+        "family": "Deolu-Ajayi",
+        "given": "A. O."
+      },
+      {
+        "family": "Snethlage",
+        "given": "J."
+      },
+      {
+        "family": "Wilbers",
+        "given": "G.-J."
+      },
+      {
+        "family": "Poelman",
+        "given": "M."
+      },
+      {
+        "family": "Velilla",
+        "given": "E."
+      },
+      {
+        "family": "de Visser",
+        "given": "W."
+      },
+      {
+        "family": "Pasaribu",
+        "given": "D. W."
+      },
+      {
+        "family": "Krijnse Locker",
+        "given": "C."
+      },
+      {
+        "family": "Walma",
+        "given": "K."
+      },
+      {
+        "family": "Terwisscha van Scheltinga",
+        "given": "C."
+      },
+      {
+        "family": "van der Werf",
+        "given": "A."
+      },
+      {
+        "family": "van der Meer",
+        "given": "I. M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024)",
+    "genre": "Report",
+    "number": "WPR-1387",
+    "publisher": "Wageningen Plant Research",
+    "DOI": "10.18174/674509"
+  },
+  {
+    "id": "eu-cap-network-2023",
+    "type": "report",
+    "author": [
+      {
+        "literal": "EU CAP Network"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "'Zeeland's roots for new crops': Growing sea bananas and sea fennel on saline land thanks to LEADER climate adaptation support",
+    "genre": "Good practice report",
+    "publisher": "European Commission",
+    "URL": "https://eu-cap-network.ec.europa.eu/sites/default/files/2023-07/Zeeland%E2%80%99s%20roots%20for%20new%20crops.pdf"
+  }
+]

@@ -14,7 +14,7 @@ spreadsheet.
 | --- | --- | --- |
 | `cld.json` | the elements, connections, named loops, layout (x, y) and link curvature | yes |
 | `actors.json` | the Actor Map: the actors, their columns, their relations and places, the one list of actors the CLD names | yes |
-| `references.json` | the sources, as `"key": "full APA reference"` | yes |
+| `references.json` | the sources, as CSL JSON, from which `build.py` writes each APA reference | yes |
 | `model-texts.md` | the model texts the page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
 | `view.scss`, `actors-view.scss` | the Kumu views inside `docs/project.json` and `docs/actors-project.json` | yes |
 | `page/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `style.css` | yes |
@@ -39,7 +39,8 @@ builds and pushes, so nobody else needs git or Python.
 
 1. Edit `cld.json` (or `actors.json`, `references.json`, `view.scss`, `page/`).
 2. `python3 build.py` checks the model and rebuilds `docs/`. It stops on an error (an unknown
-   element or actor, a source missing from `references.json`, a link marked a hypothesis that has
+   element or actor, a source missing from `references.json` or an item there lacking a field its
+   APA reference needs, a link marked a hypothesis that has
    sources, a named loop that is not closed or whose
    R/B does not match its polarities) and prints the source coverage, hypotheses apart, the layout's
    crossings between links and links through a box they do not connect, and any warnings: a model
@@ -208,6 +209,21 @@ A field no source carries stays empty (`""`, `null` or `[]`), never a guess, and
 build.py` lists each one still empty; it stops on a value outside its list, a relation to an
 unknown actor or a source not in `references.json`. The CLD variables each actor decides are
 derived from the CLD's `actor` fields, never typed here.
+
+### `references.json`
+
+The sources of the CLD and the Actor Map, as CSL JSON, the format Zotero imports: a list of items,
+each with `id` (the key a `sources` field names, never changed), `type` (one of `REF_TYPES` in
+`build.py`) and the fields its reference needs: `author` (`family` and `given`, or `literal` for an
+organisation), `issued` and `accessed` (`date-parts`), `title`, `container-title` (the journal,
+news site or website, left out where it is the author), `volume`, `issue`, `page`, `genre` and
+`number` (a report's kind and number), `collection-title` and `collection-number` (a series or a
+gazette, and the number in it), `version`, `publisher` (left out where it is the author), and
+`DOI` or `URL`. `build.py` writes each APA reference from them (`apa()`), which the page, Kumu and
+the table show; a Dutch law (`legislation`) is cited by the version in force on its `issued`
+date, and `year-suffix` holds a letter a description cites (van Beekom et al., 1953a). Zotero
+holds a copy of each item, in Jordy's group library Challenge Based Project, where the PDFs are
+attached, never here, since this repository is public.
 
 ### The Actor Map
 

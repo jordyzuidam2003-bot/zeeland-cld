@@ -76,9 +76,70 @@ ACTOR_SECTORS = ["Aquaculture", "Arable Farming", "Export/distribution", "Extern
                  "Greenhouse Horticulture", "Knowledge institution", "Livestock Farming", "Nature preservation",
                  "Onion Cultivation & Processing", "Water management"]
 RELATION_KINDS = ["authority over", "finances", "buys from", "advises", "represents", "works with"]
+# references.json is CSL JSON, as Zotero imports it, and apa() writes each APA line from it, so
+# the page, the table and Zotero's copy hold one record; a type joins once apa() writes it
+REF_TYPES = ["article-journal", "article-newspaper", "dataset", "legislation", "report", "webpage"]
+MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
+          "October", "November", "December"]
 # the fields build.py lists while empty: a field no source carries stays empty, never a guess
 ACTOR_FIELDS = ["label", "scale", "type", "level", "sector", "interest", "influence", "affected",
                 "influence score", "relations", "sources"]
+
+
+def apa(r):
+    """The APA 7 reference of one CSL JSON item, as plain text. A Dutch law is cited by the version
+    in force on its `issued` date, which APA's rules for laws (written for US law) do not cover.
+    `year-suffix` holds a letter a description cites (1953a); the reference list in Zotero letters
+    its own."""
+    def sentence(text):
+        return text if text.endswith((".", "?", "!")) else text + "."
+
+    url = f"https://doi.org/{r['DOI']}" if r.get("DOI") else r["URL"]
+    if r["type"] == "legislation":
+        y, m, d = r["issued"]["date-parts"][0]
+        return f"{r['title']} (version in force from {d} {MONTHS[m - 1]} {y}). {url}"
+    names = [a.get("literal") or f"{a['family']}, {a['given']}" for a in r["author"]]
+    parts = [sentence(names[0] if len(names) == 1 else ", ".join(names[:-1]) + ", & " + names[-1])]
+    if "issued" in r:
+        y, *md = r["issued"]["date-parts"][0]
+        when = f"{y}{r.get('year-suffix', '')}" + (f", {MONTHS[md[0] - 1]}" if md else "") + (f" {md[1]}" if len(md) > 1 else "")
+    else:
+        when = "n.d." + (f"-{r['year-suffix']}" if r.get("year-suffix") else "")
+    parts.append(f"({when}).")
+    # a number and the series it belongs to in parentheses after the title; a genre with no
+    # number is a description, in brackets
+    numbered = " ".join(x for x in (r.get("genre") if r.get("number") else None, r.get("number")) if x)
+    series = " ".join(x for x in (r.get("collection-title"), r.get("collection-number")) if x)
+    paren = ", ".join(x for x in (numbered, series, r.get("version")) if x)
+    title = r["title"] + (f" ({paren})" if paren else "") + (f" [{r['genre']}]" if r.get("genre") and not r.get("number") else "")
+    parts.append(sentence(title + (" [Data set]" if r["type"] == "dataset" else "")))
+    if r["type"] == "article-journal":
+        parts.append(sentence(f"{r['container-title']}, {r['volume']}" + (f"({r['issue']})" if r.get("issue") else "") + f", {r['page']}"))
+    elif r.get("container-title"):
+        parts.append(sentence(r["container-title"]))
+    if r.get("publisher"):
+        parts.append(sentence(r["publisher"]))
+    if r.get("accessed"):
+        y, m, d = r["accessed"]["date-parts"][0]
+        url = f"Retrieved {MONTHS[m - 1]} {d}, {y}, from {url}"
+    return " ".join(parts + [url])
+
+
+def references():
+    """{id: APA line} from references.json, and its errors."""
+    items, refs, errors = json.loads((ROOT / "references.json").read_text()), {}, []
+    for r in items:
+        name = f"references.json: {r.get('id')!r}"
+        if not r.get("id") or r["id"] in refs:
+            errors.append(f"{name}: an item needs an id no other item has")
+        elif r.get("type") not in REF_TYPES:
+            errors.append(f"{name}: type must be one of {', '.join(REF_TYPES)}")
+        else:
+            try:
+                refs[r["id"]] = apa(r)
+            except (KeyError, IndexError, TypeError, ValueError) as e:
+                errors.append(f"{name}: a field its APA line needs is missing or malformed ({type(e).__name__}: {e})")
+    return refs, errors
 
 
 def check_actors(actors, refs):
@@ -566,13 +627,13 @@ def main():
     if args.layout:
         apply_layout(Path(args.layout))
     cld = json.loads(CLD.read_text())
-    refs = json.loads((ROOT / "references.json").read_text())
+    refs, ref_errors = references()
     actors = json.loads(ACTORS.read_text())
     template = (ROOT / "view.scss").read_text()
     actor_errors, empty = check_actors(actors, refs)
     errors, warnings = check(cld, refs, actors)
-    if errors or actor_errors:
-        sys.exit("cld.json or actors.json has errors:\n  " + "\n  ".join(actor_errors + errors))
+    if errors or actor_errors or ref_errors:
+        sys.exit("cld.json, actors.json or references.json has errors:\n  " + "\n  ".join(ref_errors + actor_errors + errors))
 
     # the model version teammates compare: the first seven characters of cld.json's SHA-256
     version = hashlib.sha256(CLD.read_bytes()).hexdigest()[:7]

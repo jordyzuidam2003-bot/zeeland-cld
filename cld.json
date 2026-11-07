@@ -2152,10 +2152,12 @@
       "to": "demand-for-deep-polder-drainage",
       "polarity": "+",
       "delay": false,
-      "description": "The more hectares of arable land in a polder, the more farmers there ask for low spring levels.",
-      "sources": [],
-      "curvature": 0.112,
-      "hypothesis": true
+      "description": "Arable land needs lower ditch levels than grassland or nature. By the water board's rules for its whole area, a water level plan starts from an optimal level for each use and soil, the farmland's derived from the optimal drain depths for farming: for arable farming and horticulture 120 cm below the surface on salt-marsh clay (schorgronden) with no sand within 1.2 m, down to 60 on peat, for permanent grassland as a rule 20 cm less (Waterschap Scheldestromen, 2025, pp. 7, 19), and for nature 0 cm as a general starting point, its levels set with the site managers, as Duiveland's analysis applied them to its land-use map of 2018 (Waterschap Scheldestromen, 2021a, p. 29). So the more hectares farmed as arable land, the more land whose farmers need low levels, in spring as their soil work allows (2021a, p. 66); how strongly they ask for them, no source read shows (Farmers' demand for deep polder drainage → Water board's plans to raise ditch levels). Within the year: the need goes with the land's use each season, while the land leaves arable use only as it changes hands (Arable land in the polders).",
+      "sources": [
+        "scheldestromen-2025-nota-peilbesluiten",
+        "scheldestromen-2021-hor-duiveland"
+      ],
+      "curvature": 0.112
     },
     {
       "from": "farm-revenue",

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 8f9190c, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 8f58a65, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -2075,7 +2075,7 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Farmers pump more fresh groundwater as the shortfall grows: the water board registered a considerable increase in extractions in recent years, which the more extreme drought certainly influenced, so the volume pumped rises in dry years (Gedeputeerde Staten van Zeeland, 2021, for Zeeland, whose farms pump under the same rules as the island's). On Schouwen-Duiveland the farms get their fresh water from rain and from the fresh groundwater; the shallow groundwater and the ditches are brackish to salt, and no water can be brought in (Kaandorp et al., 2022, p. 8). They may pump only from fresh groundwater more than 15 m thick, under the creek ridges and the dunes (p. 26): in the low polders the farmers talked to do not irrigate, while on the creek ridges a few pump from deep drains, an arable farmer about 20 mm at germination and a livestock farmer for grassland through the summer (pp. 27–28, 43). So the link runs where a farm has fresh groundwater under it. Within the year.",
+        "description": "Farmers pump more fresh groundwater as the shortfall grows: the water board registered a considerable increase in extractions in recent years, which the more extreme drought certainly influenced, so the volume pumped rises in dry years (Gedeputeerde Staten van Zeeland, 2021, for Zeeland, whose farms pump under the same rules as the island's). On Schouwen-Duiveland the farms get their fresh water from rain and from the fresh groundwater; the shallow groundwater and the ditches are brackish to salt, and no water can be brought in (Kaandorp et al., 2022, p. 8). They may pump only from fresh groundwater more than 15 m thick, under the creek ridges and the dunes (p. 26): in the low polders the farmers talked to do not irrigate, while on a creek ridge a livestock farmer pumps from two deep drains for grassland through the summer, and an arable farmer irrigates about 20 mm at germination, the report not saying where that water comes from (pp. 27–28, 40, 43). So the link runs where a farm has fresh groundwater under it. Within the year.",
         "sets link": "E to T",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
@@ -2095,12 +2095,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "What farmers pump is fresh water their crops get: what pumping gains them.",
+        "description": "What farmers pump is fresh water their crops get: what pumping gains them. On the island it goes onto the field by reel sprinkler or by drip, and the method sets how much of it the crop gets: drip loses less water, so a cubic metre covers more land, while a reel usually gives several gifts per hectare (Kaandorp et al., 2022, p. 35, in its cost-benefit analysis for the island's farms). On a cluster of three farms on a creek ridge, a livestock farmer irrigates grassland in dry years, in midsummer too, from two deep drains under a permit of up to 16,000 m³ a year (pp. 40, 43). The salt a well may draw up with the water runs through Upconing of salt groundwater. Within the season: within the year, no delay.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-groundwater-extraction-for-irrigation",
@@ -4244,7 +4244,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 8f9190c",
+      "name": "CLD, model 8f58a65",
       "description": "",
       "scale": 1,
       "center": {

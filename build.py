@@ -11,13 +11,16 @@ CLD's actor fields name), references.json (sources), model-texts.md (the model t
 view.scss and actors-view.scss (the Kumu views inside project.json and actors-project.json) and
 page/ (index.html, a template with the placeholders <!-- SVG -->, <!-- FACTS -->, <!-- TEXTS --> and
 <!-- DATA -->; actors.html, the Actor Map's, with <!-- QUESTION -->, <!-- SVG --> and <!-- DATA -->;
-app.js; actors.js; style.css). draw.py draws the CLD, actormap.py the Actor Map and its table,
+table.html, the table's, with <!-- CONTENTS -->, <!-- TABLES --> and <!-- VERSION -->; app.js;
+actors.js; style.css). draw.py draws the CLD, actormap.py the Actor Map and its table,
 xlsx.py writes the table's file. Never edit docs/, which this script writes:
 
     docs/index.html    the page: the template with the drawing inline, the model texts (their
                        numbers counted in the model) and the data as JSON
     docs/app.js        copied from page/
     docs/style.css     copied from page/
+    docs/table.html    the tables that explain the CLD (table()): per element, link, named loop and
+                       group of loops, and the references they cite; linked from the page
     docs/cld.svg       the drawing on its own, the picture for the report
     docs/loops/<id>.svg  each named loop on its own (draw.loop_figure()), its figure for the
                        report; the page's panel for the loop shows it
@@ -447,6 +450,68 @@ def page(cld, refs, actors, version, loops):
             .replace("<!-- DATA -->", f'<script type="application/json" id="data">{data}</script>'))
 
 
+def table(cld, refs, actors, version):
+    """docs/table.html: the tables that explain the CLD, written from cld.json (the actors' labels
+    from actors.json, the references from references.json): per element, per link, per named loop
+    and per group of loops, then the references they cite, in-text citations in the tables as in
+    the actors' table (actormap.citations()). HTML tables, since one copied from the page keeps its
+    columns pasted into Google Docs or Word (Jordy left the choice to the session)."""
+    esc = actormap.esc
+    els = {e["id"]: e for e in cld["elements"]}
+    actor = {a["id"]: a["label"] for a in actors["actors"]}
+    cites = actormap.citations(sorted({k for i in cld["elements"] + cld["connections"] for k in i["sources"]}), refs)
+    none = '<span class="none">none yet</span>'
+
+    def text(item):  # the description, and what it folds or idealizes where it does
+        return f"<p>{esc(item['description'])}</p>" + (
+            f"<p><strong>Simplification:</strong> {esc(item['simplification'])}</p>" if "simplification" in item else "")
+
+    def sources(item):
+        if item.get("hypothesis"):
+            return "<em>Hypothesis for the group model building session</em>"
+        return esc(actormap.cite_list(item["sources"], cites)) or none
+
+    def section(key, title, head, rows):
+        cells = lambda tag, row: "".join(f"<{tag}>{c}</{tag}>" if not c.startswith("<td") else c for c in row)
+        return (f'<h2 id="{key}">{title}</h2>\n<div class="scroll"><table>\n<thead><tr>{cells("th", head)}</tr></thead>\n<tbody>\n'
+                + "\n".join(f"<tr>{cells('td', r)}</tr>" for r in rows) + "\n</tbody></table></div>")
+
+    # the elements by subsystem, as the drawing's regions (water and soil left), then by label
+    order = list(draw.REGION)
+    elements = sorted(cld["elements"], key=lambda e: (order.index(e["subsystem"]), e["label"].lower()))
+    parts = [("elements", "Elements", section("elements", "Elements", [
+        "Element", "Type", "SETS domain", "Subsystem", "Description", "Decided by", "Actors", "Sources"], [
+        [esc(e["label"]), e["element type"], e["sets domain"], e["subsystem"], text(e),
+         esc(actor[e["actor"]]) if "actor" in e else "", esc(", ".join(actor[a] for a in e.get("actors", []))),
+         esc(actormap.cite_list(e["sources"], cites)) or none] for e in elements]))]
+    links = sorted(cld["connections"], key=lambda c: (els[c["from"]]["label"].lower(), els[c["to"]]["label"].lower()))
+    parts.append(("links", "Links", section("links", "Links", [
+        "From", "To", "Polarity", "Delay", "Description", "Sources"], [
+        [esc(els[c["from"]]["label"]), esc(els[c["to"]]["label"]),
+         f'<td class="sign {"sign-plus" if c["polarity"] == "+" else "sign-minus"}">{"+" if c["polarity"] == "+" else "−"}</td>',
+         "yes" if c["delay"] else "no", text(c), sources(c)] for c in links])))
+    parts.append(("loops", "Named loops", section("loops", "Named loops", [
+        "Loop", "Name", "Kind", "Its elements, in order", "Description"], [
+        [L["id"], esc(L["name"]), "Reinforcing" if L["id"].startswith("R") else "Balancing",
+         esc(" → ".join(els[i]["label"] for i in L["path"] + L["path"][:1])), esc(L.get("description", ""))]
+        for L in cld["loops"]])))
+    if cld.get("groups"):
+        parts.append(("groups", "Combined loops", section("groups", "Combined loops", [
+            "Combined loops", "Its loops", "Description"], [
+            [esc(g["name"]), ", ".join(g["loops"]), esc(g["description"])] for g in cld["groups"]])))
+    link = lambda t: re.sub(r"https?://[^\s<]+[^\s<.,;)]", lambda m: f'<a href="{m[0]}">{m[0]}</a>', t)
+    parts.append(("references", "References", '<h2 id="references">References</h2>\n' + "\n".join(
+        f'<p class="reference">{link(esc(r))}</p>' for r in sorted((c[2] for c in cites.values()), key=str.lower))))
+
+    template = (PAGE / "table.html").read_text()
+    contents = "".join(f'<a href="#{key}">{title}</a>' for key, title, _ in parts)
+    for marker, out in (("<!-- CONTENTS -->", contents), ("<!-- TABLES -->", "\n".join(p for _, _, p in parts)),
+                        ("<!-- VERSION -->", version)):
+        assert template.count(marker) == 1, f"page/table.html must hold {marker} once"
+        template = template.replace(marker, out)
+    return template
+
+
 def project(cld, refs, actors, template, version):
     """A full Kumu project export, the shape of Kumu's own "Export JSON" of a project.
 
@@ -654,6 +719,7 @@ def main():
         "cld.svg": draw.svg(cld),
         "regions.svg": draw.regions_svg(cld)[0],
         "index.html": page(cld, refs, actors, version, loops),
+        "table.html": table(cld, refs, actors, version),
         "app.js": (PAGE / "app.js").read_text(),
         "style.css": (PAGE / "style.css").read_text(),
         **{f"loops/{loop['id']}.svg": draw.loop_figure(cld, loop) for loop in cld["loops"]},

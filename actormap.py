@@ -217,7 +217,9 @@ def author_year(ref):
     joined by &, three or more as the first et al."""
     m = re.match(r"(.*?) \(([^)]*)\)\.? ?(.*)", ref)
     authors, when, title = m[1].rstrip("."), m[2], m[3]
-    year = re.search(r"\d{4}", when)[0] if re.search(r"\d{4}", when) else "n.d."
+    # the year with the letter apa() writes from references.json's year-suffix (2021c, n.d.-a)
+    year = re.search(r"\d{4}[a-z]?|n\.d\.(?:-[a-z])?", when)
+    year = year[0] if year else "n.d."
     if re.search(r", [A-Z]\.", m[1]):  # people: Surname, I. I., Surname, I., & Surname, I.
         names = [item.split(", ")[0] for item in re.split(r"(?<=\.), (?:& )?", m[1])]
     else:  # group authors: a comma also falls inside one name (Minister van Landbouw, Visserij, …),
@@ -230,17 +232,21 @@ def author_year(ref):
 
 def citations(keys, refs):
     """{key: (author, year, reference)} for the keys cited, one author's works of one year told
-    apart by a letter after the year in the order of their titles, as APA does (2021a, n.d.-a), the
-    reference given the same letter."""
+    apart by a letter after the year, as APA does (2021a, n.d.-a): the letter references.json's
+    year-suffix gives, which the CLD's descriptions cite and apa() writes into the reference, else
+    the first letter not taken, in the order of their titles, the reference given the same letter."""
     parts = {k: author_year(refs[k]) for k in keys}
     same = {}
     for k in sorted(keys, key=lambda k: parts[k][2].lower()):
-        same.setdefault(parts[k][:2], []).append(k)
+        same.setdefault((parts[k][0], re.match(r"\d{4}|n\.d\.", parts[k][1])[0]), []).append(k)
     out = {}
     for (name, year), ks in same.items():
-        for i, k in enumerate(ks):
-            y = year if len(ks) == 1 else f"{year}-{'abcdefghij'[i]}" if year == "n.d." else f"{year}{'abcdefghij'[i]}"
-            ref = refs[k] if len(ks) == 1 else re.sub(r"\((n\.d\.|\d{4})", f"({y}", refs[k], count=1)
+        free = (c for c in "abcdefghijklmnopqrstuvwxyz" if c not in {parts[k][1][-1] for k in ks if parts[k][1] != year})
+        for k in ks:
+            y, ref = parts[k][1], refs[k]
+            if y == year and len(ks) > 1:  # no letter yet, beside another of the same year
+                y = f"{year}-{next(free)}" if year == "n.d." else f"{year}{next(free)}"
+                ref = re.sub(r"\((n\.d\.|\d{4})", f"({y}", refs[k], count=1)
             out[k] = (name, y, ref)
     return out
 

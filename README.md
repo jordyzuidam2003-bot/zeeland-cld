@@ -18,12 +18,12 @@ spreadsheet.
 | `references.zotero.json` | the Use note in Zotero that `push` wrote for each source, with a fingerprint of its text, so a push never replaces a note somebody changed | never: `push` writes it |
 | `model-texts.md` | the model texts the page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
 | `view.scss`, `actors-view.scss` | the Kumu views inside `docs/project.json` and `docs/actors-project.json` | yes |
-| `page/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `style.css` | yes |
+| `page/` | the pages around the drawings: `index.html`, `actors.html` and `table.html` (templates), `app.js`, `actors.js`, `style.css` | yes |
 | `build.py` | checks the model and the actors and writes `docs/` (how: its docstring) | — |
 | `draw.py` | draws the CLD's SVG, imported by `build.py` | — |
 | `actormap.py` | draws the Actor Map and lays out its table, imported by `build.py` | — |
 | `xlsx.py` | writes the table as an `.xlsx` with the standard library | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json`; `actors.html`, `actors.js`, `actors.svg`, `actors-bands.svg`, `actors-project.json`, `actors.xlsx` | never: `build.py` writes it |
+| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json`, `table.html`; `actors.html`, `actors.js`, `actors.svg`, `actors-bands.svg`, `actors-project.json`, `actors.xlsx` | never: `build.py` writes it |
 
 ## Version 1
 
@@ -95,6 +95,18 @@ on its own, `docs/loops/<id>.svg`. A click on an element or a link opens a panel
 and sources; Esc or a click on the background closes it. The footer shows the model version, the
 first seven characters of the SHA-256 of `cld.json`, so teammates can tell which model they are
 looking at.
+
+### The table
+
+`docs/table.html`, linked from the page, holds the tables that explain the CLD, written by
+`build.py` from `cld.json`, so they never drift from the drawing: the elements (by subsystem,
+then by label: type, SETS domain, subsystem, description, the actor that decides it, its
+actors, sources), the links (by their ends: polarity, delay, description, sources or that it
+is a hypothesis), the named loops (R or B, the elements in order, the description) and the
+combined loops once `cld.json` holds them; a simplification sits under its description. The
+sources are in-text citations, the letter after a year the one `year-suffix` sets, with the
+full references below. An HTML page, since a table copied from it keeps its columns pasted into
+Google Docs or Word.
 
 ### `cld.json`
 

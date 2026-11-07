@@ -128,7 +128,7 @@
   "note": "9DUZZSPB"
  },
  "kaandorp-2022": {
-  "digest": "2db73bd01152",
+  "digest": "d33f335677f0",
   "note": "UCUZ55BX"
  },
  "kamerstuk-2025-cosun": {
@@ -232,7 +232,7 @@
   "note": "NZR6R475"
  },
  "reglement-scheldestromen-2025": {
-  "digest": "db93dbb1cd09",
+  "digest": "145beb5c49f6",
   "note": "KWSJTC9W"
  },
  "rekenkamer-2026-zoetwater": {
@@ -268,23 +268,27 @@
   "note": "UHQAPNFK"
  },
  "scheldestromen-2021-hor-duiveland": {
-  "digest": "fae44a3287f8",
+  "digest": "8eda34a10171",
   "note": "QUFF4FFH"
  },
+ "scheldestromen-2021-hor-schouwen": {
+  "digest": "590b303e2f52",
+  "note": "WX6WV3N8"
+ },
  "scheldestromen-2021-peilbesluit-duiveland": {
-  "digest": "508737694d34",
+  "digest": "dcdb60a9cc48",
   "note": "3WRIQ6MM"
  },
  "scheldestromen-2021-wbp": {
-  "digest": "642ad2ea28ef",
+  "digest": "cbebebb8e101",
   "note": "SF72FMHC"
  },
  "scheldestromen-2022-peilbesluit-schouwen": {
-  "digest": "508737694d34",
+  "digest": "dcdb60a9cc48",
   "note": "5UZ5S3F5"
  },
  "scheldestromen-2025-nota-peilbesluiten": {
-  "digest": "c3e239a0d086",
+  "digest": "d696ecf169c9",
   "note": "H3BE9FEM"
  },
  "scheldestromen-2026-grondwater": {
@@ -292,7 +296,7 @@
   "note": "MT7QA2GF"
  },
  "scheldestromen-2026-informatieavond-duiveland": {
-  "digest": "5d6e83673d60",
+  "digest": "9b2aec08e7fe",
   "note": "GPVPDJ33"
  },
  "schouwen-duiveland-2024-waterbassins": {
@@ -324,7 +328,7 @@
   "note": "786GJUQ8"
  },
  "verstand-2021": {
-  "digest": "059a1d574d59",
+  "digest": "2f3ff57184b0",
   "note": "3TC36KKG"
  },
  "waterschapswet-2026": {

@@ -20,8 +20,8 @@
 </g>
 </g>
 <g class="elements">
-<g class="element" data-id="plans-to-raise-ditch-levels" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-437.0" y="-143.0" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="plans-to-raise-ditch-levels" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="-437.0" y="-143.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-259.8" y="-108.5" text-anchor="middle">Water board's plans to</text>
 <text x="-259.8" y="-74.5" text-anchor="middle">raise ditch levels</text>
 </g>

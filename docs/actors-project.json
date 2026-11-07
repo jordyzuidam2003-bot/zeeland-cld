@@ -246,7 +246,7 @@
         "influence score": 5,
         "client": "no",
         "decides in the CLD": "Water board's plans to raise ditch levels\nWater board levy on farmland",
-        "sources": "Waterschap Scheldestromen. (2021). Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst. https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf\nWaterschap Scheldestromen. (2021, July 12). Peilbesluit Duiveland ter inzage (Waterschapsblad 2021, nr. 8486). https://zoek.officielebekendmakingen.nl/wsb-2021-8486.pdf\nWaterschap Scheldestromen. (2022, January 3). Peilbesluit Schouwen ter inzage (Waterschapsblad 2022, nr. 10). https://zoek.officielebekendmakingen.nl/wsb-2022-10.pdf\nWaterschap Scheldestromen. (2026, May 29). Besluit wijziging artikel 2.9 van de Waterschapsverordening waterschap Scheldestromen (Waterschapsblad 2026, nr. 13978). https://zoek.officielebekendmakingen.nl/wsb-2026-13978.html\nWaterschapswet (version in force from 1 January 2026). https://wetten.overheid.nl/BWBR0005108/2026-01-01\nOmgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01"
+        "sources": "Waterschap Scheldestromen. (2021b). Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst. https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf\nWaterschap Scheldestromen. (2021c, July 12). Peilbesluit Duiveland ter inzage (Waterschapsblad 2021, nr. 8486). https://zoek.officielebekendmakingen.nl/wsb-2021-8486.pdf\nWaterschap Scheldestromen. (2022, January 3). Peilbesluit Schouwen ter inzage (Waterschapsblad 2022, nr. 10). https://zoek.officielebekendmakingen.nl/wsb-2022-10.pdf\nWaterschap Scheldestromen. (2026b, May 29). Besluit wijziging artikel 2.9 van de Waterschapsverordening waterschap Scheldestromen (Waterschapsblad 2026, nr. 13978). https://zoek.officielebekendmakingen.nl/wsb-2026-13978.html\nWaterschapswet (version in force from 1 January 2026). https://wetten.overheid.nl/BWBR0005108/2026-01-01\nOmgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01"
       }
     },
     {
@@ -505,7 +505,7 @@
       "attributes": {
         "connection type": "authority over",
         "description": "Sets the ditch levels the island's farms drain to, in its water level plans for Schouwen and Duiveland, and the rules for their groundwater extraction for irrigation.",
-        "sources": "Waterschap Scheldestromen. (2021, July 12). Peilbesluit Duiveland ter inzage (Waterschapsblad 2021, nr. 8486). https://zoek.officielebekendmakingen.nl/wsb-2021-8486.pdf\nWaterschap Scheldestromen. (2022, January 3). Peilbesluit Schouwen ter inzage (Waterschapsblad 2022, nr. 10). https://zoek.officielebekendmakingen.nl/wsb-2022-10.pdf\nWaterschap Scheldestromen. (2026, May 29). Besluit wijziging artikel 2.9 van de Waterschapsverordening waterschap Scheldestromen (Waterschapsblad 2026, nr. 13978). https://zoek.officielebekendmakingen.nl/wsb-2026-13978.html\nOmgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01"
+        "sources": "Waterschap Scheldestromen. (2021c, July 12). Peilbesluit Duiveland ter inzage (Waterschapsblad 2021, nr. 8486). https://zoek.officielebekendmakingen.nl/wsb-2021-8486.pdf\nWaterschap Scheldestromen. (2022, January 3). Peilbesluit Schouwen ter inzage (Waterschapsblad 2022, nr. 10). https://zoek.officielebekendmakingen.nl/wsb-2022-10.pdf\nWaterschap Scheldestromen. (2026b, May 29). Besluit wijziging artikel 2.9 van de Waterschapsverordening waterschap Scheldestromen (Waterschapsblad 2026, nr. 13978). https://zoek.officielebekendmakingen.nl/wsb-2026-13978.html\nOmgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01"
       },
       "from": "elem-waterschap-scheldestromen",
       "to": "elem-arable-farmers"
@@ -518,7 +518,7 @@
       "attributes": {
         "connection type": "works with",
         "description": "Takes part with the province in the Zeeuws Deltaplan Zoet Water, and sets up with it a network measuring the boundary between fresh and salt groundwater.",
-        "sources": "Waterschap Scheldestromen. (2021). Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst. https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf"
+        "sources": "Waterschap Scheldestromen. (2021b). Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst. https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf"
       },
       "from": "elem-waterschap-scheldestromen",
       "to": "elem-provincie-zeeland"
@@ -648,7 +648,7 @@
       "attributes": {
         "connection type": "authority over",
         "description": "Sets the water board's area, tasks and rules of organisation by provincial regulation, sets rules in its omgevingsverordening for the water board's water level plans, and supervises it.",
-        "sources": "Waterschapswet (version in force from 1 January 2026). https://wetten.overheid.nl/BWBR0005108/2026-01-01\nOmgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01\nProvincie Zeeland. (2025). Regionaal Waterprogramma 2022–2027 (Provinciaal blad 2025, 3897). https://lokaleregelgeving.overheid.nl/CVDR736656\nWaterschap Scheldestromen. (2021). Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst. https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf"
+        "sources": "Waterschapswet (version in force from 1 January 2026). https://wetten.overheid.nl/BWBR0005108/2026-01-01\nOmgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01\nProvincie Zeeland. (2025). Regionaal Waterprogramma 2022–2027 (Provinciaal blad 2025, 3897). https://lokaleregelgeving.overheid.nl/CVDR736656\nWaterschap Scheldestromen. (2021b). Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst. https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf"
       },
       "from": "elem-provincie-zeeland",
       "to": "elem-waterschap-scheldestromen"

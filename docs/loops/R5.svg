@@ -26,9 +26,11 @@
 <path class="link-path" d="M -169.8 771.7 Q -321.2 756.9 -461.9 716.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-413.6" y="729.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="false" data-curvature="-0.144">
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="-0.144">
 <path class="link-path" d="M 397.3 733.7 Q 286.4 760.3 169.8 771.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="219.5" y="766.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M 296.8 778.9 L 288.9 731.5 M 281.1 781.5 L 273.1 734.2" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 296.8 778.9 L 288.9 731.5 M 281.1 781.5 L 273.1 734.2" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="demand-for-deep-polder-drainage" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="false" data-curvature="-0.258">
 <path class="link-path" d="M 915.0 486.1 Q 802.3 580.4 652.0 647.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -89,8 +91,8 @@
 <text x="962.9" y="434.6" text-anchor="middle">Farmers' demand for</text>
 <text x="962.9" y="468.6" text-anchor="middle">deep polder drainage</text>
 </g>
-<g class="element" data-id="plans-to-raise-ditch-levels" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="366.5" y="647.7" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="plans-to-raise-ditch-levels" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="366.5" y="647.7" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="543.7" y="682.2" text-anchor="middle">Water board's plans to</text>
 <text x="543.7" y="716.2" text-anchor="middle">raise ditch levels</text>
 </g>

@@ -354,6 +354,7 @@
         ]
       ]
     },
+    "year-suffix": "b",
     "title": "Waterschapsbeheerprogramma 2022–2027: Zeeuwse waterkeringen, watersystemen, afvalwaterketen en wegen klaar voor de toekomst",
     "URL": "https://scheldestromen.nl/sites/default/files/2023-09/Waterschapsbeheerprogramma%202022-2027.pdf"
   },
@@ -374,6 +375,7 @@
         ]
       ]
     },
+    "year-suffix": "c",
     "title": "Peilbesluit Duiveland ter inzage",
     "collection-title": "Waterschapsblad",
     "collection-number": "2021, nr. 8486",
@@ -418,10 +420,70 @@
         ]
       ]
     },
+    "year-suffix": "b",
     "title": "Besluit wijziging artikel 2.9 van de Waterschapsverordening waterschap Scheldestromen",
     "collection-title": "Waterschapsblad",
     "collection-number": "2026, nr. 13978",
     "URL": "https://zoek.officielebekendmakingen.nl/wsb-2026-13978.html"
+  },
+  {
+    "id": "scheldestromen-2021-hor-duiveland",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "year-suffix": "a",
+    "title": "Hydrologisch onderzoeksrapport Duiveland",
+    "URL": "https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf"
+  },
+  {
+    "id": "scheldestromen-2025-nota-peilbesluiten",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten",
+    "URL": "https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf"
+  },
+  {
+    "id": "scheldestromen-2026-informatieavond-duiveland",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          25
+        ]
+      ]
+    },
+    "year-suffix": "a",
+    "title": "Maatregelen Duiveland: Informatiebijeenkomst 25 maart 2026",
+    "genre": "Presentation slides",
+    "URL": "https://scheldestromen.nl/sites/default/files/2026-03/Presentatie%20informatieavond%20Duiveland%2025%20maart%202026.pdf"
   },
   {
     "id": "waterschapswet-2026",
@@ -1952,5 +2014,35 @@
     "genre": "Good practice report",
     "publisher": "European Commission",
     "URL": "https://eu-cap-network.ec.europa.eu/sites/default/files/2023-07/Zeeland%E2%80%99s%20roots%20for%20new%20crops.pdf"
+  },
+  {
+    "id": "verstand-2021",
+    "type": "report",
+    "author": [
+      {
+        "family": "Verstand",
+        "given": "D."
+      },
+      {
+        "family": "Bijker",
+        "given": "W."
+      },
+      {
+        "family": "Simonse",
+        "given": "D."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Klimaatrisico’s en kansen in de open teelten",
+    "genre": "Report",
+    "number": "WPR-902",
+    "publisher": "Wageningen Research",
+    "DOI": "10.18174/555534"
   }
 ]

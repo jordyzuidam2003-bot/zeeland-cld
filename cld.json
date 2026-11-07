@@ -355,7 +355,7 @@
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Hectares under crops new to the island's rotations that tolerate salt (quinoa, samphire, sea aster, field beans), which need other machines, knowledge and buyers than the current crops. Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them.",
+      "description": "Hectares under crops new to the island's rotations that tolerate salt (quinoa, samphire, sea aster), which need other machines, knowledge and buyers than the current crops. Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them.",
       "sources": [],
       "x": 588,
       "y": 665,
@@ -601,8 +601,12 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "The conventional crops' harvest that salt in the root zone takes, over the island's fields still under them.",
-      "sources": [],
+      "description": "The conventional crops' harvest that salt in the root zone takes, over the island's fields still under them, in a season. On the island, farms where seepage pressure is high and the surface water is salty all year have stopped growing sensitive crops such as sown onions (Kaandorp et al., 2022, p. 31). Zeeland is among the coastal provinces where potatoes and barley lose considerable yield to salt (Deolu-Ajayi et al., 2024, p. 12). Salt's effect on yield builds up over weeks to months and is read over the season (Allen et al., 1998, ch. 8): within the year, so an Auxiliary.",
+      "sources": [
+        "kaandorp-2022",
+        "deolu-ajayi-2024",
+        "allen-1998"
+      ],
       "x": -7,
       "y": 619
     },
@@ -1175,7 +1179,7 @@
       "to": "crop-water-demand",
       "polarity": "-",
       "delay": false,
-      "description": "New salt-tolerant crops need less water than the current crops: no source read shows it. FAO-56 gives field beans the same peak water use as potatoes and wheat (a mid-season crop coefficient of 1.15, against 1.20 for sugar beet and 1.05 for onions), over a shorter season in Europe, about 90 days sown in May against 145 for potatoes planted in April (Allen et al., 1998, Tables 11 and 12, values for a sub-humid climate and a general guide); it lists neither quinoa, samphire nor sea aster, and no source read shows whether the halophytes need less water or take salt water instead.",
+      "description": "New salt-tolerant crops need less water than the current crops: no source read shows it. FAO-56 (Allen et al., 1998, Tables 11 and 12) lists neither quinoa, samphire nor sea aster, and no source read shows whether the halophytes need less water or take salt water instead.",
       "sources": [],
       "curvature": 0.161
     },
@@ -1628,8 +1632,12 @@
       "to": "harvest-lost-to-salt",
       "polarity": "-",
       "delay": false,
-      "description": "A field moved to a new salt-tolerant crop no longer loses a conventional harvest to salt.",
-      "sources": [],
+      "description": "A field moved from a current crop to a new salt-tolerant one no longer has a conventional harvest for salt to take: the link holds by what Harvest lost to salt counts, the fields still under the current crops. Within the year, from the next season's crop.",
+      "simplification": "The new crops are taken to lose nothing to salt. That holds for crops grown on saline land, such as sea fennel and sea banana on an arable farm at Colijnsplaat (EU CAP Network, 2023), and for quinoa, among the crops better suited to saline conditions (Deolu-Ajayi et al., 2024, p. 63). A new crop as sensitive as the current ones loses about as much, and R4 does not run through it.",
+      "sources": [
+        "deolu-ajayi-2024",
+        "eu-cap-network-2023"
+      ],
       "curvature": 0.244
     },
     {

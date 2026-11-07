@@ -8,7 +8,7 @@
   "note": "CEVMNFQG"
  },
  "allen-1998": {
-  "digest": "251db396d148",
+  "digest": "d7e7b241be25",
   "note": "HDBSFA6I"
  },
  "anp-2022-zoetwater": {
@@ -64,7 +64,7 @@
   "note": "J9ZCTTHR"
  },
  "de-louw-2011": {
-  "digest": "5da97d858064",
+  "digest": "dae6e5661ad2",
   "note": "PFVBHFHI"
  },
  "de-mesel-2013": {
@@ -128,7 +128,7 @@
   "note": "9DUZZSPB"
  },
  "kaandorp-2022": {
-  "digest": "9ed17c828e3b",
+  "digest": "2db73bd01152",
   "note": "UCUZ55BX"
  },
  "kamerstuk-2025-cosun": {
@@ -180,7 +180,7 @@
   "note": "TA2K3N9E"
  },
  "munns-tester-2008": {
-  "digest": "7d47730de152",
+  "digest": "e5c0270b7a76",
   "note": "ZHEXIE4U"
  },
  "nepg-2018-contracts": {
@@ -216,7 +216,7 @@
   "note": "GN4T572Z"
  },
  "provincie-zeeland-2021-grondwateronttrekkingen": {
-  "digest": "e107728fbcc7",
+  "digest": "b5c9abd5bbda",
   "note": "FUPAQDG5"
  },
  "provincie-zeeland-2025-rwp": {
@@ -232,7 +232,7 @@
   "note": "NZR6R475"
  },
  "reglement-scheldestromen-2025": {
-  "digest": "8007e6c0e834",
+  "digest": "db93dbb1cd09",
   "note": "KWSJTC9W"
  },
  "rekenkamer-2026-zoetwater": {
@@ -267,21 +267,33 @@
   "digest": "4099b4c0c490",
   "note": "UHQAPNFK"
  },
+ "scheldestromen-2021-hor-duiveland": {
+  "digest": "fae44a3287f8",
+  "note": "QUFF4FFH"
+ },
  "scheldestromen-2021-peilbesluit-duiveland": {
-  "digest": "335cbbc57613",
+  "digest": "508737694d34",
   "note": "3WRIQ6MM"
  },
  "scheldestromen-2021-wbp": {
-  "digest": "0a7f050c2833",
+  "digest": "642ad2ea28ef",
   "note": "SF72FMHC"
  },
  "scheldestromen-2022-peilbesluit-schouwen": {
-  "digest": "335cbbc57613",
+  "digest": "508737694d34",
   "note": "5UZ5S3F5"
  },
+ "scheldestromen-2025-nota-peilbesluiten": {
+  "digest": "c3e239a0d086",
+  "note": "H3BE9FEM"
+ },
  "scheldestromen-2026-grondwater": {
-  "digest": "8b93acda0838",
+  "digest": "f78af4693204",
   "note": "MT7QA2GF"
+ },
+ "scheldestromen-2026-informatieavond-duiveland": {
+  "digest": "5d6e83673d60",
+  "note": "GPVPDJ33"
  },
  "schouwen-duiveland-2024-waterbassins": {
   "digest": "fe5b8fe28aee",
@@ -310,6 +322,10 @@
  "van-maldegem-2004": {
   "digest": "a622dd5f14b1",
   "note": "786GJUQ8"
+ },
+ "verstand-2021": {
+  "digest": "059a1d574d59",
+  "note": "3TC36KKG"
  },
  "waterschapswet-2026": {
   "digest": "a98d1c5e0c20",

@@ -16,9 +16,11 @@
 <path class="delay-cut" d="M -289.7 75.4 L -246.3 54.9 M -296.6 61.0 L -253.2 40.4" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -289.7 75.4 L -246.3 54.9 M -296.6 61.0 L -253.2 40.4" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="saline-seepage-kwel" data-to="plans-to-raise-ditch-levels" data-sign="+" data-delay="false" data-curvature="0.497">
+<g class="link" data-from="saline-seepage-kwel" data-to="plans-to-raise-ditch-levels" data-sign="+" data-delay="true" data-curvature="0.497">
 <path class="link-path" d="M 265.5 -69.0 Q 299.6 -10.8 275.1 49.6 Q 250.7 109.9 177.2 148.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="219.3" y="121.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 296.3 61.7 L 253.0 40.9 M 289.4 76.1 L 246.1 55.4" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 296.3 61.7 L 253.0 40.9 M 289.4 76.1 L 246.1 55.4" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 </g>
 <g class="elements">

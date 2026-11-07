@@ -32,9 +32,11 @@
 <path class="delay-cut" d="M 296.8 778.9 L 288.9 731.5 M 281.1 781.5 L 273.1 734.2" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 296.8 778.9 L 288.9 731.5 M 281.1 781.5 L 273.1 734.2" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="demand-for-deep-polder-drainage" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="false" data-curvature="-0.258">
+<g class="link" data-from="demand-for-deep-polder-drainage" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="true" data-curvature="-0.258">
 <path class="link-path" d="M 915.0 486.1 Q 802.3 580.4 652.0 647.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="697.3" y="626.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M 812.3 589.9 L 787.1 549.0 M 798.6 598.3 L 773.5 557.4" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 812.3 589.9 L 787.1 549.0 M 798.6 598.3 L 773.5 557.4" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="root-zone-salinity" data-to="harvest-lost-to-salt" data-sign="+" data-delay="false" data-curvature="-0.128">
 <path class="link-path" d="M -988.7 417.1 Q -1118.7 280.1 -1156.1 120.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>

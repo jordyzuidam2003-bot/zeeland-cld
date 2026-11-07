@@ -1544,8 +1544,8 @@
       "from": "demand-for-deep-polder-drainage",
       "to": "plans-to-raise-ditch-levels",
       "polarity": "-",
-      "delay": false,
-      "description": "The water board weighs farmers' need for low levels against raising them: it matches its levels to the land's use, arable land drained deeper than grassland (Waterschap Scheldestromen, 2025, pp. 5, 7), involves farming among the interest groups as it prepares a plan and weighs their input (p. 17), and on Duiveland moves to the higher summer level in March and April as the farmers' soil work allows (Waterschap Scheldestromen, 2021a, p. 66). How much the farmers' views weigh against the board's other aims, no source read shows: on Duiveland four views against a raise the plan proposed to study did not change the plan (p. 53). Within the year, as the plan is prepared.",
+      "delay": true,
+      "description": "The water board weighs farmers' need for low levels against raising them: it matches its levels to the land's use, arable land drained deeper than grassland (Waterschap Scheldestromen, 2025, pp. 5, 7), involves farming among the interest groups as it prepares a plan and weighs their input (p. 17), and on Duiveland moves to the higher summer level in March and April as the farmers' soil work allows (Waterschap Scheldestromen, 2021a, p. 66). How much the farmers' views weigh against the board's other aims, no source read shows: on Duiveland four views against a raise the plan proposed to study did not change the plan (p. 53). Years, so a delay: the board weighs it as it prepares a plan, which it does when its evaluation every three years, weighing among other things the reports of those concerned, finds a plan no longer current, or once a plan is 17 years old (2025, pp. 16–17).",
       "sources": [
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-duiveland"
@@ -1556,11 +1556,13 @@
       "from": "saline-seepage-kwel",
       "to": "plans-to-raise-ditch-levels",
       "polarity": "+",
-      "delay": false,
-      "description": "Seepage and the salt it brings give the water board a reason to raise the levels.",
-      "sources": [],
-      "curvature": 0.497,
-      "hypothesis": true
+      "delay": true,
+      "description": "The water board names the gradually increasing salinisation a concern for the fresh water farming needs, the thin fresh groundwater lenses most threatened, and aims to keep or enlarge the lenses: by not lowering target levels much, since a lower level lowers the counter-pressure on the salt groundwater and raises the seepage pressure, while a raise lowers it (Waterschap Scheldestromen, 2021a, p. 37, a criterion of its analysis for Duiveland's water level plan). So the more seepage salts the soil's fresh water, the more reason the board has to raise levels, the lens being what it protects (Saline seepage → Freshwater lens thickness). On Duiveland the plan of 2021 proposed studying a raise in 14 level areas to enlarge the fresh water in the soil and give crops more moisture (p. 69); how far seepage weighed there against drought, no source read shows. Years, so a delay: the board weighs it as it prepares a plan, which it does when its evaluation every three years finds a plan no longer current, or once a plan is 17 years old (Waterschap Scheldestromen, 2025, pp. 16–17).",
+      "sources": [
+        "scheldestromen-2021-hor-duiveland",
+        "scheldestromen-2025-nota-peilbesluiten"
+      ],
+      "curvature": 0.497
     },
     {
       "from": "land-subsidence",

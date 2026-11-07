@@ -270,13 +270,17 @@
 <path class="delay-cut" d="M -1500.2 -791.0 L -1543.0 -812.8 M -1507.5 -776.8 L -1550.3 -798.5" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -1500.2 -791.0 L -1543.0 -812.8 M -1507.5 -776.8 L -1550.3 -798.5" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="demand-for-deep-polder-drainage" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="false" data-curvature="-0.258">
+<g class="link" data-from="demand-for-deep-polder-drainage" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="true" data-curvature="-0.258">
 <path class="link-path" d="M -289.4 -1199.0 Q -714.4 -1431.6 -1150.2 -1220.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-1104.8" y="-1240.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M -709.7 -1296.4 L -708.5 -1344.3 M -725.7 -1296.7 L -724.5 -1344.7" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -709.7 -1296.4 L -708.5 -1344.3 M -725.7 -1296.7 L -724.5 -1344.7" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="saline-seepage-kwel" data-to="plans-to-raise-ditch-levels" data-sign="+" data-delay="false" data-curvature="0.497">
+<g class="link" data-from="saline-seepage-kwel" data-to="plans-to-raise-ditch-levels" data-sign="+" data-delay="true" data-curvature="0.497">
 <path class="link-path" d="M -1955.8 193.0 Q -2320.4 -763.7 -1365.9 -1134.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-1412.3" y="-1115.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -2015.8 -619.5 L -1971.9 -600.0 M -2009.3 -634.2 L -1965.4 -614.7" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -2015.8 -619.5 L -1971.9 -600.0 M -2009.3 -634.2 L -1965.4 -614.7" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="land-subsidence" data-to="plans-to-raise-ditch-levels" data-sign="+" data-delay="false" data-curvature="0.331">
 <path class="link-path" d="M -2080.6 -1020.0 Q -1797.7 -1351.1 -1382.3 -1220.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>

@@ -52,8 +52,8 @@ function applyHighlight() {
 // --- the panel ------------------------------------------------------------------------------
 const panel = document.getElementById("panel");
 const panelBody = document.getElementById("panel-body");
-const SHOWN_ELEMENT = ["element type", "actor", "adaptive practice", "sets domain", "subsystem", "subquestion", "description"];
-const SHOWN_LINK = ["delay", "sets link", "description"];
+const SHOWN_ELEMENT = ["element type", "actor", "adaptive practice", "sets domain", "subsystem", "subquestion", "description", "simplification"];
+const SHOWN_LINK = ["delay", "sets link", "description", "simplification"];
 function row(dl, name, value, className) {
   const dt = document.createElement("dt");
   dt.textContent = name;
@@ -68,7 +68,7 @@ function showPanel(title, item, fields) {
   const h2 = document.createElement("h2");
   h2.append(...title);
   const dl = document.createElement("dl");
-  // a field only some elements have (actor, on a decision variable) shows where an element has it
+  // a field only some items have (actor, on a decision variable; simplification) shows where an item has it
   for (const name of fields) if (name in item) row(dl, name, item[name]);
   if (item.sources) row(dl, "sources", item.sources);
   else if (item.hypothesis === "yes") row(dl, "sources", "none: a hypothesis about behaviour, for the group model building session", "none");

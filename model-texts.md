@@ -40,6 +40,11 @@ The test, from the Purpose (the group's): inside if the farms' responses move it
 - The adaptive practices are assumed to work: the CLD shows what stops farmers adopting them, not whether each one works on the island.
 - The labels and descriptions describe what happens in words each actor in it would accept, and no variable is marked as anyone's lever: which outcome and which levers the analysis looks at is the group's choice for that step.
 
+## Simplifications
+
+<!-- Draft, for the team to check. -->
+The CLD leaves detail out on purpose. A reader holds five to nine chunks of information at once, so one drawing with every step in it cannot be followed (Sterman, 2000): the full drawing is the overview, on one A4 page, and the loop figures and the descriptions carry the detail. What the drawing shows is set by the Purpose's question, since what makes a difference to an answer depends on the question asked (Weisberg, 2007). A step goes into words only where every loop through it keeps its polarity, reinforcing or balancing, and its mechanism, no actor's decision disappears from the drawing, each variable still measures one quantity and no delay is lost; where one of these fails, the step stays drawn, however many boxes that takes. Some simplifications leave out what is true, such as a chain of causes drawn as one link with its middle step in the description; others treat the system as simpler than it is, such as the crops of a rotation responding as one yield (Godfrey-Smith, 2009). Where an element or a link simplifies something, its panel says what is left out or distorted and why the loops through it still hold; what holds for every element is under Assumptions.
+
 ## The named loops
 
 <!-- Draft, for the team to check. -->
@@ -52,7 +57,9 @@ Each box is a variable, tinted by its domain in the social-ecological-technologi
 
 ## References
 
+- Godfrey-Smith, P. (2009). Abstractions, idealizations, and evolutionary biology. In A. Barberousse, M. Morange, & T. Pradeu (Eds.), *Mapping the future of biology: Evolving concepts and theories* (Boston Studies in the Philosophy of Science, Vol. 266, pp. 47–56). Springer. https://doi.org/10.1007/978-1-4020-9636-5_4
 - Kampmann, C. E. (2012). Feedback loop gains and system behavior (1996). *System Dynamics Review*, 28(4), 370–395. https://doi.org/10.1002/sdr.1483
 - McPhearson, T., Cook, E. M., Berbés-Blázquez, M., Cheng, C., Grimm, N. B., Andersson, E., Barbosa, O., Chandler, D. G., Chang, H., Chester, M. V., Childers, D. L., Elser, S. R., Frantzeskaki, N., Grabowski, Z., Groffman, P., Hale, R. L., Iwaniec, D. M., Kabisch, N., Kennedy, C., . . . Troxler, T. G. (2022). A social-ecological-technological systems framework for urban ecosystem services. *One Earth*, 5(5), 505–518. https://doi.org/10.1016/j.oneear.2022.04.007
 - Oliva, R. (2004). Model structure analysis through graph theory: Partition heuristics and feedback structure decomposition. *System Dynamics Review*, 20(4), 313–336. https://doi.org/10.1002/sdr.298
 - Sterman, J. D. (2000). *Business dynamics: Systems thinking and modeling for a complex world*. McGraw-Hill. The guidelines cited are excerpted from it in Sterman, J. D. (2001), "Fine-tuning your causal loop diagrams, part II", *The Systems Thinker*.
+- Weisberg, M. (2007). Three kinds of idealization. *The Journal of Philosophy*, 104(12), 639–659. https://doi.org/10.5840/jphil20071041240

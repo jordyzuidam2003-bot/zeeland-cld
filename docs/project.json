@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version d9e81bc, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version a2fbf33, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -164,6 +164,19 @@
       ],
       "sort": false,
       "cluster": true
+    },
+    {
+      "_id": "attr-simplification",
+      "name": "Simplification",
+      "format": "text",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
     },
     {
       "_id": "attr-polarity",
@@ -519,6 +532,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ2",
         "description": "The fresh water a year that the measures in place on the island's farms keep, store or collect for the growing season. They work three ways (Kaandorp et al., 2022, pp. 16–23, 53, for the island): in the low polders, controlled drainage, anti-salinisation drainage (Drains2Buffer) and weirs in ditches keep the thin rainwater lens against salt, the water staying in the field's own soil, where it cannot be pumped (pp. 33, 53); on the creek ridges, the dunes and where a sand layer lies under the clay, the creek-ridge infiltration system, the Freshmaker and underground storage under a clay layer infiltrate winter water to pump in summer (pp. 20–22, 38); and double drainage collects fresh drain water into a basin to irrigate from (pp. 23, 29, 32). An adaptive practice: measures to keep more fresh water in the ground as drought and salinisation increase (p. 4). The study found them not yet fitted to the island and too risky for many farms to invest in alone (pp. 4, 11). A Stock: a measure, once built, lasts 15 to 30 years (pp. 17–22, 34). The farm decides a measure; infiltrating water needs the water board's permit or a notification, a weir the neighbours' consent, and raising a ditch's level the water board's cooperation (pp. 26, 44–45). Whether a farm wants to store weighs storing against its other ways through a dry summer (pumping, brackish water, other crops), where capacity to invest is whether it can. Stored water pays back over years, which suits a farm that owns its land more than one on a short lease; and where stored water spreads under the neighbours, one farm pays and others gain. Whether either holds a farm back is a question for the group model building session.",
+        "simplification": "Three ways in one element: keeping the low polders' rainwater lens, infiltrating winter water to pump on the creek ridges and the dunes, and collecting drain water in a basin, counted together as the fresh water they keep, store or collect. Each way adds fresh water and none takes it away, so the sum keeps the sign of every link into and out of it, and where a link works through one way only, its description says which. What one element leaves out: the ways work in different places, through different routes and under different permits and consent, which the description names. Arable land farmed by its owner, a Constant that made storing more worthwhile, is in the description instead: no loop runs through a Constant, so none changes, and the share cannot be set as an input of its own.",
         "actor": "Arable farmers on Schouwen-Duiveland",
         "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
         "sourced": "yes"
@@ -577,6 +591,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "Physical yield per hectare of conventional crops (potatoes, onions, sugar beet) under the prevailing freshwater, soil and workability conditions; what salt takes from their harvest is Harvest lost to salt. The island's arable farms grow potatoes, onions, sugar beet, cereals, grass seed and vegetables in rotation (Kaandorp et al., 2022, pp. 30, 38, from the farms studied), and some in the low polders have stopped growing sown onions for the salt (p. 31). A season's harvest: an Auxiliary.",
+        "simplification": "The current crops (potatoes, onions, sugar beet) are one yield per hectare. Each yields less with a larger water shortfall, worse soil structure or fields that cannot be worked in time, so every link into the yield keeps its sign for each crop and no loop through it changes. What one yield leaves out: the crops lose in different proportions (the yield response factors on Crop water shortfall → Crop yield), and farms can shift their rotation among them, as some in the low polders stopped growing sown onions for the salt.",
         "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares, for Gemeente Schouwen-Duiveland. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
         "sourced": "yes"
       }
@@ -835,6 +850,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ2",
         "description": "Draft or adopted water level plans in which Waterschap Scheldestromen raises a polder's ditch levels, weighing farmers' demand against seepage, subsidence and its pumping costs. Farmers weigh in on these decisions through the seats on its general board reserved for agricultural landowners (the session's understanding, unsourced: on the facts list under Demand for deep polder drainage).",
+        "simplification": "The seats on the general board reserved for agricultural landowners were a Constant driving these plans, and are in the description instead: no loop runs through a Constant, so no loop changes. What it leaves out: the seats cannot be set as an input of their own.",
         "actor": "Waterschap Scheldestromen",
         "sources": "",
         "sourced": "no"
@@ -1482,6 +1498,7 @@
         "sets link": "Within E",
         "sets scope": "Within domain",
         "hypothesis": "no",
+        "simplification": "Folds Sodium on the clay, a stock between the two: the salt puts sodium on the clay, and the sodium breaks the clay's structure once the salt washes out. The sign is the product of the two steps (+, then −), so no loop through the link changes, and the stock's slowness is the link's delay. What one link distorts: the delay lies on the way back only, the structure collapsing within the first winter after the salt leaches out and recovering over years, while the link draws one delay for both ways.",
         "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953b). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 224–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860",
         "sourced": "yes",
         "connection type": "-"
@@ -2262,6 +2279,7 @@
         "sets link": "E to T",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
+        "simplification": "Folds Fresh water available for supply in drought: dry summers leave less river water for a supply route, and the route carries what is left. The sign is the product of the two steps (−, then +). Hotter, drier summers is a Constant, so no loop runs through the link. What it leaves out: the river water left for the region in drought, which the national distribution decides outside the CLD's scale, is no variable of its own.",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -2842,6 +2860,7 @@
         "sets link": "E to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
+        "simplification": "Folds Relative attractiveness of storing water, which gathered the drivers of this decision: each driver now points at Freshwater storage measures itself, whose description says how farmers weigh storing against their other ways through a dry summer. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to store, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -2862,6 +2881,7 @@
         "sets link": "S to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
+        "simplification": "Folds Relative attractiveness of storing water, which gathered the drivers of this decision: each driver now points at Freshwater storage measures itself, whose description says how farmers weigh storing against their other ways through a dry summer. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to store, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -2902,6 +2922,7 @@
         "sets link": "E to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
+        "simplification": "Folds Relative attractiveness of salt-tolerant varieties, which gathered the drivers of this decision: each driver now points at Adoption of salt-tolerant varieties itself, whose description says that farmers weigh a tolerant variety against the one they grow now. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -2922,6 +2943,7 @@
         "sets link": "Within T",
         "sets scope": "Within domain",
         "hypothesis": "yes",
+        "simplification": "Folds Relative attractiveness of salt-tolerant varieties, which gathered the drivers of this decision: each driver now points at Adoption of salt-tolerant varieties itself, whose description says that farmers weigh a tolerant variety against the one they grow now. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -2942,6 +2964,7 @@
         "sets link": "E to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
+        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -2962,6 +2985,7 @@
         "sets link": "S to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
+        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -2982,6 +3006,7 @@
         "sets link": "S to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
+        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -3002,6 +3027,7 @@
         "sets link": "S to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
+        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -3102,6 +3128,7 @@
         "sets link": "Within T",
         "sets scope": "Within domain",
         "hypothesis": "yes",
+        "simplification": "Folds Attractiveness of processing new crops locally, which gathered the drivers of this decision: each driver now points at Local processing capacity for new crops itself, whose description says that buyers and processors weigh it against processing the crops elsewhere. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -3122,6 +3149,7 @@
         "sets link": "S to T",
         "sets scope": "Cross-domain",
         "hypothesis": "yes",
+        "simplification": "Folds Attractiveness of processing new crops locally, which gathered the drivers of this decision: each driver now points at Local processing capacity for new crops itself, whose description says that buyers and processors weigh it against processing the crops elsewhere. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -3202,6 +3230,7 @@
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "yes",
+        "simplification": "Folds Know-how of the current crops, a stock between the two: growing the current crops builds know-how, which is of little use for a new crop. The sign is the product of the two steps (+, then +), so no loop through the link changes, and know-how is no actor's decision. What one link leaves out: the know-how as a stock of its own, built up over years of growing the crops.",
         "sources": "",
         "sourced": "no",
         "connection type": "+"
@@ -3802,6 +3831,7 @@
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "yes",
+        "simplification": "Folds Plans changed or dropped: objections and appeals change, delay or stop plans, and the changes teach farmers not to count on the next plan. The sign is the product of the two steps (+, then −), so no loop through the link changes. The public bodies' decisions on their plans stay drawn, on the links from Objections to land-use plans into Water board's plans to raise ditch levels and Farmland planned for other uses; this link carries only what farmers learn from the changes.",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -4213,7 +4243,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model d9e81bc",
+      "name": "CLD, model a2fbf33",
       "description": "",
       "scale": 1,
       "center": {

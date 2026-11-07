@@ -134,13 +134,20 @@ An element:
   `actors.json`, which names every actor at the grain the group set (a public body by its name,
   the island's arable farmers as one); `build.py` stops on an id not there. The page's panel
   shows the actor's label, and Kumu gets it as a field.
+- `simplification`: only on an element or a connection that folds or idealizes something (a
+  step of a chain folded into a link, several things counted as one), saying what it leaves out
+  or distorts and why the loops through it still hold (Jordy; rejected: the field on every
+  element, most of which would read "none"). The page's panel shows it and Kumu gets it as a
+  field; `build.py` stops on an empty one. What holds for every element (island totals, the
+  farmers as one actor) is in the model texts' Assumptions, and why the CLD simplifies at all
+  in their Simplifications.
 
 A connection: `from` and `to` (element ids), `polarity` (`"+"` or `"-"`), `delay` (true/false,
 drawn as two strokes across the link), `description`, `sources`, `hypothesis` (optional, `true`
 on a claim about why an actor decides as it does that has no source: a question for the group
 model building session, shown in the link's panel and in Kumu's fields, never on the drawing;
-a link that finds a source loses it), `curvature` (0 is straight; a positive value bows the
-link to the left of its direction).
+a link that finds a source loses it), `simplification` (optional, as on an element),
+`curvature` (0 is straight; a positive value bows the link to the left of its direction).
 The drawing runs a link from a point on its source box's edge to one on its target's, the ends
 on one edge spread along it, and puts the sign on the side of the arrowhead clear of boxes.
 The SETS fields the page and Kumu show ("Cross-domain", "E to S" …) are derived by `build.py`,

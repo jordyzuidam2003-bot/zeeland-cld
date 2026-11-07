@@ -179,6 +179,10 @@ def check(cld, refs, actors):
         for key in item.get("sources", []):
             if key not in refs:
                 errors.append(f"source {key!r} is not in references.json")
+        # written only where an element or link folds or idealizes something, so never empty
+        if "simplification" in item and not (isinstance(item["simplification"], str) and item["simplification"].strip()):
+            errors.append(f"{item.get('id') or item.get('from', '?') + ' -> ' + item.get('to', '?')}: "
+                          "simplification must be a text; leave the field out where nothing is simplified")
 
     sign = {(c["from"], c["to"]): c["polarity"] for c in cld["connections"]}
     for loop in cld["loops"]:
@@ -287,6 +291,7 @@ def blueprint(cld, refs, actors):
             "sets link": f"Within {SETS_LETTER[sa]}" if sa == sb else f"{SETS_LETTER[sa]} to {SETS_LETTER[sb]}",
             "sets scope": "Within domain" if sa == sb else "Cross-domain",
             "hypothesis": "yes" if c.get("hypothesis") else "no",
+            **({"simplification": c["simplification"]} if "simplification" in c else {}),
             **sourced(c),
         })
     return {"elements": elements, "connections": connections}
@@ -418,7 +423,7 @@ def project(cld, refs, actors, template, version):
     builtin = {"element type": "Element Type", "connection type": "Connection Type"}
     attributes = []
     for k, seen in values.items():
-        text = k in ("description", "sources")
+        text = k in ("description", "simplification", "sources")
         listed = not text and k != "label" and len(seen) <= 20
         attributes.append({"_id": "attr-" + k.replace(" ", "-"), "name": builtin.get(k, k[0].upper() + k[1:]),
                            "format": "text" if text else "string", "private": False, "limit": 1,

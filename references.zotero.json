@@ -1,354 +1,626 @@
 {
  "acacia-water-about-us": {
   "digest": "ec085fe1adb2",
-  "note": "JIZZP3JU"
+  "note": "JIZZP3JU",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "acacia-water-home": {
   "digest": "ec085fe1adb2",
-  "note": "CEVMNFQG"
+  "note": "CEVMNFQG",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "allen-1998": {
   "digest": "d7e7b241be25",
-  "note": "HDBSFA6I"
+  "note": "HDBSFA6I",
+  "placed": [
+   "CLD"
+  ]
  },
  "anp-2022-zoetwater": {
   "digest": "07cd700c29a7",
-  "note": "ZR4ISDK9"
+  "note": "ZR4ISDK9",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "binnenlands-bestuur-2023-zoetwater": {
   "digest": "4099b4c0c490",
-  "note": "JCPSA9AG"
+  "note": "JCPSA9AG",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "boerenbusiness-2021-rabobank": {
   "digest": "67d9e6e17600",
-  "note": "5QEM58JU"
+  "note": "5QEM58JU",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "bogosavac-2018": {
   "digest": "bead8e6c3ac5",
-  "note": "BXNB4XWM"
+  "note": "BXNB4XWM",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "cbs-2026-landbouw-gemeente": {
   "digest": "7ccd8147fa01",
-  "note": "XM7XIGQJ"
+  "note": "XM7XIGQJ",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "cosun-2026-beet-campaign": {
   "digest": "414cdb14a417",
-  "note": "GWDS3W85"
+  "note": "GWDS3W85",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "cosun-history": {
   "digest": "56b84efca00b",
-  "note": "MC5PU9I8"
+  "note": "MC5PU9I8",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "cosun-royal-cosun": {
   "digest": "56b84efca00b",
-  "note": "HKKD392I"
+  "note": "HKKD392I",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "cosun-sustainable-beet-production": {
   "digest": "931e23309a82",
-  "note": "ANUGNCRI"
+  "note": "ANUGNCRI",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "dcc-about-us": {
   "digest": "7e9d87695b63",
-  "note": "62XGRXEM"
+  "note": "62XGRXEM",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "dcc-flexible-deltas": {
   "digest": "7e9d87695b63",
-  "note": "656KHI6C"
+  "note": "656KHI6C",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "dcc-home": {
   "digest": "7e9d87695b63",
-  "note": "8FGSEV62"
+  "note": "8FGSEV62",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "dcc-research": {
   "digest": "7e9d87695b63",
-  "note": "J9ZCTTHR"
+  "note": "J9ZCTTHR",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "de-louw-2011": {
   "digest": "dae6e5661ad2",
-  "note": "PFVBHFHI"
+  "note": "PFVBHFHI",
+  "placed": [
+   "CLD"
+  ]
  },
  "de-mesel-2013": {
   "digest": "a622dd5f14b1",
-  "note": "3D3B2UF2"
+  "note": "3D3B2UF2",
+  "placed": [
+   "CLD"
+  ]
  },
  "delphy-home": {
   "digest": "870ae622ca63",
-  "note": "P2BUQBPW"
+  "note": "P2BUQBPW",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "delphy-over-delphy": {
   "digest": "870ae622ca63",
-  "note": "J69AIIBM"
+  "note": "J69AIIBM",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "deltaprogramma-2027": {
   "digest": "2818efd2398b",
-  "note": "W46XES2N"
+  "note": "W46XES2N",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "deolu-ajayi-2024": {
   "digest": "f5bb339f0bbc",
-  "note": "NCBBAXBZ"
+  "note": "NCBBAXBZ",
+  "placed": [
+   "CLD"
+  ]
  },
  "dutchnews-2018-potato-processors": {
   "digest": "56b84efca00b",
-  "note": "QRKGWKAQ"
+  "note": "QRKGWKAQ",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "ec-2023-banking-package": {
   "digest": "81420bb2314b",
-  "note": "XGHKWF9Q"
+  "note": "XGHKWF9Q",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "ec-2025-wasserresilienz": {
   "digest": "e713efb7c3c2",
-  "note": "7T92M68S"
+  "note": "7T92M68S",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "ec-cap-at-a-glance": {
   "digest": "1ca5b67b2a3d",
-  "note": "HZJ9FGNH"
+  "note": "HZJ9FGNH",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "ec-cap-conditionality": {
   "digest": "d188cb7da301",
-  "note": "U4T9S4DC"
+  "note": "U4T9S4DC",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "eu-cap-network-2023": {
   "digest": "275c2cb3418e",
-  "note": "365VS95C"
+  "note": "365VS95C",
+  "placed": [
+   "CLD"
+  ]
  },
  "eurobarometer-2022-food-safety": {
   "digest": "bead8e6c3ac5",
-  "note": "7VRRXTA6"
+  "note": "7VRRXTA6",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "iplo-2025-zout": {
   "digest": "697f51802aaa",
-  "note": "DM598SSV"
+  "note": "DM598SSV",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "iplo-verdringingsreeks": {
   "digest": "95c9a49330be",
-  "note": "Q947WXJZ"
+  "note": "Q947WXJZ",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "janssens-2020": {
   "digest": "d96e3c4b7cb1",
-  "note": "9DUZZSPB"
+  "note": "9DUZZSPB",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "kaandorp-2022": {
   "digest": "12c4661da82b",
-  "note": "UCUZ55BX"
+  "note": "UCUZ55BX",
+  "placed": [
+   "Actor Map",
+   "CLD"
+  ]
  },
  "kamerstuk-2025-cosun": {
   "digest": "414cdb14a417",
-  "note": "JJDB7KRZ"
+  "note": "JJDB7KRZ",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "kwr-organisatie": {
   "digest": "41bc2af37526",
-  "note": "IHNMA4ER"
+  "note": "IHNMA4ER",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "kwr-over-ons": {
   "digest": "41bc2af37526",
-  "note": "XPN7W7T8"
+  "note": "XPN7W7T8",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "kwr-regionale-zoetwaterbeschikbaarheid": {
   "digest": "41bc2af37526",
-  "note": "9SKFTESZ"
+  "note": "9SKFTESZ",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "living-lab-2025-programma": {
   "digest": "ea1e72d85a4c",
-  "note": "RPXHXCDJ"
+  "note": "RPXHXCDJ",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "living-lab-innovatieve-drainage": {
   "digest": "4c9965d4b192",
-  "note": "DIESPUSP"
+  "note": "DIESPUSP",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "living-lab-ln2050": {
   "digest": "ab34ca820e30",
-  "note": "58HB8ARC"
+  "note": "58HB8ARC",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "living-lab-natuurlijk-zoet": {
   "digest": "fc79f9201b0c",
-  "note": "7UH68ZHA"
+  "note": "7UH68ZHA",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "living-lab-partners": {
   "digest": "71446124341c",
-  "note": "EUHJZXIM"
+  "note": "EUHJZXIM",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "living-lab-samenwerken-voor-zoet-water": {
   "digest": "fafe801bac02",
-  "note": "PR3H8AVV"
+  "note": "PR3H8AVV",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "lvvn-2026-tarieven-glb-2025": {
   "digest": "4b6b8aeddd57",
-  "note": "MM6G8GEJ"
+  "note": "MM6G8GEJ",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "ma-2014": {
   "digest": "a622dd5f14b1",
-  "note": "TA2K3N9E"
+  "note": "TA2K3N9E",
+  "placed": [
+   "CLD"
+  ]
  },
  "munns-tester-2008": {
   "digest": "e5c0270b7a76",
-  "note": "ZHEXIE4U"
+  "note": "ZHEXIE4U",
+  "placed": [
+   "CLD"
+  ]
  },
  "nepg-2018-contracts": {
   "digest": "56b84efca00b",
-  "note": "JD7P53WX"
+  "note": "JD7P53WX",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "nioz-2023-dcc": {
   "digest": "0d5bdd2fe07f",
-  "note": "P39DTCZR"
+  "note": "P39DTCZR",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "nos-2018-misoogst": {
   "digest": "56b84efca00b",
-  "note": "F6I3V9VU"
+  "note": "F6I3V9VU",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "omgevingswet-2026": {
   "digest": "c9021e9ddf84",
-  "note": "4FPXFMAI"
+  "note": "4FPXFMAI",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "omroep-zeeland-2023-zoet-water": {
   "digest": "4e5fc7158cdd",
-  "note": "HQQMSNZD"
+  "note": "HQQMSNZD",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "omroep-zeeland-2026-aardappeloogst": {
   "digest": "04df8d135d95",
-  "note": "DMCZNK7A"
+  "note": "DMCZNK7A",
+  "placed": [
+   "Actor Map",
+   "CLD"
+  ]
  },
  "oude-essink-2010": {
   "digest": "0d968d063620",
-  "note": "7TJXEUNE"
+  "note": "7TJXEUNE",
+  "placed": [
+   "CLD"
+  ]
  },
  "pauw-2015": {
   "digest": "68e75bfaefa5",
-  "note": "GN4T572Z"
+  "note": "GN4T572Z",
+  "placed": [
+   "CLD"
+  ]
  },
  "provincie-zeeland-2021-grondwateronttrekkingen": {
   "digest": "a14877be090e",
-  "note": "FUPAQDG5"
+  "note": "FUPAQDG5",
+  "placed": [
+   "CLD"
+  ]
  },
  "provincie-zeeland-2025-rwp": {
   "digest": "dcb53c1393f3",
-  "note": "IBKNU34R"
+  "note": "IBKNU34R",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "rabobank-2023-zoetwatermanager": {
   "digest": "67d9e6e17600",
-  "note": "6P39ZVE2"
+  "note": "6P39ZVE2",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "rabobank-2025-annual-report": {
   "digest": "67d9e6e17600",
-  "note": "NZR6R475"
+  "note": "NZR6R475",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "reglement-scheldestromen-2025": {
   "digest": "145beb5c49f6",
-  "note": "KWSJTC9W"
+  "note": "KWSJTC9W",
+  "placed": [
+   "Actor Map",
+   "CLD"
+  ]
  },
  "rekenkamer-2026-zoetwater": {
   "digest": "8ba8c3f4bde3",
-  "note": "5AKE2XUQ"
+  "note": "5AKE2XUQ",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "rijksoverheid-deltares": {
   "digest": "b080515262b3",
-  "note": "4W56UWB6"
+  "note": "4W56UWB6",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "rijksoverheid-ienw": {
   "digest": "265cee44fd09",
-  "note": "I2XJNBQ2"
+  "note": "I2XJNBQ2",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "rijksoverheid-lvvn-verhaal": {
   "digest": "6be4d28c4c2e",
-  "note": "BFJR7PWB"
+  "note": "BFJR7PWB",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "rvo-eco-regeling-2026": {
   "digest": "fd52ecd0839c",
-  "note": "2DNBH8F7"
+  "note": "2DNBH8F7",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "rws-2026-waterakkoord-vzm": {
   "digest": "216e714df2e4",
-  "note": "AZ53PKZB"
+  "note": "AZ53PKZB",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "rws-over-ons": {
   "digest": "4099b4c0c490",
-  "note": "IU96MXAF"
+  "note": "IU96MXAF",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "rws-verdeling-water-bij-droogte": {
   "digest": "4099b4c0c490",
-  "note": "UHQAPNFK"
+  "note": "UHQAPNFK",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "scheldestromen-2021-hor-duiveland": {
   "digest": "0f07643d9a11",
-  "note": "QUFF4FFH"
+  "note": "QUFF4FFH",
+  "placed": [
+   "CLD"
+  ]
  },
  "scheldestromen-2021-hor-schouwen": {
   "digest": "590b303e2f52",
-  "note": "WX6WV3N8"
+  "note": "WX6WV3N8",
+  "placed": [
+   "CLD"
+  ]
  },
  "scheldestromen-2021-peilbesluit-duiveland": {
   "digest": "dcdb60a9cc48",
-  "note": "3WRIQ6MM"
+  "note": "3WRIQ6MM",
+  "placed": [
+   "Actor Map",
+   "CLD"
+  ]
  },
  "scheldestromen-2021-wbp": {
   "digest": "a956a3d8654d",
-  "note": "SF72FMHC"
+  "note": "SF72FMHC",
+  "placed": [
+   "Actor Map",
+   "CLD"
+  ]
  },
  "scheldestromen-2022-peilbesluit-schouwen": {
   "digest": "dcdb60a9cc48",
-  "note": "5UZ5S3F5"
+  "note": "5UZ5S3F5",
+  "placed": [
+   "Actor Map",
+   "CLD"
+  ]
  },
  "scheldestromen-2025-nota-peilbesluiten": {
   "digest": "97bf0108738f",
-  "note": "H3BE9FEM"
+  "note": "H3BE9FEM",
+  "placed": [
+   "CLD"
+  ]
  },
  "scheldestromen-2026-grondwater": {
   "digest": "f78af4693204",
-  "note": "MT7QA2GF"
+  "note": "MT7QA2GF",
+  "placed": [
+   "Actor Map",
+   "CLD"
+  ]
  },
  "scheldestromen-2026-informatieavond-duiveland": {
   "digest": "9b2aec08e7fe",
-  "note": "GPVPDJ33"
+  "note": "GPVPDJ33",
+  "placed": [
+   "CLD"
+  ]
  },
  "schouwen-duiveland-2024-waterbassins": {
   "digest": "fe5b8fe28aee",
-  "note": "J4Q2WNAW"
+  "note": "J4Q2WNAW",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "schouwen-duiveland-omgevingsplan": {
   "digest": "110482f8e9cf",
-  "note": "8AN5AMKG"
+  "note": "8AN5AMKG",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "schouwen-duiveland-subsidie-zoet-water": {
   "digest": "16c4f4eef52e",
-  "note": "9BXMBJSU"
+  "note": "9BXMBJSU",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "van-beekom-1953": {
   "digest": "966dcdabb756",
-  "note": "9M27AI9Z"
+  "note": "9M27AI9Z",
+  "placed": [
+   "CLD"
+  ]
  },
  "van-beekom-1953-salt": {
   "digest": "e54da36e2820",
-  "note": "KI79ZG32"
+  "note": "KI79ZG32",
+  "placed": [
+   "CLD"
+  ]
  },
  "van-der-meulen-2020": {
   "digest": "fd503aa32980",
-  "note": "58K6T5V6"
+  "note": "58K6T5V6",
+  "placed": [
+   "Actor Map",
+   "CLD"
+  ]
  },
  "van-maldegem-2004": {
   "digest": "a622dd5f14b1",
-  "note": "786GJUQ8"
+  "note": "786GJUQ8",
+  "placed": [
+   "CLD"
+  ]
  },
  "verstand-2021": {
   "digest": "851b53211fbb",
-  "note": "3TC36KKG"
+  "note": "3TC36KKG",
+  "placed": [
+   "CLD"
+  ]
  },
  "waterschapswet-2026": {
   "digest": "a98d1c5e0c20",
-  "note": "IKRICD8U"
+  "note": "IKRICD8U",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "wiepkema-2023-zoetwaterbehoefte": {
   "digest": "4e5fc7158cdd",
-  "note": "3UN9ZC2H"
+  "note": "3UN9ZC2H",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "witteveen-bos-2021": {
   "digest": "4099b4c0c490",
-  "note": "4BH22CVC"
+  "note": "4BH22CVC",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "zlto-afdelingen": {
   "digest": "8007e6c0e834",
-  "note": "SFBD354D"
+  "note": "SFBD354D",
+  "placed": [
+   "Actor Map"
+  ]
  },
  "zlto-over-zlto": {
   "digest": "07cd700c29a7",
-  "note": "BMNUV85X"
+  "note": "BMNUV85X",
+  "placed": [
+   "Actor Map"
+  ]
  }
 }

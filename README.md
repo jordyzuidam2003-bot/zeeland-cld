@@ -225,7 +225,8 @@ the table show; a Dutch law (`legislation`) is cited by the version in force on 
 date, and `year-suffix` holds a letter a description cites (van Beekom et al., 1953a). Zotero
 holds a copy of each item, in Jordy's group library ChallengeBasedProject1, where the PDFs are
 attached, never here, since this repository is public. A session pushes each new item into its
-collection CLD and Actor Map, with a Use note written from `cld.json` and `actors.json`, by the
+collection CLD and Actor Map, and once into its subcollection CLD or Actor Map, or both, by
+which file cites it, with a Use note written from `cld.json` and `actors.json`, by the
 Study repository's `zotero` skill, from this folder (the key through `op run`, as its `SKILL.md`
 says):
 
@@ -233,7 +234,9 @@ says):
 python3 ../../.claude/skills/zotero/zotero.py push ChallengeBasedProject1 "CLD and Actor Map" references.json --uses cld.json actors.json
 ```
 
-`push` records each note it wrote in `references.zotero.json`, committed with it. `diff` with the same arguments lists what changed there, with who and when, for Jordy to take
+`push` records each note it wrote and each subcollection it put an item into in
+`references.zotero.json`, committed with it; it never takes an item out of a collection, so what
+anyone adds, moves or removes there stays. `diff` with the same arguments lists what changed there, with who and when, for Jordy to take
 into `references.json` or not.
 
 ### The Actor Map

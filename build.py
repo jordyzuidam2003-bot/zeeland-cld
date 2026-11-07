@@ -214,6 +214,9 @@ def check(cld, refs, actors):
         # a decision variable names the one actor that decides it, by its id in actors.json
         if "actor" in e and e["actor"] not in actor_ids:
             errors.append(f"{name}: actor {e['actor']!r} is not an actor id in actors.json")
+        # the actors whose decision it is or whose decisions shape it directly, each from a source
+        if not isinstance(e.get("actors", []), list) or any(a not in actor_ids for a in e.get("actors", [])):
+            errors.append(f"{name}: actors must be a list of actor ids in actors.json, got {e.get('actors')!r}")
     labels = [e["label"] for e in cld["elements"]]
     errors += [f"duplicate label {l!r}" for l in set(labels) if labels.count(l) > 1]
 
@@ -337,6 +340,8 @@ def blueprint(cld, refs, actors):
         item["adaptive practice"] = "yes" if e["adaptive practice"] else "no"
         if "actor" in e:  # the page and Kumu show the actor by its label
             item["actor"] = actor_label[e["actor"]]
+        if "actors" in e:  # ... and the actors as one text, which a Kumu field holds
+            item["actors"] = ", ".join(actor_label[a] for a in e["actors"])
         item.update(sourced(e))
         elements.append(item)
 
@@ -771,6 +776,10 @@ def main():
           "CLD variables each decides: " + ", ".join(f"{i} {len(v)}" for i, v in decides.items() if v))
     if empty:
         print("actor fields still empty:\n  " + "\n  ".join(f"{i}: {', '.join(ks)}" for i, ks in empty.items()))
+    # an element's actors stay empty where no source read says who shapes it
+    no_actors = [e["id"] for e in cld["elements"] if not e.get("actors")]
+    if no_actors:
+        print(f"elements whose actors no source names yet ({len(no_actors)}): {', '.join(no_actors)}")
     cited = {k for item in cld["elements"] + cld["connections"] + actors["actors"] for k in item.get("sources", [])}
     cited |= {k for a in actors["actors"] for r in a.get("relations", []) for k in r.get("sources", [])}
     warnings += [f"reference {k!r} is cited nowhere" for k in refs if k not in cited]

@@ -148,6 +148,12 @@ An element:
   `actors.json`, which names every actor at the grain the group set (a public body by its name,
   the island's arable farmers as one); `build.py` stops on an id not there. The page's panel
   shows the actor's label, and Kumu gets it as a field.
+- `actors`: the ids in `actors.json` of the actors whose decision the element is or whose
+  decisions shape it directly, each shown by a source in the element's `sources`, a national
+  body only where a source shows a direct effect; no source, no actor, and `build.py` lists each
+  element whose `actors` is still empty. It names who shapes the element, never whose lever it
+  is. `build.py` stops on an id not in `actors.json`; the table shows the actors' labels, and
+  Kumu gets them as a field.
 - `simplification`: only on an element or a connection that folds or idealizes something (a
   step of a chain folded into a link, several things counted as one), saying what it leaves out
   or distorts and why the loops through it still hold (Jordy; rejected: the field on every

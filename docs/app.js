@@ -26,20 +26,46 @@ const rules = data.loops.map(loop => [`${loop.id} ${loop.name}`, () => {
 }, loop.id]);
 const nav = document.getElementById("buttons");
 const pressed = new Set();  // the ids of the pressed loops
-for (const [label, rule, key = label] of rules) {
-  const button = document.createElement("button");
-  button.textContent = label;
-  button.setAttribute("aria-pressed", "false");
-  button.addEventListener("click", () => {
-    if (pressed.has(key)) pressed.delete(key); else pressed.add(key);
-    button.setAttribute("aria-pressed", String(pressed.has(key)));
-    applyHighlight();
-    if (pressed.has(key)) showLoop(key);
-    else if (panel.dataset.loop === key) closePanel();
-  });
-  nav.append(button);
+{  // a block, so these names stay out of the page's functions
+  const row = document.createElement("div");
+  row.className = "button-row";
+  const name = document.createElement("span");
+  name.className = "button-heading";
+  name.textContent = "Named loops";
+  row.append(name);
+  for (const [label, rule, key = label] of rules) {
+    const button = document.createElement("button");
+    const [id, ...words] = label.split(" ");
+    for (const [cls, text] of [["id", id], ["name", words.join(" ")]]) {
+      const part = document.createElement("span");
+      part.className = cls;
+      part.textContent = text;
+      button.append(part, " ");
+    }
+    button.title = label;
+    button.setAttribute("aria-pressed", "false");
+    button.addEventListener("click", () => {
+      if (pressed.has(key)) pressed.delete(key); else pressed.add(key);
+      button.setAttribute("aria-pressed", String(pressed.has(key)));
+      applyHighlight();
+      if (pressed.has(key)) showLoop(key);
+      else if (panel.dataset.loop === key) closePanel();
+    });
+    row.append(button);
+  }
+  nav.append(row);
 }
+// with the menu closed, the bar says which loops are highlighted, and clears them
+const shown = document.getElementById("shown");
+shown.addEventListener("click", () => {
+  pressed.clear();
+  for (const b of nav.querySelectorAll("button")) b.setAttribute("aria-pressed", "false");
+  applyHighlight();
+  if (panel.dataset.loop) closePanel();
+});
 function applyHighlight() {
+  shown.hidden = pressed.size === 0;
+  shown.textContent = `${[...pressed].join(", ")} ×`;
   const active = rules.filter(([label, , key = label]) => pressed.has(key)).map(([, rule]) => rule());
   const none = active.length === 0;
   const keepE = new Set(active.flatMap(r => [...r.elements]));
@@ -108,15 +134,14 @@ function showLoop(id) {
 }
 function closePanel() { panel.hidden = true; delete panel.dataset.loop; }
 document.getElementById("close").addEventListener("click", closePanel);
-document.addEventListener("keydown", ev => { if (ev.key === "Escape") closePanel(); });
 document.addEventListener("click", ev => {
-  if (panel.contains(ev.target) || nav.contains(ev.target)) return;  // a loop's button opens its own panel
+  if (panel.contains(ev.target) || nav.contains(ev.target) || ev.target.closest(".chrome")) return;  // a loop's button opens its own panel
   const g = ev.target.closest("g.element, g.link");
   if (g && svg.contains(g)) return;  // handled on the svg, below
   closePanel();
 });
 svg.addEventListener("click", ev => {
-  if (dragged) return;  // a drag is not a click
+  if (controls.wasDragged()) return;  // a drag is not a click
   const g = ev.target.closest("g.element, g.link");
   if (!g) { closePanel(); return; }
   if (g.classList.contains("element")) showElement(g.dataset.id);
@@ -264,77 +289,33 @@ function moveElement(g, dx, dy) {
   // a moved box changes where the other links on its edges end, so every link is redrawn
   for (const [l, path] of linkPaths()) redrawLink(l, path);
 }
-const toSvg = ev => {
-  const p = new DOMPoint(ev.clientX, ev.clientY).matrixTransform(svg.getScreenCTM().inverse());
-  return [p.x, p.y];
-};
+const toSvg = ev => svgPoint(svg, ev);
 const moveToggle = document.getElementById("move");
 const download = document.getElementById("download");
 const map = document.getElementById("map");
-let drag = null, dragged = false;
 moveToggle.addEventListener("change", () => {
   map.classList.toggle("moving", moveToggle.checked);
-  download.disabled = !moveToggle.checked;
+  download.hidden = !moveToggle.checked;
 });
 
-// --- pan and zoom ---------------------------------------------------------------------------
-// The drawing is far larger than a screen: the viewBox is the window onto it. Wheel or pinch
-// zooms at the cursor, dragging the background pans, "Fit" shows the whole drawing again.
-const base = (() => { const v = svg.viewBox.baseVal; return { x: v.x, y: v.y, w: v.width, h: v.height }; })();
-const view = { ...base };
-const applyView = () => svg.setAttribute("viewBox", `${view.x} ${view.y} ${view.w} ${view.h}`);
-const unitsPerPixel = () => Math.max(view.w / svg.clientWidth, view.h / svg.clientHeight);
-function zoomAt(point, factor) {
-  view.w /= factor;
-  view.h /= factor;
-  view.x = point[0] - (point[0] - view.x) / factor;
-  view.y = point[1] - (point[1] - view.y) / factor;
-  applyView();
-}
-svg.addEventListener("wheel", ev => {
-  ev.preventDefault();
-  zoomAt(toSvg(ev), Math.exp(-ev.deltaY * 0.002));
-}, { passive: false });
-const centre = () => [view.x + view.w / 2, view.y + view.h / 2];
-document.getElementById("zoom-in").addEventListener("click", () => zoomAt(centre(), 1.4));
-document.getElementById("zoom-out").addEventListener("click", () => zoomAt(centre(), 1 / 1.4));
-document.getElementById("fit").addEventListener("click", () => { Object.assign(view, base); applyView(); });
-
-svg.addEventListener("pointerdown", ev => {
+// --- moving and zooming: map.js; a press in Move mode is this page's --------------------------
+function grabInMoveMode(ev) {
+  if (!moveToggle.checked) return null;
   const g = ev.target.closest("g.element"), l = ev.target.closest("g.link");
-  if (moveToggle.checked && g) drag = { kind: "element", g, last: toSvg(ev) };
-  else if (moveToggle.checked && l) drag = { kind: "link", g: l };
-  else drag = { kind: "pan", last: [ev.clientX, ev.clientY] };
-  dragged = false;
-  ev.preventDefault();
-});
-svg.addEventListener("pointermove", ev => {
-  if (!drag) return;
-  // capture only once the pointer moves: a captured pointer's click goes to the svg itself,
-  // so a plain click on an element or a link would no longer find them
-  if (!svg.hasPointerCapture(ev.pointerId)) svg.setPointerCapture(ev.pointerId);
-  if (drag.kind === "link") {
-    dragged = true;
-    bendLink(drag.g, toSvg(ev));
-  } else if (drag.kind === "element") {
-    const p = toSvg(ev);
-    const dx = p[0] - drag.last[0], dy = p[1] - drag.last[1];
-    if (dx === 0 && dy === 0) return;
-    dragged = true;
-    moveElement(drag.g, dx, dy);
-    drag.last = p;
-  } else {
-    const k = unitsPerPixel();
-    const dx = (ev.clientX - drag.last[0]) * k, dy = (ev.clientY - drag.last[1]) * k;
-    if (dx === 0 && dy === 0) return;
-    dragged = true;
-    view.x -= dx;
-    view.y -= dy;
-    applyView();
-    drag.last = [ev.clientX, ev.clientY];
+  if (g) {
+    let last = toSvg(ev);
+    return move => {
+      const p = toSvg(move), dx = p[0] - last[0], dy = p[1] - last[1];
+      if (dx === 0 && dy === 0) return false;
+      moveElement(g, dx, dy);
+      last = p;
+      return true;
+    };
   }
-});
-svg.addEventListener("pointerup", () => { drag = null; setTimeout(() => { dragged = false; }, 0); });
+  if (l) return move => { bendLink(l, toSvg(move)); return true; };
+  return null;
+}
+const controls = mapControls(svg, map, grabInMoveMode);
 download.addEventListener("click", () => {
   const layout = {};
   for (const g of elements) {

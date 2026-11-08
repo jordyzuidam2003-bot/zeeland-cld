@@ -7,31 +7,38 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>Zeeland CLD</h1>
-  <p class="intro">Adapting Zeeland's arable farming to salinisation and freshwater scarcity: the causal loop diagram of our Challenge Based Project.</p>
-</header>
-<div class="facts"><!-- FACTS --><a href="#about">Purpose, boundary and assumptions ↓</a><a href="table.xlsx" download>The table of elements, links and loops (.xlsx) ↓</a><a href="actors.html">Actor Map →</a></div>
-<nav class="buttons" id="buttons" aria-label="Highlight"></nav>
-<main>
-  <div class="map" id="map">
+<div class="map" id="map">
 <!-- SVG -->
+</div>
+<div class="chrome">
+  <div class="bar">
+    <button id="menu-button" class="title" aria-expanded="false" aria-controls="menu"><span aria-hidden="true">☰</span> Zeeland CLD</button>
+    <span class="group"><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button><button id="fit">Fit</button></span>
+    <label class="toggle" title="Move elements and bend links"><input type="checkbox" id="move"> Move</label>
+    <button id="download" hidden>Download layout</button>
+    <button id="fullscreen" aria-label="Full screen" title="Full screen">⛶</button>
+    <button id="shown" hidden title="Clear the highlighted loops"></button>
   </div>
-  <aside class="panel" id="panel" hidden>
-    <button class="close" id="close" aria-label="Close">×</button>
-    <div id="panel-body"></div>
+  <aside class="menu" id="menu" hidden>
+    <p class="intro">Adapting Zeeland's arable farming to salinisation and freshwater scarcity: the causal loop diagram of our Challenge Based Project.</p>
+    <div class="links"><a href="#about">Purpose, boundary and assumptions</a><a href="table.xlsx" download>The table of elements, links and loops (.xlsx) ↓</a><a href="actors.html">Actor Map →</a></div>
+    <nav class="buttons" id="buttons" aria-label="Highlight"></nav>
+    <div class="facts"><!-- FACTS --></div>
+    <p class="version">Model version <code id="version"></code></p>
   </aside>
-</main>
+</div>
+<aside class="panel" id="panel" hidden>
+  <button class="close" id="close" aria-label="Close">×</button>
+  <div id="panel-body"></div>
+</aside>
 <section class="about" id="about">
+  <a class="close" href="#" aria-label="Close">×</a>
+  <div class="about-text">
 <!-- TEXTS -->
+  </div>
 </section>
-<footer>
-  <span class="zoom"><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button><button id="fit">Fit</button></span>
-  <label class="toggle"><input type="checkbox" id="move"> Move elements and links</label>
-  <button id="download" disabled>Download layout</button>
-  <span class="version">Model version <code id="version"></code></span>
-</footer>
 <!-- DATA -->
+<script src="map.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

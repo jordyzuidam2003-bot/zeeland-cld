@@ -18,12 +18,12 @@ spreadsheet.
 | `references.zotero.json` | the Use note in Zotero that `push` wrote for each source, with a fingerprint of its text, so a push never replaces a note somebody changed | never: `push` writes it |
 | `model-texts.md` | the model texts the page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
 | `view.scss`, `actors-view.scss` | the Kumu views inside `docs/project.json` and `docs/actors-project.json` | yes |
-| `page/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `style.css` | yes |
+| `page/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `map.js` (moving and zooming, the bar and the menu, for both pages), `style.css` | yes |
 | `build.py` | checks the model and the actors and writes `docs/` (how: its docstring) | — |
 | `draw.py` | draws the CLD's SVG, imported by `build.py` | — |
 | `actormap.py` | draws the Actor Map and lays out its table, imported by `build.py` | — |
 | `xlsx.py` | writes the table as an `.xlsx` with the standard library | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json`, `table.xlsx`; `actors.html`, `actors.js`, `actors.svg`, `actors-bands.svg`, `actors-project.json`, `actors.xlsx` | never: `build.py` writes it |
+| `docs/` | what GitHub Pages serves: `index.html`, `app.js`, `map.js`, `style.css`, `cld.svg`, `loops/<id>.svg`, `regions.svg`, `project.json`, `table.xlsx`; `actors.html`, `actors.js`, `actors.svg`, `actors-bands.svg`, `actors-project.json`, `actors.xlsx` | never: `build.py` writes it |
 
 ## Version 1
 
@@ -52,7 +52,7 @@ builds and pushes, so nobody else needs git or Python.
 3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
    a commit whose `docs/` is out of date.
 
-Layout tuning: on the page, turn on "Move elements and links": drag an element to move it, drag
+Layout tuning: on the page, turn on "Move": drag an element to move it, drag
 a link to bend it (its middle follows the pointer; within 0.03 of straight a Constant's link snaps to
 straight and any other keeps that bend), then "Download layout" saves `layout.json`
 with every element's position and every link's curvature.
@@ -88,11 +88,20 @@ the ratio matches and the layout can change. For a sharper picture, divide by le
 
 ### The page
 
-The drawing is larger than a screen: scroll or pinch to zoom at the cursor, drag the
-background to pan, "Fit" shows the whole drawing again. A button per named loop highlights its
+Both pages are built alike (`page/map.js`, `page/style.css`). The drawing fills the window and
+all else floats over it, so a gesture on the map moves the map and never the page: the bar at
+the top left holds the menu button, +, −, Fit, Move (on the CLD, with "Download layout" beside it
+while it is on) and true fullscreen, which a browser allows only after a click. The menu holds
+the rest and stays open until its button or Esc closes it, so several loops can be pressed; with
+it closed the bar names the highlighted loops. On a
+trackpad two fingers move the map and a pinch zooms at the fingers; a mouse wheel zooms at the
+cursor; on a touch screen one finger moves it and two zoom. Dragging moves the map, from a box or
+a link too, and a press that barely moves stays a click; a double click on the background zooms
+in, and "Fit" shows the whole drawing below the bar. A
+button per named loop highlights its
 elements and links, several pressed show their union, and opens a panel with the loop's figure
-on its own, `docs/loops/<id>.svg`. A click on an element or a link opens a panel with its fields
-and sources; Esc or a click on the background closes it. The footer shows the model version, the
+on its own, `docs/loops/<id>.svg`; the buttons are a list in the menu. A click on an element or a link opens a panel with its fields
+and sources; Esc or a click on the background closes it. The menu shows the model version, the
 first seven characters of the SHA-256 of `cld.json`, so teammates can tell which model they are
 looking at.
 
@@ -111,8 +120,9 @@ References sheet. The sources are in-text citations, the letter after a year the
 
 ### `cld.json`
 
-The model texts are in `model-texts.md`, which `build.py` renders on the page
-(Jordy: someone opening the page reads the scale, horizon and assumptions with the drawing). A
+The model texts are in `model-texts.md`, which `build.py` renders into the page, where the link
+"Purpose, boundary and assumptions" in the menu opens them over the drawing and Esc closes them (Jordy:
+the map fills the page; rejected: the texts below the drawing). A
 word in braces, such as `{feedback loops}`, is a number `build.py` counts in the model; a
 `<!-- comment -->` is not shown, and `<!-- Draft, for the team to check. -->` marks a text the
 team has not checked yet.

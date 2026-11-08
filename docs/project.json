@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 92f755f, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 17fd518, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -2645,11 +2645,11 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "By the water board's rules, the views sent on a draft plan within six weeks are answered in the decision, anyone affected may appeal at the court for six weeks after it, and the board consults the region first so that as few conflicts as possible arise to slow or interrupt the procedure (Waterschap Scheldestromen, 2025, pp. 17–18). So objections can delay, change or stop a plan to raise the levels while it is pending; with none pending they change nothing, and they never lower a level. On the island the views on the two plans of 2021 changed neither: Duiveland's 25 views from six people (2021a, p. 53) and Schouwen's 11 from five, which added some studies (2021b, pp. 7–8). The only views against a raise, four on Duiveland's proposed study of one, gave as their reason the concern that flooding becomes likelier in extreme rain, not the land's value (2021a, p. 53); none of Schouwen's opposed the raises in its ten level areas (2021b, pp. 7–8, 53). The region's reactions before each draft were taken into the work on it (2021a, pp. 52–53; 2021b, p. 7). Whether anyone appealed either plan, no source read shows. Within the year, as the plan is decided.",
+        "description": "By the water board's rules, the views sent on a draft plan within six weeks are answered in the decision, anyone affected may appeal at the court for six weeks after it, and the board consults the region first so that as few conflicts as possible arise to slow or interrupt the procedure (Waterschap Scheldestromen, 2025, pp. 17–18). So objections can delay, change or stop a plan to raise the levels while it is pending; with none pending they change nothing, and they never lower a level. On the island the views on the two plans of 2021 changed neither: Duiveland's 25 views from six people (2021a, p. 53) and Schouwen's 11 from five, which added some studies (2021b, pp. 7–8). The only views against a raise, four on Duiveland's proposed study of one, gave as their reason the concern that flooding becomes likelier in extreme rain, not the land's value (2021a, p. 53); none of Schouwen's opposed the raises in its ten level areas (2021b, pp. 7–8, 53). The region's reactions before each draft were taken into the work on it (2021a, pp. 52–53; 2021b, p. 7). Whether anyone appealed either plan, no source read shows. Elsewhere in Zeeland a view did change the same board's plan: on the raise of a winter level in the Braakman, near Terneuzen, ZLTO objected for seven farmers that one party's gain should not harm another, and the plan of 2015 took a phased raise, its first step only once the field that suffers most has been acquired and its second within six years (Waterschap Scheldestromen, 2015, p. 2). Within the year, as the plan is decided.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "Waterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nWaterschap Scheldestromen. (2021b). Hydrologisch onderzoeksrapport Schouwen. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch_onderzoeksrapport_Schouwen.pdf",
+        "sources": "Waterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nWaterschap Scheldestromen. (2021b). Hydrologisch onderzoeksrapport Schouwen. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch_onderzoeksrapport_Schouwen.pdf\nWaterschap Scheldestromen. (2015). Antwoordnota zienswijzen ontwerp peilbesluit Braakman e.o. (Registratienr. 2015032549). https://repository.officiele-overheidspublicaties.nl/CVDR/CVDR386342/1/xml/i263795.pdf",
         "sourced": "yes",
         "connection type": "-"
       },
@@ -4333,7 +4333,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 92f755f",
+      "name": "CLD, model 17fd518",
       "description": "",
       "scale": 1,
       "center": {

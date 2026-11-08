@@ -340,6 +340,25 @@
     "DOI": "10.1016/j.ecss.2014.05.001"
   },
   {
+    "id": "scheldestromen-2015-braakman",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "title": "Antwoordnota zienswijzen ontwerp peilbesluit Braakman e.o.",
+    "number": "Registratienr. 2015032549",
+    "URL": "https://repository.officiele-overheidspublicaties.nl/CVDR/CVDR386342/1/xml/i263795.pdf"
+  },
+  {
     "id": "scheldestromen-2021-wbp",
     "type": "report",
     "author": [

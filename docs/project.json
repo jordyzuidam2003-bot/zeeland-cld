@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version e28328d, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 92f755f, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -436,7 +436,7 @@
         "sets domain": "Ecological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence. Tidal silt, let in through a wisselpolder, would barely raise it on this island: the Grevelingen has no tide, and the Oosterschelde has too little silt to raise polders on a large scale (De Mesel et al., 2013). Since the storm surge barrier its channels carry 52–70% less suspended sediment (Ma et al., 2014, section 2.1); near Zierikzee the water holds under 10 mg/l, mostly fine sand, and its salt marshes rise 3–10 mm a year (van Maldegem & de Jong, 2004, pp. 14, 27), against 16–32 mm on young marshes along the Westerschelde (De Mesel et al., 2013).",
+        "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence. Tidal silt, let in through a wisselpolder, would barely raise it on this island: the Grevelingen has no tide, and the Oosterschelde has too little silt to raise polders on a large scale (De Mesel et al., 2013). Since the storm surge barrier its channels carry 52–70% less suspended sediment (Ma et al., 2014, p. 15); near Zierikzee the water holds under 10 mg/l, mostly fine sand, and its salt marshes rise 3–10 mm a year (van Maldegem & de Jong, 2004, pp. 14, 27), against 16–32 mm on young marshes along the Westerschelde (De Mesel et al., 2013).",
         "actors": "",
         "sources": "De Mesel, I., Ysebaert, T., & Kamermans, P. (2013). Klimaatbestendige dijken: Het concept wisselpolders (Rapport C072/13). IMARES Wageningen UR. https://www.vliz.be/imisdocs/publications/289823.pdf\nMa, Z., Ysebaert, T., van der Wal, D., de Jong, D. J., Li, X., & Herman, P. M. J. (2014). Long-term salt marsh vertical accretion in a tidal bay with reduced sediment supply. Estuarine, Coastal and Shelf Science, 146, 14–23. https://doi.org/10.1016/j.ecss.2014.05.001\nvan Maldegem, D., & de Jong, D. (2004). Opwassen of verdrinken: Sedimentaanvoer naar schorren in de Oosterschelde, een zandhongerig gedempt getijdesysteem (Werkdocument RIKZ/AB/2003/826x). Rijkswaterstaat, Rijksinstituut voor Kust en Zee. https://edepot.wur.nl/174582",
         "sourced": "yes"
@@ -4333,7 +4333,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model e28328d",
+      "name": "CLD, model 92f755f",
       "description": "",
       "scale": 1,
       "center": {

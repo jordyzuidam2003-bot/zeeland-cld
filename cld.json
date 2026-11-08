@@ -120,7 +120,7 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence. Tidal silt, let in through a wisselpolder, would barely raise it on this island: the Grevelingen has no tide, and the Oosterschelde has too little silt to raise polders on a large scale (De Mesel et al., 2013). Since the storm surge barrier its channels carry 52–70% less suspended sediment (Ma et al., 2014, section 2.1); near Zierikzee the water holds under 10 mg/l, mostly fine sand, and its salt marshes rise 3–10 mm a year (van Maldegem & de Jong, 2004, pp. 14, 27), against 16–32 mm on young marshes along the Westerschelde (De Mesel et al., 2013).",
+      "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence. Tidal silt, let in through a wisselpolder, would barely raise it on this island: the Grevelingen has no tide, and the Oosterschelde has too little silt to raise polders on a large scale (De Mesel et al., 2013). Since the storm surge barrier its channels carry 52–70% less suspended sediment (Ma et al., 2014, p. 15); near Zierikzee the water holds under 10 mg/l, mostly fine sand, and its salt marshes rise 3–10 mm a year (van Maldegem & de Jong, 2004, pp. 14, 27), against 16–32 mm on young marshes along the Westerschelde (De Mesel et al., 2013).",
       "sources": [
         "de-mesel-2013",
         "ma-2014",

@@ -30,7 +30,7 @@
 <path class="delay-cut" d="M -329.6 518.4 L -315.9 472.4 M -344.9 513.9 L -331.2 467.9" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -329.6 518.4 L -315.9 472.4 M -344.9 513.9 L -331.2 467.9" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="root-zone-salinity" data-to="harvest-lost-to-salt" data-sign="+" data-delay="false" data-curvature="-0.07">
+<g class="link" data-from="root-zone-salinity" data-to="harvest-lost-to-salt" data-sign="+" data-delay="false" data-curvature="0.63">
 <path class="link-path" d="M -129.5 -533.1 Q -1.8 -546.8 125.9 -533.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="76.1" y="-537.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

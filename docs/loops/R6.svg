@@ -38,7 +38,7 @@
 <path class="link-path" d="M 413.3 -464.4 Q 560.7 -406.1 660.1 -313.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="622.3" y="-345.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="root-zone-salinity" data-to="harvest-lost-to-salt" data-sign="+" data-delay="false" data-curvature="-0.07">
+<g class="link" data-from="root-zone-salinity" data-to="harvest-lost-to-salt" data-sign="+" data-delay="false" data-curvature="0.63">
 <path class="link-path" d="M -563.9 387.7 Q -736.5 276.1 -789.8 119.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-770.9" y="166.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

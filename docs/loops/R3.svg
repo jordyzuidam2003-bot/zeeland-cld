@@ -6,7 +6,7 @@
 </defs>
 <rect x="-968" y="-632" width="2003" height="1297" fill="white"/>
 <g class="links">
-<g class="link" data-from="freshwater-lens-recharge" data-to="freshwater-lens-thickness" data-sign="+" data-delay="true" data-curvature="0.22">
+<g class="link" data-from="freshwater-lens-recharge" data-to="freshwater-lens-thickness" data-sign="+" data-delay="true" data-curvature="-0.39">
 <path class="link-path" d="M 776.5 153.8 Q 726.7 265.5 612.1 353.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="650.6" y="321.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M 734.1 268.7 L 697.0 238.2 M 723.9 281.1 L 686.9 250.6" stroke="white" stroke-width="11" fill="none"/>

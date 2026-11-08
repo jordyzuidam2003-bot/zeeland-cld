@@ -10,7 +10,7 @@
 <path class="link-path" d="M 208.4 195.7 Q 125.6 234.9 24.4 239.4 Q -76.8 244.0 -166.7 212.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-118.7" y="226.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="spring-workability-of-the-fields" data-to="demand-for-deep-polder-drainage" data-sign="-" data-delay="false" data-curvature="0.07">
+<g class="link" data-from="spring-workability-of-the-fields" data-to="demand-for-deep-polder-drainage" data-sign="-" data-delay="false" data-curvature="0.15">
 <path class="link-path" d="M -305.7 126.7 Q -360.0 68.5 -360.0 0.0 Q -360.0 -68.5 -305.7 -126.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-335.9" y="-86.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>

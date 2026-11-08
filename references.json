@@ -737,7 +737,8 @@
           6
         ]
       ]
-    }
+    },
+    "year-suffix": "a"
   },
   {
     "id": "kaandorp-2022",
@@ -1594,6 +1595,65 @@
           2026,
           11,
           6
+        ]
+      ]
+    },
+    "year-suffix": "b"
+  },
+  {
+    "id": "living-lab-2023-dreischor",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Living Lab Schouwen-Duiveland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          9
+        ]
+      ]
+    },
+    "title": "Anti-verziltingsdrainage in Dreischor",
+    "URL": "https://livinglabschouwen-duiveland.nl/nieuws/anti-verziltingsdrainage-dreischor",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          8
+        ]
+      ]
+    }
+  },
+  {
+    "id": "living-lab-2024-slotbijeenkomst",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Living Lab Schouwen-Duiveland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          21
+        ]
+      ]
+    },
+    "title": "Slotbijeenkomst Samenwerken voor Zoetwater: Innovatieve drainage",
+    "URL": "https://livinglabschouwen-duiveland.nl/kennis-en-leren/evenementen/slotbijeenkomst-samenwerken-voor-zoetwater-innovatieve-drainage",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          8
         ]
       ]
     }

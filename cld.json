@@ -222,10 +222,18 @@
       "sets domain": "Technological",
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
-      "description": "The fresh water a year that the measures in place on the island's farms keep, store or collect for the growing season. They work three ways (Kaandorp et al., 2022, pp. 16–23, 53, for the island): in the low polders, controlled drainage, anti-salinisation drainage (Drains2Buffer) and weirs in ditches keep the thin rainwater lens against salt, the water staying in the field's own soil, where it cannot be pumped (pp. 33, 53); on the creek ridges, the dunes and where a sand layer lies under the clay, the creek-ridge infiltration system, the Freshmaker and underground storage under a clay layer infiltrate winter water to pump in summer (pp. 20–22, 38); and double drainage collects fresh drain water into a basin to irrigate from (pp. 23, 29, 32). An adaptive practice: measures to keep more fresh water in the ground as drought and salinisation increase (p. 4). The study found them not yet fitted to the island and too risky for many farms to invest in alone (pp. 4, 11). A Stock: a measure, once built, lasts 15 to 30 years (pp. 17–22, 34). The farm decides a measure; infiltrating water needs the water board's permit or a notification, a weir the neighbours' consent, and raising a ditch's level the water board's cooperation (pp. 26, 44–45). Whether a farm wants to store weighs storing against its other ways through a dry summer (pumping, other crops), where capacity to invest is whether it can. Stored water pays back over years, which suits a farm that owns its land more than one on a short lease; and where stored water spreads under the neighbours, one farm pays and others gain. Whether either holds a farm back is a question for the group model building session.",
+      "description": "The fresh water a year that the measures in place on the island's farms keep, store or collect for the growing season. They work three ways (Kaandorp et al., 2022, pp. 16–23, 53, for the island): in the low polders, controlled drainage, anti-salinisation drainage (Drains2Buffer) and weirs in ditches keep the thin rainwater lens against salt, the water staying in the field's own soil, where it cannot be pumped (pp. 33, 53); on the creek ridges, the dunes and where a sand layer lies under the clay, the creek-ridge infiltration system, the Freshmaker and underground storage under a clay layer infiltrate winter water to pump in summer (pp. 20–22, 38); and double drainage collects fresh drain water into a basin to irrigate from (pp. 23, 29, 32). An adaptive practice: measures to keep more fresh water in the ground as drought and salinisation increase (p. 4). The study found them not yet fitted to the island and too risky for many farms to invest in alone (pp. 4, 11). A Stock: a measure, once built, lasts 15 to 30 years (pp. 17–22, 34). The farm decides a measure; infiltrating water needs the water board's permit or a notification, a weir the neighbours' consent, and raising a ditch's level the water board's cooperation (pp. 26, 44–45). Whether a farm wants to store weighs storing against its other ways through a dry summer (pumping, other crops), where capacity to invest is whether it can. Stored water pays back over years, which suits a farm that owns its land more than one on a short lease; and where stored water spreads under the neighbours, one farm pays and others gain. Whether either holds a farm back is a question for the group model building session. Beside the farms, Acacia Water, Deltares and Delphy shape it: in a demonstration with the trial farm Rusthoeve and the municipality, double drainage was laid on two test plots at Kerkwerve and anti-salinisation drainage on one at Dreischor, on three of the island's farms (Living Lab Schouwen-Duiveland, 2023), the EU's rural development programme paying half of the cost and the knowledge parties a part of it (Living Lab Schouwen-Duiveland, n.d.-b).",
       "simplification": "Counts the measures of three kinds as one quantity, the fresh water a year they keep, store or collect, each kind reaching crops by its own link out: to Winter rain drained away, to Freshwater lens thickness under creek ridges and dunes, and to Freshwater availability for crops. It assumes every kind responds alike to the drivers into this element. Every loop through it keeps its polarity and its mechanism; what it leaves out is that a rise in one kind need not be a rise in another, so the semi-quantitative analysis cannot vary them apart.",
       "sources": [
-        "kaandorp-2022"
+        "kaandorp-2022",
+        "living-lab-2023-dreischor",
+        "living-lab-innovatieve-drainage"
+      ],
+      "actors": [
+        "eu",
+        "deltares",
+        "acacia-water",
+        "delphy"
       ],
       "x": -582,
       "y": -296,
@@ -898,9 +906,19 @@
       "sets domain": "Social",
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
-      "description": "What the island's farmers, their advisers and contractors know of how freshwater storage works on the island: how the soil and groundwater behave, and what a measure costs, risks and yields. The knowledge from the pilots has not yet been translated to the island's soil, water and farm conditions, which leaves much uncertainty about building a measure, its costs, its management, its risks and its gain (Kaandorp et al., 2022, p. 11), and local advisers and farmers understand too little of how the soil and groundwater system works (p. 12). It builds up as measures are built and monitored, so a Stock.",
+      "description": "What the island's farmers, their advisers and contractors know of how freshwater storage works on the island: how the soil and groundwater behave, and what a measure costs, risks and yields. The knowledge from the pilots has not yet been translated to the island's soil, water and farm conditions, which leaves much uncertainty about building a measure, its costs, its management, its risks and its gain (Kaandorp et al., 2022, p. 11), and local advisers and farmers understand too little of how the soil and groundwater system works (p. 12). It builds up as measures are built and monitored, so a Stock. Outside the island's farms, Deltares, KWR and Acacia Water shape it: in the project Samenwerken voor Zoet Water they drew up quickscan advice for 13 farmers and feasibility studies for groups of farms, and made methods, maps and tools available with which farmers and advisers can go on by themselves (Kaandorp et al., 2022, pp. 4, 9, 55). The EU co-funded that project (Living Lab Schouwen-Duiveland, n.d.-a) and paid half of a later one, of Acacia Water, Deltares, Delphy, the trial farm Rusthoeve, three farms and the municipality, which demonstrated and monitored new drainage on the island for figures and guidelines on building, managing and maintaining it (Living Lab Schouwen-Duiveland, n.d.-b); Acacia Water, Deltares and Delphy explained its yield and effect at the closing meeting (Living Lab Schouwen-Duiveland, 2024).",
       "sources": [
-        "kaandorp-2022"
+        "kaandorp-2022",
+        "living-lab-samenwerken-voor-zoet-water",
+        "living-lab-innovatieve-drainage",
+        "living-lab-2024-slotbijeenkomst"
+      ],
+      "actors": [
+        "eu",
+        "deltares",
+        "kwr",
+        "acacia-water",
+        "delphy"
       ],
       "x": -370,
       "y": 10

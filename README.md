@@ -91,7 +91,8 @@ the ratio matches and the layout can change. For a sharper picture, divide by le
 The drawing is larger than a screen: scroll or pinch to zoom at the cursor, drag the
 background to pan, "Fit" shows the whole drawing again. A button per named loop highlights its
 elements and links, several pressed show their union, and opens a panel with the loop's figure
-on its own, `docs/loops/<id>.svg`. A click on an element or a link opens a panel with its fields
+on its own, `docs/loops/<id>.svg`; the buttons sit in two rows, Individual loops and Combined
+loops, and a group's button does the same for all its loops, its figure `docs/groups/<id>.svg`. A click on an element or a link opens a panel with its fields
 and sources; Esc or a click on the background closes it. The footer shows the model version, the
 first seven characters of the SHA-256 of `cld.json`, so teammates can tell which model they are
 looking at.
@@ -194,8 +195,15 @@ A group of named loops: `{"id": "C1", "name": "…", "loops": ["R3", "B4"], "des
 the top-level list `groups`: loops that together form a behaviour none of them shows alone, joined at
 the variables they share. Its `name` says what the loops do together, in words each actor would
 accept. `build.py` stops on a group naming a loop that is not a named loop, on a group of fewer than
-two loops and on a loop sharing no variable with the group's others; the table's Combined loops sheet
-shows each group.
+two loops and on a loop sharing no variable with the group's others; the page's button, the table's
+Combined loops sheet and Kumu's showcase show each group. `places` (`{"element-id": [x, y]}`), `bends`
+(`{"from-id -> to-id": curvature}`) and `marks` (`{"R3": [x, y]}`) lay out its figure,
+`docs/groups/<id>.svg`: its own, never the full drawing's, on the same axes and signs as `x`, `y` and
+`curvature`. Each must hold exactly the group's elements, links and loops, so `build.py` stops when a
+loop's path changes, and it warns of a crossing or a link through a box in a figure; `--check` names a
+stale or orphaned one. `model-texts.md`'s `{combined loops list}` shows each group's description, so the
+page's text and the data cannot differ. `sources` (optional) holds what the group's own claim rests on,
+such as the archetype it matches; each link's source stays on the link.
 
 ### `actors.json`
 
@@ -306,7 +314,7 @@ update is a new project under the same name, which keeps the URL. Jordy renames 
 a project export; the green `+` → Import route brings in the elements and connections alone.
 Kumu restores the map with the elements at their positions, the view from `view.scss`, the named
 loops (each its links, its "R1 …" label hidden on the map by the view, as the page has no loop
-marks, and a showcase button per named loop, as on the page), and the project's name,
+marks, and a showcase button per named loop and per group of them, as on the page), and the project's name,
 which the export sets to `cbp-cld`.
 
 The Actor Map goes the same way, as its own project at <https://kumu.io/JordyZuidam/cbp-actors>:

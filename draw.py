@@ -21,6 +21,8 @@ No loop marks on the full drawing: the page highlights a named loop by its butto
 loop_figure(cld, loop) draws one named loop on its own (build.py writes docs/loops/<id>.svg): its
 elements evenly round one oval, clockwise from the top left, its links along it, drawn as svg()
 draws them, with its mark, turning clockwise, at the oval's centre.
+group_figure(cld, group) draws one group of named loops (build.py writes docs/groups/<id>.svg): its
+loops' elements and links at the group's own `places` and `bends`, each loop's mark at `marks`.
 
 The link formulas are duplicated in page/app.js (drag mode redraws every link when an element
 moves): keep link_path(), link_paths(), sign_position() and their JS twins the same.
@@ -734,6 +736,46 @@ def loop_figure(cld, loop):
     pad = MARGIN + SIGN_SIZE
     vb = (min(xs) - pad, min(ys) - pad, max(xs) - min(xs) + 2 * pad, max(ys) - min(ys) + 2 * pad)
     parts = [*head(vb), *links_and_elements(sub, bxs, pieces), loop_svg(loop, (0, 0)), "</svg>"]
+    return "\n".join(parts) + "\n"
+
+
+def group_links(cld, group):
+    """The (from, to) of each link on the group's loops, in the order the loops run."""
+    paths = {loop["id"]: loop["path"] for loop in cld["loops"]}
+    seen = {}
+    for name in group["loops"]:
+        p = paths[name]
+        seen.update(((a, b), None) for a, b in zip(p, p[1:] + p[:1]))
+    return list(seen)
+
+
+def group_cld(cld, group):
+    """The group's own small drawing, in cld.json's shape: only its loops' elements and links, at
+    its places and bends. A link keeps no `delay at`: that is a place on the full drawing's curve."""
+    by_id, by_link = {e["id"]: e for e in cld["elements"]}, {(c["from"], c["to"]): c for c in cld["connections"]}
+    elements = [dict(by_id[i], x=x, y=y) for i, (x, y) in group["places"].items()]
+    connections = [{**{k: v for k, v in by_link[a, b].items() if k != "delay at"}, "curvature": group["bends"][f"{a} -> {b}"]}
+                   for a, b in group_links(cld, group)]
+    return {"elements": elements, "connections": connections}
+
+
+def group_figure(cld, group):
+    """One group of named loops, for the report: the loops joined at their shared variables, drawn
+    as svg() draws them, each loop's mark in the part of the figure that is its own. The places are
+    the group's, never the full drawing's, where the same loops run long and lopsided (the same
+    reason as oval()). No regions and no legend: the figure stands beside the full drawing."""
+    sub = group_cld(cld, group)
+    bxs, paths = boxes(sub), {k: [p] for k, p in link_paths(sub, boxes(sub)).items()}
+    loops = {loop["id"]: loop for loop in cld["loops"]}
+    curve = [bezier(*p[0], t / 10) for p in paths.values() for t in range(11)]
+    marks = list(group["marks"].values())
+    pad = MARGIN + SIGN_SIZE
+    x0 = min(*(b[0] for b in bxs.values()), *(p[0] for p in curve), *(m[0] - MARK_R for m in marks)) - pad
+    y0 = min(*(b[1] for b in bxs.values()), *(p[1] for p in curve), *(m[1] - MARK_R for m in marks)) - pad
+    x1 = max(*(b[2] for b in bxs.values()), *(p[0] for p in curve), *(m[0] + MARK_R for m in marks)) + pad
+    y1 = max(*(b[3] for b in bxs.values()), *(p[1] for p in curve), *(m[1] + MARK_R for m in marks)) + pad
+    parts = [*head((x0, y0, x1 - x0, y1 - y0)), *links_and_elements(sub, bxs, paths, delay_spots(sub, paths)),
+             *(loop_svg(loops[name], tuple(group["marks"][name])) for name in group["loops"]), "</svg>"]
     return "\n".join(parts) + "\n"
 
 

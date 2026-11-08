@@ -28,6 +28,8 @@ h1 { font-size: 22px; margin: 0 0 4px; }
   color: var(--ink);
   cursor: pointer;
 }
+.button-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; width: 100%; }
+.button-heading { font-weight: 600; margin-right: 4px; }
 .buttons button[aria-pressed="true"] { background: var(--ink); color: white; border-color: var(--ink); }
 footer button:disabled { color: var(--muted); cursor: default; }
 main { position: relative; }

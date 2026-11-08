@@ -2219,5 +2219,26 @@
     "container-title": "Landwerk",
     "publisher": "PBL Netherlands Environmental Assessment Agency",
     "URL": "https://www.pbl.nl/publicaties/prijs-hoger-dan-de-waarde-van-landbouwgrond"
+  },
+  {
+    "id": "kim-2000",
+    "type": "report",
+    "author": [
+      {
+        "family": "Kim",
+        "given": "D. H."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    },
+    "title": "Systems archetypes I: Diagnosing systemic issues and designing high-leverage interventions",
+    "publisher": "Pegasus Communications",
+    "URL": "https://thesystemsthinker.com/wp-content/uploads/2016/03/Systems-Archetypes-I-TRSA01_pk.pdf",
+    "genre": "Toolbox Reprint Series; first printing 1992"
   }
 ]

@@ -16,28 +16,43 @@ const byKey = Object.fromEntries(data.connections.map(c => [linkKey(c), c]));
 document.getElementById("version").textContent = data.version;
 
 // --- highlight buttons ----------------------------------------------------------------------
-// A button per named loop names its elements and links; pressed loops are united, none means all.
-// A loop's button reads "R1 Its name"; its key is the loop's id. Pressing it also opens the loop's
-// panel, its figure on its own (docs/loops/<id>.svg); releasing it closes that panel.
-const rules = data.loops.map(loop => [`${loop.id} ${loop.name}`, () => {
-  const path = loop.path;
-  const keys = path.map((id, i) => `${id}--${path[(i + 1) % path.length]}`);
-  return { elements: new Set(path), links: new Set(keys) };
-}, loop.id]);
+// A button per named loop, and one per group of named loops, names its elements and links; pressed
+// buttons are united, none means all. A button reads "R1 Its name"; its key is the id. Pressing it
+// also opens the panel with its figure (docs/loops/<id>.svg, docs/groups/<id>.svg); releasing it
+// closes that panel.
+const linksOf = path => path.map((id, i) => `${id}--${path[(i + 1) % path.length]}`);
+const loopRules = data.loops.map(loop => [`${loop.id} ${loop.name}`, () => (
+  { elements: new Set(loop.path), links: new Set(linksOf(loop.path)) }
+), loop.id]);
+const groupRules = data.groups.map(group => [`${group.id} ${group.name}`, () => {
+  const paths = group.loops.map(id => data.loops.find(l => l.id === id).path);
+  return { elements: new Set(paths.flat()), links: new Set(paths.flatMap(linksOf)) };
+}, group.id]);
+const rules = [...loopRules, ...groupRules];
 const nav = document.getElementById("buttons");
-const pressed = new Set();  // the ids of the pressed loops
-for (const [label, rule, key = label] of rules) {
-  const button = document.createElement("button");
-  button.textContent = label;
-  button.setAttribute("aria-pressed", "false");
-  button.addEventListener("click", () => {
-    if (pressed.has(key)) pressed.delete(key); else pressed.add(key);
-    button.setAttribute("aria-pressed", String(pressed.has(key)));
-    applyHighlight();
-    if (pressed.has(key)) showLoop(key);
-    else if (panel.dataset.loop === key) closePanel();
-  });
-  nav.append(button);
+const pressed = new Set();  // the ids of the pressed loops and groups
+for (const [heading, section] of [["Individual loops", loopRules], ["Combined loops", groupRules]]) {
+  if (!section.length) continue;
+  const row = document.createElement("div");
+  row.className = "button-row";
+  const name = document.createElement("span");
+  name.className = "button-heading";
+  name.textContent = heading;
+  row.append(name);
+  for (const [label, rule, key = label] of section) {
+    const button = document.createElement("button");
+    button.textContent = label;
+    button.setAttribute("aria-pressed", "false");
+    button.addEventListener("click", () => {
+      if (pressed.has(key)) pressed.delete(key); else pressed.add(key);
+      button.setAttribute("aria-pressed", String(pressed.has(key)));
+      applyHighlight();
+      if (pressed.has(key)) showLoop(key);
+      else if (panel.dataset.loop === key) closePanel();
+    });
+    row.append(button);
+  }
+  nav.append(row);
 }
 function applyHighlight() {
   const active = rules.filter(([label, , key = label]) => pressed.has(key)).map(([, rule]) => rule());
@@ -88,22 +103,23 @@ function showLink(from, to) {
   showPanel([byId[from].label, " → ", byId[to].label, " ", sign], c, SHOWN_LINK);
 }
 function showLoop(id) {
-  const loop = data.loops.find(l => l.id === id);
+  const group = data.groups.find(g => g.id === id);
+  const loop = group || data.loops.find(l => l.id === id);
   panelBody.replaceChildren();
   const h2 = document.createElement("h2");
   h2.textContent = `${loop.id} ${loop.name}`;
   const a = document.createElement("a");
-  a.href = `loops/${loop.id}.svg`;
+  a.href = `${group ? "groups" : "loops"}/${loop.id}.svg`;
   a.target = "_blank";
   const img = document.createElement("img");
   img.src = a.href;
-  img.alt = `The loop ${loop.id} on its own`;
+  img.alt = group ? `The loops ${group.loops.join(", ")} together` : `The loop ${loop.id} on its own`;
   a.append(img);
   const description = document.createElement("p");
   description.textContent = loop.description;
   const p = document.createElement("p");
   p.className = "note";
-  p.textContent = "The loop on its own, the figure for the report: click it to open it full size.";
+  p.textContent = `${group ? `The loops ${group.loops.join(", ")} together` : "The loop on its own"}, the figure for the report: click it to open it full size.`;
   panelBody.append(h2, a, description, p);
   panel.dataset.loop = loop.id;
   panel.hidden = false;

@@ -11,12 +11,13 @@ CLD's actor fields name), references.json (sources), model-texts.md (the model t
 view.scss and actors-view.scss (the Kumu views inside project.json and actors-project.json) and
 page/ (index.html, a template with the placeholders <!-- SVG -->, <!-- FACTS -->, <!-- TEXTS --> and
 <!-- DATA -->; actors.html, the Actor Map's, with <!-- QUESTION -->, <!-- SVG --> and <!-- DATA -->;
-app.js; actors.js; style.css). draw.py draws the CLD, actormap.py the Actor Map and its table,
+app.js; actors.js; map.js; style.css). draw.py draws the CLD, actormap.py the Actor Map and its table,
 xlsx.py writes the table's file. Never edit docs/, which this script writes:
 
     docs/index.html    the page: the template with the drawing inline, the model texts (their
                        numbers counted in the model) and the data as JSON
     docs/app.js        copied from page/
+    docs/map.js        copied from page/: moving and zooming, the bar and the menu, for both pages
     docs/style.css     copied from page/
     docs/table.xlsx    the table that explains the CLD (table_sheets()), which Jordy imports into
                        Google Drive as a Google Sheet: the Elements, Links, Named loops, Combined
@@ -802,6 +803,7 @@ def main():
         "index.html": page(cld, refs, actors, version, loops),
         "table.xlsx": xlsx.workbook(table_sheets(cld, refs, actors)),
         "app.js": (PAGE / "app.js").read_text(),
+        "map.js": (PAGE / "map.js").read_text(),
         "style.css": (PAGE / "style.css").read_text(),
         **{f"loops/{loop['id']}.svg": draw.loop_figure(cld, loop) for loop in cld["loops"]},
         **{f"groups/{g['id']}.svg": draw.group_figure(cld, g) for g in cld.get("groups", [])},

@@ -1,5 +1,5 @@
 // The Actor Map's page: a click on an actor or a relation opens a panel with its fields and
-// sources; Esc or a click on the background closes it. The data is the JSON in <script id="data">
+// sources; Esc (map.js) or a click on the background closes it. The data is the JSON in <script id="data">
 // (build.py writes it); the drawing is the inline SVG, its actors and relations in actors.json's order.
 "use strict";
 
@@ -56,5 +56,5 @@ actors.forEach((g, i) => g.addEventListener("click", event => {
 
 const close = () => { panel.hidden = true; };
 document.getElementById("close").addEventListener("click", close);
-svg.addEventListener("click", close);
-document.addEventListener("keydown", event => { if (event.key === "Escape") close(); });
+const controls = mapControls(svg, document.getElementById("map"));
+svg.addEventListener("click", () => { if (!controls.wasDragged()) close(); });

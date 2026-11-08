@@ -475,15 +475,22 @@
    "CLD"
   ]
  },
+ "scheldestromen-2015-braakman": {
+  "digest": "b5708b49426d",
+  "note": "4T43M6XC",
+  "placed": [
+   "CLD"
+  ]
+ },
  "scheldestromen-2021-hor-duiveland": {
-  "digest": "0f07643d9a11",
+  "digest": "eaf04d5a961a",
   "note": "QUFF4FFH",
   "placed": [
    "CLD"
   ]
  },
  "scheldestromen-2021-hor-schouwen": {
-  "digest": "590b303e2f52",
+  "digest": "b5708b49426d",
   "note": "WX6WV3N8",
   "placed": [
    "CLD"
@@ -514,7 +521,7 @@
   ]
  },
  "scheldestromen-2025-nota-peilbesluiten": {
-  "digest": "97bf0108738f",
+  "digest": "566b40ade779",
   "note": "H3BE9FEM",
   "placed": [
    "CLD"

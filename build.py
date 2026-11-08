@@ -81,7 +81,7 @@ ACTOR_SECTORS = ["Aquaculture", "Arable Farming", "Export/distribution", "Extern
 RELATION_KINDS = ["authority over", "finances", "buys from", "advises", "represents", "works with"]
 # references.json is CSL JSON, as Zotero imports it, and apa() writes each APA line from it, so
 # the page, the table and Zotero's copy hold one record; a type joins once apa() writes it
-REF_TYPES = ["article-journal", "article-newspaper", "dataset", "legislation", "report", "webpage"]
+REF_TYPES = ["article-journal", "article-newspaper", "chapter", "dataset", "legislation", "report", "webpage"]
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
           "October", "November", "December"]
 # the fields build.py lists while empty: a field no source carries stays empty, never a guess
@@ -118,6 +118,10 @@ def apa(r):
     parts.append(sentence(title + (" [Data set]" if r["type"] == "dataset" else "")))
     if r["type"] == "article-journal":
         parts.append(sentence(f"{r['container-title']}, {r['volume']}" + (f"({r['issue']})" if r.get("issue") else "") + f", {r['page']}"))
+    elif r["type"] == "chapter":
+        eds = [f"{e['given']} {e['family']}" for e in r["editor"]]
+        who = eds[0] if len(eds) == 1 else ", ".join(eds[:-1]) + ", & " + eds[-1]
+        parts.append(sentence(f"In {who} ({'Ed.' if len(eds) == 1 else 'Eds.'}), {r['container-title']} (pp. {r['page']})"))
     elif r.get("container-title"):
         parts.append(sentence(r["container-title"]))
     if r.get("publisher"):

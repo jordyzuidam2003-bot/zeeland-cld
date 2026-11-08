@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-537 -272 1081 544" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<defs>
+<marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
+<marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
+<marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
+</defs>
+<rect x="-537" y="-272" width="1081" height="544" fill="white"/>
+<g class="links">
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="-0.144">
+<path class="link-path" d="M 277.6 43.0 Q 254.3 109.9 172.1 151.4 Q 90.0 192.9 -13.0 189.8 Q -115.9 186.7 -192.1 140.4 Q -268.2 94.1 -282.3 26.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-263.9" y="72.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M -1.4 214.1 L -0.3 166.1 M -17.4 213.7 L -16.3 165.7" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -1.4 214.1 L -0.3 166.1 M -17.4 213.7 L -16.3 165.7" stroke="#444444" stroke-width="5" fill="none"/>
+</g>
+<g class="link" data-from="polder-drainage-depth" data-to="plans-to-raise-ditch-levels" data-sign="+" data-delay="true" data-curvature="0.2">
+<path class="link-path" d="M -282.3 -26.0 Q -268.2 -94.1 -192.1 -140.4 Q -115.9 -186.7 -13.0 -189.8 Q 90.0 -192.9 172.1 -151.4 Q 254.3 -109.9 277.6 -43.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="253.9" y="-87.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -16.3 -213.8 L -15.4 -165.8 M -0.3 -214.1 L 0.6 -166.1" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -16.3 -213.8 L -15.4 -165.8 M -0.3 -214.1 L 0.6 -166.1" stroke="#444444" stroke-width="5" fill="none"/>
+</g>
+</g>
+<g class="elements">
+<g class="element" data-id="polder-drainage-depth" data-domain="Technological" data-type="Stock" data-adaptive="false">
+<rect x="-454.8" y="-26.0" width="339.6" height="52.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="-285.0" y="8.5" text-anchor="middle">Polder drainage depth</text>
+</g>
+<g class="element" data-id="plans-to-raise-ditch-levels" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="107.8" y="-43.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="285.0" y="-8.5" text-anchor="middle">Water board's plans to</text>
+<text x="285.0" y="25.5" text-anchor="middle">raise ditch levels</text>
+</g>
+</g>
+<g class="loop" data-id="B12">
+<path d="M 0.0 -48.0 A 48 48 0 1 1 -48.0 0.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="0.0" y="0.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B12</text>
+</g>
+</svg>

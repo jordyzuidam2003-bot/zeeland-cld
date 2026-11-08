@@ -240,7 +240,7 @@ The sources of the CLD and the Actor Map, as CSL JSON, the format Zotero imports
 each with `id` (the key a `sources` field names, never changed), `type` (one of `REF_TYPES` in
 `build.py`) and the fields its reference needs: `author` (`family` and `given`, or `literal` for an
 organisation), `issued` and `accessed` (`date-parts`), `title`, `container-title` (the journal,
-news site or website, left out where it is the author), `volume`, `issue`, `page`, `genre` and
+news site, website or a chapter's book, left out where it is the author), `editor` (a chapter's), `volume`, `issue`, `page`, `genre` and
 `number` (a report's kind and number), `collection-title` and `collection-number` (a series or a
 gazette, and the number in it), `version`, `publisher` (left out where it is the author), and
 `DOI` or `URL`. `build.py` writes each APA reference from them (`apa()`), which the page, Kumu and

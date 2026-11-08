@@ -2082,5 +2082,142 @@
     "number": "WPR-902",
     "publisher": "Wageningen Research",
     "DOI": "10.18174/555534"
+  },
+  {
+    "id": "beauchampet-2022",
+    "type": "chapter",
+    "author": [
+      {
+        "family": "Beauchampet",
+        "given": "I. C."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands",
+    "editor": [
+      {
+        "family": "Negacz",
+        "given": "K."
+      },
+      {
+        "family": "Vellinga",
+        "given": "P."
+      },
+      {
+        "family": "Barrett-Lennard",
+        "given": "E."
+      },
+      {
+        "family": "Choukr-Allah",
+        "given": "R."
+      },
+      {
+        "family": "Elzenga",
+        "given": "T."
+      }
+    ],
+    "container-title": "Future of sustainable agriculture in saline environments",
+    "page": "207–230",
+    "publisher": "CRC Press",
+    "DOI": "10.1201/9781003112327-13"
+  },
+  {
+    "id": "cloet-2024",
+    "type": "report",
+    "author": [
+      {
+        "family": "Cloet",
+        "given": "T."
+      },
+      {
+        "family": "Van Meensel",
+        "given": "J."
+      },
+      {
+        "family": "De Boever",
+        "given": "M."
+      },
+      {
+        "family": "Cnops",
+        "given": "G."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Rendabiliteit van de quinoateelt in Vlaanderen",
+    "version": "Version September 2024",
+    "publisher": "ILVO",
+    "URL": "https://ilvo.vlaanderen.be/uploads/documents/Projecten/Rendabiliteit-van-de-quinoateelt-in-Vlaanderen_sept2024.pdf"
+  },
+  {
+    "id": "de-vriend-2024-gewassen",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "family": "De Vriend",
+        "given": "E."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          14
+        ]
+      ]
+    },
+    "title": "Zeeuwse akkerbouwers verbouwen andere gewassen door klimaatverandering",
+    "container-title": "Stal & Akker",
+    "URL": "https://sterke-erven.nl/artikel/518563-zeeuwse-akkerbouwers-verbouwen-andere-gewassen-door-klimaatverandering/"
+  },
+  {
+    "id": "farjon-2013",
+    "type": "report",
+    "author": [
+      {
+        "family": "Farjon",
+        "given": "H."
+      },
+      {
+        "family": "Silvis",
+        "given": "H."
+      },
+      {
+        "family": "Vader",
+        "given": "J."
+      },
+      {
+        "family": "Voskuilen",
+        "given": "M."
+      },
+      {
+        "family": "Agricola",
+        "given": "H."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          12
+        ]
+      ]
+    },
+    "title": "Prijs hoger dan de waarde van landbouwgrond",
+    "container-title": "Landwerk",
+    "publisher": "PBL Netherlands Environmental Assessment Agency",
+    "URL": "https://www.pbl.nl/publicaties/prijs-hoger-dan-de-waarde-van-landbouwgrond"
   }
 ]

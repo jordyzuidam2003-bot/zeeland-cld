@@ -36,6 +36,7 @@ main { position: relative; }
 .map g.element, .map g.link { cursor: pointer; }
 .map.moving g.element { cursor: move; }
 .map.moving g.link { cursor: crosshair; }
+.map.moving g.link path.delay, .map.moving g.link path.delay-cut { cursor: ew-resize; }
 .zoom { display: inline-flex; gap: 4px; }
 .map g.element.faded, .map g.link.faded, .map g.loop.faded { opacity: var(--fade); }
 .panel {

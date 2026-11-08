@@ -273,6 +273,10 @@ def check(cld, refs, actors):
             errors.append(f"loop {loop['id']} is {'balancing' if kind == 'B' else 'reinforcing'} "
                           f"as drawn, so its id must start with {kind}")
 
+    for c in cld["connections"]:
+        if "delay at" in c and not (c["delay"] and 0 < c["delay at"] < 1):
+            errors.append(f"{c['from']} -> {c['to']}: delay at needs a delayed link and a value between 0 and 1")
+
     if not errors:
         has_in = {c["to"] for c in cld["connections"]}
         has_out = {c["from"] for c in cld["connections"]}
@@ -680,15 +684,16 @@ def actors_project(actors, refs, decides, cld_labels, template, version):
 
 
 def apply_layout(path):
-    """Write the positions and curvatures of a layout.json ({id: {x, y}, "curvature": {"from->to": k}},
-    from the page's drag mode) into cld.json, in its own formatting; a file without "curvature"
+    """Write the positions, curvatures and dragged delay marks of a layout.json ({id: {x, y}, "curvature":
+    {"from->to": k}, "delay": {"from->to": t}}, from the page's drag mode) into cld.json, in its own formatting; a file without "curvature"
     moves the elements only."""
     layout = json.loads(path.read_text())
     curvature = layout.pop("curvature", {})
+    delay_at = layout.pop("delay", {})
     cld = json.loads(CLD.read_text())
     by_id = {e["id"]: e for e in cld["elements"]}
     by_link = {f'{c["from"]}->{c["to"]}': c for c in cld["connections"]}
-    unknown = [i for i in layout if i not in by_id] + [k for k in curvature if k not in by_link]
+    unknown = [i for i in layout if i not in by_id] + [k for k in list(curvature) + list(delay_at) if k not in by_link]
     if unknown:
         sys.exit(f"--layout: unknown element or link {', '.join(unknown)}")
     for i, pos in layout.items():
@@ -696,6 +701,8 @@ def apply_layout(path):
     for k, v in curvature.items():
         if by_link[k]["curvature"] != v:  # an unchanged value keeps its spelling (0 or 0.0)
             by_link[k]["curvature"] = v
+    for k, v in delay_at.items():
+        by_link[k]["delay at"] = v
     CLD.write_text(json.dumps(cld, indent=2, ensure_ascii=False) + "\n")
 
 

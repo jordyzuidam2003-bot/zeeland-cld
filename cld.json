@@ -10,8 +10,8 @@
       "subquestion": "SQ1",
       "description": "Meteorological drought (KNMI'23): higher evaporation, summer precipitation deficit, and lower river discharge.",
       "sources": [],
-      "x": -1271,
-      "y": 810
+      "x": -1329,
+      "y": 734
     },
     {
       "id": "sea-level-rise",
@@ -23,8 +23,8 @@
       "subquestion": "SQ1",
       "description": "Rising sea level (KNMI'23 scenarios); increases hydrostatic pressure of marine water on polders and estuaries.",
       "sources": [],
-      "x": -1914,
-      "y": 512
+      "x": -2151,
+      "y": 531
     },
     {
       "id": "wetter-winters",
@@ -36,8 +36,8 @@
       "subquestion": "SQ1",
       "description": "Increased winter precipitation, providing potential recharge volume if retained.",
       "sources": [],
-      "x": -1365,
-      "y": 185
+      "x": -1529,
+      "y": 140
     },
     {
       "id": "crop-water-demand",
@@ -51,8 +51,8 @@
       "sources": [
         "allen-1998"
       ],
-      "x": -1070,
-      "y": 931
+      "x": -916,
+      "y": 1050
     },
     {
       "id": "estuary-salt-intrusion",
@@ -64,8 +64,8 @@
       "subquestion": "SQ1",
       "description": "Marine water penetrating further inland into estuaries and surface canals when sea levels rise and river discharge drops.",
       "sources": [],
-      "x": -1477,
-      "y": 662
+      "x": -1693,
+      "y": 627
     },
     {
       "id": "freshwater-lens-recharge",
@@ -80,8 +80,8 @@
         "van-beekom-1953-salt",
         "de-louw-2011"
       ],
-      "x": -979,
-      "y": 327
+      "x": -1440,
+      "y": 372
     },
     {
       "id": "freshwater-lens-thickness",
@@ -95,8 +95,8 @@
       "sources": [
         "de-louw-2011"
       ],
-      "x": -1313,
-      "y": 426
+      "x": -1880,
+      "y": 410
     },
     {
       "id": "land-subsidence",
@@ -108,8 +108,8 @@
       "subquestion": "SQ1",
       "description": "Peat oxidation and clay consolidation caused by low drainage levels, lowering the land surface relative to sea level.",
       "sources": [],
-      "x": -2107,
-      "y": -994
+      "x": -2132,
+      "y": -1042
     },
     {
       "id": "polder-surface-elevation-nap",
@@ -126,7 +126,7 @@
         "van-maldegem-2004"
       ],
       "x": -2202,
-      "y": -120
+      "y": -307
     },
     {
       "id": "root-zone-salinity",
@@ -141,8 +141,8 @@
         "munns-tester-2008",
         "van-beekom-1953-salt"
       ],
-      "x": -788,
-      "y": 731
+      "x": -509,
+      "y": 502
     },
     {
       "id": "saline-seepage-kwel",
@@ -158,8 +158,8 @@
         "kaandorp-2022",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "x": -1959,
-      "y": 219
+      "x": -2086,
+      "y": 218
     },
     {
       "id": "soil-structure-usability",
@@ -174,8 +174,8 @@
         "van-beekom-1953-salt",
         "van-beekom-1953"
       ],
-      "x": -637,
-      "y": 0
+      "x": -717,
+      "y": 44
     },
     {
       "id": "upconing-of-salt-groundwater",
@@ -187,8 +187,8 @@
       "subquestion": "SQ1",
       "description": "Upward cone of the salt-freshwater interface beneath pumping irrigation wells as the freshwater lens thins.",
       "sources": [],
-      "x": -886,
-      "y": 506
+      "x": -1141,
+      "y": 585
     },
     {
       "id": "brackish-irrigation-water-use",
@@ -200,8 +200,8 @@
       "subquestion": "SQ2",
       "description": "Irrigation with salinised surface or well water, when fresh water falls short.",
       "sources": [],
-      "x": -1334,
-      "y": 1771,
+      "x": -1303,
+      "y": 1304,
       "actor": "arable-farmers"
     },
     {
@@ -219,8 +219,8 @@
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "x": -203,
-      "y": -1156,
+      "x": -560,
+      "y": -1163,
       "actor": "arable-farmers"
     },
     {
@@ -238,8 +238,8 @@
       "actors": [
         "rijkswaterstaat"
       ],
-      "x": -1317,
-      "y": 1063
+      "x": -1938,
+      "y": 872
     },
     {
       "id": "freshwater-availability-for-crops",
@@ -253,8 +253,8 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "x": -1789,
-      "y": 1505
+      "x": -2077,
+      "y": 1771
     },
     {
       "id": "freshwater-storage-measures",
@@ -269,8 +269,8 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "x": -420,
-      "y": -368,
+      "x": -582,
+      "y": -296,
       "actor": "arable-farmers"
     },
     {
@@ -285,8 +285,8 @@
       "sources": [
         "provincie-zeeland-2021-grondwateronttrekkingen"
       ],
-      "x": -648,
-      "y": 1001,
+      "x": -617,
+      "y": 842,
       "actor": "arable-farmers"
     },
     {
@@ -299,8 +299,8 @@
       "subquestion": "SQ2",
       "description": "Objections, appeals at the Council of State (Raad van State) and political pressure against plans for the island's water and land, the water board's water level plans among them, which slow, change or stop a plan.",
       "sources": [],
-      "x": -84,
-      "y": -1415
+      "x": -99,
+      "y": -1472
     },
     {
       "id": "winter-rain-drained-away",
@@ -314,8 +314,8 @@
       "sources": [
         "de-louw-2011"
       ],
-      "x": -1385,
-      "y": -41
+      "x": -1197,
+      "y": -61
     },
     {
       "id": "crop-yield",
@@ -330,8 +330,8 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "x": -337,
-      "y": 75
+      "x": -472,
+      "y": 264
     },
     {
       "id": "market-demand-for-alternative-crops",
@@ -343,8 +343,8 @@
       "subquestion": "SQ2",
       "description": "Consumer demand and offtake contracts for novel salt-tolerant or alternative crops (e.g. protein crops).",
       "sources": [],
-      "x": 607,
-      "y": 946
+      "x": 744,
+      "y": 1029
     },
     {
       "id": "processing-capacity-for-alternative-crops",
@@ -356,8 +356,8 @@
       "subquestion": "SQ2",
       "description": "Plants and supply chains on or near the island that store, process or sell new salt-tolerant crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer. Buyers and processors build or keep it where they find it worthwhile against processing the crops elsewhere.",
       "sources": [],
-      "x": 513,
-      "y": 1185,
+      "x": 663,
+      "y": 1292,
       "actor": "buyers-and-processors"
     },
     {
@@ -370,8 +370,8 @@
       "subquestion": "SQ2",
       "description": "Hectares under crops new to the island's rotations that tolerate salt (quinoa, samphire, sea aster), which need other machines, knowledge and buyers than the current crops. Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them.",
       "sources": [],
-      "x": 588,
-      "y": 665,
+      "x": 505,
+      "y": 797,
       "actor": "arable-farmers"
     },
     {
@@ -384,8 +384,8 @@
       "subquestion": "SQ2",
       "description": "The price farmland sells for (€/ha), set by what buyers expect it to earn; banks value it as collateral in their own risk assessment.",
       "sources": [],
-      "x": 123,
-      "y": -565
+      "x": -39,
+      "y": -576
     },
     {
       "id": "bank-credit-freeze-risk-premiums",
@@ -397,8 +397,8 @@
       "subquestion": "SQ2",
       "description": "The interest banks charge arable farms above their own funding cost, for the risk they see in the loan.",
       "sources": [],
-      "x": 1610,
-      "y": -274,
+      "x": 1677,
+      "y": -287,
       "actor": "banks"
     },
     {
@@ -416,8 +416,8 @@
       "actors": [
         "eu"
       ],
-      "x": 1610,
-      "y": -97
+      "x": 1709,
+      "y": -84
     },
     {
       "id": "dependence-on-high-margin-salt-sensitive-crops",
@@ -429,8 +429,8 @@
       "subquestion": "SQ2",
       "description": "The share of high-value, salt-sensitive cash crops (seed potatoes, onions) in the rotation, which a farm with high debt payments needs to keep up its income, and which the machines and know-how it would lose by switching tie it to.",
       "sources": [],
-      "x": 1671,
-      "y": -913,
+      "x": 1835,
+      "y": -824,
       "actor": "arable-farmers"
     },
     {
@@ -443,8 +443,8 @@
       "subquestion": "SQ2",
       "description": "Farms' revenue from crop sales, set by yield and prices, minus their costs (the water board's levy, interest, their own pumping), per hectare in a year.",
       "sources": [],
-      "x": 407,
-      "y": 219
+      "x": 546,
+      "y": 180
     },
     {
       "id": "farmers-capacity-to-invest",
@@ -456,8 +456,8 @@
       "subquestion": "SQ2",
       "description": "What a farm has left to invest after its debt payments and rent, beside the credit a bank will give it.",
       "sources": [],
-      "x": 749,
-      "y": -161
+      "x": 791,
+      "y": -222
     },
     {
       "id": "fear-of-expropriation-planning-blight",
@@ -469,8 +469,8 @@
       "subquestion": "SQ2",
       "description": "Landowning farmers' concern that their land loses value, from a fall that has happened or from a plan that would lower it. A tenant's concern, losing the lease, is not part of it.",
       "sources": [],
-      "x": 44,
-      "y": -961
+      "x": 135,
+      "y": -1004
     },
     {
       "id": "mortgage-debt-financial-leverage",
@@ -484,8 +484,8 @@
       "sources": [
         "van-der-meulen-2020"
       ],
-      "x": 894,
-      "y": -891
+      "x": 926,
+      "y": -892
     },
     {
       "id": "farmland-leaving-arable-use",
@@ -497,8 +497,8 @@
       "subquestion": "SQ3",
       "description": "Hectares of the island's land farmed as arable land, with conventional or salt-tolerant crops, whoever owns it. It falls when land that changes hands goes to a holder who does not farm it as arable land; what the land becomes then (nature, grassland, water storage) waits for the group's system boundary.",
       "sources": [],
-      "x": -130,
-      "y": -765
+      "x": -204,
+      "y": -696
     },
     {
       "id": "crop-water-shortfall",
@@ -512,8 +512,8 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "x": -716,
-      "y": 1553
+      "x": -994,
+      "y": 1446
     },
     {
       "id": "freshwater-supply-route",
@@ -531,8 +531,8 @@
       "actors": [
         "ienw"
       ],
-      "x": -726,
-      "y": 1758,
+      "x": -782,
+      "y": 1720,
       "actor": "provincie-zeeland"
     },
     {
@@ -547,8 +547,8 @@
       "sources": [
         "verstand-2021"
       ],
-      "x": -1052,
-      "y": -372
+      "x": -1019,
+      "y": -206
     },
     {
       "id": "polder-drainage-depth",
@@ -564,8 +564,8 @@
         "kaandorp-2022",
         "scheldestromen-2025-nota-peilbesluiten"
       ],
-      "x": -1664,
-      "y": -376
+      "x": -1630,
+      "y": -395
     },
     {
       "id": "plans-to-raise-ditch-levels",
@@ -583,8 +583,8 @@
         "scheldestromen-2021-wbp",
         "reglement-scheldestromen-2025"
       ],
-      "x": -1247,
-      "y": -1177,
+      "x": -1252,
+      "y": -1316,
       "actor": "waterschap-scheldestromen"
     },
     {
@@ -597,8 +597,8 @@
       "subquestion": "SQ1",
       "description": "What Waterschap Scheldestromen spends on its pumping stations to hold the polders' ditch levels: more water to pump the deeper it drains, the more seepage and winter rain come in and the lower the land lies.",
       "sources": [],
-      "x": -1305,
-      "y": -736
+      "x": -1241,
+      "y": -745
     },
     {
       "id": "water-board-levy-on-farmland",
@@ -610,8 +610,8 @@
       "subquestion": "SQ2",
       "description": "What the water board charges owners and users of farmland for its water management, pumping included.",
       "sources": [],
-      "x": 107,
-      "y": -283,
+      "x": -18,
+      "y": -343,
       "actor": "waterschap-scheldestromen"
     },
     {
@@ -628,8 +628,8 @@
         "deolu-ajayi-2024",
         "allen-1998"
       ],
-      "x": -7,
-      "y": 619
+      "x": -76,
+      "y": 511
     },
     {
       "id": "margin-given-up-on-high-margin-crops",
@@ -641,8 +641,8 @@
       "subquestion": "SQ2",
       "description": "The margin a farm forgoes on fields it moves from its high-margin current crops to salt-tolerant ones, largest on fresh land, where the current crops still do well.",
       "sources": [],
-      "x": 136,
-      "y": 1053
+      "x": 201,
+      "y": 1011
     },
     {
       "id": "farms-with-a-successor",
@@ -654,8 +654,8 @@
       "subquestion": "SQ3",
       "description": "Arable farms on the island whose farmer has someone to take the farm over.",
       "sources": [],
-      "x": 140,
-      "y": -38
+      "x": 152,
+      "y": -49
     },
     {
       "id": "harvest-of-new-crops-to-process",
@@ -667,8 +667,8 @@
       "subquestion": "SQ2",
       "description": "The volume of new salt-tolerant crops within reach of a processing plant on or near the island, from the island's growers and from growers elsewhere.",
       "sources": [],
-      "x": 164,
-      "y": 1512
+      "x": 286,
+      "y": 1577
     },
     {
       "id": "net-price-for-new-crops",
@@ -680,8 +680,8 @@
       "subquestion": "SQ2",
       "description": "What farmers on the island get for new salt-tolerant crops once transport to the processor is paid, set by processors on and off the island.",
       "sources": [],
-      "x": 946,
-      "y": 1179
+      "x": 1112,
+      "y": 920
     },
     {
       "id": "growers-of-new-crops-elsewhere",
@@ -693,8 +693,8 @@
       "subquestion": "SQ2",
       "description": "Farmers off the island growing the same new crops, whose harvest a local plant could also process.",
       "sources": [],
-      "x": 167,
-      "y": 1698
+      "x": 305,
+      "y": 1771
     },
     {
       "id": "processing-of-new-crops-elsewhere",
@@ -706,8 +706,8 @@
       "subquestion": "SQ2",
       "description": "Plants off the island that buy and process new salt-tolerant crops, which set the price the island's growers can get beside a local plant.",
       "sources": [],
-      "x": 945,
-      "y": 1395
+      "x": 1135,
+      "y": 1238
     },
     {
       "id": "tolerant-varieties-adoption",
@@ -719,8 +719,8 @@
       "subquestion": "SQ2",
       "description": "Hectares under salt-tolerant varieties of the current crops (potato, onion), which use the same machines, storage and know-how. Farmers grow one where they find it worthwhile against the variety they grow now.",
       "sources": [],
-      "x": -239,
-      "y": 1159,
+      "x": -267,
+      "y": 1172,
       "actor": "arable-farmers"
     },
     {
@@ -733,8 +733,8 @@
       "subquestion": "SQ2",
       "description": "Salt-tolerant varieties of the current crops that breeders bring to market, and their yield; breeding lies outside the CLD's scale.",
       "sources": [],
-      "x": -235,
-      "y": 1377
+      "x": -420,
+      "y": 1327
     },
     {
       "id": "machines-and-storage-for-current-crops",
@@ -746,8 +746,8 @@
       "subquestion": "SQ2",
       "description": "The planters, harvesters and stores farms own for their current crops, built up over years and renewed when worn.",
       "sources": [],
-      "x": 2452,
-      "y": -501
+      "x": 2384,
+      "y": -603
     },
     {
       "id": "capital-lost-on-switching",
@@ -759,8 +759,8 @@
       "subquestion": "SQ2",
       "description": "The machines, storage and know-how a farm writes off when it moves fields to a new crop that cannot use them; what it keeps using or sells is not lost. Salt-tolerant varieties of the current crops lose little of it.",
       "sources": [],
-      "x": 1870,
-      "y": -1126
+      "x": 1737,
+      "y": -1112
     },
     {
       "id": "knowledge-of-new-crops",
@@ -772,8 +772,8 @@
       "subquestion": "SQ2",
       "description": "What the island's farmers know about growing and selling new salt-tolerant crops, from their own fields, their neighbours' and advisers.",
       "sources": [],
-      "x": 1100,
-      "y": 483
+      "x": 981,
+      "y": 767
     },
     {
       "id": "spending-on-keeping-current-crops",
@@ -785,8 +785,8 @@
       "subquestion": "SQ2",
       "description": "What farms invest in carrying on with their current crops: wells and irrigation, drains, new machines and storage.",
       "sources": [],
-      "x": 1631,
-      "y": 390,
+      "x": 1831,
+      "y": 310,
       "actor": "arable-farmers"
     },
     {
@@ -799,7 +799,7 @@
       "subquestion": "SQ2",
       "description": "The risk a bank sees in lending to an arable farm: its solvency, its collateral at the bank's own valuation, and plans that may change what the land can earn.",
       "sources": [],
-      "x": 1045,
+      "x": 1049,
       "y": -1127
     },
     {
@@ -812,8 +812,8 @@
       "subquestion": "SQ2",
       "description": "New loans and refinancing that banks grant the island's arable farms.",
       "sources": [],
-      "x": 1053,
-      "y": -739,
+      "x": 1080,
+      "y": -710,
       "actor": "banks"
     },
     {
@@ -826,8 +826,8 @@
       "subquestion": "SQ2",
       "description": "Interest and repayments farms owe on their loans in a year.",
       "sources": [],
-      "x": 2070,
-      "y": -258
+      "x": 2061,
+      "y": -367
     },
     {
       "id": "world-prices-of-conventional-crops",
@@ -839,8 +839,8 @@
       "subquestion": "SQ2",
       "description": "The prices of potatoes, onions and sugar beet on the markets the island's crops are sold on, which its farms cannot move: what carrying on is weighed against.",
       "sources": [],
-      "x": 78,
-      "y": 206
+      "x": 58,
+      "y": 193
     },
     {
       "id": "farmers-trust-in-government",
@@ -852,8 +852,8 @@
       "subquestion": "SQ2",
       "description": "How far the island's farmers expect public bodies to keep their commitments on water and land (compensation, their say over their land).",
       "sources": [],
-      "x": 343,
-      "y": -1511
+      "x": 396,
+      "y": -1480
     },
     {
       "id": "expropriation-of-farmland",
@@ -865,7 +865,7 @@
       "subquestion": "SQ3",
       "description": "Farmland a public body takes for a public purpose, with compensation, after a legal procedure; which body can do so on the island is on the facts list under Concern about expropriation and devaluation.",
       "sources": [],
-      "x": 478,
+      "x": 485,
       "y": -1687
     },
     {
@@ -878,8 +878,8 @@
       "subquestion": "SQ3",
       "description": "How strongly farmers hold on to their land beyond its money value: family land, growing up on it. Whether anything on the map moves it, at succession perhaps, is a question for the group model building session.",
       "sources": [],
-      "x": 255,
-      "y": -1202
+      "x": 268,
+      "y": -1148
     },
     {
       "id": "farmland-changing-hands",
@@ -891,8 +891,8 @@
       "subquestion": "SQ3",
       "description": "Hectares of the island's farmland sold, expropriated or passed on to a new holder in a year: at a forced sale, a retirement without a successor, or otherwise.",
       "sources": [],
-      "x": 446,
-      "y": -938
+      "x": 484,
+      "y": -840
     },
     {
       "id": "municipality-plans-for-farmland",
@@ -904,8 +904,8 @@
       "subquestion": "SQ2",
       "description": "Hectares of the island's farmland that Gemeente Schouwen-Duiveland's land-use plan (its omgevingsplan, with the changes it drafts to it) designates for a use other than arable farming, such as nature, water storage, housing or recreation. Which plans the municipality makes for the island's farmland, and where objections enter them, is on the facts list under Objections to land-use plans.",
       "sources": [],
-      "x": -520,
-      "y": -1450,
+      "x": -602,
+      "y": -1569,
       "actor": "gemeente-schouwen-duiveland"
     },
     {
@@ -921,8 +921,8 @@
         "de-louw-2011",
         "kaandorp-2022"
       ],
-      "x": -560,
-      "y": 620
+      "x": -1006,
+      "y": 319
     },
     {
       "id": "pumping-the-water-board-allows",
@@ -939,8 +939,8 @@
         "provincie-zeeland-2021-grondwateronttrekkingen"
       ],
       "actor": "waterschap-scheldestromen",
-      "x": -360,
-      "y": 820
+      "x": -520,
+      "y": 720
     },
     {
       "id": "knowledge-of-storage",
@@ -954,8 +954,8 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "x": -130,
-      "y": -500
+      "x": -375,
+      "y": 11
     }
   ],
   "connections": [
@@ -1029,7 +1029,7 @@
       "delay": false,
       "description": "Salinisation of surface canals makes intake water for irrigation brackish.",
       "sources": [],
-      "curvature": -0.262
+      "curvature": -0.14
     },
     {
       "from": "freshwater-lens-recharge",
@@ -1040,7 +1040,7 @@
       "sources": [
         "de-louw-2011"
       ],
-      "curvature": -0.223
+      "curvature": 0.22
     },
     {
       "from": "freshwater-lens-thickness",
@@ -1053,7 +1053,7 @@
         "kaandorp-2022",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": -0.101
+      "curvature": -0.07
     },
     {
       "from": "creek-ridge-lens-thickness",
@@ -1062,7 +1062,7 @@
       "delay": false,
       "description": "A thicker freshwater lens buffers against salt upconing under wells.",
       "sources": [],
-      "curvature": -0.231
+      "curvature": 0.32
     },
     {
       "from": "freshwater-lens-thickness",
@@ -1073,7 +1073,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": -0.547
+      "curvature": -0.32
     },
     {
       "from": "land-subsidence",
@@ -1084,7 +1084,7 @@
       "sources": [
         "oude-essink-2010"
       ],
-      "curvature": -0.253
+      "curvature": 0.22
     },
     {
       "from": "polder-surface-elevation-nap",
@@ -1105,7 +1105,7 @@
       "sources": [
         "van-beekom-1953"
       ],
-      "curvature": -0.131
+      "curvature": 0.14
     },
     {
       "from": "saline-seepage-kwel",
@@ -1117,7 +1117,7 @@
         "de-louw-2011",
         "kaandorp-2022"
       ],
-      "curvature": -0.102
+      "curvature": -0.32
     },
     {
       "from": "soil-structure-usability",
@@ -1130,7 +1130,7 @@
         "van-beekom-1953",
         "de-louw-2011"
       ],
-      "curvature": -0.12
+      "curvature": -0.22
     },
     {
       "from": "soil-structure-usability",
@@ -1139,7 +1139,7 @@
       "delay": false,
       "description": "Good soil structure lets roots grow and crops emerge.",
       "sources": [],
-      "curvature": -0.181
+      "curvature": -0.22
     },
     {
       "from": "soil-structure-usability",
@@ -1148,7 +1148,7 @@
       "delay": false,
       "description": "Structural soil health and low salinity determine the intrinsic value of arable land.",
       "sources": [],
-      "curvature": -0.105
+      "curvature": -0.07
     },
     {
       "from": "brackish-irrigation-water-use",
@@ -1157,7 +1157,7 @@
       "delay": false,
       "description": "Evaporation of brackish irrigation water leaves salt behind in the topsoil.",
       "sources": [],
-      "curvature": -0.117
+      "curvature": 0.07
     },
     {
       "from": "external-freshwater-supply",
@@ -1166,7 +1166,7 @@
       "delay": false,
       "description": "Fresh water supplied from outside adds to what crops can draw on.",
       "sources": [],
-      "curvature": -0.197
+      "curvature": -0.45
     },
     {
       "from": "freshwater-storage-measures",
@@ -1179,7 +1179,7 @@
         "pauw-2015",
         "de-louw-2011"
       ],
-      "curvature": -0.321
+      "curvature": -0.14
     },
     {
       "from": "freshwater-storage-measures",
@@ -1190,7 +1190,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": -0.128
+      "curvature": 0.14
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -1203,7 +1203,7 @@
         "kaandorp-2022",
         "provincie-zeeland-2021-grondwateronttrekkingen"
       ],
-      "curvature": 0.16
+      "curvature": 0.32
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -1212,7 +1212,7 @@
       "delay": false,
       "description": "Pumping groundwater draws the underlying salt-fresh interface upward into a cone.",
       "sources": [],
-      "curvature": -0.445
+      "curvature": 0.22
     },
     {
       "from": "winter-rain-drained-away",
@@ -1223,7 +1223,7 @@
       "sources": [
         "de-louw-2011"
       ],
-      "curvature": 0.119
+      "curvature": -0.07
     },
     {
       "from": "crop-yield",
@@ -1232,7 +1232,7 @@
       "delay": false,
       "description": "Higher physical yield increases sales revenue per hectare.",
       "sources": [],
-      "curvature": 0.211
+      "curvature": 0.32
     },
     {
       "from": "salt-tolerant-crop-adoption",
@@ -1241,7 +1241,7 @@
       "delay": false,
       "description": "New salt-tolerant crops need less water than the current crops: no source read shows it. FAO-56 (Allen et al., 1998, Tables 11 and 12) lists neither quinoa, samphire nor sea aster, and no source read shows whether the halophytes need less water or take salt water instead.",
       "sources": [],
-      "curvature": 0.161
+      "curvature": -0.07
     },
     {
       "from": "agricultural-land-value",
@@ -1251,7 +1251,7 @@
       "description": "A fall in the land's value that has happened, through salt in R6: does a farm whose land lost value object harder to the next plan? Through its solvency, yes (−); where compensation pays more than the land would fetch on the market, the concern may fall instead (+). A hypothesis for the group model building session, with both signs as the question to farmers.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.289
+      "curvature": -0.14
     },
     {
       "from": "agricultural-land-value",
@@ -1262,7 +1262,7 @@
       "sources": [
         "van-der-meulen-2020"
       ],
-      "curvature": 0.151
+      "curvature": -0.22
     },
     {
       "from": "basel-iv-capital-requirements",
@@ -1284,7 +1284,7 @@
         "scheldestromen-2021-wbp",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": -0.327
+      "curvature": -0.32
     },
     {
       "from": "dependence-on-high-margin-salt-sensitive-crops",
@@ -1293,7 +1293,7 @@
       "delay": false,
       "description": "High-value salt-sensitive crops require intensive freshwater irrigation during dry spells.",
       "sources": [],
-      "curvature": 0.213
+      "curvature": 0.22
     },
     {
       "from": "dependence-on-high-margin-salt-sensitive-crops",
@@ -1302,7 +1302,7 @@
       "delay": false,
       "description": "A farm that relies on high margins can give fewer hectares to lower-margin new crops.",
       "sources": [],
-      "curvature": 0.101,
+      "curvature": -0.14,
       "hypothesis": true
     },
     {
@@ -1312,7 +1312,7 @@
       "delay": false,
       "description": "Sustained productivity and profitability underpin high market prices for farmland.",
       "sources": [],
-      "curvature": -0.18
+      "curvature": -0.14
     },
     {
       "from": "farm-revenue",
@@ -1321,7 +1321,7 @@
       "delay": false,
       "description": "Higher farm income generates internal cash flow for adaptive investments.",
       "sources": [],
-      "curvature": -0.102
+      "curvature": -0.22
     },
     {
       "from": "farmers-capacity-to-invest",
@@ -1331,7 +1331,7 @@
       "description": "Capacity to invest decides whether a farm can pay for a storage measure, not whether it wants to.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.161
+      "curvature": 0.14
     },
     {
       "from": "farmers-capacity-to-invest",
@@ -1341,7 +1341,7 @@
       "description": "Capacity to invest decides whether a farm can pay for the switch (new machines, the first years of a new crop), not whether it wants to.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.15
+      "curvature": 0.22
     },
     {
       "from": "fear-of-expropriation-planning-blight",
@@ -1351,7 +1351,7 @@
       "description": "Concern about uncompensated loss leads farmers and their organisations to object, appeal and lobby against such plans.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.19
+      "curvature": 0.07
     },
     {
       "from": "crop-water-demand",
@@ -1363,7 +1363,7 @@
         "allen-1998",
         "kaandorp-2022"
       ],
-      "curvature": -0.35
+      "curvature": 0.14
     },
     {
       "from": "freshwater-availability-for-crops",
@@ -1375,7 +1375,7 @@
         "allen-1998",
         "kaandorp-2022"
       ],
-      "curvature": -0.115
+      "curvature": 0.14
     },
     {
       "from": "crop-water-shortfall",
@@ -1387,7 +1387,7 @@
         "provincie-zeeland-2021-grondwateronttrekkingen",
         "kaandorp-2022"
       ],
-      "curvature": -0.241
+      "curvature": -0.07
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -1398,7 +1398,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": -0.104
+      "curvature": -0.32
     },
     {
       "from": "crop-water-shortfall",
@@ -1407,7 +1407,7 @@
       "delay": false,
       "description": "When fresh water falls short, farmers irrigate with brackish ditch or well water.",
       "sources": [],
-      "curvature": -0.109,
+      "curvature": 0.14,
       "hypothesis": true
     },
     {
@@ -1417,7 +1417,7 @@
       "delay": false,
       "description": "Brackish water still waters the crop, so the shortfall shrinks while salt builds up.",
       "sources": [],
-      "curvature": -0.109
+      "curvature": 0.22
     },
     {
       "from": "crop-water-shortfall",
@@ -1430,7 +1430,7 @@
         "kaandorp-2022",
         "omroep-zeeland-2026-aardappeloogst"
       ],
-      "curvature": -0.217
+      "curvature": 0.45
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -1439,7 +1439,7 @@
       "delay": false,
       "description": "A farm pays for its own pumping, part of its costs.",
       "sources": [],
-      "curvature": 0.134
+      "curvature": -0.14
     },
     {
       "from": "freshwater-supply-route",
@@ -1448,7 +1448,7 @@
       "delay": false,
       "description": "A supply route carries fresh water to the island.",
       "sources": [],
-      "curvature": 0.2
+      "curvature": 0.14
     },
     {
       "from": "hotter-drier-summers",
@@ -1467,7 +1467,7 @@
       "delay": false,
       "description": "Farmers short of water, through their organisations, ask for a supply route, and the deciding body weighs it.",
       "sources": [],
-      "curvature": 0.19,
+      "curvature": 0.32,
       "hypothesis": true
     },
     {
@@ -1477,7 +1477,7 @@
       "delay": false,
       "description": "A soil with good structure carries machinery sooner after rain.",
       "sources": [],
-      "curvature": 0.2
+      "curvature": 0.07
     },
     {
       "from": "polder-drainage-depth",
@@ -1489,7 +1489,7 @@
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": -0.219
+      "curvature": 0.14
     },
     {
       "from": "spring-workability-of-the-fields",
@@ -1498,7 +1498,7 @@
       "delay": false,
       "description": "Fields that can be worked in time are planted and harvested in time.",
       "sources": [],
-      "curvature": 0.118
+      "curvature": -0.32
     },
     {
       "from": "spring-workability-of-the-fields",
@@ -1509,7 +1509,7 @@
       "sources": [
         "scheldestromen-2021-wbp"
       ],
-      "curvature": -0.153
+      "curvature": 0.07
     },
     {
       "from": "polder-drainage-depth",
@@ -1518,7 +1518,7 @@
       "delay": false,
       "description": "Low water tables expose peat to oxygen and let clay shrink and settle.",
       "sources": [],
-      "curvature": 0.241
+      "curvature": -0.07
     },
     {
       "from": "polder-drainage-depth",
@@ -1531,7 +1531,7 @@
         "kaandorp-2022",
         "de-louw-2011"
       ],
-      "curvature": -0.102
+      "curvature": 0.07
     },
     {
       "from": "polder-drainage-depth",
@@ -1540,7 +1540,7 @@
       "delay": false,
       "description": "Deeper drainage carries more winter rain off to the sea.",
       "sources": [],
-      "curvature": -0.153
+      "curvature": 0.07
     },
     {
       "from": "plans-to-raise-ditch-levels",
@@ -1555,7 +1555,7 @@
         "scheldestromen-2021-hor-duiveland",
         "scheldestromen-2026-informatieavond-duiveland"
       ],
-      "curvature": -0.144
+      "curvature": -0.07
     },
     {
       "from": "demand-for-deep-polder-drainage",
@@ -1567,7 +1567,7 @@
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": -0.258
+      "curvature": 0.32
     },
     {
       "from": "saline-seepage-kwel",
@@ -1579,7 +1579,7 @@
         "scheldestromen-2021-hor-duiveland",
         "scheldestromen-2025-nota-peilbesluiten"
       ],
-      "curvature": 0.497
+      "curvature": 0.32
     },
     {
       "from": "land-subsidence",
@@ -1588,7 +1588,7 @@
       "delay": false,
       "description": "Subsidence gives the water board a reason to raise the levels.",
       "sources": [],
-      "curvature": 0.331,
+      "curvature": 0.32,
       "hypothesis": true
     },
     {
@@ -1598,7 +1598,7 @@
       "delay": false,
       "description": "Rising pumping costs give the water board a reason to raise the levels.",
       "sources": [],
-      "curvature": -0.279,
+      "curvature": -0.32,
       "hypothesis": true
     },
     {
@@ -1613,7 +1613,7 @@
         "scheldestromen-2021-hor-schouwen",
         "scheldestromen-2015-braakman"
       ],
-      "curvature": -0.388
+      "curvature": -0.07
     },
     {
       "from": "polder-drainage-depth",
@@ -1622,7 +1622,7 @@
       "delay": false,
       "description": "The deeper the board drains, the more water its pumping stations lift.",
       "sources": [],
-      "curvature": 0.218
+      "curvature": -0.14
     },
     {
       "from": "saline-seepage-kwel",
@@ -1631,7 +1631,7 @@
       "delay": false,
       "description": "Seepage water has to be pumped out too.",
       "sources": [],
-      "curvature": -0.199
+      "curvature": -0.14
     },
     {
       "from": "winter-rain-drained-away",
@@ -1640,7 +1640,7 @@
       "delay": false,
       "description": "Winter rain drained away is pumped out of the polder.",
       "sources": [],
-      "curvature": -0.223
+      "curvature": 0.22
     },
     {
       "from": "polder-surface-elevation-nap",
@@ -1649,7 +1649,7 @@
       "delay": false,
       "description": "The lower the land lies, the higher the board must lift its water.",
       "sources": [],
-      "curvature": 0.223
+      "curvature": -0.07
     },
     {
       "from": "water-board-pumping-costs",
@@ -1658,7 +1658,7 @@
       "delay": false,
       "description": "The board passes its pumping costs on through its levy.",
       "sources": [],
-      "curvature": 0.276
+      "curvature": 0.07
     },
     {
       "from": "water-board-levy-on-farmland",
@@ -1667,7 +1667,7 @@
       "delay": false,
       "description": "The levy is part of a farm's costs.",
       "sources": [],
-      "curvature": 0.297
+      "curvature": 0.14
     },
     {
       "from": "root-zone-salinity",
@@ -1679,7 +1679,7 @@
         "allen-1998",
         "munns-tester-2008"
       ],
-      "curvature": -0.128
+      "curvature": -0.07
     },
     {
       "from": "harvest-lost-to-salt",
@@ -1688,7 +1688,7 @@
       "delay": false,
       "description": "Harvest lost to salt is income lost.",
       "sources": [],
-      "curvature": -0.112
+      "curvature": -0.07
     },
     {
       "from": "salt-tolerant-crop-adoption",
@@ -1701,7 +1701,7 @@
         "deolu-ajayi-2024",
         "eu-cap-network-2023"
       ],
-      "curvature": 0.244
+      "curvature": -0.14
     },
     {
       "from": "tolerant-varieties-adoption",
@@ -1710,7 +1710,7 @@
       "delay": false,
       "description": "A salt-tolerant variety loses less of its harvest to salt.",
       "sources": [],
-      "curvature": 0.145
+      "curvature": -0.45
     },
     {
       "from": "salt-tolerant-crop-adoption",
@@ -1719,7 +1719,7 @@
       "delay": false,
       "description": "A field moved to a new crop gives up the current crop's margin.",
       "sources": [],
-      "curvature": -0.105
+      "curvature": 0.22
     },
     {
       "from": "tolerant-varieties-adoption",
@@ -1728,7 +1728,7 @@
       "delay": false,
       "description": "A tolerant variety may yield or sell for less than the variety it replaces, on fresh land most.",
       "sources": [],
-      "curvature": 0.209
+      "curvature": -0.14
     },
     {
       "from": "margin-given-up-on-high-margin-crops",
@@ -1737,7 +1737,7 @@
       "delay": false,
       "description": "Margin given up is income given up.",
       "sources": [],
-      "curvature": -0.121
+      "curvature": 0.14
     },
     {
       "from": "world-prices-of-conventional-crops",
@@ -1757,7 +1757,7 @@
       "simplification": "Folds Relative attractiveness of storing water, which gathered the drivers of this decision: each driver now points at Freshwater storage measures itself, whose description says how farmers weigh storing against their other ways through a dry summer. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to store, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.103
+      "curvature": 0.14
     },
     {
       "from": "farms-with-a-successor",
@@ -1768,7 +1768,7 @@
       "simplification": "Folds Relative attractiveness of storing water, which gathered the drivers of this decision: each driver now points at Freshwater storage measures itself, whose description says how farmers weigh storing against their other ways through a dry summer. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to store, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
       "sources": [],
       "hypothesis": true,
-      "curvature": 0.102
+      "curvature": 0.22
     },
     {
       "from": "freshwater-storage-measures",
@@ -1777,7 +1777,7 @@
       "delay": false,
       "description": "What a storage measure costs comes out of the money left to invest.",
       "sources": [],
-      "curvature": -0.161
+      "curvature": 0.32
     },
     {
       "from": "root-zone-salinity",
@@ -1788,7 +1788,7 @@
       "simplification": "Folds Relative attractiveness of salt-tolerant varieties, which gathered the drivers of this decision: each driver now points at Adoption of salt-tolerant varieties itself, whose description says that farmers weigh a tolerant variety against the one they grow now. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
       "sources": [],
       "hypothesis": true,
-      "curvature": 0.383
+      "curvature": 0.32
     },
     {
       "from": "tolerant-varieties-on-offer",
@@ -1810,7 +1810,7 @@
       "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description. Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
       "sources": [],
       "hypothesis": true,
-      "curvature": 0.149
+      "curvature": 0.07
     },
     {
       "from": "market-demand-for-alternative-crops",
@@ -1832,7 +1832,7 @@
       "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.275
+      "curvature": 0.07
     },
     {
       "from": "knowledge-of-new-crops",
@@ -1843,7 +1843,7 @@
       "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
       "sources": [],
       "hypothesis": true,
-      "curvature": 0.15
+      "curvature": -0.32
     },
     {
       "from": "salt-tolerant-crop-adoption",
@@ -1852,7 +1852,7 @@
       "delay": false,
       "description": "Growing a new crop, on their own fields or their neighbours', teaches farmers how.",
       "sources": [],
-      "curvature": 0.102,
+      "curvature": -0.22,
       "hypothesis": true
     },
     {
@@ -1862,7 +1862,7 @@
       "delay": false,
       "description": "Switching costs (machines, the first years of a new crop) come out of the money left to invest.",
       "sources": [],
-      "curvature": -0.15
+      "curvature": -0.07
     },
     {
       "from": "salt-tolerant-crop-adoption",
@@ -1871,7 +1871,7 @@
       "delay": false,
       "description": "More hectares of new crops on the island, more harvest to process.",
       "sources": [],
-      "curvature": -0.142
+      "curvature": -0.07
     },
     {
       "from": "growers-of-new-crops-elsewhere",
@@ -1891,7 +1891,7 @@
       "simplification": "Folds Attractiveness of processing new crops locally, which gathered the drivers of this decision: each driver now points at Local processing capacity for new crops itself, whose description says that buyers and processors weigh it against processing the crops elsewhere. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.207
+      "curvature": -0.22
     },
     {
       "from": "market-demand-for-alternative-crops",
@@ -1911,7 +1911,7 @@
       "delay": false,
       "description": "A plant nearby cuts transport, so farmers keep more of the price.",
       "sources": [],
-      "curvature": -0.106
+      "curvature": -0.14
     },
     {
       "from": "processing-of-new-crops-elsewhere",
@@ -1931,7 +1931,7 @@
       "simplification": "Folds Know-how of the current crops, a stock between the two: growing the current crops builds know-how, which is of little use for a new crop. The sign is the product of the two steps (+, then +), so no loop through the link changes, and know-how is no actor's decision. What one link leaves out: the know-how as a stock of its own, built up over years of growing the crops.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.135
+      "curvature": 0.14
     },
     {
       "from": "machines-and-storage-for-current-crops",
@@ -1940,7 +1940,7 @@
       "delay": false,
       "description": "The more a farm owns for its current crops, the more a switch to a new crop writes off.",
       "sources": [],
-      "curvature": -0.43
+      "curvature": -0.22
     },
     {
       "from": "capital-lost-on-switching",
@@ -1949,7 +1949,7 @@
       "delay": false,
       "description": "What a farm would lose by switching ties it to its current crops.",
       "sources": [],
-      "curvature": -0.135,
+      "curvature": 0.32,
       "hypothesis": true
     },
     {
@@ -1959,7 +1959,7 @@
       "delay": false,
       "description": "Money left to invest can go to carrying on: wells, irrigation, drains, a new harvester.",
       "sources": [],
-      "curvature": -0.21,
+      "curvature": -0.14,
       "hypothesis": true
     },
     {
@@ -1969,7 +1969,7 @@
       "delay": true,
       "description": "A farm tied to its current crops spends on keeping them. Years, so a delay: a farm buys when a machine or a store falls due.",
       "sources": [],
-      "curvature": 0.304,
+      "curvature": 0.07,
       "hypothesis": true
     },
     {
@@ -1979,7 +1979,7 @@
       "delay": false,
       "description": "What it spends there is not left for other uses.",
       "sources": [],
-      "curvature": -0.21
+      "curvature": -0.07
     },
     {
       "from": "spending-on-keeping-current-crops",
@@ -1988,7 +1988,7 @@
       "delay": false,
       "description": "A new harvester or store adds to the capital for the current crops.",
       "sources": [],
-      "curvature": -0.186
+      "curvature": -0.32
     },
     {
       "from": "spending-on-keeping-current-crops",
@@ -1997,7 +1997,7 @@
       "delay": false,
       "description": "Wells and irrigation let a farm pump more.",
       "sources": [],
-      "curvature": 0.126
+      "curvature": 0.07
     },
     {
       "from": "mortgage-debt-financial-leverage",
@@ -2006,7 +2006,7 @@
       "delay": false,
       "description": "A farm with less equity against its debt is a riskier loan.",
       "sources": [],
-      "curvature": 0.274
+      "curvature": -0.22
     },
     {
       "from": "plans-to-raise-ditch-levels",
@@ -2015,7 +2015,7 @@
       "delay": false,
       "description": "A plan that may change what the land can earn enters a bank's risk analysis before it is decided.",
       "sources": [],
-      "curvature": -0.111
+      "curvature": 0.14
     },
     {
       "from": "banks-risk-assessment",
@@ -2024,7 +2024,7 @@
       "delay": false,
       "description": "Banks lend less to farms they see as riskier.",
       "sources": [],
-      "curvature": 0.378
+      "curvature": 0.07
     },
     {
       "from": "banks-risk-assessment",
@@ -2033,7 +2033,7 @@
       "delay": false,
       "description": "Banks charge more for loans they see as riskier.",
       "sources": [],
-      "curvature": 0.127
+      "curvature": 0.14
     },
     {
       "from": "bank-credit-to-farms",
@@ -2042,7 +2042,7 @@
       "delay": false,
       "description": "Credit is part of what a farm can invest.",
       "sources": [],
-      "curvature": 0.208
+      "curvature": 0.07
     },
     {
       "from": "bank-credit-to-farms",
@@ -2051,7 +2051,7 @@
       "delay": false,
       "description": "New loans add to a farm's debt against its assets.",
       "sources": [],
-      "curvature": 0.198
+      "curvature": -0.22
     },
     {
       "from": "bank-credit-to-farms",
@@ -2060,7 +2060,7 @@
       "delay": false,
       "description": "More debt, more to pay each year.",
       "sources": [],
-      "curvature": 0.146
+      "curvature": 0.14
     },
     {
       "from": "bank-credit-freeze-risk-premiums",
@@ -2069,7 +2069,7 @@
       "delay": false,
       "description": "A higher premium raises the interest farms pay.",
       "sources": [],
-      "curvature": 0.11
+      "curvature": -0.07
     },
     {
       "from": "debt-payments",
@@ -2078,7 +2078,7 @@
       "delay": false,
       "description": "Interest is part of a farm's costs.",
       "sources": [],
-      "curvature": 0.3
+      "curvature": 0.45
     },
     {
       "from": "debt-payments",
@@ -2087,7 +2087,7 @@
       "delay": false,
       "description": "A farm with high debt payments keeps its lucrative but salt-sensitive crops to meet them.",
       "sources": [],
-      "curvature": -0.199,
+      "curvature": -0.14,
       "hypothesis": true
     },
     {
@@ -2097,7 +2097,7 @@
       "delay": false,
       "description": "Farms that cannot refinance sell up.",
       "sources": [],
-      "curvature": 0.121
+      "curvature": -0.14
     },
     {
       "from": "mortgage-debt-financial-leverage",
@@ -2106,7 +2106,7 @@
       "delay": false,
       "description": "Highly leveraged farms are the ones sold in a forced sale or bankruptcy.",
       "sources": [],
-      "curvature": 0.144
+      "curvature": -0.45
     },
     {
       "from": "farms-with-a-successor",
@@ -2115,7 +2115,7 @@
       "delay": false,
       "description": "A farm with a successor stays with the family; one without is sold when its farmer retires.",
       "sources": [],
-      "curvature": -0.267,
+      "curvature": -0.14,
       "hypothesis": true
     },
     {
@@ -2135,7 +2135,7 @@
       "delay": true,
       "description": "Expropriated land passes to the public body that takes it, after a legal procedure.",
       "sources": [],
-      "curvature": 0.435
+      "curvature": 0.32
     },
     {
       "from": "farmland-changing-hands",
@@ -2144,7 +2144,7 @@
       "delay": false,
       "description": "Land that changes hands leaves arable farming when its next holder does not farm it.",
       "sources": [],
-      "curvature": 0.116,
+      "curvature": 0.14,
       "hypothesis": true
     },
     {
@@ -2154,7 +2154,7 @@
       "delay": false,
       "description": "Where arable farming still pays for a buyer or successor, the next holder keeps the land arable.",
       "sources": [],
-      "curvature": -0.108,
+      "curvature": 0.07,
       "hypothesis": true
     },
     {
@@ -2167,7 +2167,7 @@
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": 0.112
+      "curvature": -0.14
     },
     {
       "from": "farm-revenue",
@@ -2176,7 +2176,7 @@
       "delay": false,
       "description": "A farm that pays finds a successor more easily.",
       "sources": [],
-      "curvature": -0.109,
+      "curvature": -0.14,
       "hypothesis": true
     },
     {
@@ -2186,7 +2186,7 @@
       "delay": false,
       "description": "A plan to raise the ditch levels makes owners fear their land will lose value.",
       "sources": [],
-      "curvature": -0.327,
+      "curvature": 0.22,
       "hypothesis": true
     },
     {
@@ -2196,7 +2196,7 @@
       "delay": false,
       "description": "Farmers who trust that public bodies keep their commitments object less.",
       "sources": [],
-      "curvature": 0.355,
+      "curvature": 0.32,
       "hypothesis": true
     },
     {
@@ -2218,7 +2218,7 @@
       "simplification": "Folds Plans changed or dropped: objections and appeals change, delay or stop plans, and the changes teach farmers not to count on the next plan. The sign is the product of the two steps (+, then −), so no loop through the link changes. The public bodies' decisions on their plans stay drawn, on the links from Objections to land-use plans into Water board's plans to raise ditch levels and Farmland planned for other uses; this link carries only what farmers learn from the changes.",
       "sources": [],
       "hypothesis": true,
-      "curvature": 0.355
+      "curvature": 0.22
     },
     {
       "from": "policy-resistance-legal-delays",
@@ -2227,7 +2227,7 @@
       "delay": false,
       "description": "Where owners will not sell, a public body may expropriate.",
       "sources": [],
-      "curvature": 0.364,
+      "curvature": 0.22,
       "hypothesis": true
     },
     {
@@ -2237,7 +2237,7 @@
       "delay": false,
       "description": "Land taken by force lowers farmers' trust in government.",
       "sources": [],
-      "curvature": 0.33,
+      "curvature": -0.14,
       "hypothesis": true
     },
     {
@@ -2247,7 +2247,7 @@
       "delay": false,
       "description": "Objections delay, change or stop a plan in which the municipality designates farmland for another use, while it is pending; with none pending, they change nothing.",
       "sources": [],
-      "curvature": -0.12,
+      "curvature": -0.32,
       "hypothesis": true
     },
     {
@@ -2257,7 +2257,7 @@
       "delay": false,
       "description": "A plan that designates farmland for another use leads its owners and the farmers who work it to object, appeal and lobby against it.",
       "sources": [],
-      "curvature": -0.12,
+      "curvature": 0.07,
       "hypothesis": true
     },
     {
@@ -2267,7 +2267,7 @@
       "delay": false,
       "description": "Farmland the plan designates for another use leaves arable farming once the plan is carried out on it; how long that takes waits for a source.",
       "sources": [],
-      "curvature": -0.4
+      "curvature": 0.45
     },
     {
       "from": "wetter-winters",
@@ -2291,7 +2291,7 @@
         "scheldestromen-2026-grondwater",
         "kaandorp-2022"
       ],
-      "curvature": 0.2
+      "curvature": 0.14
     },
     {
       "from": "upconing-of-salt-groundwater",
@@ -2302,7 +2302,7 @@
       "sources": [
         "scheldestromen-2026-grondwater"
       ],
-      "curvature": 0.2
+      "curvature": -0.14
     },
     {
       "from": "pumping-the-water-board-allows",
@@ -2313,7 +2313,7 @@
       "sources": [
         "scheldestromen-2026-grondwater"
       ],
-      "curvature": 0.2
+      "curvature": -0.45
     },
     {
       "from": "freshwater-storage-measures",
@@ -2324,7 +2324,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": 0.2
+      "curvature": -0.14
     },
     {
       "from": "knowledge-of-storage",
@@ -2335,7 +2335,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": 0.2
+      "curvature": -0.14
     },
     {
       "from": "freshwater-storage-measures",
@@ -2346,7 +2346,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": 0.2
+      "curvature": -0.22
     },
     {
       "from": "farmers-trust-in-government",
@@ -2356,7 +2356,7 @@
       "description": "Hypothesis: storing water is a long investment that a change of rules can strand, so the less farmers expect public bodies to keep their commitments on water and land, the less they store. A question for the group model building session.",
       "sources": [],
       "hypothesis": true,
-      "curvature": 0.2
+      "curvature": -0.45
     },
     {
       "from": "polder-drainage-depth",
@@ -2368,7 +2368,7 @@
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": 0.2
+      "curvature": 0.22
     },
     {
       "from": "farmland-leaving-arable-use",
@@ -2380,7 +2380,7 @@
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": 0.2
+      "curvature": 0.22
     },
     {
       "from": "root-zone-salinity",
@@ -2393,7 +2393,7 @@
         "beauchampet-2022"
       ],
       "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
-      "curvature": 0.2
+      "curvature": -0.22
     },
     {
       "from": "freshwater-availability-for-crops",
@@ -2406,7 +2406,7 @@
         "de-vriend-2024-gewassen"
       ],
       "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
-      "curvature": 0.2
+      "curvature": -0.32
     },
     {
       "from": "net-price-for-new-crops",
@@ -2417,7 +2417,7 @@
       "sources": [
         "cloet-2024"
       ],
-      "curvature": 0.2
+      "curvature": 0.45
     },
     {
       "from": "farm-revenue",
@@ -2429,7 +2429,7 @@
         "van-der-meulen-2020",
         "farjon-2013"
       ],
-      "curvature": 0.2
+      "curvature": 0.45
     },
     {
       "from": "municipality-plans-for-farmland",
@@ -2440,7 +2440,7 @@
       "sources": [
         "omgevingswet-2026"
       ],
-      "curvature": 0.2
+      "curvature": 0.14
     }
   ],
   "loops": [

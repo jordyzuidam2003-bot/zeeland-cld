@@ -11,7 +11,7 @@ What is drawn, from back to front:
             named in its top outer corner
   links     a quadratic Bezier from a point on the source box's edge to one on the target's,
             the ends on one edge spread along it; the sign on the link just before the
-            arrowhead, a delay as two short strokes across the midpoint
+            arrowhead, a delay as two short strokes across it at the clearest place along the link
   elements  the label in a box filled with the pale tint of its SETS domain, the one place the
             domain shows in the drawing (the layout follows the loops, not the domains):
             square corners for a Stock, rounded for an Auxiliary, dashed for a Constant, a
@@ -46,6 +46,8 @@ SIGN_BACK = 50                 # a sign's centre on its link: the arrowhead (ARR
 SIGN_HALO = 10                 # the white round a sign, which cuts its own line round it
 DELAY_HALF, DELAY_GAP = 24, 8  # a delay's two strokes the height of a sign, a white cut round them, so they read at the
 DELAY_WIDTH, DELAY_CUT = 5, 11  # report's print size where the signs do (Jordy, chosen between rendered versions)
+DELAY_CLEAR = 55               # a delay's centre keeps this far from its link's sign, so the two never overlap (Jordy)
+DELAY_MIN = 120                # the shortest link, end to end, that holds its delay and its sign apart; build.py warns below it
 CORNER = 18                    # an Auxiliary's and a Constant's corner radius (Jordy, chosen between rendered versions)
 LEGEND_SIZE = 52               # the legend reads at a glance, so larger than the labels (Jordy, chosen between rendered versions)
 ARROW = 22                     # arrowhead length, in drawing units
@@ -222,20 +224,22 @@ def sub_curve(p0, p1, p2, t0, t1):
     return r0, lerp(r0, r1, s), bezier(p0, p1, p2, t1)
 
 
-def link_svg(c, pieces):
+def link_svg(c, pieces, spot=None):
     """The link as joined quadratic Beziers, pieces [(p0, ctrl, p2), ...]: one in the full drawing,
-    several along a one-loop figure's oval; the sign on the last piece, a delay halfway along it."""
+    several along a one-loop figure's oval; the sign on the last piece, a delay at `spot` on the one
+    piece if given (the full drawing's delay_spots()), else halfway along it."""
     colour = LINK_COLOUR[c["polarity"]]
     d = f"M {pieces[0][0][0]:.1f} {pieces[0][0][1]:.1f} " + " ".join(f"Q {q[0]:.1f} {q[1]:.1f} {r[0]:.1f} {r[1]:.1f}" for _, q, r in pieces)
     parts = [f'<g class="link" data-from="{c["from"]}" data-to="{c["to"]}" data-sign="{c["polarity"]}" '
-             f'data-delay="{"true" if c["delay"] else "false"}" data-curvature="{c["curvature"]}">',
+             f'data-delay="{"true" if c["delay"] else "false"}" data-curvature="{c["curvature"]}"'
+             + (f' data-delay-t="{spot:.2f}"' if spot is not None else "") + ">",
              f'<path class="link-path" d="{d}" '
              f'fill="none" stroke="{colour}" stroke-width="{LINK_WIDTH}" marker-end="url(#arrow-{"plus" if c["polarity"] == "+" else "minus"})"/>']
     sx, sy = sign_position(*pieces[-1])
     parts.append(f'<text class="sign" x="{sx:.1f}" y="{sy:.1f}" text-anchor="middle" dominant-baseline="central" '
                  f'font-size="{SIGN_SIZE}" font-weight="bold" fill="{colour}" stroke="white" stroke-width="{SIGN_HALO}" paint-order="stroke">{SIGN_TEXT[c["polarity"]]}</text>')
     if c["delay"]:
-        d = delay_path(*halfway(pieces))
+        d = delay_path(*pieces[0], spot) if spot is not None else delay_path(*halfway(pieces))
         parts.append(f'<path class="delay-cut" d="{d}" stroke="white" stroke-width="{DELAY_CUT}" fill="none"/>')
         parts.append(f'<path class="delay" d="{d}" stroke="{STROKE_COLOUR}" stroke-width="{DELAY_WIDTH}" fill="none"/>')
     parts.append("</g>")
@@ -258,12 +262,79 @@ def sign_position(p0, ctrl, p2, back=SIGN_BACK):
     return bezier(p0, ctrl, p2, hi)
 
 
+def delay_t(p0, ctrl, p2):
+    """Where a delay sits on one curve: at its middle, or on a short link further back, DELAY_CLEAR
+    before the sign, so the two never overlap (Jordy); see the JS twin delayT() in page/app.js."""
+    back = SIGN_BACK + DELAY_CLEAR
+    mid = bezier(p0, ctrl, p2, 0.5)
+    if hypot(mid[0] - p2[0], mid[1] - p2[1]) >= back or hypot(p0[0] - p2[0], p0[1] - p2[1]) < back:
+        return 0.5
+    lo, hi = 0.0, 0.5
+    for _ in range(40):
+        m = (lo + hi) / 2
+        q = bezier(p0, ctrl, p2, m)
+        if hypot(q[0] - p2[0], q[1] - p2[1]) > back:
+            lo = m
+        else:
+            hi = m
+    return lo
+
+
+def delay_spots(cld, paths):
+    """{(from, to): t}: where each delayed link's mark sits on its curve in the full drawing: its
+    own `delay at` if it has one (Jordy drags it on the page), else the place along it furthest
+    from other links and boxes, near its middle where several are as clear, so the mark never
+    sits where lines cross (Jordy). A mark keeps DELAY_CLEAR from its sign and from other marks."""
+    pts = {k: [bezier(*p[0], i / 12) for i in range(13)] for k, p in paths.items()}
+    bxs = boxes(cld)
+    near = lambda f, x, y, m=80: f[0] - m <= x <= f[2] + m and f[1] - m <= y <= f[3] + m
+    frame = {k: (min(x for x, _ in p), min(y for _, y in p), max(x for x, _ in p), max(y for _, y in p)) for k, p in pts.items()}
+
+    def to_segment(x, y, a, b):
+        dx, dy = b[0] - a[0], b[1] - a[1]
+        u = max(0, min(1, ((x - a[0]) * dx + (y - a[1]) * dy) / (dx * dx + dy * dy or 1)))
+        return hypot(x - a[0] - u * dx, y - a[1] - u * dy)
+
+    out, placed = {}, []
+    for c in cld["connections"]:
+        k = (c["from"], c["to"])
+        if not c["delay"]:
+            continue
+        p0, ctrl, p2 = paths[k][0]
+        if "delay at" in c:
+            out[k] = c["delay at"]
+            placed.append(bezier(p0, ctrl, p2, c["delay at"]))
+            continue
+        sign = sign_position(p0, ctrl, p2)
+        best, best_t = None, None
+        for i in range(3, 23):
+            t = i / 25
+            x, y = bezier(p0, ctrl, p2, t)
+            if hypot(x - sign[0], y - sign[1]) < DELAY_CLEAR or any(
+                    hypot(max(bxs[e][0] - x, x - bxs[e][2], 0), max(bxs[e][1] - y, y - bxs[e][3], 0)) < DELAY_HALF + 10 for e in k):
+                continue
+            clear = 80.0
+            for j, q in pts.items():
+                if j != k and near(frame[j], x, y):
+                    clear = min(clear, min(to_segment(x, y, q[n], q[n + 1]) for n in range(12)))
+            for j, b in bxs.items():
+                if j not in k:
+                    clear = min(clear, hypot(max(b[0] - x, x - b[2], 0), max(b[1] - y, y - b[3], 0)))
+            clear = min([clear] + [hypot(x - m[0], y - m[1]) - DELAY_CLEAR for m in placed])
+            score = clear - 14 * abs(t - 0.5)
+            if best is None or score > best:
+                best, best_t = score, t
+        out[k] = delay_t(p0, ctrl, p2) if best_t is None else best_t
+        placed.append(bezier(p0, ctrl, p2, out[k]))
+    return out
+
+
 def halfway(pieces, steps=200):
     """(p0, ctrl, p2, t): the point halfway along a link by length. A link of several pieces (a
     loop figure's) is measured along them, since the middle piece's own middle can sit near an
     end, on the sign (Jordy); one piece keeps its t = 0.5, as app.js's delayPath() draws it."""
     if len(pieces) == 1:
-        return (*pieces[0], 0.5)
+        return (*pieces[0], delay_t(*pieces[0]))
     walk = []  # (length so far, piece, t)
     total = 0.0
     for p in pieces:
@@ -539,10 +610,10 @@ def head(vb):
         f'<rect x="{vb[0]:.0f}" y="{vb[1]:.0f}" width="{vb[2]:.0f}" height="{vb[3]:.0f}" fill="white"/>']
 
 
-def links_and_elements(cld, bxs, paths):
+def links_and_elements(cld, bxs, paths, spots={}):
     """The links, then the elements over them: what svg() and loop_figure() both draw; paths gives
     each link its pieces (link_svg())."""
-    return ['<g class="links">', *(link_svg(c, paths[c["from"], c["to"]]) for c in cld["connections"]), "</g>",
+    return ['<g class="links">', *(link_svg(c, paths[c["from"], c["to"]], spots.get((c["from"], c["to"]))) for c in cld["connections"]), "</g>",
             '<g class="elements">', *(element_svg(e, bxs[e["id"]]) for e in cld["elements"]), "</g>"]
 
 
@@ -587,7 +658,7 @@ def svg(cld):
         y1 += MARGIN + lh
         x1 = max(x1, x0 + lw)
     vb = (x0 - MARGIN, y0 - MARGIN, x1 - x0 + 2 * MARGIN, y1 - y0 + 2 * MARGIN)
-    parts = [*head(vb), '<g class="regions">', region_svg, "</g>", *links_and_elements(cld, bxs, {k: [p] for k, p in paths.items()}), legend, "</svg>"]
+    parts = [*head(vb), '<g class="regions">', region_svg, "</g>", *links_and_elements(cld, bxs, {k: [p] for k, p in paths.items()}, delay_spots(cld, {k: [p] for k, p in paths.items()})), legend, "</svg>"]
     return "\n".join(parts) + "\n"
 
 
@@ -725,6 +796,10 @@ def overlaps(cld):
     # a -> b at curvature k and b -> a at -k share one curve, so the loop reads as one line with
     # two arrowheads; they read as two once their middles lie a sign's height apart
     paths = link_paths(cld, bxs)
+    for c in cld["connections"]:
+        p0, _, p2 = paths[c["from"], c["to"]]
+        if c["delay"] and hypot(p0[0] - p2[0], p0[1] - p2[1]) < DELAY_MIN:
+            out.append(f"{c['from']} -> {c['to']}: too short to hold its delay and its sign apart")
     for (a, b), p in paths.items():
         q = paths.get((b, a))
         if q and a < b:

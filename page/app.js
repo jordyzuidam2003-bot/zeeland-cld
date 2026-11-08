@@ -162,9 +162,20 @@ function signPosition(p0, ctrl, p2, back = 50) {
   }
   return bezier(p0, ctrl, p2, hi);
 }
-function delayPath(p0, ctrl, p2, half = 24, gap = 8) {
-  const [x, y] = bezier(p0, ctrl, p2, 0.5);
-  const [tx, ty] = tangent(p0, ctrl, p2, 0.5);
+function delayT(p0, ctrl, p2, back = 50 + 55) {
+  const mid = bezier(p0, ctrl, p2, 0.5);
+  if (Math.hypot(mid[0] - p2[0], mid[1] - p2[1]) >= back || Math.hypot(p0[0] - p2[0], p0[1] - p2[1]) < back) return 0.5;
+  let lo = 0, hi = 0.5;
+  for (let i = 0; i < 40; i++) {
+    const m = (lo + hi) / 2, q = bezier(p0, ctrl, p2, m);
+    if (Math.hypot(q[0] - p2[0], q[1] - p2[1]) > back) lo = m; else hi = m;
+  }
+  return lo;
+}
+function delayPath(p0, ctrl, p2, at, half = 24, gap = 8) {
+  const t = at === undefined ? delayT(p0, ctrl, p2) : at;
+  const [x, y] = bezier(p0, ctrl, p2, t);
+  const [tx, ty] = tangent(p0, ctrl, p2, t);
   const n = Math.hypot(tx, ty) || 1;
   const ux = tx / n, uy = ty / n, nx = -uy, ny = ux;
   return [-gap, gap].map(k => {
@@ -231,7 +242,7 @@ function redrawLink(g, [p0, ctrl, p2]) {
   const sign = g.querySelector("text.sign");
   sign.setAttribute("x", f(sx));
   sign.setAttribute("y", f(sy));
-  for (const delay of g.querySelectorAll("path.delay, path.delay-cut")) delay.setAttribute("d", delayPath(p0, ctrl, p2));
+  for (const delay of g.querySelectorAll("path.delay, path.delay-cut")) delay.setAttribute("d", delayPath(p0, ctrl, p2, g.dataset.delayT === undefined ? undefined : +g.dataset.delayT));
 }
 // each link gets a wide invisible copy of its path under it, so the 2.5-unit line can be grabbed
 for (const g of links) {
@@ -302,7 +313,9 @@ document.getElementById("fit").addEventListener("click", () => { Object.assign(v
 
 svg.addEventListener("pointerdown", ev => {
   const g = ev.target.closest("g.element"), l = ev.target.closest("g.link");
-  if (moveToggle.checked && g) drag = { kind: "element", g, last: toSvg(ev) };
+  const mark = moveToggle.checked && ev.target.closest("path.delay, path.delay-cut");
+  if (mark) drag = { kind: "delay", g: l };
+  else if (moveToggle.checked && g) drag = { kind: "element", g, last: toSvg(ev) };
   else if (moveToggle.checked && l) drag = { kind: "link", g: l };
   else drag = { kind: "pan", last: [ev.clientX, ev.clientY] };
   dragged = false;
@@ -313,7 +326,19 @@ svg.addEventListener("pointermove", ev => {
   // capture only once the pointer moves: a captured pointer's click goes to the svg itself,
   // so a plain click on an element or a link would no longer find them
   if (!svg.hasPointerCapture(ev.pointerId)) svg.setPointerCapture(ev.pointerId);
-  if (drag.kind === "link") {
+  if (drag.kind === "delay") {
+    // the mark stays on its own line: the point of the curve nearest the pointer
+    dragged = true;
+    const p = toSvg(ev), [p0, ctrl, p2] = linkPaths().get(drag.g);
+    let best = Infinity, at = 0.5;
+    for (let i = 5; i <= 95; i++) {
+      const q = bezier(p0, ctrl, p2, i / 100), d = Math.hypot(q[0] - p[0], q[1] - p[1]);
+      if (d < best) { best = d; at = i / 100; }
+    }
+    drag.g.dataset.delayT = String(at);
+    drag.g.dataset.delayMoved = "1";
+    redrawLink(drag.g, linkPaths().get(drag.g));
+  } else if (drag.kind === "link") {
     dragged = true;
     bendLink(drag.g, toSvg(ev));
   } else if (drag.kind === "element") {
@@ -342,6 +367,7 @@ download.addEventListener("click", () => {
     layout[g.dataset.id] = { x: Math.round((b[0] + b[2]) / 2), y: Math.round((b[1] + b[3]) / 2) };
   }
   layout.curvature = Object.fromEntries(links.map(g => [`${g.dataset.from}->${g.dataset.to}`, +g.dataset.curvature]));
+  layout.delay = Object.fromEntries(links.filter(g => g.dataset.delayMoved).map(g => [`${g.dataset.from}->${g.dataset.to}`, +g.dataset.delayT]));
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([JSON.stringify(layout, null, 2) + "\n"], { type: "application/json" }));
   a.download = "layout.json";

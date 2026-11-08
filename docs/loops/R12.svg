@@ -6,11 +6,11 @@
 </defs>
 <rect x="-514" y="-262" width="1014" height="524" fill="white"/>
 <g class="links">
-<g class="link" data-from="knowledge-of-storage" data-to="freshwater-storage-measures" data-sign="+" data-delay="false" data-curvature="0.2">
+<g class="link" data-from="knowledge-of-storage" data-to="freshwater-storage-measures" data-sign="+" data-delay="false" data-curvature="-0.14">
 <path class="link-path" d="M -254.6 -60.0 Q -224.7 -116.3 -150.4 -149.5 Q -76.1 -182.7 13.3 -179.8 Q 102.7 -176.8 171.7 -138.9 Q 240.8 -100.9 262.2 -43.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="237.3" y="-86.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="freshwater-storage-measures" data-to="knowledge-of-storage" data-sign="+" data-delay="false" data-curvature="0.2">
+<g class="link" data-from="freshwater-storage-measures" data-to="knowledge-of-storage" data-sign="+" data-delay="false" data-curvature="-0.22">
 <path class="link-path" d="M 262.2 43.0 Q 240.8 100.9 171.7 138.9 Q 102.7 176.8 13.3 179.8 Q -76.1 182.7 -150.4 149.5 Q -224.7 116.3 -254.6 60.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-224.8" y="100.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

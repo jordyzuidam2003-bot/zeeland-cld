@@ -6,19 +6,19 @@
 </defs>
 <rect x="-506" y="-322" width="1020" height="644" fill="white"/>
 <g class="links">
-<g class="link" data-from="net-price-for-new-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="-0.275">
+<g class="link" data-from="net-price-for-new-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.07">
 <path class="link-path" d="M -305.7 126.7 Q -360.0 68.5 -360.0 0.0 Q -360.0 -68.5 -305.7 -126.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-335.9" y="-86.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-of-new-crops-to-process" data-sign="+" data-delay="false" data-curvature="-0.142">
+<g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-of-new-crops-to-process" data-sign="+" data-delay="false" data-curvature="-0.07">
 <path class="link-path" d="M -166.7 -212.7 Q -88.4 -240.0 -0.0 -240.0 Q 88.4 -240.0 166.7 -212.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="118.7" y="-226.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="harvest-of-new-crops-to-process" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="false" data-curvature="-0.207">
+<g class="link" data-from="harvest-of-new-crops-to-process" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="false" data-curvature="-0.22">
 <path class="link-path" d="M 305.7 -126.7 Q 360.0 -68.5 360.0 0.0 Q 360.0 68.5 305.7 126.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="335.9" y="86.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="processing-capacity-for-alternative-crops" data-to="net-price-for-new-crops" data-sign="+" data-delay="false" data-curvature="-0.106">
+<g class="link" data-from="processing-capacity-for-alternative-crops" data-to="net-price-for-new-crops" data-sign="+" data-delay="false" data-curvature="-0.14">
 <path class="link-path" d="M 166.7 212.7 Q 88.4 240.0 -0.0 240.0 Q -88.4 240.0 -166.7 212.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-118.7" y="226.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

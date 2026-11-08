@@ -6,21 +6,21 @@
 </defs>
 <rect x="-514" y="-323" width="1020" height="645" fill="white"/>
 <g class="links">
-<g class="link" data-from="machines-and-storage-for-current-crops" data-to="capital-lost-on-switching" data-sign="+" data-delay="false" data-curvature="-0.43">
+<g class="link" data-from="machines-and-storage-for-current-crops" data-to="capital-lost-on-switching" data-sign="+" data-delay="false" data-curvature="-0.22">
 <path class="link-path" d="M 166.7 212.7 Q 88.4 240.0 -0.0 240.0 Q -88.4 240.0 -166.7 212.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-118.7" y="226.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="capital-lost-on-switching" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="-0.135">
+<g class="link" data-from="capital-lost-on-switching" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="0.32">
 <path class="link-path" d="M -305.7 126.7 Q -355.8 73.0 -359.7 9.8 Q -363.6 -53.4 -320.2 -109.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-345.9" y="-66.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="spending-on-keeping-current-crops" data-sign="+" data-delay="true" data-curvature="0.304">
+<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="spending-on-keeping-current-crops" data-sign="+" data-delay="true" data-curvature="0.07">
 <path class="link-path" d="M -104.3 -229.7 Q 36.4 -258.1 166.7 -212.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="118.8" y="-226.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M 27.3 -264.1 L 24.3 -216.2 M 43.3 -263.1 L 40.3 -215.2" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 27.3 -264.1 L 24.3 -216.2 M 43.3 -263.1 L 40.3 -215.2" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="spending-on-keeping-current-crops" data-to="machines-and-storage-for-current-crops" data-sign="+" data-delay="false" data-curvature="-0.186">
+<g class="link" data-from="spending-on-keeping-current-crops" data-to="machines-and-storage-for-current-crops" data-sign="+" data-delay="false" data-curvature="-0.32">
 <path class="link-path" d="M 305.7 -126.7 Q 360.0 -68.5 360.0 0.0 Q 360.0 68.5 305.7 126.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="335.9" y="86.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

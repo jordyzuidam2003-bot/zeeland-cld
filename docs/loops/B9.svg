@@ -6,15 +6,15 @@
 </defs>
 <rect x="-519" y="-282" width="1031" height="607" fill="white"/>
 <g class="links">
-<g class="link" data-from="fear-of-expropriation-planning-blight" data-to="policy-resistance-legal-delays" data-sign="+" data-delay="false" data-curvature="-0.19">
+<g class="link" data-from="fear-of-expropriation-planning-blight" data-to="policy-resistance-legal-delays" data-sign="+" data-delay="false" data-curvature="0.07">
 <path class="link-path" d="M 287.6 -57.0 Q 314.7 3.8 284.3 63.8 Q 254.0 123.9 177.2 161.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="220.3" y="136.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="policy-resistance-legal-delays" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="false" data-curvature="-0.388">
+<g class="link" data-from="policy-resistance-legal-delays" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="false" data-curvature="-0.07">
 <path class="link-path" d="M -177.2 161.4 Q -254.0 123.9 -284.3 63.8 Q -314.7 3.8 -287.6 -57.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-300.0" y="-8.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="fear-of-expropriation-planning-blight" data-sign="+" data-delay="false" data-curvature="-0.327">
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="fear-of-expropriation-planning-blight" data-sign="+" data-delay="false" data-curvature="0.22">
 <path class="link-path" d="M -209.7 -143.0 Q -122.3 -200.0 0.0 -200.0 Q 122.3 -200.0 209.7 -143.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="165.9" y="-167.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

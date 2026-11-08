@@ -2537,5 +2537,108 @@
       ],
       "description": "The more farmland the municipality plans for other uses, the more lies within reach of an expropriation order, after the attempt to buy has failed, over years. Expropriation lowers farmers' trust in government, farmers who trust less object more, and objections delay, change or stop the next plan, so less farmland is planned. It shows an unintended consequence of expropriating for a plan: the next plan becomes harder to adopt. It seeks the planned area the island's farmers will accept. The steps through trust are hypotheses for the group model building session. Through the trust it lowers it holds back storage."
     }
+  ],
+  "groups": [
+    {
+      "id": "C1",
+      "name": "Storing: more worthwhile, harder to pay for",
+      "loops": [
+        "R3",
+        "B4"
+      ],
+      "description": "R3 and B4 share the chain from storage measures through the rainwater lens and the shortfall to the harvest, and part ways there. A worse harvest makes storing more worthwhile to a farmer (B4), and leaves the farm less income and less to invest (R3), so the same harvest pushes storage up and down. Farms with the means store and farms without may not, though they face the same water. Which pull is stronger differs per farm: a sign cannot show it, and the group model building session can test it, both links into storage being hypotheses. It runs in the low polders."
+    },
+    {
+      "id": "C2",
+      "name": "The quick answer to a dry summer goes first",
+      "loops": [
+        "B5",
+        "B4",
+        "B15",
+        "B11"
+      ],
+      "description": "Three loops answer one crop water shortfall at three speeds: pumping within the season (B5), storage over the years the rainwater lens takes to thicken (B4), and a supply route after the years it takes to decide, pay for and build, which has not run yet (B15). Whatever eases the shortfall first lowers the pressure for the slower answers. Pumping is tied to what it draws on: under the creek ridges and dunes, the thinner the lens, the less the water board's rules allow (B11). The quick answer and the slow one are largely on different farms: pumping where a thick lens lies under the farm, storage through the rainwater lens in the low polders, where the farmers talked to do not irrigate."
+    },
+    {
+      "id": "C3",
+      "name": "Salt losses raise the wish to switch and cut the means",
+      "loops": [
+        "B13",
+        "R4",
+        "B3",
+        "B10"
+      ],
+      "description": "The harvest lost to salt makes a new salt-tolerant crop worth more against the current crops, after a delay (B13, a hypothesis). The same losses lower income and land value, so a bank sees more risk and lends less and the farm has less to invest in the switch (R4); limiting credit is how the bank keeps its own exposure down (B10). A field that moves saves harvest from salt (R4) and gives up the current crop's margin (B3), most on fresh land, so the salt on the field decides whether the switch adds income or costs it. Which of these is stronger, a sign cannot show."
+    },
+    {
+      "id": "C4",
+      "name": "Low ditch levels: workable fields now, more demand later",
+      "loops": [
+        "B7",
+        "R5"
+      ],
+      "description": "Low ditch levels dry the fields sooner, within the season, and the farmers' demand for low levels eases (B7). The same low levels raise saline seepage, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, debt payments rise and the farm depends more on its high-margin crops, whose spring work needs low levels, so the demand comes back higher (R5). The relief comes first and the extra demand years later, on the same variable. R5 comes back through debt and dependence, not through a wetter field, and the link from debt payments to dependence is a hypothesis for the group model building session."
+    },
+    {
+      "id": "C5",
+      "name": "Falling land value: levels held, or land leaving arable",
+      "loops": [
+        "R5",
+        "R6",
+        "B2"
+      ],
+      "description": "The three loops share the chain from the water board's plans through the drainage depth, seepage, the rainwater lens, the salt and the harvest to income and land value, and part ways at land value. As land loses value, leverage and debt lead farmers to ask for low levels (R5) and owners may object harder to raises (R6, a hypothesis), so both keep the levels low and the salt coming. Where arable farming stops paying, land leaves arable use, the board has more reason to raise the levels, and the salt falls back (B2). The same fall sends the water board opposite signals. Which is stronger decides whether the decline runs on or stops, and a sign cannot show it."
+    },
+    {
+      "id": "C6",
+      "name": "One ditch level between four goals",
+      "loops": [
+        "B7",
+        "B8",
+        "B12",
+        "B9"
+      ],
+      "description": "Four balancing loops act on the water board's plans for the same ditch levels, each towards its own goal: fields dry enough for heavy machinery in spring (B7), the fresh water in the soil the board wants to keep (B8), the optimum the board sets for each use and soil (B12), and a plan the objecting owners can accept (B9). The goals cannot all be met at once, so the level settles where those pressures balance. How far seepage weighs against the other goals in the board's plans, no source read shows."
+    },
+    {
+      "id": "C7",
+      "name": "Salt builds, and farms respond in steps",
+      "loops": [
+        "R1",
+        "B14",
+        "B13",
+        "B2"
+      ],
+      "description": "Salt in the root zone damages the soil's structure, less rain soaks in, the rainwater lens thins and more salt reaches the roots, in the low polders (R1). The responses differ in speed and cost: a tolerant variety uses the same machines and needs little capital (B14), a new crop comes after a delay (B13), and over years land leaves arable use (B2). The first two lower what salt takes from the harvest and leave the salt in the soil, so they ease the pressure that leads to the third, the one that lowers the salt, through the higher ditch levels that follow. The order is a reading of the delays and the costs, a hypothesis for the group model building session."
+    },
+    {
+      "id": "C8",
+      "name": "What objections to plans set in motion",
+      "loops": [
+        "B9",
+        "R6",
+        "R9",
+        "B16"
+      ],
+      "description": "Objections delay, change or stop a plan, which is what owners object for (B9). Two things follow. The levels held keep up the seepage and salt that lower the land's value, and a lower value may bring more objections (R6). And plans changed or dropped, and expropriation for a plan, lower farmers' trust in government, which may bring more objections to the next plan (R9, B16). Whether objections settle at a plan the owners accept or keep growing is a question for the group model building session, the steps through trust and what brings objections being hypotheses. The trust it lowers also holds back storage, a long investment that a change of rules can strand."
+    },
+    {
+      "id": "C9",
+      "name": "Debt and capital together keep a farm in its crops",
+      "loops": [
+        "R5",
+        "R10"
+      ],
+      "description": "Debt payments raise a farm's dependence on its high-margin crops (R5), and so does what it would write off on machines and stores if it switched (R10); both links into dependence are hypotheses for the group model building session. Each loop raises the variable that drives the other: more dependence brings more spending on machines and stores for those crops and more demand for low ditch levels, so the two add up. Dependence holds back new crops, so a farm can stay with its current crops while salt, on its own, lowers that dependence over the years."
+    },
+    {
+      "id": "C10",
+      "name": "New crops stay stuck or take off",
+      "loops": [
+        "R2",
+        "B3"
+      ],
+      "description": "With few hectares under a new crop there is little harvest within reach of a plant, no local plant, and transport keeps the net price low (R2), while every field moved gives up the current crop's margin, which income and credit must carry (B3), so adoption stays low. With enough hectares a plant becomes worthwhile, the net price rises and more farmers grow the crop. A higher net price also means less margin given up, by a link outside these two loops, which eases the brake B3 puts on adoption. How many hectares that takes, a sign cannot show."
+    }
   ]
 }

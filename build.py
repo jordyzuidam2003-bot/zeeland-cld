@@ -278,8 +278,33 @@ def check(cld, refs, actors):
 
     # A description names a loop by its id, which goes stale unseen once that loop leaves the named loops.
     loop_ids = {loop["id"] for loop in cld["loops"]}
-    for item in cld["elements"] + cld["connections"] + cld["loops"]:
-        gone = sorted(set(re.findall(r"\b[RB]\d+\b", str(item.get("description", "")))) - loop_ids)
+    paths = {loop["id"]: set(loop["path"]) for loop in cld["loops"]}
+    group_ids = [g.get("id") for g in cld.get("groups", [])]
+    errors += [f"group id {i} appears twice" for i in sorted({i for i in group_ids if group_ids.count(i) > 1}, key=str)]
+    for group in cld.get("groups", []):
+        # a group's button, figure and table row read these; a loop gone from the named loops would stay in them unseen
+        name = group.get("id", "?")
+        if not re.fullmatch(r"C\d+", str(group.get("id"))):
+            errors.append(f"group {name}: its id must be C and a number")
+        for field in ("name", "description"):
+            if not (isinstance(group.get(field), str) and group[field].strip()):
+                errors.append(f"group {name}: no {field}")
+        members = group.get("loops", [])
+        unknown = [m for m in members if m not in loop_ids]
+        if unknown:
+            errors.append(f"group {name}: {', '.join(unknown)} not a named loop")
+        elif len(set(members)) < 2:
+            errors.append(f"group {name}: needs at least two different loops")
+        else:
+            # a group is its loops joined at their shared variables, so none stands apart
+            joined, rest = paths[members[0]], [paths[m] for m in members[1:]]
+            while rest and any(joined & p for p in rest):
+                joined = joined.union(*(p for p in rest if joined & p))
+                rest = [p for p in rest if not joined & p]
+            if rest:
+                errors.append(f"group {name}: its loops share no variable with the others")
+    for item in cld["elements"] + cld["connections"] + cld["loops"] + cld.get("groups", []):
+        gone =sorted(set(re.findall(r"\b[RB]\d+\b", str(item.get("description", "")))) - loop_ids)
         if gone:
             errors.append(f"{item.get('id') or item.get('from', '?') + ' -> ' + item.get('to', '?')}: "
                           f"its description names {', '.join(gone)}, not a named loop")
@@ -320,7 +345,7 @@ def check(cld, refs, actors):
                      for c in cld["connections"] if c["delay"] and not any(ch.isdigit() for ch in c["description"])]
         # The CLD describes mechanisms and is shaped for no lever set, so no element, link or loop names one.
         warnings += [f"{item.get('id') or item['from'] + ' -> ' + item['to']}: names a policy lever"
-                     for item in cld["elements"] + cld["connections"] + cld["loops"]
+                     for item in cld["elements"] + cld["connections"] + cld["loops"] + cld.get("groups", [])
                      if re.search(r"\b(levers?|buy-?outs?|land bank)\b", item["description"], re.I)]
         warnings += draw.overlaps(cld)
     return errors, warnings

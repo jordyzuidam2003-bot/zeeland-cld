@@ -190,6 +190,13 @@ back adopting adaptive practices, and which response's unintended consequence it
 shows one. `build.py` stops on a named loop without one and on any description naming a loop id
 that is not a named loop; the page's panel for the loop, the Named loops sheet and Kumu show it.
 
+A group of named loops: `{"id": "C1", "name": "…", "loops": ["R3", "B4"], "description": "…"}`, in
+the top-level list `groups`: loops that together form a behaviour none of them shows alone, joined at
+the variables they share. Its `name` says what the loops do together, in words each actor would
+accept. `build.py` stops on a group naming a loop that is not a named loop, on a group of fewer than
+two loops and on a loop sharing no variable with the group's others; the table's Combined loops sheet
+shows each group.
+
 ### `actors.json`
 
 The Actor Map's data, by the course's actor analysis guidelines, and the one list of actors:

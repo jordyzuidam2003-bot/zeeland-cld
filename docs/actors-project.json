@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-actors",
-  "description": "Actor Map version ccc6646, the first seven characters of the SHA-256 of actors.json. A copy for milestones: the current Actor Map is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Actor Map version ae99e19, the first seven characters of the SHA-256 of actors.json. A copy for milestones: the current Actor Map is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-actors",
   "defaultPerspective": null,
@@ -918,7 +918,7 @@
   "maps": [
     {
       "_id": "map-actors",
-      "name": "Actor Map, version ccc6646",
+      "name": "Actor Map, version ae99e19",
       "description": "",
       "scale": 1,
       "center": {

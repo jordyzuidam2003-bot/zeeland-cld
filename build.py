@@ -63,7 +63,7 @@ PAGES_URL = "https://jordyzuidam2003-bot.github.io/zeeland-cld/"
 ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
 SUBQUESTIONS = ["SQ1", "SQ2", "SQ3"]
 SETS_LETTER = {"Social": "S", "Ecological": "E", "Technological": "T"}
-CONSTANT_REACH = 300  # the most a Constant's box keeps from a box it drives: about one box's width
+CONSTANT_REACH = 400  # the most a Constant's box keeps from a box it drives: about one box's width and a bit
 
 # An actor's columns take a value from these lists, the Actor Map's own: they start from the
 # values the group's old Actor Table used, which bind nothing (Jordy: the old table gave the

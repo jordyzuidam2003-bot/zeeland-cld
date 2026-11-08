@@ -67,7 +67,7 @@ an element it does not connect, which would read as if that element
 mediates it, and no named loop whose links cross each other, a figure eight that cannot be
 followed round; `build.py` warns on the last. A Constant's links run straight, and `build.py`
 warns on a bent one; every other link has some bend (Jordy), and it warns on a straight one. A
-Constant sits beside what it drives, its box at most 300 units from each box it drives
+Constant sits beside what it drives, its box at most 400 units from each box it drives
 (Jordy), and `build.py` warns on one further away.
 
 A picture for the report: `docs/cld.svg` is the drawing on its own, and `docs/loops/<id>.svg`

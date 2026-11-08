@@ -262,6 +262,9 @@ def check(cld, refs, actors):
 
     sign = {(c["from"], c["to"]): c["polarity"] for c in cld["connections"]}
     for loop in cld["loops"]:
+        # each named loop says in words what it does; the page's panel and the table show it
+        if not (isinstance(loop.get("description"), str) and loop["description"].strip()):
+            errors.append(f"loop {loop['id']}: no description")
         path = loop["path"]
         steps = list(zip(path, path[1:] + path[:1]))
         gaps = [f"{a} -> {b}" for a, b in steps if (a, b) not in sign]
@@ -272,6 +275,14 @@ def check(cld, refs, actors):
         if not loop["id"].startswith(kind):
             errors.append(f"loop {loop['id']} is {'balancing' if kind == 'B' else 'reinforcing'} "
                           f"as drawn, so its id must start with {kind}")
+
+    # A description names a loop by its id, which goes stale unseen once that loop leaves the named loops.
+    loop_ids = {loop["id"] for loop in cld["loops"]}
+    for item in cld["elements"] + cld["connections"] + cld["loops"]:
+        gone = sorted(set(re.findall(r"\b[RB]\d+\b", str(item.get("description", "")))) - loop_ids)
+        if gone:
+            errors.append(f"{item.get('id') or item.get('from', '?') + ' -> ' + item.get('to', '?')}: "
+                          f"its description names {', '.join(gone)}, not a named loop")
 
     for c in cld["connections"]:
         if "delay at" in c and not (c["delay"] and 0 < c["delay at"] < 1):
@@ -307,9 +318,9 @@ def check(cld, refs, actors):
         # A delay is a claim about duration, so its description names one (a number: years, m per decade).
         warnings += [f"{c['from']} -> {c['to']}: a delay, yet its description gives no duration"
                      for c in cld["connections"] if c["delay"] and not any(ch.isdigit() for ch in c["description"])]
-        # The CLD describes mechanisms and is shaped for no lever set, so no element or link names one.
+        # The CLD describes mechanisms and is shaped for no lever set, so no element, link or loop names one.
         warnings += [f"{item.get('id') or item['from'] + ' -> ' + item['to']}: names a policy lever"
-                     for item in cld["elements"] + cld["connections"]
+                     for item in cld["elements"] + cld["connections"] + cld["loops"]
                      if re.search(r"\b(levers?|buy-?outs?|land bank)\b", item["description"], re.I)]
         warnings += draw.overlaps(cld)
     return errors, warnings
@@ -592,7 +603,7 @@ def project(cld, refs, actors, template, version):
     for loop in cld["loops"]:
         path = loop["path"]
         loops.append({"_id": f'loop-{loop["id"]}',
-                      "attributes": {"label": f'{loop["id"]} {loop["name"]}', "description": ""},
+                      "attributes": {"label": f'{loop["id"]} {loop["name"]}', "description": loop["description"]},
                       "connections": [f'conn-{a}--{b}' for a, b in zip(path, path[1:] + path[:1])]})
         map_loops.append({"_id": f'mloop-{loop["id"]}', "loop": f'loop-{loop["id"]}', "style": {},
                           "position": {"x": round(sum(by_id[i]["x"] for i in path) / len(path)),

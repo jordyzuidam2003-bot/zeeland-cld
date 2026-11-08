@@ -99,10 +99,12 @@ function showLoop(id) {
   img.src = a.href;
   img.alt = `The loop ${loop.id} on its own`;
   a.append(img);
+  const description = document.createElement("p");
+  description.textContent = loop.description;
   const p = document.createElement("p");
   p.className = "note";
   p.textContent = "The loop on its own, the figure for the report: click it to open it full size.";
-  panelBody.append(h2, a, p);
+  panelBody.append(h2, a, description, p);
   panel.dataset.loop = loop.id;
   panel.hidden = false;
 }

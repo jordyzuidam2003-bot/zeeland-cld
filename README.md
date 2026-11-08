@@ -179,12 +179,16 @@ on one edge spread along it, and puts the sign on the side of the arrowhead clea
 The SETS fields the page and Kumu show ("Cross-domain", "E to S" …) are derived by `build.py`,
 never typed.
 
-A named loop: `{"id": "R1", "name": "…", "path": ["element-a", "element-b", …]}`, the path in
-causal order without repeating the first element. `build.py` checks that every step is a
+A named loop: `{"id": "R1", "name": "…", "path": ["element-a", "element-b", …], "description": "…"}`,
+the path in causal order without repeating the first element. `build.py` checks that every step is a
 connection and that the id starts with R for an even number of `-` links, B for an odd one; the
 page gets a button for it, which highlights its elements and links, and `docs/loops/<id>.svg`
 draws it on its own, with its mark. The full drawing carries no loop marks: of its 353 feedback
-loops no mark could be traced there.
+loops no mark could be traced there. `description` says what the loop does, traced round its path
+in words each actor in it would accept: what a balancing loop seeks, how the loop drives or holds
+back adopting adaptive practices, and which response's unintended consequence it shows, where it
+shows one. `build.py` stops on a named loop without one and on any description naming a loop id
+that is not a named loop; the page's panel for the loop, the Named loops sheet and Kumu show it.
 
 ### `actors.json`
 

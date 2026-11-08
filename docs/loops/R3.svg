@@ -36,7 +36,7 @@
 <path class="link-path" d="M -114.6 -534.6 Q 7.6 -546.2 129.5 -533.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="79.7" y="-537.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="freshwater-availability-for-crops" data-to="crop-water-shortfall" data-sign="-" data-delay="false" data-curvature="0.14">
+<g class="link" data-from="freshwater-availability-for-crops" data-to="crop-water-shortfall" data-sign="-" data-delay="false" data-curvature="-0.32">
 <path class="link-path" d="M -177.2 526.9 Q -337.0 503.0 -470.3 439.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-424.6" y="459.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>

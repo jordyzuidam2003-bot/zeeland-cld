@@ -10,7 +10,7 @@
 <path class="link-path" d="M -877.3 588.9 Q -1013.1 499.0 -1102.1 386.1" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-1069.9" y="424.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="saline-seepage-kwel" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="-0.32">
+<g class="link" data-from="saline-seepage-kwel" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="0.07">
 <path class="link-path" d="M -412.2 783.2 Q -535.7 754.3 -647.5 708.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-600.9" y="726.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 <path class="delay-cut" d="M -532.4 775.5 L -517.9 729.7 M -547.6 770.7 L -533.2 724.9" stroke="white" stroke-width="11" fill="none"/>

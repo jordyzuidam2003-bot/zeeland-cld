@@ -10,8 +10,8 @@
       "subquestion": "SQ1",
       "description": "Meteorological drought (KNMI'23): higher evaporation, summer precipitation deficit, and lower river discharge.",
       "sources": [],
-      "x": -1329,
-      "y": 734
+      "x": -1208,
+      "y": 736
     },
     {
       "id": "sea-level-rise",
@@ -196,8 +196,8 @@
       "actors": [
         "rijkswaterstaat"
       ],
-      "x": -1938,
-      "y": 872
+      "x": -1467,
+      "y": 969
     },
     {
       "id": "freshwater-availability-for-crops",
@@ -459,8 +459,8 @@
         "allen-1998",
         "kaandorp-2022"
       ],
-      "x": -994,
-      "y": 1446
+      "x": -845,
+      "y": 917
     },
     {
       "id": "freshwater-supply-route",
@@ -478,8 +478,8 @@
       "actors": [
         "ienw"
       ],
-      "x": -782,
-      "y": 1720,
+      "x": -1596,
+      "y": 1358,
       "actor": "provincie-zeeland"
     },
     {
@@ -530,8 +530,8 @@
         "scheldestromen-2021-wbp",
         "reglement-scheldestromen-2025"
       ],
-      "x": -1252,
-      "y": -1316,
+      "x": -1234,
+      "y": -1129,
       "actor": "waterschap-scheldestromen"
     },
     {
@@ -1029,7 +1029,7 @@
         "de-louw-2011",
         "kaandorp-2022"
       ],
-      "curvature": -0.32
+      "curvature": 0.07
     },
     {
       "from": "soil-structure-usability",
@@ -1062,7 +1062,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": -0.45
+      "curvature": -0.14
     },
     {
       "from": "freshwater-storage-measures",
@@ -1245,7 +1245,7 @@
         "allen-1998",
         "kaandorp-2022"
       ],
-      "curvature": 0.14
+      "curvature": -0.32
     },
     {
       "from": "crop-water-shortfall",
@@ -1268,7 +1268,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": -0.32
+      "curvature": 0.32
     },
     {
       "from": "crop-water-shortfall",
@@ -2223,7 +2223,7 @@
         "de-vriend-2024-gewassen"
       ],
       "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
-      "curvature": -0.32
+      "curvature": -0.14
     },
     {
       "from": "net-price-for-new-crops",

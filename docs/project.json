@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version a90bb3d, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 7058d1f, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -4212,7 +4212,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model a90bb3d",
+      "name": "CLD, model 7058d1f",
       "description": "",
       "scale": 1,
       "center": {
@@ -4226,8 +4226,8 @@
         {
           "_id": "node-hotter-drier-summers",
           "position": {
-            "x": -1329,
-            "y": 734
+            "x": -1208,
+            "y": 736
           },
           "pinned": true,
           "style": {},
@@ -4346,8 +4346,8 @@
         {
           "_id": "node-external-freshwater-supply",
           "position": {
-            "x": -1938,
-            "y": 872
+            "x": -1467,
+            "y": 969
           },
           "pinned": true,
           "style": {},
@@ -4526,8 +4526,8 @@
         {
           "_id": "node-crop-water-shortfall",
           "position": {
-            "x": -994,
-            "y": 1446
+            "x": -845,
+            "y": 917
           },
           "pinned": true,
           "style": {},
@@ -4536,8 +4536,8 @@
         {
           "_id": "node-freshwater-supply-route",
           "position": {
-            "x": -782,
-            "y": 1720
+            "x": -1596,
+            "y": 1358
           },
           "pinned": true,
           "style": {},
@@ -4566,8 +4566,8 @@
         {
           "_id": "node-plans-to-raise-ditch-levels",
           "position": {
-            "x": -1252,
-            "y": -1316
+            "x": -1234,
+            "y": -1129
           },
           "pinned": true,
           "style": {},
@@ -4923,7 +4923,7 @@
         },
         {
           "_id": "edge-saline-seepage-kwel--freshwater-lens-thickness",
-          "curvature": -0.32,
+          "curvature": 0.07,
           "style": {},
           "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
         },
@@ -4941,7 +4941,7 @@
         },
         {
           "_id": "edge-external-freshwater-supply--freshwater-availability-for-crops",
-          "curvature": -0.45,
+          "curvature": -0.14,
           "style": {},
           "connection": "conn-external-freshwater-supply--freshwater-availability-for-crops"
         },
@@ -5043,7 +5043,7 @@
         },
         {
           "_id": "edge-freshwater-availability-for-crops--crop-water-shortfall",
-          "curvature": 0.14,
+          "curvature": -0.32,
           "style": {},
           "connection": "conn-freshwater-availability-for-crops--crop-water-shortfall"
         },
@@ -5055,7 +5055,7 @@
         },
         {
           "_id": "edge-groundwater-extraction-for-irrigation--freshwater-availability-for-crops",
-          "curvature": -0.32,
+          "curvature": 0.32,
           "style": {},
           "connection": "conn-groundwater-extraction-for-irrigation--freshwater-availability-for-crops"
         },
@@ -5613,7 +5613,7 @@
         },
         {
           "_id": "edge-freshwater-availability-for-crops--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": -0.32,
+          "curvature": -0.14,
           "style": {},
           "connection": "conn-freshwater-availability-for-crops--dependence-on-high-margin-salt-sensitive-crops"
         },
@@ -5660,8 +5660,8 @@
           "loop": "loop-R3",
           "style": {},
           "position": {
-            "x": -812,
-            "y": 429
+            "x": -795,
+            "y": 371
           }
         },
         {
@@ -5678,8 +5678,8 @@
           "loop": "loop-R5",
           "style": {},
           "position": {
-            "x": 4,
-            "y": -366
+            "x": 6,
+            "y": -353
           }
         },
         {
@@ -5687,8 +5687,8 @@
           "loop": "loop-R6",
           "style": {},
           "position": {
-            "x": -781,
-            "y": -215
+            "x": -779,
+            "y": -195
           }
         },
         {
@@ -5696,8 +5696,8 @@
           "loop": "loop-B2",
           "style": {},
           "position": {
-            "x": -792,
-            "y": -129
+            "x": -790,
+            "y": -108
           }
         },
         {
@@ -5714,8 +5714,8 @@
           "loop": "loop-B4",
           "style": {},
           "position": {
-            "x": -1235,
-            "y": 558
+            "x": -1213,
+            "y": 482
           }
         },
         {
@@ -5723,8 +5723,8 @@
           "loop": "loop-B5",
           "style": {},
           "position": {
-            "x": -1229,
-            "y": 1353
+            "x": -1180,
+            "y": 1177
           }
         },
         {
@@ -5732,8 +5732,8 @@
           "loop": "loop-B7",
           "style": {},
           "position": {
-            "x": -1115,
-            "y": -770
+            "x": -1111,
+            "y": -723
           }
         },
         {
@@ -5741,8 +5741,8 @@
           "loop": "loop-B8",
           "style": {},
           "position": {
-            "x": -1656,
-            "y": -498
+            "x": -1650,
+            "y": -435
           }
         },
         {
@@ -5759,8 +5759,8 @@
           "loop": "loop-B12",
           "style": {},
           "position": {
-            "x": -1441,
-            "y": -856
+            "x": -1432,
+            "y": -762
           }
         },
         {
@@ -5768,8 +5768,8 @@
           "loop": "loop-B9",
           "style": {},
           "position": {
-            "x": -676,
-            "y": -1394
+            "x": -666,
+            "y": -1300
           }
         },
         {
@@ -5831,8 +5831,8 @@
           "loop": "loop-B15",
           "style": {},
           "position": {
-            "x": -1448,
-            "y": 1452
+            "x": -1496,
+            "y": 1254
           }
         },
         {

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 0e33df0, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version e28328d, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -436,7 +436,7 @@
         "sets domain": "Ecological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence. Tidal silt, let in through a wisselpolder, would barely raise it on this island: the Grevelingen has no tide, and the Oosterschelde has too little silt to raise polders on a large scale (De Mesel et al., 2013). Since the storm surge barrier its channels carry 52–70% less suspended sediment (Ma et al., 2014, section 2.1), under 10 mg/l near Zierikzee, and its salt marshes rise 3–10 mm a year (van Maldegem & de Jong, 2004), against 16–32 mm on young marshes along the Westerschelde (De Mesel et al., 2013).",
+        "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence. Tidal silt, let in through a wisselpolder, would barely raise it on this island: the Grevelingen has no tide, and the Oosterschelde has too little silt to raise polders on a large scale (De Mesel et al., 2013). Since the storm surge barrier its channels carry 52–70% less suspended sediment (Ma et al., 2014, section 2.1); near Zierikzee the water holds under 10 mg/l, mostly fine sand, and its salt marshes rise 3–10 mm a year (van Maldegem & de Jong, 2004, pp. 14, 27), against 16–32 mm on young marshes along the Westerschelde (De Mesel et al., 2013).",
         "actors": "",
         "sources": "De Mesel, I., Ysebaert, T., & Kamermans, P. (2013). Klimaatbestendige dijken: Het concept wisselpolders (Rapport C072/13). IMARES Wageningen UR. https://www.vliz.be/imisdocs/publications/289823.pdf\nMa, Z., Ysebaert, T., van der Wal, D., de Jong, D. J., Li, X., & Herman, P. M. J. (2014). Long-term salt marsh vertical accretion in a tidal bay with reduced sediment supply. Estuarine, Coastal and Shelf Science, 146, 14–23. https://doi.org/10.1016/j.ecss.2014.05.001\nvan Maldegem, D., & de Jong, D. (2004). Opwassen of verdrinken: Sedimentaanvoer naar schorren in de Oosterschelde, een zandhongerig gedempt getijdesysteem (Werkdocument RIKZ/AB/2003/826x). Rijkswaterstaat, Rijksinstituut voor Kust en Zee. https://edepot.wur.nl/174582",
         "sourced": "yes"
@@ -483,7 +483,7 @@
         "subquestion": "SQ1",
         "description": "The soil's aggregates and pores, which set how fast water soaks in: well-drained clay with its structure intact let the winter's rain surplus soak through almost completely, while clay whose structure sodium had broken down became impervious and sticky when wet (van Beekom et al., 1953a, p. 157; 1953b, pp. 230, 233, measured after the floods in Zeeland). A Stock: once broken down, it recovers over years (Root zone salinity → Soil structure). Workability, which structure and wetness both shape, is Spring workability of the fields.",
         "actors": "",
-        "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953a). Reclaiming land flooded with salt water: I. Salt. Netherlands Journal of Agricultural Science, 1(3), 153–163. https://library.wur.nl/ojs/index.php/njas/article/view/17866\nvan Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953b). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 224–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860",
+        "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953a). Reclaiming land flooded with salt water: I. Salt. Netherlands Journal of Agricultural Science, 1(3), 153–163. https://library.wur.nl/ojs/index.php/njas/article/view/17866\nvan Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953b). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 225–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860",
         "sourced": "yes"
       }
     },
@@ -1463,7 +1463,7 @@
         "label": "+",
         "polarity": "positive",
         "delay": "yes",
-        "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In the thin polder lenses of Schouwen-Duiveland the mixing zone shifts at most 0.1 m within a year, with vertical flow of at most 1.2 mm per day (de Louw et al., 2011). Under a creek ridge, raising the winter water table 0.5 m thickened a 13–15 m lens by 6–8 m in ten years, and the lens had not reached its new thickness yet (Pauw et al., 2015, pp. 1424–1425, 1429, a model result for a creek ridge on Walcheren, which transfers since the island's sandy creek ridges also take in rain over saline groundwater: de Louw et al., 2011, p. 3673). On the island's own creek ridge, infiltration with controlled drainage thickened the lens under a 9.5-ha field by up to 3.5 m in ten years (Kaandorp et al., 2022, p. 44, a groundwater model of 2020–2050). So a change in recharge takes years to a decade to show in the lens.",
+        "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673). Under a creek ridge, raising the winter water table 0.5 m thickened a 13–15 m lens by 6–8 m in ten years, and the lens had not reached its new thickness yet (Pauw et al., 2015, pp. 1424–1425, 1429, a model result for a creek ridge on Walcheren, which transfers since the island's sandy creek ridges also take in rain over saline groundwater: de Louw et al., 2011, p. 3673). On the island's own creek ridge, infiltration with controlled drainage thickened the lens under a 9.5-ha field by up to 3.5 m in ten years (Kaandorp et al., 2022, p. 44, a groundwater model of 2020–2050). So a change in recharge takes years to a decade to show in the lens.",
         "sets link": "Within E",
         "sets scope": "Within domain",
         "hypothesis": "no",
@@ -1583,12 +1583,12 @@
         "label": "−",
         "polarity": "negative",
         "delay": "yes",
-        "description": "Salt in the root zone puts sodium (Na+) on the clay in place of calcium (Ca2+); once fresh water washes the salt out, clay that holds much sodium disperses: its aggregates and pores collapse, with troubles to be expected above 1 m.e. of exchangeable sodium per 100 g of dry soil. The delay is on the way back: structure collapses within the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year, which takes 5 to 10 years on heavy clay and about a year on light soil (van Beekom et al., 1953b, pp. 225–228, after the 1945 and 1953 floods in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster, and no source read shows how much sodium the island's seepage puts on its clay.",
+        "description": "Salt in the root zone puts sodium (Na+) on the clay in place of calcium (Ca2+); once fresh water washes the salt out, clay that holds much sodium disperses: its aggregates and pores collapse, with troubles to be expected above 1 m.e. of exchangeable sodium per 100 g of dry soil. The delay is on the way back: structure collapses within the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year in the top 10 cm of soil with calcium carbonate, which takes 5 to 10 years on heavy clay and about a year on light soil, while soil without it is expected to recover more slowly (van Beekom et al., 1953b, pp. 225–228, after the 1945 and 1953 floods in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster, and no source read shows how much sodium the island's seepage puts on its clay.",
         "sets link": "Within E",
         "sets scope": "Within domain",
         "hypothesis": "no",
         "simplification": "Folds Sodium on the clay, a stock between the two: the salt puts sodium on the clay, and the sodium breaks the clay's structure once the salt washes out. The sign is the product of the two steps (+, then −), so no loop through the link changes, and the stock's slowness is the link's delay. What one link distorts: the delay lies on the way back only, the structure collapsing within the first winter after the salt leaches out and recovering over years, while the link draws one delay for both ways.",
-        "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953b). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 224–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860",
+        "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953b). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 225–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860",
         "sourced": "yes",
         "connection type": "-"
       },
@@ -1648,7 +1648,7 @@
         "sets link": "Within E",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953a). Reclaiming land flooded with salt water: I. Salt. Netherlands Journal of Agricultural Science, 1(3), 153–163. https://library.wur.nl/ojs/index.php/njas/article/view/17866\nvan Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953b). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 224–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860\nde Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011",
+        "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953a). Reclaiming land flooded with salt water: I. Salt. Netherlands Journal of Agricultural Science, 1(3), 153–163. https://library.wur.nl/ojs/index.php/njas/article/view/17866\nvan Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953b). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 225–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860\nde Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011",
         "sourced": "yes",
         "connection type": "+"
       },
@@ -4333,7 +4333,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 0e33df0",
+      "name": "CLD, model e28328d",
       "description": "",
       "scale": 1,
       "center": {

@@ -2300,5 +2300,75 @@
     "publisher": "Pegasus Communications",
     "URL": "https://thesystemsthinker.com/wp-content/uploads/2016/03/Systems-Archetypes-I-TRSA01_pk.pdf",
     "genre": "Toolbox Reprint Series; first printing 1992"
+  },
+  {
+    "id": "scheldestromen-2026-kostentoedeling",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "year-suffix": "c",
+    "title": "Kostentoedelingsverordening watersysteembeheer en wegenbeheer waterschap Scheldestromen 2026",
+    "URL": "https://lokaleregelgeving.overheid.nl/CVDR752664/2"
+  },
+  {
+    "id": "scheldestromen-2026-watersysteemheffing",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "year-suffix": "d",
+    "title": "Verordening op de watersysteemheffing waterschap Scheldestromen 2026",
+    "URL": "https://lokaleregelgeving.overheid.nl/CVDR752667/2"
+  },
+  {
+    "id": "reimerswaal-2025-intentieovereenkomst",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Provincie Zeeland"
+      },
+      {
+        "literal": "Waterschap Scheldestromen"
+      },
+      {
+        "literal": "Gemeente Reimerswaal"
+      },
+      {
+        "literal": "Zeeuwse Milieufederatie"
+      },
+      {
+        "literal": "Zuidelijke Land- en Tuinbouworganisatie"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          26
+        ]
+      ]
+    },
+    "title": "Intentieovereenkomst Zoetwatervoorziening Reimerswaal",
+    "URL": "https://es-connector.zeeland.nl/content/ZLD2025-132839"
   }
 ]

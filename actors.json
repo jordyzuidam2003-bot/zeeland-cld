@@ -20,7 +20,7 @@
       "level": "Local / Provincial / Regional",
       "sector": "Arable Farming",
       "interest": "Enough fresh water when their crops need it, above all as they germinate, to lower their farms' risk or to raise production. Many want to invest in measures that hold fresh water, once the technique, its costs, its risks and its gain in yield are known for the island's conditions; while supply from outside and measures on the island are both still debated, they hold back.",
-      "influence": "Decide what the island's farmland grows and how each field is drained, irrigated and supplied with water: in 2025, 200 farms registered on the island grew arable crops on 9,094 ha, of the 13,752 ha of farmland of its 240 farms. A measure in the subsoil can serve several neighbouring farms, which collect and tap its water together; the study of the island's farms explored measures for clusters of one to three. Score 5: they decide the adaptation itself.",
+      "influence": "Decide what the island's farmland grows and how each field is drained, irrigated and supplied with water: in 2025, 200 farms registered on the island grew arable crops on 9,094 ha, of the 13,752 ha of farmland of its 240 farms. A measure in the subsoil can serve several neighbouring farms, which collect and tap its water together; the study of the island's farms explored measures for clusters of one to three. As owners of farmland they decide whether the water board may charge them more for a water supply project: at least half must respond and two thirds of those be in favour. On a draft water level plan they can send views within six weeks and, if affected, appeal at the court for six weeks after the decision. Score 5: they decide the adaptation itself.",
       "affected": "Their farms depend wholly on rain and on the fresh groundwater under the dunes, the creek ridges and the thin rainwater lenses of the low polders: the island has no link to the main freshwater system, so in dry periods no water can be brought in and no ditches flushed, its shallow groundwater and ditches carry much salt, and the farms run short of water; drought in the growing season, subsidence and sea level rise make this worse, and the dry years 2018–2020 showed the farms vulnerable. Delphy's report on the island's freshwater demand (2023) finds farming on the island impossible without more fresh water; in 2026 a potato grower at Nieuwerkerk lost a fifth of his harvest to drought, had stopped growing onions for want of fresh water, and found ditch water at times nearly as salt as the Oosterschelde. Adapting is uncertain for them: the measures that store fresh water in the subsoil are not yet fitted to the island's conditions, their costs, risks and gain in yield unknown, so many farmers find the investment too risky to make alone.",
       "influence score": 5,
       "client": "no",
@@ -30,7 +30,9 @@
         "cbs-2026-landbouw-gemeente",
         "omroep-zeeland-2023-zoet-water",
         "omroep-zeeland-2026-aardappeloogst",
-        "wiepkema-2023-zoetwaterbehoefte"
+        "wiepkema-2023-zoetwaterbehoefte",
+        "waterschapswet-2026",
+        "scheldestromen-2025-nota-peilbesluiten"
       ],
       "x": 1848,
       "y": 1218
@@ -43,7 +45,7 @@
       "level": "Local / Provincial / Regional",
       "sector": "Water management",
       "interest": "Safe dikes and dunes first; then an optimal use of the water system, its ditch levels matched to soil and land use, fresh water kept available where it can and fresh groundwater kept in stock, within costs society accepts. It has no task as a supplier of fresh water: measures beyond its regular water management are for the users of the fresh water to pay.",
-      "influence": "Sets the island's ditch levels in its water level plans (peilbesluiten: Duiveland 2021, Schouwen 2022), matched as far as it can to soil type and land use such as farming, after a process with the people of the area; sets and enforces the rules for farms' groundwater extraction for irrigation in its waterschapsverordening, a notification within limits per hectare and per well, a permit beyond them. Score 5: it decides binding rules for the island's farms.",
+      "influence": "Sets the island's ditch levels in its water level plans (peilbesluiten: Duiveland 2021, Schouwen 2022), for the waters the province designates, to be held as far as possible, matched as far as it can to soil type and land use such as farming, after a process with the people of the area; sets and enforces the rules for farms' groundwater extraction for irrigation in its waterschapsverordening, a notification within limits per hectare and per well, a permit beyond them. Its general board sets the levy that pays for its water management: for 2026 the owners of unbuilt land other than nature, farmland among them, carry 22.78% of the costs, at €115.53 a hectare, one rate across its whole area. It may charge the farmland a water supply project serves up to 100% more, once at least half of the owners have responded and two thirds of those are in favour; it charges more for its supply projects on Tholen and Sint Philipsland (10 to 50%) and in the Reigersbergsche polder (35 to 45%). It can take project decisions and expropriate land for its water tasks only. Of the 30 seats on its general board, 26 are for residents, two for unbuilt land and two for nature. Score 5: it decides binding rules for the island's farms.",
       "affected": "Salinisation and drought enter its tasks: with sea level rise, drought and subsidence, more of its area faces salinisation; drought strengthens saline seepage, which is hard to undo; and drought, warming and salinisation affect the ecology of its waters. Dry springs and summers showed farming's need for fresh water in those seasons: supplying it is no legal duty of the board, yet a clear need in society, which it answers within its core tasks, using its surface water system to counter drought and keep fresh water available, exploring its treatment plants' effluent as a source and the sustainable use of fresh groundwater. Its budget for fresh water is limited, the costs fall to whoever benefits, and its legal means to charge them are limited. Farms' groundwater extraction asks more of its knowledge, monitoring, permits and enforcement, since extracting too much too fast draws up the salt water under the lenses; where too little fresh water is available, drying damages roads, nature and dikes.",
       "influence score": 5,
       "client": "no",
@@ -76,7 +78,10 @@
         "scheldestromen-2022-peilbesluit-schouwen",
         "scheldestromen-2026-grondwater",
         "waterschapswet-2026",
-        "omgevingswet-2026"
+        "omgevingswet-2026",
+        "scheldestromen-2026-kostentoedeling",
+        "scheldestromen-2026-watersysteemheffing",
+        "reglement-scheldestromen-2025"
       ],
       "x": 2228,
       "y": 1220
@@ -89,7 +94,7 @@
       "level": "Local / Provincial / Regional",
       "sector": "Government",
       "interest": "A vital and liveable countryside, with farming, one of the island's main economic pillars, made climate-proof against salinisation, subsidence and extreme weather, and a reliable water system; water basins on farmland fitted into the landscape.",
-      "influence": "Its council sets the omgevingsplan, since 1 January 2024 the one plan for the use of all land and buildings on the island, farmland included; its executive decides where a farm may build a water basin outside its building plot; it pays part of farms' advice, research and machines for fresh water and climate-proof farming, and leads the Living Lab Schouwen-Duiveland. Score 5: it decides binding plans for the island's farms.",
+      "influence": "Its council sets the omgevingsplan, since 1 January 2024 the one plan for the use of all land and buildings on the island, farmland included, and may expropriate land for a use that plan allows, where that is necessary and urgent, and establish a right of first refusal on land given a non-agricultural function; its executive decides where a farm may build a water basin outside its building plot; it pays part of farms' advice, research and machines for fresh water and climate-proof farming, and leads the Living Lab Schouwen-Duiveland. Score 5: it decides binding plans for the island's farms.",
       "affected": "Salinisation, subsidence and extreme weather put pressure on farming, one of the island's main economic pillars, and with it on the vital and liveable countryside the municipality seeks to keep. It budgets €1.1 million for a new Living Lab programme (2025), so that the farm sector stays diverse and resilient; its subsidy for farms' advice, research and machines for fresh water opens on 1 October 2026. The water basins farms build against drought damage have a spatial impact on the landscape, so the municipality sets how a basin outside a building plot is fitted into it.",
       "influence score": 5,
       "client": "no",
@@ -197,7 +202,7 @@
       "level": "Local / Provincial / Regional",
       "sector": "Government",
       "interest": "Keeping agriculture in the delta, for the fertile deltas' part in world food production, and strengthening nature; enough fresh water and good water quality, worked out with stakeholders in the Zeeuws Deltaplan Zoet Water; groundwater extraction in balance with its recharge.",
-      "influence": "Sets regional water policy and the omgevingsverordening, whose rules reach the water board, the municipalities, residents and businesses, among them instruction rules the water board's water level plans and the municipality's omgevingsplan follow; sets the water board's tasks and rules of organisation and supervises it; grants the permits for groundwater extraction above 150,000 m³ a year, for drinking water and for open soil energy systems. Score 5: it decides binding rules for the island's farms, mostly through the water board's and the municipality's decisions.",
+      "influence": "Sets regional water policy and the omgevingsverordening, whose rules reach the water board, the municipalities, residents and businesses, among them instruction rules the water board's water level plans and the municipality's omgevingsplan follow; sets the water board's tasks and rules of organisation and supervises it, its executive able to annul any of the board's decisions; designates in the omgevingsverordening the waters that need a water level plan; grants the permits for groundwater extraction above 150,000 m³ a year, for drinking water and for open soil energy systems. It may take project decisions and, for a provincial interest or where that is efficient, expropriate land, and for a provincial interest establish a right of first refusal on land given a non-agricultural function. In its omgevingsverordening it may rank the uses within the two lowest categories of the verdringingsreeks; no source read shows Zeeland doing so. It commissioned a study of a fresh water pipeline to the island (2021), after the farming sector pressed for one; the study leaves open who pays and who would run it, and no source read shows a decision on a route. Score 5: it decides binding rules for the island's farms, mostly through the water board's and the municipality's decisions.",
       "affected": "Zeeland has very little supply of fresh water of its own and salinisation as a specific concern; climate change raises the chance that demand for fresh water outruns supply, with negative consequences for agricultural yields and nature values, against its aim of keeping agriculture in the delta. Long drought causes water shortages, and sea level rise more (saline) seepage. Farms' groundwater extraction bears on its policy of balance between extraction and recharge: it researches registering extractions and extends the groundwater monitoring network to follow the small fresh groundwater stocks better.",
       "influence score": 5,
       "client": "no",
@@ -248,7 +253,9 @@
         "provincie-zeeland-2025-rwp",
         "waterschapswet-2026",
         "omgevingswet-2026",
-        "nioz-2023-dcc"
+        "nioz-2023-dcc",
+        "iplo-verdringingsreeks",
+        "witteveen-bos-2021"
       ],
       "x": 2367,
       "y": 1435
@@ -293,7 +300,7 @@
       "level": "National",
       "sector": "Food processing",
       "interest": "Raw material of the volume and quality their plants and customers need. Cosun Beet Company, owned by its growers as a cooperative, wants the most value from the beet and good long-term returns for its members, its production in balance with its sales; a potato processor secures its supply through contracts that fix a volume and often its price.",
-      "influence": "Decide what they take from the island's farms, at what price and to what quality. Cosun Beet Company, part of Royal Cosun, the growers' cooperative that also owns the potato processor Aviko, processes all sugar beet grown in the Netherlands: it sets how much beet each member may deliver (for 2026 cut from 100% to 90% of the allocation, after high yields and with sales limited) and advises its growers field by field. The Dutch potato processing industry turns about 4 million tonnes of potatoes a year into frozen products, an estimated 80% of them exported; of the potatoes for the industry, 5 to 10% are sold free and the rest under contract or in a pool (2020), a contract fixing a volume per hectare and often its price, with bonuses for quality and grading and deductions for tare; Aviko, Farm Frites, Lamb Weston/Meijer and McCain are the processors whose contract prices are reported. Measured nationally: no source read shows which buyers take the island's potatoes, onions and vegetables, or their shares there. Score 4: they decide the sales many of the island's farms depend on, without binding them.",
+      "influence": "Decide what they take from the island's farms, at what price and to what quality. Cosun Beet Company, part of Royal Cosun, the growers' cooperative that also owns the potato processor Aviko, processes all sugar beet grown in the Netherlands: it sets how much beet each member may deliver (for 2026 cut from 100% to 90% of the allocation, after high yields and with sales limited) and advises its growers field by field. The Dutch potato processing industry turns about 4 million tonnes of potatoes a year into frozen products, an estimated 80% of them exported; of the potatoes for the industry, 5 to 10% are sold free and the rest under contract or in a pool (2020), a contract fixing a volume per hectare and often its price, with bonuses for quality and grading and deductions for tare; Aviko, Farm Frites, Lamb Weston/Meijer and McCain are the processors whose contract prices are reported. Measured nationally: no source read shows which buyers take the island's potatoes, onions and vegetables, or their shares there. No source read shows a buyer building, keeping or closing a plant for new salt-tolerant crops on or near the island. Score 4: they decide the sales many of the island's farms depend on, without binding them.",
       "affected": "In a drought their supply shrinks and its quality falls, measured nationally: in 2018 the Dutch harvest was expected to be 23% smaller for potatoes, 13% for sugar beet and 44% for onions than a year earlier (CBS's estimate from a survey of 5,000 farmers), and north-western Europe's potato yield at least 15 to 25% below the long-term average. About 80% of the Dutch potato crop is sold to processors under contract, at around nine cents a kilo in 2018, while free-market potatoes reached 30 cents; many growers expected not to deliver their contracted volume, and growers asked the processors to share the cost of extra irrigation and to accept force majeure, while the processors held that a grower under contract should irrigate. Processors want potatoes of at least 40 mm, which many would not reach, and the potatoes' very high dry matter risked damage at harvest. No source read shows how salinisation on the island affects the buyers and processors.",
       "influence score": 4,
       "client": "no",
@@ -343,7 +350,7 @@
       "level": "Local / Provincial / Regional",
       "sector": "Farmers organisation",
       "interest": "The continuity of farming and horticulture and a future for farmers and growers. On the island, more fresh water: in its island branch's words (2023), catching more rain and a collective system that brings fresh water to the island, a pipeline from the Haringvliet shared among the farmers.",
-      "influence": "The association of 11,500 farmers and growers in Zeeland, Noord-Brabant and Zuid-Gelderland, in 44 local branches that speak for their members to the municipality and the water board; its board appoints the two members for unbuilt land, farmland included, of the water board's general board of 30; it takes the initiative in the plan that carries out the Deltaplan Agrarisch Waterbeheer in Zeeland, with the water board and the province; on the island its branch looks for more fresh water with the municipality and the province, and Delphy's report on the island's freshwater demand (2023), whose conclusions the branch welcomed, finds that farming there becomes impossible without more fresh water. Score 3: it shapes the water board's, the municipality's and the province's decisions directly by representing farmers, binding none.",
+      "influence": "The association of 11,500 farmers and growers in Zeeland, Noord-Brabant and Zuid-Gelderland, in 44 local branches that speak for their members to the municipality and the water board; its board appoints the two members for unbuilt land, farmland included, of the water board's general board of 30; it takes the initiative in the plan that carries out the Deltaplan Agrarisch Waterbeheer in Zeeland, with the water board and the province; on the island its branch looks for more fresh water with the municipality and the province, and Delphy's report on the island's freshwater demand (2023), whose conclusions the branch welcomed, finds that farming there becomes impossible without more fresh water. Its island branch has called a pipeline from the Haringvliet the one solution (2023). In Reimerswaal, elsewhere in Zeeland, a request from its local branch to the water board and the province (2020) started the study of an extended fresh water supply, and it is a party to the intention agreement on that supply (2025), leading the work of gaining the farmers' support for it. Score 3: it shapes the water board's, the municipality's and the province's decisions directly by representing farmers, binding none.",
       "affected": "Its members' farms bear the losses: in a ZLTO board member's words (2022), drought salinised farmland, which harms crops, and made Zeeland's potato harvest considerably smaller; its island branch's chair (2023) expects the farms still active there in 2030 to have almost no income. It answers by asking for fresh water collectively: storage for rain, and pipelines from the rivers to farmland, which need large investments and more from the national government.",
       "influence score": 3,
       "client": "no",
@@ -386,7 +393,8 @@
         "omroep-zeeland-2023-zoet-water",
         "omroep-zeeland-2026-aardappeloogst",
         "anp-2022-zoetwater",
-        "wiepkema-2023-zoetwaterbehoefte"
+        "wiepkema-2023-zoetwaterbehoefte",
+        "reimerswaal-2025-intentieovereenkomst"
       ],
       "x": 2061,
       "y": 1415

@@ -471,6 +471,23 @@
       "y": 917
     },
     {
+      "id": "zlto-call-for-supply-route",
+      "label": "ZLTO's call for a supply route",
+      "element type": "Auxiliary",
+      "adaptive practice": false,
+      "sets domain": "Social",
+      "subsystem": "Water and soil",
+      "subquestion": "SQ2",
+      "description": "How firmly ZLTO asks the province, the municipality and the water board for a route bringing fresh water to the island. After a report on the island's freshwater demand, its branch there called a pipeline from the Haringvliet the one solution (Omroep Zeeland, 2023), and its chair looks for more fresh water with the municipality and the province (van Essen, 2026). An Auxiliary: it follows the shortfall farmers report and holds nothing of its own.",
+      "sources": [
+        "omroep-zeeland-2023-zoet-water",
+        "omroep-zeeland-2026-aardappeloogst"
+      ],
+      "x": -1220,
+      "y": 1138,
+      "actor": "zlto"
+    },
+    {
       "id": "freshwater-supply-route",
       "label": "Freshwater supply route to the island",
       "element type": "Stock",
@@ -478,10 +495,14 @@
       "sets domain": "Technological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "Pipes or channels that could bring fresh water to the island, as their capacity in a summer; none exists. Who decides on one and who pays is on the facts list under External freshwater supply; news reports say the province has costed a pipeline (unread at the source). IenW shapes it twice: its minister allots the Delta Fund, from which a freshwater region can claim 25% of a regional measure's cost, up to 50% for an innovative one or one carried out by several regions (Algemene Rekenkamer, 2026, p. 31); and the Delta Programme 2027, under the Delta Commissioner's direction and presented by the minister with the Delta Fund's budget, proposes that the south-west delta's areas with no supply from outside speed up their way to self-sufficiency, the region open to exploring small extensions of the supplied area that add evident value, are future-proof and keep the extra demand on the Volkerak-Zoommeer limited, the demand on the Hollandsch Diep and Haringvliet not raised (Ministerie van Infrastructuur en Waterstaat et al., 2026, pp. 88–89).",
+      "description": "Pipes or channels that could bring fresh water to the island, as their capacity in a summer; none exists. Provincie Zeeland, the actor here as the only body shown acting on the island's route, had a pipeline explored after the farming sector pressed for one (Witteveen+Bos, 2021, p. 7); the study leaves open who pays and who would run it (p. 51), and no source read shows a decision. By law a project decision can come from the water board's executive, for its water tasks, the province's or a minister (Omgevingswet, 2026, art. 5.44), and the water board may charge the farmland a supply project serves up to 100% more, once at least half of its owners have responded and two thirds of those are in favour (Waterschapswet, 2026, art. 122); it charges more for its supply projects on Tholen and Sint Philipsland and in the Reigersbergsche polder (Waterschap Scheldestromen, 2026c, arts. 5–6). IenW shapes it twice: its minister allots the Delta Fund, from which a freshwater region can claim 25% of a regional measure's cost, up to 50% for an innovative one or one carried out by several regions (Algemene Rekenkamer, 2026, p. 31); and the Delta Programme 2027, under the Delta Commissioner's direction and presented by the minister with the Delta Fund's budget, proposes that the south-west delta's areas with no supply from outside speed up their way to self-sufficiency, the region open to exploring small extensions of the supplied area that add evident value, are future-proof and keep the extra demand on the Volkerak-Zoommeer limited, the demand on the Hollandsch Diep and Haringvliet not raised (Ministerie van Infrastructuur en Waterstaat et al., 2026, pp. 88–89).",
       "sources": [
         "rekenkamer-2026-zoetwater",
-        "deltaprogramma-2027"
+        "deltaprogramma-2027",
+        "witteveen-bos-2021",
+        "omgevingswet-2026",
+        "waterschapswet-2026",
+        "scheldestromen-2026-kostentoedeling"
       ],
       "actors": [
         "ienw"
@@ -564,8 +585,11 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "What the water board charges owners and users of farmland for its water management, pumping included.",
-      "sources": [],
+      "description": "What Waterschap Scheldestromen charges on farmland for its water management, pumping included. The law charges those who hold unbuilt land by ownership, possession or a limited right (Waterschapswet, 2026, art. 117), which leaves out its tenants, at one rate per hectare (art. 121): €115.53 for 2026 (Waterschap Scheldestromen, 2026d, art. 6).",
+      "sources": [
+        "waterschapswet-2026",
+        "scheldestromen-2026-watersysteemheffing"
+      ],
       "x": -18,
       "y": -343,
       "actor": "waterschap-scheldestromen"
@@ -1334,10 +1358,22 @@
     },
     {
       "from": "crop-water-shortfall",
+      "to": "zlto-call-for-supply-route",
+      "polarity": "+",
+      "delay": false,
+      "description": "Harvests lost to drought are the reason the farming sector gives for pressing for a pipeline to the island (Witteveen+Bos, 2021, p. 7), and ZLTO's branch there called for one after a report on the shortage (Omroep Zeeland, 2023). No delay drawn: how quickly a dry summer turns into a call, no source read shows.",
+      "sources": [
+        "witteveen-bos-2021",
+        "omroep-zeeland-2023-zoet-water"
+      ],
+      "curvature": 0.2
+    },
+    {
+      "from": "zlto-call-for-supply-route",
       "to": "freshwater-supply-route",
       "polarity": "+",
       "delay": true,
-      "description": "Farmers short of water, through their organisations, ask for a supply route, and the deciding body weighs it. Years, so a delay: a route has to be decided on, paid for and built.",
+      "description": "The body deciding on a route weighs the call; so far a study has followed and no route has been decided on (Freshwater supply route to the island). Years, so a delay: a route has to be decided on, paid for and built.",
       "sources": [],
       "curvature": 0.32,
       "hypothesis": true
@@ -1500,8 +1536,11 @@
       "to": "water-board-levy-on-farmland",
       "polarity": "+",
       "delay": false,
-      "description": "The board passes its pumping costs on through its levy.",
-      "sources": [],
+      "description": "The board passes its pumping costs on through its levy, part of the costs of its water management, of which unbuilt land other than nature carries 22.78% for 2026 (Waterschap Scheldestromen, 2026c, art. 2). One rate holds across its whole area, so a cost that rises on the island is spread over all of it: the law lets the board charge pumped areas up to 100% more (Waterschapswet, 2026, art. 122), and its ordinance for 2026 does not.",
+      "sources": [
+        "scheldestromen-2026-kostentoedeling",
+        "waterschapswet-2026"
+      ],
       "curvature": 0.07
     },
     {
@@ -2538,11 +2577,12 @@
       "name": "Asking for a supply route",
       "path": [
         "crop-water-shortfall",
+        "zlto-call-for-supply-route",
         "freshwater-supply-route",
         "external-freshwater-supply",
         "freshwater-availability-for-crops"
       ],
-      "description": "Farmers short of water, through their organisations, ask for a supply route, and the deciding body weighs it over the years a route takes to decide, pay for and build. A route would carry fresh water to the island, crops would have more to draw on and the shortfall would shrink. None exists, so the loop has not run yet; who decides and who pays is on the facts list under External freshwater supply. It seeks a shortfall the deciding body finds acceptable. Where it eased the shortfall it would ease the worse harvests that make storing worthwhile (B4)."
+      "description": "The shorter of water the farms, the more firmly ZLTO asks for a supply route, and the deciding body weighs that call over the years a route takes to decide, pay for and build. A route would carry fresh water to the island, crops would have more to draw on and the shortfall would shrink. None exists, so the loop has not run yet; a study has left open who pays and who would run one. It seeks a shortfall the deciding body finds acceptable. Where it eased the shortfall it would ease the worse harvests that make storing worthwhile (B4)."
     },
     {
       "id": "B16",
@@ -2666,24 +2706,28 @@
           731
         ],
         "freshwater-supply-route": [
-          -500,
-          -190
+          -800,
+          0
         ],
         "external-freshwater-supply": [
-          -500,
-          190
+          -470,
+          185
         ],
         "groundwater-extraction-for-irrigation": [
-          -1180,
+          -1500,
           0
         ],
         "creek-ridge-lens-thickness": [
-          -1740,
+          -2060,
           320
         ],
         "pumping-the-water-board-allows": [
-          -1740,
+          -2060,
           -320
+        ],
+        "zlto-call-for-supply-route": [
+          -470,
+          -185
         ]
       },
       "bends": {
@@ -2696,24 +2740,25 @@
         "freshwater-lens-recharge -> freshwater-lens-thickness": 0.16,
         "freshwater-lens-thickness -> freshwater-availability-for-crops": 0.16,
         "crop-water-shortfall -> crop-yield": 0.16,
-        "crop-water-shortfall -> freshwater-supply-route": -0.16,
         "freshwater-supply-route -> external-freshwater-supply": -0.16,
         "external-freshwater-supply -> freshwater-availability-for-crops": -0.16,
         "creek-ridge-lens-thickness -> pumping-the-water-board-allows": 0.16,
         "pumping-the-water-board-allows -> groundwater-extraction-for-irrigation": 0.16,
-        "groundwater-extraction-for-irrigation -> creek-ridge-lens-thickness": 0.16
+        "groundwater-extraction-for-irrigation -> creek-ridge-lens-thickness": 0.16,
+        "crop-water-shortfall -> zlto-call-for-supply-route": -0.16,
+        "zlto-call-for-supply-route -> freshwater-supply-route": -0.16
       },
       "marks": {
         "B11": [
-          -1556,
+          -1876,
           8
         ],
         "B15": [
-          -244,
+          -270,
           -4
         ],
         "B5": [
-          -636,
+          -1180,
           -4
         ],
         "B4": [

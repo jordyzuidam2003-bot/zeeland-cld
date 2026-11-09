@@ -124,9 +124,11 @@
 <path class="link-path" d="M 1763.7 -698.0 Q 957.3 -140.9 557.5 754.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="578.2" y="708.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="false" data-curvature="-0.14">
+<g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="true" data-curvature="-0.14" data-delay-t="0.52">
 <path class="link-path" d="M 492.6 94.0 Q 468.7 -266.4 261.1 -562.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="289.1" y="-520.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 398.3 -247.5 L 443.3 -264.0 M 392.8 -262.6 L 437.9 -279.1" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 398.3 -247.5 L 443.3 -264.0 M 392.8 -262.6 L 437.9 -279.1" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="farm-revenue" data-to="farmers-capacity-to-invest" data-sign="+" data-delay="false" data-curvature="-0.22">
 <path class="link-path" d="M 560.6 94.0 Q 727.6 4.6 774.5 -179.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -338,9 +340,11 @@
 <path class="link-path" d="M 188.9 1722.0 Q 187.5 1668.0 186.1 1614.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="187.4" y="1664.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="harvest-of-new-crops-to-process" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="false" data-curvature="-0.22">
+<g class="link" data-from="harvest-of-new-crops-to-process" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="true" data-curvature="-0.22" data-delay-t="0.48">
 <path class="link-path" d="M 347.4 1565.8 Q 504.0 1566.8 610.4 1452.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="574.2" y="1486.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 469.6 1520.9 L 487.9 1565.3 M 484.4 1514.8 L 502.7 1559.2" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 469.6 1520.9 L 487.9 1565.3 M 484.4 1514.8 L 502.7 1559.2" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="market-demand-for-alternative-crops" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="false" data-curvature="0.0">
 <path class="link-path" d="M 667.3 1097.0 Q 665.0 1231.5 662.7 1366.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -454,9 +458,11 @@
 <path class="link-path" d="M 393.4 -797.0 Q 182.9 -682.6 -56.4 -694.1" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-6.5" y="-693.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="agricultural-land-value" data-to="farmland-leaving-arable-use" data-sign="+" data-delay="false" data-curvature="0.07">
+<g class="link" data-from="agricultural-land-value" data-to="farmland-leaving-arable-use" data-sign="+" data-delay="true" data-curvature="0.07" data-delay-t="0.24">
 <path class="link-path" d="M 92.9 -620.4 Q 10.9 -625.6 -66.4 -653.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-18.7" y="-638.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 58.6 -599.3 L 64.8 -646.9 M 42.8 -601.4 L 49.0 -649.0" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 58.6 -599.3 L 64.8 -646.9 M 42.8 -601.4 L 49.0 -649.0" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="farmland-leaving-arable-use" data-to="demand-for-deep-polder-drainage" data-sign="+" data-delay="false" data-curvature="-0.14">
 <path class="link-path" d="M -224.7 -739.0 Q -325.8 -967.3 -530.7 -1110.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -668,8 +674,8 @@
 <text x="668.0" y="1045.5" text-anchor="middle">Market demand for</text>
 <text x="668.0" y="1079.5" text-anchor="middle">alternative crops</text>
 </g>
-<g class="element" data-id="processing-capacity-for-alternative-crops" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
-<rect x="484.8" y="1366.0" width="354.5" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="processing-capacity-for-alternative-crops" data-domain="Technological" data-type="Stock" data-adaptive="false">
+<rect x="484.8" y="1366.0" width="354.5" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
 <text x="662.0" y="1400.5" text-anchor="middle">Local processing</text>
 <text x="662.0" y="1434.5" text-anchor="middle">capacity for new crops</text>
 </g>
@@ -678,8 +684,8 @@
 <text x="505.0" y="788.5" text-anchor="middle">Adoption of new</text>
 <text x="505.0" y="822.5" text-anchor="middle">salt-tolerant crops</text>
 </g>
-<g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="92.9" y="-648.0" width="280.3" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="92.9" y="-648.0" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="233.0" y="-613.5" text-anchor="middle">Agricultural land</text>
 <text x="233.0" y="-579.5" text-anchor="middle">value</text>
 </g>
@@ -703,8 +709,8 @@
 <rect x="379.4" y="94.0" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="475.0" y="128.5" text-anchor="middle">Farm income</text>
 </g>
-<g class="element" data-id="farmers-capacity-to-invest" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="628.6" y="-265.0" width="324.8" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="farmers-capacity-to-invest" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="628.6" y="-265.0" width="324.8" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="791.0" y="-230.5" text-anchor="middle">Farmers' capacity to</text>
 <text x="791.0" y="-196.5" text-anchor="middle">invest</text>
 </g>

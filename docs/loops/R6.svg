@@ -20,9 +20,11 @@
 <path class="link-path" d="M -136.9 -532.2 Q -19.0 -545.7 99.8 -535.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="49.9" y="-539.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="false" data-curvature="-0.14">
+<g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="true" data-curvature="-0.14">
 <path class="link-path" d="M -677.5 -296.0 Q -574.6 -400.6 -413.3 -464.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-459.3" y="-444.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -579.6 -406.4 L -553.8 -365.9 M -566.1 -415.0 L -540.3 -374.5" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -579.6 -406.4 L -553.8 -365.9 M -566.1 -415.0 L -540.3 -374.5" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="polder-drainage-depth" data-to="saline-seepage-kwel" data-sign="+" data-delay="false" data-curvature="0.07">
 <path class="link-path" d="M 789.8 119.8 Q 736.5 276.1 563.9 387.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -48,8 +50,8 @@
 </g>
 </g>
 <g class="elements">
-<g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-417.2" y="-550.4" width="280.3" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="-417.2" y="-550.4" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-277.0" y="-515.9" text-anchor="middle">Agricultural land</text>
 <text x="-277.0" y="-481.9" text-anchor="middle">value</text>
 </g>

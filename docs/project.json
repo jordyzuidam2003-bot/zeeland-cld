@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 8e52585, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 9a14be0, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -565,10 +565,10 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Objections, appeals at the Council of State (Raad van State) and political pressure against plans for the island's water and land, the water board's water level plans among them, which slow, change or stop a plan.",
+        "description": "The views and appeals against the plans for the island's water and land while a plan is pending, the water board's level plans among them, which can slow, change or stop it. On a level plan, the views come in the six weeks its draft lies open and are answered in the decision, and anyone affected may appeal at the court for six weeks after it (Waterschap Scheldestromen, 2025, pp. 17–18). No source read gives the routes for the other bodies' plans.",
         "actors": "Waterschap Scheldestromen, Gemeente Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Waterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf",
+        "sourced": "yes"
       }
     },
     {
@@ -621,16 +621,16 @@
       "_id": "elem-processing-capacity-for-alternative-crops",
       "attributes": {
         "label": "Local processing  capacity for new crops",
-        "element type": "Auxiliary",
+        "element type": "Stock",
         "adaptive practice": "no",
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Plants and supply chains on or near the island that store, process or sell new salt-tolerant crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer. Buyers and processors build or keep it where they find it worthwhile against processing the crops elsewhere.",
+        "description": "Plants and supply chains on or near the island that store, process or sell new salt-tolerant crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer. No source read shows a new crop processed on the island. Sea vegetables are sorted and packed by hand by a grower and trader at Nieuw- en Sint Joosland, who sells to restaurants and supermarkets at home and abroad and works with a colleague from Schouwen-Duiveland (FreshPlaza, 2018), its company growing at Colijnsplaat (EU CAP Network, 2023). Dutch quinoa's chain is run from Wageningen by GreenFood50, which has its quinoa grown close to its processing facilities (GreenFood50, n.d.), and a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a). Buyers and processors build or keep it where they find it worthwhile against processing the crops elsewhere.",
         "actor": "Buyers and processors of the island's crops",
         "actors": "Buyers and processors of the island's crops",
-        "sources": "",
-        "sourced": "no"
+        "sources": "FreshPlaza. (2018, June 22). Elenbaas invests in new salty Zeeland productions in greenhouses. https://www.freshplaza.com/north-america/article/2196870/elenbaas-invests-in-new-salty-zeeland-productions-in-greenhouses/\nEU CAP Network. (2023). 'Zeeland's roots for new crops': Growing sea bananas and sea fennel on saline land thanks to LEADER climate adaptation support [Good practice report]. European Commission. https://eu-cap-network.ec.europa.eu/sites/default/files/2023-07/Zeeland%E2%80%99s%20roots%20for%20new%20crops.pdf\nGreenFood50. (n.d.). The specialist in quinoa ingredients [Home page and About us]. Retrieved November 7, 2026, from https://www.greenfood50.com/\nDe Vriend, E. (2024a, October 12). Toekomst van voedsel in Zeeland: wat eten we morgen? Stal & Akker. https://sterke-erven.nl/artikel/528976-toekomst-van-voedsel-in-zeeland-wat-eten-we-morgen/",
+        "sourced": "yes"
       }
     },
     {
@@ -642,27 +642,27 @@
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Hectares under crops new to the island's rotations that tolerate salt (quinoa, samphire, sea aster), which need other machines, knowledge and buyers than the current crops. Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them.",
+        "description": "Hectares under crops new to the island's rotations that tolerate salt. The island's rotations hold potato, onion, sugar beet, cereals and grass seed (Kaandorp et al., 2022, p. 30), and no source read shows a new crop grown on the island. Elsewhere in Zeeland, most still experimental and small (Deolu-Ajayi et al., 2024, p. 57): samphire and sea aster, irrigated with saline water on the edges of salt marshes at Emmadorp, Waterdunen and Wolphaarsdijk, labour intensive and seasonal, their sales low (van den Burg et al., 2024, p. 6); sea fennel and sea banana on an arable farm at Colijnsplaat, where a new company worked out how to grow them, in fields and greenhouses, and set up their supply chain (EU CAP Network, 2023). Quinoa grows to maturity on irrigation water of more than 250 mM NaCl (van Loo, 2023, p. 77) and is sown with standard equipment and harvested with a combine, but needs a fine seed bed and weed control set by its row distance (p. 75). Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them.",
         "actor": "Arable farmers on Schouwen-Duiveland",
         "actors": "Arable farmers on Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nDeolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nEU CAP Network. (2023). 'Zeeland's roots for new crops': Growing sea bananas and sea fennel on saline land thanks to LEADER climate adaptation support [Good practice report]. European Commission. https://eu-cap-network.ec.europa.eu/sites/default/files/2023-07/Zeeland%E2%80%99s%20roots%20for%20new%20crops.pdf\nvan Loo, R. (2023). Quinoa: A new protein source. In S. Pyett, W. Jenkins, B. van Mierlo, L. M. Trindade, D. Welch, & H. van Zanten (Eds.), Our future proteins: A diversity of perspectives (pp. 74–81). VU University Press. https://vuuniversitypress.com/p/uploads/OurFutureProteinsOA.pdf",
+        "sourced": "yes"
       }
     },
     {
       "_id": "elem-agricultural-land-value",
       "attributes": {
         "label": "Agricultural land  value",
-        "element type": "Auxiliary",
+        "element type": "Stock",
         "adaptive practice": "no",
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "The price farmland sells for (€/ha), set by what buyers expect it to earn; banks value it as collateral in their own risk assessment.",
+        "description": "The price unlet farmland on the island sells for (€/ha), set by what buyers expect to earn from it. A buyer bids at most what an extra hectare can earn back over the years of the investment (Farjon et al., 2013, p. 2), and the price is set for an important part by what expanding farms earn on extra hectares, their income and expectations combined with what they can borrow: scale enlargement and low interest rates hold it up, swings in what the land earns and limits on banks' financing of land press it down (Silvis & Voskuilen, 2017, pp. 1–3). So it has risen far faster than what the land earns on average, tenfold since 1970 against two to three times for net value added (Farjon et al., 2013, p. 1). Farmers bought 54% of the land traded in the Netherlands from 2012 to early 2023 and investors 9%, their segment among the most active in Zeeland, where just over 1.5% of the farmland changes hands in a year (Kuiper et al., 2023, pp. 1–2). Banks hold it as security for their loans (Farjon et al., 2013, p. 3). No source read gives the island's land prices.",
         "simplification": "A soil's structure enters the land's value only through what the land earns (Soil structure → Crop yield → Farm income → this element), the sign the same, since buyers price what they expect it to earn. What it leaves out: any value a buyer gives good soil beyond its income.",
         "actors": "",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Silvis, H., & Voskuilen, M. (2017). Betaalbaarheid en financierbaarheid van landbouwgrond (Notitie 2017-098). Wageningen Economic Research. https://edepot.wur.nl/426065\nFarjon, H., Silvis, H., Vader, J., Voskuilen, M., & Agricola, H. (2013, December). Prijs hoger dan de waarde van landbouwgrond. Landwerk. PBL Netherlands Environmental Assessment Agency. https://www.pbl.nl/publicaties/prijs-hoger-dan-de-waarde-van-landbouwgrond\nKuiper, P. P., Prins, L., Woltjer, J., & Voskuilen, M. (2023). Aankoop landbouwgrond voor wonen, werken en infrastructuur vooral in westen en zuiden [Themabericht, bijlage bij het kwartaalbericht agrarische grondmarkt, 3e kwartaal 2023]. Kadaster and Wageningen Economic Research. https://edepot.wur.nl/640737",
+        "sourced": "yes"
       }
     },
     {
@@ -674,11 +674,11 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "The interest banks charge arable farms above their own funding cost, for the risk they see in the loan.",
+        "description": "The part of a farm loan's interest that differs between clients: the specific premium a bank charges above the base rate, which banks also call the credit or risk premium. The loan's risk sets it for a large part: the interest holds, per client, the bank's expected losses on the loan and the cost of the capital the banks' solvency rules require it to hold against it, both higher the higher the credit risk the bank sees; on a loan with a fixed rate it may be part of one total rate (ABN AMRO, n.d.-a, n.d.-b). No source read gives the premiums banks charge the island's farms.",
         "actor": "Banks lending to the island's farmers",
         "actors": "Banks lending to the island's farmers",
-        "sources": "",
-        "sourced": "no"
+        "sources": "ABN AMRO. (n.d.-a). Kosten van een krediet. Retrieved November 7, 2026, from https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/index.html\nABN AMRO. (n.d.-b). Uitleg rente bij zakelijke financieringen. Retrieved November 7, 2026, from https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/uitleg-rente.html",
+        "sourced": "yes"
       }
     },
     {
@@ -705,11 +705,11 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "The share of high-value, salt-sensitive cash crops (seed potatoes, onions) in the rotation, which a farm with high debt payments needs to keep up its income, and which the machines and know-how it would lose by switching tie it to.",
+        "description": "The share of the rotation under the high-value cash crops salt harms most, seed and ware potatoes and sown onions (Root zone salinity → Harvest lost to salt). Potatoes are financially attractive and sensitive to the climate, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12): on specialised arable farms on clay they bring in 55% of the arable revenue, ware potatoes 32% and seed potatoes 23%, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14). In Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). A field takes potatoes at most one year in three against soil disease, so a farm growing more of them rents or swaps land (Janssens et al., 2020, p. 4). The island's rotations hold potato, onion, sugar beet, cereals and grass seed; in its low polders, where the seepage pressure is high and the surface water salty all year, farmers have stopped growing sensitive crops such as sown onions, and with more fresh water they would be open to more profitable crops (Kaandorp et al., 2022, pp. 30–31). In Zeeland the sown onions halved from 4,705 ha in 2019 to 2,579 in 2024 after dry summers, poor harvests and a lack of fresh water, which four in five arable farmers have no access to, while potatoes held at about 19,000 ha (De Vriend, 2024b).",
         "actor": "Arable farmers on Schouwen-Duiveland",
         "actors": "Arable farmers on Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Verhagen, J., van Asseldonk, M., & Pronk, A. A. (2018). Open teelten en klimaatadaptatie in relatie tot de financiële weerbaarheid (Rapport WPR-755). Wageningen Research. https://klimaatadaptatienederland.nl/publish/pages/220072/2018_wur_open_teelten_en_klimaatadaptatie_in_relatie_tot_de_financiele_weerbaarheid.pdf\nJanssens, B., van der Meer, R., & Smit, B. (2020). Gevolgen van de coronacrisis voor de aardappelsector. Wageningen Economic Research. https://edepot.wur.nl/523096\nEconomic Board Zeeland. (2023). De smaken van Zeeland: Het verhaal van voedsel van het land en uit de zee. https://www.zeeland.nl/sites/default/files/2023-08/voedselverhaal_de_smaken_van_zeeland_economic_board_zeeland.0449e0966a42.pdf\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nDe Vriend, E. (2024b, August 14). Zeeuwse akkerbouwers verbouwen andere gewassen door klimaatverandering. Stal & Akker. https://sterke-erven.nl/artikel/518563-zeeuwse-akkerbouwers-verbouwen-andere-gewassen-door-klimaatverandering/",
+        "sourced": "yes"
       }
     },
     {
@@ -721,25 +721,25 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Farms' revenue from crop sales, set by yield and prices, minus their costs (the water board's levy, interest, their own pumping), per hectare in a year.",
+        "description": "Farms' income from their crops: the revenue from crop sales, set by yield and prices, minus the costs they pay (rent, interest, the water board's levy, their own pumping) and depreciation, as Dutch farm accounts measure it (Verhagen et al., 2018, p. 21), per hectare in a year. Dutch arable farms earned about 65,000 euro per unpaid labour unit on average over 2010–2016, spread widely: in 2016 a fifth had a negative income and as many earned more than 100,000 euro (pp. 21–22). In 2025 an estimated 60,000 euro, lower prices after good harvests in north-west Europe and beyond outweighing the yields (van der Meulen, 2025). No source read gives the island's farm incomes.",
         "actors": "Arable farmers on Schouwen-Duiveland, Waterschap Scheldestromen",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Verhagen, J., van Asseldonk, M., & Pronk, A. A. (2018). Open teelten en klimaatadaptatie in relatie tot de financiële weerbaarheid (Rapport WPR-755). Wageningen Research. https://klimaatadaptatienederland.nl/publish/pages/220072/2018_wur_open_teelten_en_klimaatadaptatie_in_relatie_tot_de_financiele_weerbaarheid.pdf\nvan der Meulen, H. (2025, December 15). Inkomensraming: Wat verdienden boeren en tuinders in 2025? Wageningen University & Research. https://www.wur.nl/nl/nieuws/inkomensraming-wat-verdienden-boeren-en-tuinders-2025",
+        "sourced": "yes"
       }
     },
     {
       "_id": "elem-farmers-capacity-to-invest",
       "attributes": {
         "label": "Farmers' capacity to  invest",
-        "element type": "Auxiliary",
+        "element type": "Stock",
         "adaptive practice": "no",
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "What a farm has left to invest after its debt payments and rent, beside the credit a bank will give it.",
+        "description": "What a farm can put into an investment: its savings, built up from what is left of its income after the household's spending and its payment obligations, repayments included, and the credit a bank will give it. A farm whose income is negative cannot reserve enough for investment (Verhagen et al., 2018, pp. 23, 25), and one short of cash first cuts maintenance and private spending or draws on its savings, then asks its bank to defer interest and repayments or for more credit (p. 28); banks judge more and more whether a farm's operations earn enough to meet all its financial obligations (van der Meulen et al., 2020, p. 19). Dutch arable farms invest mostly in machines, implements and installations (p. 19), and irrigation systems cost relatively much to install, not always within a farmer's reach (Verhagen et al., 2018, p. 28).",
         "actors": "Arable farmers on Schouwen-Duiveland, Banks lending to the island's farmers",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Verhagen, J., van Asseldonk, M., & Pronk, A. A. (2018). Open teelten en klimaatadaptatie in relatie tot de financiële weerbaarheid (Rapport WPR-755). Wageningen Research. https://klimaatadaptatienederland.nl/publish/pages/220072/2018_wur_open_teelten_en_klimaatadaptatie_in_relatie_tot_de_financiele_weerbaarheid.pdf\nvan der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092",
+        "sourced": "yes"
       }
     },
     {
@@ -751,9 +751,9 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "The farm's debt relative to the value of its assets, the inverse of its solvency (equity as a share of total capital). Land is 70% of an arable farm's balance sheet, so the ratio moves with the land price: arable farms' solvency was 81% in 2018 because their land had risen in value, while their long-term debt had tripled since 2001 to 770,000 euro per farm (van der Meulen et al., 2020).",
+        "description": "The farm's debt relative to the value of its assets, the inverse of its solvency (equity as a share of total capital). Land is 70% of an arable farm's balance sheet (van der Meulen et al., 2020, p. 13), so the ratio moves with the land price: arable farms' solvency was 81% in 2018 because their land had risen in value, while their long-term debt had tripled since 2001 to 770,000 euro per farm, and it differs widely between farms (p. 21). Farms that expanded recently have a lower solvency, about 70% on large arable farms in 2015 (Silvis & Voskuilen, 2017, p. 3); farms that own little of their land gain little from a rising land price but owe much less (van der Meulen et al., 2020, p. 26).",
         "actors": "Banks lending to the island's farmers",
-        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092",
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nSilvis, H., & Voskuilen, M. (2017). Betaalbaarheid en financierbaarheid van landbouwgrond (Notitie 2017-098). Wageningen Economic Research. https://edepot.wur.nl/426065",
         "sourced": "yes"
       }
     },
@@ -766,10 +766,10 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ3",
-        "description": "Hectares of the island's land farmed as arable land, with conventional or salt-tolerant crops, whoever owns it. It falls when land that changes hands goes to a holder who does not farm it as arable land; what the land becomes then (nature, grassland, water storage) waits for the group's system boundary.",
+        "description": "Hectares of the island's land under arable crops, the census's akkerbouw, conventional or salt-tolerant and fallow included, whoever owns it: 9,094 ha in 2025 against 11,395 ha in 2000, on farms whose main seat is on the island (CBS, 2026). The farms growing them halved over those years, from 402 to 200, so the hectares per farm rose from 28 to 45: land from a farm that stops mostly goes in parts to neighbouring farms that are expanding, which can pay the most for it (Luijt, 2007, p. 25, nationally). The fall in hectares is net, the census's farmland 906 ha smaller and its grass and forage crops 1,431 ha larger (CBS, 2026). It falls when the land's holder, present or next, stops growing arable crops on it; what the land becomes then (nature, grassland, water storage) waits for the group's system boundary.",
         "actors": "Gemeente Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "CBS. (2026, March 30). Landbouw; gewassen, dieren en grondgebruik naar gemeente (StatLine table 80781ned, final figures for 2025) [Data set]. https://opendata.cbs.nl/statline/#/CBS/nl/dataset/80781ned\nLuijt, J. (2007). Strategisch gedrag grondeigenaren: Van belang voor de realisatie van natuurdoelen (WOt-rapport 38). Wettelijke Onderzoekstaken Natuur & Milieu. https://edepot.wur.nl/29225",
+        "sourced": "yes"
       }
     },
     {
@@ -922,10 +922,10 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "The margin a farm forgoes on fields it moves from its high-margin current crops to salt-tolerant ones, largest on fresh land, where the current crops still do well.",
+        "description": "On the hectares a farm moves from its high-margin current crops, potatoes and sown onions, to new salt-tolerant ones: what the current crop would earn without salt less what the new crop earns, a margin being revenue minus the crop's variable costs (Cloet et al., 2024, p. 1). What salt takes is Harvest lost to salt, so it is not counted here. Potatoes, beets, onions and field vegetables are the high-margin crops; the margin of protein crops is comparable to that of cereals and cannot compete with most other crops (Polman et al., 2026, p. 9); quinoa, in a study for Flanders, yields about 3 tonnes a hectare, sold at €1,100 a tonne under contract on a market still very small, against costs of about €1,470 a hectare (Cloet et al., 2024, pp. 2–3). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276), and on Terschelling food grown on salt-affected soil costs more to produce than food grown with fresh water, the project relying on volunteers and, at its start, on subsidies (ten Dam et al., 2023, pp. 10, 13, 16). A season's crop: within the year.",
         "actors": "Arable farmers on Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Cloet, T., Van Meensel, J., De Boever, M., & Cnops, G. (2024). Rendabiliteit van de quinoateelt in Vlaanderen (Version September 2024). ILVO. https://ilvo.vlaanderen.be/uploads/documents/Projecten/Rendabiliteit-van-de-quinoateelt-in-Vlaanderen_sept2024.pdf\nPolman, N., Kisters, T., Manshanden, M., & van Ruiten, C. (2026). PPS slimme verdienmodellen in de akkerbouw: Niet-toegerekende kosten eiwitgewassen [Achtergrondnotitie]. Wageningen Social & Economic Research. https://edepot.wur.nl/708091\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16\nten Dam, R., Vellinga, P., & Negacz, K. (2023). From experiment to market development: A case study of prospects and value chain of saline agriculture in Terschelling, the Netherlands. NJAS: Impact in Agricultural and Life Sciences, 95(1), 2211541. https://doi.org/10.1080/27685241.2023.2211541",
+        "sourced": "yes"
       }
     },
     {
@@ -952,10 +952,10 @@
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "The volume of new salt-tolerant crops within reach of a processing plant on or near the island, from the island's growers and from growers elsewhere.",
+        "description": "The volume of new salt-tolerant crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere. Quinoa has been grown in Zeeland since 2016, on one to four parcels a year at six locations in all (Bogers et al., 2025, pp. 28, 38), its map showing none on the island, while the growers who sell to GreenFood50 in the Netherlands farm about 200 hectares for 600 tonnes a year (DutchNews.nl, 2026); samphire is the main crop of a Zeeland grower and trader of sea vegetables (FreshPlaza, 2018).",
         "actors": "Arable farmers on Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Bogers, R., van Loenen, E., Hoogenboom, M., Mensink, E., & Vos, R. (2025). Where to grow protein-rich crops? A land use suitability analysis in Zeeland [Student report, Wageningen University, for HZ University of Applied Sciences].\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983\nFreshPlaza. (2018, June 22). Elenbaas invests in new salty Zeeland productions in greenhouses. https://www.freshplaza.com/north-america/article/2196870/elenbaas-invests-in-new-salty-zeeland-productions-in-greenhouses/",
+        "sourced": "yes"
       }
     },
     {
@@ -967,10 +967,10 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "What farmers on the island get for new salt-tolerant crops once transport to the processor is paid, set by processors on and off the island.",
+        "description": "What farmers on the island get for new salt-tolerant crops once transport to the processor is paid, set by processors on and off the island. Quinoa fetches 0.70 to 1.25 euro a kilo at the farm gate (van Loo, 2023, p. 79), most Dutch growers selling it under contract to one buyer (DutchNews.nl, 2026). The food market for halophytes is small and easily saturated (van den Burg et al., 2024, p. 6), a Zeeland trader noting surpluses (FreshPlaza, 2018); no source read gives their price.",
         "actors": "Buyers and processors of the island's crops",
-        "sources": "",
-        "sourced": "no"
+        "sources": "van Loo, R. (2023). Quinoa: A new protein source. In S. Pyett, W. Jenkins, B. van Mierlo, L. M. Trindade, D. Welch, & H. van Zanten (Eds.), Our future proteins: A diversity of perspectives (pp. 74–81). VU University Press. https://vuuniversitypress.com/p/uploads/OurFutureProteinsOA.pdf\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nFreshPlaza. (2018, June 22). Elenbaas invests in new salty Zeeland productions in greenhouses. https://www.freshplaza.com/north-america/article/2196870/elenbaas-invests-in-new-salty-zeeland-productions-in-greenhouses/",
+        "sourced": "yes"
       }
     },
     {
@@ -1043,10 +1043,10 @@
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "The planters, harvesters and stores farms own for their current crops, built up over years and renewed when worn.",
+        "description": "The machines a farm owns that suit only one or a few crops (Bonnet & Tiktak, 2025, p. 45) and the buildings, machines and paving for storing its potatoes and onions (Polman et al., 2026, pp. 15, 17), a store for long keeping being a mostly insulated building with a cooling installation (Janssens et al., 2020, p. 5). Nationally about 1,500 of the 3,725 specialised arable farms growing ware potatoes still had potatoes in store on 1 April 2020, which takes a cooled store, by the report's estimate (p. 7). Machines are depreciated at 8.2% a year, installations at 10% and buildings at 3% (p. 13, from KWIN 2018): about 12, 10 and 33 years, if that is a constant share of the purchase price. Dutch arable farms invest mostly in machines, implements and installations (van der Meulen et al., 2020, p. 19). No source read counts them on the island, where one farmer interviewed names mechanisation among the reasons for adding land (Dijkshoorn-Dekker et al., 2024, pp. 56–57).",
         "actors": "Arable farmers on Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Bonnet, J., & Tiktak, A. (2025, February 12). Uitdagingen voor de akker- en tuinbouw: Huidige situatie en mogelijke ontwikkelrichtingen in de open teelten (Publicatienummer 5203). PBL Planbureau voor de Leefomgeving. https://pbl.nl/downloads/pbl-2025-uitdagingen-voor-de-akker-en-tuinbouw-5203pdf\nPolman, N., Kisters, T., Manshanden, M., & van Ruiten, C. (2026). PPS slimme verdienmodellen in de akkerbouw: Niet-toegerekende kosten eiwitgewassen [Achtergrondnotitie]. Wageningen Social & Economic Research. https://edepot.wur.nl/708091\nJanssens, B., van der Meer, R., & Smit, B. (2020). Gevolgen van de coronacrisis voor de aardappelsector. Wageningen Economic Research. https://edepot.wur.nl/523096\nvan der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nDijkshoorn-Dekker, M., Daatselaar, C., Schrijver, R., de Jong, K., Smit, B., Manshanden, M., Pessers, R., van Eldik, Z., & Westerink, J. (2024). Extensivering melkveehouderij en akkerbouw: Krimp in veestapel, groei in areaal of vermindering bouwplanintensiteit (Rapport 2024-042). Wageningen Economic Research. https://doi.org/10.18174/660393",
+        "sourced": "yes"
       }
     },
     {
@@ -1058,10 +1058,10 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "The machines, storage and know-how a farm writes off when it moves fields to a new crop that cannot use them; what it keeps using or sells is not lost. Salt-tolerant varieties of the current crops lose little of it.",
+        "description": "What the machines, storage and know-how of a farm's current crops would stop earning if it moved fields to a crop that cannot use them, less what it can sell them for. A store's costs do not fall when the crops in it take a smaller part of the rotation: they are sunk and cannot be earned back (Polman et al., 2026, pp. 15, 17), and other paths need new technology and skills while the old may not yet be written off (Bonnet & Tiktak, 2025, p. 45). It differs by what the farm moves to. Quinoa is sown with standard equipment and harvested with a combine harvester (van Loo, 2023, p. 75); adding protein crops leaves buildings and machines as they were (Polman et al., 2026, p. 4), and a store stands idle only once nothing it can hold is grown. A salt-tolerant variety of a current crop is planted, lifted and stored as that crop is, so it loses little of it, which no source read states. No source read says what a used harvester or store would fetch.",
         "actors": "Arable farmers on Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Polman, N., Kisters, T., Manshanden, M., & van Ruiten, C. (2026). PPS slimme verdienmodellen in de akkerbouw: Niet-toegerekende kosten eiwitgewassen [Achtergrondnotitie]. Wageningen Social & Economic Research. https://edepot.wur.nl/708091\nBonnet, J., & Tiktak, A. (2025, February 12). Uitdagingen voor de akker- en tuinbouw: Huidige situatie en mogelijke ontwikkelrichtingen in de open teelten (Publicatienummer 5203). PBL Planbureau voor de Leefomgeving. https://pbl.nl/downloads/pbl-2025-uitdagingen-voor-de-akker-en-tuinbouw-5203pdf\nvan Loo, R. (2023). Quinoa: A new protein source. In S. Pyett, W. Jenkins, B. van Mierlo, L. M. Trindade, D. Welch, & H. van Zanten (Eds.), Our future proteins: A diversity of perspectives (pp. 74–81). VU University Press. https://vuuniversitypress.com/p/uploads/OurFutureProteinsOA.pdf",
+        "sourced": "yes"
       }
     },
     {
@@ -1104,10 +1104,10 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "The risk a bank sees in lending to an arable farm: its solvency, its collateral at the bank's own valuation, and plans that may change what the land can earn.",
+        "description": "The risk a bank sees in lending to an arable farm: above all whether its operations will earn enough, over the years of the loan, to meet all its financial obligations, then its solvency and its land and buildings as security (van der Meulen et al., 2020, p. 19; Farjon et al., 2013, pp. 3–4). Because arable returns swing from year to year, banks count farm loans as riskier despite the land as security, and the Basel capital rules steer them further toward lending on profitability and liquidity rather than on the value of the collateral (van der Meulen et al., 2020, p. 47); financing a new concept whose returns are not yet proven they often count as a risk (p. 6). Rabobank's provisions for expected credit losses carried an adjustment of 87 million euro for climate risk at the end of 2024, set by sector on five events, drought and water scarcity among them (Rabobank, 2025, pp. 246–247). No source read shows a bank weighing a plan that may change what the land can earn.",
         "actors": "Waterschap Scheldestromen",
-        "sources": "",
-        "sourced": "no"
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nFarjon, H., Silvis, H., Vader, J., Voskuilen, M., & Agricola, H. (2013, December). Prijs hoger dan de waarde van landbouwgrond. Landwerk. PBL Netherlands Environmental Assessment Agency. https://www.pbl.nl/publicaties/prijs-hoger-dan-de-waarde-van-landbouwgrond\nRabobank. (2025). Annual report 2024. https://vpr.hkma.gov.hk/statics/assets/doc/100197/ar_24/ar_24_eng.pdf",
+        "sourced": "yes"
       }
     },
     {
@@ -1119,11 +1119,11 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "New loans and refinancing that banks grant the island's arable farms.",
+        "description": "New loans and refinancing that banks grant the island's arable farms in a year. Banks supply 90% of Dutch farms' long-term loans (van der Meulen et al., 2020, p. 20), whose total rose from 18 to 33 billion euro between 2001 and 2018, falling slightly in its last years (p. 19), and they have raised the repayments on land loans, ABN AMRO cutting the longest term for new farmland financing from fifty to forty years, a repayment of at least 2.5% a year (p. 47). No source read gives the banks' lending on the island.",
         "actor": "Banks lending to the island's farmers",
         "actors": "Banks lending to the island's farmers",
-        "sources": "",
-        "sourced": "no"
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092",
+        "sourced": "yes"
       }
     },
     {
@@ -1135,10 +1135,10 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Interest and repayments farms owe on their loans in a year.",
+        "description": "The interest, commission and repayments farms owe their banks in a year. Interest and commission cost Dutch farms about 22,000 euro each in 2018, down from 30,000 in 2014 as interest rates fell (van der Meulen et al., 2020, p. 20); on arable farms interest was 8% of the costs they paid in 2018, against 12% from 2001 to 2011 (p. 57). The repayment follows from the loan's size, term and schedule (ABN AMRO, n.d.-a), and banks have raised the repayments on land loans, ABN AMRO to at least 2.5% a year (van der Meulen et al., 2020, p. 47). No source read gives the island's farms' payments.",
         "actors": "Banks lending to the island's farmers",
-        "sources": "",
-        "sourced": "no"
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nABN AMRO. (n.d.-a). Kosten van een krediet. Retrieved November 7, 2026, from https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/index.html",
+        "sourced": "yes"
       }
     },
     {
@@ -1150,10 +1150,10 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "The prices of potatoes, onions and sugar beet on the markets the island's crops are sold on, which its farms cannot move: what carrying on is weighed against.",
+        "description": "The prices of potatoes, onions and sugar beet on the markets the island's crops are sold on, which its farms cannot move: what carrying on is weighed against. They form in an international market by supply and demand (Minister van Economische Zaken en Klimaat, 2018), set by the harvests of north-west Europe and beyond (van der Meulen, 2025; for potatoes, Janssens et al., 2020, p. 8). The Netherlands was the world's largest onion exporter in 2016, and by a rough estimate about 80% of Dutch onions are processed in Zeeland (Minister van Economische Zaken en Klimaat, 2018); onions are rarely sold under contract, so their price swings (Bogosavac, 2018). The potato processors export an estimated 80% of their frozen products, and buy 90 to 95% of their potatoes under contract or in a pool, the rest free (Janssens et al., 2020, pp. 1, 7), a contract's base price published each year for the four large processors (p. 11). No source read here gives how the beet price is set.",
         "actors": "",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Minister van Economische Zaken en Klimaat. (2018, March 13). Antwoord op vragen van de leden Geurts en Van den Berg over het bericht dat cijfers CBS ervoor zorgen dat de prijs van uien laag blijft (Aanhangsel Handelingen II 2017/18, nr. 1425). https://zoek.officielebekendmakingen.nl/ah-tk-20172018-1425.html\nvan der Meulen, H. (2025, December 15). Inkomensraming: Wat verdienden boeren en tuinders in 2025? Wageningen University & Research. https://www.wur.nl/nl/nieuws/inkomensraming-wat-verdienden-boeren-en-tuinders-2025\nJanssens, B., van der Meer, R., & Smit, B. (2020). Gevolgen van de coronacrisis voor de aardappelsector. Wageningen Economic Research. https://edepot.wur.nl/523096\nBogosavac, N. (2018, October 31). Kleinere aardappelen en duurdere uien: dit merk je in de winkel. NOS. https://nos.nl/artikel/2257266-kleinere-aardappelen-en-duurdere-uien-dit-merk-je-in-de-winkel",
+        "sourced": "yes"
       }
     },
     {
@@ -1165,10 +1165,10 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "How far the island's farmers expect public bodies to keep their commitments on water and land (compensation, their say over their land).",
+        "description": "How far the island's farmers expect the public bodies that plan for its water and land to keep their commitments (compensation, their say over their land). Trust is typically created slowly and can be destroyed in an instant, and once lost may take a long time to rebuild (Slovic, 1993, p. 677, from US students rating hypothetical events at a nuclear plant; Remkes, 2022, p. 19). No source read measures it on the island: in 2013, 141 farmers in the south-west Netherlands, 16 of the survey's 142 on Schouwen-Duiveland, averaged 2.64 on a seven-point scale of trust in their water board on drought (van Duinen et al., 2015, pp. 745–749), and one submission to the Province in 2021 says the island's farmers no longer trust the Province on fresh water (Lases, 2021, p. 2). From outside the island's scale comes national policy changed or dropped: plans announced and then changed, postponed or stopped, which the National Ombudsman, from interviews with 32 farmers across the country, concludes has left the government unreliable for them (Nationale ombudsman, 2026, pp. 8, 15, 40), and a gap of trust with 'The Hague' (Remkes, 2022, p. 13). Whether the island's farmers carry that over to the water board, the Province and the municipality, no source read shows: a question for the group model building session.",
         "actors": "",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Slovic, P. (1993). Perceived risk, trust, and democracy. Risk Analysis, 13(6), 675–682. https://doi.org/10.1111/j.1539-6924.1993.tb01329.x\nRemkes, J. (2022, October 5). Wat wel kan: Uit de impasse en een aanzet voor perspectief. https://eerstekamer.nl/9370000/1/j4nvgs5kjg27kof_j9vvkyblr2b3ny8/vlwzf4m6utyb\nvan Duinen, R., Filatova, T., Geurts, P., & van der Veen, A. (2015). Empirical analysis of farmers' drought risk perception: Objective factors, personal circumstances, and social influence. Risk Analysis, 35(4), 741–755. https://doi.org/10.1111/risa.12299\nLases, W. B. P. M. (2021, June). Een blijvende keuze van Zeeland voor een zout Grevelingenmeer leidt tot gerichte onleefbaarheid op Schouwen-Duiveland [Submission to the Province of Zeeland's committee Ruimte]. https://www.zeeland.nl/sites/default/files/digitaalarchief/IB21_8a686d4a.pdf\nNationale ombudsman. (2026). Een boer met kiespijn lacht niet: Ervaringen van boeren met veranderlijk overheidsbeleid (Rapport 2026/120). https://www.nationaleombudsman.nl/system/files/onderzoek/20260120-een-boer-met-kiespijn-lacht-niet.pdf",
+        "sourced": "yes"
       }
     },
     {
@@ -1180,10 +1180,10 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ3",
-        "description": "Farmland a public body takes for a public purpose, with compensation, after a legal procedure; which body can do so on the island is on the facts list under Concern about expropriation and devaluation.",
+        "description": "Hectares of the island's farmland that a public body takes in a year for a use its plan sets, with full compensation, by an order a court must confirm. The municipal council, the water board for its water tasks, the Provincial Council and the minister can each give the order (Omgevingswet, 2026, art. 11.4), and only for a use an adopted plan allows, after a reasonable attempt to buy the land and with a start likely within three years (arts. 11.5–11.7, 11.11). On the island it has been used for a roundabout on the N59 (Besluit rotonde N59, 2020, p. 3) and in 2026 for a high-voltage station on a site then wholly in agricultural use (Gemeente Schouwen-Duiveland, 2026; Braat, 2023, blad 9); no source read shows it there for water or nature, for which the Province buys on a voluntary basis (Provincie Zeeland, Jaarstukken 2022, p. 4). Few cases reach a court, in the Krimpenerwaard 6 of 69 files (Kamphorst et al., 2025, pp. 10–11), since the threat mostly makes owners sell (Holtslag-Broekhof et al., 2016, section Context of the Study).",
         "actors": "Gemeente Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "Omgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01\nBesluit rotonde N59. (2020). Besluit tot aanwijzing van onroerende zaken ter onteigening in de gemeente Schouwen-Duiveland krachtens artikel 72a van de onteigeningswet (rotonde N59) (Draft decree put to the Council of State W17.20.0068). https://www.raadvanstate.nl/publish/pages/118662/w_17_20_0068.pdf\nGemeente Schouwen-Duiveland. (2026, February 24). Kennisgeving onteigeningsbeschikking. Gemeenteblad, 2026, 78752. https://zoek.officielebekendmakingen.nl/gmb-2026-78752.pdf\nBraat, E. (2023, September 12). Aanmeldnotitie vormvrije m.e.r.-beoordeling Hoogspanningsstation Zierikzee + herziening buitengebied (kabeltracés). Antea Group, for TenneT TSO B.V. https://www.ruimtelijkeplannen.nl/documents/NL.IMRO.1676.00377BphZZ-VA01/b_NL.IMRO.1676.00377BphZZ-VA01_tb3.pdf\nProvincie Zeeland. (n.d.). Jaarstukken 2022: Programma Balans in landelijk gebied. https://pcportal.zeeland.nl/Data/6be7416d-f63c-4ce1-84d5-7854448ebab4/Public/jaarstukken-2022-provincie-zeeland%20-%203-programma-balans-in-landelijk-gebied.pdf\nKamphorst, D. A., Nieuwenhuizen, W., & Langers, F. (2025). Nieuwe natuur in de polder: tussen zelfrealisatie en onteigening (Rapport 3464). Wageningen Environmental Research. https://edepot.wur.nl/703340\nHoltslag-Broekhof, S. M., van Marwijk, R., Beunen, R., & Wiskerke, J. S. C. (2016). Perceived (in)justice of public land acquisition. Journal of Agricultural and Environmental Ethics, 29(2), 167–184. https://doi.org/10.1007/s10806-015-9594-3",
+        "sourced": "yes"
       }
     },
     {
@@ -1696,12 +1696,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Higher physical yield increases sales revenue per hectare.",
+        "description": "A larger harvest per hectare raises income at a given price, the price being World prices of conventional crops. The + holds in full where only the island's yield falls, to salt or a local shortage of fresh water. A dry summer across north-west Europe also raises the price, since the harvests there set it: for potatoes, north-west Europe is one market, and their price was highest in the extremely dry 2018 (Janssens et al., 2020, p. 8). Then what a farm loses depends on how it sells: in 2018, higher prices could help onion growers make up for a harvest forecast 44% below the year before, while potato growers mostly held contracts at prices agreed in advance (NOS, 2018), some 80% of the crop at around nine cents a kilo while free-market potatoes reached 30 (DutchNews.nl, 2018); onions are rarely sold under such contracts (Bogosavac, 2018). On the island, a farm with its own stored water gains from the high prices of a dry year (Kaandorp et al., 2022, p. 36). Within the year, as the harvest is sold.",
         "sets link": "E to S",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Janssens, B., van der Meer, R., & Smit, B. (2020). Gevolgen van de coronacrisis voor de aardappelsector. Wageningen Economic Research. https://edepot.wur.nl/523096\nNOS. (2018, October 31). Misoogst bij uien en aardappelen door droogte. https://nos.nl/artikel/2257205-misoogst-bij-uien-en-aardappelen-door-droogte\nBogosavac, N. (2018, October 31). Kleinere aardappelen en duurdere uien: dit merk je in de winkel. NOS. https://nos.nl/artikel/2257266-kleinere-aardappelen-en-duurdere-uien-dit-merk-je-in-de-winkel\nDutchNews.nl. (2018, August 10). The drought leads to tension between potato farmers and processors. https://www.dutchnews.nl/news/2018/08/the-drought-leads-to-tension-between-potato-farmers-and-processors\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-crop-yield",
@@ -1737,7 +1737,7 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "With the same mortgage, a lower land value is a higher debt relative to the farm's assets: land is 70% of an arable farm's balance sheet, and its rise in value is what made arable farms' solvency 81% in 2018 (van der Meulen et al., 2020). A high solvency makes new credit easier and cheaper to get; the debt itself does not shrink when the land loses value.",
+        "description": "With the same debt, a lower land value is a higher debt relative to the farm's assets: land is 70% of an arable farm's balance sheet (van der Meulen et al., 2020, p. 13), and its rise in value is what made arable farms' solvency 81% in 2018 (p. 21). A high solvency can let a farm borrow more and at a lower rate (p. 19); the debt itself does not shrink when the land loses value. It holds for the land a farm owns: farms owning little of it barely gain from a rising price (p. 26). Within the year: the farm accounts value the land each year (p. 13).",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
@@ -1811,18 +1811,18 @@
     {
       "_id": "conn-farm-revenue--agricultural-land-value",
       "direction": "directed",
-      "delayed": false,
+      "delayed": true,
       "reversed": false,
       "attributes": {
         "label": "+",
         "polarity": "positive",
-        "delay": "no",
-        "description": "Sustained productivity and profitability underpin high market prices for farmland.",
+        "delay": "yes",
+        "description": "More income from the land raises what buyers bid for it, through what they expect an extra hectare to earn an expanding farm over the years of the investment rather than through last year's income (Farjon et al., 2013, p. 2; Silvis & Voskuilen, 2017, pp. 2–3). The + holds beside drivers the island's farms cannot move: since 1970 the Dutch price has risen tenfold while net value added rose two- to threefold, carried by scale enlargement and falling interest rates (Farjon et al., 2013, pp. 1–2). Across individual land transactions in the Netherlands from 2004 to 2011, the expected revenue from the land had a significant positive effect on the price, beside land regulations, the spatial environment and local market conditions (Boere, 2015, pp. 81, 98). Years: the price follows expected income, and its swings ran over years, falling by half in real terms in the late 1970s and by 30% between 1995 and 2005 (p. 2): a delay.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Farjon, H., Silvis, H., Vader, J., Voskuilen, M., & Agricola, H. (2013, December). Prijs hoger dan de waarde van landbouwgrond. Landwerk. PBL Netherlands Environmental Assessment Agency. https://www.pbl.nl/publicaties/prijs-hoger-dan-de-waarde-van-landbouwgrond\nSilvis, H., & Voskuilen, M. (2017). Betaalbaarheid en financierbaarheid van landbouwgrond (Notitie 2017-098). Wageningen Economic Research. https://edepot.wur.nl/426065\nBoere, E. (2015). Economic analysis of Dutch agricultural land use in a changing policy environment [Doctoral dissertation, Wageningen University]. https://doi.org/10.18174/347867",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-farm-revenue",
@@ -1837,12 +1837,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Higher farm income generates internal cash flow for adaptive investments.",
+        "description": "More income leaves more, after the household's spending and the farm's payment obligations, repayments included, to save for investment; a negative income leaves too little to reserve, and machines then age (Verhagen et al., 2018, pp. 23, 25). Within the year: income adds to the savings in the year it is earned.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Verhagen, J., van Asseldonk, M., & Pronk, A. A. (2018). Open teelten en klimaatadaptatie in relatie tot de financiële weerbaarheid (Rapport WPR-755). Wageningen Research. https://klimaatadaptatienederland.nl/publish/pages/220072/2018_wur_open_teelten_en_klimaatadaptatie_in_relatie_tot_de_financiele_weerbaarheid.pdf",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-farm-revenue",
@@ -1877,12 +1877,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Capacity to invest decides whether a farm can pay for the switch (new machines, the first years of a new crop), not whether it wants to.",
+        "description": "Capacity to invest decides whether a farm can pay for the switch (new machines, the first years of a new crop), not whether it wants to. The costs of salt-tolerant seed and soil amendments may not make up for the yield and income salt takes in the first years, when setting up costs most, and the benefits are not always obvious in the short term (Deolu-Ajayi et al., 2024, p. 60); farms whose financial buffers shrink are expected to invest less, slowing their modernisation and sustainability, and banks often count financing a new concept whose returns are not yet proven as a risk (van der Meulen et al., 2020, p. 6). Within the year: the crop is chosen each season.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
+        "hypothesis": "no",
+        "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nvan der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-farmers-capacity-to-invest",
@@ -2439,12 +2439,12 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Harvest lost to salt is income lost.",
+        "description": "Harvest lost to salt is income lost: at the farm, salt lowers the yield and raises the cost of inputs such as fresh water and soil amendments, and the damage salt does in the Netherlands is estimated at 577 to 610 million euro a year, most of it agricultural revenue lost to lower yields (Deolu-Ajayi et al., 2024, p. 12). Salt on the island's fields does not move the price, which the harvests of north-west Europe set (Janssens et al., 2020, p. 8), so a harvest lost to it is lost at that price. Within the year, as the harvest is sold.",
         "sets link": "E to S",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nJanssens, B., van der Meer, R., & Smit, B. (2020). Gevolgen van de coronacrisis voor de aardappelsector. Wageningen Economic Research. https://edepot.wur.nl/523096",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-harvest-lost-to-salt",
@@ -2500,12 +2500,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "A field moved to a new crop gives up the current crop's margin.",
+        "description": "A hectare moved from a high-margin current crop to a new one earns the new crop's margin instead, and the margin of protein crops cannot compete with most other crops (Polman et al., 2026, p. 9). The link holds by what the element counts, the hectares taken from the high-margin crops: the area of a minor crop depends on the room left in the rotation (Polman et al., 2026, p. 17), and in a simulation for Flanders quinoa mostly took the place of maize and winter wheat (Cloet et al., 2024, p. 3). Within the year: the crop is chosen each season.",
         "sets link": "T to S",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Polman, N., Kisters, T., Manshanden, M., & van Ruiten, C. (2026). PPS slimme verdienmodellen in de akkerbouw: Niet-toegerekende kosten eiwitgewassen [Achtergrondnotitie]. Wageningen Social & Economic Research. https://edepot.wur.nl/708091\nCloet, T., Van Meensel, J., De Boever, M., & Cnops, G. (2024). Rendabiliteit van de quinoateelt in Vlaanderen (Version September 2024). ILVO. https://ilvo.vlaanderen.be/uploads/documents/Projecten/Rendabiliteit-van-de-quinoateelt-in-Vlaanderen_sept2024.pdf",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-salt-tolerant-crop-adoption",
@@ -2540,12 +2540,12 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Margin given up is income given up.",
+        "description": "Margin given up is income given up, in full: a margin is what a crop leaves after its variable costs (Cloet et al., 2024, p. 1), and the farm's fixed costs do not fall when its storage crops take a smaller part of the rotation, the buildings, machines and paving being sunk (Polman et al., 2026, p. 17). Within the year, as the harvest is sold.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Cloet, T., Van Meensel, J., De Boever, M., & Cnops, G. (2024). Rendabiliteit van de quinoateelt in Vlaanderen (Version September 2024). ILVO. https://ilvo.vlaanderen.be/uploads/documents/Projecten/Rendabiliteit-van-de-quinoateelt-in-Vlaanderen_sept2024.pdf\nPolman, N., Kisters, T., Manshanden, M., & van Ruiten, C. (2026). PPS slimme verdienmodellen in de akkerbouw: Niet-toegerekende kosten eiwitgewassen [Achtergrondnotitie]. Wageningen Social & Economic Research. https://edepot.wur.nl/708091",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-margin-given-up-on-high-margin-crops",
@@ -2684,13 +2684,13 @@
         "label": "+",
         "polarity": "positive",
         "delay": "yes",
-        "description": "The more of the current crops' harvest salt takes, the more a new salt-tolerant crop is worth against them, so the more farmers grow it, perhaps only past a threshold. Farmers respond to the damage they come to notice, which builds over dry summers. Years, so a delay.",
+        "description": "The more of the current crops' harvest salt takes, the more a new salt-tolerant crop is worth against them, so the more farmers grow it, but only past a threshold: Dutch farmers in salinised areas mostly hold back from saline agriculture unless salt severely hits their production (Deolu-Ajayi et al., 2024, p. 57). In interviews across the salinisation-prone provinces, Zeeland among them, salt in a field was largely invisible and seldom measured, a lower yield hard to put down to salt alone, and the damage not yet significant enough to make it urgent; it would take more dry summers like 2018 (Beauchampet, 2022, p. 216). Nearly all interviewees did not see halophytes as part of the answer, for lack of markets, the soils' intolerance of salt and the hand work they take (p. 221). In Zeeland most farmers still grow the common salt-sensitive crops (van den Burg et al., 2024, p. 6), and on the island the response a source shows is giving up a sensitive crop, sown onions (Kaandorp et al., 2022, p. 31), not taking up a new one. Years, as farmers come to see the damage over dry summers: a delay.",
         "sets link": "E to T",
         "sets scope": "Cross-domain",
-        "hypothesis": "yes",
+        "hypothesis": "no",
         "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description. Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what salt takes.",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-harvest-lost-to-salt",
@@ -2726,13 +2726,13 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "A better price after transport makes a new crop more worthwhile, so more farmers grow it.",
+        "description": "A better price after transport makes a new crop more worthwhile against the current crops, so more farmers grow it. In France, farmers' low interest in pulses was put down to prices not high enough against major crops such as wheat, and outlets of higher value are needed to give them a reason to grow them (Magrini et al., 2018); a premium to farmers doubled the area of pulses within a year, and it fell back the next, buyers downstream not interested in them (Meynard et al., 2018, p. 10); in the Netherlands' salinising provinces, Zeeland among them, nearly all interviewees did not see halophytes as part of the answer, mostly for lack of markets (Beauchampet, 2022, p. 221). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276). Within the year: the crop is chosen each season.",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
-        "hypothesis": "yes",
+        "hypothesis": "no",
         "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Magrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nMeynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-net-price-for-new-crops",
@@ -2808,12 +2808,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "More hectares of new crops on the island, more harvest to process.",
+        "description": "More hectares of new crops on the island, more harvest to process. Quinoa yields about 2,000 kg a hectare on average in Europe (van Loo, 2023, p. 79), from under 500 to over 4,000 kg (p. 76), harvested in August of the year it is sown (p. 75): within the year.",
         "sets link": "Within T",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "van Loo, R. (2023). Quinoa: A new protein source. In S. Pyett, W. Jenkins, B. van Mierlo, L. M. Trindade, D. Welch, & H. van Zanten (Eds.), Our future proteins: A diversity of perspectives (pp. 74–81). VU University Press. https://vuuniversitypress.com/p/uploads/OurFutureProteinsOA.pdf",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-salt-tolerant-crop-adoption",
@@ -2842,19 +2842,19 @@
     {
       "_id": "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
       "direction": "directed",
-      "delayed": false,
+      "delayed": true,
       "reversed": false,
       "attributes": {
         "label": "+",
         "polarity": "positive",
-        "delay": "no",
-        "description": "More harvest within reach makes a local plant more worthwhile, so processors build or keep capacity on or near the island rather than process the crops elsewhere.",
+        "delay": "yes",
+        "description": "More harvest within reach makes a plant or chain nearby more worthwhile, so buyers and processors build or keep capacity on or near the island rather than handle the crops elsewhere. In France, the firms that store, process and sell crops specialised in a few dominant ones for economies of scale, so their investment went to those crops and their logistics do not suit minor ones such as pulses (Magrini et al., 2018), and a small volume spread out or far from its users costs more to collect and process (Meynard et al., 2018, pp. 7–8): the economies of scale hold wherever a chain is built, so the mechanism transfers. In the Netherlands, on Terschelling's saline field, producers of processed products are more concerned about volumes than the restaurants are, and stakeholders describe a chicken and egg: a producer needs a market, and a reliable market needs ample supply (ten Dam et al., 2023, pp. 10, 14); for quinoa, one expert says efforts only work with concentrated investments and high volumes (de Wit et al., 2022, p. 270). Years: a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a): a delay.",
         "sets link": "Within T",
         "sets scope": "Within domain",
-        "hypothesis": "yes",
+        "hypothesis": "no",
         "simplification": "Folds Attractiveness of processing new crops locally, which gathered the drivers of this decision: each driver now points at Local processing capacity for new crops itself, whose description says that buyers and processors weigh it against processing the crops elsewhere. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Magrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nMeynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nDe Vriend, E. (2024a, October 12). Toekomst van voedsel in Zeeland: wat eten we morgen? Stal & Akker. https://sterke-erven.nl/artikel/528976-toekomst-van-voedsel-in-zeeland-wat-eten-we-morgen/\nten Dam, R., Vellinga, P., & Negacz, K. (2023). From experiment to market development: A case study of prospects and value chain of saline agriculture in Terschelling, the Netherlands. NJAS: Impact in Agricultural and Life Sciences, 95(1), 2211541. https://doi.org/10.1080/27685241.2023.2211541\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-harvest-of-new-crops-to-process",
@@ -2890,12 +2890,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "A plant nearby cuts transport, so farmers keep more of the price.",
+        "description": "A plant or chain nearby takes the harvest at less cost to move and store it, so more of the price reaches the farmer. In France, minor crops grown far from their processor cost much to collect for their volume, collectors building a chain for a crop paid farmers a premium to deliver to its silo, and those without storage suited to small batches sold them fast, below the best price (Meynard et al., 2018, p. 7): the cost of moving and storing a harvest rises with distance and falls with volume wherever a chain runs, so the mechanism transfers. No source read gives what farmers on the island are paid. Within the year: the price is set each season or contract.",
         "sets link": "T to S",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Meynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nGreenFood50. (n.d.). The specialist in quinoa ingredients [Home page and About us]. Retrieved November 7, 2026, from https://www.greenfood50.com/",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-processing-capacity-for-alternative-crops",
@@ -2951,12 +2951,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "The more a farm owns for its current crops, the more a switch to a new crop writes off.",
+        "description": "The more a farm owns that only its current crops can use, the more a switch leaves idle: a store still stands when its crops take a smaller part of the rotation, and its costs do not fall (Polman et al., 2026, pp. 15, 17), and expensive machines are in some cases suited to one or a few crops (Bonnet & Tiktak, 2025, p. 45). What a new crop can use is not lost (Capital lost on switching). Within the year, at the moment of switching.",
         "sets link": "T to S",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Polman, N., Kisters, T., Manshanden, M., & van Ruiten, C. (2026). PPS slimme verdienmodellen in de akkerbouw: Niet-toegerekende kosten eiwitgewassen [Achtergrondnotitie]. Wageningen Social & Economic Research. https://edepot.wur.nl/708091\nBonnet, J., & Tiktak, A. (2025, February 12). Uitdagingen voor de akker- en tuinbouw: Huidige situatie en mogelijke ontwikkelrichtingen in de open teelten (Publicatienummer 5203). PBL Planbureau voor de Leefomgeving. https://pbl.nl/downloads/pbl-2025-uitdagingen-voor-de-akker-en-tuinbouw-5203pdf",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-machines-and-storage-for-current-crops",
@@ -2971,12 +2971,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "What a farm would lose by switching ties it to its current crops.",
+        "description": "What a farm's capital would stop earning holds it to its current crops. Of four arable farmers interviewed about a scheme for less intensive rotations, one, in the loess of Limburg, had recently built a store, which stands and which they want to use, and they and a farmer with plans for water storage said the investment has to be used, so that the onions stored, for example, would not soon leave the rotation (Dijkshoorn-Dekker et al., 2024, pp. 57, 71). Investments in expensive machines suited to one or a few crops keep a contractor and a farmer dependent on those crops for a long time (Bonnet & Tiktak, 2025, p. 45). It holds while the crops can be grown: in the island's low polders, where the surface water is salty all year, farmers have stopped growing sensitive crops such as sown onions (Kaandorp et al., 2022, p. 31). Within the year, as the rotation is chosen each season.",
         "sets link": "Within S",
         "sets scope": "Within domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
+        "hypothesis": "no",
+        "sources": "Dijkshoorn-Dekker, M., Daatselaar, C., Schrijver, R., de Jong, K., Smit, B., Manshanden, M., Pessers, R., van Eldik, Z., & Westerink, J. (2024). Extensivering melkveehouderij en akkerbouw: Krimp in veestapel, groei in areaal of vermindering bouwplanintensiteit (Rapport 2024-042). Wageningen Economic Research. https://doi.org/10.18174/660393\nBonnet, J., & Tiktak, A. (2025, February 12). Uitdagingen voor de akker- en tuinbouw: Huidige situatie en mogelijke ontwikkelrichtingen in de open teelten (Publicatienummer 5203). PBL Planbureau voor de Leefomgeving. https://pbl.nl/downloads/pbl-2025-uitdagingen-voor-de-akker-en-tuinbouw-5203pdf\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-capital-lost-on-switching",
@@ -3011,12 +3011,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "yes",
-        "description": "A farm tied to its current crops spends on keeping them. Years, so a delay: a farm buys when a machine or a store falls due.",
+        "description": "The more of the rotation is potatoes and onions, the more a farm spends on what they need: in farm accounts across the Netherlands from 2014 to 2022 a larger share of ware potatoes, seed potatoes, onions and winter carrots goes with significantly higher costs that no crop is charged with, buildings and machines among them, and storing these crops takes a store (Polman et al., 2026, pp. 5, 11, 15). In France, specialising in a few crops is explained in part by writing off the equipment (Magrini et al., 2018). The differences lie mostly between farms, far less in how one farm changes over the years (Polman et al., 2026, p. 4): a farm buys only as a machine or a store falls due, about 12 years for a machine and 33 for a building (Janssens et al., 2020, p. 13). Years, so a delay.",
         "sets link": "Within S",
         "sets scope": "Within domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
+        "hypothesis": "no",
+        "sources": "Polman, N., Kisters, T., Manshanden, M., & van Ruiten, C. (2026). PPS slimme verdienmodellen in de akkerbouw: Niet-toegerekende kosten eiwitgewassen [Achtergrondnotitie]. Wageningen Social & Economic Research. https://edepot.wur.nl/708091\nMagrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nJanssens, B., van der Meer, R., & Smit, B. (2020). Gevolgen van de coronacrisis voor de aardappelsector. Wageningen Economic Research. https://edepot.wur.nl/523096",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-dependence-on-high-margin-salt-sensitive-crops",
@@ -3092,12 +3092,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "A farm with less equity against its debt is a riskier loan.",
+        "description": "A farm with less equity against its debt is a riskier loan: a high solvency can let a farm borrow more and at a lower rate (van der Meulen et al., 2020, p. 19), and more financing still requires a contribution of the farm's own (Silvis & Voskuilen, 2017, p. 3). Dutch banks assess investment plans by cash flows, solvency rates and the entrepreneur's track record (van der Meulen & van Asseldonk, 2017, p. 2), and a Rabobank adviser holds that a farm may be expected to have a solvency of at least 30 or 40% (Banken.nl, 2019). Banks weigh it beside the farm's cash flow, which counts more and more (van der Meulen et al., 2020, p. 19). Within the year: a bank judges it with each loan.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nSilvis, H., & Voskuilen, M. (2017). Betaalbaarheid en financierbaarheid van landbouwgrond (Notitie 2017-098). Wageningen Economic Research. https://edepot.wur.nl/426065\nvan der Meulen, H. A. B., & van Asseldonk, M. A. P. M. (2017). Mainstream and alternative sources of finance in Dutch agriculture [Paper, 21st International Farm Management Congress, Edinburgh]. https://ageconsearch.umn.edu/record/345809/files/17_PR_VanderMeulenVanAsseldonk_w5_p7.pdf\nBanken.nl. (2019, April 19). Rabobank merkt gestage afname kredietvraag boeren. https://www.banken.nl/nieuws/21601/rabobank-merkt-gestage-afname-kredietvraag-boeren",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-mortgage-debt-financial-leverage",
@@ -3132,12 +3132,12 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Banks lend less to farms they see as riskier.",
+        "description": "Banks lend less to farms they see as riskier: they have become more critical in lending, counting farm loans riskier despite the land as security (van der Meulen et al., 2020, p. 47), and hold back on investments not yet proven to pay (p. 8); Dutch farms' bank loans have fallen slightly in recent years, partly through the stricter rules (p. 19). Rabobank, which finances about 85% of Dutch farmers, says that since 2012, in a riskier world, it has often limited the level of financing on farms, and that a farm should be able to bridge two bad years without the bank (Banken.nl, 2019). What the bank charges for the risk is Risk premium on farm loans. Within the year: a bank decides on a loan when it is asked.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nBanken.nl. (2019, April 19). Rabobank merkt gestage afname kredietvraag boeren. https://www.banken.nl/nieuws/21601/rabobank-merkt-gestage-afname-kredietvraag-boeren",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-banks-risk-assessment",
@@ -3152,12 +3152,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Banks charge more for loans they see as riskier.",
+        "description": "Banks charge more for loans they see as riskier: the expected losses and the capital held against a loan, which the premium covers, rise with the credit risk the bank sees in the farm's creditworthiness, the size of the loan, its security and the sector's prospects (ABN AMRO, n.d.-a), and within the terms agreed a bank can change the premium during the loan when the farm's creditworthiness changes (n.d.-b). Within the year: the bank sets the premium with each loan and can revise it during the loan.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "ABN AMRO. (n.d.-a). Kosten van een krediet. Retrieved November 7, 2026, from https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/index.html\nABN AMRO. (n.d.-b). Uitleg rente bij zakelijke financieringen. Retrieved November 7, 2026, from https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/uitleg-rente.html",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-banks-risk-assessment",
@@ -3172,12 +3172,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Credit is part of what a farm can invest.",
+        "description": "Credit is part of what a farm can invest: less room for financing leaves less room to invest in developing the farm and in sustainability (van der Meulen et al., 2020, pp. 47–48), and a farm short of cash asks its bank to defer interest and repayments or for more credit (Verhagen et al., 2018, p. 28). Within the year: credit granted is capacity at once.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nVerhagen, J., van Asseldonk, M., & Pronk, A. A. (2018). Open teelten en klimaatadaptatie in relatie tot de financiële weerbaarheid (Rapport WPR-755). Wageningen Research. https://klimaatadaptatienederland.nl/publish/pages/220072/2018_wur_open_teelten_en_klimaatadaptatie_in_relatie_tot_de_financiele_weerbaarheid.pdf",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-bank-credit-to-farms",
@@ -3192,12 +3192,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "New loans add to a farm's debt against its assets.",
+        "description": "A new loan adds to a farm's debt while its equity stays the same, so its debt rises relative to its assets and its solvency, equity as a percentage of total capital, falls (van der Meulen et al., 2020, p. 19). Refinancing replaces a loan and adds no debt: the link counts the new money. Farms that expanded in recent years have a lower solvency (Silvis & Voskuilen, 2017, p. 3); Dutch farmers under 45 had 68% in 2018 against 76% for those over 65, their higher long-term debt going partly with taking over the farm (van der Meulen et al., 2020, p. 26); on dairy farms heavy investment and poor results together took five points off solvency between 2006 and 2015 (Silvis et al., 2017, p. 2). The sign holds with the assets' value unchanged: the debt of Dutch arable farms rose 38% between 2010 and 2022, yet in 2022 it was 28% of their balance sheet, the smallest share in farming, as equity grows mainly through the rising value of the land (CBS, 2024). Less credit slows the debt's rise; the debt itself falls through repayments. Within the year: a loan is on the balance sheet once it is paid out.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nSilvis, H., & Voskuilen, M. (2017). Betaalbaarheid en financierbaarheid van landbouwgrond (Notitie 2017-098). Wageningen Economic Research. https://edepot.wur.nl/426065\nSilvis, H., van der Meulen, H., & Voskuilen, M. (2017). Economische ontwikkeling akkerbouw- en melkveebedrijven (Notitie 2017-036). Wageningen Economic Research. https://edepot.wur.nl/416529\nCBS. (2024, November 28). Vreemd vermogen landbouwbedrijven afgenomen, vooral in de glastuinbouw. https://www.cbs.nl/nl-nl/nieuws/2024/48/vreemd-vermogen-landbouwbedrijven-afgenomen-vooral-in-de-glastuinbouw",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-bank-credit-to-farms",
@@ -3232,12 +3232,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "A higher premium raises the interest farms pay.",
+        "description": "A higher premium raises the interest farms pay: a loan's rate changes when its specific premium does (ABN AMRO, n.d.-b), and the farms' operations often leave little or no room for higher financing costs (van der Meulen et al., 2020, p. 47). Within the year where the bank sets or revises the premium: with each new loan, and during a loan within its terms (ABN AMRO, n.d.-b). No source read gives how much of the farms' debt carries a premium the bank can revise.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "ABN AMRO. (n.d.-b). Uitleg rente bij zakelijke financieringen. Retrieved November 7, 2026, from https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/uitleg-rente.html\nvan der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-bank-credit-freeze-risk-premiums",
@@ -3252,12 +3252,12 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Interest is part of a farm's costs.",
+        "description": "Interest is a cost that lowers a farm's income. Repayments do not count as a cost, income being revenue minus the costs paid and depreciation, yet what a farm can save comes after them (Verhagen et al., 2018, pp. 21, 23): the link joins the two as one assumption, so that repayments reach what a farm can invest through its income, which keeps every loop's polarity.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Verhagen, J., van Asseldonk, M., & Pronk, A. A. (2018). Open teelten en klimaatadaptatie in relatie tot de financiële weerbaarheid (Rapport WPR-755). Wageningen Research. https://klimaatadaptatienederland.nl/publish/pages/220072/2018_wur_open_teelten_en_klimaatadaptatie_in_relatie_tot_de_financiele_weerbaarheid.pdf",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-debt-payments",
@@ -3406,13 +3406,13 @@
     {
       "_id": "conn-agricultural-land-value--farmland-leaving-arable-use",
       "direction": "directed",
-      "delayed": false,
+      "delayed": true,
       "reversed": false,
       "attributes": {
         "label": "+",
         "polarity": "positive",
-        "delay": "no",
-        "description": "Where arable farming still pays for a buyer or successor, the next holder keeps the land arable.",
+        "delay": "yes",
+        "description": "Where arable farming still pays, its holder, present or next, keeps the land arable, while what arable farming earns, not what other uses would bid, sets the land's price. A decade or more: land leaves arable use only when a holder gives it up, and just over 1.5% of Zeeland's farmland is sold in a year (Agricultural land value).",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "yes",
@@ -3472,13 +3472,13 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Landowning farmers who expect a plan to raise the ditch levels to lower their land's value object, appeal and lobby against it. Whether the land's value is their reason is a question for the group model building session: Objections to land-use plans → Water board's plans to raise ditch levels says what the views on the island's plans gave as theirs.",
+        "description": "A draft plan that would leave a field with less drainage depth than its use needs gives its owner reason to expect the land to earn less and so be worth less, before any level changes, and owners concerned that a plan lowers their land's value object to it and ask to be compensated; what the level itself does once it takes effect runs, years later, through Polder drainage depth and Spring workability of the fields to Agricultural land value. Respondents to Friesland's peat meadow programme said the uncertainty it creates for a farm's future value lowers the value of land and buildings before the programme takes effect, the 'planological shadow' (Provincie Fryslân & Wetterskip Fryslân, 2021, pp. 3, 31). In their views on draft level plans owners named that fall: in two peat polders, holding the water board liable or asking for a compensation scheme (Graas, 2021, pp. 5, 24), and calling a plan unacceptable because its burden fell on the farmers, in the value of their land and buildings among others (Hoogheemraadschap van Schieland en de Krimpenerwaard, 2022, pp. 5, 16–17), and in the Tielerwaard, on a raise beside a Natura 2000 area, as already at issue once the buffer zone was set (Waterschap Rivierenland, 2019, p. 8). A water board compensates only damage beyond the normal societal risk, the rest staying, wholly or partly, with the owner (Hoogheemraadschap van Schieland en de Krimpenerwaard, 2022, p. 16; Waterschap Scheldestromen, 2025, p. 14). Whether and how far land loses value the minister called unclear for the peat meadow areas, the question being whether the yield can stay the same or the farmer can earn a comparable income on the land another way (Minister van Landbouw, Natuur en Voedselkwaliteit, 2021, pp. 2–3). Measured elsewhere, in polders where the level change answers subsidence; it transfers as an owner's response to a plan that would leave a field too wet for its use, as in the Braakman near Terneuzen in 2015, where the island's own water board answered ZLTO, objecting for seven farmers, that some would be left with less than optimal drainage depth or with drains under water in winter, both naming damage, not the land's value (Waterschap Scheldestromen, 2015, p. 2). On the island the raises of 2021 were to limit drought damage and give the crops more moisture (Waterschap Scheldestromen, 2021a, p. 69; 2021b, p. 53): no view on either plan, as the board summarises them, gave the land's value as a reason, the only ones against a raise naming flooding in extreme rain (2021a, p. 53), as farmers across the salinisation-prone provinces want their levels low against flooding and to work their fields with heavy machinery (Beauchampet, 2022, p. 217), and one submitter on each half asked about holding a higher level locally (2021a, p. 53; 2021b, p. 7). Whether a raise that leaves too little drainage depth would raise this concern on the island, no source read shows, nor objections on this ground to the other bodies' plans. Within the year: the views come in the six weeks a draft lies open (Waterschap Scheldestromen, 2025, p. 17).",
         "sets link": "Within S",
         "sets scope": "Within domain",
-        "hypothesis": "yes",
+        "hypothesis": "no",
         "simplification": "Folds Owners' concern about their land's value, which gathered the reasons for objecting: a fall in the land's value, and a plan that would lower it, raised landowning farmers' concern, and the concern raised their objections. The sign is the product of the two steps, so B9 keeps its polarity, and the concern was no actor's decision of its own. A tenant's concern, losing the lease, was never part of it. What it leaves out: why owners object is no variable on the drawing, a question for the group model building session.",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Provincie Fryslân, & Wetterskip Fryslân. (2021, March). Veenweideprogramma 2021–2030: Reactienota. https://heerenveen.bestuurlijkeinformatie.nl/Document/View/396b23d0-8c59-43f6-886e-1fdad031b520\nGraas, S. (2021). Inspraakrapport ontwerp peilbesluit Zegveld 2021 (DM 1772477). Hoogheemraadschap De Stichtse Rijnlanden. https://repository.officiele-overheidspublicaties.nl/externebijlagen/exb-2022-5226/currentItem\nHoogheemraadschap van Schieland en de Krimpenerwaard. (2022). Nota van beantwoording ontwerp peilbesluit Zuidplaspolder Zuidoost (Kenmerk 2022.09006). https://repository.officiele-overheidspublicaties.nl/externebijlagen/exb-2022-70349/currentItem\nWaterschap Rivierenland. (2019). Inspraakverslag peilbesluit Lek en Linge en Tielerwaard. https://repository.officiele-overheidspublicaties.nl/externebijlagen/exb-2019-30978/currentItem\nMinister van Landbouw, Natuur en Voedselkwaliteit. (2021, May 28). Kabinetsaanpak Klimaatbeleid [Letter to the House of Representatives, Kamerstukken II 2020/21, 32 813, nr. 713]. https://zoek.officielebekendmakingen.nl/kst-32813-713.pdf\nWaterschap Scheldestromen. (2015). Antwoordnota zienswijzen ontwerp peilbesluit Braakman e.o. (Registratienr. 2015032549). https://repository.officiele-overheidspublicaties.nl/CVDR/CVDR386342/1/xml/i263795.pdf\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nWaterschap Scheldestromen. (2021b). Hydrologisch onderzoeksrapport Schouwen. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch_onderzoeksrapport_Schouwen.pdf\nWaterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-plans-to-raise-ditch-levels",
@@ -3493,12 +3493,12 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Farmers who trust that public bodies keep their commitments object less.",
+        "description": "Farmers who expect public bodies to keep their commitments object less. In views on draft water plans in peat areas, owners named unreliable government, a hidden agenda and agreements not kept beside their other grounds (Graas, 2021, p. 13; Provincie Fryslân & Wetterskip Fryslân, 2021, pp. 6, 14, 85; Hoogheemraadschap van Schieland en de Krimpenerwaard, 2022, p. 29). In experiments with Dutch students, on a national board advising on carbon dioxide storage, how trustworthy the decision maker seemed explained how far they accepted the decision (Terwel, 2009, pp. 77, 81), and in the United States distrust of risk managers goes with political activism (Slovic, 1993, pp. 675–676). Measured elsewhere; it transfers as an owner's response to a body that plans for their land, whatever the plan's reason. It holds while a farmer still acts on the distrust: a view in Friesland reports 'weinig vertrouwen en veel gelatenheid' (Provincie Fryslân & Wetterskip Fryslân, 2021, p. 7), and one submission has a small group on the island, no longer trusting the Province, starting a pipeline plan of its own (Lases, 2021, p. 2). None of the views on the island's two level plans of 2021, as the board summarises them, named trust (Waterschap Scheldestromen, 2021a, p. 53; 2021b, pp. 7–8). Within the year: the views come in the six weeks a draft lies open (Waterschap Scheldestromen, 2025, p. 17).",
         "sets link": "Within S",
         "sets scope": "Within domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
+        "hypothesis": "no",
+        "sources": "Graas, S. (2021). Inspraakrapport ontwerp peilbesluit Zegveld 2021 (DM 1772477). Hoogheemraadschap De Stichtse Rijnlanden. https://repository.officiele-overheidspublicaties.nl/externebijlagen/exb-2022-5226/currentItem\nProvincie Fryslân, & Wetterskip Fryslân. (2021, March). Veenweideprogramma 2021–2030: Reactienota. https://heerenveen.bestuurlijkeinformatie.nl/Document/View/396b23d0-8c59-43f6-886e-1fdad031b520\nHoogheemraadschap van Schieland en de Krimpenerwaard. (2022). Nota van beantwoording ontwerp peilbesluit Zuidplaspolder Zuidoost (Kenmerk 2022.09006). https://repository.officiele-overheidspublicaties.nl/externebijlagen/exb-2022-70349/currentItem\nTerwel, B. W. (2009). Origins and consequences of public trust: Towards an understanding of public acceptance of carbon dioxide capture and storage [Doctoral dissertation, Leiden University]. https://hdl.handle.net/1887/13805\nSlovic, P. (1993). Perceived risk, trust, and democracy. Risk Analysis, 13(6), 675–682. https://doi.org/10.1111/j.1539-6924.1993.tb01329.x\nLases, W. B. P. M. (2021, June). Een blijvende keuze van Zeeland voor een zout Grevelingenmeer leidt tot gerichte onleefbaarheid op Schouwen-Duiveland [Submission to the Province of Zeeland's committee Ruimte]. https://www.zeeland.nl/sites/default/files/digitaalarchief/IB21_8a686d4a.pdf\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nWaterschap Scheldestromen. (2021b). Hydrologisch onderzoeksrapport Schouwen. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch_onderzoeksrapport_Schouwen.pdf\nWaterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-farmers-trust-in-government",
@@ -3533,11 +3533,11 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Objections and appeals delay, change or stop plans for the island's water and land after public bodies announced them, and plans changed or dropped teach farmers not to count on the next one.",
+        "description": "Hypothesis, with two mechanisms for the group model building session: the conflict over a plan itself may lower trust, and a plan delayed, changed or dropped after objections may teach farmers not to count on the next one. Farmers do name changing plans as a reason to distrust public bodies (Farmers' trust in government), but no source read shows a plan changed because of objections costing trust, and where a body takes up an objection those who objected may trust it more, so the sign is part of the question. Within the year once a plan changes: trust can be destroyed in an instant; its recovery, slower, is in the element.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "yes",
-        "simplification": "Folds Plans changed or dropped: objections and appeals change, delay or stop plans, and the changes teach farmers not to count on the next plan. The sign is the product of the two steps (+, then −), so no loop through the link changes. The public bodies' decisions on their plans stay drawn, on the links from Objections to land-use plans into Water board's plans to raise ditch levels and Farmland planned for other uses; this link carries only what farmers learn from the changes.",
+        "simplification": "Folds Plans changed or dropped. The sign is the product of the two steps (+, then −), so no loop through the link changes. It assumes that a plan changed after objections costs trust as a plan changed for other reasons does, which no source read shows. The public bodies' decisions on their plans stay drawn, on the links from Objections to land-use plans into Water board's plans to raise ditch levels and Farmland planned for other uses.",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -3554,12 +3554,12 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Land taken by force lowers farmers' trust in government.",
+        "description": "Land taken against its owner's wish lowers how far farmers expect public bodies to keep their commitments, the more so where they do not count the purpose as a public interest and where voluntary purchase was promised. Of 14 owners interviewed in the Krimpenerwaard, in a process of 2015–2023 ending in expropriation for nature, most experienced it as negative and named an inequality of power; the municipal council had feared for trust between government and farming (Kamphorst et al., 2025, pp. 10, 15, 55). In interviews across the Netherlands, owners who did not count the plan as a public interest, nature development for one, were more often negative about expropriation in itself than those taken for roads (Holtslag-Broekhof et al., 2016, section Equal Treatment), and the chair of LTO held large-scale use against reliable government, farmers having been told that purchases would be voluntary (Neefjes, 2008, p. 3). It starts before any order, from the possibility of one (Kamphorst et al., 2025, p. 55). No source read measures trust before and after, or on the island, where the purposes used so far are a road and the grid, those owners accept most. A tenant may gain (Adviescommissie Natuurherstel Westerschelde, n.d., p. 11). Within the year: trust can be destroyed in an instant, its recovery, slower, is in the element (Slovic, 1993, p. 677).",
         "sets link": "Within S",
         "sets scope": "Within domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
+        "hypothesis": "no",
+        "sources": "Kamphorst, D. A., Nieuwenhuizen, W., & Langers, F. (2025). Nieuwe natuur in de polder: tussen zelfrealisatie en onteigening (Rapport 3464). Wageningen Environmental Research. https://edepot.wur.nl/703340\nHoltslag-Broekhof, S. M., van Marwijk, R., Beunen, R., & Wiskerke, J. S. C. (2016). Perceived (in)justice of public land acquisition. Journal of Agricultural and Environmental Ethics, 29(2), 167–184. https://doi.org/10.1007/s10806-015-9594-3\nNeefjes, M. (2008, January). Onteigening voor natuur: bittere noodzaak of niet aan beginnen? [pp. 2–5; the journal is not named in the copy read]. https://edepot.wur.nl/114625\nAdviescommissie Natuurherstel Westerschelde. (n.d.). Wennen aan de Westerschelde. https://www.vliz.be/imisdocs/publications/ocrd/144313.pdf\nSlovic, P. (1993). Perceived risk, trust, and democracy. Risk Analysis, 13(6), 675–682. https://doi.org/10.1111/j.1539-6924.1993.tb01329.x",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-expropriation-of-farmland",
@@ -3855,12 +3855,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "yes",
-        "description": "With more fresh water a farm keeps or takes on the crops that need it: on the island's low polders, with more fresh water available the farmer is open to more profitable crops and a more varied rotation (Kaandorp et al., 2022, p. 30). In Zeeland the area of sown onions halved from 4,705 ha in 2019 to 2,579 ha in 2024, the article naming the dry summers, the poor harvests and the lack of fresh water, four in five arable farmers having none, as farmers preferred less risky crops, while elsewhere the area grew (De Vriend, 2024, for Zeeland). Years, so a delay: farmers respond to the seasons they have had, and the fall ran over five years of dry summers.",
+        "description": "With more fresh water a farm keeps or takes on the crops that need it: on the island's low polders, with more fresh water available the farmer is open to more profitable crops and a more varied rotation (Kaandorp et al., 2022, p. 30). In Zeeland the area of sown onions halved from 4,705 ha in 2019 to 2,579 ha in 2024, the article naming the dry summers, the poor harvests and the lack of fresh water, four in five arable farmers having none, as farmers preferred less risky crops, while elsewhere the area grew (De Vriend, 2024b, for Zeeland). Years, so a delay: farmers respond to the seasons they have had, and the fall ran over five years of dry summers.",
         "sets link": "E to S",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
         "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
-        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nDe Vriend, E. (2024, August 14). Zeeuwse akkerbouwers verbouwen andere gewassen door klimaatverandering. Stal & Akker. https://sterke-erven.nl/artikel/518563-zeeuwse-akkerbouwers-verbouwen-andere-gewassen-door-klimaatverandering/",
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nDe Vriend, E. (2024b, August 14). Zeeuwse akkerbouwers verbouwen andere gewassen door klimaatverandering. Stal & Akker. https://sterke-erven.nl/artikel/518563-zeeuwse-akkerbouwers-verbouwen-andere-gewassen-door-klimaatverandering/",
         "sourced": "yes",
         "connection type": "+"
       },
@@ -4253,7 +4253,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 8e52585",
+      "name": "CLD, model 9a14be0",
       "description": "",
       "scale": 1,
       "center": {

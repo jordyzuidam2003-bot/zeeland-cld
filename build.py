@@ -99,7 +99,8 @@ def apa(r):
     def sentence(text):
         return text if text.endswith((".", "?", "!")) else text + "."
 
-    url = f"https://doi.org/{r['DOI']}" if r.get("DOI") else r["URL"]
+    # an unpublished report a partner sent has no link of its own
+    url = f"https://doi.org/{r['DOI']}" if r.get("DOI") else r.get("URL", "") if r["type"] == "report" else r["URL"]
     if r["type"] == "legislation":
         y, m, d = r["issued"]["date-parts"][0]
         return f"{r['title']} (version in force from {d} {MONTHS[m - 1]} {y}). {url}"
@@ -131,7 +132,7 @@ def apa(r):
     if r.get("accessed"):
         y, m, d = r["accessed"]["date-parts"][0]
         url = f"Retrieved {MONTHS[m - 1]} {d}, {y}, from {url}"
-    return " ".join(parts + [url])
+    return " ".join(parts + ([url] if url else []))
 
 
 def references():

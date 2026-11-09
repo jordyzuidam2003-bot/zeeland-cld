@@ -14,9 +14,11 @@
 <path class="link-path" d="M -166.7 -212.7 Q -88.4 -240.0 -0.0 -240.0 Q 88.4 -240.0 166.7 -212.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="118.7" y="-226.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="harvest-of-new-crops-to-process" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="false" data-curvature="-0.22">
+<g class="link" data-from="harvest-of-new-crops-to-process" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="true" data-curvature="-0.22">
 <path class="link-path" d="M 305.7 -126.7 Q 360.0 -68.5 360.0 0.0 Q 360.0 68.5 305.7 126.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="335.9" y="86.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 384.0 -7.2 L 336.0 -7.4 M 384.0 8.8 L 336.0 8.6" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 384.0 -7.2 L 336.0 -7.4 M 384.0 8.8 L 336.0 8.6" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="processing-capacity-for-alternative-crops" data-to="net-price-for-new-crops" data-sign="+" data-delay="false" data-curvature="-0.14">
 <path class="link-path" d="M 166.7 212.7 Q 88.4 240.0 -0.0 240.0 Q -88.4 240.0 -166.7 212.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -34,8 +36,8 @@
 <text x="254.6" y="-178.2" text-anchor="middle">Harvest of new crops</text>
 <text x="254.6" y="-144.2" text-anchor="middle">to process</text>
 </g>
-<g class="element" data-id="processing-capacity-for-alternative-crops" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
-<rect x="77.3" y="126.7" width="354.5" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="processing-capacity-for-alternative-crops" data-domain="Technological" data-type="Stock" data-adaptive="false">
+<rect x="77.3" y="126.7" width="354.5" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
 <text x="254.6" y="161.2" text-anchor="middle">Local processing</text>
 <text x="254.6" y="195.2" text-anchor="middle">capacity for new crops</text>
 </g>

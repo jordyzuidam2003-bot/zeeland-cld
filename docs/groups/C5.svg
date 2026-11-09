@@ -60,9 +60,11 @@
 <path class="link-path" d="M -776.9 576.0 Q -934.9 507.5 -1023.7 360.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-996.1" y="401.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="false" data-curvature="0.16">
+<g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
 <path class="link-path" d="M -1059.3 308.0 Q -1148.4 190.4 -1152.7 43.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-1148.7" y="92.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -1145.1 204.0 L -1100.0 187.5 M -1150.6 189.0 L -1105.5 172.5" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -1145.1 204.0 L -1100.0 187.5 M -1150.6 189.0 L -1105.5 172.5" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="agricultural-land-value" data-to="mortgage-debt-financial-leverage" data-sign="-" data-delay="false" data-curvature="0.16">
 <path class="link-path" d="M -1152.7 -43.0 Q -1148.4 -190.4 -1059.3 -308.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -76,9 +78,11 @@
 <path class="link-path" d="M 177.2 -216.9 Q 650.3 -272.4 1067.7 -43.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="1023.6" y="-66.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="agricultural-land-value" data-to="farmland-leaving-arable-use" data-sign="+" data-delay="false" data-curvature="0.16">
+<g class="link" data-from="agricultural-land-value" data-to="farmland-leaving-arable-use" data-sign="+" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
 <path class="link-path" d="M -1014.9 -14.7 Q -523.6 -77.3 -87.3 157.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-131.7" y="134.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -559.7 -31.4 L -567.8 15.9 M -543.9 -28.7 L -552.1 18.6" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -559.7 -31.4 L -567.8 15.9 M -543.9 -28.7 L -552.1 18.6" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="farmland-leaving-arable-use" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
 <path class="link-path" d="M 87.3 157.0 Q 504.7 -72.4 977.8 -16.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -88,8 +92,8 @@
 </g>
 </g>
 <g class="elements">
-<g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-1295.1" y="-43.0" width="280.3" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="-1295.1" y="-43.0" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-1155.0" y="-8.5" text-anchor="middle">Agricultural land</text>
 <text x="-1155.0" y="25.5" text-anchor="middle">value</text>
 </g>

@@ -60,9 +60,11 @@
 <path class="link-path" d="M -162.4 760.3 Q -305.7 774.0 -430.4 702.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-385.9" y="724.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="false" data-curvature="0.16">
+<g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
 <path class="link-path" d="M -583.6 660.0 Q -732.9 625.6 -834.5 511.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-799.6" y="546.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -721.0 633.3 L -697.0 591.7 M -734.9 625.3 L -710.9 583.7" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -721.0 633.3 L -697.0 591.7 M -734.9 625.3 L -710.9 583.7" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="agricultural-land-value" data-to="mortgage-debt-financial-leverage" data-sign="-" data-delay="false" data-curvature="0.16">
 <path class="link-path" d="M -932.3 425.0 Q -1047.2 333.9 -1087.9 193.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -130,8 +132,8 @@
 <rect x="-583.6" y="650.0" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-488.0" y="684.5" text-anchor="middle">Farm income</text>
 </g>
-<g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-1020.1" y="425.0" width="280.3" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="-1020.1" y="425.0" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-880.0" y="459.5" text-anchor="middle">Agricultural land</text>
 <text x="-880.0" y="493.5" text-anchor="middle">value</text>
 </g>

@@ -52,13 +52,17 @@
 <path class="link-path" d="M 87.4 -576.3 Q 275.6 -590.6 437.2 -493.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="393.4" y="-517.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="false" data-curvature="0.16">
+<g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
 <path class="link-path" d="M 539.5 -441.0 Q 710.1 -357.8 800.7 -191.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="775.1" y="-234.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 695.4 -364.9 L 662.6 -329.8 M 707.1 -354.0 L 674.3 -318.9" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 695.4 -364.9 L 662.6 -329.8 M 707.1 -354.0 L 674.3 -318.9" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="agricultural-land-value" data-to="farmland-leaving-arable-use" data-sign="+" data-delay="false" data-curvature="0.16">
+<g class="link" data-from="agricultural-land-value" data-to="farmland-leaving-arable-use" data-sign="+" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
 <path class="link-path" d="M 832.4 -105.0 Q 861.4 52.7 793.5 198.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="812.6" y="151.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 862.7 38.4 L 815.0 32.8 M 860.9 54.2 L 813.2 48.7" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 862.7 38.4 L 815.0 32.8 M 860.9 54.2 L 813.2 48.7" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="farmland-leaving-arable-use" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
 <path class="link-path" d="M 738.4 284.0 Q 638.9 420.6 478.5 474.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -96,8 +100,8 @@
 <rect x="394.4" y="-493.0" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="490.0" y="-458.5" text-anchor="middle">Farm income</text>
 </g>
-<g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="685.9" y="-191.0" width="280.3" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="685.9" y="-191.0" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="826.0" y="-156.5" text-anchor="middle">Agricultural land</text>
 <text x="826.0" y="-122.5" text-anchor="middle">value</text>
 </g>

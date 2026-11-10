@@ -23,6 +23,7 @@ xlsx.py writes the table's file. Never edit docs/, which this script writes:
                        Google Drive as a Google Sheet: the Elements, Links, Named loops, Combined
                        loops (once cld.json holds groups) and References sheets; linked from the page
     docs/cld.svg       the drawing on its own, the picture for the report
+    docs/groups/<id>.svg  each group of named loops, its loops joined at their shared variables (draw.group_figure())
     docs/loops/<id>.svg  each named loop on its own (draw.loop_figure()), its figure for the
                        report; the page's panel for the loop shows it
     docs/regions.svg   the subsystem regions alone, the background image of the Kumu map
@@ -64,7 +65,7 @@ PAGES_URL = "https://jordyzuidam2003-bot.github.io/zeeland-cld/"
 ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
 SUBQUESTIONS = ["SQ1", "SQ2", "SQ3"]
 SETS_LETTER = {"Social": "S", "Ecological": "E", "Technological": "T"}
-CONSTANT_REACH = 300  # the most a Constant's box keeps from a box it drives: about one box's width
+CONSTANT_REACH = 400  # the most a Constant's box keeps from a box it drives: about one box's width and a bit
 
 # An actor's columns take a value from these lists, the Actor Map's own: they start from the
 # values the group's old Actor Table used, which bind nothing (Jordy: the old table gave the
@@ -82,7 +83,7 @@ ACTOR_SECTORS = ["Aquaculture", "Arable Farming", "Export/distribution", "Extern
 RELATION_KINDS = ["authority over", "finances", "buys from", "advises", "represents", "works with"]
 # references.json is CSL JSON, as Zotero imports it, and apa() writes each APA line from it, so
 # the page, the table and Zotero's copy hold one record; a type joins once apa() writes it
-REF_TYPES = ["article-journal", "article-newspaper", "dataset", "legislation", "report", "webpage"]
+REF_TYPES = ["article-journal", "article-newspaper", "chapter", "dataset", "legislation", "report", "webpage"]
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
           "October", "November", "December"]
 # the fields build.py lists while empty: a field no source carries stays empty, never a guess
@@ -98,7 +99,8 @@ def apa(r):
     def sentence(text):
         return text if text.endswith((".", "?", "!")) else text + "."
 
-    url = f"https://doi.org/{r['DOI']}" if r.get("DOI") else r["URL"]
+    # an unpublished report a partner sent has no link of its own
+    url = f"https://doi.org/{r['DOI']}" if r.get("DOI") else r.get("URL", "") if r["type"] == "report" else r["URL"]
     if r["type"] == "legislation":
         y, m, d = r["issued"]["date-parts"][0]
         return f"{r['title']} (version in force from {d} {MONTHS[m - 1]} {y}). {url}"
@@ -119,6 +121,10 @@ def apa(r):
     parts.append(sentence(title + (" [Data set]" if r["type"] == "dataset" else "")))
     if r["type"] == "article-journal":
         parts.append(sentence(f"{r['container-title']}, {r['volume']}" + (f"({r['issue']})" if r.get("issue") else "") + f", {r['page']}"))
+    elif r["type"] == "chapter":
+        eds = [f"{e['given']} {e['family']}" for e in r["editor"]]
+        who = eds[0] if len(eds) == 1 else ", ".join(eds[:-1]) + ", & " + eds[-1]
+        parts.append(sentence(f"In {who} ({'Ed.' if len(eds) == 1 else 'Eds.'}), {r['container-title']} (pp. {r['page']})"))
     elif r.get("container-title"):
         parts.append(sentence(r["container-title"]))
     if r.get("publisher"):
@@ -126,7 +132,7 @@ def apa(r):
     if r.get("accessed"):
         y, m, d = r["accessed"]["date-parts"][0]
         url = f"Retrieved {MONTHS[m - 1]} {d}, {y}, from {url}"
-    return " ".join(parts + [url])
+    return " ".join(parts + ([url] if url else []))
 
 
 def references():
@@ -259,6 +265,9 @@ def check(cld, refs, actors):
 
     sign = {(c["from"], c["to"]): c["polarity"] for c in cld["connections"]}
     for loop in cld["loops"]:
+        # each named loop says in words what it does; the page's panel and the table show it
+        if not (isinstance(loop.get("description"), str) and loop["description"].strip()):
+            errors.append(f"loop {loop['id']}: no description")
         path = loop["path"]
         steps = list(zip(path, path[1:] + path[:1]))
         gaps = [f"{a} -> {b}" for a, b in steps if (a, b) not in sign]
@@ -269,6 +278,52 @@ def check(cld, refs, actors):
         if not loop["id"].startswith(kind):
             errors.append(f"loop {loop['id']} is {'balancing' if kind == 'B' else 'reinforcing'} "
                           f"as drawn, so its id must start with {kind}")
+
+    # A description names a loop by its id, which goes stale unseen once that loop leaves the named loops.
+    loop_ids = {loop["id"] for loop in cld["loops"]}
+    paths = {loop["id"]: set(loop["path"]) for loop in cld["loops"]}
+    group_ids = [g.get("id") for g in cld.get("groups", [])]
+    errors += [f"group id {i} appears twice" for i in sorted({i for i in group_ids if group_ids.count(i) > 1}, key=str)]
+    for group in cld.get("groups", []):
+        # a group's button, figure and table row read these; a loop gone from the named loops would stay in them unseen
+        name = group.get("id", "?")
+        if not re.fullmatch(r"C\d+", str(group.get("id"))):
+            errors.append(f"group {name}: its id must be C and a number")
+        for field in ("name", "description"):
+            if not (isinstance(group.get(field), str) and group[field].strip()):
+                errors.append(f"group {name}: no {field}")
+        errors += [f"group {name}: source {k!r} is not in references.json" for k in group.get("sources", []) if k not in refs]
+        members = group.get("loops", [])
+        unknown = [m for m in members if m not in loop_ids]
+        if unknown:
+            errors.append(f"group {name}: {', '.join(unknown)} not a named loop")
+        elif len(set(members)) < 2:
+            errors.append(f"group {name}: needs at least two different loops")
+        else:
+            # a group is its loops joined at their shared variables, so none stands apart
+            joined, rest = paths[members[0]], [paths[m] for m in members[1:]]
+            while rest and any(joined & p for p in rest):
+                joined = joined.union(*(p for p in rest if joined & p))
+                rest = [p for p in rest if not joined & p]
+            if rest:
+                errors.append(f"group {name}: its loops share no variable with the others")
+            # its figure's places are its own, so a loop changed on its path leaves one out or one over
+            want = {"places": set().union(*(paths[m] for m in members)), "marks": set(members),
+                    "bends": {f"{a} -> {b}" for a, b in draw.group_links(cld, group)}}
+            for field, keys in want.items():
+                have = set(group.get(field, {}))
+                if have != keys:
+                    errors.append(f"group {name}: {field} must hold exactly its loops' own: "
+                                  f"missing {sorted(keys - have)}, not on them {sorted(have - keys)}")
+    for item in cld["elements"] + cld["connections"] + cld["loops"] + cld.get("groups", []):
+        gone =sorted(set(re.findall(r"\b[RB]\d+\b", str(item.get("description", "")))) - loop_ids)
+        if gone:
+            errors.append(f"{item.get('id') or item.get('from', '?') + ' -> ' + item.get('to', '?')}: "
+                          f"its description names {', '.join(gone)}, not a named loop")
+
+    for c in cld["connections"]:
+        if "delay at" in c and not (c["delay"] and 0 < c["delay at"] < 1):
+            errors.append(f"{c['from']} -> {c['to']}: delay at needs a delayed link and a value between 0 and 1")
 
     if not errors:
         has_in = {c["to"] for c in cld["connections"]}
@@ -300,9 +355,13 @@ def check(cld, refs, actors):
         # A delay is a claim about duration, so its description names one (a number: years, m per decade).
         warnings += [f"{c['from']} -> {c['to']}: a delay, yet its description gives no duration"
                      for c in cld["connections"] if c["delay"] and not any(ch.isdigit() for ch in c["description"])]
-        # The CLD describes mechanisms and is shaped for no lever set, so no element or link names one.
+        for group in cld.get("groups", []):
+            crossings, through = draw.tangles(draw.group_cld(cld, group))
+            if crossings or through:
+                warnings.append(f"group {group['id']}: its figure has {len(crossings)} crossings and {len(through)} links through a box")
+        # The CLD describes mechanisms and is shaped for no lever set, so no element, link or loop names one.
         warnings += [f"{item.get('id') or item['from'] + ' -> ' + item['to']}: names a policy lever"
-                     for item in cld["elements"] + cld["connections"]
+                     for item in cld["elements"] + cld["connections"] + cld["loops"] + cld.get("groups", [])
                      if re.search(r"\b(levers?|buy-?outs?|land bank)\b", item["description"], re.I)]
         warnings += draw.overlaps(cld)
     return errors, warnings
@@ -381,6 +440,8 @@ def page_data(cld, refs, actors, version):
         "elements": [{k: v for k, v in e.items() if k not in drop} for e in bp["elements"]],
         "connections": [{k: v for k, v in c.items() if k not in drop} for c in bp["connections"]],
         "loops": cld["loops"],
+        # the figure's numbers stay out, as the drawing's do
+        "groups": [{k: g[k] for k in ("id", "name", "loops", "description")} for g in cld.get("groups", [])],
         "version": version,
     }
 
@@ -409,6 +470,7 @@ def counts(cld, loops):
     links = sum(c["from"] in inner and c["to"] in inner for c in cld["connections"])
     rest = [e for e in cld["elements"] if e["id"] not in inner]
     return {"elements": len(cld["elements"]), "links": len(cld["connections"]), "named loops": len(cld["loops"]),
+            "combined loops": len(cld.get("groups", [])),
             "sourced links": sum(bool(c["sources"]) for c in cld["connections"]),
             "hypotheses": sum(bool(c.get("hypothesis")) for c in cld["connections"]),
             "feedback loops": len(loops), "core elements": len(inner), "core links": links,
@@ -430,6 +492,9 @@ def model_texts(cld, loops):
     the list before its first heading; the texts are its sections, each a ## heading with
     paragraphs or a - list. A <!-- comment --> is not shown."""
     text = re.sub(r"<!--.*?-->\n?", "", TEXTS.read_text(), flags=re.S)
+    # each group's mechanism is its description in cld.json, so the two cannot differ
+    text = text.replace("{combined loops list}", "\n".join(
+        f"- **{g['id']} {g['name']}** ({', '.join(g['loops'])}). {g['description']}" for g in cld.get("groups", [])))
     for name, n in counts(cld, loops).items():
         text = text.replace("{" + name + "}", f"{n:,}")
     if re.search(r"\{[a-z ]+\}", text):
@@ -585,7 +650,7 @@ def project(cld, refs, actors, template, version):
     for loop in cld["loops"]:
         path = loop["path"]
         loops.append({"_id": f'loop-{loop["id"]}',
-                      "attributes": {"label": f'{loop["id"]} {loop["name"]}', "description": ""},
+                      "attributes": {"label": f'{loop["id"]} {loop["name"]}', "description": loop["description"]},
                       "connections": [f'conn-{a}--{b}' for a, b in zip(path, path[1:] + path[:1])]})
         map_loops.append({"_id": f'mloop-{loop["id"]}', "loop": f'loop-{loop["id"]}', "style": {},
                           "position": {"x": round(sum(by_id[i]["x"] for i in path) / len(path)),
@@ -596,9 +661,11 @@ def project(cld, refs, actors, template, version):
                    "https://github.com/jordyzuidam2003-bot/zeeland-cld.")
     # a showcase button per named loop: its elements and links (Kumu's :loop selector, by the
     # loop's label), and the regions, which a showcase fades unless it selects them
-    options = "\n\n".join(f'      option {{\n        label: "{label}";\n'
-                          f'        selector: *:loop(["label"="{label}"]), #background;\n      }}'
-                          for label in (f'{loop["id"]} {loop["name"]}' for loop in cld["loops"]))
+    label = {loop["id"]: f'{loop["id"]} {loop["name"]}' for loop in cld["loops"]}
+    selector = lambda ids: ", ".join(f'*:loop(["label"="{label[i]}"])' for i in ids) + ", #background"
+    options = "\n\n".join(f'      option {{\n        label: "{name}";\n        selector: {selector(ids)};\n      }}'
+                          for name, ids in [(label[loop["id"]], [loop["id"]]) for loop in cld["loops"]]
+                          + [(f'{g["id"]} {g["name"]}', g["loops"]) for g in cld.get("groups", [])])
     template = template.replace("      /* LOOP OPTIONS */", options)
     style = (template.rstrip() + "\n\n/* ---------- generated by build.py: tints, box sizes, the regions' size ---------- */\n"
              + "\n".join(rules) + "\n")
@@ -677,15 +744,16 @@ def actors_project(actors, refs, decides, cld_labels, template, version):
 
 
 def apply_layout(path):
-    """Write the positions and curvatures of a layout.json ({id: {x, y}, "curvature": {"from->to": k}},
-    from the page's drag mode) into cld.json, in its own formatting; a file without "curvature"
+    """Write the positions, curvatures and dragged delay marks of a layout.json ({id: {x, y}, "curvature":
+    {"from->to": k}, "delay": {"from->to": t}}, from the page's drag mode) into cld.json, in its own formatting; a file without "curvature"
     moves the elements only."""
     layout = json.loads(path.read_text())
     curvature = layout.pop("curvature", {})
+    delay_at = layout.pop("delay", {})
     cld = json.loads(CLD.read_text())
     by_id = {e["id"]: e for e in cld["elements"]}
     by_link = {f'{c["from"]}->{c["to"]}': c for c in cld["connections"]}
-    unknown = [i for i in layout if i not in by_id] + [k for k in curvature if k not in by_link]
+    unknown = [i for i in layout if i not in by_id] + [k for k in list(curvature) + list(delay_at) if k not in by_link]
     if unknown:
         sys.exit(f"--layout: unknown element or link {', '.join(unknown)}")
     for i, pos in layout.items():
@@ -693,6 +761,8 @@ def apply_layout(path):
     for k, v in curvature.items():
         if by_link[k]["curvature"] != v:  # an unchanged value keeps its spelling (0 or 0.0)
             by_link[k]["curvature"] = v
+    for k, v in delay_at.items():
+        by_link[k]["delay at"] = v
     CLD.write_text(json.dumps(cld, indent=2, ensure_ascii=False) + "\n")
 
 
@@ -737,14 +807,15 @@ def main():
         "map.js": (PAGE / "map.js").read_text(),
         "style.css": (PAGE / "style.css").read_text(),
         **{f"loops/{loop['id']}.svg": draw.loop_figure(cld, loop) for loop in cld["loops"]},
+        **{f"groups/{g['id']}.svg": draw.group_figure(cld, g) for g in cld.get("groups", [])},
     }
     # Kumu shows regions.svg stretched to the frame: with a viewBox alone a browser sizes it 250 by
     # 150 pixels, which Kumu blurred (draw.regions_svg())
     if not re.match(r'<svg [^>]*\bwidth="\d+" height="\d+"', outputs["regions.svg"]):
         sys.exit("docs/regions.svg needs a width and a height besides its viewBox: draw.regions_svg() writes them")
     # a figure whose loop is gone or renamed would stay published
-    extra = sorted(f"loops/{f.name}" for f in (DOCS / "loops").glob("*") if f"loops/{f.name}" not in outputs) \
-        if (DOCS / "loops").is_dir() else []
+    extra = sorted(f"{d}/{f.name}" for d in ("loops", "groups") if (DOCS / d).is_dir()
+                   for f in (DOCS / d).glob("*") if f"{d}/{f.name}" not in outputs)
 
     if args.check:
         # the table is bytes, every other file text
@@ -755,6 +826,7 @@ def main():
         return
 
     (DOCS / "loops").mkdir(parents=True, exist_ok=True)
+    (DOCS / "groups").mkdir(parents=True, exist_ok=True)
     for name in extra:
         (DOCS / name).unlink()
     for name, out in outputs.items():
@@ -790,7 +862,7 @@ def main():
     no_actors = [i for i, s in shaped.items() if not s]
     if no_actors:
         print(f"elements no actor decides or shapes directly ({len(no_actors)}): {', '.join(no_actors)}")
-    cited = {k for item in cld["elements"] + cld["connections"] + actors["actors"] for k in item.get("sources", [])}
+    cited = {k for item in cld["elements"] + cld["connections"] + cld.get("groups", []) + actors["actors"] for k in item.get("sources", [])}
     cited |= {k for a in actors["actors"] for r in a.get("relations", []) for k in r.get("sources", [])}
     warnings += [f"reference {k!r} is cited nowhere" for k in refs if k not in cited]
     # a section the page would show with nothing under its heading

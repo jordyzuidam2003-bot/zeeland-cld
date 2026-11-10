@@ -16,24 +16,30 @@ const byKey = Object.fromEntries(data.connections.map(c => [linkKey(c), c]));
 document.getElementById("version").textContent = data.version;
 
 // --- highlight buttons ----------------------------------------------------------------------
-// A button per named loop names its elements and links; pressed loops are united, none means all.
-// A loop's button reads "R1 Its name"; its key is the loop's id. Pressing it also opens the loop's
-// panel, its figure on its own (docs/loops/<id>.svg); releasing it closes that panel.
-const rules = data.loops.map(loop => [`${loop.id} ${loop.name}`, () => {
-  const path = loop.path;
-  const keys = path.map((id, i) => `${id}--${path[(i + 1) % path.length]}`);
-  return { elements: new Set(path), links: new Set(keys) };
-}, loop.id]);
+// A button per named loop, and one per group of named loops, names its elements and links; pressed
+// buttons are united, none means all. A button reads "R1 Its name"; its key is the id. Pressing it
+// also opens the panel with its figure (docs/loops/<id>.svg, docs/groups/<id>.svg); releasing it
+// closes that panel.
+const linksOf = path => path.map((id, i) => `${id}--${path[(i + 1) % path.length]}`);
+const loopRules = data.loops.map(loop => [`${loop.id} ${loop.name}`, () => (
+  { elements: new Set(loop.path), links: new Set(linksOf(loop.path)) }
+), loop.id]);
+const groupRules = data.groups.map(group => [`${group.id} ${group.name}`, () => {
+  const paths = group.loops.map(id => data.loops.find(l => l.id === id).path);
+  return { elements: new Set(paths.flat()), links: new Set(paths.flatMap(linksOf)) };
+}, group.id]);
+const rules = [...loopRules, ...groupRules];
 const nav = document.getElementById("buttons");
-const pressed = new Set();  // the ids of the pressed loops
-{  // a block, so these names stay out of the page's functions
+const pressed = new Set();  // the ids of the pressed loops and groups
+for (const [heading, section] of [["Individual loops", loopRules], ["Combined loops", groupRules]]) {
+  if (!section.length) continue;
   const row = document.createElement("div");
   row.className = "button-row";
   const name = document.createElement("span");
   name.className = "button-heading";
-  name.textContent = "Named loops";
+  name.textContent = heading;
   row.append(name);
-  for (const [label, rule, key = label] of rules) {
+  for (const [label, rule, key = label] of section) {
     const button = document.createElement("button");
     const [id, ...words] = label.split(" ");
     for (const [cls, text] of [["id", id], ["name", words.join(" ")]]) {
@@ -114,21 +120,24 @@ function showLink(from, to) {
   showPanel([byId[from].label, " → ", byId[to].label, " ", sign], c, SHOWN_LINK);
 }
 function showLoop(id) {
-  const loop = data.loops.find(l => l.id === id);
+  const group = data.groups.find(g => g.id === id);
+  const loop = group || data.loops.find(l => l.id === id);
   panelBody.replaceChildren();
   const h2 = document.createElement("h2");
   h2.textContent = `${loop.id} ${loop.name}`;
   const a = document.createElement("a");
-  a.href = `loops/${loop.id}.svg`;
+  a.href = `${group ? "groups" : "loops"}/${loop.id}.svg`;
   a.target = "_blank";
   const img = document.createElement("img");
   img.src = a.href;
-  img.alt = `The loop ${loop.id} on its own`;
+  img.alt = group ? `The loops ${group.loops.join(", ")} together` : `The loop ${loop.id} on its own`;
   a.append(img);
+  const description = document.createElement("p");
+  description.textContent = loop.description;
   const p = document.createElement("p");
   p.className = "note";
-  p.textContent = "The loop on its own, the figure for the report: click it to open it full size.";
-  panelBody.append(h2, a, p);
+  p.textContent = `${group ? `The loops ${group.loops.join(", ")} together` : "The loop on its own"}, the figure for the report: click it to open it full size.`;
+  panelBody.append(h2, a, description, p);
   panel.dataset.loop = loop.id;
   panel.hidden = false;
 }
@@ -187,9 +196,20 @@ function signPosition(p0, ctrl, p2, back = 50) {
   }
   return bezier(p0, ctrl, p2, hi);
 }
-function delayPath(p0, ctrl, p2, half = 24, gap = 8) {
-  const [x, y] = bezier(p0, ctrl, p2, 0.5);
-  const [tx, ty] = tangent(p0, ctrl, p2, 0.5);
+function delayT(p0, ctrl, p2, back = 50 + 55) {
+  const mid = bezier(p0, ctrl, p2, 0.5);
+  if (Math.hypot(mid[0] - p2[0], mid[1] - p2[1]) >= back || Math.hypot(p0[0] - p2[0], p0[1] - p2[1]) < back) return 0.5;
+  let lo = 0, hi = 0.5;
+  for (let i = 0; i < 40; i++) {
+    const m = (lo + hi) / 2, q = bezier(p0, ctrl, p2, m);
+    if (Math.hypot(q[0] - p2[0], q[1] - p2[1]) > back) lo = m; else hi = m;
+  }
+  return lo;
+}
+function delayPath(p0, ctrl, p2, at, half = 24, gap = 8) {
+  const t = at === undefined ? delayT(p0, ctrl, p2) : at;
+  const [x, y] = bezier(p0, ctrl, p2, t);
+  const [tx, ty] = tangent(p0, ctrl, p2, t);
   const n = Math.hypot(tx, ty) || 1;
   const ux = tx / n, uy = ty / n, nx = -uy, ny = ux;
   return [-gap, gap].map(k => {
@@ -256,7 +276,7 @@ function redrawLink(g, [p0, ctrl, p2]) {
   const sign = g.querySelector("text.sign");
   sign.setAttribute("x", f(sx));
   sign.setAttribute("y", f(sy));
-  for (const delay of g.querySelectorAll("path.delay, path.delay-cut")) delay.setAttribute("d", delayPath(p0, ctrl, p2));
+  for (const delay of g.querySelectorAll("path.delay, path.delay-cut")) delay.setAttribute("d", delayPath(p0, ctrl, p2, g.dataset.delayT === undefined ? undefined : +g.dataset.delayT));
 }
 // each link gets a wide invisible copy of its path under it, so the 2.5-unit line can be grabbed
 for (const g of links) {
@@ -302,6 +322,19 @@ moveToggle.addEventListener("change", () => {
 function grabInMoveMode(ev) {
   if (!moveToggle.checked) return null;
   const g = ev.target.closest("g.element"), l = ev.target.closest("g.link");
+  if (ev.target.closest("path.delay, path.delay-cut")) return move => {
+    // the mark stays on its own line: the point of the curve nearest the pointer
+    const p = toSvg(move), [p0, ctrl, p2] = linkPaths().get(l);
+    let best = Infinity, at = 0.5;
+    for (let i = 5; i <= 95; i++) {
+      const q = bezier(p0, ctrl, p2, i / 100), d = Math.hypot(q[0] - p[0], q[1] - p[1]);
+      if (d < best) { best = d; at = i / 100; }
+    }
+    l.dataset.delayT = String(at);
+    l.dataset.delayMoved = "1";
+    redrawLink(l, linkPaths().get(l));
+    return true;
+  };
   if (g) {
     let last = toSvg(ev);
     return move => {
@@ -323,6 +356,7 @@ download.addEventListener("click", () => {
     layout[g.dataset.id] = { x: Math.round((b[0] + b[2]) / 2), y: Math.round((b[1] + b[3]) / 2) };
   }
   layout.curvature = Object.fromEntries(links.map(g => [`${g.dataset.from}->${g.dataset.to}`, +g.dataset.curvature]));
+  layout.delay = Object.fromEntries(links.filter(g => g.dataset.delayMoved).map(g => [`${g.dataset.from}->${g.dataset.to}`, +g.dataset.delayT]));
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([JSON.stringify(layout, null, 2) + "\n"], { type: "application/json" }));
   a.download = "layout.json";

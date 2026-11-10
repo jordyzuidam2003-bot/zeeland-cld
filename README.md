@@ -53,9 +53,9 @@ builds and pushes, so nobody else needs git or Python.
    a commit whose `docs/` is out of date.
 
 Layout tuning: on the page, turn on "Move": drag an element to move it, drag
-a link to bend it (its middle follows the pointer; within 0.03 of straight a Constant's link snaps to
+a delay mark to shift it along its own line, a link to bend it (its middle follows the pointer; within 0.03 of straight a Constant's link snaps to
 straight and any other keeps that bend), then "Download layout" saves `layout.json`
-with every element's position and every link's curvature.
+with every element's position, every link's curvature and each delay mark that was dragged.
 `python3 build.py --layout ~/Downloads/layout.json` writes both into `cld.json` and rebuilds; it
 fails on an id or a link that is not in `cld.json`. Dragging redraws the links but not the
 regions, which `build.py` draws again from the new positions. Each link has its own bow, chosen
@@ -67,7 +67,7 @@ an element it does not connect, which would read as if that element
 mediates it, and no named loop whose links cross each other, a figure eight that cannot be
 followed round; `build.py` warns on the last. A Constant's links run straight, and `build.py`
 warns on a bent one; every other link has some bend (Jordy), and it warns on a straight one. A
-Constant sits beside what it drives, its box at most 300 units from each box it drives
+Constant sits beside what it drives, its box at most 400 units from each box it drives
 (Jordy), and `build.py` warns on one further away.
 
 A picture for the report: `docs/cld.svg` is the drawing on its own, and `docs/loops/<id>.svg`
@@ -100,7 +100,8 @@ a link too, and a press that barely moves stays a click; a double click on the b
 in, and "Fit" shows the whole drawing below the bar. A
 button per named loop highlights its
 elements and links, several pressed show their union, and opens a panel with the loop's figure
-on its own, `docs/loops/<id>.svg`; the buttons are a list in the menu. A click on an element or a link opens a panel with its fields
+on its own, `docs/loops/<id>.svg`; the buttons are a list in the menu, Individual loops and Combined
+loops, and a group's button does the same for all its loops, its figure `docs/groups/<id>.svg`. A click on an element or a link opens a panel with its fields
 and sources; Esc or a click on the background closes it. The menu shows the model version, the
 first seven characters of the SHA-256 of `cld.json`, so teammates can tell which model they are
 looking at.
@@ -182,18 +183,37 @@ drawn as two strokes across the link), `description`, `sources`, `hypothesis` (o
 on a claim about why an actor decides as it does that has no source: a question for the group
 model building session, shown in the link's panel and in Kumu's fields, never on the drawing;
 a link that finds a source loses it), `simplification` (optional, as on an element),
+`delay at` (optional, set by dragging a delay mark on the page: where on the curve the mark sits, from 0 to 1; without it `build.py` puts the mark at the clearest place along the link, away from other links and boxes and at least 55 units from its sign, Jordy),
 `curvature` (0 is straight; a positive value bows the link to the left of its direction).
 The drawing runs a link from a point on its source box's edge to one on its target's, the ends
 on one edge spread along it, and puts the sign on the side of the arrowhead clear of boxes.
 The SETS fields the page and Kumu show ("Cross-domain", "E to S" …) are derived by `build.py`,
 never typed.
 
-A named loop: `{"id": "R1", "name": "…", "path": ["element-a", "element-b", …]}`, the path in
-causal order without repeating the first element. `build.py` checks that every step is a
+A named loop: `{"id": "R1", "name": "…", "path": ["element-a", "element-b", …], "description": "…"}`,
+the path in causal order without repeating the first element. `build.py` checks that every step is a
 connection and that the id starts with R for an even number of `-` links, B for an odd one; the
 page gets a button for it, which highlights its elements and links, and `docs/loops/<id>.svg`
 draws it on its own, with its mark. The full drawing carries no loop marks: of its 353 feedback
-loops no mark could be traced there.
+loops no mark could be traced there. `description` says what the loop does, traced round its path
+in words each actor in it would accept: what a balancing loop seeks, how the loop drives or holds
+back adopting adaptive practices, and which response's unintended consequence it shows, where it
+shows one. `build.py` stops on a named loop without one and on any description naming a loop id
+that is not a named loop; the page's panel for the loop, the Named loops sheet and Kumu show it.
+
+A group of named loops: `{"id": "C1", "name": "…", "loops": ["R3", "B4"], "description": "…"}`, in
+the top-level list `groups`: loops that together form a behaviour none of them shows alone, joined at
+the variables they share. Its `name` says what the loops do together, in words each actor would
+accept. `build.py` stops on a group naming a loop that is not a named loop, on a group of fewer than
+two loops and on a loop sharing no variable with the group's others; the page's button, the table's
+Combined loops sheet and Kumu's showcase show each group. `places` (`{"element-id": [x, y]}`), `bends`
+(`{"from-id -> to-id": curvature}`) and `marks` (`{"R3": [x, y]}`) lay out its figure,
+`docs/groups/<id>.svg`: its own, never the full drawing's, on the same axes and signs as `x`, `y` and
+`curvature`. Each must hold exactly the group's elements, links and loops, so `build.py` stops when a
+loop's path changes, and it warns of a crossing or a link through a box in a figure; `--check` names a
+stale or orphaned one. `model-texts.md`'s `{combined loops list}` shows each group's description, so the
+page's text and the data cannot differ. `sources` (optional) holds what the group's own claim rests on,
+such as the archetype it matches; each link's source stays on the link.
 
 ### `actors.json`
 
@@ -250,7 +270,7 @@ The sources of the CLD and the Actor Map, as CSL JSON, the format Zotero imports
 each with `id` (the key a `sources` field names, never changed), `type` (one of `REF_TYPES` in
 `build.py`) and the fields its reference needs: `author` (`family` and `given`, or `literal` for an
 organisation), `issued` and `accessed` (`date-parts`), `title`, `container-title` (the journal,
-news site or website, left out where it is the author), `volume`, `issue`, `page`, `genre` and
+news site, website or a chapter's book, left out where it is the author), `editor` (a chapter's), `volume`, `issue`, `page`, `genre` and
 `number` (a report's kind and number), `collection-title` and `collection-number` (a series or a
 gazette, and the number in it), `version`, `publisher` (left out where it is the author), and
 `DOI` or `URL`. `build.py` writes each APA reference from them (`apa()`), which the page, Kumu and
@@ -304,7 +324,7 @@ update is a new project under the same name, which keeps the URL. Jordy renames 
 a project export; the green `+` → Import route brings in the elements and connections alone.
 Kumu restores the map with the elements at their positions, the view from `view.scss`, the named
 loops (each its links, its "R1 …" label hidden on the map by the view, as the page has no loop
-marks, and a showcase button per named loop, as on the page), and the project's name,
+marks, and a showcase button per named loop and per group of them, as on the page), and the project's name,
 which the export sets to `cbp-cld`.
 
 The Actor Map goes the same way, as its own project at <https://kumu.io/JordyZuidam/cbp-actors>:

@@ -737,7 +737,8 @@
           6
         ]
       ]
-    }
+    },
+    "year-suffix": "a"
   },
   {
     "id": "kaandorp-2022",
@@ -1596,6 +1597,65 @@
           6
         ]
       ]
+    },
+    "year-suffix": "b"
+  },
+  {
+    "id": "living-lab-2023-dreischor",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Living Lab Schouwen-Duiveland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          9
+        ]
+      ]
+    },
+    "title": "Anti-verziltingsdrainage in Dreischor",
+    "URL": "https://livinglabschouwen-duiveland.nl/nieuws/anti-verziltingsdrainage-dreischor",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          8
+        ]
+      ]
+    }
+  },
+  {
+    "id": "living-lab-2024-slotbijeenkomst",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Living Lab Schouwen-Duiveland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          21
+        ]
+      ]
+    },
+    "title": "Slotbijeenkomst Samenwerken voor Zoetwater: Innovatieve drainage",
+    "URL": "https://livinglabschouwen-duiveland.nl/kennis-en-leren/evenementen/slotbijeenkomst-samenwerken-voor-zoetwater-innovatieve-drainage",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          8
+        ]
+      ]
     }
   },
   {
@@ -2082,5 +2142,1501 @@
     "number": "WPR-902",
     "publisher": "Wageningen Research",
     "DOI": "10.18174/555534"
+  },
+  {
+    "id": "beauchampet-2022",
+    "type": "chapter",
+    "author": [
+      {
+        "family": "Beauchampet",
+        "given": "I. C."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands",
+    "editor": [
+      {
+        "family": "Negacz",
+        "given": "K."
+      },
+      {
+        "family": "Vellinga",
+        "given": "P."
+      },
+      {
+        "family": "Barrett-Lennard",
+        "given": "E."
+      },
+      {
+        "family": "Choukr-Allah",
+        "given": "R."
+      },
+      {
+        "family": "Elzenga",
+        "given": "T."
+      }
+    ],
+    "container-title": "Future of sustainable agriculture in saline environments",
+    "page": "207–230",
+    "publisher": "CRC Press",
+    "DOI": "10.1201/9781003112327-13"
+  },
+  {
+    "id": "cloet-2024",
+    "type": "report",
+    "author": [
+      {
+        "family": "Cloet",
+        "given": "T."
+      },
+      {
+        "family": "Van Meensel",
+        "given": "J."
+      },
+      {
+        "family": "De Boever",
+        "given": "M."
+      },
+      {
+        "family": "Cnops",
+        "given": "G."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Rendabiliteit van de quinoateelt in Vlaanderen",
+    "version": "Version September 2024",
+    "publisher": "ILVO",
+    "URL": "https://ilvo.vlaanderen.be/uploads/documents/Projecten/Rendabiliteit-van-de-quinoateelt-in-Vlaanderen_sept2024.pdf"
+  },
+  {
+    "id": "de-vriend-2024-gewassen",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "family": "De Vriend",
+        "given": "E."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          14
+        ]
+      ]
+    },
+    "title": "Zeeuwse akkerbouwers verbouwen andere gewassen door klimaatverandering",
+    "container-title": "Stal & Akker",
+    "URL": "https://sterke-erven.nl/artikel/518563-zeeuwse-akkerbouwers-verbouwen-andere-gewassen-door-klimaatverandering/",
+    "year-suffix": "b"
+  },
+  {
+    "id": "farjon-2013",
+    "type": "report",
+    "author": [
+      {
+        "family": "Farjon",
+        "given": "H."
+      },
+      {
+        "family": "Silvis",
+        "given": "H."
+      },
+      {
+        "family": "Vader",
+        "given": "J."
+      },
+      {
+        "family": "Voskuilen",
+        "given": "M."
+      },
+      {
+        "family": "Agricola",
+        "given": "H."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          12
+        ]
+      ]
+    },
+    "title": "Prijs hoger dan de waarde van landbouwgrond",
+    "container-title": "Landwerk",
+    "publisher": "PBL Netherlands Environmental Assessment Agency",
+    "URL": "https://www.pbl.nl/publicaties/prijs-hoger-dan-de-waarde-van-landbouwgrond"
+  },
+  {
+    "id": "kim-2000",
+    "type": "report",
+    "author": [
+      {
+        "family": "Kim",
+        "given": "D. H."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    },
+    "title": "Systems archetypes I: Diagnosing systemic issues and designing high-leverage interventions",
+    "publisher": "Pegasus Communications",
+    "URL": "https://thesystemsthinker.com/wp-content/uploads/2016/03/Systems-Archetypes-I-TRSA01_pk.pdf",
+    "genre": "Toolbox Reprint Series; first printing 1992"
+  },
+  {
+    "id": "scheldestromen-2026-kostentoedeling",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "year-suffix": "c",
+    "title": "Kostentoedelingsverordening watersysteembeheer en wegenbeheer waterschap Scheldestromen 2026",
+    "URL": "https://lokaleregelgeving.overheid.nl/CVDR752664/2"
+  },
+  {
+    "id": "scheldestromen-2026-watersysteemheffing",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "year-suffix": "d",
+    "title": "Verordening op de watersysteemheffing waterschap Scheldestromen 2026",
+    "URL": "https://lokaleregelgeving.overheid.nl/CVDR752667/2"
+  },
+  {
+    "id": "reimerswaal-2025-intentieovereenkomst",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Provincie Zeeland"
+      },
+      {
+        "literal": "Waterschap Scheldestromen"
+      },
+      {
+        "literal": "Gemeente Reimerswaal"
+      },
+      {
+        "literal": "Zeeuwse Milieufederatie"
+      },
+      {
+        "literal": "Zuidelijke Land- en Tuinbouworganisatie"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          26
+        ]
+      ]
+    },
+    "title": "Intentieovereenkomst Zoetwatervoorziening Reimerswaal",
+    "URL": "https://es-connector.zeeland.nl/content/ZLD2025-132839"
+  },
+  {
+    "id": "van-den-burg-2024",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "van den Burg",
+        "given": "S."
+      },
+      {
+        "family": "Deolu-Ajayi",
+        "given": "A. O."
+      },
+      {
+        "family": "Nauta",
+        "given": "R."
+      },
+      {
+        "family": "Cervi",
+        "given": "W. R."
+      },
+      {
+        "family": "van der Werf",
+        "given": "A."
+      },
+      {
+        "family": "Poelman",
+        "given": "M."
+      },
+      {
+        "family": "Wilbers",
+        "given": "G.-J."
+      },
+      {
+        "family": "Snethlage",
+        "given": "J."
+      },
+      {
+        "family": "van Alphen",
+        "given": "M."
+      },
+      {
+        "family": "van der Meer",
+        "given": "I. M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands",
+    "container-title": "Science of the Total Environment",
+    "volume": "915",
+    "page": "170118",
+    "DOI": "10.1016/j.scitotenv.2024.170118"
+  },
+  {
+    "id": "van-loo-2023",
+    "type": "chapter",
+    "author": [
+      {
+        "family": "van Loo",
+        "given": "R."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Quinoa: A new protein source",
+    "editor": [
+      {
+        "family": "Pyett",
+        "given": "S."
+      },
+      {
+        "family": "Jenkins",
+        "given": "W."
+      },
+      {
+        "family": "van Mierlo",
+        "given": "B."
+      },
+      {
+        "family": "Trindade",
+        "given": "L. M."
+      },
+      {
+        "family": "Welch",
+        "given": "D."
+      },
+      {
+        "family": "van Zanten",
+        "given": "H."
+      }
+    ],
+    "container-title": "Our future proteins: A diversity of perspectives",
+    "page": "74–81",
+    "publisher": "VU University Press",
+    "URL": "https://vuuniversitypress.com/p/uploads/OurFutureProteinsOA.pdf"
+  },
+  {
+    "id": "bogers-2025",
+    "type": "report",
+    "author": [
+      {
+        "family": "Bogers",
+        "given": "R."
+      },
+      {
+        "family": "van Loenen",
+        "given": "E."
+      },
+      {
+        "family": "Hoogenboom",
+        "given": "M."
+      },
+      {
+        "family": "Mensink",
+        "given": "E."
+      },
+      {
+        "family": "Vos",
+        "given": "R."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Where to grow protein-rich crops? A land use suitability analysis in Zeeland",
+    "genre": "Student report, Wageningen University, for HZ University of Applied Sciences"
+  },
+  {
+    "id": "dutchnews-2026",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "literal": "DutchNews.nl"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          3
+        ]
+      ]
+    },
+    "title": "Jumbo's quinoa now comes from Groningen, not Peru",
+    "URL": "https://www.dutchnews.nl/?p=270983"
+  },
+  {
+    "id": "freshplaza-2018",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "literal": "FreshPlaza"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          6,
+          22
+        ]
+      ]
+    },
+    "title": "Elenbaas invests in new salty Zeeland productions in greenhouses",
+    "URL": "https://www.freshplaza.com/north-america/article/2196870/elenbaas-invests-in-new-salty-zeeland-productions-in-greenhouses/"
+  },
+  {
+    "id": "greenfood50-nd",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "GreenFood50"
+      }
+    ],
+    "title": "The specialist in quinoa ingredients",
+    "genre": "Home page and About us",
+    "URL": "https://www.greenfood50.com/",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          7
+        ]
+      ]
+    }
+  },
+  {
+    "id": "de-vriend-2024",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "family": "De Vriend",
+        "given": "E."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          12
+        ]
+      ]
+    },
+    "year-suffix": "a",
+    "title": "Toekomst van voedsel in Zeeland: wat eten we morgen?",
+    "container-title": "Stal & Akker",
+    "URL": "https://sterke-erven.nl/artikel/528976-toekomst-van-voedsel-in-zeeland-wat-eten-we-morgen/"
+  },
+  {
+    "id": "verhagen-2018",
+    "type": "report",
+    "author": [
+      {
+        "family": "Verhagen",
+        "given": "J."
+      },
+      {
+        "family": "van Asseldonk",
+        "given": "M."
+      },
+      {
+        "family": "Pronk",
+        "given": "A. A."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "Open teelten en klimaatadaptatie in relatie tot de financiële weerbaarheid",
+    "genre": "Rapport",
+    "number": "WPR-755",
+    "publisher": "Wageningen Research",
+    "URL": "https://klimaatadaptatienederland.nl/publish/pages/220072/2018_wur_open_teelten_en_klimaatadaptatie_in_relatie_tot_de_financiele_weerbaarheid.pdf"
+  },
+  {
+    "id": "van-der-meulen-2025",
+    "type": "webpage",
+    "author": [
+      {
+        "family": "van der Meulen",
+        "given": "H."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          15
+        ]
+      ]
+    },
+    "title": "Inkomensraming: Wat verdienden boeren en tuinders in 2025?",
+    "container-title": "Wageningen University & Research",
+    "URL": "https://www.wur.nl/nl/nieuws/inkomensraming-wat-verdienden-boeren-en-tuinders-2025"
+  },
+  {
+    "id": "aanhangsel-2018-uien",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Minister van Economische Zaken en Klimaat"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          3,
+          13
+        ]
+      ]
+    },
+    "title": "Antwoord op vragen van de leden Geurts en Van den Berg over het bericht dat cijfers CBS ervoor zorgen dat de prijs van uien laag blijft",
+    "genre": "Aanhangsel Handelingen II",
+    "number": "2017/18, nr. 1425",
+    "URL": "https://zoek.officielebekendmakingen.nl/ah-tk-20172018-1425.html"
+  },
+  {
+    "id": "silvis-2017",
+    "type": "report",
+    "author": [
+      {
+        "family": "Silvis",
+        "given": "H."
+      },
+      {
+        "family": "Voskuilen",
+        "given": "M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Betaalbaarheid en financierbaarheid van landbouwgrond",
+    "genre": "Notitie",
+    "number": "2017-098",
+    "publisher": "Wageningen Economic Research",
+    "URL": "https://edepot.wur.nl/426065"
+  },
+  {
+    "id": "kuiper-2023",
+    "type": "report",
+    "author": [
+      {
+        "family": "Kuiper",
+        "given": "P. P."
+      },
+      {
+        "family": "Prins",
+        "given": "L."
+      },
+      {
+        "family": "Woltjer",
+        "given": "J."
+      },
+      {
+        "family": "Voskuilen",
+        "given": "M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Aankoop landbouwgrond voor wonen, werken en infrastructuur vooral in westen en zuiden",
+    "genre": "Themabericht, bijlage bij het kwartaalbericht agrarische grondmarkt, 3e kwartaal 2023",
+    "publisher": "Kadaster and Wageningen Economic Research",
+    "URL": "https://edepot.wur.nl/640737"
+  },
+  {
+    "id": "abn-amro-nd-kosten-krediet",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "ABN AMRO"
+      }
+    ],
+    "year-suffix": "a",
+    "title": "Kosten van een krediet",
+    "URL": "https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/index.html",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          7
+        ]
+      ]
+    }
+  },
+  {
+    "id": "abn-amro-nd-uitleg-rente",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "ABN AMRO"
+      }
+    ],
+    "year-suffix": "b",
+    "title": "Uitleg rente bij zakelijke financieringen",
+    "URL": "https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/uitleg-rente.html",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          7
+        ]
+      ]
+    }
+  },
+  {
+    "id": "economic-board-zeeland-2023",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Economic Board Zeeland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "De smaken van Zeeland: Het verhaal van voedsel van het land en uit de zee",
+    "URL": "https://www.zeeland.nl/sites/default/files/2023-08/voedselverhaal_de_smaken_van_zeeland_economic_board_zeeland.0449e0966a42.pdf"
+  },
+  {
+    "id": "luijt-2007",
+    "type": "report",
+    "author": [
+      {
+        "family": "Luijt",
+        "given": "J."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "title": "Strategisch gedrag grondeigenaren: Van belang voor de realisatie van natuurdoelen",
+    "genre": "WOt-rapport",
+    "number": "38",
+    "publisher": "Wettelijke Onderzoekstaken Natuur & Milieu",
+    "URL": "https://edepot.wur.nl/29225"
+  },
+  {
+    "id": "polman-2026",
+    "type": "report",
+    "author": [
+      {
+        "family": "Polman",
+        "given": "N."
+      },
+      {
+        "family": "Kisters",
+        "given": "T."
+      },
+      {
+        "family": "Manshanden",
+        "given": "M."
+      },
+      {
+        "family": "van Ruiten",
+        "given": "C."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "title": "PPS slimme verdienmodellen in de akkerbouw: Niet-toegerekende kosten eiwitgewassen",
+    "genre": "Achtergrondnotitie",
+    "publisher": "Wageningen Social & Economic Research",
+    "URL": "https://edepot.wur.nl/708091"
+  },
+  {
+    "id": "slovic-1993",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Slovic",
+        "given": "P."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1993
+        ]
+      ]
+    },
+    "title": "Perceived risk, trust, and democracy",
+    "container-title": "Risk Analysis",
+    "volume": "13",
+    "issue": "6",
+    "page": "675–682",
+    "DOI": "10.1111/j.1539-6924.1993.tb01329.x"
+  },
+  {
+    "id": "remkes-2022",
+    "type": "report",
+    "author": [
+      {
+        "family": "Remkes",
+        "given": "J."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          5
+        ]
+      ]
+    },
+    "title": "Wat wel kan: Uit de impasse en een aanzet voor perspectief",
+    "URL": "https://eerstekamer.nl/9370000/1/j4nvgs5kjg27kof_j9vvkyblr2b3ny8/vlwzf4m6utyb"
+  },
+  {
+    "id": "van-duinen-2015",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "van Duinen",
+        "given": "R."
+      },
+      {
+        "family": "Filatova",
+        "given": "T."
+      },
+      {
+        "family": "Geurts",
+        "given": "P."
+      },
+      {
+        "family": "van der Veen",
+        "given": "A."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "title": "Empirical analysis of farmers' drought risk perception: Objective factors, personal circumstances, and social influence",
+    "container-title": "Risk Analysis",
+    "volume": "35",
+    "issue": "4",
+    "page": "741–755",
+    "DOI": "10.1111/risa.12299"
+  },
+  {
+    "id": "lases-2021",
+    "type": "report",
+    "author": [
+      {
+        "family": "Lases",
+        "given": "W. B. P. M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          6
+        ]
+      ]
+    },
+    "title": "Een blijvende keuze van Zeeland voor een zout Grevelingenmeer leidt tot gerichte onleefbaarheid op Schouwen-Duiveland",
+    "genre": "Submission to the Province of Zeeland's committee Ruimte",
+    "URL": "https://www.zeeland.nl/sites/default/files/digitaalarchief/IB21_8a686d4a.pdf"
+  },
+  {
+    "id": "nationale-ombudsman-2026",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Nationale ombudsman"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "title": "Een boer met kiespijn lacht niet: Ervaringen van boeren met veranderlijk overheidsbeleid",
+    "genre": "Rapport",
+    "number": "2026/120",
+    "URL": "https://www.nationaleombudsman.nl/system/files/onderzoek/20260120-een-boer-met-kiespijn-lacht-niet.pdf"
+  },
+  {
+    "id": "bonnet-2025",
+    "type": "report",
+    "author": [
+      {
+        "family": "Bonnet",
+        "given": "J."
+      },
+      {
+        "family": "Tiktak",
+        "given": "A."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          12
+        ]
+      ]
+    },
+    "title": "Uitdagingen voor de akker- en tuinbouw: Huidige situatie en mogelijke ontwikkelrichtingen in de open teelten",
+    "genre": "Publicatienummer",
+    "number": "5203",
+    "publisher": "PBL Planbureau voor de Leefomgeving",
+    "URL": "https://pbl.nl/downloads/pbl-2025-uitdagingen-voor-de-akker-en-tuinbouw-5203pdf"
+  },
+  {
+    "id": "dijkshoorn-dekker-2024",
+    "type": "report",
+    "author": [
+      {
+        "family": "Dijkshoorn-Dekker",
+        "given": "M."
+      },
+      {
+        "family": "Daatselaar",
+        "given": "C."
+      },
+      {
+        "family": "Schrijver",
+        "given": "R."
+      },
+      {
+        "family": "de Jong",
+        "given": "K."
+      },
+      {
+        "family": "Smit",
+        "given": "B."
+      },
+      {
+        "family": "Manshanden",
+        "given": "M."
+      },
+      {
+        "family": "Pessers",
+        "given": "R."
+      },
+      {
+        "family": "van Eldik",
+        "given": "Z."
+      },
+      {
+        "family": "Westerink",
+        "given": "J."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Extensivering melkveehouderij en akkerbouw: Krimp in veestapel, groei in areaal of vermindering bouwplanintensiteit",
+    "genre": "Rapport",
+    "number": "2024-042",
+    "publisher": "Wageningen Economic Research",
+    "DOI": "10.18174/660393"
+  },
+  {
+    "id": "n59-rotonde-2020",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Besluit rotonde N59"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Besluit tot aanwijzing van onroerende zaken ter onteigening in de gemeente Schouwen-Duiveland krachtens artikel 72a van de onteigeningswet (rotonde N59)",
+    "genre": "Draft decree put to the Council of State",
+    "number": "W17.20.0068",
+    "URL": "https://www.raadvanstate.nl/publish/pages/118662/w_17_20_0068.pdf"
+  },
+  {
+    "id": "schouwen-duiveland-2026-onteigening",
+    "type": "article-journal",
+    "author": [
+      {
+        "literal": "Gemeente Schouwen-Duiveland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          24
+        ]
+      ]
+    },
+    "title": "Kennisgeving onteigeningsbeschikking",
+    "container-title": "Gemeenteblad",
+    "volume": "2026",
+    "page": "78752",
+    "URL": "https://zoek.officielebekendmakingen.nl/gmb-2026-78752.pdf"
+  },
+  {
+    "id": "antea-2023-zierikzee",
+    "type": "report",
+    "author": [
+      {
+        "family": "Braat",
+        "given": "E."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          12
+        ]
+      ]
+    },
+    "title": "Aanmeldnotitie vormvrije m.e.r.-beoordeling Hoogspanningsstation Zierikzee + herziening buitengebied (kabeltracés)",
+    "publisher": "Antea Group, for TenneT TSO B.V.",
+    "URL": "https://www.ruimtelijkeplannen.nl/documents/NL.IMRO.1676.00377BphZZ-VA01/b_NL.IMRO.1676.00377BphZZ-VA01_tb3.pdf"
+  },
+  {
+    "id": "provincie-zeeland-jaarstukken-2022",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Provincie Zeeland"
+      }
+    ],
+    "title": "Jaarstukken 2022: Programma Balans in landelijk gebied",
+    "URL": "https://pcportal.zeeland.nl/Data/6be7416d-f63c-4ce1-84d5-7854448ebab4/Public/jaarstukken-2022-provincie-zeeland%20-%203-programma-balans-in-landelijk-gebied.pdf"
+  },
+  {
+    "id": "kamphorst-2025",
+    "type": "report",
+    "author": [
+      {
+        "family": "Kamphorst",
+        "given": "D. A."
+      },
+      {
+        "family": "Nieuwenhuizen",
+        "given": "W."
+      },
+      {
+        "family": "Langers",
+        "given": "F."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Nieuwe natuur in de polder: tussen zelfrealisatie en onteigening",
+    "genre": "Rapport",
+    "number": "3464",
+    "publisher": "Wageningen Environmental Research",
+    "URL": "https://edepot.wur.nl/703340"
+  },
+  {
+    "id": "holtslag-broekhof-2016",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Holtslag-Broekhof",
+        "given": "S. M."
+      },
+      {
+        "family": "van Marwijk",
+        "given": "R."
+      },
+      {
+        "family": "Beunen",
+        "given": "R."
+      },
+      {
+        "family": "Wiskerke",
+        "given": "J. S. C."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "title": "Perceived (in)justice of public land acquisition",
+    "container-title": "Journal of Agricultural and Environmental Ethics",
+    "volume": "29",
+    "issue": "2",
+    "page": "167–184",
+    "DOI": "10.1007/s10806-015-9594-3"
+  },
+  {
+    "id": "magrini-2018",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Magrini",
+        "given": "M.-B."
+      },
+      {
+        "family": "Anton",
+        "given": "M."
+      },
+      {
+        "family": "Chardigny",
+        "given": "J.-M."
+      },
+      {
+        "family": "Duc",
+        "given": "G."
+      },
+      {
+        "family": "Duru",
+        "given": "M."
+      },
+      {
+        "family": "Jeuffroy",
+        "given": "M.-H."
+      },
+      {
+        "family": "Meynard",
+        "given": "J.-M."
+      },
+      {
+        "family": "Micard",
+        "given": "V."
+      },
+      {
+        "family": "Walrand",
+        "given": "S."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "Pulses for sustainability: Breaking agriculture and food sectors out of lock-in",
+    "container-title": "Frontiers in Sustainable Food Systems",
+    "volume": "2",
+    "page": "64",
+    "DOI": "10.3389/fsufs.2018.00064"
+  },
+  {
+    "id": "meynard-2018",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Meynard",
+        "given": "J.-M."
+      },
+      {
+        "family": "Charrier",
+        "given": "F."
+      },
+      {
+        "family": "Fares",
+        "given": "M."
+      },
+      {
+        "family": "Le Bail",
+        "given": "M."
+      },
+      {
+        "family": "Magrini",
+        "given": "M.-B."
+      },
+      {
+        "family": "Charlier",
+        "given": "A."
+      },
+      {
+        "family": "Messéan",
+        "given": "A."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "Socio-technical lock-in hinders crop diversification in France",
+    "container-title": "Agronomy for Sustainable Development",
+    "volume": "38",
+    "page": "54",
+    "DOI": "10.1007/s13593-018-0535-1"
+  },
+  {
+    "id": "silvis-2017-economische-ontwikkeling",
+    "type": "report",
+    "author": [
+      {
+        "family": "Silvis",
+        "given": "H."
+      },
+      {
+        "family": "van der Meulen",
+        "given": "H."
+      },
+      {
+        "family": "Voskuilen",
+        "given": "M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Economische ontwikkeling akkerbouw- en melkveebedrijven",
+    "genre": "Notitie",
+    "number": "2017-036",
+    "publisher": "Wageningen Economic Research",
+    "URL": "https://edepot.wur.nl/416529"
+  },
+  {
+    "id": "cbs-2024-vreemd-vermogen",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "CBS"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          28
+        ]
+      ]
+    },
+    "title": "Vreemd vermogen landbouwbedrijven afgenomen, vooral in de glastuinbouw",
+    "URL": "https://www.cbs.nl/nl-nl/nieuws/2024/48/vreemd-vermogen-landbouwbedrijven-afgenomen-vooral-in-de-glastuinbouw"
+  },
+  {
+    "id": "graas-2021",
+    "type": "report",
+    "author": [
+      {
+        "family": "Graas",
+        "given": "S."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Inspraakrapport ontwerp peilbesluit Zegveld 2021",
+    "number": "DM 1772477",
+    "publisher": "Hoogheemraadschap De Stichtse Rijnlanden",
+    "URL": "https://repository.officiele-overheidspublicaties.nl/externebijlagen/exb-2022-5226/currentItem"
+  },
+  {
+    "id": "fryslan-2021-reactienota",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Provincie Fryslân"
+      },
+      {
+        "literal": "Wetterskip Fryslân"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    },
+    "title": "Veenweideprogramma 2021–2030: Reactienota",
+    "URL": "https://heerenveen.bestuurlijkeinformatie.nl/Document/View/396b23d0-8c59-43f6-886e-1fdad031b520"
+  },
+  {
+    "id": "hhsk-2022-zuidplaspolder",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Hoogheemraadschap van Schieland en de Krimpenerwaard"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Nota van beantwoording ontwerp peilbesluit Zuidplaspolder Zuidoost",
+    "genre": "Kenmerk",
+    "number": "2022.09006",
+    "URL": "https://repository.officiele-overheidspublicaties.nl/externebijlagen/exb-2022-70349/currentItem"
+  },
+  {
+    "id": "terwel-2009",
+    "type": "report",
+    "author": [
+      {
+        "family": "Terwel",
+        "given": "B. W."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    },
+    "title": "Origins and consequences of public trust: Towards an understanding of public acceptance of carbon dioxide capture and storage",
+    "genre": "Doctoral dissertation, Leiden University",
+    "URL": "https://hdl.handle.net/1887/13805"
+  },
+  {
+    "id": "neefjes-2008",
+    "type": "report",
+    "author": [
+      {
+        "family": "Neefjes",
+        "given": "M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          1
+        ]
+      ]
+    },
+    "title": "Onteigening voor natuur: bittere noodzaak of niet aan beginnen?",
+    "genre": "pp. 2–5; the journal is not named in the copy read",
+    "URL": "https://edepot.wur.nl/114625"
+  },
+  {
+    "id": "adviescommissie-westerschelde",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Adviescommissie Natuurherstel Westerschelde"
+      }
+    ],
+    "title": "Wennen aan de Westerschelde",
+    "URL": "https://www.vliz.be/imisdocs/publications/ocrd/144313.pdf"
+  },
+  {
+    "id": "rivierenland-2019-lek-linge",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Rivierenland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "title": "Inspraakverslag peilbesluit Lek en Linge en Tielerwaard",
+    "URL": "https://repository.officiele-overheidspublicaties.nl/externebijlagen/exb-2019-30978/currentItem"
+  },
+  {
+    "id": "minister-lnv-2021-peilverhoging",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Minister van Landbouw, Natuur en Voedselkwaliteit"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          28
+        ]
+      ]
+    },
+    "title": "Kabinetsaanpak Klimaatbeleid",
+    "genre": "Letter to the House of Representatives, Kamerstukken II 2020/21, 32 813, nr. 713",
+    "URL": "https://zoek.officielebekendmakingen.nl/kst-32813-713.pdf"
+  },
+  {
+    "id": "de-wit-2022",
+    "type": "chapter",
+    "author": [
+      {
+        "family": "de Wit",
+        "given": "M. A."
+      },
+      {
+        "family": "Vellinga",
+        "given": "P."
+      },
+      {
+        "family": "Negacz",
+        "given": "K."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products",
+    "editor": [
+      {
+        "family": "Negacz",
+        "given": "K."
+      },
+      {
+        "family": "Vellinga",
+        "given": "P."
+      },
+      {
+        "family": "Barrett-Lennard",
+        "given": "E."
+      },
+      {
+        "family": "Choukr-Allah",
+        "given": "R."
+      },
+      {
+        "family": "Elzenga",
+        "given": "T."
+      }
+    ],
+    "container-title": "Future of sustainable agriculture in saline environments",
+    "page": "263–278",
+    "publisher": "CRC Press",
+    "DOI": "10.1201/9781003112327-16"
+  },
+  {
+    "id": "ten-dam-2023",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "ten Dam",
+        "given": "R."
+      },
+      {
+        "family": "Vellinga",
+        "given": "P."
+      },
+      {
+        "family": "Negacz",
+        "given": "K."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "From experiment to market development: A case study of prospects and value chain of saline agriculture in Terschelling, the Netherlands",
+    "container-title": "NJAS: Impact in Agricultural and Life Sciences",
+    "volume": "95",
+    "issue": "1",
+    "page": "2211541",
+    "DOI": "10.1080/27685241.2023.2211541"
+  },
+  {
+    "id": "van-der-meulen-van-asseldonk-2017",
+    "type": "report",
+    "author": [
+      {
+        "family": "van der Meulen",
+        "given": "H. A. B."
+      },
+      {
+        "family": "van Asseldonk",
+        "given": "M. A. P. M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Mainstream and alternative sources of finance in Dutch agriculture",
+    "genre": "Paper, 21st International Farm Management Congress, Edinburgh",
+    "URL": "https://ageconsearch.umn.edu/record/345809/files/17_PR_VanderMeulenVanAsseldonk_w5_p7.pdf"
+  },
+  {
+    "id": "banken-nl-2019",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "literal": "Banken.nl"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          19
+        ]
+      ]
+    },
+    "title": "Rabobank merkt gestage afname kredietvraag boeren",
+    "URL": "https://www.banken.nl/nieuws/21601/rabobank-merkt-gestage-afname-kredietvraag-boeren"
+  },
+  {
+    "id": "boere-2015",
+    "type": "report",
+    "author": [
+      {
+        "family": "Boere",
+        "given": "E."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "title": "Economic analysis of Dutch agricultural land use in a changing policy environment",
+    "genre": "Doctoral dissertation, Wageningen University",
+    "DOI": "10.18174/347867"
   }
 ]

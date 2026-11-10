@@ -168,16 +168,16 @@
 <text x="0.0" y="225.5" text-anchor="middle">polders</text>
 </g>
 </g>
-<g class="loop" data-id="R5">
+<g class="loop" data-id="R7">
 <path d="M 0.0 -525.0 A 48 48 0 1 1 -48.0 -477.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="0.0" y="-477.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R5</text>
+<text class="loop-id" x="0.0" y="-477.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R7</text>
 </g>
-<g class="loop" data-id="R6">
+<g class="loop" data-id="R4">
 <path d="M 0.0 -48.0 A 48 48 0 1 1 -48.0 0.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="0.0" y="0.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R6</text>
+<text class="loop-id" x="0.0" y="0.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R4</text>
 </g>
-<g class="loop" data-id="B2">
+<g class="loop" data-id="B5">
 <path d="M 0.0 429.0 A 48 48 0 1 1 -48.0 477.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="0.0" y="477.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B2</text>
+<text class="loop-id" x="0.0" y="477.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B5</text>
 </g>
 </svg>

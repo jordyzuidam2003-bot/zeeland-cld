@@ -95,9 +95,9 @@
 <text x="-766.0" y="-286.5" text-anchor="middle">Farm income</text>
 </g>
 </g>
-<g class="loop" data-id="R3">
+<g class="loop" data-id="R2">
 <path d="M -400.0 -370.0 A 48 48 0 1 1 -448.0 -322.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="-400.0" y="-322.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R3</text>
+<text class="loop-id" x="-400.0" y="-322.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R2</text>
 </g>
 <g class="loop" data-id="B4">
 <path d="M 152.0 62.0 A 48 48 0 1 1 104.0 110.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>

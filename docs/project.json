@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 1f30200, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version bcbfb4e, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -1536,7 +1536,7 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Rain recharges the lens only once it has soaked into the soil. Before the floods, Zeeland's well-drained clay let the winter's rain surplus soak through almost completely; once sodium had broken down the structure of the topsoil, it became impervious and sticky when wet, part of the rain ran off over the surface and pools stood on the land, the more so the heavier the clay (van Beekom et al., 1953a, p. 157; 1953b, p. 233, measured in the flooded polders of Zeeland, by R1's own mechanism). Within the year: the structure a soil has in a winter sets how much of that winter's rain soaks in. Whether what soaks in reaches the lens or leaves through the drains is set by the drainage depth and the seepage (de Louw et al., 2011, p. 3674).",
+        "description": "Rain recharges the lens only once it has soaked into the soil. Before the floods, Zeeland's well-drained clay let the winter's rain surplus soak through almost completely; once sodium had broken down the structure of the topsoil, it became impervious and sticky when wet, part of the rain ran off over the surface and pools stood on the land, the more so the heavier the clay (van Beekom et al., 1953a, p. 157; 1953b, p. 233, measured in the flooded polders of Zeeland, by R3's own mechanism). Within the year: the structure a soil has in a winter sets how much of that winter's rain soaks in. Whether what soaks in reaches the lens or leaves through the drains is set by the drainage depth and the seepage (de Louw et al., 2011, p. 3674).",
         "sets link": "Within E",
         "sets scope": "Within domain",
         "hypothesis": "no",
@@ -1716,11 +1716,11 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "A fall in the land's value that has happened, through salt in R6: does a farm whose land lost value object harder to the next plan? Through its solvency, yes (−); where compensation pays more than the land would fetch on the market, the concern may fall instead (+). A hypothesis for the group model building session, with both signs as the question to farmers.",
+        "description": "A fall in the land's value that has happened, through salt in R4: does a farm whose land lost value object harder to the next plan? Through its solvency, yes (−); where compensation pays more than the land would fetch on the market, the concern may fall instead (+). A hypothesis for the group model building session, with both signs as the question to farmers.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "yes",
-        "simplification": "Folds Owners' concern about their land's value, which gathered the reasons for objecting: a fall in the land's value, and a plan that would lower it, raised landowning farmers' concern, and the concern raised their objections. The sign is the product of the two steps, so R6 keeps its polarity, and the concern was no actor's decision of its own. A tenant's concern, losing the lease, was never part of it. What it leaves out: why owners object is no variable on the drawing, a question for the group model building session.",
+        "simplification": "Folds Owners' concern about their land's value, which gathered the reasons for objecting: a fall in the land's value, and a plan that would lower it, raised landowning farmers' concern, and the concern raised their objections. The sign is the product of the two steps, so R4 keeps its polarity, and the concern was no actor's decision of its own. A tenant's concern, losing the lease, was never part of it. What it leaves out: why owners object is no variable on the drawing, a question for the group model building session.",
         "sources": "",
         "sourced": "no",
         "connection type": "-"
@@ -2463,7 +2463,7 @@
         "sets link": "T to E",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "simplification": "The new crops are taken to lose nothing to salt. That holds for crops grown on saline land, such as sea fennel and sea banana on an arable farm at Colijnsplaat (EU CAP Network, 2023), and for quinoa, among the crops better suited to saline conditions (Deolu-Ajayi et al., 2024, p. 63). A new crop as sensitive as the current ones loses about as much, and R4 does not run through it.",
+        "simplification": "The new crops are taken to lose nothing to salt. That holds for crops grown on saline land, such as sea fennel and sea banana on an arable farm at Colijnsplaat (EU CAP Network, 2023), and for quinoa, among the crops better suited to saline conditions (Deolu-Ajayi et al., 2024, p. 63). A new crop as sensitive as the current ones loses about as much, and R8 does not run through it.",
         "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nEU CAP Network. (2023). 'Zeeland's roots for new crops': Growing sea bananas and sea fennel on saline land thanks to LEADER climate adaptation support [Good practice report]. European Commission. https://eu-cap-network.ec.europa.eu/sites/default/files/2023-07/Zeeland%E2%80%99s%20roots%20for%20new%20crops.pdf",
         "sourced": "yes",
         "connection type": "-"
@@ -3932,34 +3932,19 @@
     {
       "_id": "loop-R1",
       "attributes": {
-        "label": "R1 Salty soil takes in less rain",
-        "description": "Salt in the root zone puts sodium on the clay; once fresh water washes the salt out, the soil's structure collapses and recovers only over years. Less rain soaks in, less recharges the rainwater lens, the lens thins over years and saline groundwater comes closer to the roots: more salt. It runs in the low polders. The mechanism was measured after seawater floods; how much sodium the island's seepage puts on its clay, no source read shows. No practice is on it: the salt it adds drives tolerant crops and varieties (B13, B14)."
+        "label": "R1 Storing teaches how storage works",
+        "description": "The more measures are built and monitored on the island, the more its farmers, advisers and contractors know of how storage works there and what it costs, risks and yields, and the readier farmers are to invest. Run backwards, where farms do not invest nothing is learned and no knowledge base forms. It drives storage once measures are built and holds it back while few are. How long this takes, no source read shows."
       },
       "connections": [
-        "conn-root-zone-salinity--soil-structure-usability",
-        "conn-soil-structure-usability--freshwater-lens-recharge",
-        "conn-freshwater-lens-recharge--freshwater-lens-thickness",
-        "conn-freshwater-lens-thickness--root-zone-salinity"
+        "conn-knowledge-of-storage--freshwater-storage-measures",
+        "conn-freshwater-storage-measures--knowledge-of-storage"
       ]
     },
     {
       "_id": "loop-R2",
       "attributes": {
-        "label": "R2 Growers and processors",
-        "description": "More hectares under new salt-tolerant crops give more harvest within reach of a plant, which makes a local plant more worthwhile to buyers and processors. A plant nearby cuts transport, farmers keep more of the price, the crop is worth more and more farmers grow it. Run backwards, few hectares leave no reason for a plant and transport keeps the price low. It drives new crops once enough is grown and holds them back while too little is."
-      },
-      "connections": [
-        "conn-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process",
-        "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
-        "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops",
-        "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
-      ]
-    },
-    {
-      "_id": "loop-R3",
-      "attributes": {
-        "label": "R3 Farm income and water storage",
-        "description": "A farm with more left to invest can pay for more storage measures, so less winter rain drains away, more recharges the rainwater lens, the lens thickens over years, crops on that field have more fresh water, the shortfall shrinks, and yield, income and what the farm can invest rise. Run backwards, a farm with little left to invest cannot pay for storage, its water gets scarcer and its income falls further: the financial pressure R5 traces through what farms do, R3 traces through what they cannot do. It runs in the low polders. It drives storage on farms with the means and holds it back on farms without."
+        "label": "R2 Farm income and water storage",
+        "description": "A farm with more left to invest can pay for more storage measures, so less winter rain drains away, more recharges the rainwater lens, the lens thickens over years, crops on that field have more fresh water, the shortfall shrinks, and yield, income and what the farm can invest rise. Run backwards, a farm with little left to invest cannot pay for storage, its water gets scarcer and its income falls further: the financial pressure R7 traces through what farms do, R2 traces through what they cannot do. It runs in the low polders. It drives storage on farms with the means and holds it back on farms without."
       },
       "connections": [
         "conn-farmers-capacity-to-invest--freshwater-storage-measures",
@@ -3974,18 +3959,32 @@
       ]
     },
     {
-      "_id": "loop-R4",
+      "_id": "loop-R3",
       "attributes": {
-        "label": "R4 Land value and bank credit",
-        "description": "When farmland loses value, the same mortgage is more debt against the farm's assets, so banks see more risk and lend less. The farm has less to invest and moves fewer fields to new salt-tolerant crops, more of its conventional harvest stays exposed to salt, income falls and the land loses more value. It runs for farms that own their land. It shows an unintended consequence of the banks' response in B10: a bank limits its lending to protect itself, and farms that get less credit adapt less, which lowers the collateral further. It holds back new crops where land loses value and supports them where land keeps it."
+        "label": "R3 Salty soil takes in less rain",
+        "description": "Salt in the root zone puts sodium on the clay; once fresh water washes the salt out, the soil's structure collapses and recovers only over years. Less rain soaks in, less recharges the rainwater lens, the lens thins over years and saline groundwater comes closer to the roots: more salt. It runs in the low polders. The mechanism was measured after seawater floods; how much sodium the island's seepage puts on its clay, no source read shows. No practice is on it: the salt it adds drives tolerant crops and varieties (B12, B11)."
       },
       "connections": [
-        "conn-agricultural-land-value--mortgage-debt-financial-leverage",
-        "conn-mortgage-debt-financial-leverage--banks-risk-assessment",
-        "conn-banks-risk-assessment--bank-credit-to-farms",
-        "conn-bank-credit-to-farms--farmers-capacity-to-invest",
-        "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
-        "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt",
+        "conn-root-zone-salinity--soil-structure-usability",
+        "conn-soil-structure-usability--freshwater-lens-recharge",
+        "conn-freshwater-lens-recharge--freshwater-lens-thickness",
+        "conn-freshwater-lens-thickness--root-zone-salinity"
+      ]
+    },
+    {
+      "_id": "loop-R4",
+      "attributes": {
+        "label": "R4 Land value, objections and ditch levels",
+        "description": "When farmland loses value, its owners may object harder to the next plan to raise ditch levels; whether they do is a hypothesis for the group model building session, the sign possibly opposite where compensation pays more than the land would fetch. Objections can hold today's level while a plan is pending, and never deepen it. Seepage stays higher, the rainwater lens stays thin, salt takes more of the harvest, income falls and the land loses more value. It shows an unintended consequence of the objections in B9: owners object to protect their land, and the levels held keep up the seepage and salt that lower its value. It touches adoption through the salt it keeps up (B12, B11)."
+      },
+      "connections": [
+        "conn-agricultural-land-value--policy-resistance-legal-delays",
+        "conn-policy-resistance-legal-delays--plans-to-raise-ditch-levels",
+        "conn-plans-to-raise-ditch-levels--polder-drainage-depth",
+        "conn-polder-drainage-depth--saline-seepage-kwel",
+        "conn-saline-seepage-kwel--freshwater-lens-thickness",
+        "conn-freshwater-lens-thickness--root-zone-salinity",
+        "conn-root-zone-salinity--harvest-lost-to-salt",
         "conn-harvest-lost-to-salt--farm-revenue",
         "conn-farm-revenue--agricultural-land-value"
       ]
@@ -3993,8 +3992,32 @@
     {
       "_id": "loop-R5",
       "attributes": {
-        "label": "R5 Leverage and deep drainage",
-        "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its debt payments rise. To meet them it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It shows an unintended consequence of the deep drainage in B7: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B13, B14)."
+        "label": "R5 Changed plans erode trust",
+        "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. Both steps are hypotheses for the group model building session. It holds back storage, a long investment that a change of rules can strand, as trust falls."
+      },
+      "connections": [
+        "conn-policy-resistance-legal-delays--farmers-trust-in-government",
+        "conn-farmers-trust-in-government--policy-resistance-legal-delays"
+      ]
+    },
+    {
+      "_id": "loop-R6",
+      "attributes": {
+        "label": "R6 Capital ties farms to their crops",
+        "description": "A farm tied to its current crops spends on keeping them as machines and stores fall due, over years. The more it owns for those crops, the more a switch to a new crop would write off, and what it would lose ties it further to them. It holds back new crops, and leaves tolerant varieties of the current crops nearly untouched."
+      },
+      "connections": [
+        "conn-dependence-on-high-margin-salt-sensitive-crops--spending-on-keeping-current-crops",
+        "conn-spending-on-keeping-current-crops--machines-and-storage-for-current-crops",
+        "conn-machines-and-storage-for-current-crops--capital-lost-on-switching",
+        "conn-capital-lost-on-switching--dependence-on-high-margin-salt-sensitive-crops"
+      ]
+    },
+    {
+      "_id": "loop-R7",
+      "attributes": {
+        "label": "R7 Leverage and deep drainage",
+        "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its debt payments rise. To meet them it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It shows an unintended consequence of the deep drainage in B8: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B12, B11)."
       },
       "connections": [
         "conn-mortgage-debt-financial-leverage--banks-risk-assessment",
@@ -4014,46 +4037,10 @@
       ]
     },
     {
-      "_id": "loop-R6",
+      "_id": "loop-R8",
       "attributes": {
-        "label": "R6 Land value, objections and ditch levels",
-        "description": "When farmland loses value, its owners may object harder to the next plan to raise ditch levels; whether they do is a hypothesis for the group model building session, the sign possibly opposite where compensation pays more than the land would fetch. Objections can hold today's level while a plan is pending, and never deepen it. Seepage stays higher, the rainwater lens stays thin, salt takes more of the harvest, income falls and the land loses more value. It shows an unintended consequence of the objections in B9: owners object to protect their land, and the levels held keep up the seepage and salt that lower its value. It touches adoption through the salt it keeps up (B13, B14)."
-      },
-      "connections": [
-        "conn-agricultural-land-value--policy-resistance-legal-delays",
-        "conn-policy-resistance-legal-delays--plans-to-raise-ditch-levels",
-        "conn-plans-to-raise-ditch-levels--polder-drainage-depth",
-        "conn-polder-drainage-depth--saline-seepage-kwel",
-        "conn-saline-seepage-kwel--freshwater-lens-thickness",
-        "conn-freshwater-lens-thickness--root-zone-salinity",
-        "conn-root-zone-salinity--harvest-lost-to-salt",
-        "conn-harvest-lost-to-salt--farm-revenue",
-        "conn-farm-revenue--agricultural-land-value"
-      ]
-    },
-    {
-      "_id": "loop-B2",
-      "attributes": {
-        "label": "B2 Less arable land, less deep drainage",
-        "description": "More salt in the root zone takes more of the harvest, income and land value fall, and where arable farming no longer pays for a buyer or successor the land goes to a holder who does not farm it as arable land. With less arable land the water board, whose level follows the land's use, has more reason to raise the ditch levels, over years; seepage falls, the rainwater lens thickens and the salt falls back. It seeks the salt level at which arable farming stops paying for any successor or buyer, set by crop prices, margins and the land market. With B13 and B14 it is a way out of the same salt: those keep the land arable with another crop, this one is arable farming ending, where the current crops stop paying and adapting does not pay or is not chosen. It acts only at that end: while arable farming still pays for someone, land from a farm that stops mostly goes to expanding neighbours and stays arable (Arable land in the polders), and a raise follows only where a whole level area leaves arable use, since where nature and farmland share one the board keeps nature's level and links the farm parcel to a lower area (Arable land in the polders → Water board's plans to raise ditch levels). From salt to a raise takes decades, its slowest steps the land changing hands and the board's plan cycle."
-      },
-      "connections": [
-        "conn-root-zone-salinity--harvest-lost-to-salt",
-        "conn-harvest-lost-to-salt--farm-revenue",
-        "conn-farm-revenue--agricultural-land-value",
-        "conn-agricultural-land-value--farmland-leaving-arable-use",
-        "conn-farmland-leaving-arable-use--plans-to-raise-ditch-levels",
-        "conn-plans-to-raise-ditch-levels--polder-drainage-depth",
-        "conn-polder-drainage-depth--saline-seepage-kwel",
-        "conn-saline-seepage-kwel--freshwater-lens-thickness",
-        "conn-freshwater-lens-thickness--root-zone-salinity"
-      ]
-    },
-    {
-      "_id": "loop-B3",
-      "attributes": {
-        "label": "B3 Switching gives up margin",
-        "description": "Moving a field to a new salt-tolerant crop gives up the current crop's margin, most on fresh land where the current crops still do well. Income and land value fall, leverage and the bank's risk rise, credit falls and the farm has less to invest, so fewer fields move. It seeks the share of new crops that a farm's income and credit can carry. It shares its chain with R4, where the switch saves harvest instead; a sign cannot say which pulls harder, so that is a question for the group. It holds back new crops."
+        "label": "R8 Land value and bank credit",
+        "description": "When farmland loses value, the same mortgage is more debt against the farm's assets, so banks see more risk and lend less. The farm has less to invest and moves fewer fields to new salt-tolerant crops, more of its conventional harvest stays exposed to salt, income falls and the land loses more value. It runs for farms that own their land. It shows an unintended consequence of the banks' response in B14: a bank limits its lending to protect itself, and farms that get less credit adapt less, which lowers the collateral further. It holds back new crops where land loses value and supports them where land keeps it."
       },
       "connections": [
         "conn-agricultural-land-value--mortgage-debt-financial-leverage",
@@ -4061,9 +4048,60 @@
         "conn-banks-risk-assessment--bank-credit-to-farms",
         "conn-bank-credit-to-farms--farmers-capacity-to-invest",
         "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
-        "conn-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops",
-        "conn-margin-given-up-on-high-margin-crops--farm-revenue",
+        "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt",
+        "conn-harvest-lost-to-salt--farm-revenue",
         "conn-farm-revenue--agricultural-land-value"
+      ]
+    },
+    {
+      "_id": "loop-R9",
+      "attributes": {
+        "label": "R9 Growers and processors",
+        "description": "More hectares under new salt-tolerant crops give more harvest within reach of a plant, which makes a local plant more worthwhile to buyers and processors. A plant nearby cuts transport, farmers keep more of the price, the crop is worth more and more farmers grow it. Run backwards, few hectares leave no reason for a plant and transport keeps the price low. It drives new crops once enough is grown and holds them back while too little is."
+      },
+      "connections": [
+        "conn-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process",
+        "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
+        "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops",
+        "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
+      ]
+    },
+    {
+      "_id": "loop-B1",
+      "attributes": {
+        "label": "B1 Pumping rules protect the lens",
+        "description": "Under the creek ridges and dunes, the thicker the fresh groundwater, the more pumping the water board's rules allow. Farmers pump within that, and what they pump beyond what the rain puts back thins the lens. It seeks the balance between recharge and extraction on which the board set its limit. It shows an unintended consequence of the pumping in B2: a thinner lens, which reaches crops only through wells, so it comes back only through what the rules allow. For storage on the creek ridges, what infiltration adds to this lens is what wells can pump."
+      },
+      "connections": [
+        "conn-creek-ridge-lens-thickness--pumping-the-water-board-allows",
+        "conn-pumping-the-water-board-allows--groundwater-extraction-for-irrigation",
+        "conn-groundwater-extraction-for-irrigation--creek-ridge-lens-thickness"
+      ]
+    },
+    {
+      "_id": "loop-B2",
+      "attributes": {
+        "label": "B2 Pumping relieves the shortfall",
+        "description": "As the crop water shortfall grows, farmers pump more fresh groundwater, crops get more water and the shortfall shrinks, within the season. It seeks the water the crop needs, and runs only where a farm has fresh groundwater more than 15 m thick under it, on the creek ridges and dunes; the farmers talked to in the low polders do not irrigate. Where it eases the shortfall it eases the worse harvests that make storing worthwhile (B4), so it can hold storage back."
+      },
+      "connections": [
+        "conn-crop-water-shortfall--groundwater-extraction-for-irrigation",
+        "conn-groundwater-extraction-for-irrigation--freshwater-availability-for-crops",
+        "conn-freshwater-availability-for-crops--crop-water-shortfall"
+      ]
+    },
+    {
+      "_id": "loop-B3",
+      "attributes": {
+        "label": "B3 Asking for a supply route",
+        "description": "The shorter of water the farms, the more firmly ZLTO asks for a supply route, and the deciding body weighs that call over the years a route takes to decide, pay for and build. A route would carry fresh water to the island, crops would have more to draw on and the shortfall would shrink. None exists, so the loop has not run yet; a study has left open who pays and who would run one. It seeks a shortfall the deciding body finds acceptable. Where it eased the shortfall it would ease the worse harvests that make storing worthwhile (B4)."
+      },
+      "connections": [
+        "conn-crop-water-shortfall--zlto-call-for-supply-route",
+        "conn-zlto-call-for-supply-route--freshwater-supply-route",
+        "conn-freshwater-supply-route--external-freshwater-supply",
+        "conn-external-freshwater-supply--freshwater-availability-for-crops",
+        "conn-freshwater-availability-for-crops--crop-water-shortfall"
       ]
     },
     {
@@ -4085,20 +4123,49 @@
     {
       "_id": "loop-B5",
       "attributes": {
-        "label": "B5 Pumping relieves the shortfall",
-        "description": "As the crop water shortfall grows, farmers pump more fresh groundwater, crops get more water and the shortfall shrinks, within the season. It seeks the water the crop needs, and runs only where a farm has fresh groundwater more than 15 m thick under it, on the creek ridges and dunes; the farmers talked to in the low polders do not irrigate. Where it eases the shortfall it eases the worse harvests that make storing worthwhile (B4), so it can hold storage back."
+        "label": "B5 Less arable land, less deep drainage",
+        "description": "More salt in the root zone takes more of the harvest, income and land value fall, and where arable farming no longer pays for a buyer or successor the land goes to a holder who does not farm it as arable land. With less arable land the water board, whose level follows the land's use, has more reason to raise the ditch levels, over years; seepage falls, the rainwater lens thickens and the salt falls back. It seeks the salt level at which arable farming stops paying for any successor or buyer, set by crop prices, margins and the land market. With B12 and B11 it is a way out of the same salt: those keep the land arable with another crop, this one is arable farming ending, where the current crops stop paying and adapting does not pay or is not chosen. It acts only at that end: while arable farming still pays for someone, land from a farm that stops mostly goes to expanding neighbours and stays arable (Arable land in the polders), and a raise follows only where a whole level area leaves arable use, since where nature and farmland share one the board keeps nature's level and links the farm parcel to a lower area (Arable land in the polders → Water board's plans to raise ditch levels). From salt to a raise takes decades, its slowest steps the land changing hands and the board's plan cycle."
       },
       "connections": [
-        "conn-crop-water-shortfall--groundwater-extraction-for-irrigation",
-        "conn-groundwater-extraction-for-irrigation--freshwater-availability-for-crops",
-        "conn-freshwater-availability-for-crops--crop-water-shortfall"
+        "conn-root-zone-salinity--harvest-lost-to-salt",
+        "conn-harvest-lost-to-salt--farm-revenue",
+        "conn-farm-revenue--agricultural-land-value",
+        "conn-agricultural-land-value--farmland-leaving-arable-use",
+        "conn-farmland-leaving-arable-use--plans-to-raise-ditch-levels",
+        "conn-plans-to-raise-ditch-levels--polder-drainage-depth",
+        "conn-polder-drainage-depth--saline-seepage-kwel",
+        "conn-saline-seepage-kwel--freshwater-lens-thickness",
+        "conn-freshwater-lens-thickness--root-zone-salinity"
+      ]
+    },
+    {
+      "_id": "loop-B6",
+      "attributes": {
+        "label": "B6 The water board raises levels against seepage",
+        "description": "Lower ditch levels raise the saline seepage. The water board names the salinisation a concern and aims to keep or enlarge the lenses, so over years more seepage gives it more reason to plan raises; once carried out, the levels rise and the seepage falls. It seeks the fresh water in the soil the board wants to keep; how far seepage weighs against drought in its plans, no source read shows. It touches adoption only through the salt it lowers (B12, B11)."
+      },
+      "connections": [
+        "conn-polder-drainage-depth--saline-seepage-kwel",
+        "conn-saline-seepage-kwel--plans-to-raise-ditch-levels",
+        "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
       ]
     },
     {
       "_id": "loop-B7",
       "attributes": {
-        "label": "B7 Deep drainage keeps fields workable",
-        "description": "Where fields stay too wet to work in spring, farmers ask for low ditch levels and the water board plans fewer raises. The levels stay low, the fields drain and dry sooner, and the wish for lower levels eases. It seeks fields dry enough for heavy machinery in spring: what deep drainage gains a farm, R5 tracing what it costs. By keeping the current crops' spring work possible, it supports carrying on with them rather than adopting a practice."
+        "label": "B7 The board tests the drainage depth",
+        "description": "The water board tests each level area's drainage depth against the optimum for its use and soil: where little of the area is too wet a raise is considered, where much of it is the target level is lowered or the discharge's bottlenecks solved. Carried out over years, the depth moves back towards that optimum, which the board sets by its own rules. It touches adoption only through the seepage and salt the depth sets."
+      },
+      "connections": [
+        "conn-polder-drainage-depth--plans-to-raise-ditch-levels",
+        "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+      ]
+    },
+    {
+      "_id": "loop-B8",
+      "attributes": {
+        "label": "B8 Deep drainage keeps fields workable",
+        "description": "Where fields stay too wet to work in spring, farmers ask for low ditch levels and the water board plans fewer raises. The levels stay low, the fields drain and dry sooner, and the wish for lower levels eases. It seeks fields dry enough for heavy machinery in spring: what deep drainage gains a farm, R7 tracing what it costs. By keeping the current crops' spring work possible, it supports carrying on with them rather than adopting a practice."
       },
       "connections": [
         "conn-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels",
@@ -4108,45 +4175,10 @@
       ]
     },
     {
-      "_id": "loop-B8",
-      "attributes": {
-        "label": "B8 The water board raises levels against seepage",
-        "description": "Lower ditch levels raise the saline seepage. The water board names the salinisation a concern and aims to keep or enlarge the lenses, so over years more seepage gives it more reason to plan raises; once carried out, the levels rise and the seepage falls. It seeks the fresh water in the soil the board wants to keep; how far seepage weighs against drought in its plans, no source read shows. It touches adoption only through the salt it lowers (B13, B14)."
-      },
-      "connections": [
-        "conn-polder-drainage-depth--saline-seepage-kwel",
-        "conn-saline-seepage-kwel--plans-to-raise-ditch-levels",
-        "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
-      ]
-    },
-    {
-      "_id": "loop-B11",
-      "attributes": {
-        "label": "B11 Pumping rules protect the lens",
-        "description": "Under the creek ridges and dunes, the thicker the fresh groundwater, the more pumping the water board's rules allow. Farmers pump within that, and what they pump beyond what the rain puts back thins the lens. It seeks the balance between recharge and extraction on which the board set its limit. It shows an unintended consequence of the pumping in B5: a thinner lens, which reaches crops only through wells, so it comes back only through what the rules allow. For storage on the creek ridges, what infiltration adds to this lens is what wells can pump."
-      },
-      "connections": [
-        "conn-creek-ridge-lens-thickness--pumping-the-water-board-allows",
-        "conn-pumping-the-water-board-allows--groundwater-extraction-for-irrigation",
-        "conn-groundwater-extraction-for-irrigation--creek-ridge-lens-thickness"
-      ]
-    },
-    {
-      "_id": "loop-B12",
-      "attributes": {
-        "label": "B12 The board tests the drainage depth",
-        "description": "The water board tests each level area's drainage depth against the optimum for its use and soil: where little of the area is too wet a raise is considered, where much of it is the target level is lowered or the discharge's bottlenecks solved. Carried out over years, the depth moves back towards that optimum, which the board sets by its own rules. It touches adoption only through the seepage and salt the depth sets."
-      },
-      "connections": [
-        "conn-polder-drainage-depth--plans-to-raise-ditch-levels",
-        "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
-      ]
-    },
-    {
       "_id": "loop-B9",
       "attributes": {
         "label": "B9 Objections hold back plans",
-        "description": "A plan to raise ditch levels brings objections, appeals and lobbying from landowning farmers who expect it to lower their land's value; whether that is their reason is a question for the group model building session. Objections can delay, change or stop the plan while it is pending, so fewer raises stay planned. It is the objectors' intended loop, protecting their land, and seeks a plan they can accept. It touches adoption only through the levels it holds, and through R6 and R9."
+        "description": "A plan to raise ditch levels brings objections, appeals and lobbying from landowning farmers who expect it to lower their land's value; whether that is their reason is a question for the group model building session. Objections can delay, change or stop the plan while it is pending, so fewer raises stay planned. It is the objectors' intended loop, protecting their land, and seeks a plan they can accept. It touches adoption only through the levels it holds, and through R4 and R5."
       },
       "connections": [
         "conn-plans-to-raise-ditch-levels--policy-resistance-legal-delays",
@@ -4156,90 +4188,7 @@
     {
       "_id": "loop-B10",
       "attributes": {
-        "label": "B10 Banks lend less as leverage rises",
-        "description": "A farm with higher leverage is a riskier loan, so banks lend it less, less new debt is added and its leverage stops rising. It seeks the leverage a bank accepts, and is the banks' intended loop: they limit their exposure. By limiting credit it holds back what a farm can invest in new crops and storage; R4 shows what that can do in turn."
-      },
-      "connections": [
-        "conn-mortgage-debt-financial-leverage--banks-risk-assessment",
-        "conn-banks-risk-assessment--bank-credit-to-farms",
-        "conn-bank-credit-to-farms--mortgage-debt-financial-leverage"
-      ]
-    },
-    {
-      "_id": "loop-R9",
-      "attributes": {
-        "label": "R9 Changed plans erode trust",
-        "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. Both steps are hypotheses for the group model building session. It holds back storage, a long investment that a change of rules can strand, as trust falls."
-      },
-      "connections": [
-        "conn-policy-resistance-legal-delays--farmers-trust-in-government",
-        "conn-farmers-trust-in-government--policy-resistance-legal-delays"
-      ]
-    },
-    {
-      "_id": "loop-R10",
-      "attributes": {
-        "label": "R10 Capital ties farms to their crops",
-        "description": "A farm tied to its current crops spends on keeping them as machines and stores fall due, over years. The more it owns for those crops, the more a switch to a new crop would write off, and what it would lose ties it further to them. It holds back new crops, and leaves tolerant varieties of the current crops nearly untouched."
-      },
-      "connections": [
-        "conn-dependence-on-high-margin-salt-sensitive-crops--spending-on-keeping-current-crops",
-        "conn-spending-on-keeping-current-crops--machines-and-storage-for-current-crops",
-        "conn-machines-and-storage-for-current-crops--capital-lost-on-switching",
-        "conn-capital-lost-on-switching--dependence-on-high-margin-salt-sensitive-crops"
-      ]
-    },
-    {
-      "_id": "loop-R12",
-      "attributes": {
-        "label": "R12 Storing teaches how storage works",
-        "description": "The more measures are built and monitored on the island, the more its farmers, advisers and contractors know of how storage works there and what it costs, risks and yields, and the readier farmers are to invest. Run backwards, where farms do not invest nothing is learned and no knowledge base forms. It drives storage once measures are built and holds it back while few are. How long this takes, no source read shows."
-      },
-      "connections": [
-        "conn-knowledge-of-storage--freshwater-storage-measures",
-        "conn-freshwater-storage-measures--knowledge-of-storage"
-      ]
-    },
-    {
-      "_id": "loop-B13",
-      "attributes": {
-        "label": "B13 Salt losses move fields to new crops",
-        "description": "The more harvest salt takes, the more a new salt-tolerant crop is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches, which each farmer sets through their crops, margins, buyers and bank, a hypothesis for the group model building session. With B14 and B2 it is a way out of the same salt: switching keeps the land arable, B2 is arable farming ending. It drives new crops."
-      },
-      "connections": [
-        "conn-harvest-lost-to-salt--salt-tolerant-crop-adoption",
-        "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt"
-      ]
-    },
-    {
-      "_id": "loop-B14",
-      "attributes": {
-        "label": "B14 Salt losses move fields to tolerant varieties",
-        "description": "The more harvest salt takes, the more a tolerant variety is worth against the one grown now, so more farmers grow it, perhaps only past a threshold. A tolerant variety loses less to salt, so the harvest lost falls. It seeks the loss at which a farmer changes variety, a hypothesis for the group model building session, as in B13. Tolerant varieties use the same machines, storage and know-how, so little capital is lost on them (R10). It drives tolerant varieties."
-      },
-      "connections": [
-        "conn-harvest-lost-to-salt--tolerant-varieties-adoption",
-        "conn-tolerant-varieties-adoption--harvest-lost-to-salt"
-      ]
-    },
-    {
-      "_id": "loop-B15",
-      "attributes": {
-        "label": "B15 Asking for a supply route",
-        "description": "The shorter of water the farms, the more firmly ZLTO asks for a supply route, and the deciding body weighs that call over the years a route takes to decide, pay for and build. A route would carry fresh water to the island, crops would have more to draw on and the shortfall would shrink. None exists, so the loop has not run yet; a study has left open who pays and who would run one. It seeks a shortfall the deciding body finds acceptable. Where it eased the shortfall it would ease the worse harvests that make storing worthwhile (B4)."
-      },
-      "connections": [
-        "conn-crop-water-shortfall--zlto-call-for-supply-route",
-        "conn-zlto-call-for-supply-route--freshwater-supply-route",
-        "conn-freshwater-supply-route--external-freshwater-supply",
-        "conn-external-freshwater-supply--freshwater-availability-for-crops",
-        "conn-freshwater-availability-for-crops--crop-water-shortfall"
-      ]
-    },
-    {
-      "_id": "loop-B16",
-      "attributes": {
-        "label": "B16 Expropriation, trust and the next plan",
+        "label": "B10 Expropriation, trust and the next plan",
         "description": "The more farmland the municipality plans for other uses, the more lies within reach of an expropriation order, after the attempt to buy has failed, over years. Expropriation lowers farmers' trust in government, farmers who trust less object more, and objections delay, change or stop the next plan, so less farmland is planned. It shows an unintended consequence of expropriating for a plan: the next plan becomes harder to adopt. It seeks the planned area the island's farmers will accept. The steps through trust are hypotheses for the group model building session. Through the trust it lowers it holds back storage."
       },
       "connections": [
@@ -4248,12 +4197,63 @@
         "conn-farmers-trust-in-government--policy-resistance-legal-delays",
         "conn-policy-resistance-legal-delays--municipality-plans-for-farmland"
       ]
+    },
+    {
+      "_id": "loop-B11",
+      "attributes": {
+        "label": "B11 Salt losses move fields to tolerant varieties",
+        "description": "The more harvest salt takes, the more a tolerant variety is worth against the one grown now, so more farmers grow it, perhaps only past a threshold. A tolerant variety loses less to salt, so the harvest lost falls. It seeks the loss at which a farmer changes variety, a hypothesis for the group model building session, as in B12. Tolerant varieties use the same machines, storage and know-how, so little capital is lost on them (R6). It drives tolerant varieties."
+      },
+      "connections": [
+        "conn-harvest-lost-to-salt--tolerant-varieties-adoption",
+        "conn-tolerant-varieties-adoption--harvest-lost-to-salt"
+      ]
+    },
+    {
+      "_id": "loop-B12",
+      "attributes": {
+        "label": "B12 Salt losses move fields to new crops",
+        "description": "The more harvest salt takes, the more a new salt-tolerant crop is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches, which each farmer sets through their crops, margins, buyers and bank, a hypothesis for the group model building session. With B11 and B5 it is a way out of the same salt: switching keeps the land arable, B5 is arable farming ending. It drives new crops."
+      },
+      "connections": [
+        "conn-harvest-lost-to-salt--salt-tolerant-crop-adoption",
+        "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt"
+      ]
+    },
+    {
+      "_id": "loop-B13",
+      "attributes": {
+        "label": "B13 Switching gives up margin",
+        "description": "Moving a field to a new salt-tolerant crop gives up the current crop's margin, most on fresh land where the current crops still do well. Income and land value fall, leverage and the bank's risk rise, credit falls and the farm has less to invest, so fewer fields move. It seeks the share of new crops that a farm's income and credit can carry. It shares its chain with R8, where the switch saves harvest instead; a sign cannot say which pulls harder, so that is a question for the group. It holds back new crops."
+      },
+      "connections": [
+        "conn-agricultural-land-value--mortgage-debt-financial-leverage",
+        "conn-mortgage-debt-financial-leverage--banks-risk-assessment",
+        "conn-banks-risk-assessment--bank-credit-to-farms",
+        "conn-bank-credit-to-farms--farmers-capacity-to-invest",
+        "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
+        "conn-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops",
+        "conn-margin-given-up-on-high-margin-crops--farm-revenue",
+        "conn-farm-revenue--agricultural-land-value"
+      ]
+    },
+    {
+      "_id": "loop-B14",
+      "attributes": {
+        "label": "B14 Banks lend less as leverage rises",
+        "description": "A farm with higher leverage is a riskier loan, so banks lend it less, less new debt is added and its leverage stops rising. It seeks the leverage a bank accepts, and is the banks' intended loop: they limit their exposure. By limiting credit it holds back what a farm can invest in new crops and storage; R8 shows what that can do in turn."
+      },
+      "connections": [
+        "conn-mortgage-debt-financial-leverage--banks-risk-assessment",
+        "conn-banks-risk-assessment--bank-credit-to-farms",
+        "conn-bank-credit-to-farms--mortgage-debt-financial-leverage"
+      ]
     }
   ],
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 1f30200",
+      "name": "CLD, model bcbfb4e",
       "description": "",
       "scale": 1,
       "center": {
@@ -5699,8 +5699,8 @@
           "loop": "loop-R1",
           "style": {},
           "position": {
-            "x": -1146,
-            "y": 321
+            "x": -476,
+            "y": -143
           }
         },
         {
@@ -5708,8 +5708,8 @@
           "loop": "loop-R2",
           "style": {},
           "position": {
-            "x": 616,
-            "y": 1174
+            "x": -816,
+            "y": 359
           }
         },
         {
@@ -5717,8 +5717,8 @@
           "loop": "loop-R3",
           "style": {},
           "position": {
-            "x": -816,
-            "y": 359
+            "x": -1146,
+            "y": 321
           }
         },
         {
@@ -5726,8 +5726,8 @@
           "loop": "loop-R4",
           "style": {},
           "position": {
-            "x": 618,
-            "y": -238
+            "x": -769,
+            "y": -200
           }
         },
         {
@@ -5735,8 +5735,8 @@
           "loop": "loop-R5",
           "style": {},
           "position": {
-            "x": 20,
-            "y": -344
+            "x": 244,
+            "y": -1524
           }
         },
         {
@@ -5744,8 +5744,44 @@
           "loop": "loop-R6",
           "style": {},
           "position": {
-            "x": -769,
-            "y": -200
+            "x": 1952,
+            "y": -571
+          }
+        },
+        {
+          "_id": "mloop-R7",
+          "loop": "loop-R7",
+          "style": {},
+          "position": {
+            "x": 20,
+            "y": -344
+          }
+        },
+        {
+          "_id": "mloop-R8",
+          "loop": "loop-R8",
+          "style": {},
+          "position": {
+            "x": 618,
+            "y": -238
+          }
+        },
+        {
+          "_id": "mloop-R9",
+          "loop": "loop-R9",
+          "style": {},
+          "position": {
+            "x": 616,
+            "y": 1174
+          }
+        },
+        {
+          "_id": "mloop-B1",
+          "loop": "loop-B1",
+          "style": {},
+          "position": {
+            "x": -716,
+            "y": 607
           }
         },
         {
@@ -5753,8 +5789,8 @@
           "loop": "loop-B2",
           "style": {},
           "position": {
-            "x": -782,
-            "y": -111
+            "x": -1180,
+            "y": 1177
           }
         },
         {
@@ -5762,8 +5798,8 @@
           "loop": "loop-B3",
           "style": {},
           "position": {
-            "x": 670,
-            "y": -183
+            "x": -1441,
+            "y": 1231
           }
         },
         {
@@ -5780,22 +5816,13 @@
           "loop": "loop-B5",
           "style": {},
           "position": {
-            "x": -1180,
-            "y": 1177
+            "x": -782,
+            "y": -111
           }
         },
         {
-          "_id": "mloop-B7",
-          "loop": "loop-B7",
-          "style": {},
-          "position": {
-            "x": -1126,
-            "y": -732
-          }
-        },
-        {
-          "_id": "mloop-B8",
-          "loop": "loop-B8",
+          "_id": "mloop-B6",
+          "loop": "loop-B6",
           "style": {},
           "position": {
             "x": -1650,
@@ -5803,21 +5830,21 @@
           }
         },
         {
-          "_id": "mloop-B11",
-          "loop": "loop-B11",
-          "style": {},
-          "position": {
-            "x": -716,
-            "y": 607
-          }
-        },
-        {
-          "_id": "mloop-B12",
-          "loop": "loop-B12",
+          "_id": "mloop-B7",
+          "loop": "loop-B7",
           "style": {},
           "position": {
             "x": -1432,
             "y": -762
+          }
+        },
+        {
+          "_id": "mloop-B8",
+          "loop": "loop-B8",
+          "style": {},
+          "position": {
+            "x": -1126,
+            "y": -732
           }
         },
         {
@@ -5834,49 +5861,13 @@
           "loop": "loop-B10",
           "style": {},
           "position": {
-            "x": 1049,
-            "y": -858
+            "x": 187,
+            "y": -1591
           }
         },
         {
-          "_id": "mloop-R9",
-          "loop": "loop-R9",
-          "style": {},
-          "position": {
-            "x": 244,
-            "y": -1524
-          }
-        },
-        {
-          "_id": "mloop-R10",
-          "loop": "loop-R10",
-          "style": {},
-          "position": {
-            "x": 1952,
-            "y": -571
-          }
-        },
-        {
-          "_id": "mloop-R12",
-          "loop": "loop-R12",
-          "style": {},
-          "position": {
-            "x": -476,
-            "y": -143
-          }
-        },
-        {
-          "_id": "mloop-B13",
-          "loop": "loop-B13",
-          "style": {},
-          "position": {
-            "x": 151,
-            "y": 687
-          }
-        },
-        {
-          "_id": "mloop-B14",
-          "loop": "loop-B14",
+          "_id": "mloop-B11",
+          "loop": "loop-B11",
           "style": {},
           "position": {
             "x": -235,
@@ -5884,21 +5875,30 @@
           }
         },
         {
-          "_id": "mloop-B15",
-          "loop": "loop-B15",
+          "_id": "mloop-B12",
+          "loop": "loop-B12",
           "style": {},
           "position": {
-            "x": -1441,
-            "y": 1231
+            "x": 151,
+            "y": 687
           }
         },
         {
-          "_id": "mloop-B16",
-          "loop": "loop-B16",
+          "_id": "mloop-B13",
+          "loop": "loop-B13",
           "style": {},
           "position": {
-            "x": 187,
-            "y": -1591
+            "x": 670,
+            "y": -183
+          }
+        },
+        {
+          "_id": "mloop-B14",
+          "loop": "loop-B14",
+          "style": {},
+          "position": {
+            "x": 1049,
+            "y": -858
           }
         }
       ]
@@ -5908,7 +5908,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "/* Each property here is one that Kumu's property reference gives the selector's type (element,\n   connection or loop: its table marks which type takes which property); check a new one there\n   before writing it, and see it work in a test import. */\n\n@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      /* strict shows only what an option selects: normal adds the links among its elements and\n         loose their neighbours, which are not the loop */\n      mode: strict;\n\n      /* build.py replaces the next line with an option per named loop */\n      option {\n        label: \"R1 Salty soil takes in less rain\";\n        selector: *:loop([\"label\"=\"R1 Salty soil takes in less rain\"]), #background;\n      }\n\n      option {\n        label: \"R2 Growers and processors\";\n        selector: *:loop([\"label\"=\"R2 Growers and processors\"]), #background;\n      }\n\n      option {\n        label: \"R3 Farm income and water storage\";\n        selector: *:loop([\"label\"=\"R3 Farm income and water storage\"]), #background;\n      }\n\n      option {\n        label: \"R4 Land value and bank credit\";\n        selector: *:loop([\"label\"=\"R4 Land value and bank credit\"]), #background;\n      }\n\n      option {\n        label: \"R5 Leverage and deep drainage\";\n        selector: *:loop([\"label\"=\"R5 Leverage and deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"R6 Land value, objections and ditch levels\";\n        selector: *:loop([\"label\"=\"R6 Land value, objections and ditch levels\"]), #background;\n      }\n\n      option {\n        label: \"B2 Less arable land, less deep drainage\";\n        selector: *:loop([\"label\"=\"B2 Less arable land, less deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"B3 Switching gives up margin\";\n        selector: *:loop([\"label\"=\"B3 Switching gives up margin\"]), #background;\n      }\n\n      option {\n        label: \"B4 Storing water when harvests fall\";\n        selector: *:loop([\"label\"=\"B4 Storing water when harvests fall\"]), #background;\n      }\n\n      option {\n        label: \"B5 Pumping relieves the shortfall\";\n        selector: *:loop([\"label\"=\"B5 Pumping relieves the shortfall\"]), #background;\n      }\n\n      option {\n        label: \"B7 Deep drainage keeps fields workable\";\n        selector: *:loop([\"label\"=\"B7 Deep drainage keeps fields workable\"]), #background;\n      }\n\n      option {\n        label: \"B8 The water board raises levels against seepage\";\n        selector: *:loop([\"label\"=\"B8 The water board raises levels against seepage\"]), #background;\n      }\n\n      option {\n        label: \"B11 Pumping rules protect the lens\";\n        selector: *:loop([\"label\"=\"B11 Pumping rules protect the lens\"]), #background;\n      }\n\n      option {\n        label: \"B12 The board tests the drainage depth\";\n        selector: *:loop([\"label\"=\"B12 The board tests the drainage depth\"]), #background;\n      }\n\n      option {\n        label: \"B9 Objections hold back plans\";\n        selector: *:loop([\"label\"=\"B9 Objections hold back plans\"]), #background;\n      }\n\n      option {\n        label: \"B10 Banks lend less as leverage rises\";\n        selector: *:loop([\"label\"=\"B10 Banks lend less as leverage rises\"]), #background;\n      }\n\n      option {\n        label: \"R9 Changed plans erode trust\";\n        selector: *:loop([\"label\"=\"R9 Changed plans erode trust\"]), #background;\n      }\n\n      option {\n        label: \"R10 Capital ties farms to their crops\";\n        selector: *:loop([\"label\"=\"R10 Capital ties farms to their crops\"]), #background;\n      }\n\n      option {\n        label: \"R12 Storing teaches how storage works\";\n        selector: *:loop([\"label\"=\"R12 Storing teaches how storage works\"]), #background;\n      }\n\n      option {\n        label: \"B13 Salt losses move fields to new crops\";\n        selector: *:loop([\"label\"=\"B13 Salt losses move fields to new crops\"]), #background;\n      }\n\n      option {\n        label: \"B14 Salt losses move fields to tolerant varieties\";\n        selector: *:loop([\"label\"=\"B14 Salt losses move fields to tolerant varieties\"]), #background;\n      }\n\n      option {\n        label: \"B15 Asking for a supply route\";\n        selector: *:loop([\"label\"=\"B15 Asking for a supply route\"]), #background;\n      }\n\n      option {\n        label: \"B16 Expropriation, trust and the next plan\";\n        selector: *:loop([\"label\"=\"B16 Expropriation, trust and the next plan\"]), #background;\n      }\n\n      option {\n        label: \"C1 Storing: more worthwhile, harder to pay for\";\n        selector: *:loop([\"label\"=\"R3 Farm income and water storage\"]), *:loop([\"label\"=\"B4 Storing water when harvests fall\"]), #background;\n      }\n\n      option {\n        label: \"C2 The quick answer to a dry summer goes first\";\n        selector: *:loop([\"label\"=\"B5 Pumping relieves the shortfall\"]), *:loop([\"label\"=\"B4 Storing water when harvests fall\"]), *:loop([\"label\"=\"B15 Asking for a supply route\"]), *:loop([\"label\"=\"B11 Pumping rules protect the lens\"]), #background;\n      }\n\n      option {\n        label: \"C3 Salt losses raise the wish to switch and cut the means\";\n        selector: *:loop([\"label\"=\"B13 Salt losses move fields to new crops\"]), *:loop([\"label\"=\"R4 Land value and bank credit\"]), *:loop([\"label\"=\"B3 Switching gives up margin\"]), *:loop([\"label\"=\"B10 Banks lend less as leverage rises\"]), #background;\n      }\n\n      option {\n        label: \"C4 Low ditch levels: workable fields now, more demand later\";\n        selector: *:loop([\"label\"=\"B7 Deep drainage keeps fields workable\"]), *:loop([\"label\"=\"R5 Leverage and deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"C5 Falling land value: levels held, or land leaving arable\";\n        selector: *:loop([\"label\"=\"R5 Leverage and deep drainage\"]), *:loop([\"label\"=\"R6 Land value, objections and ditch levels\"]), *:loop([\"label\"=\"B2 Less arable land, less deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"C6 One ditch level between four goals\";\n        selector: *:loop([\"label\"=\"B7 Deep drainage keeps fields workable\"]), *:loop([\"label\"=\"B8 The water board raises levels against seepage\"]), *:loop([\"label\"=\"B12 The board tests the drainage depth\"]), *:loop([\"label\"=\"B9 Objections hold back plans\"]), #background;\n      }\n\n      option {\n        label: \"C7 Salt builds, and farms respond in steps\";\n        selector: *:loop([\"label\"=\"R1 Salty soil takes in less rain\"]), *:loop([\"label\"=\"B14 Salt losses move fields to tolerant varieties\"]), *:loop([\"label\"=\"B13 Salt losses move fields to new crops\"]), *:loop([\"label\"=\"B2 Less arable land, less deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"C8 What objections to plans set in motion\";\n        selector: *:loop([\"label\"=\"B9 Objections hold back plans\"]), *:loop([\"label\"=\"R6 Land value, objections and ditch levels\"]), *:loop([\"label\"=\"R9 Changed plans erode trust\"]), *:loop([\"label\"=\"B16 Expropriation, trust and the next plan\"]), #background;\n      }\n\n      option {\n        label: \"C9 Debt and capital together keep a farm in its crops\";\n        selector: *:loop([\"label\"=\"R5 Leverage and deep drainage\"]), *:loop([\"label\"=\"R10 Capital ties farms to their crops\"]), #background;\n      }\n\n      option {\n        label: \"C10 New crops stay stuck or take off\";\n        selector: *:loop([\"label\"=\"R2 Growers and processors\"]), *:loop([\"label\"=\"B3 Switching gives up margin\"]), #background;\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Regions: the page's two subsystem regions as a background image ---------- */\n/* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,\n   pinned at the centre of the regions' frame, and its width and height, the frame's. A showcase\n   fades all it does not select, so every showcase option above selects #background too */\n#background {\n  image-url: url(https://jordyzuidam2003-bot.github.io/zeeland-cld/regions.svg);\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- Loops: Kumu's named loops, no label on the map ---------- */\n/* the full drawing has no loop marks (the router's layout decision); Kumu's property reference\n   gives loops `label`, not `label-visibility` */\nloop {\n  label: none;\n}\n\n/* ---------- generated by build.py: tints, box sizes, the regions' size ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-recharge { width: 310; height: 120; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5129; height: 3776; }\n"
+      "style": "/* Each property here is one that Kumu's property reference gives the selector's type (element,\n   connection or loop: its table marks which type takes which property); check a new one there\n   before writing it, and see it work in a test import. */\n\n@controls {\n  bottom-left {\n    showcase {\n      as: buttons;\n      /* strict shows only what an option selects: normal adds the links among its elements and\n         loose their neighbours, which are not the loop */\n      mode: strict;\n\n      /* build.py replaces the next line with an option per named loop */\n      option {\n        label: \"R1 Storing teaches how storage works\";\n        selector: *:loop([\"label\"=\"R1 Storing teaches how storage works\"]), #background;\n      }\n\n      option {\n        label: \"R2 Farm income and water storage\";\n        selector: *:loop([\"label\"=\"R2 Farm income and water storage\"]), #background;\n      }\n\n      option {\n        label: \"R3 Salty soil takes in less rain\";\n        selector: *:loop([\"label\"=\"R3 Salty soil takes in less rain\"]), #background;\n      }\n\n      option {\n        label: \"R4 Land value, objections and ditch levels\";\n        selector: *:loop([\"label\"=\"R4 Land value, objections and ditch levels\"]), #background;\n      }\n\n      option {\n        label: \"R5 Changed plans erode trust\";\n        selector: *:loop([\"label\"=\"R5 Changed plans erode trust\"]), #background;\n      }\n\n      option {\n        label: \"R6 Capital ties farms to their crops\";\n        selector: *:loop([\"label\"=\"R6 Capital ties farms to their crops\"]), #background;\n      }\n\n      option {\n        label: \"R7 Leverage and deep drainage\";\n        selector: *:loop([\"label\"=\"R7 Leverage and deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"R8 Land value and bank credit\";\n        selector: *:loop([\"label\"=\"R8 Land value and bank credit\"]), #background;\n      }\n\n      option {\n        label: \"R9 Growers and processors\";\n        selector: *:loop([\"label\"=\"R9 Growers and processors\"]), #background;\n      }\n\n      option {\n        label: \"B1 Pumping rules protect the lens\";\n        selector: *:loop([\"label\"=\"B1 Pumping rules protect the lens\"]), #background;\n      }\n\n      option {\n        label: \"B2 Pumping relieves the shortfall\";\n        selector: *:loop([\"label\"=\"B2 Pumping relieves the shortfall\"]), #background;\n      }\n\n      option {\n        label: \"B3 Asking for a supply route\";\n        selector: *:loop([\"label\"=\"B3 Asking for a supply route\"]), #background;\n      }\n\n      option {\n        label: \"B4 Storing water when harvests fall\";\n        selector: *:loop([\"label\"=\"B4 Storing water when harvests fall\"]), #background;\n      }\n\n      option {\n        label: \"B5 Less arable land, less deep drainage\";\n        selector: *:loop([\"label\"=\"B5 Less arable land, less deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"B6 The water board raises levels against seepage\";\n        selector: *:loop([\"label\"=\"B6 The water board raises levels against seepage\"]), #background;\n      }\n\n      option {\n        label: \"B7 The board tests the drainage depth\";\n        selector: *:loop([\"label\"=\"B7 The board tests the drainage depth\"]), #background;\n      }\n\n      option {\n        label: \"B8 Deep drainage keeps fields workable\";\n        selector: *:loop([\"label\"=\"B8 Deep drainage keeps fields workable\"]), #background;\n      }\n\n      option {\n        label: \"B9 Objections hold back plans\";\n        selector: *:loop([\"label\"=\"B9 Objections hold back plans\"]), #background;\n      }\n\n      option {\n        label: \"B10 Expropriation, trust and the next plan\";\n        selector: *:loop([\"label\"=\"B10 Expropriation, trust and the next plan\"]), #background;\n      }\n\n      option {\n        label: \"B11 Salt losses move fields to tolerant varieties\";\n        selector: *:loop([\"label\"=\"B11 Salt losses move fields to tolerant varieties\"]), #background;\n      }\n\n      option {\n        label: \"B12 Salt losses move fields to new crops\";\n        selector: *:loop([\"label\"=\"B12 Salt losses move fields to new crops\"]), #background;\n      }\n\n      option {\n        label: \"B13 Switching gives up margin\";\n        selector: *:loop([\"label\"=\"B13 Switching gives up margin\"]), #background;\n      }\n\n      option {\n        label: \"B14 Banks lend less as leverage rises\";\n        selector: *:loop([\"label\"=\"B14 Banks lend less as leverage rises\"]), #background;\n      }\n\n      option {\n        label: \"C1 Storing: more worthwhile, harder to pay for\";\n        selector: *:loop([\"label\"=\"R2 Farm income and water storage\"]), *:loop([\"label\"=\"B4 Storing water when harvests fall\"]), #background;\n      }\n\n      option {\n        label: \"C2 The quick answer to a dry summer goes first\";\n        selector: *:loop([\"label\"=\"B2 Pumping relieves the shortfall\"]), *:loop([\"label\"=\"B4 Storing water when harvests fall\"]), *:loop([\"label\"=\"B3 Asking for a supply route\"]), *:loop([\"label\"=\"B1 Pumping rules protect the lens\"]), #background;\n      }\n\n      option {\n        label: \"C3 Salt losses raise the wish to switch and cut the means\";\n        selector: *:loop([\"label\"=\"B12 Salt losses move fields to new crops\"]), *:loop([\"label\"=\"R8 Land value and bank credit\"]), *:loop([\"label\"=\"B13 Switching gives up margin\"]), *:loop([\"label\"=\"B14 Banks lend less as leverage rises\"]), #background;\n      }\n\n      option {\n        label: \"C4 Low ditch levels: workable fields now, more demand later\";\n        selector: *:loop([\"label\"=\"B8 Deep drainage keeps fields workable\"]), *:loop([\"label\"=\"R7 Leverage and deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"C5 Falling land value: levels held, or land leaving arable\";\n        selector: *:loop([\"label\"=\"R7 Leverage and deep drainage\"]), *:loop([\"label\"=\"R4 Land value, objections and ditch levels\"]), *:loop([\"label\"=\"B5 Less arable land, less deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"C6 One ditch level between four goals\";\n        selector: *:loop([\"label\"=\"B8 Deep drainage keeps fields workable\"]), *:loop([\"label\"=\"B6 The water board raises levels against seepage\"]), *:loop([\"label\"=\"B7 The board tests the drainage depth\"]), *:loop([\"label\"=\"B9 Objections hold back plans\"]), #background;\n      }\n\n      option {\n        label: \"C7 Salt builds, and farms respond in steps\";\n        selector: *:loop([\"label\"=\"R3 Salty soil takes in less rain\"]), *:loop([\"label\"=\"B11 Salt losses move fields to tolerant varieties\"]), *:loop([\"label\"=\"B12 Salt losses move fields to new crops\"]), *:loop([\"label\"=\"B5 Less arable land, less deep drainage\"]), #background;\n      }\n\n      option {\n        label: \"C8 What objections to plans set in motion\";\n        selector: *:loop([\"label\"=\"B9 Objections hold back plans\"]), *:loop([\"label\"=\"R4 Land value, objections and ditch levels\"]), *:loop([\"label\"=\"R5 Changed plans erode trust\"]), *:loop([\"label\"=\"B10 Expropriation, trust and the next plan\"]), #background;\n      }\n\n      option {\n        label: \"C9 Debt and capital together keep a farm in its crops\";\n        selector: *:loop([\"label\"=\"R7 Leverage and deep drainage\"]), *:loop([\"label\"=\"R6 Capital ties farms to their crops\"]), #background;\n      }\n\n      option {\n        label: \"C10 New crops stay stuck or take off\";\n        selector: *:loop([\"label\"=\"R9 Growers and processors\"]), *:loop([\"label\"=\"B13 Switching gives up margin\"]), #background;\n      }\n    }\n\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\n/* ---------- Elements: the page's look, values from draw.py ---------- */\n/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules\n   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of\n   its font-size in map units, so each font-size is the page's x 1.5, to fill the box\n   draw.py fits */\n/* pill: Kumu's rectangle with rounded corners */\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n/* Kumu has no dashed border: a constant gets an italic label */\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n/* ---------- Regions: the page's two subsystem regions as a background image ---------- */\n/* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,\n   pinned at the centre of the regions' frame, and its width and height, the frame's. A showcase\n   fades all it does not select, so every showcase option above selects #background too */\n#background {\n  image-url: url(https://jordyzuidam2003-bot.github.io/zeeland-cld/regions.svg);\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\n/* ---------- Links: one width, the sign's colour ---------- */\n/* (no global curvature: each link keeps its own curve from the map) */\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n/* ---------- Loops: Kumu's named loops, no label on the map ---------- */\n/* the full drawing has no loop marks (the router's layout decision); Kumu's property reference\n   gives loops `label`, not `label-visibility` */\nloop {\n  label: none;\n}\n\n/* ---------- generated by build.py: tints, box sizes, the regions' size ---------- */\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-recharge { width: 310; height: 120; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5129; height: 3776; }\n"
     }
   ]
 }

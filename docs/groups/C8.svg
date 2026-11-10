@@ -137,16 +137,16 @@
 <path d="M 280.0 -550.0 A 48 48 0 1 1 232.0 -502.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
 <text class="loop-id" x="280.0" y="-502.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B9</text>
 </g>
-<g class="loop" data-id="R6">
+<g class="loop" data-id="R4">
 <path d="M 8.0 -46.0 A 48 48 0 1 1 -40.0 2.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="8.0" y="2.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R6</text>
+<text class="loop-id" x="8.0" y="2.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R4</text>
 </g>
-<g class="loop" data-id="R9">
+<g class="loop" data-id="R5">
 <path d="M 304.0 -918.0 A 48 48 0 1 1 256.0 -870.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="304.0" y="-870.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R9</text>
+<text class="loop-id" x="304.0" y="-870.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R5</text>
 </g>
-<g class="loop" data-id="B16">
+<g class="loop" data-id="B10">
 <path d="M -4.0 -1192.0 A 48 48 0 1 1 -52.0 -1144.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="-4.0" y="-1144.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B16</text>
+<text class="loop-id" x="-4.0" y="-1144.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B10</text>
 </g>
 </svg>

@@ -151,12 +151,12 @@
 <text x="0.0" y="-314.5" text-anchor="middle">the fields</text>
 </g>
 </g>
-<g class="loop" data-id="B7">
+<g class="loop" data-id="B8">
 <path d="M -7.0 -698.0 A 48 48 0 1 1 -55.0 -650.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="-7.0" y="-650.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B7</text>
+<text class="loop-id" x="-7.0" y="-650.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B8</text>
 </g>
-<g class="loop" data-id="R5">
+<g class="loop" data-id="R7">
 <path d="M 7.0 -50.0 A 48 48 0 1 1 -41.0 -2.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="7.0" y="-2.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R5</text>
+<text class="loop-id" x="7.0" y="-2.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R7</text>
 </g>
 </svg>

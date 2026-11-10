@@ -682,7 +682,7 @@ def oval(cld, loop):
     its source's box border to its target's, as quadratic Beziers of at most 45 degrees, each with
     its control point where the ellipse's tangents at its two ends meet, so the links run along the
     oval (Jordy, chosen between rendered versions: the loop at its places in the full drawing drew
-    R2 and R4 lopsided, with long sweeping links)."""
+    R4 and R8 lopsided, with long sweeping links)."""
     path = loop["path"]
     n = len(path)
     E = {e["id"]: e for e in cld["elements"]}

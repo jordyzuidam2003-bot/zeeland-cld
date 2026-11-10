@@ -57,7 +57,7 @@ Some named loops belong together: they act on the same variables in a way that f
 
 {combined loops list}
 
-One group has the structure of a system archetype, a pattern of loops that recurs across systems (Kim, 2000). C4 matches Fixes that fail (Kim, 2000, p. 16): a solution quickly relieves a symptom through a balancing loop (B8, the farmers' demand for low ditch levels easing), while its unintended consequences, unfolding over a long time, worsen that symptom through a reinforcing loop (R7). The name describes the structure, not anyone's decision. A group carries an archetype's name only where the loops' polarities, the variable they share and the delay all match; the others are named by what they do.
+One group has the structure of a system archetype, a pattern of loops that recurs across systems (Kim, 2000). C2 matches Fixes that fail (Kim, 2000, p. 16): a solution quickly relieves a symptom through a balancing loop (B4, the farmers' demand for low ditch levels easing), while its unintended consequences, unfolding over a long time, worsen that symptom through a reinforcing loop (R2). The name describes the structure, not anyone's decision. A group carries an archetype's name only where the loops' polarities, the variable they share and the delay all match; the others are named by what they do.
 
 ## Reading the drawing
 

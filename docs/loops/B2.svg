@@ -1,38 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-504 -282 1023 607" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-514 -262 1021 524" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
 <defs>
 <marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
 <marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
 <marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
 </defs>
-<rect x="-504" y="-282" width="1023" height="607" fill="white"/>
+<rect x="-514" y="-262" width="1021" height="524" fill="white"/>
 <g class="links">
-<g class="link" data-from="freshwater-availability-for-crops" data-to="crop-water-shortfall" data-sign="-" data-delay="false" data-curvature="-0.32">
-<path class="link-path" d="M -177.2 161.4 Q -260.0 121.0 -288.3 55.2 Q -316.7 -10.5 -278.7 -74.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-297.5" y="-27.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.22">
+<path class="link-path" d="M 262.2 43.0 Q 239.0 105.7 161.4 144.3 Q 83.8 182.9 -13.0 179.8 Q -109.7 176.7 -181.5 133.3 Q -253.2 89.9 -267.2 26.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-247.9" y="72.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="crop-water-shortfall" data-to="groundwater-extraction-for-irrigation" data-sign="+" data-delay="false" data-curvature="-0.07">
-<path class="link-path" d="M -233.0 -126.0 Q -179.2 -170.2 -98.6 -188.9 Q -17.9 -207.6 65.4 -195.2 Q 148.7 -182.8 209.7 -143.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="165.8" y="-166.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-</g>
-<g class="link" data-from="groundwater-extraction-for-irrigation" data-to="freshwater-availability-for-crops" data-sign="+" data-delay="false" data-curvature="0.32">
-<path class="link-path" d="M 287.6 -57.0 Q 314.7 3.8 284.3 63.8 Q 254.0 123.9 177.2 161.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="220.3" y="136.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<g class="link" data-from="harvest-lost-to-salt" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="true" data-curvature="0.07">
+<path class="link-path" d="M -267.2 -26.0 Q -253.2 -89.9 -181.5 -133.3 Q -109.7 -176.7 -13.0 -179.8 Q 83.8 -182.9 161.4 -144.3 Q 239.0 -105.7 262.2 -43.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="237.4" y="-86.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -16.7 -203.7 L -15.6 -155.8 M -0.7 -204.1 L 0.3 -156.1" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -16.7 -203.7 L -15.6 -155.8 M -0.7 -204.1 L 0.3 -156.1" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 </g>
 <g class="elements">
-<g class="element" data-id="crop-water-shortfall" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-422.2" y="-126.0" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="-259.8" y="-91.5" text-anchor="middle">Crop water shortfall</text>
+<g class="element" data-id="harvest-lost-to-salt" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
+<rect x="-432.4" y="-26.0" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="-270.0" y="8.5" text-anchor="middle">Harvest lost to salt</text>
 </g>
-<g class="element" data-id="groundwater-extraction-for-irrigation" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
-<rect x="82.6" y="-143.0" width="354.5" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
-<text x="259.8" y="-108.5" text-anchor="middle">Groundwater extraction</text>
-<text x="259.8" y="-74.5" text-anchor="middle">for irrigation</text>
-</g>
-<g class="element" data-id="freshwater-availability-for-crops" data-domain="Ecological" data-type="Stock" data-adaptive="false">
-<rect x="-177.2" y="157.0" width="354.5" height="86.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="0.0" y="191.5" text-anchor="middle">Freshwater</text>
-<text x="0.0" y="225.5" text-anchor="middle">availability for crops</text>
+<g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Stock" data-adaptive="true">
+<rect x="115.0" y="-43.0" width="310.0" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<text x="270.0" y="-8.5" text-anchor="middle">Adoption of new</text>
+<text x="270.0" y="25.5" text-anchor="middle">salt-tolerant crops</text>
 </g>
 </g>
 <g class="loop" data-id="B2">

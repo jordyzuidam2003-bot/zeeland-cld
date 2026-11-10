@@ -182,7 +182,9 @@ A connection: `from` and `to` (element ids), `polarity` (`"+"` or `"-"`), `delay
 drawn as two strokes across the link), `description`, `sources`, `hypothesis` (optional, `true`
 on a claim about why an actor decides as it does that has no source: a question for the group
 model building session, shown in the link's panel and in Kumu's fields, never on the drawing;
-a link that finds a source loses it), `simplification` (optional, as on an element),
+a link that finds a source loses it, and a named loop's or group's description that calls one of its
+links a hypothesis changes with that link's mark in the same commit, since no check reads the prose:
+the descriptions say which links are hypotheses), `simplification` (optional, as on an element),
 `delay at` (optional, set by dragging a delay mark on the page: where on the curve the mark sits, from 0 to 1; without it `build.py` puts the mark at the clearest place along the link, away from other links and boxes and at least 55 units from its sign, Jordy),
 `curvature` (0 is straight; a positive value bows the link to the left of its direction).
 The drawing runs a link from a point on its source box's edge to one on its target's, the ends

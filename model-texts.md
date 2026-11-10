@@ -16,22 +16,18 @@ The CLD is the first step of the study. In the group model building session on t
 
 ## Spatial scale
 
-<!-- Draft, for the team to check. -->
 The island of Schouwen-Duiveland, the island of Zeeland the research zooms in on to keep it feasible: its farmland polders, the rainwater lenses under them, the fresh groundwater under its creek ridges and dunes, the soils, the farms and the land market, and the decisions of the bodies that act there (the water board's water levels, levy and rules on pumping, the province's supply route, the municipality's land-use plans, the banks' lending, the buyers and processors of its crops). The island gets no fresh water from elsewhere, so all its fresh water is winter rain stored in the lenses. What is decided at national and EU level (LVVN, IenW and Rijkswaterstaat, the Deltaprogramma Zoetwater, EU banking rules) comes from outside the boundary: it enters as a Constant or a policy input, and the CLD shows how it reaches the island.
 
 ## Time horizon
 
-<!-- Draft, for the team to check. -->
 2050, the year the KNMI'23 climate scenarios and the project look ahead to. The slow parts of the system are judged against that date: the freshwater lenses, which a year's recharge barely moves, and land subsidence, which lowers the polders by millimetres a year. The time unit is a year, for every part of the CLD. Each link's description says how long its effect takes to show, from a source, in bands: within the year, years, a decade or more, or beyond 2050; a link slower than a year carries a delay. The seasons sit inside the year, named in the variables they shape (hotter, drier summers; wetter winters; winter rain drained away). A variable that something outside the island sets, or that moves too little by 2050 to matter, is a Constant.
 
 ## System boundary
 
-<!-- Draft, for the team to check. -->
 The test, from the Purpose (the group's): inside if the farms' responses move it and it moves them back before 2050; outside if it moves the responses and the island cannot move it; left out if it does not move the responses by 2050. Inside the model (endogenous, explained by its loops): the water and salt system (recharge, the rainwater lenses of the low polders and the lens under the creek ridges and dunes, seepage, upconing, salt in the root zone, soil structure); crop yield and farm finances (revenue, land value, debt, credit, room to invest); the farmers' decisions (the drainage they ask for, pumping, storing water, new crops and tolerant varieties, spending on keeping the current crops); and the decisions of the other actors inside the scale: the water board's ditch levels, levy and rules on pumping, the banks' lending, the processing capacity for new crops, the province's supply route and the municipality's land-use plans, with the objections and the trust around plans for the island's water and land. Outside the model (exogenous: they drive it, the model does not explain them): the climate (hotter, drier summers, wetter winters, sea-level rise), EU banking rules (Basel IV), market demand for alternative crops, world prices of conventional crops (what carrying on is weighed against), the growing and processing of new crops elsewhere, the salt-tolerant varieties on offer, national water policy and LVVN's levers. The arable land in the polders is in the model as a stock, which falls when land changes hands to a holder who does not farm it as arable land, because the land market and succession drive it and water management follows it; what the land becomes afterwards is not. Left out: nature and energy, and other land uses (livestock, vertical farming), which replace arable farming rather than adapt it; wisselpolders, because the island's waters carry too little silt to raise its polders (see Polder surface elevation); and salt intrusion into estuaries and irrigation with brackish water, because no water reaches the island's ditches from outside and no source read shows its farmers irrigating with brackish water. We assume the adaptive practices work rather than model whether they do: the CLD shows what stops farmers adopting them, not whether each one works on the island.
 
 ## Assumptions
 
-<!-- Draft, for the team to check. -->
 - Each variable is a total for the whole island, and the island's arable farmers are one actor; a group of farms gets its own variables only where a link works differently for it and a source shows that on the island.
 - Each variable measures one quantity, named in its description, so the sign of every link into it can be read.
 - Each actor inside the spatial scale enters the CLD through the variables it decides, with the drivers it responds to; the actors outside it act on the island from outside.
@@ -42,17 +38,14 @@ The test, from the Purpose (the group's): inside if the farms' responses move it
 
 ## Simplifications
 
-<!-- Draft, for the team to check. -->
 The CLD leaves detail out on purpose. A reader holds five to nine chunks of information at once, so one drawing with every step in it cannot be followed (Sterman, 2000): the full drawing is the overview, on one A4 page, and the loop figures and the descriptions carry the detail. What the drawing shows is set by the Purpose's question, since what makes a difference to an answer depends on the question asked (Weisberg, 2007). A step goes into words only where every loop through it keeps its polarity, reinforcing or balancing, and its mechanism, no actor's decision disappears from the drawing, each variable still measures one quantity and no delay is lost; where one of these fails, the step stays drawn, however many boxes that takes. Some simplifications leave out what is true, such as a chain of causes drawn as one link with its middle step in the description; others treat the system as simpler than it is, such as the crops of a rotation responding as one yield (Jones, 2005, pp. 174–175, 184, 187). Where an element or a link simplifies something, its panel says what is left out or distorted and why the loops through it still hold; what holds for every element is under Assumptions.
 
 ## The named loops
 
-<!-- Draft, for the team to check. -->
 The CLD holds {feedback loops} feedback loops. All of them run through one core of {core elements} elements and {core links} links in which every element reaches every other along the links; the other {other elements} elements, {other constants} of them Constants, only drive that core. A core like this has an independent loop set of links minus elements plus one loops, here {core links} − {core elements} + 1 = {independent loops}: a largest set of loops none of which is a combination of the others' links (Kampmann, 2012), of which Oliva (2004) takes the shortest as the simplest description of a model's feedback structure. Neither {feedback loops} nor {independent loops} loops can be read in one picture. Sterman (2000) advises against putting all the loops into one large diagram: build the model up in a series of smaller diagrams, each one part of the story, and number and name the loops the story discusses so the reader can find each. The {named loops} named loops follow that rule: they are the loops that drive or hold back the island's farmers in adopting adaptive practices, in one or more of four ways. Some run through a practice itself, so that its own uptake speeds up or slows down. Some run through the money a farm has to adopt one: its income, its debt, the bank's terms, the capital it would lose. Some change the salt and fresh water a practice answers to. And some run through the decisions of the water board, the municipality and those objecting to their plans, which set the ditch levels and the trust behind a long investment. Each loop's description says which it does, and whether it shows an unintended consequence of a response. They are not an independent loop set, and the other loops are no less part of the system; they are the ones the story needs. The full drawing marks none of them: a loop's button in the menu highlights it and shows it on its own.
 
 ## The combined loops
 
-<!-- Draft, for the team to check. -->
 Some named loops belong together: they act on the same variables in a way that forms a behaviour none of them shows alone. The {combined loops} groups below are those, not every pair of loops that shares a variable; each is named by what its loops do together and has its figure under its button in the menu, the loops joined at the variables they share. A link carries a sign and no strength, so where the loops of a group pull opposite ways the map shows the question and cannot settle it. Each link's source is on the link; what a group says beyond its links is a reading of how they work together, for the group model building session to test.
 
 {combined loops list}
@@ -61,7 +54,6 @@ One group has the structure of a system archetype, a pattern of loops that recur
 
 ## Reading the drawing
 
-<!-- Draft, for the team to check. -->
 Each box is a variable, tinted by its domain in the social-ecological-technological systems (SETS) framework (McPhearson et al., 2022): Social, Ecological or Technological, so the drawing shows where loops cross from one domain to another; square corners mark a stock, a dashed border a Constant, a thick border an adaptive practice. The two faint regions are the project's two subsystems, water and soil and the agricultural economy. A blue link with + moves its effect the same way as its cause, a red link with − the opposite way; two short strokes across a link mark a delay. Click a box or a link for its description and sources. Two fingers on a trackpad or dragging moves the map, a pinch or a mouse wheel zooms, and "Fit" shows the whole drawing again.
 
 ## References

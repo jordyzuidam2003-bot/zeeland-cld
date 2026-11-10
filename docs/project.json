@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 6724218, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 3a3ba99, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -3946,7 +3946,7 @@
       "_id": "loop-B1",
       "attributes": {
         "label": "B1 Salt losses move fields to tolerant varieties",
-        "description": "The more harvest salt takes, the more a tolerant variety is worth against the one grown now, so more farmers grow it, perhaps only past a threshold. A tolerant variety loses less to salt, so the harvest lost falls. It seeks the loss at which a farmer changes variety, a hypothesis for the group model building session, as in B2. Tolerant varieties use the same machines, storage and know-how, so little capital is lost on them (R3). It drives tolerant varieties."
+        "description": "The more harvest salt takes, the more a tolerant variety is worth against the one grown now, so more farmers grow it, perhaps only past a threshold. A tolerant variety loses less to salt, so the harvest lost falls. It seeks the loss at which a farmer changes variety, a hypothesis for the group model building session: unlike the move to new crops (B2), no source shows that salt losses move farmers to another variety. Tolerant varieties use the same machines, storage and know-how, so little capital is lost on them (R3). It drives tolerant varieties."
       },
       "connections": [
         "conn-harvest-lost-to-salt--tolerant-varieties-adoption",
@@ -3957,7 +3957,7 @@
       "_id": "loop-B2",
       "attributes": {
         "label": "B2 Salt losses move fields to new crops",
-        "description": "The more harvest salt takes, the more a new salt-tolerant crop is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches, which each farmer sets through their crops, margins, buyers and bank, a hypothesis for the group model building session. With B1 and B3 it is a way out of the same salt: switching keeps the land arable, B3 is arable farming ending. It drives new crops."
+        "description": "The more harvest salt takes, the more a new salt-tolerant crop is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches: that farmers hold back until salt severely hits their production rests on sources, what sets each farmer's threshold, through their crops, margins, buyers and bank, is a hypothesis for the group model building session. With B1 and B3 it is a way out of the same salt: switching keeps the land arable, B3 is arable farming ending. It drives new crops."
       },
       "connections": [
         "conn-harvest-lost-to-salt--salt-tolerant-crop-adoption",
@@ -4229,7 +4229,7 @@
       "_id": "loop-R9",
       "attributes": {
         "label": "R9 Changed plans erode trust",
-        "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. Both steps are hypotheses for the group model building session. It holds back storage, a long investment that a change of rules can strand, as trust falls."
+        "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. The step from objections to trust is a hypothesis for the group model building session; the step from trust back to objections rests on sources. It holds back storage, a long investment that a change of rules can strand, as trust falls."
       },
       "connections": [
         "conn-policy-resistance-legal-delays--farmers-trust-in-government",
@@ -4240,7 +4240,7 @@
       "_id": "loop-B14",
       "attributes": {
         "label": "B14 Expropriation makes the next plan harder",
-        "description": "The more farmland the municipality plans for other uses, the more lies within reach of an expropriation order, after the attempt to buy has failed, over years. Expropriation lowers farmers' trust in government, farmers who trust less object more, and objections delay, change or stop the next plan, so less farmland is planned. It shows an unintended consequence of expropriating for a plan: the next plan becomes harder to adopt. It seeks the planned area the island's farmers will accept. The steps through trust are hypotheses for the group model building session. Through the trust it lowers it holds back storage."
+        "description": "The more farmland the municipality plans for other uses, the more lies within reach of an expropriation order, after the attempt to buy has failed, over years. Expropriation lowers farmers' trust in government, farmers who trust less object more, and objections delay, change or stop the next plan, so less farmland is planned. It shows an unintended consequence of expropriating for a plan: the next plan becomes harder to adopt. It seeks the planned area the island's farmers will accept. The steps through trust rest on sources; that objections lower the farmland planned is a hypothesis for the group model building session. Through the trust it lowers it holds back storage."
       },
       "connections": [
         "conn-municipality-plans-for-farmland--expropriation-of-farmland",
@@ -4253,7 +4253,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 6724218",
+      "name": "CLD, model 3a3ba99",
       "description": "",
       "scale": 1,
       "center": {

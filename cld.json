@@ -2534,7 +2534,7 @@
         "harvest-lost-to-salt",
         "tolerant-varieties-adoption"
       ],
-      "description": "The more harvest salt takes, the more a tolerant variety is worth against the one grown now, so more farmers grow it, perhaps only past a threshold. A tolerant variety loses less to salt, so the harvest lost falls. It seeks the loss at which a farmer changes variety, a hypothesis for the group model building session, as in B2. Tolerant varieties use the same machines, storage and know-how, so little capital is lost on them (R3). It drives tolerant varieties."
+      "description": "The more harvest salt takes, the more a tolerant variety is worth against the one grown now, so more farmers grow it, perhaps only past a threshold. A tolerant variety loses less to salt, so the harvest lost falls. It seeks the loss at which a farmer changes variety, a hypothesis for the group model building session: unlike the move to new crops (B2), no source shows that salt losses move farmers to another variety. Tolerant varieties use the same machines, storage and know-how, so little capital is lost on them (R3). It drives tolerant varieties."
     },
     {
       "id": "B2",
@@ -2543,7 +2543,7 @@
         "harvest-lost-to-salt",
         "salt-tolerant-crop-adoption"
       ],
-      "description": "The more harvest salt takes, the more a new salt-tolerant crop is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches, which each farmer sets through their crops, margins, buyers and bank, a hypothesis for the group model building session. With B1 and B3 it is a way out of the same salt: switching keeps the land arable, B3 is arable farming ending. It drives new crops."
+      "description": "The more harvest salt takes, the more a new salt-tolerant crop is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches: that farmers hold back until salt severely hits their production rests on sources, what sets each farmer's threshold, through their crops, margins, buyers and bank, is a hypothesis for the group model building session. With B1 and B3 it is a way out of the same salt: switching keeps the land arable, B3 is arable farming ending. It drives new crops."
     },
     {
       "id": "B3",
@@ -2777,7 +2777,7 @@
         "policy-resistance-legal-delays",
         "farmers-trust-in-government"
       ],
-      "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. Both steps are hypotheses for the group model building session. It holds back storage, a long investment that a change of rules can strand, as trust falls."
+      "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. The step from objections to trust is a hypothesis for the group model building session; the step from trust back to objections rests on sources. It holds back storage, a long investment that a change of rules can strand, as trust falls."
     },
     {
       "id": "B14",
@@ -2788,7 +2788,7 @@
         "farmers-trust-in-government",
         "policy-resistance-legal-delays"
       ],
-      "description": "The more farmland the municipality plans for other uses, the more lies within reach of an expropriation order, after the attempt to buy has failed, over years. Expropriation lowers farmers' trust in government, farmers who trust less object more, and objections delay, change or stop the next plan, so less farmland is planned. It shows an unintended consequence of expropriating for a plan: the next plan becomes harder to adopt. It seeks the planned area the island's farmers will accept. The steps through trust are hypotheses for the group model building session. Through the trust it lowers it holds back storage."
+      "description": "The more farmland the municipality plans for other uses, the more lies within reach of an expropriation order, after the attempt to buy has failed, over years. Expropriation lowers farmers' trust in government, farmers who trust less object more, and objections delay, change or stop the next plan, so less farmland is planned. It shows an unintended consequence of expropriating for a plan: the next plan becomes harder to adopt. It seeks the planned area the island's farmers will accept. The steps through trust rest on sources; that objections lower the farmland planned is a hypothesis for the group model building session. Through the trust it lowers it holds back storage."
     }
   ],
   "groups": [
@@ -3002,7 +3002,7 @@
         "R2",
         "R3"
       ],
-      "description": "Debt payments raise a farm's dependence on its high-margin crops (R2), and so does what it would write off on machines and stores if it switched (R3); both links into dependence are hypotheses for the group model building session. Each loop raises the variable that drives the other: more dependence brings more spending on machines and stores for those crops and more demand for low ditch levels, so the two add up. Dependence holds back new crops, so a farm can stay with its current crops while salt, on its own, lowers that dependence over the years.",
+      "description": "Debt payments raise a farm's dependence on its high-margin crops (R2), and so does what it would write off on machines and stores if it switched (R3); the link from debt payments is a hypothesis for the group model building session, the one from what a switch would write off rests on sources. Each loop raises the variable that drives the other: more dependence brings more spending on machines and stores for those crops and more demand for low ditch levels, so the two add up. Dependence holds back new crops, so a farm can stay with its current crops while salt, on its own, lowers that dependence over the years.",
       "places": {
         "dependence-on-high-margin-salt-sensitive-crops": [
           0,
@@ -3283,7 +3283,7 @@
         "B9",
         "B10"
       ],
-      "description": "The harvest lost to salt makes a new salt-tolerant crop worth more against the current crops, after a delay (B2, a hypothesis). The same losses lower income and land value, so a bank sees more risk and lends less and the farm has less to invest in the switch (R6); limiting credit is how the bank keeps its own exposure down (B9). A field that moves saves harvest from salt (R6) and gives up the current crop's margin (B10), most on fresh land, so the salt on the field decides whether the switch adds income or costs it. Which of these is stronger, a sign cannot show.",
+      "description": "The harvest lost to salt makes a new salt-tolerant crop worth more against the current crops, after a delay (B2). The same losses lower income and land value, so a bank sees more risk and lends less and the farm has less to invest in the switch (R6); limiting credit is how the bank keeps its own exposure down (B9). A field that moves saves harvest from salt (R6) and gives up the current crop's margin (B10), most on fresh land, so the salt on the field decides whether the switch adds income or costs it. Which of these is stronger, a sign cannot show.",
       "places": {
         "agricultural-land-value": [
           -315,
@@ -3509,7 +3509,7 @@
         "R9",
         "B14"
       ],
-      "description": "Objections delay, change or stop a plan, which is what owners object for (B13). Two things follow. The levels held keep up the seepage and salt that lower the land's value, and a lower value may bring more objections (R8). And plans changed or dropped, and expropriation for a plan, lower farmers' trust in government, which may bring more objections to the next plan (R9, B14). Whether objections settle at a plan the owners accept or keep growing is a question for the group model building session, the steps through trust and what brings objections being hypotheses. The trust it lowers also holds back storage, a long investment that a change of rules can strand.",
+      "description": "Objections delay, change or stop a plan, which is what owners object for (B13). Two things follow. The levels held keep up the seepage and salt that lower the land's value, and a lower value may bring more objections (R8). And plans changed or dropped, and expropriation for a plan, lower farmers' trust in government, which may bring more objections to the next plan (R9, B14). Whether objections settle at a plan the owners accept or keep growing is a question for the group model building session, three of its steps being hypotheses: from land value to objections, from objections to trust, and from objections to the farmland planned. The trust it lowers also holds back storage, a long investment that a change of rules can strand.",
       "places": {
         "agricultural-land-value": [
           -569,

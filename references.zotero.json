@@ -41,6 +41,11 @@
    "CLD"
   ]
  },
+ "aldrich-2023": {
+  "placed": [
+   "CLD"
+  ]
+ },
  "allen-1998": {
   "digest": "3363f2b9159c",
   "note": "HDBSFA6I",
@@ -389,7 +394,7 @@
   ]
  },
  "janssens-2020": {
-  "digest": "f898f5b9d604",
+  "digest": "b3eecd91aeac",
   "note": "9DUZZSPB",
   "placed": [
    "Actor Map",
@@ -937,7 +942,7 @@
   ]
  },
  "van-der-meulen-2020": {
-  "digest": "26cad5c95920",
+  "digest": "7331d4c413d6",
   "note": "58K6T5V6",
   "placed": [
    "Actor Map",
@@ -973,6 +978,13 @@
  "van-maldegem-2004": {
   "digest": "fae95f6a52af",
   "note": "786GJUQ8",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "van-straten-2021": {
+  "digest": "d7bfc77ce767",
+  "note": "QAGSV9NC",
   "placed": [
    "CLD"
   ]

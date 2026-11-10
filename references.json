@@ -3638,5 +3638,75 @@
     "title": "Economic analysis of Dutch agricultural land use in a changing policy environment",
     "genre": "Doctoral dissertation, Wageningen University",
     "DOI": "10.18174/347867"
+  },
+  {
+    "id": "van-straten-2021",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "van Straten",
+        "given": "G."
+      },
+      {
+        "family": "Bruning",
+        "given": "B."
+      },
+      {
+        "family": "de Vos",
+        "given": "A. C."
+      },
+      {
+        "family": "Parra González",
+        "given": "A."
+      },
+      {
+        "family": "Rozema",
+        "given": "J."
+      },
+      {
+        "family": "van Bodegom",
+        "given": "P. M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Estimating cultivar-specific salt tolerance model parameters from multi-annual field tests for identification of salt tolerant potato cultivars",
+    "container-title": "Agricultural Water Management",
+    "volume": "252",
+    "page": "106902",
+    "DOI": "10.1016/j.agwat.2021.106902"
+  },
+  {
+    "id": "aldrich-2023",
+    "type": "report",
+    "author": [
+      {
+        "family": "Aldrich",
+        "given": "Z."
+      },
+      {
+        "family": "van Tongeren",
+        "given": "P."
+      },
+      {
+        "family": "Negacz",
+        "given": "K."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Stakeholder mapping for the Dutch potato industry",
+    "publisher": "Institute for Environmental Studies, VU Amsterdam",
+    "DOI": "10.17605/OSF.IO/YZRV3"
   }
 ]

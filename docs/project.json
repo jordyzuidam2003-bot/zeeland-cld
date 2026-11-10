@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version b0510e2, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 6724218, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -1012,11 +1012,11 @@
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Hectares under salt-tolerant varieties of the current crops (potato, onion), which use the same machines, storage and know-how. Farmers grow one where they find it worthwhile against the variety they grow now. A Stock: a field keeps the variety sown in it for the season, so the hectares hold until farmers sow again.",
+        "description": "Hectares under salt-tolerant varieties of the current crops (potato, onion), which use the same machines, storage and know-how. Farmers grow one where they find it worthwhile against the variety they grow now. Such potato varieties exist and are tested in the Netherlands: of 13 cultivars from Dutch breeders and suppliers grown in the field on Texel from 2012 to 2018, Elgar and Rivola kept 90% of their yield up to a soil salinity above 7.5 dS/m, against 4 to 4.5 dS/m for five others (van Straten et al., 2021, pp. 2, 10); for onion, no source read shows one variety more tolerant than another. No source read shows them grown on the island or in Zeeland: stakeholders in the Dutch potato industry named salt-tolerant varieties as developed in the Netherlands mostly for arid countries, with no mention of domestic use (Aldrich et al., 2023, p. 35). A Stock: a field keeps the variety sown in it for the season, so the hectares hold until farmers sow again.",
         "actor": "Arable farmers on Schouwen-Duiveland",
         "actors": "Arable farmers on Schouwen-Duiveland",
-        "sources": "",
-        "sourced": "no"
+        "sources": "van Straten, G., Bruning, B., de Vos, A. C., Parra González, A., Rozema, J., & van Bodegom, P. M. (2021). Estimating cultivar-specific salt tolerance model parameters from multi-annual field tests for identification of salt tolerant potato cultivars. Agricultural Water Management, 252, 106902. https://doi.org/10.1016/j.agwat.2021.106902\nAldrich, Z., van Tongeren, P., & Negacz, K. (2023). Stakeholder mapping for the Dutch potato industry. Institute for Environmental Studies, VU Amsterdam. https://doi.org/10.17605/OSF.IO/YZRV3",
+        "sourced": "yes"
       }
     },
     {
@@ -2480,12 +2480,12 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "A salt-tolerant variety loses less of its harvest to salt.",
+        "description": "A salt-tolerant variety loses less of its harvest at the same salinity of the root zone: in field trials on Texel from 2012 to 2018, most potato cultivars kept 90% of their yield up to a soil salinity (ECe) of about 4 to 5 dS/m, some about twice that (van Straten et al., 2021, p. 1), Elgar and Rivola above 7.5 dS/m (p. 10). Measured on sandy soil, the salt brought by irrigation water: the sign holds on the island, since the trials relate yield to the salinity of the root zone, which drives Harvest lost to salt there whatever brings the salt; the size need not, as the authors warn for other soils and climates (p. 11).",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "van Straten, G., Bruning, B., de Vos, A. C., Parra González, A., Rozema, J., & van Bodegom, P. M. (2021). Estimating cultivar-specific salt tolerance model parameters from multi-annual field tests for identification of salt tolerant potato cultivars. Agricultural Water Management, 252, 106902. https://doi.org/10.1016/j.agwat.2021.106902",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-tolerant-varieties-adoption",
@@ -3051,12 +3051,12 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "A new harvester or store adds to the capital for the current crops.",
+        "description": "Spending adds to this capital as far as it buys machines and stores for the current crops, not wells or drains: on Dutch arable farms the main category of investment is machines, implements and installations (van der Meulen et al., 2020, p. 19, from national farm accounts), and a store for long keeping is a mostly insulated building with a cooling installation (Janssens et al., 2020, p. 5).",
         "sets link": "S to T",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "sources": "",
-        "sourced": "no",
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nJanssens, B., van der Meer, R., & Smit, B. (2020). Gevolgen van de coronacrisis voor de aardappelsector. Wageningen Economic Research. https://edepot.wur.nl/523096",
+        "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-spending-on-keeping-current-crops",
@@ -4253,7 +4253,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model b0510e2",
+      "name": "CLD, model 6724218",
       "description": "",
       "scale": 1,
       "center": {

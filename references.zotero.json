@@ -1,4 +1,25 @@
 {
+ "aanhangsel-2018-uien": {
+  "digest": "571b635e9397",
+  "note": "ZA5T66MB",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "abn-amro-nd-kosten-krediet": {
+  "digest": "b1477feb52ba",
+  "note": "CN8SUTIK",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "abn-amro-nd-uitleg-rente": {
+  "digest": "6632c08c84fc",
+  "note": "59Q4XQAV",
+  "placed": [
+   "CLD"
+  ]
+ },
  "acacia-water-about-us": {
   "digest": "ec085fe1adb2",
   "note": "JIZZP3JU",
@@ -13,8 +34,15 @@
    "Actor Map"
   ]
  },
+ "adviescommissie-westerschelde": {
+  "digest": "e4e04c156868",
+  "note": "V6R83V5F",
+  "placed": [
+   "CLD"
+  ]
+ },
  "allen-1998": {
-  "digest": "43724edc5fac",
+  "digest": "d1194be14b5b",
   "note": "HDBSFA6I",
   "placed": [
    "CLD"
@@ -27,11 +55,35 @@
    "Actor Map"
   ]
  },
+ "antea-2023-zierikzee": {
+  "digest": "8e66ceb386ee",
+  "note": "P83B97JU",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "banken-nl-2019": {
+  "placed": [
+   "CLD"
+  ]
+ },
+ "beauchampet-2022": {
+  "digest": "ac09f906e61c",
+  "note": "CG6RF5XT",
+  "placed": [
+   "CLD"
+  ]
+ },
  "binnenlands-bestuur-2023-zoetwater": {
   "digest": "4099b4c0c490",
   "note": "JCPSA9AG",
   "placed": [
    "Actor Map"
+  ]
+ },
+ "boere-2015": {
+  "placed": [
+   "CLD"
   ]
  },
  "boerenbusiness-2021-rabobank": {
@@ -41,18 +93,48 @@
    "Actor Map"
   ]
  },
+ "bogers-2025": {
+  "digest": "f4bfe2154fa8",
+  "note": "B339JRU2",
+  "placed": [
+   "CLD"
+  ]
+ },
  "bogosavac-2018": {
-  "digest": "bead8e6c3ac5",
+  "digest": "4c56cd2a2469",
   "note": "BXNB4XWM",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
+  ]
+ },
+ "bonnet-2025": {
+  "digest": "ffa808bfa196",
+  "note": "Q3HXVNEV",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "cbs-2024-vreemd-vermogen": {
+  "digest": "cd1eb27b74a9",
+  "note": "Z246KCQR",
+  "placed": [
+   "CLD"
   ]
  },
  "cbs-2026-landbouw-gemeente": {
-  "digest": "7ccd8147fa01",
+  "digest": "c976a861204d",
   "note": "XM7XIGQJ",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
+  ]
+ },
+ "cloet-2024": {
+  "digest": "159484c91700",
+  "note": "G85ECBP6",
+  "placed": [
+   "CLD"
   ]
  },
  "cosun-2026-beet-campaign": {
@@ -112,7 +194,7 @@
   ]
  },
  "de-louw-2011": {
-  "digest": "aeb611d38e96",
+  "digest": "24882466ab72",
   "note": "PFVBHFHI",
   "placed": [
    "CLD"
@@ -121,6 +203,25 @@
  "de-mesel-2013": {
   "digest": "fae95f6a52af",
   "note": "3D3B2UF2",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "de-vriend-2024": {
+  "digest": "556ebed84d58",
+  "note": "DRBRVBGQ",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "de-vriend-2024-gewassen": {
+  "digest": "2908193533ac",
+  "note": "J7V3TSQD",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "de-wit-2022": {
   "placed": [
    "CLD"
   ]
@@ -140,7 +241,7 @@
   ]
  },
  "deltaprogramma-2027": {
-  "digest": "913a44003369",
+  "digest": "070ab95dc199",
   "note": "W46XES2N",
   "placed": [
    "Actor Map",
@@ -148,17 +249,32 @@
   ]
  },
  "deolu-ajayi-2024": {
-  "digest": "f5bb339f0bbc",
+  "digest": "a53d93a65c96",
   "note": "NCBBAXBZ",
   "placed": [
    "CLD"
   ]
  },
+ "dijkshoorn-dekker-2024": {
+  "digest": "745e87102ee8",
+  "note": "TR7FKARI",
+  "placed": [
+   "CLD"
+  ]
+ },
  "dutchnews-2018-potato-processors": {
-  "digest": "56b84efca00b",
+  "digest": "27ec0bc30d50",
   "note": "QRKGWKAQ",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
+  ]
+ },
+ "dutchnews-2026": {
+  "digest": "dddd55f13c77",
+  "note": "B9CPZ8TC",
+  "placed": [
+   "CLD"
   ]
  },
  "ec-2023-banking-package": {
@@ -190,8 +306,15 @@
    "Actor Map"
   ]
  },
+ "economic-board-zeeland-2023": {
+  "digest": "32e157c5fdd8",
+  "note": "HF48CJ7F",
+  "placed": [
+   "CLD"
+  ]
+ },
  "eu-cap-network-2023": {
-  "digest": "275c2cb3418e",
+  "digest": "cd920548e6e9",
   "note": "365VS95C",
   "placed": [
    "CLD"
@@ -204,6 +327,53 @@
    "Actor Map"
   ]
  },
+ "farjon-2013": {
+  "placed": [
+   "CLD"
+  ]
+ },
+ "freshplaza-2018": {
+  "digest": "15f9da6f5c38",
+  "note": "UQ9S6QH5",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "fryslan-2021-reactienota": {
+  "digest": "8c20eaf8fe16",
+  "note": "S86V6MDA",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "graas-2021": {
+  "digest": "8c20eaf8fe16",
+  "note": "EZ38Q6N3",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "greenfood50-nd": {
+  "digest": "add4a3309d6d",
+  "note": "9RTG5ZB8",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "hhsk-2022-zuidplaspolder": {
+  "digest": "8c20eaf8fe16",
+  "note": "HB64QMEU",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "holtslag-broekhof-2016": {
+  "digest": "bce3504f909f",
+  "note": "45WMWBJS",
+  "placed": [
+   "CLD"
+  ]
+ },
  "iplo-2025-zout": {
   "digest": "697f51802aaa",
   "note": "DM598SSV",
@@ -212,21 +382,22 @@
   ]
  },
  "iplo-verdringingsreeks": {
-  "digest": "95c9a49330be",
+  "digest": "16c5d93dcc9b",
   "note": "Q947WXJZ",
   "placed": [
    "Actor Map"
   ]
  },
  "janssens-2020": {
-  "digest": "d96e3c4b7cb1",
+  "digest": "aeaf27d85628",
   "note": "9DUZZSPB",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
   ]
  },
  "kaandorp-2022": {
-  "digest": "0371cceacb0a",
+  "digest": "38cebafab97d",
   "note": "UCUZ55BX",
   "placed": [
    "Actor Map",
@@ -238,6 +409,23 @@
   "note": "JJDB7KRZ",
   "placed": [
    "Actor Map"
+  ]
+ },
+ "kamphorst-2025": {
+  "digest": "bce3504f909f",
+  "note": "RXQNWCA6",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "kim-2000": {
+  "placed": []
+ },
+ "kuiper-2023": {
+  "digest": "21b20397f322",
+  "note": "R6KIGPHE",
+  "placed": [
+   "CLD"
   ]
  },
  "kwr-organisatie": {
@@ -261,6 +449,27 @@
    "Actor Map"
   ]
  },
+ "lases-2021": {
+  "digest": "e5da1ced08bc",
+  "note": "PEBGAN9A",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "living-lab-2023-dreischor": {
+  "digest": "7606829c2ac0",
+  "note": "CUESIWZ4",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "living-lab-2024-slotbijeenkomst": {
+  "digest": "2a2615e28a26",
+  "note": "HP34SAKQ",
+  "placed": [
+   "CLD"
+  ]
+ },
  "living-lab-2025-programma": {
   "digest": "ea1e72d85a4c",
   "note": "RPXHXCDJ",
@@ -269,10 +478,11 @@
   ]
  },
  "living-lab-innovatieve-drainage": {
-  "digest": "4c9965d4b192",
+  "digest": "2d7486c6397d",
   "note": "DIESPUSP",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
   ]
  },
  "living-lab-ln2050": {
@@ -297,10 +507,18 @@
   ]
  },
  "living-lab-samenwerken-voor-zoet-water": {
-  "digest": "fafe801bac02",
+  "digest": "d208ccb39262",
   "note": "PR3H8AVV",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
+  ]
+ },
+ "luijt-2007": {
+  "digest": "803019f63e0b",
+  "note": "B7ND2CVU",
+  "placed": [
+   "CLD"
   ]
  },
  "lvvn-2026-tarieven-glb-2025": {
@@ -317,9 +535,49 @@
    "CLD"
   ]
  },
+ "magrini-2018": {
+  "digest": "a5c7fff1d381",
+  "note": "NFVZVRG8",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "meynard-2018": {
+  "placed": [
+   "CLD"
+  ]
+ },
+ "minister-lnv-2021-peilverhoging": {
+  "digest": "ce375570eddc",
+  "note": "JD9BEB2X",
+  "placed": [
+   "CLD"
+  ]
+ },
  "munns-tester-2008": {
   "digest": "5c4d5a7f6b6c",
   "note": "ZHEXIE4U",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "n59-rotonde-2020": {
+  "digest": "8e66ceb386ee",
+  "note": "4KJMPPQ8",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "nationale-ombudsman-2026": {
+  "digest": "bd189d7829e7",
+  "note": "SK2MIRM2",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "neefjes-2008": {
+  "digest": "e4e04c156868",
+  "note": "I7N6DJHD",
   "placed": [
    "CLD"
   ]
@@ -339,28 +597,31 @@
   ]
  },
  "nos-2018-misoogst": {
-  "digest": "56b84efca00b",
+  "digest": "27ec0bc30d50",
   "note": "F6I3V9VU",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
   ]
  },
  "omgevingswet-2026": {
-  "digest": "c9021e9ddf84",
+  "digest": "2d3a1b9922be",
   "note": "4FPXFMAI",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
   ]
  },
  "omroep-zeeland-2023-zoet-water": {
-  "digest": "4e5fc7158cdd",
+  "digest": "822c4dfe8ce3",
   "note": "HQQMSNZD",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
   ]
  },
  "omroep-zeeland-2026-aardappeloogst": {
-  "digest": "04df8d135d95",
+  "digest": "b3abe1affd52",
   "note": "DMCZNK7A",
   "placed": [
    "Actor Map",
@@ -375,14 +636,21 @@
   ]
  },
  "pauw-2015": {
-  "digest": "0be074cea099",
+  "digest": "11a0733704f3",
   "note": "GN4T572Z",
   "placed": [
    "CLD"
   ]
  },
+ "polman-2026": {
+  "digest": "a3a580f303d3",
+  "note": "CT8IJIJE",
+  "placed": [
+   "CLD"
+  ]
+ },
  "provincie-zeeland-2021-grondwateronttrekkingen": {
-  "digest": "a14877be090e",
+  "digest": "fe8e1d23cef7",
   "note": "FUPAQDG5",
   "placed": [
    "CLD"
@@ -395,6 +663,13 @@
    "Actor Map"
   ]
  },
+ "provincie-zeeland-jaarstukken-2022": {
+  "digest": "8e66ceb386ee",
+  "note": "GK3KH34I",
+  "placed": [
+   "CLD"
+  ]
+ },
  "rabobank-2023-zoetwatermanager": {
   "digest": "67d9e6e17600",
   "note": "6P39ZVE2",
@@ -403,25 +678,40 @@
   ]
  },
  "rabobank-2025-annual-report": {
-  "digest": "67d9e6e17600",
+  "digest": "78cb3fba933d",
   "note": "NZR6R475",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
   ]
  },
  "reglement-scheldestromen-2025": {
-  "digest": "145beb5c49f6",
+  "digest": "8349a2a94633",
   "note": "KWSJTC9W",
   "placed": [
    "Actor Map",
    "CLD"
   ]
  },
+ "reimerswaal-2025-intentieovereenkomst": {
+  "digest": "07cd700c29a7",
+  "note": "2E9U7WHN",
+  "placed": [
+   "Actor Map"
+  ]
+ },
  "rekenkamer-2026-zoetwater": {
-  "digest": "cf164cb2d64a",
+  "digest": "30129675af8c",
   "note": "5AKE2XUQ",
   "placed": [
    "Actor Map",
+   "CLD"
+  ]
+ },
+ "remkes-2022": {
+  "digest": "bd189d7829e7",
+  "note": "HNJCJGMP",
+  "placed": [
    "CLD"
   ]
  },
@@ -444,6 +734,13 @@
   "note": "BFJR7PWB",
   "placed": [
    "Actor Map"
+  ]
+ },
+ "rivierenland-2019-lek-linge": {
+  "digest": "ce375570eddc",
+  "note": "NWBXHQ65",
+  "placed": [
+   "CLD"
   ]
  },
  "rvo-eco-regeling-2026": {
@@ -476,21 +773,21 @@
   ]
  },
  "scheldestromen-2015-braakman": {
-  "digest": "b5708b49426d",
+  "digest": "a41885b89cb1",
   "note": "4T43M6XC",
   "placed": [
    "CLD"
   ]
  },
  "scheldestromen-2021-hor-duiveland": {
-  "digest": "eaf04d5a961a",
+  "digest": "aa1826d26938",
   "note": "QUFF4FFH",
   "placed": [
    "CLD"
   ]
  },
  "scheldestromen-2021-hor-schouwen": {
-  "digest": "b5708b49426d",
+  "digest": "1de8ed4fc5e6",
   "note": "WX6WV3N8",
   "placed": [
    "CLD"
@@ -521,14 +818,15 @@
   ]
  },
  "scheldestromen-2025-nota-peilbesluiten": {
-  "digest": "566b40ade779",
+  "digest": "a1024d4472d2",
   "note": "H3BE9FEM",
   "placed": [
+   "Actor Map",
    "CLD"
   ]
  },
  "scheldestromen-2026-grondwater": {
-  "digest": "f78af4693204",
+  "digest": "f9b2cf0112f2",
   "note": "MT7QA2GF",
   "placed": [
    "Actor Map",
@@ -542,11 +840,34 @@
    "CLD"
   ]
  },
+ "scheldestromen-2026-kostentoedeling": {
+  "digest": "634961277001",
+  "note": "IMV7F7D3",
+  "placed": [
+   "Actor Map",
+   "CLD"
+  ]
+ },
+ "scheldestromen-2026-watersysteemheffing": {
+  "digest": "fb9451d29eab",
+  "note": "F93HUD6V",
+  "placed": [
+   "Actor Map",
+   "CLD"
+  ]
+ },
  "schouwen-duiveland-2024-waterbassins": {
   "digest": "fe5b8fe28aee",
   "note": "J4Q2WNAW",
   "placed": [
    "Actor Map"
+  ]
+ },
+ "schouwen-duiveland-2026-onteigening": {
+  "digest": "8e66ceb386ee",
+  "note": "9EZIQDPU",
+  "placed": [
+   "CLD"
   ]
  },
  "schouwen-duiveland-omgevingsplan": {
@@ -563,31 +884,102 @@
    "Actor Map"
   ]
  },
+ "silvis-2017": {
+  "digest": "d806acc51593",
+  "note": "IBE9VSFM",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "silvis-2017-economische-ontwikkeling": {
+  "digest": "cd1eb27b74a9",
+  "note": "C45DU9SQ",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "slovic-1993": {
+  "digest": "694204c1d02f",
+  "note": "4FM58KK6",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "ten-dam-2023": {
+  "placed": [
+   "CLD"
+  ]
+ },
+ "terwel-2009": {
+  "digest": "1781a0575d05",
+  "note": "6D48M6BG",
+  "placed": [
+   "CLD"
+  ]
+ },
  "van-beekom-1953": {
-  "digest": "15c306a341e9",
+  "digest": "b525202c04fd",
   "note": "9M27AI9Z",
   "placed": [
    "CLD"
   ]
  },
  "van-beekom-1953-salt": {
-  "digest": "ce71f4570c48",
+  "digest": "0c3e7820e963",
   "note": "KI79ZG32",
   "placed": [
    "CLD"
   ]
  },
+ "van-den-burg-2024": {
+  "placed": [
+   "CLD"
+  ]
+ },
  "van-der-meulen-2020": {
-  "digest": "fd503aa32980",
+  "digest": "3a1fa4de67b2",
   "note": "58K6T5V6",
   "placed": [
    "Actor Map",
    "CLD"
   ]
  },
+ "van-der-meulen-2025": {
+  "digest": "f0b0498443fb",
+  "note": "C8BWZJC2",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "van-der-meulen-van-asseldonk-2017": {
+  "placed": [
+   "CLD"
+  ]
+ },
+ "van-duinen-2015": {
+  "digest": "bd189d7829e7",
+  "note": "UFSZH72J",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "van-loo-2023": {
+  "digest": "a39cb836a9f6",
+  "note": "I5C4TP2T",
+  "placed": [
+   "CLD"
+  ]
+ },
  "van-maldegem-2004": {
   "digest": "fae95f6a52af",
   "note": "786GJUQ8",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "verhagen-2018": {
+  "digest": "e2ece37acc72",
+  "note": "RDEUDPA2",
   "placed": [
    "CLD"
   ]
@@ -600,10 +992,11 @@
   ]
  },
  "waterschapswet-2026": {
-  "digest": "a98d1c5e0c20",
+  "digest": "aade0ea9e954",
   "note": "IKRICD8U",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
   ]
  },
  "wiepkema-2023-zoetwaterbehoefte": {
@@ -614,10 +1007,11 @@
   ]
  },
  "witteveen-bos-2021": {
-  "digest": "4099b4c0c490",
+  "digest": "c0467ac243d7",
   "note": "4BH22CVC",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
   ]
  },
  "zlto-afdelingen": {

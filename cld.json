@@ -2608,7 +2608,7 @@
     },
     {
       "id": "B6",
-      "name": "Storing water when harvests fall",
+      "name": "Farms store water when harvests fall",
       "path": [
         "crop-yield",
         "freshwater-storage-measures",
@@ -2622,7 +2622,7 @@
     },
     {
       "id": "B7",
-      "name": "Asking for a supply route",
+      "name": "A shortfall brings calls for a supply route",
       "path": [
         "crop-water-shortfall",
         "zlto-call-for-supply-route",
@@ -3494,7 +3494,7 @@
     },
     {
       "id": "C9",
-      "name": "What objections to plans set in motion",
+      "name": "Objections to one plan shape the next",
       "loops": [
         "B13",
         "R8",

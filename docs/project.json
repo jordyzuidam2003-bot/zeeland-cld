@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp-cld",
-  "description": "Model version 9bc0370, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
+  "description": "Model version 1f30200, the first seven characters of the SHA-256 of cld.json. A copy for milestones: the current model is the page https://jordyzuidam2003-bot.github.io/zeeland-cld/, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -4035,7 +4035,7 @@
       "_id": "loop-B2",
       "attributes": {
         "label": "B2 Less arable land, less deep drainage",
-        "description": "More salt in the root zone takes more of the harvest, income and land value fall, and where arable farming no longer pays for a buyer or successor the land goes to a holder who does not farm it as arable land. With less arable land the water board, whose level follows the land's use, has more reason to raise the ditch levels, over years; seepage falls, the rainwater lens thickens and the salt falls back. It seeks the salt level at which arable farming stops paying for any successor or buyer, set by crop prices, margins and the land market. With B13 and B14 it is a way out of the same salt: those keep the land arable with another crop, this one is arable farming ending, where the current crops stop paying and adapting does not pay or is not chosen."
+        "description": "More salt in the root zone takes more of the harvest, income and land value fall, and where arable farming no longer pays for a buyer or successor the land goes to a holder who does not farm it as arable land. With less arable land the water board, whose level follows the land's use, has more reason to raise the ditch levels, over years; seepage falls, the rainwater lens thickens and the salt falls back. It seeks the salt level at which arable farming stops paying for any successor or buyer, set by crop prices, margins and the land market. With B13 and B14 it is a way out of the same salt: those keep the land arable with another crop, this one is arable farming ending, where the current crops stop paying and adapting does not pay or is not chosen. It acts only at that end: while arable farming still pays for someone, land from a farm that stops mostly goes to expanding neighbours and stays arable (Arable land in the polders), and a raise follows only where a whole level area leaves arable use, since where nature and farmland share one the board keeps nature's level and links the farm parcel to a lower area (Arable land in the polders → Water board's plans to raise ditch levels). From salt to a raise takes decades, its slowest steps the land changing hands and the board's plan cycle."
       },
       "connections": [
         "conn-root-zone-salinity--harvest-lost-to-salt",
@@ -4253,7 +4253,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "CLD, model 9bc0370",
+      "name": "CLD, model 1f30200",
       "description": "",
       "scale": 1,
       "center": {

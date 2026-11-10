@@ -43,7 +43,7 @@ builds and pushes, so nobody else needs git or Python.
    element or actor, a source missing from `references.json` or an item there lacking a field its
    APA reference needs, a link marked a hypothesis that has
    sources, a named loop that is not closed or whose
-   R/B does not match its polarities) and prints the source coverage, hypotheses apart, the layout's
+   R/B does not match its polarities, a feedback loop with no stock) and prints the source coverage, hypotheses apart, the layout's
    crossings between links and links through a box they do not connect, and any warnings: a model
    text still empty, an element without links, two boxes that overlap, a link and its reverse
    drawn on one curve, an element on the wrong side of the border between the two subsystems,
@@ -148,7 +148,7 @@ An element:
 
 - `id` never changes, so a label can: connections and loops refer to the id.
 - `element type`: `Constant` (an exogenous driver, drawn dashed), `Auxiliary` (rounded corners)
-  or `Stock` (square corners). `adaptive practice`: true on an auxiliary that is a measure
+  or `Stock` (square corners). `adaptive practice`: true on a variable that is a measure
   farmers take, drawn with a thick stroke. `sets domain`: `Social`, `Ecological` or
   `Technological`; the drawing fills the box with the domain's tint. `subsystem`: `Water and
   soil` or `Agricultural economy`, the project's two subsystems, drawn as two faint regions

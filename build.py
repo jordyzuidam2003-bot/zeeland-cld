@@ -279,6 +279,16 @@ def check(cld, refs, actors):
             errors.append(f"loop {loop['id']} is {'balancing' if kind == 'B' else 'reinforcing'} "
                           f"as drawn, so its id must start with {kind}")
 
+    # Every feedback loop holds a stock (Jordy's decision): an auxiliary is set at once by its
+    # causes, so a loop of auxiliaries alone would need its own value to set itself. D2D stops on
+    # such a loop, yet its own check sees only loops of up to five links (funcs/cld.py), and a longer
+    # one leaves its auxiliaries at zero; so every loop is checked here, the named ones and the rest.
+    if all(c["from"] in els and c["to"] in els for c in cld["connections"]):
+        flows = {i for i, e in els.items() if e.get("element type") != "Stock"}
+        rest = {"elements": [e for e in cld["elements"] if e.get("id") in flows],
+                "connections": [c for c in cld["connections"] if c["from"] in flows and c["to"] in flows]}
+        errors += [f"a feedback loop with no stock: {' -> '.join(path)}" for _, path in cycles(rest)]
+
     # A description names a loop by its id, which goes stale unseen once that loop leaves the named loops.
     loop_ids = {loop["id"] for loop in cld["loops"]}
     paths = {loop["id"]: set(loop["path"]) for loop in cld["loops"]}

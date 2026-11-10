@@ -73,8 +73,8 @@
 <text x="520.7" y="422.2" text-anchor="middle">thickness in the low</text>
 <text x="520.7" y="456.2" text-anchor="middle">polders</text>
 </g>
-<g class="element" data-id="freshwater-availability-for-crops" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-177.2" y="497.0" width="354.5" height="86.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="freshwater-availability-for-crops" data-domain="Ecological" data-type="Stock" data-adaptive="false">
+<rect x="-177.2" y="497.0" width="354.5" height="86.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="0.0" y="531.5" text-anchor="middle">Freshwater</text>
 <text x="0.0" y="565.5" text-anchor="middle">availability for crops</text>
 </g>

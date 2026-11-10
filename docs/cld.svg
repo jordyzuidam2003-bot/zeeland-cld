@@ -640,8 +640,8 @@
 <text x="-1467.0" y="960.5" text-anchor="middle">Fresh water supplied</text>
 <text x="-1467.0" y="994.5" text-anchor="middle">to the island</text>
 </g>
-<g class="element" data-id="freshwater-availability-for-crops" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-2254.2" y="1728.0" width="354.5" height="86.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="freshwater-availability-for-crops" data-domain="Ecological" data-type="Stock" data-adaptive="false">
+<rect x="-2254.2" y="1728.0" width="354.5" height="86.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
 <text x="-2077.0" y="1762.5" text-anchor="middle">Freshwater</text>
 <text x="-2077.0" y="1796.5" text-anchor="middle">availability for crops</text>
 </g>
@@ -679,8 +679,8 @@
 <text x="662.0" y="1400.5" text-anchor="middle">Local processing</text>
 <text x="662.0" y="1434.5" text-anchor="middle">capacity for new crops</text>
 </g>
-<g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Auxiliary" data-adaptive="true">
-<rect x="350.0" y="754.0" width="310.0" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Stock" data-adaptive="true">
+<rect x="350.0" y="754.0" width="310.0" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
 <text x="505.0" y="788.5" text-anchor="middle">Adoption of new</text>
 <text x="505.0" y="822.5" text-anchor="middle">salt-tolerant crops</text>
 </g>
@@ -699,8 +699,8 @@
 <text x="1522.0" y="-133.5" text-anchor="middle">Basel IV capital</text>
 <text x="1522.0" y="-99.5" text-anchor="middle">requirements</text>
 </g>
-<g class="element" data-id="dependence-on-high-margin-salt-sensitive-crops" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="1689.6" y="-818.0" width="324.8" height="120.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="dependence-on-high-margin-salt-sensitive-crops" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="1689.6" y="-818.0" width="324.8" height="120.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="1852.0" y="-783.5" text-anchor="middle">Dependence on</text>
 <text x="1852.0" y="-749.5" text-anchor="middle">high-margin</text>
 <text x="1852.0" y="-715.5" text-anchor="middle">salt-sensitive crops</text>
@@ -794,8 +794,8 @@
 <text x="1135.0" y="1229.5" text-anchor="middle">Processing of new</text>
 <text x="1135.0" y="1263.5" text-anchor="middle">crops elsewhere</text>
 </g>
-<g class="element" data-id="tolerant-varieties-adoption" data-domain="Technological" data-type="Auxiliary" data-adaptive="true">
-<rect x="-377.5" y="1112.0" width="220.9" height="120.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<g class="element" data-id="tolerant-varieties-adoption" data-domain="Technological" data-type="Stock" data-adaptive="true">
+<rect x="-377.5" y="1112.0" width="220.9" height="120.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
 <text x="-267.0" y="1146.5" text-anchor="middle">Adoption of</text>
 <text x="-267.0" y="1180.5" text-anchor="middle">salt-tolerant</text>
 <text x="-267.0" y="1214.5" text-anchor="middle">varieties</text>
@@ -825,8 +825,8 @@
 <text x="1831.0" y="301.5" text-anchor="middle">Spending on keeping</text>
 <text x="1831.0" y="335.5" text-anchor="middle">the current crops</text>
 </g>
-<g class="element" data-id="banks-risk-assessment" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="871.8" y="-1170.0" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="banks-risk-assessment" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="871.8" y="-1170.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="1049.0" y="-1135.5" text-anchor="middle">Banks' risk assessment</text>
 <text x="1049.0" y="-1101.5" text-anchor="middle">of farm loans</text>
 </g>

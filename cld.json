@@ -202,14 +202,15 @@
     {
       "id": "freshwater-availability-for-crops",
       "label": "Freshwater availability for crops",
-      "element type": "Auxiliary",
+      "element type": "Stock",
       "adaptive practice": false,
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "Fresh water crops can draw on in the growing season: rain, the soil moisture and groundwater of the field above the lens, water farmers pump or have stored, and water supplied from outside, which reaches the island nowhere now (Kaandorp et al., 2022, pp. 4, 8). It follows the weather within the season: an Auxiliary.",
+      "description": "Fresh water crops can draw on in the growing season: rain, the soil moisture and groundwater of the field above the lens, water farmers pump or have stored, and water supplied from outside, which reaches the island nowhere now (Kaandorp et al., 2022, pp. 4, 8). A Stock: water held in the root zone and in storage carries over from day to day: the root zone's is a daily balance, what the day before left plus rain, irrigation and capillary rise, less what the crop uses and what drains below the roots (Allen et al., 1998, ch. 8, eq. 85). It fills and empties within the season.",
       "sources": [
-        "kaandorp-2022"
+        "kaandorp-2022",
+        "allen-1998"
       ],
       "x": -2077,
       "y": 1771
@@ -336,12 +337,12 @@
     {
       "id": "salt-tolerant-crop-adoption",
       "label": "Adoption of new salt-tolerant crops",
-      "element type": "Auxiliary",
+      "element type": "Stock",
       "adaptive practice": true,
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Hectares under crops new to the island's rotations that tolerate salt. The island's rotations hold potato, onion, sugar beet, cereals and grass seed (Kaandorp et al., 2022, p. 30), and no source read shows a new crop grown on the island. Elsewhere in Zeeland, most still experimental and small (Deolu-Ajayi et al., 2024, p. 57): samphire and sea aster, irrigated with saline water on the edges of salt marshes at Emmadorp, Waterdunen and Wolphaarsdijk, labour intensive and seasonal, their sales low (van den Burg et al., 2024, p. 6); sea fennel and sea banana on an arable farm at Colijnsplaat, where a new company worked out how to grow them, in fields and greenhouses, and set up their supply chain (EU CAP Network, 2023). Quinoa grows to maturity on irrigation water of more than 250 mM NaCl (van Loo, 2023, p. 77) and is sown with standard equipment and harvested with a combine, but needs a fine seed bed and weed control set by its row distance (p. 75). Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them.",
+      "description": "Hectares under crops new to the island's rotations that tolerate salt. The island's rotations hold potato, onion, sugar beet, cereals and grass seed (Kaandorp et al., 2022, p. 30), and no source read shows a new crop grown on the island. Elsewhere in Zeeland, most still experimental and small (Deolu-Ajayi et al., 2024, p. 57): samphire and sea aster, irrigated with saline water on the edges of salt marshes at Emmadorp, Waterdunen and Wolphaarsdijk, labour intensive and seasonal, their sales low (van den Burg et al., 2024, p. 6); sea fennel and sea banana on an arable farm at Colijnsplaat, where a new company worked out how to grow them, in fields and greenhouses, and set up their supply chain (EU CAP Network, 2023). Quinoa grows to maturity on irrigation water of more than 250 mM NaCl (van Loo, 2023, p. 77) and is sown with standard equipment and harvested with a combine, but needs a fine seed bed and weed control set by its row distance (p. 75). Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them. A Stock: a field keeps its crop through the season, and farmers move fields to a new crop over years, as they come to see the damage over dry summers (Harvest lost to salt → Adoption of new salt-tolerant crops).",
       "sources": [
         "kaandorp-2022",
         "deolu-ajayi-2024",
@@ -409,12 +410,12 @@
     {
       "id": "dependence-on-high-margin-salt-sensitive-crops",
       "label": "Dependence on high-margin salt-sensitive crops",
-      "element type": "Auxiliary",
+      "element type": "Stock",
       "adaptive practice": false,
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "The share of the rotation under the high-value cash crops salt harms most, seed and ware potatoes and sown onions (Root zone salinity → Harvest lost to salt). Potatoes are financially attractive and sensitive to the climate, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12): on specialised arable farms on clay they bring in 55% of the arable revenue, ware potatoes 32% and seed potatoes 23%, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14). In Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). A field takes potatoes at most one year in three against soil disease, so a farm growing more of them rents or swaps land (Janssens et al., 2020, p. 4). The island's rotations hold potato, onion, sugar beet, cereals and grass seed; in its low polders, where the seepage pressure is high and the surface water salty all year, farmers have stopped growing sensitive crops such as sown onions, and with more fresh water they would be open to more profitable crops (Kaandorp et al., 2022, pp. 30–31). In Zeeland the sown onions halved from 4,705 ha in 2019 to 2,579 in 2024 after dry summers, poor harvests and a lack of fresh water, which four in five arable farmers have no access to, while potatoes held at about 19,000 ha (De Vriend, 2024b).",
+      "description": "The share of the rotation under the high-value cash crops salt harms most, seed and ware potatoes and sown onions (Root zone salinity → Harvest lost to salt). Potatoes are financially attractive and sensitive to the climate, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12): on specialised arable farms on clay they bring in 55% of the arable revenue, ware potatoes 32% and seed potatoes 23%, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14). In Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). A field takes potatoes at most one year in three against soil disease, so a farm growing more of them rents or swaps land (Janssens et al., 2020, p. 4). The island's rotations hold potato, onion, sugar beet, cereals and grass seed; in its low polders, where the seepage pressure is high and the surface water salty all year, farmers have stopped growing sensitive crops such as sown onions, and with more fresh water they would be open to more profitable crops (Kaandorp et al., 2022, pp. 30–31). In Zeeland the sown onions halved from 4,705 ha in 2019 to 2,579 in 2024 after dry summers, poor harvests and a lack of fresh water, which four in five arable farmers have no access to, while potatoes held at about 19,000 ha (De Vriend, 2024b). A Stock: the share holds through the season and shifts over years (Root zone salinity → Dependence on high-margin salt-sensitive crops).",
       "sources": [
         "verhagen-2018",
         "janssens-2020",
@@ -742,12 +743,12 @@
     {
       "id": "tolerant-varieties-adoption",
       "label": "Adoption of salt-tolerant varieties",
-      "element type": "Auxiliary",
+      "element type": "Stock",
       "adaptive practice": true,
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Hectares under salt-tolerant varieties of the current crops (potato, onion), which use the same machines, storage and know-how. Farmers grow one where they find it worthwhile against the variety they grow now.",
+      "description": "Hectares under salt-tolerant varieties of the current crops (potato, onion), which use the same machines, storage and know-how. Farmers grow one where they find it worthwhile against the variety they grow now. A Stock: a field keeps the variety sown in it for the season, so the hectares hold until farmers sow again.",
       "sources": [],
       "x": -267,
       "y": 1172,
@@ -832,12 +833,12 @@
     {
       "id": "banks-risk-assessment",
       "label": "Banks' risk assessment of farm loans",
-      "element type": "Auxiliary",
+      "element type": "Stock",
       "adaptive practice": false,
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "The risk a bank sees in lending to an arable farm: above all whether its operations will earn enough, over the years of the loan, to meet all its financial obligations, then its solvency and its land and buildings as security (van der Meulen et al., 2020, p. 19; Farjon et al., 2013, pp. 3–4). Because arable returns swing from year to year, banks count farm loans as riskier despite the land as security, and the Basel capital rules steer them further toward lending on profitability and liquidity rather than on the value of the collateral (van der Meulen et al., 2020, p. 47); financing a new concept whose returns are not yet proven they often count as a risk (p. 6). Rabobank's provisions for expected credit losses carried an adjustment of 87 million euro for climate risk at the end of 2024, set by sector on five events, drought and water scarcity among them (Rabobank, 2025, pp. 246–247). No source read shows a bank weighing a plan that may change what the land can earn.",
+      "description": "The risk a bank sees in lending to an arable farm: above all whether its operations will earn enough, over the years of the loan, to meet all its financial obligations, then its solvency and its land and buildings as security (van der Meulen et al., 2020, p. 19; Farjon et al., 2013, pp. 3–4). Because arable returns swing from year to year, banks count farm loans as riskier despite the land as security, and the Basel capital rules steer them further toward lending on profitability and liquidity rather than on the value of the collateral (van der Meulen et al., 2020, p. 47); financing a new concept whose returns are not yet proven they often count as a risk (p. 6). Rabobank's provisions for expected credit losses carried an adjustment of 87 million euro for climate risk at the end of 2024, set by sector on five events, drought and water scarcity among them (Rabobank, 2025, pp. 246–247). No source read shows a bank weighing a plan that may change what the land can earn. A Stock: a bank's view of a farm holds until the bank revises it, and it weighs what the farm can earn over the longer term rather than in one year (Farm income → Banks' risk assessment of farm loans).",
       "sources": [
         "van-der-meulen-2020",
         "farjon-2013",

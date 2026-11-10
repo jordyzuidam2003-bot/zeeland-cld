@@ -26,8 +26,8 @@
 </g>
 </g>
 <g class="elements">
-<g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Auxiliary" data-adaptive="true">
-<rect x="-409.5" y="-212.7" width="310.0" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Stock" data-adaptive="true">
+<rect x="-409.5" y="-212.7" width="310.0" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
 <text x="-254.6" y="-178.2" text-anchor="middle">Adoption of new</text>
 <text x="-254.6" y="-144.2" text-anchor="middle">salt-tolerant crops</text>
 </g>

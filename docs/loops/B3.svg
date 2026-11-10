@@ -51,8 +51,8 @@
 <rect x="105.0" y="-432.5" width="295.1" height="52.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="252.6" y="-398.0" text-anchor="middle">Financial leverage</text>
 </g>
-<g class="element" data-id="banks-risk-assessment" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="432.5" y="-211.4" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="banks-risk-assessment" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="432.5" y="-211.4" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="609.8" y="-176.9" text-anchor="middle">Banks' risk assessment</text>
 <text x="609.8" y="-142.9" text-anchor="middle">of farm loans</text>
 </g>
@@ -65,8 +65,8 @@
 <text x="252.6" y="398.0" text-anchor="middle">Farmers' capacity to</text>
 <text x="252.6" y="432.0" text-anchor="middle">invest</text>
 </g>
-<g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Auxiliary" data-adaptive="true">
-<rect x="-407.6" y="363.5" width="310.0" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Stock" data-adaptive="true">
+<rect x="-407.6" y="363.5" width="310.0" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
 <text x="-252.6" y="398.0" text-anchor="middle">Adoption of new</text>
 <text x="-252.6" y="432.0" text-anchor="middle">salt-tolerant crops</text>
 </g>

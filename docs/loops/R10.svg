@@ -26,8 +26,8 @@
 </g>
 </g>
 <g class="elements">
-<g class="element" data-id="dependence-on-high-margin-salt-sensitive-crops" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-417.0" y="-229.7" width="324.8" height="120.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="dependence-on-high-margin-salt-sensitive-crops" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="-417.0" y="-229.7" width="324.8" height="120.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-254.6" y="-195.2" text-anchor="middle">Dependence on</text>
 <text x="-254.6" y="-161.2" text-anchor="middle">high-margin</text>
 <text x="-254.6" y="-127.2" text-anchor="middle">salt-sensitive crops</text>

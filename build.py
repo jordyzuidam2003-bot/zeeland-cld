@@ -63,7 +63,7 @@ ACTORS = ROOT / "actors.json"
 PAGES_URL = "https://jordyzuidam2003-bot.github.io/zeeland-cld/"
 
 ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
-SUBQUESTIONS = ["SQ1", "SQ2", "SQ3"]
+SUBQUESTIONS = ["SQ1", "SQ2", "SQ3", "SQ4"]
 SETS_LETTER = {"Social": "S", "Ecological": "E", "Technological": "T"}
 CONSTANT_REACH = 400  # the most a Constant's box keeps from a box it drives: about one box's width and a bit
 

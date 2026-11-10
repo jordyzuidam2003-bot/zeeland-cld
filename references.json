@@ -2216,9 +2216,9 @@
       ]
     },
     "title": "Rendabiliteit van de quinoateelt in Vlaanderen",
-    "version": "Version September 2024",
     "publisher": "ILVO",
-    "URL": "https://ilvo.vlaanderen.be/uploads/documents/Projecten/Rendabiliteit-van-de-quinoateelt-in-Vlaanderen_sept2024.pdf"
+    "URL": "https://ilvo.vlaanderen.be/uploads/documents/Projecten/Rendabiliteit-van-de-quinoateelt-in-Vlaanderen_sept2024.pdf",
+    "number": "Version September 2024"
   },
   {
     "id": "de-vriend-2024-gewassen",
@@ -2245,7 +2245,7 @@
   },
   {
     "id": "farjon-2013",
-    "type": "report",
+    "type": "article-newspaper",
     "author": [
       {
         "family": "Farjon",

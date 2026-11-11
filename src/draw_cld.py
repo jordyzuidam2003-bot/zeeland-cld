@@ -1,6 +1,6 @@
 """Draw the CLD as an SVG, from cld.json's own coordinates (y downwards).
 
-Imported by build.py, which writes docs/cld.svg and puts the same drawing inline in
+Imported by build.py, which writes docs/figures/cld.svg and puts the same drawing inline in
 docs/index.html. svg(cld) returns the drawing as a string; overlaps(cld) the warnings about
 boxes that intersect and other layout faults, and tangles(cld) the crossings between links and
 the links through a box, for build.py's report; boxes(cld) the geometry
@@ -18,10 +18,10 @@ What is drawn, from back to front:
             thick stroke for an adaptive practice
   legend    in the first bottom corner inside the frame with room for it, else below the frame
 No loop marks on the full drawing: the page highlights a named loop by its button.
-loop_figure(cld, loop) draws one named loop on its own (build.py writes docs/loops/<id>.svg): its
+loop_figure(cld, loop) draws one named loop on its own (build.py writes docs/figures/named-loops/<id>.svg): its
 elements evenly round one oval, clockwise from the top left, its links along it, drawn as svg()
 draws them, with its mark, turning clockwise, at the oval's centre.
-group_figure(cld, group) draws one group of named loops (build.py writes docs/groups/<id>.svg): its
+group_figure(cld, group) draws one group of named loops (build.py writes docs/figures/combined-loops/<id>.svg): its
 loops' elements and links at the group's own `places` and `bends`, each loop's mark at `marks`.
 
 The link formulas are duplicated in src/templates/app.js (drag mode redraws every link when an element

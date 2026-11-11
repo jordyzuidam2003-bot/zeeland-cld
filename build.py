@@ -6,10 +6,10 @@
                                       # downloaded from the page's drag mode) into cld.json, then build
 
 Sources, edited by hand: in model/, cld.json (elements, connections, named loops, layout and
-link curvature), actor-map.json (the Actor Map's actors, their relations and places, the one list the
-CLD's actor fields name), references.json (sources) and cld-texts.md (the model texts each page
-shows); in src/, kumu/cld-view.scss and kumu/actor-map-view.scss (the Kumu views inside project.json
-and actors-project.json) and templates/ (index.html, a template with the placeholders <!-- SVG -->,
+link curvature), actor-map.json (the Actor Map's actors, their relations and places, the one list
+the CLD's actor fields name), references.json (sources) and cld-texts.md (the model texts each page
+shows); in src/, kumu/cld-view.scss and kumu/actor-map-view.scss (the Kumu views inside the exports
+in docs/kumu/) and templates/ (index.html, a template with the placeholders <!-- SVG -->,
 <!-- FACTS -->, <!-- TEXTS --> and <!-- DATA -->; actors.html, the Actor Map's, with <!-- QUESTION -->,
 <!-- SVG --> and <!-- DATA -->; app.js; actors.js; map.js; style.css). src/draw_cld.py draws the CLD,
 src/draw_actor_map.py the Actor Map and its table, src/write_xlsx.py writes the table's file. Never
@@ -17,30 +17,32 @@ edit docs/, which this script writes:
 
     docs/index.html    the page: the template with the drawing inline, the model texts (their
                        numbers counted in the model) and the data as JSON
-    docs/app.js        copied from src/templates/
-    docs/map.js        copied from src/templates/: moving and zooming, the bar and the menu, for both pages
-    docs/style.css     copied from src/templates/
-    docs/table.xlsx    the table that explains the CLD (table_sheets()), which Jordy imports into
-                       Google Drive as a Google Sheet: the Elements, Links, Named loops, Combined
-                       loops (once cld.json holds groups) and References sheets; linked from the page
-    docs/cld.svg       the drawing on its own, the picture for the report
-    docs/groups/<id>.svg  each group of named loops, its loops joined at their shared variables (draw_cld.group_figure())
-    docs/loops/<id>.svg  each named loop on its own (draw_cld.loop_figure()), its figure for the
-                       report; the page's panel for the loop shows it
-    docs/regions.svg   the subsystem regions alone, the background image of the Kumu map
-    docs/project.json  a full Kumu project export: restore it into a brand-new Kumu project
-                       (New Project > the next screen > restore backup) and Kumu restores the
-                       elements at their positions, the curved links, the view and the regions
-                       (an element labelled background showing docs/regions.svg as its image,
-                       by its URL on the published page); the model version is in the project's
-                       description and the map's name
     docs/actors.html   the Actor Map's page: the network inline, a panel per actor and relation
-    docs/actors.js     copied from src/templates/
-    docs/actors.svg    the Actor Map's network on its own, the picture for the report
-    docs/actors-bands.svg  its level bands alone, the background image of its Kumu map
-    docs/actors-project.json  the Actor Map as a full Kumu project export, restored as project.json is
-    docs/actors.xlsx   the actors' table, which Jordy imports into Google Drive as a Google Sheet:
-                       the Actors, Relations, References and Columns sheets (draw_actor_map.sheets())
+    docs/assets/       app.js, actors.js, map.js (moving and zooming, the bar and the menu, for
+                       both pages) and style.css, copied from src/templates/
+    docs/figures/cld.svg  the drawing on its own, the picture for the report
+    docs/figures/named-loops/<id>.svg  each named loop on its own (draw_cld.loop_figure()), its
+                       figure for the report; the page's panel for the loop shows it
+    docs/figures/combined-loops/<id>.svg  each group of named loops, its loops joined at their
+                       shared variables (draw_cld.group_figure())
+    docs/figures/actor-map.svg  the Actor Map's network on its own, the picture for the report
+    docs/tables/cld-table.xlsx  the table that explains the CLD (table_sheets()), which Jordy
+                       imports into Google Drive as a Google Sheet: the Elements, Links, Named
+                       loops, Combined loops (once cld.json holds groups) and References sheets;
+                       linked from the page
+    docs/tables/actor-map-table.xlsx  the actors' table, which Jordy imports into Google Drive as a
+                       Google Sheet: the Actors, Relations, References and Columns sheets
+                       (draw_actor_map.sheets()); linked from the Actor Map's page
+    docs/kumu/cld-project.json  a full Kumu project export: restore it into a brand-new Kumu
+                       project (New Project > the next screen > restore backup) and Kumu restores
+                       the elements at their positions, the curved links, the view and the regions
+                       (an element labelled background showing docs/regions.svg as its image, by
+                       its URL on the published page); the model version is in the project's
+                       description and the map's name
+    docs/kumu/actor-map-project.json  the Actor Map as a full Kumu project export, restored as
+                       cld-project.json is
+    docs/regions.svg   the subsystem regions alone, the background image of the CLD's Kumu map
+    docs/actors-bands.svg  the Actor Map's level bands alone, the background image of its Kumu map
 """
 
 import argparse
@@ -562,7 +564,7 @@ def element_actors(cld, actors):
 
 
 def table_sheets(cld, refs, actors):
-    """[(name, widths, rows)] for docs/table.xlsx, the table that explains the CLD, written from
+    """[(name, widths, rows)] for docs/tables/cld-table.xlsx, the table that explains the CLD, written from
     cld.json (the actors' labels from actor-map.json, the references from references.json): the
     Elements, Links and Named loops sheets, Combined loops once cld.json holds groups, and the
     References sheet, the full references the sheets cite in-text (draw_actor_map.citations()). A
@@ -745,7 +747,7 @@ def actors_project(actors, refs, decides, cld_labels, template, version):
              + [f'#background {{ width: {round(fx1 - fx0)}; height: {round(fy1 - fy0)}; }}'])
     style = (template.rstrip() + "\n\n/* ---------- generated by build.py: the kinds' look, box sizes, the bands' size ---------- */\n"
              + "\n".join(rules) + "\n")
-    description = (f"Actor Map version {version}, the first seven characters of the SHA-256 of actors.json. "
+    description = (f"Actor Map version {version}, the first seven characters of the SHA-256 of actor-map.json. "
                    "A copy for milestones: the current Actor Map is the page "
                    f"{PAGES_URL}actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.")
     return {
@@ -807,31 +809,31 @@ def main():
     decides = decisions(cld, actors)
     cld_labels = {e["id"]: e["label"] for e in cld["elements"]}
     outputs = {
-        "project.json": json.dumps(project(cld, refs, actors, template, version), indent=2, ensure_ascii=False) + "\n",
+        "kumu/cld-project.json": json.dumps(project(cld, refs, actors, template, version), indent=2, ensure_ascii=False) + "\n",
         "actors.html": draw_actor_map.page(actors, refs, decides, cld_labels, actors_version, (TEMPLATES / "actors.html").read_text()),
-        "actors.js": (TEMPLATES / "actors.js").read_text(),
-        "actors.svg": draw_actor_map.svg(actors),
+        "assets/actors.js": (TEMPLATES / "actors.js").read_text(),
+        "figures/actor-map.svg": draw_actor_map.svg(actors),
         "actors-bands.svg": draw_actor_map.bands_svg(actors)[0],
-        "actors-project.json": json.dumps(actors_project(actors, refs, decides, cld_labels,
+        "kumu/actor-map-project.json": json.dumps(actors_project(actors, refs, decides, cld_labels,
                                                          (KUMU / "actor-map-view.scss").read_text(), actors_version),
                                           indent=2, ensure_ascii=False) + "\n",
-        "actors.xlsx": write_xlsx.workbook(draw_actor_map.sheets(actors, refs, decides, cld_labels)),
-        "cld.svg": draw_cld.svg(cld),
+        "tables/actor-map-table.xlsx": write_xlsx.workbook(draw_actor_map.sheets(actors, refs, decides, cld_labels)),
+        "figures/cld.svg": draw_cld.svg(cld),
         "regions.svg": draw_cld.regions_svg(cld)[0],
         "index.html": page(cld, refs, actors, version, loops),
-        "table.xlsx": write_xlsx.workbook(table_sheets(cld, refs, actors)),
-        "app.js": (TEMPLATES / "app.js").read_text(),
-        "map.js": (TEMPLATES / "map.js").read_text(),
-        "style.css": (TEMPLATES / "style.css").read_text(),
-        **{f"loops/{loop['id']}.svg": draw_cld.loop_figure(cld, loop) for loop in cld["loops"]},
-        **{f"groups/{g['id']}.svg": draw_cld.group_figure(cld, g) for g in cld.get("groups", [])},
+        "tables/cld-table.xlsx": write_xlsx.workbook(table_sheets(cld, refs, actors)),
+        "assets/app.js": (TEMPLATES / "app.js").read_text(),
+        "assets/map.js": (TEMPLATES / "map.js").read_text(),
+        "assets/style.css": (TEMPLATES / "style.css").read_text(),
+        **{f"figures/named-loops/{loop['id']}.svg": draw_cld.loop_figure(cld, loop) for loop in cld["loops"]},
+        **{f"figures/combined-loops/{g['id']}.svg": draw_cld.group_figure(cld, g) for g in cld.get("groups", [])},
     }
     # Kumu shows regions.svg stretched to the frame: with a viewBox alone a browser sizes it 250 by
     # 150 pixels, which Kumu blurred (draw_cld.regions_svg())
     if not re.match(r'<svg [^>]*\bwidth="\d+" height="\d+"', outputs["regions.svg"]):
         sys.exit("docs/regions.svg needs a width and a height besides its viewBox: draw_cld.regions_svg() writes them")
     # a figure whose loop is gone or renamed would stay published
-    extra = sorted(f"{d}/{f.name}" for d in ("loops", "groups") if (DOCS / d).is_dir()
+    extra = sorted(f"{d}/{f.name}" for d in ("figures/named-loops", "figures/combined-loops") if (DOCS / d).is_dir()
                    for f in (DOCS / d).glob("*") if f"{d}/{f.name}" not in outputs)
 
     if args.check:
@@ -842,11 +844,10 @@ def main():
             sys.exit(f"docs/ is out of date ({', '.join(stale + extra)}): run build.py and commit docs/")
         return
 
-    (DOCS / "loops").mkdir(parents=True, exist_ok=True)
-    (DOCS / "groups").mkdir(parents=True, exist_ok=True)
     for name in extra:
         (DOCS / name).unlink()
     for name, out in outputs.items():
+        (DOCS / name).parent.mkdir(parents=True, exist_ok=True)
         (DOCS / name).write_bytes(out) if isinstance(out, bytes) else (DOCS / name).write_text(out)
 
     n_el, n_conn = len(cld["elements"]), len(cld["connections"])

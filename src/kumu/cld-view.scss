@@ -27,11 +27,11 @@
   culling: off;
 }
 
-/* ---------- Elements: the page's look, values from draw.py ---------- */
-/* each box's fill (its SETS domain's tint, draw.py's TINT), width and height are rules
-   build.py generates below this view in docs/project.json. Kumu draws text at about 0.6 of
+/* ---------- Elements: the page's look, values from draw_cld.py ---------- */
+/* each box's fill (its SETS domain's tint, draw_cld.py's TINT), width and height are rules
+   build.py generates below this view in docs/kumu/cld-project.json. Kumu draws text at about 0.6 of
    its font-size in map units, so each font-size is the page's x 1.5, to fill the box
-   draw.py fits */
+   draw_cld.py fits */
 /* pill: Kumu's rectangle with rounded corners */
 element {
   shape: pill;

@@ -1,6 +1,6 @@
 // The Actor Map's page: a click on an actor or a relation opens a panel with its fields and
 // sources; Esc (map.js) or a click on the background closes it. The data is the JSON in <script id="data">
-// (build.py writes it); the drawing is the inline SVG, its actors and relations in actors.json's order.
+// (build.py writes it); the drawing is the inline SVG, its actors and relations in actor-map.json's order.
 "use strict";
 
 const data = JSON.parse(document.getElementById("data").textContent);

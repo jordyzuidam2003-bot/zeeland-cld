@@ -18,7 +18,7 @@ document.getElementById("version").textContent = data.version;
 // --- highlight buttons ----------------------------------------------------------------------
 // A button per named loop, and one per group of named loops, names its elements and links; pressed
 // buttons are united, none means all. A button reads "R1 Its name"; its key is the id. Pressing it
-// also opens the panel with its figure (docs/loops/<id>.svg, docs/groups/<id>.svg); releasing it
+// also opens the panel with its figure (docs/figures/named-loops/<id>.svg, docs/figures/combined-loops/<id>.svg); releasing it
 // closes that panel.
 const linksOf = path => path.map((id, i) => `${id}--${path[(i + 1) % path.length]}`);
 const loopRules = data.loops.map(loop => [`${loop.id} ${loop.name}`, () => (
@@ -126,7 +126,7 @@ function showLoop(id) {
   const h2 = document.createElement("h2");
   h2.textContent = `${loop.id} ${loop.name}`;
   const a = document.createElement("a");
-  a.href = `${group ? "groups" : "loops"}/${loop.id}.svg`;
+  a.href = `figures/${group ? "combined-loops" : "named-loops"}/${loop.id}.svg`;
   a.target = "_blank";
   const img = document.createElement("img");
   img.src = a.href;
@@ -158,7 +158,7 @@ svg.addEventListener("click", ev => {
 });
 
 // --- drag mode ------------------------------------------------------------------------------
-// The link formula is draw.py's link_path(), link_paths(), sign_position() and delay_path(): keep them the same.
+// The link formula is draw_cld.py's link_path(), link_paths(), sign_position() and delay_path(): keep them the same.
 const ARROW = 22;
 const bezier = (p0, p1, p2, t) => {
   const s = 1 - t;
@@ -239,7 +239,7 @@ function spread(xs, lo, hi, gap) {
   }
   return p;
 }
-// every link's [p0, ctrl, p2]: the ends spread along the box edges, as draw.py's link_paths()
+// every link's [p0, ctrl, p2]: the ends spread along the box edges, as draw_cld.py's link_paths()
 function linkPaths() {
   const ends = new Map();
   for (const g of links) {

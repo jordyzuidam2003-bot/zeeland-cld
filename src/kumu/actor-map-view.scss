@@ -1,7 +1,7 @@
-/* The Kumu view of the Actor Map inside docs/actors-project.json, as view.scss is the CLD's. Each
-   property here is one view.scss already uses; check a new one in Kumu's property reference before
+/* The Kumu view of the Actor Map inside docs/kumu/actor-map-project.json, as cld-view.scss is the CLD's. Each
+   property here is one cld-view.scss already uses; check a new one in Kumu's property reference before
    writing it, and see it work in a test import. build.py adds below it each relation kind's colour
-   and dash (actormap.py's KIND), each box's size and the bands' size. */
+   and dash (draw_actor_map.py's KIND), each box's size and the bands' size. */
 
 @controls {
   bottom-left {
@@ -35,7 +35,7 @@ element {
 }
 
 /* ---------- Bands: the page's level bands as a background image ---------- */
-/* as view.scss's #background: build.py adds the element, pinned at the centre of the bands'
+/* as cld-view.scss's #background: build.py adds the element, pinned at the centre of the bands'
    frame, and its width and height, the frame's */
 #background {
   image-url: url(https://jordyzuidam2003-bot.github.io/zeeland-cld/actors-bands.svg);

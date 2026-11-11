@@ -46,6 +46,7 @@ edit docs/, which this script writes:
 """
 
 import argparse
+import base64
 import hashlib
 import json
 import math
@@ -69,7 +70,6 @@ TEXTS = MODEL / "cld-texts.md"
 CLD = MODEL / "cld.json"
 ACTORS = MODEL / "actor-map.json"
 REFERENCES = MODEL / "references.json"
-PAGES_URL = "https://jordyzuidam2003-bot.github.io/zeeland-cld/"
 
 ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
 SUBQUESTIONS = ["SQ1", "SQ2", "SQ3"]
@@ -609,22 +609,41 @@ def table_sheets(cld, refs, actors):
     return sheets
 
 
-def project(cld, refs, actors, template, version):
-    """A full Kumu project export, the shape of Kumu's own "Export JSON" of a project.
+def data_url(svg):
+    """An SVG as a data URL: the form in which a Kumu view carries its background image inside the
+    project file, so the project depends on no host (cld-drawing.md)."""
+    return "data:image/svg+xml;base64," + base64.b64encode(svg.encode()).decode()
 
-    The view is src/kumu/cld-view.scss plus what is generated here: a showcase button per named loop, in
-    cld-view.scss's place for it, each SETS domain's tint from draw_cld.TINT,
-    and by Kumu system id each element's box size from draw_cld.boxes(). Each label holds a double space where the page breaks its line,
-    Kumu's manual line break, so its box fits it."""
+
+def with_image(view, svg, name):
+    """The Kumu view with svg as its #background image, in place of the view's url(IMAGE)."""
+    if view.count("url(IMAGE)") != 1:
+        sys.exit(f"src/kumu/{name} needs url(IMAGE) once, in its #background rule: build.py puts the image there")
+    return view.replace("url(IMAGE)", f"url({data_url(svg)})")
+
+
+def project(cld, refs, actors, template, version):
+    """The CLD's part of the Kumu project (kumu_project()).
+
+    The view is src/kumu/cld-view.scss with the regions as its background image, plus what is
+    generated here: a showcase button per named loop, in cld-view.scss's place for it, each SETS
+    domain's tint from draw_cld.TINT, and by Kumu system id each element's box size from
+    draw_cld.boxes(). Each label holds a double space where the page breaks its line, Kumu's manual
+    line break, so its box fits it."""
     bp = blueprint(cld, refs, actors)
     keep = lambda item, drop: {k: v for k, v in item.items() if k not in drop}
     bxs = draw_cld.boxes(cld)
     elements = [{"_id": f'elem-{e["id"]}',
                  "attributes": {**keep(e, {"id", "x", "y"}), "label": "  ".join(bxs[e["id"]][4])}}
                 for e in bp["elements"]]
-    # the regions: an element labelled background, its image docs/regions.svg (cld-view.scss)
+    # the regions: an element labelled background, the regions its image (cld-view.scss)
     elements.append({"_id": "elem-background", "attributes": {"label": "background"}})
-    _, (fx0, fy0, fx1, fy1) = draw_cld.regions_svg(cld)
+    regions, (fx0, fy0, fx1, fy1) = draw_cld.regions_svg(cld)
+    # Kumu shows the regions stretched to the frame: with a viewBox alone a browser sizes an SVG 250
+    # by 150 pixels, which Kumu blurred (draw_cld.regions_svg())
+    if not re.match(r'<svg [^>]*\bwidth="\d+" height="\d+"', regions):
+        sys.exit("the regions' SVG needs a width and a height besides its viewBox: draw_cld.regions_svg() writes them")
+    template = with_image(template, regions, "cld-view.scss")
     rules = ([f'["sets domain"="{d.lower()}"] {{ color: {t}; }}' for d, t in draw_cld.TINT.items()]
              + [f'#elem-{i} {{ width: {round(b[2] - b[0])}; height: {round(b[3] - b[1])}; }}'
                 for i, b in bxs.items()]
@@ -636,23 +655,6 @@ def project(cld, refs, actors, template, version):
                                    "connection type": c["type"]},
                     "from": f'elem-{c["from"]}', "to": f'elem-{c["to"]}'}
                    for c in bp["connections"]]
-
-    # one attribute entry per field, a drop-down list where the values are few
-    values = {}
-    for item in [e["attributes"] for e in elements] + [c["attributes"] for c in connections]:
-        for k, v in item.items():
-            values.setdefault(k, set()).add(v)
-    # Kumu's own type fields are spelled this way; "Connection type" would be a second field
-    builtin = {"element type": "Element Type", "connection type": "Connection Type"}
-    attributes = []
-    for k, seen in values.items():
-        text = k in ("description", "simplification", "sources")
-        listed = not text and k != "label" and len(seen) <= 20
-        attributes.append({"_id": "attr-" + k.replace(" ", "-"), "name": builtin.get(k, k[0].upper() + k[1:]),
-                           "format": "text" if text else "string", "private": False, "limit": 1,
-                           "category": "General", "prompt": "list" if listed else "autocomplete",
-                           "locked": False, "values": sorted(seen) if listed else [],
-                           "sort": False, "cluster": listed})
 
     nodes = [{"_id": f'node-{i}', "position": {"x": x, "y": y}, "pinned": True,
               "style": {}, "element": f'elem-{i}'}
@@ -674,10 +676,6 @@ def project(cld, refs, actors, template, version):
         map_loops.append({"_id": f'mloop-{loop["id"]}', "loop": f'loop-{loop["id"]}', "style": {},
                           "position": {"x": round(sum(by_id[i]["x"] for i in path) / len(path)),
                                        "y": round(sum(by_id[i]["y"] for i in path) / len(path))}})
-    description = (f"Model version {version}, the first seven characters of the SHA-256 of cld.json. "
-                   "A copy for milestones: the current model is the page "
-                   f"{PAGES_URL}, built from "
-                   "https://github.com/jordyzuidam2003-bot/zeeland-cld.")
     # a showcase button per named loop: its elements and links (Kumu's :loop selector, by the
     # loop's label), and the regions, which a showcase fades unless it selects them
     label = {loop["id"]: f'{loop["id"]} {loop["name"]}' for loop in cld["loops"]}
@@ -688,11 +686,8 @@ def project(cld, refs, actors, template, version):
     template = template.replace("      /* LOOP OPTIONS */", options)
     style = (template.rstrip() + "\n\n/* ---------- generated by build.py: tints, box sizes, the regions' size ---------- */\n"
              + "\n".join(rules) + "\n")
-    # a restore sets the project's name, so it is the name of the project the group's URL names
     return {
-        "version": 1, "name": "cbp-cld", "description": description, "proxyImages": True,
-        "defaultMap": "map-cld", "defaultPerspective": None, "attributeRelevance": {},
-        "attributes": attributes, "elements": elements, "connections": connections, "loops": loops,
+        "elements": elements, "connections": connections, "loops": loops,
         "maps": [{"_id": "map-cld", "name": f"CLD, model {version}", "description": "", "scale": 1,
                   "center": {"x": 0, "y": 0}, "defaultPerspective": "pers-cld",
                   "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
@@ -703,42 +698,31 @@ def project(cld, refs, actors, template, version):
 
 
 def actors_project(actors, refs, decides, cld_labels, template, version):
-    """The Actor Map as a full Kumu project export, the shape project() gives the CLD: each actor an
-    element with its fields, each relation a connection whose type is its kind, the actors at their
-    places, the relations with their curves, and the level bands as the background image (an
-    element labelled background, as the CLD's regions). The view is src/kumu/actor-map-view.scss plus each
-    kind's colour and dash from draw_actor_map.KIND and each box's size."""
+    """The Actor Map's part of the Kumu project (kumu_project()), as project() gives the CLD's: each
+    actor an element with its fields, its type the CLD's field element type, each relation a
+    connection whose type is its kind, the actors at their places, the relations with their curves,
+    and the level bands as the background image (an element labelled background, as the CLD's
+    regions). The view is src/kumu/actor-map-view.scss with the bands as its background image, plus
+    each kind's colour and dash from draw_actor_map.KIND and each box's size."""
     bxs, rels, _ = draw_actor_map.geometry(actors)
-    _, (fx0, fy0, fx1, fy1) = draw_actor_map.bands_svg(actors)
+    bands, (fx0, fy0, fx1, fy1) = draw_actor_map.bands_svg(actors)
+    template = with_image(template, bands, "actor-map-view.scss")
     elements = [{"_id": f'elem-{a["id"]}', "attributes": {
-        "label": "  ".join(bxs[a["id"]][4]), "type": a["type"], "level": a["level"], "sector": a["sector"],
+        "label": "  ".join(bxs[a["id"]][4]), "element type": a["type"], "level": a["level"], "sector": a["sector"],
         "interest": a["interest"], "influence": a["influence"], "affected": a["affected"],
         "influence score": a["influence score"], "client": a["client"],
         "decides in the CLD": "\n".join(cld_labels[e] for e in decides[a["id"]]),
         "sources": "\n".join(refs[k] for k in a["sources"])}} for a in actors["actors"]]
-    elements.append({"_id": "elem-background", "attributes": {"label": "background"}})
+    # its own id beside the CLD's background, and the same label, which the view's #background selects
+    elements.append({"_id": "elem-actors-background", "attributes": {"label": "background"}})
     connections = [{"_id": f'conn-{r["n"]}', "direction": "directed", "delayed": False, "reversed": False,
                     "attributes": {"connection type": r["kind"], "description": r["description"],
                                    "sources": "\n".join(refs[k] for k in r["sources"])},
                     "from": f'elem-{r["from"]}', "to": f'elem-{r["to"]}'} for r in rels]
-    values = {}
-    for item in [e["attributes"] for e in elements] + [c["attributes"] for c in connections]:
-        for k, v in item.items():
-            values.setdefault(k, set()).add(v)
-    builtin = {"type": "Element Type", "connection type": "Connection Type"}
-    attributes = []
-    for k, seen in values.items():
-        text = k in ("interest", "influence", "affected", "description", "sources", "decides in the CLD")
-        listed = not text and k != "label" and len(seen) <= 20
-        attributes.append({"_id": "attr-" + k.replace(" ", "-"), "name": builtin.get(k, k[0].upper() + k[1:]),
-                           "format": "text" if text else "string", "private": False, "limit": 1,
-                           "category": "General", "prompt": "list" if listed else "autocomplete",
-                           "locked": False, "values": sorted(seen, key=str) if listed else [],
-                           "sort": False, "cluster": listed})
     nodes = [{"_id": f'node-{a["id"]}', "position": {"x": a["x"], "y": a["y"]}, "pinned": True, "style": {},
               "element": f'elem-{a["id"]}'} for a in actors["actors"]]
-    nodes.append({"_id": "node-background", "position": {"x": round((fx0 + fx1) / 2), "y": round((fy0 + fy1) / 2)},
-                  "pinned": True, "style": {}, "element": "elem-background"})
+    nodes.append({"_id": "node-actors-background", "position": {"x": round((fx0 + fx1) / 2), "y": round((fy0 + fy1) / 2)},
+                  "pinned": True, "style": {}, "element": "elem-actors-background"})
     edges = [{"_id": f'edge-{r["n"]}', "curvature": r["curvature"], "style": {}, "connection": f'conn-{r["n"]}'}
              for r in rels]
     rules = ([f'["connection type"="{k}"] {{ color: {c}; style: {"dashed" if d else "solid"}; }}'
@@ -747,18 +731,57 @@ def actors_project(actors, refs, decides, cld_labels, template, version):
              + [f'#background {{ width: {round(fx1 - fx0)}; height: {round(fy1 - fy0)}; }}'])
     style = (template.rstrip() + "\n\n/* ---------- generated by build.py: the kinds' look, box sizes, the bands' size ---------- */\n"
              + "\n".join(rules) + "\n")
-    description = (f"Actor Map version {version}, the first seven characters of the SHA-256 of actor-map.json. "
-                   "A copy for milestones: the current Actor Map is the page "
-                   f"{PAGES_URL}actors.html, built from https://github.com/jordyzuidam2003-bot/zeeland-cld.")
     return {
-        "version": 1, "name": "cbp-actors", "description": description, "proxyImages": True,
-        "defaultMap": "map-actors", "defaultPerspective": None, "attributeRelevance": {},
-        "attributes": attributes, "elements": elements, "connections": connections, "loops": [],
+        "elements": elements, "connections": connections, "loops": [],
         "maps": [{"_id": "map-actors", "name": f"Actor Map, version {version}", "description": "", "scale": 1,
                   "center": {"x": 0, "y": 0}, "defaultPerspective": "pers-actors",
                   "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
                   "elements": nodes, "connections": edges, "loops": []}],
         "perspectives": [{"_id": "pers-actors", "name": "Actor Map", "style": style}],
+    }
+
+
+# the fields whose values are prose: free text in Kumu, never a list to pick from
+TEXT_FIELDS = {"description", "simplification", "sources", "interest", "influence", "affected", "decides in the CLD"}
+# Kumu's own type fields are spelled this way; "Connection type" would be a second field
+BUILTIN_FIELDS = {"element type": "Element Type", "connection type": "Connection Type"}
+
+
+def fields(items):
+    """Kumu's fields for the attributes of items, every element and link of both maps: one per name,
+    its _id attr- and the name in lower case with hyphens, a drop-down list of the values of both
+    maps where they are 20 or fewer, else autocomplete."""
+    values = {}
+    for item in items:
+        for k, v in item.items():
+            values.setdefault(k, set()).add(v)
+    attributes = []
+    for k, seen in values.items():
+        name = BUILTIN_FIELDS.get(k, k[0].upper() + k[1:])
+        text = k in TEXT_FIELDS
+        listed = not text and k != "label" and len(seen) <= 20
+        attributes.append({"_id": "attr-" + name.lower().replace(" ", "-"), "name": name,
+                           "format": "text" if text else "string", "private": False, "limit": 1,
+                           "category": "General", "prompt": "list" if listed else "autocomplete",
+                           "locked": False, "values": sorted(seen, key=str) if listed else [],
+                           "sort": False, "cluster": listed})
+    return attributes
+
+
+def kumu_project(cld_part, actors_part, version, actors_version):
+    """The Kumu project, a full project export in the shape of Kumu's own "Export JSON": the CLD's
+    part (project()) and the Actor Map's (actors_project()) as maps of one project, the CLD's the
+    default. The description names both versions and links to neither the page nor the repository:
+    outsiders see only Kumu and the submissions (Jordy's decision, in ChallengeBasedProject1/.claude/CLAUDE.md)."""
+    parts = [cld_part, actors_part]
+    description = (f"Model version {version}, the first seven characters of the SHA-256 of cld.json.\n\n"
+                   f"Actor Map version {actors_version}, the first seven characters of the SHA-256 of actor-map.json.")
+    # a restore sets the project's name, so it is the name of the project the group's URL names
+    return {
+        "version": 1, "name": "cbp-cld", "description": description, "proxyImages": True,
+        "defaultMap": "map-cld", "defaultPerspective": None, "attributeRelevance": {},
+        "attributes": fields([x["attributes"] for p in parts for x in p["elements"] + p["connections"]]),
+        **{k: [x for p in parts for x in p[k]] for k in ("elements", "connections", "loops", "maps", "perspectives")},
     }
 
 
@@ -809,17 +832,15 @@ def main():
     decides = decisions(cld, actors)
     cld_labels = {e["id"]: e["label"] for e in cld["elements"]}
     outputs = {
-        "kumu/cld-project.json": json.dumps(project(cld, refs, actors, template, version), indent=2, ensure_ascii=False) + "\n",
+        "kumu/kumu-project.json": json.dumps(kumu_project(
+            project(cld, refs, actors, template, version),
+            actors_project(actors, refs, decides, cld_labels, (KUMU / "actor-map-view.scss").read_text(), actors_version),
+            version, actors_version), indent=2, ensure_ascii=False) + "\n",
         "actors.html": draw_actor_map.page(actors, refs, decides, cld_labels, actors_version, (TEMPLATES / "actors.html").read_text()),
         "assets/actors.js": (TEMPLATES / "actors.js").read_text(),
         "figures/actor-map.svg": draw_actor_map.svg(actors),
-        "actors-bands.svg": draw_actor_map.bands_svg(actors)[0],
-        "kumu/actor-map-project.json": json.dumps(actors_project(actors, refs, decides, cld_labels,
-                                                         (KUMU / "actor-map-view.scss").read_text(), actors_version),
-                                          indent=2, ensure_ascii=False) + "\n",
         "tables/actor-map-table.xlsx": write_xlsx.workbook(draw_actor_map.sheets(actors, refs, decides, cld_labels)),
         "figures/cld.svg": draw_cld.svg(cld),
-        "regions.svg": draw_cld.regions_svg(cld)[0],
         "index.html": page(cld, refs, actors, version, loops),
         "tables/cld-table.xlsx": write_xlsx.workbook(table_sheets(cld, refs, actors)),
         "assets/app.js": (TEMPLATES / "app.js").read_text(),
@@ -828,10 +849,6 @@ def main():
         **{f"figures/named-loops/{loop['id']}.svg": draw_cld.loop_figure(cld, loop) for loop in cld["loops"]},
         **{f"figures/combined-loops/{g['id']}.svg": draw_cld.group_figure(cld, g) for g in cld.get("groups", [])},
     }
-    # Kumu shows regions.svg stretched to the frame: with a viewBox alone a browser sizes it 250 by
-    # 150 pixels, which Kumu blurred (draw_cld.regions_svg())
-    if not re.match(r'<svg [^>]*\bwidth="\d+" height="\d+"', outputs["regions.svg"]):
-        sys.exit("docs/regions.svg needs a width and a height besides its viewBox: draw_cld.regions_svg() writes them")
     # a figure whose loop is gone or renamed would stay published
     extra = sorted(f"{d}/{f.name}" for d in ("figures/named-loops", "figures/combined-loops") if (DOCS / d).is_dir()
                    for f in (DOCS / d).glob("*") if f"{d}/{f.name}" not in outputs)

@@ -29,7 +29,7 @@
 
 /* ---------- Elements: the page's look, values from draw_cld.py ---------- */
 /* each box's fill (its SETS domain's tint, draw_cld.py's TINT), width and height are rules
-   build.py generates below this view in docs/kumu/cld-project.json. Kumu draws text at about 0.6 of
+   build.py generates below this view in docs/kumu/kumu-project.json. Kumu draws text at about 0.6 of
    its font-size in map units, so each font-size is the page's x 1.5, to fill the box
    draw_cld.py fits */
 /* pill: Kumu's rectangle with rounded corners */
@@ -61,10 +61,12 @@ element {
 
 /* ---------- Regions: the page's two subsystem regions as a background image ---------- */
 /* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,
-   pinned at the centre of the regions' frame, and its width and height, the frame's. A showcase
-   fades all it does not select, so every showcase option above selects #background too */
+   pinned at the centre of the regions' frame, and its width and height, the frame's, and puts the
+   regions in place of IMAGE, as a data URL of the SVG it draws, so the image travels inside the
+   project file. A showcase fades all it does not select, so every showcase option above selects
+   #background too */
 #background {
-  image-url: url(https://jordyzuidam2003-bot.github.io/zeeland-cld/regions.svg);
+  image-url: url(IMAGE);
   layer: background;
   shape: rectangle;
   color: transparent;

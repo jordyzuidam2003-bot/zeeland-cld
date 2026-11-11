@@ -402,7 +402,7 @@
   ]
  },
  "kaandorp-2022": {
-  "digest": "efbaaebc796a",
+  "digest": "b9a7579a251c",
   "note": "UCUZ55BX",
   "placed": [
    "Actor Map",
@@ -797,14 +797,14 @@
   ]
  },
  "scheldestromen-2021-hor-duiveland": {
-  "digest": "7d42a90c6758",
+  "digest": "cb1bdffcfc2d",
   "note": "QUFF4FFH",
   "placed": [
    "CLD"
   ]
  },
  "scheldestromen-2021-hor-schouwen": {
-  "digest": "eb016aee32e6",
+  "digest": "ca7ba35b09d7",
   "note": "WX6WV3N8",
   "placed": [
    "CLD"
@@ -853,6 +853,13 @@
  "scheldestromen-2026-informatieavond-duiveland": {
   "digest": "9b2aec08e7fe",
   "note": "GPVPDJ33",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "scheldestromen-2026-jaarverslaggeving": {
+  "digest": "d0f6a223c0c5",
+  "note": "8JI7KJVJ",
   "placed": [
    "CLD"
   ]
@@ -935,7 +942,7 @@
   ]
  },
  "van-beekom-1953": {
-  "digest": "b525202c04fd",
+  "digest": "413badcfc19a",
   "note": "9M27AI9Z",
   "placed": [
    "CLD"
@@ -1009,7 +1016,7 @@
   ]
  },
  "verstand-2021": {
-  "digest": "851b53211fbb",
+  "digest": "c2a6622702b0",
   "note": "3TC36KKG",
   "placed": [
    "CLD"

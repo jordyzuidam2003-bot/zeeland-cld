@@ -292,7 +292,9 @@ python3 ../../.claude/skills/zotero/zotero.py push ChallengeBasedProject1 "CLD a
 `push` records each note it wrote and each subcollection it put an item into in
 `references.zotero.json`, committed with it; it never takes an item out of a collection, so what
 anyone adds, moves or removes there stays. `diff` with the same arguments lists what changed there, with who and when, for Jordy to take
-into `references.json` or not.
+into `references.json` or not. A session runs it after every push and puts each line to Jordy: an
+item `push` finds held outside CLD and Actor Map it leaves where it is, printing "held outside",
+and only `diff` keeps listing it.
 
 ### The Actor Map
 

@@ -3835,5 +3835,25 @@
     },
     "title": "The EBA second mandatory exercise on Basel III full implementation shows a significantly reduced impact on EU banks with shortfalls nearly fully absorbed",
     "URL": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-second-mandatory-exercise-basel-iii-full-implementation"
+  },
+  {
+    "id": "hortidaily-used-machinery",
+    "type": "article-newspaper",
+    "author": [
+      {
+        "literal": "HortiDaily"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          1,
+          7
+        ]
+      ]
+    },
+    "title": "Switching to another crop is possible with used machinery",
+    "URL": "https://www.hortidaily.com/article/6005363/switching-to-another-crop-is-possible-with-used-machinery/"
   }
 ]

@@ -869,8 +869,11 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "What farms invest in carrying on with their current crops: wells and irrigation, drains, new machines and storage.",
-      "sources": [],
+      "description": "What farms invest a year in carrying on with their current crops: wells and irrigation, drains, new machines and stores. On Dutch arable farms the main category of investment is machines, implements and installations (van der Meulen et al., 2020, p. 19, from national farm accounts); in Zeeland groundwater may be pumped only through a horizontal well (Kaandorp et al., 2022, p. 26), which costs €25,000 to €40,000 (p. 49); and most farmers on the island's eastern creek ridges have drains in part of their fields (p. 38). An Auxiliary: a year's spending, what it buys accumulating in Machines and storage for the current crops.",
+      "sources": [
+        "van-der-meulen-2020",
+        "kaandorp-2022"
+      ],
       "x": 1831,
       "y": 310,
       "actor": "arable-farmers"
@@ -1508,8 +1511,11 @@
       "to": "farm-revenue",
       "polarity": "-",
       "delay": false,
-      "description": "A farm pays for its own pumping, part of its costs.",
-      "sources": [],
+      "description": "A farm pays for its own pumping, and income is what is left of revenue after the costs paid and depreciation (Verhagen et al., 2018, p. 21, from national farm accounts). In the cost study for the island's farms, one irrigation gift of 20–25 mm by reel costs about €200, and surface drip irrigation €1,000 a hectare (Kaandorp et al., 2022, p. 35), figures the study takes from earlier work, not measured on the island. Within the year.",
+      "sources": [
+        "verhagen-2018",
+        "kaandorp-2022"
+      ],
       "curvature": -0.21
     },
     {
@@ -1875,8 +1881,10 @@
       "to": "farmers-capacity-to-invest",
       "polarity": "-",
       "delay": false,
-      "description": "What a storage measure costs comes out of the money left to invest.",
-      "sources": [],
+      "description": "What a storage measure costs comes out of the money left to invest: its investment in the year it is built, and its upkeep and energy each year it runs. For the island's farms, from a drainage firm's quotes at 2021 prices, anti-salinisation drainage costs about €2,500 a hectare over a life of 15 years, and double drainage €6,000 a hectare to collect the water, with €12,500 to €25,000 for a pump to a basin and €1.80 to €4.00 per m³ for the basin (Kaandorp et al., 2022, pp. 33–34); the creek-ridge infiltration system designed for a cluster of farms on the island's eastern creek ridges, €140,000 to €200,000, written off over about 15 years (p. 50). A year's running costs, figures the study takes from earlier studies, run from €50 for a weir (p. 19) to €1,440 in electricity for a creek-ridge infiltration system (p. 20). The study finds the investment costs high, and for many farms too risky to bear alone (pp. 4–5). Within the year it is built.",
+      "sources": [
+        "kaandorp-2022"
+      ],
       "curvature": 0.32
     },
     {
@@ -1968,8 +1976,12 @@
       "to": "farmers-capacity-to-invest",
       "polarity": "-",
       "delay": false,
-      "description": "Switching costs (machines, the first years of a new crop) come out of the money left to invest.",
-      "sources": [],
+      "description": "What a switch costs comes out of the money left to invest, in the year a field changes crop. Switching tends to be costly, its investments weighed against the chance that the new crop pays more than the current one, says a dealer in used machinery for greenhouses and open fields (HortiDaily, 2014), and for Dutch arable farms the investments or the time needed to change their operations leave little room to take on climate and biodiversity (Polman et al., 2026, p. 4). What a switch costs depends on the crop: quinoa is sown with standard equipment and harvested with a combine (van Loo, 2023, p. 75). No source read gives what a switch costs on the island. Within the year.",
+      "sources": [
+        "hortidaily-used-machinery",
+        "polman-2026",
+        "van-loo-2023"
+      ],
       "curvature": -0.07
     },
     {
@@ -2104,8 +2116,11 @@
       "to": "farmers-capacity-to-invest",
       "polarity": "-",
       "delay": false,
-      "description": "What it spends there is not left for other uses.",
-      "sources": [],
+      "description": "What a farm spends on carrying on with its current crops is not left for other uses, in the year it is spent: a horizontal well, the only kind allowed in Zeeland, costs €25,000 to €40,000 (Kaandorp et al., 2022, pp. 26, 49), and irrigation systems cost relatively much to install, not always within a farmer's reach (Verhagen et al., 2018, p. 28). Within the year.",
+      "sources": [
+        "kaandorp-2022",
+        "verhagen-2018"
+      ],
       "curvature": -0.07
     },
     {

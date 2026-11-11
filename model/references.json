@@ -2410,6 +2410,25 @@
     "URL": "https://lokaleregelgeving.overheid.nl/CVDR752667/2"
   },
   {
+    "id": "scheldestromen-2026-jaarverslaggeving",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "year-suffix": "e",
+    "title": "Jaarverslaggeving 2025",
+    "URL": "https://scheldestromen.begrotingsapp.nl/Data/d1712ddb-6ca4-4e01-97c7-14c9adaca31c/Public/jaarverslaggeving-2025.pdf"
+  },
+  {
     "id": "reimerswaal-2025-intentieovereenkomst",
     "type": "report",
     "author": [

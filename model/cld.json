@@ -635,11 +635,25 @@
       "sets domain": "Social",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "What Waterschap Scheldestromen spends on its pumping stations to hold the polders' ditch levels: more water to pump the deeper it drains, the more seepage and winter rain come in and the lower the land lies.",
-      "sources": [],
+      "description": "What Waterschap Scheldestromen spends on electricity for the pumping stations that hold the polders' ditch levels, by pumping out the water that reaches the ditches. Every polder on the island is pumped: on Schouwen all water flows to two pumping stations, which pump it over the dike into the Oosterschelde and the Grevelingen (Waterschap Scheldestromen, 2021b, p. 24); low-lying Duiveland has a pumping station for each of its five drainage areas (2021a, p. 21). Across the board's area the cost follows the water pumped: in the dry year 2025 its water systems spent €1.1 million less on electricity than budgeted, for the drought (2026e, p. 18), and for 2026 it budgets about €4.8 million for the electricity of its sewage and polder pumping stations together, which extreme rain can raise by up to 25% (p. 55). No source read gives the island's share. A year's spending: an Auxiliary.",
+      "sources": [
+        "scheldestromen-2021-hor-schouwen",
+        "scheldestromen-2021-hor-duiveland",
+        "scheldestromen-2026-jaarverslaggeving"
+      ],
       "x": -1241,
       "y": -745,
-      "simplification": "Draws only the water coming in: Saline seepage and Winter rain drained away, which Polder drainage depth and Polder surface elevation already drive with the same sign, so every loop keeps its polarity. What it leaves out: how high the water is lifted, which the ditch level and the land's elevation also set, stays in this description, with no link of its own."
+      "simplification": "Draws only the water coming in: Saline seepage and Winter rain drained away, which Polder drainage depth and Polder surface elevation already drive with the same sign, so every loop keeps its polarity. What it leaves out: how high the water is lifted, on which no source read shows the costs depending.",
+      "ask actors": [
+        {
+          "actor": "waterschap-scheldestromen",
+          "for": "What its pumping stations on the island use in electricity a year, how much of the water they pump is seepage and how much rain, and how far the cost depends on how high they lift it: it measures the discharge at each pumping station (Waterschap Scheldestromen, 2021a, p. 23).",
+          "through": [
+            "DCC",
+            "Living Lab"
+          ]
+        }
+      ]
     },
     {
       "id": "water-board-levy-on-farmland",
@@ -1230,8 +1244,10 @@
       "to": "crop-yield",
       "polarity": "+",
       "delay": false,
-      "description": "Good soil structure lets roots grow and crops emerge.",
-      "sources": [],
+      "description": "A seedbed in soil with its structure lets the crops germinate better, with less resowing, and yields rise, most for crops sensitive to structure: on flooded clay in Zeeland, plots whose structure gypsum restored yielded up to 15% more sugar beet, 8% more onions and, on heavy clay, up to twice the summer barley, while cereals on light soil gained little (van Beekom et al., 1953b, p. 234, Table 9). Part of the gain is the longer time to work the soil, the link through Spring workability of the fields. Within the year.",
+      "sources": [
+        "van-beekom-1953"
+      ],
       "curvature": -0.22
     },
     {
@@ -1540,8 +1556,10 @@
       "to": "spring-workability-of-the-fields",
       "polarity": "+",
       "delay": false,
-      "description": "A soil with good structure carries machinery sooner after rain.",
-      "sources": [],
+      "description": "Clay that has lost its structure stays wet long into spring, so it can be worked only late and the time to make a seedbed is very short; restored with gypsum, it dries sooner and can be worked for a longer period (van Beekom et al., 1953b, pp. 233–234, on clay in Zeeland, Schouwen-Duiveland among it, flooded by the sea in 1944–45, the sodium breaking down the structure as in Clay dispersion & sodification). Within the year.",
+      "sources": [
+        "van-beekom-1953"
+      ],
       "curvature": 0.07
     },
     {
@@ -1561,8 +1579,10 @@
       "to": "crop-yield",
       "polarity": "+",
       "delay": false,
-      "description": "Fields that can be worked in time are planted and harvested in time.",
-      "sources": [],
+      "description": "Fields that cannot be worked in time are planted late: a later planting date can shorten the potato's growing season, since later in the season it is often too wet to harvest, and where blight cannot be controlled, as in organic farming, it costs yield, so an early date is preferred where the soil allows (Verstand et al., 2021, p. 25, from the Dutch cultivation guides, for the Netherlands). No source read shows it for onions or sugar beet. Within the year.",
+      "sources": [
+        "verstand-2021"
+      ],
       "curvature": -0.32
     },
     {
@@ -1682,8 +1702,13 @@
       "to": "water-board-pumping-costs",
       "polarity": "+",
       "delay": false,
-      "description": "Seepage water has to be pumped out too.",
-      "sources": [],
+      "description": "Seepage that reaches the ditches is pumped out with the rain: across most of Duiveland the waterways catch salt or brackish seepage from below (Waterschap Scheldestromen, 2021a, p. 20); Schouwen's water comes mainly from rain and partly from seepage, strongest at its edges and in the low inlagen (2021b, pp. 25–26), all of it flowing to the pumping stations (2021b, p. 24; 2021a, p. 21); and the low western polders, under seepage, drain their brackish to salt water through pumping stations (Kaandorp et al., 2022, p. 27). The board's electricity follows the water pumped (Waterschap Scheldestromen, 2026e, p. 18), so more seepage costs more, within the year. No source read gives seepage's share of the water pumped on the island.",
+      "sources": [
+        "scheldestromen-2021-hor-duiveland",
+        "scheldestromen-2021-hor-schouwen",
+        "kaandorp-2022",
+        "scheldestromen-2026-jaarverslaggeving"
+      ],
       "curvature": -0.14
     },
     {
@@ -1691,8 +1716,12 @@
       "to": "water-board-pumping-costs",
       "polarity": "+",
       "delay": false,
-      "description": "Winter rain drained away is pumped out of the polder.",
-      "sources": [],
+      "description": "The rain drained from the fields flows to the pumping stations, which pump it over the dike (Waterschap Scheldestromen, 2021b, pp. 24–25; 2021a, p. 21), and the board's electricity follows it: in the dry year 2025 its water systems spent €1.1 million less on electricity than budgeted, for the drought (2026e, p. 18), and extreme rain can raise its pumping stations' electricity by up to 25% (p. 55), across the board's area. Within the year.",
+      "sources": [
+        "scheldestromen-2021-hor-schouwen",
+        "scheldestromen-2021-hor-duiveland",
+        "scheldestromen-2026-jaarverslaggeving"
+      ],
       "curvature": 0.22
     },
     {
@@ -2083,8 +2112,10 @@
       "to": "groundwater-extraction-for-irrigation",
       "polarity": "+",
       "delay": false,
-      "description": "Wells and irrigation let a farm pump more.",
-      "sources": [],
+      "description": "A farm pumps groundwater only through a well it has paid for: in Zeeland extraction is allowed only with horizontal wells, from fresh water more than 15 m thick, outside vulnerable areas (Kaandorp et al., 2022, p. 26); on the island's eastern creek ridges some arable farmers have laid a deep drain to take water from the ridge (p. 38) and a livestock farmer irrigates from two (pp. 40, 43), and a horizontal well costs €25,000 to €40,000 (p. 49). Within the year, once the well is in.",
+      "sources": [
+        "kaandorp-2022"
+      ],
       "curvature": 0.04,
       "simplification": "Stands for the whole effect on pumping of a farm's dependence on its current crops, the direct link from Dependence on high-margin salt-sensitive crops folded into this chain: the high-value crops' need for water in a dry spell is in words here. The sign is the chain's (+, then +), so no loop changes its polarity. What it leaves out: a farm that already has wells can irrigate more of a thirsty crop within the year, while the chain runs through the delay on Dependence on high-margin salt-sensitive crops → Spending on keeping the current crops."
     },

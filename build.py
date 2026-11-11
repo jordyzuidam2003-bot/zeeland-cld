@@ -33,6 +33,9 @@ edit docs/, which this script writes:
     docs/tables/actor-map-table.xlsx  the actors' table, which Jordy imports into Google Drive as a
                        Google Sheet: the Actors, Relations, References and Columns sheets
                        (draw_actor_map.sheets()); linked from the Actor Map's page
+    docs/tables/sources-to-ask.xlsx  the sources to ask the actors (ask_sheets()), a row per
+                       `ask actors` entry in cld.json and actor-map.json; linked from the page
+                       beside the table, until its final version goes to the group's Drive
     docs/kumu/kumu-project.json  the Kumu project, a full project export (kumu_project()): restored
                        once into a brand-new Kumu project (New Project > the next screen > restore
                        backup), it holds the full CLD, the Actor Map and a map per combined loop and
@@ -96,6 +99,33 @@ MONTHS = ["January", "February", "March", "April", "May", "June", "July", "Augus
 # the fields build.py lists while empty: a field no source carries stays empty, never a guess
 ACTOR_FIELDS = ["label", "scale", "type", "level", "sector", "interest", "influence", "affected",
                 "influence score", "relations", "sources"]
+# the partners who can put the group in touch with an actor that may hold a missing fact: DCC, and
+# the Living Lab Schouwen-Duiveland (ChallengeBasedProject1/.claude/rules/cld-model.md)
+ASK_THROUGH = ["DCC", "Living Lab"]
+
+
+def ask_errors(item, name, actor_ids):
+    """The errors in an item's `ask actors`, a list of {actor, for, through}: the facts no public
+    source read gives that an actor may know. Absent where nothing is asked, so never empty."""
+    asks = item.get("ask actors")
+    if asks is None:
+        return []
+    if not (isinstance(asks, list) and asks and all(isinstance(a, dict) for a in asks)):
+        return [f"{name}: ask actors must be a list of {{actor, for, through}}; leave the field out where nothing is asked"]
+    errors = []
+    for a in asks:
+        if a.get("actor") not in actor_ids:
+            errors.append(f"{name}: ask actors names {a.get('actor')!r}, not an actor id in actor-map.json")
+        if not (isinstance(a.get("for"), str) and a["for"].strip()):
+            errors.append(f"{name}: ask actors {a.get('actor')!r} needs a for, what is missing in words")
+        if a.get("through") not in ASK_THROUGH:
+            errors.append(f"{name}: ask actors {a.get('actor')!r} through {a.get('through')!r}, not one of {ASK_THROUGH}")
+    return errors
+
+
+def ask_text(item, label):
+    """An item's `ask actors` as one text, an entry per line, as the table and Kumu show it."""
+    return "\n".join(f'{label[a["actor"]]}, through {a["through"]}: {a["for"]}' for a in item.get("ask actors", []))
 
 
 def apa(r):
@@ -192,6 +222,7 @@ def check_actors(actors, refs):
         for key in a.get("sources", []) + [k for r in a.get("relations", []) for k in r.get("sources", [])]:
             if key not in refs:
                 errors.append(f"{name}: source {key!r} is not in references.json")
+        errors += ask_errors(a, name, set(ids))
         missing = [k for k in ACTOR_FIELDS if a.get(k) in ("", None, [])]
         if missing:
             empty[a.get("id", "?")] = missing
@@ -262,13 +293,14 @@ def check(cld, refs, actors):
             errors.append(f"{name}: a hypothesis with sources: a sourced link loses its hypothesis mark")
 
     for item in cld["elements"] + cld["connections"]:
+        name = item.get("id") or item.get("from", "?") + " -> " + item.get("to", "?")
         for key in item.get("sources", []):
             if key not in refs:
                 errors.append(f"source {key!r} is not in references.json")
         # written only where an element or link folds or idealizes something, so never empty
         if "simplification" in item and not (isinstance(item["simplification"], str) and item["simplification"].strip()):
-            errors.append(f"{item.get('id') or item.get('from', '?') + ' -> ' + item.get('to', '?')}: "
-                          "simplification must be a text; leave the field out where nothing is simplified")
+            errors.append(f"{name}: simplification must be a text; leave the field out where nothing is simplified")
+        errors += ask_errors(item, name, actor_ids)
 
     sign = {(c["from"], c["to"]): c["polarity"] for c in cld["connections"]}
     for loop in cld["loops"]:
@@ -425,6 +457,8 @@ def blueprint(cld, refs, actors):
             item["actor"] = actor_label[e["actor"]]
         # ... and the actors that decide or shape it, as one text, which a Kumu field holds
         item["actors"] = ", ".join(actor_label[a] for a in shaped[e["id"]])
+        if "ask actors" in e:  # the facts an actor may hold, one text, as the actors
+            item["ask actors"] = ask_text(e, actor_label)
         item.update(sourced(e))
         elements.append(item)
 
@@ -444,6 +478,7 @@ def blueprint(cld, refs, actors):
             "sets scope": "Within domain" if sa == sb else "Cross-domain",
             "hypothesis": "yes" if c.get("hypothesis") else "no",
             **({"simplification": c["simplification"]} if "simplification" in c else {}),
+            **({"ask actors": ask_text(c, actor_label)} if "ask actors" in c else {}),
             **sourced(c),
         })
     return {"elements": elements, "connections": connections}
@@ -583,16 +618,17 @@ def table_sheets(cld, refs, actors):
     elements = sorted(cld["elements"], key=lambda e: (order.index(e["subsystem"]), e["label"].lower()))
     links = sorted(cld["connections"], key=lambda c: (els[c["from"]]["label"].lower(), els[c["to"]]["label"].lower()))
     sheets = [
-        ("Elements", [28, 11, 13, 20, 90, 60, 24, 30, 36],
+        ("Elements", [28, 11, 13, 20, 90, 60, 24, 30, 36, 40],
          [["Element", "Type", "SETS domain", "Subsystem", "Description", "Simplification", "Decided by", "Actors",
-           "Sources"]]
+           "Sources", "Ask actors"]]
          + [[e["label"], e["element type"], e["sets domain"], e["subsystem"], e["description"],
              e.get("simplification", ""), label[e["actor"]] if "actor" in e else "",
-             "\n".join(label[a] for a in shaped[e["id"]]), sources(e)] for e in elements]),
-        ("Links", [28, 28, 9, 7, 90, 60, 36],
-         [["From", "To", "Polarity", "Delay", "Description", "Simplification", "Sources"]]
+             "\n".join(label[a] for a in shaped[e["id"]]), sources(e), ask_text(e, label)] for e in elements]),
+        ("Links", [28, 28, 9, 7, 90, 60, 36, 40],
+         [["From", "To", "Polarity", "Delay", "Description", "Simplification", "Sources", "Ask actors"]]
          + [[els[c["from"]]["label"], els[c["to"]]["label"], "+" if c["polarity"] == "+" else "−",
-             "yes" if c["delay"] else "no", c["description"], c.get("simplification", ""), sources(c)] for c in links]),
+             "yes" if c["delay"] else "no", c["description"], c.get("simplification", ""), sources(c),
+             ask_text(c, label)] for c in links]),
         ("Named loops", [6, 34, 12, 70, 80],
          [["Loop", "Name", "Kind", "Its elements, in order", "Description"]]
          + [[L["id"], L["name"], "Reinforcing" if L["id"].startswith("R") else "Balancing",
@@ -605,6 +641,23 @@ def table_sheets(cld, refs, actors):
     sheets.append(("References", [120], [["Reference"]]
                    + [[r] for r in sorted((c[2] for c in cites.values()), key=str.lower)]))
     return sheets
+
+
+def ask_sheets(cld, actors):
+    """[(name, widths, rows)] for docs/tables/sources-to-ask.xlsx, the list Jordy and Lenne contact
+    the actors from: a row per `ask actors` entry of cld.json's elements and links and of
+    actor-map.json's actors (the element, link or actor; what is missing; the actor; through whom),
+    by partner and then by actor, so each contact's questions sit together, and within an actor in
+    the model's order. One record, the model's, so the list cannot drift from it (Jordy's decision,
+    cld-model.md)."""
+    els = {e["id"]: e for e in cld["elements"]}
+    label = {a["id"]: a["label"] for a in actors["actors"]}
+    items = ([(e["label"], e) for e in cld["elements"]]
+             + [(f'{els[c["from"]]["label"]} → {els[c["to"]]["label"]}', c) for c in cld["connections"]]
+             + [(a["label"], a) for a in actors["actors"]])
+    rows = [[what, a["for"], label[a["actor"]], a["through"]] for what, item in items for a in item.get("ask actors", [])]
+    rows.sort(key=lambda r: (ASK_THROUGH.index(r[3]), r[2].lower()))  # stable: the model's order within an actor
+    return [("Sources to ask", [36, 90, 30, 12], [["Element, link or actor", "What is missing", "Actor", "Through"]] + rows)]
 
 
 def data_url(svg):
@@ -722,11 +775,13 @@ def actors_project(actors, refs, decides, cld_labels, template):
     bxs, rels, _ = draw_actor_map.geometry(actors)
     bands, (fx0, fy0, fx1, fy1) = draw_actor_map.bands_svg(actors)
     template = with_image(template, bands, "actor-map-view.scss")
+    labels = {a["id"]: a["label"] for a in actors["actors"]}
     elements = [{"_id": f'elem-{a["id"]}', "attributes": {
         "label": "  ".join(bxs[a["id"]][4]), "element type": a["type"], "level": a["level"], "sector": a["sector"],
         "interest": a["interest"], "influence": a["influence"], "affected": a["affected"],
         "influence score": a["influence score"], "client": a["client"],
         "decides in the CLD": "\n".join(cld_labels[e] for e in decides[a["id"]]),
+        **({"ask actors": ask_text(a, labels)} if "ask actors" in a else {}),
         "sources": "\n".join(refs[k] for k in a["sources"])}} for a in actors["actors"]]
     # its own id beside the CLD's background, and the same label, which the view's #background selects
     elements.append({"_id": "elem-actors-background", "attributes": {"label": "background"}})
@@ -757,7 +812,8 @@ def actors_project(actors, refs, decides, cld_labels, template):
 
 
 # the fields whose values are prose: free text in Kumu, never a list to pick from
-TEXT_FIELDS = {"description", "simplification", "sources", "interest", "influence", "affected", "decides in the CLD"}
+TEXT_FIELDS = {"description", "simplification", "sources", "interest", "influence", "affected", "decides in the CLD",
+               "ask actors"}
 # Kumu's own type fields are spelled this way; "Connection type" would be a second field
 BUILTIN_FIELDS = {"element type": "Element Type", "connection type": "Connection Type"}
 
@@ -869,6 +925,7 @@ def main():
         "figures/cld.svg": draw_cld.svg(cld),
         "index.html": page(cld, refs, actors, version, loops),
         "tables/cld-table.xlsx": write_xlsx.workbook(table_sheets(cld, refs, actors)),
+        "tables/sources-to-ask.xlsx": write_xlsx.workbook(ask_sheets(cld, actors)),
         "assets/app.js": (TEMPLATES / "app.js").read_text(),
         "assets/map.js": (TEMPLATES / "map.js").read_text(),
         "assets/style.css": (TEMPLATES / "style.css").read_text(),

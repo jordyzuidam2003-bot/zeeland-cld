@@ -21,7 +21,7 @@ docs/           built by build.py and never edited; GitHub Pages publishes it, a
   figures/      the drawings for the report: the CLD, the Actor Map, each loop on its own
     named-loops/     each named loop
     combined-loops/  each group of named loops
-  tables/       the CLD's and the actors' tables, for Google Sheets
+  tables/       the CLD's and the actors' tables, for Google Sheets, and the sources to ask the actors
   kumu/         the Kumu project export
 hooks/          the pre-commit check
 ```
@@ -46,7 +46,7 @@ the repository's root or `docs/`. `docs/index.html` and `docs/actors.html` stay 
 | `src/draw_cld.py` | draws the CLD's SVG, imported by `build.py` | — |
 | `src/draw_actor_map.py` | draws the Actor Map and lays out its table, imported by `build.py` | — |
 | `src/write_xlsx.py` | writes the table as an `.xlsx` with the standard library | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `actors.html`; `assets/` (`app.js`, `actors.js`, `map.js`, `style.css`); `figures/` (`cld.svg`, `actor-map.svg`, `named-loops/<id>.svg`, `combined-loops/<id>.svg`); `tables/` (`cld-table.xlsx`, `actor-map-table.xlsx`); `kumu/` (`kumu-project.json`) | never: `build.py` writes it |
+| `docs/` | what GitHub Pages serves: `index.html`, `actors.html`; `assets/` (`app.js`, `actors.js`, `map.js`, `style.css`); `figures/` (`cld.svg`, `actor-map.svg`, `named-loops/<id>.svg`, `combined-loops/<id>.svg`); `tables/` (`cld-table.xlsx`, `actor-map-table.xlsx`, `sources-to-ask.xlsx`); `kumu/` (`kumu-project.json`) | never: `build.py` writes it |
 
 ## Version 1
 
@@ -140,11 +140,17 @@ whose link changes, and a Sheet that pulls the table from the page with `IMPORTD
 shows the page's address to anyone who views it). `build.py` writes it from `model/cld.json`, so it
 never drifts from the drawing: the Elements sheet (by subsystem, then by label: type, SETS
 domain, subsystem, description, simplification, the actor that decides it, the actors that
-decide or shape it, sources), the Links sheet (by their ends: polarity, delay, description,
-simplification, sources or that it is a hypothesis), the Named loops sheet (R or B, the elements
+decide or shape it, sources, the facts to ask the actors), the Links sheet (by their ends: polarity, delay,
+description, simplification, sources or that it is a hypothesis, the facts to ask the actors), the Named loops sheet (R or B, the elements
 in order, the description), the Combined loops sheet once `model/cld.json` holds them, and the
 References sheet. The sources are in-text citations, the letter after a year the one
 `year-suffix` sets.
+
+`docs/tables/sources-to-ask.xlsx`, linked from the page beside the table, is the list Jordy and Lenne
+contact the actors from: a row per `ask actors` entry in `model/cld.json` and `model/actor-map.json`
+(the element, link or actor; what is missing; the actor; through whom), by partner and then by
+actor. Its final version goes to the group's Drive, from then on the list's source of truth
+(Jordy's decision): no entry joins `ask actors` after it, and one leaves once its fact is sourced.
 
 ### `model/cld.json`
 
@@ -197,6 +203,13 @@ An element:
   each element no actor decides or shapes directly; the table shows the actors, derived and
   typed, by their labels, and Kumu gets them as a field. It names who shapes the element, never
   whose lever it is.
+- `ask actors` (optional): each fact the element needs that no public source read gives while an
+  actor may know it, a list of `{"actor": <id in model/actor-map.json>, "for": <what is missing,
+  in words>, "through": "DCC" or "Living Lab"}`, the partner who can put the group in touch
+  (Jordy's decision). Organisations only, never a person's name, since this repository is public.
+  `build.py` stops on an actor not in `model/actor-map.json`, an empty `for` and another
+  `through`; the table and Kumu show it, and `docs/tables/sources-to-ask.xlsx` lists every entry
+  (The table). Left out where nothing is asked, never empty.
 - `simplification`: only on an element or a connection that folds or idealizes something (a
   step of a chain folded into a link, several things counted as one), saying what it leaves out
   or distorts and why the loops through it still hold (Jordy; rejected: the field on every
@@ -212,7 +225,7 @@ model building session, shown in the link's panel and in Kumu's fields, never on
 a link that finds a source loses it, and a named loop's or group's description that calls one of its
 links a hypothesis changes with that link's mark in the same commit, since no check reads the prose:
 the descriptions say which links are hypotheses), `simplification` (optional, as on an element),
-`delay at` (optional, set by dragging a delay mark on the page: where on the curve the mark sits, from 0 to 1; without it `build.py` puts the mark at the clearest place along the link, away from other links and boxes and at least 55 units from its sign, Jordy),
+`ask actors` (optional, as on an element), `delay at` (optional, set by dragging a delay mark on the page: where on the curve the mark sits, from 0 to 1; without it `build.py` puts the mark at the clearest place along the link, away from other links and boxes and at least 55 units from its sign, Jordy),
 `curvature` (0 is straight; a positive value bows the link to the left of its direction).
 The drawing runs a link from a point on its source box's edge to one on its target's, the ends
 on one edge spread along it, and puts the sign on the side of the arrowhead clear of boxes.
@@ -285,6 +298,9 @@ Then `actors`, each:
   to them, affect the actor (the guidelines ask how each actor influences the issue and how it is
   affected by it), in words, from sources.
 - `sources`: keys in `model/references.json`, as for the CLD.
+- `ask actors` (optional), as on a CLD element: what no public source read gives about the actor
+  (a relation, a field) while an actor may know it. Kumu shows it, and
+  `docs/tables/sources-to-ask.xlsx` lists it.
 - `x` and `y`: the actor's place on the Actor Map, y downwards; each relation's `curvature`, its
   bow, as a CLD link's. An actor sits in its level's band (`build.py` warns otherwise).
 

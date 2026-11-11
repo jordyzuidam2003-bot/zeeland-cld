@@ -24,7 +24,7 @@ draws them, with its mark, turning clockwise, at the oval's centre.
 group_figure(cld, group) draws one group of named loops (build.py writes docs/groups/<id>.svg): its
 loops' elements and links at the group's own `places` and `bends`, each loop's mark at `marks`.
 
-The link formulas are duplicated in page/app.js (drag mode redraws every link when an element
+The link formulas are duplicated in src/templates/app.js (drag mode redraws every link when an element
 moves): keep link_path(), link_paths(), sign_position() and their JS twins the same.
 """
 
@@ -124,7 +124,7 @@ def inside(p, box):
 
 
 def link_path(a, b, curvature):
-    """The curve from box a's border to box b's border; see the JS twin in page/app.js.
+    """The curve from box a's border to box b's border; see the JS twin in src/templates/app.js.
 
     Control point: the midpoint of the chord between the two centres, moved perpendicular to the
     chord by curvature x chord length, to the left of the direction of travel on the y-down canvas
@@ -181,8 +181,8 @@ def spread(xs, lo, hi, gap):
 
 
 def link_paths(cld, bxs, key=lambda c: (c["from"], c["to"])):
-    """{(from, to): (p0, c, p2)} for every connection; see the JS twin linkPaths() in page/app.js.
-    `key` names each connection in the result: the Actor Map (actormap.py), where two actors can
+    """{(from, to): (p0, c, p2)} for every connection; see the JS twin linkPaths() in src/templates/app.js.
+    `key` names each connection in the result: the Actor Map (draw_actor_map.py), where two actors can
     hold two relations, names each by its place in the list.
 
     Each end starts where link_path() cuts the curve between the two centres; the ends on one
@@ -266,7 +266,7 @@ def sign_position(p0, ctrl, p2, back=SIGN_BACK):
 
 def delay_t(p0, ctrl, p2):
     """Where a delay sits on one curve: at its middle, or on a short link further back, DELAY_CLEAR
-    before the sign, so the two never overlap (Jordy); see the JS twin delayT() in page/app.js."""
+    before the sign, so the two never overlap (Jordy); see the JS twin delayT() in src/templates/app.js."""
     back = SIGN_BACK + DELAY_CLEAR
     mid = bezier(p0, ctrl, p2, 0.5)
     if hypot(mid[0] - p2[0], mid[1] - p2[1]) >= back or hypot(p0[0] - p2[0], p0[1] - p2[1]) < back:

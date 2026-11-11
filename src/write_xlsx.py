@@ -1,7 +1,7 @@
 """Write a spreadsheet as an .xlsx file with the standard library alone, so the repository needs
 nothing installed (README, Setup).
 
-    xlsx.workbook([(name, widths, rows), ...]) -> bytes
+    write_xlsx.workbook([(name, widths, rows), ...]) -> bytes
 
 Each sheet: its name, each column's width in characters, and its rows, the first a header, in
 bold and frozen; a cell is a string (a newline breaks its line) or a number, every cell wrapped and

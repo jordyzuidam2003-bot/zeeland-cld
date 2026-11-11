@@ -5,26 +5,27 @@
     python3 build.py --layout FILE    # write the positions and curvatures of FILE (layout.json,
                                       # downloaded from the page's drag mode) into cld.json, then build
 
-Sources, edited by hand: cld.json (elements, connections, named loops, layout and
-link curvature), actors.json (the Actor Map's actors, their relations and places, the one list the
-CLD's actor fields name), references.json (sources), model-texts.md (the model texts each page shows),
-view.scss and actors-view.scss (the Kumu views inside project.json and actors-project.json) and
-page/ (index.html, a template with the placeholders <!-- SVG -->, <!-- FACTS -->, <!-- TEXTS --> and
-<!-- DATA -->; actors.html, the Actor Map's, with <!-- QUESTION -->, <!-- SVG --> and <!-- DATA -->;
-app.js; actors.js; map.js; style.css). draw.py draws the CLD, actormap.py the Actor Map and its table,
-xlsx.py writes the table's file. Never edit docs/, which this script writes:
+Sources, edited by hand: in model/, cld.json (elements, connections, named loops, layout and
+link curvature), actor-map.json (the Actor Map's actors, their relations and places, the one list the
+CLD's actor fields name), references.json (sources) and cld-texts.md (the model texts each page
+shows); in src/, kumu/cld-view.scss and kumu/actor-map-view.scss (the Kumu views inside project.json
+and actors-project.json) and templates/ (index.html, a template with the placeholders <!-- SVG -->,
+<!-- FACTS -->, <!-- TEXTS --> and <!-- DATA -->; actors.html, the Actor Map's, with <!-- QUESTION -->,
+<!-- SVG --> and <!-- DATA -->; app.js; actors.js; map.js; style.css). src/draw_cld.py draws the CLD,
+src/draw_actor_map.py the Actor Map and its table, src/write_xlsx.py writes the table's file. Never
+edit docs/, which this script writes:
 
     docs/index.html    the page: the template with the drawing inline, the model texts (their
                        numbers counted in the model) and the data as JSON
-    docs/app.js        copied from page/
-    docs/map.js        copied from page/: moving and zooming, the bar and the menu, for both pages
-    docs/style.css     copied from page/
+    docs/app.js        copied from src/templates/
+    docs/map.js        copied from src/templates/: moving and zooming, the bar and the menu, for both pages
+    docs/style.css     copied from src/templates/
     docs/table.xlsx    the table that explains the CLD (table_sheets()), which Jordy imports into
                        Google Drive as a Google Sheet: the Elements, Links, Named loops, Combined
                        loops (once cld.json holds groups) and References sheets; linked from the page
     docs/cld.svg       the drawing on its own, the picture for the report
-    docs/groups/<id>.svg  each group of named loops, its loops joined at their shared variables (draw.group_figure())
-    docs/loops/<id>.svg  each named loop on its own (draw.loop_figure()), its figure for the
+    docs/groups/<id>.svg  each group of named loops, its loops joined at their shared variables (draw_cld.group_figure())
+    docs/loops/<id>.svg  each named loop on its own (draw_cld.loop_figure()), its figure for the
                        report; the page's panel for the loop shows it
     docs/regions.svg   the subsystem regions alone, the background image of the Kumu map
     docs/project.json  a full Kumu project export: restore it into a brand-new Kumu project
@@ -34,12 +35,12 @@ xlsx.py writes the table's file. Never edit docs/, which this script writes:
                        by its URL on the published page); the model version is in the project's
                        description and the map's name
     docs/actors.html   the Actor Map's page: the network inline, a panel per actor and relation
-    docs/actors.js     copied from page/
+    docs/actors.js     copied from src/templates/
     docs/actors.svg    the Actor Map's network on its own, the picture for the report
     docs/actors-bands.svg  its level bands alone, the background image of its Kumu map
     docs/actors-project.json  the Actor Map as a full Kumu project export, restored as project.json is
     docs/actors.xlsx   the actors' table, which Jordy imports into Google Drive as a Google Sheet:
-                       the Actors, Relations, References and Columns sheets (actormap.sheets())
+                       the Actors, Relations, References and Columns sheets (draw_actor_map.sheets())
 """
 
 import argparse
@@ -50,16 +51,22 @@ import re
 import sys
 from pathlib import Path
 
-import actormap
-import draw
-import xlsx
-
 ROOT = Path(__file__).resolve().parent
+# the modules build.py uses live in src/, beside the templates and the Kumu views
+sys.path.insert(0, str(ROOT / "src"))
+
+import draw_actor_map  # noqa: E402
+import draw_cld  # noqa: E402
+import write_xlsx  # noqa: E402
+
 DOCS = ROOT / "docs"
-PAGE = ROOT / "page"
-TEXTS = ROOT / "model-texts.md"
-CLD = ROOT / "cld.json"
-ACTORS = ROOT / "actors.json"
+MODEL = ROOT / "model"
+TEMPLATES = ROOT / "src" / "templates"
+KUMU = ROOT / "src" / "kumu"
+TEXTS = MODEL / "cld-texts.md"
+CLD = MODEL / "cld.json"
+ACTORS = MODEL / "actor-map.json"
+REFERENCES = MODEL / "references.json"
 PAGES_URL = "https://jordyzuidam2003-bot.github.io/zeeland-cld/"
 
 ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
@@ -71,7 +78,7 @@ CONSTANT_REACH = 400  # the most a Constant's box keeps from a box it drives: ab
 # values the group's old Actor Table used, which bind nothing (Jordy: the old table gave the
 # columns only); a relation's kind is one a source names. A new value joins its list once Jordy
 # agrees to it.
-ACTOR_SCALES = ["inside", "outside"]  # by the CLD's boundary test (model-texts.md, System boundary)
+ACTOR_SCALES = ["inside", "outside"]  # by the CLD's boundary test (cld-texts.md, System boundary)
 ACTOR_TYPES = ["Business in the food chain", "Citizens & consumers", "Government", "Farmers' organisation",
                "Water management", "Knowledge institution", "Nature organisation", "Financial institution",
                "Consultancy"]
@@ -137,7 +144,7 @@ def apa(r):
 
 def references():
     """{id: APA line} from references.json, and its errors."""
-    items, refs, errors = json.loads((ROOT / "references.json").read_text()), {}, []
+    items, refs, errors = json.loads(REFERENCES.read_text()), {}, []
     for r in items:
         name = f"references.json: {r.get('id')!r}"
         if not r.get("id") or r["id"] in refs:
@@ -156,14 +163,14 @@ def check_actors(actors, refs):
     """Return (errors, empty): errors stop the build; empty is each actor's fields still empty."""
     errors, empty = [], {}
     ids = [a.get("id") for a in actors["actors"]]
-    errors += [f"actors.json: duplicate actor id {i}" for i in set(ids) if ids.count(i) > 1]
+    errors += [f"actor-map.json: duplicate actor id {i}" for i in set(ids) if ids.count(i) > 1]
     labels = [a.get("label") for a in actors["actors"]]
-    errors += [f"actors.json: duplicate label {l!r}" for l in set(labels) if labels.count(l) > 1]
+    errors += [f"actor-map.json: duplicate label {l!r}" for l in set(labels) if labels.count(l) > 1]
     for k in ("names", "partner", "working title"):
         if k not in actors.get("header", {}):
-            errors.append(f"actors.json: the header has no {k!r}")
+            errors.append(f"actor-map.json: the header has no {k!r}")
     for a in actors["actors"]:
-        name = f"actors.json: {a.get('id', '?')}"
+        name = f"actor-map.json: {a.get('id', '?')}"
         # empty is allowed: the content is filled from sources, and listed until then
         for key, allowed in [("scale", ACTOR_SCALES), ("type", ACTOR_TYPES), ("level", ACTOR_LEVELS),
                              ("sector", ACTOR_SECTORS), ("client", ["yes", "no"])]:
@@ -171,13 +178,13 @@ def check_actors(actors, refs):
                 errors.append(f"{name}: {key} {a.get(key)!r} not in {allowed}")
         if not all(isinstance(a.get(k), (int, float)) for k in ("x", "y")):
             errors.append(f"{name}: x and y must be numbers, its place on the Actor Map")
-        if a.get("level") not in actormap.LEVELS:  # the Actor Map draws a band per level
-            errors.append(f"{name}: level {a.get('level')!r} has no band on the Actor Map: {actormap.LEVELS}")
+        if a.get("level") not in draw_actor_map.LEVELS:  # the Actor Map draws a band per level
+            errors.append(f"{name}: level {a.get('level')!r} has no band on the Actor Map: {draw_actor_map.LEVELS}")
         if a.get("influence score") not in [1, 2, 3, 4, 5, None]:
             errors.append(f"{name}: influence score {a.get('influence score')!r} must be 1 (little) to 5, or null")
         for r in a.get("relations", []):
             if r.get("to") not in ids or r.get("to") == a.get("id"):
-                errors.append(f"{name}: a relation to {r.get('to')!r}, which is not another actor in actors.json")
+                errors.append(f"{name}: a relation to {r.get('to')!r}, which is not another actor in actor-map.json")
             if r.get("kind") not in RELATION_KINDS:
                 errors.append(f"{name}: relation kind {r.get('kind')!r} not in {RELATION_KINDS}")
             if not isinstance(r.get("curvature"), (int, float)):
@@ -212,20 +219,20 @@ def check(cld, refs, actors):
             errors.append(f"duplicate element id {name}")
         els[name] = e
         for key, allowed in [("element type", ELEMENT_TYPES), ("sets domain", list(SETS_LETTER)),
-                             ("subsystem", list(draw.REGION)), ("subquestion", SUBQUESTIONS)]:
+                             ("subsystem", list(draw_cld.REGION)), ("subquestion", SUBQUESTIONS)]:
             if e.get(key) not in allowed:
                 errors.append(f"{name}: {key} {e.get(key)!r} not in {allowed}")
         if not isinstance(e.get("adaptive practice"), bool):
             errors.append(f"{name}: adaptive practice must be true/false")
         if not all(isinstance(e.get(k), (int, float)) for k in ("x", "y")):
             errors.append(f"{name}: x and y must be numbers")
-        # a decision variable names the one actor that decides it, by its id in actors.json
+        # a decision variable names the one actor that decides it, by its id in actor-map.json
         if "actor" in e and e["actor"] not in actor_ids:
-            errors.append(f"{name}: actor {e['actor']!r} is not an actor id in actors.json")
+            errors.append(f"{name}: actor {e['actor']!r} is not an actor id in actor-map.json")
         # the actors outside the scale that shape it directly, each from a source; an actor inside
         # the scale is derived from the links (element_actors())
         if not isinstance(e.get("actors", []), list) or any(a not in actor_ids for a in e.get("actors", [])):
-            errors.append(f"{name}: actors must be a list of actor ids in actors.json, got {e.get('actors')!r}")
+            errors.append(f"{name}: actors must be a list of actor ids in actor-map.json, got {e.get('actors')!r}")
         else:
             errors += [f"{name}: actors names {a}, inside the scale: an inside actor is derived from the links"
                        for a in e.get("actors", []) if scale[a] == "inside"]
@@ -319,7 +326,7 @@ def check(cld, refs, actors):
                 errors.append(f"group {name}: its loops share no variable with the others")
             # its figure's places are its own, so a loop changed on its path leaves one out or one over
             want = {"places": set().union(*(paths[m] for m in members)), "marks": set(members),
-                    "bends": {f"{a} -> {b}" for a, b in draw.group_links(cld, group)}}
+                    "bends": {f"{a} -> {b}" for a, b in draw_cld.group_links(cld, group)}}
             for field, keys in want.items():
                 have = set(group.get(field, {}))
                 if have != keys:
@@ -350,7 +357,7 @@ def check(cld, refs, actors):
         warnings += [f"{c['from']} -> {c['to']}: a Constant's link, yet bent (curvature {c['curvature']})"
                      for c in cld["connections"] if c["from"] in constant and c["curvature"] != 0]
         # ... and it sits beside what it drives (Jordy's decision), so its link reads as its own.
-        bxs = draw.boxes(cld)
+        bxs = draw_cld.boxes(cld)
         for c in cld["connections"]:
             if c["from"] in constant:
                 a, b = bxs[c["from"]], bxs[c["to"]]
@@ -359,21 +366,21 @@ def check(cld, refs, actors):
                     warnings.append(f"{c['from']} -> {c['to']}: a Constant {gap:.0f} from what it drives, "
                                     f"more than {CONSTANT_REACH}")
         # Every other link has some bend (Jordy), so a reader can follow it; under 0.03 reads as
-        # straight, the bend page/app.js keeps a dragged link from going below.
+        # straight, the bend src/templates/app.js keeps a dragged link from going below.
         warnings += [f"{c['from']} -> {c['to']}: not a Constant's link, yet straight (curvature {c['curvature']})"
                      for c in cld["connections"] if c["from"] not in constant and abs(c["curvature"]) < 0.03]
         # A delay is a claim about duration, so its description names one (a number: years, m per decade).
         warnings += [f"{c['from']} -> {c['to']}: a delay, yet its description gives no duration"
                      for c in cld["connections"] if c["delay"] and not any(ch.isdigit() for ch in c["description"])]
         for group in cld.get("groups", []):
-            crossings, through = draw.tangles(draw.group_cld(cld, group))
+            crossings, through = draw_cld.tangles(draw_cld.group_cld(cld, group))
             if crossings or through:
                 warnings.append(f"group {group['id']}: its figure has {len(crossings)} crossings and {len(through)} links through a box")
         # The CLD describes mechanisms and is shaped for no lever set, so no element, link or loop names one.
         warnings += [f"{item.get('id') or item['from'] + ' -> ' + item['to']}: names a policy lever"
                      for item in cld["elements"] + cld["connections"] + cld["loops"] + cld.get("groups", [])
                      if re.search(r"\b(levers?|buy-?outs?|land bank)\b", item["description"], re.I)]
-        warnings += draw.overlaps(cld)
+        warnings += draw_cld.overlaps(cld)
     return errors, warnings
 
 
@@ -475,7 +482,7 @@ def core(cld):
 
 
 def counts(cld, loops):
-    """The numbers model-texts.md names in braces, counted in the model."""
+    """The numbers cld-texts.md names in braces, counted in the model."""
     inner = core(cld)
     links = sum(c["from"] in inner and c["to"] in inner for c in cld["connections"])
     rest = [e for e in cld["elements"] if e["id"] not in inner]
@@ -489,7 +496,7 @@ def counts(cld, loops):
 
 
 def inline(text):
-    """A line of model-texts.md as HTML: **strong**, *em*, `code`, and bare URLs as links."""
+    """A line of cld-texts.md as HTML: **strong**, *em*, `code`, and bare URLs as links."""
     text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"\*(.+?)\*", r"<em>\1</em>", text)
@@ -498,7 +505,7 @@ def inline(text):
 
 
 def model_texts(cld, loops):
-    """(facts, texts): model-texts.md as HTML, its numbers counted in the model. The facts are
+    """(facts, texts): cld-texts.md as HTML, its numbers counted in the model. The facts are
     the list before its first heading; the texts are its sections, each a ## heading with
     paragraphs or a - list. A <!-- comment --> is not shown."""
     text = re.sub(r"<!--.*?-->\n?", "", TEXTS.read_text(), flags=re.S)
@@ -508,7 +515,7 @@ def model_texts(cld, loops):
     for name, n in counts(cld, loops).items():
         text = text.replace("{" + name + "}", f"{n:,}")
     if re.search(r"\{[a-z ]+\}", text):
-        sys.exit(f"model-texts.md names a number build.py does not count: {re.search(r'{[a-z ]+}', text)[0]}")
+        sys.exit(f"cld-texts.md names a number build.py does not count: {re.search(r'{[a-z ]+}', text)[0]}")
     html = []
     for block in re.split(r"\n\s*\n", text.strip()):
         lines = block.split("\n")
@@ -525,20 +532,20 @@ def model_texts(cld, loops):
 def page(cld, refs, actors, version, loops):
     """docs/index.html: the template with the drawing inline, the model texts and the data as
     JSON."""
-    template = (PAGE / "index.html").read_text()
-    svg = draw.svg(cld)
+    template = (TEMPLATES / "index.html").read_text()
+    svg = draw_cld.svg(cld)
     # "</" inside a <script> would end it early; "<\/" is the same string to JSON
     data = json.dumps(page_data(cld, refs, actors, version), ensure_ascii=False).replace("</", "<\\/")
     facts, texts = model_texts(cld, loops)
     for marker in ("<!-- SVG -->", "<!-- DATA -->", "<!-- FACTS -->", "<!-- TEXTS -->"):
-        assert template.count(marker) == 1, f"page/index.html must hold {marker} once"
+        assert template.count(marker) == 1, f"src/templates/index.html must hold {marker} once"
     return (template.replace("<!-- SVG -->", svg.rstrip()).replace("<!-- FACTS -->", facts)
             .replace("<!-- TEXTS -->", texts)
             .replace("<!-- DATA -->", f'<script type="application/json" id="data">{data}</script>'))
 
 
 def element_actors(cld, actors):
-    """Per element id, the actors that decide it or shape it directly, in actors.json's order: its
+    """Per element id, the actors that decide it or shape it directly, in actor-map.json's order: its
     own actor, the actor of each decision variable linked into it, and the actors outside the scale
     its `actors` field names. An actor inside the scale acts through its decisions, so the links,
     each with its source, already show whom it shapes: derived, never typed, so a link the
@@ -556,23 +563,23 @@ def element_actors(cld, actors):
 
 def table_sheets(cld, refs, actors):
     """[(name, widths, rows)] for docs/table.xlsx, the table that explains the CLD, written from
-    cld.json (the actors' labels from actors.json, the references from references.json): the
+    cld.json (the actors' labels from actor-map.json, the references from references.json): the
     Elements, Links and Named loops sheets, Combined loops once cld.json holds groups, and the
-    References sheet, the full references the sheets cite in-text (actormap.citations()). A
+    References sheet, the full references the sheets cite in-text (draw_actor_map.citations()). A
     spreadsheet, as the actors' table, which Jordy imports into Google Drive as a Google Sheet
     (Jordy; rejected: an HTML page, whose tables lost their columns pasted into Google Docs)."""
     els = {e["id"]: e for e in cld["elements"]}
     label = {a["id"]: a["label"] for a in actors["actors"]}
     shaped = element_actors(cld, actors)
-    cites = actormap.citations(sorted({k for i in cld["elements"] + cld["connections"] for k in i["sources"]}), refs)
+    cites = draw_actor_map.citations(sorted({k for i in cld["elements"] + cld["connections"] for k in i["sources"]}), refs)
 
     def sources(item):
         if item.get("hypothesis"):
             return "Hypothesis for the group model building session"
-        return actormap.cite_list(item["sources"], cites) or "none yet"
+        return draw_actor_map.cite_list(item["sources"], cites) or "none yet"
 
     # the elements by subsystem, as the drawing's regions (water and soil left), then by label
-    order = list(draw.REGION)
+    order = list(draw_cld.REGION)
     elements = sorted(cld["elements"], key=lambda e: (order.index(e["subsystem"]), e["label"].lower()))
     links = sorted(cld["connections"], key=lambda c: (els[c["from"]]["label"].lower(), els[c["to"]]["label"].lower()))
     sheets = [
@@ -603,20 +610,20 @@ def table_sheets(cld, refs, actors):
 def project(cld, refs, actors, template, version):
     """A full Kumu project export, the shape of Kumu's own "Export JSON" of a project.
 
-    The view is view.scss plus what is generated here: a showcase button per named loop, in
-    view.scss's place for it, each SETS domain's tint from draw.TINT,
-    and by Kumu system id each element's box size from draw.boxes(). Each label holds a double space where the page breaks its line,
+    The view is src/kumu/cld-view.scss plus what is generated here: a showcase button per named loop, in
+    cld-view.scss's place for it, each SETS domain's tint from draw_cld.TINT,
+    and by Kumu system id each element's box size from draw_cld.boxes(). Each label holds a double space where the page breaks its line,
     Kumu's manual line break, so its box fits it."""
     bp = blueprint(cld, refs, actors)
     keep = lambda item, drop: {k: v for k, v in item.items() if k not in drop}
-    bxs = draw.boxes(cld)
+    bxs = draw_cld.boxes(cld)
     elements = [{"_id": f'elem-{e["id"]}',
                  "attributes": {**keep(e, {"id", "x", "y"}), "label": "  ".join(bxs[e["id"]][4])}}
                 for e in bp["elements"]]
-    # the regions: an element labelled background, its image docs/regions.svg (view.scss)
+    # the regions: an element labelled background, its image docs/regions.svg (cld-view.scss)
     elements.append({"_id": "elem-background", "attributes": {"label": "background"}})
-    _, (fx0, fy0, fx1, fy1) = draw.regions_svg(cld)
-    rules = ([f'["sets domain"="{d.lower()}"] {{ color: {t}; }}' for d, t in draw.TINT.items()]
+    _, (fx0, fy0, fx1, fy1) = draw_cld.regions_svg(cld)
+    rules = ([f'["sets domain"="{d.lower()}"] {{ color: {t}; }}' for d, t in draw_cld.TINT.items()]
              + [f'#elem-{i} {{ width: {round(b[2] - b[0])}; height: {round(b[3] - b[1])}; }}'
                 for i, b in bxs.items()]
              + [f'#background {{ width: {round(fx1 - fx0)}; height: {round(fy1 - fy0)}; }}'])
@@ -697,10 +704,10 @@ def actors_project(actors, refs, decides, cld_labels, template, version):
     """The Actor Map as a full Kumu project export, the shape project() gives the CLD: each actor an
     element with its fields, each relation a connection whose type is its kind, the actors at their
     places, the relations with their curves, and the level bands as the background image (an
-    element labelled background, as the CLD's regions). The view is actors-view.scss plus each
-    kind's colour and dash from actormap.KIND and each box's size."""
-    bxs, rels, _ = actormap.geometry(actors)
-    _, (fx0, fy0, fx1, fy1) = actormap.bands_svg(actors)
+    element labelled background, as the CLD's regions). The view is src/kumu/actor-map-view.scss plus each
+    kind's colour and dash from draw_actor_map.KIND and each box's size."""
+    bxs, rels, _ = draw_actor_map.geometry(actors)
+    _, (fx0, fy0, fx1, fy1) = draw_actor_map.bands_svg(actors)
     elements = [{"_id": f'elem-{a["id"]}', "attributes": {
         "label": "  ".join(bxs[a["id"]][4]), "type": a["type"], "level": a["level"], "sector": a["sector"],
         "interest": a["interest"], "influence": a["influence"], "affected": a["affected"],
@@ -733,7 +740,7 @@ def actors_project(actors, refs, decides, cld_labels, template, version):
     edges = [{"_id": f'edge-{r["n"]}', "curvature": r["curvature"], "style": {}, "connection": f'conn-{r["n"]}'}
              for r in rels]
     rules = ([f'["connection type"="{k}"] {{ color: {c}; style: {"dashed" if d else "solid"}; }}'
-              for k, (c, d) in actormap.KIND.items()]
+              for k, (c, d) in draw_actor_map.KIND.items()]
              + [f'#elem-{i} {{ width: {round(b[2] - b[0])}; height: {round(b[3] - b[1])}; }}' for i, b in bxs.items()]
              + [f'#background {{ width: {round(fx1 - fx0)}; height: {round(fy1 - fy0)}; }}'])
     style = (template.rstrip() + "\n\n/* ---------- generated by build.py: the kinds' look, box sizes, the bands' size ---------- */\n"
@@ -787,11 +794,11 @@ def main():
     cld = json.loads(CLD.read_text())
     refs, ref_errors = references()
     actors = json.loads(ACTORS.read_text())
-    template = (ROOT / "view.scss").read_text()
+    template = (KUMU / "cld-view.scss").read_text()
     actor_errors, empty = check_actors(actors, refs)
     errors, warnings = check(cld, refs, actors)
     if errors or actor_errors or ref_errors:
-        sys.exit("cld.json, actors.json or references.json has errors:\n  " + "\n  ".join(ref_errors + actor_errors + errors))
+        sys.exit("cld.json, actor-map.json or references.json has errors:\n  " + "\n  ".join(ref_errors + actor_errors + errors))
 
     # the model version teammates compare: the first seven characters of cld.json's SHA-256
     version = hashlib.sha256(CLD.read_bytes()).hexdigest()[:7]
@@ -801,28 +808,28 @@ def main():
     cld_labels = {e["id"]: e["label"] for e in cld["elements"]}
     outputs = {
         "project.json": json.dumps(project(cld, refs, actors, template, version), indent=2, ensure_ascii=False) + "\n",
-        "actors.html": actormap.page(actors, refs, decides, cld_labels, actors_version, (PAGE / "actors.html").read_text()),
-        "actors.js": (PAGE / "actors.js").read_text(),
-        "actors.svg": actormap.svg(actors),
-        "actors-bands.svg": actormap.bands_svg(actors)[0],
+        "actors.html": draw_actor_map.page(actors, refs, decides, cld_labels, actors_version, (TEMPLATES / "actors.html").read_text()),
+        "actors.js": (TEMPLATES / "actors.js").read_text(),
+        "actors.svg": draw_actor_map.svg(actors),
+        "actors-bands.svg": draw_actor_map.bands_svg(actors)[0],
         "actors-project.json": json.dumps(actors_project(actors, refs, decides, cld_labels,
-                                                         (ROOT / "actors-view.scss").read_text(), actors_version),
+                                                         (KUMU / "actor-map-view.scss").read_text(), actors_version),
                                           indent=2, ensure_ascii=False) + "\n",
-        "actors.xlsx": xlsx.workbook(actormap.sheets(actors, refs, decides, cld_labels)),
-        "cld.svg": draw.svg(cld),
-        "regions.svg": draw.regions_svg(cld)[0],
+        "actors.xlsx": write_xlsx.workbook(draw_actor_map.sheets(actors, refs, decides, cld_labels)),
+        "cld.svg": draw_cld.svg(cld),
+        "regions.svg": draw_cld.regions_svg(cld)[0],
         "index.html": page(cld, refs, actors, version, loops),
-        "table.xlsx": xlsx.workbook(table_sheets(cld, refs, actors)),
-        "app.js": (PAGE / "app.js").read_text(),
-        "map.js": (PAGE / "map.js").read_text(),
-        "style.css": (PAGE / "style.css").read_text(),
-        **{f"loops/{loop['id']}.svg": draw.loop_figure(cld, loop) for loop in cld["loops"]},
-        **{f"groups/{g['id']}.svg": draw.group_figure(cld, g) for g in cld.get("groups", [])},
+        "table.xlsx": write_xlsx.workbook(table_sheets(cld, refs, actors)),
+        "app.js": (TEMPLATES / "app.js").read_text(),
+        "map.js": (TEMPLATES / "map.js").read_text(),
+        "style.css": (TEMPLATES / "style.css").read_text(),
+        **{f"loops/{loop['id']}.svg": draw_cld.loop_figure(cld, loop) for loop in cld["loops"]},
+        **{f"groups/{g['id']}.svg": draw_cld.group_figure(cld, g) for g in cld.get("groups", [])},
     }
     # Kumu shows regions.svg stretched to the frame: with a viewBox alone a browser sizes it 250 by
-    # 150 pixels, which Kumu blurred (draw.regions_svg())
+    # 150 pixels, which Kumu blurred (draw_cld.regions_svg())
     if not re.match(r'<svg [^>]*\bwidth="\d+" height="\d+"', outputs["regions.svg"]):
-        sys.exit("docs/regions.svg needs a width and a height besides its viewBox: draw.regions_svg() writes them")
+        sys.exit("docs/regions.svg needs a width and a height besides its viewBox: draw_cld.regions_svg() writes them")
     # a figure whose loop is gone or renamed would stay published
     extra = sorted(f"{d}/{f.name}" for d in ("loops", "groups") if (DOCS / d).is_dir()
                    for f in (DOCS / d).glob("*") if f"{d}/{f.name}" not in outputs)
@@ -853,16 +860,16 @@ def main():
           f"({sum(k == 'R' for k, _ in loops)} R, {sum(k == 'B' for k, _ in loops)} B), "
           f"shortest {min((len(p) for _, p in loops), default=0)} links")
     # the layout's measure: the eye found crossings and links over boxes that no warning named
-    crossings, through = draw.tangles(cld)
+    crossings, through = draw_cld.tangles(cld)
     print(f"layout: {len(crossings)} crossings between links, "
           f"{len(through)} links through a box they do not connect")
     warnings += [f"link through a box: {a} -> {b} passes through {e}" for (a, b), e in through]
-    a_crossings, a_through = actormap.tangles(actors)
+    a_crossings, a_through = draw_actor_map.tangles(actors)
     print(f"actor map: {len(a_crossings)} crossings between relations, "
           f"{len(a_through)} relations through a box they do not connect")
-    rel = actormap.relations(actors)
+    rel = draw_actor_map.relations(actors)
     warnings += [f"actor map: relation through a box: {rel[n]['from']} {rel[n]['kind']} {rel[n]['to']} passes through {e}"
-                 for n, e in a_through] + actormap.overlaps(actors)
+                 for n, e in a_through] + draw_actor_map.overlaps(actors)
     print(f"actors: {len(actors['actors'])} ({sum(a['scale'] == 'inside' for a in actors['actors'])} inside the scale); "
           "CLD variables each decides: " + ", ".join(f"{i} {len(v)}" for i, v in decides.items() if v))
     if empty:
@@ -876,7 +883,7 @@ def main():
     cited |= {k for a in actors["actors"] for r in a.get("relations", []) for k in r.get("sources", [])}
     warnings += [f"reference {k!r} is cited nowhere" for k in refs if k not in cited]
     # a section the page would show with nothing under its heading
-    warnings += [f"model-texts.md: the section {h!r} is still empty" for h, body in
+    warnings += [f"cld-texts.md: the section {h!r} is still empty" for h, body in
                  re.findall(r"^## (.+)\n((?:(?!## ).*\n?)*)", re.sub(r"<!--.*?-->", "", TEXTS.read_text(), flags=re.S), re.M)
                  if not body.strip()]
     if warnings:

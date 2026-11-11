@@ -1,4 +1,4 @@
-"""Draw the Actor Map: the actors' network as an SVG, from actors.json's own coordinates (y
+"""Draw the Actor Map: the actors' network as an SVG, from actor-map.json's own coordinates (y
 downwards), and the page around it.
 
 Imported by build.py, which writes docs/actors.html (page(): the drawing, a panel per actor and
@@ -14,8 +14,8 @@ What the network draws, from back to front:
              Regional at the bottom, each named in a column at its left (Jordy, chosen between
              rendered versions: by level; rejected: rings by the CLD's scale, clusters by type, and
              boxes shaded by influence score; the scale is not drawn, Jordy)
-  relations  a quadratic Bezier from box edge to box edge, as draw.py draws a CLD link, the ends on
-             one edge spread along it (draw.link_paths()); its colour and dash by its kind (KIND),
+  relations  a quadratic Bezier from box edge to box edge, as draw_cld.py draws a CLD link, the ends on
+             one edge spread along it (draw_cld.link_paths()); its colour and dash by its kind (KIND),
              an arrowhead at the actor it acts on
   actors     the label in a white box
   legend     below the frame
@@ -24,9 +24,9 @@ What the network draws, from back to front:
 import json
 import re
 
-import draw
+import draw_cld
 
-FONT_SIZE = draw.FONT_SIZE
+FONT_SIZE = draw_cld.FONT_SIZE
 REL_WIDTH = 4
 # Each kind its colour and dash: colour alone cannot tell six kinds apart (at most three hues pass
 # the dataviz skill's validator for marks that can sit side by side), so a kind sharing a hue with
@@ -52,12 +52,12 @@ LEGEND_SIZE = 40
 
 
 def elements(actors):
-    """The actors as draw.boxes() takes them."""
+    """The actors as draw_cld.boxes() takes them."""
     return [{"id": a["id"], "label": a["label"], "x": a["x"], "y": a["y"]} for a in actors["actors"]]
 
 
 def relations(actors):
-    """Every relation as a connection draw.link_paths() takes, `n` its place in the list: two actors
+    """Every relation as a connection draw_cld.link_paths() takes, `n` its place in the list: two actors
     can hold two relations, so the pair does not name one."""
     out = []
     for a in actors["actors"]:
@@ -69,24 +69,24 @@ def relations(actors):
 
 def geometry(actors):
     """(boxes, relations, paths): each actor's box, each relation, and its curve by `n`."""
-    bxs = draw.boxes({"elements": elements(actors)})
+    bxs = draw_cld.boxes({"elements": elements(actors)})
     rels = relations(actors)
-    return bxs, rels, draw.link_paths({"connections": rels}, bxs, key=lambda c: c["n"])
+    return bxs, rels, draw_cld.link_paths({"connections": rels}, bxs, key=lambda c: c["n"])
 
 
 def tangles(actors):
-    """(crossings, through), as draw.tangles() counts them for the CLD: pairs of relations that
+    """(crossings, through), as draw_cld.tangles() counts them for the CLD: pairs of relations that
     cross, as (n, n), and each relation that passes through a box it does not connect, as (n, id)."""
     bxs, rels, paths = geometry(actors)
-    pts = {n: [draw.bezier(*p, i / 30) for i in range(31)] for n, p in paths.items()}
+    pts = {n: [draw_cld.bezier(*p, i / 30) for i in range(31)] for n, p in paths.items()}
     crossings = [(a["n"], b["n"]) for i, a in enumerate(rels) for b in rels[i + 1:]
                  for u in range(30) for v in range(30)
-                 if draw.meet(pts[a["n"]][u], pts[a["n"]][u + 1], pts[b["n"]][v], pts[b["n"]][v + 1])]
+                 if draw_cld.meet(pts[a["n"]][u], pts[a["n"]][u + 1], pts[b["n"]][v], pts[b["n"]][v + 1])]
 
     def cuts(p, q, box):
         x0, y0, x1, y1 = box[:4]
         c = [(x0, y0), (x1, y0), (x1, y1), (x0, y1)]
-        return draw.inside(p, box) or draw.inside(q, box) or any(draw.meet(p, q, c[k], c[(k + 1) % 4]) for k in range(4))
+        return draw_cld.inside(p, box) or draw_cld.inside(q, box) or any(draw_cld.meet(p, q, c[k], c[(k + 1) % 4]) for k in range(4))
     through = [(r["n"], e) for r in rels for e, b in bxs.items() if e not in (r["from"], r["to"])
                and any(cuts(pts[r["n"]][u], pts[r["n"]][u + 1], b) for u in range(30))]
     return crossings, through
@@ -95,7 +95,7 @@ def tangles(actors):
 def overlaps(actors):
     """Boxes that intersect, and an actor whose box reaches into another level's band: the bands
     are drawn from their actors' boxes, so it would draw one band across another."""
-    bxs = draw.boxes({"elements": elements(actors)})
+    bxs = draw_cld.boxes({"elements": elements(actors)})
     acts = actors["actors"]
     out = [f"actor map: boxes overlap: {a['id']} and {b['id']}" for i, a in enumerate(acts) for b in acts[i + 1:]
            if (lambda p, q: p[0] < q[2] and q[0] < p[2] and p[1] < q[3] and q[1] < p[3])(bxs[a["id"]], bxs[b["id"]])]
@@ -107,17 +107,17 @@ def overlaps(actors):
 
 
 def esc(text):
-    return draw.esc(text).replace('"', "&quot;")
+    return draw_cld.esc(text).replace('"', "&quot;")
 
 
 def actor_svg(a, box):
     x0, y0, x1, y1, lines = box
     parts = [f'<g class="actor" data-id="{a["id"]}"><title>{esc(a["label"])}</title>',
-             f'<rect x="{x0:.1f}" y="{y0:.1f}" width="{x1 - x0:.1f}" height="{y1 - y0:.1f}" rx="{draw.CORNER}" '
-             f'fill="white" stroke="{draw.STROKE_COLOUR}" stroke-width="2"/>']
-    top = y0 + draw.PAD_Y + draw.LINE_HEIGHT * 0.75
+             f'<rect x="{x0:.1f}" y="{y0:.1f}" width="{x1 - x0:.1f}" height="{y1 - y0:.1f}" rx="{draw_cld.CORNER}" '
+             f'fill="white" stroke="{draw_cld.STROKE_COLOUR}" stroke-width="2"/>']
+    top = y0 + draw_cld.PAD_Y + draw_cld.LINE_HEIGHT * 0.75
     for i, line in enumerate(lines):
-        parts.append(f'<text x="{(x0 + x1) / 2:.1f}" y="{top + i * draw.LINE_HEIGHT:.1f}" text-anchor="middle">{esc(line)}</text>')
+        parts.append(f'<text x="{(x0 + x1) / 2:.1f}" y="{top + i * draw_cld.LINE_HEIGHT:.1f}" text-anchor="middle">{esc(line)}</text>')
     parts.append("</g>")
     return "\n".join(parts)
 
@@ -162,23 +162,23 @@ def bands(actors, bxs):
 
 def bands_svg(actors):
     """(svg, frame): the bands alone, their viewBox the frame in the actors' coordinates, with a
-    width and a height, for Kumu's background image (as draw.regions_svg() for the CLD)."""
-    band_svg, frame = bands(actors, draw.boxes({"elements": elements(actors)}))
+    width and a height, for Kumu's background image (as draw_cld.regions_svg() for the CLD)."""
+    band_svg, frame = bands(actors, draw_cld.boxes({"elements": elements(actors)}))
     x0, y0, x1, y1 = frame
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{x0:.0f} {y0:.0f} {x1 - x0:.0f} {y1 - y0:.0f}" '
-            f'width="{x1 - x0:.0f}" height="{y1 - y0:.0f}" font-family="{draw.FONT}">\n{band_svg}\n</svg>\n'), frame
+            f'width="{x1 - x0:.0f}" height="{y1 - y0:.0f}" font-family="{draw_cld.FONT}">\n{band_svg}\n</svg>\n'), frame
 
 
 def legend_svg(x, y):
     """The legend, two rows of three kinds, its first row's middle at y; returns (svg, width, height)."""
     f = LEGEND_SIZE
     sw = f * 2.6
-    col = sw + f * 0.4 + len("authority over") * draw.CHAR_WIDTH / FONT_SIZE * f + f
+    col = sw + f * 0.4 + len("authority over") * draw_cld.CHAR_WIDTH / FONT_SIZE * f + f
     items = [f'<text x="{x:.1f}" y="{y:.1f}" font-size="{f}" font-weight="bold" dominant-baseline="central">Relations</text>']
     for i, (kind, (colour, dash)) in enumerate(KIND.items()):
         xx, yy = x + f * 5 + (i % 3) * col, y + (i // 3) * f * 1.5
         dash = f' stroke-dasharray="{dash}"' if dash else ""
-        items.append(f'<path d="M {xx:.1f} {yy:.1f} L {xx + sw - draw.ARROW:.1f} {yy:.1f}" stroke="{colour}" stroke-width="{REL_WIDTH}"{dash} '
+        items.append(f'<path d="M {xx:.1f} {yy:.1f} L {xx + sw - draw_cld.ARROW:.1f} {yy:.1f}" stroke="{colour}" stroke-width="{REL_WIDTH}"{dash} '
                      f'fill="none" marker-end="url(#arrow-{kind.replace(" ", "-")})"/>')
         items.append(f'<text x="{xx + sw + f * 0.4:.1f}" y="{yy:.1f}" font-size="{f}" dominant-baseline="central">{kind}</text>')
     return '<g class="legend">\n' + "\n".join(items) + "\n</g>", f * 5 + 3 * col, 2 * f * 1.5
@@ -186,11 +186,11 @@ def legend_svg(x, y):
 
 def head(vb):
     """The opening of the drawing: the svg tag, an arrowhead per kind, a white ground."""
-    arrow = lambda name, colour: (f'<marker id="arrow-{name}" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="{draw.ARROW}" '
-                                  f'markerHeight="{draw.ARROW}" markerUnits="userSpaceOnUse" orient="auto">'
+    arrow = lambda name, colour: (f'<marker id="arrow-{name}" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="{draw_cld.ARROW}" '
+                                  f'markerHeight="{draw_cld.ARROW}" markerUnits="userSpaceOnUse" orient="auto">'
                                   f'<path d="M 0 0 L 10 5 L 0 10 z" fill="{colour}"/></marker>')
     return [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{vb[0]:.0f} {vb[1]:.0f} {vb[2]:.0f} {vb[3]:.0f}" '
-            f'font-family="{draw.FONT}" font-size="{FONT_SIZE}" fill="black">',
+            f'font-family="{draw_cld.FONT}" font-size="{FONT_SIZE}" fill="black">',
             "<defs>", *(arrow(k.replace(" ", "-"), c) for k, (c, _) in KIND.items()), "</defs>",
             f'<rect x="{vb[0]:.0f}" y="{vb[1]:.0f}" width="{vb[2]:.0f}" height="{vb[3]:.0f}" fill="white"/>']
 
@@ -297,7 +297,7 @@ COLUMNS = [  # (name, width in characters, what it holds): the Columns sheet exp
 
 
 def sheets(actors, refs, decides, cld_labels):
-    """[(name, widths, rows)]: the Actors sheet, a row per actor in actors.json's order; the
+    """[(name, widths, rows)]: the Actors sheet, a row per actor in actor-map.json's order; the
     Relations sheet, a row per relation, read "From relation To"; the References sheet, every
     reference the two cite; the Columns sheet, what each of the Actors sheet's columns holds."""
     acts = actors["actors"]
@@ -327,7 +327,7 @@ def sheets(actors, refs, decides, cld_labels):
 
 # --- the page --------------------------------------------------------------------------------
 def page_data(actors, refs, decides, cld_labels, version):
-    """What the page's panel shows per actor and relation, as page/actors.js reads it."""
+    """What the page's panel shows per actor and relation, as src/templates/actors.js reads it."""
     labels = {a["id"]: a["label"] for a in actors["actors"]}
     full = lambda keys: [refs[k] for k in keys]
     return {
@@ -349,6 +349,6 @@ def page(actors, refs, decides, cld_labels, version, template):
     out = template
     for marker, text in (("<!-- QUESTION -->", esc(actors["question"])), ("<!-- SVG -->", svg(actors).rstrip()),
                          ("<!-- DATA -->", f'<script type="application/json" id="data">{data}</script>')):
-        assert out.count(marker) == 1, f"page/actors.html must hold {marker} once"
+        assert out.count(marker) == 1, f"src/templates/actors.html must hold {marker} once"
         out = out.replace(marker, text)
     return out

@@ -183,6 +183,19 @@
       "cluster": true
     },
     {
+      "_id": "attr-ask-actors",
+      "name": "Ask actors",
+      "format": "text",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
       "_id": "attr-actor",
       "name": "Actor",
       "format": "string",
@@ -538,6 +551,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "How fast the land surface of the island's polders falls. Peat above the groundwater compacts and its organic matter oxidises as it is drained (Waterschap Scheldestromen, 2025, p. 13, the board's rules for its whole area), and the fall adds up in Polder surface elevation. The island's low polders lie on peat: in Schouwen's low polder salt-marsh soils alternate with basin clay with peat (Waterschap Scheldestromen, 2021b, p. 23), and under Duiveland a peat layer lies almost everywhere at −1.6 to −3.4 m NAP, under calcareous sand or light clay (2021a, p. 20), often within a metre of the surface in its low south and middle (p. 19). Drained by ditches, the polders have sunk over several hundred years as the peat compacted and the clay ripened (2021b, pp. 20, 22; 2021a, p. 18). No source read gives the rate on the island. The rate follows the drainage within the year, so an Auxiliary; what builds up slowly is the elevation, a Stock.",
+        "ask actors": "Waterschap Scheldestromen, through DCC or Living Lab: How fast the island's polders subside, per area: the board changes a level in soil prone to settling by no more than the land has subsided since (Waterschap Scheldestromen, 2021b, p. 50).",
         "actors": "",
         "sources": "Waterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nWaterschap Scheldestromen. (2021b). Hydrologisch onderzoeksrapport Schouwen. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch_onderzoeksrapport_Schouwen.pdf\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf",
         "sourced": "yes"

@@ -100,13 +100,15 @@ MONTHS = ["January", "February", "March", "April", "May", "June", "July", "Augus
 ACTOR_FIELDS = ["label", "scale", "type", "level", "sector", "interest", "influence", "affected",
                 "influence score", "relations", "sources"]
 # the partners who can put the group in touch with an actor that may hold a missing fact: DCC, and
-# the Living Lab Schouwen-Duiveland (ChallengeBasedProject1/.claude/rules/cld-model.md)
+# the Living Lab Schouwen-Duiveland (ChallengeBasedProject1/.claude/rules/cld-model.md); an entry
+# lists each one to start asking through, as one contact leads to the next (Jordy)
 ASK_THROUGH = ["DCC", "Living Lab"]
 
 
 def ask_errors(item, name, actor_ids):
     """The errors in an item's `ask actors`, a list of {actor, for, through}: the facts no public
-    source read gives that an actor may know. Absent where nothing is asked, so never empty."""
+    source read gives that an actor may know, `through` the partners to start asking through. Absent
+    where nothing is asked, so never empty."""
     asks = item.get("ask actors")
     if asks is None:
         return []
@@ -118,14 +120,23 @@ def ask_errors(item, name, actor_ids):
             errors.append(f"{name}: ask actors names {a.get('actor')!r}, not an actor id in actor-map.json")
         if not (isinstance(a.get("for"), str) and a["for"].strip()):
             errors.append(f"{name}: ask actors {a.get('actor')!r} needs a for, what is missing in words")
-        if a.get("through") not in ASK_THROUGH:
-            errors.append(f"{name}: ask actors {a.get('actor')!r} through {a.get('through')!r}, not one of {ASK_THROUGH}")
+        through = a.get("through")
+        if not (isinstance(through, list) and through and len(set(through)) == len(through)
+                and all(t in ASK_THROUGH for t in through)):
+            errors.append(f"{name}: ask actors {a.get('actor')!r} through {through!r}, "
+                          f"not a list of one or both of {ASK_THROUGH}")
     return errors
+
+
+def through_text(through):
+    """The partners of an entry as words, in ASK_THROUGH's order: "DCC or Living Lab"."""
+    return " or ".join(t for t in ASK_THROUGH if t in through)
 
 
 def ask_text(item, label):
     """An item's `ask actors` as one text, an entry per line, as the table and Kumu show it."""
-    return "\n".join(f'{label[a["actor"]]}, through {a["through"]}: {a["for"]}' for a in item.get("ask actors", []))
+    return "\n".join(f'{label[a["actor"]]}, through {through_text(a["through"])}: {a["for"]}'
+                     for a in item.get("ask actors", []))
 
 
 def apa(r):
@@ -647,16 +658,18 @@ def ask_sheets(cld, actors):
     """[(name, widths, rows)] for docs/tables/sources-to-ask.xlsx, the list Jordy and Lenne contact
     the actors from: a row per `ask actors` entry of cld.json's elements and links and of
     actor-map.json's actors (the element, link or actor; what is missing; the actor; through whom),
-    by partner and then by actor, so each contact's questions sit together, and within an actor in
-    the model's order. One record, the model's, so the list cannot drift from it (Jordy's decision,
-    cld-model.md)."""
+    by partners (DCC alone, then both, then the Living Lab alone) and then by actor, so each
+    contact's questions sit together, and within an actor in the model's order. One record, the
+    model's, so the list cannot drift from it (Jordy's decision, cld-model.md)."""
     els = {e["id"]: e for e in cld["elements"]}
     label = {a["id"]: a["label"] for a in actors["actors"]}
     items = ([(e["label"], e) for e in cld["elements"]]
              + [(f'{els[c["from"]]["label"]} → {els[c["to"]]["label"]}', c) for c in cld["connections"]]
              + [(a["label"], a) for a in actors["actors"]])
-    rows = [[what, a["for"], label[a["actor"]], a["through"]] for what, item in items for a in item.get("ask actors", [])]
-    rows.sort(key=lambda r: (ASK_THROUGH.index(r[3]), r[2].lower()))  # stable: the model's order within an actor
+    entries = [(what, a) for what, item in items for a in item.get("ask actors", [])]
+    # stable: the model's order within an actor
+    entries.sort(key=lambda e: (sorted(ASK_THROUGH.index(t) for t in e[1]["through"]), label[e[1]["actor"]].lower()))
+    rows = [[what, a["for"], label[a["actor"]], through_text(a["through"])] for what, a in entries]
     return [("Sources to ask", [36, 90, 30, 12], [["Element, link or actor", "What is missing", "Actor", "Through"]] + rows)]
 
 

@@ -90,6 +90,16 @@
         "scheldestromen-2021-hor-schouwen",
         "scheldestromen-2021-hor-duiveland"
       ],
+      "ask actors": [
+        {
+          "actor": "waterschap-scheldestromen",
+          "for": "How fast the island's polders subside, per area: the board changes a level in soil prone to settling by no more than the land has subsided since (Waterschap Scheldestromen, 2021b, p. 50).",
+          "through": [
+            "DCC",
+            "Living Lab"
+          ]
+        }
+      ],
       "x": -2024,
       "y": -844
     },

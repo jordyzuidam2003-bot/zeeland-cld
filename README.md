@@ -205,10 +205,11 @@ An element:
   whose lever it is.
 - `ask actors` (optional): each fact the element needs that no public source read gives while an
   actor may know it, a list of `{"actor": <id in model/actor-map.json>, "for": <what is missing,
-  in words>, "through": "DCC" or "Living Lab"}`, the partner who can put the group in touch
-  (Jordy's decision). Organisations only, never a person's name, since this repository is public.
-  `build.py` stops on an actor not in `model/actor-map.json`, an empty `for` and another
-  `through`; the table and Kumu show it, and `docs/tables/sources-to-ask.xlsx` lists every entry
+  in words>, "through": ["DCC", "Living Lab"]}`, the partners to start asking through, one or
+  both: asking is networking, one contact leads to the next, so the route is not decided
+  beforehand (Jordy's decision). Organisations only, never a person's name, since this repository
+  is public. `build.py` stops on an actor not in `model/actor-map.json`, an empty `for` and a
+  `through` that is not a list of one or both partners; the table and Kumu show it, and `docs/tables/sources-to-ask.xlsx` lists every entry
   (The table). Left out where nothing is asked, never empty.
 - `simplification`: only on an element or a connection that folds or idealizes something (a
   step of a chain folded into a link, several things counted as one), saying what it leaves out

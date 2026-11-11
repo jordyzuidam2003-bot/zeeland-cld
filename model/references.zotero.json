@@ -426,6 +426,11 @@
  "kim-2000": {
   "placed": []
  },
+ "knmi-2023-klimaatscenarios": {
+  "placed": [
+   "CLD"
+  ]
+ },
  "kuiper-2023": {
   "digest": "21b20397f322",
   "note": "R6KIGPHE",

@@ -39,8 +39,8 @@ edit docs/, which this script writes:
                        per named loop, each drawn as its figure, with no showcase; each map with
                        its view, the CLD's regions and the Actor Map's level bands as background
                        images inside the file (an element labelled background showing a data URL
-                       of the SVG); the versions are in the project's description and the CLD's and
-                       the Actor Map's map names
+                       of the SVG); no version, so the link to each map stays the same from one
+                       copy to the next
 """
 
 import argparse
@@ -620,7 +620,7 @@ def with_image(view, svg, name):
     return view.replace("url(IMAGE)", f"url({data_url(svg)})")
 
 
-def project(cld, refs, actors, template, version):
+def project(cld, refs, actors, template):
     """The CLD's part of the Kumu project (kumu_project()): the map of the full CLD, then a map per
     combined loop and per named loop, each drawn as its figure (Jordy's decision, cld-drawing.md).
 
@@ -702,7 +702,7 @@ def project(cld, refs, actors, template, version):
                        "position": {"x": marks[i][0], "y": marks[i][1]}} for i in ids]})
     return {
         "elements": elements, "connections": connections, "loops": loops,
-        "maps": [{"_id": "map-cld", "name": f"CLD, model {version}", "description": "", "scale": 1,
+        "maps": [{"_id": "map-cld", "name": "CLD model", "description": "", "scale": 1,
                   "center": {"x": 0, "y": 0}, "defaultPerspective": "pers-cld",
                   "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
                   "elements": nodes, "connections": edges, "loops": map_loops}] + loop_maps,
@@ -712,7 +712,7 @@ def project(cld, refs, actors, template, version):
     }
 
 
-def actors_project(actors, refs, decides, cld_labels, template, version):
+def actors_project(actors, refs, decides, cld_labels, template):
     """The Actor Map's part of the Kumu project (kumu_project()), as project() gives the CLD's: each
     actor an element with its fields, its type the CLD's field element type, each relation a
     connection whose type is its kind, the actors at their places, the relations with their curves,
@@ -748,7 +748,7 @@ def actors_project(actors, refs, decides, cld_labels, template, version):
              + "\n".join(rules) + "\n")
     return {
         "elements": elements, "connections": connections, "loops": [],
-        "maps": [{"_id": "map-actors", "name": f"Actor Map, version {version}", "description": "", "scale": 1,
+        "maps": [{"_id": "map-actors", "name": "Actor Map", "description": "", "scale": 1,
                   "center": {"x": 0, "y": 0}, "defaultPerspective": "pers-actors",
                   "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
                   "elements": nodes, "connections": edges, "loops": []}],
@@ -783,11 +783,13 @@ def fields(items):
     return attributes
 
 
-def kumu_project(cld_part, actors_part, version, actors_version):
+def kumu_project(cld_part, actors_part):
     """The Kumu project, a full project export in the shape of Kumu's own "Export JSON": the CLD's
     part (project()) and the Actor Map's (actors_project()) as maps of one project, the full CLD's
-    the default. The description names both versions and links to neither the page nor the repository:
-    outsiders see only Kumu and the submissions (Jordy's decision, in ChallengeBasedProject1/.claude/CLAUDE.md)."""
+    the default. It holds no version, so the link to each map stays the same from one copy to the
+    next (Jordy: the versions are the repository's), and links to neither the page nor the
+    repository: outsiders see only Kumu and the submissions (Jordy's decision, in
+    ChallengeBasedProject1/.claude/CLAUDE.md)."""
     parts = [cld_part, actors_part]
     # the CLD's map and view first, then the Actor Map's, then the CLD's loop maps and their view
     order = lambda k: cld_part[k][:1] + actors_part[k] + cld_part[k][1:]
@@ -799,11 +801,9 @@ def kumu_project(cld_part, actors_part, version, actors_version):
     maps = [dict(m, name=f"{n:0{width}} {m['name']}") for n, m in enumerate(maps, 1)]
     if [m["name"] for m in maps] != sorted(m["name"] for m in maps):
         sys.exit("the Kumu map names sort into another order than the maps': Kumu's list would show that order")
-    description = (f"Model version {version}, the first seven characters of the SHA-256 of cld.json.\n\n"
-                   f"Actor Map version {actors_version}, the first seven characters of the SHA-256 of actor-map.json.")
     # a restore sets the project's name, so it is the name of the project the group's URL names
     return {
-        "version": 1, "name": "cbp1", "description": description, "proxyImages": True,
+        "version": 1, "name": "cbp1", "description": "", "proxyImages": True,
         "defaultMap": "map-cld", "defaultPerspective": None, "attributeRelevance": {},
         "attributes": fields([x["attributes"] for p in parts for x in p["elements"] + p["connections"]]),
         **{k: [x for p in parts for x in p[k]] for k in ("elements", "connections", "loops")},
@@ -859,9 +859,9 @@ def main():
     cld_labels = {e["id"]: e["label"] for e in cld["elements"]}
     outputs = {
         "kumu/kumu-project.json": json.dumps(kumu_project(
-            project(cld, refs, actors, template, version),
-            actors_project(actors, refs, decides, cld_labels, (KUMU / "actor-map-view.scss").read_text(), actors_version),
-            version, actors_version), indent=2, ensure_ascii=False) + "\n",
+            project(cld, refs, actors, template),
+            actors_project(actors, refs, decides, cld_labels, (KUMU / "actor-map-view.scss").read_text())),
+            indent=2, ensure_ascii=False) + "\n",
         "actors.html": draw_actor_map.page(actors, refs, decides, cld_labels, actors_version, (TEMPLATES / "actors.html").read_text()),
         "assets/actors.js": (TEMPLATES / "actors.js").read_text(),
         "figures/actor-map.svg": draw_actor_map.svg(actors),

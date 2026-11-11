@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "cbp1",
-  "description": "Model version bd62540, the first seven characters of the SHA-256 of cld.json.\n\nActor Map version 4e17283, the first seven characters of the SHA-256 of actor-map.json.",
+  "description": "",
   "proxyImages": true,
   "defaultMap": "map-cld",
   "defaultPerspective": null,
@@ -5088,7 +5088,7 @@
   "maps": [
     {
       "_id": "map-cld",
-      "name": "01 CLD, model bd62540",
+      "name": "01 CLD model",
       "description": "",
       "scale": 1,
       "center": {
@@ -6740,7 +6740,7 @@
     },
     {
       "_id": "map-actors",
-      "name": "02 Actor Map, version 4e17283",
+      "name": "02 Actor Map",
       "description": "",
       "scale": 1,
       "center": {

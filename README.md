@@ -363,8 +363,8 @@ CLD's own project before the Actor Map joined it):
   Their view is the CLD's without the rule that hides the loop labels.
 
 Kumu lists the maps sorted by name as plain text, whatever their order in the file (B10 before
-B2), so each map's name starts with its place in this order, in two digits: `01 CLD, model …`,
-`02 Actor Map, version …`, then the loop maps (Jordy; rejected: zero-padded loop ids, which keep
+B2), so each map's name starts with its place in this order, in two digits: `01 CLD model`,
+`02 Actor Map`, then the loop maps (Jordy; rejected: zero-padded loop ids, which keep
 the list grouped by letter, and the names alone). `build.py` stops when the names would sort into
 another order.
 
@@ -390,6 +390,8 @@ pinned at the centre of the regions' frame with the frame's width and height, wh
 published page, so a copy shows its own version's regions and depends on no host (Jordy). The
 Actor Map's level bands reach it the same way, its element `elem-actors-background`. The subsystem is also
 a field there. `build.py` adds the rules that tint and size each box below `src/kumu/cld-view.scss`, and
-a double space where the page breaks a label's line (Kumu's manual line break). The project's
-description carries the model's and the Actor Map's versions, and the two maps' names each its
-own, so Kumu says which model it holds.
+a double space where the page breaks a label's line (Kumu's manual line break). Kumu holds no
+version, in the project's description or a map's name, so the link to each map stays the same
+from one copy to the next, such as `https://kumu.io/JordyZuidam/cbp1#01-cld-model`: the versions
+are this repository's (Jordy; rejected: the versions in the description and in the CLD's and the
+Actor Map's map names, which changed each map's link with every copy).

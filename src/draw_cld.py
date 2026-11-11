@@ -672,7 +672,8 @@ OVAL_GAP = 150     # the least gap between two boxes of a one-loop figure: room 
 
 
 def oval(cld, loop):
-    """(elements, bxs, pieces): one named loop laid out as an oval for its figure.
+    """(elements, bxs, pieces, middles): one named loop laid out as an oval for its figure; middles
+    holds each link's point on the oval midway, by angle, between its two elements' centres.
 
     Its elements evenly spaced on an ellipse round (0, 0), in the loop's order, clockwise, the
     path's first element at the top left and the second at the top right, so the eye starts left
@@ -720,14 +721,36 @@ def oval(cld, loop):
         # the ellipse is a stretched circle, and stretching keeps where tangents meet
         pieces[a, b] = [(at(t0 + 2 * h * i), (rx * cos(t0 + 2 * h * i + h) / cos(h), ry * sin(t0 + 2 * h * i + h) / cos(h)),
                          at(t0 + 2 * h * (i + 1))) for i in range(m)]
-    return els, bxs, pieces
+    middles = {(path[k], path[(k + 1) % n]): at(ang[k] + pi / n) for k in range(n)}
+    return els, bxs, pieces, middles
+
+
+OVAL_MARK = (0, 0)  # a one-loop figure's mark: the oval's centre
+
+
+def oval_layout(cld, loop):
+    """(places, bends, marks): the oval of loop_figure() in the shape of a group's `places`, `bends`
+    and `marks` in cld.json, for build.py's Kumu map of the loop. Kumu draws a link from centre to
+    centre, so each bend is the curvature (link_path()) whose curve passes through the oval midway
+    between its two elements, and the link runs along the oval as in the figure."""
+    els, _, _, middles = oval(cld, loop)
+    at = {e["id"]: (e["x"], e["y"]) for e in els}
+    bends = {}
+    for (a, b), m in middles.items():
+        (ax, ay), (bx, by) = at[a], at[b]
+        dx, dy = bx - ax, by - ay
+        # a quadratic curve passes (start + 2 control + end) / 4 halfway, so through m its control
+        # lies 2 (m - chord middle) from the chord's middle; link_path() moves it curvature (dy, -dx)
+        ox, oy = 2 * (m[0] - (ax + bx) / 2), 2 * (m[1] - (ay + by) / 2)
+        bends[f"{a} -> {b}"] = round((ox * dy - oy * dx) / (dx * dx + dy * dy), 3)
+    return {i: [round(x), round(y)] for i, (x, y) in at.items()}, bends, {loop["id"]: list(OVAL_MARK)}
 
 
 def loop_figure(cld, loop):
     """One named loop on its own, for the report: laid out as an oval (oval()), its elements and links
     drawn as svg() draws them, its mark at the oval's centre, turning clockwise as the oval does. No
     regions and no legend: the figure stands beside the full drawing."""
-    els, bxs, pieces = oval(cld, loop)
+    els, bxs, pieces, _ = oval(cld, loop)
     sub = {"elements": els, "connections": [c for c in cld["connections"] if (c["from"], c["to"]) in pieces]}
     ring = [bezier(*p, t / 10) for ps in pieces.values() for p in ps for t in range(11)]
     # the frame: the boxes and the curves, with room for a sign on a curve
@@ -735,7 +758,7 @@ def loop_figure(cld, loop):
     ys = [b[k] for b in bxs.values() for k in (1, 3)] + [p[1] for p in ring]
     pad = MARGIN + SIGN_SIZE
     vb = (min(xs) - pad, min(ys) - pad, max(xs) - min(xs) + 2 * pad, max(ys) - min(ys) + 2 * pad)
-    parts = [*head(vb), *links_and_elements(sub, bxs, pieces), loop_svg(loop, (0, 0)), "</svg>"]
+    parts = [*head(vb), *links_and_elements(sub, bxs, pieces), loop_svg(loop, OVAL_MARK), "</svg>"]
     return "\n".join(parts) + "\n"
 
 

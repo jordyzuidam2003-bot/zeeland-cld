@@ -4,16 +4,6 @@
 
 @controls {
   bottom-left {
-    showcase {
-      as: buttons;
-      /* strict shows only what an option selects: normal adds the links among its elements and
-         loose their neighbours, which are not the loop */
-      mode: strict;
-
-      /* build.py replaces the next line with an option per named loop */
-      /* LOOP OPTIONS */
-    }
-
     text {
       value: "**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay";
     }
@@ -63,8 +53,7 @@ element {
 /* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,
    pinned at the centre of the regions' frame, and its width and height, the frame's, and puts the
    regions in place of IMAGE, as a data URL of the SVG it draws, so the image travels inside the
-   project file. A showcase fades all it does not select, so every showcase option above selects
-   #background too */
+   project file */
 #background {
   image-url: url(IMAGE);
   layer: background;
@@ -99,7 +88,8 @@ connection {
 
 /* ---------- Loops: Kumu's named loops, no label on the map ---------- */
 /* the full drawing has no loop marks (the layout decision in `cld-drawing.md`); Kumu's property reference
-   gives loops `label`, not `label-visibility` */
+   gives loops `label`, not `label-visibility`. The loop maps' view is this view without this
+   section (build.py), so each loop's label shows at its mark */
 loop {
   label: none;
 }

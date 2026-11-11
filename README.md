@@ -133,7 +133,11 @@ looking at.
 
 `docs/tables/cld-table.xlsx`, linked from the page, is the table that explains the CLD, which Jordy imports
 into Google Drive as a Google Sheet, as the actors' table (Jordy; rejected: an HTML page, whose
-tables lost their columns pasted into Google Docs). `build.py` writes it from `model/cld.json`, so it
+tables lost their columns pasted into Google Docs). Each update goes into the same Sheet, so its link
+stays: in the Sheet, File → Import → Upload → the new `.xlsx` → "Replace spreadsheet", which
+overwrites every tab, so the Sheet itself is never edited (Jordy; rejected: a new file per update,
+whose link changes, and a Sheet that pulls the table from the page with `IMPORTDATA`, whose formula
+shows the page's address to anyone who views it). `build.py` writes it from `model/cld.json`, so it
 never drifts from the drawing: the Elements sheet (by subsystem, then by label: type, SETS
 domain, subsystem, description, simplification, the actor that decides it, the actors that
 decide or shape it, sources), the Links sheet (by their ends: polarity, delay, description,
@@ -330,7 +334,7 @@ is the network on its own, the picture for the report (a PNG with the CLD's Chro
 `svg=docs/figures/actor-map.svg`).
 
 The actors' table is `docs/tables/actor-map-table.xlsx` (Jordy: a sheet he imports into Google Drive as a Google
-Sheet; rejected: a table on the page, which took seven printed pages): the Actors sheet, a row per
+Sheet, each update replacing the same Sheet as the CLD's table does; rejected: a table on the page, which took seven printed pages): the Actors sheet, a row per
 actor with its columns, whom it influences and is influenced by, and the CLD variables it decides;
 the Relations sheet, a row per relation, read "From relation To", with its description; the
 References sheet, the full references the two cite, whose in-text citations they carry; the

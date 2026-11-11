@@ -372,8 +372,9 @@ The two models share Kumu's fields, one per name: a list to pick from where its 
 are 20 or fewer.
 
 An import never updates what a project already holds, and Kumu cannot empty a project, so each
-update is a new project under the same name, which keeps the URL. Jordy renames the previous
-`cbp1`, then on the Kumu dashboard: New Project → name `cbp1`, public → the next screen →
+update is a new project under the same name, which keeps the URL. Jordy deletes the previous
+`cbp1` (Jordy: a past copy is kept nowhere in Kumu; rejected: renaming it), then on the Kumu
+dashboard: New Project → name `cbp1`, public → the next screen →
 "restore backup" (the link at the bottom) → `docs/kumu/kumu-project.json`, once: the file holds
 every map with its view and both background images, so nothing is uploaded after it. Only a
 brand-new project restores a project export; the green `+` → Import route brings in the elements

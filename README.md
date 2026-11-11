@@ -15,22 +15,21 @@ build.py        checks the model and writes docs/: every route runs python3 buil
 model/          what the group edits: the CLD, the Actor Map, their sources and the model texts
 src/            what build.py uses: the drawing code, and the templates and views it fills
   templates/    the pages around the drawings, copied or filled into docs/
-  kumu/         the Kumu views, inside the exports in docs/kumu/
+  kumu/         the Kumu views, inside the export in docs/kumu/
 docs/           built by build.py and never edited; GitHub Pages publishes it, and allows no other folder name
   assets/       the pages' scripts and style
   figures/      the drawings for the report: the CLD, the Actor Map, each loop on its own
     named-loops/     each named loop
     combined-loops/  each group of named loops
   tables/       the CLD's and the actors' tables, for Google Sheets
-  kumu/         the Kumu project exports
+  kumu/         the Kumu project export
 hooks/          the pre-commit check
 ```
 
 The files sit in folders by what they are for, and their names say which model each belongs to
 (Jordy: "do what you think is best"). `docs/` keeps its name, since GitHub Pages publishes only
 the repository's root or `docs/`. `docs/index.html` and `docs/actors.html` stay at the top of
-`docs/`, since their addresses may already be shared; `docs/regions.svg` and
-`docs/actors-bands.svg` too, since the live Kumu projects load them by their URL.
+`docs/`, since their addresses may already be shared.
 
 ## Files
 
@@ -41,13 +40,13 @@ the repository's root or `docs/`. `docs/index.html` and `docs/actors.html` stay 
 | `model/references.json` | the sources, as CSL JSON, from which `build.py` writes each APA reference | yes |
 | `model/references.zotero.json` | the Use note in Zotero that `push` wrote for each source, with a fingerprint of its text, so a push never replaces a note somebody changed | never: `push` writes it |
 | `model/cld-texts.md` | the model texts the page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
-| `src/kumu/cld-view.scss`, `src/kumu/actor-map-view.scss` | the Kumu views inside `docs/kumu/cld-project.json` and `docs/kumu/actor-map-project.json` | yes |
+| `src/kumu/cld-view.scss`, `src/kumu/actor-map-view.scss` | the Kumu views inside `docs/kumu/kumu-project.json` | yes |
 | `src/templates/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `map.js` (moving and zooming, the bar and the menu, for both pages), `style.css` | yes |
 | `build.py` | checks the model and the actors and writes `docs/` (how: its docstring) | — |
 | `src/draw_cld.py` | draws the CLD's SVG, imported by `build.py` | — |
 | `src/draw_actor_map.py` | draws the Actor Map and lays out its table, imported by `build.py` | — |
 | `src/write_xlsx.py` | writes the table as an `.xlsx` with the standard library | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `actors.html`; `assets/` (`app.js`, `actors.js`, `map.js`, `style.css`); `figures/` (`cld.svg`, `actor-map.svg`, `named-loops/<id>.svg`, `combined-loops/<id>.svg`); `tables/` (`cld-table.xlsx`, `actor-map-table.xlsx`); `kumu/` (`cld-project.json`, `actor-map-project.json`); `regions.svg`, `actors-bands.svg` | never: `build.py` writes it |
+| `docs/` | what GitHub Pages serves: `index.html`, `actors.html`; `assets/` (`app.js`, `actors.js`, `map.js`, `style.css`); `figures/` (`cld.svg`, `actor-map.svg`, `named-loops/<id>.svg`, `combined-loops/<id>.svg`); `tables/` (`cld-table.xlsx`, `actor-map-table.xlsx`); `kumu/` (`kumu-project.json`) | never: `build.py` writes it |
 
 ## Version 1
 
@@ -232,7 +231,7 @@ the top-level list `groups`: loops that together form a behaviour none of them s
 the variables they share. Its `name` says what the loops do together, in words each actor would
 accept. `build.py` stops on a group naming a loop that is not a named loop, on a group of fewer than
 two loops and on a loop sharing no variable with the group's others; the page's button, the table's
-Combined loops sheet and Kumu's showcase show each group. `places` (`{"element-id": [x, y]}`), `bends`
+Combined loops sheet and a Kumu map of its own show each group. `places` (`{"element-id": [x, y]}`), `bends`
 (`{"from-id -> to-id": curvature}`) and `marks` (`{"R3": [x, y]}`) lay out its figure,
 `docs/figures/combined-loops/<id>.svg`: its own, never the full drawing's, on the same axes and signs as `x`, `y` and
 `curvature`. Each must hold exactly the group's elements, links and loops, so `build.py` stops when a
@@ -344,32 +343,46 @@ guidelines do not ask for it (Jordy).
 
 ## Kumu
 
-Kumu holds a copy for milestones, at <https://kumu.io/JordyZuidam/cbp-cld>, and is never edited.
+Kumu holds a copy for milestones, at <https://kumu.io/JordyZuidam/cbp-cld>, public and never
+edited: the one place outsiders see the model, so nothing in it links to the page or this
+repository (Jordy). One project holds every map, each picked from Kumu's map list, with no
+showcase buttons:
+
+- the full CLD, the default map: the elements at their positions, the curved links, the view from
+  `src/kumu/cld-view.scss`, and the named loops, each its links, its "R1 …" label hidden on the
+  map by the view, as the page has no loop marks;
+- the Actor Map: the actors at their places with their fields, the relations with their curves,
+  each kind as its connection type in its colour and dash (`src/kumu/actor-map-view.scss` and the
+  rules `build.py` adds);
+- a map per combined loop, C1 to C10, then per named loop in `model/cld.json`'s order, named
+  `<id> <name>`, its description the group's or the loop's: exactly its loops' elements and links,
+  at the places of its figure in `docs/figures/` (a group's `places`, `bends` and `marks`, a named
+  loop's oval), each loop's label at its mark. Kumu draws a link from centre to centre, so a named
+  loop's link bends through the oval midway between its two elements (`draw_cld.oval_layout()`).
+  Their view is the CLD's without the rule that hides the loop labels.
+
+The two models share Kumu's fields, one per name: a list to pick from where its values over both
+are 20 or fewer.
+
 An import never updates what a project already holds, and Kumu cannot empty a project, so each
 update is a new project under the same name, which keeps the URL. Jordy renames the previous
 `cbp-cld`, then on the Kumu dashboard: New Project → name `cbp-cld`, public → the next screen →
-"restore backup" (the link at the bottom) → `docs/kumu/cld-project.json`. Only a brand-new project restores
-a project export; the green `+` → Import route brings in the elements and connections alone.
-Kumu restores the map with the elements at their positions, the view from `src/kumu/cld-view.scss`, the named
-loops (each its links, its "R1 …" label hidden on the map by the view, as the page has no loop
-marks, and a showcase button per named loop and per group of them, as on the page), and the project's name,
-which the export sets to `cbp-cld`.
-
-The Actor Map goes the same way, as its own project at <https://kumu.io/JordyZuidam/cbp-actors>:
-New Project → name `cbp-actors`, public → "restore backup" → `docs/kumu/actor-map-project.json`. Kumu
-restores the actors at their places with their fields, the relations with their curves, each kind
-as its connection type in its colour and dash (`src/kumu/actor-map-view.scss` and the rules `build.py` adds),
-and the level bands as the background image `docs/actors-bands.svg`, as the CLD's regions.
+"restore backup" (the link at the bottom) → `docs/kumu/kumu-project.json`, once: the file holds
+every map with its view and both background images, so nothing is uploaded after it. Only a
+brand-new project restores a project export; the green `+` → Import route brings in the elements
+and connections alone. The restore sets the project's name, which the export sets to `cbp-cld`.
 
 The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label
 inside, square corners for a stock and rounded ones for the others, an italic label for a
 constant (Kumu has no dashed border), a thick border for an adaptive practice; links of one
 width, blue `+` and red `−`. Kumu draws each link from centre to centre. The regions reach Kumu
-as a background image: `build.py` writes them alone as `docs/regions.svg`, in the elements'
-coordinates, and `cld-project.json` holds an element labelled `background`, pinned at the centre of
-the regions' frame with the frame's width and height, which the `#background` rule in
-`src/kumu/cld-view.scss` shows as that image, from its URL on the published page, behind the map. Every
-showcase button selects it too, so it stays when a button fades the rest. The subsystem is also
+as a background image inside the file: the CLD's map holds an element labelled `background`,
+pinned at the centre of the regions' frame with the frame's width and height, which the
+`#background` rule in `src/kumu/cld-view.scss` shows behind the map, its `url(IMAGE)` replaced by
+`build.py` with a data URL of the regions alone (`draw_cld.regions_svg()`), never a URL on the
+published page, so a copy shows its own version's regions and depends on no host (Jordy). The
+Actor Map's level bands reach it the same way, its element `elem-actors-background`. The subsystem is also
 a field there. `build.py` adds the rules that tint and size each box below `src/kumu/cld-view.scss`, and
 a double space where the page breaks a label's line (Kumu's manual line break). The project's
-description and the map's name carry the model version, so Kumu says which model it holds.
+description carries the model's and the Actor Map's versions, and the two maps' names each its
+own, so Kumu says which model it holds.

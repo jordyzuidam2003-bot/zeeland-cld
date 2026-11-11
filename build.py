@@ -8,7 +8,7 @@
 Sources, edited by hand: in model/, cld.json (elements, connections, named loops, layout and
 link curvature), actor-map.json (the Actor Map's actors, their relations and places, the one list
 the CLD's actor fields name), references.json (sources) and cld-texts.md (the model texts each page
-shows); in src/, kumu/cld-view.scss and kumu/actor-map-view.scss (the Kumu views inside the exports
+shows); in src/, kumu/cld-view.scss and kumu/actor-map-view.scss (the Kumu views inside the export
 in docs/kumu/) and templates/ (index.html, a template with the placeholders <!-- SVG -->,
 <!-- FACTS -->, <!-- TEXTS --> and <!-- DATA -->; actors.html, the Actor Map's, with <!-- QUESTION -->,
 <!-- SVG --> and <!-- DATA -->; app.js; actors.js; map.js; style.css). src/draw_cld.py draws the CLD,
@@ -33,16 +33,14 @@ edit docs/, which this script writes:
     docs/tables/actor-map-table.xlsx  the actors' table, which Jordy imports into Google Drive as a
                        Google Sheet: the Actors, Relations, References and Columns sheets
                        (draw_actor_map.sheets()); linked from the Actor Map's page
-    docs/kumu/cld-project.json  a full Kumu project export: restore it into a brand-new Kumu
-                       project (New Project > the next screen > restore backup) and Kumu restores
-                       the elements at their positions, the curved links, the view and the regions
-                       (an element labelled background showing docs/regions.svg as its image, by
-                       its URL on the published page); the model version is in the project's
-                       description and the map's name
-    docs/kumu/actor-map-project.json  the Actor Map as a full Kumu project export, restored as
-                       cld-project.json is
-    docs/regions.svg   the subsystem regions alone, the background image of the CLD's Kumu map
-    docs/actors-bands.svg  the Actor Map's level bands alone, the background image of its Kumu map
+    docs/kumu/kumu-project.json  the Kumu project, a full project export (kumu_project()): restored
+                       once into a brand-new Kumu project (New Project > the next screen > restore
+                       backup), it holds the full CLD, the Actor Map and a map per combined loop and
+                       per named loop, each drawn as its figure, with no showcase; each map with
+                       its view, the CLD's regions and the Actor Map's level bands as background
+                       images inside the file (an element labelled background showing a data URL
+                       of the SVG); the versions are in the project's description and the CLD's and
+                       the Actor Map's map names
 """
 
 import argparse

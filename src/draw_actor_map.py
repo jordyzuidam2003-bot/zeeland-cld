@@ -2,8 +2,8 @@
 downwards), and the page around it.
 
 Imported by build.py, which writes docs/actors.html (page(): the drawing, a panel per actor and
-relation), docs/figures/actor-map.svg (svg(), the picture for the report), docs/actors-bands.svg (bands_svg(),
-Kumu's background image), docs/kumu/actor-map-project.json and docs/tables/actor-map-table.xlsx (sheets(), the actors'
+relation), docs/figures/actor-map.svg (svg(), the picture for the report), docs/kumu/kumu-project.json (bands_svg(),
+Kumu's background image, inside the file) and docs/tables/actor-map-table.xlsx (sheets(), the actors'
 table, which Jordy imports into Google Drive as a Google Sheet; rejected: the table on the page,
 Jordy). tangles(actors) and overlaps(actors) give build.py's report the crossings between
 relations, the relations through a box they do not connect, boxes that overlap and an actor

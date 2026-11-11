@@ -362,6 +362,12 @@ CLD's own project before the Actor Map joined it):
   loop's link bends through the oval midway between its two elements (`draw_cld.oval_layout()`).
   Their view is the CLD's without the rule that hides the loop labels.
 
+Kumu lists the maps sorted by name as plain text, whatever their order in the file (B10 before
+B2), so each map's name starts with its place in this order, in two digits: `01 CLD, model …`,
+`02 Actor Map, version …`, then the loop maps (Jordy; rejected: zero-padded loop ids, which keep
+the list grouped by letter, and the names alone). `build.py` stops when the names would sort into
+another order.
+
 The two models share Kumu's fields, one per name: a list to pick from where its values over both
 are 20 or fewer.
 

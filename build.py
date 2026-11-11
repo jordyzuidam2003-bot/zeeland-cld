@@ -791,6 +791,14 @@ def kumu_project(cld_part, actors_part, version, actors_version):
     parts = [cld_part, actors_part]
     # the CLD's map and view first, then the Actor Map's, then the CLD's loop maps and their view
     order = lambda k: cld_part[k][:1] + actors_part[k] + cld_part[k][1:]
+    # Kumu lists the maps sorted by name as plain text, whatever their order here (B10 before B2),
+    # so each name starts with its place in this order (Jordy; rejected: zero-padded loop ids, which
+    # keep the list grouped by letter, and the names alone)
+    maps = order("maps")
+    width = max(2, len(str(len(maps))))
+    maps = [dict(m, name=f"{n:0{width}} {m['name']}") for n, m in enumerate(maps, 1)]
+    if [m["name"] for m in maps] != sorted(m["name"] for m in maps):
+        sys.exit("the Kumu map names sort into another order than the maps': Kumu's list would show that order")
     description = (f"Model version {version}, the first seven characters of the SHA-256 of cld.json.\n\n"
                    f"Actor Map version {actors_version}, the first seven characters of the SHA-256 of actor-map.json.")
     # a restore sets the project's name, so it is the name of the project the group's URL names
@@ -799,7 +807,7 @@ def kumu_project(cld_part, actors_part, version, actors_version):
         "defaultMap": "map-cld", "defaultPerspective": None, "attributeRelevance": {},
         "attributes": fields([x["attributes"] for p in parts for x in p["elements"] + p["connections"]]),
         **{k: [x for p in parts for x in p[k]] for k in ("elements", "connections", "loops")},
-        "maps": order("maps"), "perspectives": order("perspectives"),
+        "maps": maps, "perspectives": order("perspectives"),
     }
 
 

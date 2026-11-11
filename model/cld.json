@@ -1052,8 +1052,10 @@
       "to": "freshwater-lens-recharge",
       "polarity": "-",
       "delay": false,
-      "description": "Summer precipitation deficit and high evaporation reduce natural recharge.",
-      "sources": [],
+      "description": "Summers with less rain and more evaporation lower the year's rain surplus, which is what recharges the lens. In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation: in the year it used, summer evaporation (440 mm) outweighed summer rain (425 mm), so the winter did the recharging, and a smaller surplus gave a thinner lens (de Louw et al., 2011, pp. 3665, 3671, 3674). Within the year.",
+      "sources": [
+        "de-louw-2011"
+      ],
       "curvature": 0.0
     },
     {
@@ -1061,8 +1063,12 @@
       "to": "saline-seepage-kwel",
       "polarity": "+",
       "delay": false,
-      "description": "Higher sea level increases hydrostatic pressure beneath dikes.",
-      "sources": [],
+      "description": "A higher sea raises the water pressure in the sand below the clay, so more salt groundwater seeps up and the ditches get saltier; in the fields the drains will probably catch most of the effect (Kaandorp et al., 2022, p. 11, for Schouwen-Duiveland). The rise in pressure fades quickly with distance from the coast (de Louw et al., 2011, p. 3674): in a model of the western Netherlands around Amsterdam, The Hague, Rotterdam and Utrecht, it reached up to 10 km from the coast and the main rivers, and 5 km inland it was about 40% of the rise (Oude Essink et al., 2010, pp. 3, 9). How much of the rise reaches the dikes along the Grevelingen, which has no tide, the sources read do not say. Within the year: the seepage follows the water pressures, which change constantly (de Louw et al., 2011, p. 3675).",
+      "sources": [
+        "kaandorp-2022",
+        "de-louw-2011",
+        "oude-essink-2010"
+      ],
       "curvature": 0.0
     },
     {
@@ -1070,8 +1076,11 @@
       "to": "freshwater-lens-recharge",
       "polarity": "+",
       "delay": false,
-      "description": "More winter precipitation increases potential infiltration into the soil.",
-      "sources": [],
+      "description": "More winter rain raises the winter's rain surplus, which recharges the lens. In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation, and from October to March of the year it used 397 mm of rain fell against 108 mm of evaporation (de Louw et al., 2011, p. 3665). Kaandorp et al. (2022, p. 11) expect the changing rain to raise the island's winter groundwater levels in part. Within the year.",
+      "sources": [
+        "de-louw-2011",
+        "kaandorp-2022"
+      ],
       "curvature": 0.0
     },
     {
@@ -1079,8 +1088,11 @@
       "to": "winter-rain-drained-away",
       "polarity": "+",
       "delay": false,
-      "description": "Higher winter rainfall peaks are mostly discharged under conventional drainage.",
-      "sources": [],
+      "description": "More winter rain gives the drains more to carry off: tile drains discharge the shallow groundwater quickly during each rain (de Louw et al., 2011, p. 3661, measured on the island), and on Schouwen-Duiveland enough rain falls over the year, but a large part of it is drained away in the wet season (Kaandorp et al., 2022, p. 54). Within the year.",
+      "sources": [
+        "de-louw-2011",
+        "kaandorp-2022"
+      ],
       "curvature": 0.0
     },
     {
@@ -1560,8 +1572,11 @@
       "to": "winter-rain-drained-away",
       "polarity": "+",
       "delay": false,
-      "description": "Deeper drainage carries more winter rain off to the sea.",
-      "sources": [],
+      "description": "The board holds the ditch levels lower in winter than in summer to prevent water damage in winter, and a higher winter level would keep the groundwater from sinking as deep (Waterschap Scheldestromen, 2021a, p. 37, its analysis for Duiveland): the deeper the ditches stand in winter, the more of the rain they and the drains carry off. On a creek ridge studied for water storage, where the winter depth is over 1.5 m in large parts, the drains and ditches carry the excess rain off fast, and a higher winter level might raise the groundwater and with it the recharge (Kaandorp et al., 2022, pp. 42–43). Within the year.",
+      "sources": [
+        "scheldestromen-2021-hor-duiveland",
+        "kaandorp-2022"
+      ],
       "curvature": 0.07
     },
     {

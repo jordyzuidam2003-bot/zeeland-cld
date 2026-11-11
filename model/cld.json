@@ -424,9 +424,10 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "European banking regulations requiring stricter risk weighting on loans when climate/soil risks reduce collateral value. The EU sets them: its banking package (CRR III/CRD VI) puts the final elements of the Basel III standards of 2017 into EU law, the new rules of the Capital Requirements Regulation applying from 1 January 2025, those of the directive once each member state has transposed them (European Commission, Directorate-General for Financial Stability, Financial Services and Capital Markets Union, 2023).",
+      "description": "The capital European rules require banks to hold against their loans, by the final Basel III standards. The EU sets them: its banking package (CRR III/CRD VI) puts the final elements of the Basel III standards of 2017 into EU law, the new rules of the Capital Requirements Regulation applying from 1 January 2025, those of the directive once each member state has transposed them; its output floor sets a lower limit on the capital requirements banks calculate with their own models; and environmental, social and governance risks enter the banks' handling of risk, the supervisors' annual review and disclosure (European Commission, Directorate-General for Financial Stability, Financial Services and Capital Markets Union, 2023). By the EBA's estimate, EU banks' minimum Tier 1 capital requirement is 9.0% higher at full implementation in 2028, the output floor and credit risk contributing most (European Banking Authority, 2023). No source read shows climate or salinisation risk in the risk weights of farm loans.",
       "sources": [
-        "ec-2023-banking-package"
+        "ec-2023-banking-package",
+        "eba-2023-basel-iii-monitoring"
       ],
       "actors": [
         "eu"
@@ -1002,8 +1003,10 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ3",
-      "description": "Hectares of the island's farmland sold, expropriated or passed on to a new holder in a year: at a forced sale, a retirement without a successor, or otherwise.",
-      "sources": [],
+      "description": "Hectares of the island's farmland sold, expropriated or passed on to a new holder in a year. Supply and demand come mainly from farmers, those who need land to expand and those who shed it as they downsize or end the farm, and together they set how much land is traded, its mobility, and at what price (Silvis & Voskuilen, 2017, p. 2). The number of Dutch farms falls by 2 to 3% a year, mainly as farms end at the change of generation, for want of a successor or for a less favourable income outlook (p. 2). Measured nationally; no source read gives the island's land sales.",
+      "sources": [
+        "silvis-2017"
+      ],
       "x": 484,
       "y": -840
     },
@@ -1363,8 +1366,11 @@
       "to": "bank-credit-freeze-risk-premiums",
       "polarity": "+",
       "delay": false,
-      "description": "Stricter European banking rules require more capital against climate-exposed loans, which banks price in.",
-      "sources": [],
+      "description": "Stricter capital rules raise what a bank charges for a loan: for every loan a bank must hold capital, as the law on banks' solvency sets, the more the higher the credit risk, and the cost of that capital, the return its shareholders require, is part of the interest each client pays (ABN AMRO, n.d.-a). The final Basel III standards raise that capital, EU banks' minimum Tier 1 capital requirement by an estimated 9.0% at full implementation in 2028 (European Banking Authority, 2023). Measured across EU banks: no source read gives the change for Dutch farm loans. Within the year: the bank prices the capital with each loan.",
+      "sources": [
+        "abn-amro-nd-kosten-krediet",
+        "eba-2023-basel-iii-monitoring"
+      ],
       "curvature": 0.0
     },
     {
@@ -1741,8 +1747,12 @@
       "to": "farm-revenue",
       "polarity": "-",
       "delay": false,
-      "description": "The levy is part of a farm's costs.",
-      "sources": [],
+      "description": "The levy is a cost to the farm that holds the land: the law charges those who hold unbuilt land by ownership, possession or a limited right, not its tenants (Waterschapswet, 2026, art. 117), at one rate per hectare (art. 121), €115.53 for 2026 (Waterschap Scheldestromen, 2026d, art. 6), and a farm's income is its revenue minus the costs it pays and depreciation (Verhagen et al., 2018, p. 21). Whether a tenant pays it through the rent, no source read shows. Within the year: the levy is charged each year.",
+      "sources": [
+        "waterschapswet-2026",
+        "scheldestromen-2026-watersysteemheffing",
+        "verhagen-2018"
+      ],
       "curvature": 0.14
     },
     {
@@ -1831,8 +1841,11 @@
       "to": "farm-revenue",
       "polarity": "+",
       "delay": false,
-      "description": "Higher prices for the current crops raise the income from carrying on.",
-      "sources": [],
+      "description": "Higher prices for the current crops raise the income from them: a farm's income is its revenue minus the costs it pays and depreciation (Verhagen et al., 2018, p. 21), and Dutch arable farms' income fell to an estimated 60,000 euro per unpaid labour unit in 2025 on lower prices, after favourable growing conditions and higher yields in north-west Europe and beyond, slightly rising costs adding to the fall (van der Meulen, 2025). How far a farm's income follows the price depends on how it sells (World prices of conventional crops). Measured nationally. Within the year, as the harvest is sold.",
+      "sources": [
+        "verhagen-2018",
+        "van-der-meulen-2025"
+      ],
       "curvature": 0.0
     },
     {
@@ -2197,8 +2210,10 @@
       "to": "debt-payments",
       "polarity": "+",
       "delay": false,
-      "description": "More debt, more to pay each year.",
-      "sources": [],
+      "description": "More credit, more to pay each year: a farm's financing charges are the interest and commission on its loans and the repayment, the periodic amount that pays a loan back within the agreed term (ABN AMRO, n.d.-a), so each new loan adds its interest and repayment to what the farm pays. Within the year, from the loan's payout.",
+      "sources": [
+        "abn-amro-nd-kosten-krediet"
+      ],
       "curvature": 0.14
     },
     {
@@ -2237,30 +2252,25 @@
     {
       "from": "bank-credit-to-farms",
       "to": "farmland-changing-hands",
-      "polarity": "-",
-      "delay": false,
-      "description": "Farms that cannot refinance sell up.",
-      "sources": [],
-      "curvature": -0.14
-    },
-    {
-      "from": "mortgage-debt-financial-leverage",
-      "to": "farmland-changing-hands",
       "polarity": "+",
       "delay": false,
-      "description": "Highly leveraged farms are the ones sold in a forced sale or bankruptcy.",
-      "sources": [],
-      "curvature": -0.3
+      "description": "With more bank credit more farmland is bought, and with less, less: the land a farm can acquire depends on its income and expected income together with its financing (Silvis & Voskuilen, 2017, p. 2); with arable returns swinging, banks want larger buffers, which leave less room to finance land, and with a land loan calculated over at most 30 years with repayment, financing land has grown ever harder, which loosens the tie between owning land and using it, while younger farmers, by Rabobank's account, care less about expanding by purchase and are open to lease (pp. 3–4). The route the other way, a farm refused credit selling up, no source read shows: few Dutch farms go bankrupt, 45 in 2016, most in greenhouse horticulture, and a farm short of cash first saves on its spending and asks its bank to defer interest and repayments or for more credit, the bank weighing its continuity over the long term (Verhagen et al., 2018, p. 28). Measured nationally. Within the year: a purchase follows its financing.",
+      "sources": [
+        "silvis-2017",
+        "verhagen-2018"
+      ],
+      "curvature": -0.14
     },
     {
       "from": "farms-with-a-successor",
       "to": "farmland-changing-hands",
       "polarity": "-",
       "delay": false,
-      "description": "A farm with a successor stays with the family; one without is sold when its farmer retires.",
-      "sources": [],
-      "curvature": -0.14,
-      "hypothesis": true
+      "description": "A farm with a successor stays with the family; one without ends when its farmer stops, and its land comes onto the market: the number of Dutch farms falls by 2 to 3% a year, mainly as farms end at the change of generation, the lack of a successor among the reasons, and the farmers who downsize or end their farm are the ones who supply the land market (Silvis & Voskuilen, 2017, p. 2). Measured nationally. The land changes hands as the farm ends.",
+      "sources": [
+        "silvis-2017"
+      ],
+      "curvature": -0.14
     },
     {
       "from": "farmers-wish-to-keep-their-land",

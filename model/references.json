@@ -3815,5 +3815,25 @@
     "title": "KNMI’23-klimaatscenario’s voor Nederland",
     "number": "KNMI-Publicatie 23-03",
     "URL": "https://www.knmi.nl/kennis-en-datacentrum/publicatie/knmi-23-klimaatscenario-s-voor-nederland"
+  },
+  {
+    "id": "eba-2023-basel-iii-monitoring",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "European Banking Authority"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          26
+        ]
+      ]
+    },
+    "title": "The EBA second mandatory exercise on Basel III full implementation shows a significantly reduced impact on EU banks with shortfalls nearly fully absorbed",
+    "URL": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-second-mandatory-exercise-basel-iii-full-implementation"
   }
 ]

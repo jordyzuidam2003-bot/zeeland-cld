@@ -343,10 +343,11 @@ guidelines do not ask for it (Jordy).
 
 ## Kumu
 
-Kumu holds a copy for milestones, at <https://kumu.io/JordyZuidam/cbp-cld>, public and never
+Kumu holds a copy for milestones, at <https://kumu.io/JordyZuidam/cbp1>, public and never
 edited: the one place outsiders see the model, so nothing in it links to the page or this
-repository (Jordy). One project holds every map, each picked from Kumu's map list, with no
-showcase buttons:
+repository (Jordy). One project, `cbp1`, holds every map, each picked from Kumu's map list, with
+no showcase buttons, so its name names no single map (Jordy; rejected: `cbp-cld`, the name of the
+CLD's own project before the Actor Map joined it):
 
 - the full CLD, the default map: the elements at their positions, the curved links, the view from
   `src/kumu/cld-view.scss`, and the named loops, each its links, its "R1 …" label hidden on the
@@ -366,11 +367,11 @@ are 20 or fewer.
 
 An import never updates what a project already holds, and Kumu cannot empty a project, so each
 update is a new project under the same name, which keeps the URL. Jordy renames the previous
-`cbp-cld`, then on the Kumu dashboard: New Project → name `cbp-cld`, public → the next screen →
+`cbp1`, then on the Kumu dashboard: New Project → name `cbp1`, public → the next screen →
 "restore backup" (the link at the bottom) → `docs/kumu/kumu-project.json`, once: the file holds
 every map with its view and both background images, so nothing is uploaded after it. Only a
 brand-new project restores a project export; the green `+` → Import route brings in the elements
-and connections alone. The restore sets the project's name, which the export sets to `cbp-cld`.
+and connections alone. The restore sets the project's name, which the export sets to `cbp1`.
 
 The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label
 inside, square corners for a stock and rounded ones for the others, an italic label for a

@@ -795,7 +795,7 @@ def kumu_project(cld_part, actors_part, version, actors_version):
                    f"Actor Map version {actors_version}, the first seven characters of the SHA-256 of actor-map.json.")
     # a restore sets the project's name, so it is the name of the project the group's URL names
     return {
-        "version": 1, "name": "cbp-cld", "description": description, "proxyImages": True,
+        "version": 1, "name": "cbp1", "description": description, "proxyImages": True,
         "defaultMap": "map-cld", "defaultPerspective": None, "attributeRelevance": {},
         "attributes": fields([x["attributes"] for p in parts for x in p["elements"] + p["connections"]]),
         **{k: [x for p in parts for x in p[k]] for k in ("elements", "connections", "loops")},

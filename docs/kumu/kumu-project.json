@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "name": "cbp-cld",
+  "name": "cbp1",
   "description": "Model version bd62540, the first seven characters of the SHA-256 of cld.json.\n\nActor Map version 4e17283, the first seven characters of the SHA-256 of actor-map.json.",
   "proxyImages": true,
   "defaultMap": "map-cld",

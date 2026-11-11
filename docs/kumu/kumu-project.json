@@ -462,10 +462,10 @@
         "sets domain": "Ecological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "Meteorological drought (KNMI'23): higher evaporation, summer precipitation deficit, and lower river discharge.",
+        "description": "Summers with less rain and more evaporation. Around 2050 (2036–2065), against 1991–2020, every KNMI'23 scenario has 2 to 13% less summer rain, 6 to 11% more potential evaporation in summer and a largest precipitation deficit of April to September 13 to 35% larger, and the great rivers carry less water in summer (KNMI, 2023, pp. 3–4, 42). Measured as national averages, evaporation over five stations, Vlissingen among them (p. 5): the scenarios give no rain or deficit figure for Zeeland. Set outside the island: a Constant.",
         "actors": "",
-        "sources": "",
-        "sourced": "no"
+        "sources": "KNMI. (2023). KNMI’23-klimaatscenario’s voor Nederland (KNMI-Publicatie 23-03). https://www.knmi.nl/kennis-en-datacentrum/publicatie/knmi-23-klimaatscenario-s-voor-nederland",
+        "sourced": "yes"
       }
     },
     {
@@ -477,10 +477,10 @@
         "sets domain": "Ecological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "Rising sea level (KNMI'23 scenarios); increases hydrostatic pressure of marine water on polders and estuaries.",
+        "description": "The mean level of the sea at the Dutch coast. Around 2050 (2036–2065) every KNMI'23 scenario has it 16 to 38 cm above 1995–2014, 24 cm in the low-emission scenarios and 27 cm in the high, still rising by 1 to 8 mm a year (KNMI, 2023, pp. 3, 5). Set outside the island: a Constant.",
         "actors": "",
-        "sources": "",
-        "sourced": "no"
+        "sources": "KNMI. (2023). KNMI’23-klimaatscenario’s voor Nederland (KNMI-Publicatie 23-03). https://www.knmi.nl/kennis-en-datacentrum/publicatie/knmi-23-klimaatscenario-s-voor-nederland",
+        "sourced": "yes"
       }
     },
     {
@@ -492,10 +492,10 @@
         "sets domain": "Ecological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "Increased winter precipitation, providing potential recharge volume if retained.",
+        "description": "More rain in winter. Around 2050 (2036–2065), against 1991–2020, every KNMI'23 scenario has 4 to 7% more winter rain, and 0.4 to 0.8 more days a winter with 10 mm or more (KNMI, 2023, p. 3). Measured as a national average over 13 rain stations (p. 5): the scenarios give no figure for Zeeland. Set outside the island: a Constant.",
         "actors": "",
-        "sources": "",
-        "sourced": "no"
+        "sources": "KNMI. (2023). KNMI’23-klimaatscenario’s voor Nederland (KNMI-Publicatie 23-03). https://www.knmi.nl/kennis-en-datacentrum/publicatie/knmi-23-klimaatscenario-s-voor-nederland",
+        "sourced": "yes"
       }
     },
     {
@@ -2457,13 +2457,13 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Dry summers lower river discharge, so less river water is left to supply: a route can only carry what summer discharge and the national distribution in drought (the verdringingsreeks, IenW and Rijkswaterstaat) leave for the region, outside the CLD's scale.",
+        "description": "Dry summers lower the discharge of the great rivers, and drought more often brings a water shortage, in which the scarce water is divided among drinking water, nature, agriculture and shipping (KNMI, 2023, p. 42, the Planbureau voor de Leefomgeving's risks for the Netherlands, measured nationally): a route can only carry what summer discharge and the national distribution in drought (the verdringingsreeks, IenW and Rijkswaterstaat) leave for the region, outside the CLD's scale. Within the year: a summer's discharge sets that summer's supply.",
         "sets link": "E to T",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
         "simplification": "Folds Fresh water available for supply in drought: dry summers leave less river water for a supply route, and the route carries what is left. The sign is the product of the two steps (−, then +). Hotter, drier summers is a Constant, so no loop runs through the link. What it leaves out: the river water left for the region in drought, which the national distribution decides outside the CLD's scale, is no variable of its own.",
-        "sources": "",
-        "sourced": "no",
+        "sources": "KNMI. (2023). KNMI’23-klimaatscenario’s voor Nederland (KNMI-Publicatie 23-03). https://www.knmi.nl/kennis-en-datacentrum/publicatie/knmi-23-klimaatscenario-s-voor-nederland",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-hotter-drier-summers",

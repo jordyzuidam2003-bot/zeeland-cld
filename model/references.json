@@ -3708,5 +3708,24 @@
     "title": "Stakeholder mapping for the Dutch potato industry",
     "publisher": "Institute for Environmental Studies, VU Amsterdam",
     "DOI": "10.17605/OSF.IO/YZRV3"
+  },
+  {
+    "id": "knmi-2023-klimaatscenarios",
+    "type": "report",
+    "author": [
+      {
+        "literal": "KNMI"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "KNMI’23-klimaatscenario’s voor Nederland",
+    "number": "KNMI-Publicatie 23-03",
+    "URL": "https://www.knmi.nl/kennis-en-datacentrum/publicatie/knmi-23-klimaatscenario-s-voor-nederland"
   }
 ]

@@ -7,7 +7,7 @@
   ]
  },
  "abn-amro-nd-kosten-krediet": {
-  "digest": "b1477feb52ba",
+  "digest": "d2df75dee791",
   "note": "CN8SUTIK",
   "placed": [
    "CLD"
@@ -282,8 +282,15 @@
    "CLD"
   ]
  },
+ "eba-2023-basel-iii-monitoring": {
+  "digest": "407f8d88da1b",
+  "note": "5JAMBNCX",
+  "placed": [
+   "CLD"
+  ]
+ },
  "ec-2023-banking-package": {
-  "digest": "df915e3d4464",
+  "digest": "2e819233bda7",
   "note": "XGHKWF9Q",
   "placed": [
    "Actor Map",
@@ -873,7 +880,7 @@
   ]
  },
  "scheldestromen-2026-watersysteemheffing": {
-  "digest": "fb9451d29eab",
+  "digest": "92736d8c3232",
   "note": "F93HUD6V",
   "placed": [
    "Actor Map",
@@ -909,7 +916,7 @@
   ]
  },
  "silvis-2017": {
-  "digest": "d806acc51593",
+  "digest": "833d5a354931",
   "note": "IBE9VSFM",
   "placed": [
    "CLD"
@@ -969,7 +976,7 @@
   ]
  },
  "van-der-meulen-2025": {
-  "digest": "f0b0498443fb",
+  "digest": "b2167419a7fa",
   "note": "C8BWZJC2",
   "placed": [
    "CLD"
@@ -1009,7 +1016,7 @@
   ]
  },
  "verhagen-2018": {
-  "digest": "652b23fe96f1",
+  "digest": "a77828b91ada",
   "note": "RDEUDPA2",
   "placed": [
    "CLD"
@@ -1023,7 +1030,7 @@
   ]
  },
  "waterschapswet-2026": {
-  "digest": "aade0ea9e954",
+  "digest": "f5f5df3b328d",
   "note": "IKRICD8U",
   "placed": [
    "Actor Map",

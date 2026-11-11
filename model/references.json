@@ -212,6 +212,75 @@
     "DOI": "10.1029/2009WR008719"
   },
   {
+    "id": "oude-essink-2018",
+    "type": "report",
+    "author": [
+      {
+        "family": "Oude Essink",
+        "given": "G."
+      },
+      {
+        "family": "Pauw",
+        "given": "P."
+      },
+      {
+        "family": "van Baaren",
+        "given": "E."
+      },
+      {
+        "family": "Zuurbier",
+        "given": "K."
+      },
+      {
+        "family": "de Louw",
+        "given": "P."
+      },
+      {
+        "family": "Veraart",
+        "given": "J."
+      },
+      {
+        "family": "McAteer",
+        "given": "E."
+      },
+      {
+        "family": "van der Schoot",
+        "given": "M."
+      },
+      {
+        "family": "Groot",
+        "given": "N."
+      },
+      {
+        "family": "Cappon",
+        "given": "H."
+      },
+      {
+        "family": "Waterloo",
+        "given": "M."
+      },
+      {
+        "family": "Hu-a-ng",
+        "given": "K."
+      },
+      {
+        "family": "Groen",
+        "given": "M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "GO-FRESH: Valorisatie kansrijke oplossingen voor een robuuste zoetwatervoorziening; Rendabel en duurzaam watergebruik in een zilte omgeving",
+    "genre": "Eindrapportage",
+    "publisher": "Deltares",
+    "URL": "https://edepot.wur.nl/521462"
+  },
+  {
     "id": "van-der-meulen-2020",
     "type": "report",
     "author": [

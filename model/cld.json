@@ -97,11 +97,14 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "Physical land surface elevation of the polder (-1.5m to -3.5m NAP), lowered by subsidence. Tidal silt, let in through a wisselpolder, would barely raise it on this island: the Grevelingen has no tide, and the Oosterschelde has too little silt to raise polders on a large scale (De Mesel et al., 2013). Since the storm surge barrier its channels carry 52–70% less suspended sediment (Ma et al., 2014, p. 15); near Zierikzee the water holds under 10 mg/l, mostly fine sand, and its salt marshes rise 3–10 mm a year (van Maldegem & de Jong, 2004, pp. 14, 27), against 16–32 mm on young marshes along the Westerschelde (De Mesel et al., 2013).",
+      "description": "The land surface elevation of the island's polders relative to NAP, lowered by subsidence: most of the low polders' surface lies around NAP (Kaandorp et al., 2022, p. 10), the western low polders mostly between −1 and −2 m NAP and the eastern ones at about 0 to +1 m (pp. 27–28), the middle and east of Schouwen between −1.5 and −0.5 m NAP (Waterschap Scheldestromen, 2021b, p. 22), and the lowest polders at −1.5 to −2.5 m below mean sea level (de Louw et al., 2011, p. 3661). Tidal silt, let in through a wisselpolder, would barely raise it on this island: the Grevelingen has no tide, and the Oosterschelde has too little silt to raise polders on a large scale (De Mesel et al., 2013). Since the storm surge barrier its channels carry 52–70% less suspended sediment (Ma et al., 2014, p. 15); near Zierikzee the water holds under 10 mg/l, mostly fine sand, and its salt marshes rise 3–10 mm a year (van Maldegem & de Jong, 2004, pp. 14, 27), against 16–32 mm on young marshes along the Westerschelde (De Mesel et al., 2013).",
       "sources": [
         "de-mesel-2013",
         "ma-2014",
-        "van-maldegem-2004"
+        "van-maldegem-2004",
+        "kaandorp-2022",
+        "scheldestromen-2021-hor-schouwen",
+        "de-louw-2011"
       ],
       "x": -2202,
       "y": -307
@@ -163,8 +166,12 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "Upward cone of the salt-freshwater interface beneath pumping irrigation wells as the freshwater lens thins.",
-      "sources": [],
+      "description": "The rise of salt groundwater towards a well that pumps fresh water from a lens floating on it, in a cone under the well. In Zeeland fresh groundwater is mostly pumped through horizontal wells, under rules meant to limit this upconing and salt intrusion (Oude Essink et al., 2018, p. 1). In the Freshmaker pilot on a creek ridge at Ovezande, Zuid-Beveland, the pumped water grew saltier during each pumping season, as the lens thinned and the cone reached the shallow well (p. 67); in a model of the creek ridge at Serooskerke, Walcheren, the cone had not settled after ten years (p. 58), the slow part being the lens itself (Freshwater lens thickness under creek ridges, a Stock). The island's creek ridges hold the same kind of lens, rain soaked in over salt groundwater (Kaandorp et al., 2022, p. 10). Deltares, modelling Zeeland's rules in 2018, found them on the whole enough to prevent strong salinisation under and around a well (Gedeputeerde Staten van Zeeland, 2021, p. 1). Within the season: an Auxiliary.",
+      "sources": [
+        "oude-essink-2018",
+        "kaandorp-2022",
+        "provincie-zeeland-2021-grondwateronttrekkingen"
+      ],
       "x": -1141,
       "y": 585
     },
@@ -1125,8 +1132,11 @@
       "to": "upconing-of-salt-groundwater",
       "polarity": "-",
       "delay": false,
-      "description": "A thicker freshwater lens buffers against salt upconing under wells.",
-      "sources": [],
+      "description": "The thinner the lens under the well, the sooner the salt below reaches it: in the Freshmaker pilot at Ovezande, Zuid-Beveland, the pumped water grew saltier late in each pumping season, which the report explains by the lens thinning as fresh water is pumped, so that upconing could reach the shallow well (Oude Essink et al., 2018, p. 67). Zeeland allows wells only where the fresh groundwater is more than 15 m thick (Kaandorp et al., 2022, p. 26). Measured on a creek ridge elsewhere in Zeeland, a lens like those under the island's creek ridges (Kaandorp et al., 2022, p. 10). Within the year.",
+      "sources": [
+        "oude-essink-2018",
+        "kaandorp-2022"
+      ],
       "curvature": 0.32
     },
     {
@@ -1156,8 +1166,12 @@
       "to": "saline-seepage-kwel",
       "polarity": "-",
       "delay": false,
-      "description": "Higher polder elevation reduces the hydraulic head difference driving upward saline seepage.",
-      "sources": [],
+      "description": "The lower a polder lies, the more salt groundwater seeps up into it: on the island the eastern polders lie somewhat higher than the western ones and so have no or far less seepage pressure (Kaandorp et al., 2022, p. 28), and comparing the island's elevation with a regional groundwater model, seepage occurs in the polders below sea level and rain soaks in on the dunes, the creek ridges and the polders above it, the two strongly correlated (de Louw et al., 2011, pp. 3661, 3673). Drainage depth is measured from the surface, so at the same depth a lower polder holds its ditch level lower, which lowers the counter-pressure on the salt groundwater (Waterschap Scheldestromen, 2021a, p. 37). Within the year: the seepage follows the water pressures (de Louw et al., 2011, p. 3675).",
+      "sources": [
+        "kaandorp-2022",
+        "de-louw-2011",
+        "scheldestromen-2021-hor-duiveland"
+      ],
       "curvature": -0.14
     },
     {
@@ -1259,8 +1273,11 @@
       "to": "upconing-of-salt-groundwater",
       "polarity": "+",
       "delay": false,
-      "description": "Pumping groundwater draws the underlying salt-fresh interface upward into a cone.",
-      "sources": [],
+      "description": "The more a well pumps from the lens, the further salt groundwater rises towards it: in the Freshmaker pilot at Ovezande, Zuid-Beveland, the water pumped from the shallow well grew saltier as each pumping season went on (Oude Essink et al., 2018, p. 67). The report on the island's freshwater measures lists salinisation at too high a pumping rate as a risk of the creek-ridge infiltration system and of underground storage (Kaandorp et al., 2022, pp. 20–21). Within the year: the cone follows the season's pumping.",
+      "sources": [
+        "oude-essink-2018",
+        "kaandorp-2022"
+      ],
       "curvature": 0.22
     },
     {

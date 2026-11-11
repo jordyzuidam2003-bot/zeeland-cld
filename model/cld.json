@@ -84,8 +84,12 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "Peat oxidation and clay consolidation caused by low drainage levels, lowering the land surface relative to sea level.",
-      "sources": [],
+      "description": "How fast the land surface of the island's polders falls. Peat above the groundwater compacts and its organic matter oxidises as it is drained (Waterschap Scheldestromen, 2025, p. 13, the board's rules for its whole area), and the fall adds up in Polder surface elevation. The island's low polders lie on peat: in Schouwen's low polder salt-marsh soils alternate with basin clay with peat (Waterschap Scheldestromen, 2021b, p. 23), and under Duiveland a peat layer lies almost everywhere at −1.6 to −3.4 m NAP, under calcareous sand or light clay (2021a, p. 20), often within a metre of the surface in its low south and middle (p. 19). Drained by ditches, the polders have sunk over several hundred years as the peat compacted and the clay ripened (2021b, pp. 20, 22; 2021a, p. 18). No source read gives the rate on the island. The rate follows the drainage within the year, so an Auxiliary; what builds up slowly is the elevation, a Stock.",
+      "sources": [
+        "scheldestromen-2025-nota-peilbesluiten",
+        "scheldestromen-2021-hor-schouwen",
+        "scheldestromen-2021-hor-duiveland"
+      ],
       "x": -2024,
       "y": -844
     },
@@ -1567,8 +1571,12 @@
       "to": "land-subsidence",
       "polarity": "+",
       "delay": false,
-      "description": "Low water tables expose peat to oxygen and let clay shrink and settle.",
-      "sources": [],
+      "description": "The deeper the ditch levels lie below the fields, the more peat lies above the groundwater, where it compacts and oxidises, so the land falls faster: by the water board's rules for its whole area, peat soil above the groundwater subsides in response to drainage, and where the soil is prone to settling the board changes levels with restraint to limit it (Waterschap Scheldestromen, 2025, p. 13). On the island it holds Schouwen's summer levels high on purpose to limit subsidence by peat compaction, which leaves the salt-marsh soils between too little drainage depth (Waterschap Scheldestromen, 2021b, p. 45), and changes a level in soil prone to settling by no more than the land has subsided since (p. 50); Duiveland's plan changed levels with great care where peat lies below (2021a, p. 67). Within the year: the board weighs the risk by the summer groundwater level against the ditch level and the depth of the peat (2021b, p. 50). No source read gives how much faster the land falls per decimetre of drainage.",
+      "sources": [
+        "scheldestromen-2025-nota-peilbesluiten",
+        "scheldestromen-2021-hor-schouwen",
+        "scheldestromen-2021-hor-duiveland"
+      ],
       "curvature": -0.25
     },
     {

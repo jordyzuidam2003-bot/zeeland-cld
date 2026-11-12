@@ -127,7 +127,7 @@
           "sources": [
             "schouwen-duiveland-subsidie-zoet-water"
           ],
-          "curvature": 0.08
+          "curvature": 0.22
         },
         {
           "to": "waterschap-scheldestromen",
@@ -227,7 +227,7 @@
             "provincie-zeeland-2025-rwp",
             "scheldestromen-2021-wbp"
           ],
-          "curvature": -0.08
+          "curvature": 0.08
         },
         {
           "to": "gemeente-schouwen-duiveland",
@@ -237,7 +237,7 @@
             "omgevingswet-2026",
             "schouwen-duiveland-2024-waterbassins"
           ],
-          "curvature": 0.08
+          "curvature": 0.36
         },
         {
           "to": "gemeente-schouwen-duiveland",
@@ -334,7 +334,7 @@
           "sources": [
             "cosun-sustainable-beet-production"
           ],
-          "curvature": -0.08
+          "curvature": 0.08
         }
       ],
       "sources": [

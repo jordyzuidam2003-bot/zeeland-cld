@@ -7035,7 +7035,7 @@
         },
         {
           "_id": "edge-4",
-          "curvature": 0.08,
+          "curvature": 0.22,
           "style": {},
           "connection": "conn-4"
         },
@@ -7083,13 +7083,13 @@
         },
         {
           "_id": "edge-12",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-12"
         },
         {
           "_id": "edge-13",
-          "curvature": 0.08,
+          "curvature": 0.36,
           "style": {},
           "connection": "conn-13"
         },
@@ -7119,7 +7119,7 @@
         },
         {
           "_id": "edge-18",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-18"
         },

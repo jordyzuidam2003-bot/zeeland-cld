@@ -242,7 +242,7 @@
         {
           "to": "gemeente-schouwen-duiveland",
           "kind": "finances",
-          "description": "Co-financed, beside an EU contribution, the Living Lab's project Samenwerken voor Zoet Water (2020–2022), which the municipality leads.",
+          "description": "Co-financed, beside an EU contribution, the project Samenwerken voor Zoet Water (2020–2022) of the Living Lab, which the municipality leads.",
           "sources": [
             "living-lab-samenwerken-voor-zoet-water",
             "living-lab-partners"
@@ -263,7 +263,6 @@
         "provincie-zeeland-2025-rwp",
         "waterschapswet-2026",
         "omgevingswet-2026",
-        "nioz-2023-dcc",
         "iplo-verdringingsreeks",
         "witteveen-bos-2021"
       ],

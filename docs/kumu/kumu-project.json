@@ -1028,7 +1028,7 @@
         "sets domain": "Social",
         "subsystem": "Water and soil",
         "subquestion": "SQ2",
-        "description": "The water level plans in which Waterschap Scheldestromen raises a polder's ditch levels, from the draft until their levels take effect. The board matches its levels to the land's use and soil, its principle that the level follows the land use: arable land 80 to 120 cm below the surface by soil, permanent grassland 20 cm less (Waterschap Scheldestromen, 2021a, p. 29; 2025, pp. 5, 7), weighing flooding, drought, fresh water and groundwater (2021c, p. 19), subsidence (2025, pp. 13–14) and a change's costs against its benefits (2025, p. 12). On Duiveland the plan of 2021 proposed studying a raise in 14 level areas, where levels had been kept low to store extreme rain, to enlarge the fresh water in the soil and give crops more moisture (2021a, p. 69). The general board adopts each plan (2025, p. 18); of its 30 members, 26 represent the residents and two the owners of unbuilt land, farmland included, appointed by ZLTO's board (Reglement voor het Waterschap Scheldestromen, 2025, arts. 6–7). A plan waits years for the works its levels need (Water board's plans to raise ditch levels → Polder drainage depth), so a Stock.",
+        "description": "The water level plans in which Waterschap Scheldestromen raises a polder's ditch levels, from the draft until their levels take effect. The board matches its levels to the land's use and soil, its principle that the level follows the land use: arable land 60 to 120 cm below the surface by soil, permanent grassland 20 cm less (Waterschap Scheldestromen, 2021a, p. 29; 2025, pp. 5, 7), weighing flooding, drought, fresh water and groundwater (2021c, p. 19), subsidence (2025, pp. 13–14) and a change's costs against its benefits (2025, p. 12). On Duiveland the plan of 2021 proposed studying a raise in 14 level areas, where levels had been kept low to store extreme rain, to enlarge the fresh water in the soil and give crops more moisture (2021a, p. 69). The general board adopts each plan (2025, p. 18); of its 30 members, 26 represent the residents and two the owners of unbuilt land, farmland included, appointed by ZLTO's board (Reglement voor het Waterschap Scheldestromen, 2025, arts. 6–7). A plan waits years for the works its levels need (Water board's plans to raise ditch levels → Polder drainage depth), so a Stock.",
         "simplification": "The two seats on the general board for the owners of unbuilt land, farmland included, were a Constant driving these plans, and are in the description instead: no loop runs through a Constant, so no loop changes. What it leaves out: the seats cannot be set as an input of their own.",
         "actor": "Waterschap Scheldestromen",
         "actors": "Arable farmers on Schouwen-Duiveland, Waterschap Scheldestromen",
@@ -1520,7 +1520,7 @@
         "influence score": 5,
         "client": "no",
         "decides in the CLD": "Freshwater supply route to the island",
-        "sources": "Provincie Zeeland. (2025). Regionaal Waterprogramma 2022–2027 (Provinciaal blad 2025, 3897). https://lokaleregelgeving.overheid.nl/CVDR736656\nWaterschapswet (version in force from 1 January 2026). https://wetten.overheid.nl/BWBR0005108/2026-01-01\nOmgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01\nNIOZ. (2023, February 15). Green light for Delta Climate Center in Vlissingen. https://www.nioz.nl/en/news/green-light-for-delta-climate-center-in-vlissingen\nInformatiepunt Leefomgeving. (n.d.). Verdringingsreeks: rangorde bij waterschaarste. Retrieved November 6, 2026, from https://iplo.nl/thema/water/beheer-watersysteem/verdringingsreeks/\nWitteveen+Bos. (2021). Zoetwateraanvoer Schouwen-Duiveland: Verkenning (12460/21-002.663). https://acpt.deltaexpertise.hz.nl/images/c/c5/Verkenning_externe_aanvoer_Schouwen-Duiveland.pdf"
+        "sources": "Provincie Zeeland. (2025). Regionaal Waterprogramma 2022–2027 (Provinciaal blad 2025, 3897). https://lokaleregelgeving.overheid.nl/CVDR736656\nWaterschapswet (version in force from 1 January 2026). https://wetten.overheid.nl/BWBR0005108/2026-01-01\nOmgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01\nInformatiepunt Leefomgeving. (n.d.). Verdringingsreeks: rangorde bij waterschaarste. Retrieved November 6, 2026, from https://iplo.nl/thema/water/beheer-watersysteem/verdringingsreeks/\nWitteveen+Bos. (2021). Zoetwateraanvoer Schouwen-Duiveland: Verkenning (12460/21-002.663). https://acpt.deltaexpertise.hz.nl/images/c/c5/Verkenning_externe_aanvoer_Schouwen-Duiveland.pdf"
       }
     },
     {
@@ -3349,7 +3349,7 @@
         "sets link": "T to S",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "sources": "Meynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nGreenFood50. (n.d.). The specialist in quinoa ingredients [Home page and About us]. Retrieved November 7, 2026, from https://www.greenfood50.com/",
+        "sources": "Meynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1",
         "sourced": "yes",
         "connection type": "+"
       },
@@ -4552,7 +4552,7 @@
       "reversed": false,
       "attributes": {
         "connection type": "finances",
-        "description": "Co-financed, beside an EU contribution, the Living Lab's project Samenwerken voor Zoet Water (2020–2022), which the municipality leads.",
+        "description": "Co-financed, beside an EU contribution, the project Samenwerken voor Zoet Water (2020–2022) of the Living Lab, which the municipality leads.",
         "sources": "Living Lab Schouwen-Duiveland. (n.d.-a). Samenwerken voor Zoet Water. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/projecten/samenwerken-voor-zoet-water\nLiving Lab Schouwen-Duiveland. (n.d.). Partners. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/over-living-lab/partners"
       },
       "from": "elem-provincie-zeeland",

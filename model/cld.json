@@ -624,7 +624,7 @@
       "sets domain": "Social",
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
-      "description": "The water level plans in which Waterschap Scheldestromen raises a polder's ditch levels, from the draft until their levels take effect. The board matches its levels to the land's use and soil, its principle that the level follows the land use: arable land 80 to 120 cm below the surface by soil, permanent grassland 20 cm less (Waterschap Scheldestromen, 2021a, p. 29; 2025, pp. 5, 7), weighing flooding, drought, fresh water and groundwater (2021c, p. 19), subsidence (2025, pp. 13–14) and a change's costs against its benefits (2025, p. 12). On Duiveland the plan of 2021 proposed studying a raise in 14 level areas, where levels had been kept low to store extreme rain, to enlarge the fresh water in the soil and give crops more moisture (2021a, p. 69). The general board adopts each plan (2025, p. 18); of its 30 members, 26 represent the residents and two the owners of unbuilt land, farmland included, appointed by ZLTO's board (Reglement voor het Waterschap Scheldestromen, 2025, arts. 6–7). A plan waits years for the works its levels need (Water board's plans to raise ditch levels → Polder drainage depth), so a Stock.",
+      "description": "The water level plans in which Waterschap Scheldestromen raises a polder's ditch levels, from the draft until their levels take effect. The board matches its levels to the land's use and soil, its principle that the level follows the land use: arable land 60 to 120 cm below the surface by soil, permanent grassland 20 cm less (Waterschap Scheldestromen, 2021a, p. 29; 2025, pp. 5, 7), weighing flooding, drought, fresh water and groundwater (2021c, p. 19), subsidence (2025, pp. 13–14) and a change's costs against its benefits (2025, p. 12). On Duiveland the plan of 2021 proposed studying a raise in 14 level areas, where levels had been kept low to store extreme rain, to enlarge the fresh water in the soil and give crops more moisture (2021a, p. 69). The general board adopts each plan (2025, p. 18); of its 30 members, 26 represent the residents and two the owners of unbuilt land, farmland included, appointed by ZLTO's board (Reglement voor het Waterschap Scheldestromen, 2025, arts. 6–7). A plan waits years for the works its levels need (Water board's plans to raise ditch levels → Polder drainage depth), so a Stock.",
       "simplification": "The two seats on the general board for the owners of unbuilt land, farmland included, were a Constant driving these plans, and are in the description instead: no loop runs through a Constant, so no loop changes. What it leaves out: the seats cannot be set as an input of their own.",
       "sources": [
         "scheldestromen-2021-hor-duiveland",
@@ -2101,8 +2101,7 @@
       "delay": false,
       "description": "A plant or chain nearby takes the harvest at less cost to move and store it, so more of the price reaches the farmer. In France, minor crops grown far from their processor cost much to collect for their volume, collectors building a chain for a crop paid farmers a premium to deliver to its silo, and those without storage suited to small batches sold them fast, below the best price (Meynard et al., 2018, p. 7): the cost of moving and storing a harvest rises with distance and falls with volume wherever a chain runs, so the mechanism transfers. No source read gives what farmers on the island are paid. Within the year: the price is set each season or contract.",
       "sources": [
-        "meynard-2018",
-        "greenfood50-nd"
+        "meynard-2018"
       ],
       "curvature": -0.14
     },

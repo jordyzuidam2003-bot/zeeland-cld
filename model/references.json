@@ -3894,5 +3894,25 @@
     "title": "Hoger opvolgingspercentage en meer bedrijven met een opvolger",
     "container-title": "Agrimatie",
     "URL": "https://agrimatie.nl/ThemaResultaat.aspx?subpubID=2232&themaID=7202"
+  },
+  {
+    "id": "delphy-2023-dorsd",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Delphy"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          20
+        ]
+      ]
+    },
+    "title": "DORSD: Droogte Oplossingen Regio Schouwen Duiveland",
+    "URL": "https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf"
   }
 ]

@@ -1721,12 +1721,12 @@
         "level": "National",
         "sector": "Arable Farming",
         "interest": "Healthy, successful and sustainable cultivation: better performance for growers, through research, data-driven crop management, advice and training.",
-        "influence": "A knowledge company, part of Peterson Solutions, with more than 250 professionals active in over 60 countries and its address in Wageningen; its crop experts advise growers in every plant sector, arable farming among them. It is a practice partner of the Living Lab, its manager for arable farming and field vegetables in the south-west and two soil and water experts among the partners, and with Acacia Water, Deltares, the trial farm Rusthoeve and the municipality it had anti-salinisation and double drainage on the low-lying poelgronden of three farms, at Kerkwerve and Dreischor, demonstrated and monitored (drains laid in 2022, closing meeting in 2024), half paid by the EU. In 2023 it carried out the study of the island's freshwater demand, commissioned by Droogte Oplossingen Regio Schouwen Duiveland in its own account and by ZLTO in Omroep Zeeland's: farming on the island becomes impossible without more fresh water, since the current freshwater measures and innovations supply too little, fit only part of the island, are costly and have not yet proven their value, so a supply of fresh water stays needed and more rain must be stored; ZLTO's island branch draws from it that a supply of fresh water is unavoidable. Score 2: the demonstrations give data on the techniques' effects, and its study informs the island's debate on fresh water; no source read shows it advising individual farms.",
+        "influence": "A knowledge company, part of Peterson Solutions, with more than 250 professionals active in over 60 countries and its address in Wageningen; its crop experts advise growers in every plant sector, arable farming among them. It is a practice partner of the Living Lab, its manager for arable farming and field vegetables in the south-west and two soil and water experts among the partners, and with Acacia Water, Deltares, the trial farm Rusthoeve and the municipality it had anti-salinisation and double drainage on the low-lying poelgronden of three farms, at Kerkwerve and Dreischor, demonstrated and monitored (drains laid in 2022, closing meeting in 2024), half paid by the EU. In 2023 it carried out the study of the island's freshwater demand, commissioned and paid for by ZLTO's island branch, Agrarisch Schouwen-Duiveland, with funding from the municipality and the Zuidwestelijke Delta: farming on the island becomes impossible without more fresh water, since the current freshwater measures and innovations supply too little, fit only part of the island, are costly and have not yet proven their value, so a supply of fresh water stays needed and more rain must be stored; ZLTO's island branch draws from it that a supply of fresh water is unavoidable. Score 2: the demonstrations give data on the techniques' effects, and its study informs the island's debate on fresh water; no source read shows it advising individual farms.",
         "affected": "It took part in drainage demonstrations on three of the island's farms (2022–2024). The EU paid half of their cost and the province and the municipality a large part, beside an own contribution from the participating knowledge parties. No source read shows how salinisation on the island, or its farms' adaptation, affects Delphy otherwise.",
         "influence score": 2,
         "client": "no",
         "decides in the CLD": "",
-        "sources": "Delphy. (n.d.). Delphy [Home page]. Retrieved November 6, 2026, from https://delphy.nl/\nDelphy. (n.d.). Over Delphy. Retrieved November 6, 2026, from https://werkenbij.delphy.nl/over-delphy/\nLiving Lab Schouwen-Duiveland. (n.d.). Partners. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/over-living-lab/partners\nLiving Lab Schouwen-Duiveland. (n.d.-b). Samenwerken voor Zoetwater: Innovatieve drainage demonstreren, monitoren en evalueren. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/projecten/samenwerken-voor-zoetwater-innovatieve-drainage-demonstreren-monitoren-en-evalueren\nWiepkema, F. (2023, May 31). Zonder meer zoet water wordt agrarisch ondernemen op Schouwen Duiveland onmogelijk. Akkerwijzer. https://www.akkerwijzer.nl/artikel/750772-zonder-meer-zoet-water-wordt-agrarisch-ondernemen-op-schouwen-duiveland-onmogelijk/\nOmroep Zeeland. (2023, May 31). Sombere toekomst voor boeren op Schouwen-Duiveland door tekort aan zoet water. https://www.omroepzeeland.nl/nieuws/15614167/sombere-toekomst-voor-boeren-op-schouwen-duiveland-door-tekort-aan-zoet-water"
+        "sources": "Delphy. (n.d.). Delphy [Home page]. Retrieved November 6, 2026, from https://delphy.nl/\nDelphy. (n.d.). Over Delphy. Retrieved November 6, 2026, from https://werkenbij.delphy.nl/over-delphy/\nLiving Lab Schouwen-Duiveland. (n.d.). Partners. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/over-living-lab/partners\nLiving Lab Schouwen-Duiveland. (n.d.-b). Samenwerken voor Zoetwater: Innovatieve drainage demonstreren, monitoren en evalueren. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/projecten/samenwerken-voor-zoetwater-innovatieve-drainage-demonstreren-monitoren-en-evalueren\nDelphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf\nWiepkema, F. (2023, May 31). Zonder meer zoet water wordt agrarisch ondernemen op Schouwen Duiveland onmogelijk. Akkerwijzer. https://www.akkerwijzer.nl/artikel/750772-zonder-meer-zoet-water-wordt-agrarisch-ondernemen-op-schouwen-duiveland-onmogelijk/\nOmroep Zeeland. (2023, May 31). Sombere toekomst voor boeren op Schouwen-Duiveland door tekort aan zoet water. https://www.omroepzeeland.nl/nieuws/15614167/sombere-toekomst-voor-boeren-op-schouwen-duiveland-door-tekort-aan-zoet-water"
       }
     },
     {
@@ -4365,6 +4365,19 @@
       "delayed": false,
       "reversed": false,
       "attributes": {
+        "connection type": "finances",
+        "description": "As holders of farmland by ownership, possession or a limited right, they pay the water board's watersysteemheffing for unbuilt land, levied to meet the costs of managing the water system; the board may raise it by up to 100% for the farmland of an area where it builds a water supply project, only once at least half of the land's holders have responded and two thirds of those are in favour.",
+        "sources": "Waterschapswet (version in force from 1 January 2026). https://wetten.overheid.nl/BWBR0005108/2026-01-01"
+      },
+      "from": "elem-arable-farmers",
+      "to": "elem-waterschap-scheldestromen"
+    },
+    {
+      "_id": "conn-1",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
         "connection type": "authority over",
         "description": "Sets the ditch levels the island's farms drain to, in its water level plans for Schouwen and Duiveland, and the rules for their groundwater extraction for irrigation.",
         "sources": "Waterschap Scheldestromen. (2021d, July 12). Peilbesluit Duiveland ter inzage (Waterschapsblad 2021, nr. 8486). https://zoek.officielebekendmakingen.nl/wsb-2021-8486.pdf\nWaterschap Scheldestromen. (2022, January 3). Peilbesluit Schouwen ter inzage (Waterschapsblad 2022, nr. 10). https://zoek.officielebekendmakingen.nl/wsb-2022-10.pdf\nWaterschap Scheldestromen. (2026b, May 29). Besluit wijziging artikel 2.9 van de Waterschapsverordening waterschap Scheldestromen (Waterschapsblad 2026, nr. 13978). https://zoek.officielebekendmakingen.nl/wsb-2026-13978.html\nOmgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01"
@@ -4373,7 +4386,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-1",
+      "_id": "conn-2",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4386,7 +4399,7 @@
       "to": "elem-provincie-zeeland"
     },
     {
-      "_id": "conn-2",
+      "_id": "conn-3",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4399,7 +4412,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-3",
+      "_id": "conn-4",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4412,7 +4425,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-4",
+      "_id": "conn-5",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4425,7 +4438,7 @@
       "to": "elem-waterschap-scheldestromen"
     },
     {
-      "_id": "conn-5",
+      "_id": "conn-6",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4438,7 +4451,7 @@
       "to": "elem-provincie-zeeland"
     },
     {
-      "_id": "conn-6",
+      "_id": "conn-7",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4451,7 +4464,7 @@
       "to": "elem-zlto"
     },
     {
-      "_id": "conn-7",
+      "_id": "conn-8",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4464,7 +4477,7 @@
       "to": "elem-deltares"
     },
     {
-      "_id": "conn-8",
+      "_id": "conn-9",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4477,7 +4490,7 @@
       "to": "elem-kwr"
     },
     {
-      "_id": "conn-9",
+      "_id": "conn-10",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4490,7 +4503,7 @@
       "to": "elem-acacia-water"
     },
     {
-      "_id": "conn-10",
+      "_id": "conn-11",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4503,7 +4516,7 @@
       "to": "elem-delphy"
     },
     {
-      "_id": "conn-11",
+      "_id": "conn-12",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4516,7 +4529,7 @@
       "to": "elem-waterschap-scheldestromen"
     },
     {
-      "_id": "conn-12",
+      "_id": "conn-13",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4529,7 +4542,7 @@
       "to": "elem-gemeente-schouwen-duiveland"
     },
     {
-      "_id": "conn-13",
+      "_id": "conn-14",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4542,7 +4555,7 @@
       "to": "elem-gemeente-schouwen-duiveland"
     },
     {
-      "_id": "conn-14",
+      "_id": "conn-15",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4555,7 +4568,7 @@
       "to": "elem-dcc"
     },
     {
-      "_id": "conn-15",
+      "_id": "conn-16",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4568,7 +4581,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-16",
+      "_id": "conn-17",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4581,7 +4594,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-17",
+      "_id": "conn-18",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4594,7 +4607,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-18",
+      "_id": "conn-19",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4607,7 +4620,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-19",
+      "_id": "conn-20",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4620,7 +4633,7 @@
       "to": "elem-waterschap-scheldestromen"
     },
     {
-      "_id": "conn-20",
+      "_id": "conn-21",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4633,7 +4646,7 @@
       "to": "elem-provincie-zeeland"
     },
     {
-      "_id": "conn-21",
+      "_id": "conn-22",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4646,7 +4659,7 @@
       "to": "elem-buyers-and-processors"
     },
     {
-      "_id": "conn-22",
+      "_id": "conn-23",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4659,7 +4672,7 @@
       "to": "elem-lvvn"
     },
     {
-      "_id": "conn-23",
+      "_id": "conn-24",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4672,7 +4685,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-24",
+      "_id": "conn-25",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4685,7 +4698,7 @@
       "to": "elem-banks"
     },
     {
-      "_id": "conn-25",
+      "_id": "conn-26",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4698,7 +4711,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-26",
+      "_id": "conn-27",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4711,7 +4724,7 @@
       "to": "elem-rijkswaterstaat"
     },
     {
-      "_id": "conn-27",
+      "_id": "conn-28",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4724,7 +4737,7 @@
       "to": "elem-waterschap-scheldestromen"
     },
     {
-      "_id": "conn-28",
+      "_id": "conn-29",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4737,7 +4750,7 @@
       "to": "elem-provincie-zeeland"
     },
     {
-      "_id": "conn-29",
+      "_id": "conn-30",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4750,7 +4763,7 @@
       "to": "elem-lvvn"
     },
     {
-      "_id": "conn-30",
+      "_id": "conn-31",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4763,7 +4776,7 @@
       "to": "elem-waterschap-scheldestromen"
     },
     {
-      "_id": "conn-31",
+      "_id": "conn-32",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4776,7 +4789,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-32",
+      "_id": "conn-33",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4789,7 +4802,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-33",
+      "_id": "conn-34",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4802,7 +4815,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-34",
+      "_id": "conn-35",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4813,6 +4826,19 @@
       },
       "from": "elem-acacia-water",
       "to": "elem-arable-farmers"
+    },
+    {
+      "_id": "conn-36",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "advises",
+        "description": "Carried out the study of the island's freshwater demand (2023) for ZLTO's island branch, Agrarisch Schouwen-Duiveland, which commissioned and paid for it: farming on the island becomes impossible without more fresh water, so a supply of fresh water stays needed and more rain must be stored; the branch draws from it that a supply of fresh water is unavoidable.",
+        "sources": "Delphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf\nWiepkema, F. (2023, May 31). Zonder meer zoet water wordt agrarisch ondernemen op Schouwen Duiveland onmogelijk. Akkerwijzer. https://www.akkerwijzer.nl/artikel/750772-zonder-meer-zoet-water-wordt-agrarisch-ondernemen-op-schouwen-duiveland-onmogelijk/"
+      },
+      "from": "elem-delphy",
+      "to": "elem-zlto"
     }
   ],
   "loops": [
@@ -6981,7 +7007,7 @@
       "connections": [
         {
           "_id": "edge-0",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-0"
         },
@@ -6993,31 +7019,31 @@
         },
         {
           "_id": "edge-2",
-          "curvature": 0.08,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-2"
         },
         {
           "_id": "edge-3",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-3"
         },
         {
           "_id": "edge-4",
-          "curvature": 0.08,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-4"
         },
         {
           "_id": "edge-5",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-5"
         },
         {
           "_id": "edge-6",
-          "curvature": 0.08,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-6"
         },
@@ -7035,7 +7061,7 @@
         },
         {
           "_id": "edge-9",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-9"
         },
@@ -7053,13 +7079,13 @@
         },
         {
           "_id": "edge-12",
-          "curvature": 0.08,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-12"
         },
         {
           "_id": "edge-13",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-13"
         },
@@ -7077,13 +7103,13 @@
         },
         {
           "_id": "edge-16",
-          "curvature": 0.08,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-16"
         },
         {
           "_id": "edge-17",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-17"
         },
@@ -7113,13 +7139,13 @@
         },
         {
           "_id": "edge-22",
-          "curvature": 0.08,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-22"
         },
         {
           "_id": "edge-23",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-23"
         },
@@ -7167,27 +7193,39 @@
         },
         {
           "_id": "edge-31",
-          "curvature": 0.4,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-31"
         },
         {
           "_id": "edge-32",
-          "curvature": 0.08,
+          "curvature": 0.4,
           "style": {},
           "connection": "conn-32"
         },
         {
           "_id": "edge-33",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-33"
         },
         {
           "_id": "edge-34",
-          "curvature": 0.08,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-34"
+        },
+        {
+          "_id": "edge-35",
+          "curvature": 0.08,
+          "style": {},
+          "connection": "conn-35"
+        },
+        {
+          "_id": "edge-36",
+          "curvature": 0.08,
+          "style": {},
+          "connection": "conn-36"
         }
       ],
       "loops": []

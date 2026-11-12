@@ -24,7 +24,17 @@
       "affected": "Their farms depend wholly on rain and on the fresh groundwater under the dunes, the creek ridges and the thin rainwater lenses of the low polders: the island has no link to the main freshwater system, so in dry periods no water can be brought in and no ditches flushed, its shallow groundwater and ditches carry much salt, and the farms run short of water; drought in the growing season, subsidence and sea level rise make this worse, and the dry years 2018–2020 showed the farms vulnerable. Delphy's report on the island's freshwater demand (2023) finds farming on the island impossible without more fresh water; in 2026 a potato grower at Nieuwerkerk lost a fifth of his harvest to drought, had stopped growing onions for want of fresh water, and found ditch water at times nearly as salt as the Oosterschelde. Adapting is uncertain for them: the measures that store fresh water in the subsoil are not yet fitted to the island's conditions, their costs, risks and gain in yield unknown, so many farmers find the investment too risky to make alone.",
       "influence score": 5,
       "client": "no",
-      "relations": [],
+      "relations": [
+        {
+          "to": "waterschap-scheldestromen",
+          "kind": "finances",
+          "description": "As holders of farmland by ownership, possession or a limited right, they pay the water board's watersysteemheffing for unbuilt land, levied to meet the costs of managing the water system; the board may raise it by up to 100% for the farmland of an area where it builds a water supply project, only once at least half of the land's holders have responded and two thirds of those are in favour.",
+          "sources": [
+            "waterschapswet-2026"
+          ],
+          "curvature": 0.08
+        }
+      ],
       "sources": [
         "kaandorp-2022",
         "cbs-2026-landbouw-gemeente",
@@ -772,16 +782,28 @@
       "level": "National",
       "sector": "Arable Farming",
       "interest": "Healthy, successful and sustainable cultivation: better performance for growers, through research, data-driven crop management, advice and training.",
-      "influence": "A knowledge company, part of Peterson Solutions, with more than 250 professionals active in over 60 countries and its address in Wageningen; its crop experts advise growers in every plant sector, arable farming among them. It is a practice partner of the Living Lab, its manager for arable farming and field vegetables in the south-west and two soil and water experts among the partners, and with Acacia Water, Deltares, the trial farm Rusthoeve and the municipality it had anti-salinisation and double drainage on the low-lying poelgronden of three farms, at Kerkwerve and Dreischor, demonstrated and monitored (drains laid in 2022, closing meeting in 2024), half paid by the EU. In 2023 it carried out the study of the island's freshwater demand, commissioned by Droogte Oplossingen Regio Schouwen Duiveland in its own account and by ZLTO in Omroep Zeeland's: farming on the island becomes impossible without more fresh water, since the current freshwater measures and innovations supply too little, fit only part of the island, are costly and have not yet proven their value, so a supply of fresh water stays needed and more rain must be stored; ZLTO's island branch draws from it that a supply of fresh water is unavoidable. Score 2: the demonstrations give data on the techniques' effects, and its study informs the island's debate on fresh water; no source read shows it advising individual farms.",
+      "influence": "A knowledge company, part of Peterson Solutions, with more than 250 professionals active in over 60 countries and its address in Wageningen; its crop experts advise growers in every plant sector, arable farming among them. It is a practice partner of the Living Lab, its manager for arable farming and field vegetables in the south-west and two soil and water experts among the partners, and with Acacia Water, Deltares, the trial farm Rusthoeve and the municipality it had anti-salinisation and double drainage on the low-lying poelgronden of three farms, at Kerkwerve and Dreischor, demonstrated and monitored (drains laid in 2022, closing meeting in 2024), half paid by the EU. In 2023 it carried out the study of the island's freshwater demand, commissioned and paid for by ZLTO's island branch, Agrarisch Schouwen-Duiveland, with funding from the municipality and the Zuidwestelijke Delta: farming on the island becomes impossible without more fresh water, since the current freshwater measures and innovations supply too little, fit only part of the island, are costly and have not yet proven their value, so a supply of fresh water stays needed and more rain must be stored; ZLTO's island branch draws from it that a supply of fresh water is unavoidable. Score 2: the demonstrations give data on the techniques' effects, and its study informs the island's debate on fresh water; no source read shows it advising individual farms.",
       "affected": "It took part in drainage demonstrations on three of the island's farms (2022–2024). The EU paid half of their cost and the province and the municipality a large part, beside an own contribution from the participating knowledge parties. No source read shows how salinisation on the island, or its farms' adaptation, affects Delphy otherwise.",
       "influence score": 2,
       "client": "no",
-      "relations": [],
+      "relations": [
+        {
+          "to": "zlto",
+          "kind": "advises",
+          "description": "Carried out the study of the island's freshwater demand (2023) for ZLTO's island branch, Agrarisch Schouwen-Duiveland, which commissioned and paid for it: farming on the island becomes impossible without more fresh water, so a supply of fresh water stays needed and more rain must be stored; the branch draws from it that a supply of fresh water is unavoidable.",
+          "sources": [
+            "delphy-2023-dorsd",
+            "wiepkema-2023-zoetwaterbehoefte"
+          ],
+          "curvature": 0.08
+        }
+      ],
       "sources": [
         "delphy-home",
         "delphy-over-delphy",
         "living-lab-partners",
         "living-lab-innovatieve-drainage",
+        "delphy-2023-dorsd",
         "wiepkema-2023-zoetwaterbehoefte",
         "omroep-zeeland-2023-zoet-water"
       ],

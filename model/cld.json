@@ -749,7 +749,7 @@
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "The volume of new salt-tolerant crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere. Quinoa has been grown in Zeeland since 2016, on one to four parcels a year at six locations in all (Bogers et al., 2025, pp. 28, 38), its map showing none on the island, while the growers who sell to GreenFood50 in the Netherlands farm about 200 hectares for 600 tonnes a year (DutchNews.nl, 2026); samphire is the main crop of a Zeeland grower and trader of sea vegetables (FreshPlaza, 2018).",
+      "description": "The volume of new salt-tolerant crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere. Quinoa has been grown in Zeeland since 2016, on one to four parcels a year at six locations in all (Bogers et al., 2025, pp. 28, 38), its map showing one of them on the island, while the growers who sell to GreenFood50 in the Netherlands farm about 200 hectares for 600 tonnes a year (DutchNews.nl, 2026); samphire is the main crop of a Zeeland grower and trader of sea vegetables (FreshPlaza, 2018).",
       "sources": [
         "bogers-2025",
         "dutchnews-2026",
@@ -1462,7 +1462,7 @@
       "to": "agricultural-land-value",
       "polarity": "+",
       "delay": true,
-      "description": "More income from the land raises what buyers bid for it, through what they expect an extra hectare to earn an expanding farm over the years of the investment rather than through last year's income (Farjon et al., 2013, p. 2; Silvis & Voskuilen, 2017, pp. 2–3). The + holds beside drivers the island's farms cannot move: since 1970 the Dutch price has risen tenfold while net value added rose two- to threefold, carried by scale enlargement and falling interest rates (Farjon et al., 2013, pp. 1–2). Across individual land transactions in the Netherlands from 2004 to 2011, the expected revenue from the land had a significant positive effect on the price, beside land regulations, the spatial environment and local market conditions (Boere, 2015, pp. 81, 98). Years: the price follows expected income, and its swings ran over years, falling by half in real terms in the late 1970s and by 30% between 1995 and 2005 (p. 2): a delay.",
+      "description": "More income from the land raises what buyers bid for it, through what they expect an extra hectare to earn an expanding farm over the years of the investment rather than through last year's income (Farjon et al., 2013, p. 2; Silvis & Voskuilen, 2017, pp. 2–3). The + holds beside drivers the island's farms cannot move: since 1970 the Dutch price has risen tenfold while net value added rose two- to threefold, carried by scale enlargement and falling interest rates (Farjon et al., 2013, pp. 1–2). Across individual land transactions in the Netherlands from 2004 to 2011, the expected revenue from the land had a significant positive effect on the price, beside land regulations, the spatial environment and local market conditions (Boere, 2015, pp. 81, 98). Years: its swings ran over years, the real price rising sharply and then falling by half in the late 1970s and by 30% between 1995 and 2005 (Farjon et al., 2013, p. 2): a delay.",
       "sources": [
         "farjon-2013",
         "silvis-2017",

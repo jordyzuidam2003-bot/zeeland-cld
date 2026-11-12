@@ -93,7 +93,7 @@
         "scheldestromen-2026-watersysteemheffing",
         "reglement-scheldestromen-2025"
       ],
-      "x": 2350,
+      "x": 2385,
       "y": 1250
     },
     {
@@ -136,7 +136,7 @@
           "sources": [
             "living-lab-partners"
           ],
-          "curvature": -0.3
+          "curvature": -0.27
         },
         {
           "to": "provincie-zeeland",
@@ -154,7 +154,7 @@
           "sources": [
             "living-lab-partners"
           ],
-          "curvature": 0.08
+          "curvature": 0.2
         },
         {
           "to": "deltares",
@@ -201,8 +201,8 @@
         "living-lab-partners",
         "living-lab-2025-programma"
       ],
-      "x": 1725,
-      "y": 1475
+      "x": 1688,
+      "y": 1476
     },
     {
       "id": "provincie-zeeland",
@@ -247,7 +247,7 @@
             "living-lab-samenwerken-voor-zoet-water",
             "living-lab-partners"
           ],
-          "curvature": 0.08
+          "curvature": 0.22
         },
         {
           "to": "dcc",
@@ -267,8 +267,8 @@
         "iplo-verdringingsreeks",
         "witteveen-bos-2021"
       ],
-      "x": 2325,
-      "y": 1475
+      "x": 2347,
+      "y": 1486
     },
     {
       "id": "banks",
@@ -349,8 +349,8 @@
         "dutchnews-2018-potato-processors",
         "nepg-2018-contracts"
       ],
-      "x": 1925,
-      "y": 630
+      "x": 1844,
+      "y": 681
     },
     {
       "id": "zlto",
@@ -392,7 +392,7 @@
           "sources": [
             "provincie-zeeland-2025-rwp"
           ],
-          "curvature": -0.18
+          "curvature": 0.14
         }
       ],
       "sources": [
@@ -406,8 +406,8 @@
         "wiepkema-2023-zoetwaterbehoefte",
         "reimerswaal-2025-intentieovereenkomst"
       ],
-      "x": 2061,
-      "y": 1340
+      "x": 2053,
+      "y": 1365
     },
     {
       "id": "consumers",
@@ -429,7 +429,7 @@
           "sources": [
             "janssens-2020"
           ],
-          "curvature": 0.08
+          "curvature": -0.09
         }
       ],
       "sources": [
@@ -437,8 +437,8 @@
         "janssens-2020",
         "bogosavac-2018"
       ],
-      "x": 2075,
-      "y": 225
+      "x": 1844,
+      "y": 250
     },
     {
       "id": "eu",
@@ -525,8 +525,8 @@
         "rekenkamer-2026-zoetwater",
         "iplo-2025-zout"
       ],
-      "x": 2175,
-      "y": 880
+      "x": 2196,
+      "y": 824
     },
     {
       "id": "ienw",
@@ -568,7 +568,7 @@
             "rekenkamer-2026-zoetwater",
             "iplo-verdringingsreeks"
           ],
-          "curvature": -0.08
+          "curvature": 0.1
         },
         {
           "to": "lvvn",
@@ -624,8 +624,8 @@
         "rws-2026-waterakkoord-vzm",
         "iplo-2025-zout"
       ],
-      "x": 2375,
-      "y": 1080
+      "x": 2355,
+      "y": 1033
     },
     {
       "id": "dcc",
@@ -647,8 +647,8 @@
         "dcc-flexible-deltas",
         "nioz-2023-dcc"
       ],
-      "x": 2650,
-      "y": 1625,
+      "x": 2627,
+      "y": 1614,
       "ask actors": [
         {
           "actor": "dcc",
@@ -691,8 +691,8 @@
         "living-lab-ln2050",
         "iplo-2025-zout"
       ],
-      "x": 1200,
-      "y": 755
+      "x": 1190,
+      "y": 835
     },
     {
       "id": "kwr",
@@ -727,8 +727,8 @@
         "iplo-2025-zout",
         "kwr-regionale-zoetwaterbeschikbaarheid"
       ],
-      "x": 1400,
-      "y": 980
+      "x": 1428,
+      "y": 964
     },
     {
       "id": "acacia-water",
@@ -750,7 +750,7 @@
           "sources": [
             "living-lab-natuurlijk-zoet"
           ],
-          "curvature": -0.3
+          "curvature": -0.23
         },
         {
           "to": "arable-farmers",
@@ -771,8 +771,8 @@
         "kaandorp-2022",
         "living-lab-innovatieve-drainage"
       ],
-      "x": 1650,
-      "y": 1080
+      "x": 1675,
+      "y": 1051
     },
     {
       "id": "delphy",

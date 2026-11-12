@@ -61,7 +61,7 @@
   ]
  },
  "antea-2023-zierikzee": {
-  "digest": "8e66ceb386ee",
+  "digest": "61fe6a380e32",
   "note": "P83B97JU",
   "placed": [
    "CLD"
@@ -73,7 +73,7 @@
   ]
  },
  "beauchampet-2022": {
-  "digest": "ac09f906e61c",
+  "digest": "4008a922e18e",
   "note": "CG6RF5XT",
   "placed": [
    "CLD"
@@ -136,7 +136,7 @@
   ]
  },
  "cloet-2024": {
-  "digest": "159484c91700",
+  "digest": "2deb7c10b55d",
   "note": "G85ECBP6",
   "placed": [
    "CLD"
@@ -213,7 +213,7 @@
   ]
  },
  "de-vriend-2024": {
-  "digest": "556ebed84d58",
+  "digest": "683401d88043",
   "note": "DRBRVBGQ",
   "placed": [
    "CLD"
@@ -254,7 +254,7 @@
   ]
  },
  "deolu-ajayi-2024": {
-  "digest": "02aacafcdc27",
+  "digest": "f95d915cfd59",
   "note": "NCBBAXBZ",
   "placed": [
    "CLD"
@@ -276,7 +276,7 @@
   ]
  },
  "dutchnews-2026": {
-  "digest": "dddd55f13c77",
+  "digest": "92e9a136f3b4",
   "note": "B9CPZ8TC",
   "placed": [
    "CLD"
@@ -366,7 +366,7 @@
   ]
  },
  "greenfood50-nd": {
-  "digest": "add4a3309d6d",
+  "digest": "eb92e541533c",
   "note": "9RTG5ZB8",
   "placed": [
    "CLD"
@@ -380,7 +380,7 @@
   ]
  },
  "holtslag-broekhof-2016": {
-  "digest": "bce3504f909f",
+  "digest": "62901357e1d6",
   "note": "45WMWBJS",
   "placed": [
    "CLD"
@@ -406,7 +406,7 @@
   ]
  },
  "janssens-2020": {
-  "digest": "b3eecd91aeac",
+  "digest": "09ba25871478",
   "note": "9DUZZSPB",
   "placed": [
    "Actor Map",
@@ -429,7 +429,7 @@
   ]
  },
  "kamphorst-2025": {
-  "digest": "bce3504f909f",
+  "digest": "de67a9af50ff",
   "note": "RXQNWCA6",
   "placed": [
    "CLD"
@@ -558,7 +558,7 @@
   ]
  },
  "magrini-2018": {
-  "digest": "a5c7fff1d381",
+  "digest": "8fe23dd046cd",
   "note": "NFVZVRG8",
   "placed": [
    "CLD"
@@ -584,7 +584,7 @@
   ]
  },
  "n59-rotonde-2020": {
-  "digest": "8e66ceb386ee",
+  "digest": "61fe6a380e32",
   "note": "4KJMPPQ8",
   "placed": [
    "CLD"
@@ -627,7 +627,7 @@
   ]
  },
  "omgevingswet-2026": {
-  "digest": "2d3a1b9922be",
+  "digest": "4244467b12a1",
   "note": "4FPXFMAI",
   "placed": [
    "Actor Map",
@@ -672,7 +672,7 @@
   ]
  },
  "polman-2026": {
-  "digest": "3c1d12c9bcb6",
+  "digest": "2071f46e1102",
   "note": "CT8IJIJE",
   "placed": [
    "CLD"
@@ -693,8 +693,15 @@
   ]
  },
  "provincie-zeeland-jaarstukken-2022": {
-  "digest": "8e66ceb386ee",
+  "digest": "61fe6a380e32",
   "note": "GK3KH34I",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "rabobank-2023-annual-report": {
+  "digest": "591a63e8b612",
+  "note": "9CW65M9G",
   "placed": [
    "CLD"
   ]
@@ -707,7 +714,7 @@
   ]
  },
  "rabobank-2025-annual-report": {
-  "digest": "293eddd6e3e8",
+  "digest": "a0718b98dbb0",
   "note": "NZR6R475",
   "placed": [
    "Actor Map",
@@ -900,7 +907,7 @@
   ]
  },
  "schouwen-duiveland-2026-onteigening": {
-  "digest": "8e66ceb386ee",
+  "digest": "5d2b6f444ff9",
   "note": "9EZIQDPU",
   "placed": [
    "CLD"
@@ -973,7 +980,7 @@
   ]
  },
  "van-der-meulen-2020": {
-  "digest": "15055fb9a44c",
+  "digest": "b6cb3ab2e813",
   "note": "58K6T5V6",
   "placed": [
    "Actor Map",

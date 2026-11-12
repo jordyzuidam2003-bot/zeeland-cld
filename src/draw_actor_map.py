@@ -169,8 +169,14 @@ def bands_svg(actors):
             f'width="{x1 - x0:.0f}" height="{y1 - y0:.0f}" font-family="{draw_cld.FONT}">\n{band_svg}\n</svg>\n'), frame
 
 
+# What the bands mean, under the relations in the legend: the bands order the levels from top to
+# bottom, so a reader would read a higher place within a band as a larger scale too
+BANDS_NOTE = ["the level an actor acts at;", "within a band, an actor's place only keeps the relations readable"]
+
+
 def legend_svg(x, y):
-    """The legend, two rows of three kinds, its first row's middle at y; returns (svg, width, height)."""
+    """The legend, two rows of three kinds, its first row's middle at y, then what the bands mean;
+    returns (svg, width, height)."""
     f = LEGEND_SIZE
     sw = f * 2.6
     col = sw + f * 0.4 + len("authority over") * draw_cld.CHAR_WIDTH / FONT_SIZE * f + f
@@ -181,7 +187,15 @@ def legend_svg(x, y):
         items.append(f'<path d="M {xx:.1f} {yy:.1f} L {xx + sw - draw_cld.ARROW:.1f} {yy:.1f}" stroke="{colour}" stroke-width="{REL_WIDTH}"{dash} '
                      f'fill="none" marker-end="url(#arrow-{kind.replace(" ", "-")})"/>')
         items.append(f'<text x="{xx + sw + f * 0.4:.1f}" y="{yy:.1f}" font-size="{f}" dominant-baseline="central">{kind}</text>')
-    return '<g class="legend">\n' + "\n".join(items) + "\n</g>", f * 5 + 3 * col, 2 * f * 1.5
+    width, height = f * 5 + 3 * col, 2 * f * 1.5
+    if BANDS_NOTE:
+        top = y + f * 3.2
+        items.append(f'<text x="{x:.1f}" y="{top:.1f}" font-size="{f}" font-weight="bold" dominant-baseline="central">Bands</text>')
+        for i, line in enumerate(BANDS_NOTE):
+            items.append(f'<text x="{x + f * 5:.1f}" y="{top + i * f * 1.5:.1f}" font-size="{f}" dominant-baseline="central">{esc(line)}</text>')
+        width = max(width, f * 5 + max(len(l) for l in BANDS_NOTE) * draw_cld.CHAR_WIDTH / FONT_SIZE * f)
+        height += f * 1.7 + (len(BANDS_NOTE) - 1) * f * 1.5
+    return '<g class="legend">\n' + "\n".join(items) + "\n</g>", width, height
 
 
 def head(vb):

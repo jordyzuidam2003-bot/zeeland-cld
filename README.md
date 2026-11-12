@@ -358,7 +358,12 @@ and only `diff` keeps listing it.
 `docs/actors.html` is the Actor Map, a page beside the CLD's and linked from it: the actors'
 network in one band per level, Global at the top and Local / Provincial / Regional at the bottom
 (Jordy, chosen between rendered versions; rejected: rings by the CLD's scale, clusters by type,
-boxes shaded by influence score), each relation in its kind's colour and dash. A click on an actor
+boxes shaded by influence score), each relation in its kind's colour and dash. An actor's place
+within its band means nothing: it only keeps the relations readable, and the legend says so under
+the relations, since the bands order the levels from top to bottom and the figure travels without
+this README (Jordy, chosen between rendered versions; rejected: each band's actors in one row,
+which leaves nothing to misread but drew 24 crossings against 7 and stacked the local actors'
+relations as arcs along their row). A click on an actor
 or a relation opens its fields and sources. The CLD's scale is not drawn (Jordy). `docs/figures/actor-map.svg`
 is the network on its own, the picture for the report (a PNG with the CLD's Chrome command,
 `svg=docs/figures/actor-map.svg`).

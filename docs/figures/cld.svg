@@ -496,9 +496,11 @@
 <path class="link-path" d="M -454.6 -1583.0 Q -328.2 -1577.2 -208.3 -1537.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-256.1" y="-1551.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="municipality-plans-for-farmland" data-to="farmland-leaving-arable-use" data-sign="-" data-delay="false" data-curvature="0.45">
+<g class="link" data-from="municipality-plans-for-farmland" data-to="farmland-leaving-arable-use" data-sign="-" data-delay="true" data-curvature="0.45" data-delay-t="0.76">
 <path class="link-path" d="M -529.0 -1573.0 Q 15.5 -1308.2 -190.7 -739.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-174.7" y="-786.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M -110.6 -1001.4 L -158.5 -1003.9 M -111.4 -985.4 L -159.4 -988.0" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -110.6 -1001.4 L -158.5 -1003.9 M -111.4 -985.4 L -159.4 -988.0" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="wetter-winters" data-to="creek-ridge-lens-thickness" data-sign="+" data-delay="true" data-curvature="0.0" data-delay-t="0.37">
 <path class="link-path" d="M -1519.8 121.0 Q -1317.7 197.0 -1115.6 273.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>

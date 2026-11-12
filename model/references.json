@@ -751,6 +751,24 @@
     "URL": "https://www.rabobank.nl/kennis/d011398319-akkerbouwer-wordt-zoetwatermanager-de-invloed-van-toenemende-droogte-op-de-nederlandse-akkerbouw"
   },
   {
+    "id": "rabobank-2023-annual-report",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Rabobank"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Annual report 2022",
+    "URL": "https://vpr.hkma.gov.hk/statics/assets/doc/100197/ar_22/ar_22_eng.pdf"
+  },
+  {
     "id": "rabobank-2025-annual-report",
     "type": "report",
     "author": [

@@ -698,7 +698,7 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "On the hectares a farm moves from its high-margin current crops, potatoes and sown onions, to new salt-tolerant ones: what the current crop would earn without salt less what the new crop earns, a margin being revenue minus the crop's variable costs (Cloet et al., 2024, p. 1). What salt takes is Harvest lost to salt, so it is not counted here. Potatoes, beets, onions and field vegetables are the high-margin crops; the margin of protein crops is comparable to that of cereals and cannot compete with most other crops (Polman et al., 2026, p. 9); quinoa, in a study for Flanders, yields about 3 tonnes a hectare, sold at €1,100 a tonne under contract on a market still very small, against costs of about €1,470 a hectare (Cloet et al., 2024, pp. 2–3). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276), and on Terschelling food grown on salt-affected soil costs more to produce than food grown with fresh water, the project relying on volunteers and, at its start, on subsidies (ten Dam et al., 2023, pp. 10, 13, 16). A season's crop: within the year.",
+      "description": "On the hectares a farm moves from its high-margin current crops, potatoes and sown onions, to new salt-tolerant crops or to salt-tolerant varieties of the current crops: what the current crop would earn without salt less what the new crop or variety earns, a margin being revenue minus the crop's variable costs (Cloet et al., 2024, p. 1). What salt takes is Harvest lost to salt, so it is not counted here. Potatoes, beets, onions and field vegetables are the high-margin crops; the margin of protein crops is comparable to that of cereals and cannot compete with most other crops (Polman et al., 2026, p. 9); quinoa, in a study for Flanders, yields about 3 tonnes a hectare, sold at €1,100 a tonne under contract on a market still very small, against costs of about €1,470 a hectare (Cloet et al., 2024, pp. 2–3). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276), and on Terschelling food grown on salt-affected soil costs more to produce than food grown with fresh water, the project relying on volunteers and, at its start, on subsidies (ten Dam et al., 2023, pp. 10, 13, 16). A season's crop: within the year.",
       "sources": [
         "cloet-2024",
         "polman-2026",
@@ -886,7 +886,7 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "The risk a bank sees in lending to an arable farm: above all whether its operations will earn enough, over the years of the loan, to meet all its financial obligations, then its solvency and its land and buildings as security (van der Meulen et al., 2020, p. 19; Farjon et al., 2013, pp. 3–4). Because arable returns swing from year to year, banks count farm loans as riskier despite the land as security, and the Basel capital rules steer them further toward lending on profitability and liquidity rather than on the value of the collateral (van der Meulen et al., 2020, p. 47); financing a new concept whose returns are not yet proven they often count as a risk (p. 6). Rabobank's provisions for expected credit losses carried an adjustment of 87 million euro for climate risk at the end of 2024, set by sector on five events, drought and water scarcity among them (Rabobank, 2025, pp. 246–247). No source read shows a bank weighing a plan that may change what the land can earn. A Stock: a bank's view of a farm holds until the bank revises it, and it weighs what the farm can earn over the longer term rather than in one year (Farm income → Banks' risk assessment of farm loans).",
+      "description": "The risk a bank sees in lending to an arable farm: above all whether its operations will earn enough, over the years of the loan, to meet all its financial obligations, then its solvency and its land and buildings as security (van der Meulen et al., 2020, p. 19; Farjon et al., 2013, pp. 3–4). Because arable returns swing from year to year, banks count farm loans as riskier despite the land as security, and the Basel capital rules steer them further toward lending on profitability and liquidity rather than on the value of the collateral (van der Meulen et al., 2020, p. 47); financing a new concept whose returns are not yet proven they often count as a risk (p. 6). Rabobank's provisions for expected credit losses carried an adjustment of 87 million euro for climate risk at the end of 2024, set by sector on five events, drought and water scarcity among them (Rabobank, 2025, pp. 246–247). A public plan that may change what a farm can earn enters it before the plan is decided (Water board's plans to raise ditch levels → Banks' risk assessment of farm loans). A Stock: a bank's view of a farm holds until the bank revises it, and it weighs what the farm can earn over the longer term rather than in one year (Farm income → Banks' risk assessment of farm loans).",
       "sources": [
         "van-der-meulen-2020",
         "farjon-2013",
@@ -972,7 +972,7 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ3",
-      "description": "Hectares of the island's farmland that a public body takes in a year for a use its plan sets, with full compensation, by an order a court must confirm. The municipal council, the water board for its water tasks, the Provincial Council and the minister can each give the order (Omgevingswet, 2026, art. 11.4), and only for a use an adopted plan allows, after a reasonable attempt to buy the land and with a start likely within three years (arts. 11.5–11.7, 11.11). On the island it has been used for a roundabout on the N59 (Besluit rotonde N59, 2020, p. 3) and in 2026 for a high-voltage station on a site then wholly in agricultural use (Gemeente Schouwen-Duiveland, 2026; Braat, 2023, blad 9); no source read shows it there for water or nature, for which the Province buys on a voluntary basis (Provincie Zeeland, Jaarstukken 2022, p. 4). Few cases reach a court, in the Krimpenerwaard 6 of 69 files (Kamphorst et al., 2025, pp. 10–11), since the threat mostly makes owners sell (Holtslag-Broekhof et al., 2016, section Context of the Study).",
+      "description": "Hectares of the island's farmland that a public body takes in a year for a use its plan sets, with full compensation, by an order a court must confirm. The municipal council, the water board for its water tasks, the Provincial Council and the minister can each give the order (Omgevingswet, 2026, art. 11.4), and only for a use an adopted plan allows, after a reasonable attempt to buy the land and with a start likely within three years (arts. 11.5–11.7, 11.11). On the island it has been used for a roundabout on the N59 (Besluit rotonde N59, 2020, p. 3) and in 2026 for a high-voltage station on a site then wholly in agricultural use (Gemeente Schouwen-Duiveland, 2026, p. 1; Braat, 2023, blad 9); no source read shows it there for water or nature, for which the Province buys on a voluntary basis (Provincie Zeeland, Jaarstukken 2022, p. 4). Few cases reach a court, in the Krimpenerwaard 6 of 69 files (Kamphorst et al., 2025, pp. 10–11), since the threat mostly makes owners sell (Holtslag-Broekhof et al., 2016, section Context of the Study).",
       "sources": [
         "omgevingswet-2026",
         "n59-rotonde-2020",
@@ -1826,8 +1826,10 @@
       "to": "margin-given-up-on-high-margin-crops",
       "polarity": "+",
       "delay": false,
-      "description": "A tolerant variety may yield or sell for less than the variety it replaces, on fresh land most.",
-      "sources": [],
+      "description": "A tolerant variety earns less than the variety it replaces where salt does not limit the crop: salt-tolerant varieties are usually lower yielding, high-yielding varieties being sensitive to stress through a trade-off between tolerance and yield (Deolu-Ajayi et al., 2024, p. 30). In greenhouse pots at Wageningen in 2024, a salt-tolerant potato variety lost 18% of its tuber weight under salt against 39% for a sensitive one (p. 21), yet on fresh water it netted about €1,800 a hectare with the soil amendment that served it best, against about €2,300 for the sensitive, high-yielding variety grown as usual (pp. 51–52). So the margin given up is largest on fresh land. Measured in pots, which the authors would repeat in the field (p. 52). Within the year: the variety is chosen each season.",
+      "sources": [
+        "deolu-ajayi-2024"
+      ],
       "curvature": -0.14
     },
     {
@@ -1940,7 +1942,7 @@
       "to": "salt-tolerant-crop-adoption",
       "polarity": "+",
       "delay": false,
-      "description": "A better price after transport makes a new crop more worthwhile against the current crops, so more farmers grow it. In France, farmers' low interest in pulses was put down to prices not high enough against major crops such as wheat, and outlets of higher value are needed to give them a reason to grow them (Magrini et al., 2018); a premium to farmers doubled the area of pulses within a year, and it fell back the next, buyers downstream not interested in them (Meynard et al., 2018, p. 10); in the Netherlands' salinising provinces, Zeeland among them, nearly all interviewees did not see halophytes as part of the answer, mostly for lack of markets (Beauchampet, 2022, p. 221). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276). Within the year: the crop is chosen each season.",
+      "description": "A better price after transport makes a new crop more worthwhile against the current crops, so more farmers grow it. In France, farmers' low interest in pulses was put down to prices not high enough against major crops such as wheat, and outlets of higher value are needed to give them a reason to grow them (Magrini et al., 2018, pp. 8–9); a premium to farmers doubled the area of pulses within a year, and it fell back the next, buyers downstream not interested in them (Meynard et al., 2018, p. 10); in the Netherlands' salinising provinces, Zeeland among them, nearly all interviewees did not see halophytes as part of the answer, mostly for lack of markets (Beauchampet, 2022, p. 221). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276). Within the year: the crop is chosen each season.",
       "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
       "sources": [
         "magrini-2018",
@@ -2000,8 +2002,11 @@
       "to": "harvest-of-new-crops-to-process",
       "polarity": "+",
       "delay": false,
-      "description": "Growers elsewhere add to the harvest a local plant could draw on.",
-      "sources": [],
+      "description": "A plant draws its harvest from every grower within reach, on the island or off it: GreenFood50 has its quinoa grown in the Netherlands and Belgium, close to its processing facilities, to cut transport (GreenFood50, n.d.), by farmers working about 200 hectares for 600 tonnes a year, one of them at Vierhuizen in Groningen (DutchNews.nl, 2026). Within the year: a season's harvest.",
+      "sources": [
+        "greenfood50-nd",
+        "dutchnews-2026"
+      ],
       "curvature": 0.0
     },
     {
@@ -2009,7 +2014,7 @@
       "to": "processing-capacity-for-alternative-crops",
       "polarity": "+",
       "delay": true,
-      "description": "More harvest within reach makes a plant or chain nearby more worthwhile, so buyers and processors build or keep capacity on or near the island rather than handle the crops elsewhere. In France, the firms that store, process and sell crops specialised in a few dominant ones for economies of scale, so their investment went to those crops and their logistics do not suit minor ones such as pulses (Magrini et al., 2018), and a small volume spread out or far from its users costs more to collect and process (Meynard et al., 2018, pp. 7–8): the economies of scale hold wherever a chain is built, so the mechanism transfers. In the Netherlands, on Terschelling's saline field, producers of processed products are more concerned about volumes than the restaurants are, and stakeholders describe a chicken and egg: a producer needs a market, and a reliable market needs ample supply (ten Dam et al., 2023, pp. 10, 14); for quinoa, one expert says efforts only work with concentrated investments and high volumes (de Wit et al., 2022, p. 270). Years: a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a): a delay.",
+      "description": "More harvest within reach makes a plant or chain nearby more worthwhile, so buyers and processors build or keep capacity on or near the island rather than handle the crops elsewhere. In France, the firms that store, process and sell crops specialised in a few dominant ones for economies of scale, so their investment went to those crops and their logistics do not suit minor ones such as pulses (Magrini et al., 2018, pp. 3, 9), and a small volume spread out or far from its users costs more to collect and process (Meynard et al., 2018, pp. 7–8): the economies of scale hold wherever a chain is built, so the mechanism transfers. In the Netherlands, on Terschelling's saline field, producers of processed products are more concerned about volumes than the restaurants are, and stakeholders describe a chicken and egg: a producer needs a market, and a reliable market needs ample supply (ten Dam et al., 2023, pp. 10, 14); for quinoa, one expert says efforts only work with concentrated investments and high volumes (de Wit et al., 2022, p. 270). Years: a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a): a delay.",
       "simplification": "Folds Attractiveness of processing new crops locally, which gathered the drivers of this decision: each driver now points at Local processing capacity for new crops itself, whose description says that buyers and processors weigh it against processing the crops elsewhere. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
       "sources": [
         "magrini-2018",
@@ -2048,9 +2053,22 @@
       "to": "net-price-for-new-crops",
       "polarity": "+",
       "delay": false,
-      "description": "Processors elsewhere compete for the harvest and set the price a local plant must match.",
-      "sources": [],
-      "curvature": 0.0
+      "description": "Plants off the island are where the island's growers can sell a new crop now, at the plant's price less the haul: most Dutch quinoa growers have contracts with GreenFood50 (DutchNews.nl, 2026), based in Wageningen, which has its quinoa grown close to its processing facilities, to cut transport (GreenFood50, n.d.). That more processing elsewhere raises that price, by processors competing for the harvest or by a plant nearer the island, no source read shows. Within the year: the price is set each season or contract.",
+      "sources": [
+        "dutchnews-2026",
+        "greenfood50-nd"
+      ],
+      "curvature": 0.0,
+      "ask actors": [
+        {
+          "actor": "buyers-and-processors",
+          "for": "How processors set the price they pay for new salt-tolerant crops, and whether a second buyer or a plant nearer the island raises it",
+          "through": [
+            "DCC",
+            "Living Lab"
+          ]
+        }
+      ]
     },
     {
       "from": "dependence-on-high-margin-salt-sensitive-crops",
@@ -2103,7 +2121,7 @@
       "to": "spending-on-keeping-current-crops",
       "polarity": "+",
       "delay": true,
-      "description": "The more of the rotation is potatoes and onions, the more a farm spends on what they need: in farm accounts across the Netherlands from 2014 to 2022 a larger share of ware potatoes, seed potatoes, onions and winter carrots goes with significantly higher costs that no crop is charged with, buildings and machines among them, and storing these crops takes a store (Polman et al., 2026, pp. 5, 11, 15). In France, specialising in a few crops is explained in part by writing off the equipment (Magrini et al., 2018). The differences lie mostly between farms, far less in how one farm changes over the years (Polman et al., 2026, p. 4): a farm buys only as a machine or a store falls due, about 12 years for a machine and 33 for a building (Janssens et al., 2020, p. 13). Years, so a delay.",
+      "description": "The more of the rotation is potatoes and onions, the more a farm spends on what they need: in farm accounts across the Netherlands from 2014 to 2022 a larger share of ware potatoes, seed potatoes, onions and winter carrots goes with significantly higher costs that no crop is charged with, buildings and machines among them, and storing these crops takes a store (Polman et al., 2026, pp. 5, 11, 15). In France, specialising in a few crops is explained in part by writing off the equipment (Magrini et al., 2018, p. 3). The differences lie mostly between farms, far less in how one farm changes over the years (Polman et al., 2026, p. 4): a farm buys only as a machine or a store falls due, about 12 years for a machine and 33 for a building (Janssens et al., 2020, p. 13). Years, so a delay.",
       "sources": [
         "polman-2026",
         "magrini-2018",
@@ -2166,8 +2184,11 @@
       "to": "banks-risk-assessment",
       "polarity": "+",
       "delay": false,
-      "description": "A plan that may change what the land can earn enters a bank's risk analysis before it is decided.",
-      "sources": [],
+      "description": "A public plan that may change what a farm can earn enters its bank's assessment before the plan is decided. After the government announced its nitrogen plans in June 2022 (Rabobank, 2025, p. 246), a significant part of Rabobank's loans to livestock farmers migrated to stage 2, where the bank places the exposures it considers to have a significant increase in credit risk, which it called also a reflection of the high level of uncertainty (Rabobank, 2023, p. 62); in 2024 it still held an adjustment of 23 million euro to its expected credit losses for the uncertainty the plans left, scoring livestock farmers on the profitability and sustainability of their business model (Rabobank, 2025, p. 246), and its lending criteria include a farm's nearness to a Natura 2000 area (p. 83). Measured for the nitrogen plans and livestock farms across the Netherlands; no source read shows a bank weighing a water level plan, and the mechanism transfers by the bank's test, whether the farm will keep earning enough to meet its obligations, which it applies to every farm loan (Farm income → Banks' risk assessment of farm loans). Within the year: the bank updates its vulnerable sectors at least every half-year (Rabobank, 2023, p. 62).",
+      "sources": [
+        "rabobank-2023-annual-report",
+        "rabobank-2025-annual-report"
+      ],
       "curvature": 0.14
     },
     {
@@ -2302,8 +2323,12 @@
       "to": "farmland-changing-hands",
       "polarity": "+",
       "delay": true,
-      "description": "Expropriated land passes to the public body that takes it, after a legal procedure.",
-      "sources": [],
+      "description": "Expropriated land passes to the body that expropriates it when a notary's deed of expropriation is entered in the public registers (Omgevingswet, 2026, art. 11.18), which can be drawn up only once the expropriation order and the plan it carries out are irrevocable and the provisional compensation is paid (art. 11.16); on the island, the order for the high-voltage station takes effect only once the court has confirmed it (Gemeente Schouwen-Duiveland, 2026, p. 1). Years, so a delay: in the Krimpenerwaard, under the law before the Omgevingswet, the order of October 2020 left two years before the owners still without an agreement had to be summoned to court, by October 2022 (Kamphorst et al., 2025, pp. 26, 45), and the process of the owners expropriated by the court ran more than 61 months on average (p. 67), with continued use of the land until it was handed over (p. 41).",
+      "sources": [
+        "omgevingswet-2026",
+        "schouwen-duiveland-2026-onteigening",
+        "kamphorst-2025"
+      ],
       "curvature": 0.2
     },
     {
@@ -2448,9 +2473,11 @@
       "from": "municipality-plans-for-farmland",
       "to": "farmland-leaving-arable-use",
       "polarity": "-",
-      "delay": false,
-      "description": "Farmland the plan designates for another use leaves arable farming once the plan is carried out on it; how long that takes waits for a source.",
-      "sources": [],
+      "delay": true,
+      "description": "Farmland the plan designates for another use leaves arable farming as the plan is carried out on it: the plan does not end the farming by itself. In the Krimpenerwaard, where the land-use plan designating farmland for nature became irrevocable in October 2021 (Kamphorst et al., 2025, p. 25), most of it was sold to the province, 152 hectares, or exchanged, 59 (p. 41), and 24 owners agreed to turn land into nature themselves, 171 hectares of their own and 274 leased from the province (p. 67), a sale being the most common outcome, closely followed by the owners' own conversion (p. 36); voluntary sale and the owners' own conversion alone had not completed it in earlier periods (p. 10). Years, so a delay: the sales took more than 30 months on average, the owners' own conversion more than 61 (p. 67). Expropriation is drawn apart (Farmland planned for other uses → Expropriation of farmland). Measured for nature in the peat meadows of South Holland; the procedure is national law, and how long it takes on the island no source read gives.",
+      "sources": [
+        "kamphorst-2025"
+      ],
       "curvature": 0.45
     },
     {

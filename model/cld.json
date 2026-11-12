@@ -337,8 +337,12 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Consumer demand and offtake contracts for novel salt-tolerant or alternative crops (e.g. protein crops).",
-      "sources": [],
+      "description": "Consumer demand and offtake contracts for novel salt-tolerant or alternative crops (e.g. protein crops). For quinoa the market is small: in Flanders it is sold under contract at €1,100 a tonne on a local market still very limited, with no forecast yet of how demand for local quinoa will grow (Cloet et al., 2024, pp. 2–3); in the Netherlands a supermarket has its own-brand quinoa from 12 Dutch farmers under a three-year contract, Dutch quinoa costing more to buy in than imported (DutchNews.nl, 2026). For protein crops, Rabobank expects demand for plant-based meat and dairy alternatives to grow towards 2030, while low yields and a quality that often misses food standards keep their price low (Polman et al., 2026, p. 8). Measured in Flanders and the Netherlands, none on the island.",
+      "sources": [
+        "cloet-2024",
+        "dutchnews-2026",
+        "polman-2026"
+      ],
       "x": 668,
       "y": 1054
     },
@@ -716,10 +720,22 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ3",
-      "description": "Arable farms on the island whose farmer has someone to take the farm over.",
-      "sources": [],
+      "description": "Arable farms on the island whose farmer has someone to take the farm over. Nationally, in 2023, 43% of the 33,000 farms whose head is over 50 had a successor, against 40% in 2020, and 39% of the arable farms, the agricultural census asking three times in ten years (Agrimatie, 2024); no source read gives the island's figure.",
+      "sources": [
+        "agrimatie-2024-bedrijfsopvolging"
+      ],
       "x": 152,
-      "y": -49
+      "y": -49,
+      "ask actors": [
+        {
+          "actor": "zlto",
+          "for": "How many arable farmers on the island over 50 have a successor.",
+          "through": [
+            "DCC",
+            "Living Lab"
+          ]
+        }
+      ]
     },
     {
       "id": "harvest-of-new-crops-to-process",
@@ -764,8 +780,11 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Farmers off the island growing the same new crops, whose harvest a local plant could also process.",
-      "sources": [],
+      "description": "Farmers off the island growing the same new crops, whose harvest a local plant could also process. More than two dozen farmers in the Netherlands grow quinoa, most under contract with GreenFood50, together working about 200 hectares for 600 tonnes a year, one of them at Vierhuizen in Groningen, and a few independently (DutchNews.nl, 2026); GreenFood50 has had it grown in the Netherlands and Belgium since 2014 (GreenFood50, n.d.).",
+      "sources": [
+        "dutchnews-2026",
+        "greenfood50-nd"
+      ],
       "x": 190,
       "y": 1765
     },
@@ -777,8 +796,11 @@
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Plants off the island that buy and process new salt-tolerant crops, which set the price the island's growers can get beside a local plant.",
-      "sources": [],
+      "description": "Plants off the island that buy and process new salt-tolerant crops: where the island's growers can sell a new crop now, beside a local plant. For Dutch quinoa the sources read show one main buyer, GreenFood50 at Wageningen, which runs the chain from grower to customer and has its quinoa grown close to its processing facilities, which it does not locate (GreenFood50, n.d.), most Dutch growers under contract with it (DutchNews.nl, 2026).",
+      "sources": [
+        "greenfood50-nd",
+        "dutchnews-2026"
+      ],
       "x": 1135,
       "y": 1238
     },
@@ -790,7 +812,7 @@
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Hectares under salt-tolerant varieties of the current crops (potato, onion), which use the same machines, storage and know-how. Farmers grow one where they find it worthwhile against the variety they grow now. Such potato varieties exist and are tested in the Netherlands: of 13 cultivars from Dutch breeders and suppliers grown in the field on Texel from 2012 to 2018, Elgar and Rivola kept 90% of their yield up to a soil salinity above 7.5 dS/m, against 4 to 4.5 dS/m for five others (van Straten et al., 2021, pp. 2, 10); for onion, no source read shows one variety more tolerant than another. No source read shows them grown on the island or in Zeeland: stakeholders in the Dutch potato industry named salt-tolerant varieties as developed in the Netherlands mostly for arid countries, with no mention of domestic use (Aldrich et al., 2023, p. 35). A Stock: a field keeps the variety sown in it for the season, so the hectares hold until farmers sow again.",
+      "description": "Hectares under salt-tolerant varieties of the current crops (potato, onion), which use the same machines, storage and know-how. Farmers grow one where they find it worthwhile against the variety they grow now. Such potato varieties exist and are tested in the Netherlands: of 13 cultivars from Dutch breeders and suppliers grown in the field on Texel from 2012 to 2018, Elgar and Rivola kept 90% of their yield up to a soil salinity above 7.5 dS/m, against 4 to 4.5 dS/m for five others (van Straten et al., 2021, pp. 2, 10); for onion, no source read shows one variety more tolerant than another. No source read shows them grown on the island or in Zeeland: stakeholders in the Dutch potato industry named salt-tolerant varieties as developed in the Netherlands mostly for arid countries, with no mention of domestic use (Aldrich et al., 2023, p. 38). A Stock: a field keeps the variety sown in it for the season, so the hectares hold until farmers sow again.",
       "sources": [
         "van-straten-2021",
         "aldrich-2023"

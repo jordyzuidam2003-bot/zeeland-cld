@@ -3873,5 +3873,26 @@
     },
     "title": "'Switching to another crop is possible with used machinery'",
     "URL": "https://www.hortidaily.com/article/6005363/switching-to-another-crop-is-possible-with-used-machinery/"
+  },
+  {
+    "id": "agrimatie-2024-bedrijfsopvolging",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Agrimatie"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          20
+        ]
+      ]
+    },
+    "title": "Hoger opvolgingspercentage en meer bedrijven met een opvolger",
+    "container-title": "Agrimatie",
+    "URL": "https://agrimatie.nl/ThemaResultaat.aspx?subpubID=2232&themaID=7202"
   }
 ]

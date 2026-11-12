@@ -317,11 +317,12 @@
         {
           "to": "arable-farmers",
           "kind": "buys from",
-          "description": "Cosun Beet Company buys the island's sugar beet, 1,336 ha on 110 farms in 2025, as it processes all beet grown in the Netherlands, from growers who are its members, each up to its allocation; the potato processors buy most of their potatoes under contract or in a pool, measured nationally.",
+          "description": "Cosun Beet Company buys the island's sugar beet, 1,336 ha on 110 farms in 2025, as it processes all beet grown in the Netherlands; it belongs to Royal Cosun, a cooperative of the beet growers, and sets how much beet its members may deliver; the potato processors buy most of their potatoes under contract or in a pool, measured nationally.",
           "sources": [
             "kamerstuk-2025-cosun",
             "cbs-2026-landbouw-gemeente",
             "cosun-2026-beet-campaign",
+            "cosun-royal-cosun",
             "janssens-2020"
           ],
           "curvature": -0.08

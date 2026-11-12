@@ -268,7 +268,7 @@
   ]
  },
  "deolu-ajayi-2024": {
-  "digest": "f95d915cfd59",
+  "digest": "0a07d2af558a",
   "note": "NCBBAXBZ",
   "placed": [
    "CLD"
@@ -340,7 +340,7 @@
   ]
  },
  "eu-cap-network-2023": {
-  "digest": "7e4a7bc8d401",
+  "digest": "b7ece6c3a8f7",
   "note": "365VS95C",
   "placed": [
    "CLD"
@@ -428,7 +428,7 @@
   ]
  },
  "kaandorp-2022": {
-  "digest": "86df271a3e9c",
+  "digest": "83675565ab9e",
   "note": "UCUZ55BX",
   "placed": [
    "Actor Map",
@@ -486,14 +486,14 @@
   ]
  },
  "lases-2021": {
-  "digest": "e5da1ced08bc",
+  "digest": "9cd725b0cc5f",
   "note": "PEBGAN9A",
   "placed": [
    "CLD"
   ]
  },
  "living-lab-2023-dreischor": {
-  "digest": "7606829c2ac0",
+  "digest": "3d814ea7605d",
   "note": "CUESIWZ4",
   "placed": [
    "CLD"
@@ -514,7 +514,7 @@
   ]
  },
  "living-lab-innovatieve-drainage": {
-  "digest": "2d7486c6397d",
+  "digest": "f19c88e12035",
   "note": "DIESPUSP",
   "placed": [
    "Actor Map",
@@ -605,7 +605,7 @@
   ]
  },
  "nationale-ombudsman-2026": {
-  "digest": "bd189d7829e7",
+  "digest": "0ae42503f6ec",
   "note": "SK2MIRM2",
   "placed": [
    "CLD"
@@ -693,7 +693,7 @@
   ]
  },
  "provincie-zeeland-2021-grondwateronttrekkingen": {
-  "digest": "282854812602",
+  "digest": "deb9f504be12",
   "note": "FUPAQDG5",
   "placed": [
    "CLD"
@@ -759,7 +759,7 @@
   ]
  },
  "remkes-2022": {
-  "digest": "bd189d7829e7",
+  "digest": "0ae42503f6ec",
   "note": "HNJCJGMP",
   "placed": [
    "CLD"
@@ -957,7 +957,7 @@
   ]
  },
  "slovic-1993": {
-  "digest": "2aceadbbe390",
+  "digest": "08bef1a95ccf",
   "note": "4FM58KK6",
   "placed": [
    "CLD"
@@ -1015,14 +1015,21 @@
   ]
  },
  "van-duinen-2015": {
-  "digest": "bd189d7829e7",
+  "digest": "0ae42503f6ec",
   "note": "UFSZH72J",
   "placed": [
    "CLD"
   ]
  },
+ "van-duinen-2015-coping": {
+  "digest": "970f9b1f1bfa",
+  "note": "83GN4RZG",
+  "placed": [
+   "CLD"
+  ]
+ },
  "van-loo-2023": {
-  "digest": "230252515f12",
+  "digest": "c91b085e0a27",
   "note": "I5C4TP2T",
   "placed": [
    "CLD"
@@ -1036,7 +1043,7 @@
   ]
  },
  "van-straten-2021": {
-  "digest": "945c58a37652",
+  "digest": "3f9b6a53277b",
   "note": "QAGSV9NC",
   "placed": [
    "CLD"

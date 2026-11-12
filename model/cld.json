@@ -1014,6 +1014,9 @@
         "kamphorst-2025",
         "holtslag-broekhof-2016"
       ],
+      "actors": [
+        "ienw"
+      ],
       "x": 879,
       "y": -1699,
       "actor": "gemeente-schouwen-duiveland"

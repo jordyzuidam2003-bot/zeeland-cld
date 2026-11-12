@@ -337,11 +337,12 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Consumer demand and offtake contracts for novel salt-tolerant or alternative crops (e.g. protein crops). For quinoa the market is small: in Flanders it is sold under contract at €1,100 a tonne on a local market still very limited, with no forecast yet of how demand for local quinoa will grow (Cloet et al., 2024, pp. 2–3); in the Netherlands a supermarket has its own-brand quinoa from 12 Dutch farmers under a three-year contract, Dutch quinoa costing more to buy in than imported (DutchNews.nl, 2026). For protein crops, Rabobank expects demand for plant-based meat and dairy alternatives to grow towards 2030, while low yields and a quality that often misses food standards keep their price low (Polman et al., 2026, p. 8). Measured in Flanders and the Netherlands, none on the island.",
+      "description": "Consumer demand and offtake contracts for novel salt-tolerant or alternative crops (e.g. protein crops). For quinoa the market is small: in Flanders it is sold under contract at €1,100 a tonne on a local market still very limited, with no forecast yet of how demand for local quinoa will grow (Cloet et al., 2024, pp. 2–3); in the Netherlands a supermarket has its own-brand quinoa from 12 Dutch farmers under a three-year contract, Dutch quinoa costing more to buy in than imported (DutchNews.nl, 2026). For protein crops, Rabobank expects demand for plant-based meat and dairy alternatives to grow towards 2030, while low yields and a quality that often misses food standards keep their price low (Polman et al., 2026, p. 8). For halophytes such as samphire and sea aster, grown in a few places in Zeeland, the food market is small and easily saturated, and offers farmers no lasting market potential (van den Burg et al., 2024, p. 6). Measured in Flanders, the Netherlands and Zeeland, none on the island.",
       "sources": [
         "cloet-2024",
         "dutchnews-2026",
-        "polman-2026"
+        "polman-2026",
+        "van-den-burg-2024"
       ],
       "x": 668,
       "y": 1054
@@ -829,8 +830,13 @@
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Salt-tolerant varieties of the current crops that breeders bring to market, and their yield; breeding lies outside the CLD's scale.",
-      "sources": [],
+      "description": "Salt-tolerant varieties of the current crops that breeders bring to market, and their yield; breeding lies outside the CLD's scale. Dutch breeders and suppliers sell potato cultivars that differ in salt tolerance: of 13 bought from them and tested in the field on Texel, Rivola, Elgar and '927' were more tolerant than the others on sandy soil (van Straten et al., 2021, pp. 2, 11). With no official label for salt tolerance, trading houses claim it for no variety and only say which suit saline soils best and worst, and salt tolerance is not yet among the ten traits their salespeople rank most important for a new variety (de Wit et al., 2022, pp. 271–272); the salt-tolerant seed potatoes bred in the Netherlands are mostly for export to arid countries such as Egypt and Morocco (Aldrich et al., 2023, pp. 38, 40). Tolerant varieties yield relatively little against common high-yielding ones without salt or under mild salt, and conventional breeding takes 10 to 15 years (van den Burg et al., 2024, pp. 3, 6). Measured in interviews across the Dutch potato chain and in field trials on Texel; none on the island.",
+      "sources": [
+        "van-straten-2021",
+        "de-wit-2022",
+        "aldrich-2023",
+        "van-den-burg-2024"
+      ],
       "x": -269,
       "y": 1397
     },
@@ -878,8 +884,11 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "What the island's farmers know about growing and selling new salt-tolerant crops, from their own fields, their neighbours' and advisers.",
-      "sources": [],
+      "description": "What the island's farmers know about growing and selling new salt-tolerant crops, from their own fields, their neighbours' and advisers. For quinoa this knowledge is still thin in the Netherlands: research on growing it is relatively underdeveloped, and a grower harvested 2,000 kg from 4 hectares one year and 2,500 kg the next without knowing why, multiple interviewees agreeing that too little is known (de Wit et al., 2022, p. 269); what Dutch consumers want from it is under-researched (p. 270). Knowing that crops must cope with salt is a separate matter: most of Zeeland's farmers know it, yet still grow common salt-sensitive crops such as potato and wheat (Stuyt et al., 2016, as cited in van den Burg et al., 2024, p. 6). Measured in 32 interviews across the Netherlands, seven of them with farmers (de Wit et al., 2022, p. 266), and across Zeeland; none on the island.",
+      "sources": [
+        "de-wit-2022",
+        "van-den-burg-2024"
+      ],
       "x": 1083,
       "y": 721
     },
@@ -1015,8 +1024,11 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ3",
-      "description": "How strongly farmers hold on to their land beyond its money value: family land, growing up on it. Whether anything on the map moves it, at succession perhaps, is a question for the group model building session.",
-      "sources": [],
+      "description": "How strongly farmers hold on to their land beyond its money value: family land, growing up on it. In the Krimpenerwaard, where a land-use plan designated farmland for nature with expropriation as its last step, owners who kept their land and turned it into nature themselves named the wish not to lose it, from an emotional bond with it, as an important reason, for one farm weighing more than moving (Kamphorst et al., 2025, pp. 11, 49, 68); selling land held for generations often weighs heavily, though one farmer's father had advised getting out if he could (p. 54). At succession the farm customarily passes to one child at its low agricultural value, the other children giving up part of their inheritance so that the parental farm can continue (Luijt, 2007, pp. 23, 25). Measured among 14 owners interviewed in the Krimpenerwaard, dairy farms and private owners on peat, and nationally for succession; no source read measures it on the island or among arable farmers. Whether anything on the map moves it, at succession perhaps, is a question for the group model building session.",
+      "sources": [
+        "kamphorst-2025",
+        "luijt-2007"
+      ],
       "x": 268,
       "y": -1148
     },
@@ -1038,16 +1050,30 @@
     {
       "id": "municipality-plans-for-farmland",
       "label": "Farmland planned for other uses",
-      "element type": "Auxiliary",
+      "element type": "Stock",
       "adaptive practice": false,
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Hectares of the island's farmland that Gemeente Schouwen-Duiveland's land-use plan (its omgevingsplan, with the changes it drafts to it) designates for a use other than arable farming, such as nature, water storage, housing or recreation. Which plans the municipality makes for the island's farmland, and where objections enter them, is on the facts list under Objections to land-use plans.",
-      "sources": [],
+      "description": "Hectares of the island's farmland that Gemeente Schouwen-Duiveland's land-use plan (its omgevingsplan, with the changes it drafts to it) designates for a use other than arable farming, such as nature, water storage, housing or recreation. The municipal council adopts one omgevingsplan for the whole municipality, holding the rules a balanced allocation of functions to locations needs (Omgevingswet, 2026, arts. 2.4, 4.2); on the island all land-use plans of before merged into it when the law took effect on 1 January 2024, and the municipality can change it at an owner's request (Gemeente Schouwen-Duiveland, n.d.). How many hectares it designates for other uses, no source read gives. In the Krimpenerwaard, a municipal plan designating farmland for nature took from its preliminary draft in spring 2018 to irrevocable in October 2021, fifteen appeals against it reaching the Council of State (Kamphorst et al., 2025, p. 25). A Stock: the hectares stay designated until the council changes the plan, which takes years, and leave as the plan is carried out on them (Farmland planned for other uses → Arable land in the polders).",
+      "sources": [
+        "omgevingswet-2026",
+        "schouwen-duiveland-omgevingsplan",
+        "kamphorst-2025"
+      ],
       "x": -617,
       "y": -1616,
-      "actor": "gemeente-schouwen-duiveland"
+      "actor": "gemeente-schouwen-duiveland",
+      "ask actors": [
+        {
+          "actor": "gemeente-schouwen-duiveland",
+          "for": "How many hectares of the island's farmland the omgevingsplan designates for a use other than arable farming, and which changes to it the municipality is drafting.",
+          "through": [
+            "DCC",
+            "Living Lab"
+          ]
+        }
+      ]
     },
     {
       "id": "creek-ridge-lens-thickness",
@@ -2335,10 +2361,11 @@
       "to": "farmland-changing-hands",
       "polarity": "-",
       "delay": false,
-      "description": "Farmers attached to their land sell it later, often only when forced.",
-      "sources": [],
-      "curvature": 0.0,
-      "hypothesis": true
+      "description": "Owners attached to their land keep it rather than sell it. In the Krimpenerwaard, the wish not to lose their land, from an emotional bond with it, was an important reason owners chose to turn it into nature themselves rather than sell it, and for one farm its bond with the land weighed more than moving (Kamphorst et al., 2025, pp. 11, 49, 68). Measured where a plan for nature, with expropriation as its last step, left owners only those choices; no source read measures it on the island's land market. Within the year: it acts when an owner decides whether to sell.",
+      "sources": [
+        "kamphorst-2025"
+      ],
+      "curvature": 0.0
     },
     {
       "from": "expropriation-of-farmland",

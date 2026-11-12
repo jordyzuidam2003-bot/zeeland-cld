@@ -26,8 +26,8 @@
 </g>
 </g>
 <g class="elements">
-<g class="element" data-id="municipality-plans-for-farmland" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-406.4" y="-205.6" width="324.8" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="municipality-plans-for-farmland" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="-406.4" y="-205.6" width="324.8" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-244.0" y="-171.1" text-anchor="middle">Farmland planned for</text>
 <text x="-244.0" y="-137.1" text-anchor="middle">other uses</text>
 </g>

@@ -117,8 +117,8 @@
 <rect x="-967.6" y="-128.0" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-872.0" y="-93.5" text-anchor="middle">Farm income</text>
 </g>
-<g class="element" data-id="municipality-plans-for-farmland" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-782.4" y="-1193.0" width="324.8" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="municipality-plans-for-farmland" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="-782.4" y="-1193.0" width="324.8" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-620.0" y="-1158.5" text-anchor="middle">Farmland planned for</text>
 <text x="-620.0" y="-1124.5" text-anchor="middle">other uses</text>
 </g>

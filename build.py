@@ -5,6 +5,7 @@
     python3 build.py --layout FILE    # write the positions and curvatures of FILE (layout.json,
                                       # downloaded from a page's Move mode) into cld.json, or the
                                       # Actor Map's into actor-map.json, then build
+    python3 -m doctest build.py       # the tests written in its docstrings (bows_alike())
 
 Sources, edited by hand: in model/, cld.json (elements, connections, named loops, layout and
 link curvature), actor-map.json (the Actor Map's actors, their relations and places, the one list
@@ -105,6 +106,30 @@ ACTOR_FIELDS = ["label", "scale", "type", "level", "sector", "interest", "influe
 # the Living Lab Schouwen-Duiveland (ChallengeBasedProject1/.claude/rules/cld-model.md); an entry
 # lists each one to start asking through, as one contact leads to the next (Jordy)
 ASK_THROUGH = ["DCC", "Living Lab"]
+# the least two links between the same two boxes differ in bow, so Kumu draws them apart (bows_alike())
+BOW_APART = 0.1
+
+
+def bows_alike(links, where=""):
+    """`bow alike:` lines for two links that join the same two boxes with curvatures, each signed for
+    the direction from the pair's alphabetically first id, less than BOW_APART apart. The page spreads
+    the ends that meet one side of a box (draw_cld.link_paths()), so two such links show apart there;
+    Kumu draws each from centre to centre, so there they lie on one line (README, Kumu). links: (name,
+    from, to, curvature); a positive curvature bows left of the link's direction, so a link from the
+    second id to the first counts its own negated. where: the model the lines name, after "bow alike:".
+
+    >>> bows_alike([("a -> b", "a", "b", 0.2), ("b -> a", "b", "a", -0.28)])
+    ['bow alike: a -> b and b -> a, bows +0.20 and +0.28 from a, less than 0.1 apart']
+    >>> bows_alike([("a -> b", "a", "b", 0.2), ("b -> a", "b", "a", -0.36)])
+    []
+    """
+    pairs = {}
+    for name, a, b, k in links:
+        pairs.setdefault(min(a, b), {}).setdefault(max(a, b), []).append((name, k if a < b else -k))
+    # rounded, so two bows set exactly BOW_APART apart do not read as closer in floating point
+    return [f"bow alike: {where}{m} and {n}, bows {x:+.2f} and {y:+.2f} from {first}, less than {BOW_APART} apart"
+            for first, ends in pairs.items() for ls in ends.values()
+            for i, (m, x) in enumerate(ls) for n, y in ls[i + 1:] if round(abs(x - y), 6) < BOW_APART]
 
 
 def ask_errors(item, name, actor_ids):
@@ -1033,6 +1058,11 @@ def main():
                  if not body.strip()]
     if warnings:
         print("warnings:\n  " + "\n  ".join(warnings))
+    # each at the line's start, so a check counts them (grep "^bow alike:")
+    bows = (bows_alike([(f"{c['from']} -> {c['to']}", c["from"], c["to"], c["curvature"]) for c in cld["connections"]])
+            + bows_alike([(f"{r['from']} {r['kind']} {r['to']}", r["from"], r["to"], r["curvature"]) for r in rel], "actor map: "))
+    if bows:
+        print("\n".join(bows))
 
 
 if __name__ == "__main__":

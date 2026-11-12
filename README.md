@@ -71,7 +71,8 @@ builds and pushes, so nobody else needs git or Python.
    text still empty, an element without links, two boxes that overlap, a link and its reverse
    drawn on one curve, an element on the wrong side of the border between the two subsystems,
    a named loop whose own links cross, a link under a region's name, a loop's figure with no
-   room inside the loop for its mark, a link through a box it does not connect.
+   room inside the loop for its mark, a link through a box it does not connect, two links or
+   relations between the same two boxes bowed alike (`bow alike:`, Kumu).
 3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
    a commit whose `docs/` is out of date.
 
@@ -384,7 +385,8 @@ guidelines do not ask for it (Jordy).
 ## Kumu
 
 Kumu holds a copy for milestones, at <https://kumu.io/JordyZuidam/cbp1>, public and never
-edited: the one place outsiders see the model, so nothing in it links to the page or this
+edited, but for the bends Jordy sets there by hand after the last restore before a submission
+(below): the one place outsiders see the model, so nothing in it links to the page or this
 repository (Jordy). One project, `cbp1`, holds every map, each picked from Kumu's map list, with
 no showcase buttons, so its name names no single map (Jordy; rejected: `cbp-cld`, the name of the
 CLD's own project before the Actor Map joined it):
@@ -423,7 +425,16 @@ and connections alone. The restore sets the project's name, which the export set
 The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label
 inside, square corners for a stock and rounded ones for the others, an italic label for a
 constant (Kumu has no dashed border), a thick border for an adaptive practice; links of one
-width, blue `+` and red `−`. Kumu draws each link from centre to centre. The regions reach Kumu
+width, blue `+` and red `−`. Kumu draws each link from centre to centre, where the page spreads
+the ends that meet one side of a box (`draw_cld.link_paths()`): two links between the same two
+boxes with the same bow show apart on the page and lie on one line in Kumu. So `build.py` warns,
+each line starting `bow alike:`, where two links in `model/cld.json` or two relations in
+`model/actor-map.json` join the same two boxes with curvatures, each signed for the direction from
+the pair's alphabetically first id, less than 0.1 apart, and each such pair takes bows at least
+that far apart (Jordy's decision: Kumu's drawing is fixed in the build where it can be, by hand
+only for the rest, since a fix by hand is lost at each restore). What still reads less clearly in
+Kumu, such as a link that needs a little more bend, Jordy adjusts there by hand after the last
+restore before a submission. Kumu's arrowheads are its own. The regions reach Kumu
 as a background image inside the file: the CLD's map holds an element labelled `background`,
 pinned at the centre of the regions' frame with the frame's width and height, which the
 `#background` rule in `src/kumu/cld-view.scss` shows behind the map, its `url(IMAGE)` replaced by

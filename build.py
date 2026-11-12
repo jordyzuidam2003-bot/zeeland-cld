@@ -827,7 +827,7 @@ def actors_project(actors, refs, decides, cld_labels, template):
              + "\n".join(rules) + "\n")
     return {
         "elements": elements, "connections": connections, "loops": [],
-        "maps": [{"_id": "map-actors", "name": "Actor Map", "description": "", "scale": 1,
+        "maps": [{"_id": "map-actors", "name": "Actor Map", "description": " ".join(draw_actor_map.BANDS_NOTE), "scale": 1,
                   "center": {"x": 0, "y": 0}, "defaultPerspective": "pers-actors",
                   "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
                   "elements": nodes, "connections": edges, "loops": []}],

@@ -358,10 +358,11 @@ and only `diff` keeps listing it.
 `docs/actors.html` is the Actor Map, a page beside the CLD's and linked from it: the actors'
 network in one band per level, Global at the top and Local / Provincial / Regional at the bottom
 (Jordy, chosen between rendered versions; rejected: rings by the CLD's scale, clusters by type,
-boxes shaded by influence score), each relation in its kind's colour and dash. An actor's place
-within its band means nothing: it only keeps the relations readable, and the legend says so under
-the relations, since the bands order the levels from top to bottom and the figure travels without
-this README (Jordy, chosen between rendered versions; rejected: each band's actors in one row,
+boxes shaded by influence score), each relation in its kind's colour and dash. Within a band, an
+actor's position says nothing about its scale or influence: it is placed only so that its relations
+are easy to follow. The legend says so under the relations and Kumu's Actor Map in its description
+(`draw_actor_map.BANDS_NOTE`), since the bands order the levels from top to bottom and the figure
+travels without this README (Jordy, chosen between rendered versions; rejected: each band's actors in one row,
 which leaves nothing to misread but drew 24 crossings against 7 and stacked the local actors'
 relations as arcs along their row). A click on an actor
 or a relation opens its fields and sources. The CLD's scale is not drawn (Jordy). `docs/figures/actor-map.svg`
@@ -393,7 +394,7 @@ CLD's own project before the Actor Map joined it):
   map by the view, as the page has no loop marks;
 - the Actor Map: the actors at their places with their fields, the relations with their curves,
   each kind as its connection type in its colour and dash (`src/kumu/actor-map-view.scss` and the
-  rules `build.py` adds);
+  rules `build.py` adds), its description what the bands mean, as the page's legend says it;
 - a map per combined loop, C1 to C10, then per named loop in `model/cld.json`'s order, named
   `<id> <name>`, its description the group's or the loop's: exactly its loops' elements and links,
   at the places of its figure in `docs/figures/` (a group's `places`, `bends` and `marks`, a named

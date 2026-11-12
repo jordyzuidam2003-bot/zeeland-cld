@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="627 94 2293 1984" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="627 94 2293 2044" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
 <defs>
 <marker id="arrow-authority-over" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#333333"/></marker>
 <marker id="arrow-finances" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#EB6834"/></marker>
@@ -7,7 +7,7 @@
 <marker id="arrow-represents" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6250D6"/></marker>
 <marker id="arrow-works-with" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1BAF7A"/></marker>
 </defs>
-<rect x="627" y="94" width="2293" height="1984" fill="white"/>
+<rect x="627" y="94" width="2293" height="2044" fill="white"/>
 <g class="bands">
 <rect x="666.6" y="134.0" width="2212.8" height="231.0" fill="#EEF2F6"/>
 <text x="706.6" y="249.5" font-size="40" font-weight="bold" letter-spacing="5" fill="#4A5560" dominant-baseline="central">GLOBAL</text>
@@ -149,7 +149,8 @@
 <path d="M 1780.2 1870.0 L 1862.2 1870.0" stroke="#1BAF7A" stroke-width="4" stroke-dasharray="14 9" fill="none" marker-end="url(#arrow-works-with)"/>
 <text x="1900.2" y="1870.0" font-size="40" dominant-baseline="central">works with</text>
 <text x="666.6" y="1938.0" font-size="40" font-weight="bold" dominant-baseline="central">Bands</text>
-<text x="866.6" y="1938.0" font-size="40" dominant-baseline="central">the level an actor acts at;</text>
-<text x="866.6" y="1998.0" font-size="40" dominant-baseline="central">within a band, an actor's place only keeps the relations readable</text>
+<text x="866.6" y="1938.0" font-size="40" dominant-baseline="central">The level at which an actor works, from global at the top to local at the bottom.</text>
+<text x="866.6" y="1998.0" font-size="40" dominant-baseline="central">Within a band, an actor's position says nothing about its scale or influence:</text>
+<text x="866.6" y="2058.0" font-size="40" dominant-baseline="central">it is placed only so that its relations are easy to follow.</text>
 </g>
 </svg>

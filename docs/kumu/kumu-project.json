@@ -6813,7 +6813,7 @@
     {
       "_id": "map-actors",
       "name": "02 Actor Map",
-      "description": "",
+      "description": "The level at which an actor works, from global at the top to local at the bottom. Within a band, an actor's position says nothing about its scale or influence: it is placed only so that its relations are easy to follow.",
       "scale": 1,
       "center": {
         "x": 0,

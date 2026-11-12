@@ -169,9 +169,12 @@ def bands_svg(actors):
             f'width="{x1 - x0:.0f}" height="{y1 - y0:.0f}" font-family="{draw_cld.FONT}">\n{band_svg}\n</svg>\n'), frame
 
 
-# What the bands mean, under the relations in the legend: the bands order the levels from top to
-# bottom, so a reader would read a higher place within a band as a larger scale too
-BANDS_NOTE = ["the level an actor acts at;", "within a band, an actor's place only keeps the relations readable"]
+# What the bands mean, under the relations in the legend and as Kumu's Actor Map's description (a line
+# each here, joined there): the bands order the levels from top to bottom, so a reader would read a
+# higher place within a band as a larger scale or more influence
+BANDS_NOTE = ["The level at which an actor works, from global at the top to local at the bottom.",
+              "Within a band, an actor's position says nothing about its scale or influence:",
+              "it is placed only so that its relations are easy to follow."]
 
 
 def legend_svg(x, y):

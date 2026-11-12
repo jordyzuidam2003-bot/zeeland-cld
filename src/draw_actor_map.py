@@ -128,9 +128,9 @@ def relation_svg(r, p, labels):
     (x0, y0), (cx, cy), (x2, y2) = p
     dash = f' stroke-dasharray="{dash}"' if dash else ""
     title = f'{labels[r["from"]]} {r["kind"]} {labels[r["to"]]}: {r["description"]}'
-    return (f'<g class="relation" data-from="{r["from"]}" data-to="{r["to"]}" data-kind="{r["kind"]}">'
+    return (f'<g class="relation" data-from="{r["from"]}" data-to="{r["to"]}" data-kind="{r["kind"]}" data-curvature="{r["curvature"]}">'
             f'<title>{esc(title)}</title>'
-            f'<path d="M {x0:.1f} {y0:.1f} Q {cx:.1f} {cy:.1f} {x2:.1f} {y2:.1f}" fill="none" stroke="{colour}" '
+            f'<path class="link-path" d="M {x0:.1f} {y0:.1f} Q {cx:.1f} {cy:.1f} {x2:.1f} {y2:.1f}" fill="none" stroke="{colour}" '
             f'stroke-width="{REL_WIDTH}"{dash} marker-end="url(#arrow-{r["kind"].replace(" ", "-")})"/></g>')
 
 

@@ -14,6 +14,8 @@
   <div class="bar">
     <button id="menu-button" class="title" aria-expanded="false" aria-controls="menu"><span aria-hidden="true">☰</span> Zeeland Actor Map</button>
     <span class="group"><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button><button id="fit">Fit</button></span>
+    <label class="toggle" title="Move actors and bend relations"><input type="checkbox" id="move"> Move</label>
+    <button id="download" hidden>Download layout</button>
     <button id="fullscreen" aria-label="Full screen" title="Full screen">⛶</button>
   </div>
   <aside class="menu" id="menu" hidden>
@@ -28,6 +30,7 @@
 </aside>
 <!-- DATA -->
 <script src="assets/map.js"></script>
+<script src="assets/move.js"></script>
 <script src="assets/actors.js"></script>
 </body>
 </html>

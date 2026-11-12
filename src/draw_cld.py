@@ -24,8 +24,9 @@ draws them, with its mark, turning clockwise, at the oval's centre.
 group_figure(cld, group) draws one group of named loops (build.py writes docs/figures/combined-loops/<id>.svg): its
 loops' elements and links at the group's own `places` and `bends`, each loop's mark at `marks`.
 
-The link formulas are duplicated in src/templates/app.js (drag mode redraws every link when an element
-moves): keep link_path(), link_paths(), sign_position() and their JS twins the same.
+The link formulas are duplicated for the pages' Move mode, which redraws every link when a box moves:
+link_path() and link_paths() in src/templates/move.js, for the CLD and the Actor Map, sign_position()
+in src/templates/app.js; keep them and their JS twins the same.
 """
 
 from math import ceil, cos, hypot, pi, sin
@@ -124,7 +125,7 @@ def inside(p, box):
 
 
 def link_path(a, b, curvature):
-    """The curve from box a's border to box b's border; see the JS twin in src/templates/app.js.
+    """The curve from box a's border to box b's border; see the JS twin in src/templates/move.js.
 
     Control point: the midpoint of the chord between the two centres, moved perpendicular to the
     chord by curvature x chord length, to the left of the direction of travel on the y-down canvas
@@ -181,7 +182,7 @@ def spread(xs, lo, hi, gap):
 
 
 def link_paths(cld, bxs, key=lambda c: (c["from"], c["to"])):
-    """{(from, to): (p0, c, p2)} for every connection; see the JS twin linkPaths() in src/templates/app.js.
+    """{(from, to): (p0, c, p2)} for every connection; see the JS twin paths() in src/templates/move.js.
     `key` names each connection in the result: the Actor Map (draw_actor_map.py), where two actors can
     hold two relations, names each by its place in the list.
 

@@ -1,5 +1,5 @@
 // The Actor Map's page: a click on an actor or a relation opens a panel with its fields and
-// sources; Esc (map.js) or a click on the background closes it. The data is the JSON in <script id="data">
+// sources; Esc (map.js) or a click on the background closes it. Move mode is move.js's. The data is the JSON in <script id="data">
 // (build.py writes it); the drawing is the inline SVG, its actors and relations in actor-map.json's order.
 "use strict";
 
@@ -56,5 +56,14 @@ actors.forEach((g, i) => g.addEventListener("click", event => {
 
 const close = () => { panel.hidden = true; };
 document.getElementById("close").addEventListener("click", close);
-const controls = mapControls(svg, document.getElementById("map"));
+// Move mode (move.js): actors move, relations bend. A relation is named in layout.json by its two
+// actors and its kind, since two actors can hold two relations; "model" tells build.py --layout to
+// write the file into actor-map.json.
+const mover = moveMode(svg, {
+  box: "g.actor",
+  link: "g.relation",
+  key: g => `${g.dataset.from}->${g.dataset.to} ${g.dataset.kind}`,
+  extra: () => ({ model: "actor-map.json" }),
+});
+const controls = mapControls(svg, document.getElementById("map"), mover.grab);
 svg.addEventListener("click", () => { if (!controls.wasDragged()) close(); });

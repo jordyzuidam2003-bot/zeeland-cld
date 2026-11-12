@@ -3,7 +3,8 @@
     python3 build.py                  # check, write docs/, print the report
     python3 build.py --check          # fail if docs/ is out of date (the pre-commit hook runs this)
     python3 build.py --layout FILE    # write the positions and curvatures of FILE (layout.json,
-                                      # downloaded from the page's drag mode) into cld.json, then build
+                                      # downloaded from a page's Move mode) into cld.json, or the
+                                      # Actor Map's into actor-map.json, then build
 
 Sources, edited by hand: in model/, cld.json (elements, connections, named loops, layout and
 link curvature), actor-map.json (the Actor Map's actors, their relations and places, the one list
@@ -11,7 +12,7 @@ the CLD's actor fields name), references.json (sources) and cld-texts.md (the mo
 shows); in src/, kumu/cld-view.scss and kumu/actor-map-view.scss (the Kumu views inside the export
 in docs/kumu/) and templates/ (index.html, a template with the placeholders <!-- SVG -->,
 <!-- FACTS -->, <!-- TEXTS --> and <!-- DATA -->; actors.html, the Actor Map's, with <!-- QUESTION -->,
-<!-- SVG --> and <!-- DATA -->; app.js; actors.js; map.js; style.css). src/draw_cld.py draws the CLD,
+<!-- SVG --> and <!-- DATA -->; app.js; actors.js; map.js; move.js; style.css). src/draw_cld.py draws the CLD,
 src/draw_actor_map.py the Actor Map and its table, src/write_xlsx.py writes the table's file. Never
 edit docs/, which this script writes:
 
@@ -19,7 +20,8 @@ edit docs/, which this script writes:
                        numbers counted in the model) and the data as JSON
     docs/actors.html   the Actor Map's page: the network inline, a panel per actor and relation
     docs/assets/       app.js, actors.js, map.js (moving and zooming, the bar and the menu, for
-                       both pages) and style.css, copied from src/templates/
+                       both pages), move.js (Move mode, for both pages) and style.css, copied
+                       from src/templates/
     docs/figures/cld.svg  the drawing on its own, the picture for the report
     docs/figures/named-loops/<id>.svg  each named loop on its own (draw_cld.loop_figure()), its
                        figure for the report; the page's panel for the loop shows it
@@ -890,18 +892,37 @@ def kumu_project(cld_part, actors_part):
 
 
 def apply_layout(path):
-    """Write the positions, curvatures and dragged delay marks of a layout.json ({id: {x, y}, "curvature":
-    {"from->to": k}, "delay": {"from->to": t}}, from the page's drag mode) into cld.json, in its own formatting; a file without "curvature"
-    moves the elements only."""
+    """Write a layout.json from a page's Move mode into its model, in the model's own formatting. The
+    CLD's ({id: {x, y}, "curvature": {"from->to": k}, "delay": {"from->to": t}}) goes into cld.json:
+    each element's place, each link's curvature, each dragged delay mark. The Actor Map's ({"model":
+    "actor-map.json", id: {x, y}, "curvature": {"from->to kind": k}}) goes into actor-map.json: each
+    actor's place and each relation's curvature, a relation named by its two actors and its kind,
+    since two actors can hold two relations. A file without "curvature" moves the boxes only."""
     layout = json.loads(path.read_text())
+    target = layout.pop("model", "cld.json")
     curvature = layout.pop("curvature", {})
-    delay_at = layout.pop("delay", {})
-    cld = json.loads(CLD.read_text())
-    by_id = {e["id"]: e for e in cld["elements"]}
-    by_link = {f'{c["from"]}->{c["to"]}': c for c in cld["connections"]}
+    if target == "cld.json":
+        file, what = CLD, "element or link"
+        delay_at = layout.pop("delay", {})
+        model = json.loads(CLD.read_text())
+        boxes = model["elements"]
+        links = [(f'{c["from"]}->{c["to"]}', c) for c in model["connections"]]
+    elif target == "actor-map.json":
+        file, what, delay_at = ACTORS, "actor or relation", {}
+        model = json.loads(ACTORS.read_text())
+        boxes = model["actors"]
+        links = [(f'{a["id"]}->{r["to"]} {r["kind"]}', r) for a in boxes for r in a.get("relations", [])]
+    else:
+        sys.exit(f"--layout: model {target!r} is neither cld.json nor actor-map.json")
+    by_id = {b["id"]: b for b in boxes}
+    by_link = dict(links)
     unknown = [i for i in layout if i not in by_id] + [k for k in list(curvature) + list(delay_at) if k not in by_link]
     if unknown:
-        sys.exit(f"--layout: unknown element or link {', '.join(unknown)}")
+        sys.exit(f"--layout: unknown {what} {', '.join(unknown)}")
+    # a name that two relations share would bend both
+    twice = [k for k in curvature if sum(k == n for n, _ in links) > 1]
+    if twice:
+        sys.exit(f"--layout: {', '.join(twice)} names more than one {what.split(' or ')[1]}")
     for i, pos in layout.items():
         by_id[i]["x"], by_id[i]["y"] = int(pos["x"]), int(pos["y"])
     for k, v in curvature.items():
@@ -909,13 +930,13 @@ def apply_layout(path):
             by_link[k]["curvature"] = v
     for k, v in delay_at.items():
         by_link[k]["delay at"] = v
-    CLD.write_text(json.dumps(cld, indent=2, ensure_ascii=False) + "\n")
+    file.write_text(json.dumps(model, indent=2, ensure_ascii=False) + "\n")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--check", action="store_true", help="fail if docs/ is out of date")
-    parser.add_argument("--layout", metavar="FILE", help="write the x, y and curvatures of FILE (layout.json from the page) into cld.json, then build")
+    parser.add_argument("--layout", metavar="FILE", help="write the x, y and curvatures of FILE (layout.json from a page) into cld.json, or the Actor Map's into actor-map.json, then build")
     args = parser.parse_args()
 
     if args.layout:
@@ -950,6 +971,7 @@ def main():
         "tables/sources-to-ask.xlsx": write_xlsx.workbook(ask_sheets(cld, actors)),
         "assets/app.js": (TEMPLATES / "app.js").read_text(),
         "assets/map.js": (TEMPLATES / "map.js").read_text(),
+        "assets/move.js": (TEMPLATES / "move.js").read_text(),
         "assets/style.css": (TEMPLATES / "style.css").read_text(),
         **{f"figures/named-loops/{loop['id']}.svg": draw_cld.loop_figure(cld, loop) for loop in cld["loops"]},
         **{f"figures/combined-loops/{g['id']}.svg": draw_cld.group_figure(cld, g) for g in cld.get("groups", [])},

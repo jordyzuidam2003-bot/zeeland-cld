@@ -26,12 +26,14 @@ body {
 .map svg { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
 .map.panning svg { cursor: grabbing; }
 .map g.element, .map g.link { cursor: pointer; }
-.map.moving g.element { cursor: move; }
-.map.moving g.link { cursor: crosshair; }
+.map.moving g.element, .map.moving g.actor { cursor: move; }
+.map.moving g.link, .map.moving g.relation { cursor: crosshair; }
 .map.moving g.link path.delay, .map.moving g.link path.delay-cut { cursor: ew-resize; }
 .map g.element.faded, .map g.link.faded, .map g.loop.faded { opacity: var(--fade); }
 .actor-map g.actor, .actor-map g.relation { cursor: pointer; }
 .actor-map g.relation path { pointer-events: stroke; }
+/* a relation's wide grip (move.js) takes the pointer only in Move mode, so a click outside it hits the line as before */
+.actor-map:not(.moving) g.relation path.link-grip { pointer-events: none; }
 
 /* the bar, and the menu that opens under it */
 .chrome {

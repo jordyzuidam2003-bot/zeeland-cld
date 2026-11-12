@@ -41,12 +41,12 @@ the repository's root or `docs/`. `docs/index.html` and `docs/actors.html` stay 
 | `model/references.zotero.json` | the Use note in Zotero that `push` wrote for each source, with a fingerprint of its text, so a push never replaces a note somebody changed | never: `push` writes it |
 | `model/cld-texts.md` | the model texts the page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
 | `src/kumu/cld-view.scss`, `src/kumu/actor-map-view.scss` | the Kumu views inside `docs/kumu/kumu-project.json` | yes |
-| `src/templates/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `map.js` (moving and zooming, the bar and the menu, for both pages), `style.css` | yes |
+| `src/templates/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `map.js` (moving and zooming, the bar and the menu, for both pages), `move.js` (Move mode, for both pages), `style.css` | yes |
 | `build.py` | checks the model and the actors and writes `docs/` (how: its docstring) | — |
 | `src/draw_cld.py` | draws the CLD's SVG, imported by `build.py` | — |
 | `src/draw_actor_map.py` | draws the Actor Map and lays out its table, imported by `build.py` | — |
 | `src/write_xlsx.py` | writes the table as an `.xlsx` with the standard library | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `actors.html`; `assets/` (`app.js`, `actors.js`, `map.js`, `style.css`); `figures/` (`cld.svg`, `actor-map.svg`, `named-loops/<id>.svg`, `combined-loops/<id>.svg`); `tables/` (`cld-table.xlsx`, `actor-map-table.xlsx`, `sources-to-ask.xlsx`); `kumu/` (`kumu-project.json`) | never: `build.py` writes it |
+| `docs/` | what GitHub Pages serves: `index.html`, `actors.html`; `assets/` (`app.js`, `actors.js`, `map.js`, `move.js`, `style.css`); `figures/` (`cld.svg`, `actor-map.svg`, `named-loops/<id>.svg`, `combined-loops/<id>.svg`); `tables/` (`cld-table.xlsx`, `actor-map-table.xlsx`, `sources-to-ask.xlsx`); `kumu/` (`kumu-project.json`) | never: `build.py` writes it |
 
 ## Version 1
 
@@ -75,7 +75,7 @@ builds and pushes, so nobody else needs git or Python.
 3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
    a commit whose `docs/` is out of date.
 
-Layout tuning: on the page, turn on "Move": drag an element to move it, drag
+Layout tuning: on the CLD's page, turn on "Move": drag an element to move it, drag
 a delay mark to shift it along its own line, a link to bend it (its middle follows the pointer; within 0.03 of straight a Constant's link snaps to
 straight and any other keeps that bend), then "Download layout" saves `layout.json`
 with every element's position, every link's curvature and each delay mark that was dragged.
@@ -92,6 +92,14 @@ followed round; `build.py` warns on the last. A Constant's links run straight, a
 warns on a bent one; every other link has some bend (Jordy), and it warns on a straight one. A
 Constant sits beside what it drives, its box at most 400 units from each box it drives
 (Jordy), and `build.py` warns on one further away.
+
+The Actor Map's page has the same Move mode: drag an actor to move it, a relation to bend it (its
+middle follows the pointer, with no snapping), then "Download layout" saves `layout.json` with
+every actor's position, every relation's curvature, a relation named `from->to kind` since two
+actors can hold two relations, and `"model": "actor-map.json"`. The same `python3 build.py --layout
+~/Downloads/layout.json` writes them into `model/actor-map.json` and rebuilds; it fails on an actor
+or a relation that is not there. Dragging redraws the relations but not the level bands, which
+`build.py` draws again, warning of an actor outside its level's band.
 
 A picture for the report: `docs/figures/cld.svg` is the drawing on its own, and `docs/figures/named-loops/<id>.svg`
 each named loop on its own, `docs/figures/named-loops/R1.svg` for R1: its elements evenly round one oval in
@@ -113,8 +121,8 @@ the ratio matches and the layout can change. For a sharper picture, divide by le
 
 Both pages are built alike (`src/templates/map.js`, `src/templates/style.css`). The drawing fills the window and
 all else floats over it, so a gesture on the map moves the map and never the page: the bar at
-the top left holds the menu button, +, −, Fit, Move (on the CLD, with "Download layout" beside it
-while it is on) and true fullscreen, which a browser allows only after a click. The menu holds
+the top left holds the menu button, +, −, Fit, Move (with "Download layout" beside it while it is
+on) and true fullscreen, which a browser allows only after a click. The menu holds
 the rest and stays open until its button or Esc closes it, so several loops can be pressed; with
 it closed the bar names the highlighted loops. On a
 trackpad two fingers move the map and a pinch zooms at the fingers; a mouse wheel zooms at the

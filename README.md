@@ -295,6 +295,11 @@ Then `actors`, each:
   such pair twice). A cooperation whose sources name no leader stays in each actor's
   `influence` and is not drawn (Jordy), such as the knowledge programme on salt that LVVN, IenW,
   Rijkswaterstaat and STOWA had drawn up.
+- `no relations`, in place of `relations` for an actor whose sources show it holds none: the
+  reason in words, naming those sources (Jordy; rejected: the build skipping the actors he
+  accepts, which still lists them as gaps, and relations to the actor counting as its own,
+  which passes one whose sources nobody read). `build.py` counts it as `relations` filled and
+  stops on it beside a relation; the table's Influences column, the page's panel and Kumu show it.
 - `affected`: how salinisation and freshwater scarcity on the island, and the farms' adaptation
   to them, affect the actor (the guidelines ask how each actor influences the issue and how it is
   affected by it), in words, from sources.

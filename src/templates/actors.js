@@ -46,7 +46,7 @@ actors.forEach((g, i) => g.addEventListener("click", event => {
   const a = data.actors[i];
   open(a.label, [["Type", a.type], ["Level", a.level], ["Sector", a.sector], ["Interest", a.interest],
                  ["Influence", a.influence], ["How it is affected", a.affected], ["Influence score", String(a["influence score"])], ["Client", a.client],
-                 ["Decides in the CLD", a["decides in the CLD"]]], a.sources);
+                 ["No relations", a["no relations"]], ["Decides in the CLD", a["decides in the CLD"]]], a.sources);
 }));
 [...svg.querySelectorAll("g.relation")].forEach((g, i) => g.addEventListener("click", event => {
   event.stopPropagation();

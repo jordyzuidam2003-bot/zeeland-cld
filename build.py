@@ -234,7 +234,15 @@ def check_actors(actors, refs):
             if key not in refs:
                 errors.append(f"{name}: source {key!r} is not in references.json")
         errors += ask_errors(a, name, set(ids))
-        missing = [k for k in ACTOR_FIELDS if a.get(k) in ("", None, [])]
+        # `no relations`: the reason in words, from the actor's sources, that it holds none (README);
+        # it fills `relations`, so the two never stand together
+        if "no relations" in a:
+            if not (isinstance(a["no relations"], str) and a["no relations"].strip()):
+                errors.append(f"{name}: no relations must be the reason in words; leave the field out otherwise")
+            if a.get("relations"):
+                errors.append(f"{name}: no relations beside a relation; keep one of the two")
+        missing = [k for k in ACTOR_FIELDS if a.get(k) in ("", None, [])
+                   and not (k == "relations" and a.get("no relations"))]
         if missing:
             empty[a.get("id", "?")] = missing
     return errors, empty
@@ -795,6 +803,7 @@ def actors_project(actors, refs, decides, cld_labels, template):
         "influence score": a["influence score"], "client": a["client"],
         "decides in the CLD": "\n".join(cld_labels[e] for e in decides[a["id"]]),
         **({"ask actors": ask_text(a, labels)} if "ask actors" in a else {}),
+        **({"no relations": a["no relations"]} if "no relations" in a else {}),
         "sources": "\n".join(refs[k] for k in a["sources"])}} for a in actors["actors"]]
     # its own id beside the CLD's background, and the same label, which the view's #background selects
     elements.append({"_id": "elem-actors-background", "attributes": {"label": "background"}})
@@ -826,7 +835,7 @@ def actors_project(actors, refs, decides, cld_labels, template):
 
 # the fields whose values are prose: free text in Kumu, never a list to pick from
 TEXT_FIELDS = {"description", "simplification", "sources", "interest", "influence", "affected", "decides in the CLD",
-               "ask actors"}
+               "ask actors", "no relations"}
 # Kumu's own type fields are spelled this way; "Connection type" would be a second field
 BUILTIN_FIELDS = {"element type": "Element Type", "connection type": "Connection Type"}
 

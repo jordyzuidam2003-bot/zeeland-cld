@@ -289,7 +289,8 @@ COLUMNS = [  # (name, width in characters, what it holds): the Columns sheet exp
                             "effect on the island's adaptation by 2050."),
     ("Client", 8, "yes for the project's partners."),
     ("Influences", 40, "The actors it influences, by the kind of relation: authority over, finances, buys from, advises, "
-                       "represents, works with (a cooperation recorded once, on the actor that leads it)."),
+                       "represents, works with (a cooperation recorded once, on the actor that leads it); for an "
+                       "actor whose sources show it holds none, the reason."),
     ("Influenced by", 40, "The actors that influence it, by the kind of relation."),
     ("Decides in the CLD", 36, "The CLD's variables it decides."),
     ("Sources", 40, "In-text citations; the full references are on the References sheet."),
@@ -313,7 +314,7 @@ def sheets(actors, refs, decides, cld_labels):
     for a in acts:
         rows.append([a["label"], a["type"], a["level"], a["sector"], a["interest"], a["influence"], a["affected"],
                      a["influence score"], a["client"],
-                     by_kind([(r["kind"], r["to"]) for r in a.get("relations", [])], labels),
+                     by_kind([(r["kind"], r["to"]) for r in a.get("relations", [])], labels) or a.get("no relations", ""),
                      by_kind(rel_in[a["id"]], labels),
                      "\n".join(cld_labels[e] for e in decides[a["id"]]), cite_list(keys[a["id"]], cites)])
     rels = [["From", "Relation", "To", "Description", "Sources"]] + [
@@ -334,6 +335,7 @@ def page_data(actors, refs, decides, cld_labels, version):
         "actors": [{"id": a["id"], "label": a["label"], "type": a["type"], "level": a["level"],
                     "sector": a["sector"], "interest": a["interest"], "influence": a["influence"], "affected": a["affected"],
                     "influence score": a["influence score"], "client": a["client"],
+                    "no relations": a.get("no relations", ""),
                     "decides in the CLD": [cld_labels[e] for e in decides[a["id"]]], "sources": full(a["sources"])}
                    for a in actors["actors"]],
         "relations": [{"from": labels[r["from"]], "to": labels[r["to"]], "kind": r["kind"],

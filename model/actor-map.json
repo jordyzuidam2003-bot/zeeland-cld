@@ -627,9 +627,9 @@
       "interest": "Regional transitions towards sustainable, climate-resilient and prosperous deltas, in Zeeland and worldwide, with Zeeland as its living lab.",
       "influence": "A partnership of six knowledge institutes, Scalda, HZ University of Applied Sciences, University College Roosevelt, NIOZ, Utrecht University and Wageningen University & Research, at the Kenniswerf in Vlissingen, which started in mid-2023 with a budget of €88 million from the national government and the province, part of the national compensation package Wind in de Zeilen. Its themes for the Zeeland delta are sustainable food, water safety and water availability, and circularity, with three iconic projects from 2024: Delta Protein, the protein transition, mainly marine; Flexible Deltas, flood-defence landscapes that also offer a future for agriculture, salinisation and freshwater availability among their challenges, with living labs on the Westerschelde, the Oosterschelde (from the second half of 2025) and the coastal zone; and ProceZ. Score 1: no source read shows it working on Schouwen-Duiveland or with the island's farmers.",
       "affected": "In its own words, sea level rise, salinisation and drought are among the consequences of climate change noticeable in delta areas such as Zeeland, and it develops knowledge and innovations to keep them safe and flourishing. In its project Flexible Deltas, salinisation and freshwater availability are among the challenges of the polders behind the dikes, beside water safety, ecological functions and economic interests, which call for an integrated approach. Measured for Zeeland and the Southwest Delta: no source read shows how salinisation on the island, or its farms' adaptation, affects the DCC.",
+      "no relations": "Its own pages (home, About us, Research, Flexible Deltas) and NIOZ's news of its start (2023) name none it holds toward an actor on this map: they name its six founding institutes, and its partners in Zeeland only as government bodies, businesses, umbrella organisations and local communities; none shows it working on Schouwen-Duiveland or with the island's farmers. The province's funding of it is the province's relation.",
       "influence score": 1,
       "client": "yes",
-      "relations": [],
       "sources": [
         "dcc-home",
         "dcc-about-us",
@@ -638,7 +638,16 @@
         "nioz-2023-dcc"
       ],
       "x": 2537,
-      "y": 1606
+      "y": 1606,
+      "ask actors": [
+        {
+          "actor": "dcc",
+          "for": "Which Zeeland partners take part in Flexible Deltas' Oosterschelde living lab, and whether the DCC works with the water board, the municipality, ZLTO or the island's farmers.",
+          "through": [
+            "DCC"
+          ]
+        }
+      ]
     },
     {
       "id": "deltares",
@@ -652,7 +661,18 @@
       "affected": "Salinisation raises knowledge questions it is among those answering: in 2025 it was among the knowledge institutes carrying out the national programme on dealing with salt in agriculture, nature and water management, which LVVN, IenW, Rijkswaterstaat and STOWA had drawn up because the growing salinisation of water and soil, partly through climate change, raises such questions, to fill fundamental gaps in knowledge, how salty the soil moisture becomes and how salt-tolerant crops are under Dutch conditions, and to make the answers usable in practice in models and tools; €400,000 was available for 2025, and the partners intend to find about €1 million a year for the whole multi-year programme (IPLO, 2025). On the island, the report it wrote with KWR and Acacia Water (Kaandorp et al., 2022) finds the farms' hesitation to invest working both ways: as long as the measures' costs, risks and gain in yield stay uncertain, farmers do not invest, and as long as they do not invest, the techniques are not refined, nothing is learned from building them, their effects cannot be monitored, and no knowledge base forms at agricultural advisory firms and contractors with which the cost of advice and building could fall; it recommends pilots with monitoring, and more research on the measures' economic feasibility. Following the report, it took part in drainage demonstrations on three of the island's farms (2022–2024). The EU paid half of their cost and the province and the municipality a large part, beside an own contribution from the participating knowledge parties.",
       "influence score": 3,
       "client": "no",
-      "relations": [],
+      "relations": [
+        {
+          "to": "arable-farmers",
+          "kind": "advises",
+          "description": "With KWR and Acacia Water, in the Living Lab's project Samenwerken voor Zoet Water (2020–2022), made quickscans for 13 of the island's farmers, from kitchen-table talks with them, each ending in advice on storing fresh water in the subsoil that fits the farm's soil, groundwater and economics; no source says which partner wrote which advice.",
+          "sources": [
+            "kaandorp-2022",
+            "living-lab-samenwerken-voor-zoet-water"
+          ],
+          "curvature": 0.4
+        }
+      ],
       "sources": [
         "rijksoverheid-deltares",
         "living-lab-samenwerken-voor-zoet-water",
@@ -676,7 +696,18 @@
       "affected": "In its own words, climate change brings longer periods of drought, more extreme rainfall and less reliable traditional sources of fresh water, while the demand for water grows from drinking water supply, agriculture, industry, nature and cities; it researches the processes behind evaporation and groundwater recharge, and develops solutions such as underground water storage, controlled drainage and subirrigation. Salinisation raises knowledge questions it is among those answering: in 2025 it was among the knowledge institutes carrying out the national programme on dealing with salt in agriculture, nature and water management, which LVVN, IenW, Rijkswaterstaat and STOWA had drawn up because the growing salinisation of water and soil, partly through climate change, raises such questions, to fill fundamental gaps in knowledge, how salty the soil moisture becomes and how salt-tolerant crops are under Dutch conditions, and to make the answers usable in practice in models and tools; €400,000 was available for 2025, and the partners intend to find about €1 million a year for the whole multi-year programme (IPLO, 2025). On the island, the report it wrote with Deltares and Acacia Water (Kaandorp et al., 2022) finds the farms' hesitation to invest working both ways: as long as the measures' costs, risks and gain in yield stay uncertain, farmers do not invest, and as long as they do not invest, the techniques are not refined, nothing is learned from building them, their effects cannot be monitored, and no knowledge base forms at agricultural advisory firms and contractors with which the cost of advice and building could fall; it recommends pilots with monitoring, and more research on the measures' economic feasibility.",
       "influence score": 3,
       "client": "no",
-      "relations": [],
+      "relations": [
+        {
+          "to": "arable-farmers",
+          "kind": "advises",
+          "description": "With Deltares and Acacia Water, in the Living Lab's project Samenwerken voor Zoet Water (2020–2022), made quickscans for 13 of the island's farmers, from kitchen-table talks with them, each ending in advice on storing fresh water in the subsoil that fits the farm's soil, groundwater and economics; no source says which partner wrote which advice.",
+          "sources": [
+            "kaandorp-2022",
+            "living-lab-samenwerken-voor-zoet-water"
+          ],
+          "curvature": 0.08
+        }
+      ],
       "sources": [
         "kwr-over-ons",
         "kwr-organisatie",
@@ -710,6 +741,16 @@
             "living-lab-natuurlijk-zoet"
           ],
           "curvature": -0.08
+        },
+        {
+          "to": "arable-farmers",
+          "kind": "advises",
+          "description": "With Deltares and KWR, in the Living Lab's project Samenwerken voor Zoet Water (2020–2022), made quickscans for 13 of the island's farmers, from kitchen-table talks with them, each ending in advice on storing fresh water in the subsoil that fits the farm's soil, groundwater and economics; no source says which partner wrote which advice.",
+          "sources": [
+            "kaandorp-2022",
+            "living-lab-samenwerken-voor-zoet-water"
+          ],
+          "curvature": 0.08
         }
       ],
       "sources": [

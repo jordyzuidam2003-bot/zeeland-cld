@@ -1004,6 +1004,7 @@
       "subsystem": "Agricultural economy",
       "subquestion": "SQ3",
       "description": "Hectares of the island's farmland that a public body takes in a year for a use its plan sets, with full compensation, by an order a court must confirm. The municipal council, the water board for its water tasks, the Provincial Council and the minister can each give the order (Omgevingswet, 2026, art. 11.4), and only for a use an adopted plan allows, after a reasonable attempt to buy the land and with a start likely within three years (arts. 11.5–11.7, 11.11). On the island it has been used for a roundabout on the N59 (Besluit rotonde N59, 2020, p. 3) and in 2026 for a high-voltage station on a site then wholly in agricultural use (Gemeente Schouwen-Duiveland, 2026, p. 1; Braat, 2023, blad 9); no source read shows it there for water or nature, for which the Province buys on a voluntary basis (Provincie Zeeland, Jaarstukken 2022, p. 4). Few cases reach a court, in the Krimpenerwaard 6 of 69 files (Kamphorst et al., 2025, pp. 10–11), since the threat mostly makes owners sell (Holtslag-Broekhof et al., 2016, section Context of the Study).",
+      "simplification": "Counts every order as the municipality's, while the municipal council, the water board, the Provincial Council and the minister can each give one (Omgevingswet, 2026, art. 11.4). Of the two orders read on the island, the municipal council gave the one for the high-voltage station (Gemeente Schouwen-Duiveland, 2026, p. 1); the one for the N59 roundabout came at the request of the Minister of Infrastructure and Water Management, under the law before the Omgevingswet, and carried out the municipality's land-use plan for the road (Besluit rotonde N59, 2020, p. 1). The CLD draws only the municipality's plans as what an order carries out (Farmland planned for other uses → Expropriation of farmland), so B14, the one named loop through it, keeps its polarity and its mechanism; what it leaves out is an order by another body for a plan of its own, which would lower trust the same way but close the loop through a plan the CLD does not draw.",
       "sources": [
         "omgevingswet-2026",
         "n59-rotonde-2020",
@@ -1014,7 +1015,8 @@
         "holtslag-broekhof-2016"
       ],
       "x": 879,
-      "y": -1699
+      "y": -1699,
+      "actor": "gemeente-schouwen-duiveland"
     },
     {
       "id": "farmers-wish-to-keep-their-land",

@@ -386,6 +386,11 @@
    "CLD"
   ]
  },
+ "hortidaily-used-machinery": {
+  "placed": [
+   "CLD"
+  ]
+ },
  "iplo-2025-zout": {
   "digest": "697f51802aaa",
   "note": "DM598SSV",
@@ -409,7 +414,7 @@
   ]
  },
  "kaandorp-2022": {
-  "digest": "b9a7579a251c",
+  "digest": "2409073fcc2c",
   "note": "UCUZ55BX",
   "placed": [
    "Actor Map",
@@ -667,7 +672,7 @@
   ]
  },
  "polman-2026": {
-  "digest": "a3a580f303d3",
+  "digest": "3c1d12c9bcb6",
   "note": "CT8IJIJE",
   "placed": [
    "CLD"
@@ -968,7 +973,7 @@
   ]
  },
  "van-der-meulen-2020": {
-  "digest": "7331d4c413d6",
+  "digest": "15055fb9a44c",
   "note": "58K6T5V6",
   "placed": [
    "Actor Map",
@@ -995,7 +1000,7 @@
   ]
  },
  "van-loo-2023": {
-  "digest": "b653d96ef716",
+  "digest": "230252515f12",
   "note": "I5C4TP2T",
   "placed": [
    "CLD"
@@ -1016,7 +1021,7 @@
   ]
  },
  "verhagen-2018": {
-  "digest": "a77828b91ada",
+  "digest": "8aedbf2a0e07",
   "note": "RDEUDPA2",
   "placed": [
    "CLD"

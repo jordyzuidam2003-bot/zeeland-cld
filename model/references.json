@@ -3951,5 +3951,62 @@
     },
     "title": "DORSD: Droogte Oplossingen Regio Schouwen Duiveland",
     "URL": "https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf"
+  },
+  {
+    "id": "hack-ten-broeke-2025",
+    "type": "report",
+    "author": [
+      {
+        "family": "Hack-ten Broeke",
+        "given": "M."
+      },
+      {
+        "family": "Bakker",
+        "given": "G."
+      },
+      {
+        "family": "Verdonschot",
+        "given": "R."
+      },
+      {
+        "family": "America",
+        "given": "I."
+      },
+      {
+        "family": "Delsman",
+        "given": "J."
+      },
+      {
+        "family": "Oude Essink",
+        "given": "G."
+      },
+      {
+        "family": "Bartholomeus",
+        "given": "R."
+      },
+      {
+        "family": "Geurts",
+        "given": "J."
+      },
+      {
+        "family": "Raat",
+        "given": "K."
+      },
+      {
+        "family": "van Geest",
+        "given": "G."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          1
+        ]
+      ]
+    },
+    "title": "Programmaplan: Omgaan met zout in landbouw, natuur en waterbeheer",
+    "publisher": "Wageningen Environmental Research",
+    "DOI": "10.18174/685404"
   }
 ]

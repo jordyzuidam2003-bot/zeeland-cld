@@ -6826,8 +6826,8 @@
         {
           "_id": "node-arable-farmers",
           "position": {
-            "x": 1848,
-            "y": 1218
+            "x": 2048,
+            "y": 1200
           },
           "pinned": true,
           "style": {},
@@ -6836,8 +6836,8 @@
         {
           "_id": "node-waterschap-scheldestromen",
           "position": {
-            "x": 2228,
-            "y": 1220
+            "x": 2350,
+            "y": 1250
           },
           "pinned": true,
           "style": {},
@@ -6846,8 +6846,8 @@
         {
           "_id": "node-gemeente-schouwen-duiveland",
           "position": {
-            "x": 1735,
-            "y": 1529
+            "x": 1725,
+            "y": 1475
           },
           "pinned": true,
           "style": {},
@@ -6856,8 +6856,8 @@
         {
           "_id": "node-provincie-zeeland",
           "position": {
-            "x": 2367,
-            "y": 1435
+            "x": 2325,
+            "y": 1475
           },
           "pinned": true,
           "style": {},
@@ -6866,8 +6866,8 @@
         {
           "_id": "node-banks",
           "position": {
-            "x": 1589,
-            "y": 760
+            "x": 2475,
+            "y": 755
           },
           "pinned": true,
           "style": {},
@@ -6876,8 +6876,8 @@
         {
           "_id": "node-buyers-and-processors",
           "position": {
-            "x": 2134,
-            "y": 602
+            "x": 1925,
+            "y": 630
           },
           "pinned": true,
           "style": {},
@@ -6887,7 +6887,7 @@
           "_id": "node-zlto",
           "position": {
             "x": 2061,
-            "y": 1415
+            "y": 1340
           },
           "pinned": true,
           "style": {},
@@ -6896,8 +6896,8 @@
         {
           "_id": "node-consumers",
           "position": {
-            "x": 2190,
-            "y": 229
+            "x": 2075,
+            "y": 225
           },
           "pinned": true,
           "style": {},
@@ -6906,8 +6906,8 @@
         {
           "_id": "node-eu",
           "position": {
-            "x": 1760,
-            "y": 460
+            "x": 2100,
+            "y": 480
           },
           "pinned": true,
           "style": {},
@@ -6916,8 +6916,8 @@
         {
           "_id": "node-lvvn",
           "position": {
-            "x": 1921,
-            "y": 790
+            "x": 2175,
+            "y": 880
           },
           "pinned": true,
           "style": {},
@@ -6926,8 +6926,8 @@
         {
           "_id": "node-ienw",
           "position": {
-            "x": 2481,
-            "y": 1039
+            "x": 2675,
+            "y": 1080
           },
           "pinned": true,
           "style": {},
@@ -6936,8 +6936,8 @@
         {
           "_id": "node-rijkswaterstaat",
           "position": {
-            "x": 2184,
-            "y": 1029
+            "x": 2375,
+            "y": 1080
           },
           "pinned": true,
           "style": {},
@@ -6946,8 +6946,8 @@
         {
           "_id": "node-dcc",
           "position": {
-            "x": 2537,
-            "y": 1606
+            "x": 2650,
+            "y": 1625
           },
           "pinned": true,
           "style": {},
@@ -6956,8 +6956,8 @@
         {
           "_id": "node-deltares",
           "position": {
-            "x": 1000,
-            "y": 987
+            "x": 1200,
+            "y": 755
           },
           "pinned": true,
           "style": {},
@@ -6966,8 +6966,8 @@
         {
           "_id": "node-kwr",
           "position": {
-            "x": 1295,
-            "y": 1034
+            "x": 1400,
+            "y": 980
           },
           "pinned": true,
           "style": {},
@@ -6976,8 +6976,8 @@
         {
           "_id": "node-acacia-water",
           "position": {
-            "x": 1568,
-            "y": 1028
+            "x": 1650,
+            "y": 1080
           },
           "pinned": true,
           "style": {},
@@ -6986,8 +6986,8 @@
         {
           "_id": "node-delphy",
           "position": {
-            "x": 1243,
-            "y": 801
+            "x": 1425,
+            "y": 1080
           },
           "pinned": true,
           "style": {},
@@ -6996,8 +6996,8 @@
         {
           "_id": "node-actors-background",
           "position": {
-            "x": 1633,
-            "y": 918
+            "x": 1790,
+            "y": 925
           },
           "pinned": true,
           "style": {},
@@ -7013,13 +7013,13 @@
         },
         {
           "_id": "edge-1",
-          "curvature": -0.08,
+          "curvature": 0.18,
           "style": {},
           "connection": "conn-1"
         },
         {
           "_id": "edge-2",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-2"
         },
@@ -7031,13 +7031,13 @@
         },
         {
           "_id": "edge-4",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-4"
         },
         {
           "_id": "edge-5",
-          "curvature": 0.08,
+          "curvature": -0.3,
           "style": {},
           "connection": "conn-5"
         },
@@ -7055,19 +7055,19 @@
         },
         {
           "_id": "edge-8",
-          "curvature": 0.08,
+          "curvature": 0.18,
           "style": {},
           "connection": "conn-8"
         },
         {
           "_id": "edge-9",
-          "curvature": 0.08,
+          "curvature": -0.18,
           "style": {},
           "connection": "conn-9"
         },
         {
           "_id": "edge-10",
-          "curvature": -0.08,
+          "curvature": -0.18,
           "style": {},
           "connection": "conn-10"
         },
@@ -7091,25 +7091,25 @@
         },
         {
           "_id": "edge-14",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-14"
         },
         {
           "_id": "edge-15",
-          "curvature": -0.08,
+          "curvature": 0.18,
           "style": {},
           "connection": "conn-15"
         },
         {
           "_id": "edge-16",
-          "curvature": -0.08,
+          "curvature": -0.3,
           "style": {},
           "connection": "conn-16"
         },
         {
           "_id": "edge-17",
-          "curvature": 0.08,
+          "curvature": -0.08,
           "style": {},
           "connection": "conn-17"
         },
@@ -7133,13 +7133,13 @@
         },
         {
           "_id": "edge-21",
-          "curvature": -0.08,
+          "curvature": -0.18,
           "style": {},
           "connection": "conn-21"
         },
         {
           "_id": "edge-22",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-22"
         },
@@ -7151,13 +7151,13 @@
         },
         {
           "_id": "edge-24",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-24"
         },
         {
           "_id": "edge-25",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-25"
         },
@@ -7169,7 +7169,7 @@
         },
         {
           "_id": "edge-27",
-          "curvature": -0.08,
+          "curvature": 0.08,
           "style": {},
           "connection": "conn-27"
         },
@@ -7199,19 +7199,19 @@
         },
         {
           "_id": "edge-32",
-          "curvature": 0.4,
+          "curvature": 0.3,
           "style": {},
           "connection": "conn-32"
         },
         {
           "_id": "edge-33",
-          "curvature": 0.08,
+          "curvature": 0.3,
           "style": {},
           "connection": "conn-33"
         },
         {
           "_id": "edge-34",
-          "curvature": -0.08,
+          "curvature": -0.3,
           "style": {},
           "connection": "conn-34"
         },
@@ -12223,7 +12223,7 @@
     {
       "_id": "pers-actors",
       "name": "Actor Map",
-      "style": "/* The Kumu view of the Actor Map inside docs/kumu/kumu-project.json, as cld-view.scss is the CLD's. Each\n   property here is one cld-view.scss already uses; check a new one in Kumu's property reference before\n   writing it, and see it work in a test import. build.py adds below it each relation kind's colour\n   and dash (draw_actor_map.py's KIND), each box's size and the bands' size. */\n\n@controls {\n  bottom-left {\n    text {\n      value: \"**Bands** = level: Global, International, National, Local / Provincial / Regional<br>**Links** = relation, read from the actor at the tail: authority over (dark), finances (orange), buys from (orange, dashed), advises (violet, dashed), represents (violet), works with (green, dashed)\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\n/* ---------- Actors: white boxes, the page's look ---------- */\n/* Kumu draws text at about 0.6 of its font-size in map units, so each font-size is the page's x 1.5 */\nelement {\n  shape: pill;\n  color: #FFFFFF;\n  border-color: #444444;\n  border-width: 2;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n/* ---------- Bands: the page's level bands as a background image ---------- */\n/* as cld-view.scss's #background: build.py adds the element, pinned at the centre of the bands'\n   frame, and its width and height, the frame's, and puts the bands in place of IMAGE, as a data URL */\n#background {\n  image-url: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjQ3NyAxMTMgMjMxMyAxNjA5IiB3aWR0aD0iMjMxMyIgaGVpZ2h0PSIxNjA5IiBmb250LWZhbWlseT0iSGVsdmV0aWNhIE5ldWUsIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiPgo8cmVjdCB4PSI0NzYuNiIgeT0iMTEzLjAiIHdpZHRoPSIyMzEyLjgiIGhlaWdodD0iMjMxLjUiIGZpbGw9IiNFRUYyRjYiLz4KPHRleHQgeD0iNTE2LjYiIHk9IjIyOC44IiBmb250LXNpemU9IjQwIiBmb250LXdlaWdodD0iYm9sZCIgbGV0dGVyLXNwYWNpbmc9IjUiIGZpbGw9IiM0QTU1NjAiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIj5HTE9CQUw8L3RleHQ+CjxyZWN0IHg9IjQ3Ni42IiB5PSIzNDQuNSIgd2lkdGg9IjIzMTIuOCIgaGVpZ2h0PSIxNzguMCIgZmlsbD0iI0Y4RjZGMSIvPgo8dGV4dCB4PSI1MTYuNiIgeT0iNDMzLjUiIGZvbnQtc2l6ZT0iNDAiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iNSIgZmlsbD0iIzRBNTU2MCIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPklOVEVSTkFUSU9OQUw8L3RleHQ+CjxyZWN0IHg9IjQ3Ni42IiB5PSI1MjIuNSIgd2lkdGg9IjIzMTIuOCIgaGVpZ2h0PSI1OTcuNSIgZmlsbD0iI0VFRjJGNiIvPgo8dGV4dCB4PSI1MTYuNiIgeT0iODIxLjIiIGZvbnQtc2l6ZT0iNDAiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iNSIgZmlsbD0iIzRBNTU2MCIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPk5BVElPTkFMPC90ZXh0Pgo8cmVjdCB4PSI0NzYuNiIgeT0iMTEyMC4wIiB3aWR0aD0iMjMxMi44IiBoZWlnaHQ9IjYwMi4wIiBmaWxsPSIjRjhGNkYxIi8+Cjx0ZXh0IHg9IjUxNi42IiB5PSIxMzczLjAiIGZvbnQtc2l6ZT0iNDAiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iNSIgZmlsbD0iIzRBNTU2MCIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPkxPQ0FMLzwvdGV4dD4KPHRleHQgeD0iNTE2LjYiIHk9IjE0MjEuMCIgZm9udC1zaXplPSI0MCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxldHRlci1zcGFjaW5nPSI1IiBmaWxsPSIjNEE1NTYwIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCI+UFJPVklOQ0lBTC88L3RleHQ+Cjx0ZXh0IHg9IjUxNi42IiB5PSIxNDY5LjAiIGZvbnQtc2l6ZT0iNDAiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iNSIgZmlsbD0iIzRBNTU2MCIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPlJFR0lPTkFMPC90ZXh0Pgo8L3N2Zz4K);\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\n/* ---------- Relations: the kind's colour and dash, generated below ---------- */\n/* (no global curvature: each relation keeps its own curve from the map) */\nconnection {\n  size: 4;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n}\n\n/* ---------- generated by build.py: the kinds' look, box sizes, the bands' size ---------- */\n[\"connection type\"=\"authority over\"] { color: #333333; style: solid; }\n[\"connection type\"=\"finances\"] { color: #EB6834; style: solid; }\n[\"connection type\"=\"buys from\"] { color: #EB6834; style: dashed; }\n[\"connection type\"=\"advises\"] { color: #6250D6; style: dashed; }\n[\"connection type\"=\"represents\"] { color: #6250D6; style: solid; }\n[\"connection type\"=\"works with\"] { color: #1BAF7A; style: dashed; }\n#elem-arable-farmers { width: 295; height: 86; }\n#elem-waterschap-scheldestromen { width: 236; height: 86; }\n#elem-gemeente-schouwen-duiveland { width: 295; height: 86; }\n#elem-provincie-zeeland { width: 280; height: 52; }\n#elem-banks { width: 325; height: 86; }\n#elem-buyers-and-processors { width: 340; height: 86; }\n#elem-zlto { width: 87; height: 52; }\n#elem-consumers { width: 162; height: 52; }\n#elem-eu { width: 58; height: 52; }\n#elem-lvvn { width: 87; height: 52; }\n#elem-ienw { width: 87; height: 52; }\n#elem-rijkswaterstaat { width: 251; height: 52; }\n#elem-dcc { width: 325; height: 52; }\n#elem-deltares { width: 147; height: 52; }\n#elem-kwr { width: 73; height: 52; }\n#elem-acacia-water { width: 206; height: 52; }\n#elem-delphy { width: 117; height: 52; }\n#background { width: 2313; height: 1609; }\n"
+      "style": "/* The Kumu view of the Actor Map inside docs/kumu/kumu-project.json, as cld-view.scss is the CLD's. Each\n   property here is one cld-view.scss already uses; check a new one in Kumu's property reference before\n   writing it, and see it work in a test import. build.py adds below it each relation kind's colour\n   and dash (draw_actor_map.py's KIND), each box's size and the bands' size. */\n\n@controls {\n  bottom-left {\n    text {\n      value: \"**Bands** = level: Global, International, National, Local / Provincial / Regional<br>**Links** = relation, read from the actor at the tail: authority over (dark), finances (orange), buys from (orange, dashed), advises (violet, dashed), represents (violet), works with (green, dashed)\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\n/* ---------- Actors: white boxes, the page's look ---------- */\n/* Kumu draws text at about 0.6 of its font-size in map units, so each font-size is the page's x 1.5 */\nelement {\n  shape: pill;\n  color: #FFFFFF;\n  border-color: #444444;\n  border-width: 2;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  /* build.py puts a double space where the page breaks a label's line */\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n/* ---------- Bands: the page's level bands as a background image ---------- */\n/* as cld-view.scss's #background: build.py adds the element, pinned at the centre of the bands'\n   frame, and its width and height, the frame's, and puts the bands in place of IMAGE, as a data URL */\n#background {\n  image-url: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjY3NyAxMDkgMjIyNiAxNjMyIiB3aWR0aD0iMjIyNiIgaGVpZ2h0PSIxNjMyIiBmb250LWZhbWlseT0iSGVsdmV0aWNhIE5ldWUsIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiPgo8cmVjdCB4PSI2NzYuNiIgeT0iMTA5LjAiIHdpZHRoPSIyMjI1LjgiIGhlaWdodD0iMjQzLjUiIGZpbGw9IiNFRUYyRjYiLz4KPHRleHQgeD0iNzE2LjYiIHk9IjIzMC44IiBmb250LXNpemU9IjQwIiBmb250LXdlaWdodD0iYm9sZCIgbGV0dGVyLXNwYWNpbmc9IjUiIGZpbGw9IiM0QTU1NjAiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIj5HTE9CQUw8L3RleHQ+CjxyZWN0IHg9IjY3Ni42IiB5PSIzNTIuNSIgd2lkdGg9IjIyMjUuOCIgaGVpZ2h0PSIxOTQuMCIgZmlsbD0iI0Y4RjZGMSIvPgo8dGV4dCB4PSI3MTYuNiIgeT0iNDQ5LjUiIGZvbnQtc2l6ZT0iNDAiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iNSIgZmlsbD0iIzRBNTU2MCIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPklOVEVSTkFUSU9OQUw8L3RleHQ+CjxyZWN0IHg9IjY3Ni42IiB5PSI1NDYuNSIgd2lkdGg9IjIyMjUuOCIgaGVpZ2h0PSI1ODUuMCIgZmlsbD0iI0VFRjJGNiIvPgo8dGV4dCB4PSI3MTYuNiIgeT0iODM5LjAiIGZvbnQtc2l6ZT0iNDAiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iNSIgZmlsbD0iIzRBNTU2MCIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPk5BVElPTkFMPC90ZXh0Pgo8cmVjdCB4PSI2NzYuNiIgeT0iMTEzMS41IiB3aWR0aD0iMjIyNS44IiBoZWlnaHQ9IjYwOS41IiBmaWxsPSIjRjhGNkYxIi8+Cjx0ZXh0IHg9IjcxNi42IiB5PSIxMzg4LjIiIGZvbnQtc2l6ZT0iNDAiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iNSIgZmlsbD0iIzRBNTU2MCIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPkxPQ0FMLzwvdGV4dD4KPHRleHQgeD0iNzE2LjYiIHk9IjE0MzYuMiIgZm9udC1zaXplPSI0MCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxldHRlci1zcGFjaW5nPSI1IiBmaWxsPSIjNEE1NTYwIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCI+UFJPVklOQ0lBTC88L3RleHQ+Cjx0ZXh0IHg9IjcxNi42IiB5PSIxNDg0LjIiIGZvbnQtc2l6ZT0iNDAiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iNSIgZmlsbD0iIzRBNTU2MCIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPlJFR0lPTkFMPC90ZXh0Pgo8L3N2Zz4K);\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\n/* ---------- Relations: the kind's colour and dash, generated below ---------- */\n/* (no global curvature: each relation keeps its own curve from the map) */\nconnection {\n  size: 4;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n}\n\n/* ---------- generated by build.py: the kinds' look, box sizes, the bands' size ---------- */\n[\"connection type\"=\"authority over\"] { color: #333333; style: solid; }\n[\"connection type\"=\"finances\"] { color: #EB6834; style: solid; }\n[\"connection type\"=\"buys from\"] { color: #EB6834; style: dashed; }\n[\"connection type\"=\"advises\"] { color: #6250D6; style: dashed; }\n[\"connection type\"=\"represents\"] { color: #6250D6; style: solid; }\n[\"connection type\"=\"works with\"] { color: #1BAF7A; style: dashed; }\n#elem-arable-farmers { width: 295; height: 86; }\n#elem-waterschap-scheldestromen { width: 236; height: 86; }\n#elem-gemeente-schouwen-duiveland { width: 295; height: 86; }\n#elem-provincie-zeeland { width: 280; height: 52; }\n#elem-banks { width: 325; height: 86; }\n#elem-buyers-and-processors { width: 340; height: 86; }\n#elem-zlto { width: 87; height: 52; }\n#elem-consumers { width: 162; height: 52; }\n#elem-eu { width: 58; height: 52; }\n#elem-lvvn { width: 87; height: 52; }\n#elem-ienw { width: 87; height: 52; }\n#elem-rijkswaterstaat { width: 251; height: 52; }\n#elem-dcc { width: 325; height: 52; }\n#elem-deltares { width: 147; height: 52; }\n#elem-kwr { width: 73; height: 52; }\n#elem-acacia-water { width: 206; height: 52; }\n#elem-delphy { width: 117; height: 52; }\n#background { width: 2226; height: 1632; }\n"
     },
     {
       "_id": "pers-loops",

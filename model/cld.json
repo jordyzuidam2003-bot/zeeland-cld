@@ -1284,7 +1284,7 @@
       "to": "freshwater-lens-thickness",
       "polarity": "-",
       "delay": true,
-      "description": "Upward saline seepage keeps the rainwater lens thin: the larger the seepage flux, the higher the lens's mixing zone, and in the island's seepage areas the lens is mostly under 2 m, its mixing zone in the clay top layer (de Louw et al., 2011, pp. 3660, 3673–3675, measured on the island; Kaandorp et al., 2022, p. 10). Years, so a delay: in a model of a drained field over saline seepage, built from measurements on the island, every run settled to a stationary lens within 30 years (de Louw et al., 2011, p. 3665).",
+      "description": "Upward saline seepage keeps the rainwater lens thin. On the island the lens in the seepage areas is mostly under 2 m (Kaandorp et al., 2022, p. 10), on average 2 m in a helicopter survey of its low polders, its mixing zone in the clay top layer, and it thickens sharply where the flow turns from seepage to infiltration (de Louw et al., 2011, pp. 3660, 3673, 3675, measured on the island, the fluxes from the regional groundwater model). That a larger seepage flux gives a thinner lens comes from a model of a tile-drained field built from the island's field data (de Louw et al., 2011, pp. 3671, 3674). Years, so a delay: in that model every run settled to a stationary lens within 30 years (de Louw et al., 2011, p. 3665).",
       "sources": [
         "de-louw-2011",
         "kaandorp-2022"
@@ -1837,7 +1837,7 @@
       "to": "farm-revenue",
       "polarity": "-",
       "delay": false,
-      "description": "Harvest lost to salt is income lost: at the farm, salt lowers the yield and raises the cost of inputs such as fresh water and soil amendments, and the damage salt does in the Netherlands is estimated at 577 to 610 million euro a year, most of it linked to agricultural revenue lost to lower yields, land degradation and the costs of soil remediation and adaptation (Deolu-Ajayi et al., 2024, p. 12). For potatoes north-west Europe should be seen as one market, the size of its harvest showing in the price (Janssens et al., 2020, p. 8), so salt on the island's fields alone does not move it, and a harvest lost to salt is lost at that price. Within the year, as the harvest is sold.",
+      "description": "Harvest lost to salt is income lost: at the farm, salt lowers the yield and raises the cost of inputs such as fresh water and soil amendments (Deolu-Ajayi et al., 2024, p. 12). For potatoes north-west Europe should be seen as one market, the size of its harvest showing in the price (Janssens et al., 2020, p. 8), so salt on the island's fields alone does not move it, and a harvest lost to salt is lost at that price. Within the year, as the harvest is sold.",
       "sources": [
         "deolu-ajayi-2024",
         "janssens-2020"
@@ -2557,7 +2557,7 @@
       "to": "pumping-the-water-board-allows",
       "polarity": "+",
       "delay": false,
-      "description": "A new well is judged on the fresh groundwater bodies established when it is notified, none of them less than 15 m thick (Waterschap Scheldestromen, 2026b, art. 2.9 and its explanation; Kaandorp et al., 2022, p. 26), so the thicker the lens, the more pumping the rules allow. No delay: no source read shows how often those bodies are updated.",
+      "description": "A new well is judged on the fresh groundwater bodies established when it is notified (Waterschap Scheldestromen, 2026b, art. 2.9 and its explanation), and in Zeeland pumping is allowed only from bodies of more than 15 m of fresh water (Kaandorp et al., 2022, p. 26), so the thicker the lens, the more pumping the rules allow. No delay: no source read shows how often those bodies are updated.",
       "sources": [
         "scheldestromen-2026-grondwater",
         "kaandorp-2022"

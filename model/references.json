@@ -4008,5 +4008,160 @@
     "title": "Programmaplan: Omgaan met zout in landbouw, natuur en waterbeheer",
     "publisher": "Wageningen Environmental Research",
     "DOI": "10.18174/685404"
+  },
+  {
+    "id": "eeman-2017",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Eeman",
+        "given": "S."
+      },
+      {
+        "family": "de Louw",
+        "given": "P. G. B."
+      },
+      {
+        "family": "van der Zee",
+        "given": "S. E. A. T. M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Cation exchange in a temporally fluctuating thin freshwater lens on top of saline groundwater",
+    "container-title": "Hydrogeology Journal",
+    "volume": "25",
+    "page": "223–241",
+    "DOI": "10.1007/s10040-016-1475-y"
+  },
+  {
+    "id": "knol-2025",
+    "type": "report",
+    "author": [
+      {
+        "family": "Knol",
+        "given": "E. E."
+      },
+      {
+        "family": "Saarloos",
+        "given": "A."
+      },
+      {
+        "family": "Schoorlemmer",
+        "given": "H. B."
+      },
+      {
+        "family": "van Balen",
+        "given": "D. J. M."
+      },
+      {
+        "family": "de Haas",
+        "given": "M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Kennisagenda verzilting & zoute landbouw: Een gedragen kennisagenda voor de korte, middellange en lange termijn",
+    "number": "WPR-OT-1142",
+    "publisher": "Wageningen Research",
+    "DOI": "10.18174/694994"
+  },
+  {
+    "id": "de-louw-2015",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "de Louw",
+        "given": "P. G. B."
+      },
+      {
+        "family": "Oude Essink",
+        "given": "G. H. P."
+      },
+      {
+        "family": "Eeman",
+        "given": "S."
+      },
+      {
+        "family": "van Baaren",
+        "given": "E. S."
+      },
+      {
+        "family": "Vermue",
+        "given": "E."
+      },
+      {
+        "family": "Delsman",
+        "given": "J. R."
+      },
+      {
+        "family": "Pauw",
+        "given": "P. S."
+      },
+      {
+        "family": "Siemon",
+        "given": "B."
+      },
+      {
+        "family": "Gunnink",
+        "given": "J."
+      },
+      {
+        "family": "Post",
+        "given": "V. E. A."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "title": "Dunne regenwaterlenzen in zoute kwelgebieden",
+    "container-title": "Landschap",
+    "volume": "32",
+    "issue": "1",
+    "page": "5–15",
+    "URL": "https://www.landschap.nl/wp-content/uploads/2015-1_005-015.pdf"
+  },
+  {
+    "id": "raat-2026",
+    "type": "report",
+    "author": [
+      {
+        "family": "Raat",
+        "given": "K."
+      },
+      {
+        "family": "van Aalderen",
+        "given": "N."
+      },
+      {
+        "family": "Krajenbrink",
+        "given": "H."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "title": "Laag Nederland 2050: Een verkenning naar een klimaat- en waterrobuuste inrichting voor Schouwen-Duiveland",
+    "number": "KWR 2026.037",
+    "publisher": "KWR Water Research Institute",
+    "URL": "https://api2.kwrwater.nl/uploads/KWR%202026.037%20Laag%20Nederland%202050.%20Een%20verkenning%20naar%20een%20klimaat-%20en%20waterrobuuste%20inrichting%20voor%20Schouwen-Duiveland.pdf"
   }
 ]

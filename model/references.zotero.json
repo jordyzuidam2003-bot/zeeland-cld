@@ -80,7 +80,7 @@
   ]
  },
  "beauchampet-2022": {
-  "digest": "d17436dc1aac",
+  "digest": "5e13d2e7e40f",
   "note": "CG6RF5XT",
   "placed": [
    "CLD"
@@ -206,8 +206,15 @@
   ]
  },
  "de-louw-2011": {
-  "digest": "e757f976f219",
+  "digest": "497df17f3637",
   "note": "PFVBHFHI",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "de-louw-2015": {
+  "digest": "368e318e88b9",
+  "note": "G968TIME",
   "placed": [
    "CLD"
   ]
@@ -268,7 +275,7 @@
   ]
  },
  "deolu-ajayi-2024": {
-  "digest": "4a2f7d0798fd",
+  "digest": "cc7c57b12fdc",
   "note": "NCBBAXBZ",
   "placed": [
    "CLD"
@@ -339,8 +346,15 @@
    "CLD"
   ]
  },
+ "eeman-2017": {
+  "digest": "c2012c9a8c2b",
+  "note": "GD4ZKEST",
+  "placed": [
+   "CLD"
+  ]
+ },
  "eu-cap-network-2023": {
-  "digest": "945216fbbdc7",
+  "digest": "7e3c6d2ab0fc",
   "note": "365VS95C",
   "placed": [
    "CLD"
@@ -427,7 +441,7 @@
   ]
  },
  "janssens-2020": {
-  "digest": "41c727526825",
+  "digest": "cf33e202f69b",
   "note": "9DUZZSPB",
   "placed": [
    "Actor Map",
@@ -435,7 +449,7 @@
   ]
  },
  "kaandorp-2022": {
-  "digest": "89aa8a500231",
+  "digest": "4c7bc0b312e6",
   "note": "UCUZ55BX",
   "placed": [
    "Actor Map",
@@ -460,6 +474,13 @@
   "placed": []
  },
  "knmi-2023-klimaatscenarios": {
+  "placed": [
+   "CLD"
+  ]
+ },
+ "knol-2025": {
+  "digest": "c2012c9a8c2b",
+  "note": "6GT3CBM8",
   "placed": [
    "CLD"
   ]
@@ -720,6 +741,13 @@
    "CLD"
   ]
  },
+ "raat-2026": {
+  "digest": "c54fb7dbcde8",
+  "note": "H25EG7M9",
+  "placed": [
+   "CLD"
+  ]
+ },
  "rabobank-2023-annual-report": {
   "digest": "591a63e8b612",
   "note": "9CW65M9G",
@@ -883,7 +911,7 @@
   ]
  },
  "scheldestromen-2026-grondwater": {
-  "digest": "ee15b3da1337",
+  "digest": "2f1c2e35f5ff",
   "note": "MT7QA2GF",
   "placed": [
    "Actor Map",
@@ -983,14 +1011,14 @@
   ]
  },
  "van-beekom-1953": {
-  "digest": "552695cbd3d5",
+  "digest": "db6fa6630fce",
   "note": "9M27AI9Z",
   "placed": [
    "CLD"
   ]
  },
  "van-beekom-1953-salt": {
-  "digest": "e84cdda436df",
+  "digest": "c2334d9af117",
   "note": "KI79ZG32",
   "placed": [
    "CLD"
@@ -1050,7 +1078,7 @@
   ]
  },
  "van-straten-2021": {
-  "digest": "495e3e0e319b",
+  "digest": "5e17c3532d17",
   "note": "QAGSV9NC",
   "placed": [
    "CLD"

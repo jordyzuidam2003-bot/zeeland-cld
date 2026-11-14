@@ -1200,9 +1200,10 @@
       "to": "freshwater-lens-thickness",
       "polarity": "+",
       "delay": true,
-      "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673). So a change in recharge takes years to show in the lens.",
+      "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673). So a change in recharge takes years to show in the lens. The drains cap how much of a wetter winter reaches the lens: model calculations show that the extra winter water of wetter winters leaves through the intensive tile drainage and does not feed the lens, while higher summer evaporation shrinks it (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens).",
       "sources": [
-        "de-louw-2011"
+        "de-louw-2011",
+        "de-louw-2015"
       ],
       "curvature": -0.39,
       "delay at": 0.4
@@ -1272,10 +1273,12 @@
       "to": "soil-structure-usability",
       "polarity": "-",
       "delay": true,
-      "description": "Salt in the root zone puts sodium (Na+) on the clay in place of calcium (Ca2+); once fresh water washes the salt out, clay that holds much sodium disperses: its aggregates and pores collapse, with troubles to be expected above 1 m.e. of exchangeable sodium per 100 g of dry soil. The delay is on the way back: structure begins to decline in the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year in the top 10 cm of soil with calcium carbonate, which takes 5 to 10 years on heavy clay and about a year on very light soil, while soil without it is expected to recover more slowly (van Beekom et al., 1953b, pp. 225–228, after the 1944–45 inundations in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster, and no source read shows how much sodium the island's seepage puts on its clay.",
+      "description": "Salt in the root zone puts sodium (Na+) on the clay in place of calcium (Ca2+); once fresh water washes the salt out, clay that holds much sodium disperses: its aggregates and pores collapse, with troubles to be expected above 1 m.e. of exchangeable sodium per 100 g of dry soil. The delay is on the way back: structure begins to decline in the first winter after the salt leaches out, but the clay only recovers as calcium replaces the sodium again, about 0.7 m.e. Na per 100 g a year in the top 10 cm of soil with calcium carbonate, which takes 5 to 10 years on heavy clay and about a year on very light soil, while soil without it is expected to recover more slowly (van Beekom et al., 1953b, pp. 225–228, after the 1944–45 inundations in Zeeland). Seawater flooding is a much larger salt dose than seepage; soils that took up less sodium recover faster, and no source read shows how much sodium the island's seepage puts on its clay. The only island measurements found lie below the plough layer, to which the loss of crumb structure is confined (van Beekom et al., 1953b, p. 226): on a tile-drained agricultural field with permanent saline seepage, sodium made up 9% of the exchangeable cations at 1.6 m between drains and 3% at 3 m near a drain, well below a flooded soil's 21%, the 9% above and the 3% below the roughly 5% at which structure may suffer (Eeman et al., 2017, pp. 225–227, 238–239; van Beekom et al., 1953b, pp. 225–226). A national knowledge agenda judges, from experience within the SALTA knowledge cluster, that salinisation seems so far to cause little damage to soil structure in the Netherlands, where elevated SAR, ESP or CROSS values are usually not determined (Knol et al., 2025, p. 43).",
       "simplification": "Folds Sodium on the clay, a stock between the two: the salt puts sodium on the clay, and the sodium breaks the clay's structure once the salt washes out. The sign is the product of the two steps (+, then −), so no loop through the link changes, and the stock's slowness is the link's delay. What one link distorts: the delay lies on the way back only, the structure beginning to decline in the first winter after the salt leaches out and recovering over years, while the link draws one delay for both ways.",
       "sources": [
-        "van-beekom-1953"
+        "van-beekom-1953",
+        "eeman-2017",
+        "knol-2025"
       ],
       "curvature": 0.14
     },
@@ -1296,11 +1299,12 @@
       "to": "freshwater-lens-recharge",
       "polarity": "+",
       "delay": false,
-      "description": "Rain recharges the lens only once it has soaked into the soil. Before the floods, Zeeland's well-drained clay let the winter's rain surplus soak through almost completely; once sodium had broken down the structure of the topsoil, it became impervious and sticky when wet, part of the rain ran off over the surface and pools stood on the land, the more so the heavier the clay (van Beekom et al., 1953a, p. 157; 1953b, pp. 230, 233, 236, measured in the flooded polders of Zeeland, by R1's own mechanism). Within the year: the structure a soil has in a winter sets how much of that winter's rain soaks in. How thick a lens the recharge builds is also set by the drainage depth and the seepage (de Louw et al., 2011, p. 3674).",
+      "description": "Rain recharges the lens only once it has soaked into the soil. Before the floods, Zeeland's well-drained clay let the winter's rain surplus soak through almost completely; once sodium had broken down the structure of the topsoil, it became impervious and sticky when wet, part of the rain ran off over the surface and pools stood on the land, the more so the heavier the clay (van Beekom et al., 1953a, p. 157; 1953b, pp. 230, 233, 236, measured in the flooded polders of Zeeland, by R1's own mechanism). Even so, in most of the well-drained soils at least 150 mm still seeped through in winter, and less in badly drained soils of low permeability, against a Dutch annual rain surplus of about 200 mm, most of it in winter (van Beekom et al., 1953a, pp. 155, 157). In model computations of wetter winters, the extra winter water drained off effectively through the intensive drainage without feeding the thin rain lenses of the saline seepage areas the authors studied in Zeeland, among them a tile-drained field on the island, so more rain soaking in may add little to the lens (de Louw et al., 2015, pp. 6, 11, 12, by authors who report on the GO-FRESH project, which developed a drainage system to grow the lens). Within the year: the structure a soil has in a winter sets how much of that winter's rain soaks in. How thick a lens the recharge builds is also set by the drainage depth and the seepage (de Louw et al., 2011, p. 3674).",
       "sources": [
         "van-beekom-1953-salt",
         "van-beekom-1953",
-        "de-louw-2011"
+        "de-louw-2011",
+        "de-louw-2015"
       ],
       "curvature": -0.22
     },
@@ -1849,11 +1853,13 @@
       "to": "harvest-lost-to-salt",
       "polarity": "-",
       "delay": false,
-      "description": "A field moved from a current crop to a new salt-tolerant one no longer has a conventional harvest for salt to take: the link holds by what Harvest lost to salt counts, the fields still under the current crops. Within the year, from the next season's crop.",
+      "description": "A field moved from a current crop to a new salt-tolerant one no longer has a conventional harvest for salt to take: the link holds by what Harvest lost to salt counts, the fields still under the current crops. The new crops lose less to salt, not nothing: 10 to 19 of the 50 experts and stakeholders interviewed across the Netherlands' salinisation-prone provinces say that, in general, salts affect the soil's structure and so lower yields even where a crop is or becomes more tolerant, and that the salt level at which cultivation on clay stops being effective is largely uncertain (Beauchampet, 2022, pp. 213–214, 221, interviews, not measurements); the island's polders generally have clayey soils (Kaandorp et al., 2022, p. 10). Within the year, from the next season's crop.",
       "simplification": "The new crops are taken to lose nothing to salt. That comes nearest to true for crops that can be grown on saline land, such as sea fennel and sea banana on an arable farm at Colijnsplaat (EU CAP Network, 2023), and for quinoa, among the crops better suited to saline conditions, though how far salt limits a crop depends on the crop (Deolu-Ajayi et al., 2024, p. 63). A new crop as sensitive as the current ones loses about as much, and R6 does not run through it.",
       "sources": [
         "deolu-ajayi-2024",
-        "eu-cap-network-2023"
+        "eu-cap-network-2023",
+        "beauchampet-2022",
+        "kaandorp-2022"
       ],
       "curvature": -0.22
     },
@@ -1862,7 +1868,7 @@
       "to": "harvest-lost-to-salt",
       "polarity": "-",
       "delay": false,
-      "description": "A salt-tolerant variety loses less of its harvest at the same salinity of the root zone: in field trials on Texel from 2012 to 2018, most potato cultivars kept 90% of their yield up to a soil salinity (ECe) of about 4 to 5 dS/m, some about twice that (van Straten et al., 2021, pp. 1–2), Elgar and Rivola above 7.5 dS/m (p. 10). Measured on sandy soil, the salt brought by irrigation water: the sign holds on the island, since the trials relate yield to the salinity of the root zone, which drives Harvest lost to salt there whatever brings the salt; the size need not, as the authors warn for other soils and climates (p. 11).",
+      "description": "A salt-tolerant variety loses less of its harvest at the same salinity of the root zone: in field trials on Texel from 2012 to 2018, most potato cultivars kept 90% of their yield up to a soil salinity (ECe) of about 4 to 5 dS/m, some about twice that (van Straten et al., 2021, pp. 1–2), Elgar and Rivola above 7.5 dS/m (p. 10). Measured on sandy soil, the salt brought by irrigation water: the sign holds on the island, since the trials relate yield to the salinity of the root zone, which drives Harvest lost to salt there whatever brings the salt; the size need not, as the authors warn for other soils and climates (p. 11). Past the salinity at which they keep 90% of their yield, Elgar and Rivola lose yield faster than the other cultivars, in estimates whose large uncertainties, the authors note, make significant differences between cultivars hard to find (van Straten et al., 2021, p. 6); a larger ECe90 goes with a steeper decline, so all cultivars reach about the same lethal soil salinity, 20–24 dS/m (pp. 1, 5), and the advantage narrows as salinity approaches it. The study was partly funded by the Salt Farm Foundation (p. 11).",
       "sources": [
         "van-straten-2021"
       ],
@@ -1975,13 +1981,14 @@
       "to": "salt-tolerant-crop-adoption",
       "polarity": "+",
       "delay": true,
-      "description": "The more of the current crops' harvest salt takes, the more a new salt-tolerant crop is worth against them, so the more farmers grow it, but only past a threshold: Dutch farmers in salinised areas mostly hold back from saline agriculture unless salt severely hits their production (Deolu-Ajayi et al., 2024, p. 57). In interviews across the salinisation-prone provinces, Zeeland among them, salt in a field was largely invisible and seldom measured, a lower yield hard to put down to salt alone, and the damage not yet significant enough to make it urgent; it would take more dry summers like 2018 (Beauchampet, 2022, p. 216). Nearly all interviewees did not see halophytes as part of the answer, for lack of markets, the soils' intolerance of salt and the hand work they take (p. 221). In Zeeland most farmers still grow the common salt-sensitive crops (van den Burg et al., 2024, p. 6), and on the island the response a source shows is giving up a sensitive crop, sown onions (Kaandorp et al., 2022, p. 31), not taking up a new one. Years, as farmers come to see the damage over dry summers: a delay.",
+      "description": "The more of the current crops' harvest salt takes, the more a new salt-tolerant crop is worth against them, so the more farmers grow it, but only past a threshold: Dutch farmers in salinised areas mostly hold back from saline agriculture unless salt severely hits their production (Deolu-Ajayi et al., 2024, p. 57). In interviews across the salinisation-prone provinces, Zeeland among them, salt in a field was largely invisible and seldom measured, a lower yield hard to put down to salt alone, and the damage not yet significant enough to make it urgent; it would take more dry summers like 2018 (Beauchampet, 2022, p. 216). Nearly all interviewees did not see halophytes as part of the answer, for lack of markets, the soils' intolerance of salt and the hand work they take (p. 221). In Zeeland most farmers still grow the common salt-sensitive crops (van den Burg et al., 2024, p. 6), and on the island the response a source shows is giving up a sensitive crop, sown onions (Kaandorp et al., 2022, p. 31), not taking up a new one. The shift the island's farmers do show is to a crop they already grow, from onions to cereals, which the source puts down to drought (Raat et al., 2026, p. 49); the island grows proportionally fewer potatoes and vegetables, mainly onions, and more cereals, which tolerate salt better, than Goeree-Overflakkee, which is connected to the main water system and so can take in fresh water (p. 34, which names no data source or year). Many of the interviewees across the provinces see research on the salt tolerance of cash crops, especially of cultivars already on the market, as contributing to resilience to salt (Beauchampet, 2022, p. 221). Years, as farmers come to see the damage over dry summers: a delay.",
       "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description. Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what salt takes.",
       "sources": [
         "deolu-ajayi-2024",
         "beauchampet-2022",
         "van-den-burg-2024",
-        "kaandorp-2022"
+        "kaandorp-2022",
+        "raat-2026"
       ],
       "curvature": 0.07
     },
@@ -2725,7 +2732,7 @@
         "freshwater-lens-recharge",
         "freshwater-lens-thickness"
       ],
-      "description": "Salt in the root zone puts sodium on the clay; once fresh water washes the salt out, the soil's structure collapses and recovers only over years. Less rain soaks in, less recharges the rainwater lens, the lens thins over years and saline groundwater comes closer to the roots: more salt. It runs in the low polders. The mechanism was measured after seawater floods; how much sodium the island's seepage puts on its clay, no source read shows. No practice is on it: the salt it adds drives tolerant crops and varieties (B2, B1)."
+      "description": "Salt in the root zone puts sodium on the clay; once fresh water washes the salt out, the soil's structure collapses and recovers only over years. Less rain soaks in, less recharges the rainwater lens, the lens thins over years and saline groundwater comes closer to the roots: more salt. It runs in the low polders. The mechanism was measured after seawater floods; how much sodium the island's seepage puts on its clay, no source read shows. R1 may be weak on tile-drained fields such as the one measured on the island: in model computations extra winter water leaves through the intensive drainage without feeding the lens (de Louw et al., 2015, pp. 11, 12), and after a seawater flood most well-drained soils in Zeeland still let at least 150 mm through in winter (van Beekom et al., 1953a, p. 157). No practice is on it: the salt it adds drives tolerant crops and varieties (B2, B1)."
     },
     {
       "id": "B1",
@@ -2743,7 +2750,7 @@
         "harvest-lost-to-salt",
         "salt-tolerant-crop-adoption"
       ],
-      "description": "The more harvest salt takes, the more a new salt-tolerant crop is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches: that farmers hold back until salt severely hits their production rests on sources, what sets each farmer's threshold, through their crops, margins, buyers and bank, is a hypothesis for the group model building session. With B1 and B3 it is a way out of the same salt: switching keeps the land arable, B3 is arable farming ending. It drives new crops."
+      "description": "The more harvest salt takes, the more a new salt-tolerant crop is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches: that farmers hold back until salt severely hits their production rests on sources, what sets each farmer's threshold, through their crops, margins, buyers and bank, is a hypothesis for the group model building session. On the island no source read shows B2 at work: the shift its farmers show is from onions to cereals, a crop they already grow and no new one, which the source puts down to drought (Raat et al., 2026, p. 49). With B1 and B3 it is a way out of the same salt: switching keeps the land arable, B3 is arable farming ending. It drives new crops."
     },
     {
       "id": "B3",

@@ -127,7 +127,7 @@
   ]
  },
  "bogosavac-2018": {
-  "digest": "0e9882680dcc",
+  "digest": "725c0f3a6d71",
   "note": "BXNB4XWM",
   "placed": [
    "Actor Map",
@@ -274,7 +274,7 @@
   ]
  },
  "delphy-2023-dorsd": {
-  "digest": "0eb210c5ed68",
+  "digest": "75b25096fb89",
   "note": "VPEP6PXN",
   "placed": [
    "Actor Map",
@@ -304,7 +304,7 @@
   ]
  },
  "deolu-ajayi-2024": {
-  "digest": "cc7c57b12fdc",
+  "digest": "a5cb0843807b",
   "note": "NCBBAXBZ",
   "placed": [
    "CLD"
@@ -318,7 +318,7 @@
   ]
  },
  "dutchnews-2018-potato-processors": {
-  "digest": "89df1db29e45",
+  "digest": "8380ca6e9488",
   "note": "QRKGWKAQ",
   "placed": [
    "Actor Map",
@@ -402,7 +402,7 @@
   ]
  },
  "fi-compass-2020": {
-  "digest": "8d64bb524dd9",
+  "digest": "87a401877484",
   "note": "NQSN48E8",
   "placed": [
    "CLD"
@@ -477,7 +477,7 @@
   ]
  },
  "janssens-2020": {
-  "digest": "357f12a252ef",
+  "digest": "12729c5fd38e",
   "note": "9DUZZSPB",
   "placed": [
    "Actor Map",
@@ -485,7 +485,7 @@
   ]
  },
  "kaandorp-2022": {
-  "digest": "960316e3c547",
+  "digest": "ebc46fb05dae",
   "note": "UCUZ55BX",
   "placed": [
    "Actor Map",
@@ -557,7 +557,7 @@
   ]
  },
  "lamkowsky-2023": {
-  "digest": "8922e06e366f",
+  "digest": "fb20ba93445d",
   "note": "ZUM5D434",
   "placed": [
    "CLD"
@@ -711,7 +711,7 @@
   ]
  },
  "nos-2018-misoogst": {
-  "digest": "89df1db29e45",
+  "digest": "8380ca6e9488",
   "note": "F6I3V9VU",
   "placed": [
    "Actor Map",
@@ -757,7 +757,7 @@
   ]
  },
  "oude-essink-2018": {
-  "digest": "0b13fd38d7c3",
+  "digest": "095896a380f2",
   "note": "RBU5JMXG",
   "placed": [
    "CLD"
@@ -1083,6 +1083,13 @@
    "CLD"
   ]
  },
+ "stuyt-2012": {
+  "digest": "5643ffcde42f",
+  "note": "FXKN22JA",
+  "placed": [
+   "CLD"
+  ]
+ },
  "ten-dam-2023": {
   "placed": [
    "CLD"
@@ -1129,7 +1136,7 @@
   ]
  },
  "van-der-meulen-2020": {
-  "digest": "9999a130312b",
+  "digest": "88910a9369d2",
   "note": "58K6T5V6",
   "placed": [
    "Actor Map",
@@ -1198,7 +1205,7 @@
   ]
  },
  "verhagen-2018": {
-  "digest": "62a813da7861",
+  "digest": "8292999c1181",
   "note": "RDEUDPA2",
   "placed": [
    "CLD"

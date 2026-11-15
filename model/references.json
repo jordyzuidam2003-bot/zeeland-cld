@@ -4637,5 +4637,47 @@
       ]
     },
     "URL": "https://www.acaciawater.com/nl/project/is-duurzame-winning-uit-kleine-zoetwaterlenzen-mogelijk/"
+  },
+  {
+    "id": "stuyt-2012",
+    "type": "report",
+    "author": [
+      {
+        "family": "Stuyt",
+        "given": "L. C. P. M."
+      },
+      {
+        "family": "van der Bolt",
+        "given": "F. J. E."
+      },
+      {
+        "family": "Snellen",
+        "given": "W. B."
+      },
+      {
+        "family": "Groenendijk",
+        "given": "P."
+      },
+      {
+        "family": "Schipper",
+        "given": "P. N. M."
+      },
+      {
+        "family": "Harmsen",
+        "given": "J."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "title": "Meer water met regelbare drainage? Werking, praktijkervaringen, kansen en risico's",
+    "genre": "STOWA-rapport",
+    "number": "2012-33",
+    "publisher": "Stichting Toegepast Onderzoek Waterbeheer",
+    "URL": "https://edepot.wur.nl/235539"
   }
 ]

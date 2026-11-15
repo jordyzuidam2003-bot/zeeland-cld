@@ -4679,5 +4679,36 @@
     "number": "2012-33",
     "publisher": "Stichting Toegepast Onderzoek Waterbeheer",
     "URL": "https://edepot.wur.nl/235539"
+  },
+  {
+    "id": "jung-2022",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Jung",
+        "given": "J."
+      },
+      {
+        "family": "Sesmero",
+        "given": "J."
+      },
+      {
+        "family": "Siebert",
+        "given": "R."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "A structural estimation of spatial differentiation and market power in input procurement",
+    "container-title": "American Journal of Agricultural Economics",
+    "volume": "104",
+    "issue": "2",
+    "page": "613–644",
+    "DOI": "10.1111/ajae.12239"
   }
 ]

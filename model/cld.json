@@ -2139,9 +2139,10 @@
       "to": "net-price-for-new-crops",
       "polarity": "+",
       "delay": false,
-      "description": "A plant or chain nearby takes the harvest at less cost to move and store it, so more of the price reaches the farmer. In France, minor crops grown far from their processor cost much to collect for their volume, one cooperative building a linseed chain paid farmers a premium to deliver to its silo, and those without storage suited to small batches sold them fast, below the best price (Meynard et al., 2018, p. 7): the cost of moving and storing a harvest rises with distance and falls with volume wherever a chain runs, so the mechanism transfers. No source read gives what farmers on the island are paid. Within the year: the price is set each season or contract.",
+      "description": "A plant or chain nearby takes the harvest at less cost to move and store it, so more of the price reaches the farmer. In France, minor crops grown far from their processor cost much to collect for their volume, one cooperative building a linseed chain paid farmers a premium to deliver to its silo, and those without storage suited to small batches sold them fast, below the best price (Meynard et al., 2018, p. 7): the cost of moving and storing a harvest rises with distance and falls with volume wherever a chain runs, so the mechanism transfers. No source read gives what farmers on the island are paid. A plant that is large against the harvest within its reach can still pay less than the crop is worth to it: in Indiana, USA, where corn farmers pay the transport to the plant, a model estimates that transport cost, by softening competition from rival buyers, let plants pay on average 0.49 dollars a bushel (9% of the corn price) below the corn's value to them net of processing cost, and capacity running full added 0.18 dollars (Jung et al., 2022, pp. 614–616). Within the year: the price is set each season or contract.",
       "sources": [
-        "meynard-2018"
+        "meynard-2018",
+        "jung-2022"
       ],
       "curvature": -0.14
     },

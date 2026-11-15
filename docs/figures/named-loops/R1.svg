@@ -12,7 +12,7 @@
 <path class="delay-cut" d="M 27.0 253.5 L 25.3 205.5 M 11.0 254.1 L 9.3 206.1" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 27.0 253.5 L 25.3 205.5 M 11.0 254.1 L 9.3 206.1" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="-0.07">
+<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="0.08">
 <path class="link-path" d="M -308.7 102.6 Q -352.1 44.6 -343.7 -19.9 Q -335.3 -84.5 -277.5 -136.6" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-311.2" y="-99.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>

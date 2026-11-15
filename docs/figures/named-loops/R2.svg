@@ -6,7 +6,7 @@
 </defs>
 <rect x="-1489" y="-934" width="2979" height="1851" fill="white"/>
 <g class="links">
-<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="-0.07">
+<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="0.08">
 <path class="link-path" d="M -877.3 588.9 Q -1013.1 499.0 -1102.1 386.1" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-1069.9" y="424.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>

@@ -12,8 +12,8 @@
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],
-      "x": -1358,
-      "y": 734
+      "x": -1342,
+      "y": 739
     },
     {
       "id": "sea-level-rise",
@@ -27,8 +27,8 @@
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],
-      "x": -2237,
-      "y": 397
+      "x": -2253,
+      "y": 385
     },
     {
       "id": "wetter-winters",
@@ -42,8 +42,8 @@
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],
-      "x": -1589,
-      "y": 95
+      "x": -1593,
+      "y": 67
     },
     {
       "id": "freshwater-lens-recharge",
@@ -73,8 +73,8 @@
       "sources": [
         "de-louw-2011"
       ],
-      "x": -1880,
-      "y": 410
+      "x": -1892,
+      "y": 610
     },
     {
       "id": "land-subsidence",
@@ -169,8 +169,8 @@
         "van-beekom-1953-salt",
         "van-beekom-1953"
       ],
-      "x": -717,
-      "y": 44
+      "x": -704,
+      "y": 50
     },
     {
       "id": "upconing-of-salt-groundwater",
@@ -441,8 +441,8 @@
       "actors": [
         "eu"
       ],
-      "x": 1522,
-      "y": -125
+      "x": 1519,
+      "y": -119
     },
     {
       "id": "dependence-on-high-margin-salt-sensitive-crops",
@@ -541,8 +541,8 @@
         "allen-1998",
         "kaandorp-2022"
       ],
-      "x": -845,
-      "y": 917
+      "x": -882,
+      "y": 1004
     },
     {
       "id": "zlto-call-for-supply-route",
@@ -756,8 +756,8 @@
         "dutchnews-2026",
         "freshplaza-2018"
       ],
-      "x": 185,
-      "y": 1571
+      "x": 247,
+      "y": 1566
     },
     {
       "id": "net-price-for-new-crops",
@@ -1040,8 +1040,8 @@
         "luijt-2007",
         "holtslag-broekhof-2016"
       ],
-      "x": 268,
-      "y": -1148
+      "x": 356,
+      "y": -1089
     },
     {
       "id": "farmland-changing-hands",
@@ -1219,7 +1219,7 @@
         "kaandorp-2022",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": -0.07
+      "curvature": 0.08
     },
     {
       "from": "creek-ridge-lens-thickness",
@@ -1342,7 +1342,7 @@
         "pauw-2015",
         "de-louw-2011"
       ],
-      "curvature": -0.14
+      "curvature": -0.2
     },
     {
       "from": "freshwater-storage-measures",
@@ -1392,7 +1392,7 @@
       "sources": [
         "de-louw-2011"
       ],
-      "curvature": -0.07
+      "curvature": -0.15
     },
     {
       "from": "crop-yield",
@@ -1418,7 +1418,7 @@
       "description": "A fall in the land's value that has happened, through salt in R8: does a farm whose land lost value object harder to the next plan? Through its solvency, yes (−); where compensation pays more than the land would fetch on the market, the concern may fall instead (+). A hypothesis for the group model building session, with both signs as the question to farmers.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.14,
+      "curvature": -0.11,
       "simplification": "Folds Owners' concern about their land's value, which gathered the reasons for objecting: a fall in the land's value, and a plan that would lower it, raised landowning farmers' concern, and the concern raised their objections. The sign is the product of the two steps, so R8 keeps its polarity, and the concern was no actor's decision of its own. A tenant's concern, losing the lease, was never part of it. What it leaves out: why owners object is no variable on the drawing, a question for the group model building session."
     },
     {
@@ -1467,7 +1467,7 @@
       "delay": false,
       "description": "A farm that relies on high margins can give fewer hectares to lower-margin new crops.",
       "sources": [],
-      "curvature": -0.14,
+      "curvature": -0.16,
       "hypothesis": true
     },
     {
@@ -1517,7 +1517,7 @@
         "van-den-burg-2024",
         "delphy-2023-dorsd"
       ],
-      "curvature": 0.22
+      "curvature": 0.25
     },
     {
       "from": "hotter-drier-summers",
@@ -2093,7 +2093,7 @@
       "sources": [
         "van-loo-2023"
       ],
-      "curvature": -0.07
+      "curvature": -0.09
     },
     {
       "from": "growers-of-new-crops-elsewhere",
@@ -2177,7 +2177,7 @@
       "simplification": "Folds Know-how of the current crops, a stock between the two: growing the current crops builds know-how, which is of little use for a new crop. The sign is the product of the two steps (+, then +), so no loop through the link changes, and know-how is no actor's decision. What one link leaves out: the know-how as a stock of its own, built up over years of growing the crops.",
       "sources": [],
       "hypothesis": true,
-      "curvature": 0.14
+      "curvature": 0.27
     },
     {
       "from": "machines-and-storage-for-current-crops",
@@ -2289,7 +2289,7 @@
         "rabobank-2023-annual-report",
         "rabobank-2025-annual-report"
       ],
-      "curvature": 0.14
+      "curvature": 0.11
     },
     {
       "from": "banks-risk-assessment",
@@ -2678,7 +2678,7 @@
       "description": "Hypothesis: storing water is a long investment that a change of rules can strand, so the less farmers expect public bodies to keep their commitments on water and land, the less they store. A question for the group model building session.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.27
+      "curvature": -0.24
     },
     {
       "from": "polder-drainage-depth",

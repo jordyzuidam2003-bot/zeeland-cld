@@ -20,7 +20,7 @@
 <path class="link-path" d="M 379.2 -335.4 Q 533.2 -258.0 595.8 -136.5" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="570.0" y="-179.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="winter-rain-drained-away" data-to="freshwater-lens-recharge" data-sign="-" data-delay="false" data-curvature="-0.07">
+<g class="link" data-from="winter-rain-drained-away" data-to="freshwater-lens-recharge" data-sign="-" data-delay="false" data-curvature="-0.15">
 <path class="link-path" d="M 625.4 -50.5 Q 649.8 83.5 552.5 201.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="581.9" y="161.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>

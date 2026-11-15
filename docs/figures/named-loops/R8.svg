@@ -6,7 +6,7 @@
 </defs>
 <rect x="-1042" y="-632" width="2092" height="1314" fill="white"/>
 <g class="links">
-<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="-0.07">
+<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="0.08">
 <path class="link-path" d="M -162.4 529.0 Q -330.5 506.1 -470.3 439.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-424.6" y="459.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
@@ -16,7 +16,7 @@
 <path class="delay-cut" d="M 337.8 516.0 L 324.4 469.9 M 322.4 520.5 L 309.1 474.4" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 337.8 516.0 L 324.4 469.9 M 322.4 520.5 L 309.1 474.4" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="agricultural-land-value" data-to="policy-resistance-legal-delays" data-sign="-" data-delay="false" data-curvature="-0.14">
+<g class="link" data-from="agricultural-land-value" data-to="policy-resistance-legal-delays" data-sign="-" data-delay="false" data-curvature="-0.11">
 <path class="link-path" d="M -136.9 -532.2 Q -19.0 -545.7 99.8 -535.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="49.9" y="-539.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>

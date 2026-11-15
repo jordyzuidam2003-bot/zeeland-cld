@@ -4328,5 +4328,152 @@
     "collection-title": "Alterra-rapport",
     "publisher": "Alterra Wageningen UR",
     "URL": "https://edepot.wur.nl/350634"
+  },
+  {
+    "id": "lamkowsky-2023",
+    "type": "report",
+    "author": [
+      {
+        "family": "Lamkowsky",
+        "given": "M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Is lack of finance a barrier for the sustainability of Dutch dairy farms? An analysis of nitrogen pollution and profit",
+    "genre": "Doctoral dissertation",
+    "DOI": "10.18174/632550",
+    "publisher": "Wageningen University"
+  },
+  {
+    "id": "fi-compass-2020",
+    "type": "report",
+    "author": [
+      {
+        "literal": "fi-compass"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Financial needs in the agriculture and agri-food sectors in the Netherlands",
+    "genre": "Study report",
+    "URL": "https://fi-compass.eu/sites/default/files/publications/financial_needs_agriculture_agrifood_sectors_Netherlands.pdf"
+  },
+  {
+    "id": "nvb-2023",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Nederlandse Vereniging van Banken"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Gedragscode Kleinzakelijke Financiering: Herziene versie, geldig met ingang van 1 juli 2023",
+    "URL": "https://assets.abnamro.com/api/public/content/gkf-juli-2023.pdf"
+  },
+  {
+    "id": "krajenbrink-2023",
+    "type": "report",
+    "author": [
+      {
+        "family": "Krajenbrink",
+        "given": "H. J."
+      },
+      {
+        "family": "van Aalderen",
+        "given": "N."
+      },
+      {
+        "family": "Hu",
+        "given": "X."
+      },
+      {
+        "family": "Raat",
+        "given": "K. J."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "LN2050 – Contextbepaling Schouwen-Duiveland",
+    "number": "KWR 2023.060",
+    "publisher": "KWR Water Research Institute",
+    "URL": "https://api2.kwrwater.nl/uploads/KWR%202023.060%20LN2050%20-%20Contextbepaling%20Schouwen-Duiveland%20(OPENBAAR).pdf"
+  },
+  {
+    "id": "acacia-water-2020",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Acacia Water"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "DeltaDrip: Efficiënter omgaan met water voor duurzame klimaatbestendige landbouw in Zeeland",
+    "genre": "Eindrapport",
+    "URL": "https://acpt.deltaexpertise.hz.nl/images/d/dd/Deltadrip_eindrapport.pdf"
+  },
+  {
+    "id": "terink-2023",
+    "type": "report",
+    "author": [
+      {
+        "family": "Terink",
+        "given": "W."
+      },
+      {
+        "family": "de Wit",
+        "given": "J."
+      },
+      {
+        "family": "van Deijl",
+        "given": "D."
+      },
+      {
+        "family": "Bartholomeus",
+        "given": "R."
+      },
+      {
+        "family": "van den Eertwegh",
+        "given": "G."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Ondergronds beregenen op Proefboerderij Rusthoeve: Praktijkproef regelbare drainage met subirrigatie 2020-2022",
+    "genre": "Eindrapport",
+    "publisher": "KnowH2O; KWR Water Research Institute",
+    "URL": "https://edepot.wur.nl/641909"
   }
 ]

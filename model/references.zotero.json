@@ -7,15 +7,22 @@
   ]
  },
  "abn-amro-nd-kosten-krediet": {
-  "digest": "c0330114b5f4",
+  "digest": "503975509df3",
   "note": "CN8SUTIK",
   "placed": [
    "CLD"
   ]
  },
  "abn-amro-nd-uitleg-rente": {
-  "digest": "7ce518d5f611",
+  "digest": "e5a0906100f3",
   "note": "59Q4XQAV",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "acacia-water-2020": {
+  "digest": "f7243b375c9f",
+  "note": "5IXV6FSA",
   "placed": [
    "CLD"
   ]
@@ -54,7 +61,7 @@
   ]
  },
  "allen-1998": {
-  "digest": "32cda2574ae0",
+  "digest": "16b3b8d18cae",
   "note": "HDBSFA6I",
   "placed": [
    "CLD"
@@ -121,7 +128,7 @@
   ]
  },
  "bonnet-2025": {
-  "digest": "f25ee16dd841",
+  "digest": "6dd7518689e5",
   "note": "Q3HXVNEV",
   "placed": [
    "CLD"
@@ -253,10 +260,11 @@
   ]
  },
  "delphy-2023-dorsd": {
-  "digest": "98bb1ddab3d5",
+  "digest": "73d8fa1c1388",
   "note": "VPEP6PXN",
   "placed": [
-   "Actor Map"
+   "Actor Map",
+   "CLD"
   ]
  },
  "delphy-home": {
@@ -289,7 +297,7 @@
   ]
  },
  "dijkshoorn-dekker-2024": {
-  "digest": "bfd88cca79ea",
+  "digest": "650367cc7afe",
   "note": "TR7FKARI",
   "placed": [
    "CLD"
@@ -379,6 +387,13 @@
    "CLD"
   ]
  },
+ "fi-compass-2020": {
+  "digest": "8d64bb524dd9",
+  "note": "NQSN48E8",
+  "placed": [
+   "CLD"
+  ]
+ },
  "freshplaza-2018": {
   "digest": "2ebea44625b8",
   "note": "UQ9S6QH5",
@@ -448,7 +463,7 @@
   ]
  },
  "janssens-2020": {
-  "digest": "cf33e202f69b",
+  "digest": "357f12a252ef",
   "note": "9DUZZSPB",
   "placed": [
    "Actor Map",
@@ -456,7 +471,7 @@
   ]
  },
  "kaandorp-2022": {
-  "digest": "572c2d5aa311",
+  "digest": "37ab86165a57",
   "note": "UCUZ55BX",
   "placed": [
    "Actor Map",
@@ -492,6 +507,13 @@
    "CLD"
   ]
  },
+ "krajenbrink-2023": {
+  "digest": "f7243b375c9f",
+  "note": "QBCW2M9X",
+  "placed": [
+   "CLD"
+  ]
+ },
  "kuiper-2023": {
   "digest": "b7ab158a2abb",
   "note": "R6KIGPHE",
@@ -518,6 +540,13 @@
   "note": "9SKFTESZ",
   "placed": [
    "Actor Map"
+  ]
+ },
+ "lamkowsky-2023": {
+  "digest": "8922e06e366f",
+  "note": "ZUM5D434",
+  "placed": [
+   "CLD"
   ]
  },
  "lases-2021": {
@@ -607,7 +636,7 @@
   ]
  },
  "magrini-2018": {
-  "digest": "e993e6e06227",
+  "digest": "a258e9a8d053",
   "note": "NFVZVRG8",
   "placed": [
    "CLD"
@@ -675,6 +704,13 @@
    "CLD"
   ]
  },
+ "nvb-2023": {
+  "digest": "9ab5e050dc12",
+  "note": "K5R5KDS8",
+  "placed": [
+   "CLD"
+  ]
+ },
  "omgevingswet-2026": {
   "digest": "008c497daba7",
   "note": "4FPXFMAI",
@@ -714,21 +750,21 @@
   ]
  },
  "pauw-2015": {
-  "digest": "11a0733704f3",
+  "digest": "a49addce8502",
   "note": "GN4T572Z",
   "placed": [
    "CLD"
   ]
  },
  "polman-2026": {
-  "digest": "00cd338944f1",
+  "digest": "e94c8b26a951",
   "note": "CT8IJIJE",
   "placed": [
    "CLD"
   ]
  },
  "provincie-zeeland-2021-grondwateronttrekkingen": {
-  "digest": "e499ec56bd2a",
+  "digest": "842769b0ea76",
   "note": "FUPAQDG5",
   "placed": [
    "CLD"
@@ -756,7 +792,7 @@
   ]
  },
  "raat-2026": {
-  "digest": "c54fb7dbcde8",
+  "digest": "efed71d20a2c",
   "note": "H25EG7M9",
   "placed": [
    "CLD"
@@ -879,7 +915,7 @@
   ]
  },
  "scheldestromen-2021-hor-duiveland": {
-  "digest": "9b1deb6e8ae5",
+  "digest": "dc3d655dda5f",
   "note": "QUFF4FFH",
   "placed": [
    "CLD"
@@ -901,7 +937,7 @@
   ]
  },
  "scheldestromen-2021-wbp": {
-  "digest": "f4f2583b125d",
+  "digest": "fb8a9eced972",
   "note": "SF72FMHC",
   "placed": [
    "Actor Map",
@@ -925,7 +961,7 @@
   ]
  },
  "scheldestromen-2026-grondwater": {
-  "digest": "2f1c2e35f5ff",
+  "digest": "af05ceb93e84",
   "note": "MT7QA2GF",
   "placed": [
    "Actor Map",
@@ -999,14 +1035,14 @@
   ]
  },
  "silvis-2017": {
-  "digest": "dac8fe56578a",
+  "digest": "f39bed49b35f",
   "note": "IBE9VSFM",
   "placed": [
    "CLD"
   ]
  },
  "silvis-2017-economische-ontwikkeling": {
-  "digest": "6a0f36c430b7",
+  "digest": "083c637f7085",
   "note": "C45DU9SQ",
   "placed": [
    "CLD"
@@ -1020,6 +1056,13 @@
   ]
  },
  "ten-dam-2023": {
+  "placed": [
+   "CLD"
+  ]
+ },
+ "terink-2023": {
+  "digest": "54f991de41d6",
+  "note": "QIUFXKQ8",
   "placed": [
    "CLD"
   ]
@@ -1058,7 +1101,7 @@
   ]
  },
  "van-der-meulen-2020": {
-  "digest": "424a5d26692a",
+  "digest": "9999a130312b",
   "note": "58K6T5V6",
   "placed": [
    "Actor Map",
@@ -1099,7 +1142,7 @@
   ]
  },
  "van-loo-2023": {
-  "digest": "3c0213ab8ad8",
+  "digest": "15e4ad1fd77e",
   "note": "I5C4TP2T",
   "placed": [
    "CLD"
@@ -1127,7 +1170,7 @@
   ]
  },
  "verstand-2021": {
-  "digest": "0d304b993961",
+  "digest": "ce5cb937e469",
   "note": "3TC36KKG",
   "placed": [
    "CLD"

@@ -1421,9 +1421,10 @@
       "to": "mortgage-debt-financial-leverage",
       "polarity": "-",
       "delay": false,
-      "description": "With the same debt, a lower land value is a higher debt relative to the farm's assets: land is 70% of an arable farm's balance sheet (van der Meulen et al., 2020, p. 13), and its rise in value is what made arable farms' solvency 81% in 2018 (p. 21). A high solvency can let a farm borrow more and at a lower rate (p. 19); the debt itself does not shrink when the land loses value. It holds for the land a farm owns: farms owning little of it barely gain from a rising price (p. 26). Within the year: the farm accounts value the land each year (p. 13).",
+      "description": "With the same debt, a lower land value is a higher debt relative to the farm's assets: land is 70% of an arable farm's balance sheet (van der Meulen et al., 2020, p. 13), and its rise in value is what made arable farms' solvency 81% in 2018 (p. 21). A high solvency can let a farm borrow more and at a lower rate (p. 19); the debt itself does not shrink when the land loses value. It holds for the land a farm owns: farms owning little of it barely gain from a rising price (p. 26). While land rose the ratio moved little: from 2006 to 2015 Dutch arable farms' balance sheet per farm doubled, mainly through the rise in the land price, while their solvency rose only from 76% to 78% and their bank loans went from just over 5,000 to 10,000 euro per ha, an unchanged 16% share (Silvis et al., 2017, p. 2, national farm accounts). The note was commissioned by a.s.r. vastgoed vermogensbeheer (p. 4). Within the year: the farm accounts value the land each year (van der Meulen et al., 2020, p. 13).",
       "sources": [
-        "van-der-meulen-2020"
+        "van-der-meulen-2020",
+        "silvis-2017-economische-ontwikkeling"
       ],
       "curvature": -0.22
     },
@@ -1444,11 +1445,13 @@
       "to": "demand-for-deep-polder-drainage",
       "polarity": "+",
       "delay": false,
-      "description": "Soil work for potatoes should not be done when the soil is too wet, which can smear and compact it; for onions, too-wet soil work can keep a well-crumbled seedbed from forming, and in March and April, as the scenarios' rain rises, unfavourable conditions for it may become more likely; where blight cannot be well controlled, as in organic farming, a potato crop is best planted early where the soil allows (Verstand et al., 2021, pp. 25, 27, for the Netherlands, from a cultivation guide, a crop study and an expert). So the more of the rotation they take, the more farmers need fields that dry early in spring; holding water back longer, as a buffer for dry times, is sometimes hard for farmers who want onto the land with heavy machinery (Waterschap Scheldestromen, 2021c, p. 44); on Duiveland the board moves to the higher summer level in March and April as the soil work allows (2021a, p. 66). No source read shows how much spring soil work the new crops need: the sign rests on their needing less. Within the year.",
+      "description": "Soil work for potatoes should not be done when the soil is too wet, which can smear and compact it; for onions, too-wet soil work can keep a well-crumbled seedbed from forming, and in March and April, as the scenarios' rain rises, unfavourable conditions for it may become more likely; where blight cannot be well controlled, as in organic farming, a potato crop is best planted early where the soil allows (Verstand et al., 2021, pp. 25, 27, for the Netherlands, from a cultivation guide, a crop study and an expert). So the more of the rotation they take, the more farmers need fields that dry early in spring; holding water back longer, as a buffer for dry times, is sometimes hard for farmers who want onto the land with heavy machinery (Waterschap Scheldestromen, 2021c, p. 44); on Duiveland the board moves to the higher summer level in March and April as the soil work allows (2021a, p. 66). No source read shows how much spring soil work the new crops need: the sign rests on their needing less. Quinoa, a salt-tolerant crop, also needs soil work in spring: in the Netherlands it is sown from the end of March to the end of April and needs a fine seed bed (van Loo, 2023, pp. 75, 77, by a Wageningen breeder whose group develops quinoa varieties), so the sign holds where the share moves to crops sown in autumn or winter, such as winter wheat, sown from mid-September to early February (Verstand et al., 2021, p. 29), less clearly where it moves to quinoa; and on clay and zavel, the main topsoil of the island's western low polders (Kaandorp et al., 2022, p. 27), the main soil work for potatoes is often done before winter (Verstand et al., 2021, p. 25). Within the year.",
       "sources": [
         "verstand-2021",
         "scheldestromen-2021-wbp",
-        "scheldestromen-2021-hor-duiveland"
+        "scheldestromen-2021-hor-duiveland",
+        "van-loo-2023",
+        "kaandorp-2022"
       ],
       "curvature": -0.32
     },
@@ -1526,10 +1529,12 @@
       "to": "crop-water-shortfall",
       "polarity": "-",
       "delay": false,
-      "description": "Rain, irrigation and capillary rise from the groundwater add water to the root zone and lower its depletion; once the depletion passes the readily available water, the crop uses less water than it needs (Allen et al., 1998, FAO-56 ch. 8, eqs. 84–85, a daily water balance). So the more fresh water crops can draw on, the smaller the shortfall, within the season. On the island's farms a gift of 20 to 25 mm at germination can make the difference where none can be given now (Kaandorp et al., 2022, pp. 27, 55).",
+      "description": "Rain, irrigation and capillary rise from the groundwater add water to the root zone and lower its depletion; once the depletion passes the readily available water, the crop uses less water than it needs (Allen et al., 1998, FAO-56 ch. 8, eqs. 84–85, a daily water balance). So the more fresh water crops can draw on, the smaller the shortfall, within the season. On the island's farms a gift of 20 to 25 mm at germination can make the difference where none can be given now (Kaandorp et al., 2022, pp. 27, 55). In the low western polders (Scharendijke–Brouwershaven–Kerkwerve) the farmers in the project's quickscans find drought a problem mainly at germination: once the crop has come up well, the soil's good moisture supply keeps drought damage later in summer limited even in dry years, and waterlogging is often felt as the larger problem (Kaandorp et al., 2022, p. 27), though a study paid for by the island's farmers' association assumes a much larger water need (Delphy, 2023, p. 40). How much extra water eases also depends on crop and year: raising the water table by subirrigation on a test field at Rusthoeve on Noord-Beveland, on sandy clay (zavel) with saline seepage, raised dry-matter yield against a reference field by 18 % for onions in dry 2022 but by 2 to 7 % for chicory in dry 2020 and for wheat and potato in normal-to-wet 2021 (Terink et al., 2023, p. 44, a trial by KnowH2O and KWR paid for by the province, the water board and the municipality of Noord-Beveland).",
       "sources": [
         "allen-1998",
-        "kaandorp-2022"
+        "kaandorp-2022",
+        "delphy-2023-dorsd",
+        "terink-2023"
       ],
       "curvature": -0.32
     },
@@ -1538,10 +1543,12 @@
       "to": "groundwater-extraction-for-irrigation",
       "polarity": "+",
       "delay": false,
-      "description": "Farmers pump more fresh groundwater as the shortfall grows: the water board registered a considerable increase in extractions in recent years, which the more extreme drought certainly influenced, so the volume pumped rises in dry years (Gedeputeerde Staten van Zeeland, 2021, for Zeeland, whose farms pump under the same rules as the island's). On Schouwen-Duiveland the farms get their fresh water from rain and from the fresh groundwater; the shallow groundwater and the surface water hold high salt levels, and no fresh water can be brought in during dry periods (Kaandorp et al., 2022, p. 8). They may pump only from fresh groundwater more than 15 m thick (p. 26), which lies under the creek ridges and the dunes (p. 10): in the low polders the farmers talked to do not sprinkle, some trying drip irrigation, while on a creek ridge a livestock farmer pumps from two deep drains for grassland in the summer season, more in dry years, and an arable farmer occasionally irrigates about 20 mm at germination, the report not saying where that water comes from (pp. 27–28, 40, 43). So the link runs where a farm has fresh groundwater under it. Within the year.",
+      "description": "Farmers pump more fresh groundwater as the shortfall grows: the water board registered a considerable increase in extractions in recent years, which the more extreme drought certainly influenced, so the volume pumped rises in dry years (Gedeputeerde Staten van Zeeland, 2021, for Zeeland, whose farms pump under the same rules as the island's). On Schouwen-Duiveland the farms get their fresh water from rain and from the fresh groundwater; the shallow groundwater and the surface water hold high salt levels, and no fresh water can be brought in during dry periods (Kaandorp et al., 2022, p. 8). They may pump only from fresh groundwater more than 15 m thick (p. 26), which lies under the creek ridges and the dunes (p. 10): in the low polders the farmers talked to do not sprinkle, some trying drip irrigation, while on a creek ridge a livestock farmer pumps from two deep drains for grassland in the summer season, more in dry years, and an arable farmer occasionally irrigates about 20 mm at germination, the report not saying where that water comes from (pp. 27–28, 40, 43). So the link runs where a farm has fresh groundwater under it. The rules cap each well's pumping: under Waterschap Scheldestromen's general rule a well may take at most 800 m³ a year per hectare of its parcel (80 mm) and 8,000 m³ a year, a permit with conditions being possible where a well cannot meet them (Waterschap Scheldestromen, 2026b, art. 2.9 and its explanation). For the creek ridges of the south-western delta, Deltares researchers presenting a system to enlarge their fresh lenses stated in 2015, under the rules of that time, that irrigation demand already exceeded the permissible extraction, which led to crop damage (Pauw et al., 2015, p. 1415, a statement, not a measurement), so in a dry summer a growing shortfall may end in crop damage rather than in more pumping. Within the year.",
       "sources": [
         "provincie-zeeland-2021-grondwateronttrekkingen",
-        "kaandorp-2022"
+        "kaandorp-2022",
+        "scheldestromen-2026-grondwater",
+        "pauw-2015"
       ],
       "curvature": -0.07
     },
@@ -1550,9 +1557,11 @@
       "to": "freshwater-availability-for-crops",
       "polarity": "+",
       "delay": false,
-      "description": "What farmers pump is fresh water their crops get: what pumping gains them. In the study's options for the island it goes onto the field by reel sprinkler or by drip, and the method influences how much of it the crop gets: drip loses less water, so a cubic metre covers more land, while a reel usually gives several gifts per hectare (Kaandorp et al., 2022, p. 35, in its cost-benefit analysis for the island's farms). On a cluster of three farms on a creek ridge, a livestock farmer irrigates grassland in dry years, in midsummer too, from two deep drains under a permit of up to 16,000 m³ a year (pp. 40, 43). The salt a well may draw up with the water runs through Upconing of salt groundwater. Within the season: within the year, no delay.",
+      "description": "What farmers pump is fresh water their crops get: what pumping gains them. In the study's options for the island it goes onto the field by reel sprinkler or by drip, and the method influences how much of it the crop gets: drip loses less water, so a cubic metre covers more land, while a reel usually gives several gifts per hectare (Kaandorp et al., 2022, p. 35, in its cost-benefit analysis for the island's farms). On a cluster of three farms on a creek ridge, a livestock farmer irrigates grassland in dry years, in midsummer too, from two deep drains under a permit of up to 16,000 m³ a year (pp. 40, 43). Across the whole island it is a small flow: a water balance from model output and the water board's permits puts groundwater irrigation at 0.33 million m³ a summer half-year, taken at the permitted maximum since what is actually pumped is unknown, against a precipitation deficit of about 30 million m³ in the dry summer of 2018 (Krajenbrink et al., 2023, pp. 44, 46, 48; the authors call the irrigation figures probably inaccurate and the groundwater irrigation of 2018 still on the low side, pp. 45, 47). Of what a reel sprays, about 60% went to crop growth on potatoes and onions, against 80 to 90% for drip on onions, measured at Philippine in Zeeuws-Vlaanderen with the farmer sprinkling in the evening and not in wind, in a project with an irrigation firm in its team (Acacia Water, 2020, pp. ii, 25). The salt a well may draw up with the water runs through Upconing of salt groundwater. Within the season: within the year, no delay.",
       "sources": [
-        "kaandorp-2022"
+        "kaandorp-2022",
+        "krajenbrink-2023",
+        "acacia-water-2020"
       ],
       "curvature": 0.32
     },
@@ -2160,7 +2169,7 @@
       "to": "capital-lost-on-switching",
       "polarity": "+",
       "delay": false,
-      "description": "The more a farm owns that only its current crops can use, the more a switch leaves idle: a store still stands when its crops take a smaller part of the rotation, and its costs do not fall (Polman et al., 2026, pp. 15, 17), and expensive machines are in some cases suited to one or a few crops (Bonnet & Tiktak, 2025, p. 45). What a new crop can use is not lost (Capital lost on switching). Within the year, at the moment of switching.",
+      "description": "The more a farm owns that only its current crops can use, the more a switch leaves idle: a store still stands when its crops take a smaller part of the rotation, and its costs do not fall (Polman et al., 2026, pp. 15, 17), and expensive machines are in some cases suited to one or a few crops (Bonnet & Tiktak, 2025, p. 45). What a new crop can use is not lost (Capital lost on switching). A machine or building can still earn after its crop leaves the farm when it is rented out or used for work for other farms: nationally, a relatively large share of arable farms with a standard output below 250,000 euro have other income, such as from renting out machines or buildings or from contract work (Bonnet & Tiktak, 2025, p. 36). The source does not say whether that work uses root-crop machines or stores, and a salinity shock that moves the island's farms off the same crops at once may shrink that work too, which no source read measures. Within the year, at the moment of switching.",
       "sources": [
         "polman-2026",
         "bonnet-2025"
@@ -2172,11 +2181,12 @@
       "to": "dependence-on-high-margin-salt-sensitive-crops",
       "polarity": "+",
       "delay": false,
-      "description": "What a farm's capital would stop earning holds it to its current crops. Of four arable farmers interviewed about a scheme for less intensive rotations, one, in the loess of Limburg, had recently built a store, which stands and which they want to use, and they and a farmer with plans for water storage said the investment has to be used, so that the onions stored, for example, would not soon leave the rotation (Dijkshoorn-Dekker et al., 2024, pp. 57, 71). Investments in expensive machines suited to one or a few crops keep a contractor and a farmer dependent on those crops for a long time (Bonnet & Tiktak, 2025, p. 45). It holds while the crops can be grown: in the island's low polders, where the surface water is salty all year, farmers have stopped growing sensitive crops such as sown onions (Kaandorp et al., 2022, p. 31). Within the year, as the rotation is chosen each season.",
+      "description": "What a farm's capital would stop earning holds it to its current crops. Of four arable farmers interviewed about a scheme for less intensive rotations, one, in the loess of Limburg, had recently built a store, which stands and which they want to use, and they and a farmer with plans for water storage said the investment has to be used, so that the onions stored, for example, would not soon leave the rotation (Dijkshoorn-Dekker et al., 2024, pp. 57, 71). Investments in expensive machines suited to one or a few crops keep a contractor and a farmer dependent on those crops for a long time (Bonnet & Tiktak, 2025, p. 45). It holds while the crops can be grown: in the island's low polders, where the surface water is salty all year, farmers have stopped growing sensitive crops such as sown onions (Kaandorp et al., 2022, p. 31). On the island as a whole the lack of fresh water seems to set the share: its one interviewed farmer, with half his rotation in root crops, judged the calculated move to a less intensive rotation relatively cheap to reach there \"door zoetwatergebrek\" (for lack of fresh water), and the workshop held high-margin crops no option on an island with little fresh water (Dijkshoorn-Dekker et al., 2024, pp. 56–57, 59). An exploration of the island by the water institute KWR sees a clear shift to less intensive crops in response to drought, fewer onions and more cereals, and relatively fewer potatoes and vegetables, mainly onions, than on Goeree-Overflakkee, which can take in fresh water from the main water system (Raat et al., 2026, pp. 34, 49). Within the year, as the rotation is chosen each season.",
       "sources": [
         "dijkshoorn-dekker-2024",
         "bonnet-2025",
-        "kaandorp-2022"
+        "kaandorp-2022",
+        "raat-2026"
       ],
       "curvature": 0.32
     },
@@ -2195,7 +2205,7 @@
       "to": "spending-on-keeping-current-crops",
       "polarity": "+",
       "delay": true,
-      "description": "The more of the rotation is potatoes and onions, the more a farm spends on what they need: in farm accounts across the Netherlands from 2014 to 2022 a larger share of ware potatoes, seed potatoes, onions and winter carrots goes with significantly higher costs that no crop is charged with, buildings and machines among them, and storing these crops takes a store (Polman et al., 2026, pp. 5, 11, 15). In France, specialising in a few crops is explained in part by writing off the equipment (Magrini et al., 2018, p. 3). The differences lie mostly between farms, less in how one farm changes over the years (Polman et al., 2026, p. 4): machines are written off at 8.2% a year and buildings at 3%, about 12 and 33 years if written off evenly (Janssens et al., 2020, p. 13). Years, so a delay.",
+      "description": "The more of the rotation is potatoes and onions, the more a farm spends on what they need: in farm accounts across the Netherlands from 2014 to 2022 a larger share of ware potatoes, seed potatoes, onions and winter carrots goes with significantly higher costs that no crop is charged with, buildings and machines among them, and storing these crops takes a store (Polman et al., 2026, pp. 5, 11, 15). The authors estimate the crops' effect with a random-effects model whose assumption they call very strong and probably untrue: they limit the bias with control variables, but call the results less reliable (Polman et al., 2026, pp. 5, 12–13). In France, specialising in a few crops is explained in part by writing off the equipment (Magrini et al., 2018, p. 3). The differences lie mostly between farms, less in how one farm changes over the years (Polman et al., 2026, p. 4): machines are written off at 8.2% a year and buildings at 3%, about 12 and 33 years if written off evenly (Janssens et al., 2020, p. 13). Years, so a delay.",
       "sources": [
         "polman-2026",
         "magrini-2018",
@@ -2244,12 +2254,13 @@
       "to": "banks-risk-assessment",
       "polarity": "+",
       "delay": false,
-      "description": "A farm with less equity against its debt is a riskier loan: a high solvency can let a farm borrow more and at a lower rate (van der Meulen et al., 2020, p. 19), and more financing still requires a contribution of the farm's own (Silvis & Voskuilen, 2017, p. 3). Dutch banks assess investment plans by cash flows, solvency rates and the entrepreneur's track record (van der Meulen & van Asseldonk, 2017, p. 2), and a Rabobank adviser holds that a farm may be expected to have a solvency of at least 30 or 40% (Banken.nl, 2019). Banks weigh it beside the farm's cash flow, which counts more and more (van der Meulen et al., 2020, p. 19). Within the year: a bank judges it with each loan.",
+      "description": "A farm with less equity against its debt is a riskier loan: a high solvency can let a farm borrow more and at a lower rate (van der Meulen et al., 2020, p. 19), and more financing still requires a contribution of the farm's own (Silvis & Voskuilen, 2017, p. 3). Dutch banks assess investment plans by cash flows, solvency rates and the entrepreneur's track record (van der Meulen & van Asseldonk, 2017, p. 2), and a Rabobank adviser holds that a farm may be expected to have a solvency of at least 30 or 40% (Banken.nl, 2019). Banks weigh it beside the farm's cash flow, which counts more and more (van der Meulen et al., 2020, p. 19). In a simulation of banks' check on 264 Dutch dairy farms, 2009–2017, with two criteria the author set (a new loan within the repayment capacity from past net cash flow, and solvency not below 30%), solvency was the limit for only 1.2% of farm observations, and the author holds that solvency rarely limits a bank loan because most Dutch dairy farms are rich in land, which gives banks the confidence that they will recover their finance even in default (Lamkowsky, 2023, pp. 51, 55–56, 94, 101). Dutch arable farms had on average a higher solvency still, 81% in 2018 against 74% on dairy farms, though it differs widely within each type (van der Meulen et al., 2020, p. 21), and the study calls its test conservative, as Dutch banks might have lent more thanks to dairy farms' high solvency (Lamkowsky, 2023, p. 60). Within the year: a bank judges it with each loan.",
       "sources": [
         "van-der-meulen-2020",
         "silvis-2017",
         "van-der-meulen-van-asseldonk-2017",
-        "banken-nl-2019"
+        "banken-nl-2019",
+        "lamkowsky-2023"
       ],
       "curvature": -0.22
     },
@@ -2282,10 +2293,11 @@
       "to": "bank-credit-freeze-risk-premiums",
       "polarity": "+",
       "delay": false,
-      "description": "Banks charge more for loans they see as riskier: the expected losses and the capital held against a loan, which the premium covers, rise with the credit risk the bank sees in the farm's creditworthiness, the size of the loan, its security and the sector's prospects (ABN AMRO, n.d.-a), and within the terms agreed a bank can change the premium during the loan when the farm's creditworthiness changes (n.d.-b). Within the year: the bank sets the premium with each loan and can revise it during the loan.",
+      "description": "Banks charge more for loans they see as riskier: the expected losses and the capital held against a loan, which the premium covers, rise with the credit risk the bank sees in the farm's creditworthiness, the size of the loan, its security and the sector's prospects (ABN AMRO, n.d.-a), and within the terms agreed a bank can change the premium during the loan when the farm's creditworthiness changes (n.d.-b). Where a bank judges a farm investment too risky it may also refuse the loan outright: 51% of the surveyed Dutch farms whose loan application was rejected (15% of medium- and long-term applications in 2017) named too high an investment risk as a reason, though banks put their rejection rate for farmers at 1–2%, and stakeholders interviewed say banks are more inclined to reject loan applications based on untested innovative ways of farming (fi-compass, 2020, pp. 17, 24, 33, a study made with EU funding, measured in a survey of 301 Dutch farms, not split by sector, on their 2017 applications). Within the year: the bank sets the premium with each loan and can revise it during the loan.",
       "sources": [
         "abn-amro-nd-kosten-krediet",
-        "abn-amro-nd-uitleg-rente"
+        "abn-amro-nd-uitleg-rente",
+        "fi-compass-2020"
       ],
       "curvature": 0.14
     },
@@ -2331,10 +2343,11 @@
       "to": "debt-payments",
       "polarity": "+",
       "delay": false,
-      "description": "A higher premium raises the interest farms pay: a loan's rate changes when its specific premium does (ABN AMRO, n.d.-b), and the farms' operations often leave little or no room for higher financing costs (van der Meulen et al., 2020, p. 47). The bank sets the premium with each new loan and may revise it during a loan within its terms (ABN AMRO, n.d.-b), so the change reaches the payments as loans are made or revised: within the year, the source giving no timing. No source read gives how much of the farms' debt carries a premium the bank can revise.",
+      "description": "A higher premium raises the interest farms pay: a loan's rate changes when its specific premium does (ABN AMRO, n.d.-b), and the farms' operations often leave little or no room for higher financing costs (van der Meulen et al., 2020, p. 47). The bank sets the premium with each new loan and may revise it during a loan within its terms (ABN AMRO, n.d.-b), so the change reaches the payments as loans are made or revised: within the year, the source giving no timing. The banks' sector body's code of conduct bars a bank from changing a fixed rate during its fixed-rate period, or a premium agreed as fixed for a period, unless the client breaches its loan terms, while a variable premium may change, for example with a change in the client's risk profile (Nederlandse Vereniging van Banken, 2023, p. 15), so on a loan under the code with a fixed total rate or a fixed premium a higher premium reaches the payments only at the next reset, a new loan or a breach. These rules hold for loans requested from 1 July 2023, earlier loans from 1 July 2018 falling under the code's first version (p. 9), and for clients with a yearly group turnover up to 5 million euro and loans totalling up to 2 million euro (p. 5), a loan limit the average Dutch arable farm's bank loans of almost 1 million euro in 2018 stay within (van der Meulen et al., 2020, p. 21); no source read gives the island's farms' debt. No source read gives how much of the farms' debt carries a premium the bank can revise.",
       "sources": [
         "abn-amro-nd-uitleg-rente",
-        "van-der-meulen-2020"
+        "van-der-meulen-2020",
+        "nvb-2023"
       ],
       "curvature": -0.07
     },
@@ -2820,7 +2833,7 @@
         "machines-and-storage-for-current-crops",
         "capital-lost-on-switching"
       ],
-      "description": "A farm tied to its current crops spends on keeping them as machines and stores fall due, over years. The more it owns for those crops, the more a switch to a new crop would write off, and what it would lose ties it further to them. It holds back new crops, and leaves tolerant varieties of the current crops nearly untouched."
+      "description": "A farm tied to its current crops spends on keeping them as machines and stores fall due, over years. The more it owns for those crops, the more a switch to a new crop would write off, and what it would lose ties it further to them. It holds back new crops, and leaves tolerant varieties of the current crops nearly untouched. On Schouwen-Duiveland R3 may be weak: its farm-level evidence is a store built in the Limburg loess and one farmer's plans for water storage, while the island's own farmer ties the low cost of a less intensive rotation there to the lack of fresh water, and the workshop and an exploration of the island tie the share of sensitive crops to it and to drought (Dijkshoorn-Dekker et al., 2024, pp. 56–57, 59, 71; Raat et al., 2026, pp. 34, 49)."
     },
     {
       "id": "B5",
@@ -2830,7 +2843,7 @@
         "groundwater-extraction-for-irrigation",
         "freshwater-availability-for-crops"
       ],
-      "description": "As the crop water shortfall grows, farmers pump more fresh groundwater, crops get more water and the shortfall shrinks, within the season. It seeks the water the crop needs, and runs only where a farm has fresh groundwater more than 15 m thick under it, on the creek ridges and dunes; the farmers talked to in the low polders do not irrigate. Where it eases the shortfall it eases the worse harvests that make storing worthwhile (B6), so it can hold storage back."
+      "description": "As the crop water shortfall grows, farmers pump more fresh groundwater, crops get more water and the shortfall shrinks, within the season. It seeks the water the crop needs, and runs only where a farm has fresh groundwater more than 15 m thick under it, on the creek ridges and dunes; the farmers talked to in the low polders do not irrigate. Across the whole island it can move little: groundwater irrigation, taken at the permitted maximum, a figure the authors call probably inaccurate, is about one hundredth of the 2018 precipitation deficit (Krajenbrink et al., 2023, pp. 44–46, 48). Where it eases the shortfall it eases the worse harvests that make storing worthwhile (B6), so it can hold storage back."
     },
     {
       "id": "B6",

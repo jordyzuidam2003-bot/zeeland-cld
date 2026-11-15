@@ -41,6 +41,13 @@
    "Actor Map"
   ]
  },
+ "acacia-water-nd-kleine-zoetwaterlenzen": {
+  "digest": "2c4ce14325d2",
+  "note": "TBJG27MU",
+  "placed": [
+   "CLD"
+  ]
+ },
  "adviescommissie-westerschelde": {
   "digest": "341c05f747e1",
   "note": "V6R83V5F",
@@ -61,7 +68,7 @@
   ]
  },
  "allen-1998": {
-  "digest": "16b3b8d18cae",
+  "digest": "57a7d961be06",
   "note": "HDBSFA6I",
   "placed": [
    "CLD"
@@ -130,6 +137,13 @@
  "bonnet-2025": {
   "digest": "6dd7518689e5",
   "note": "Q3HXVNEV",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "brabantse-delta-2026": {
+  "digest": "07e617c4743a",
+  "note": "6R7RRVPZ",
   "placed": [
    "CLD"
   ]
@@ -213,7 +227,7 @@
   ]
  },
  "de-louw-2011": {
-  "digest": "629facc928a9",
+  "digest": "950d5433a817",
   "note": "PFVBHFHI",
   "placed": [
    "CLD"
@@ -260,7 +274,7 @@
   ]
  },
  "delphy-2023-dorsd": {
-  "digest": "73d8fa1c1388",
+  "digest": "0eb210c5ed68",
   "note": "VPEP6PXN",
   "placed": [
    "Actor Map",
@@ -471,7 +485,7 @@
   ]
  },
  "kaandorp-2022": {
-  "digest": "37ab86165a57",
+  "digest": "960316e3c547",
   "note": "UCUZ55BX",
   "placed": [
    "Actor Map",
@@ -728,7 +742,7 @@
   ]
  },
  "omroep-zeeland-2026-aardappeloogst": {
-  "digest": "21e744aade1e",
+  "digest": "d61b5392f99b",
   "note": "DMCZNK7A",
   "placed": [
    "Actor Map",
@@ -743,7 +757,7 @@
   ]
  },
  "oude-essink-2018": {
-  "digest": "c600ca91c931",
+  "digest": "0b13fd38d7c3",
   "note": "RBU5JMXG",
   "placed": [
    "CLD"
@@ -764,7 +778,7 @@
   ]
  },
  "provincie-zeeland-2021-grondwateronttrekkingen": {
-  "digest": "842769b0ea76",
+  "digest": "027d7e94f2f7",
   "note": "FUPAQDG5",
   "placed": [
    "CLD"
@@ -914,6 +928,13 @@
    "CLD"
   ]
  },
+ "scheldestromen-2019-nota-grondwater": {
+  "digest": "14f7f36f130d",
+  "note": "HCUW2MDZ",
+  "placed": [
+   "CLD"
+  ]
+ },
  "scheldestromen-2021-hor-duiveland": {
   "digest": "dc3d655dda5f",
   "note": "QUFF4FFH",
@@ -961,7 +982,7 @@
   ]
  },
  "scheldestromen-2026-grondwater": {
-  "digest": "af05ceb93e84",
+  "digest": "46b6579c661e",
   "note": "MT7QA2GF",
   "placed": [
    "Actor Map",
@@ -995,6 +1016,13 @@
   "note": "F93HUD6V",
   "placed": [
    "Actor Map",
+   "CLD"
+  ]
+ },
+ "schipper-2014": {
+  "digest": "07e617c4743a",
+  "note": "43ESUU6P",
+  "placed": [
    "CLD"
   ]
  },
@@ -1141,6 +1169,13 @@
    "CLD"
   ]
  },
+ "van-hateren-2025": {
+  "digest": "63d47ec59d31",
+  "note": "HB5E6BXE",
+  "placed": [
+   "CLD"
+  ]
+ },
  "van-loo-2023": {
   "digest": "15e4ad1fd77e",
   "note": "I5C4TP2T",
@@ -1192,7 +1227,7 @@
   ]
  },
  "witteveen-bos-2021": {
-  "digest": "5941b21d7b0c",
+  "digest": "442f11686b46",
   "note": "4BH22CVC",
   "placed": [
    "Actor Map",

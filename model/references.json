@@ -4475,5 +4475,167 @@
     "genre": "Eindrapport",
     "publisher": "KnowH2O; KWR Water Research Institute",
     "URL": "https://edepot.wur.nl/641909"
+  },
+  {
+    "id": "van-hateren-2025",
+    "type": "report",
+    "author": [
+      {
+        "family": "van Hateren",
+        "given": "T."
+      },
+      {
+        "family": "van Woerkom",
+        "given": "T."
+      },
+      {
+        "family": "Roelandse",
+        "given": "A."
+      },
+      {
+        "family": "Gevaert",
+        "given": "A."
+      },
+      {
+        "family": "Mooij",
+        "given": "P."
+      },
+      {
+        "family": "Sandfort",
+        "given": "N."
+      },
+      {
+        "family": "Cammaert",
+        "given": "P."
+      },
+      {
+        "family": "Kaandorp",
+        "given": "V."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Innovatieve drainage demonstreren, monitoren en evalueren: Eindrapport",
+    "genre": "Rapport",
+    "number": "11208968-002-BGS-0002",
+    "publisher": "Deltares",
+    "URL": "https://livinglabschouwen-duiveland.nl/sites/default/files/2025-03/112089~1.PDF"
+  },
+  {
+    "id": "schipper-2014",
+    "type": "report",
+    "author": [
+      {
+        "family": "Schipper",
+        "given": "P. N. M."
+      },
+      {
+        "family": "Janssen",
+        "given": "G. M. C. M."
+      },
+      {
+        "family": "Polman",
+        "given": "N. B. P."
+      },
+      {
+        "family": "Linderhof",
+        "given": "V. G. M."
+      },
+      {
+        "family": "van Bakel",
+        "given": "P. J. T."
+      },
+      {
+        "family": "Massop",
+        "given": "H. M."
+      },
+      {
+        "family": "Kselik",
+        "given": "R. A. L."
+      },
+      {
+        "family": "Stuyt",
+        "given": "L. C. P. M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "title": "Effect zout Volkerak-Zoommeer op de zoetwatervoorziening van de landbouw: Berekening droogte- en zoutschade met €ureyeopener 2.1 voor Tholen, St. Philipsland, Oostflakkee, Reigersbergsche en PAN-polders",
+    "genre": "Alterra-rapport",
+    "number": "2511",
+    "publisher": "Alterra Wageningen UR",
+    "URL": "https://edepot.wur.nl/302615"
+  },
+  {
+    "id": "brabantse-delta-2026",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Brabantse Delta"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          21
+        ]
+      ]
+    },
+    "title": "Zesde besluit onttrekkingsverbod oppervlaktewater 2026",
+    "collection-title": "Waterschapsblad",
+    "collection-number": "2026, nr. 19507",
+    "URL": "https://zoek.officielebekendmakingen.nl/wsb-2026-19507.html"
+  },
+  {
+    "id": "scheldestromen-2019-nota-grondwater",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "title": "Nota Grondwater",
+    "number": "Registratienummer 2019005935",
+    "URL": "https://scheldestromen.nl/sites/default/files/2023-10/Nota%20grondwater%202019.pdf"
+  },
+  {
+    "id": "acacia-water-nd-kleine-zoetwaterlenzen",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Acacia Water"
+      }
+    ],
+    "title": "Is duurzame winning uit kleine zoetwaterlenzen mogelijk?",
+    "genre": "Project page",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          14
+        ]
+      ]
+    },
+    "URL": "https://www.acaciawater.com/nl/project/is-duurzame-winning-uit-kleine-zoetwaterlenzen-mogelijk/"
   }
 ]

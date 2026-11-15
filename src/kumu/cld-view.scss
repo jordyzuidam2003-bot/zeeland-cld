@@ -52,10 +52,9 @@ element {
 /* ---------- Regions: the page's two subsystem regions as a background image ---------- */
 /* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,
    pinned at the centre of the regions' frame, and its width and height, the frame's, and puts the
-   regions in place of IMAGE, as a data URL of the SVG it draws, so the image travels inside the
-   project file */
+   regions in the element's image field, as a data URL of the SVG it draws, so the image travels
+   inside the project file and never in this view, which Kumu's advanced editor shows to anyone */
 #background {
-  image-url: url(IMAGE);
   layer: background;
   shape: rectangle;
   color: transparent;

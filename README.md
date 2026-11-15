@@ -447,8 +447,9 @@ Kumu, such as a link that needs a little more bend, Jordy adjusts there by hand 
 restore before a submission. Kumu's arrowheads are its own. The regions reach Kumu
 as a background image inside the file: the CLD's map holds an element labelled `background`,
 pinned at the centre of the regions' frame with the frame's width and height, which the
-`#background` rule in `src/kumu/cld-view.scss` shows behind the map, its `url(IMAGE)` replaced by
-`build.py` with a data URL of the regions alone (`draw_cld.regions_svg()`), never a URL on the
+`#background` rule in `src/kumu/cld-view.scss` shows behind the map, its image field holding a
+data URL of the regions alone (`draw_cld.regions_svg()`), never in the view, which Kumu's advanced
+editor shows to anyone, and never a URL on the
 published page, so a copy shows its own version's regions and depends on no host (Jordy). The
 Actor Map's level bands reach it the same way, its element `elem-actors-background`. The subsystem is also
 a field there. `build.py` adds the rules that tint and size each box below `src/kumu/cld-view.scss`, and

@@ -36,9 +36,8 @@ element {
 
 /* ---------- Bands: the page's level bands as a background image ---------- */
 /* as cld-view.scss's #background: build.py adds the element, pinned at the centre of the bands'
-   frame, and its width and height, the frame's, and puts the bands in place of IMAGE, as a data URL */
+   frame, and its width and height, the frame's, and puts the bands in its image field, as a data URL */
 #background {
-  image-url: url(IMAGE);
   layer: background;
   shape: rectangle;
   color: transparent;

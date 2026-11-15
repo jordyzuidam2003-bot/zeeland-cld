@@ -714,11 +714,13 @@ def data_url(svg):
     return "data:image/svg+xml;base64," + base64.b64encode(svg.encode()).decode()
 
 
-def with_image(view, svg, name):
-    """The Kumu view with svg as its #background image, in place of the view's url(IMAGE)."""
-    if view.count("url(IMAGE)") != 1:
-        sys.exit(f"src/kumu/{name} needs url(IMAGE) once, in its #background rule: build.py puts the image there")
-    return view.replace("url(IMAGE)", f"url({data_url(svg)})")
+def background(_id, svg, view, name):
+    """The element the view's #background rule shows behind a map, its image svg as a data URL in the
+    element's own image field, so the image travels inside the project file and the view, which Kumu's
+    advanced editor shows to anyone, holds none of it (Jordy)."""
+    if "image-url" in view:
+        sys.exit(f"src/kumu/{name} sets an image-url: the background's image goes in its element's image field")
+    return {"_id": _id, "attributes": {"label": "background", "image": data_url(svg)}}
 
 
 def bare(view):
@@ -746,14 +748,13 @@ def project(cld, refs, actors, template):
     elements = [{"_id": f'elem-{e["id"]}',
                  "attributes": {**keep(e, {"id", "x", "y"}), "label": "  ".join(bxs[e["id"]][4])}}
                 for e in bp["elements"]]
-    # the regions: an element labelled background, the regions its image (cld-view.scss)
-    elements.append({"_id": "elem-background", "attributes": {"label": "background"}})
     regions, (fx0, fy0, fx1, fy1) = draw_cld.regions_svg(cld)
     # Kumu shows the regions stretched to the frame: with a viewBox alone a browser sizes an SVG 250
     # by 150 pixels, which Kumu blurred (draw_cld.regions_svg())
     if not re.match(r'<svg [^>]*\bwidth="\d+" height="\d+"', regions):
         sys.exit("the regions' SVG needs a width and a height besides its viewBox: draw_cld.regions_svg() writes them")
-    template = with_image(template, regions, "cld-view.scss")
+    # the regions: an element labelled background, the regions its image (cld-view.scss)
+    elements.append(background("elem-background", regions, template, "cld-view.scss"))
     rules = ([f'["sets domain"="{d.lower()}"] {{ color: {t}; }}' for d, t in draw_cld.TINT.items()]
              + [f'#elem-{i} {{ width: {round(b[2] - b[0])}; height: {round(b[3] - b[1])}; }}'
                 for i, b in bxs.items()]
@@ -832,7 +833,6 @@ def actors_project(actors, refs, decides, cld_labels, template):
     each kind's colour and dash from draw_actor_map.KIND and each box's size."""
     bxs, rels, _ = draw_actor_map.geometry(actors)
     bands, (fx0, fy0, fx1, fy1) = draw_actor_map.bands_svg(actors)
-    template = with_image(template, bands, "actor-map-view.scss")
     labels = {a["id"]: a["label"] for a in actors["actors"]}
     elements = [{"_id": f'elem-{a["id"]}', "attributes": {
         "label": "  ".join(bxs[a["id"]][4]), "element type": a["type"], "level": a["level"], "sector": a["sector"],
@@ -843,7 +843,7 @@ def actors_project(actors, refs, decides, cld_labels, template):
         **({"no relations": a["no relations"]} if "no relations" in a else {}),
         "sources": "\n".join(refs[k] for k in a["sources"])}} for a in actors["actors"]]
     # its own id beside the CLD's background, and the same label, which the view's #background selects
-    elements.append({"_id": "elem-actors-background", "attributes": {"label": "background"}})
+    elements.append(background("elem-actors-background", bands, template, "actor-map-view.scss"))
     connections = [{"_id": f'conn-{r["n"]}', "direction": "directed", "delayed": False, "reversed": False,
                     "attributes": {"connection type": r["kind"], "description": r["description"],
                                    "sources": "\n".join(refs[k] for k in r["sources"])},

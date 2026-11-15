@@ -3728,7 +3728,7 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "A farm with high debt payments keeps its lucrative but salt-sensitive crops to meet them.",
+        "description": "A farm with high debt payments keeps its lucrative but salt-sensitive crops to meet them. No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "yes",
@@ -4916,7 +4916,7 @@
       "_id": "loop-R2",
       "attributes": {
         "label": "R2 Debt and deep drainage feed each other through salt",
-        "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its debt payments rise. To meet them it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It shows an unintended consequence of the deep drainage in B4: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B2, B1)."
+        "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its debt payments rise. To meet them it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It closes only through a hypothesis, Debt payments → Dependence on high-margin salt-sensitive crops, which no source read tests; where indebted farms choose less risky crops instead, the loop breaks there. It shows an unintended consequence of the deep drainage in B4: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B2, B1)."
       },
       "connections": [
         "conn-mortgage-debt-financial-leverage--banks-risk-assessment",
@@ -5146,7 +5146,7 @@
       "_id": "loop-R9",
       "attributes": {
         "label": "R9 Changed plans erode trust",
-        "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. The step from objections to trust is a hypothesis for the group model building session; the step from trust back to objections rests on sources. It holds back storage, a long investment that a change of rules can strand, as trust falls."
+        "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. The step from objections to trust is a hypothesis for the group model building session; the step from trust back to objections rests on sources. It reinforces where farmers' objections are passed over, or through the conflict itself; where a body takes them up, the step may turn positive and the loop balancing. It holds back storage, a long investment that a change of rules can strand, as trust falls."
       },
       "connections": [
         "conn-policy-resistance-legal-delays--farmers-trust-in-government",
@@ -10244,7 +10244,7 @@
     {
       "_id": "map-loop-R2",
       "name": "18 R2 Debt and deep drainage feed each other through salt",
-      "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its debt payments rise. To meet them it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It shows an unintended consequence of the deep drainage in B4: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B2, B1).",
+      "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its debt payments rise. To meet them it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It closes only through a hypothesis, Debt payments → Dependence on high-margin salt-sensitive crops, which no source read tests; where indebted farms choose less risky crops instead, the loop breaks there. It shows an unintended consequence of the deep drainage in B4: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B2, B1).",
       "scale": 1,
       "center": {
         "x": 0,
@@ -12068,7 +12068,7 @@
     {
       "_id": "map-loop-R9",
       "name": "34 R9 Changed plans erode trust",
-      "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. The step from objections to trust is a hypothesis for the group model building session; the step from trust back to objections rests on sources. It holds back storage, a long investment that a change of rules can strand, as trust falls.",
+      "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. The step from objections to trust is a hypothesis for the group model building session; the step from trust back to objections rests on sources. It reinforces where farmers' objections are passed over, or through the conflict itself; where a body takes them up, the step may turn positive and the loop balancing. It holds back storage, a long investment that a change of rules can strand, as trust falls.",
       "scale": 1,
       "center": {
         "x": 0,

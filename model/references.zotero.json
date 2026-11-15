@@ -54,7 +54,7 @@
   ]
  },
  "allen-1998": {
-  "digest": "a18f7e82d494",
+  "digest": "32cda2574ae0",
   "note": "HDBSFA6I",
   "placed": [
    "CLD"
@@ -206,7 +206,7 @@
   ]
  },
  "de-louw-2011": {
-  "digest": "497df17f3637",
+  "digest": "629facc928a9",
   "note": "PFVBHFHI",
   "placed": [
    "CLD"
@@ -222,6 +222,13 @@
  "de-mesel-2013": {
   "digest": "b0a9ca089564",
   "note": "3D3B2UF2",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "de-vos-2016": {
+  "digest": "db17d873c4bb",
+  "note": "556X9A92",
   "placed": [
    "CLD"
   ]
@@ -449,7 +456,7 @@
   ]
  },
  "kaandorp-2022": {
-  "digest": "4c7bc0b312e6",
+  "digest": "572c2d5aa311",
   "note": "UCUZ55BX",
   "placed": [
    "Actor Map",
@@ -619,7 +626,7 @@
   ]
  },
  "munns-tester-2008": {
-  "digest": "779eb642b214",
+  "digest": "fbc1d38e2ec6",
   "note": "ZHEXIE4U",
   "placed": [
    "CLD"
@@ -693,7 +700,7 @@
   ]
  },
  "oude-essink-2010": {
-  "digest": "34c0659c759d",
+  "digest": "9b546df1d260",
   "note": "7TJXEUNE",
   "placed": [
    "CLD"
@@ -723,6 +730,13 @@
  "provincie-zeeland-2021-grondwateronttrekkingen": {
   "digest": "e499ec56bd2a",
   "note": "FUPAQDG5",
+  "placed": [
+   "CLD"
+  ]
+ },
+ "provincie-zeeland-2024": {
+  "digest": "334312692470",
+  "note": "QGXDI8Z6",
   "placed": [
    "CLD"
   ]
@@ -865,21 +879,21 @@
   ]
  },
  "scheldestromen-2021-hor-duiveland": {
-  "digest": "b83617664d76",
+  "digest": "9b1deb6e8ae5",
   "note": "QUFF4FFH",
   "placed": [
    "CLD"
   ]
  },
  "scheldestromen-2021-hor-schouwen": {
-  "digest": "6585bc048d42",
+  "digest": "e0e7af3b8151",
   "note": "WX6WV3N8",
   "placed": [
    "CLD"
   ]
  },
  "scheldestromen-2021-peilbesluit-duiveland": {
-  "digest": "2e453ec1944d",
+  "digest": "ec7849e44064",
   "note": "3WRIQ6MM",
   "placed": [
    "Actor Map",
@@ -887,7 +901,7 @@
   ]
  },
  "scheldestromen-2021-wbp": {
-  "digest": "66dc57b12459",
+  "digest": "f4f2583b125d",
   "note": "SF72FMHC",
   "placed": [
    "Actor Map",
@@ -895,7 +909,7 @@
   ]
  },
  "scheldestromen-2022-peilbesluit-schouwen": {
-  "digest": "2e453ec1944d",
+  "digest": "ec7849e44064",
   "note": "5UZ5S3F5",
   "placed": [
    "Actor Map",
@@ -903,7 +917,7 @@
   ]
  },
  "scheldestromen-2025-nota-peilbesluiten": {
-  "digest": "953ea9378ec2",
+  "digest": "30440b491662",
   "note": "H3BE9FEM",
   "placed": [
    "Actor Map",
@@ -919,7 +933,7 @@
   ]
  },
  "scheldestromen-2026-informatieavond-duiveland": {
-  "digest": "451c0a823602",
+  "digest": "179a39fbe1a8",
   "note": "GPVPDJ33",
   "placed": [
    "CLD"
@@ -945,6 +959,13 @@
   "note": "F93HUD6V",
   "placed": [
    "Actor Map",
+   "CLD"
+  ]
+ },
+ "schipper-2015": {
+  "digest": "5b762239df0b",
+  "note": "U922457Q",
+  "placed": [
    "CLD"
   ]
  },
@@ -1010,6 +1031,13 @@
    "CLD"
   ]
  },
+ "van-bakel-2018": {
+  "digest": "db17d873c4bb",
+  "note": "QTXF3B7G",
+  "placed": [
+   "CLD"
+  ]
+ },
  "van-beekom-1953": {
   "digest": "db6fa6630fce",
   "note": "9M27AI9Z",
@@ -1063,6 +1091,13 @@
    "CLD"
   ]
  },
+ "van-haperen-2006": {
+  "digest": "18f798462d8a",
+  "note": "AR3U3IEI",
+  "placed": [
+   "CLD"
+  ]
+ },
  "van-loo-2023": {
   "digest": "3c0213ab8ad8",
   "note": "I5C4TP2T",
@@ -1078,7 +1113,7 @@
   ]
  },
  "van-straten-2021": {
-  "digest": "5e17c3532d17",
+  "digest": "6ba62b85c368",
   "note": "QAGSV9NC",
   "placed": [
    "CLD"

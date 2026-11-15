@@ -1287,7 +1287,7 @@
       "to": "freshwater-lens-thickness",
       "polarity": "-",
       "delay": true,
-      "description": "Upward saline seepage keeps the rainwater lens thin. On the island the lens in the seepage areas is mostly under 2 m (Kaandorp et al., 2022, p. 10), on average 2 m in a helicopter survey of its low polders, its mixing zone in the clay top layer, and it thickens sharply where the flow turns from seepage to infiltration (de Louw et al., 2011, pp. 3660, 3673, 3675, measured on the island, the fluxes from the regional groundwater model). That a larger seepage flux gives a thinner lens comes from a model of a tile-drained field built from the island's field data (de Louw et al., 2011, pp. 3671, 3674). Years, so a delay: in that model every run settled to a stationary lens within 30 years (de Louw et al., 2011, p. 3665).",
+      "description": "Upward saline seepage keeps the rainwater lens thin. On the island the lens in the seepage areas is mostly under 2 m (Kaandorp et al., 2022, p. 10), on average 2 m in a helicopter survey of its low polders, its mixing zone in the clay top layer, and it thickens sharply where the flow turns from seepage to infiltration (de Louw et al., 2011, pp. 3660, 3673, 3675, measured on the island, the fluxes from the regional groundwater model). That a larger seepage flux gives a thinner lens comes from a model of a tile-drained field built from the island's field data (de Louw et al., 2011, pp. 3671, 3674). In that model the centre of the mixing zone at a drain always stays within 0.1 m of the drain depth, so seepage moves the lens between the drains, and recharge and drainage depth control it alongside seepage (de Louw et al., 2011, pp. 3659, 3671, 3673–3674); in the model a poorly permeable layer below the drains thins the lens between them and one above them thickens it (p. 3674), and unripened clay, a poorly permeable layer, lies close to the surface over a large part of the island (Kaandorp et al., 2022, pp. 32, 55). Years, so a delay: in that model every run settled to a stationary lens within 30 years (de Louw et al., 2011, p. 3665).",
       "sources": [
         "de-louw-2011",
         "kaandorp-2022"
@@ -1642,10 +1642,11 @@
       "to": "spring-workability-of-the-fields",
       "polarity": "+",
       "delay": false,
-      "description": "The deeper the ditch levels lie below the fields, the sooner the fields drain and dry after rain. By the water board's rules for its whole area, the drooglegging is set at an optimum for each use and soil, against both wet and drought damage (Waterschap Scheldestromen, 2025, p. 7); at half the design discharge it must keep a field's drains, laid at their optimal depth, all but above the ditch water (p. 8); and an area 10 cm or more short of its optimum counts as too wet (p. 9). On Duiveland four level areas may run a lower target for a while in wet periods, where the fields' drainage and workability need it (2021a, p. 40), and the move from the winter to the summer level in spring follows the farmers' soil work (p. 66). Within the season, no delay.",
+      "description": "The deeper the ditch levels lie below the fields, the sooner the fields drain and dry after rain. By the water board's rules for its whole area, the drooglegging is set at an optimum for each use and soil, against both wet and drought damage (Waterschap Scheldestromen, 2025, p. 7); at half the design discharge it must keep a field's drains, laid at their optimal depth, all but above the ditch water (p. 8); and an area 10 cm or more short of its optimum counts as too wet (p. 9). Once the drooglegging reaches that optimum the drains already lie clear of the ditch water by the rule above, so a deeper level should, by inference, add little workability; on Duiveland the board's model test finds the drooglegging more than 40 cm past its optimum (60 cm on schorgronden) in large parts of the area in all situations, against 10 of 31 level areas with more than 10% of their surface too wet in a normal winter and 11 in summer (Waterschap Scheldestromen, 2021a, pp. 32, 42). On the Rusthoeve trial farm, measured on Noord-Beveland on zavel with saline seepage and an average drooglegging of 1.6 m, a drain outlet held 30 cm higher raised the groundwater on average 10 cm near the ditch and 20 cm mid-field with no adverse effect on workability, by the farm's experience, on blocks redrained at 6 m instead of about 12 m (Schipper et al., 2015, pp. 6, 15, 17–18; funded by the Province of Zeeland, ZLTO and the water board, along with national and Interreg funds, p. 11). On Duiveland four level areas may run a lower target for a while in wet periods, where the fields' drainage and workability need it (2021a, p. 40), and the move from the winter to the summer level in spring follows the farmers' soil work (p. 66). Within the season, no delay.",
       "sources": [
         "scheldestromen-2025-nota-peilbesluiten",
-        "scheldestromen-2021-hor-duiveland"
+        "scheldestromen-2021-hor-duiveland",
+        "schipper-2015"
       ],
       "curvature": 0.14
     },
@@ -1665,9 +1666,11 @@
       "to": "demand-for-deep-polder-drainage",
       "polarity": "-",
       "delay": false,
-      "description": "Where fields stay too wet to work, farmers want lower ditch levels: what deep drainage gains them. In the water board's words, holding water back longer as a buffer for dry times is sometimes hard for farmers who want onto the land with heavy machinery (Waterschap Scheldestromen, 2021c, p. 44, its management programme for its whole area): the board's account of the farmers' interest, not the farmers' own. No source read shows how much a wet spring raises the demand. Within the year.",
+      "description": "Where fields stay too wet to work, farmers want lower ditch levels: what deep drainage gains them. In the water board's words, holding water back longer as a buffer for dry times is sometimes hard for farmers who want onto the land with heavy machinery (Waterschap Scheldestromen, 2021c, p. 44, its management programme for its whole area): the board's account of the farmers' interest, not the farmers' own. No source read shows how much a wet spring raises the demand. The water board's own model test of the current levels, which compares computed ditch levels with the optimum drainage depth for each soil and use and does not measure workability, finds more than 10% of the surface too wet in a normal winter in 9 of the 43 level areas outside nature in Schouwen's polder, but 18 (62%) under the summer level, which the board brings in step by step in March–April (Waterschap Scheldestromen, 2021b, pp. 19, 44, 56); on Duiveland 10 of 31 tested areas are more than 10% too wet in a normal winter and 11 in summer (Waterschap Scheldestromen, 2021a, p. 42). The link so seems to act mainly around that switch and in the wetter areas. Within the year.",
       "sources": [
-        "scheldestromen-2021-wbp"
+        "scheldestromen-2021-wbp",
+        "scheldestromen-2021-hor-schouwen",
+        "scheldestromen-2021-hor-duiveland"
       ],
       "curvature": 0.15
     },
@@ -1689,11 +1692,13 @@
       "to": "saline-seepage-kwel",
       "polarity": "+",
       "delay": false,
-      "description": "Lower ditch levels lower the counter-pressure on the salt groundwater, so the seepage pressure rises; a higher level lowers it (Waterschap Scheldestromen, 2021a, p. 37, the board's analysis for Duiveland's water level plan). The seepage is driven by the higher water pressure at greater depth, in the first aquifer below the polders' clay (Kaandorp et al., 2022, pp. 10–11, 28). Within the year: the water pressures in the top layer change constantly with recharge and drainage (de Louw et al., 2011, p. 3675).",
+      "description": "Lower ditch levels lower the counter-pressure on the salt groundwater, so the seepage pressure rises; a higher level lowers it (Waterschap Scheldestromen, 2021a, p. 37, the board's analysis for Duiveland's water level plan). The seepage is driven by the higher water pressure at greater depth, in the first aquifer below the polders' clay (Kaandorp et al., 2022, pp. 10–11, 28). A raise in one level area can also lift the head in the shared first aquifer around it, so seepage can rise on the land next to it: in a model of a 110 km2 low-lying polder inundated in 2100, seepage in the polder fell but rose in the adjacent areas, a net cut of only 9% of the polder's salt load (Oude Essink et al., 2010, pp. 8–9, 13–14, modelled in the western Netherlands). On Schouwen's south coast a seepage ditch rings the raised nature area so that its higher level does not add seepage on the land around it (van Haperen et al., 2006, p. 3, Staatsbosbeheer, which manages part of the area, an account without data). Within the year: the water pressures in the top layer change constantly with recharge and drainage (de Louw et al., 2011, p. 3675).",
       "sources": [
         "scheldestromen-2021-hor-duiveland",
         "kaandorp-2022",
-        "de-louw-2011"
+        "de-louw-2011",
+        "oude-essink-2010",
+        "van-haperen-2006"
       ],
       "curvature": 0.07
     },
@@ -1714,13 +1719,14 @@
       "to": "polder-drainage-depth",
       "polarity": "-",
       "delay": true,
-      "description": "A water level plan sets the levels the board pursues and maintains in normal circumstances (Waterschap Scheldestromen, 2021d, 2022), after its procedure: the executive board adopts a draft, open to views for six weeks; the general board adopts the plan; appeal is open for six weeks (Waterschap Scheldestromen, 2025, pp. 17–18), for Duiveland from February to August 2021 (2021a, p. 53; 2021d). Its levels take effect on a date the plan sets, which depends partly on the works they need (2025, p. 18): Duiveland's plan proposed studying a raise in 14 level areas, most possible only once the discharge capacity is enlarged (2021a, p. 69), and the works for that were still being put to the island in March 2026 (Waterschap Scheldestromen, 2026a). Years, so a delay.",
+      "description": "A water level plan sets the levels the board pursues and maintains in normal circumstances (Waterschap Scheldestromen, 2021d, 2022), after its procedure: the executive board adopts a draft, open to views for six weeks; the general board adopts the plan; appeal is open for six weeks (Waterschap Scheldestromen, 2025, pp. 17–18), for Duiveland from February to August 2021 (2021a, p. 53; 2021d). Its levels take effect on a date the plan sets, which depends partly on the works they need (2025, p. 18): Duiveland's plan proposed studying a raise in 14 level areas, most possible only once the discharge capacity is enlarged (2021a, p. 69), and the works for that were still being put to the island in March 2026 (Waterschap Scheldestromen, 2026a). In summer the levels a plan sets may not hold: the board's own study for Duiveland says that in many areas, where the winter level is low and the summer level set well above it, the higher summer level can usually be held for a few weeks and then sinks slowly into the soil, depending on location and soil, and that without water supply, which the island lacks (Kaandorp et al., 2022, p. 8), the summer level may not be maintainable in a rainfall deficit (Waterschap Scheldestromen, 2021a, pp. 37, 66). Years, so a delay.",
       "sources": [
         "scheldestromen-2021-peilbesluit-duiveland",
         "scheldestromen-2022-peilbesluit-schouwen",
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-duiveland",
-        "scheldestromen-2026-informatieavond-duiveland"
+        "scheldestromen-2026-informatieavond-duiveland",
+        "kaandorp-2022"
       ],
       "curvature": -0.07
     },
@@ -1729,7 +1735,7 @@
       "to": "plans-to-raise-ditch-levels",
       "polarity": "-",
       "delay": true,
-      "description": "The water board weighs farmers' need for low levels against raising them: it involves farming among the interest groups as it prepares a plan and weighs their input (Waterschap Scheldestromen, 2025, p. 17), and on Duiveland moves to the higher summer level in March and April as the farmers' soil work allows (Waterschap Scheldestromen, 2021a, p. 66). How much the farmers' views weigh against the board's other aims, no source read shows: on Duiveland four views against a raise the plan proposed to study did not change the plan (p. 53). Years, so a delay: the board weighs it as it prepares a plan, which it does when its evaluation every three years, weighing among other things the reports of those concerned, finds a plan no longer current, or once a plan is 17 years old (2025, pp. 16–17).",
+      "description": "The water board weighs farmers' need for low levels against raising them: it involves farming among the interest groups as it prepares a plan and weighs their input (Waterschap Scheldestromen, 2025, p. 17), and on Duiveland moves to the higher summer level in March and April as the farmers' soil work allows (Waterschap Scheldestromen, 2021a, p. 66). How much the farmers' views weigh against the board's other aims, no source read shows: on Duiveland four views against a raise the plan proposed to study did not change the plan (p. 53). The board's guideline tests a level area against a norm: the norm for farmland derives from the optimal drain depths for farming (Waterschap Scheldestromen, 2025, p. 7); with more than 10% of the area too wet the level must be lowered or the discharge's bottlenecks solved, with less a raise is considered (p. 9). On Duiveland, by the board's research report for its plan of 2021, a level change in most level areas is possible only once the discharge capacity is enlarged (2021a, p. 69). Years, so a delay: the board weighs it as it prepares a plan, which it does when its evaluation every three years, weighing among other things the reports of those concerned, finds a plan no longer current, or once a plan is 17 years old (2025, pp. 16–17).",
       "sources": [
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-duiveland"
@@ -1829,10 +1835,13 @@
       "to": "harvest-lost-to-salt",
       "polarity": "+",
       "delay": false,
-      "description": "Once a crop's root zone salinity, as the conductivity of the saturated soil extract (ECe), passes its threshold, its yield falls in proportion to the excess (Allen et al., 1998, ch. 8, eq. 89): onions lose 16% per dS/m above 1.2 dS/m and potatoes 12% above 1.7, rated sensitive and moderately sensitive, against 5.9% above 7.0 for sugar beet and 7.1% above 6.0 for wheat (Table 23), so on the island's rotations salt takes most from potatoes and onions. The harm is osmotic at once and comes from sodium or chloride building up in the leaves more slowly (Munns & Tester, 2008, pp. 654–656). Table 23 is a guideline from experiments mostly under irrigation, tolerance varying with climate, soil and practice, and crops are often less tolerant as they germinate (Table 23, note 1): crop physiology that holds on the island's fields, its thresholds not measured there. Within the season.",
+      "description": "Once a crop's root zone salinity, as the conductivity of the saturated soil extract (ECe), passes its threshold, its yield falls in proportion to the excess (Allen et al., 1998, ch. 8, eq. 89): onions lose 16% per dS/m above 1.2 dS/m and potatoes 12% above 1.7, rated sensitive and moderately sensitive, against 5.9% above 7.0 for sugar beet and 7.1% above 6.0 for wheat (Table 23), so on the island's rotations salt takes most from potatoes and onions. The harm is osmotic at once and comes from sodium or chloride building up in the leaves more slowly (Munns & Tester, 2008, pp. 654–656). Table 23 is a guideline from experiments mostly under irrigation, tolerance varying with climate, soil and practice, and crops are often less tolerant as they germinate (Table 23, note 1): crop physiology that holds on the island's fields, its thresholds not measured there. Field trials at Salt Farm Texel, on sand irrigated with saline water, find gentler lines for potatoes and onions: across 13 potato cultivars a threshold of 3.2 dS/m and a slope of 6.1% per dS/m on average over the cultivars and years (van Straten et al., 2021, pp. 1, 5), and for onions thresholds of 2.4–5.9 dS/m and slopes of 7.4–11.7% per dS/m, with wide confidence intervals (de Vos et al., 2016, p. 22); both come from the trial farm's own trials, written by its staff with university co-authors, the 2021 one partly funded by the Salt Farm Foundation, and may not hold on clay (de Vos et al., 2016, pp. 2, 9; van Straten et al., 2021, pp. 1, 11). A review for the Deltaprogramma Zoetwater judges that the rule over- or underestimates the loss, not reproducibly, where root-zone salinity varies within the season, as it mostly does in Dutch open-field farming (van Bakel et al., 2018, pp. 30–31): on the island the sign holds, but these lines do not fix the size of the loss. Within the season.",
       "sources": [
         "allen-1998",
-        "munns-tester-2008"
+        "munns-tester-2008",
+        "van-straten-2021",
+        "de-vos-2016",
+        "van-bakel-2018"
       ],
       "curvature": 0.63
     },
@@ -2653,10 +2662,12 @@
       "to": "plans-to-raise-ditch-levels",
       "polarity": "-",
       "delay": true,
-      "description": "By the water board's rules the level follows the land's use (\"peil volgt functie\"): the board adapts it to what an area needs (Waterschap Scheldestromen, 2025, p. 5), reading the use from the current land use and from the uses the municipality's land-use plan designates, with what is expected within about five years (p. 7). A plan starts from the optimal level for each use and soil, nature's set with the site managers (2021a, p. 29), and where nature and farmland share a level area on Duiveland the plan keeps nature's level and proposes linking the farm parcel to the neighbouring, lower area (2021a, p. 61). So the less land is farmed as arable land, the more reason for a raise, whoever asks. Years, so a delay: the board weighs it as it prepares a plan, which it does when its evaluation every three years finds a plan no longer current, or once a plan is 17 years old (2025, pp. 16–17).",
+      "description": "By the water board's rules the level follows the land's use (\"peil volgt functie\"): the board adapts it to what an area needs (Waterschap Scheldestromen, 2025, p. 5), reading the use from the current land use and from the uses the municipality's land-use plan designates, with what is expected within about five years (p. 7). A plan starts from the optimal level for each use and soil, nature's set with the site managers (2021a, p. 29), and where nature and farmland share a level area on Duiveland the plan keeps nature's level and proposes linking the farm parcel to the neighbouring, lower area (2021a, p. 61). So the less land is farmed as arable land, the more reason for a raise, whoever asks. By the board's own study for its plan, in most of Duiveland's level areas a raise is possible only once the discharge capacity is enlarged, since levels in several are kept low on purpose to store extreme rain (2021a, p. 69), and the province's norm for that storage and discharge capacity, which the board tests against, is the same once in 25 years for arable land and grassland (2021a, pp. 12, 33–34; Provincie Zeeland, 2024, art. 3.3, p. 2), so land that goes from arable crops to grass is held to the same norm as before. In 2026 the board proposed to enlarge Duiveland's discharge capacity against flooding, and its slides give no date (2026a, slides 12, 17), though the province asks the board, as a duty of effort, to meet the norm by 1 January 2028 (Provincie Zeeland, 2024, art. 3.3, p. 2), so whether the limit lifts before 2050 is open. Years, so a delay: the board weighs it as it prepares a plan, which it does when its evaluation every three years finds a plan no longer current, or once a plan is 17 years old (2025, pp. 16–17).",
       "sources": [
         "scheldestromen-2025-nota-peilbesluiten",
-        "scheldestromen-2021-hor-duiveland"
+        "scheldestromen-2021-hor-duiveland",
+        "scheldestromen-2026-informatieavond-duiveland",
+        "provincie-zeeland-2024"
       ],
       "curvature": 0.22,
       "delay at": 0.61
@@ -2766,7 +2777,7 @@
         "saline-seepage-kwel",
         "freshwater-lens-thickness"
       ],
-      "description": "More salt in the root zone takes more of the harvest, income and land value fall, and where arable farming no longer pays for a buyer or successor the land goes to a holder who does not farm it as arable land. With less arable land the water board, whose level follows the land's use, has more reason to raise the ditch levels, over years; seepage falls, the rainwater lens thickens and the salt falls back. It seeks the salt level at which arable farming stops paying for any successor or buyer, set by crop prices, margins and the land market. With B2 and B1 it is a way out of the same salt: those keep the land arable with another crop, this one is arable farming ending, where the current crops stop paying and adapting does not pay or is not chosen. It acts only at that end: while arable farming still pays for someone, land from a farm that stops mostly goes to expanding neighbours and stays arable (Arable land in the polders), and a raise follows only where a whole level area leaves arable use, since where nature and farmland share one the board keeps nature's level and links the farm parcel to a lower area (Arable land in the polders → Water board's plans to raise ditch levels). From salt to a raise takes decades, its slowest steps the land changing hands and the board's plan cycle."
+      "description": "More salt in the root zone takes more of the harvest, income and land value fall, and where arable farming no longer pays for a buyer or successor the land goes to a holder who does not farm it as arable land. With less arable land the water board, whose level follows the land's use, has more reason to raise the ditch levels, over years; seepage falls, the rainwater lens thickens and the salt falls back. It seeks the salt level at which arable farming stops paying for any successor or buyer, set by crop prices, margins and the land market. With B2 and B1 it is a way out of the same salt: those keep the land arable with another crop, this one is arable farming ending, where the current crops stop paying and adapting does not pay or is not chosen. It acts only at that end: while arable farming still pays for someone, land from a farm that stops mostly goes to expanding neighbours and stays arable (Arable land in the polders), and a raise follows only where a whole level area leaves arable use, since where nature and farmland share one the board keeps nature's level and links the farm parcel to a lower area (Arable land in the polders → Water board's plans to raise ditch levels). On Duiveland it is weaker still: most raises there wait for more discharge capacity, and the province's norm for storage and discharge holds for grassland as for arable land, so a level area that goes from arable crops to grass mostly still waits for the discharge works (Waterschap Scheldestromen, 2021a, pp. 12, 33–34, 69). From salt to a raise takes decades, its slowest steps the land changing hands and the board's plan cycle."
     },
     {
       "id": "B4",
@@ -2777,7 +2788,7 @@
         "polder-drainage-depth",
         "spring-workability-of-the-fields"
       ],
-      "description": "Where fields stay too wet to work in spring, farmers ask for low ditch levels and the water board plans fewer raises. The levels stay low, the fields drain and dry sooner, and the wish for lower levels eases. It seeks fields dry enough for heavy machinery in spring: what deep drainage gains a farm, R2 tracing what it costs. By keeping the current crops' spring work possible, it supports carrying on with them rather than adopting a practice."
+      "description": "Where fields stay too wet to work in spring, farmers ask for low ditch levels and the water board plans fewer raises. The levels stay low, the fields drain and dry sooner, and the wish for lower levels eases. On Duiveland it has room mainly in the 10 of 31 level areas with more than 10% of their surface too wet in a normal winter, since in large parts of the area the drooglegging already exceeds its optimum by more than 40 cm (60 cm on schorgronden) (Waterschap Scheldestromen, 2021a, pp. 32, 42). It seeks fields dry enough for heavy machinery in spring: what deep drainage gains a farm, R2 tracing what it costs. By keeping the current crops' spring work possible, it supports carrying on with them rather than adopting a practice."
     },
     {
       "id": "R2",

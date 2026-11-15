@@ -4163,5 +4163,170 @@
     "number": "KWR 2026.037",
     "publisher": "KWR Water Research Institute",
     "URL": "https://api2.kwrwater.nl/uploads/KWR%202026.037%20Laag%20Nederland%202050.%20Een%20verkenning%20naar%20een%20klimaat-%20en%20waterrobuuste%20inrichting%20voor%20Schouwen-Duiveland.pdf"
+  },
+  {
+    "id": "de-vos-2016",
+    "type": "report",
+    "author": [
+      {
+        "family": "de Vos",
+        "given": "A."
+      },
+      {
+        "family": "Bruning",
+        "given": "B."
+      },
+      {
+        "family": "van Straten",
+        "given": "G."
+      },
+      {
+        "family": "Oosterbaan",
+        "given": "R."
+      },
+      {
+        "family": "Rozema",
+        "given": "J."
+      },
+      {
+        "family": "van Bodegom",
+        "given": "P."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "title": "Crop salt tolerance under controlled field conditions in The Netherlands, based on trials conducted at Salt Farm Texel",
+    "publisher": "Salt Farm Texel",
+    "URL": "https://edepot.wur.nl/409817"
+  },
+  {
+    "id": "van-bakel-2018",
+    "type": "report",
+    "author": [
+      {
+        "family": "van Bakel",
+        "given": "P. J. T."
+      },
+      {
+        "family": "Blom-Zandstra",
+        "given": "M."
+      },
+      {
+        "family": "Stuyt",
+        "given": "L. C. P. M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "Zouttolerantie van gewassen afhankelijk van het groeistadium? Resultaten van een literatuuronderzoek",
+    "number": "2897",
+    "collection-title": "Wageningen Environmental Research rapport",
+    "publisher": "Wageningen Environmental Research",
+    "DOI": "10.18174/454794"
+  },
+  {
+    "id": "van-haperen-2006",
+    "type": "webpage",
+    "author": [
+      {
+        "family": "van Haperen",
+        "given": "A."
+      },
+      {
+        "family": "Hekhuis",
+        "given": "H."
+      },
+      {
+        "family": "Sluiter",
+        "given": "H."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2006,
+          11
+        ]
+      ]
+    },
+    "title": "Plan Tureluur: Zeeuwse vogelboulevard",
+    "URL": "https://edepot.wur.nl/114545",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          14
+        ]
+      ]
+    }
+  },
+  {
+    "id": "provincie-zeeland-2024",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Provincie Zeeland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Actualisatie 2024 Omgevingsverordening Zeeland",
+    "collection-title": "Provinciaal blad",
+    "collection-number": "2024, 19847",
+    "URL": "https://zoek.officielebekendmakingen.nl/prb-2024-19847.html"
+  },
+  {
+    "id": "schipper-2015",
+    "type": "report",
+    "author": [
+      {
+        "family": "Schipper",
+        "given": "P. N. M."
+      },
+      {
+        "family": "Heinen",
+        "given": "M."
+      },
+      {
+        "family": "Jansen",
+        "given": "P."
+      },
+      {
+        "family": "Stuyt",
+        "given": "L."
+      },
+      {
+        "family": "Dik",
+        "given": "P."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "title": "Praktijkproef Regelbare Drainage proefbedrijf Rusthoeve 2010-2014: Eindverslag praktijkproef naar de effecten van regelbare en verdiept aangelegde drains op klei in Zeeland",
+    "number": "2639",
+    "collection-title": "Alterra-rapport",
+    "publisher": "Alterra Wageningen UR",
+    "URL": "https://edepot.wur.nl/350634"
   }
 ]

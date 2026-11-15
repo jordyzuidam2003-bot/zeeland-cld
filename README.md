@@ -339,12 +339,18 @@ date, and `year-suffix` holds a letter a description cites (van Beekom et al., 1
 holds a copy of each item, in Jordy's group library ChallengeBasedProject1, where the PDFs are
 attached, never here, since this repository is public. A session pushes each new item into its
 collection CLD and Actor Map, and once into its subcollection CLD or Actor Map, or both, by
-which file cites it, with a Use note written from `model/cld.json` and `model/actor-map.json`, by the
-Study repository's `zotero` skill, from this folder (the key through `op run`, as its `SKILL.md`
-says):
+which file cites it, with a Use note per source: per citing sentence its place, the sentence, the
+passage with its printed page and where the source measured it. The passages are verbatim text of
+the sources, so they are kept outside this public repository, in the Study repository's
+`ChallengeBasedProject1/CitationCheck/passages.json`; `use_notes.py` beside it builds each note's
+rows (how: its docstring), and the Study repository's `zotero` skill pushes them, from this folder
+(the key through `op run`, as its `SKILL.md` says). A push without `--rows` rewrites every note
+without its passages:
 
 ```sh
-python3 ../../.claude/skills/zotero/zotero.py push ChallengeBasedProject1 "CLD and Actor Map" model/references.json --uses model/cld.json model/actor-map.json
+python3 ../CitationCheck/012c8df2/citations/cite_list.py ../CitationCheck/proposal.txt ../CitationCheck/list.json
+python3 ../CitationCheck/use_notes.py rows ../CitationCheck/list.json ../CitationCheck/rows.json
+python3 ../../.claude/skills/zotero/zotero.py push ChallengeBasedProject1 "CLD and Actor Map" model/references.json --uses model/cld.json model/actor-map.json --rows ../CitationCheck/rows.json
 ```
 
 `push` records each note it wrote and each subcollection it put an item into in

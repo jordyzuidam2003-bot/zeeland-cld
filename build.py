@@ -721,6 +721,16 @@ def with_image(view, svg, name):
     return view.replace("url(IMAGE)", f"url({data_url(svg)})")
 
 
+def bare(view):
+    """The view as Kumu's advanced editor shows it to anyone who opens the project: without the comments,
+    which explain the view to whoever edits src/kumu/ and name this repository's files, which outsiders
+    never see (README's Kumu)."""
+    out = re.sub(r"(?ms)^[ \t]*/\*.*?\*/[ \t]*\n", "", view)
+    if "/*" in out:
+        sys.exit("a Kumu view has a comment that does not start its own line: src/kumu/ keeps each on lines of its own")
+    return re.sub(r"\n{3,}", "\n\n", out).strip() + "\n"
+
+
 def project(cld, refs, actors, template):
     """The CLD's part of the Kumu project (kumu_project()): the map of the full CLD, then a map per
     combined loop and per named loop, each drawn as its figure (Jordy's decision, cld-drawing.md).
@@ -808,8 +818,8 @@ def project(cld, refs, actors, template):
                   "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
                   "elements": nodes, "connections": edges, "loops": map_loops}] + loop_maps,
         # the maps' edges carry the curves, so the views hold no curvature rules
-        "perspectives": [{"_id": "pers-cld", "name": "CLD", "style": style},
-                         {"_id": "pers-loops", "name": "Loops", "style": loops_style}],
+        "perspectives": [{"_id": "pers-cld", "name": "CLD", "style": bare(style)},
+                         {"_id": "pers-loops", "name": "Loops", "style": bare(loops_style)}],
     }
 
 
@@ -856,7 +866,7 @@ def actors_project(actors, refs, decides, cld_labels, template):
                   "center": {"x": 0, "y": 0}, "defaultPerspective": "pers-actors",
                   "defaultElementBehavior": "fixed", "defaultConnectionDirection": "directed",
                   "elements": nodes, "connections": edges, "loops": []}],
-        "perspectives": [{"_id": "pers-actors", "name": "Actor Map", "style": style}],
+        "perspectives": [{"_id": "pers-actors", "name": "Actor Map", "style": bare(style)}],
     }
 
 

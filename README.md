@@ -410,6 +410,10 @@ CLD's own project before the Actor Map joined it):
   loop's link bends through the oval midway between its two elements (`draw_cld.oval_layout()`).
   Their view is the CLD's without the rule that hides the loop labels.
 
+Each view goes into the export without its comments (`build.py`'s `bare()`): Kumu's advanced editor
+shows the view to anyone who opens the project, and the comments explain it to whoever edits
+`src/kumu/` and name this repository's files (Jordy).
+
 Kumu lists the maps sorted by name as plain text, whatever their order in the file (B10 before
 B2), so each map's name starts with its place in this order, in two digits: `01 CLD model`,
 `02 Actor Map`, then the loop maps (Jordy; rejected: zero-padded loop ids, which keep

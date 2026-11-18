@@ -22,7 +22,9 @@ loop_figure(cld, loop) draws one named loop on its own (build.py writes docs/fig
 elements evenly round one oval, clockwise from the top left, its links along it, drawn as svg()
 draws them, with its mark, turning clockwise, at the oval's centre.
 group_figure(cld, group) draws one group of named loops (build.py writes docs/figures/combined-loops/<id>.svg): its
-loops' elements and links at the group's own `places` and `bends`, each loop's mark at `marks`.
+loops' elements and links at the group's own `places` and `bends`, each loop's mark at `marks`;
+report_panels(cld) draws every group as the report's panels (docs/figures/report-panels/<id>.svg):
+its places spread over one shared frame, every panel in one viewBox size.
 
 The link formulas are duplicated for the pages' Move mode, which redraws every link when a box moves:
 link_path() and link_paths() in src/templates/move.js, for the CLD and the Actor Map, sign_position()
@@ -783,24 +785,63 @@ def group_cld(cld, group):
     return {"elements": elements, "connections": connections}
 
 
-def group_figure(cld, group):
+def group_frame(cld, group):
+    """(x0, y0, x1, y1): what group_figure() draws, its boxes, curves and marks, with a margin."""
+    sub = group_cld(cld, group)
+    bxs = boxes(sub)
+    curve = [bezier(*p, t / 10) for p in link_paths(sub, bxs).values() for t in range(11)]
+    marks = list(group["marks"].values())
+    pad = MARGIN + SIGN_SIZE
+    return (min(*(b[0] for b in bxs.values()), *(p[0] for p in curve), *(m[0] - MARK_R for m in marks)) - pad,
+            min(*(b[1] for b in bxs.values()), *(p[1] for p in curve), *(m[1] - MARK_R for m in marks)) - pad,
+            max(*(b[2] for b in bxs.values()), *(p[0] for p in curve), *(m[0] + MARK_R for m in marks)) + pad,
+            max(*(b[3] for b in bxs.values()), *(p[1] for p in curve), *(m[1] + MARK_R for m in marks)) + pad)
+
+
+def group_figure(cld, group, vb=None):
     """One group of named loops, for the report: the loops joined at their shared variables, drawn
     as svg() draws them, each loop's mark in the part of the figure that is its own. The places are
     the group's, never the full drawing's, where the same loops run long and lopsided (the same
-    reason as oval()). No regions and no legend: the figure stands beside the full drawing."""
+    reason as oval()). No regions and no legend: the figure stands beside the full drawing. vb, the
+    viewBox (x, y, width, height), defaults to group_frame()'s."""
     sub = group_cld(cld, group)
     bxs, paths = boxes(sub), {k: [p] for k, p in link_paths(sub, boxes(sub)).items()}
     loops = {loop["id"]: loop for loop in cld["loops"]}
-    curve = [bezier(*p[0], t / 10) for p in paths.values() for t in range(11)]
-    marks = list(group["marks"].values())
-    pad = MARGIN + SIGN_SIZE
-    x0 = min(*(b[0] for b in bxs.values()), *(p[0] for p in curve), *(m[0] - MARK_R for m in marks)) - pad
-    y0 = min(*(b[1] for b in bxs.values()), *(p[1] for p in curve), *(m[1] - MARK_R for m in marks)) - pad
-    x1 = max(*(b[2] for b in bxs.values()), *(p[0] for p in curve), *(m[0] + MARK_R for m in marks)) + pad
-    y1 = max(*(b[3] for b in bxs.values()), *(p[1] for p in curve), *(m[1] + MARK_R for m in marks)) + pad
-    parts = [*head((x0, y0, x1 - x0, y1 - y0)), *links_and_elements(sub, bxs, paths, delay_spots(sub, paths)),
+    if vb is None:
+        x0, y0, x1, y1 = group_frame(cld, group)
+        vb = (x0, y0, x1 - x0, y1 - y0)
+    parts = [*head(vb), *links_and_elements(sub, bxs, paths, delay_spots(sub, paths)),
              *(loop_svg(loops[name], tuple(group["marks"][name])) for name in group["loops"]), "</svg>"]
     return "\n".join(parts) + "\n"
+
+
+# The report sets combined loops side by side as panels of one size with one text size (Jordy,
+# chosen between rendered versions: panels of different sizes and proportions looked
+# unprofessional). So each group's box centres are spread linearly over one frame, the boxes
+# keeping their size; a smaller frame crowded C3.
+PANEL_FRAME = (2300, 1350)
+
+
+def spread_group(group, frame=PANEL_FRAME):
+    """The group with its places and marks mapped linearly onto frame (width, height), centred on 0, 0."""
+    xs, ys = [p[0] for p in group["places"].values()], [p[1] for p in group["places"].values()]
+    cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
+    sx, sy = frame[0] / (max(xs) - min(xs)), frame[1] / (max(ys) - min(ys))
+    at = lambda p: [(p[0] - cx) * sx, (p[1] - cy) * sy]
+    return {**group, "places": {k: at(p) for k, p in group["places"].items()},
+            "marks": {k: at(p) for k, p in group["marks"].items()}}
+
+
+def report_panels(cld):
+    """{group id: svg}: each group spread onto PANEL_FRAME and drawn by group_figure() in one
+    viewBox size, the largest any group needs, centred on its own drawing, so every panel prints
+    at one size with one text size (build.py writes docs/figures/report-panels/<id>.svg)."""
+    groups = {g["id"]: spread_group(g) for g in cld.get("groups", [])}
+    frames = {i: group_frame(cld, g) for i, g in groups.items()}
+    w = max(f[2] - f[0] for f in frames.values()) if frames else 0
+    h = max(f[3] - f[1] for f in frames.values()) if frames else 0
+    return {i: group_figure(cld, g, ((f[0] + f[2] - w) / 2, (f[1] + f[3] - h) / 2, w, h))
+            for (i, g), f in zip(groups.items(), frames.values())}
 
 
 # --- overlap warnings -----------------------------------------------------------------------

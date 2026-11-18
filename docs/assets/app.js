@@ -133,7 +133,11 @@ function showLoop(id) {
   img.alt = group ? `The loops ${group.loops.join(", ")} together` : `The loop ${loop.id} on its own`;
   a.append(img);
   const description = document.createElement("p");
-  description.textContent = loop.description;
+  // a combined loop's description sets a variable named as in the CLD in *…*: shown in italics
+  loop.description.split(/\*(.+?)\*/).forEach((part, i) => {
+    if (i % 2) { const em = document.createElement("em"); em.textContent = part; description.append(em); }
+    else description.append(part);
+  });
   const p = document.createElement("p");
   p.className = "note";
   p.textContent = `${group ? `The loops ${group.loops.join(", ")} together` : "The loop on its own"}, the figure for the report: click it to open it full size.`;

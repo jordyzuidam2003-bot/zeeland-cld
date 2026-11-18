@@ -28,6 +28,11 @@ edit docs/, which this script writes:
                        figure for the report; the page's panel for the loop shows it
     docs/figures/combined-loops/<id>.svg  each group of named loops, its loops joined at their
                        shared variables (draw_cld.group_figure())
+    docs/figures/report-panels/<id>.svg  each group again as the report's panel, its places spread
+                       over one shared frame, every panel one size (draw_cld.report_panels())
+    docs/tables/<name>.tex  the report's tables as LaTeX rows (report_tables(), src/write_tex.py),
+                       which a session copies into the group's Overleaf project: cld-combined-loops,
+                       cld-elements and actor-map-inside
     docs/figures/actor-map.svg  the Actor Map's network on its own, the picture for the report
     docs/tables/cld-table.xlsx  the table that explains the CLD (table_sheets()), which Jordy
                        imports into Google Drive as a Google Sheet: the Elements, Links, Named
@@ -64,6 +69,7 @@ sys.path.insert(0, str(ROOT / "src"))
 
 import draw_actor_map  # noqa: E402
 import draw_cld  # noqa: E402
+import write_tex  # noqa: E402
 import write_xlsx  # noqa: E402
 
 DOCS = ROOT / "docs"
@@ -388,6 +394,16 @@ def check(cld, refs, actors):
             if not (isinstance(group.get(field), str) and group[field].strip()):
                 errors.append(f"group {name}: no {field}")
         errors += [f"group {name}: source {k!r} is not in references.json" for k in group.get("sources", []) if k not in refs]
+        # the report's table cites each source and sets each *italic* as a variable named as in the CLD
+        labels = {e.get("label") for e in cld["elements"]}
+        errors += [f"group {name}: *{s}* is in italics, yet no element's label"
+                   for s in re.findall(r"\*(.+?)\*", str(group.get("description", ""))) if s not in labels]
+        known = [k for k in group.get("sources", []) if k in refs]
+        try:
+            latex = write_tex.text(str(group.get("description", "")), known, draw_actor_map.citations(known, refs))
+            errors += [f"group {name}: source {k!r} is not cited in its description" for k in known if f"{{{k}}}" not in latex]
+        except ValueError as e:
+            errors.append(f"group {name}: {e}")
         members = group.get("loops", [])
         unknown = [m for m in members if m not in loop_ids]
         if unknown:
@@ -454,6 +470,9 @@ def check(cld, refs, actors):
             crossings, through = draw_cld.tangles(draw_cld.group_cld(cld, group))
             if crossings or through:
                 warnings.append(f"group {group['id']}: its figure has {len(crossings)} crossings and {len(through)} links through a box")
+            crossings, through = draw_cld.tangles(draw_cld.group_cld(cld, draw_cld.spread_group(group)))
+            if crossings or through:
+                warnings.append(f"group {group['id']}: its report panel has {len(crossings)} crossings and {len(through)} links through a box")
         # The CLD describes mechanisms and is shaped for no lever set, so no element, link or loop names one.
         warnings += [f"{item.get('id') or item['from'] + ' -> ' + item['to']}: names a policy lever"
                      for item in cld["elements"] + cld["connections"] + cld["loops"] + cld.get("groups", [])
@@ -682,11 +701,44 @@ def table_sheets(cld, refs, actors):
             for L in cld["loops"]]),
     ]
     if cld.get("groups"):
+        # a spreadsheet shows no italics, so the *…* round a variable's label go
         sheets.append(("Combined loops", [30, 20, 80], [["Combined loops", "Its loops", "Description"]]
-                       + [[g["name"], ", ".join(g["loops"]), g["description"]] for g in cld["groups"]]))
+                       + [[g["name"], ", ".join(g["loops"]), re.sub(r"\*(.+?)\*", r"\1", g["description"])]
+                          for g in cld["groups"]]))
     sheets.append(("References", [120], [["Reference"]]
                    + [[r] for r in sorted((c[2] for c in cites.values()), key=str.lower)]))
     return sheets
+
+
+def report_tables(cld, refs, actors):
+    """{path in docs/: rows}: the report's tables as LaTeX rows (write_tex.rows()), which a session
+    copies into the group's Overleaf project: the combined loops with their mechanisms, every
+    element with its role, and the actors inside the scale with the variables each decides. From
+    the model as it stands, every row, the actors named in full and their influence as its score
+    (Jordy's decision; rejected: short names and influence phrases kept for the report alone)."""
+    els = {e["id"]: e for e in cld["elements"]}
+    label = {a["id"]: a["label"] for a in actors["actors"]}
+    paths = {loop["id"]: loop["path"] for loop in cld["loops"]}
+    groups = cld.get("groups", [])
+    cites = draw_actor_map.citations(sorted({k for g in groups for k in g.get("sources", [])}), refs)
+    groups_of = {i: [g["id"] for g in groups if any(i in paths[m] for m in g["loops"])] for i in els}
+    decides = decisions(cld, actors)
+    t = write_tex.text
+    return {
+        "tables/cld-combined-loops.tex": write_tex.rows(
+            ["Combined loop", "Loops", "Mechanism"],
+            [[t(f"{g['id']} {g['name']}"), ", ".join(g["loops"]), t(g["description"], g.get("sources", []), cites)]
+             for g in groups]),
+        "tables/cld-elements.tex": write_tex.rows(
+            ["Element", "Type", "SETS", "Decided by", "In"],
+            [[t(e["label"] + (" (adaptive practice)" if e["adaptive practice"] else "")), e["element type"],
+              e["sets domain"], t(label[e["actor"]]) if "actor" in e else "—", ", ".join(groups_of[e["id"]]) or "—"]
+             for e in sorted(cld["elements"], key=lambda e: e["label"].lower())]),
+        "tables/actor-map-inside.tex": write_tex.rows(
+            ["Actor", "Type", "Variables it decides", "Influence"],
+            [[t(a["label"]), t(a["type"]), "; ".join(t(els[i]["label"]) for i in decides[a["id"]]),
+              str(a["influence score"] or "—")] for a in actors["actors"] if a["scale"] == "inside"]),
+    }
 
 
 def ask_sheets(cld, actors):
@@ -1010,9 +1062,12 @@ def main():
         "assets/style.css": (TEMPLATES / "style.css").read_text(),
         **{f"figures/named-loops/{loop['id']}.svg": draw_cld.loop_figure(cld, loop) for loop in cld["loops"]},
         **{f"figures/combined-loops/{g['id']}.svg": draw_cld.group_figure(cld, g) for g in cld.get("groups", [])},
+        **{f"figures/report-panels/{i}.svg": svg for i, svg in draw_cld.report_panels(cld).items()},
+        **report_tables(cld, refs, actors),
     }
     # a figure whose loop is gone or renamed would stay published
-    extra = sorted(f"{d}/{f.name}" for d in ("figures/named-loops", "figures/combined-loops") if (DOCS / d).is_dir()
+    extra = sorted(f"{d}/{f.name}" for d in ("figures/named-loops", "figures/combined-loops", "figures/report-panels")
+                   if (DOCS / d).is_dir()
                    for f in (DOCS / d).glob("*") if f"{d}/{f.name}" not in outputs)
 
     if args.check:

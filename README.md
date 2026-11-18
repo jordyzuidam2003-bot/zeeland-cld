@@ -21,7 +21,8 @@ docs/           built by build.py and never edited; GitHub Pages publishes it, a
   figures/      the drawings for the report: the CLD, the Actor Map, each loop on its own
     named-loops/     each named loop
     combined-loops/  each group of named loops
-  tables/       the CLD's and the actors' tables, for Google Sheets, and the sources to ask the actors
+    report-panels/   each group of named loops again, as the report's panels
+  tables/       the CLD's and the actors' tables, for Google Sheets and the report, and the sources to ask the actors
   kumu/         the Kumu project export
 hooks/          the pre-commit check
 ```
@@ -46,7 +47,8 @@ the repository's root or `docs/`. `docs/index.html` and `docs/actors.html` stay 
 | `src/draw_cld.py` | draws the CLD's SVG, imported by `build.py` | — |
 | `src/draw_actor_map.py` | draws the Actor Map and lays out its table, imported by `build.py` | — |
 | `src/write_xlsx.py` | writes the table as an `.xlsx` with the standard library | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `actors.html`; `assets/` (`app.js`, `actors.js`, `map.js`, `move.js`, `style.css`); `figures/` (`cld.svg`, `actor-map.svg`, `named-loops/<id>.svg`, `combined-loops/<id>.svg`); `tables/` (`cld-table.xlsx`, `actor-map-table.xlsx`, `sources-to-ask.xlsx`); `kumu/` (`kumu-project.json`) | never: `build.py` writes it |
+| `src/write_tex.py` | writes the report's tables as LaTeX rows, imported by `build.py` | — |
+| `docs/` | what GitHub Pages serves: `index.html`, `actors.html`; `assets/` (`app.js`, `actors.js`, `map.js`, `move.js`, `style.css`); `figures/` (`cld.svg`, `actor-map.svg`, `named-loops/<id>.svg`, `combined-loops/<id>.svg`, `report-panels/<id>.svg`); `tables/` (`cld-table.xlsx`, `actor-map-table.xlsx`, `sources-to-ask.xlsx`, `cld-combined-loops.tex`, `cld-elements.tex`, `actor-map-inside.tex`); `kumu/` (`kumu-project.json`) | never: `build.py` writes it |
 
 ## Version 1
 
@@ -154,6 +156,16 @@ description, simplification, sources or that it is a hypothesis, the facts to as
 in order, the description), the Combined loops sheet once `model/cld.json` holds them, and the
 References sheet. The sources are in-text citations, the letter after a year the one
 `year-suffix` sets.
+
+`docs/tables/cld-combined-loops.tex`, `cld-elements.tex` and `actor-map-inside.tex` are the report's
+tables as LaTeX rows (`report_tables()`, `src/write_tex.py`), from the model as it stands, every row
+(Jordy's decision; rejected: short names and influence phrases kept for the report alone): each
+combined loop with its loops and its description as the mechanism; every element by label with its
+type, SETS domain, the actor that decides it and the combined loops it is in; each actor inside the
+scale with its type, the variables it decides and its influence score. A file holds rows alone, so
+the report keeps each table's caption, columns and header and `\input`s the rows. A session copies
+them, with each figure as a PDF, into the group's Overleaf project, so a change to them is made
+here, never there.
 
 `docs/tables/sources-to-ask.xlsx`, linked from the page beside the table, is the list Jordy and Lenne
 contact the actors from: a row per `ask actors` entry in `model/cld.json` and `model/actor-map.json`
@@ -263,9 +275,16 @@ Combined loops sheet and a Kumu map of its own show each group. `places` (`{"ele
 `docs/figures/combined-loops/<id>.svg`: its own, never the full drawing's, on the same axes and signs as `x`, `y` and
 `curvature`. Each must hold exactly the group's elements, links and loops, so `build.py` stops when a
 loop's path changes, and it warns of a crossing or a link through a box in a figure; `--check` names a
-stale or orphaned one. `model/cld-texts.md`'s `{combined loops list}` shows each group's description, so the
-page's text and the data cannot differ. `sources` (optional) holds what the group's own claim rests on,
-such as the archetype it matches; each link's source stays on the link.
+stale or orphaned one. `docs/figures/report-panels/<id>.svg` draws it again as the report's panel:
+its places spread over one shared frame (`draw_cld.PANEL_FRAME`), every panel in one size, so panels
+set side by side print with one text size (Jordy, chosen between rendered versions); `build.py` warns
+of a crossing there too. `model/cld-texts.md`'s `{combined loops list}` shows each group's description, so the
+page's text and the data cannot differ, and it is the report's mechanism for the group
+(`docs/tables/cld-combined-loops.tex`): a variable named as in the CLD is set in `*…*`, shown in
+italics, and `build.py` stops on one that is no element's label. `sources` (optional) holds what the group's own claim rests on,
+such as the archetype it matches, each cited in the description as an APA in-text citation, (Kim,
+2000, p. 16), which becomes the report's `\parencite`; `build.py` stops on a source it does not cite
+and on a citation of none. Each link's source stays on the link.
 
 ### `model/actor-map.json`
 

@@ -367,7 +367,7 @@ rows (how: its docstring), and the Study repository's `zotero` skill pushes them
 without its passages:
 
 ```sh
-python3 ../CitationCheck/012c8df2/citations/cite_list.py ../CitationCheck/proposal.txt ../CitationCheck/list.json
+python3 ../CitationCheck/012c8df2/citations/cite_list.py ../CitationCheck/proposal.txt ../Report/main.tex ../CitationCheck/list.json
 python3 ../CitationCheck/use_notes.py rows ../CitationCheck/list.json ../CitationCheck/rows.json
 python3 ../../.claude/skills/zotero/zotero.py push ChallengeBasedProject1 "CLD and Actor Map" model/references.json --uses model/cld.json model/actor-map.json --rows ../CitationCheck/rows.json
 ```

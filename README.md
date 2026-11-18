@@ -443,13 +443,16 @@ The two models share Kumu's fields, one per name: a list to pick from where its 
 are 20 or fewer.
 
 An import never updates what a project already holds, and Kumu cannot empty a project, so each
-update is a new project under the same name, which keeps the URL. Jordy deletes the previous
-`cbp1` (Jordy: a past copy is kept nowhere in Kumu; rejected: renaming it), then on the Kumu
-dashboard: New Project → name `cbp1`, public → the next screen →
-"restore backup" (the link at the bottom) → `docs/kumu/kumu-project.json`, once: the file holds
-every map with its view and both background images, so nothing is uploaded after it. Only a
-brand-new project restores a project export; the green `+` → Import route brings in the elements
-and connections alone. The restore sets the project's name, which the export sets to `cbp1`.
+update is a new project under the same name, which keeps the URL. Jordy deletes the previous one
+(Jordy: a past copy is kept nowhere in Kumu; rejected: renaming it), then on the Kumu dashboard:
+New Project → its name, public → the next screen → "restore backup" (the link at the bottom) →
+`docs/kumu/kumu-project.json`, once: the file holds every map with its view and both background
+images, so nothing is uploaded after it. Only a brand-new project restores a project export; the
+green `+` → Import route brings in the elements and connections alone. The restore sets the
+project's name, which the export sets to `cbp1`. Until the Research Proposal's grade is in, `cbp1`
+stays as it is (Jordy's decision: the examiners may be reading it through the proposal's links;
+rejected: replacing it during the examination): an update goes into a throwaway project instead,
+restored from a copy of the export with `name` set to the throwaway's, so it cannot become `cbp1`.
 
 The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label
 inside, square corners for a stock and rounded ones for the others, an italic label for a

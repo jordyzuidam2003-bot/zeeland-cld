@@ -6,7 +6,7 @@
 </defs>
 <rect x="-514" y="-262" width="977" height="524" fill="white"/>
 <g class="links">
-<g class="link" data-from="tolerant-varieties-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.45">
+<g class="link" data-from="tolerant-varieties-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.66">
 <path class="link-path" d="M 254.6 60.0 Q 223.5 118.5 145.0 151.9 Q 66.4 185.2 -26.3 179.1 Q -118.9 173.1 -186.3 130.3 Q -253.7 87.4 -267.2 26.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-247.8" y="72.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>

@@ -14,7 +14,7 @@
 <path class="link-path" d="M -305.7 126.7 Q -355.8 73.0 -359.7 9.8 Q -363.6 -53.4 -320.2 -109.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-345.9" y="-66.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="spending-on-keeping-current-crops" data-sign="+" data-delay="true" data-curvature="0.07">
+<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="spending-on-keeping-current-crops" data-sign="+" data-delay="true" data-curvature="0.1">
 <path class="link-path" d="M -104.3 -229.7 Q 36.4 -258.1 166.7 -212.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="118.8" y="-226.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M 27.3 -264.1 L 24.3 -216.2 M 43.3 -263.1 L 40.3 -215.2" stroke="white" stroke-width="11" fill="none"/>

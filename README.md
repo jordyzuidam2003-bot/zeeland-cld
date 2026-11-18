@@ -42,6 +42,8 @@ the repository's root or `docs/`. `docs/index.html` and `docs/actors.html` stay 
 | `model/references.zotero.json` | the Use note in Zotero that `push` wrote for each source, with a fingerprint of its text, so a push never replaces a note somebody changed | never: `push` writes it |
 | `model/cld-texts.md` | the model texts the page shows: spatial scale, time horizon, purpose, system boundary, assumptions, the named loops | yes |
 | `src/kumu/cld-view.scss`, `src/kumu/actor-map-view.scss` | the Kumu views inside `docs/kumu/kumu-project.json` | yes |
+| `backgrounds/` | Jordy's drawings behind the maps: `background-cld.png` (the subsystem regions) and `background-actor.png` (the level bands), with their Affinity sources `cbp1-cld.af` and `cbp1-actors.af` | Jordy, in Affinity |
+| `src/backdrop.py` | places each drawing at its frame for the page and Kumu, imported by `build.py` | — |
 | `src/templates/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `map.js` (moving and zooming, the bar and the menu, for both pages), `move.js` (Move mode, for both pages), `style.css` | yes |
 | `build.py` | checks the model and the actors and writes `docs/` (how: its docstring) | — |
 | `src/draw_cld.py` | draws the CLD's SVG, imported by `build.py` | — |
@@ -87,7 +89,8 @@ straight and any other keeps that bend), then "Download layout" saves `layout.js
 with every element's position, every link's curvature and each delay mark that was dragged.
 `python3 build.py --layout ~/Downloads/layout.json` writes both into `model/cld.json` and rebuilds; it
 fails on an id or a link that is not in `model/cld.json`. Dragging redraws the links but not the
-regions, which `build.py` draws again from the new positions. Each link has its own bow, chosen
+regions, Jordy's drawing (`backgrounds/`), which stays where it is: after a move a session checks
+each box against it (Kumu, below). Each link has its own bow, chosen
 so a reader can follow every connection: every arrowhead and sign clear, each crossing at a wide
 angle and away from the arrowheads and signs (how links cross matters more than how often), no
 two links running close side by side, a named loop leaving each element about the way it
@@ -104,8 +107,8 @@ middle follows the pointer, with no snapping), then "Download layout" saves `lay
 every actor's position, every relation's curvature, a relation named `from->to kind` since two
 actors can hold two relations, and `"model": "actor-map.json"`. The same `python3 build.py --layout
 ~/Downloads/layout.json` writes them into `model/actor-map.json` and rebuilds; it fails on an actor
-or a relation that is not there. Dragging redraws the relations but not the level bands, which
-`build.py` draws again, warning of an actor outside its level's band.
+or a relation that is not there. Dragging redraws the relations but not the level bands, Jordy's
+drawing, which stays where it is: after a move a session checks each actor against it (Kumu, below).
 
 A picture for the report: `docs/figures/cld.svg` is the drawing on its own, and `docs/figures/named-loops/<id>.svg`
 each named loop on its own, `docs/figures/named-loops/R1.svg` for R1: its elements evenly round one oval in
@@ -462,21 +465,34 @@ inside, square corners for a stock and rounded ones for the others, an italic la
 constant (Kumu has no dashed border), a thick border for an adaptive practice; links of one
 width, blue `+` and red `−`. Kumu draws each link from centre to centre, where the page spreads
 the ends that meet one side of a box (`draw_cld.link_paths()`): two links between the same two
-boxes with the same bow show apart on the page and lie on one line in Kumu. So `build.py` warns,
-each line starting `bow alike:`, where two links in `model/cld.json` or two relations in
-`model/actor-map.json` join the same two boxes with curvatures, each signed for the direction from
-the pair's alphabetically first id, less than 0.1 apart, and each such pair takes bows at least
-that far apart (Jordy's decision: Kumu's drawing is fixed in the build where it can be, by hand
-only for the rest, since a fix by hand is lost at each restore). What still reads less clearly in
+boxes with the same bow show apart on the page and lie on one line in Kumu. How Kumu draws a
+curvature is measured on its own arcs in a restore (`draw_cld.KUMU_STRAIGHT`): an arc through both
+box centres, bowing left of the link's direction for a positive curvature, about curvature times
+half the centres' distance out at its middle, and dead straight under 0.1. So a curvature in
+`model/cld.json` or `model/actor-map.json` (and a group's bend) is 0 or at least 0.1 either way,
+or `build.py` stops (Jordy's decision: the page and Kumu bend the same links), and `build.py`
+warns, each line starting `bow alike:`, where two links or relations join the same two boxes less
+than 100 units apart at their middles as Kumu draws them, about a box's height (Jordy's decision;
+rejected: 0.1 apart in curvature whatever the link's length, which left short pairs too close);
+such a pair is set apart by bowing its outer link further out (Jordy's decision: Kumu's drawing
+is fixed in the build where it can be, by hand only for the rest, since a fix by hand is lost at
+each restore). What still reads less clearly in
 Kumu, such as a link that needs a little more bend, Jordy adjusts there by hand after the last
-restore before a submission. Kumu's arrowheads are its own. The regions reach Kumu
-as a background image inside the file: the CLD's map holds an element labelled `background`,
-pinned at the centre of the regions' frame with the frame's width and height, which the
-`#background` rule in `src/kumu/cld-view.scss` shows behind the map, its image field holding a
-data URL of the regions alone (`draw_cld.regions_svg()`), never in the view, which Kumu's advanced
-editor shows to anyone, and never a URL on the
-published page, so a copy shows its own version's regions and depends on no host (Jordy). The
-Actor Map's level bands reach it the same way, its element `elem-actors-background`. The subsystem is also
+restore before a submission. Kumu's arrowheads are its own.
+
+Jordy's drawings reach Kumu inside the file, so a restore shows them with no hand work (Jordy's
+decision; rejected: adding them in Kumu by hand after each restore, and a URL on the published page
+or the repository, which outsiders never get): the CLD's map holds an element labelled
+`background`, the Actor Map's one labelled `Background-actor`, each pinned at the centre of its
+drawing's frame (`src/backdrop.py`), its image field holding the PNG as a data URL, never in the
+view, which Kumu's advanced editor shows to anyone. The rules `#background` in
+`src/kumu/cld-view.scss` and `#background-actor` in `src/kumu/actor-map-view.scss` put each on the
+background layer; `build.py` adds its size, the PNG's, one unit per pixel (`width: 5418; height:
+3913;` and `width: 2435; height: 1756;`). Each PNG covers the frame of the Kumu export Jordy drew
+over, so it aligns with the boxes to under half a unit, measured in a restore; the page draws the
+same PNGs at the same frames. A drawing does not follow a box that moves, so after a move a session
+checks each box against its region and each actor against its band in the drawings, and a box
+that leaves them goes to Jordy, who redraws in Affinity or the box moves back. The subsystem is also
 a field there. `build.py` adds the rules that tint and size each box below `src/kumu/cld-view.scss`, and
 a double space where the page breaks a label's line (Kumu's manual line break). Kumu holds no
 version, in the project's description or a map's name, so the link to each map stays the same

@@ -6,11 +6,11 @@
 </defs>
 <rect x="-1042" y="-632" width="2092" height="1314" fill="white"/>
 <g class="links">
-<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="0.08">
+<g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="0.1">
 <path class="link-path" d="M -162.4 529.0 Q -330.5 506.1 -470.3 439.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-424.6" y="459.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="saline-seepage-kwel" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="0.07">
+<g class="link" data-from="saline-seepage-kwel" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="0.1">
 <path class="link-path" d="M 470.3 439.7 Q 330.5 506.1 162.4 529.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="211.8" y="521.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 <path class="delay-cut" d="M 337.8 516.0 L 324.4 469.9 M 322.4 520.5 L 309.1 474.4" stroke="white" stroke-width="11" fill="none"/>
@@ -26,17 +26,17 @@
 <path class="delay-cut" d="M -579.6 -406.4 L -553.8 -365.9 M -566.1 -415.0 L -540.3 -374.5" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -579.6 -406.4 L -553.8 -365.9 M -566.1 -415.0 L -540.3 -374.5" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="polder-drainage-depth" data-to="saline-seepage-kwel" data-sign="+" data-delay="false" data-curvature="0.07">
+<g class="link" data-from="polder-drainage-depth" data-to="saline-seepage-kwel" data-sign="+" data-delay="false" data-curvature="0.1">
 <path class="link-path" d="M 789.8 119.8 Q 736.5 276.1 563.9 387.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="605.0" y="359.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="-0.07">
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="-0.1">
 <path class="link-path" d="M 735.0 -227.0 Q 832.8 -86.2 803.6 67.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="809.7" y="18.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 <path class="delay-cut" d="M 822.6 -96.1 L 775.9 -85.3 M 826.2 -80.6 L 779.5 -69.7" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 822.6 -96.1 L 775.9 -85.3 M 826.2 -80.6 L 779.5 -69.7" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="policy-resistance-legal-delays" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="false" data-curvature="-0.07">
+<g class="link" data-from="policy-resistance-legal-delays" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="false" data-curvature="-0.1">
 <path class="link-path" d="M 413.3 -464.4 Q 560.7 -406.1 660.1 -313.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="622.3" y="-345.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
@@ -44,7 +44,7 @@
 <path class="link-path" d="M -563.9 387.7 Q -736.5 276.1 -789.8 119.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-770.9" y="166.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="harvest-lost-to-salt" data-to="farm-revenue" data-sign="-" data-delay="false" data-curvature="-0.07">
+<g class="link" data-from="harvest-lost-to-salt" data-to="farm-revenue" data-sign="-" data-delay="false" data-curvature="-0.1">
 <path class="link-path" d="M -803.6 67.8 Q -834.7 -96.4 -722.6 -244.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-750.9" y="-202.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>

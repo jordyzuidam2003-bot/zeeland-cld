@@ -1,7 +1,7 @@
 // Move mode, for both pages: with "Move" on, drag a box to move it or a link to bend it, its middle
 // following the pointer; "Download layout" then saves layout.json, every box's place and every
 // link's curvature, which build.py --layout writes into the model. Dragging redraws the links but
-// never the CLD's regions or the Actor Map's bands, which build.py draws again from the new places.
+// never Jordy's drawings of the CLD's regions and the Actor Map's bands, which stay where they are (backdrop.py).
 // The link formula is draw_cld.py's link_path() and link_paths(): keep them the same.
 "use strict";
 

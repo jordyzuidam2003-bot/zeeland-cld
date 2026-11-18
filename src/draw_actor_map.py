@@ -2,16 +2,15 @@
 downwards), and the page around it.
 
 Imported by build.py, which writes docs/actors.html (page(): the drawing, a panel per actor and
-relation), docs/figures/actor-map.svg (svg(), the picture for the report), docs/kumu/kumu-project.json (bands_svg(),
-Kumu's background image, inside the file) and docs/tables/actor-map-table.xlsx (sheets(), the actors'
+relation), docs/figures/actor-map.svg (svg(), the picture for the report) and docs/tables/actor-map-table.xlsx (sheets(), the actors'
 table, which Jordy imports into Google Drive as a Google Sheet; rejected: the table on the page,
 Jordy). tangles(actors) and overlaps(actors) give build.py's report the crossings between
 relations, the relations through a box they do not connect, boxes that overlap and an actor
 outside its level's band.
 
 What the network draws, from back to front:
-  bands      one faint horizontal band per level, Global at the top and Local / Provincial /
-             Regional at the bottom, each named in a column at its left (Jordy, chosen between
+  bands      Jordy's drawing of a band per level, Global at the top and Local / Provincial /
+             Regional at the bottom, a PNG at its frame (backdrop.py) (Jordy, chosen between
              rendered versions: by level; rejected: rings by the CLD's scale, clusters by type, and
              boxes shaded by influence score; the scale is not drawn, Jordy)
   relations  a quadratic Bezier from box edge to box edge, as draw_cld.py draws a CLD link, the ends on
@@ -24,6 +23,7 @@ What the network draws, from back to front:
 import json
 import re
 
+import backdrop
 import draw_cld
 
 FONT_SIZE = draw_cld.FONT_SIZE
@@ -41,12 +41,6 @@ KIND = {
     "works with": ("#1BAF7A", "14 9"),
 }
 LEVELS = ["Global", "International", "National", "Local / Provincial / Regional"]  # top to bottom
-BAND_FILL = ["#EEF2F6", "#F8F6F1"]  # alternating, faint, so the relations' colours stay the marks
-BAND_NAME = "#4A5560"
-BAND_NAME_SIZE = 40
-BAND_NAME_SPACING = 5
-BAND_NAMES_WIDTH = 360  # the column left of the boxes that holds the band names
-FRAME_PAD = 90
 MARGIN = 40
 LEGEND_SIZE = 40
 
@@ -134,41 +128,6 @@ def relation_svg(r, p, labels):
             f'stroke-width="{REL_WIDTH}"{dash} marker-end="url(#arrow-{r["kind"].replace(" ", "-")})"/></g>')
 
 
-def bands(actors, bxs):
-    """(svg, frame): a band per level that has actors, from the top of its boxes to the bottom,
-    the border between two bands halfway between them, and the frame (x0, y0, x1, y1) round the
-    boxes with the names' column at its left."""
-    allb = list(bxs.values())
-    fx0, fy0 = min(b[0] for b in allb) - FRAME_PAD - BAND_NAMES_WIDTH, min(b[1] for b in allb) - FRAME_PAD
-    fx1, fy1 = max(b[2] for b in allb) + FRAME_PAD, max(b[3] for b in allb) + FRAME_PAD
-    rows = []
-    for level in LEVELS:
-        bs = [bxs[a["id"]] for a in actors["actors"] if a["level"] == level]
-        if bs:
-            rows.append((level, min(b[1] for b in bs), max(b[3] for b in bs)))
-    edges = [fy0] + [(rows[k][2] + rows[k + 1][1]) / 2 for k in range(len(rows) - 1)] + [fy1]
-    parts = []
-    for k, (level, _, _) in enumerate(rows):
-        y0, y1 = edges[k], edges[k + 1]
-        parts.append(f'<rect x="{fx0:.1f}" y="{y0:.1f}" width="{fx1 - fx0:.1f}" height="{y1 - y0:.1f}" fill="{BAND_FILL[k % 2]}"/>')
-        # "Local / Provincial / Regional" on three lines, so the column stays narrow
-        words = level.replace(" / ", "/ ").split(" ")
-        for i, w in enumerate(words):
-            y = (y0 + y1) / 2 + (i - (len(words) - 1) / 2) * BAND_NAME_SIZE * 1.2
-            parts.append(f'<text x="{fx0 + 40:.1f}" y="{y:.1f}" font-size="{BAND_NAME_SIZE}" font-weight="bold" '
-                         f'letter-spacing="{BAND_NAME_SPACING}" fill="{BAND_NAME}" dominant-baseline="central">{esc(w.upper())}</text>')
-    return "\n".join(parts), (fx0, fy0, fx1, fy1)
-
-
-def bands_svg(actors):
-    """(svg, frame): the bands alone, their viewBox the frame in the actors' coordinates, with a
-    width and a height, for Kumu's background image (as draw_cld.regions_svg() for the CLD)."""
-    band_svg, frame = bands(actors, draw_cld.boxes({"elements": elements(actors)}))
-    x0, y0, x1, y1 = frame
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{x0:.0f} {y0:.0f} {x1 - x0:.0f} {y1 - y0:.0f}" '
-            f'width="{x1 - x0:.0f}" height="{y1 - y0:.0f}" font-family="{draw_cld.FONT}">\n{band_svg}\n</svg>\n'), frame
-
-
 # What the bands mean, under the relations in the legend and as Kumu's Actor Map's description (a line
 # each here, joined there): the bands order the levels from top to bottom, so a reader would read a
 # higher place within a band as a larger scale or more influence
@@ -215,12 +174,13 @@ def head(vb):
 def svg(actors):
     bxs, rels, paths = geometry(actors)
     labels = {a["id"]: a["label"] for a in actors["actors"]}
-    band_svg, (x0, y0, x1, y1) = bands(actors, bxs)
+    # Jordy's drawing of the level bands behind it all, its frame the drawing's (backdrop.py)
+    x0, y0, x1, y1 = backdrop.frame("actors")
     legend, lw, lh = legend_svg(x0, y1 + MARGIN + LEGEND_SIZE)
     y1 += MARGIN + lh + LEGEND_SIZE / 2
     x1 = max(x1, x0 + lw)
     vb = (x0 - MARGIN, y0 - MARGIN, x1 - x0 + 2 * MARGIN, y1 - y0 + 2 * MARGIN)
-    parts = [*head(vb), '<g class="bands">', band_svg, "</g>",
+    parts = [*head(vb), '<g class="bands">', backdrop.image_svg("actors"), "</g>",
              '<g class="relations">', *(relation_svg(r, paths[r["n"]], labels) for r in rels), "</g>",
              '<g class="actors">', *(actor_svg(a, bxs[a["id"]]) for a in actors["actors"]), "</g>",
              legend, "</svg>"]

@@ -4,11 +4,10 @@ Imported by build.py, which writes docs/figures/cld.svg and puts the same drawin
 docs/index.html. svg(cld) returns the drawing as a string; overlaps(cld) the warnings about
 boxes that intersect and other layout faults, and tangles(cld) the crossings between links and
 the links through a box, for build.py's report; boxes(cld) the geometry
-build.py gives Kumu's elements; regions_svg(cld) the regions alone, Kumu's background image.
+build.py gives Kumu's elements.
 
 What is drawn, from back to front:
-  regions   one faint region per subsystem, split by one smooth border with a white gap, each
-            named in its top outer corner
+  regions   Jordy's drawing of the subsystem regions, a PNG at its frame (backdrop.py)
   links     a quadratic Bezier from a point on the source box's edge to one on the target's,
             the ends on one edge spread along it; the sign on the link just before the
             arrowhead, a delay as two short strokes across it at the clearest place along the link
@@ -32,6 +31,8 @@ in src/templates/app.js; keep them and their JS twins the same.
 """
 
 from math import ceil, cos, hypot, pi, sin
+
+import backdrop
 
 # --- style -------------------------------------------------------------------------------
 FONT = "Helvetica Neue, Helvetica, Arial, sans-serif"
@@ -386,6 +387,9 @@ def loop_svg(loop, centre):
 
 
 # --- regions ----------------------------------------------------------------------------------
+# The page draws Jordy's regions (backdrop.py). regions() still lays out the generated ones, whose
+# border steers legend_spot() clear of the gap and whose names' places overlaps() keeps links off:
+# his drawing follows the same split, the names in the same top corners.
 # One region per subsystem behind everything: the first subsystem left of one smooth border, the
 # second right of it, together filling the drawing's rounded frame, a white gap of even width
 # between them (Jordy: the split across the canvas, the border as a gentle wave). The fills are
@@ -553,19 +557,6 @@ def regions(cld, bxs):
     return "\n".join(parts), (fx0, fy0, fx1, fy1), crowded, (y0, border)
 
 
-def regions_svg(cld):
-    """(svg, frame): the regions alone, their viewBox the frame in the elements' coordinates, for
-    Kumu's background image (build.py puts it in the Kumu project as a data URL). Its width and height are the
-    frame's, one pixel per unit: with a viewBox alone a browser gives the image 250 by 150 pixels,
-    and Kumu stretched that to the frame, blurring the region names and the border."""
-    bxs = boxes(cld)
-    region_svg, frame, _, _ = regions(cld, bxs)
-    x0, y0, x1, y1 = frame
-    w, h = x1 - x0, y1 - y0
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{x0:.0f} {y0:.0f} {w:.0f} {h:.0f}" '
-            f'width="{w:.0f}" height="{h:.0f}" font-family="{FONT}">\n{region_svg}\n</svg>\n'), frame
-
-
 # --- legend ---------------------------------------------------------------------------------
 def legend_svg(x, y):
     """The legend, its title's baseline at (x, y); returns (svg, width, height)."""
@@ -652,8 +643,11 @@ def legend_spot(bxs, paths, frame, border, lw, lh):
 def svg(cld):
     bxs = boxes(cld)
     paths = link_paths(cld, bxs)
-    region_svg, frame, _, border = regions(cld, bxs)
-    x0, y0, x1, y1 = frame  # the frame holds every box
+    # Jordy's drawing of the regions behind it all, its frame the drawing's (backdrop.py); the
+    # generated border only steers the legend clear of the gap between the regions
+    _, _, _, border = regions(cld, bxs)
+    frame = backdrop.frame("cld")
+    x0, y0, x1, y1 = frame
     _, lw, lh = legend_svg(0, 0)
     spot = legend_spot(bxs, paths, frame, border, lw, lh)
     if spot:
@@ -663,7 +657,7 @@ def svg(cld):
         y1 += MARGIN + lh
         x1 = max(x1, x0 + lw)
     vb = (x0 - MARGIN, y0 - MARGIN, x1 - x0 + 2 * MARGIN, y1 - y0 + 2 * MARGIN)
-    parts = [*head(vb), '<g class="regions">', region_svg, "</g>", *links_and_elements(cld, bxs, {k: [p] for k, p in paths.items()}, delay_spots(cld, {k: [p] for k, p in paths.items()})), legend, "</svg>"]
+    parts = [*head(vb), '<g class="regions">', backdrop.image_svg("cld"), "</g>", *links_and_elements(cld, bxs, {k: [p] for k, p in paths.items()}, delay_spots(cld, {k: [p] for k, p in paths.items()})), legend, "</svg>"]
     return "\n".join(parts) + "\n"
 
 
@@ -731,6 +725,12 @@ def oval(cld, loop):
 OVAL_MARK = (0, 0)  # a one-loop figure's mark: the oval's centre
 
 
+# How Kumu draws a curvature, measured on its own arcs in a restored export (README's Kumu): an arc
+# through both box centres, bowing left of the link's direction for a positive curvature, about
+# curvature x half the centres' distance out at its middle; under KUMU_STRAIGHT a straight line
+KUMU_STRAIGHT = 0.1
+
+
 def oval_layout(cld, loop):
     """(places, bends, marks): the oval of loop_figure() in the shape of a group's `places`, `bends`
     and `marks` in cld.json, for build.py's Kumu map of the loop. Kumu draws a link from centre to
@@ -745,7 +745,9 @@ def oval_layout(cld, loop):
         # a quadratic curve passes (start + 2 control + end) / 4 halfway, so through m its control
         # lies 2 (m - chord middle) from the chord's middle; link_path() moves it curvature (dy, -dx)
         ox, oy = 2 * (m[0] - (ax + bx) / 2), 2 * (m[1] - (ay + by) / 2)
-        bends[f"{a} -> {b}"] = round((ox * dy - oy * dx) / (dx * dx + dy * dy), 3)
+        k = round((ox * dy - oy * dx) / (dx * dx + dy * dy), 3)
+        # Kumu draws a bow under KUMU_STRAIGHT straight, so the smallest it draws, on the oval's side
+        bends[f"{a} -> {b}"] = k if abs(k) >= KUMU_STRAIGHT else (KUMU_STRAIGHT if k > 0 else -KUMU_STRAIGHT)
     return {i: [round(x), round(y)] for i, (x, y) in at.items()}, bends, {loop["id"]: list(OVAL_MARK)}
 
 

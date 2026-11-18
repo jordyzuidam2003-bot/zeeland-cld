@@ -49,11 +49,11 @@ element {
   border-width: 5;
 }
 
-/* ---------- Regions: the page's two subsystem regions as a background image ---------- */
+/* ---------- Regions: Jordy's drawing of the subsystem regions as a background image ---------- */
 /* the rule of Kumu's images guide (docs.kumu.io/guides/images.html); build.py adds the element,
-   pinned at the centre of the regions' frame, and its width and height, the frame's, and puts the
-   regions in the element's image field, as a data URL of the SVG it draws, so the image travels
-   inside the project file and never in this view, which Kumu's advanced editor shows to anyone */
+   pinned at the centre of the drawing's frame, and its width and height, the PNG's, and puts the
+   PNG in the element's image field as a data URL (src/backdrop.py), so the image travels inside
+   the project file and never in this view, which Kumu's advanced editor shows to anyone */
 #background {
   layer: background;
   shape: rectangle;

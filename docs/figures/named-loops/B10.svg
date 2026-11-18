@@ -16,7 +16,7 @@
 <path class="delay-cut" d="M -519.6 -302.8 L -490.4 -264.7 M -507.0 -312.5 L -477.7 -274.4" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -519.6 -302.8 L -490.4 -264.7 M -507.0 -312.5 L -477.7 -274.4" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="farmers-capacity-to-invest" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.25">
+<g class="link" data-from="farmers-capacity-to-invest" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.29">
 <path class="link-path" d="M 90.2 435.9 Q -3.8 444.5 -97.6 435.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-47.7" y="438.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
@@ -36,7 +36,7 @@
 <path class="link-path" d="M 632.6 -125.4 Q 692.7 9.4 624.5 142.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="644.2" y="96.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="bank-credit-to-farms" data-to="farmers-capacity-to-invest" data-sign="+" data-delay="false" data-curvature="0.07">
+<g class="link" data-from="bank-credit-to-farms" data-to="farmers-capacity-to-invest" data-sign="+" data-delay="false" data-curvature="0.1">
 <path class="link-path" d="M 592.1 194.4 Q 515.4 298.3 371.9 363.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="416.7" y="341.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

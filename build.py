@@ -48,14 +48,13 @@ edit docs/, which this script writes:
                        once into a brand-new Kumu project (New Project > the next screen > restore
                        backup), it holds the full CLD, the Actor Map and a map per combined loop and
                        per named loop, each drawn as its figure, with no showcase; each map with
-                       its view, the CLD's regions and the Actor Map's level bands as background
-                       images inside the file (an element labelled background showing a data URL
-                       of the SVG); no version, so the link to each map stays the same from one
+                       its view, Jordy's drawings of the CLD's regions and the Actor Map's level
+                       bands (backgrounds/, src/backdrop.py) as background images inside the file
+                       (an element showing a data URL of the PNG); no version, so the link to each map stays the same from one
                        copy to the next
 """
 
 import argparse
-import base64
 import hashlib
 import json
 import math
@@ -67,6 +66,7 @@ ROOT = Path(__file__).resolve().parent
 # the modules build.py uses live in src/, beside the templates and the Kumu views
 sys.path.insert(0, str(ROOT / "src"))
 
+import backdrop  # noqa: E402
 import draw_actor_map  # noqa: E402
 import draw_cld  # noqa: E402
 import write_tex  # noqa: E402
@@ -112,30 +112,61 @@ ACTOR_FIELDS = ["label", "scale", "type", "level", "sector", "interest", "influe
 # the Living Lab Schouwen-Duiveland (ChallengeBasedProject1/.claude/rules/cld-model.md); an entry
 # lists each one to start asking through, as one contact leads to the next (Jordy)
 ASK_THROUGH = ["DCC", "Living Lab"]
-# the least two links between the same two boxes differ in bow, so Kumu draws them apart (bows_alike())
-BOW_APART = 0.1
+KUMU_STRAIGHT = draw_cld.KUMU_STRAIGHT  # Kumu draws a curvature under it straight (measured, draw_cld.py)
+# the least gap, in the model's units, at their middles between two links that join the same two
+# boxes (Jordy's decision: about a box's height; rejected: 0.1 apart in curvature, whatever the
+# link's length, which left short pairs too close and pairs under KUMU_STRAIGHT on one line)
+BOW_GAP = 100
 
 
-def bows_alike(links, where=""):
-    """`bow alike:` lines for two links that join the same two boxes with curvatures, each signed for
-    the direction from the pair's alphabetically first id, less than BOW_APART apart. The page spreads
-    the ends that meet one side of a box (draw_cld.link_paths()), so two such links show apart there;
-    Kumu draws each from centre to centre, so there they lie on one line (README, Kumu). links: (name,
-    from, to, curvature); a positive curvature bows left of the link's direction, so a link from the
-    second id to the first counts its own negated. where: the model the lines name, after "bow alike:".
+def kumu_bow(k):
+    """The curvature as Kumu draws it: 0 under KUMU_STRAIGHT."""
+    return k if abs(k) >= KUMU_STRAIGHT else 0
 
-    >>> bows_alike([("a -> b", "a", "b", 0.2), ("b -> a", "b", "a", -0.28)])
-    ['bow alike: a -> b and b -> a, bows +0.20 and +0.28 from a, less than 0.1 apart']
-    >>> bows_alike([("a -> b", "a", "b", 0.2), ("b -> a", "b", "a", -0.36)])
-    []
+
+def kumu_straight(k):
+    """Whether Kumu draws a bent curvature straight: 0 < |k| < KUMU_STRAIGHT. The model holds 0 or a
+    bow Kumu draws (Jordy's decision), so the page and Kumu bend the same links."""
+    return 0 < abs(k) < KUMU_STRAIGHT
+
+
+def bows_alike(links, places, where=""):
+    """`bow alike:` lines for two links that join the same two boxes less than BOW_GAP apart at their
+    middles as Kumu draws them (kumu_bow()). The page spreads the ends that meet one side of a box
+    (draw_cld.link_paths()), so such links show apart there, while Kumu draws each from centre to
+    centre (README, Kumu). links: (name, from, to, curvature); places: {id: (x, y)}; a link from the
+    pair's second id to its first counts its curvature negated. where: the model the lines name.
+
+    The three pairs Jordy set apart by hand in Kumu at the proposal, at their places: two relations
+    one way at -0.08 and +0.08, both straight in Kumu, on one line;
+    >>> p = {"buyers-and-processors": (1844, 681), "arable-farmers": (2048, 1200)}
+    >>> bows_alike([("b buys from a", "buyers-and-processors", "arable-farmers", -0.08),
+    ...             ("b advises a", "buyers-and-processors", "arable-farmers", 0.08)], p)
+    ['bow alike: b buys from a and b advises a, 0 units apart at their middles as Kumu draws them, less than 100']
+
+    two relations both ways at +0.08, on one line;
+    >>> p = {"waterschap-scheldestromen": (2385, 1250), "provincie-zeeland": (2347, 1486)}
+    >>> bows_alike([("w works with p", "waterschap-scheldestromen", "provincie-zeeland", 0.08),
+    ...             ("p authority over w", "provincie-zeeland", "waterschap-scheldestromen", 0.08)], p)
+    ['bow alike: w works with p and p authority over w, 0 units apart at their middles as Kumu draws them, less than 100']
+
+    and three, one straight, the two from the Provincie bowing one way 46 units apart;
+    >>> p = {"gemeente-schouwen-duiveland": (1688, 1476), "provincie-zeeland": (2347, 1486)}
+    >>> bows_alike([("g works with p", "gemeente-schouwen-duiveland", "provincie-zeeland", -0.08),
+    ...             ("p authority over g", "provincie-zeeland", "gemeente-schouwen-duiveland", 0.36),
+    ...             ("p finances g", "provincie-zeeland", "gemeente-schouwen-duiveland", 0.22)], p)
+    ['bow alike: g works with p and p finances g, 72 units apart at their middles as Kumu draws them, less than 100', 'bow alike: p authority over g and p finances g, 46 units apart at their middles as Kumu draws them, less than 100']
     """
     pairs = {}
     for name, a, b, k in links:
-        pairs.setdefault(min(a, b), {}).setdefault(max(a, b), []).append((name, k if a < b else -k))
-    # rounded, so two bows set exactly BOW_APART apart do not read as closer in floating point
-    return [f"bow alike: {where}{m} and {n}, bows {x:+.2f} and {y:+.2f} from {first}, less than {BOW_APART} apart"
-            for first, ends in pairs.items() for ls in ends.values()
-            for i, (m, x) in enumerate(ls) for n, y in ls[i + 1:] if round(abs(x - y), 6) < BOW_APART]
+        pairs.setdefault((min(a, b), max(a, b)), []).append((name, kumu_bow(k) if a < b else -kumu_bow(k)))
+    out = []
+    for (a, b), ls in pairs.items():
+        half = math.dist(places[a], places[b]) / 2
+        out += [f"bow alike: {where}{m} and {n}, {gap:.0f} units apart at their middles as Kumu draws them, less than {BOW_GAP}"
+                for i, (m, x) in enumerate(ls) for n, y in ls[i + 1:]
+                for gap in [abs(x - y) * half] if round(gap, 6) < BOW_GAP]
+    return out
 
 
 def ask_errors(item, name, actor_ids):
@@ -263,6 +294,9 @@ def check_actors(actors, refs):
                 errors.append(f"{name}: relation kind {r.get('kind')!r} not in {RELATION_KINDS}")
             if not isinstance(r.get("curvature"), (int, float)):
                 errors.append(f"{name}: the relation to {r.get('to')!r} needs a curvature, a number (0 is straight)")
+            elif kumu_straight(r["curvature"]):
+                errors.append(f"{name}: the relation to {r.get('to')!r} bows {r['curvature']}, which Kumu draws straight: "
+                              f"0, or at least {KUMU_STRAIGHT} either way")
         for key in a.get("sources", []) + [k for r in a.get("relations", []) for k in r.get("sources", [])]:
             if key not in refs:
                 errors.append(f"{name}: source {key!r} is not in references.json")
@@ -337,6 +371,8 @@ def check(cld, refs, actors):
             errors.append(f"{name}: polarity must be '+' or '-'")
         if not isinstance(c.get("delay"), bool) or not isinstance(c.get("curvature"), (int, float)):
             errors.append(f"{name}: delay must be true/false and curvature a number")
+        elif kumu_straight(c["curvature"]):
+            errors.append(f"{name}: curvature {c['curvature']}, which Kumu draws straight: 0, or at least {KUMU_STRAIGHT} either way")
         # A behavioural claim with no source is a hypothesis for the group model building session;
         # one that finds a source takes it and loses the mark.
         if not isinstance(c.get("hypothesis", False), bool):
@@ -404,6 +440,8 @@ def check(cld, refs, actors):
             errors += [f"group {name}: source {k!r} is not cited in its description" for k in known if f"{{{k}}}" not in latex]
         except ValueError as e:
             errors.append(f"group {name}: {e}")
+        errors += [f"group {name}: {k} bends {v}, which Kumu draws straight: 0, or at least {KUMU_STRAIGHT} either way"
+                   for k, v in group.get("bends", {}).items() if isinstance(v, (int, float)) and kumu_straight(v)]
         members = group.get("loops", [])
         unknown = [m for m in members if m not in loop_ids]
         if unknown:
@@ -760,19 +798,23 @@ def ask_sheets(cld, actors):
     return [("Sources to ask", [36, 90, 30, 12], [["Element, link or actor", "What is missing", "Actor", "Through"]] + rows)]
 
 
-def data_url(svg):
-    """An SVG as a data URL: the form in which a Kumu view carries its background image inside the
-    project file, so the project depends on no host (cld-drawing.md)."""
-    return "data:image/svg+xml;base64," + base64.b64encode(svg.encode()).decode()
-
-
-def background(_id, svg, view, name):
-    """The element the view's #background rule shows behind a map, its image svg as a data URL in the
-    element's own image field, so the image travels inside the project file and the view, which Kumu's
-    advanced editor shows to anyone, holds none of it (Jordy)."""
+def background(_id, label, drawing, view, name):
+    """(element, node, rule): Jordy's drawing behind a map (backdrop.py). The element labelled label,
+    which the view's #<label> rule shows on the background layer, holds the PNG as a data URL in its
+    own image field, so an import shows it with no hand work and the view, which Kumu's advanced
+    editor shows to anyone, holds none of it (Jordy's decisions); its node is pinned at the centre
+    of the drawing's frame, and the rule sizes it to the PNG, one unit per pixel."""
     if "image-url" in view:
         sys.exit(f"src/kumu/{name} sets an image-url: the background's image goes in its element's image field")
-    return {"_id": _id, "attributes": {"label": "background", "image": data_url(svg)}}
+    slug = label.lower()
+    if not re.search(rf"^#{slug} \{{", view, re.M):
+        sys.exit(f"src/kumu/{name} needs its #{slug} rule: it puts the drawing on the background layer")
+    x0, y0, x1, y1 = backdrop.frame(drawing)
+    w, h = backdrop.size(drawing)
+    return ({"_id": _id, "attributes": {"label": label, "image": backdrop.data_url(drawing)}},
+            {"_id": _id.replace("elem-", "node-"), "position": {"x": (x0 + x1) / 2, "y": (y0 + y1) / 2},
+             "pinned": True, "style": {}, "element": _id},
+            f"#{slug} {{ width: {w}; height: {h}; }}")
 
 
 def bare(view):
@@ -800,17 +842,13 @@ def project(cld, refs, actors, template):
     elements = [{"_id": f'elem-{e["id"]}',
                  "attributes": {**keep(e, {"id", "x", "y"}), "label": "  ".join(bxs[e["id"]][4])}}
                 for e in bp["elements"]]
-    regions, (fx0, fy0, fx1, fy1) = draw_cld.regions_svg(cld)
-    # Kumu shows the regions stretched to the frame: with a viewBox alone a browser sizes an SVG 250
-    # by 150 pixels, which Kumu blurred (draw_cld.regions_svg())
-    if not re.match(r'<svg [^>]*\bwidth="\d+" height="\d+"', regions):
-        sys.exit("the regions' SVG needs a width and a height besides its viewBox: draw_cld.regions_svg() writes them")
-    # the regions: an element labelled background, the regions its image (cld-view.scss)
-    elements.append(background("elem-background", regions, template, "cld-view.scss"))
+    # Jordy's drawing of the regions: an element labelled background (cld-view.scss)
+    bg, bg_node, bg_rule = background("elem-background", "background", "cld", template, "cld-view.scss")
+    elements.append(bg)
     rules = ([f'["sets domain"="{d.lower()}"] {{ color: {t}; }}' for d, t in draw_cld.TINT.items()]
              + [f'#elem-{i} {{ width: {round(b[2] - b[0])}; height: {round(b[3] - b[1])}; }}'
                 for i, b in bxs.items()]
-             + [f'#background {{ width: {round(fx1 - fx0)}; height: {round(fy1 - fy0)}; }}'])
+             + [bg_rule])
     # the blueprint key "type" is "connection type" in a project export: the +/- at the arrowhead
     connections = [{"_id": f'conn-{c["id"]}', "direction": "directed", "delayed": c["delay"] == "yes",
                     "reversed": False,
@@ -821,8 +859,7 @@ def project(cld, refs, actors, template):
 
     nodes = [{"_id": f'node-{i}', "position": {"x": x, "y": y}, "pinned": True,
               "style": {}, "element": f'elem-{i}'}
-             for i, x, y in [(e["id"], e["x"], e["y"]) for e in cld["elements"]]
-             + [("background", round((fx0 + fx1) / 2), round((fy0 + fy1) / 2))]]
+             for i, x, y in [(e["id"], e["x"], e["y"]) for e in cld["elements"]]] + [bg_node]
     edges = [{"_id": f'edge-{c["from"]}--{c["to"]}', "curvature": c["curvature"], "style": {},
               "connection": f'conn-{c["from"]}--{c["to"]}'} for c in cld["connections"]]
     # A Kumu loop is its connections by id, its label and description as attributes; the map places
@@ -880,11 +917,10 @@ def actors_project(actors, refs, decides, cld_labels, template):
     """The Actor Map's part of the Kumu project (kumu_project()), as project() gives the CLD's: each
     actor an element with its fields, its type the CLD's field element type, each relation a
     connection whose type is its kind, the actors at their places, the relations with their curves,
-    and the level bands as the background image (an element labelled background, as the CLD's
-    regions). The view is src/kumu/actor-map-view.scss with the bands as its background image, plus
+    and Jordy's drawing of the level bands as the background image (an element labelled
+    Background-actor, as the CLD's regions). The view is src/kumu/actor-map-view.scss with the bands as its background image, plus
     each kind's colour and dash from draw_actor_map.KIND and each box's size."""
     bxs, rels, _ = draw_actor_map.geometry(actors)
-    bands, (fx0, fy0, fx1, fy1) = draw_actor_map.bands_svg(actors)
     labels = {a["id"]: a["label"] for a in actors["actors"]}
     elements = [{"_id": f'elem-{a["id"]}', "attributes": {
         "label": "  ".join(bxs[a["id"]][4]), "element type": a["type"], "level": a["level"], "sector": a["sector"],
@@ -894,22 +930,23 @@ def actors_project(actors, refs, decides, cld_labels, template):
         **({"ask actors": ask_text(a, labels)} if "ask actors" in a else {}),
         **({"no relations": a["no relations"]} if "no relations" in a else {}),
         "sources": "\n".join(refs[k] for k in a["sources"])}} for a in actors["actors"]]
-    # its own id beside the CLD's background, and the same label, which the view's #background selects
-    elements.append(background("elem-actors-background", bands, template, "actor-map-view.scss"))
+    # Jordy's drawing of the bands: its own id and label beside the CLD's background (actor-map-view.scss)
+    bg, bg_node, bg_rule = background("elem-actors-background", "Background-actor", "actors", template,
+                                      "actor-map-view.scss")
+    elements.append(bg)
     connections = [{"_id": f'conn-{r["n"]}', "direction": "directed", "delayed": False, "reversed": False,
                     "attributes": {"connection type": r["kind"], "description": r["description"],
                                    "sources": "\n".join(refs[k] for k in r["sources"])},
                     "from": f'elem-{r["from"]}', "to": f'elem-{r["to"]}'} for r in rels]
     nodes = [{"_id": f'node-{a["id"]}', "position": {"x": a["x"], "y": a["y"]}, "pinned": True, "style": {},
               "element": f'elem-{a["id"]}'} for a in actors["actors"]]
-    nodes.append({"_id": "node-actors-background", "position": {"x": round((fx0 + fx1) / 2), "y": round((fy0 + fy1) / 2)},
-                  "pinned": True, "style": {}, "element": "elem-actors-background"})
+    nodes.append(bg_node)
     edges = [{"_id": f'edge-{r["n"]}', "curvature": r["curvature"], "style": {}, "connection": f'conn-{r["n"]}'}
              for r in rels]
     rules = ([f'["connection type"="{k}"] {{ color: {c}; style: {"dashed" if d else "solid"}; }}'
               for k, (c, d) in draw_actor_map.KIND.items()]
              + [f'#elem-{i} {{ width: {round(b[2] - b[0])}; height: {round(b[3] - b[1])}; }}' for i, b in bxs.items()]
-             + [f'#background {{ width: {round(fx1 - fx0)}; height: {round(fy1 - fy0)}; }}'])
+             + [bg_rule])
     style = (template.rstrip() + "\n\n/* ---------- generated by build.py: the kinds' look, box sizes, the bands' size ---------- */\n"
              + "\n".join(rules) + "\n")
     return {
@@ -1124,8 +1161,10 @@ def main():
     if warnings:
         print("warnings:\n  " + "\n  ".join(warnings))
     # each at the line's start, so a check counts them (grep "^bow alike:")
-    bows = (bows_alike([(f"{c['from']} -> {c['to']}", c["from"], c["to"], c["curvature"]) for c in cld["connections"]])
-            + bows_alike([(f"{r['from']} {r['kind']} {r['to']}", r["from"], r["to"], r["curvature"]) for r in rel], "actor map: "))
+    bows = (bows_alike([(f"{c['from']} -> {c['to']}", c["from"], c["to"], c["curvature"]) for c in cld["connections"]],
+                       {e["id"]: (e["x"], e["y"]) for e in cld["elements"]})
+            + bows_alike([(f"{r['from']} {r['kind']} {r['to']}", r["from"], r["to"], r["curvature"]) for r in rel],
+                         {a["id"]: (a["x"], a["y"]) for a in actors["actors"]}, "actor map: "))
     if bows:
         print("\n".join(bows))
 

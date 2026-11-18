@@ -6,11 +6,11 @@
 </defs>
 <rect x="-499" y="-272" width="997" height="587" fill="white"/>
 <g class="links">
-<g class="link" data-from="polder-drainage-depth" data-to="saline-seepage-kwel" data-sign="+" data-delay="false" data-curvature="0.07">
+<g class="link" data-from="polder-drainage-depth" data-to="saline-seepage-kwel" data-sign="+" data-delay="false" data-curvature="0.1">
 <path class="link-path" d="M -219.7 -121.0 Q -164.9 -165.3 -82.4 -181.9 Q 0.0 -198.5 82.4 -181.9 Q 164.9 -165.3 219.7 -121.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="178.0" y="-148.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="-0.07">
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="-0.1">
 <path class="link-path" d="M -177.2 148.8 Q -250.7 109.9 -275.1 49.6 Q -299.6 -10.8 -265.5 -69.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-283.4" y="-22.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 <path class="delay-cut" d="M -289.7 75.4 L -246.3 54.9 M -296.6 61.0 L -253.2 40.4" stroke="white" stroke-width="11" fill="none"/>

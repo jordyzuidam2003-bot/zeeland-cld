@@ -1,3 +1,5 @@
 .venv/
 __pycache__/
 .DS_Store
+# the Kumu exports Jordy drew over: reproducible from Kumu, not his drawings (backgrounds/)
+backgrounds/cbp1-*.svg

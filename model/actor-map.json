@@ -32,7 +32,7 @@
           "sources": [
             "waterschapswet-2026"
           ],
-          "curvature": 0.08
+          "curvature": 0.3
         }
       ],
       "sources": [
@@ -70,7 +70,7 @@
             "scheldestromen-2026-grondwater",
             "omgevingswet-2026"
           ],
-          "curvature": 0.18
+          "curvature": 0.3
         },
         {
           "to": "provincie-zeeland",
@@ -79,7 +79,7 @@
           "sources": [
             "scheldestromen-2021-wbp"
           ],
-          "curvature": 0.08
+          "curvature": 0.42
         }
       ],
       "sources": [
@@ -118,7 +118,7 @@
             "schouwen-duiveland-omgevingsplan",
             "schouwen-duiveland-2024-waterbassins"
           ],
-          "curvature": 0.08
+          "curvature": 0.1
         },
         {
           "to": "arable-farmers",
@@ -127,7 +127,7 @@
           "sources": [
             "schouwen-duiveland-subsidie-zoet-water"
           ],
-          "curvature": 0.22
+          "curvature": 0.55
         },
         {
           "to": "waterschap-scheldestromen",
@@ -145,7 +145,7 @@
           "sources": [
             "living-lab-partners"
           ],
-          "curvature": -0.08
+          "curvature": 0.1
         },
         {
           "to": "zlto",
@@ -190,7 +190,7 @@
           "sources": [
             "living-lab-partners"
           ],
-          "curvature": -0.08
+          "curvature": -0.1
         }
       ],
       "sources": [
@@ -227,7 +227,7 @@
             "provincie-zeeland-2025-rwp",
             "scheldestromen-2021-wbp"
           ],
-          "curvature": 0.08
+          "curvature": 0.42
         },
         {
           "to": "gemeente-schouwen-duiveland",
@@ -237,7 +237,7 @@
             "omgevingswet-2026",
             "schouwen-duiveland-2024-waterbassins"
           ],
-          "curvature": 0.36
+          "curvature": 0.53
         },
         {
           "to": "gemeente-schouwen-duiveland",
@@ -325,7 +325,7 @@
             "cosun-royal-cosun",
             "janssens-2020"
           ],
-          "curvature": -0.08
+          "curvature": -0.18
         },
         {
           "to": "arable-farmers",
@@ -334,7 +334,7 @@
           "sources": [
             "cosun-sustainable-beet-production"
           ],
-          "curvature": 0.08
+          "curvature": 0.18
         }
       ],
       "sources": [
@@ -374,7 +374,7 @@
             "reglement-scheldestromen-2025",
             "omroep-zeeland-2026-aardappeloogst"
           ],
-          "curvature": -0.08
+          "curvature": -0.1
         },
         {
           "to": "waterschap-scheldestromen",
@@ -383,7 +383,7 @@
           "sources": [
             "provincie-zeeland-2025-rwp"
           ],
-          "curvature": -0.08
+          "curvature": -0.1
         },
         {
           "to": "provincie-zeeland",
@@ -429,7 +429,7 @@
           "sources": [
             "janssens-2020"
           ],
-          "curvature": -0.09
+          "curvature": -0.1
         }
       ],
       "sources": [
@@ -460,7 +460,7 @@
           "sources": [
             "ec-cap-at-a-glance"
           ],
-          "curvature": 0.08
+          "curvature": 0.1
         },
         {
           "to": "arable-farmers",
@@ -469,7 +469,7 @@
           "sources": [
             "ec-cap-conditionality"
           ],
-          "curvature": 0.08
+          "curvature": -0.1
         },
         {
           "to": "banks",
@@ -478,7 +478,7 @@
           "sources": [
             "ec-2023-banking-package"
           ],
-          "curvature": 0.08
+          "curvature": 0.1
         }
       ],
       "sources": [
@@ -514,7 +514,7 @@
             "lvvn-2026-tarieven-glb-2025",
             "rvo-eco-regeling-2026"
           ],
-          "curvature": -0.08
+          "curvature": -0.1
         }
       ],
       "sources": [
@@ -549,7 +549,7 @@
           "sources": [
             "rekenkamer-2026-zoetwater"
           ],
-          "curvature": 0.08
+          "curvature": 0.1
         },
         {
           "to": "waterschap-scheldestromen",
@@ -559,7 +559,7 @@
             "rekenkamer-2026-zoetwater",
             "iplo-verdringingsreeks"
           ],
-          "curvature": -0.08
+          "curvature": -0.1
         },
         {
           "to": "provincie-zeeland",
@@ -579,7 +579,7 @@
             "rekenkamer-2026-zoetwater",
             "deltaprogramma-2027"
           ],
-          "curvature": -0.08
+          "curvature": -0.1
         }
       ],
       "sources": [
@@ -611,7 +611,7 @@
           "sources": [
             "rws-2026-waterakkoord-vzm"
           ],
-          "curvature": -0.08
+          "curvature": -0.1
         }
       ],
       "sources": [
@@ -753,7 +753,7 @@
           "sources": [
             "living-lab-natuurlijk-zoet"
           ],
-          "curvature": -0.23
+          "curvature": -0.25
         },
         {
           "to": "arable-farmers",
@@ -763,7 +763,7 @@
             "kaandorp-2022",
             "living-lab-samenwerken-voor-zoet-water"
           ],
-          "curvature": 0.08
+          "curvature": 0.25
         }
       ],
       "sources": [
@@ -798,7 +798,7 @@
             "delphy-2023-dorsd",
             "wiepkema-2023-zoetwaterbehoefte"
           ],
-          "curvature": 0.08
+          "curvature": 0.1
         }
       ],
       "sources": [

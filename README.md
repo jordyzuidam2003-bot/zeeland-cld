@@ -57,6 +57,9 @@ chose whole as the final CLD before the group model building session. Version 1,
 approved first, is kept only by the git tag `v1` (`git show v1:cld.json`: the tag keeps it at the root), with no published
 page.
 
+The version the Research Proposal shows is the tag `proposal`: what changed since is
+`git diff proposal -- model/`, and why, each commit's message (`git log proposal.. -- model/`).
+
 ## Working on the diagram
 
 Teammates work through the page: read it, click elements and links, and send Jordy the change

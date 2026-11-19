@@ -3059,91 +3059,91 @@
       "description": "*Root zone salinity* damages the *Soil structure*, so less rain soaks in: *Rainwater lens recharge in the low polders* falls, the *Rainwater lens thickness in the low polders* falls over years and *Root zone salinity* rises further (R1). As *Harvest lost to salt* rises, farmers respond in different ways, and at different speeds: *Adoption of salt-tolerant varieties* of their current crops, with the same machines and storage (B1); *Adoption of new salt-tolerant crops*, new to the island's rotations, after a delay (B2); and, over decades, less *Arable land in the polders* where arable farming stops paying, which raises the *Water board's plans to raise ditch levels*, since its levels follow the land's use (B3). The first two lower the *Harvest lost to salt* and leave the salt in the soil; only the third lowers the salt. The order is a reading of the delays and costs, and the links from *Harvest lost to salt* to *Adoption of salt-tolerant varieties* and from *Agricultural land value* to *Arable land in the polders* are hypotheses for the group model building session.",
       "places": {
         "root-zone-salinity": [
-          -605,
-          -403
+          0,
+          -527
         ],
         "harvest-lost-to-salt": [
-          -75,
-          -568
+          554,
+          -423
         ],
         "farm-revenue": [
-          490,
-          -467
+          889,
+          -154
         ],
         "agricultural-land-value": [
-          826,
-          -148
+          840,
+          227
         ],
         "farmland-leaving-arable-use": [
-          775,
-          241
+          372,
+          483
         ],
         "plans-to-raise-ditch-levels": [
-          361,
-          517
+          -281,
+          502
         ],
         "polder-drainage-depth": [
-          -221,
-          551
+          -780,
+          287
         ],
         "saline-seepage-kwel": [
-          -700,
-          327
+          -923,
+          -62
         ],
         "freshwater-lens-thickness": [
-          -852,
-          -50
+          -600,
+          -403
         ],
         "soil-structure-usability": [
-          -1505,
-          -733
+          -94,
+          -990
         ],
         "freshwater-lens-recharge": [
-          -1902,
-          -180
+          -642,
+          -929
         ],
         "salt-tolerant-crop-adoption": [
-          -495,
-          -1188
+          1794,
+          -456
         ],
         "tolerant-varieties-adoption": [
-          345,
-          -1188
+          530,
+          -1343
         ]
       },
       "bends": {
-        "root-zone-salinity -> soil-structure-usability": -0.16,
-        "soil-structure-usability -> freshwater-lens-recharge": -0.16,
-        "freshwater-lens-recharge -> freshwater-lens-thickness": -0.16,
-        "freshwater-lens-thickness -> root-zone-salinity": -0.16,
-        "harvest-lost-to-salt -> tolerant-varieties-adoption": 0.34,
-        "tolerant-varieties-adoption -> harvest-lost-to-salt": 0.34,
-        "harvest-lost-to-salt -> salt-tolerant-crop-adoption": 0.34,
-        "salt-tolerant-crop-adoption -> harvest-lost-to-salt": 0.34,
-        "root-zone-salinity -> harvest-lost-to-salt": 0.16,
-        "harvest-lost-to-salt -> farm-revenue": 0.16,
-        "farm-revenue -> agricultural-land-value": 0.16,
-        "agricultural-land-value -> farmland-leaving-arable-use": 0.16,
-        "farmland-leaving-arable-use -> plans-to-raise-ditch-levels": 0.16,
-        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0.16,
-        "polder-drainage-depth -> saline-seepage-kwel": 0.16,
-        "saline-seepage-kwel -> freshwater-lens-thickness": 0.16
+        "root-zone-salinity -> soil-structure-usability": -0.453,
+        "soil-structure-usability -> freshwater-lens-recharge": -0.326,
+        "freshwater-lens-recharge -> freshwater-lens-thickness": -0.526,
+        "freshwater-lens-thickness -> root-zone-salinity": 0.109,
+        "harvest-lost-to-salt -> tolerant-varieties-adoption": -0.543,
+        "tolerant-varieties-adoption -> harvest-lost-to-salt": -0.543,
+        "harvest-lost-to-salt -> salt-tolerant-crop-adoption": -0.161,
+        "salt-tolerant-crop-adoption -> harvest-lost-to-salt": -0.161,
+        "root-zone-salinity -> harvest-lost-to-salt": 0.1,
+        "harvest-lost-to-salt -> farm-revenue": 0.166,
+        "farm-revenue -> agricultural-land-value": 0.327,
+        "agricultural-land-value -> farmland-leaving-arable-use": 0.152,
+        "farmland-leaving-arable-use -> plans-to-raise-ditch-levels": 0.103,
+        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0.131,
+        "polder-drainage-depth -> saline-seepage-kwel": 0.279,
+        "saline-seepage-kwel -> freshwater-lens-thickness": 0.227
       },
       "marks": {
         "B1": [
-          133,
-          -884
+          542,
+          -883
         ],
         "B2": [
-          -287,
-          -884
+          1174,
+          -440
         ],
         "R1": [
-          -1214,
-          -333
+          -363,
+          -770
         ],
         "B3": [
-          4,
+          0,
           0
         ]
       }
@@ -3545,72 +3545,72 @@
       "description": "A higher *Harvest lost to salt* makes *Adoption of new salt-tolerant crops* more worthwhile, after a delay (B2). The same losses lower *Farm income* and *Agricultural land value*, so *Financial leverage* and the *Banks' risk assessment of farm loans* rise, *Bank credit to farms* falls and the *Farmers' capacity to invest* in the switch falls (R6); less credit keeps leverage down (B9). A field that moves saves harvest from salt (R6) and raises the *Margin given up on high-margin crops* (B10). The level of salt in the soil of the farmland decides whether switching is economically beneficial or not.",
       "places": {
         "agricultural-land-value": [
-          -315,
-          -519
+          -1029,
+          0
         ],
         "mortgage-debt-financial-leverage": [
-          328,
-          -515
+          -567,
+          0
         ],
         "banks-risk-assessment": [
-          779,
-          -210
+          -67,
+          0
         ],
         "bank-credit-to-farms": [
-          773,
-          219
+          448,
+          0
         ],
         "farmers-capacity-to-invest": [
-          315,
-          519
+          948,
+          0
         ],
         "salt-tolerant-crop-adoption": [
-          -328,
-          515
+          1440,
+          0
         ],
         "harvest-lost-to-salt": [
-          -779,
-          210
+          -7,
+          728
         ],
         "farm-revenue": [
-          -773,
-          -219
+          -1440,
+          0
         ],
         "margin-given-up-on-high-margin-crops": [
-          -252,
-          28
+          -7,
+          -722
         ]
       },
       "bends": {
-        "harvest-lost-to-salt -> salt-tolerant-crop-adoption": 0.34,
-        "salt-tolerant-crop-adoption -> harvest-lost-to-salt": 0.34,
-        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.16,
-        "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.16,
-        "banks-risk-assessment -> bank-credit-to-farms": 0.16,
-        "bank-credit-to-farms -> farmers-capacity-to-invest": 0.16,
-        "farmers-capacity-to-invest -> salt-tolerant-crop-adoption": 0.16,
-        "harvest-lost-to-salt -> farm-revenue": 0.16,
-        "farm-revenue -> agricultural-land-value": 0.16,
-        "salt-tolerant-crop-adoption -> margin-given-up-on-high-margin-crops": 0.16,
-        "margin-given-up-on-high-margin-crops -> farm-revenue": 0.16,
-        "bank-credit-to-farms -> mortgage-debt-financial-leverage": 0.16
+        "harvest-lost-to-salt -> salt-tolerant-crop-adoption": -0.677,
+        "salt-tolerant-crop-adoption -> harvest-lost-to-salt": 0.253,
+        "agricultural-land-value -> mortgage-debt-financial-leverage": 0,
+        "mortgage-debt-financial-leverage -> banks-risk-assessment": 0,
+        "banks-risk-assessment -> bank-credit-to-farms": 0,
+        "bank-credit-to-farms -> farmers-capacity-to-invest": 0,
+        "farmers-capacity-to-invest -> salt-tolerant-crop-adoption": 0,
+        "harvest-lost-to-salt -> farm-revenue": 0.251,
+        "farm-revenue -> agricultural-land-value": 0,
+        "salt-tolerant-crop-adoption -> margin-given-up-on-high-margin-crops": -0.251,
+        "margin-given-up-on-high-margin-crops -> farm-revenue": -0.249,
+        "bank-credit-to-farms -> mortgage-debt-financial-leverage": 0.503
       },
       "marks": {
         "B2": [
-          -547,
-          370
+          878,
+          704
         ],
         "B9": [
-          632,
-          -67
+          -59,
+          143
         ],
         "B10": [
-          11,
-          1
+          0,
+          -376
         ],
         "R6": [
-          -523,
-          133
+          0,
+          490
         ]
       }
     },
@@ -3705,57 +3705,57 @@
       "description": "Four balancing loops act on the *Water board's plans to raise ditch levels*, each towards its own goal. Fields dry enough for heavy machinery in spring (*Spring workability of the fields*, B4); the fresh water lenses the board wants to keep as a measure against *Saline seepage (kwel)* (B11); the optimum Polder drainage depth the board's norms aim at for each use and soil type (B12); and a plan the objecting owners can accept (*Objections to land-use plans*, B13). The goals cannot all be met at once, so the level settles where those pressures balance. How far seepage weighs against the other goals in the board's plans, cannot be determined from the literature found.",
       "places": {
         "plans-to-raise-ditch-levels": [
-          -470,
+          -374,
           0
         ],
         "polder-drainage-depth": [
-          470,
+          374,
           0
         ],
         "spring-workability-of-the-fields": [
-          620,
-          -600
+          381,
+          657
         ],
         "demand-for-deep-polder-drainage": [
-          -620,
-          -600
+          -364,
+          670
         ],
         "saline-seepage-kwel": [
-          0,
-          620
+          6,
+          280
         ],
         "policy-resistance-legal-delays": [
-          -1400,
-          0
+          -1123,
+          -279
         ]
       },
       "bends": {
-        "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": -0.16,
-        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0.34,
-        "polder-drainage-depth -> spring-workability-of-the-fields": -0.16,
-        "spring-workability-of-the-fields -> demand-for-deep-polder-drainage": -0.16,
-        "polder-drainage-depth -> saline-seepage-kwel": 0.16,
-        "saline-seepage-kwel -> plans-to-raise-ditch-levels": 0.16,
-        "polder-drainage-depth -> plans-to-raise-ditch-levels": 0.34,
-        "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": 0.34,
-        "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": 0.34
+        "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": 0.51,
+        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0,
+        "polder-drainage-depth -> spring-workability-of-the-fields": 0.496,
+        "spring-workability-of-the-fields -> demand-for-deep-polder-drainage": 0.34,
+        "polder-drainage-depth -> saline-seepage-kwel": 0.363,
+        "saline-seepage-kwel -> plans-to-raise-ditch-levels": 0.37,
+        "polder-drainage-depth -> plans-to-raise-ditch-levels": -0.728,
+        "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": -0.4,
+        "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": -0.4
       },
       "marks": {
         "B12": [
-          2,
-          -8
+          0,
+          -151
         ],
         "B13": [
-          -928,
-          -8
+          -748,
+          -139
         ],
         "B11": [
-          2,
-          280
+          0,
+          155
         ],
         "B4": [
-          -4,
-          -296
+          0,
+          545
         ]
       }
     },
@@ -3771,87 +3771,87 @@
       "description": "*Objections to land-use plans* delay, change or stop a plan (B13). Two things follow: The ditch levels keep up the *Saline seepage (kwel)* and *Root zone salinity* that lower *Agricultural land value*, and a lower value may bring more objections (R8). Plans changed or dropped, and *Expropriation of farmland*, lower *Farmers' trust in government*, which may bring more objections to the next plan (R9, B14). Whether objections settle at a plan the owners accept or keep growing is a question for the group model building session: three of its links are hypotheses, from *Agricultural land value* to *Objections to land-use plans*, from *Objections to land-use plans* to *Farmers' trust in government*, and from *Objections to land-use plans* to *Farmland planned for other uses*.",
       "places": {
         "agricultural-land-value": [
-          -569,
-          -452
+          -659,
+          358
         ],
         "policy-resistance-legal-delays": [
-          0,
-          -590
+          -744,
+          0
         ],
         "plans-to-raise-ditch-levels": [
-          569,
-          -452
+          1561,
+          0
         ],
         "polder-drainage-depth": [
-          872,
-          -102
+          1482,
+          345
         ],
         "saline-seepage-kwel": [
-          766,
-          295
+          1275,
+          636
         ],
         "freshwater-lens-thickness": [
-          303,
-          554
+          887,
+          881
         ],
         "root-zone-salinity": [
-          -303,
-          554
+          353,
+          968
         ],
         "harvest-lost-to-salt": [
-          -766,
-          295
+          -108,
+          865
         ],
         "farm-revenue": [
-          -872,
-          -102
+          -438,
+          654
         ],
         "municipality-plans-for-farmland": [
-          -620,
-          -1150
+          -929,
+          -344
         ],
         "expropriation-of-farmland": [
-          -40,
-          -1640
+          -1375,
+          -344
         ],
         "farmers-trust-in-government": [
-          620,
-          -1150
+          -1561,
+          0
         ]
       },
       "bends": {
-        "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": 0.34,
-        "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": 0.34,
-        "agricultural-land-value -> policy-resistance-legal-delays": 0.16,
-        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0.16,
-        "polder-drainage-depth -> saline-seepage-kwel": 0.16,
-        "saline-seepage-kwel -> freshwater-lens-thickness": 0.16,
-        "freshwater-lens-thickness -> root-zone-salinity": 0.16,
-        "root-zone-salinity -> harvest-lost-to-salt": 0.16,
-        "harvest-lost-to-salt -> farm-revenue": 0.16,
-        "farm-revenue -> agricultural-land-value": 0.16,
-        "policy-resistance-legal-delays -> farmers-trust-in-government": 0.34,
-        "farmers-trust-in-government -> policy-resistance-legal-delays": 0.34,
-        "municipality-plans-for-farmland -> expropriation-of-farmland": 0.16,
-        "expropriation-of-farmland -> farmers-trust-in-government": 0.16,
-        "policy-resistance-legal-delays -> municipality-plans-for-farmland": 0.16
+        "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": -0.148,
+        "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": 0,
+        "agricultural-land-value -> policy-resistance-legal-delays": 0.109,
+        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0.105,
+        "polder-drainage-depth -> saline-seepage-kwel": 0.1,
+        "saline-seepage-kwel -> freshwater-lens-thickness": 0.1,
+        "freshwater-lens-thickness -> root-zone-salinity": 0.103,
+        "root-zone-salinity -> harvest-lost-to-salt": 0.1,
+        "harvest-lost-to-salt -> farm-revenue": 0.1,
+        "farm-revenue -> agricultural-land-value": 0.1,
+        "policy-resistance-legal-delays -> farmers-trust-in-government": 0.52,
+        "farmers-trust-in-government -> policy-resistance-legal-delays": 0,
+        "municipality-plans-for-farmland -> expropriation-of-farmland": -0.249,
+        "expropriation-of-farmland -> farmers-trust-in-government": -0.323,
+        "policy-resistance-legal-delays -> municipality-plans-for-farmland": -0.323
       },
       "marks": {
         "B13": [
-          280,
-          -502
+          409,
+          -85
         ],
         "R9": [
-          304,
-          -870
+          -1152,
+          106
         ],
         "B14": [
-          -4,
-          -1144
+          -1152,
+          -200
         ],
         "R8": [
-          8,
-          2
+          409,
+          484
         ]
       }
     },

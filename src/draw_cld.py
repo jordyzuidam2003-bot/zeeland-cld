@@ -1226,10 +1226,9 @@ def group_layout(cld, group, stacked=None):
         lay = dict(lay)
         left = [n for n in names if n not in lay["marks"]]
         while left:
-            placed = next((n for n in left if join_loop(cld, lay, n, paths[n])), None)
-            if placed is None:
+            if not any(join_loop(cld, lay, n, paths[n]) for n in left):
                 break
-            left.remove(placed)
+            left = [n for n in left if n not in lay["marks"]]
         if not left:
             break
     else:
@@ -1467,34 +1466,106 @@ def theta_layout(cld, group, chain, routes, stacked):
     return sorted(found, key=layout_cost)
 
 
+def loop_area(lay, path):
+    """The area loop path encloses in a layout, its links followed as Kumu draws them."""
+    return [q for x, y in zip(path, path[1:] + path[:1]) for q in kumu_curve(lay["at"], x, y, lay["mid"][x, y])[:-1]]
+
+
+def place(lay, name, path, half, trial_at, mids, mark):
+    """Loop name into the layout with its new places trial_at, its links' middles mids and its mark,
+    True once placed: its label fits, its area holds no other mark and its mark lies in no other area,
+    and clear() passes."""
+    trial = {**lay, "at": {**lay["at"], **trial_at}, "half": half, "mid": {**lay["mid"], **mids}}
+    if not label_room(trial, name, mark):
+        return False
+    mine = loop_area(trial, path)
+    if any(in_polygon(m, mine) for m in lay["marks"].values()) or any(
+            in_polygon(mark, loop_area(trial, lay["paths"][n])) for n in lay["marks"]):
+        return False
+    if clear(trial, set(trial_at) | {x for k in mids for x in k}):
+        lay.update(trial)
+        lay["marks"] = {**lay["marks"], name: mark}
+        return True
+    return False
+
+
+def lens_at(cld, lay, name, s, phi, length, wide):
+    """Loop name, two elements meeting the layout at s alone, as a lens from s in direction phi, its
+    other element length out, True once placed into lay (place()): LENS_WIDE as wide as it is long,
+    or, not wide, its two links bowing apart just enough for its label between them."""
+    p = lay["paths"][name]
+    k = p.index(s)
+    p = p[k:] + p[:k]
+    at = lay["at"]
+    half = {**lay["half"], **halves(cld, [p[1]], lay["stacked"])}
+    e, n = (cos(phi), sin(phi)), (-sin(phi), cos(phi))
+    far = (at[s][0] + length * e[0], at[s][1] + length * e[1])
+    mid = ((at[s][0] + far[0]) / 2, (at[s][1] + far[1]) / 2)
+    for h in [LENS_WIDE * length / 2] if wide else range(40, length // 2, 30):
+        mids = {(p[0], p[1]): (mid[0] + h * n[0], mid[1] + h * n[1]), (p[1], p[0]): (mid[0] - h * n[0], mid[1] - h * n[1])}
+        if place(lay, name, lay["paths"][name], half, {p[1]: far}, mids, mid):
+            return True
+    return False
+
+
+FAN_TURNS = range(-150, 151, 10)  # lenses placed together (lens_fan()): their directions, in degrees from straight out
+LENS_LONG = 2400  # ... and the longest lens tried
+
+
+def lens_fan(cld, lay, s, names, out, wide):
+    """The loops `names`, each two elements meeting the layout at s alone, as lenses out from s
+    together (lens_at()), True once all are placed into lay: of each loop's directions in FAN_TURNS
+    from out, those whose longest lens is shortest, then whose lenses are shortest together, so each
+    sits close and none takes the room another needs (C1's B1 and B2; rejected: one lens after the
+    other, each the shortest within 40 degrees of its own direction in the fan, where the first took
+    the room the second needed and the second found none; each at its own direction at every length
+    first, which ran B2 far out). Each loop's shortest lens at each direction alone bounds the
+    search: the loops are tried in the order of those, from the least longest, the one needing the
+    most length first at its own shortest, each other from its own shortest up."""
+    step = 20 if wide else 40
+
+    def shortest(base, name, o, lo, hi):
+        for length in range(lo, hi, step):
+            trial = dict(base)
+            if lens_at(cld, trial, name, s, out + o * pi / 180, length, wide):
+                return length, trial
+        return None, None
+    alone = {n: {o: l for o in FAN_TURNS if (l := shortest(lay, n, o, 200, LENS_LONG)[0])} for n in names}
+    best = None
+    for top, _, turns in sorted((max(ls), sum(ls), ts) for ts in product(*(alone[n] for n in names))
+                                for ls in [[alone[n][o] for n, o in zip(names, ts)]]):
+        if best and top > best[0]:
+            break
+        trial, lengths = dict(lay), []
+        for n, o in sorted(zip(names, turns), key=lambda x: -alone[x[0]][x[1]]):
+            length, trial = shortest(trial, n, o, alone[n][o], LENS_LONG if best is None else best[0] + 1)
+            if length is None:
+                break
+            lengths.append(length)
+        else:
+            if best is None or (max(lengths), sum(lengths)) < best[:2]:
+                best = (max(lengths), sum(lengths), trial)
+    if best is None:
+        return False
+    lay.update(best[2])
+    return True
+
+
 def join_loop(cld, lay, name, path):
     """Add loop name to the layout where it meets it, True once placed: an arc of its own over the
     drawn links it shares (a lens on the drawing's outer side), or, meeting it at one element, a
     teardrop out from there, pointing away from the drawing (a petal); each just large enough that its
-    boxes keep OVAL_GAP from every other box, its links cross none and its label fits."""
+    boxes keep OVAL_GAP from every other box, its links cross none and its label fits. Other loops of
+    two meeting it at that one element alone are placed with it (lens_fan()), so a caller drops every
+    loop with a mark from those it has left to place."""
     at = lay["at"]
     drawn = [k for k in lay["mid"] if k in set(zip(path, path[1:] + path[:1]))]
     centre = (sum(p[0] for p in at.values()) / len(at), sum(p[1] for p in at.values()) / len(at))
     new_ids = [x for x in path if x not in at]
     half = {**lay["half"], **(halves(cld, new_ids, lay["stacked"]) if new_ids else {})}
 
-    def area(t, p):
-        return [q for x, y in zip(p, p[1:] + p[:1]) for q in kumu_curve(t["at"], x, y, t["mid"][x, y])[:-1]]
-
     def accept(trial_at, mids, mark):
-        trial = {**lay, "at": {**at, **trial_at}, "half": half, "mid": {**lay["mid"], **mids}}
-        if not label_room(trial, name, mark):
-            return False
-        # its own area, holding no other mark, and its mark in no other area
-        mine = area(trial, path)
-        if any(in_polygon(m, mine) for m in lay["marks"].values()) or any(
-                in_polygon(mark, area(trial, lay["paths"][n])) for n in lay["marks"]):
-            return False
-        if clear(trial, set(trial_at) | {x for k in mids for x in k}):
-            lay.update(trial)
-            lay["marks"] = {**lay["marks"], name: mark}
-            return True
-        return False
+        return place(lay, name, path, half, trial_at, mids, mark)
 
     if drawn:
         # the shared run: its links in the loop's order, from its first element to its last
@@ -1555,28 +1626,19 @@ def join_loop(cld, lay, name, path):
     turns = ((0, 10, -10, 20, -20, 30, -30, 40, -40, 50, -50, 60, -60, 80, -80, 100, -100, 120, -120) if wide and len(p) == 2
              else (0, 20, -20, 40, -40, 60, -60, 80, -80, 100, -100, 120, -120, 140, -140))
 
-    def placed():
-        lay["petals"] = {**lay.get("petals", {}), s: lay.get("petals", {}).get(s, []) + [name]}
+    def placed(names=(name,)):
+        lay["petals"] = {**lay.get("petals", {}), s: lay.get("petals", {}).get(s, []) + list(names)}
         return True
     if len(p) == 2:
         # two elements: a lens straight out from s, LENS_WIDE as wide as it is long (LENS_WIDE), or in
         # a layout marked narrow its two links bowing apart just enough for the label between them
-        def lens(turn, length):
-            phi = out + (pref + turn) * pi / 180
-            e, n = (cos(phi), sin(phi)), (-sin(phi), cos(phi))
-            far = (at[s][0] + length * e[0], at[s][1] + length * e[1])
-            mid = ((at[s][0] + far[0]) / 2, (at[s][1] + far[1]) / 2)
-            for h in [LENS_WIDE * length / 2] if wide else range(40, length // 2, 30):
-                mids = {(p[0], p[1]): (mid[0] + h * n[0], mid[1] + h * n[1]), (p[1], p[0]): (mid[0] - h * n[0], mid[1] - h * n[1])}
-                if accept({p[1]: far}, mids, mid):
-                    return True
-            return False
-        # the shortest lens within 40 degrees of its own direction in the fan, so the lenses at one
-        # element share out the room round it and each sits close, then in any direction (rejected:
-        # its own direction at any length first, which ran C1's B2 far out; the shortest in any
-        # direction first, which let B1 take B2's room)
-        if any(lens(turn, length) for window in (40, 140) for length in range(200, 4000, 20 if wide else 40)
-               for turn in turns if abs(turn) <= window):
+        # (lens_at()); with other loops of two still to place at s, all of them together (lens_fan())
+        lenses = [n for n in fan if n not in lay["marks"] and len(lay["paths"][n]) == 2]
+        if len(lenses) > 1:
+            return lens_fan(cld, lay, s, lenses, out, wide) and placed(lenses)
+        # alone: the shortest lens within 40 degrees of its own direction in the fan, then in any direction
+        if any(lens_at(cld, lay, name, s, out + (pref + turn) * pi / 180, length, wide) for window in (40, 140)
+               for length in range(200, 4000, 20 if wide else 40) for turn in turns if abs(turn) <= window):
             return placed()
         return False
     # three elements or more: a teardrop out from s, its boxes along it, its two links at s leaving
@@ -1687,42 +1749,46 @@ def joined_wall(cld, names):
     return None
 
 
-WALL_TRIES = 4  # how many of each pair's own best gaps wall_layout() tries
-LONG_STRETCH = 2400  # ... with every 50 between them, and for the pair with the longest route up to this, so its arc need
-                     # not bulge past a semicircle
+WALL_STEP = 50  # how far wall_layout() lengthens a stretch at a time
+LONG_STRETCH = 2400  # ... and the longest stretch it tries
 
 
 def wall_layout(cld, group, wall, spans, stacked):
     """The least-cost layout (layout_cost()) in (u, v) of a joined wall (joined_wall()): the wall straight
     along u, each pair's two loops arcing over its stretch, one each side (flat_arc(), spaced()), the
-    smaller loops first so the larger arc round what is there; no loop's mark in another's area. Each
-    stretch's gap is one its pair takes alone (theta_layout()), the pair with the longest route also
-    longer ones, since its arc must not bulge back over the element the pairs share; for each side
-    assignment, the first gaps that fit, from the shortest. None where none fits."""
+    smaller loops first so the larger arc round what is there; no loop's mark in another's area. The
+    pairs' larger loops, by their routes, lie on opposite sides, so neither side holds both large
+    arcs (chosen between rendered versions of C9: R8 and R9 on one side, B13 and B14 on the other),
+    the longest route on the +v side, running clockwise as theta_layout()'s larger route does.
+    Each stretch is at least as long as its own pair needs alone, from OVAL_GAP by WALL_STEP; from
+    those, the gaps of the least total that fit with both pairs, as a loop's room depends on both
+    stretches (rejected: lengthening the stretch under the loop that failed, which ran Farmers'
+    trust to Objections to 1250 as B14 failed there beside B13 over a short stretch, and R8's
+    stretch to its longest as R8 failed beside R9 over a short one). The loop with the longest route never bulges past a
+    semicircle, which would bulge back over the element the pairs share (without that, R8 ballooned
+    two and a half times as far out as a semicircle, over a short stretch); the others may, as far as
+    theta_layout()'s arcs, so B14 bulges a little past one over its stretch of 500, as chosen. None
+    where no stretch up to LONG_STRETCH fits."""
     paths = {loop["id"]: loop["path"] for loop in cld["loops"]}
     loops = {loop["id"]: loop for loop in cld["loops"]}
     names = group["loops"]
     half = halves(cld, set(wall) | {x for _, r in spans.values() for x in r}, stacked)
     stretches = list(zip(wall, wall[1:]))
     pairs = [[n for n in names if (spans[n][0][0], spans[n][0][1]) == (x, y)] for x, y in stretches]
-    longest = max(len(r) for _, r in spans.values())
-    gaps = []
-    for (x, y), pair in zip(stretches, pairs):
-        alone = theta_layout(cld, {**group, "loops": pair}, [x, y], {n: spans[n][1] for n in pair}, stacked) or []
-        gs = [round(f["at"][y][0] - f["at"][x][0] - half[x][0] - half[y][0]) for f in alone[:WALL_TRIES]] or [OVAL_GAP]
-        lo, hi = min(gs), (LONG_STRETCH if max(len(spans[n][1]) for n in pair) == longest else max(gs))
-        gaps.append(sorted(set(gs) | set(range(-(-lo // 50) * 50, hi + 1, 50))))
+    longest = max(names, key=lambda n: (len(spans[n][1]), -names.index(n)))
 
-    def lay(config, gap):
+    def lay(config, gap, only=names):
+        """The layout of the loops `only` at these gaps; None where one finds no room."""
         spots = [0.0]
         for i in range(len(wall) - 1):
             spots.append(spots[-1] + half[wall[i]][0] + gap[i] + half[wall[i + 1]][0])
         at = {x: (t - spots[-1] / 2, 0.0) for x, t in zip(wall, spots)}
         out = {"at": at, "half": half, "mid": {s: None for s in stretches}, "marks": {}, "stacked": stacked,
                "label": {n: kumu_label_half(loops[n])[::1 if stacked else -1] for n in names}, "paths": paths, "names": names}
+        # at a gap of OVAL_GAP the places' rounding may bring two boxes a hair under it, a gap too short
         if not clear(out, set(wall)):
             return None
-        for n in sorted(names, key=lambda n: (len(spans[n][1]), names.index(n))):
+        for n in sorted(only, key=lambda n: (len(spans[n][1]), names.index(n))):
             side, (sub, own) = config[n], spans[n]
             a, b = at[sub[0]], at[sub[-1]]
             um = (a[0] + b[0]) / 2
@@ -1732,8 +1798,8 @@ def wall_layout(cld, group, wall, spans, stacked):
                                  if abs(at[x][0] - um) < lu + half[x][0] + LABEL_CLEAR_BOX and side * at[x][1] > -half[x][1]])
             inner_v = OWN_BULGE * under
             seq = [sub[-1], *own, sub[0]]
-            # never past a semicircle, which would bulge back over the element the pairs share
-            for h in range(int(60 / ARC_FLAT), int(min(4000 / ARC_FLAT, hypot(b[0] - a[0], b[1] - a[1]) / 2)) + 1, 10):
+            top = 4000 / ARC_FLAT if n != longest else min(4000 / ARC_FLAT, hypot(b[0] - a[0], b[1] - a[1]) / 2)
+            for h in range(int(60 / ARC_FLAT), int(top) + 1, 10):
                 spots_, mids = spaced(flat_arc(b, a, side * h), seq, half)
                 trial = {**out, "at": {**at, **spots_}, "mid": {**out["mid"], **mids}}
                 m = (um, side * (inner_v + ARC_FLAT * h) / 2)
@@ -1742,16 +1808,26 @@ def wall_layout(cld, group, wall, spans, stacked):
                     break
             else:
                 return None
-        areas = {n: [q for x, y in zip(paths[n], paths[n][1:] + paths[n][:1]) for q in kumu_curve(at, x, y, out["mid"][x, y])[:-1]]
-                 for n in names}
-        if any(in_polygon(out["marks"][n], areas[o]) for n in names for o in names if o != n):
-            return None
-        return out
+        areas = {n: loop_area(out, paths[n]) for n in only}
+        return None if any(in_polygon(out["marks"][n], areas[o]) for n in only for o in only if o != n) else out
 
     found = []
     for sides in product((1, -1), repeat=len(pairs)):
         config = {n: s if k == 0 else -s for s, pair in zip(sides, pairs) for k, n in enumerate(pair)}
-        f = next((f for gap in sorted(product(*gaps), key=sum) if (f := lay(config, gap))), None)
+        larger = [config[max(pair, key=lambda n: (len(spans[n][1]), -names.index(n)))] for pair in pairs]
+        if len(pairs) == 2 and larger[0] == larger[1] or config[longest] != 1:
+            continue
+        # each stretch as short as its own pair needs alone, the others at their longest; from those,
+        # the gaps of the least total that fit with both pairs
+        own = []
+        for k, pair in enumerate(pairs):
+            g = [LONG_STRETCH] * len(stretches)
+            g[k] = OVAL_GAP
+            while g[k] <= LONG_STRETCH and not lay(config, g, pair):
+                g[k] += WALL_STEP
+            own.append(g[k])
+        grid = product(*(range(lo, LONG_STRETCH + 1, WALL_STEP) for lo in own))
+        f = next((f for gap in sorted(grid, key=lambda g: (sum(g), g)) if (f := lay(config, gap))), None)
         if f:
             found.append(f)
     return min(found, key=layout_cost) if found else None
@@ -1802,10 +1878,9 @@ def ring_first(cld, group):
             while left:
                 # loops sharing a drawn link first, then the rest
                 order = sorted(left, key=lambda n: not any(k in lay["mid"] for k in zip(paths[n], paths[n][1:] + paths[n][:1])))
-                placed = next((n for n in order if join_loop(cld, lay, n, paths[n])), None)
-                if placed is None:
+                if not any(join_loop(cld, lay, n, paths[n]) for n in order):
                     break
-                left.remove(placed)
+                left = [n for n in left if n not in lay["marks"]]
             if not left:
                 found.append(lay)
         if found:

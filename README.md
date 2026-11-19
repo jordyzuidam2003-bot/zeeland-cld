@@ -289,15 +289,17 @@ its own. `build.py` warns of a mark outside its own loop's area or inside anothe
 and of a loop's label, as Kumu draws it at the mark, on a box or a link. `python3 build.py
 --group-layout C2 C5` lays out groups anew (`draw_cld.group_layout()`) and writes them in: two loops
 sharing one element as two ovals touching at it; two pairs of loops, each pair sharing a chain, the
-chains joined end to end, on one straight wall, each pair over its own stretch, one loop each side
-(C9, `joined_wall()`); otherwise the most loops sharing one chain on a
+chains joined end to end, on one straight wall, each pair over its own stretch, one loop each side,
+the pairs' larger loops on opposite sides, each stretch as long as its own loops need (C9,
+`joined_wall()`, `wall_layout()`); otherwise the most loops sharing one chain on a
 straight wall, an even gap between its boxes, each loop's route an arc from the chain's end back to
 its start, one each side of the wall and a third round one of those, a loop arcing over part of the
 wall between the wall and that side's route; then each other loop where it meets those, an arc over
 the links it shares, a teardrop out from its one shared element, its two links there within
 `draw_cld.PETAL_HALF` of its direction, or, a loop of two, a lens out from it `LENS_WIDE` as wide as
 it is long. Where no spine leaves the other loops room (C1), the largest loop is an oval and the rest
-join it (`ring_first()`), each lens the narrowest that holds its label where none fits that wide. Each
+join it (`ring_first()`), each lens the narrowest that holds its label where none fits that wide, the
+lenses at one element laid out together, the longer of them as short as fits (`lens_fan()`). Each
 arc and oval is an ellipse at `draw_cld.ARC_FLAT` of a circle's bulge, each arc over a wall of more
 than two elements bulging at least `MIN_BULGE` of its chord, its boxes spaced `SPACE_BY_SIZE` of the
 way from even centres to even gaps between their borders, and each mark sits between its arc and what

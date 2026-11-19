@@ -1,18 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-649 -342 1261 684" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-649 -303 1261 606" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
 <defs>
 <marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
 <marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
 <marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
 </defs>
-<rect x="-649" y="-342" width="1261" height="684" fill="white"/>
+<rect x="-649" y="-303" width="1261" height="606" fill="white"/>
 <g class="links">
 <g class="link" data-from="farmers-trust-in-government" data-to="policy-resistance-legal-delays" data-sign="-" data-delay="false" data-curvature="0.14">
-<path class="link-path" d="M 384.6 43.0 Q 361.0 136.9 251.9 198.5 Q 142.9 260.0 0.0 260.0 Q -142.9 260.0 -251.9 198.5 Q -361.0 136.9 -384.6 43.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-366.6" y="89.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M 382.5 43.0 Q 355.4 120.6 247.5 170.8 Q 139.6 221.0 0.0 221.0 Q -139.6 221.0 -247.5 170.8 Q -355.4 120.6 -382.5 43.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-359.0" y="87.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="policy-resistance-legal-delays" data-to="farmers-trust-in-government" data-sign="-" data-delay="false" data-curvature="0.22">
-<path class="link-path" d="M -384.6 -43.0 Q -361.0 -136.9 -251.9 -198.5 Q -142.9 -260.0 0.0 -260.0 Q 142.9 -260.0 251.9 -198.5 Q 361.0 -136.9 384.6 -43.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="366.6" y="-89.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M -382.5 -43.0 Q -355.4 -120.6 -247.5 -170.8 Q -139.6 -221.0 0.0 -221.0 Q 139.6 -221.0 247.5 -170.8 Q 355.4 -120.6 382.5 -43.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="359.0" y="-87.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 </g>
 <g class="elements">

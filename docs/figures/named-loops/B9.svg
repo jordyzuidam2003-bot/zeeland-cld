@@ -1,37 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-593 -362 1216 750" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-567 -303 1085 632" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
 <defs>
 <marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
 <marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
 <marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
 </defs>
-<rect x="-593" y="-362" width="1216" height="750" fill="white"/>
+<rect x="-567" y="-303" width="1085" height="632" fill="white"/>
 <g class="links">
 <g class="link" data-from="mortgage-debt-financial-leverage" data-to="banks-risk-assessment" data-sign="+" data-delay="false" data-curvature="-0.22">
-<path class="link-path" d="M -338.2 -166.0 Q -261.4 -235.5 -139.3 -264.2 Q -17.1 -292.8 108.1 -270.6 Q 233.2 -248.4 317.9 -183.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="276.5" y="-211.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -306.7 -136.5 Q -229.5 -192.2 -109.5 -212.1 Q 10.5 -232.0 128.6 -208.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="79.2" y="-216.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="banks-risk-assessment" data-to="bank-credit-to-farms" data-sign="-" data-delay="false" data-curvature="0.47">
-<path class="link-path" d="M 394.0 -97.0 Q 452.4 8.5 385.2 111.6 Q 318.0 214.7 162.4 258.2" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="210.0" y="242.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M 324.4 -122.6 Q 386.0 -70.3 389.8 -7.5 Q 393.5 55.4 338.3 110.0 Q 283.1 164.5 185.4 194.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="232.5" y="177.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="bank-credit-to-farms" data-to="mortgage-debt-financial-leverage" data-sign="+" data-delay="false" data-curvature="-0.22">
-<path class="link-path" d="M -162.4 258.2 Q -267.7 228.8 -336.2 167.8 Q -404.6 106.9 -417.4 31.2 Q -430.1 -44.5 -383.6 -114.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-407.0" y="-69.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -134.5 207.4 Q -235.2 186.5 -302.8 139.3 Q -370.4 92.0 -385.9 31.9 Q -401.4 -28.3 -360.4 -84.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-383.7" y="-40.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 </g>
 <g class="elements">
 <g class="element" data-id="mortgage-debt-financial-leverage" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-511.3" y="-166.0" width="295.1" height="52.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-363.7" y="-131.5" text-anchor="middle">Financial leverage</text>
+<rect x="-485.3" y="-136.5" width="295.1" height="52.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-337.7" y="-102.0" text-anchor="middle">Financial leverage</text>
 </g>
 <g class="element" data-id="banks-risk-assessment" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="186.5" y="-183.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="363.7" y="-148.5" text-anchor="middle">Banks' risk assessment</text>
-<text x="363.7" y="-114.5" text-anchor="middle">of farm loans</text>
+<rect x="80.9" y="-208.6" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="258.2" y="-174.1" text-anchor="middle">Banks' risk assessment</text>
+<text x="258.2" y="-140.1" text-anchor="middle">of farm loans</text>
 </g>
 <g class="element" data-id="bank-credit-to-farms" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-162.4" y="254.0" width="324.8" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="0.0" y="288.5" text-anchor="middle">Bank credit to farms</text>
+<rect x="-134.5" y="194.4" width="324.8" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="27.9" y="228.9" text-anchor="middle">Bank credit to farms</text>
 </g>
 </g>
 <g class="loop" data-id="B9">

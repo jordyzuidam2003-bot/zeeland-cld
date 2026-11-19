@@ -5222,8 +5222,8 @@
         {
           "_id": "node-wetter-winters",
           "position": {
-            "x": -1593,
-            "y": 67
+            "x": -1673,
+            "y": 32
           },
           "pinned": true,
           "style": {},
@@ -5642,8 +5642,8 @@
         {
           "_id": "node-processing-of-new-crops-elsewhere",
           "position": {
-            "x": 1242,
-            "y": 1202
+            "x": 1292,
+            "y": 1180
           },
           "pinned": true,
           "style": {},
@@ -5702,8 +5702,8 @@
         {
           "_id": "node-spending-on-keeping-current-crops",
           "position": {
-            "x": 1831,
-            "y": 310
+            "x": 1818,
+            "y": 423
           },
           "pinned": true,
           "style": {},
@@ -6371,7 +6371,7 @@
         },
         {
           "_id": "edge-spending-on-keeping-current-crops--groundwater-extraction-for-irrigation",
-          "curvature": -0.1,
+          "curvature": -0.15,
           "style": {},
           "connection": "conn-spending-on-keeping-current-crops--groundwater-extraction-for-irrigation"
         },
@@ -6682,8 +6682,8 @@
           "loop": "loop-R3",
           "style": {},
           "position": {
-            "x": 1952,
-            "y": -571
+            "x": 1949,
+            "y": -543
           }
         },
         {
@@ -7008,8 +7008,8 @@
         {
           "_id": "node-delphy",
           "position": {
-            "x": 1425,
-            "y": 1080
+            "x": 1395,
+            "y": 1059
           },
           "pinned": true,
           "style": {},
@@ -7053,7 +7053,7 @@
         },
         {
           "_id": "edge-4",
-          "curvature": 0.37,
+          "curvature": 0.3,
           "style": {},
           "connection": "conn-4"
         },
@@ -7125,7 +7125,7 @@
         },
         {
           "_id": "edge-16",
-          "curvature": -0.1,
+          "curvature": -0.13,
           "style": {},
           "connection": "conn-16"
         },

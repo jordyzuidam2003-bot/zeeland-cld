@@ -127,7 +127,7 @@
           "sources": [
             "schouwen-duiveland-subsidie-zoet-water"
           ],
-          "curvature": 0.37
+          "curvature": 0.3
         },
         {
           "to": "waterschap-scheldestromen",
@@ -289,7 +289,7 @@
           "sources": [
             "van-der-meulen-2020"
           ],
-          "curvature": -0.1
+          "curvature": -0.13
         }
       ],
       "sources": [
@@ -810,8 +810,8 @@
         "wiepkema-2023-zoetwaterbehoefte",
         "omroep-zeeland-2023-zoet-water"
       ],
-      "x": 1425,
-      "y": 1080
+      "x": 1395,
+      "y": 1059
     }
   ]
 }

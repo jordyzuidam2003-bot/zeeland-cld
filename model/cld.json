@@ -42,8 +42,8 @@
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],
-      "x": -1593,
-      "y": 67
+      "x": -1673,
+      "y": 32
     },
     {
       "id": "freshwater-lens-recharge",
@@ -806,8 +806,8 @@
         "greenfood50-nd",
         "dutchnews-2026"
       ],
-      "x": 1242,
-      "y": 1202
+      "x": 1292,
+      "y": 1180
     },
     {
       "id": "tolerant-varieties-adoption",
@@ -910,8 +910,8 @@
         "van-der-meulen-2020",
         "kaandorp-2022"
       ],
-      "x": 1831,
-      "y": 310,
+      "x": 1818,
+      "y": 423,
       "actor": "arable-farmers"
     },
     {
@@ -2261,7 +2261,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": -0.1,
+      "curvature": -0.15,
       "simplification": "Stands for the whole effect on pumping of a farm's dependence on its current crops, the direct link from Dependence on high-margin salt-sensitive crops folded into this chain: the high-value crops' need for water in a dry spell is in words here. The sign is the chain's (+, then +), so no loop changes its polarity. What it leaves out: a farm that already has wells can irrigate more of a thirsty crop within the year, while the chain runs through the delay on Dependence on high-margin salt-sensitive crops → Spending on keeping the current crops."
     },
     {

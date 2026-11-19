@@ -1027,6 +1027,8 @@ def project(cld, refs, actors, template):
     loops_style, cut = re.subn(r"/\* -+ Loops: .*?\nloop \{\n  label: none;\n\}\n", "", style, flags=re.S)
     if cut != 1:
         sys.exit("src/kumu/cld-view.scss needs its Loops section, ending in loop { label: none; }: the loop maps' view leaves it out")
+    # each loop's label at the size draw_cld.py makes room for at its mark (kumu_label_half())
+    loops_style += f"\nloop {{\n  font-size: {draw_cld.KUMU_LOOP_FONT};\n}}\n"
 
     # a map per combined loop, then per named loop: its loops' elements and links at the places and
     # bends of its figure, each loop's label at its mark; a named loop's from its oval
@@ -1044,7 +1046,9 @@ def project(cld, refs, actors, template):
                           "element": f"elem-{i}"} for i, (x, y) in places.items()],
             "connections": [{"_id": f"edge-{key}-{a}--{b}", "curvature": bends[f"{a} -> {b}"], "style": {},
                              "connection": f"conn-{a}--{b}"} for a, b in links],
-            "loops": [{"_id": f"mloop-{key}-{i}", "loop": f"loop-{i}", "style": {},
+            # pinned, or Kumu's layout drags the label off its mark towards its loop's boxes (measured
+            # in a restore: C4's B5 stored at x -1180, drawn at -529)
+            "loops": [{"_id": f"mloop-{key}-{i}", "loop": f"loop-{i}", "style": {}, "pinned": True,
                        "position": {"x": marks[i][0], "y": marks[i][1]}} for i in ids]})
     return {
         "elements": elements, "connections": connections, "loops": loops,
@@ -1292,8 +1296,8 @@ def apply_group_layout(ids):
         g = groups[i]
         lay = draw_cld.group_layout(cld, g)
         if lay is None:
-            sys.exit(f"--group-layout: group {i} is not two loops sharing one element or one chain, "
-                     "the groups draw_cld.group_layout() lays out")
+            sys.exit(f"--group-layout: draw_cld.group_layout() finds no layout for group {i}: no two of its loops "
+                     "share one chain or one element, or a loop finds no room where it meets the others")
         for field, new in zip(("places", "bends", "marks"), lay):
             g[field] = {k: new[k] for k in g[field]} if set(g[field]) == set(new) else new
     CLD.write_text(json.dumps(cld, indent=2, ensure_ascii=False) + "\n")

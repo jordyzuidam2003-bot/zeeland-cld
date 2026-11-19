@@ -7499,6 +7499,7 @@
           "_id": "mloop-group-C1-R1",
           "loop": "loop-R1",
           "style": {},
+          "pinned": true,
           "position": {
             "x": -1214,
             "y": -333
@@ -7508,6 +7509,7 @@
           "_id": "mloop-group-C1-B1",
           "loop": "loop-B1",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 133,
             "y": -884
@@ -7517,6 +7519,7 @@
           "_id": "mloop-group-C1-B2",
           "loop": "loop-B2",
           "style": {},
+          "pinned": true,
           "position": {
             "x": -287,
             "y": -884
@@ -7526,6 +7529,7 @@
           "_id": "mloop-group-C1-B3",
           "loop": "loop-B3",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 4,
             "y": 0
@@ -7800,6 +7804,7 @@
           "_id": "mloop-group-C2-B4",
           "loop": "loop-B4",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": -145
@@ -7809,6 +7814,7 @@
           "_id": "mloop-group-C2-R2",
           "loop": "loop-R2",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 930
@@ -8115,6 +8121,7 @@
           "_id": "mloop-group-C3-R2",
           "loop": "loop-R2",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": -860
@@ -8124,6 +8131,7 @@
           "_id": "mloop-group-C3-R3",
           "loop": "loop-R3",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 260
@@ -8378,6 +8386,7 @@
           "_id": "mloop-group-C4-B5",
           "loop": "loop-B5",
           "style": {},
+          "pinned": true,
           "position": {
             "x": -1180,
             "y": -4
@@ -8387,6 +8396,7 @@
           "_id": "mloop-group-C4-B6",
           "loop": "loop-B6",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 592,
             "y": 5
@@ -8396,6 +8406,7 @@
           "_id": "mloop-group-C4-B7",
           "loop": "loop-B7",
           "style": {},
+          "pinned": true,
           "position": {
             "x": -270,
             "y": -4
@@ -8405,6 +8416,7 @@
           "_id": "mloop-group-C4-B8",
           "loop": "loop-B8",
           "style": {},
+          "pinned": true,
           "position": {
             "x": -1876,
             "y": 8
@@ -8583,6 +8595,7 @@
           "_id": "mloop-group-C5-R4",
           "loop": "loop-R4",
           "style": {},
+          "pinned": true,
           "position": {
             "x": -264,
             "y": 0
@@ -8592,6 +8605,7 @@
           "_id": "mloop-group-C5-B6",
           "loop": "loop-B6",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 264,
             "y": 0
@@ -8782,6 +8796,7 @@
           "_id": "mloop-group-C6-B2",
           "loop": "loop-B2",
           "style": {},
+          "pinned": true,
           "position": {
             "x": -547,
             "y": 370
@@ -8791,6 +8806,7 @@
           "_id": "mloop-group-C6-R6",
           "loop": "loop-R6",
           "style": {},
+          "pinned": true,
           "position": {
             "x": -523,
             "y": 133
@@ -8800,6 +8816,7 @@
           "_id": "mloop-group-C6-B9",
           "loop": "loop-B9",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 632,
             "y": -67
@@ -8809,6 +8826,7 @@
           "_id": "mloop-group-C6-B10",
           "loop": "loop-B10",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 11,
             "y": 1
@@ -9019,6 +9037,7 @@
           "_id": "mloop-group-C7-R7",
           "loop": "loop-R7",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 240
@@ -9028,6 +9047,7 @@
           "_id": "mloop-group-C7-B10",
           "loop": "loop-B10",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": -450
@@ -9170,6 +9190,7 @@
           "_id": "mloop-group-C8-B4",
           "loop": "loop-B4",
           "style": {},
+          "pinned": true,
           "position": {
             "x": -4,
             "y": -296
@@ -9179,6 +9200,7 @@
           "_id": "mloop-group-C8-B11",
           "loop": "loop-B11",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 2,
             "y": 280
@@ -9188,6 +9210,7 @@
           "_id": "mloop-group-C8-B12",
           "loop": "loop-B12",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 2,
             "y": -8
@@ -9197,6 +9220,7 @@
           "_id": "mloop-group-C8-B13",
           "loop": "loop-B13",
           "style": {},
+          "pinned": true,
           "position": {
             "x": -928,
             "y": -8
@@ -9435,6 +9459,7 @@
           "_id": "mloop-group-C9-B13",
           "loop": "loop-B13",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 280,
             "y": -502
@@ -9444,6 +9469,7 @@
           "_id": "mloop-group-C9-R8",
           "loop": "loop-R8",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 8,
             "y": 2
@@ -9453,6 +9479,7 @@
           "_id": "mloop-group-C9-R9",
           "loop": "loop-R9",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 304,
             "y": -870
@@ -9462,6 +9489,7 @@
           "_id": "mloop-group-C9-B14",
           "loop": "loop-B14",
           "style": {},
+          "pinned": true,
           "position": {
             "x": -4,
             "y": -1144
@@ -9758,6 +9786,7 @@
           "_id": "mloop-group-C10-R2",
           "loop": "loop-R2",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": -477
@@ -9767,6 +9796,7 @@
           "_id": "mloop-group-C10-R8",
           "loop": "loop-R8",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -9776,6 +9806,7 @@
           "_id": "mloop-group-C10-B3",
           "loop": "loop-B3",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 477
@@ -9868,6 +9899,7 @@
           "_id": "mloop-loop-R1-R1",
           "loop": "loop-R1",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -9891,7 +9923,7 @@
         {
           "_id": "node-loop-B1-harvest-lost-to-salt",
           "position": {
-            "x": -270,
+            "x": -405,
             "y": 0
           },
           "pinned": true,
@@ -9901,7 +9933,7 @@
         {
           "_id": "node-loop-B1-tolerant-varieties-adoption",
           "position": {
-            "x": 270,
+            "x": 405,
             "y": 0
           },
           "pinned": true,
@@ -9928,6 +9960,7 @@
           "_id": "mloop-loop-B1-B1",
           "loop": "loop-B1",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -9951,7 +9984,7 @@
         {
           "_id": "node-loop-B2-harvest-lost-to-salt",
           "position": {
-            "x": -270,
+            "x": -405,
             "y": 0
           },
           "pinned": true,
@@ -9961,7 +9994,7 @@
         {
           "_id": "node-loop-B2-salt-tolerant-crop-adoption",
           "position": {
-            "x": 270,
+            "x": 405,
             "y": 0
           },
           "pinned": true,
@@ -9988,6 +10021,7 @@
           "_id": "mloop-loop-B2-B2",
           "loop": "loop-B2",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -10160,6 +10194,7 @@
           "_id": "mloop-loop-B3-B3",
           "loop": "loop-B3",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -10252,6 +10287,7 @@
           "_id": "mloop-loop-B4-B4",
           "loop": "loop-B4",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -10504,6 +10540,7 @@
           "_id": "mloop-loop-R2-R2",
           "loop": "loop-R2",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -10596,6 +10633,7 @@
           "_id": "mloop-loop-R3-R3",
           "loop": "loop-R3",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -10619,8 +10657,8 @@
         {
           "_id": "node-loop-B5-crop-water-shortfall",
           "position": {
-            "x": -260,
-            "y": -100
+            "x": -364,
+            "y": -140
           },
           "pinned": true,
           "style": {},
@@ -10629,8 +10667,8 @@
         {
           "_id": "node-loop-B5-groundwater-extraction-for-irrigation",
           "position": {
-            "x": 260,
-            "y": -100
+            "x": 364,
+            "y": -140
           },
           "pinned": true,
           "style": {},
@@ -10640,7 +10678,7 @@
           "_id": "node-loop-B5-freshwater-availability-for-crops",
           "position": {
             "x": 0,
-            "y": 200
+            "y": 280
           },
           "pinned": true,
           "style": {},
@@ -10672,6 +10710,7 @@
           "_id": "mloop-loop-B5-B5",
           "loop": "loop-B5",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -10812,6 +10851,7 @@
           "_id": "mloop-loop-B6-B6",
           "loop": "loop-B6",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -10920,6 +10960,7 @@
           "_id": "mloop-loop-B7-B7",
           "loop": "loop-B7",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -10943,8 +10984,8 @@
         {
           "_id": "node-loop-B8-creek-ridge-lens-thickness",
           "position": {
-            "x": -260,
-            "y": -100
+            "x": -390,
+            "y": -150
           },
           "pinned": true,
           "style": {},
@@ -10953,8 +10994,8 @@
         {
           "_id": "node-loop-B8-pumping-the-water-board-allows",
           "position": {
-            "x": 260,
-            "y": -100
+            "x": 390,
+            "y": -150
           },
           "pinned": true,
           "style": {},
@@ -10964,7 +11005,7 @@
           "_id": "node-loop-B8-groundwater-extraction-for-irrigation",
           "position": {
             "x": 0,
-            "y": 200
+            "y": 300
           },
           "pinned": true,
           "style": {},
@@ -10996,6 +11037,7 @@
           "_id": "mloop-loop-B8-B8",
           "loop": "loop-B8",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -11168,6 +11210,7 @@
           "_id": "mloop-loop-R4-R4",
           "loop": "loop-R4",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -11191,7 +11234,7 @@
         {
           "_id": "node-loop-R5-knowledge-of-storage",
           "position": {
-            "x": -270,
+            "x": -375,
             "y": 0
           },
           "pinned": true,
@@ -11201,7 +11244,7 @@
         {
           "_id": "node-loop-R5-freshwater-storage-measures",
           "position": {
-            "x": 270,
+            "x": 375,
             "y": 0
           },
           "pinned": true,
@@ -11228,6 +11271,7 @@
           "_id": "mloop-loop-R5-R5",
           "loop": "loop-R5",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -11384,6 +11428,7 @@
           "_id": "mloop-loop-R6-R6",
           "loop": "loop-R6",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -11407,8 +11452,8 @@
         {
           "_id": "node-loop-B9-mortgage-debt-financial-leverage",
           "position": {
-            "x": -260,
-            "y": -100
+            "x": -364,
+            "y": -140
           },
           "pinned": true,
           "style": {},
@@ -11417,8 +11462,8 @@
         {
           "_id": "node-loop-B9-banks-risk-assessment",
           "position": {
-            "x": 260,
-            "y": -100
+            "x": 364,
+            "y": -140
           },
           "pinned": true,
           "style": {},
@@ -11428,7 +11473,7 @@
           "_id": "node-loop-B9-bank-credit-to-farms",
           "position": {
             "x": 0,
-            "y": 200
+            "y": 280
           },
           "pinned": true,
           "style": {},
@@ -11460,6 +11505,7 @@
           "_id": "mloop-loop-B9-B9",
           "loop": "loop-B9",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -11616,6 +11662,7 @@
           "_id": "mloop-loop-B10-B10",
           "loop": "loop-B10",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -11708,6 +11755,7 @@
           "_id": "mloop-loop-R7-R7",
           "loop": "loop-R7",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -11731,8 +11779,8 @@
         {
           "_id": "node-loop-B11-polder-drainage-depth",
           "position": {
-            "x": -247,
-            "y": -95
+            "x": -325,
+            "y": -125
           },
           "pinned": true,
           "style": {},
@@ -11741,8 +11789,8 @@
         {
           "_id": "node-loop-B11-saline-seepage-kwel",
           "position": {
-            "x": 247,
-            "y": -95
+            "x": 325,
+            "y": -125
           },
           "pinned": true,
           "style": {},
@@ -11752,7 +11800,7 @@
           "_id": "node-loop-B11-plans-to-raise-ditch-levels",
           "position": {
             "x": 0,
-            "y": 190
+            "y": 250
           },
           "pinned": true,
           "style": {},
@@ -11784,6 +11832,7 @@
           "_id": "mloop-loop-B11-B11",
           "loop": "loop-B11",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -11807,7 +11856,7 @@
         {
           "_id": "node-loop-B12-polder-drainage-depth",
           "position": {
-            "x": -285,
+            "x": -405,
             "y": 0
           },
           "pinned": true,
@@ -11817,7 +11866,7 @@
         {
           "_id": "node-loop-B12-plans-to-raise-ditch-levels",
           "position": {
-            "x": 285,
+            "x": 405,
             "y": 0
           },
           "pinned": true,
@@ -11844,6 +11893,7 @@
           "_id": "mloop-loop-B12-B12",
           "loop": "loop-B12",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -11867,7 +11917,7 @@
         {
           "_id": "node-loop-B13-plans-to-raise-ditch-levels",
           "position": {
-            "x": -285,
+            "x": -405,
             "y": 0
           },
           "pinned": true,
@@ -11877,7 +11927,7 @@
         {
           "_id": "node-loop-B13-policy-resistance-legal-delays",
           "position": {
-            "x": 285,
+            "x": 405,
             "y": 0
           },
           "pinned": true,
@@ -11904,6 +11954,7 @@
           "_id": "mloop-loop-B13-B13",
           "loop": "loop-B13",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -12076,6 +12127,7 @@
           "_id": "mloop-loop-R8-R8",
           "loop": "loop-R8",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -12099,7 +12151,7 @@
         {
           "_id": "node-loop-R9-policy-resistance-legal-delays",
           "position": {
-            "x": -285,
+            "x": -390,
             "y": 0
           },
           "pinned": true,
@@ -12109,7 +12161,7 @@
         {
           "_id": "node-loop-R9-farmers-trust-in-government",
           "position": {
-            "x": 285,
+            "x": 390,
             "y": 0
           },
           "pinned": true,
@@ -12136,6 +12188,7 @@
           "_id": "mloop-loop-R9-R9",
           "loop": "loop-R9",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -12228,6 +12281,7 @@
           "_id": "mloop-loop-B14-B14",
           "loop": "loop-B14",
           "style": {},
+          "pinned": true,
           "position": {
             "x": 0,
             "y": 0
@@ -12250,7 +12304,7 @@
     {
       "_id": "pers-loops",
       "name": "Loops",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-recharge { width: 310; height: 120; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-recharge { width: 310; height: 120; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
     }
   ]
 }

@@ -281,14 +281,19 @@ Combined loops sheet and a Kumu map of its own show each group. `places` (`{"ele
 `curvature`. Each must hold exactly the group's elements, links and loops, so `build.py` stops when a
 loop's path changes, and it warns of a crossing or a link through a box in a figure; `--check` names a
 stale or orphaned one. Each loop is its own area, never one inside another (a loop
-drawn inside another puts the outer loop's mark inside the inner one), and `build.py` warns of a mark
-outside its own loop's area or inside another's. `python3 build.py --group-layout C2 C5` lays out a
-group of two loops anew (`draw_cld.group_layout()`) and writes it into the group: two loops sharing
-one element as two ovals touching at it, two sharing a chain as two areas side by side, the chain
-on a straight wall between them with an even gap between its boxes, the loop on the wall's far
-side running anticlockwise; the boxes evenly along each arc, each mark at its area's centre, turning
-the way its loop runs, and the two areas stacked or side by side, whichever frame is nearer a
-square (Jordy, chosen between rendered versions of C2, C3, C5 and C7). Jordy's hand in Kumu then
+drawn inside another puts the outer loop's mark inside the inner one), but where three loops share one
+chain, which a flat map cannot draw each beside it: one wraps one other, its mark in the band that is
+its own. `build.py` warns of a mark outside its own loop's area or inside another's it does not wrap,
+and of a loop's label, as Kumu draws it at the mark, on a box or a link. `python3 build.py
+--group-layout C2 C5` lays out groups anew (`draw_cld.group_layout()`) and writes them in: two loops
+sharing one element as two ovals touching at it; otherwise the most loops sharing one chain on a
+straight wall, an even gap between its boxes, each loop's route an arc from the chain's end back to
+its start, one each side of the wall and a third round one of those, a loop arcing over part of the
+wall between the wall and that side's route; then each other loop where it meets those, an arc over
+the links it shares, an oval touching at its one shared element, or, a loop of two, a narrow lens out
+from it. The boxes sit evenly along each arc, each mark midway across its own area with room for its
+loop's label as Kumu draws it (`draw_cld.kumu_label_half()`), the figure stacked or upright, whichever
+frame is nearer a square (Jordy, chosen between rendered versions of C2, C3, C5 and C7). Jordy's hand in Kumu then
 adjusts it as any group's (Kumu, below). The figure draws each link as Kumu does, a circular arc
 from box centre to box centre (`draw_cld.group_pieces()`), so it shows what Kumu's map shows (Jordy,
 chosen between rendered versions; rejected: the full drawing's curve between ends spread along the
@@ -442,7 +447,8 @@ CLD's own project before the Actor Map joined it):
 - a map per combined loop, C1 to C10, then per named loop in `model/cld.json`'s order, named
   `<id> <name>`, its description the group's or the loop's: exactly its loops' elements and links,
   at the places of its figure in `docs/figures/` (a group's `places`, `bends` and `marks`, a named
-  loop's oval), each loop's label at its mark. Kumu draws a link from centre to centre, so a named
+  loop's oval), each loop's label pinned at its mark (unpinned, Kumu's layout drags it off towards
+  its loop's boxes), at the size `draw_cld.KUMU_LOOP_FONT` sets and makes room for. Kumu draws a link from centre to centre, so a named
   loop's link bends through the oval midway between its two elements (`draw_cld.oval_layout()`).
   Their view is the CLD's without the rule that hides the loop labels.
 

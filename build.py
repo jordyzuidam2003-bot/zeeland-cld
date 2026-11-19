@@ -169,6 +169,145 @@ def bows_alike(links, places, where=""):
     return out
 
 
+# Kumu's arrowhead, read in a restore: 14.214 long (its arrowHeight) and 23 wide
+KUMU_ARROW = 14.214
+# two arrowheads on one box are told apart (Jordy's decision: they may touch or overlap a little,
+# the lines come first; rejected: 40 units between tips, which bends lines into new crossings)
+# unless their tips lie under ARROW_GAP apart, under a Kumu arrowhead's width, and their directions
+# differ under ARROW_TURN degrees
+ARROW_GAP = 20
+ARROW_TURN = 15
+
+
+def kumu_arrowhead(a, b, k, box_a, box_b):
+    """((x, y), degrees): where the tip of Kumu's arrowhead on a link from centre a to centre b lies,
+    and the way it points (0 is east, 90 south, as y runs down), for a curvature k and the boxes
+    (x0, y0, x1, y1) Kumu draws, each a box's width and height round its centre. This is Kumu's own
+    geometry, read in its script and checked on every link of a restore (README's Kumu): a circle
+    through both centres and a point k x half their distance out at their middle, left of the
+    link's direction for k > 0; the arc leaves a's box where the circle first meets its border from
+    a's centre on, turning the way it bows, and ends where it then first meets b's border; the
+    arrowhead's base lies one arrowhead's length (as a chord) back along the arc, and the arrowhead
+    points from its base at b's centre, its tip a length further on. Under KUMU_STRAIGHT the link
+    runs straight from centre to centre, its tip where that line meets b's border.
+
+    Measured in the restore of c148a24's export (cbp1-v2), Kumu's tip and direction against these:
+    a link straight in Kumu, World prices -> Farm revenue (read: tip (380, 135), -9 degrees);
+    >>> box = lambda c, w, h: (c[0] - w / 2, c[1] - h / 2, c[0] + w / 2, c[1] + h / 2)
+    >>> show = lambda t: (tuple(round(v) for v in t[0]), round(t[1]))
+    >>> show(kumu_arrowhead((87, 179), (475, 120), 0, box((87, 179), 295, 86), box((475, 120), 191, 52)))
+    ((380, 135), -9)
+
+    a link bowing left at the least bow Kumu draws, Agricultural land value -> Farmland leaving
+    arable use (read: (-86, -654), -160);
+    >>> show(kumu_arrowhead((233, -605), (-204, -696), 0.1, box((233, -605), 280, 86), box((-204, -696), 295, 86)))
+    ((-86, -654), -160)
+
+    and two links bowing opposite ways onto Water board pumping costs, from Saline seepage (kwel)
+    and Winter rain drained away, whose arrowheads Kumu stacks (read: (-1262, -702), -64 and
+    (-1261, -702), -65).
+    >>> show(kumu_arrowhead((-2086, 218), (-1241, -745), -0.14, box((-2086, 218), 340, 52), box((-1241, -745), 340, 86)))
+    ((-1262, -702), -64)
+    >>> show(kumu_arrowhead((-1270, -63), (-1241, -745), 0.22, box((-1270, -63), 310, 86), box((-1241, -745), 340, 86)))
+    ((-1261, -702), -65)
+    """
+    def rim(box, p, q):
+        """Where the line from box's centre p towards q meets box's border."""
+        dx, dy = q[0] - p[0], q[1] - p[1]
+        s = min((box[2] - p[0]) / abs(dx) if dx else math.inf, (box[3] - p[1]) / abs(dy) if dy else math.inf)
+        return p[0] + s * dx, p[1] + s * dy
+
+    if abs(k) < KUMU_STRAIGHT:
+        e = rim(box_b, b, a)
+        return e, math.degrees(math.atan2(b[1] - a[1], b[0] - a[0]))
+    dx, dy = b[0] - a[0], b[1] - a[1]
+    length = math.hypot(dx, dy)
+    out = (a[0] + dx / 2 + dy / length * k * length / 2, a[1] + dy / 2 - dx / length * k * length / 2)
+    # the circle through a, out and b
+    (ax, ay), (bx, by), (cx, cy) = a, out, b
+    d = 2 * (ax * (by - cy) + bx * (cy - ay) + cx * (ay - by))
+    o = (((ax * ax + ay * ay) * (by - cy) + (bx * bx + by * by) * (cy - ay) + (cx * cx + cy * cy) * (ay - by)) / d,
+         ((ax * ax + ay * ay) * (cx - bx) + (bx * bx + by * by) * (ax - cx) + (cx * cx + cy * cy) * (bx - ax)) / d)
+    r = math.dist(o, a)
+    angle = lambda p: math.atan2(p[1] - o[1], p[0] - o[0]) % (2 * math.pi)
+    # k > 0 runs the angle up (clockwise on screen, y down), k < 0 down
+    turn = 1 if k > 0 else -1
+
+    def first_on(box, start):
+        """The first point where the circle meets box's border, from the angle start on, turning."""
+        x0, y0, x1, y1 = box
+        hits = []
+        for (px, py), (qx, qy) in [((x0, y0), (x1, y0)), ((x1, y0), (x1, y1)), ((x0, y1), (x1, y1)), ((x0, y0), (x0, y1))]:
+            ux, uy, fx, fy = qx - px, qy - py, px - o[0], py - o[1]
+            aa, bb, cc = ux * ux + uy * uy, 2 * (fx * ux + fy * uy), fx * fx + fy * fy - r * r
+            if bb * bb - 4 * aa * cc >= 0:
+                root = math.sqrt(bb * bb - 4 * aa * cc)
+                hits += [(px + t * ux, py + t * uy) for t in ((-bb - root) / (2 * aa), (-bb + root) / (2 * aa)) if 0 <= t <= 1]
+        return min(hits, key=lambda p: (turn * (angle(p) - start)) % (2 * math.pi))
+
+    end = first_on(box_b, angle(first_on(box_a, angle(a))))
+    t = angle(end) - turn * 2 * math.asin(KUMU_ARROW / (2 * r))
+    base = (o[0] + r * math.cos(t), o[1] + r * math.sin(t))
+    point = math.atan2(b[1] - base[1], b[0] - base[0])
+    return (base[0] + KUMU_ARROW * math.cos(point), base[1] + KUMU_ARROW * math.sin(point)), math.degrees(point)
+
+
+def arrowheads_close(links, places, sizes, where=""):
+    """`arrowheads close:` lines for two arrowheads on one box that cannot be told apart in Kumu: tips
+    under ARROW_GAP apart and directions under ARROW_TURN degrees apart (kumu_arrowhead()). Kumu
+    aims each link at its target's centre, so arrowheads stack where links arrive from nearly one
+    direction; a link's bow is the one lever, the boxes' places being Jordy's (README's Kumu).
+    links: (name, from, to, curvature); places: {id: (x, y)}; sizes: {id: (width, height)} as the
+    view sets them; where: the map the lines name.
+
+    The pair Kumu stacks on Water board pumping costs (kumu_arrowhead()), at their places;
+    >>> p = {"kwel": (-2086, 218), "rain": (-1270, -63), "costs": (-1241, -745)}
+    >>> s = {"kwel": (340, 52), "rain": (310, 86), "costs": (340, 86)}
+    >>> arrowheads_close([("kwel -> costs", "kwel", "costs", -0.14), ("rain -> costs", "rain", "costs", 0.22)], p, s)
+    ['arrowheads close: on costs, kwel -> costs and rain -> costs, tips 0.9 units apart, 1.0 degrees between them']
+
+    and two relations onto Arable farmers in the Actor Map, from the Banks and LVVN (read: tips
+    (2058, 1157) and (2057, 1157), 103 and 102 degrees).
+    >>> p = {"banks": (2475, 755), "lvvn": (2196, 824), "farmers": (2048, 1200)}
+    >>> s = {"banks": (325, 86), "lvvn": (87, 52), "farmers": (295, 86)}
+    >>> arrowheads_close([("b", "banks", "farmers", -0.3), ("l", "lvvn", "farmers", -0.1)], p, s, "actor map: ")
+    ['arrowheads close: actor map: on farmers, b and l, tips 1.3 units apart, 1.7 degrees between them']
+    """
+    box = lambda i: (places[i][0] - sizes[i][0] / 2, places[i][1] - sizes[i][1] / 2,
+                     places[i][0] + sizes[i][0] / 2, places[i][1] + sizes[i][1] / 2)
+    onto = {}
+    for name, a, b, k in links:
+        onto.setdefault(b, []).append((name, *kumu_arrowhead(places[a], places[b], k, box(a), box(b))))
+    out = []
+    for b, heads in onto.items():
+        for i, (m, p, u) in enumerate(heads):
+            for n, q, v in heads[i + 1:]:
+                gap, turn = math.dist(p, q), abs((u - v + 180) % 360 - 180)
+                if gap < ARROW_GAP and turn < ARROW_TURN:
+                    out.append(f"arrowheads close: {where}on {b}, {m} and {n}, tips {gap:.1f} units apart, "
+                               f"{turn:.1f} degrees between them")
+    return out
+
+
+def kumu_arrowheads(cld, actors):
+    """arrowheads_close() over every map of the Kumu project: the full CLD, the Actor Map and each
+    loop map at its figure's places and bends (project()), each box the size the view gives it."""
+    bxs = draw_cld.boxes(cld)
+    size = {i: (round(b[2] - b[0]), round(b[3] - b[1])) for i, b in bxs.items()}
+    out = arrowheads_close([(f"{c['from']} -> {c['to']}", c["from"], c["to"], c["curvature"]) for c in cld["connections"]],
+                           {e["id"]: (e["x"], e["y"]) for e in cld["elements"]}, size)
+    a_bxs, rels, _ = draw_actor_map.geometry(actors)
+    out += arrowheads_close([(f"{r['from']} {r['kind']} {r['to']}", r["from"], r["to"], r["curvature"]) for r in rels],
+                            {a["id"]: (a["x"], a["y"]) for a in actors["actors"]},
+                            {i: (round(b[2] - b[0]), round(b[3] - b[1])) for i, b in a_bxs.items()}, "actor map: ")
+    figures = ([(g["id"], g["places"], g["bends"]) for g in cld.get("groups", [])]
+               + [(loop["id"], *draw_cld.oval_layout(cld, loop)[:2]) for loop in cld["loops"]])
+    for name, places, bends in figures:
+        out += arrowheads_close([(k, *k.split(" -> "), v) for k, v in bends.items()],
+                                {i: tuple(p) for i, p in places.items()}, size, f"map {name}: ")
+    return out
+
+
 def ask_errors(item, name, actor_ids):
     """The errors in an item's `ask actors`, a list of {actor, for, through}: the facts no public
     source read gives that an actor may know, `through` the partners to start asking through. Absent
@@ -1167,6 +1306,10 @@ def main():
                          {a["id"]: (a["x"], a["y"]) for a in actors["actors"]}, "actor map: "))
     if bows:
         print("\n".join(bows))
+    # each at the line's start too (grep "^arrowheads close:")
+    heads = kumu_arrowheads(cld, actors)
+    if heads:
+        print("\n".join(heads))
 
 
 if __name__ == "__main__":

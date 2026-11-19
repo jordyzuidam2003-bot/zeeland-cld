@@ -478,7 +478,20 @@ such a pair is set apart by bowing its outer link further out (Jordy's decision:
 is fixed in the build where it can be, by hand only for the rest, since a fix by hand is lost at
 each restore). What still reads less clearly in
 Kumu, such as a link that needs a little more bend, Jordy adjusts there by hand after the last
-restore before a submission. Kumu's arrowheads are its own.
+restore before a submission.
+
+Kumu aims each link at its target's centre and puts the arrowhead where the arc meets the box's
+border, so arrowheads stack where links arrive from nearly one direction. `build.kumu_arrowhead()`
+follows Kumu's own geometry, read in its script and matched on every link of a restore to within a
+unit and a degree, and `build.py` warns, each line starting `arrowheads close:`, of two arrowheads
+on one box, on any map of the project, whose tips lie under 20 units apart (a Kumu arrowhead is 23
+wide) and whose directions differ under 15 degrees (Jordy's decision: two may touch or overlap a
+little, as long as each can be told apart, and the lines come first; rejected: 40 units between
+tips, which bends lines into new crossings). A link's bow is the one lever, the boxes' places being
+Jordy's: an incoming link's bow is nudged only where that adds no crossing between links, no link
+through a box and no `bow alike:` line, and keeps its sign and a curvature of at least 0.1; Jordy
+chooses between restores of the versions, and a box no nudge clears keeps its `arrowheads close:`
+lines, which are for his hand after the last restore.
 
 Jordy's drawings reach Kumu inside the file, so a restore shows them with no hand work (Jordy's
 decision; rejected: adding them in Kumu by hand after each restore, and a URL on the published page

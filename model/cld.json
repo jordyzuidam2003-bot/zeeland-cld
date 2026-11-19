@@ -58,8 +58,8 @@
         "van-beekom-1953-salt",
         "de-louw-2011"
       ],
-      "x": -1480,
-      "y": 329
+      "x": -1593,
+      "y": 337
     },
     {
       "id": "freshwater-lens-thickness",
@@ -223,8 +223,8 @@
       "actors": [
         "rijkswaterstaat"
       ],
-      "x": -1467,
-      "y": 969
+      "x": -1374,
+      "y": 1004
     },
     {
       "id": "freshwater-availability-for-crops",
@@ -239,8 +239,8 @@
         "kaandorp-2022",
         "allen-1998"
       ],
-      "x": -2077,
-      "y": 1771
+      "x": -2179,
+      "y": 1766
     },
     {
       "id": "freshwater-storage-measures",
@@ -421,8 +421,8 @@
         "abn-amro-nd-kosten-krediet",
         "abn-amro-nd-uitleg-rente"
       ],
-      "x": 1677,
-      "y": -287,
+      "x": 1692,
+      "y": -277,
       "actor": "banks"
     },
     {
@@ -441,8 +441,8 @@
       "actors": [
         "eu"
       ],
-      "x": 1519,
-      "y": -119
+      "x": 1525,
+      "y": -108
     },
     {
       "id": "dependence-on-high-margin-salt-sensitive-crops",
@@ -541,8 +541,8 @@
         "allen-1998",
         "kaandorp-2022"
       ],
-      "x": -882,
-      "y": 1004
+      "x": -897,
+      "y": 1020
     },
     {
       "id": "zlto-call-for-supply-route",
@@ -557,8 +557,8 @@
         "omroep-zeeland-2023-zoet-water",
         "omroep-zeeland-2026-aardappeloogst"
       ],
-      "x": -1220,
-      "y": 1138,
+      "x": -1214,
+      "y": 1185,
       "actor": "zlto"
     },
     {
@@ -581,8 +581,8 @@
       "actors": [
         "ienw"
       ],
-      "x": -1596,
-      "y": 1358,
+      "x": -1530,
+      "y": 1382,
       "actor": "provincie-zeeland"
     },
     {
@@ -1329,7 +1329,7 @@
         "kaandorp-2022",
         "witteveen-bos-2021"
       ],
-      "curvature": -0.11
+      "curvature": -0.1
     },
     {
       "from": "freshwater-storage-measures",
@@ -1467,7 +1467,7 @@
       "delay": false,
       "description": "A farm that relies on high margins can give fewer hectares to lower-margin new crops.",
       "sources": [],
-      "curvature": -0.14,
+      "curvature": -0.19,
       "hypothesis": true
     },
     {
@@ -1544,7 +1544,7 @@
         "delphy-2023-dorsd",
         "terink-2023"
       ],
-      "curvature": -0.32
+      "curvature": -0.28
     },
     {
       "from": "crop-water-shortfall",
@@ -1558,7 +1558,7 @@
         "scheldestromen-2026-grondwater",
         "pauw-2015"
       ],
-      "curvature": -0.1
+      "curvature": -0.27
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -1585,7 +1585,7 @@
         "omroep-zeeland-2026-aardappeloogst",
         "delphy-2023-dorsd"
       ],
-      "curvature": 0.45
+      "curvature": 0.4
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -1611,7 +1611,7 @@
         "schipper-2014",
         "brabantse-delta-2026"
       ],
-      "curvature": 0.14
+      "curvature": 0.11
     },
     {
       "from": "hotter-drier-summers",
@@ -2643,7 +2643,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": -0.28
+      "curvature": -0.19
     },
     {
       "from": "knowledge-of-storage",
@@ -2732,7 +2732,7 @@
         "de-vriend-2024-gewassen"
       ],
       "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
-      "curvature": -0.14
+      "curvature": -0.15
     },
     {
       "from": "net-price-for-new-crops",

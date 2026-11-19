@@ -5232,8 +5232,8 @@
         {
           "_id": "node-freshwater-lens-recharge",
           "position": {
-            "x": -1480,
-            "y": 329
+            "x": -1593,
+            "y": 337
           },
           "pinned": true,
           "style": {},
@@ -5322,8 +5322,8 @@
         {
           "_id": "node-external-freshwater-supply",
           "position": {
-            "x": -1467,
-            "y": 969
+            "x": -1374,
+            "y": 1004
           },
           "pinned": true,
           "style": {},
@@ -5332,8 +5332,8 @@
         {
           "_id": "node-freshwater-availability-for-crops",
           "position": {
-            "x": -2077,
-            "y": 1771
+            "x": -2179,
+            "y": 1766
           },
           "pinned": true,
           "style": {},
@@ -5432,8 +5432,8 @@
         {
           "_id": "node-bank-credit-freeze-risk-premiums",
           "position": {
-            "x": 1677,
-            "y": -287
+            "x": 1692,
+            "y": -277
           },
           "pinned": true,
           "style": {},
@@ -5442,8 +5442,8 @@
         {
           "_id": "node-basel-iv-capital-requirements",
           "position": {
-            "x": 1519,
-            "y": -119
+            "x": 1525,
+            "y": -108
           },
           "pinned": true,
           "style": {},
@@ -5502,8 +5502,8 @@
         {
           "_id": "node-crop-water-shortfall",
           "position": {
-            "x": -882,
-            "y": 1004
+            "x": -897,
+            "y": 1020
           },
           "pinned": true,
           "style": {},
@@ -5512,8 +5512,8 @@
         {
           "_id": "node-zlto-call-for-supply-route",
           "position": {
-            "x": -1220,
-            "y": 1138
+            "x": -1214,
+            "y": 1185
           },
           "pinned": true,
           "style": {},
@@ -5522,8 +5522,8 @@
         {
           "_id": "node-freshwater-supply-route",
           "position": {
-            "x": -1596,
-            "y": 1358
+            "x": -1530,
+            "y": 1382
           },
           "pinned": true,
           "style": {},
@@ -5927,7 +5927,7 @@
         },
         {
           "_id": "edge-external-freshwater-supply--freshwater-availability-for-crops",
-          "curvature": -0.11,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-external-freshwater-supply--freshwater-availability-for-crops"
         },
@@ -5993,7 +5993,7 @@
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption",
-          "curvature": -0.14,
+          "curvature": -0.19,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption"
         },
@@ -6029,13 +6029,13 @@
         },
         {
           "_id": "edge-freshwater-availability-for-crops--crop-water-shortfall",
-          "curvature": -0.32,
+          "curvature": -0.28,
           "style": {},
           "connection": "conn-freshwater-availability-for-crops--crop-water-shortfall"
         },
         {
           "_id": "edge-crop-water-shortfall--groundwater-extraction-for-irrigation",
-          "curvature": -0.1,
+          "curvature": -0.27,
           "style": {},
           "connection": "conn-crop-water-shortfall--groundwater-extraction-for-irrigation"
         },
@@ -6047,7 +6047,7 @@
         },
         {
           "_id": "edge-crop-water-shortfall--crop-yield",
-          "curvature": 0.45,
+          "curvature": 0.4,
           "style": {},
           "connection": "conn-crop-water-shortfall--crop-yield"
         },
@@ -6059,7 +6059,7 @@
         },
         {
           "_id": "edge-freshwater-supply-route--external-freshwater-supply",
-          "curvature": 0.14,
+          "curvature": 0.11,
           "style": {},
           "connection": "conn-freshwater-supply-route--external-freshwater-supply"
         },
@@ -6557,7 +6557,7 @@
         },
         {
           "_id": "edge-freshwater-storage-measures--freshwater-availability-for-crops",
-          "curvature": -0.28,
+          "curvature": -0.19,
           "style": {},
           "connection": "conn-freshwater-storage-measures--freshwater-availability-for-crops"
         },
@@ -6599,7 +6599,7 @@
         },
         {
           "_id": "edge-freshwater-availability-for-crops--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": -0.14,
+          "curvature": -0.15,
           "style": {},
           "connection": "conn-freshwater-availability-for-crops--dependence-on-high-margin-salt-sensitive-crops"
         },
@@ -6628,8 +6628,8 @@
           "loop": "loop-R1",
           "style": {},
           "position": {
-            "x": -1146,
-            "y": 373
+            "x": -1174,
+            "y": 375
           }
         },
         {
@@ -6673,8 +6673,8 @@
           "loop": "loop-R2",
           "style": {},
           "position": {
-            "x": 13,
-            "y": -332
+            "x": 14,
+            "y": -331
           }
         },
         {
@@ -6691,8 +6691,8 @@
           "loop": "loop-B5",
           "style": {},
           "position": {
-            "x": -1179,
-            "y": 1214
+            "x": -1218,
+            "y": 1218
           }
         },
         {
@@ -6700,8 +6700,8 @@
           "loop": "loop-B6",
           "style": {},
           "position": {
-            "x": -1236,
-            "y": 517
+            "x": -1269,
+            "y": 520
           }
         },
         {
@@ -6709,8 +6709,8 @@
           "loop": "loop-B7",
           "style": {},
           "position": {
-            "x": -1448,
-            "y": 1248
+            "x": -1439,
+            "y": 1271
           }
         },
         {
@@ -6727,8 +6727,8 @@
           "loop": "loop-R4",
           "style": {},
           "position": {
-            "x": -824,
-            "y": 387
+            "x": -849,
+            "y": 389
           }
         },
         {

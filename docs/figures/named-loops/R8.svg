@@ -36,7 +36,7 @@
 <path class="delay-cut" d="M 822.6 -96.1 L 775.9 -85.3 M 826.2 -80.6 L 779.5 -69.7" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 822.6 -96.1 L 775.9 -85.3 M 826.2 -80.6 L 779.5 -69.7" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="policy-resistance-legal-delays" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="false" data-curvature="-0.1">
+<g class="link" data-from="policy-resistance-legal-delays" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="false" data-curvature="-0.15">
 <path class="link-path" d="M 413.3 -464.4 Q 560.7 -406.1 660.1 -313.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="622.3" y="-345.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>

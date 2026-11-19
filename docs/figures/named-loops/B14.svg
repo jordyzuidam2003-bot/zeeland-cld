@@ -10,11 +10,11 @@
 <path class="link-path" d="M 154.5 205.6 Q 81.6 230.0 -0.0 230.0 Q -81.6 230.0 -154.5 205.6" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-106.3" y="218.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="expropriation-of-farmland" data-to="farmers-trust-in-government" data-sign="-" data-delay="false" data-curvature="-0.14">
+<g class="link" data-from="expropriation-of-farmland" data-to="farmers-trust-in-government" data-sign="-" data-delay="false" data-curvature="-0.22">
 <path class="link-path" d="M 294.7 -119.6 Q 345.0 -64.5 345.0 0.0 Q 345.0 64.5 294.7 119.6" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="324.1" y="79.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="policy-resistance-legal-delays" data-to="municipality-plans-for-farmland" data-sign="-" data-delay="false" data-curvature="-0.32">
+<g class="link" data-from="policy-resistance-legal-delays" data-to="municipality-plans-for-farmland" data-sign="-" data-delay="false" data-curvature="-0.38">
 <path class="link-path" d="M -294.7 119.6 Q -345.0 64.5 -345.0 0.0 Q -345.0 -64.5 -294.7 -119.6" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-324.1" y="-79.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>

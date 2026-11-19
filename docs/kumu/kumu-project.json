@@ -5212,8 +5212,8 @@
         {
           "_id": "node-sea-level-rise",
           "position": {
-            "x": -2253,
-            "y": 385
+            "x": -2242,
+            "y": 424
           },
           "pinned": true,
           "style": {},
@@ -5352,8 +5352,8 @@
         {
           "_id": "node-groundwater-extraction-for-irrigation",
           "position": {
-            "x": -617,
-            "y": 842
+            "x": -578,
+            "y": 868
           },
           "pinned": true,
           "style": {},
@@ -5392,8 +5392,8 @@
         {
           "_id": "node-market-demand-for-alternative-crops",
           "position": {
-            "x": 668,
-            "y": 1054
+            "x": 604,
+            "y": 1046
           },
           "pinned": true,
           "style": {},
@@ -5472,8 +5472,8 @@
         {
           "_id": "node-farmers-capacity-to-invest",
           "position": {
-            "x": 791,
-            "y": -222
+            "x": 765,
+            "y": -256
           },
           "pinned": true,
           "style": {},
@@ -5542,8 +5542,8 @@
         {
           "_id": "node-polder-drainage-depth",
           "position": {
-            "x": -1630,
-            "y": -395
+            "x": -1718,
+            "y": -419
           },
           "pinned": true,
           "style": {},
@@ -5602,8 +5602,8 @@
         {
           "_id": "node-farms-with-a-successor",
           "position": {
-            "x": 152,
-            "y": -49
+            "x": 118,
+            "y": -77
           },
           "pinned": true,
           "style": {},
@@ -5632,7 +5632,7 @@
         {
           "_id": "node-growers-of-new-crops-elsewhere",
           "position": {
-            "x": 190,
+            "x": 249,
             "y": 1765
           },
           "pinned": true,
@@ -5642,8 +5642,8 @@
         {
           "_id": "node-processing-of-new-crops-elsewhere",
           "position": {
-            "x": 1135,
-            "y": 1238
+            "x": 1242,
+            "y": 1202
           },
           "pinned": true,
           "style": {},
@@ -5772,8 +5772,8 @@
         {
           "_id": "node-farmers-wish-to-keep-their-land",
           "position": {
-            "x": 356,
-            "y": -1089
+            "x": 344,
+            "y": -1108
           },
           "pinned": true,
           "style": {},
@@ -5792,8 +5792,8 @@
         {
           "_id": "node-municipality-plans-for-farmland",
           "position": {
-            "x": -617,
-            "y": -1616
+            "x": -512,
+            "y": -1740
           },
           "pinned": true,
           "style": {},
@@ -5822,8 +5822,8 @@
         {
           "_id": "node-knowledge-of-storage",
           "position": {
-            "x": -370,
-            "y": 10
+            "x": -382,
+            "y": -21
           },
           "pinned": true,
           "style": {},
@@ -5885,7 +5885,7 @@
         },
         {
           "_id": "edge-freshwater-lens-thickness--freshwater-availability-for-crops",
-          "curvature": -0.32,
+          "curvature": -0.28,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--freshwater-availability-for-crops"
         },
@@ -5927,7 +5927,7 @@
         },
         {
           "_id": "edge-external-freshwater-supply--freshwater-availability-for-crops",
-          "curvature": -0.14,
+          "curvature": -0.11,
           "style": {},
           "connection": "conn-external-freshwater-supply--freshwater-availability-for-crops"
         },
@@ -5993,7 +5993,7 @@
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption",
-          "curvature": -0.16,
+          "curvature": -0.14,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption"
         },
@@ -6011,7 +6011,7 @@
         },
         {
           "_id": "edge-farmers-capacity-to-invest--freshwater-storage-measures",
-          "curvature": 0.14,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--freshwater-storage-measures"
         },
@@ -6053,7 +6053,7 @@
         },
         {
           "_id": "edge-groundwater-extraction-for-irrigation--farm-revenue",
-          "curvature": -0.21,
+          "curvature": -0.25,
           "style": {},
           "connection": "conn-groundwater-extraction-for-irrigation--farm-revenue"
         },
@@ -6137,7 +6137,7 @@
         },
         {
           "_id": "edge-saline-seepage-kwel--plans-to-raise-ditch-levels",
-          "curvature": 0.32,
+          "curvature": 0.37,
           "style": {},
           "connection": "conn-saline-seepage-kwel--plans-to-raise-ditch-levels"
         },
@@ -6149,19 +6149,19 @@
         },
         {
           "_id": "edge-policy-resistance-legal-delays--plans-to-raise-ditch-levels",
-          "curvature": -0.1,
+          "curvature": -0.15,
           "style": {},
           "connection": "conn-policy-resistance-legal-delays--plans-to-raise-ditch-levels"
         },
         {
           "_id": "edge-saline-seepage-kwel--water-board-pumping-costs",
-          "curvature": -0.14,
+          "curvature": -0.11,
           "style": {},
           "connection": "conn-saline-seepage-kwel--water-board-pumping-costs"
         },
         {
           "_id": "edge-winter-rain-drained-away--water-board-pumping-costs",
-          "curvature": 0.22,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-winter-rain-drained-away--water-board-pumping-costs"
         },
@@ -6209,13 +6209,13 @@
         },
         {
           "_id": "edge-tolerant-varieties-adoption--margin-given-up-on-high-margin-crops",
-          "curvature": -0.14,
+          "curvature": -0.23,
           "style": {},
           "connection": "conn-tolerant-varieties-adoption--margin-given-up-on-high-margin-crops"
         },
         {
           "_id": "edge-margin-given-up-on-high-margin-crops--farm-revenue",
-          "curvature": 0.14,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-margin-given-up-on-high-margin-crops--farm-revenue"
         },
@@ -6233,7 +6233,7 @@
         },
         {
           "_id": "edge-farms-with-a-successor--freshwater-storage-measures",
-          "curvature": 0.22,
+          "curvature": 0.15,
           "style": {},
           "connection": "conn-farms-with-a-successor--freshwater-storage-measures"
         },
@@ -6269,25 +6269,25 @@
         },
         {
           "_id": "edge-net-price-for-new-crops--salt-tolerant-crop-adoption",
-          "curvature": 0.1,
+          "curvature": 0.3,
           "style": {},
           "connection": "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
         },
         {
           "_id": "edge-knowledge-of-new-crops--salt-tolerant-crop-adoption",
-          "curvature": -0.32,
+          "curvature": -0.26,
           "style": {},
           "connection": "conn-knowledge-of-new-crops--salt-tolerant-crop-adoption"
         },
         {
           "_id": "edge-salt-tolerant-crop-adoption--knowledge-of-new-crops",
-          "curvature": -0.22,
+          "curvature": -0.28,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--knowledge-of-new-crops"
         },
         {
           "_id": "edge-salt-tolerant-crop-adoption--farmers-capacity-to-invest",
-          "curvature": -0.1,
+          "curvature": 0,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--farmers-capacity-to-invest"
         },
@@ -6305,7 +6305,7 @@
         },
         {
           "_id": "edge-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
-          "curvature": -0.22,
+          "curvature": -0.31,
           "style": {},
           "connection": "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops"
         },
@@ -6485,7 +6485,7 @@
         },
         {
           "_id": "edge-plans-to-raise-ditch-levels--policy-resistance-legal-delays",
-          "curvature": 0.27,
+          "curvature": 0.33,
           "style": {},
           "connection": "conn-plans-to-raise-ditch-levels--policy-resistance-legal-delays"
         },
@@ -6509,13 +6509,13 @@
         },
         {
           "_id": "edge-expropriation-of-farmland--farmers-trust-in-government",
-          "curvature": -0.14,
+          "curvature": -0.22,
           "style": {},
           "connection": "conn-expropriation-of-farmland--farmers-trust-in-government"
         },
         {
           "_id": "edge-policy-resistance-legal-delays--municipality-plans-for-farmland",
-          "curvature": -0.32,
+          "curvature": -0.38,
           "style": {},
           "connection": "conn-policy-resistance-legal-delays--municipality-plans-for-farmland"
         },
@@ -6527,7 +6527,7 @@
         },
         {
           "_id": "edge-municipality-plans-for-farmland--farmland-leaving-arable-use",
-          "curvature": 0.45,
+          "curvature": 0.18,
           "style": {},
           "connection": "conn-municipality-plans-for-farmland--farmland-leaving-arable-use"
         },
@@ -6557,19 +6557,19 @@
         },
         {
           "_id": "edge-freshwater-storage-measures--freshwater-availability-for-crops",
-          "curvature": -0.14,
+          "curvature": -0.28,
           "style": {},
           "connection": "conn-freshwater-storage-measures--freshwater-availability-for-crops"
         },
         {
           "_id": "edge-knowledge-of-storage--freshwater-storage-measures",
-          "curvature": -0.27,
+          "curvature": -0.15,
           "style": {},
           "connection": "conn-knowledge-of-storage--freshwater-storage-measures"
         },
         {
           "_id": "edge-freshwater-storage-measures--knowledge-of-storage",
-          "curvature": -0.27,
+          "curvature": -0.22,
           "style": {},
           "connection": "conn-freshwater-storage-measures--knowledge-of-storage"
         },
@@ -6581,7 +6581,7 @@
         },
         {
           "_id": "edge-polder-drainage-depth--plans-to-raise-ditch-levels",
-          "curvature": 0.34,
+          "curvature": 0.26,
           "style": {},
           "connection": "conn-polder-drainage-depth--plans-to-raise-ditch-levels"
         },
@@ -6655,8 +6655,8 @@
           "loop": "loop-B3",
           "style": {},
           "position": {
-            "x": -783,
-            "y": -89
+            "x": -793,
+            "y": -91
           }
         },
         {
@@ -6664,8 +6664,8 @@
           "loop": "loop-B4",
           "style": {},
           "position": {
-            "x": -1126,
-            "y": -732
+            "x": -1148,
+            "y": -738
           }
         },
         {
@@ -6673,8 +6673,8 @@
           "loop": "loop-R2",
           "style": {},
           "position": {
-            "x": 19,
-            "y": -330
+            "x": 13,
+            "y": -332
           }
         },
         {
@@ -6691,8 +6691,8 @@
           "loop": "loop-B5",
           "style": {},
           "position": {
-            "x": -1192,
-            "y": 1206
+            "x": -1179,
+            "y": 1214
           }
         },
         {
@@ -6718,8 +6718,8 @@
           "loop": "loop-B8",
           "style": {},
           "position": {
-            "x": -716,
-            "y": 607
+            "x": -703,
+            "y": 616
           }
         },
         {
@@ -6727,8 +6727,8 @@
           "loop": "loop-R4",
           "style": {},
           "position": {
-            "x": -821,
-            "y": 391
+            "x": -824,
+            "y": 387
           }
         },
         {
@@ -6736,8 +6736,8 @@
           "loop": "loop-R5",
           "style": {},
           "position": {
-            "x": -476,
-            "y": -143
+            "x": -482,
+            "y": -158
           }
         },
         {
@@ -6745,8 +6745,8 @@
           "loop": "loop-R6",
           "style": {},
           "position": {
-            "x": 618,
-            "y": -238
+            "x": 615,
+            "y": -242
           }
         },
         {
@@ -6763,8 +6763,8 @@
           "loop": "loop-B10",
           "style": {},
           "position": {
-            "x": 670,
-            "y": -183
+            "x": 667,
+            "y": -187
           }
         },
         {
@@ -6781,8 +6781,8 @@
           "loop": "loop-B11",
           "style": {},
           "position": {
-            "x": -1650,
-            "y": -435
+            "x": -1679,
+            "y": -443
           }
         },
         {
@@ -6790,8 +6790,8 @@
           "loop": "loop-B12",
           "style": {},
           "position": {
-            "x": -1432,
-            "y": -762
+            "x": -1476,
+            "y": -774
           }
         },
         {
@@ -6808,8 +6808,8 @@
           "loop": "loop-R8",
           "style": {},
           "position": {
-            "x": -770,
-            "y": -177
+            "x": -780,
+            "y": -180
           }
         },
         {
@@ -6826,8 +6826,8 @@
           "loop": "loop-B14",
           "style": {},
           "position": {
-            "x": 187,
-            "y": -1591
+            "x": 214,
+            "y": -1622
           }
         }
       ]
@@ -6888,8 +6888,8 @@
         {
           "_id": "node-banks",
           "position": {
-            "x": 2475,
-            "y": 755
+            "x": 2582,
+            "y": 816
           },
           "pinned": true,
           "style": {},
@@ -6898,8 +6898,8 @@
         {
           "_id": "node-buyers-and-processors",
           "position": {
-            "x": 1844,
-            "y": 681
+            "x": 1709,
+            "y": 734
           },
           "pinned": true,
           "style": {},
@@ -6918,8 +6918,8 @@
         {
           "_id": "node-consumers",
           "position": {
-            "x": 1844,
-            "y": 250
+            "x": 1648,
+            "y": 223
           },
           "pinned": true,
           "style": {},
@@ -6928,8 +6928,8 @@
         {
           "_id": "node-eu",
           "position": {
-            "x": 2100,
-            "y": 480
+            "x": 2282,
+            "y": 467
           },
           "pinned": true,
           "style": {},
@@ -6938,8 +6938,8 @@
         {
           "_id": "node-lvvn",
           "position": {
-            "x": 2196,
-            "y": 824
+            "x": 2293,
+            "y": 833
           },
           "pinned": true,
           "style": {},
@@ -6958,8 +6958,8 @@
         {
           "_id": "node-rijkswaterstaat",
           "position": {
-            "x": 2355,
-            "y": 1033
+            "x": 2373,
+            "y": 1047
           },
           "pinned": true,
           "style": {},
@@ -6978,8 +6978,8 @@
         {
           "_id": "node-deltares",
           "position": {
-            "x": 1190,
-            "y": 835
+            "x": 1231,
+            "y": 808
           },
           "pinned": true,
           "style": {},
@@ -6988,8 +6988,8 @@
         {
           "_id": "node-kwr",
           "position": {
-            "x": 1428,
-            "y": 964
+            "x": 1388,
+            "y": 885
           },
           "pinned": true,
           "style": {},
@@ -6998,8 +6998,8 @@
         {
           "_id": "node-acacia-water",
           "position": {
-            "x": 1675,
-            "y": 1051
+            "x": 1683,
+            "y": 1068
           },
           "pinned": true,
           "style": {},
@@ -7041,7 +7041,7 @@
         },
         {
           "_id": "edge-2",
-          "curvature": 0.42,
+          "curvature": 0.24,
           "style": {},
           "connection": "conn-2"
         },
@@ -7053,19 +7053,19 @@
         },
         {
           "_id": "edge-4",
-          "curvature": 0.55,
+          "curvature": 0.37,
           "style": {},
           "connection": "conn-4"
         },
         {
           "_id": "edge-5",
-          "curvature": -0.27,
+          "curvature": -0.24,
           "style": {},
           "connection": "conn-5"
         },
         {
           "_id": "edge-6",
-          "curvature": 0.1,
+          "curvature": -0.11,
           "style": {},
           "connection": "conn-6"
         },
@@ -7077,19 +7077,19 @@
         },
         {
           "_id": "edge-8",
-          "curvature": 0.18,
+          "curvature": 0.24,
           "style": {},
           "connection": "conn-8"
         },
         {
           "_id": "edge-9",
-          "curvature": -0.18,
+          "curvature": -0.14,
           "style": {},
           "connection": "conn-9"
         },
         {
           "_id": "edge-10",
-          "curvature": -0.18,
+          "curvature": -0.11,
           "style": {},
           "connection": "conn-10"
         },
@@ -7101,7 +7101,7 @@
         },
         {
           "_id": "edge-12",
-          "curvature": 0.42,
+          "curvature": 0.18,
           "style": {},
           "connection": "conn-12"
         },
@@ -7125,19 +7125,19 @@
         },
         {
           "_id": "edge-16",
-          "curvature": -0.3,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-16"
         },
         {
           "_id": "edge-17",
-          "curvature": -0.18,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-17"
         },
         {
           "_id": "edge-18",
-          "curvature": 0.18,
+          "curvature": 0.25,
           "style": {},
           "connection": "conn-18"
         },
@@ -7173,7 +7173,7 @@
         },
         {
           "_id": "edge-24",
-          "curvature": -0.1,
+          "curvature": -0.11,
           "style": {},
           "connection": "conn-24"
         },
@@ -7203,7 +7203,7 @@
         },
         {
           "_id": "edge-29",
-          "curvature": 0.1,
+          "curvature": 0.24,
           "style": {},
           "connection": "conn-29"
         },
@@ -7221,13 +7221,13 @@
         },
         {
           "_id": "edge-32",
-          "curvature": 0.3,
+          "curvature": 0.23,
           "style": {},
           "connection": "conn-32"
         },
         {
           "_id": "edge-33",
-          "curvature": 0.3,
+          "curvature": 0.11,
           "style": {},
           "connection": "conn-33"
         },
@@ -7239,7 +7239,7 @@
         },
         {
           "_id": "edge-35",
-          "curvature": 0.25,
+          "curvature": 0.11,
           "style": {},
           "connection": "conn-35"
         },

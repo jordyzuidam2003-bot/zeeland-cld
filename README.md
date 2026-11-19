@@ -83,7 +83,8 @@ builds and pushes, so nobody else needs git or Python.
 3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
    a commit whose `docs/` is out of date.
 
-Layout tuning: on the CLD's page, turn on "Move": drag an element to move it, drag
+Layout tuning happens in Kumu, read back by `build.py --kumu` (Kumu, below; Jordy's decision
+there). The page keeps its Move mode: on the CLD's page, turn on "Move": drag an element to move it, drag
 a delay mark to shift it along its own line, a link to bend it (its middle follows the pointer; within 0.03 of straight a Constant's link snaps to
 straight and any other keeps that bend), then "Download layout" saves `layout.json`
 with every element's position, every link's curvature and each delay mark that was dragged.
@@ -477,11 +478,12 @@ rejected: 0.1 apart in curvature whatever the link's length, which left short pa
 such a pair is set apart by bowing its outer link further out (Jordy's decision: Kumu's drawing
 is fixed in the build where it can be, by hand only for the rest).
 
-Jordy sets by hand, in a throwaway project, what still reads less clearly in Kumu, such as a link
-that needs a little more bend, and the build reads it back (Jordy's decision: only Kumu shows what
-Kumu draws, as it aims each link at its box's centre and places its own arrowheads and signs,
-which the page draws apart; rejected: a view on the page drawing as Kumu does, and nudges by the
-build alone, the rest fixed in `cbp1` after the last restore and lost at the next). He exports the
+Jordy sets the places and bends by hand in a throwaway project, and the build reads them back
+(Jordy's decision: Kumu is what the report's readers see, and only Kumu shows what Kumu draws, as it
+aims each link at its box's centre and places its own arrowheads and signs, which the page draws
+apart, so a fix made on the page misses Kumu's problems; rejected: the page's Move mode, a view on
+the page drawing as Kumu does, and nudges by the build alone, the rest fixed in `cbp1` after the
+last restore and lost at the next). He exports the
 project as JSON (Kumu's Export → JSON), and `python3 build.py --kumu ~/Downloads/<export>.json`
 writes into the model each element's and actor's place, each link's and relation's curvature and
 each combined loop's places, bends and marks, then rebuilds (`apply_kumu()`), so the next restore

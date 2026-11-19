@@ -1,28 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-853 -1008 1772 1613" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-853 -1008 1772 1673" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
 <defs>
 <marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
 <marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
 <marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
 </defs>
-<rect x="-853" y="-1008" width="1772" height="1613" fill="white"/>
+<rect x="-853" y="-1008" width="1772" height="1673" fill="white"/>
 <g class="links">
 <g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-of-new-crops-to-process" data-sign="+" data-delay="false" data-curvature="0.382">
-<path class="link-path" d="M 155.0 15.6 Q 219.7 38.8 269.5 86.1 Q 319.3 133.5 345.6 197.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="323.0" y="152.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M 155.0 11.3 Q 235.7 35.1 297.9 91.9 Q 360.0 148.7 391.0 227.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="369.5" y="181.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="harvest-of-new-crops-to-process" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="true" data-curvature="0.382">
-<path class="link-path" d="M 345.6 283.0 Q 295.9 402.9 177.2 455.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="221.4" y="432.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M 301.4 397.1 L 267.1 363.6 M 290.3 408.6 L 255.9 375.0" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 301.4 397.1 L 267.1 363.6 M 290.3 408.6 L 255.9 375.0" stroke="#444444" stroke-width="5" fill="none"/>
+<path class="link-path" d="M 391.0 313.0 Q 362.3 385.6 306.4 440.0 Q 250.5 494.5 177.2 521.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="222.9" y="501.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 328.9 451.6 L 295.4 417.3 M 317.4 462.8 L 283.9 428.4" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 328.9 451.6 L 295.4 417.3 M 317.4 462.8 L 283.9 428.4" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="processing-capacity-for-alternative-crops" data-to="net-price-for-new-crops" data-sign="+" data-delay="false" data-curvature="0.382">
-<path class="link-path" d="M -177.2 455.5 Q -295.9 402.9 -345.6 283.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-323.3" y="327.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -177.2 521.4 Q -250.5 494.5 -306.4 440.0 Q -362.3 385.6 -391.0 313.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-369.5" y="358.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="net-price-for-new-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.382">
-<path class="link-path" d="M -345.6 197.0 Q -319.3 133.5 -269.5 86.1 Q -219.7 38.8 -155.0 15.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-200.7" y="36.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -391.0 227.0 Q -360.0 148.7 -297.9 91.9 Q -235.7 35.1 -155.0 11.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-201.9" y="28.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="agricultural-land-value" data-to="mortgage-debt-financial-leverage" data-sign="-" data-delay="false" data-curvature="0.144">
 <path class="link-path" d="M -399.3 -811.0 Q -279.4 -869.6 -147.6 -889.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -98,24 +98,24 @@
 <text x="477.0" y="-106.5" text-anchor="middle">invest</text>
 </g>
 <g class="element" data-id="harvest-of-new-crops-to-process" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
-<rect x="197.6" y="197.0" width="324.8" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
-<text x="360.0" y="231.5" text-anchor="middle">Harvest of new crops</text>
-<text x="360.0" y="265.5" text-anchor="middle">to process</text>
+<rect x="242.6" y="227.0" width="324.8" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="405.0" y="261.5" text-anchor="middle">Harvest of new crops</text>
+<text x="405.0" y="295.5" text-anchor="middle">to process</text>
 </g>
 <g class="element" data-id="processing-capacity-for-alternative-crops" data-domain="Technological" data-type="Stock" data-adaptive="false">
-<rect x="-177.2" y="437.0" width="354.5" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
-<text x="0.0" y="471.5" text-anchor="middle">Local processing</text>
-<text x="0.0" y="505.5" text-anchor="middle">capacity for new crops</text>
+<rect x="-177.2" y="497.0" width="354.5" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="0.0" y="531.5" text-anchor="middle">Local processing</text>
+<text x="0.0" y="565.5" text-anchor="middle">capacity for new crops</text>
 </g>
 <g class="element" data-id="net-price-for-new-crops" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-529.8" y="197.0" width="339.6" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-360.0" y="231.5" text-anchor="middle">Net price for new</text>
-<text x="-360.0" y="265.5" text-anchor="middle">crops after transport</text>
+<rect x="-574.8" y="227.0" width="339.6" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-405.0" y="261.5" text-anchor="middle">Net price for new</text>
+<text x="-405.0" y="295.5" text-anchor="middle">crops after transport</text>
 </g>
 </g>
 <g class="loop" data-id="R7">
-<path d="M 0.0 192.0 A 48 48 0 1 1 -48.0 240.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="0.0" y="240.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R7</text>
+<path d="M 0.0 222.0 A 48 48 0 1 1 -48.0 270.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="0.0" y="270.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R7</text>
 </g>
 <g class="loop" data-id="B10">
 <path d="M 0.0 -498.0 A 48 48 0 1 1 -48.0 -450.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>

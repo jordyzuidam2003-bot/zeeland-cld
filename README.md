@@ -83,8 +83,7 @@ builds and pushes, so nobody else needs git or Python.
 3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
    a commit whose `docs/` is out of date.
 
-Layout tuning happens in Kumu, read back by `build.py --kumu` (Kumu, below; Jordy's decision
-there). The page keeps its Move mode: on the CLD's page, turn on "Move": drag an element to move it, drag
+Layout tuning happens in Kumu, read back by `build.py --kumu` (Kumu, below). The page keeps its Move mode: on the CLD's page, turn on "Move": drag an element to move it, drag
 a delay mark to shift it along its own line, a link to bend it (its middle follows the pointer; within 0.03 of straight a Constant's link snaps to
 straight and any other keeps that bend), then "Download layout" saves `layout.json`
 with every element's position, every link's curvature and each delay mark that was dragged.
@@ -99,8 +98,7 @@ arrived, the whole drawing readable on one A4 page, no link through
 an element it does not connect, which would read as if that element
 mediates it, and no named loop whose links cross each other, a figure eight that cannot be
 followed round; `build.py` warns on the last. A Constant's links run straight, and `build.py`
-warns on a bent one; every other link has some bend but where a straight line reads more clearly (Jordy's decision:
-overall links bend, and an exception is judged by eye), and it warns on a straight one. A
+warns on a bent one; every other link has some bend but where a straight line reads more clearly (overall links bend, and an exception is judged by eye), and it warns on a straight one. A
 Constant sits beside what it drives, its box at most 400 units from each box it drives
 (Jordy), and `build.py` warns on one further away.
 
@@ -167,7 +165,7 @@ References sheet. The sources are in-text citations, the letter after a year the
 
 `docs/tables/cld-combined-loops.tex`, `cld-elements.tex` and `actor-map-inside.tex` are the report's
 tables as LaTeX rows (`report_tables()`, `src/write_tex.py`), from the model as it stands, every row
-(Jordy's decision; rejected: short names and influence phrases kept for the report alone): each
+(rejected: short names and influence phrases kept for the report alone): each
 combined loop with its loops and its description as the mechanism; every element by label with its
 type, SETS domain, the actor that decides it and the combined loops it is in; each actor inside the
 scale with its type, the variables it decides and its influence score. A file holds rows alone, so
@@ -178,8 +176,7 @@ here, never there.
 `docs/tables/sources-to-ask.xlsx`, linked from the page beside the table, is the list Jordy and Lenne
 contact the actors from: a row per `ask actors` entry in `model/cld.json` and `model/actor-map.json`
 (the element, link or actor; what is missing; the actor; through whom), by partner and then by
-actor. Its final version goes to the group's Drive, from then on the list's source of truth
-(Jordy's decision): no entry joins `ask actors` after it, and one leaves once its fact is sourced.
+actor. Its final version goes to the group's Drive, from then on the list's source of truth: no entry joins `ask actors` after it, and one leaves once its fact is sourced.
 
 ### `model/cld.json`
 
@@ -236,7 +233,7 @@ An element:
   actor may know it, a list of `{"actor": <id in model/actor-map.json>, "for": <what is missing,
   in words>, "through": ["DCC", "Living Lab"]}`, the partners to start asking through, one or
   both: asking is networking, one contact leads to the next, so the route is not decided
-  beforehand (Jordy's decision). Organisations only, never a person's name, since this repository
+  beforehand. Organisations only, never a person's name, since this repository
   is public. `build.py` stops on an actor not in `model/actor-map.json`, an empty `for` and a
   `through` that is not a list of one or both partners; the table and Kumu show it, and `docs/tables/sources-to-ask.xlsx` lists every entry
   (The table). Left out where nothing is asked, never empty.
@@ -283,7 +280,7 @@ Combined loops sheet and a Kumu map of its own show each group. `places` (`{"ele
 `docs/figures/combined-loops/<id>.svg`: its own, never the full drawing's, on the same axes and signs as `x`, `y` and
 `curvature`. Each must hold exactly the group's elements, links and loops, so `build.py` stops when a
 loop's path changes, and it warns of a crossing or a link through a box in a figure; `--check` names a
-stale or orphaned one. Each loop is its own area, never one inside another (Jordy's decision: a loop
+stale or orphaned one. Each loop is its own area, never one inside another (a loop
 drawn inside another puts the outer loop's mark inside the inner one), and `build.py` warns of a mark
 outside its own loop's area or inside another's. `python3 build.py --group-layout C2 C5` lays out a
 group of two loops anew (`draw_cld.group_layout()`) and writes it into the group: two loops sharing
@@ -470,7 +467,7 @@ New Project → its name, public → the next screen → "restore backup" (the l
 images, so nothing is uploaded after it. Only a brand-new project restores a project export; the
 green `+` → Import route brings in the elements and connections alone. The restore sets the
 project's name, which the export sets to `cbp1`. Until the Research Proposal's grade is in, `cbp1`
-stays as it is (Jordy's decision: the examiners may be reading it through the proposal's links;
+stays as it is (the examiners may be reading it through the proposal's links;
 rejected: replacing it during the examination): an update goes into a throwaway project instead,
 restored from a copy of the export with `name` set to the throwaway's, so it cannot become `cbp1`.
 
@@ -484,16 +481,15 @@ curvature is measured on its own arcs in a restore (`draw_cld.KUMU_STRAIGHT`): a
 box centres, bowing left of the link's direction for a positive curvature, about curvature times
 half the centres' distance out at its middle, and dead straight under 0.1. So a curvature in
 `model/cld.json` or `model/actor-map.json` (and a group's bend) is 0 or at least 0.1 either way,
-or `build.py` stops (Jordy's decision: the page and Kumu bend the same links), and `build.py`
+or `build.py` stops (the page and Kumu bend the same links), and `build.py`
 warns, each line starting `bow alike:`, where two links or relations join the same two boxes less
-than 100 units apart at their middles as Kumu draws them, about a box's height (Jordy's decision;
-rejected: 0.1 apart in curvature whatever the link's length, which left short pairs too close);
+than 100 units apart at their middles as Kumu draws them, about a box's height (rejected: 0.1 apart in curvature whatever the link's length, which left short pairs too close);
 such a pair is set apart by bowing its outer link further out where it reads unclearly in Kumu
-(Jordy's decision: Kumu's drawing is fixed in the build where it can be, by hand only for the
+(Kumu's drawing is fixed in the build where it can be, by hand only for the
 rest; a pair that reads clearly stays, whatever its distance).
 
 Jordy sets the places and bends by hand in a throwaway project, and the build reads them back
-(Jordy's decision: Kumu is what the report's readers see, and only Kumu shows what Kumu draws, as it
+(Kumu is what the report's readers see, and only Kumu shows what Kumu draws, as it
 aims each link at its box's centre and places its own arrowheads and signs, which the page draws
 apart, so a fix made on the page misses Kumu's problems; rejected: the page's Move mode, a view on
 the page drawing as Kumu does, and nudges by the build alone, the rest fixed in `cbp1` after the
@@ -506,7 +502,7 @@ oval, computed, so a change there is printed and not kept. A box moved there is 
 Jordy's drawings as after a move on the page.
 Each of the build's measures (`bow alike:`, `arrowheads close:`, a straight link, a link through a
 box) names a place for Jordy to look at in Kumu, never a fix on its own: what he judges clear there
-stays (Jordy's decision: some things read well by eye that fail a number; rejected: the measures
+stays (some things read well by eye that fail a number; rejected: the measures
 as rules, which bend lines into new crossings).
 
 Kumu aims each link at its target's centre and puts the arrowhead where the arc meets the box's
@@ -514,7 +510,7 @@ border, so arrowheads stack where links arrive from nearly one direction. `build
 follows Kumu's own geometry, read in its script and matched on every link of a restore to within a
 unit and a degree, and `build.py` warns, each line starting `arrowheads close:`, of two arrowheads
 on one box, on any map of the project, whose tips lie under 20 units apart (a Kumu arrowhead is 23
-wide) and whose directions differ under 15 degrees (Jordy's decision: two may touch or overlap a
+wide) and whose directions differ under 15 degrees (two may touch or overlap a
 little, as long as each can be told apart, and the lines come first; rejected: 40 units between
 tips, which bends lines into new crossings). A link's bow is the one lever, the boxes' places being
 Jordy's: an incoming link's bow is nudged only where that adds no crossing between links, no link
@@ -522,8 +518,7 @@ through a box and no `bow alike:` line, and keeps its sign and a curvature of at
 chooses between restores of the versions, and a box no nudge clears keeps its `arrowheads close:`
 lines, which are for his hand in Kumu, read back (above).
 
-Jordy's drawings reach Kumu inside the file, so a restore shows them with no hand work (Jordy's
-decision; rejected: adding them in Kumu by hand after each restore, and a URL on the published page
+Jordy's drawings reach Kumu inside the file, so a restore shows them with no hand work (rejected: adding them in Kumu by hand after each restore, and a URL on the published page
 or the repository, which outsiders never get): the CLD's map holds an element labelled
 `background`, the Actor Map's one labelled `Background-actor`, each pinned at the centre of its
 drawing's frame (`src/backdrop.py`), its image field holding the PNG as a data URL, never in the

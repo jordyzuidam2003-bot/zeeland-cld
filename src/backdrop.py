@@ -3,7 +3,7 @@
 He drew them in Affinity (backgrounds/cbp1-cld.af, cbp1-actors.af) over a Kumu export of each map, so
 each PNG covers exactly that export's frame. The page (draw_cld.svg(), draw_actor_map.svg()) and the
 Kumu export (build.py's project(), actors_project()) both place a PNG at its frame, the PNG one unit
-per pixel, so a box sits in its region in both as in his drawing (Jordy's decision: the drawing is
+per pixel, so a box sits in its region in both as in his drawing (the drawing is
 his own; rejected: the regions and bands build.py generated). A box moved off its place in the drawing
 keeps no region: a session checks the boxes against the drawings after a move (README's Kumu).
 """
@@ -38,7 +38,7 @@ def frame(name):
 
 def data_url(name):
     """The PNG as a data URL: inside the page and the Kumu export, so neither depends on a host and
-    nothing in Kumu links to this repository (Jordy's decision)."""
+    nothing in Kumu links to this repository."""
     return "data:image/png;base64," + base64.b64encode((ROOT / BACKDROPS[name][0]).read_bytes()).decode()
 
 

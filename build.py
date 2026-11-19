@@ -118,7 +118,7 @@ ACTOR_FIELDS = ["label", "scale", "type", "level", "sector", "interest", "influe
 ASK_THROUGH = ["DCC", "Living Lab"]
 KUMU_STRAIGHT = draw_cld.KUMU_STRAIGHT  # Kumu draws a curvature under it straight (measured, draw_cld.py)
 # the least gap, in the model's units, at their middles between two links that join the same two
-# boxes (Jordy's decision: about a box's height; rejected: 0.1 apart in curvature, whatever the
+# boxes (about a box's height; rejected: 0.1 apart in curvature, whatever the
 # link's length, which left short pairs too close and pairs under KUMU_STRAIGHT on one line)
 BOW_GAP = 100
 
@@ -130,7 +130,7 @@ def kumu_bow(k):
 
 def kumu_straight(k):
     """Whether Kumu draws a bent curvature straight: 0 < |k| < KUMU_STRAIGHT. The model holds 0 or a
-    bow Kumu draws (Jordy's decision), so the page and Kumu bend the same links."""
+    bow Kumu draws, so the page and Kumu bend the same links."""
     return 0 < abs(k) < KUMU_STRAIGHT
 
 
@@ -175,7 +175,7 @@ def bows_alike(links, places, where=""):
 
 # Kumu's arrowhead, read in a restore: 14.214 long (its arrowHeight) and 23 wide
 KUMU_ARROW = 14.214
-# two arrowheads on one box are told apart (Jordy's decision: they may touch or overlap a little,
+# two arrowheads on one box are told apart (they may touch or overlap a little,
 # the lines come first; rejected: 40 units between tips, which bends lines into new crossings)
 # unless their tips lie under ARROW_GAP apart, under a Kumu arrowhead's width, and their directions
 # differ under ARROW_TURN degrees
@@ -549,7 +549,7 @@ def check(cld, refs, actors):
             errors.append(f"loop {loop['id']} is {'balancing' if kind == 'B' else 'reinforcing'} "
                           f"as drawn, so its id must start with {kind}")
 
-    # Every feedback loop holds a stock (Jordy's decision): an auxiliary is set at once by its
+    # Every feedback loop holds a stock: an auxiliary is set at once by its
     # causes, so a loop of auxiliaries alone would need its own value to set itself. D2D stops on
     # such a loop, yet its own check sees only loops of up to five links (funcs/cld.py), and a longer
     # one leaves its auxiliaries at zero; so every loop is checked here, the named ones and the rest.
@@ -627,11 +627,11 @@ def check(cld, refs, actors):
                 warnings.append(f"{e['id']}: nothing drives it, yet it is not a Constant")
             elif e["id"] in has_in and e["element type"] == "Constant":
                 warnings.append(f"{e['id']}: a Constant, yet links drive it")
-        # A Constant drives from outside the system, so its links run straight (Jordy's decision).
+        # A Constant drives from outside the system, so its links run straight.
         constant = {e["id"] for e in cld["elements"] if e["element type"] == "Constant"}
         warnings += [f"{c['from']} -> {c['to']}: a Constant's link, yet bent (curvature {c['curvature']})"
                      for c in cld["connections"] if c["from"] in constant and c["curvature"] != 0]
-        # ... and it sits beside what it drives (Jordy's decision), so its link reads as its own.
+        # ... and it sits beside what it drives, so its link reads as its own.
         bxs = draw_cld.boxes(cld)
         for c in cld["connections"]:
             if c["from"] in constant:
@@ -898,7 +898,7 @@ def report_tables(cld, refs, actors):
     copies into the group's Overleaf project: the combined loops with their mechanisms, every
     element with its role, and the actors inside the scale with the variables each decides. From
     the model as it stands, every row, the actors named in full and their influence as its score
-    (Jordy's decision; rejected: short names and influence phrases kept for the report alone)."""
+    (rejected: short names and influence phrases kept for the report alone)."""
     els = {e["id"]: e for e in cld["elements"]}
     label = {a["id"]: a["label"] for a in actors["actors"]}
     paths = {loop["id"]: loop["path"] for loop in cld["loops"]}
@@ -930,7 +930,7 @@ def ask_sheets(cld, actors):
     actor-map.json's actors (the element, link or actor; what is missing; the actor; through whom),
     by partners (DCC alone, then both, then the Living Lab alone) and then by actor, so each
     contact's questions sit together, and within an actor in the model's order. One record, the
-    model's, so the list cannot drift from it (Jordy's decision, cld-model.md)."""
+    model's, so the list cannot drift from it (cld-model.md)."""
     els = {e["id"]: e for e in cld["elements"]}
     label = {a["id"]: a["label"] for a in actors["actors"]}
     items = ([(e["label"], e) for e in cld["elements"]]
@@ -947,7 +947,7 @@ def background(_id, label, drawing, view, name):
     """(element, node, rule): Jordy's drawing behind a map (backdrop.py). The element labelled label,
     which the view's #<label> rule shows on the background layer, holds the PNG as a data URL in its
     own image field, so an import shows it with no hand work and the view, which Kumu's advanced
-    editor shows to anyone, holds none of it (Jordy's decisions); its node is pinned at the centre
+    editor shows to anyone, holds none of it; its node is pinned at the centre
     of the drawing's frame, and the rule sizes it to the PNG, one unit per pixel."""
     if "image-url" in view:
         sys.exit(f"src/kumu/{name} sets an image-url: the background's image goes in its element's image field")
@@ -974,7 +974,7 @@ def bare(view):
 
 def project(cld, refs, actors, template):
     """The CLD's part of the Kumu project (kumu_project()): the map of the full CLD, then a map per
-    combined loop and per named loop, each drawn as its figure (Jordy's decision, cld-drawing.md).
+    combined loop and per named loop, each drawn as its figure (cld-drawing.md).
 
     The CLD's view is src/kumu/cld-view.scss with the regions as its background image, plus what is
     generated here: each SETS domain's tint from draw_cld.TINT, and by Kumu system id each
@@ -1137,7 +1137,7 @@ def kumu_project(cld_part, actors_part):
     part (project()) and the Actor Map's (actors_project()) as maps of one project, the full CLD's
     the default. It holds no version, so the link to each map stays the same from one copy to the
     next (Jordy: the versions are the repository's), and links to neither the page nor the
-    repository: outsiders see only Kumu and the submissions (Jordy's decision, in
+    repository: outsiders see only Kumu and the submissions (in
     ChallengeBasedProject1/.claude/CLAUDE.md)."""
     parts = [cld_part, actors_part]
     # the CLD's map and view first, then the Actor Map's, then the CLD's loop maps and their view
@@ -1215,7 +1215,7 @@ def kumu_bend(k):
 
 def apply_kumu(path):
     """Write the places and bends Jordy set by hand in a throwaway Kumu project into the model, from
-    the project's JSON export, so the next restore keeps them (Jordy's decision: only Kumu shows what
+    the project's JSON export, so the next restore keeps them (only Kumu shows what
     Kumu draws, README's Kumu). The full CLD's map gives each element's place and each link's
     curvature (into cld.json, through place()), the Actor Map's each actor's place and each
     relation's curvature (actor-map.json), and each combined loop's map its group's places, bends

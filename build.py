@@ -5,6 +5,8 @@
     python3 build.py --layout FILE    # write the positions and curvatures of FILE (layout.json,
                                       # downloaded from a page's Move mode) into cld.json, or the
                                       # Actor Map's into actor-map.json, then build
+    python3 build.py --kumu FILE      # write the places and bends Jordy set in Kumu (FILE, the
+                                      # project's JSON export) into the model, then build
     python3 -m doctest build.py       # the tests written in its docstrings (bows_alike())
 
 Sources, edited by hand: in model/, cld.json (elements, connections, named loops, layout and
@@ -1161,7 +1163,11 @@ def apply_layout(path):
     "actor-map.json", id: {x, y}, "curvature": {"from->to kind": k}}) goes into actor-map.json: each
     actor's place and each relation's curvature, a relation named by its two actors and its kind,
     since two actors can hold two relations. A file without "curvature" moves the boxes only."""
-    layout = json.loads(path.read_text())
+    place(json.loads(path.read_text()), "--layout")
+
+
+def place(layout, flag):
+    """Write a layout (apply_layout()) into its model; flag names the option in an error."""
     target = layout.pop("model", "cld.json")
     curvature = layout.pop("curvature", {})
     if target == "cld.json":
@@ -1176,16 +1182,16 @@ def apply_layout(path):
         boxes = model["actors"]
         links = [(f'{a["id"]}->{r["to"]} {r["kind"]}', r) for a in boxes for r in a.get("relations", [])]
     else:
-        sys.exit(f"--layout: model {target!r} is neither cld.json nor actor-map.json")
+        sys.exit(f"{flag}: model {target!r} is neither cld.json nor actor-map.json")
     by_id = {b["id"]: b for b in boxes}
     by_link = dict(links)
     unknown = [i for i in layout if i not in by_id] + [k for k in list(curvature) + list(delay_at) if k not in by_link]
     if unknown:
-        sys.exit(f"--layout: unknown {what} {', '.join(unknown)}")
+        sys.exit(f"{flag}: unknown {what} {', '.join(unknown)}")
     # a name that two relations share would bend both
     twice = [k for k in curvature if sum(k == n for n, _ in links) > 1]
     if twice:
-        sys.exit(f"--layout: {', '.join(twice)} names more than one {what.split(' or ')[1]}")
+        sys.exit(f"{flag}: {', '.join(twice)} names more than one {what.split(' or ')[1]}")
     for i, pos in layout.items():
         by_id[i]["x"], by_id[i]["y"] = int(pos["x"]), int(pos["y"])
     for k, v in curvature.items():
@@ -1196,14 +1202,91 @@ def apply_layout(path):
     file.write_text(json.dumps(model, indent=2, ensure_ascii=False) + "\n")
 
 
+def kumu_bend(k):
+    """A curvature Jordy set in Kumu as the model keeps it: in hundredths, and 0 where Kumu draws it
+    straight (under KUMU_STRAIGHT), so the model holds what he saw."""
+    k = round(k, 2)
+    return k if abs(k) >= KUMU_STRAIGHT else 0
+
+
+def apply_kumu(path):
+    """Write the places and bends Jordy set by hand in a throwaway Kumu project into the model, from
+    the project's JSON export, so the next restore keeps them (Jordy's decision: only Kumu shows what
+    Kumu draws, README's Kumu). The full CLD's map gives each element's place and each link's
+    curvature (into cld.json, through place()), the Actor Map's each actor's place and each
+    relation's curvature (actor-map.json), and each combined loop's map its group's places, bends
+    and marks; a named loop's map is its oval, computed (draw_cld.oval_layout()), so what changed
+    there is printed and not kept. A link is found through its connection's two elements, a
+    relation through its two actors and its kind; the backgrounds stay at their frames."""
+    export = json.loads(path.read_text())
+    maps = {m["_id"]: m for m in export.get("maps", [])}
+    conns = {c["_id"]: c for c in export.get("connections", [])}
+    if "map-cld" not in maps or "map-actors" not in maps:
+        sys.exit("--kumu: the file holds no map-cld and map-actors: export the whole project from Kumu as JSON")
+    bare_id = lambda ref: ref.removeprefix("elem-")
+    backgrounds = {"elem-background", "elem-actors-background"}
+    at = lambda n: (round(n["position"]["x"]), round(n["position"]["y"]))
+
+    def read(m):
+        """({id: (x, y)}, {(from, to, kind): curvature}) of a map."""
+        places = {bare_id(n["element"]): at(n) for n in m["elements"] if n["element"] not in backgrounds}
+        bends = {}
+        for e in m["connections"]:
+            c = conns[e["connection"]]
+            bends[(bare_id(c["from"]), bare_id(c["to"]), c["attributes"].get("connection type"))] = kumu_bend(e.get("curvature", 0))
+        return places, bends
+
+    places, bends = read(maps["map-cld"])
+    place({**{i: {"x": x, "y": y} for i, (x, y) in places.items()},
+           "curvature": {f"{a}->{b}": k for (a, b, _), k in bends.items()}}, "--kumu")
+    places, bends = read(maps["map-actors"])
+    place({"model": "actor-map.json", **{i: {"x": x, "y": y} for i, (x, y) in places.items()},
+           "curvature": {f"{a}->{b} {kind}": k for (a, b, kind), k in bends.items()}}, "--kumu")
+
+    cld = json.loads(CLD.read_text())
+    for g in cld.get("groups", []):
+        m = maps.get(f"map-group-{g['id']}")
+        if m is None:
+            sys.exit(f"--kumu: the file holds no map of group {g['id']}")
+        places, bends = read(m)
+        for i, xy in places.items():
+            if i not in g["places"]:
+                sys.exit(f"--kumu: group {g['id']}'s map holds {i}, not one of its places")
+            g["places"][i] = list(xy)
+        for (a, b, _), k in bends.items():
+            key = f"{a} -> {b}"
+            if key not in g["bends"]:
+                sys.exit(f"--kumu: group {g['id']}'s map holds {key}, not one of its bends")
+            if g["bends"][key] != k:  # an unchanged value keeps its spelling
+                g["bends"][key] = k
+        for ml in m.get("loops", []):
+            g["marks"][ml["loop"].removeprefix("loop-")] = [round(ml["position"]["x"]), round(ml["position"]["y"])]
+    CLD.write_text(json.dumps(cld, indent=2, ensure_ascii=False) + "\n")
+
+    for loop in cld["loops"]:
+        m = maps.get(f"map-loop-{loop['id']}")
+        if m is None:
+            continue
+        o_places, o_bends, _ = draw_cld.oval_layout(cld, loop)
+        places, bends = read(m)
+        moved = [i for i, xy in places.items() if list(xy) != o_places.get(i)]
+        bent = [f"{a} -> {b}" for (a, b, _), k in bends.items() if k != kumu_bend(o_bends.get(f"{a} -> {b}", 0))]
+        if moved or bent:
+            print(f"--kumu: map {loop['id']} is its oval, so these changes are not kept: "
+                  + ", ".join([f"{i} moved" for i in moved] + [f"{k} bent" for k in bent]))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--check", action="store_true", help="fail if docs/ is out of date")
+    parser.add_argument("--kumu", metavar="FILE", help="write the places and bends set by hand in Kumu, from its JSON export FILE, into cld.json and actor-map.json, then build")
     parser.add_argument("--layout", metavar="FILE", help="write the x, y and curvatures of FILE (layout.json from a page) into cld.json, or the Actor Map's into actor-map.json, then build")
     args = parser.parse_args()
 
     if args.layout:
         apply_layout(Path(args.layout))
+    if args.kumu:
+        apply_kumu(Path(args.kumu))
     cld = json.loads(CLD.read_text())
     refs, ref_errors = references()
     actors = json.loads(ACTORS.read_text())

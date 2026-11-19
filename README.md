@@ -416,8 +416,8 @@ guidelines do not ask for it (Jordy).
 ## Kumu
 
 Kumu holds a copy for milestones, at <https://kumu.io/JordyZuidam/cbp1>, public and never
-edited, but for the bends Jordy sets there by hand after the last restore before a submission
-(below): the one place outsiders see the model, so nothing in it links to the page or this
+edited (the places and bends Jordy sets by hand in Kumu are set in a throwaway project and read
+back into the model, below): the one place outsiders see the model, so nothing in it links to the page or this
 repository (Jordy). One project, `cbp1`, holds every map, each picked from Kumu's map list, with
 no showcase buttons, so its name names no single map (Jordy; rejected: `cbp-cld`, the name of the
 CLD's own project before the Actor Map joined it):
@@ -475,10 +475,19 @@ warns, each line starting `bow alike:`, where two links or relations join the sa
 than 100 units apart at their middles as Kumu draws them, about a box's height (Jordy's decision;
 rejected: 0.1 apart in curvature whatever the link's length, which left short pairs too close);
 such a pair is set apart by bowing its outer link further out (Jordy's decision: Kumu's drawing
-is fixed in the build where it can be, by hand only for the rest, since a fix by hand is lost at
-each restore). What still reads less clearly in
-Kumu, such as a link that needs a little more bend, Jordy adjusts there by hand after the last
-restore before a submission.
+is fixed in the build where it can be, by hand only for the rest).
+
+Jordy sets by hand, in a throwaway project, what still reads less clearly in Kumu, such as a link
+that needs a little more bend, and the build reads it back (Jordy's decision: only Kumu shows what
+Kumu draws, as it aims each link at its box's centre and places its own arrowheads and signs,
+which the page draws apart; rejected: a view on the page drawing as Kumu does, and nudges by the
+build alone, the rest fixed in `cbp1` after the last restore and lost at the next). He exports the
+project as JSON (Kumu's Export → JSON), and `python3 build.py --kumu ~/Downloads/<export>.json`
+writes into the model each element's and actor's place, each link's and relation's curvature and
+each combined loop's places, bends and marks, then rebuilds (`apply_kumu()`), so the next restore
+keeps them. A bend under 0.1, which Kumu draws straight, becomes 0; a named loop's map is its
+oval, computed, so a change there is printed and not kept. A box moved there is checked against
+Jordy's drawings as after a move on the page.
 
 Kumu aims each link at its target's centre and puts the arrowhead where the arc meets the box's
 border, so arrowheads stack where links arrive from nearly one direction. `build.kumu_arrowhead()`
@@ -491,7 +500,7 @@ tips, which bends lines into new crossings). A link's bow is the one lever, the 
 Jordy's: an incoming link's bow is nudged only where that adds no crossing between links, no link
 through a box and no `bow alike:` line, and keeps its sign and a curvature of at least 0.1; Jordy
 chooses between restores of the versions, and a box no nudge clears keeps its `arrowheads close:`
-lines, which are for his hand after the last restore.
+lines, which are for his hand in Kumu, read back (above).
 
 Jordy's drawings reach Kumu inside the file, so a restore shows them with no hand work (Jordy's
 decision; rejected: adding them in Kumu by hand after each restore, and a URL on the published page

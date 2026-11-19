@@ -28,7 +28,7 @@
 <path class="link-path" d="M -803.6 67.8 Q -834.7 -96.4 -722.6 -244.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-750.9" y="-202.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="farm-revenue" data-to="farmers-capacity-to-invest" data-sign="+" data-delay="false" data-curvature="-0.22">
+<g class="link" data-from="farm-revenue" data-to="farmers-capacity-to-invest" data-sign="+" data-delay="false" data-curvature="-0.11">
 <path class="link-path" d="M -677.5 -296.0 Q -574.6 -400.6 -413.3 -464.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-459.3" y="-444.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

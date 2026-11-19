@@ -129,17 +129,17 @@
 <path class="delay-cut" d="M 388.8 -273.1 L 433.5 -290.6 M 382.9 -288.0 L 427.6 -305.5" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 388.8 -273.1 L 433.5 -290.6 M 382.9 -288.0 L 427.6 -305.5" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="farm-revenue" data-to="farmers-capacity-to-invest" data-sign="+" data-delay="false" data-curvature="-0.22">
-<path class="link-path" d="M 560.6 94.0 Q 724.3 -17.2 752.9 -213.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="743.3" y="-163.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<g class="link" data-from="farm-revenue" data-to="farmers-capacity-to-invest" data-sign="+" data-delay="false" data-curvature="-0.11">
+<path class="link-path" d="M 560.6 94.0 Q 685.9 -39.4 743.6 -213.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="726.5" y="-166.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="farmers-capacity-to-invest" data-to="freshwater-storage-measures" data-sign="+" data-delay="false" data-curvature="0.1">
 <path class="link-path" d="M 602.6 -232.4 Q 80.8 -145.1 -434.4 -265.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-385.6" y="-254.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="farmers-capacity-to-invest" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.29">
-<path class="link-path" d="M 820.9 -213.0 Q 982.7 339.3 583.6 754.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="617.6" y="717.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M 811.6 -213.0 Q 978.1 336.6 583.6 754.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="617.3" y="717.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="hotter-drier-summers" data-to="crop-water-shortfall" data-sign="+" data-delay="false" data-curvature="0.0">
 <path class="link-path" d="M -1296.9 765.0 Q -1112.0 871.5 -927.1 978.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -328,8 +328,8 @@
 <text class="sign" x="978.5" y="793.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="salt-tolerant-crop-adoption" data-to="farmers-capacity-to-invest" data-sign="-" data-delay="false" data-curvature="0">
-<path class="link-path" d="M 515.6 754.0 Q 651.2 270.5 786.9 -213.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="773.4" y="-164.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M 515.6 754.0 Q 646.6 270.5 777.6 -213.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="764.5" y="-164.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-of-new-crops-to-process" data-sign="+" data-delay="false" data-curvature="-0.1">
 <path class="link-path" d="M 512.3 840.0 Q 314.3 1155.6 252.9 1523.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -370,8 +370,8 @@
 <text class="sign" x="1883.7" y="-866.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="farmers-capacity-to-invest" data-to="spending-on-keeping-current-crops" data-sign="+" data-delay="false" data-curvature="-0.14">
-<path class="link-path" d="M 854.9 -213.0 Q 1196.8 147.0 1676.0 277.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="1627.9" y="263.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M 845.6 -213.0 Q 1192.2 148.3 1676.0 277.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="1627.9" y="263.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="spending-on-keeping-current-crops" data-sign="+" data-delay="true" data-curvature="0.1" data-delay-t="0.68">
 <path class="link-path" d="M 1865.7 -698.0 Q 1949.4 -212.9 1840.1 267.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>

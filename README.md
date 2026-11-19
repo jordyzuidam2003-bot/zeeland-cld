@@ -99,7 +99,8 @@ arrived, the whole drawing readable on one A4 page, no link through
 an element it does not connect, which would read as if that element
 mediates it, and no named loop whose links cross each other, a figure eight that cannot be
 followed round; `build.py` warns on the last. A Constant's links run straight, and `build.py`
-warns on a bent one; every other link has some bend (Jordy), and it warns on a straight one. A
+warns on a bent one; every other link has some bend but where a straight line reads more clearly (Jordy's decision:
+overall links bend, and an exception is judged by eye), and it warns on a straight one. A
 Constant sits beside what it drives, its box at most 400 units from each box it drives
 (Jordy), and `build.py` warns on one further away.
 
@@ -475,8 +476,9 @@ or `build.py` stops (Jordy's decision: the page and Kumu bend the same links), a
 warns, each line starting `bow alike:`, where two links or relations join the same two boxes less
 than 100 units apart at their middles as Kumu draws them, about a box's height (Jordy's decision;
 rejected: 0.1 apart in curvature whatever the link's length, which left short pairs too close);
-such a pair is set apart by bowing its outer link further out (Jordy's decision: Kumu's drawing
-is fixed in the build where it can be, by hand only for the rest).
+such a pair is set apart by bowing its outer link further out where it reads unclearly in Kumu
+(Jordy's decision: Kumu's drawing is fixed in the build where it can be, by hand only for the
+rest; a pair that reads clearly stays, whatever its distance).
 
 Jordy sets the places and bends by hand in a throwaway project, and the build reads them back
 (Jordy's decision: Kumu is what the report's readers see, and only Kumu shows what Kumu draws, as it
@@ -490,6 +492,10 @@ each combined loop's places, bends and marks, then rebuilds (`apply_kumu()`), so
 keeps them. A bend under 0.1, which Kumu draws straight, becomes 0; a named loop's map is its
 oval, computed, so a change there is printed and not kept. A box moved there is checked against
 Jordy's drawings as after a move on the page.
+Each of the build's measures (`bow alike:`, `arrowheads close:`, a straight link, a link through a
+box) names a place for Jordy to look at in Kumu, never a fix on its own: what he judges clear there
+stays (Jordy's decision: some things read well by eye that fail a number; rejected: the measures
+as rules, which bend lines into new crossings).
 
 Kumu aims each link at its target's centre and puts the arrowhead where the arc meets the box's
 border, so arrowheads stack where links arrive from nearly one direction. `build.kumu_arrowhead()`

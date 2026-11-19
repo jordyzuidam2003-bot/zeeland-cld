@@ -6005,7 +6005,7 @@
         },
         {
           "_id": "edge-farm-revenue--farmers-capacity-to-invest",
-          "curvature": -0.22,
+          "curvature": -0.11,
           "style": {},
           "connection": "conn-farm-revenue--farmers-capacity-to-invest"
         },

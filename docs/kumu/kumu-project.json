@@ -7573,8 +7573,8 @@
         {
           "_id": "node-group-C2-saline-seepage-kwel",
           "position": {
-            "x": 831,
-            "y": 296
+            "x": 800,
+            "y": 229
           },
           "pinned": true,
           "style": {},
@@ -7583,8 +7583,8 @@
         {
           "_id": "node-group-C2-freshwater-lens-thickness",
           "position": {
-            "x": 1010,
-            "y": 708
+            "x": 978,
+            "y": 560
           },
           "pinned": true,
           "style": {},
@@ -7593,8 +7593,8 @@
         {
           "_id": "node-group-C2-root-zone-salinity",
           "position": {
-            "x": 996,
-            "y": 1157
+            "x": 976,
+            "y": 927
           },
           "pinned": true,
           "style": {},
@@ -7603,8 +7603,8 @@
         {
           "_id": "node-group-C2-harvest-lost-to-salt",
           "position": {
-            "x": 793,
-            "y": 1557
+            "x": 810,
+            "y": 1238
           },
           "pinned": true,
           "style": {},
@@ -7613,8 +7613,8 @@
         {
           "_id": "node-group-C2-farm-revenue",
           "position": {
-            "x": 438,
-            "y": 1832
+            "x": 508,
+            "y": 1472
           },
           "pinned": true,
           "style": {},
@@ -7623,8 +7623,8 @@
         {
           "_id": "node-group-C2-agricultural-land-value",
           "position": {
-            "x": 0,
-            "y": 1930
+            "x": 60,
+            "y": 1588
           },
           "pinned": true,
           "style": {},
@@ -7633,8 +7633,8 @@
         {
           "_id": "node-group-C2-mortgage-debt-financial-leverage",
           "position": {
-            "x": -438,
-            "y": 1832
+            "x": -407,
+            "y": 1516
           },
           "pinned": true,
           "style": {},
@@ -7643,8 +7643,8 @@
         {
           "_id": "node-group-C2-banks-risk-assessment",
           "position": {
-            "x": -793,
-            "y": 1557
+            "x": -756,
+            "y": 1296
           },
           "pinned": true,
           "style": {},
@@ -7653,8 +7653,8 @@
         {
           "_id": "node-group-C2-bank-credit-freeze-risk-premiums",
           "position": {
-            "x": -996,
-            "y": 1157
+            "x": -962,
+            "y": 973
           },
           "pinned": true,
           "style": {},
@@ -7663,8 +7663,8 @@
         {
           "_id": "node-group-C2-debt-payments",
           "position": {
-            "x": -1010,
-            "y": 708
+            "x": -990,
+            "y": 619
           },
           "pinned": true,
           "style": {},
@@ -7673,8 +7673,8 @@
         {
           "_id": "node-group-C2-dependence-on-high-margin-salt-sensitive-crops",
           "position": {
-            "x": -831,
-            "y": 296
+            "x": -836,
+            "y": 273
           },
           "pinned": true,
           "style": {},
@@ -7693,8 +7693,8 @@
         {
           "_id": "node-group-C2-spring-workability-of-the-fields",
           "position": {
-            "x": 0,
-            "y": -290
+            "x": 6,
+            "y": -314
           },
           "pinned": true,
           "style": {},
@@ -7716,85 +7716,85 @@
         },
         {
           "_id": "edge-group-C2-polder-drainage-depth--spring-workability-of-the-fields",
-          "curvature": -0.272,
+          "curvature": -0.312,
           "style": {},
           "connection": "conn-polder-drainage-depth--spring-workability-of-the-fields"
         },
         {
           "_id": "edge-group-C2-spring-workability-of-the-fields--demand-for-deep-polder-drainage",
-          "curvature": -0.272,
+          "curvature": -0.317,
           "style": {},
           "connection": "conn-spring-workability-of-the-fields--demand-for-deep-polder-drainage"
         },
         {
           "_id": "edge-group-C2-mortgage-debt-financial-leverage--banks-risk-assessment",
-          "curvature": 0.11,
+          "curvature": 0.104,
           "style": {},
           "connection": "conn-mortgage-debt-financial-leverage--banks-risk-assessment"
         },
         {
           "_id": "edge-group-C2-banks-risk-assessment--bank-credit-freeze-risk-premiums",
-          "curvature": 0.11,
+          "curvature": 0.119,
           "style": {},
           "connection": "conn-banks-risk-assessment--bank-credit-freeze-risk-premiums"
         },
         {
           "_id": "edge-group-C2-bank-credit-freeze-risk-premiums--debt-payments",
-          "curvature": 0.11,
+          "curvature": 0.124,
           "style": {},
           "connection": "conn-bank-credit-freeze-risk-premiums--debt-payments"
         },
         {
           "_id": "edge-group-C2-debt-payments--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": 0.11,
+          "curvature": 0.124,
           "style": {},
           "connection": "conn-debt-payments--dependence-on-high-margin-salt-sensitive-crops"
         },
         {
           "_id": "edge-group-C2-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage",
-          "curvature": 0.11,
+          "curvature": 0.116,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage"
         },
         {
           "_id": "edge-group-C2-polder-drainage-depth--saline-seepage-kwel",
-          "curvature": 0.11,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
         },
         {
           "_id": "edge-group-C2-saline-seepage-kwel--freshwater-lens-thickness",
-          "curvature": 0.11,
+          "curvature": 0.119,
           "style": {},
           "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
         },
         {
           "_id": "edge-group-C2-freshwater-lens-thickness--root-zone-salinity",
-          "curvature": 0.11,
+          "curvature": 0.128,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
         },
         {
           "_id": "edge-group-C2-root-zone-salinity--harvest-lost-to-salt",
-          "curvature": 0.11,
+          "curvature": 0.112,
           "style": {},
           "connection": "conn-root-zone-salinity--harvest-lost-to-salt"
         },
         {
           "_id": "edge-group-C2-harvest-lost-to-salt--farm-revenue",
-          "curvature": 0.11,
+          "curvature": 0.101,
           "style": {},
           "connection": "conn-harvest-lost-to-salt--farm-revenue"
         },
         {
           "_id": "edge-group-C2-farm-revenue--agricultural-land-value",
-          "curvature": 0.11,
+          "curvature": 0.103,
           "style": {},
           "connection": "conn-farm-revenue--agricultural-land-value"
         },
         {
           "_id": "edge-group-C2-agricultural-land-value--mortgage-debt-financial-leverage",
-          "curvature": 0.11,
+          "curvature": 0.103,
           "style": {},
           "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
         }
@@ -7807,7 +7807,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": -145
+            "y": -172
           }
         },
         {
@@ -7817,7 +7817,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 965
+            "y": 810
           }
         }
       ]
@@ -7848,8 +7848,8 @@
         {
           "_id": "node-group-C3-demand-for-deep-polder-drainage",
           "position": {
-            "x": -560,
-            "y": -85
+            "x": -624,
+            "y": -84
           },
           "pinned": true,
           "style": {},
@@ -7858,8 +7858,8 @@
         {
           "_id": "node-group-C3-plans-to-raise-ditch-levels",
           "position": {
-            "x": -1009,
-            "y": -324
+            "x": -1114,
+            "y": -315
           },
           "pinned": true,
           "style": {},
@@ -7868,8 +7868,8 @@
         {
           "_id": "node-group-C3-polder-drainage-depth",
           "position": {
-            "x": -1258,
-            "y": -669
+            "x": -1369,
+            "y": -640
           },
           "pinned": true,
           "style": {},
@@ -7878,8 +7878,8 @@
         {
           "_id": "node-group-C3-saline-seepage-kwel",
           "position": {
-            "x": -1258,
-            "y": -1051
+            "x": -1345,
+            "y": -1001
           },
           "pinned": true,
           "style": {},
@@ -7888,8 +7888,8 @@
         {
           "_id": "node-group-C3-freshwater-lens-thickness",
           "position": {
-            "x": -1009,
-            "y": -1396
+            "x": -1036,
+            "y": -1320
           },
           "pinned": true,
           "style": {},
@@ -7898,8 +7898,8 @@
         {
           "_id": "node-group-C3-root-zone-salinity",
           "position": {
-            "x": -560,
-            "y": -1635
+            "x": -534,
+            "y": -1521
           },
           "pinned": true,
           "style": {},
@@ -7908,8 +7908,8 @@
         {
           "_id": "node-group-C3-harvest-lost-to-salt",
           "position": {
-            "x": 0,
-            "y": -1720
+            "x": 63,
+            "y": -1580
           },
           "pinned": true,
           "style": {},
@@ -7918,8 +7918,8 @@
         {
           "_id": "node-group-C3-farm-revenue",
           "position": {
-            "x": 560,
-            "y": -1635
+            "x": 640,
+            "y": -1493
           },
           "pinned": true,
           "style": {},
@@ -7928,8 +7928,8 @@
         {
           "_id": "node-group-C3-agricultural-land-value",
           "position": {
-            "x": 1009,
-            "y": -1396
+            "x": 1093,
+            "y": -1282
           },
           "pinned": true,
           "style": {},
@@ -7938,8 +7938,8 @@
         {
           "_id": "node-group-C3-mortgage-debt-financial-leverage",
           "position": {
-            "x": 1258,
-            "y": -1051
+            "x": 1361,
+            "y": -964
           },
           "pinned": true,
           "style": {},
@@ -7948,8 +7948,8 @@
         {
           "_id": "node-group-C3-banks-risk-assessment",
           "position": {
-            "x": 1258,
-            "y": -669
+            "x": 1350,
+            "y": -590
           },
           "pinned": true,
           "style": {},
@@ -7958,8 +7958,8 @@
         {
           "_id": "node-group-C3-bank-credit-freeze-risk-premiums",
           "position": {
-            "x": 1009,
-            "y": -324
+            "x": 1055,
+            "y": -273
           },
           "pinned": true,
           "style": {},
@@ -7968,8 +7968,8 @@
         {
           "_id": "node-group-C3-debt-payments",
           "position": {
-            "x": 560,
-            "y": -85
+            "x": 587,
+            "y": -73
           },
           "pinned": true,
           "style": {},
@@ -7978,8 +7978,8 @@
         {
           "_id": "node-group-C3-spending-on-keeping-current-crops",
           "position": {
-            "x": 390,
-            "y": 260
+            "x": 465,
+            "y": 261
           },
           "pinned": true,
           "style": {},
@@ -7989,7 +7989,7 @@
           "_id": "node-group-C3-machines-and-storage-for-current-crops",
           "position": {
             "x": 0,
-            "y": 520
+            "y": 527
           },
           "pinned": true,
           "style": {},
@@ -7998,8 +7998,8 @@
         {
           "_id": "node-group-C3-capital-lost-on-switching",
           "position": {
-            "x": -390,
-            "y": 260
+            "x": -465,
+            "y": 261
           },
           "pinned": true,
           "style": {},
@@ -8009,13 +8009,13 @@
       "connections": [
         {
           "_id": "edge-group-C3-mortgage-debt-financial-leverage--banks-risk-assessment",
-          "curvature": 0.169,
+          "curvature": 0.212,
           "style": {},
           "connection": "conn-mortgage-debt-financial-leverage--banks-risk-assessment"
         },
         {
           "_id": "edge-group-C3-banks-risk-assessment--bank-credit-freeze-risk-premiums",
-          "curvature": 0.137,
+          "curvature": 0.139,
           "style": {},
           "connection": "conn-banks-risk-assessment--bank-credit-freeze-risk-premiums"
         },
@@ -8045,19 +8045,19 @@
         },
         {
           "_id": "edge-group-C3-plans-to-raise-ditch-levels--polder-drainage-depth",
-          "curvature": 0.137,
+          "curvature": 0.149,
           "style": {},
           "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
         },
         {
           "_id": "edge-group-C3-polder-drainage-depth--saline-seepage-kwel",
-          "curvature": 0.169,
+          "curvature": 0.204,
           "style": {},
           "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
         },
         {
           "_id": "edge-group-C3-saline-seepage-kwel--freshwater-lens-thickness",
-          "curvature": 0.137,
+          "curvature": 0.138,
           "style": {},
           "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
         },
@@ -8087,31 +8087,31 @@
         },
         {
           "_id": "edge-group-C3-agricultural-land-value--mortgage-debt-financial-leverage",
-          "curvature": 0.137,
+          "curvature": 0.143,
           "style": {},
           "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
         },
         {
           "_id": "edge-group-C3-dependence-on-high-margin-salt-sensitive-crops--spending-on-keeping-current-crops",
-          "curvature": 0.382,
+          "curvature": 0.351,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--spending-on-keeping-current-crops"
         },
         {
           "_id": "edge-group-C3-spending-on-keeping-current-crops--machines-and-storage-for-current-crops",
-          "curvature": 0.382,
+          "curvature": 0.36,
           "style": {},
           "connection": "conn-spending-on-keeping-current-crops--machines-and-storage-for-current-crops"
         },
         {
           "_id": "edge-group-C3-machines-and-storage-for-current-crops--capital-lost-on-switching",
-          "curvature": 0.382,
+          "curvature": 0.36,
           "style": {},
           "connection": "conn-machines-and-storage-for-current-crops--capital-lost-on-switching"
         },
         {
           "_id": "edge-group-C3-capital-lost-on-switching--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": 0.382,
+          "curvature": 0.351,
           "style": {},
           "connection": "conn-capital-lost-on-switching--dependence-on-high-margin-salt-sensitive-crops"
         }
@@ -8124,7 +8124,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": -860
+            "y": -790
           }
         },
         {
@@ -8134,7 +8134,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 260
+            "y": 264
           }
         }
       ]
@@ -8155,7 +8155,7 @@
         {
           "_id": "node-group-C4-crop-water-shortfall",
           "position": {
-            "x": 382,
+            "x": 245,
             "y": 0
           },
           "pinned": true,
@@ -8165,7 +8165,7 @@
         {
           "_id": "node-group-C4-freshwater-availability-for-crops",
           "position": {
-            "x": -382,
+            "x": -245,
             "y": 0
           },
           "pinned": true,
@@ -8175,8 +8175,8 @@
         {
           "_id": "node-group-C4-crop-yield",
           "position": {
-            "x": 874,
-            "y": 607
+            "x": 837,
+            "y": 452
           },
           "pinned": true,
           "style": {},
@@ -8185,8 +8185,8 @@
         {
           "_id": "node-group-C4-freshwater-storage-measures",
           "position": {
-            "x": 704,
-            "y": 1370
+            "x": 776,
+            "y": 1128
           },
           "pinned": true,
           "style": {},
@@ -8195,8 +8195,8 @@
         {
           "_id": "node-group-C4-winter-rain-drained-away",
           "position": {
-            "x": 0,
-            "y": 1710
+            "x": 70,
+            "y": 1502
           },
           "pinned": true,
           "style": {},
@@ -8205,8 +8205,8 @@
         {
           "_id": "node-group-C4-freshwater-lens-recharge",
           "position": {
-            "x": -704,
-            "y": 1370
+            "x": -701,
+            "y": 1221
           },
           "pinned": true,
           "style": {},
@@ -8215,8 +8215,8 @@
         {
           "_id": "node-group-C4-freshwater-lens-thickness",
           "position": {
-            "x": -874,
-            "y": 607
+            "x": -865,
+            "y": 521
           },
           "pinned": true,
           "style": {},
@@ -8225,8 +8225,8 @@
         {
           "_id": "node-group-C4-freshwater-supply-route",
           "position": {
-            "x": 0,
-            "y": 700
+            "x": 12,
+            "y": 620
           },
           "pinned": true,
           "style": {},
@@ -8235,8 +8235,8 @@
         {
           "_id": "node-group-C4-external-freshwater-supply",
           "position": {
-            "x": -399,
-            "y": 463
+            "x": -388,
+            "y": 377
           },
           "pinned": true,
           "style": {},
@@ -8245,8 +8245,8 @@
         {
           "_id": "node-group-C4-groundwater-extraction-for-irrigation",
           "position": {
-            "x": 0,
-            "y": -290
+            "x": 7,
+            "y": -314
           },
           "pinned": true,
           "style": {},
@@ -8255,8 +8255,8 @@
         {
           "_id": "node-group-C4-creek-ridge-lens-thickness",
           "position": {
-            "x": -390,
-            "y": -740
+            "x": -228,
+            "y": -894
           },
           "pinned": true,
           "style": {},
@@ -8265,8 +8265,8 @@
         {
           "_id": "node-group-C4-pumping-the-water-board-allows",
           "position": {
-            "x": 390,
-            "y": -740
+            "x": 238,
+            "y": -884
           },
           "pinned": true,
           "style": {},
@@ -8275,8 +8275,8 @@
         {
           "_id": "node-group-C4-zlto-call-for-supply-route",
           "position": {
-            "x": 399,
-            "y": 463
+            "x": 395,
+            "y": 355
           },
           "pinned": true,
           "style": {},
@@ -8286,13 +8286,13 @@
       "connections": [
         {
           "_id": "edge-group-C4-crop-water-shortfall--groundwater-extraction-for-irrigation",
-          "curvature": -0.336,
+          "curvature": -0.56,
           "style": {},
           "connection": "conn-crop-water-shortfall--groundwater-extraction-for-irrigation"
         },
         {
           "_id": "edge-group-C4-groundwater-extraction-for-irrigation--freshwater-availability-for-crops",
-          "curvature": -0.336,
+          "curvature": -0.572,
           "style": {},
           "connection": "conn-groundwater-extraction-for-irrigation--freshwater-availability-for-crops"
         },
@@ -8304,79 +8304,79 @@
         },
         {
           "_id": "edge-group-C4-crop-yield--freshwater-storage-measures",
-          "curvature": 0.229,
+          "curvature": 0.274,
           "style": {},
           "connection": "conn-crop-yield--freshwater-storage-measures"
         },
         {
           "_id": "edge-group-C4-freshwater-storage-measures--winter-rain-drained-away",
-          "curvature": 0.229,
+          "curvature": 0.225,
           "style": {},
           "connection": "conn-freshwater-storage-measures--winter-rain-drained-away"
         },
         {
           "_id": "edge-group-C4-winter-rain-drained-away--freshwater-lens-recharge",
-          "curvature": 0.229,
+          "curvature": 0.219,
           "style": {},
           "connection": "conn-winter-rain-drained-away--freshwater-lens-recharge"
         },
         {
           "_id": "edge-group-C4-freshwater-lens-recharge--freshwater-lens-thickness",
-          "curvature": 0.229,
+          "curvature": 0.286,
           "style": {},
           "connection": "conn-freshwater-lens-recharge--freshwater-lens-thickness"
         },
         {
           "_id": "edge-group-C4-freshwater-lens-thickness--freshwater-availability-for-crops",
-          "curvature": 0.229,
+          "curvature": 0.254,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--freshwater-availability-for-crops"
         },
         {
           "_id": "edge-group-C4-crop-water-shortfall--crop-yield",
-          "curvature": 0.229,
+          "curvature": 0.226,
           "style": {},
           "connection": "conn-crop-water-shortfall--crop-yield"
         },
         {
           "_id": "edge-group-C4-freshwater-supply-route--external-freshwater-supply",
-          "curvature": 0.274,
+          "curvature": 0.317,
           "style": {},
           "connection": "conn-freshwater-supply-route--external-freshwater-supply"
         },
         {
           "_id": "edge-group-C4-external-freshwater-supply--freshwater-availability-for-crops",
-          "curvature": 0.274,
+          "curvature": 0.358,
           "style": {},
           "connection": "conn-external-freshwater-supply--freshwater-availability-for-crops"
         },
         {
           "_id": "edge-group-C4-creek-ridge-lens-thickness--pumping-the-water-board-allows",
-          "curvature": 0.385,
+          "curvature": 0.711,
           "style": {},
           "connection": "conn-creek-ridge-lens-thickness--pumping-the-water-board-allows"
         },
         {
           "_id": "edge-group-C4-pumping-the-water-board-allows--groundwater-extraction-for-irrigation",
-          "curvature": 0.66,
+          "curvature": 0.364,
           "style": {},
           "connection": "conn-pumping-the-water-board-allows--groundwater-extraction-for-irrigation"
         },
         {
           "_id": "edge-group-C4-groundwater-extraction-for-irrigation--creek-ridge-lens-thickness",
-          "curvature": 0.66,
+          "curvature": 0.375,
           "style": {},
           "connection": "conn-groundwater-extraction-for-irrigation--creek-ridge-lens-thickness"
         },
         {
           "_id": "edge-group-C4-crop-water-shortfall--zlto-call-for-supply-route",
-          "curvature": 0.274,
+          "curvature": 0.335,
           "style": {},
           "connection": "conn-crop-water-shortfall--zlto-call-for-supply-route"
         },
         {
           "_id": "edge-group-C4-zlto-call-for-supply-route--freshwater-supply-route",
-          "curvature": 0.274,
+          "curvature": 0.324,
           "style": {},
           "connection": "conn-zlto-call-for-supply-route--freshwater-supply-route"
         }
@@ -8389,7 +8389,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": -145
+            "y": -172
           }
         },
         {
@@ -8399,7 +8399,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 1205
+            "y": 1077
           }
         },
         {
@@ -8409,7 +8409,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 350
+            "y": 325
           }
         },
         {
@@ -8418,8 +8418,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 0,
-            "y": -590
+            "x": 4,
+            "y": -711
           }
         }
       ]
@@ -8440,8 +8440,8 @@
         {
           "_id": "node-group-C5-farmers-capacity-to-invest",
           "position": {
-            "x": -657,
-            "y": -371
+            "x": -585,
+            "y": -314
           },
           "pinned": true,
           "style": {},
@@ -8520,8 +8520,8 @@
         {
           "_id": "node-group-C5-farm-revenue",
           "position": {
-            "x": -657,
-            "y": 371
+            "x": -562,
+            "y": 363
           },
           "pinned": true,
           "style": {},
@@ -8531,7 +8531,7 @@
       "connections": [
         {
           "_id": "edge-group-C5-farmers-capacity-to-invest--freshwater-storage-measures",
-          "curvature": 0.278,
+          "curvature": 0.325,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--freshwater-storage-measures"
         },
@@ -8573,19 +8573,19 @@
         },
         {
           "_id": "edge-group-C5-crop-yield--farm-revenue",
-          "curvature": 0.278,
+          "curvature": 0.306,
           "style": {},
           "connection": "conn-crop-yield--farm-revenue"
         },
         {
           "_id": "edge-group-C5-farm-revenue--farmers-capacity-to-invest",
-          "curvature": 0.278,
+          "curvature": 0.213,
           "style": {},
           "connection": "conn-farm-revenue--farmers-capacity-to-invest"
         },
         {
           "_id": "edge-group-C5-crop-yield--freshwater-storage-measures",
-          "curvature": -1.005,
+          "curvature": -0.842,
           "style": {},
           "connection": "conn-crop-yield--freshwater-storage-measures"
         }
@@ -8607,7 +8607,7 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 360,
+            "x": 359,
             "y": 0
           }
         }
@@ -8860,8 +8860,8 @@
         {
           "_id": "node-group-C7-margin-given-up-on-high-margin-crops",
           "position": {
-            "x": -477,
-            "y": -132
+            "x": -483,
+            "y": -112
           },
           "pinned": true,
           "style": {},
@@ -8870,8 +8870,8 @@
         {
           "_id": "node-group-C7-farm-revenue",
           "position": {
-            "x": -675,
-            "y": -450
+            "x": -690,
+            "y": -393
           },
           "pinned": true,
           "style": {},
@@ -8880,8 +8880,8 @@
         {
           "_id": "node-group-C7-agricultural-land-value",
           "position": {
-            "x": -477,
-            "y": -768
+            "x": -479,
+            "y": -672
           },
           "pinned": true,
           "style": {},
@@ -8891,7 +8891,7 @@
           "_id": "node-group-C7-mortgage-debt-financial-leverage",
           "position": {
             "x": 0,
-            "y": -900
+            "y": -782
           },
           "pinned": true,
           "style": {},
@@ -8900,8 +8900,8 @@
         {
           "_id": "node-group-C7-banks-risk-assessment",
           "position": {
-            "x": 477,
-            "y": -768
+            "x": 479,
+            "y": -672
           },
           "pinned": true,
           "style": {},
@@ -8910,8 +8910,8 @@
         {
           "_id": "node-group-C7-bank-credit-to-farms",
           "position": {
-            "x": 675,
-            "y": -450
+            "x": 690,
+            "y": -393
           },
           "pinned": true,
           "style": {},
@@ -8920,8 +8920,8 @@
         {
           "_id": "node-group-C7-farmers-capacity-to-invest",
           "position": {
-            "x": 477,
-            "y": -132
+            "x": 483,
+            "y": -112
           },
           "pinned": true,
           "style": {},
@@ -8930,8 +8930,8 @@
         {
           "_id": "node-group-C7-harvest-of-new-crops-to-process",
           "position": {
-            "x": 405,
-            "y": 270
+            "x": 435,
+            "y": 239
           },
           "pinned": true,
           "style": {},
@@ -8941,7 +8941,7 @@
           "_id": "node-group-C7-processing-capacity-for-alternative-crops",
           "position": {
             "x": 0,
-            "y": 540
+            "y": 493
           },
           "pinned": true,
           "style": {},
@@ -8950,8 +8950,8 @@
         {
           "_id": "node-group-C7-net-price-for-new-crops",
           "position": {
-            "x": -405,
-            "y": 270
+            "x": -435,
+            "y": 239
           },
           "pinned": true,
           "style": {},
@@ -8961,73 +8961,73 @@
       "connections": [
         {
           "_id": "edge-group-C7-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process",
-          "curvature": 0.382,
+          "curvature": 0.342,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process"
         },
         {
           "_id": "edge-group-C7-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
-          "curvature": 0.382,
+          "curvature": 0.369,
           "style": {},
           "connection": "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops"
         },
         {
           "_id": "edge-group-C7-processing-capacity-for-alternative-crops--net-price-for-new-crops",
-          "curvature": 0.382,
+          "curvature": 0.369,
           "style": {},
           "connection": "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops"
         },
         {
           "_id": "edge-group-C7-net-price-for-new-crops--salt-tolerant-crop-adoption",
-          "curvature": 0.382,
+          "curvature": 0.342,
           "style": {},
           "connection": "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
         },
         {
           "_id": "edge-group-C7-agricultural-land-value--mortgage-debt-financial-leverage",
-          "curvature": 0.144,
+          "curvature": 0.122,
           "style": {},
           "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
         },
         {
           "_id": "edge-group-C7-mortgage-debt-financial-leverage--banks-risk-assessment",
-          "curvature": 0.144,
+          "curvature": 0.122,
           "style": {},
           "connection": "conn-mortgage-debt-financial-leverage--banks-risk-assessment"
         },
         {
           "_id": "edge-group-C7-banks-risk-assessment--bank-credit-to-farms",
-          "curvature": 0.252,
+          "curvature": 0.269,
           "style": {},
           "connection": "conn-banks-risk-assessment--bank-credit-to-farms"
         },
         {
           "_id": "edge-group-C7-bank-credit-to-farms--farmers-capacity-to-invest",
-          "curvature": 0.252,
+          "curvature": 0.272,
           "style": {},
           "connection": "conn-bank-credit-to-farms--farmers-capacity-to-invest"
         },
         {
           "_id": "edge-group-C7-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
-          "curvature": 0.144,
+          "curvature": 0.123,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption"
         },
         {
           "_id": "edge-group-C7-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops",
-          "curvature": 0.144,
+          "curvature": 0.123,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops"
         },
         {
           "_id": "edge-group-C7-margin-given-up-on-high-margin-crops--farm-revenue",
-          "curvature": 0.252,
+          "curvature": 0.272,
           "style": {},
           "connection": "conn-margin-given-up-on-high-margin-crops--farm-revenue"
         },
         {
           "_id": "edge-group-C7-farm-revenue--agricultural-land-value",
-          "curvature": 0.252,
+          "curvature": 0.269,
           "style": {},
           "connection": "conn-farm-revenue--agricultural-land-value"
         }
@@ -9040,7 +9040,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 270
+            "y": 246
           }
         },
         {
@@ -9050,7 +9050,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": -450
+            "y": -391
           }
         }
       ]
@@ -9514,7 +9514,7 @@
           "_id": "node-group-C10-agricultural-land-value",
           "position": {
             "x": 0,
-            "y": 1108
+            "y": 1283
           },
           "pinned": true,
           "style": {},
@@ -9523,8 +9523,8 @@
         {
           "_id": "node-group-C10-mortgage-debt-financial-leverage",
           "position": {
-            "x": -605,
-            "y": 1120
+            "x": -644,
+            "y": 1242
           },
           "pinned": true,
           "style": {},
@@ -9533,8 +9533,8 @@
         {
           "_id": "node-group-C10-banks-risk-assessment",
           "position": {
-            "x": -1133,
-            "y": 825
+            "x": -1107,
+            "y": 870
           },
           "pinned": true,
           "style": {},
@@ -9543,8 +9543,8 @@
         {
           "_id": "node-group-C10-bank-credit-freeze-risk-premiums",
           "position": {
-            "x": -1440,
-            "y": 303
+            "x": -1351,
+            "y": 327
           },
           "pinned": true,
           "style": {},
@@ -9553,8 +9553,8 @@
         {
           "_id": "node-group-C10-debt-payments",
           "position": {
-            "x": -1440,
-            "y": -303
+            "x": -1364,
+            "y": -257
           },
           "pinned": true,
           "style": {},
@@ -9563,8 +9563,8 @@
         {
           "_id": "node-group-C10-dependence-on-high-margin-salt-sensitive-crops",
           "position": {
-            "x": -1133,
-            "y": -825
+            "x": -1148,
+            "y": -812
           },
           "pinned": true,
           "style": {},
@@ -9573,8 +9573,8 @@
         {
           "_id": "node-group-C10-demand-for-deep-polder-drainage",
           "position": {
-            "x": -605,
-            "y": -1120
+            "x": -674,
+            "y": -1228
           },
           "pinned": true,
           "style": {},
@@ -9584,7 +9584,7 @@
           "_id": "node-group-C10-plans-to-raise-ditch-levels",
           "position": {
             "x": 0,
-            "y": -1108
+            "y": -1283
           },
           "pinned": true,
           "style": {},
@@ -9594,7 +9594,7 @@
           "_id": "node-group-C10-polder-drainage-depth",
           "position": {
             "x": 0,
-            "y": -789
+            "y": -914
           },
           "pinned": true,
           "style": {},
@@ -9604,7 +9604,7 @@
           "_id": "node-group-C10-saline-seepage-kwel",
           "position": {
             "x": 0,
-            "y": -487
+            "y": -562
           },
           "pinned": true,
           "style": {},
@@ -9614,7 +9614,7 @@
           "_id": "node-group-C10-freshwater-lens-thickness",
           "position": {
             "x": 0,
-            "y": -151
+            "y": -176
           },
           "pinned": true,
           "style": {},
@@ -9624,7 +9624,7 @@
           "_id": "node-group-C10-root-zone-salinity",
           "position": {
             "x": 0,
-            "y": 185
+            "y": 210
           },
           "pinned": true,
           "style": {},
@@ -9634,7 +9634,7 @@
           "_id": "node-group-C10-harvest-lost-to-salt",
           "position": {
             "x": 0,
-            "y": 487
+            "y": 562
           },
           "pinned": true,
           "style": {},
@@ -9644,7 +9644,7 @@
           "_id": "node-group-C10-farm-revenue",
           "position": {
             "x": 0,
-            "y": 789
+            "y": 914
           },
           "pinned": true,
           "style": {},
@@ -9653,7 +9653,7 @@
         {
           "_id": "node-group-C10-policy-resistance-legal-delays",
           "position": {
-            "x": 780,
+            "x": 782,
             "y": 0
           },
           "pinned": true,
@@ -9663,7 +9663,7 @@
         {
           "_id": "node-group-C10-farmland-leaving-arable-use",
           "position": {
-            "x": -720,
+            "x": -722,
             "y": 0
           },
           "pinned": true,
@@ -9680,31 +9680,31 @@
         },
         {
           "_id": "edge-group-C10-banks-risk-assessment--bank-credit-freeze-risk-premiums",
-          "curvature": 0.133,
+          "curvature": 0.107,
           "style": {},
           "connection": "conn-banks-risk-assessment--bank-credit-freeze-risk-premiums"
         },
         {
           "_id": "edge-group-C10-bank-credit-freeze-risk-premiums--debt-payments",
-          "curvature": 0.133,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-bank-credit-freeze-risk-premiums--debt-payments"
         },
         {
           "_id": "edge-group-C10-debt-payments--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": 0.133,
+          "curvature": 0.105,
           "style": {},
           "connection": "conn-debt-payments--dependence-on-high-margin-salt-sensitive-crops"
         },
         {
           "_id": "edge-group-C10-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage",
-          "curvature": 0.133,
+          "curvature": 0.139,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage"
         },
         {
           "_id": "edge-group-C10-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels",
-          "curvature": 0.133,
+          "curvature": 0.181,
           "style": {},
           "connection": "conn-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels"
         },
@@ -9752,31 +9752,31 @@
         },
         {
           "_id": "edge-group-C10-agricultural-land-value--mortgage-debt-financial-leverage",
-          "curvature": 0.133,
+          "curvature": 0.172,
           "style": {},
           "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
         },
         {
           "_id": "edge-group-C10-agricultural-land-value--policy-resistance-legal-delays",
-          "curvature": -0.317,
+          "curvature": -0.302,
           "style": {},
           "connection": "conn-agricultural-land-value--policy-resistance-legal-delays"
         },
         {
           "_id": "edge-group-C10-policy-resistance-legal-delays--plans-to-raise-ditch-levels",
-          "curvature": -0.317,
+          "curvature": -0.302,
           "style": {},
           "connection": "conn-policy-resistance-legal-delays--plans-to-raise-ditch-levels"
         },
         {
           "_id": "edge-group-C10-agricultural-land-value--farmland-leaving-arable-use",
-          "curvature": 0.296,
+          "curvature": 0.28,
           "style": {},
           "connection": "conn-agricultural-land-value--farmland-leaving-arable-use"
         },
         {
           "_id": "edge-group-C10-farmland-leaving-arable-use--plans-to-raise-ditch-levels",
-          "curvature": 0.296,
+          "curvature": 0.28,
           "style": {},
           "connection": "conn-farmland-leaving-arable-use--plans-to-raise-ditch-levels"
         }
@@ -9788,7 +9788,7 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": -1100,
+            "x": -1106,
             "y": 0
           }
         },
@@ -9798,7 +9798,7 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 390,
+            "x": 391,
             "y": 0
           }
         },
@@ -9808,7 +9808,7 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": -360,
+            "x": -361,
             "y": 0
           }
         }

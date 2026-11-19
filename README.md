@@ -290,9 +290,14 @@ sharing one element as two ovals touching at it; otherwise the most loops sharin
 straight wall, an even gap between its boxes, each loop's route an arc from the chain's end back to
 its start, one each side of the wall and a third round one of those, a loop arcing over part of the
 wall between the wall and that side's route; then each other loop where it meets those, an arc over
-the links it shares, an oval touching at its one shared element, or, a loop of two, a narrow lens out
-from it. The boxes sit evenly along each arc, each mark midway across its own area with room for its
-loop's label as Kumu draws it (`draw_cld.kumu_label_half()`), the figure stacked or upright, whichever
+the links it shares, a teardrop out from its one shared element, its two links there within
+`draw_cld.PETAL_HALF` of its direction, or, a loop of two, a narrow lens out from it. Each arc and
+oval is an ellipse at `draw_cld.ARC_FLAT` of a circle's bulge, its boxes spaced `SPACE_BY_SIZE` of the
+way from even centres to even gaps between their borders, and each mark sits between its arc and what
+lies inside it (`OWN_BULGE`), so each side bulges about as far as its own label and boxes need (the
+medium of three settings, chosen between rendered versions; rejected: circles with evenly spaced
+centres, too round and symmetrical); each mark has room for its loop's label as Kumu draws it
+(`draw_cld.kumu_label_half()`), the figure stacked or upright, whichever
 frame is nearer a square (Jordy, chosen between rendered versions of C2, C3, C5 and C7). Jordy's hand in Kumu then
 adjusts it as any group's (Kumu, below). The figure draws each link as Kumu does, a circular arc
 from box centre to box centre (`draw_cld.group_pieces()`), so it shows what Kumu's map shows (Jordy,

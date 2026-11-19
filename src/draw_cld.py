@@ -34,6 +34,7 @@ link_path() and link_paths() in src/templates/move.js, for the CLD and the Actor
 in src/templates/app.js; keep them and their JS twins the same.
 """
 
+from bisect import bisect_left
 from itertools import combinations
 from math import atan2, ceil, cos, hypot, pi, sin
 
@@ -924,7 +925,8 @@ def group_figure(cld, group, vb=None):
 # drawn inside another puts the outer loop's mark inside the inner one (cld-drawing.md). Two loops
 # sharing one element are two rings touching at that box; two sharing a chain are two areas side
 # by side, the chain the wall between them. Each loop's mark sits at the centre of its own area,
-# the boxes evenly along smooth arcs as on a named loop's oval (oval()). Where three loops share
+# the boxes along smooth arcs, each a slightly flatter ellipse than a circle, spaced by their size,
+# each side bulging as its route needs (ARC_FLAT, SPACE_BY_SIZE, OWN_BULGE). Where three loops share
 # one chain, one wraps one of the others, its mark in the band that is its own.
 
 
@@ -1016,6 +1018,90 @@ def arc_at(p, q, s):
     return lambda u: (cx + r * cos(a0 + sweep * u), cy + r * sin(a0 + sweep * u))
 
 
+# How far a laid-out figure departs from circles, even spacing and mirrored sides (cld-drawing.md), the
+# medium of three settings chosen between rendered versions; rejected: circles with evenly spaced
+# centres (too round and symmetrical), 0.9 and 0.4 (barely differed from them), 0.8 and 1 (C3's two
+# ovals crossed where they touch).
+ARC_FLAT = 0.85      # each route's arc and each oval: this share of a circle's bulge across its chord, an ellipse below 1
+SPACE_BY_SIZE = 0.7  # the boxes along an arc: 0 their centres evenly, 1 the gaps between their borders even, between them a blend
+OWN_BULGE = 0.7      # a route's mark: 0 midway between its arc and the line inside it (the wall's, or the arc it wraps), 1
+                     # midway between its arc and the borders of what lies inside it there, so each side bulges as its route needs
+
+
+def flat_arc(p, q, s, f=None):
+    """arc_at(p, q, s) squashed towards its chord p-q to f (ARC_FLAT) of its bulge: an elliptical
+    arc, its middle f * s off the chord's middle, steeper at its ends and flatter at its top.
+
+    >>> [tuple(round(c) for c in flat_arc((0, 0), (200, 0), -100, 0.8)(u)) for u in (0, 0.5, 1)]
+    [(0, 0), (100, 80), (200, 0)]
+    """
+    f = ARC_FLAT if f is None else f
+    arc = arc_at(p, q, s)
+    if f == 1 or s == 0:
+        return arc
+    c = hypot(q[0] - p[0], q[1] - p[1])
+    nx, ny = (q[1] - p[1]) / c, -(q[0] - p[0]) / c
+
+    def at(u):
+        x, y = arc(u)
+        off = (1 - f) * ((x - p[0]) * nx + (y - p[1]) * ny)
+        return x - off * nx, y - off * ny
+    return at
+
+
+def spaced(curve, seq, half, w=None, n=400):
+    """({id: spot}, {(a, b): middle}): the boxes seq[1:-1] along curve, which runs from seq[0]'s
+    centre (t = 0) to seq[-1]'s (t = 1; the same box on a closed oval), at evenly spaced t (w = 0),
+    or so the gaps between their borders along it are even (w = 1), blended by w (SPACE_BY_SIZE);
+    and each link's middle on the curve, midway in t between its two boxes' centres. half
+    gives each box's half size along the axes; a box's room along the curve is how far a line
+    through its centre, along the curve's direction there, runs inside it.
+
+    >>> spots, mids = spaced(lambda t: (1000 * t, 0.0), ["a", "b", "c"], {"a": (100, 20), "b": (300, 20), "c": (100, 20)}, w=1)
+    >>> spots["b"], mids["a", "b"]
+    ((500.0, 0.0), (250.0, 0.0))
+    >>> spots = spaced(lambda t: (1000 * t, 0.0), ["a", "b", "c", "d"], {"a": (100, 20), "b": (300, 20), "c": (50, 20), "d": (100, 20)}, w=1)[0]
+    >>> {i: round(p[0]) for i, p in spots.items()}  # gaps of 33 between the borders, not centres at 333 and 667
+    {'b': 433, 'c': 817}
+    """
+    w = SPACE_BY_SIZE if w is None else w
+    pts = [curve(i / n) for i in range(n + 1)]
+    cum = [0.0]
+    for p, q in zip(pts, pts[1:]):
+        cum.append(cum[-1] + hypot(q[0] - p[0], q[1] - p[1]))
+    total = cum[-1]
+
+    def t_of(s):
+        s = min(max(s, 0.0), total)
+        k = min(max(bisect_left(cum, s), 1), n)
+        return (k - 1 + (s - cum[k - 1]) / ((cum[k] - cum[k - 1]) or 1)) / n
+
+    def s_of(t):
+        k = min(int(t * n), n - 1)
+        return cum[k] + (t * n - k) * (cum[k + 1] - cum[k])
+
+    def room(i, t):
+        p, q = curve(max(t - 1e-4, 0)), curve(min(t + 1e-4, 1))
+        d = hypot(q[0] - p[0], q[1] - p[1]) or 1
+        tx, ty = abs(q[0] - p[0]) / d, abs(q[1] - p[1]) / d
+        return min(half[i][0] / tx if tx > 1e-9 else float("inf"), half[i][1] / ty if ty > 1e-9 else float("inf"))
+    m = len(seq) - 1
+    even = [s_of(k / m) for k in range(m + 1)]
+    s = even
+    if w:
+        for _ in range(4):
+            e = [room(i, t_of(x)) for i, x in zip(seq, s)]
+            # a curve too short for its boxes keeps them in order, for clear() to turn down
+            gap = max((total - e[0] - e[-1] - 2 * sum(e[1:-1])) / m, 0.0)
+            sized = [0.0]
+            for k in range(1, m + 1):
+                sized.append(sized[-1] + e[k - 1] + gap + e[k])
+            s = [(1 - w) * a + w * b * total / sized[-1] for a, b in zip(even, sized)]
+    spots = {x: curve(t_of(v)) for x, v in zip(seq[1:-1], s[1:-1])}
+    mids = {(x, y): curve((t_of(u) + t_of(v)) / 2) for x, y, u, v in zip(seq, seq[1:], s, s[1:])}
+    return spots, mids
+
+
 def bend_through(a, b, m):
     """The curvature (link_path()) whose curve from centre a to centre b passes through m halfway,
     the smallest Kumu bends (KUMU_STRAIGHT) on its side where it is less, 0 on a straight line.
@@ -1037,6 +1123,7 @@ def area_centre(poly):
 
 
 SPINE_TRIES = 8  # how many of the spine's layouts group_layout() tries, from the least cost
+PETAL_HALF = pi / 3  # a petal's links at its one shared element: within this of its direction
 
 
 def theta(cld, names):
@@ -1231,14 +1318,15 @@ def across(arc, u):
 
 def theta_layout(cld, group, chain, routes, stacked):
     """The spine (theta()) in (u, v): the chain on a straight wall along u, an even gap between each
-    two of its boxes, each route an arc from the chain's end back to its start, its boxes evenly
-    along it. One route each side of the wall; a third arcs round one of those two, on its outer
+    two of its boxes, each route an arc from the chain's end back to its start (flat_arc()), its
+    boxes along it (spaced()). One route each side of the wall; a third arcs round one of those two, on its outer
     side (the wrap, cld-drawing.md: three loops on one chain cannot each lie beside it), round one
     whose elements no other loop of the group meets, so those stay outside, and it is the route
     with the most elements. A group loop whose shared links all lie on the wall arcs over them
     between the wall and that side's route, the route wrapping it. The routes on the +v side, the
     larger loop's, run clockwise. Each mark sits midway between its route's middle and what lies
-    inside it there (the wall, or the arc it wraps), and each arc bulges just enough that its boxes
+    inside it there (the wall, or the arc it wraps, and OWN_BULGE of the way on to the borders of
+    the boxes there), and each arc bulges just enough that its boxes
     keep OVAL_GAP from every other and its label fits. A list of the layouts for every gap on the
     wall, the least first by its frame times its longest link over its shortest, so the figure stays
     small and its links alike."""
@@ -1308,14 +1396,18 @@ def theta_layout(cld, group, chain, routes, stacked):
             um = (a[0] + b[0]) / 2
             # what lies inside this arc on its side at its middle: the wall, or the arcs it wraps
             base = max([0.0] + [across(arc, um) for sd, arc in out["arcs"].values() if sd == side])
-            for h in range(int(base) + 60, int(base) + 4000, 10):
-                arc = arc_at(b, a, side * h)
-                trial = {**out, "at": {**at, **{x: arc((i + 1) / (len(own) + 1)) for i, x in enumerate(own)}},
-                         "mid": dict(out["mid"])}
-                seq = [sub[-1], *own, sub[0]]
-                for i, (x, y) in enumerate(zip(seq, seq[1:])):
-                    trial["mid"][x, y] = arc((i + 0.5) / (len(seq) - 1))
-                m = (um, side * (base + h) / 2)
+            # ... and, under its label, the borders of the boxes there and those arcs' reach (OWN_BULGE)
+            lu = out["label"][n][0]
+            under = max([base] + [across(arc, u) for sd, arc in out["arcs"].values() if sd == side for u in (um - lu, um + lu)]
+                        + [side * at[x][1] + half[x][1] for x in at
+                           if abs(at[x][0] - um) < lu + half[x][0] + LABEL_CLEAR_BOX and side * at[x][1] > -half[x][1]])
+            inner_v = base + OWN_BULGE * (under - base)
+            seq = [sub[-1], *own, sub[0]]
+            for h in range(int((base + 60) / ARC_FLAT), int((base + 4000) / ARC_FLAT), 10):
+                arc = flat_arc(b, a, side * h)
+                spots, mids = spaced(arc, seq, half)
+                trial = {**out, "at": {**at, **spots}, "mid": {**out["mid"], **mids}}
+                m = (um, side * (inner_v + ARC_FLAT * h) / 2)
                 if label_room(trial, n, m) and clear(trial, set(own) | {sub[0], sub[-1]}):
                     at, out = trial["at"], trial
                     out["marks"] = {**out["marks"], n: m}
@@ -1338,8 +1430,8 @@ def theta_layout(cld, group, chain, routes, stacked):
 
 def join_loop(cld, lay, name, path):
     """Add loop name to the layout where it meets it, True once placed: an arc of its own over the
-    drawn links it shares (a lens on the drawing's outer side), or, meeting it at one element, its
-    own oval touching there, pointing away from the drawing (a petal); each just large enough that its
+    drawn links it shares (a lens on the drawing's outer side), or, meeting it at one element, a
+    teardrop out from there, pointing away from the drawing (a petal); each just large enough that its
     boxes keep OVAL_GAP from every other box, its links cross none and its label fits."""
     at = lay["at"]
     drawn = [k for k in lay["mid"] if k in set(zip(path, path[1:] + path[:1]))]
@@ -1399,11 +1491,10 @@ def join_loop(cld, lay, name, path):
                 # arc_at(b, a, s) bows s to the left of b -> a
                 left = ((a[1] - b[1]) / c, -(a[0] - b[0]) / c)
                 s = (tip[0] - mid[0]) * left[0] + (tip[1] - mid[1]) * left[1]
-                arc = arc_at(b, a, s)
-                seq = [run[-1], *own, run[0]]
-                trial_at = {x: arc((i + 1) / (len(own) + 1)) for i, x in enumerate(own)}
-                mids = {(x, y): arc((i + 0.5) / (len(seq) - 1)) for i, (x, y) in enumerate(zip(seq, seq[1:]))}
-                mark = ((cm[0] + tip[0]) / 2, (cm[1] + tip[1]) / 2)
+                arc = flat_arc(b, a, s)
+                trial_at, mids = spaced(arc, [run[-1], *own, run[0]], half)
+                top = (mid[0] + ARC_FLAT * (tip[0] - mid[0]), mid[1] + ARC_FLAT * (tip[1] - mid[1]))
+                mark = ((cm[0] + top[0]) / 2, (cm[1] + top[1]) / 2)
                 if accept(trial_at, mids, mark):
                     return True
         return False
@@ -1444,18 +1535,23 @@ def join_loop(cld, lay, name, path):
         if any(lens(turn, length) for length in range(1600, 4000, 40) for turn in turns):
             return placed()
         return False
-    for r in range(100, 3000, 10):
-        for turn in turns:
-            phi = out + (pref + turn) * pi / 180
-            ru, rv = (OVAL_ASPECT * r, r) if lay["stacked"] else (r, OVAL_ASPECT * r)
-            c = (at[s][0] + ru * cos(phi), at[s][1] + rv * sin(phi))
-            t0 = atan2(-sin(phi), -cos(phi))
-            ang = {x: t0 + 2 * pi * i / len(p) for i, x in enumerate(p)}
-            pos = lambda t: (c[0] + ru * cos(t), c[1] + rv * sin(t))
-            trial_at = {x: pos(ang[x]) for x in p[1:]}
-            mids = {(x, y): pos(ang[x] + pi / len(p)) for x, y in zip(p, p[1:] + p[:1])}
-            if accept(trial_at, mids, c):
-                return placed()
+    # three elements or more: a teardrop out from s, its boxes along it, its two links at s leaving
+    # and coming back within PETAL_HALF of its direction, so they cut no link arriving there, as the
+    # lens's do (an oval touching s ran both along the box's other links, and fitted C4's B8 at one
+    # size only). Its outline a rose's petal round s, at a from its direction length cos(a k) out.
+    def petal(turn, length):
+        phi, k = out + (pref + turn) * pi / 180, pi / (2 * PETAL_HALF)
+
+        def curve(t):
+            a = PETAL_HALF * (2 * t - 1)
+            rho = length * cos(k * a)
+            return at[s][0] + rho * cos(phi + a), at[s][1] + rho * sin(phi + a)
+        trial_at, mids = spaced(curve, p + [s], half)
+        return accept(trial_at, mids, area_centre([curve(i / 60) for i in range(61)]))
+    if any(petal(turn, length) for turn in turns for length in range(300, 1600, 20)):
+        return placed()
+    if any(petal(turn, length) for length in range(1600, 4000, 40) for turn in turns):
+        return placed()
     return False
 
 
@@ -1478,15 +1574,15 @@ def ring_layout(cld, group, stacked):
     sides = {a: pi / 2 if stacked else 0, b: -pi / 2 if stacked else pi}
 
     def ring(name, ry):
-        """({id: (x, y)}, centre, {id: angle}, rx, {link: its middle on the oval}): name's oval through s at its side."""
+        """({id: (x, y)}, centre, {link: its middle on the oval}): name's oval through s at its side,
+        its height ARC_FLAT of what OVAL_ASPECT gives, its boxes along it from s (spaced())."""
         p, t = paths[name], sides[name]
-        rx, k0 = OVAL_ASPECT * ry, p.index(s)
+        k0 = p.index(s)
+        p = p[k0:] + p[:k0]
+        rx, ry = OVAL_ASPECT * ry, ARC_FLAT * ry
         centre = (-rx * cos(t), -ry * sin(t))
-        ang = {x: t + 2 * pi * ((k - k0) % len(p)) / len(p) for k, x in enumerate(p)}
-        at = {x: (centre[0] + rx * cos(u), centre[1] + ry * sin(u)) for x, u in ang.items()}
-        mids = {(x, y): (centre[0] + rx * cos(ang[x] + pi / len(p)), centre[1] + ry * sin(ang[x] + pi / len(p)))
-                for x, y in zip(p, p[1:] + p[:1])}
-        return at, centre, mids
+        spots, mids = spaced(lambda u: (centre[0] + rx * cos(t + 2 * pi * u), centre[1] + ry * sin(t + 2 * pi * u)), p + [s], half)
+        return {s: (0.0, 0.0), **spots}, centre, mids
 
     def room(name, ry):
         at, centre, mids = ring(name, ry)

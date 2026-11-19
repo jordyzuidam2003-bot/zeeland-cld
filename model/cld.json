@@ -3169,84 +3169,84 @@
           0
         ],
         "saline-seepage-kwel": [
-          831,
-          296
+          800,
+          229
         ],
         "freshwater-lens-thickness": [
-          1010,
-          708
+          978,
+          560
         ],
         "root-zone-salinity": [
-          996,
-          1157
+          976,
+          927
         ],
         "harvest-lost-to-salt": [
-          793,
-          1557
+          810,
+          1238
         ],
         "farm-revenue": [
-          438,
-          1832
+          508,
+          1472
         ],
         "agricultural-land-value": [
-          0,
-          1930
+          60,
+          1588
         ],
         "mortgage-debt-financial-leverage": [
-          -438,
-          1832
+          -407,
+          1516
         ],
         "banks-risk-assessment": [
-          -793,
-          1557
+          -756,
+          1296
         ],
         "bank-credit-freeze-risk-premiums": [
-          -996,
-          1157
+          -962,
+          973
         ],
         "debt-payments": [
-          -1010,
-          708
+          -990,
+          619
         ],
         "dependence-on-high-margin-salt-sensitive-crops": [
-          -831,
-          296
+          -836,
+          273
         ],
         "demand-for-deep-polder-drainage": [
           -493,
           0
         ],
         "spring-workability-of-the-fields": [
-          0,
-          -290
+          6,
+          -314
         ]
       },
       "bends": {
         "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": 0,
         "plans-to-raise-ditch-levels -> polder-drainage-depth": 0,
-        "polder-drainage-depth -> spring-workability-of-the-fields": -0.272,
-        "spring-workability-of-the-fields -> demand-for-deep-polder-drainage": -0.272,
-        "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.11,
-        "banks-risk-assessment -> bank-credit-freeze-risk-premiums": 0.11,
-        "bank-credit-freeze-risk-premiums -> debt-payments": 0.11,
-        "debt-payments -> dependence-on-high-margin-salt-sensitive-crops": 0.11,
-        "dependence-on-high-margin-salt-sensitive-crops -> demand-for-deep-polder-drainage": 0.11,
-        "polder-drainage-depth -> saline-seepage-kwel": 0.11,
-        "saline-seepage-kwel -> freshwater-lens-thickness": 0.11,
-        "freshwater-lens-thickness -> root-zone-salinity": 0.11,
-        "root-zone-salinity -> harvest-lost-to-salt": 0.11,
-        "harvest-lost-to-salt -> farm-revenue": 0.11,
-        "farm-revenue -> agricultural-land-value": 0.11,
-        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.11
+        "polder-drainage-depth -> spring-workability-of-the-fields": -0.312,
+        "spring-workability-of-the-fields -> demand-for-deep-polder-drainage": -0.317,
+        "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.104,
+        "banks-risk-assessment -> bank-credit-freeze-risk-premiums": 0.119,
+        "bank-credit-freeze-risk-premiums -> debt-payments": 0.124,
+        "debt-payments -> dependence-on-high-margin-salt-sensitive-crops": 0.124,
+        "dependence-on-high-margin-salt-sensitive-crops -> demand-for-deep-polder-drainage": 0.116,
+        "polder-drainage-depth -> saline-seepage-kwel": 0.1,
+        "saline-seepage-kwel -> freshwater-lens-thickness": 0.119,
+        "freshwater-lens-thickness -> root-zone-salinity": 0.128,
+        "root-zone-salinity -> harvest-lost-to-salt": 0.112,
+        "harvest-lost-to-salt -> farm-revenue": 0.101,
+        "farm-revenue -> agricultural-land-value": 0.103,
+        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.103
       },
       "marks": {
         "B4": [
           0,
-          -145
+          -172
         ],
         "R2": [
           0,
-          965
+          810
         ]
       }
     },
@@ -3264,98 +3264,98 @@
           0
         ],
         "demand-for-deep-polder-drainage": [
-          -560,
-          -85
+          -624,
+          -84
         ],
         "plans-to-raise-ditch-levels": [
-          -1009,
-          -324
+          -1114,
+          -315
         ],
         "polder-drainage-depth": [
-          -1258,
-          -669
+          -1369,
+          -640
         ],
         "saline-seepage-kwel": [
-          -1258,
-          -1051
+          -1345,
+          -1001
         ],
         "freshwater-lens-thickness": [
-          -1009,
-          -1396
+          -1036,
+          -1320
         ],
         "root-zone-salinity": [
-          -560,
-          -1635
+          -534,
+          -1521
         ],
         "harvest-lost-to-salt": [
-          0,
-          -1720
+          63,
+          -1580
         ],
         "farm-revenue": [
-          560,
-          -1635
+          640,
+          -1493
         ],
         "agricultural-land-value": [
-          1009,
-          -1396
+          1093,
+          -1282
         ],
         "mortgage-debt-financial-leverage": [
-          1258,
-          -1051
+          1361,
+          -964
         ],
         "banks-risk-assessment": [
-          1258,
-          -669
+          1350,
+          -590
         ],
         "bank-credit-freeze-risk-premiums": [
-          1009,
-          -324
+          1055,
+          -273
         ],
         "debt-payments": [
-          560,
-          -85
+          587,
+          -73
         ],
         "spending-on-keeping-current-crops": [
-          390,
-          260
+          465,
+          261
         ],
         "machines-and-storage-for-current-crops": [
           0,
-          520
+          527
         ],
         "capital-lost-on-switching": [
-          -390,
-          260
+          -465,
+          261
         ]
       },
       "bends": {
-        "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.169,
-        "banks-risk-assessment -> bank-credit-freeze-risk-premiums": 0.137,
+        "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.212,
+        "banks-risk-assessment -> bank-credit-freeze-risk-premiums": 0.139,
         "bank-credit-freeze-risk-premiums -> debt-payments": 0.1,
         "debt-payments -> dependence-on-high-margin-salt-sensitive-crops": 0.1,
         "dependence-on-high-margin-salt-sensitive-crops -> demand-for-deep-polder-drainage": 0.1,
         "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": 0.1,
-        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0.137,
-        "polder-drainage-depth -> saline-seepage-kwel": 0.169,
-        "saline-seepage-kwel -> freshwater-lens-thickness": 0.137,
+        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0.149,
+        "polder-drainage-depth -> saline-seepage-kwel": 0.204,
+        "saline-seepage-kwel -> freshwater-lens-thickness": 0.138,
         "freshwater-lens-thickness -> root-zone-salinity": 0.1,
         "root-zone-salinity -> harvest-lost-to-salt": 0.1,
         "harvest-lost-to-salt -> farm-revenue": 0.1,
         "farm-revenue -> agricultural-land-value": 0.1,
-        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.137,
-        "dependence-on-high-margin-salt-sensitive-crops -> spending-on-keeping-current-crops": 0.382,
-        "spending-on-keeping-current-crops -> machines-and-storage-for-current-crops": 0.382,
-        "machines-and-storage-for-current-crops -> capital-lost-on-switching": 0.382,
-        "capital-lost-on-switching -> dependence-on-high-margin-salt-sensitive-crops": 0.382
+        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.143,
+        "dependence-on-high-margin-salt-sensitive-crops -> spending-on-keeping-current-crops": 0.351,
+        "spending-on-keeping-current-crops -> machines-and-storage-for-current-crops": 0.36,
+        "machines-and-storage-for-current-crops -> capital-lost-on-switching": 0.36,
+        "capital-lost-on-switching -> dependence-on-high-margin-salt-sensitive-crops": 0.351
       },
       "marks": {
         "R2": [
           0,
-          -860
+          -790
         ],
         "R3": [
           0,
-          260
+          264
         ]
       }
     },
@@ -3375,92 +3375,92 @@
       ],
       "places": {
         "crop-water-shortfall": [
-          382,
+          245,
           0
         ],
         "freshwater-availability-for-crops": [
-          -382,
+          -245,
           0
         ],
         "crop-yield": [
-          874,
-          607
+          837,
+          452
         ],
         "freshwater-storage-measures": [
-          704,
-          1370
+          776,
+          1128
         ],
         "winter-rain-drained-away": [
-          0,
-          1710
+          70,
+          1502
         ],
         "freshwater-lens-recharge": [
-          -704,
-          1370
+          -701,
+          1221
         ],
         "freshwater-lens-thickness": [
-          -874,
-          607
+          -865,
+          521
         ],
         "freshwater-supply-route": [
-          0,
-          700
+          12,
+          620
         ],
         "external-freshwater-supply": [
-          -399,
-          463
+          -388,
+          377
         ],
         "groundwater-extraction-for-irrigation": [
-          0,
-          -290
+          7,
+          -314
         ],
         "creek-ridge-lens-thickness": [
-          -390,
-          -740
+          -228,
+          -894
         ],
         "pumping-the-water-board-allows": [
-          390,
-          -740
+          238,
+          -884
         ],
         "zlto-call-for-supply-route": [
-          399,
-          463
+          395,
+          355
         ]
       },
       "bends": {
-        "crop-water-shortfall -> groundwater-extraction-for-irrigation": -0.336,
-        "groundwater-extraction-for-irrigation -> freshwater-availability-for-crops": -0.336,
+        "crop-water-shortfall -> groundwater-extraction-for-irrigation": -0.56,
+        "groundwater-extraction-for-irrigation -> freshwater-availability-for-crops": -0.572,
         "freshwater-availability-for-crops -> crop-water-shortfall": 0,
-        "crop-yield -> freshwater-storage-measures": 0.229,
-        "freshwater-storage-measures -> winter-rain-drained-away": 0.229,
-        "winter-rain-drained-away -> freshwater-lens-recharge": 0.229,
-        "freshwater-lens-recharge -> freshwater-lens-thickness": 0.229,
-        "freshwater-lens-thickness -> freshwater-availability-for-crops": 0.229,
-        "crop-water-shortfall -> crop-yield": 0.229,
-        "freshwater-supply-route -> external-freshwater-supply": 0.274,
-        "external-freshwater-supply -> freshwater-availability-for-crops": 0.274,
-        "creek-ridge-lens-thickness -> pumping-the-water-board-allows": 0.385,
-        "pumping-the-water-board-allows -> groundwater-extraction-for-irrigation": 0.66,
-        "groundwater-extraction-for-irrigation -> creek-ridge-lens-thickness": 0.66,
-        "crop-water-shortfall -> zlto-call-for-supply-route": 0.274,
-        "zlto-call-for-supply-route -> freshwater-supply-route": 0.274
+        "crop-yield -> freshwater-storage-measures": 0.274,
+        "freshwater-storage-measures -> winter-rain-drained-away": 0.225,
+        "winter-rain-drained-away -> freshwater-lens-recharge": 0.219,
+        "freshwater-lens-recharge -> freshwater-lens-thickness": 0.286,
+        "freshwater-lens-thickness -> freshwater-availability-for-crops": 0.254,
+        "crop-water-shortfall -> crop-yield": 0.226,
+        "freshwater-supply-route -> external-freshwater-supply": 0.317,
+        "external-freshwater-supply -> freshwater-availability-for-crops": 0.358,
+        "creek-ridge-lens-thickness -> pumping-the-water-board-allows": 0.711,
+        "pumping-the-water-board-allows -> groundwater-extraction-for-irrigation": 0.364,
+        "groundwater-extraction-for-irrigation -> creek-ridge-lens-thickness": 0.375,
+        "crop-water-shortfall -> zlto-call-for-supply-route": 0.335,
+        "zlto-call-for-supply-route -> freshwater-supply-route": 0.324
       },
       "marks": {
         "B8": [
-          0,
-          -590
+          4,
+          -711
         ],
         "B7": [
           0,
-          350
+          325
         ],
         "B5": [
           0,
-          -145
+          -172
         ],
         "B6": [
           0,
-          1205
+          1077
         ]
       }
     },
@@ -3474,8 +3474,8 @@
       "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so *Rainwater lens recharge in the low polders* and, over years, the *Rainwater lens thickness in the low polders* rise; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A lower *Crop yield* makes storing more worthwhile to a farmer (B6), and leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same harvest pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The links from *Crop yield* and from *Farmers' capacity to invest* to *Freshwater storage measures* are both hypotheses for the group model building session.",
       "places": {
         "farmers-capacity-to-invest": [
-          -657,
-          -371
+          -585,
+          -314
         ],
         "freshwater-storage-measures": [
           0,
@@ -3506,25 +3506,25 @@
           716
         ],
         "farm-revenue": [
-          -657,
-          371
+          -562,
+          363
         ]
       },
       "bends": {
-        "farmers-capacity-to-invest -> freshwater-storage-measures": 0.278,
+        "farmers-capacity-to-invest -> freshwater-storage-measures": 0.325,
         "freshwater-storage-measures -> winter-rain-drained-away": 0,
         "winter-rain-drained-away -> freshwater-lens-recharge": 0,
         "freshwater-lens-recharge -> freshwater-lens-thickness": 0,
         "freshwater-lens-thickness -> freshwater-availability-for-crops": 0,
         "freshwater-availability-for-crops -> crop-water-shortfall": 0,
         "crop-water-shortfall -> crop-yield": 0,
-        "crop-yield -> farm-revenue": 0.278,
-        "farm-revenue -> farmers-capacity-to-invest": 0.278,
-        "crop-yield -> freshwater-storage-measures": -1.005
+        "crop-yield -> farm-revenue": 0.306,
+        "farm-revenue -> farmers-capacity-to-invest": 0.213,
+        "crop-yield -> freshwater-storage-measures": -0.842
       },
       "marks": {
         "B6": [
-          360,
+          359,
           0
         ],
         "R4": [
@@ -3628,68 +3628,68 @@
           0
         ],
         "margin-given-up-on-high-margin-crops": [
-          -477,
-          -132
+          -483,
+          -112
         ],
         "farm-revenue": [
-          -675,
-          -450
+          -690,
+          -393
         ],
         "agricultural-land-value": [
-          -477,
-          -768
+          -479,
+          -672
         ],
         "mortgage-debt-financial-leverage": [
           0,
-          -900
+          -782
         ],
         "banks-risk-assessment": [
-          477,
-          -768
+          479,
+          -672
         ],
         "bank-credit-to-farms": [
-          675,
-          -450
+          690,
+          -393
         ],
         "farmers-capacity-to-invest": [
-          477,
-          -132
+          483,
+          -112
         ],
         "harvest-of-new-crops-to-process": [
-          405,
-          270
+          435,
+          239
         ],
         "processing-capacity-for-alternative-crops": [
           0,
-          540
+          493
         ],
         "net-price-for-new-crops": [
-          -405,
-          270
+          -435,
+          239
         ]
       },
       "bends": {
-        "salt-tolerant-crop-adoption -> harvest-of-new-crops-to-process": 0.382,
-        "harvest-of-new-crops-to-process -> processing-capacity-for-alternative-crops": 0.382,
-        "processing-capacity-for-alternative-crops -> net-price-for-new-crops": 0.382,
-        "net-price-for-new-crops -> salt-tolerant-crop-adoption": 0.382,
-        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.144,
-        "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.144,
-        "banks-risk-assessment -> bank-credit-to-farms": 0.252,
-        "bank-credit-to-farms -> farmers-capacity-to-invest": 0.252,
-        "farmers-capacity-to-invest -> salt-tolerant-crop-adoption": 0.144,
-        "salt-tolerant-crop-adoption -> margin-given-up-on-high-margin-crops": 0.144,
-        "margin-given-up-on-high-margin-crops -> farm-revenue": 0.252,
-        "farm-revenue -> agricultural-land-value": 0.252
+        "salt-tolerant-crop-adoption -> harvest-of-new-crops-to-process": 0.342,
+        "harvest-of-new-crops-to-process -> processing-capacity-for-alternative-crops": 0.369,
+        "processing-capacity-for-alternative-crops -> net-price-for-new-crops": 0.369,
+        "net-price-for-new-crops -> salt-tolerant-crop-adoption": 0.342,
+        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.122,
+        "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.122,
+        "banks-risk-assessment -> bank-credit-to-farms": 0.269,
+        "bank-credit-to-farms -> farmers-capacity-to-invest": 0.272,
+        "farmers-capacity-to-invest -> salt-tolerant-crop-adoption": 0.123,
+        "salt-tolerant-crop-adoption -> margin-given-up-on-high-margin-crops": 0.123,
+        "margin-given-up-on-high-margin-crops -> farm-revenue": 0.272,
+        "farm-revenue -> agricultural-land-value": 0.269
       },
       "marks": {
         "R7": [
           0,
-          270
+          246
         ],
         "B10": [
           0,
-          -450
+          -391
         ]
       }
     },
@@ -3867,76 +3867,76 @@
       "places": {
         "agricultural-land-value": [
           0,
-          1108
+          1283
         ],
         "mortgage-debt-financial-leverage": [
-          -605,
-          1120
+          -644,
+          1242
         ],
         "banks-risk-assessment": [
-          -1133,
-          825
+          -1107,
+          870
         ],
         "bank-credit-freeze-risk-premiums": [
-          -1440,
-          303
+          -1351,
+          327
         ],
         "debt-payments": [
-          -1440,
-          -303
+          -1364,
+          -257
         ],
         "dependence-on-high-margin-salt-sensitive-crops": [
-          -1133,
-          -825
+          -1148,
+          -812
         ],
         "demand-for-deep-polder-drainage": [
-          -605,
-          -1120
+          -674,
+          -1228
         ],
         "plans-to-raise-ditch-levels": [
           0,
-          -1108
+          -1283
         ],
         "polder-drainage-depth": [
           0,
-          -789
+          -914
         ],
         "saline-seepage-kwel": [
           0,
-          -487
+          -562
         ],
         "freshwater-lens-thickness": [
           0,
-          -151
+          -176
         ],
         "root-zone-salinity": [
           0,
-          185
+          210
         ],
         "harvest-lost-to-salt": [
           0,
-          487
+          562
         ],
         "farm-revenue": [
           0,
-          789
+          914
         ],
         "policy-resistance-legal-delays": [
-          780,
+          782,
           0
         ],
         "farmland-leaving-arable-use": [
-          -720,
+          -722,
           0
         ]
       },
       "bends": {
         "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.133,
-        "banks-risk-assessment -> bank-credit-freeze-risk-premiums": 0.133,
-        "bank-credit-freeze-risk-premiums -> debt-payments": 0.133,
-        "debt-payments -> dependence-on-high-margin-salt-sensitive-crops": 0.133,
-        "dependence-on-high-margin-salt-sensitive-crops -> demand-for-deep-polder-drainage": 0.133,
-        "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": 0.133,
+        "banks-risk-assessment -> bank-credit-freeze-risk-premiums": 0.107,
+        "bank-credit-freeze-risk-premiums -> debt-payments": 0.1,
+        "debt-payments -> dependence-on-high-margin-salt-sensitive-crops": 0.105,
+        "dependence-on-high-margin-salt-sensitive-crops -> demand-for-deep-polder-drainage": 0.139,
+        "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": 0.181,
         "plans-to-raise-ditch-levels -> polder-drainage-depth": 0,
         "polder-drainage-depth -> saline-seepage-kwel": 0,
         "saline-seepage-kwel -> freshwater-lens-thickness": 0,
@@ -3944,23 +3944,23 @@
         "root-zone-salinity -> harvest-lost-to-salt": 0,
         "harvest-lost-to-salt -> farm-revenue": 0,
         "farm-revenue -> agricultural-land-value": 0,
-        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.133,
-        "agricultural-land-value -> policy-resistance-legal-delays": -0.317,
-        "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": -0.317,
-        "agricultural-land-value -> farmland-leaving-arable-use": 0.296,
-        "farmland-leaving-arable-use -> plans-to-raise-ditch-levels": 0.296
+        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.172,
+        "agricultural-land-value -> policy-resistance-legal-delays": -0.302,
+        "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": -0.302,
+        "agricultural-land-value -> farmland-leaving-arable-use": 0.28,
+        "farmland-leaving-arable-use -> plans-to-raise-ditch-levels": 0.28
       },
       "marks": {
         "R2": [
-          -1100,
+          -1106,
           0
         ],
         "R8": [
-          390,
+          391,
           0
         ],
         "B3": [
-          -360,
+          -361,
           0
         ]
       }

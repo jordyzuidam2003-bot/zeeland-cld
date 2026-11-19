@@ -676,6 +676,8 @@ MARK_R = 48  # the loop mark's radius: it reads at the size of the signs
 # (cbp1-v4): Kumu wraps the label greedily, a line ending once it holds KUMU_WRAP characters or
 # more, and draws text at KUMU_TEXT of its font-size in map units, lines KUMU_LINE of that apart.
 KUMU_LOOP_FONT = 42   # font-size under `loop` in the loop maps' view: the boxes' (cld-view.scss), so a map has one text size
+                      # (kept after a restore, read at fit to the window; another size changes every mark's room, so
+                      # every group is laid out anew)
 KUMU_TEXT = 0.693
 KUMU_WRAP = 20
 KUMU_GLYPH = 0.5      # a glyph's average width over the drawn size: 0.47 measured on Kumu's font, rounded up

@@ -1,94 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1387 -834 2811 1680" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1872 -872 3780 1761" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
 <defs>
 <marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
 <marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
 <marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
 </defs>
-<rect x="-1387" y="-834" width="2811" height="1680" fill="white"/>
+<rect x="-1872" y="-872" width="3780" height="1761" fill="white"/>
 <g class="links">
 <g class="link" data-from="mortgage-debt-financial-leverage" data-to="banks-risk-assessment" data-sign="+" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M -1017.2 -326.2 Q -943.6 -444.5 -814.9 -498.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-860.0" y="-476.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -1017.4 -326.2 Q -934.5 -433.5 -815.2 -498.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-858.2" y="-472.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="banks-risk-assessment" data-to="bank-credit-freeze-risk-premiums" data-sign="+" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M -645.6 -584.1 Q -544.6 -660.1 -418.3 -663.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-468.1" y="-659.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -646.1 -584.1 Q -538.5 -641.8 -418.3 -663.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-467.2" y="-653.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="bank-credit-freeze-risk-premiums" data-to="debt-payments" data-sign="+" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M -93.5 -708.0 Q 32.1 -744.3 155.4 -701.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="107.4" y="-714.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -93.5 -710.6 Q 31.9 -725.0 155.8 -701.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="106.5" y="-709.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="debt-payments" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M 366.3 -670.7 Q 500.3 -675.2 612.1 -601.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="568.9" y="-626.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M 366.3 -670.9 Q 495.3 -656.7 612.5 -601.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="566.7" y="-621.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="demand-for-deep-polder-drainage" data-sign="+" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M 844.6 -481.1 Q 946.1 -437.6 1003.6 -343.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="974.7" y="-384.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M 844.7 -481.1 Q 935.7 -425.4 1003.8 -343.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="970.5" y="-380.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="demand-for-deep-polder-drainage" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
-<path class="link-path" d="M 1067.5 -257.2 Q 1141.1 -162.7 1146.1 -43.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="1140.9" y="-92.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-<path class="delay-cut" d="M 1141.9 -176.7 L 1097.1 -159.6 M 1147.6 -161.8 L 1102.8 -144.6" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 1141.9 -176.7 L 1097.1 -159.6 M 1147.6 -161.8 L 1102.8 -144.6" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="demand-for-deep-polder-drainage" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="true" data-curvature="0.16">
+<path class="link-path" d="M 1067.7 -257.2 Q 1131.3 -159.0 1146.3 -43.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="1137.6" y="-92.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M 1138.9 -170.4 L 1093.9 -153.8 M 1144.4 -155.3 L 1099.4 -138.8" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 1138.9 -170.4 L 1093.9 -153.8 M 1144.4 -155.3 L 1099.4 -138.8" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
-<path class="link-path" d="M 1146.1 43.0 Q 1138.0 173.0 1056.0 274.2" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="1085.2" y="233.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-<path class="delay-cut" d="M 1146.6 162.1 L 1101.7 145.3 M 1141.0 177.1 L 1096.0 160.2" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 1146.6 162.1 L 1101.7 145.3 M 1141.0 177.1 L 1096.0 160.2" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="0.16">
+<path class="link-path" d="M 1146.3 43.0 Q 1130.0 169.8 1056.1 274.2" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="1083.1" y="232.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M 1140.8 165.5 L 1096.1 148.0 M 1135.0 180.4 L 1090.3 162.9" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 1140.8 165.5 L 1096.1 148.0 M 1135.0 180.4 L 1090.3 162.9" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="polder-drainage-depth" data-to="saline-seepage-kwel" data-sign="+" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M 1017.2 326.2 Q 929.3 458.4 781.0 515.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="826.8" y="495.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M 1017.4 326.2 Q 922.3 449.2 781.4 515.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="825.9" y="492.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="saline-seepage-kwel" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
-<path class="link-path" d="M 675.8 567.1 Q 562.4 656.4 418.3 663.3" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="468.0" y="658.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-<path class="delay-cut" d="M 576.0 653.3 L 558.6 608.6 M 561.1 659.1 L 543.7 614.3" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 576.0 653.3 L 558.6 608.6 M 561.1 659.1 L 543.7 614.3" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="saline-seepage-kwel" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="0.16">
+<path class="link-path" d="M 676.2 567.1 Q 556.0 638.7 418.3 663.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="467.2" y="653.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M 567.5 646.6 L 550.7 601.7 M 552.5 652.2 L 535.7 607.3" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 567.5 646.6 L 550.7 601.7 M 552.5 652.2 L 535.7 607.3" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M 93.5 710.5 Q -32.1 745.4 -154.6 701.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-106.7" y="715.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M 93.5 710.6 Q -31.9 725.0 -155.8 701.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-106.5" y="709.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="root-zone-salinity" data-to="harvest-lost-to-salt" data-sign="+" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M -403.4 665.8 Q -555.4 660.0 -675.8 567.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-634.7" y="595.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -403.4 665.9 Q -549.3 642.7 -676.2 567.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-632.5" y="591.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="harvest-lost-to-salt" data-to="farm-revenue" data-sign="-" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M -781.0 515.1 Q -929.3 458.4 -1017.2 326.2" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-987.6" y="366.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M -781.4 515.1 Q -922.3 449.2 -1017.4 326.2" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-985.4" y="364.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
-<path class="link-path" d="M -1056.0 274.2 Q -1138.0 173.0 -1146.1 43.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-1140.2" y="92.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M -1137.0 186.8 L -1092.5 168.8 M -1143.0 172.0 L -1098.5 154.0" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -1137.0 186.8 L -1092.5 168.8 M -1143.0 172.0 L -1098.5 154.0" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="true" data-curvature="0.16">
+<path class="link-path" d="M -1056.1 274.2 Q -1130.0 169.8 -1146.3 43.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-1137.6" y="92.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -1135.0 180.4 L -1090.3 162.9 M -1140.8 165.5 L -1096.1 148.0" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -1135.0 180.4 L -1090.3 162.9 M -1140.8 165.5 L -1096.1 148.0" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="agricultural-land-value" data-to="mortgage-debt-financial-leverage" data-sign="-" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M -1146.1 -43.0 Q -1138.0 -173.0 -1056.0 -274.2" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-1085.2" y="-233.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M -1146.3 -43.0 Q -1130.0 -169.8 -1056.1 -274.2" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-1083.1" y="-232.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="agricultural-land-value" data-to="policy-resistance-legal-delays" data-sign="-" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M -1058.8 -43.0 Q -643.1 -262.3 -177.2 -199.5" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-226.9" y="-205.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M -1060.0 -43.0 Q -638.1 -230.8 -177.2 -200.1" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-227.2" y="-202.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="policy-resistance-legal-delays" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M 177.2 -199.5 Q 643.1 -262.3 1058.8 -43.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="1014.2" y="-65.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M 177.2 -200.1 Q 638.1 -230.8 1060.0 -43.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="1014.0" y="-62.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="agricultural-land-value" data-to="farmland-leaving-arable-use" data-sign="+" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
-<path class="link-path" d="M -1009.9 -17.0 Q -526.0 -87.1 -91.2 136.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-136.0" y="114.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M -560.9 -41.5 L -568.2 6.0 M -545.1 -39.0 L -552.4 8.4" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -560.9 -41.5 L -568.2 6.0 M -545.1 -39.0 L -552.4 8.4" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="agricultural-land-value" data-to="farmland-leaving-arable-use" data-sign="+" data-delay="true" data-curvature="0.16">
+<path class="link-path" d="M -1009.9 -17.5 Q -530.0 -59.1 -90.0 136.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-136.0" y="117.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -543.9 -24.8 L -551.8 22.6 M -528.1 -22.1 L -536.1 25.2" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -543.9 -24.8 L -551.8 22.6 M -528.1 -22.1 L -536.1 25.2" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="farmland-leaving-arable-use" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="true" data-curvature="0.16" data-delay-t="0.48">
-<path class="link-path" d="M 91.2 136.8 Q 506.9 -82.6 972.8 -19.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="923.1" y="-25.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-<path class="delay-cut" d="M 489.5 -30.9 L 498.5 16.3 M 505.2 -33.9 L 514.2 13.3" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 489.5 -30.9 L 498.5 16.3 M 505.2 -33.9 L 514.2 13.3" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="farmland-leaving-arable-use" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="true" data-curvature="0.16">
+<path class="link-path" d="M 90.0 136.8 Q 511.9 -51.1 972.8 -20.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="922.8" y="-23.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M 509.6 -18.7 L 518.0 28.6 M 525.3 -21.5 L 533.7 25.8" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 509.6 -18.7 L 518.0 28.6 M 525.3 -21.5 L 533.7 25.8" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 </g>
 <g class="elements">

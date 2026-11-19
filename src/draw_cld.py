@@ -21,7 +21,10 @@ loop_figure(cld, loop) draws one named loop on its own (build.py writes docs/fig
 elements evenly round one oval, clockwise from the top left, its links along it, drawn as svg()
 draws them, with its mark, turning clockwise, at the oval's centre.
 group_figure(cld, group) draws one group of named loops (build.py writes docs/figures/combined-loops/<id>.svg): its
-loops' elements and links at the group's own `places` and `bends`, each loop's mark at `marks`;
+loops' elements and links at the group's own `places` and `bends`, each loop's mark at `marks`,
+turning the way the loop runs; group_layout(cld, group) computes those three for a group of two
+loops, each loop its own area, and marks_astray(cld, group) names a mark outside its own loop's
+area or inside another's, for build.py's warnings;
 report_panels(cld) draws every group as the report's panels (docs/figures/report-panels/<id>.svg):
 its places spread over one shared frame, every panel in one viewBox size.
 
@@ -30,7 +33,7 @@ link_path() and link_paths() in src/templates/move.js, for the CLD and the Actor
 in src/templates/app.js; keep them and their JS twins the same.
 """
 
-from math import ceil, cos, hypot, pi, sin
+from math import atan2, ceil, cos, hypot, pi, sin
 
 import backdrop
 
@@ -368,18 +371,19 @@ def delay_path(p0, ctrl, p2, t=0.5, half=DELAY_HALF, gap=DELAY_GAP):
 
 
 # --- loops ----------------------------------------------------------------------------------
-def loop_svg(loop, centre):
+def loop_svg(loop, centre, clockwise=True):
     """The loop's mark at centre: its id in a three-quarter circle that ends in an arrowhead,
-    turning clockwise on the page, as the one-loop figure runs."""
+    turning the way the loop runs on the page: clockwise in a one-loop figure; in a combined
+    loop's figure two loops sharing a chain run opposite ways (group_layout())."""
     cx, cy = centre
     r = MARK_R
-    # from the top clockwise round to the left; y grows downwards
-    a0, a1 = -pi / 2, pi
+    # from the top clockwise round to the left, or anticlockwise round to the right; y grows downwards
+    a0, a1 = -pi / 2, (pi if clockwise else 0)
     start = (cx + r * cos(a0), cy + r * sin(a0))
     end = (cx + r * cos(a1), cy + r * sin(a1))
     return "\n".join([
         f'<g class="loop" data-id="{loop["id"]}">',
-        f'<path d="M {start[0]:.1f} {start[1]:.1f} A {r} {r} 0 1 1 {end[0]:.1f} {end[1]:.1f}" fill="none" '
+        f'<path d="M {start[0]:.1f} {start[1]:.1f} A {r} {r} 0 1 {1 if clockwise else 0} {end[0]:.1f} {end[1]:.1f}" fill="none" '
         f'stroke="{STROKE_COLOUR}" stroke-width="{LINK_WIDTH}" marker-end="url(#arrow-grey)"/>',
         f'<text class="loop-id" x="{cx:.1f}" y="{cy:.1f}" text-anchor="middle" dominant-baseline="central" '
         f'font-size="{SIGN_SIZE}" font-weight="bold">{esc(loop["id"])}</text>',
@@ -791,7 +795,7 @@ def group_frame(cld, group):
     """(x0, y0, x1, y1): what group_figure() draws, its boxes, curves and marks, with a margin."""
     sub = group_cld(cld, group)
     bxs = boxes(sub)
-    curve = [bezier(*p, t / 10) for p in link_paths(sub, bxs).values() for t in range(11)]
+    curve = [bezier(*p, t / 10) for ps in group_pieces(sub, bxs).values() for p in ps for t in range(11)]
     marks = list(group["marks"].values())
     pad = MARGIN + SIGN_SIZE
     return (min(*(b[0] for b in bxs.values()), *(p[0] for p in curve), *(m[0] - MARK_R for m in marks)) - pad,
@@ -800,21 +804,308 @@ def group_frame(cld, group):
             max(*(b[3] for b in bxs.values()), *(p[1] for p in curve), *(m[1] + MARK_R for m in marks)) + pad)
 
 
-def group_figure(cld, group, vb=None):
-    """One group of named loops, for the report: the loops joined at their shared variables, drawn
-    as svg() draws them, each loop's mark in the part of the figure that is its own. The places are
-    the group's, never the full drawing's, where the same loops run long and lopsided (the same
-    reason as oval()). No regions and no legend: the figure stands beside the full drawing. vb, the
-    viewBox (x, y, width, height), defaults to group_frame()'s."""
+def kumu_pieces(a, b, k, box_a, box_b):
+    """The link from centre a to centre b drawn as Kumu draws curvature k (KUMU_STRAIGHT): the
+    circular arc through both centres, k times half their distance out at its middle, straight
+    under KUMU_STRAIGHT, cut where it leaves box_a and enters box_b; as quadratic pieces of at most
+    45 degrees, each with its control point where the circle's tangents at its ends meet (oval())."""
+    s = k * hypot(b[0] - a[0], b[1] - a[1]) / 2 if abs(k) >= KUMU_STRAIGHT else 0
+    arc = arc_at(a, b, s)
+
+    def border(u0, u1, box):
+        """Where the arc crosses box's border, between u0 inside it and u1 outside."""
+        for _ in range(40):
+            um = (u0 + u1) / 2
+            u0, u1 = (um, u1) if inside(arc(um), box) else (u0, um)
+        return (u0 + u1) / 2
+    u0, u1 = border(0, 0.5, box_a), border(1, 0.5, box_b)
+    if s == 0:
+        p, q = arc(u0), arc(u1)
+        return [(p, ((p[0] + q[0]) / 2, (p[1] + q[1]) / 2), q)]
+    cx, cy, r, a0, sweep = circle_of(a, b, s)
+    t0, t1 = a0 + sweep * u0, a0 + sweep * u1
+    m = ceil(abs(t1 - t0) / (pi / 4))
+    h = (t1 - t0) / (2 * m)
+    at = lambda t, rr=r: (cx + rr * cos(t), cy + rr * sin(t))
+    return [(at(t0 + 2 * h * i), at(t0 + 2 * h * i + h, r / cos(h)), at(t0 + 2 * h * (i + 1))) for i in range(m)]
+
+
+def group_pieces(sub, bxs):
+    """{(from, to): pieces}: each link of a group's own drawing (group_cld()) as Kumu draws it
+    (kumu_pieces()), so the page's figure of a combined loop shows what Kumu's map of it shows."""
+    centre = lambda i: ((bxs[i][0] + bxs[i][2]) / 2, (bxs[i][1] + bxs[i][3]) / 2)
+    return {(c["from"], c["to"]): kumu_pieces(centre(c["from"]), centre(c["to"]), c["curvature"], bxs[c["from"]], bxs[c["to"]])
+            for c in sub["connections"]}
+
+
+def group_tangles(cld, group):
+    """tangles() of the group's figure, its links as group_figure() and Kumu draw them."""
     sub = group_cld(cld, group)
-    bxs, paths = boxes(sub), {k: [p] for k, p in link_paths(sub, boxes(sub)).items()}
+    return tangles(sub, group_pieces(sub, boxes(sub)))
+
+
+def group_figure(cld, group, vb=None):
+    """One group of named loops, for the report: the loops joined at their shared variables, its
+    boxes, signs and delays as svg() draws them and its links as Kumu does (group_pieces()), each
+    loop's mark in the part of the figure that is its own. The places are the group's, never the
+    full drawing's, where the same loops run long and lopsided (the same reason as oval()). No
+    regions and no legend: the figure stands beside the full drawing. vb, the viewBox (x, y, width,
+    height), defaults to group_frame()'s."""
+    sub = group_cld(cld, group)
+    bxs = boxes(sub)
+    paths = group_pieces(sub, bxs)
     loops = {loop["id"]: loop for loop in cld["loops"]}
     if vb is None:
         x0, y0, x1, y1 = group_frame(cld, group)
         vb = (x0, y0, x1 - x0, y1 - y0)
-    parts = [*head(vb), *links_and_elements(sub, bxs, paths, delay_spots(sub, paths)),
-             *(loop_svg(loops[name], tuple(group["marks"][name])) for name in group["loops"]), "</svg>"]
+    areas = loop_areas(cld, group)
+    parts = [*head(vb), *links_and_elements(sub, bxs, paths),
+             *(loop_svg(loops[name], tuple(group["marks"][name]), turns_clockwise(areas[name])) for name in group["loops"]),
+             "</svg>"]
     return "\n".join(parts) + "\n"
+
+
+# --- a combined loop's layout: each loop its own area ---------------------------------------------
+# A combined loop draws each of its loops as its own area, never one inside another, since a loop
+# drawn inside another puts the outer loop's mark inside the inner one (cld-drawing.md). Two loops
+# sharing one element are two rings touching at that box; two sharing a chain are two areas side
+# by side, the chain the wall between them. Each loop's mark sits at the centre of its own area,
+# the boxes evenly along smooth arcs as on a named loop's oval (oval()).
+AREA_MARK_BOX = MARK_R + 50   # a mark's room: as far from every box as an oval's centre keeps (oval())
+AREA_MARK_LINK = MARK_R + 30  # ... and from every link
+
+
+def link_curve(a, b, k, n=20):
+    """n + 1 points on the link from centre a to centre b at curvature k, as Kumu draws it
+    (kumu_pieces()) before cutting it at the boxes."""
+    arc = arc_at(a, b, k * hypot(b[0] - a[0], b[1] - a[1]) / 2 if abs(k) >= KUMU_STRAIGHT else 0)
+    return [arc(t / n) for t in range(n + 1)]
+
+
+def loop_areas(cld, group):
+    """{loop id: polygon}: each of the group's loops as the area its links enclose at the group's
+    places and bends, its links followed from centre to centre in the loop's order."""
+    out = {}
+    for loop in cld["loops"]:
+        if loop["id"] in group["loops"]:
+            p = loop["path"]
+            out[loop["id"]] = [q for a, b in zip(p, p[1:] + p[:1])
+                               for q in link_curve(group["places"][a], group["places"][b], group["bends"][f"{a} -> {b}"])[:-1]]
+    return out
+
+
+def turns_clockwise(poly):
+    """Whether the polygon runs clockwise on the page: its shoelace sum is positive with y downwards."""
+    return sum(x0 * y1 - x1 * y0 for (x0, y0), (x1, y1) in zip(poly, poly[1:] + poly[:1])) > 0
+
+
+def in_polygon(p, poly):
+    """Whether p lies inside poly, by the even-odd rule."""
+    x, y = p
+    hit = False
+    for (x0, y0), (x1, y1) in zip(poly, poly[1:] + poly[:1]):
+        if (y0 > y) != (y1 > y) and x < x0 + (y - y0) * (x1 - x0) / (y1 - y0):
+            hit = not hit
+    return hit
+
+
+def marks_astray(cld, group):
+    """Each of the group's marks that lies outside its own loop's area or inside another's
+    (cld-drawing.md), as a line for build.py's warnings."""
+    areas = loop_areas(cld, group)
+    out = []
+    for name, area in areas.items():
+        m = group["marks"][name]
+        if not in_polygon(m, area):
+            out.append(f"group {group['id']}: {name}'s mark lies outside its own loop's area")
+        out += [f"group {group['id']}: {name}'s mark lies inside {other}'s area"
+                for other, a in areas.items() if other != name and in_polygon(m, a)]
+    return out
+
+
+def circle_of(p, q, s):
+    """(cx, cy, r, a0, sweep): the circle of the arc from p to q whose middle lies s off the chord's
+    middle, to the left of p -> q as link_path() bows a positive curvature (a major arc where |s|
+    exceeds half the chord); a0 the angle of p from its centre, sweep the angle the arc turns."""
+    dx, dy = q[0] - p[0], q[1] - p[1]
+    c = hypot(dx, dy)
+    nx, ny = dy / c, -dx / c
+    r = (c * c / 4 + s * s) / (2 * abs(s))
+    off = s - (r if s > 0 else -r)  # the circle's centre, from the chord's middle along the normal
+    cx, cy = (p[0] + q[0]) / 2 + off * nx, (p[1] + q[1]) / 2 + off * ny
+    a0 = atan2(p[1] - cy, p[0] - cx)
+    half = (atan2((p[1] + q[1]) / 2 + s * ny - cy, (p[0] + q[0]) / 2 + s * nx - cx) - a0 + pi) % (2 * pi) - pi
+    return cx, cy, r, a0, 2 * half
+
+
+def arc_at(p, q, s):
+    """u in [0, 1] -> the point at fraction u along that arc (circle_of()), evenly by length; a
+    straight line at s = 0."""
+    if s == 0:
+        return lambda u: (p[0] + (q[0] - p[0]) * u, p[1] + (q[1] - p[1]) * u)
+    cx, cy, r, a0, sweep = circle_of(p, q, s)
+    return lambda u: (cx + r * cos(a0 + sweep * u), cy + r * sin(a0 + sweep * u))
+
+
+def bend_through(a, b, m):
+    """The curvature (link_path()) whose curve from centre a to centre b passes through m halfway,
+    the smallest Kumu bends (KUMU_STRAIGHT) on its side where it is less, 0 on a straight line.
+    A quadratic curve passes (start + 2 control + end) / 4 halfway, so through m its control lies
+    2 (m - chord middle) from the chord's middle; link_path() moves it curvature (dy, -dx)."""
+    dx, dy = b[0] - a[0], b[1] - a[1]
+    ox, oy = 2 * (m[0] - (a[0] + b[0]) / 2), 2 * (m[1] - (a[1] + b[1]) / 2)
+    k = round((ox * dy - oy * dx) / (dx * dx + dy * dy), 3)
+    return k if abs(k) >= KUMU_STRAIGHT or k == 0 else (KUMU_STRAIGHT if k > 0 else -KUMU_STRAIGHT)
+
+
+def area_centre(poly):
+    """The centroid of a polygon: a convex area's centre."""
+    a = cx = cy = 0.0
+    for (x0, y0), (x1, y1) in zip(poly, poly[1:] + poly[:1]):
+        f = x0 * y1 - x1 * y0
+        a, cx, cy = a + f, cx + (x0 + x1) * f, cy + (y0 + y1) * f
+    return cx / (3 * a), cy / (3 * a)
+
+
+def group_layout(cld, group, stacked=None):
+    """(places, bends, marks) for a group of two named loops, in the shape of its fields in cld.json,
+    each loop its own area (cld-drawing.md); None for any other group. stacked puts the two areas
+    one above the other, False side by side, None whichever of the two gives the frame nearer a
+    square, so the report's panels of one size waste the least room. The larger loop, by its
+    elements, runs clockwise, on the left or below.
+
+    Two loops sharing one element: each its own oval as oval() lays out a named loop, the two
+    touching at that element, both clockwise, each mark at its oval's centre.
+
+    Two loops sharing a chain: three arcs between the chain's ends, the chain on a straight wall
+    between the two loops' own arcs, so each area is convex and holds its centroid, where its mark
+    sits; the boxes evenly along each own arc and an even gap between each two on the wall. The
+    loops run the wall one way, so the one on its other side runs anticlockwise. The wall's gap is
+    OVAL_GAP or more, and each own arc bulges just enough that every two boxes keep OVAL_GAP apart and its mark keeps
+    AREA_MARK_BOX from every box and AREA_MARK_LINK from every link; of all walls, the one whose
+    frame times its longest link over its shortest is least, so the figure stays small and its links
+    alike: the frame alone draws a long loop as a flat column."""
+    paths = {loop["id"]: loop["path"] for loop in cld["loops"]}
+    if len(group["loops"]) != 2:
+        return None
+    if stacked is None:
+        def squareness(lay):
+            x0, y0, x1, y1 = group_frame(cld, {**group, "places": lay[0], "bends": lay[1], "marks": lay[2]})
+            return max(x1 - x0, y1 - y0) / min(x1 - x0, y1 - y0)
+        both = [lay for lay in (group_layout(cld, group, False), group_layout(cld, group, True)) if lay]
+        return min(both, key=squareness) if both else None
+    a, b = sorted(group["loops"], key=lambda i: -len(paths[i]))
+    pa, pb = paths[a], paths[b]
+    shared = set(pa) & set(pb)
+    els = {e["id"]: e for e in cld["elements"]}
+    half = {i: ((x1 - x0) / 2, (y1 - y0) / 2) for i, (x0, y0, x1, y1, _) in
+            boxes({"elements": [dict(els[i], x=0, y=0) for i in set(pa) | set(pb)]}).items()}
+    gap = lambda i, j, at: max(abs(at[i][0] - at[j][0]) - half[i][0] - half[j][0], abs(at[i][1] - at[j][1]) - half[i][1] - half[j][1])
+    apart = lambda at, xs, ys: all(gap(i, j, at) >= OVAL_GAP for i in xs for j in ys if i != j)
+    to_box = lambda m, i, at: hypot(max(abs(m[0] - at[i][0]) - half[i][0], 0), max(abs(m[1] - at[i][1]) - half[i][1], 0))
+
+    if len(shared) == 1:
+        (s,) = shared
+        # where the shared element sits on each oval: the first's right or bottom, the second's left or top
+        sides = {a: pi / 2 if stacked else 0, b: -pi / 2 if stacked else pi}
+
+        def ring(name, ry):
+            """{id: (x, y)}, the centre and the angle of each element: name's oval through s at its side."""
+            p, t = paths[name], sides[name]
+            rx, k0 = OVAL_ASPECT * ry, p.index(s)
+            centre = (-rx * cos(t), -ry * sin(t))
+            ang = {x: t + 2 * pi * ((k - k0) % len(p)) / len(p) for k, x in enumerate(p)}
+            return {x: (centre[0] + rx * cos(u), centre[1] + ry * sin(u)) for x, u in ang.items()}, centre, ang, rx
+
+        size = {}
+        for name in (a, b):
+            ry = 100
+            while True:
+                at, centre, _, _ = ring(name, ry)
+                if apart(at, paths[name], paths[name]) and all(to_box(centre, i, at) >= AREA_MARK_BOX for i in paths[name]):
+                    break
+                ry += 10
+            size[name] = ry
+        while not apart({**ring(a, size[a])[0], **{k: v for k, v in ring(b, size[b])[0].items() if k != s}}, pa, pb):
+            size[b] += 10
+        places, bends, marks = {}, {}, {}
+        for name in (a, b):
+            at, centre, ang, rx = ring(name, size[name])
+            ry, p = size[name], paths[name]
+            places.update(at)
+            marks[name] = centre
+            for x, y in zip(p, p[1:] + p[:1]):
+                u = ang[x] + pi / len(p)
+                bends[f"{x} -> {y}"] = bend_through(at[x], at[y], (centre[0] + rx * cos(u), centre[1] + ry * sin(u)))
+    else:
+        # the chain: the shared run, the same in both loops; then each loop's own elements, from
+        # the chain's end back to its start
+        k = next((i for i in range(len(pa)) if pa[i] in shared and pa[i - 1] not in shared), None)
+        if k is None:
+            return None
+        pa = pa[k:] + pa[:k]
+        chain = pa[:len(shared)]
+        if set(chain) != shared or chain[0] not in pb:
+            return None
+        k = pb.index(chain[0])
+        pb = pb[k:] + pb[:k]
+        if pb[:len(chain)] != chain:
+            return None
+        own = {a: pa[len(chain):], b: pb[len(chain):]}
+        n = len(chain) - 1
+
+        def lay(between):
+            """The layout with `between` from each of the wall's boxes to the next, or None where no
+            bulge fits: an even gap reads evenly where the boxes differ in size, as a label of three
+            lines beside one of one."""
+            along = [2 * half[x][0 if stacked else 1] for x in chain]
+            spots = [0.0]
+            for i in range(n):
+                spots.append(spots[-1] + along[i] / 2 + between + along[i + 1] / 2)
+            length = spots[-1]
+            j1, j2 = ((-length / 2, 0), (length / 2, 0)) if stacked else ((0, -length / 2), (0, length / 2))
+            wall = arc_at(j1, j2, 0)
+            at = {x: wall(t / length) for x, t in zip(chain, spots)}
+            if not apart(at, chain, chain):
+                return None
+            arcs, marks = {"wall": wall}, {}
+            for name, sign in ((a, -1), (b, 1)):  # the larger loop right of the chain's run: clockwise
+                for bulge in range(40, 3200, 10):
+                    arc = arc_at(j2, j1, -sign * bulge)
+                    mine = {x: arc((i + 1) / (len(own[name]) + 1)) for i, x in enumerate(own[name])}
+                    here = {**at, **mine}
+                    if not apart(here, own[name], own[name] + chain):
+                        continue
+                    edge = [wall(t / 40) for t in range(41)] + [arc(t / 40) for t in range(1, 40)]
+                    m = area_centre(edge)
+                    if (in_polygon(m, edge) and all(to_box(m, i, here) >= AREA_MARK_BOX for i in here)
+                            and all(hypot(m[0] - q[0], m[1] - q[1]) >= AREA_MARK_LINK for q in edge)):
+                        at, arcs[name], marks[name] = here, arc, m
+                        break
+                else:
+                    return None
+            return (at, arcs, marks) if apart(at, own[a], own[b]) else None
+
+        runs = {name: [chain[-1], *own[name], chain[0]] for name in (a, b)}
+
+        def cost(found):
+            at = found[0]
+            xs = [at[i][0] + d * half[i][0] for i in at for d in (-1, 1)]
+            ys = [at[i][1] + d * half[i][1] for i in at for d in (-1, 1)]
+            lengths = [hypot(at[x][0] - at[y][0], at[x][1] - at[y][1]) for seq in [chain, *runs.values()] for x, y in zip(seq, seq[1:])]
+            return (max(xs) - min(xs)) * (max(ys) - min(ys)) * max(lengths) / min(lengths)
+
+        found = [f for f in (lay(between) for between in range(OVAL_GAP, 2001, 10)) if f]
+        if not found:
+            return None
+        at, arcs, marks = min(found, key=cost)
+        bends = {f"{x} -> {y}": 0 for x, y in zip(chain, chain[1:])}  # the wall is straight
+        for name, seq in runs.items():
+            m = len(seq) - 1
+            bends.update({f"{x} -> {y}": bend_through(at[x], at[y], arcs[name]((i + 0.5) / m)) for i, (x, y) in enumerate(zip(seq, seq[1:]))})
+        places = at
+    return ({i: [round(x), round(y)] for i, (x, y) in places.items()}, bends,
+            {i: [round(x), round(y)] for i, (x, y) in marks.items()})
 
 
 # The report sets combined loops side by side as panels of one size with one text size (Jordy,
@@ -856,19 +1147,24 @@ def meet(p, q, r, s):
     return turn(p, q, r) * turn(p, q, s) < 0 and turn(r, s, p) * turn(r, s, q) < 0
 
 
-def tangles(cld):
+def tangles(cld, pieces=None):
     """(crossings, through): the points where two links cross, as pairs of links, and each link
     that passes through a box it does not connect, which reads as if that element mediates it, as
     (link, element); build.py's report counts both, the eye's measure of a layout. Each link is
-    sampled at 30 points and tested segment by segment, a pair of links only where their frames meet."""
+    sampled at 30 points, or 10 per piece where `pieces` gives each link's ({(from, to): [(p0,
+    ctrl, p2), ...]}, group_tangles()), and tested segment by segment, a pair of links only where
+    their frames meet."""
     bxs = boxes(cld)
-    pts = {k: [bezier(*p, i / 30) for i in range(31)] for k, p in link_paths(cld, bxs).items()}
+    if pieces is None:
+        pts = {k: [bezier(*p, i / 30) for i in range(31)] for k, p in link_paths(cld, bxs).items()}
+    else:
+        pts = {k: [ps[0][0]] + [bezier(*p, i / 10) for p in ps for i in range(1, 11)] for k, ps in pieces.items()}
     frame = {k: (min(x for x, _ in p), min(y for _, y in p), max(x for x, _ in p), max(y for _, y in p))
              for k, p in pts.items()}
     apart = lambda f, g: f[2] < g[0] or g[2] < f[0] or f[3] < g[1] or g[3] < f[1]
     keys = list(pts)
     crossings = [(a, b) for i, a in enumerate(keys) for b in keys[i + 1:] if not apart(frame[a], frame[b])
-                 for u in range(30) for v in range(30) if meet(pts[a][u], pts[a][u + 1], pts[b][v], pts[b][v + 1])]
+                 for u in range(len(pts[a]) - 1) for v in range(len(pts[b]) - 1) if meet(pts[a][u], pts[a][u + 1], pts[b][v], pts[b][v + 1])]
 
     def cuts(p, q, box):
         """Whether the segment p-q enters box: an end inside it, or a crossing with one of its sides."""
@@ -877,7 +1173,7 @@ def tangles(cld):
         return (inside(p, box) or inside(q, box)
                 or any(meet(p, q, corners[k], corners[(k + 1) % 4]) for k in range(4)))
     through = [(k, e) for k in keys for e, b in bxs.items() if e not in k and not apart(frame[k], b)
-               and any(cuts(pts[k][u], pts[k][u + 1], b) for u in range(30))]
+               and any(cuts(pts[k][u], pts[k][u + 1], b) for u in range(len(pts[k]) - 1))]
     return crossings, through
 
 

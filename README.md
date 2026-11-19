@@ -283,7 +283,19 @@ Combined loops sheet and a Kumu map of its own show each group. `places` (`{"ele
 `docs/figures/combined-loops/<id>.svg`: its own, never the full drawing's, on the same axes and signs as `x`, `y` and
 `curvature`. Each must hold exactly the group's elements, links and loops, so `build.py` stops when a
 loop's path changes, and it warns of a crossing or a link through a box in a figure; `--check` names a
-stale or orphaned one. `docs/figures/report-panels/<id>.svg` draws it again as the report's panel:
+stale or orphaned one. Each loop is its own area, never one inside another (Jordy's decision: a loop
+drawn inside another puts the outer loop's mark inside the inner one), and `build.py` warns of a mark
+outside its own loop's area or inside another's. `python3 build.py --group-layout C2 C5` lays out a
+group of two loops anew (`draw_cld.group_layout()`) and writes it into the group: two loops sharing
+one element as two ovals touching at it, two sharing a chain as two areas side by side, the chain
+on a straight wall between them with an even gap between its boxes, the loop on the wall's far
+side running anticlockwise; the boxes evenly along each arc, each mark at its area's centre, turning
+the way its loop runs, and the two areas stacked or side by side, whichever frame is nearer a
+square (Jordy, chosen between rendered versions of C2, C3, C5 and C7). Jordy's hand in Kumu then
+adjusts it as any group's (Kumu, below). The figure draws each link as Kumu does, a circular arc
+from box centre to box centre (`draw_cld.group_pieces()`), so it shows what Kumu's map shows (Jordy,
+chosen between rendered versions; rejected: the full drawing's curve between ends spread along the
+box edges, which drew C5's one long link lopsided). `docs/figures/report-panels/<id>.svg` draws it again as the report's panel:
 its places spread over one shared frame (`draw_cld.PANEL_FRAME`), every panel in one size, so panels
 set side by side print with one text size (Jordy, chosen between rendered versions); `build.py` warns
 of a crossing there too. `model/cld-texts.md`'s `{combined loops list}` shows each group's description, so the

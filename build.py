@@ -7,6 +7,8 @@
                                       # Actor Map's into actor-map.json, then build
     python3 build.py --kumu FILE      # write the places and bends Jordy set in Kumu (FILE, the
                                       # project's JSON export) into the model, then build
+    python3 build.py --group-layout C2 C3  # lay out these combined loops anew, each loop its own
+                                      # area (draw_cld.group_layout()), into cld.json, then build
     python3 -m doctest build.py       # the tests written in its docstrings (bows_alike())
 
 Sources, edited by hand: in model/, cld.json (elements, connections, named loops, layout and
@@ -646,12 +648,14 @@ def check(cld, refs, actors):
         warnings += [f"{c['from']} -> {c['to']}: a delay, yet its description gives no duration"
                      for c in cld["connections"] if c["delay"] and not any(ch.isdigit() for ch in c["description"])]
         for group in cld.get("groups", []):
-            crossings, through = draw_cld.tangles(draw_cld.group_cld(cld, group))
+            crossings, through = draw_cld.group_tangles(cld, group)
             if crossings or through:
                 warnings.append(f"group {group['id']}: its figure has {len(crossings)} crossings and {len(through)} links through a box")
-            crossings, through = draw_cld.tangles(draw_cld.group_cld(cld, draw_cld.spread_group(group)))
+            crossings, through = draw_cld.group_tangles(cld, draw_cld.spread_group(group))
             if crossings or through:
                 warnings.append(f"group {group['id']}: its report panel has {len(crossings)} crossings and {len(through)} links through a box")
+            # each loop its own area, its mark at its centre (cld-drawing.md)
+            warnings += draw_cld.marks_astray(cld, group)
         # The CLD describes mechanisms and is shaped for no lever set, so no element, link or loop names one.
         warnings += [f"{item.get('id') or item['from'] + ' -> ' + item['to']}: names a policy lever"
                      for item in cld["elements"] + cld["connections"] + cld["loops"] + cld.get("groups", [])
@@ -1276,9 +1280,29 @@ def apply_kumu(path):
                   + ", ".join([f"{i} moved" for i in moved] + [f"{k} bent" for k in bent]))
 
 
+def apply_group_layout(ids):
+    """Write draw_cld.group_layout()'s places, bends and marks into each group named in ids, in the
+    order cld.json already holds them, so a diff shows only what moved; Jordy's hand in Kumu then
+    adjusts them as any group's (apply_kumu())."""
+    cld = json.loads(CLD.read_text())
+    groups = {g["id"]: g for g in cld.get("groups", [])}
+    for i in ids:
+        if i not in groups:
+            sys.exit(f"--group-layout: no group {i} in cld.json")
+        g = groups[i]
+        lay = draw_cld.group_layout(cld, g)
+        if lay is None:
+            sys.exit(f"--group-layout: group {i} is not two loops sharing one element or one chain, "
+                     "the groups draw_cld.group_layout() lays out")
+        for field, new in zip(("places", "bends", "marks"), lay):
+            g[field] = {k: new[k] for k in g[field]} if set(g[field]) == set(new) else new
+    CLD.write_text(json.dumps(cld, indent=2, ensure_ascii=False) + "\n")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--check", action="store_true", help="fail if docs/ is out of date")
+    parser.add_argument("--group-layout", nargs="+", metavar="ID", help="lay out these combined loops anew, each loop its own area (draw_cld.group_layout()), into cld.json, then build")
     parser.add_argument("--kumu", metavar="FILE", help="write the places and bends set by hand in Kumu, from its JSON export FILE, into cld.json and actor-map.json, then build")
     parser.add_argument("--layout", metavar="FILE", help="write the x, y and curvatures of FILE (layout.json from a page) into cld.json, or the Actor Map's into actor-map.json, then build")
     args = parser.parse_args()
@@ -1287,6 +1311,8 @@ def main():
         apply_layout(Path(args.layout))
     if args.kumu:
         apply_kumu(Path(args.kumu))
+    if args.group_layout:
+        apply_group_layout(args.group_layout)
     cld = json.loads(CLD.read_text())
     refs, ref_errors = references()
     actors = json.loads(ACTORS.read_text())

@@ -69,12 +69,13 @@ def geometry(actors):
 
 
 def tangles(actors):
-    """(crossings, through), as draw_cld.tangles() counts them for the CLD: pairs of relations that
-    cross, as (n, n), and each relation that passes through a box it does not connect, as (n, id)."""
-    bxs, rels, paths = geometry(actors)
-    pts = {n: [draw_cld.bezier(*p, i / 30) for i in range(31)] for n, p in paths.items()}
+    """(crossings, through), as draw_cld.tangles() counts them for the CLD, each relation as Kumu
+    draws it (draw_cld.group_pieces()): pairs of relations that cross, as (n, n), and each relation
+    that passes through a box it does not connect, as (n, id)."""
+    bxs, rels, _ = geometry(actors)
+    pts = draw_cld.kumu_points(draw_cld.group_pieces({"connections": rels}, bxs, key=lambda c: c["n"]))
     crossings = [(a["n"], b["n"]) for i, a in enumerate(rels) for b in rels[i + 1:]
-                 for u in range(30) for v in range(30)
+                 for u in range(len(pts[a["n"]]) - 1) for v in range(len(pts[b["n"]]) - 1)
                  if draw_cld.meet(pts[a["n"]][u], pts[a["n"]][u + 1], pts[b["n"]][v], pts[b["n"]][v + 1])]
 
     def cuts(p, q, box):
@@ -82,7 +83,7 @@ def tangles(actors):
         c = [(x0, y0), (x1, y0), (x1, y1), (x0, y1)]
         return draw_cld.inside(p, box) or draw_cld.inside(q, box) or any(draw_cld.meet(p, q, c[k], c[(k + 1) % 4]) for k in range(4))
     through = [(r["n"], e) for r in rels for e, b in bxs.items() if e not in (r["from"], r["to"])
-               and any(cuts(pts[r["n"]][u], pts[r["n"]][u + 1], b) for u in range(30))]
+               and any(cuts(pts[r["n"]][u], pts[r["n"]][u + 1], b) for u in range(len(pts[r["n"]]) - 1))]
     return crossings, through
 
 

@@ -895,18 +895,18 @@ def kumu_pieces(a, b, k, box_a, box_b):
     return [(at(t0 + 2 * h * i), at(t0 + 2 * h * i + h, r / cos(h)), at(t0 + 2 * h * (i + 1))) for i in range(m)]
 
 
-def group_pieces(sub, bxs):
-    """{(from, to): pieces}: each link of a group's own drawing (group_cld()) as Kumu draws it
-    (kumu_pieces()), so the page's figure of a combined loop shows what Kumu's map of it shows."""
+def group_pieces(sub, bxs, key=lambda c: (c["from"], c["to"])):
+    """{key: pieces}: each link of a drawing as Kumu draws it (kumu_pieces()), so the page's
+    figure of a combined loop (group_cld()) shows what Kumu's map of it shows, and tangles() and
+    draw_actor_map.tangles() measure the full CLD and the Actor Map as Kumu draws them."""
     centre = lambda i: ((bxs[i][0] + bxs[i][2]) / 2, (bxs[i][1] + bxs[i][3]) / 2)
-    return {(c["from"], c["to"]): kumu_pieces(centre(c["from"]), centre(c["to"]), c["curvature"], bxs[c["from"]], bxs[c["to"]])
+    return {key(c): kumu_pieces(centre(c["from"]), centre(c["to"]), c["curvature"], bxs[c["from"]], bxs[c["to"]])
             for c in sub["connections"]}
 
 
 def group_tangles(cld, group):
     """tangles() of the group's figure, its links as group_figure() and Kumu draw them."""
-    sub = group_cld(cld, group)
-    return tangles(sub, group_pieces(sub, boxes(sub)))
+    return tangles(group_cld(cld, group))
 
 
 def group_figure(cld, group, vb=None):
@@ -1977,18 +1977,21 @@ def meet(p, q, r, s):
     return turn(p, q, r) * turn(p, q, s) < 0 and turn(r, s, p) * turn(r, s, q) < 0
 
 
-def tangles(cld, pieces=None):
+def kumu_points(pieces):
+    """{key: points}: each link of group_pieces() sampled at 10 points per piece, for tangles()."""
+    return {k: [ps[0][0]] + [bezier(*p, i / 10) for p in ps for i in range(1, 11)] for k, ps in pieces.items()}
+
+
+def tangles(cld):
     """(crossings, through): the points where two links cross, as pairs of links, and each link
     that passes through a box it does not connect, which reads as if that element mediates it, as
     (link, element); build.py's report counts both, the eye's measure of a layout. Each link is
-    sampled at 30 points, or 10 per piece where `pieces` gives each link's ({(from, to): [(p0,
-    ctrl, p2), ...]}, group_tangles()), and tested segment by segment, a pair of links only where
-    their frames meet."""
+    measured as Kumu draws it, from box centre to box centre (group_pieces()), never as the page's
+    curve between ends spread along the box edges (link_paths()), which can pass a box Kumu's arc
+    clears (cld-drawing.md); sampled at 10 points per piece and tested segment by segment, a pair
+    of links only where their frames meet."""
     bxs = boxes(cld)
-    if pieces is None:
-        pts = {k: [bezier(*p, i / 30) for i in range(31)] for k, p in link_paths(cld, bxs).items()}
-    else:
-        pts = {k: [ps[0][0]] + [bezier(*p, i / 10) for p in ps for i in range(1, 11)] for k, ps in pieces.items()}
+    pts = kumu_points(group_pieces(cld, bxs))
     frame = {k: (min(x for x, _ in p), min(y for _, y in p), max(x for x, _ in p), max(y for _, y in p))
              for k, p in pts.items()}
     apart = lambda f, g: f[2] < g[0] or g[2] < f[0] or f[3] < g[1] or g[3] < f[1]

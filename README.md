@@ -127,7 +127,8 @@ builds and pushes, so nobody else needs git or Python.
    APA reference needs, a link marked a hypothesis that has
    sources, a named loop that is not closed or whose
    R/B does not match its polarities, a feedback loop with no stock) and prints the source coverage, hypotheses apart, the layout's
-   crossings between links and links through a box they do not connect, and any warnings: a model
+   crossings between links and links through a box they do not connect, each link measured as Kumu draws it,
+   from box centre to box centre (`draw_cld.group_pieces()`), on the CLD and the Actor Map alike, and any warnings: a model
    text still empty, an element without links, two boxes that overlap, a link and its reverse
    drawn on one curve, an element on the wrong side of the border between the two subsystems,
    a named loop whose own links cross, a link under a region's name, a loop's figure with no

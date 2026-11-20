@@ -1,170 +1,160 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2099 -969 4183 1921" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1441 -1219 2868 2421" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
 <defs>
 <marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
 <marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
 <marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
 </defs>
-<rect x="-2099" y="-969" width="4183" height="1921" fill="white"/>
+<rect x="-1441" y="-1219" width="2868" height="2421" fill="white"/>
 <g class="links">
-<g class="link" data-from="root-zone-salinity" data-to="soil-structure-usability" data-sign="-" data-delay="true" data-curvature="-0.453">
-<path class="link-path" d="M -352.6 -103.9 Q -314.0 -176.7 -330.0 -257.4 Q -346.0 -338.2 -409.4 -390.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-374.4" y="-355.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-<path class="delay-cut" d="M -352.1 -245.7 L -305.1 -255.1 M -355.3 -261.3 L -308.2 -270.8" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -352.1 -245.7 L -305.1 -255.1 M -355.3 -261.3 L -308.2 -270.8" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="root-zone-salinity" data-to="soil-structure-usability" data-sign="-" data-delay="true" data-curvature="-0.491">
+<path class="link-path" d="M -404.1 -143.4 Q -414.2 -210.0 -459.4 -259.9 Q -504.7 -309.8 -570.0 -326.2" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-523.1" y="-308.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M -471.8 -237.8 L -436.3 -270.1 M -482.6 -249.7 L -447.1 -282.0" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -471.8 -237.8 L -436.3 -270.1 M -482.6 -249.7 L -447.1 -282.0" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="soil-structure-usability" data-to="freshwater-lens-recharge" data-sign="+" data-delay="false" data-curvature="-0.326">
-<path class="link-path" d="M -500.7 -442.7 Q -578.6 -474.4 -662.7 -471.6 Q -746.7 -468.8 -822.4 -432.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-776.1" y="-451.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-</g>
-<g class="link" data-from="freshwater-lens-recharge" data-to="freshwater-lens-thickness" data-sign="+" data-delay="true" data-curvature="-0.526">
-<path class="link-path" d="M -963.4 -312.1 Q -1000.7 -249.6 -996.1 -177.0 Q -991.5 -104.4 -946.6 -47.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-973.3" y="-89.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M -972.6 -185.9 L -1020.5 -182.7 M -971.6 -169.9 L -1019.5 -166.7" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -972.6 -185.9 L -1020.5 -182.7 M -971.6 -169.9 L -1019.5 -166.7" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="soil-structure-usability" data-to="freshwater-lens-thickness" data-sign="+" data-delay="true" data-curvature="-0.513">
+<path class="link-path" d="M -784.4 -297.8 Q -843.5 -266.4 -875.5 -207.5 Q -907.5 -148.7 -901.8 -81.9" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-900.6" y="-131.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -850.6 -203.1 L -892.8 -226.0 M -858.3 -189.0 L -900.4 -212.0" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -850.6 -203.1 L -892.8 -226.0 M -858.3 -189.0 L -900.4 -212.0" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="0.109">
-<path class="link-path" d="M -714.2 -41.4 Q -616.6 -66.4 -516.2 -74.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-566.0" y="-69.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M -725.7 -78.7 Q -638.8 -101.9 -549.3 -111.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-598.9" y="-105.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="harvest-lost-to-salt" data-to="tolerant-varieties-adoption" data-sign="+" data-delay="false" data-curvature="-0.543">
-<path class="link-path" d="M 133.9 -27.8 Q 219.2 -101.4 253.8 -208.7 Q 288.3 -316.0 262.0 -425.5 Q 235.7 -535.1 156.2 -615.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="189.3" y="-577.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<g class="link" data-from="harvest-lost-to-salt" data-to="tolerant-varieties-adoption" data-sign="+" data-delay="false" data-curvature="-0.595">
+<path class="link-path" d="M 108.3 -63.4 Q 205.2 -115.5 257.7 -212.2 Q 310.3 -308.8 301.3 -418.5 Q 292.3 -528.2 224.6 -615.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="252.8" y="-573.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="tolerant-varieties-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.543">
-<path class="link-path" d="M 11.5 -615.0 Q -64.6 -531.2 -85.7 -420.1 Q -106.9 -308.9 -66.9 -203.1 Q -26.9 -97.2 62.5 -27.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="24.9" y="-60.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<g class="link" data-from="tolerant-varieties-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.595">
+<path class="link-path" d="M 55.3 -617.0 Q -30.1 -551.6 -66.9 -450.5 Q -103.8 -349.5 -80.6 -244.5 Q -57.4 -139.5 18.6 -63.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-14.4" y="-100.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="harvest-lost-to-salt" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="true" data-curvature="-0.161">
-<path class="link-path" d="M 195.5 24.2 Q 603.8 122.9 1010.3 17.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="961.7" y="28.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M 595.1 47.8 L 595.5 95.8 M 611.1 47.7 L 611.5 95.7" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 595.1 47.8 L 595.5 95.8 M 611.1 47.7 L 611.5 95.7" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="harvest-lost-to-salt" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="true" data-curvature="-0.147">
+<path class="link-path" d="M 143.1 -11.4 Q 567.6 92.3 995.0 1.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="946.0" y="11.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 560.7 19.6 L 560.0 67.6 M 576.7 19.8 L 576.0 67.8" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 560.7 19.6 L 560.0 67.6 M 576.7 19.8 L 576.0 67.8" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.161">
-<path class="link-path" d="M 995.0 -65.3 Q 582.5 -149.2 179.5 -27.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="227.5" y="-41.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.147">
+<path class="link-path" d="M 995.0 -77.6 Q 567.1 -167.8 142.5 -63.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="191.2" y="-74.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="root-zone-salinity" data-to="harvest-lost-to-salt" data-sign="+" data-delay="false" data-curvature="0.1">
-<path class="link-path" d="M -221.1 -74.5 Q -96.4 -63.9 23.5 -27.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-24.7" y="-41.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -254.1 -111.3 Q -137.4 -99.0 -25.6 -63.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-73.5" y="-77.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="harvest-lost-to-salt" data-to="farm-revenue" data-sign="-" data-delay="false" data-curvature="0.166">
-<path class="link-path" d="M 171.8 24.2 Q 284.3 74.5 363.5 169.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="329.7" y="132.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M 111.1 -11.4 Q 224.2 43.7 300.4 143.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="268.4" y="105.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="true" data-curvature="0.327">
-<path class="link-path" d="M 395.7 221.0 Q 415.5 272.9 410.3 328.2 Q 405.2 383.4 376.1 430.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="397.7" y="385.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M 434.9 323.0 L 387.1 318.5 M 433.4 339.0 L 385.6 334.4" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 434.9 323.0 L 387.1 318.5 M 433.4 339.0 L 385.6 334.4" stroke="#444444" stroke-width="5" fill="none"/>
+<path class="link-path" d="M 331.3 195.8 Q 353.5 251.0 348.5 310.2 Q 343.6 369.5 312.5 420.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="334.3" y="375.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 373.1 304.9 L 325.2 300.8 M 371.7 320.9 L 323.9 316.8" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 373.1 304.9 L 325.2 300.8 M 371.7 320.9 L 323.9 316.8" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="agricultural-land-value" data-to="farmland-leaving-arable-use" data-sign="+" data-delay="true" data-curvature="0.152">
-<path class="link-path" d="M 291.2 516.8 Q 200.8 585.8 93.8 624.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="140.2" y="605.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M 215.2 595.5 L 192.2 553.3 M 201.1 603.1 L 178.1 561.0" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 215.2 595.5 L 192.2 553.3 M 201.1 603.1 L 178.1 561.0" stroke="#444444" stroke-width="5" fill="none"/>
+<path class="link-path" d="M 231.9 506.2 Q 147.9 575.8 47.0 617.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="92.6" y="596.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 162.9 585.2 L 138.1 544.1 M 149.2 593.5 L 124.4 552.4" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 162.9 585.2 L 138.1 544.1 M 149.2 593.5 L 124.4 552.4" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="farmland-leaving-arable-use" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="true" data-curvature="0.103">
-<path class="link-path" d="M -201.3 687.2 Q -315.0 700.9 -429.3 695.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-379.3" y="696.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-<path class="delay-cut" d="M -306.3 719.8 L -308.0 671.8 M -322.3 720.4 L -324.0 672.4" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -306.3 719.8 L -308.0 671.8 M -322.3 720.4 L -324.0 672.4" stroke="#444444" stroke-width="5" fill="none"/>
+<path class="link-path" d="M -247.7 686.5 Q -349.7 698.5 -452.3 694.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-402.3" y="695.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M -338.3 718.0 L -340.3 670.1 M -354.3 718.7 L -356.2 670.7" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -338.3 718.0 L -340.3 670.1 M -354.3 718.7 L -356.2 670.7" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="0.131">
-<path class="link-path" d="M -783.8 639.2 Q -893.2 604.9 -990.1 543.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-947.1" y="569.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-<path class="delay-cut" d="M -892.9 623.3 L -872.7 579.8 M -907.4 616.6 L -887.3 573.0" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -892.9 623.3 L -872.7 579.8 M -907.4 616.6 L -887.3 573.0" stroke="#444444" stroke-width="5" fill="none"/>
+<path class="link-path" d="M -806.8 632.5 Q -908.5 596.1 -997.9 535.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-955.7" y="562.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M -909.1 615.0 L -887.4 572.2 M -923.4 607.8 L -901.7 565.0" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -909.1 615.0 L -887.4 572.2 M -923.4 607.8 L -901.7 565.0" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="polder-drainage-depth" data-to="saline-seepage-kwel" data-sign="+" data-delay="false" data-curvature="0.279">
-<path class="link-path" d="M -1062.3 491.7 Q -1105.2 452.6 -1128.5 399.5 Q -1151.8 346.3 -1151.4 288.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-1147.2" y="338.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -1065.5 483.4 Q -1109.6 441.2 -1132.3 384.4 Q -1155.1 327.7 -1152.4 266.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-1150.2" y="316.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="saline-seepage-kwel" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="0.227">
-<path class="link-path" d="M -1138.5 236.3 Q -1090.2 136.6 -999.6 72.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-1038.8" y="103.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-<path class="delay-cut" d="M -1103.1 136.2 L -1066.5 167.2 M -1092.7 124.0 L -1056.1 155.0" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -1103.1 136.2 L -1066.5 167.2 M -1092.7 124.0 L -1056.1 155.0" stroke="#444444" stroke-width="5" fill="none"/>
+<path class="link-path" d="M -1139.9 214.7 Q -1094.3 107.5 -1000.8 38.1" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-1039.2" y="70.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M -1106.1 108.4 L -1068.4 138.1 M -1096.2 95.8 L -1058.5 125.5" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -1106.1 108.4 L -1068.4 138.1 M -1096.2 95.8 L -1058.5 125.5" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 </g>
 <g class="elements">
 <g class="element" data-id="root-zone-salinity" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-516.2" y="-103.9" width="295.1" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="-368.7" y="-69.4" text-anchor="middle">Root zone salinity</text>
+<rect x="-549.3" y="-143.4" width="295.1" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="-401.7" y="-108.9" text-anchor="middle">Root zone salinity</text>
 </g>
 <g class="element" data-id="harvest-lost-to-salt" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-62.1" y="-27.8" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="100.3" y="6.7" text-anchor="middle">Harvest lost to salt</text>
+<rect x="-115.0" y="-63.4" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="47.4" y="-28.9" text-anchor="middle">Harvest lost to salt</text>
 </g>
 <g class="element" data-id="farm-revenue" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="288.3" y="169.0" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="383.9" y="203.5" text-anchor="middle">Farm income</text>
+<rect x="223.4" y="143.8" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="319.0" y="178.3" text-anchor="middle">Farm income</text>
 </g>
 <g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="202.3" y="430.8" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="342.4" y="465.3" text-anchor="middle">Agricultural land</text>
-<text x="342.4" y="499.3" text-anchor="middle">value</text>
+<rect x="139.2" y="420.2" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="279.3" y="454.7" text-anchor="middle">Agricultural land</text>
+<text x="279.3" y="488.7" text-anchor="middle">value</text>
 </g>
 <g class="element" data-id="farmland-leaving-arable-use" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-201.3" y="618.1" width="295.1" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-53.8" y="652.6" text-anchor="middle">Arable land in the</text>
-<text x="-53.8" y="686.6" text-anchor="middle">polders</text>
+<rect x="-247.7" y="617.4" width="295.1" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-100.1" y="651.9" text-anchor="middle">Arable land in the</text>
+<text x="-100.1" y="685.9" text-anchor="middle">polders</text>
 </g>
 <g class="element" data-id="plans-to-raise-ditch-levels" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-783.8" y="632.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-606.5" y="666.5" text-anchor="middle">Water board's plans to</text>
-<text x="-606.5" y="700.5" text-anchor="middle">raise ditch levels</text>
+<rect x="-806.8" y="632.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-629.5" y="666.5" text-anchor="middle">Water board's plans to</text>
+<text x="-629.5" y="700.5" text-anchor="middle">raise ditch levels</text>
 </g>
 <g class="element" data-id="polder-drainage-depth" data-domain="Technological" data-type="Stock" data-adaptive="false">
-<rect x="-1198.8" y="491.7" width="339.6" height="52.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
-<text x="-1028.9" y="526.2" text-anchor="middle">Polder drainage depth</text>
+<rect x="-1203.9" y="483.4" width="339.6" height="52.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="-1034.1" y="517.9" text-anchor="middle">Polder drainage depth</text>
 </g>
 <g class="element" data-id="saline-seepage-kwel" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-1319.8" y="236.3" width="339.6" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="-1150.0" y="270.8" text-anchor="middle">Saline seepage (kwel)</text>
+<rect x="-1319.8" y="214.7" width="339.6" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="-1150.0" y="249.2" text-anchor="middle">Saline seepage (kwel)</text>
 </g>
 <g class="element" data-id="freshwater-lens-thickness" data-domain="Ecological" data-type="Stock" data-adaptive="false">
-<rect x="-1039.0" y="-47.2" width="324.8" height="120.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="-876.6" y="-12.7" text-anchor="middle">Rainwater lens</text>
-<text x="-876.6" y="21.3" text-anchor="middle">thickness in the low</text>
-<text x="-876.6" y="55.3" text-anchor="middle">polders</text>
+<rect x="-1050.5" y="-81.9" width="324.8" height="120.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="-888.1" y="-47.4" text-anchor="middle">Rainwater lens</text>
+<text x="-888.1" y="-13.4" text-anchor="middle">thickness in the low</text>
+<text x="-888.1" y="20.6" text-anchor="middle">polders</text>
 </g>
 <g class="element" data-id="soil-structure-usability" data-domain="Ecological" data-type="Stock" data-adaptive="false">
-<rect x="-566.1" y="-442.7" width="235.8" height="52.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="-448.2" y="-408.2" text-anchor="middle">Soil structure</text>
-</g>
-<g class="element" data-id="freshwater-lens-recharge" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-1067.1" y="-432.1" width="310.0" height="120.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="-912.1" y="-397.6" text-anchor="middle">Rainwater lens</text>
-<text x="-912.1" y="-363.6" text-anchor="middle">recharge in the low</text>
-<text x="-912.1" y="-329.6" text-anchor="middle">polders</text>
+<rect x="-805.8" y="-349.8" width="235.8" height="52.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="-687.9" y="-315.3" text-anchor="middle">Soil structure</text>
 </g>
 <g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Stock" data-adaptive="true">
-<rect x="995.0" y="-69.0" width="310.0" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
-<text x="1150.0" y="-34.5" text-anchor="middle">Adoption of new</text>
-<text x="1150.0" y="-0.5" text-anchor="middle">salt-tolerant crops</text>
+<rect x="995.0" y="-81.1" width="310.0" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<text x="1150.0" y="-46.6" text-anchor="middle">Adoption of new</text>
+<text x="1150.0" y="-12.6" text-anchor="middle">salt-tolerant crops</text>
 </g>
 <g class="element" data-id="tolerant-varieties-adoption" data-domain="Technological" data-type="Stock" data-adaptive="true">
-<rect x="-30.5" y="-735.0" width="220.9" height="120.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
-<text x="80.0" y="-700.5" text-anchor="middle">Adoption of</text>
-<text x="80.0" y="-666.5" text-anchor="middle">salt-tolerant</text>
-<text x="80.0" y="-632.5" text-anchor="middle">varieties</text>
+<rect x="55.3" y="-735.0" width="220.9" height="120.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<text x="165.8" y="-700.5" text-anchor="middle">Adoption of</text>
+<text x="165.8" y="-666.5" text-anchor="middle">salt-tolerant</text>
+<text x="165.8" y="-632.5" text-anchor="middle">varieties</text>
 </g>
 </g>
 <g class="loop" data-id="R1">
-<path d="M -675.9 -303.7 A 48 48 0 1 0 -627.9 -255.7" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="-675.9" y="-255.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R1</text>
+<path d="M -674.9 -256.3 A 48 48 0 1 0 -626.9 -208.3" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="-674.9" y="-208.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R1</text>
 </g>
 <g class="loop" data-id="B1">
-<path d="M 90.2 -386.4 A 48 48 0 1 0 138.2 -338.4" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="90.2" y="-338.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B1</text>
+<path d="M 106.6 -404.2 A 48 48 0 1 0 154.6 -356.2" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="106.6" y="-356.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B1</text>
 </g>
 <g class="loop" data-id="B2">
-<path d="M 625.2 -62.3 A 48 48 0 1 0 673.2 -14.3" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="625.2" y="-14.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B2</text>
+<path d="M 598.7 -86.1 A 48 48 0 1 0 646.7 -38.1" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="598.7" y="-38.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B2</text>
 </g>
 <g class="loop" data-id="B3">
-<path d="M -368.7 259.7 A 48 48 0 1 1 -416.7 307.7" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="-368.7" y="307.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B3</text>
+<path d="M -401.7 240.4 A 48 48 0 1 1 -449.7 288.4" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="-401.7" y="288.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B3</text>
 </g>
 </svg>

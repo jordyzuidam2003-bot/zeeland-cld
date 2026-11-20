@@ -46,22 +46,6 @@
       "y": 32
     },
     {
-      "id": "freshwater-lens-recharge",
-      "label": "Rainwater lens recharge in the low polders",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Ecological",
-      "subsystem": "Water and soil",
-      "subquestion": "SQ1",
-      "description": "The rain that soaks in and refills the rainwater lenses of the low polders: mostly the winter's rain surplus, since in summer most of the rain evaporates (van Beekom et al., 1953a, p. 155, for the Netherlands). On Schouwen-Duiveland upward saline seepage keeps it within the clay and peat top layer of the low polders (de Louw et al., 2011, pp. 3662, 3674–3675), and tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (p. 3661); recharge, seepage and drainage depth together set the lens's thickness, by measurements on the island and a model built from them (pp. 3662, 3673–3675).",
-      "sources": [
-        "van-beekom-1953-salt",
-        "de-louw-2011"
-      ],
-      "x": -1593,
-      "y": 337
-    },
-    {
       "id": "freshwater-lens-thickness",
       "label": "Rainwater lens thickness in the low polders",
       "element type": "Stock",
@@ -69,7 +53,7 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "The thickness of the fresh rainwater lenses on top of the saline groundwater in the island's low polders, from the surface to the middle of the mixing zone between them: about 2 m on average in the low-lying polders with saline seepage, under 2 m over more than half of the 56 km² surveyed (de Louw et al., 2011, pp. 3667, 3672–3673, 3675, measured on the island from a helicopter and on the ground). These lenses keep salt out of the root zone and reach only the crop on their own field. A Stock: a year's recharge barely moves it (Rainwater lens recharge in the low polders → Rainwater lens thickness in the low polders).",
+      "description": "The thickness of the fresh rainwater lenses on top of the saline groundwater in the island's low polders, from the surface to the middle of the mixing zone between them: about 2 m on average in the low-lying polders with saline seepage, under 2 m over more than half of the 56 km² surveyed (de Louw et al., 2011, pp. 3667, 3672–3673, 3675, measured on the island from a helicopter and on the ground). These lenses keep salt out of the root zone and reach only the crop on their own field. A Stock: a year's recharge barely moves it (the links into it from Hotter, drier summers, Wetter winters, Soil structure and Winter rain drained away).",
       "sources": [
         "de-louw-2011"
       ],
@@ -1148,17 +1132,6 @@
   ],
   "connections": [
     {
-      "from": "hotter-drier-summers",
-      "to": "freshwater-lens-recharge",
-      "polarity": "-",
-      "delay": false,
-      "description": "Summers with less rain and more evaporation lower the year's rain surplus, which is what recharges the lens. In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation: in the year it used, summer evaporation (440 mm) outweighed summer rain (425 mm), so the winter did the recharging, and a smaller surplus gave a thinner lens (de Louw et al., 2011, pp. 3665, 3671, 3674). Within the year.",
-      "sources": [
-        "de-louw-2011"
-      ],
-      "curvature": 0.0
-    },
-    {
       "from": "sea-level-rise",
       "to": "saline-seepage-kwel",
       "polarity": "+",
@@ -1173,18 +1146,6 @@
     },
     {
       "from": "wetter-winters",
-      "to": "freshwater-lens-recharge",
-      "polarity": "+",
-      "delay": false,
-      "description": "More winter rain raises the winter's rain surplus, which recharges the lens. In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation, and from October to March of the year it used 397 mm of rain fell against 108 mm of evaporation (de Louw et al., 2011, p. 3665). Kaandorp et al. (2022, p. 11) expect the changing rain to raise the island's winter groundwater levels in part. Within the year.",
-      "sources": [
-        "de-louw-2011",
-        "kaandorp-2022"
-      ],
-      "curvature": 0.0
-    },
-    {
-      "from": "wetter-winters",
       "to": "winter-rain-drained-away",
       "polarity": "+",
       "delay": false,
@@ -1194,19 +1155,6 @@
         "kaandorp-2022"
       ],
       "curvature": 0.0
-    },
-    {
-      "from": "freshwater-lens-recharge",
-      "to": "freshwater-lens-thickness",
-      "polarity": "+",
-      "delay": true,
-      "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673). So a change in recharge takes years to show in the lens. The drains cap how much of a wetter winter reaches the lens: model calculations show that the extra winter water of wetter winters leaves through the intensive tile drainage and does not feed the lens, while higher summer evaporation shrinks it (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens).",
-      "sources": [
-        "de-louw-2011",
-        "de-louw-2015"
-      ],
-      "curvature": -0.39,
-      "delay at": 0.4
     },
     {
       "from": "freshwater-lens-thickness",
@@ -1296,20 +1244,6 @@
     },
     {
       "from": "soil-structure-usability",
-      "to": "freshwater-lens-recharge",
-      "polarity": "+",
-      "delay": false,
-      "description": "Rain recharges the lens only once it has soaked into the soil. Before the floods, Zeeland's well-drained clay let the winter's rain surplus soak through almost completely; once sodium had broken down the structure of the topsoil, it became impervious and sticky when wet, part of the rain ran off over the surface and pools stood on the land, the more so the heavier the clay (van Beekom et al., 1953a, p. 157; 1953b, pp. 230, 233, 236, measured in the flooded polders of Zeeland, by R1's own mechanism). Even so, in most of the well-drained soils at least 150 mm still seeped through in winter, and less in badly drained soils of low permeability, against a Dutch annual rain surplus of about 200 mm, most of it in winter (van Beekom et al., 1953a, pp. 155, 157). In model computations of wetter winters, the extra winter water drained off effectively through the intensive drainage without feeding the thin rain lenses of the saline seepage areas the authors studied in Zeeland, among them a tile-drained field on the island, so more rain soaking in may add little to the lens (de Louw et al., 2015, pp. 6, 11, 12, by authors who report on the GO-FRESH project, which developed a drainage system to grow the lens). Within the year: the structure a soil has in a winter sets how much of that winter's rain soaks in. How thick a lens the recharge builds is also set by the drainage depth and the seepage (de Louw et al., 2011, p. 3674).",
-      "sources": [
-        "van-beekom-1953-salt",
-        "van-beekom-1953",
-        "de-louw-2011",
-        "de-louw-2015"
-      ],
-      "curvature": -0.22
-    },
-    {
-      "from": "soil-structure-usability",
       "to": "crop-yield",
       "polarity": "+",
       "delay": false,
@@ -1382,17 +1316,6 @@
         "kaandorp-2022"
       ],
       "curvature": 0.22
-    },
-    {
-      "from": "winter-rain-drained-away",
-      "to": "freshwater-lens-recharge",
-      "polarity": "-",
-      "delay": false,
-      "description": "Rain the drains carry off does not refill the lens: tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (de Louw et al., 2011, p. 3661), and recharge, seepage and drainage depth together set the lens's thickness, by measurements on the island and a model built from them (pp. 3662, 3673–3675). In a conceptual 2-D model of a tile-drained field with saline seepage, built from field measurements in Zeeland and a 3-D model of a field on the island, how readily the drains run (a drainage resistance of 0.5 to 7.5 days) changed the lens's depth and width by less than 0.1 m; across the model's parameters the lens's depth moved more between the drains than at them, where the centre of the mixing zone stayed within 0.1 m of drain depth (de Louw et al., 2011, pp. 3662, 3664–3666, 3671). Within the year.",
-      "sources": [
-        "de-louw-2011"
-      ],
-      "curvature": -0.15
     },
     {
       "from": "crop-yield",
@@ -2768,6 +2691,63 @@
         "kamphorst-2025"
       ],
       "curvature": 0.1
+    },
+    {
+      "from": "hotter-drier-summers",
+      "to": "freshwater-lens-thickness",
+      "polarity": "-",
+      "delay": true,
+      "description": "Summers with less rain and more evaporation lower the year's rain surplus, which is what refills the lens, so the lens thins. The lens is refilled mostly by the winter's rain surplus, since in summer most of the rain evaporates (van Beekom et al., 1953a, p. 155, for the Netherlands). In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation: in the year it used, summer evaporation (440 mm) outweighed summer rain (425 mm), so the winter did the recharging, and a smaller surplus gave a thinner lens (de Louw et al., 2011, pp. 3665, 3671, 3674). Model calculations show that higher summer evaporation shrinks the lens (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens). Years, so a delay: the lens is a Stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673), so a change in recharge takes years to show in the lens.",
+      "simplification": "Folds Rainwater lens recharge in the low polders, the rain that soaks in and refills the lens, between the two: Hotter, drier summers moves the recharge (-), and the recharge builds the lens over years (+). The sign is the product of the two steps, so no loop through the link changes, and the lens's slowness, which sat on the recharge -> thickness link, is this link's delay. Recharge is no actor's decision: the decisions that reach it, the farmers' storage measures and the water board's ditch levels, act on Winter rain drained away, which stays drawn, so no decision leaves the drawing. Hotter, drier summers is a Constant, so no loop runs through this link.",
+      "sources": [
+        "de-louw-2011",
+        "de-louw-2015",
+        "van-beekom-1953-salt"
+      ],
+      "curvature": 0.0
+    },
+    {
+      "from": "wetter-winters",
+      "to": "freshwater-lens-thickness",
+      "polarity": "+",
+      "delay": true,
+      "description": "More winter rain raises the winter's rain surplus, which soaks in and refills the lens. In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation, and from October to March of the year it used 397 mm of rain fell against 108 mm of evaporation (de Louw et al., 2011, p. 3665). Kaandorp et al. (2022, p. 11) expect the changing rain to raise the island's winter groundwater levels in part. The drains cap how much of a wetter winter reaches the lens: model calculations show that the extra winter water of wetter winters leaves through the intensive tile drainage and does not feed the lens (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens); that part is drawn as Wetter winters -> Winter rain drained away. Years, so a delay: the lens is a Stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673), so a change in recharge takes years to show in the lens.",
+      "simplification": "Folds Rainwater lens recharge in the low polders, the rain that soaks in and refills the lens, between the two: Wetter winters moves the recharge (+), and the recharge builds the lens over years (+). The sign is the product of the two steps, so no loop through the link changes, and the lens's slowness, which sat on the recharge -> thickness link, is this link's delay. Recharge is no actor's decision: the decisions that reach it, the farmers' storage measures and the water board's ditch levels, act on Winter rain drained away, which stays drawn, so no decision leaves the drawing. Wetter winters is a Constant, so no loop runs through this link.",
+      "sources": [
+        "de-louw-2011",
+        "de-louw-2015",
+        "kaandorp-2022"
+      ],
+      "curvature": 0.0
+    },
+    {
+      "from": "soil-structure-usability",
+      "to": "freshwater-lens-thickness",
+      "polarity": "+",
+      "delay": true,
+      "description": "Rain refills the lens only once it has soaked into the soil. Before the floods, Zeeland's well-drained clay let the winter's rain surplus soak through almost completely; once sodium had broken down the structure of the topsoil, it became impervious and sticky when wet, part of the rain ran off over the surface and pools stood on the land, the more so the heavier the clay (van Beekom et al., 1953a, p. 157; 1953b, pp. 230, 233, 236, measured in the flooded polders of Zeeland, by R1's own mechanism). Even so, in most of the well-drained soils at least 150 mm still seeped through in winter, and less in badly drained soils of low permeability, against a Dutch annual rain surplus of about 200 mm, most of it in winter (van Beekom et al., 1953a, pp. 155, 157). In model computations of wetter winters, the extra winter water drained off effectively through the intensive drainage without feeding the thin rain lenses of the saline seepage areas the authors studied in Zeeland, among them a tile-drained field on the island, so more rain soaking in may add little to the lens (de Louw et al., 2015, pp. 6, 11, 12, by authors who report on the GO-FRESH project, which developed a drainage system to grow the lens). The structure a soil has in a winter sets how much of that winter's rain soaks in, within the year; the slowness sits in the lens. Years, so a delay: the lens is a Stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673), so a change in recharge takes years to show in the lens. How thick a lens the recharge builds is also set by the drainage depth and the seepage (de Louw et al., 2011, p. 3674).",
+      "simplification": "Folds Rainwater lens recharge in the low polders, the rain that soaks in and refills the lens, between the two: Soil structure moves the recharge (+), and the recharge builds the lens over years (+). The sign is the product of the two steps, so no loop through the link changes, and the lens's slowness, which sat on the recharge -> thickness link, is this link's delay. Recharge is no actor's decision: the decisions that reach it, the farmers' storage measures and the water board's ditch levels, act on Winter rain drained away, which stays drawn, so no decision leaves the drawing. R1 runs through it: Root zone salinity -(-, delay)-> Soil structure -(+, delay)-> Rainwater lens thickness -(-)-> Root zone salinity, two minus signs, reinforcing as before, and its mechanism, salty soil taking in less rain so the lens thins over years, is this link's description.",
+      "sources": [
+        "van-beekom-1953-salt",
+        "van-beekom-1953",
+        "de-louw-2011",
+        "de-louw-2015"
+      ],
+      "curvature": -0.1
+    },
+    {
+      "from": "winter-rain-drained-away",
+      "to": "freshwater-lens-thickness",
+      "polarity": "-",
+      "delay": true,
+      "description": "Rain the drains carry off does not refill the lens, so the lens thins: tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (de Louw et al., 2011, p. 3661). On Schouwen-Duiveland upward saline seepage keeps the recharge within the clay and peat top layer of the low polders (pp. 3662, 3674–3675), and recharge, seepage and drainage depth together set the lens's thickness, by measurements on the island and a model built from them (pp. 3662, 3673–3675). In a conceptual 2-D model of a tile-drained field with saline seepage, built from field measurements in Zeeland and a 3-D model of a field on the island, how readily the drains run (a drainage resistance of 0.5 to 7.5 days) changed the lens's depth and width by less than 0.1 m; across the model's parameters the lens's depth moved more between the drains than at them, where the centre of the mixing zone stayed within 0.1 m of drain depth (de Louw et al., 2011, pp. 3662, 3664–3666, 3671). The rain drained away follows each rain within the year; the slowness sits in the lens. Years, so a delay: the lens is a Stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673), so a change in recharge takes years to show in the lens. The drains cap how much of a wetter winter reaches the lens: model calculations show that the extra winter water of wetter winters leaves through the intensive tile drainage and does not feed the lens (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens).",
+      "simplification": "Folds Rainwater lens recharge in the low polders, the rain that soaks in and refills the lens, between the two: Winter rain drained away moves the recharge (-), and the recharge builds the lens over years (+). The sign is the product of the two steps, so no loop through the link changes, and the lens's slowness, which sat on the recharge -> thickness link, is this link's delay. Recharge is no actor's decision: the decisions that reach it, the farmers' storage measures and the water board's ditch levels, act on Winter rain drained away, which stays drawn, so no decision leaves the drawing. B6 and R4 run through it, with every other loop through the chain: Freshwater storage measures -(-)-> Winter rain drained away -(-, delay)-> Rainwater lens thickness keeps the farmers' storage acting on the lens by the rain kept in the field, B6 balancing and R4 reinforcing as before. It carries the drains' effect on the lens only through the rain they carry off. In de Louw et al.'s (2011, pp. 3664–3665) conceptual 2-D model of a tile-drained field, built from the island's field data, the depth of the tile drains also sets the lens's base. At a drain, the centre of the mixing zone stays within 0.1 m of the drain depth. Deeper drains give a deeper mixing zone, at and between the drains, so a thicker lens (pp. 3671, 3674, Fig. 12d). At the field's centre, the ditch's water level moved the lens by no more than 0.1 m (pp. 3665, 3671; Table 2 on p. 3666). So Polder drainage depth, the ditch level, needs no link of its own to the lens. The farms' drains are no variable. The measures that change them, controlled and anti-salinisation drainage, are counted in Freshwater storage measures, which keep the thin rainwater lens against salt (Kaandorp et al., 2022, pp. 33, 53). That is the sign the drawn path through Winter rain drained away gives, so B6 and R4 keep their polarity.",
+      "sources": [
+        "de-louw-2011",
+        "de-louw-2015",
+        "kaandorp-2022"
+      ],
+      "curvature": 0.2
     }
   ],
   "loops": [
@@ -2777,7 +2757,6 @@
       "path": [
         "root-zone-salinity",
         "soil-structure-usability",
-        "freshwater-lens-recharge",
         "freshwater-lens-thickness"
       ],
       "description": "Salt in the root zone puts sodium on the clay; once fresh water washes the salt out, the soil's structure collapses and recovers only over years. Less rain soaks in, less recharges the rainwater lens, the lens thins over years and saline groundwater comes closer to the roots: more salt. It runs in the low polders. The mechanism was measured after seawater floods; how much sodium the island's seepage puts on its clay, no source read shows. R1 may be weak on tile-drained fields such as the one measured on the island: in model computations extra winter water leaves through the intensive drainage without feeding the lens (de Louw et al., 2015, pp. 11, 12), and after a seawater flood most well-drained soils still let at least 150 mm through in winter (van Beekom et al., 1953a, p. 157). No practice is on it: the salt it adds drives tolerant crops and varieties (B2, B1)."
@@ -2876,7 +2855,6 @@
         "crop-yield",
         "freshwater-storage-measures",
         "winter-rain-drained-away",
-        "freshwater-lens-recharge",
         "freshwater-lens-thickness",
         "freshwater-availability-for-crops",
         "crop-water-shortfall"
@@ -2912,7 +2890,6 @@
         "farmers-capacity-to-invest",
         "freshwater-storage-measures",
         "winter-rain-drained-away",
-        "freshwater-lens-recharge",
         "freshwater-lens-thickness",
         "freshwater-availability-for-crops",
         "crop-water-shortfall",
@@ -3056,7 +3033,7 @@
         "B2",
         "B3"
       ],
-      "description": "*Root zone salinity* damages the *Soil structure*, so less rain soaks in: *Rainwater lens recharge in the low polders* falls, the *Rainwater lens thickness in the low polders* falls over years and *Root zone salinity* rises further (R1). As *Harvest lost to salt* rises, farmers respond in different ways, and at different speeds: *Adoption of salt-tolerant varieties* of their current crops, with the same machines and storage (B1); *Adoption of new salt-tolerant crops*, new to the island's rotations, after a delay (B2); and, over decades, less *Arable land in the polders* where arable farming stops paying, which raises the *Water board's plans to raise ditch levels*, since its levels follow the land's use (B3). The first two lower the *Harvest lost to salt* and leave the salt in the soil; only the third lowers the salt. The order is a reading of the delays and costs, and the links from *Harvest lost to salt* to *Adoption of salt-tolerant varieties* and from *Agricultural land value* to *Arable land in the polders* are hypotheses for the group model building session.",
+      "description": "*Root zone salinity* damages the *Soil structure*, so less rain soaks in to refill the lens: the *Rainwater lens thickness in the low polders* falls over years and *Root zone salinity* rises further (R1). As *Harvest lost to salt* rises, farmers respond in different ways, and at different speeds: *Adoption of salt-tolerant varieties* of their current crops, with the same machines and storage (B1); *Adoption of new salt-tolerant crops*, new to the island's rotations, after a delay (B2); and, over decades, less *Arable land in the polders* where arable farming stops paying, which raises the *Water board's plans to raise ditch levels*, since its levels follow the land's use (B3). The first two lower the *Harvest lost to salt* and leave the salt in the soil; only the third lowers the salt. The order is a reading of the delays and costs, and the links from *Harvest lost to salt* to *Adoption of salt-tolerant varieties* and from *Agricultural land value* to *Arable land in the polders* are hypotheses for the group model building session.",
       "places": {
         "root-zone-salinity": [
           0,
@@ -3095,31 +3072,19 @@
           -403
         ],
         "soil-structure-usability": [
-          -94,
-          -990
-        ],
-        "freshwater-lens-recharge": [
-          -642,
-          -929
+          -353,
+          -795
         ],
         "salt-tolerant-crop-adoption": [
-          1794,
-          -456
+          1914,
+          -424
         ],
         "tolerant-varieties-adoption": [
-          530,
-          -1343
+          700,
+          -1251
         ]
       },
       "bends": {
-        "root-zone-salinity -> soil-structure-usability": -0.453,
-        "soil-structure-usability -> freshwater-lens-recharge": -0.326,
-        "freshwater-lens-recharge -> freshwater-lens-thickness": -0.526,
-        "freshwater-lens-thickness -> root-zone-salinity": 0.109,
-        "harvest-lost-to-salt -> tolerant-varieties-adoption": -0.543,
-        "tolerant-varieties-adoption -> harvest-lost-to-salt": -0.543,
-        "harvest-lost-to-salt -> salt-tolerant-crop-adoption": -0.161,
-        "salt-tolerant-crop-adoption -> harvest-lost-to-salt": -0.161,
         "root-zone-salinity -> harvest-lost-to-salt": 0.1,
         "harvest-lost-to-salt -> farm-revenue": 0.166,
         "farm-revenue -> agricultural-land-value": 0.327,
@@ -3127,20 +3092,27 @@
         "farmland-leaving-arable-use -> plans-to-raise-ditch-levels": 0.103,
         "plans-to-raise-ditch-levels -> polder-drainage-depth": 0.131,
         "polder-drainage-depth -> saline-seepage-kwel": 0.279,
-        "saline-seepage-kwel -> freshwater-lens-thickness": 0.227
+        "saline-seepage-kwel -> freshwater-lens-thickness": 0.227,
+        "freshwater-lens-thickness -> root-zone-salinity": 0.109,
+        "root-zone-salinity -> soil-structure-usability": -0.491,
+        "soil-structure-usability -> freshwater-lens-thickness": -0.513,
+        "harvest-lost-to-salt -> salt-tolerant-crop-adoption": -0.147,
+        "salt-tolerant-crop-adoption -> harvest-lost-to-salt": -0.147,
+        "harvest-lost-to-salt -> tolerant-varieties-adoption": -0.595,
+        "tolerant-varieties-adoption -> harvest-lost-to-salt": -0.595
       },
       "marks": {
         "B1": [
-          542,
-          -883
+          627,
+          -837
         ],
         "B2": [
-          1174,
-          -440
+          1234,
+          -424
         ],
         "R1": [
-          -363,
-          -770
+          -337,
+          -645
         ],
         "B3": [
           0,
@@ -3383,24 +3355,20 @@
           0
         ],
         "crop-yield": [
-          837,
-          452
+          826,
+          562
         ],
         "freshwater-storage-measures": [
-          776,
-          1128
+          487,
+          1261
         ],
         "winter-rain-drained-away": [
-          70,
-          1502
-        ],
-        "freshwater-lens-recharge": [
-          -701,
-          1221
+          -390,
+          1312
         ],
         "freshwater-lens-thickness": [
-          -865,
-          521
+          -836,
+          632
         ],
         "freshwater-supply-route": [
           12,
@@ -3415,12 +3383,12 @@
           -314
         ],
         "creek-ridge-lens-thickness": [
-          -228,
+          -227,
           -894
         ],
         "pumping-the-water-board-allows": [
-          238,
-          -884
+          239,
+          -883
         ],
         "zlto-call-for-supply-route": [
           395,
@@ -3428,22 +3396,21 @@
         ]
       },
       "bends": {
-        "crop-water-shortfall -> groundwater-extraction-for-irrigation": -0.56,
-        "groundwater-extraction-for-irrigation -> freshwater-availability-for-crops": -0.572,
         "freshwater-availability-for-crops -> crop-water-shortfall": 0,
-        "crop-yield -> freshwater-storage-measures": 0.274,
-        "freshwater-storage-measures -> winter-rain-drained-away": 0.225,
-        "winter-rain-drained-away -> freshwater-lens-recharge": 0.219,
-        "freshwater-lens-recharge -> freshwater-lens-thickness": 0.286,
-        "freshwater-lens-thickness -> freshwater-availability-for-crops": 0.254,
-        "crop-water-shortfall -> crop-yield": 0.226,
+        "crop-water-shortfall -> zlto-call-for-supply-route": 0.335,
+        "zlto-call-for-supply-route -> freshwater-supply-route": 0.324,
         "freshwater-supply-route -> external-freshwater-supply": 0.317,
         "external-freshwater-supply -> freshwater-availability-for-crops": 0.358,
-        "creek-ridge-lens-thickness -> pumping-the-water-board-allows": 0.711,
-        "pumping-the-water-board-allows -> groundwater-extraction-for-irrigation": 0.364,
+        "crop-water-shortfall -> groundwater-extraction-for-irrigation": -0.56,
+        "groundwater-extraction-for-irrigation -> freshwater-availability-for-crops": -0.572,
+        "crop-water-shortfall -> crop-yield": 0.286,
+        "crop-yield -> freshwater-storage-measures": 0.32,
+        "freshwater-storage-measures -> winter-rain-drained-away": 0.241,
+        "winter-rain-drained-away -> freshwater-lens-thickness": 0.321,
+        "freshwater-lens-thickness -> freshwater-availability-for-crops": 0.318,
         "groundwater-extraction-for-irrigation -> creek-ridge-lens-thickness": 0.375,
-        "crop-water-shortfall -> zlto-call-for-supply-route": 0.335,
-        "zlto-call-for-supply-route -> freshwater-supply-route": 0.324
+        "creek-ridge-lens-thickness -> pumping-the-water-board-allows": 0.711,
+        "pumping-the-water-board-allows -> groundwater-extraction-for-irrigation": 0.364
       },
       "marks": {
         "B8": [
@@ -3460,7 +3427,7 @@
         ],
         "B6": [
           0,
-          1077
+          1022
         ]
       }
     },
@@ -3471,65 +3438,60 @@
         "R4",
         "B6"
       ],
-      "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so *Rainwater lens recharge in the low polders* and, over years, the *Rainwater lens thickness in the low polders* rise; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A lower *Crop yield* makes storing more worthwhile to a farmer (B6), and leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same harvest pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The links from *Crop yield* and from *Farmers' capacity to invest* to *Freshwater storage measures* are both hypotheses for the group model building session.",
+      "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so more rain refills the lens and, over years, the *Rainwater lens thickness in the low polders* rises; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A lower *Crop yield* makes storing more worthwhile to a farmer (B6), and leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same harvest pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The links from *Crop yield* and from *Farmers' capacity to invest* to *Freshwater storage measures* are both hypotheses for the group model building session.",
       "places": {
         "farmers-capacity-to-invest": [
-          -585,
-          -314
+          -457,
+          546
         ],
         "freshwater-storage-measures": [
-          0,
-          -716
+          -1212,
+          0
         ],
         "winter-rain-drained-away": [
-          0,
-          -480
-        ],
-        "freshwater-lens-recharge": [
-          0,
-          -228
+          -735,
+          0
         ],
         "freshwater-lens-thickness": [
-          0,
-          42
+          -242,
+          0
         ],
         "freshwater-availability-for-crops": [
-          0,
-          296
+          272,
+          0
         ],
         "crop-water-shortfall": [
-          0,
-          514
+          787,
+          0
         ],
         "crop-yield": [
-          0,
-          716
+          1212,
+          0
         ],
         "farm-revenue": [
-          -562,
-          363
+          517,
+          527
         ]
       },
       "bends": {
-        "farmers-capacity-to-invest -> freshwater-storage-measures": 0.325,
-        "freshwater-storage-measures -> winter-rain-drained-away": 0,
-        "winter-rain-drained-away -> freshwater-lens-recharge": 0,
-        "freshwater-lens-recharge -> freshwater-lens-thickness": 0,
+        "crop-water-shortfall -> crop-yield": 0,
         "freshwater-lens-thickness -> freshwater-availability-for-crops": 0,
         "freshwater-availability-for-crops -> crop-water-shortfall": 0,
-        "crop-water-shortfall -> crop-yield": 0,
-        "crop-yield -> farm-revenue": 0.306,
-        "farm-revenue -> farmers-capacity-to-invest": 0.213,
-        "crop-yield -> freshwater-storage-measures": -0.842
+        "winter-rain-drained-away -> freshwater-lens-thickness": 0,
+        "freshwater-storage-measures -> winter-rain-drained-away": 0,
+        "crop-yield -> farm-revenue": 0.168,
+        "farm-revenue -> farmers-capacity-to-invest": 0.155,
+        "farmers-capacity-to-invest -> freshwater-storage-measures": 0.179,
+        "crop-yield -> freshwater-storage-measures": -0.505
       },
       "marks": {
         "B6": [
-          359,
-          0
+          0,
+          -327
         ],
         "R4": [
-          -380,
-          0
+          0,
+          327
         ]
       }
     },

@@ -3881,28 +3881,6 @@
   ],
   "changes": [
     {
-      "change": "Fold Rainwater lens recharge in the low polders into the links around it",
-      "argument": "Fold by the rule \"Simplify only where the conclusion survives\" and the method's question \"Can A → X → D become A → D?\": Rainwater lens recharge in the low polders is an auxiliary no actor decides, with one link out, so four links replace five and none merges with a link already drawn. Each new sign is the product of its two steps; the one delay, the lens's slowness, moves onto all four new links, each description saying it sits in the lens. Traced with and without it: R1 reinforcing, B6 balancing, R4 reinforcing, and the shortest unnamed loop through Winter rain drained away balancing, each with the same mechanism; the decisions that reach the recharge (the farmers' storage measures, the water board's ditch levels) act on Winter rain drained away, which stays drawn. The CLD already draws the creek ridge lens at this grain (Wetter winters → Creek ridge lens thickness). Confirmed by a second, independent AI check, which corrected the text: no variable is called a lever, and rain the drains carry off 'does not refill the lens' (de Louw et al., 2011, p. 3661). For the group: D2D can no longer vary or read the recharge itself, and each of the four links into the lens gets its own sampled strength. The audit's finding that drainage depth may also move the lens's base is settled from de Louw et al. (2011, pp. 3665, 3671, 3674, Fig. 12d), read for it and checked by a second, independent AI check: the drains' depth does and the ditch level barely does, and the storage measures keep the lens, the sign drawn, so it is a sentence on Winter rain drained away → the lens, not a link. Open, unchanged by the fold and for Jordy and Lenne: Winter rain drained away read island-wide while its only lens link goes to the low polders.",
-      "items": [
-        "freshwater-lens-recharge",
-        "hotter-drier-summers -> freshwater-lens-recharge",
-        "wetter-winters -> freshwater-lens-recharge",
-        "freshwater-lens-recharge -> freshwater-lens-thickness",
-        "soil-structure-usability -> freshwater-lens-recharge",
-        "winter-rain-drained-away -> freshwater-lens-recharge",
-        "hotter-drier-summers -> freshwater-lens-thickness",
-        "wetter-winters -> freshwater-lens-thickness",
-        "soil-structure-usability -> freshwater-lens-thickness",
-        "winter-rain-drained-away -> freshwater-lens-thickness",
-        "R1",
-        "B6",
-        "R4",
-        "freshwater-lens-thickness",
-        "C1",
-        "C5"
-      ]
-    },
-    {
       "change": "Fold Land subsidence into the links around it",
       "argument": "Fold by the rule \"Simplify only where the conclusion survives\" and the method's question \"Can A → X → D become A → D?\": Land subsidence is a rate no actor decides, with one link in and one out, so one link replaces two. The sign is the product (+, then −); the delay, the elevation's fall of millimetres a year, moves onto the new link. Removing it instead would cut the drainage depth from the elevation, so it is folded, not removed. Traced with and without it: the balancing loops through Saline seepage and the water board's plans to raise ditch levels (with and without its pumping costs) and the reinforcing loop through the rainwater lens, root zone salinity, soil structure, spring workability and the farmers' demand for deep drainage keep their sign and mechanism. Confirmed by a second, independent AI check, which put the simplification in the present tense. The audit's two 'state it' findings are on the new link: the peat treated as lasting to 2050, and the drainage depth's effect counted as an island total though it differs by where the peat lies (Waterschap Scheldestromen, 2021a, p. 19; 2021b, pp. 23, 45). The question to the water board on how fast each area subsides moves onto the link. For the group: D2D can no longer put an intervention on the rate apart from the drainage depth, nor rank by it. Open, unchanged by the fold and for Jordy and Lenne: the falling land shrinking the drainage depth under a level held, and the board's choice to lower the level after it or hold it on peat.",
       "items": [

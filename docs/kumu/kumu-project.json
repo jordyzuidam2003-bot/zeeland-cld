@@ -543,21 +543,6 @@
       }
     },
     {
-      "_id": "elem-freshwater-lens-recharge",
-      "attributes": {
-        "label": "Rainwater lens  recharge in the low  polders",
-        "element type": "Auxiliary",
-        "adaptive practice": "no",
-        "sets domain": "Ecological",
-        "subsystem": "Water and soil",
-        "subquestion": "SQ1",
-        "description": "The rain that soaks in and refills the rainwater lenses of the low polders: mostly the winter's rain surplus, since in summer most of the rain evaporates (van Beekom et al., 1953a, p. 155, for the Netherlands). On Schouwen-Duiveland upward saline seepage keeps it within the clay and peat top layer of the low polders (de Louw et al., 2011, pp. 3662, 3674–3675), and tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (p. 3661); recharge, seepage and drainage depth together set the lens's thickness, by measurements on the island and a model built from them (pp. 3662, 3673–3675).",
-        "actors": "",
-        "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953a). Reclaiming land flooded with salt water: I. Salt. Netherlands Journal of Agricultural Science, 1(3), 153–163. https://library.wur.nl/ojs/index.php/njas/article/view/17866\nde Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011",
-        "sourced": "yes"
-      }
-    },
-    {
       "_id": "elem-freshwater-lens-thickness",
       "attributes": {
         "label": "Rainwater lens  thickness in the low  polders",
@@ -566,7 +551,7 @@
         "sets domain": "Ecological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "The thickness of the fresh rainwater lenses on top of the saline groundwater in the island's low polders, from the surface to the middle of the mixing zone between them: about 2 m on average in the low-lying polders with saline seepage, under 2 m over more than half of the 56 km² surveyed (de Louw et al., 2011, pp. 3667, 3672–3673, 3675, measured on the island from a helicopter and on the ground). These lenses keep salt out of the root zone and reach only the crop on their own field. A Stock: a year's recharge barely moves it (Rainwater lens recharge in the low polders → Rainwater lens thickness in the low polders).",
+        "description": "The thickness of the fresh rainwater lenses on top of the saline groundwater in the island's low polders, from the surface to the middle of the mixing zone between them: about 2 m on average in the low-lying polders with saline seepage, under 2 m over more than half of the 56 km² surveyed (de Louw et al., 2011, pp. 3667, 3672–3673, 3675, measured on the island from a helicopter and on the ground). These lenses keep salt out of the root zone and reach only the crop on their own field. A Stock: a year's recharge barely moves it (the links into it from Hotter, drier summers, Wetter winters, Soil structure and Winter rain drained away).",
         "actors": "",
         "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011",
         "sourced": "yes"
@@ -1760,26 +1745,6 @@
   ],
   "connections": [
     {
-      "_id": "conn-hotter-drier-summers--freshwater-lens-recharge",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "−",
-        "polarity": "negative",
-        "delay": "no",
-        "description": "Summers with less rain and more evaporation lower the year's rain surplus, which is what recharges the lens. In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation: in the year it used, summer evaporation (440 mm) outweighed summer rain (425 mm), so the winter did the recharging, and a smaller surplus gave a thinner lens (de Louw et al., 2011, pp. 3665, 3671, 3674). Within the year.",
-        "sets link": "Within E",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011",
-        "sourced": "yes",
-        "connection type": "-"
-      },
-      "from": "elem-hotter-drier-summers",
-      "to": "elem-freshwater-lens-recharge"
-    },
-    {
       "_id": "conn-sea-level-rise--saline-seepage-kwel",
       "direction": "directed",
       "delayed": false,
@@ -1800,26 +1765,6 @@
       "to": "elem-saline-seepage-kwel"
     },
     {
-      "_id": "conn-wetter-winters--freshwater-lens-recharge",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "More winter rain raises the winter's rain surplus, which recharges the lens. In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation, and from October to March of the year it used 397 mm of rain fell against 108 mm of evaporation (de Louw et al., 2011, p. 3665). Kaandorp et al. (2022, p. 11) expect the changing rain to raise the island's winter groundwater levels in part. Within the year.",
-        "sets link": "Within E",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-wetter-winters",
-      "to": "elem-freshwater-lens-recharge"
-    },
-    {
       "_id": "conn-wetter-winters--winter-rain-drained-away",
       "direction": "directed",
       "delayed": false,
@@ -1838,26 +1783,6 @@
       },
       "from": "elem-wetter-winters",
       "to": "elem-winter-rain-drained-away"
-    },
-    {
-      "_id": "conn-freshwater-lens-recharge--freshwater-lens-thickness",
-      "direction": "directed",
-      "delayed": true,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "yes",
-        "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673). So a change in recharge takes years to show in the lens. The drains cap how much of a wetter winter reaches the lens: model calculations show that the extra winter water of wetter winters leaves through the intensive tile drainage and does not feed the lens, while higher summer evaporation shrinks it (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens).",
-        "sets link": "Within E",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nde Louw, P. G. B., Oude Essink, G. H. P., Eeman, S., van Baaren, E. S., Vermue, E., Delsman, J. R., Pauw, P. S., Siemon, B., Gunnink, J., & Post, V. E. A. (2015). Dunne regenwaterlenzen in zoute kwelgebieden. Landschap, 32(1), 5–15. https://www.landschap.nl/wp-content/uploads/2015-1_005-015.pdf",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-freshwater-lens-recharge",
-      "to": "elem-freshwater-lens-thickness"
     },
     {
       "_id": "conn-freshwater-lens-thickness--root-zone-salinity",
@@ -2001,26 +1926,6 @@
       "to": "elem-freshwater-lens-thickness"
     },
     {
-      "_id": "conn-soil-structure-usability--freshwater-lens-recharge",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "Rain recharges the lens only once it has soaked into the soil. Before the floods, Zeeland's well-drained clay let the winter's rain surplus soak through almost completely; once sodium had broken down the structure of the topsoil, it became impervious and sticky when wet, part of the rain ran off over the surface and pools stood on the land, the more so the heavier the clay (van Beekom et al., 1953a, p. 157; 1953b, pp. 230, 233, 236, measured in the flooded polders of Zeeland, by R1's own mechanism). Even so, in most of the well-drained soils at least 150 mm still seeped through in winter, and less in badly drained soils of low permeability, against a Dutch annual rain surplus of about 200 mm, most of it in winter (van Beekom et al., 1953a, pp. 155, 157). In model computations of wetter winters, the extra winter water drained off effectively through the intensive drainage without feeding the thin rain lenses of the saline seepage areas the authors studied in Zeeland, among them a tile-drained field on the island, so more rain soaking in may add little to the lens (de Louw et al., 2015, pp. 6, 11, 12, by authors who report on the GO-FRESH project, which developed a drainage system to grow the lens). Within the year: the structure a soil has in a winter sets how much of that winter's rain soaks in. How thick a lens the recharge builds is also set by the drainage depth and the seepage (de Louw et al., 2011, p. 3674).",
-        "sets link": "Within E",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953a). Reclaiming land flooded with salt water: I. Salt. Netherlands Journal of Agricultural Science, 1(3), 153–163. https://library.wur.nl/ojs/index.php/njas/article/view/17866\nvan Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953b). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 225–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860\nde Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nde Louw, P. G. B., Oude Essink, G. H. P., Eeman, S., van Baaren, E. S., Vermue, E., Delsman, J. R., Pauw, P. S., Siemon, B., Gunnink, J., & Post, V. E. A. (2015). Dunne regenwaterlenzen in zoute kwelgebieden. Landschap, 32(1), 5–15. https://www.landschap.nl/wp-content/uploads/2015-1_005-015.pdf",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-soil-structure-usability",
-      "to": "elem-freshwater-lens-recharge"
-    },
-    {
       "_id": "conn-soil-structure-usability--crop-yield",
       "direction": "directed",
       "delayed": false,
@@ -2139,26 +2044,6 @@
       },
       "from": "elem-groundwater-extraction-for-irrigation",
       "to": "elem-upconing-of-salt-groundwater"
-    },
-    {
-      "_id": "conn-winter-rain-drained-away--freshwater-lens-recharge",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "−",
-        "polarity": "negative",
-        "delay": "no",
-        "description": "Rain the drains carry off does not refill the lens: tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (de Louw et al., 2011, p. 3661), and recharge, seepage and drainage depth together set the lens's thickness, by measurements on the island and a model built from them (pp. 3662, 3673–3675). In a conceptual 2-D model of a tile-drained field with saline seepage, built from field measurements in Zeeland and a 3-D model of a field on the island, how readily the drains run (a drainage resistance of 0.5 to 7.5 days) changed the lens's depth and width by less than 0.1 m; across the model's parameters the lens's depth moved more between the drains than at them, where the centre of the mixing zone stayed within 0.1 m of drain depth (de Louw et al., 2011, pp. 3662, 3664–3666, 3671). Within the year.",
-        "sets link": "T to E",
-        "sets scope": "Cross-domain",
-        "hypothesis": "no",
-        "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011",
-        "sourced": "yes",
-        "connection type": "-"
-      },
-      "from": "elem-winter-rain-drained-away",
-      "to": "elem-freshwater-lens-recharge"
     },
     {
       "_id": "conn-crop-yield--farm-revenue",
@@ -4382,6 +4267,90 @@
       "to": "elem-expropriation-of-farmland"
     },
     {
+      "_id": "conn-hotter-drier-summers--freshwater-lens-thickness",
+      "direction": "directed",
+      "delayed": true,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "yes",
+        "description": "Summers with less rain and more evaporation lower the year's rain surplus, which is what refills the lens, so the lens thins. The lens is refilled mostly by the winter's rain surplus, since in summer most of the rain evaporates (van Beekom et al., 1953a, p. 155, for the Netherlands). In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation: in the year it used, summer evaporation (440 mm) outweighed summer rain (425 mm), so the winter did the recharging, and a smaller surplus gave a thinner lens (de Louw et al., 2011, pp. 3665, 3671, 3674). Model calculations show that higher summer evaporation shrinks the lens (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens). Years, so a delay: the lens is a Stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673), so a change in recharge takes years to show in the lens.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "simplification": "Folds Rainwater lens recharge in the low polders, the rain that soaks in and refills the lens, between the two: Hotter, drier summers moves the recharge (-), and the recharge builds the lens over years (+). The sign is the product of the two steps, so no loop through the link changes, and the lens's slowness, which sat on the recharge -> thickness link, is this link's delay. Recharge is no actor's decision: the decisions that reach it, the farmers' storage measures and the water board's ditch levels, act on Winter rain drained away, which stays drawn, so no decision leaves the drawing. Hotter, drier summers is a Constant, so no loop runs through this link.",
+        "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nde Louw, P. G. B., Oude Essink, G. H. P., Eeman, S., van Baaren, E. S., Vermue, E., Delsman, J. R., Pauw, P. S., Siemon, B., Gunnink, J., & Post, V. E. A. (2015). Dunne regenwaterlenzen in zoute kwelgebieden. Landschap, 32(1), 5–15. https://www.landschap.nl/wp-content/uploads/2015-1_005-015.pdf\nvan Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953a). Reclaiming land flooded with salt water: I. Salt. Netherlands Journal of Agricultural Science, 1(3), 153–163. https://library.wur.nl/ojs/index.php/njas/article/view/17866",
+        "sourced": "yes",
+        "connection type": "-"
+      },
+      "from": "elem-hotter-drier-summers",
+      "to": "elem-freshwater-lens-thickness"
+    },
+    {
+      "_id": "conn-wetter-winters--freshwater-lens-thickness",
+      "direction": "directed",
+      "delayed": true,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "yes",
+        "description": "More winter rain raises the winter's rain surplus, which soaks in and refills the lens. In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation, and from October to March of the year it used 397 mm of rain fell against 108 mm of evaporation (de Louw et al., 2011, p. 3665). Kaandorp et al. (2022, p. 11) expect the changing rain to raise the island's winter groundwater levels in part. The drains cap how much of a wetter winter reaches the lens: model calculations show that the extra winter water of wetter winters leaves through the intensive tile drainage and does not feed the lens (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens); that part is drawn as Wetter winters -> Winter rain drained away. Years, so a delay: the lens is a Stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673), so a change in recharge takes years to show in the lens.",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "simplification": "Folds Rainwater lens recharge in the low polders, the rain that soaks in and refills the lens, between the two: Wetter winters moves the recharge (+), and the recharge builds the lens over years (+). The sign is the product of the two steps, so no loop through the link changes, and the lens's slowness, which sat on the recharge -> thickness link, is this link's delay. Recharge is no actor's decision: the decisions that reach it, the farmers' storage measures and the water board's ditch levels, act on Winter rain drained away, which stays drawn, so no decision leaves the drawing. Wetter winters is a Constant, so no loop runs through this link.",
+        "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nde Louw, P. G. B., Oude Essink, G. H. P., Eeman, S., van Baaren, E. S., Vermue, E., Delsman, J. R., Pauw, P. S., Siemon, B., Gunnink, J., & Post, V. E. A. (2015). Dunne regenwaterlenzen in zoute kwelgebieden. Landschap, 32(1), 5–15. https://www.landschap.nl/wp-content/uploads/2015-1_005-015.pdf\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-wetter-winters",
+      "to": "elem-freshwater-lens-thickness"
+    },
+    {
+      "_id": "conn-soil-structure-usability--freshwater-lens-thickness",
+      "direction": "directed",
+      "delayed": true,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "yes",
+        "description": "Rain refills the lens only once it has soaked into the soil. Before the floods, Zeeland's well-drained clay let the winter's rain surplus soak through almost completely; once sodium had broken down the structure of the topsoil, it became impervious and sticky when wet, part of the rain ran off over the surface and pools stood on the land, the more so the heavier the clay (van Beekom et al., 1953a, p. 157; 1953b, pp. 230, 233, 236, measured in the flooded polders of Zeeland, by R1's own mechanism). Even so, in most of the well-drained soils at least 150 mm still seeped through in winter, and less in badly drained soils of low permeability, against a Dutch annual rain surplus of about 200 mm, most of it in winter (van Beekom et al., 1953a, pp. 155, 157). In model computations of wetter winters, the extra winter water drained off effectively through the intensive drainage without feeding the thin rain lenses of the saline seepage areas the authors studied in Zeeland, among them a tile-drained field on the island, so more rain soaking in may add little to the lens (de Louw et al., 2015, pp. 6, 11, 12, by authors who report on the GO-FRESH project, which developed a drainage system to grow the lens). The structure a soil has in a winter sets how much of that winter's rain soaks in, within the year; the slowness sits in the lens. Years, so a delay: the lens is a Stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673), so a change in recharge takes years to show in the lens. How thick a lens the recharge builds is also set by the drainage depth and the seepage (de Louw et al., 2011, p. 3674).",
+        "sets link": "Within E",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "simplification": "Folds Rainwater lens recharge in the low polders, the rain that soaks in and refills the lens, between the two: Soil structure moves the recharge (+), and the recharge builds the lens over years (+). The sign is the product of the two steps, so no loop through the link changes, and the lens's slowness, which sat on the recharge -> thickness link, is this link's delay. Recharge is no actor's decision: the decisions that reach it, the farmers' storage measures and the water board's ditch levels, act on Winter rain drained away, which stays drawn, so no decision leaves the drawing. R1 runs through it: Root zone salinity -(-, delay)-> Soil structure -(+, delay)-> Rainwater lens thickness -(-)-> Root zone salinity, two minus signs, reinforcing as before, and its mechanism, salty soil taking in less rain so the lens thins over years, is this link's description.",
+        "sources": "van Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953a). Reclaiming land flooded with salt water: I. Salt. Netherlands Journal of Agricultural Science, 1(3), 153–163. https://library.wur.nl/ojs/index.php/njas/article/view/17866\nvan Beekom, C. W. C., van den Berg, C., de Boer, Th. A., van der Molen, W. H., Verhoeven, B., Westerhof, J. J., & Zuur, A. J. (1953b). Reclaiming land flooded with salt water: II. Exchangeable cations. Netherlands Journal of Agricultural Science, 1(4), 225–244. https://library.wur.nl/ojs/index.php/njas/article/view/17860\nde Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nde Louw, P. G. B., Oude Essink, G. H. P., Eeman, S., van Baaren, E. S., Vermue, E., Delsman, J. R., Pauw, P. S., Siemon, B., Gunnink, J., & Post, V. E. A. (2015). Dunne regenwaterlenzen in zoute kwelgebieden. Landschap, 32(1), 5–15. https://www.landschap.nl/wp-content/uploads/2015-1_005-015.pdf",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-soil-structure-usability",
+      "to": "elem-freshwater-lens-thickness"
+    },
+    {
+      "_id": "conn-winter-rain-drained-away--freshwater-lens-thickness",
+      "direction": "directed",
+      "delayed": true,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "yes",
+        "description": "Rain the drains carry off does not refill the lens, so the lens thins: tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (de Louw et al., 2011, p. 3661). On Schouwen-Duiveland upward saline seepage keeps the recharge within the clay and peat top layer of the low polders (pp. 3662, 3674–3675), and recharge, seepage and drainage depth together set the lens's thickness, by measurements on the island and a model built from them (pp. 3662, 3673–3675). In a conceptual 2-D model of a tile-drained field with saline seepage, built from field measurements in Zeeland and a 3-D model of a field on the island, how readily the drains run (a drainage resistance of 0.5 to 7.5 days) changed the lens's depth and width by less than 0.1 m; across the model's parameters the lens's depth moved more between the drains than at them, where the centre of the mixing zone stayed within 0.1 m of drain depth (de Louw et al., 2011, pp. 3662, 3664–3666, 3671). The rain drained away follows each rain within the year; the slowness sits in the lens. Years, so a delay: the lens is a Stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673), so a change in recharge takes years to show in the lens. The drains cap how much of a wetter winter reaches the lens: model calculations show that the extra winter water of wetter winters leaves through the intensive tile drainage and does not feed the lens (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens).",
+        "sets link": "T to E",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "simplification": "Folds Rainwater lens recharge in the low polders, the rain that soaks in and refills the lens, between the two: Winter rain drained away moves the recharge (-), and the recharge builds the lens over years (+). The sign is the product of the two steps, so no loop through the link changes, and the lens's slowness, which sat on the recharge -> thickness link, is this link's delay. Recharge is no actor's decision: the decisions that reach it, the farmers' storage measures and the water board's ditch levels, act on Winter rain drained away, which stays drawn, so no decision leaves the drawing. B6 and R4 run through it, with every other loop through the chain: Freshwater storage measures -(-)-> Winter rain drained away -(-, delay)-> Rainwater lens thickness keeps the farmers' storage acting on the lens by the rain kept in the field, B6 balancing and R4 reinforcing as before. It carries the drains' effect on the lens only through the rain they carry off. In de Louw et al.'s (2011, pp. 3664–3665) conceptual 2-D model of a tile-drained field, built from the island's field data, the depth of the tile drains also sets the lens's base. At a drain, the centre of the mixing zone stays within 0.1 m of the drain depth. Deeper drains give a deeper mixing zone, at and between the drains, so a thicker lens (pp. 3671, 3674, Fig. 12d). At the field's centre, the ditch's water level moved the lens by no more than 0.1 m (pp. 3665, 3671; Table 2 on p. 3666). So Polder drainage depth, the ditch level, needs no link of its own to the lens. The farms' drains are no variable. The measures that change them, controlled and anti-salinisation drainage, are counted in Freshwater storage measures, which keep the thin rainwater lens against salt (Kaandorp et al., 2022, pp. 33, 53). That is the sign the drawn path through Winter rain drained away gives, so B6 and R4 keep their polarity.",
+        "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nde Louw, P. G. B., Oude Essink, G. H. P., Eeman, S., van Baaren, E. S., Vermue, E., Delsman, J. R., Pauw, P. S., Siemon, B., Gunnink, J., & Post, V. E. A. (2015). Dunne regenwaterlenzen in zoute kwelgebieden. Landschap, 32(1), 5–15. https://www.landschap.nl/wp-content/uploads/2015-1_005-015.pdf\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
+        "connection type": "-"
+      },
+      "from": "elem-winter-rain-drained-away",
+      "to": "elem-freshwater-lens-thickness"
+    },
+    {
       "_id": "conn-0",
       "direction": "directed",
       "delayed": false,
@@ -4872,8 +4841,7 @@
       },
       "connections": [
         "conn-root-zone-salinity--soil-structure-usability",
-        "conn-soil-structure-usability--freshwater-lens-recharge",
-        "conn-freshwater-lens-recharge--freshwater-lens-thickness",
+        "conn-soil-structure-usability--freshwater-lens-thickness",
         "conn-freshwater-lens-thickness--root-zone-salinity"
       ]
     },
@@ -4987,8 +4955,7 @@
       "connections": [
         "conn-crop-yield--freshwater-storage-measures",
         "conn-freshwater-storage-measures--winter-rain-drained-away",
-        "conn-winter-rain-drained-away--freshwater-lens-recharge",
-        "conn-freshwater-lens-recharge--freshwater-lens-thickness",
+        "conn-winter-rain-drained-away--freshwater-lens-thickness",
         "conn-freshwater-lens-thickness--freshwater-availability-for-crops",
         "conn-freshwater-availability-for-crops--crop-water-shortfall",
         "conn-crop-water-shortfall--crop-yield"
@@ -5029,8 +4996,7 @@
       "connections": [
         "conn-farmers-capacity-to-invest--freshwater-storage-measures",
         "conn-freshwater-storage-measures--winter-rain-drained-away",
-        "conn-winter-rain-drained-away--freshwater-lens-recharge",
-        "conn-freshwater-lens-recharge--freshwater-lens-thickness",
+        "conn-winter-rain-drained-away--freshwater-lens-thickness",
         "conn-freshwater-lens-thickness--freshwater-availability-for-crops",
         "conn-freshwater-availability-for-crops--crop-water-shortfall",
         "conn-crop-water-shortfall--crop-yield",
@@ -5228,16 +5194,6 @@
           "pinned": true,
           "style": {},
           "element": "elem-wetter-winters"
-        },
-        {
-          "_id": "node-freshwater-lens-recharge",
-          "position": {
-            "x": -1593,
-            "y": 337
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-freshwater-lens-recharge"
         },
         {
           "_id": "node-freshwater-lens-thickness",
@@ -5842,34 +5798,16 @@
       ],
       "connections": [
         {
-          "_id": "edge-hotter-drier-summers--freshwater-lens-recharge",
-          "curvature": 0.0,
-          "style": {},
-          "connection": "conn-hotter-drier-summers--freshwater-lens-recharge"
-        },
-        {
           "_id": "edge-sea-level-rise--saline-seepage-kwel",
           "curvature": 0.0,
           "style": {},
           "connection": "conn-sea-level-rise--saline-seepage-kwel"
         },
         {
-          "_id": "edge-wetter-winters--freshwater-lens-recharge",
-          "curvature": 0.0,
-          "style": {},
-          "connection": "conn-wetter-winters--freshwater-lens-recharge"
-        },
-        {
           "_id": "edge-wetter-winters--winter-rain-drained-away",
           "curvature": 0.0,
           "style": {},
           "connection": "conn-wetter-winters--winter-rain-drained-away"
-        },
-        {
-          "_id": "edge-freshwater-lens-recharge--freshwater-lens-thickness",
-          "curvature": -0.39,
-          "style": {},
-          "connection": "conn-freshwater-lens-recharge--freshwater-lens-thickness"
         },
         {
           "_id": "edge-freshwater-lens-thickness--root-zone-salinity",
@@ -5914,12 +5852,6 @@
           "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
         },
         {
-          "_id": "edge-soil-structure-usability--freshwater-lens-recharge",
-          "curvature": -0.22,
-          "style": {},
-          "connection": "conn-soil-structure-usability--freshwater-lens-recharge"
-        },
-        {
           "_id": "edge-soil-structure-usability--crop-yield",
           "curvature": -0.22,
           "style": {},
@@ -5954,12 +5886,6 @@
           "curvature": 0.22,
           "style": {},
           "connection": "conn-groundwater-extraction-for-irrigation--upconing-of-salt-groundwater"
-        },
-        {
-          "_id": "edge-winter-rain-drained-away--freshwater-lens-recharge",
-          "curvature": -0.15,
-          "style": {},
-          "connection": "conn-winter-rain-drained-away--freshwater-lens-recharge"
         },
         {
           "_id": "edge-crop-yield--farm-revenue",
@@ -6620,6 +6546,30 @@
           "curvature": 0.1,
           "style": {},
           "connection": "conn-municipality-plans-for-farmland--expropriation-of-farmland"
+        },
+        {
+          "_id": "edge-hotter-drier-summers--freshwater-lens-thickness",
+          "curvature": 0.0,
+          "style": {},
+          "connection": "conn-hotter-drier-summers--freshwater-lens-thickness"
+        },
+        {
+          "_id": "edge-wetter-winters--freshwater-lens-thickness",
+          "curvature": 0.0,
+          "style": {},
+          "connection": "conn-wetter-winters--freshwater-lens-thickness"
+        },
+        {
+          "_id": "edge-soil-structure-usability--freshwater-lens-thickness",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-soil-structure-usability--freshwater-lens-thickness"
+        },
+        {
+          "_id": "edge-winter-rain-drained-away--freshwater-lens-thickness",
+          "curvature": 0.2,
+          "style": {},
+          "connection": "conn-winter-rain-drained-away--freshwater-lens-thickness"
         }
       ],
       "loops": [
@@ -6628,8 +6578,8 @@
           "loop": "loop-R1",
           "style": {},
           "position": {
-            "x": -1174,
-            "y": 375
+            "x": -1035,
+            "y": 387
           }
         },
         {
@@ -6700,8 +6650,8 @@
           "loop": "loop-B6",
           "style": {},
           "position": {
-            "x": -1269,
-            "y": 520
+            "x": -1215,
+            "y": 550
           }
         },
         {
@@ -6727,8 +6677,8 @@
           "loop": "loop-R4",
           "style": {},
           "position": {
-            "x": -849,
-            "y": 389
+            "x": -756,
+            "y": 396
           }
         },
         {
@@ -7255,7 +7205,7 @@
     {
       "_id": "map-group-C1",
       "name": "03 C1 Salt builds, and farms respond in steps",
-      "description": "*Root zone salinity* damages the *Soil structure*, so less rain soaks in: *Rainwater lens recharge in the low polders* falls, the *Rainwater lens thickness in the low polders* falls over years and *Root zone salinity* rises further (R1). As *Harvest lost to salt* rises, farmers respond in different ways, and at different speeds: *Adoption of salt-tolerant varieties* of their current crops, with the same machines and storage (B1); *Adoption of new salt-tolerant crops*, new to the island's rotations, after a delay (B2); and, over decades, less *Arable land in the polders* where arable farming stops paying, which raises the *Water board's plans to raise ditch levels*, since its levels follow the land's use (B3). The first two lower the *Harvest lost to salt* and leave the salt in the soil; only the third lowers the salt. The order is a reading of the delays and costs, and the links from *Harvest lost to salt* to *Adoption of salt-tolerant varieties* and from *Agricultural land value* to *Arable land in the polders* are hypotheses for the group model building session.",
+      "description": "*Root zone salinity* damages the *Soil structure*, so less rain soaks in to refill the lens: the *Rainwater lens thickness in the low polders* falls over years and *Root zone salinity* rises further (R1). As *Harvest lost to salt* rises, farmers respond in different ways, and at different speeds: *Adoption of salt-tolerant varieties* of their current crops, with the same machines and storage (B1); *Adoption of new salt-tolerant crops*, new to the island's rotations, after a delay (B2); and, over decades, less *Arable land in the polders* where arable farming stops paying, which raises the *Water board's plans to raise ditch levels*, since its levels follow the land's use (B3). The first two lower the *Harvest lost to salt* and leave the salt in the soil; only the third lowers the salt. The order is a reading of the delays and costs, and the links from *Harvest lost to salt* to *Adoption of salt-tolerant varieties* and from *Agricultural land value* to *Arable land in the polders* are hypotheses for the group model building session.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -7358,28 +7308,18 @@
         {
           "_id": "node-group-C1-soil-structure-usability",
           "position": {
-            "x": -94,
-            "y": -990
+            "x": -353,
+            "y": -795
           },
           "pinned": true,
           "style": {},
           "element": "elem-soil-structure-usability"
         },
         {
-          "_id": "node-group-C1-freshwater-lens-recharge",
-          "position": {
-            "x": -642,
-            "y": -929
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-freshwater-lens-recharge"
-        },
-        {
           "_id": "node-group-C1-salt-tolerant-crop-adoption",
           "position": {
-            "x": 1794,
-            "y": -456
+            "x": 1914,
+            "y": -424
           },
           "pinned": true,
           "style": {},
@@ -7388,8 +7328,8 @@
         {
           "_id": "node-group-C1-tolerant-varieties-adoption",
           "position": {
-            "x": 530,
-            "y": -1343
+            "x": 700,
+            "y": -1251
           },
           "pinned": true,
           "style": {},
@@ -7397,54 +7337,6 @@
         }
       ],
       "connections": [
-        {
-          "_id": "edge-group-C1-root-zone-salinity--soil-structure-usability",
-          "curvature": -0.453,
-          "style": {},
-          "connection": "conn-root-zone-salinity--soil-structure-usability"
-        },
-        {
-          "_id": "edge-group-C1-soil-structure-usability--freshwater-lens-recharge",
-          "curvature": -0.326,
-          "style": {},
-          "connection": "conn-soil-structure-usability--freshwater-lens-recharge"
-        },
-        {
-          "_id": "edge-group-C1-freshwater-lens-recharge--freshwater-lens-thickness",
-          "curvature": -0.526,
-          "style": {},
-          "connection": "conn-freshwater-lens-recharge--freshwater-lens-thickness"
-        },
-        {
-          "_id": "edge-group-C1-freshwater-lens-thickness--root-zone-salinity",
-          "curvature": 0.109,
-          "style": {},
-          "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
-        },
-        {
-          "_id": "edge-group-C1-harvest-lost-to-salt--tolerant-varieties-adoption",
-          "curvature": -0.543,
-          "style": {},
-          "connection": "conn-harvest-lost-to-salt--tolerant-varieties-adoption"
-        },
-        {
-          "_id": "edge-group-C1-tolerant-varieties-adoption--harvest-lost-to-salt",
-          "curvature": -0.543,
-          "style": {},
-          "connection": "conn-tolerant-varieties-adoption--harvest-lost-to-salt"
-        },
-        {
-          "_id": "edge-group-C1-harvest-lost-to-salt--salt-tolerant-crop-adoption",
-          "curvature": -0.161,
-          "style": {},
-          "connection": "conn-harvest-lost-to-salt--salt-tolerant-crop-adoption"
-        },
-        {
-          "_id": "edge-group-C1-salt-tolerant-crop-adoption--harvest-lost-to-salt",
-          "curvature": -0.161,
-          "style": {},
-          "connection": "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt"
-        },
         {
           "_id": "edge-group-C1-root-zone-salinity--harvest-lost-to-salt",
           "curvature": 0.1,
@@ -7492,6 +7384,48 @@
           "curvature": 0.227,
           "style": {},
           "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
+        },
+        {
+          "_id": "edge-group-C1-freshwater-lens-thickness--root-zone-salinity",
+          "curvature": 0.109,
+          "style": {},
+          "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
+        },
+        {
+          "_id": "edge-group-C1-root-zone-salinity--soil-structure-usability",
+          "curvature": -0.491,
+          "style": {},
+          "connection": "conn-root-zone-salinity--soil-structure-usability"
+        },
+        {
+          "_id": "edge-group-C1-soil-structure-usability--freshwater-lens-thickness",
+          "curvature": -0.513,
+          "style": {},
+          "connection": "conn-soil-structure-usability--freshwater-lens-thickness"
+        },
+        {
+          "_id": "edge-group-C1-harvest-lost-to-salt--salt-tolerant-crop-adoption",
+          "curvature": -0.147,
+          "style": {},
+          "connection": "conn-harvest-lost-to-salt--salt-tolerant-crop-adoption"
+        },
+        {
+          "_id": "edge-group-C1-salt-tolerant-crop-adoption--harvest-lost-to-salt",
+          "curvature": -0.147,
+          "style": {},
+          "connection": "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt"
+        },
+        {
+          "_id": "edge-group-C1-harvest-lost-to-salt--tolerant-varieties-adoption",
+          "curvature": -0.595,
+          "style": {},
+          "connection": "conn-harvest-lost-to-salt--tolerant-varieties-adoption"
+        },
+        {
+          "_id": "edge-group-C1-tolerant-varieties-adoption--harvest-lost-to-salt",
+          "curvature": -0.595,
+          "style": {},
+          "connection": "conn-tolerant-varieties-adoption--harvest-lost-to-salt"
         }
       ],
       "loops": [
@@ -7501,8 +7435,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": -363,
-            "y": -770
+            "x": -337,
+            "y": -645
           }
         },
         {
@@ -7511,8 +7445,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 542,
-            "y": -883
+            "x": 627,
+            "y": -837
           }
         },
         {
@@ -7521,8 +7455,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 1174,
-            "y": -440
+            "x": 1234,
+            "y": -424
           }
         },
         {
@@ -8175,8 +8109,8 @@
         {
           "_id": "node-group-C4-crop-yield",
           "position": {
-            "x": 837,
-            "y": 452
+            "x": 826,
+            "y": 562
           },
           "pinned": true,
           "style": {},
@@ -8185,8 +8119,8 @@
         {
           "_id": "node-group-C4-freshwater-storage-measures",
           "position": {
-            "x": 776,
-            "y": 1128
+            "x": 487,
+            "y": 1261
           },
           "pinned": true,
           "style": {},
@@ -8195,28 +8129,18 @@
         {
           "_id": "node-group-C4-winter-rain-drained-away",
           "position": {
-            "x": 70,
-            "y": 1502
+            "x": -390,
+            "y": 1312
           },
           "pinned": true,
           "style": {},
           "element": "elem-winter-rain-drained-away"
         },
         {
-          "_id": "node-group-C4-freshwater-lens-recharge",
-          "position": {
-            "x": -701,
-            "y": 1221
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-freshwater-lens-recharge"
-        },
-        {
           "_id": "node-group-C4-freshwater-lens-thickness",
           "position": {
-            "x": -865,
-            "y": 521
+            "x": -836,
+            "y": 632
           },
           "pinned": true,
           "style": {},
@@ -8255,7 +8179,7 @@
         {
           "_id": "node-group-C4-creek-ridge-lens-thickness",
           "position": {
-            "x": -228,
+            "x": -227,
             "y": -894
           },
           "pinned": true,
@@ -8265,8 +8189,8 @@
         {
           "_id": "node-group-C4-pumping-the-water-board-allows",
           "position": {
-            "x": 238,
-            "y": -884
+            "x": 239,
+            "y": -883
           },
           "pinned": true,
           "style": {},
@@ -8285,58 +8209,22 @@
       ],
       "connections": [
         {
-          "_id": "edge-group-C4-crop-water-shortfall--groundwater-extraction-for-irrigation",
-          "curvature": -0.56,
-          "style": {},
-          "connection": "conn-crop-water-shortfall--groundwater-extraction-for-irrigation"
-        },
-        {
-          "_id": "edge-group-C4-groundwater-extraction-for-irrigation--freshwater-availability-for-crops",
-          "curvature": -0.572,
-          "style": {},
-          "connection": "conn-groundwater-extraction-for-irrigation--freshwater-availability-for-crops"
-        },
-        {
           "_id": "edge-group-C4-freshwater-availability-for-crops--crop-water-shortfall",
           "curvature": 0,
           "style": {},
           "connection": "conn-freshwater-availability-for-crops--crop-water-shortfall"
         },
         {
-          "_id": "edge-group-C4-crop-yield--freshwater-storage-measures",
-          "curvature": 0.274,
+          "_id": "edge-group-C4-crop-water-shortfall--zlto-call-for-supply-route",
+          "curvature": 0.335,
           "style": {},
-          "connection": "conn-crop-yield--freshwater-storage-measures"
+          "connection": "conn-crop-water-shortfall--zlto-call-for-supply-route"
         },
         {
-          "_id": "edge-group-C4-freshwater-storage-measures--winter-rain-drained-away",
-          "curvature": 0.225,
+          "_id": "edge-group-C4-zlto-call-for-supply-route--freshwater-supply-route",
+          "curvature": 0.324,
           "style": {},
-          "connection": "conn-freshwater-storage-measures--winter-rain-drained-away"
-        },
-        {
-          "_id": "edge-group-C4-winter-rain-drained-away--freshwater-lens-recharge",
-          "curvature": 0.219,
-          "style": {},
-          "connection": "conn-winter-rain-drained-away--freshwater-lens-recharge"
-        },
-        {
-          "_id": "edge-group-C4-freshwater-lens-recharge--freshwater-lens-thickness",
-          "curvature": 0.286,
-          "style": {},
-          "connection": "conn-freshwater-lens-recharge--freshwater-lens-thickness"
-        },
-        {
-          "_id": "edge-group-C4-freshwater-lens-thickness--freshwater-availability-for-crops",
-          "curvature": 0.254,
-          "style": {},
-          "connection": "conn-freshwater-lens-thickness--freshwater-availability-for-crops"
-        },
-        {
-          "_id": "edge-group-C4-crop-water-shortfall--crop-yield",
-          "curvature": 0.226,
-          "style": {},
-          "connection": "conn-crop-water-shortfall--crop-yield"
+          "connection": "conn-zlto-call-for-supply-route--freshwater-supply-route"
         },
         {
           "_id": "edge-group-C4-freshwater-supply-route--external-freshwater-supply",
@@ -8351,6 +8239,54 @@
           "connection": "conn-external-freshwater-supply--freshwater-availability-for-crops"
         },
         {
+          "_id": "edge-group-C4-crop-water-shortfall--groundwater-extraction-for-irrigation",
+          "curvature": -0.56,
+          "style": {},
+          "connection": "conn-crop-water-shortfall--groundwater-extraction-for-irrigation"
+        },
+        {
+          "_id": "edge-group-C4-groundwater-extraction-for-irrigation--freshwater-availability-for-crops",
+          "curvature": -0.572,
+          "style": {},
+          "connection": "conn-groundwater-extraction-for-irrigation--freshwater-availability-for-crops"
+        },
+        {
+          "_id": "edge-group-C4-crop-water-shortfall--crop-yield",
+          "curvature": 0.286,
+          "style": {},
+          "connection": "conn-crop-water-shortfall--crop-yield"
+        },
+        {
+          "_id": "edge-group-C4-crop-yield--freshwater-storage-measures",
+          "curvature": 0.32,
+          "style": {},
+          "connection": "conn-crop-yield--freshwater-storage-measures"
+        },
+        {
+          "_id": "edge-group-C4-freshwater-storage-measures--winter-rain-drained-away",
+          "curvature": 0.241,
+          "style": {},
+          "connection": "conn-freshwater-storage-measures--winter-rain-drained-away"
+        },
+        {
+          "_id": "edge-group-C4-winter-rain-drained-away--freshwater-lens-thickness",
+          "curvature": 0.321,
+          "style": {},
+          "connection": "conn-winter-rain-drained-away--freshwater-lens-thickness"
+        },
+        {
+          "_id": "edge-group-C4-freshwater-lens-thickness--freshwater-availability-for-crops",
+          "curvature": 0.318,
+          "style": {},
+          "connection": "conn-freshwater-lens-thickness--freshwater-availability-for-crops"
+        },
+        {
+          "_id": "edge-group-C4-groundwater-extraction-for-irrigation--creek-ridge-lens-thickness",
+          "curvature": 0.375,
+          "style": {},
+          "connection": "conn-groundwater-extraction-for-irrigation--creek-ridge-lens-thickness"
+        },
+        {
           "_id": "edge-group-C4-creek-ridge-lens-thickness--pumping-the-water-board-allows",
           "curvature": 0.711,
           "style": {},
@@ -8361,24 +8297,6 @@
           "curvature": 0.364,
           "style": {},
           "connection": "conn-pumping-the-water-board-allows--groundwater-extraction-for-irrigation"
-        },
-        {
-          "_id": "edge-group-C4-groundwater-extraction-for-irrigation--creek-ridge-lens-thickness",
-          "curvature": 0.375,
-          "style": {},
-          "connection": "conn-groundwater-extraction-for-irrigation--creek-ridge-lens-thickness"
-        },
-        {
-          "_id": "edge-group-C4-crop-water-shortfall--zlto-call-for-supply-route",
-          "curvature": 0.335,
-          "style": {},
-          "connection": "conn-crop-water-shortfall--zlto-call-for-supply-route"
-        },
-        {
-          "_id": "edge-group-C4-zlto-call-for-supply-route--freshwater-supply-route",
-          "curvature": 0.324,
-          "style": {},
-          "connection": "conn-zlto-call-for-supply-route--freshwater-supply-route"
         }
       ],
       "loops": [
@@ -8399,7 +8317,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 1077
+            "y": 1022
           }
         },
         {
@@ -8427,7 +8345,7 @@
     {
       "_id": "map-group-C5",
       "name": "07 C5 Storing: more worthwhile, harder to pay for",
-      "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so *Rainwater lens recharge in the low polders* and, over years, the *Rainwater lens thickness in the low polders* rise; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A lower *Crop yield* makes storing more worthwhile to a farmer (B6), and leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same harvest pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The links from *Crop yield* and from *Farmers' capacity to invest* to *Freshwater storage measures* are both hypotheses for the group model building session.",
+      "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so more rain refills the lens and, over years, the *Rainwater lens thickness in the low polders* rises; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A lower *Crop yield* makes storing more worthwhile to a farmer (B6), and leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same harvest pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The links from *Crop yield* and from *Farmers' capacity to invest* to *Freshwater storage measures* are both hypotheses for the group model building session.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -8440,8 +8358,8 @@
         {
           "_id": "node-group-C5-farmers-capacity-to-invest",
           "position": {
-            "x": -585,
-            "y": -314
+            "x": -457,
+            "y": 546
           },
           "pinned": true,
           "style": {},
@@ -8450,8 +8368,8 @@
         {
           "_id": "node-group-C5-freshwater-storage-measures",
           "position": {
-            "x": 0,
-            "y": -716
+            "x": -1212,
+            "y": 0
           },
           "pinned": true,
           "style": {},
@@ -8460,28 +8378,18 @@
         {
           "_id": "node-group-C5-winter-rain-drained-away",
           "position": {
-            "x": 0,
-            "y": -480
+            "x": -735,
+            "y": 0
           },
           "pinned": true,
           "style": {},
           "element": "elem-winter-rain-drained-away"
         },
         {
-          "_id": "node-group-C5-freshwater-lens-recharge",
-          "position": {
-            "x": 0,
-            "y": -228
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-freshwater-lens-recharge"
-        },
-        {
           "_id": "node-group-C5-freshwater-lens-thickness",
           "position": {
-            "x": 0,
-            "y": 42
+            "x": -242,
+            "y": 0
           },
           "pinned": true,
           "style": {},
@@ -8490,8 +8398,8 @@
         {
           "_id": "node-group-C5-freshwater-availability-for-crops",
           "position": {
-            "x": 0,
-            "y": 296
+            "x": 272,
+            "y": 0
           },
           "pinned": true,
           "style": {},
@@ -8500,8 +8408,8 @@
         {
           "_id": "node-group-C5-crop-water-shortfall",
           "position": {
-            "x": 0,
-            "y": 514
+            "x": 787,
+            "y": 0
           },
           "pinned": true,
           "style": {},
@@ -8510,8 +8418,8 @@
         {
           "_id": "node-group-C5-crop-yield",
           "position": {
-            "x": 0,
-            "y": 716
+            "x": 1212,
+            "y": 0
           },
           "pinned": true,
           "style": {},
@@ -8520,8 +8428,8 @@
         {
           "_id": "node-group-C5-farm-revenue",
           "position": {
-            "x": -562,
-            "y": 363
+            "x": 517,
+            "y": 527
           },
           "pinned": true,
           "style": {},
@@ -8530,28 +8438,10 @@
       ],
       "connections": [
         {
-          "_id": "edge-group-C5-farmers-capacity-to-invest--freshwater-storage-measures",
-          "curvature": 0.325,
-          "style": {},
-          "connection": "conn-farmers-capacity-to-invest--freshwater-storage-measures"
-        },
-        {
-          "_id": "edge-group-C5-freshwater-storage-measures--winter-rain-drained-away",
+          "_id": "edge-group-C5-crop-water-shortfall--crop-yield",
           "curvature": 0,
           "style": {},
-          "connection": "conn-freshwater-storage-measures--winter-rain-drained-away"
-        },
-        {
-          "_id": "edge-group-C5-winter-rain-drained-away--freshwater-lens-recharge",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-winter-rain-drained-away--freshwater-lens-recharge"
-        },
-        {
-          "_id": "edge-group-C5-freshwater-lens-recharge--freshwater-lens-thickness",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-freshwater-lens-recharge--freshwater-lens-thickness"
+          "connection": "conn-crop-water-shortfall--crop-yield"
         },
         {
           "_id": "edge-group-C5-freshwater-lens-thickness--freshwater-availability-for-crops",
@@ -8566,26 +8456,38 @@
           "connection": "conn-freshwater-availability-for-crops--crop-water-shortfall"
         },
         {
-          "_id": "edge-group-C5-crop-water-shortfall--crop-yield",
+          "_id": "edge-group-C5-winter-rain-drained-away--freshwater-lens-thickness",
           "curvature": 0,
           "style": {},
-          "connection": "conn-crop-water-shortfall--crop-yield"
+          "connection": "conn-winter-rain-drained-away--freshwater-lens-thickness"
+        },
+        {
+          "_id": "edge-group-C5-freshwater-storage-measures--winter-rain-drained-away",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-freshwater-storage-measures--winter-rain-drained-away"
         },
         {
           "_id": "edge-group-C5-crop-yield--farm-revenue",
-          "curvature": 0.306,
+          "curvature": 0.168,
           "style": {},
           "connection": "conn-crop-yield--farm-revenue"
         },
         {
           "_id": "edge-group-C5-farm-revenue--farmers-capacity-to-invest",
-          "curvature": 0.213,
+          "curvature": 0.155,
           "style": {},
           "connection": "conn-farm-revenue--farmers-capacity-to-invest"
         },
         {
+          "_id": "edge-group-C5-farmers-capacity-to-invest--freshwater-storage-measures",
+          "curvature": 0.179,
+          "style": {},
+          "connection": "conn-farmers-capacity-to-invest--freshwater-storage-measures"
+        },
+        {
           "_id": "edge-group-C5-crop-yield--freshwater-storage-measures",
-          "curvature": -0.842,
+          "curvature": -0.505,
           "style": {},
           "connection": "conn-crop-yield--freshwater-storage-measures"
         }
@@ -8597,8 +8499,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": -380,
-            "y": 0
+            "x": 0,
+            "y": 327
           }
         },
         {
@@ -8607,8 +8509,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 359,
-            "y": 0
+            "x": 0,
+            "y": -327
           }
         }
       ]
@@ -9830,8 +9732,8 @@
         {
           "_id": "node-loop-R1-root-zone-salinity",
           "position": {
-            "x": -308,
-            "y": -174
+            "x": -351,
+            "y": -115
           },
           "pinned": true,
           "style": {},
@@ -9840,28 +9742,18 @@
         {
           "_id": "node-loop-R1-soil-structure-usability",
           "position": {
-            "x": 207,
-            "y": -217
+            "x": 262,
+            "y": -175
           },
           "pinned": true,
           "style": {},
           "element": "elem-soil-structure-usability"
         },
         {
-          "_id": "node-loop-R1-freshwater-lens-recharge",
-          "position": {
-            "x": 356,
-            "y": 141
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-freshwater-lens-recharge"
-        },
-        {
           "_id": "node-loop-R1-freshwater-lens-thickness",
           "position": {
-            "x": -235,
-            "y": 207
+            "x": 46,
+            "y": 228
           },
           "pinned": true,
           "style": {},
@@ -9871,25 +9763,19 @@
       "connections": [
         {
           "_id": "edge-loop-R1-root-zone-salinity--soil-structure-usability",
-          "curvature": 0.191,
+          "curvature": 0.271,
           "style": {},
           "connection": "conn-root-zone-salinity--soil-structure-usability"
         },
         {
-          "_id": "edge-loop-R1-soil-structure-usability--freshwater-lens-recharge",
-          "curvature": 0.712,
+          "_id": "edge-loop-R1-soil-structure-usability--freshwater-lens-thickness",
+          "curvature": 0.983,
           "style": {},
-          "connection": "conn-soil-structure-usability--freshwater-lens-recharge"
-        },
-        {
-          "_id": "edge-loop-R1-freshwater-lens-recharge--freshwater-lens-thickness",
-          "curvature": 0.234,
-          "style": {},
-          "connection": "conn-freshwater-lens-recharge--freshwater-lens-thickness"
+          "connection": "conn-soil-structure-usability--freshwater-lens-thickness"
         },
         {
           "_id": "edge-loop-R1-freshwater-lens-thickness--root-zone-salinity",
-          "curvature": 0.824,
+          "curvature": 0.664,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
         }
@@ -10734,8 +10620,8 @@
         {
           "_id": "node-loop-B6-crop-yield",
           "position": {
-            "x": -286,
-            "y": -337
+            "x": -247,
+            "y": -243
           },
           "pinned": true,
           "style": {},
@@ -10744,8 +10630,8 @@
         {
           "_id": "node-loop-B6-freshwater-storage-measures",
           "position": {
-            "x": 250,
-            "y": -346
+            "x": 214,
+            "y": -253
           },
           "pinned": true,
           "style": {},
@@ -10754,28 +10640,18 @@
         {
           "_id": "node-loop-B6-winter-rain-drained-away",
           "position": {
-            "x": 637,
-            "y": -99
+            "x": 495,
+            "y": -5
           },
           "pinned": true,
           "style": {},
           "element": "elem-winter-rain-drained-away"
         },
         {
-          "_id": "node-loop-B6-freshwater-lens-recharge",
-          "position": {
-            "x": 487,
-            "y": 252
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-freshwater-lens-recharge"
-        },
-        {
           "_id": "node-loop-B6-freshwater-lens-thickness",
           "position": {
-            "x": -46,
-            "y": 373
+            "x": 213,
+            "y": 253
           },
           "pinned": true,
           "style": {},
@@ -10784,8 +10660,8 @@
         {
           "_id": "node-loop-B6-freshwater-availability-for-crops",
           "position": {
-            "x": -537,
-            "y": 218
+            "x": -281,
+            "y": 231
           },
           "pinned": true,
           "style": {},
@@ -10794,8 +10670,8 @@
         {
           "_id": "node-loop-B6-crop-water-shortfall",
           "position": {
-            "x": -629,
-            "y": -114
+            "x": -492,
+            "y": -30
           },
           "pinned": true,
           "style": {},
@@ -10805,43 +10681,37 @@
       "connections": [
         {
           "_id": "edge-loop-B6-crop-yield--freshwater-storage-measures",
-          "curvature": 0.12,
+          "curvature": 0.14,
           "style": {},
           "connection": "conn-crop-yield--freshwater-storage-measures"
         },
         {
           "_id": "edge-loop-B6-freshwater-storage-measures--winter-rain-drained-away",
-          "curvature": 0.213,
+          "curvature": 0.31,
           "style": {},
           "connection": "conn-freshwater-storage-measures--winter-rain-drained-away"
         },
         {
-          "_id": "edge-loop-B6-winter-rain-drained-away--freshwater-lens-recharge",
-          "curvature": 0.407,
+          "_id": "edge-loop-B6-winter-rain-drained-away--freshwater-lens-thickness",
+          "curvature": 0.327,
           "style": {},
-          "connection": "conn-winter-rain-drained-away--freshwater-lens-recharge"
-        },
-        {
-          "_id": "edge-loop-B6-freshwater-lens-recharge--freshwater-lens-thickness",
-          "curvature": 0.143,
-          "style": {},
-          "connection": "conn-freshwater-lens-recharge--freshwater-lens-thickness"
+          "connection": "conn-winter-rain-drained-away--freshwater-lens-thickness"
         },
         {
           "_id": "edge-loop-B6-freshwater-lens-thickness--freshwater-availability-for-crops",
-          "curvature": 0.151,
+          "curvature": 0.153,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--freshwater-availability-for-crops"
         },
         {
           "_id": "edge-loop-B6-freshwater-availability-for-crops--crop-water-shortfall",
-          "curvature": 0.398,
+          "curvature": 0.355,
           "style": {},
           "connection": "conn-freshwater-availability-for-crops--crop-water-shortfall"
         },
         {
           "_id": "edge-loop-B6-crop-water-shortfall--crop-yield",
-          "curvature": 0.19,
+          "curvature": 0.259,
           "style": {},
           "connection": "conn-crop-water-shortfall--crop-yield"
         }
@@ -11061,8 +10931,8 @@
         {
           "_id": "node-loop-R4-farmers-capacity-to-invest",
           "position": {
-            "x": -303,
-            "y": -471
+            "x": -310,
+            "y": -424
           },
           "pinned": true,
           "style": {},
@@ -11071,8 +10941,8 @@
         {
           "_id": "node-loop-R4-freshwater-storage-measures",
           "position": {
-            "x": 302,
-            "y": -471
+            "x": 312,
+            "y": -423
           },
           "pinned": true,
           "style": {},
@@ -11081,28 +10951,18 @@
         {
           "_id": "node-loop-R4-winter-rain-drained-away",
           "position": {
-            "x": 758,
-            "y": -259
+            "x": 750,
+            "y": -173
           },
           "pinned": true,
           "style": {},
           "element": "elem-winter-rain-drained-away"
         },
         {
-          "_id": "node-loop-R4-freshwater-lens-recharge",
-          "position": {
-            "x": 865,
-            "y": 106
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-freshwater-lens-recharge"
-        },
-        {
           "_id": "node-loop-R4-freshwater-lens-thickness",
           "position": {
-            "x": 493,
-            "y": 417
+            "x": 717,
+            "y": 214
           },
           "pinned": true,
           "style": {},
@@ -11111,8 +10971,8 @@
         {
           "_id": "node-loop-R4-freshwater-availability-for-crops",
           "position": {
-            "x": -120,
-            "y": 497
+            "x": 222,
+            "y": 441
           },
           "pinned": true,
           "style": {},
@@ -11121,8 +10981,8 @@
         {
           "_id": "node-loop-R4-crop-water-shortfall",
           "position": {
-            "x": -635,
-            "y": 349
+            "x": -369,
+            "y": 409
           },
           "pinned": true,
           "style": {},
@@ -11131,8 +10991,8 @@
         {
           "_id": "node-loop-R4-crop-yield",
           "position": {
-            "x": -879,
-            "y": 59
+            "x": -752,
+            "y": 171
           },
           "pinned": true,
           "style": {},
@@ -11141,8 +11001,8 @@
         {
           "_id": "node-loop-R4-farm-revenue",
           "position": {
-            "x": -754,
-            "y": -262
+            "x": -747,
+            "y": -178
           },
           "pinned": true,
           "style": {},
@@ -11152,55 +11012,49 @@
       "connections": [
         {
           "_id": "edge-loop-R4-farmers-capacity-to-invest--freshwater-storage-measures",
-          "curvature": 0.1,
+          "curvature": 0.113,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--freshwater-storage-measures"
         },
         {
           "_id": "edge-loop-R4-freshwater-storage-measures--winter-rain-drained-away",
-          "curvature": 0.134,
+          "curvature": 0.172,
           "style": {},
           "connection": "conn-freshwater-storage-measures--winter-rain-drained-away"
         },
         {
-          "_id": "edge-loop-R4-winter-rain-drained-away--freshwater-lens-recharge",
-          "curvature": 0.319,
+          "_id": "edge-loop-R4-winter-rain-drained-away--freshwater-lens-thickness",
+          "curvature": 0.389,
           "style": {},
-          "connection": "conn-winter-rain-drained-away--freshwater-lens-recharge"
-        },
-        {
-          "_id": "edge-loop-R4-freshwater-lens-recharge--freshwater-lens-thickness",
-          "curvature": 0.205,
-          "style": {},
-          "connection": "conn-freshwater-lens-recharge--freshwater-lens-thickness"
+          "connection": "conn-winter-rain-drained-away--freshwater-lens-thickness"
         },
         {
           "_id": "edge-loop-R4-freshwater-lens-thickness--freshwater-availability-for-crops",
-          "curvature": 0.108,
+          "curvature": 0.159,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--freshwater-availability-for-crops"
         },
         {
           "_id": "edge-loop-R4-freshwater-availability-for-crops--crop-water-shortfall",
-          "curvature": 0.11,
+          "curvature": 0.108,
           "style": {},
           "connection": "conn-freshwater-availability-for-crops--crop-water-shortfall"
         },
         {
           "_id": "edge-loop-R4-crop-water-shortfall--crop-yield",
-          "curvature": 0.209,
+          "curvature": 0.163,
           "style": {},
           "connection": "conn-crop-water-shortfall--crop-yield"
         },
         {
           "_id": "edge-loop-R4-crop-yield--farm-revenue",
-          "curvature": 0.272,
+          "curvature": 0.348,
           "style": {},
           "connection": "conn-crop-yield--farm-revenue"
         },
         {
           "_id": "edge-loop-R4-farm-revenue--farmers-capacity-to-invest",
-          "curvature": 0.132,
+          "curvature": 0.169,
           "style": {},
           "connection": "conn-farm-revenue--farmers-capacity-to-invest"
         }
@@ -12294,7 +12148,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-recharge { width: 310; height: 120; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n"
     },
     {
       "_id": "pers-actors",
@@ -12304,7 +12158,7 @@
     {
       "_id": "pers-loops",
       "name": "Loops",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-recharge { width: 310; height: 120; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
     }
   ]
 }

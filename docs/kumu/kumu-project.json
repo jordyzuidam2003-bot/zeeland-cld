@@ -185,19 +185,6 @@
       "cluster": true
     },
     {
-      "_id": "attr-ask-actors",
-      "name": "Ask actors",
-      "format": "text",
-      "private": false,
-      "limit": 1,
-      "category": "General",
-      "prompt": "autocomplete",
-      "locked": false,
-      "values": [],
-      "sort": false,
-      "cluster": false
-    },
-    {
       "_id": "attr-actor",
       "name": "Actor",
       "format": "string",
@@ -221,6 +208,19 @@
     {
       "_id": "attr-simplification",
       "name": "Simplification",
+      "format": "text",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-ask-actors",
+      "name": "Ask actors",
       "format": "text",
       "private": false,
       "limit": 1,
@@ -554,22 +554,6 @@
         "description": "The thickness of the fresh rainwater lenses on top of the saline groundwater in the island's low polders, from the surface to the middle of the mixing zone between them: about 2 m on average in the low-lying polders with saline seepage, under 2 m over more than half of the 56 km² surveyed (de Louw et al., 2011, pp. 3667, 3672–3673, 3675, measured on the island from a helicopter and on the ground). These lenses keep salt out of the root zone and reach only the crop on their own field. A Stock: a year's recharge barely moves it (the links into it from Hotter, drier summers, Wetter winters, Soil structure and Winter rain drained away).",
         "actors": "",
         "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011",
-        "sourced": "yes"
-      }
-    },
-    {
-      "_id": "elem-land-subsidence",
-      "attributes": {
-        "label": "Land subsidence",
-        "element type": "Auxiliary",
-        "adaptive practice": "no",
-        "sets domain": "Ecological",
-        "subsystem": "Water and soil",
-        "subquestion": "SQ1",
-        "description": "How fast the land surface of the island's polders falls. Peat above the groundwater compacts and its organic matter oxidises as it is drained (Waterschap Scheldestromen, 2025, p. 13, the board's rules for its whole area), and the fall adds up in Polder surface elevation. The island's low polders lie on peat: in Schouwen's low polder salt-marsh soils alternate with basin clay with peat (Waterschap Scheldestromen, 2021b, p. 23), and under Duiveland a peat layer lies almost everywhere at −1.6 to −3.4 m NAP, under calcareous sand or light clay (2021a, p. 20), often within a metre of the surface in its low south and middle (p. 19). Drained by ditches, the polders have sunk over several hundred years as the peat compacted and the clay ripened (2021b, pp. 20, 22; 2021a, p. 18). No source read gives the rate on the island. The rate follows the drainage within the year, so an Auxiliary; what builds up slowly is the elevation, a Stock.",
-        "ask actors": "Waterschap Scheldestromen, through DCC or Living Lab: How fast the island's polders subside, per area: the board changes a level in soil prone to settling by no more than the land has subsided since (Waterschap Scheldestromen, 2021b, p. 50).",
-        "actors": "",
-        "sources": "Waterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nWaterschap Scheldestromen. (2021b). Hydrologisch onderzoeksrapport Schouwen. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch_onderzoeksrapport_Schouwen.pdf\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf",
         "sourced": "yes"
       }
     },
@@ -1845,26 +1829,6 @@
       "to": "elem-freshwater-availability-for-crops"
     },
     {
-      "_id": "conn-land-subsidence--polder-surface-elevation-nap",
-      "direction": "directed",
-      "delayed": true,
-      "reversed": false,
-      "attributes": {
-        "label": "−",
-        "polarity": "negative",
-        "delay": "yes",
-        "description": "Peat oxidation and clay settling lower the land surface relative to NAP at millimetres a year, so a decimetre takes decades: Dutch land below sea level is still subsiding up to 1 m per century, fastest in peat areas (Oude Essink et al., 2010, pp. 1, 3, 8–9). A rate for Schouwen-Duiveland's clay polders is not yet sourced.",
-        "sets link": "Within E",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "Oude Essink, G. H. P., van Baaren, E. S., & de Louw, P. G. B. (2010). Effects of climate change on coastal groundwater systems: A modeling study in the Netherlands. Water Resources Research, 46, W00F04. https://doi.org/10.1029/2009WR008719",
-        "sourced": "yes",
-        "connection type": "-"
-      },
-      "from": "elem-land-subsidence",
-      "to": "elem-polder-surface-elevation-nap"
-    },
-    {
       "_id": "conn-polder-surface-elevation-nap--saline-seepage-kwel",
       "direction": "directed",
       "delayed": false,
@@ -2527,26 +2491,6 @@
       },
       "from": "elem-spring-workability-of-the-fields",
       "to": "elem-demand-for-deep-polder-drainage"
-    },
-    {
-      "_id": "conn-polder-drainage-depth--land-subsidence",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "The deeper the ditch levels lie below the fields, the more peat lies above the groundwater, where it compacts and oxidises, so the land falls faster: by the water board's rules for its whole area, peat soil above the groundwater subsides in response to drainage, and where the soil is prone to settling the board changes levels with restraint to limit it (Waterschap Scheldestromen, 2025, p. 13). On the island it holds Schouwen's summer levels high on purpose to limit subsidence by peat compaction, which leaves the salt-marsh soils between too little drainage depth (Waterschap Scheldestromen, 2021b, p. 45), and changes a level in soil prone to settling by no more than the land has subsided since (p. 50); Duiveland's plan changed levels with great care where peat lies below (2021a, p. 67). Within the year: the board weighs the risk by the summer groundwater level against the ditch level and the depth of the peat (2021b, p. 50). No source read gives how much faster the land falls per decimetre of drainage.",
-        "sets link": "T to E",
-        "sets scope": "Cross-domain",
-        "hypothesis": "no",
-        "sources": "Waterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nWaterschap Scheldestromen. (2021b). Hydrologisch onderzoeksrapport Schouwen. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch_onderzoeksrapport_Schouwen.pdf\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-polder-drainage-depth",
-      "to": "elem-land-subsidence"
     },
     {
       "_id": "conn-polder-drainage-depth--saline-seepage-kwel",
@@ -4351,6 +4295,28 @@
       "to": "elem-freshwater-lens-thickness"
     },
     {
+      "_id": "conn-polder-drainage-depth--polder-surface-elevation-nap",
+      "direction": "directed",
+      "delayed": true,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "yes",
+        "description": "The deeper the ditch levels lie below the fields, the more peat lies above the groundwater, where it compacts and oxidises, so the land surface falls faster relative to NAP: by the water board's rules for its whole area, peat soil above the groundwater subsides in response to drainage, and where the soil is prone to settling the board changes levels with restraint to limit it (Waterschap Scheldestromen, 2025, p. 13). The island's low polders lie on peat: in Schouwen's low polder salt-marsh soils alternate with basin clay with peat (Waterschap Scheldestromen, 2021b, p. 23), and under Duiveland a peat layer lies almost everywhere at −1.6 to −3.4 m NAP, under calcareous sand or light clay (2021a, p. 20), often within a metre of the surface in its low south and middle (p. 19); drained by ditches, the polders have sunk over several hundred years as the peat compacted and the clay ripened (2021b, pp. 20, 22; 2021a, p. 18). On the island the board holds Schouwen's summer levels high on purpose to limit subsidence by peat compaction, which leaves the salt-marsh soils between too little drainage depth (2021b, p. 45), and changes a level in soil prone to settling by no more than the land has subsided since (p. 50); Duiveland's plan changed levels with great care where peat lies below (2021a, p. 67). The rate of the fall follows the drainage within the year (the board weighs the risk by the summer groundwater level against the ditch level and the depth of the peat, 2021b, p. 50); the delay sits in the elevation, which the fall lowers at millimetres a year, so a decimetre takes decades: Dutch land below sea level is still subsiding up to 1 m per century, fastest in peat areas (Oude Essink et al., 2010, pp. 1, 3, 8–9). No source read gives how much faster the land falls per decimetre of drainage, nor a rate for Schouwen-Duiveland's clay polders.",
+        "sets link": "T to E",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "simplification": "Folds Land subsidence, the rate at which the polders' surface falls, into the link: the sign is the product of the two steps (+, then −), so no loop through the link changes R or B, and each keeps its mechanism, drained peat compacting and oxidising and the land falling. The rate follows the drainage within the year and is no actor's decision; its slowness lies in the elevation, a Stock, which stays drawn, so the delay sits on this link. The link also holds the rate's response to the drainage as if the peat above the groundwater lasted to 2050: its organic matter oxidises as it is drained, which uses it up, but no source read gives how much peat is left on the island or how long it lasts. Drawn, the dwindling peat would only weaken the link, in a balancing loop of its own, never reverse it, so every loop through it keeps its polarity and its mechanism. The link also counts the drainage depth and the fall of the land as totals for the island, though how fast drainage makes the land fall differs by area with where peat lies above the groundwater: in Schouwen's low polder salt-marsh soils alternate with basin clay with peat (Waterschap Scheldestromen, 2021b, p. 23), and under Duiveland the peat lies often within a metre of the surface in its low south and middle (2021a, p. 19), so the board sets its levels by the soil (2021b, p. 45). Deeper drainage lowers the land wherever it acts, so the link stays − and every loop through it keeps its polarity, and those loops run on through the seepage of the low polders, where the peat lies, so they keep their mechanism. What it leaves out: how strong the link is per area, which no source read gives for the island.",
+        "ask actors": "Waterschap Scheldestromen, through DCC or Living Lab: How fast the island's polders subside, per area: the board changes a level in soil prone to settling by no more than the land has subsided since (Waterschap Scheldestromen, 2021b, p. 50).",
+        "sources": "Waterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nWaterschap Scheldestromen. (2021b). Hydrologisch onderzoeksrapport Schouwen. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch_onderzoeksrapport_Schouwen.pdf\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nOude Essink, G. H. P., van Baaren, E. S., & de Louw, P. G. B. (2010). Effects of climate change on coastal groundwater systems: A modeling study in the Netherlands. Water Resources Research, 46, W00F04. https://doi.org/10.1029/2009WR008719",
+        "sourced": "yes",
+        "connection type": "-"
+      },
+      "from": "elem-polder-drainage-depth",
+      "to": "elem-polder-surface-elevation-nap"
+    },
+    {
       "_id": "conn-0",
       "direction": "directed",
       "delayed": false,
@@ -5206,16 +5172,6 @@
           "element": "elem-freshwater-lens-thickness"
         },
         {
-          "_id": "node-land-subsidence",
-          "position": {
-            "x": -2024,
-            "y": -844
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-land-subsidence"
-        },
-        {
           "_id": "node-polder-surface-elevation-nap",
           "position": {
             "x": -2202,
@@ -5828,12 +5784,6 @@
           "connection": "conn-freshwater-lens-thickness--freshwater-availability-for-crops"
         },
         {
-          "_id": "edge-land-subsidence--polder-surface-elevation-nap",
-          "curvature": -0.14,
-          "style": {},
-          "connection": "conn-land-subsidence--polder-surface-elevation-nap"
-        },
-        {
           "_id": "edge-polder-surface-elevation-nap--saline-seepage-kwel",
           "curvature": -0.14,
           "style": {},
@@ -6030,12 +5980,6 @@
           "curvature": 0.15,
           "style": {},
           "connection": "conn-spring-workability-of-the-fields--demand-for-deep-polder-drainage"
-        },
-        {
-          "_id": "edge-polder-drainage-depth--land-subsidence",
-          "curvature": -0.25,
-          "style": {},
-          "connection": "conn-polder-drainage-depth--land-subsidence"
         },
         {
           "_id": "edge-polder-drainage-depth--saline-seepage-kwel",
@@ -6570,6 +6514,12 @@
           "curvature": 0.2,
           "style": {},
           "connection": "conn-winter-rain-drained-away--freshwater-lens-thickness"
+        },
+        {
+          "_id": "edge-polder-drainage-depth--polder-surface-elevation-nap",
+          "curvature": 0.1,
+          "style": {},
+          "connection": "conn-polder-drainage-depth--polder-surface-elevation-nap"
         }
       ],
       "loops": [
@@ -12148,7 +12098,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n"
     },
     {
       "_id": "pers-actors",
@@ -12158,7 +12108,7 @@
     {
       "_id": "pers-loops",
       "name": "Loops",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-land-subsidence { width: 251; height: 52; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
     }
   ]
 }

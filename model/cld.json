@@ -61,33 +61,6 @@
       "y": 610
     },
     {
-      "id": "land-subsidence",
-      "label": "Land subsidence",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Ecological",
-      "subsystem": "Water and soil",
-      "subquestion": "SQ1",
-      "description": "How fast the land surface of the island's polders falls. Peat above the groundwater compacts and its organic matter oxidises as it is drained (Waterschap Scheldestromen, 2025, p. 13, the board's rules for its whole area), and the fall adds up in Polder surface elevation. The island's low polders lie on peat: in Schouwen's low polder salt-marsh soils alternate with basin clay with peat (Waterschap Scheldestromen, 2021b, p. 23), and under Duiveland a peat layer lies almost everywhere at −1.6 to −3.4 m NAP, under calcareous sand or light clay (2021a, p. 20), often within a metre of the surface in its low south and middle (p. 19). Drained by ditches, the polders have sunk over several hundred years as the peat compacted and the clay ripened (2021b, pp. 20, 22; 2021a, p. 18). No source read gives the rate on the island. The rate follows the drainage within the year, so an Auxiliary; what builds up slowly is the elevation, a Stock.",
-      "sources": [
-        "scheldestromen-2025-nota-peilbesluiten",
-        "scheldestromen-2021-hor-schouwen",
-        "scheldestromen-2021-hor-duiveland"
-      ],
-      "ask actors": [
-        {
-          "actor": "waterschap-scheldestromen",
-          "for": "How fast the island's polders subside, per area: the board changes a level in soil prone to settling by no more than the land has subsided since (Waterschap Scheldestromen, 2021b, p. 50).",
-          "through": [
-            "DCC",
-            "Living Lab"
-          ]
-        }
-      ],
-      "x": -2024,
-      "y": -844
-    },
-    {
       "id": "polder-surface-elevation-nap",
       "label": "Polder surface elevation (NAP)",
       "element type": "Stock",
@@ -1193,17 +1166,6 @@
       "curvature": -0.28
     },
     {
-      "from": "land-subsidence",
-      "to": "polder-surface-elevation-nap",
-      "polarity": "-",
-      "delay": true,
-      "description": "Peat oxidation and clay settling lower the land surface relative to NAP at millimetres a year, so a decimetre takes decades: Dutch land below sea level is still subsiding up to 1 m per century, fastest in peat areas (Oude Essink et al., 2010, pp. 1, 3, 8–9). A rate for Schouwen-Duiveland's clay polders is not yet sourced.",
-      "sources": [
-        "oude-essink-2010"
-      ],
-      "curvature": -0.14
-    },
-    {
       "from": "polder-surface-elevation-nap",
       "to": "saline-seepage-kwel",
       "polarity": "-",
@@ -1617,19 +1579,6 @@
         "scheldestromen-2021-hor-duiveland"
       ],
       "curvature": 0.15
-    },
-    {
-      "from": "polder-drainage-depth",
-      "to": "land-subsidence",
-      "polarity": "+",
-      "delay": false,
-      "description": "The deeper the ditch levels lie below the fields, the more peat lies above the groundwater, where it compacts and oxidises, so the land falls faster: by the water board's rules for its whole area, peat soil above the groundwater subsides in response to drainage, and where the soil is prone to settling the board changes levels with restraint to limit it (Waterschap Scheldestromen, 2025, p. 13). On the island it holds Schouwen's summer levels high on purpose to limit subsidence by peat compaction, which leaves the salt-marsh soils between too little drainage depth (Waterschap Scheldestromen, 2021b, p. 45), and changes a level in soil prone to settling by no more than the land has subsided since (p. 50); Duiveland's plan changed levels with great care where peat lies below (2021a, p. 67). Within the year: the board weighs the risk by the summer groundwater level against the ditch level and the depth of the peat (2021b, p. 50). No source read gives how much faster the land falls per decimetre of drainage.",
-      "sources": [
-        "scheldestromen-2025-nota-peilbesluiten",
-        "scheldestromen-2021-hor-schouwen",
-        "scheldestromen-2021-hor-duiveland"
-      ],
-      "curvature": -0.25
     },
     {
       "from": "polder-drainage-depth",
@@ -2748,6 +2697,31 @@
         "kaandorp-2022"
       ],
       "curvature": 0.2
+    },
+    {
+      "from": "polder-drainage-depth",
+      "to": "polder-surface-elevation-nap",
+      "polarity": "-",
+      "delay": true,
+      "description": "The deeper the ditch levels lie below the fields, the more peat lies above the groundwater, where it compacts and oxidises, so the land surface falls faster relative to NAP: by the water board's rules for its whole area, peat soil above the groundwater subsides in response to drainage, and where the soil is prone to settling the board changes levels with restraint to limit it (Waterschap Scheldestromen, 2025, p. 13). The island's low polders lie on peat: in Schouwen's low polder salt-marsh soils alternate with basin clay with peat (Waterschap Scheldestromen, 2021b, p. 23), and under Duiveland a peat layer lies almost everywhere at −1.6 to −3.4 m NAP, under calcareous sand or light clay (2021a, p. 20), often within a metre of the surface in its low south and middle (p. 19); drained by ditches, the polders have sunk over several hundred years as the peat compacted and the clay ripened (2021b, pp. 20, 22; 2021a, p. 18). On the island the board holds Schouwen's summer levels high on purpose to limit subsidence by peat compaction, which leaves the salt-marsh soils between too little drainage depth (2021b, p. 45), and changes a level in soil prone to settling by no more than the land has subsided since (p. 50); Duiveland's plan changed levels with great care where peat lies below (2021a, p. 67). The rate of the fall follows the drainage within the year (the board weighs the risk by the summer groundwater level against the ditch level and the depth of the peat, 2021b, p. 50); the delay sits in the elevation, which the fall lowers at millimetres a year, so a decimetre takes decades: Dutch land below sea level is still subsiding up to 1 m per century, fastest in peat areas (Oude Essink et al., 2010, pp. 1, 3, 8–9). No source read gives how much faster the land falls per decimetre of drainage, nor a rate for Schouwen-Duiveland's clay polders.",
+      "simplification": "Folds Land subsidence, the rate at which the polders' surface falls, into the link: the sign is the product of the two steps (+, then −), so no loop through the link changes R or B, and each keeps its mechanism, drained peat compacting and oxidising and the land falling. The rate follows the drainage within the year and is no actor's decision; its slowness lies in the elevation, a Stock, which stays drawn, so the delay sits on this link. The link also holds the rate's response to the drainage as if the peat above the groundwater lasted to 2050: its organic matter oxidises as it is drained, which uses it up, but no source read gives how much peat is left on the island or how long it lasts. Drawn, the dwindling peat would only weaken the link, in a balancing loop of its own, never reverse it, so every loop through it keeps its polarity and its mechanism. The link also counts the drainage depth and the fall of the land as totals for the island, though how fast drainage makes the land fall differs by area with where peat lies above the groundwater: in Schouwen's low polder salt-marsh soils alternate with basin clay with peat (Waterschap Scheldestromen, 2021b, p. 23), and under Duiveland the peat lies often within a metre of the surface in its low south and middle (2021a, p. 19), so the board sets its levels by the soil (2021b, p. 45). Deeper drainage lowers the land wherever it acts, so the link stays − and every loop through it keeps its polarity, and those loops run on through the seepage of the low polders, where the peat lies, so they keep their mechanism. What it leaves out: how strong the link is per area, which no source read gives for the island.",
+      "sources": [
+        "scheldestromen-2025-nota-peilbesluiten",
+        "scheldestromen-2021-hor-schouwen",
+        "scheldestromen-2021-hor-duiveland",
+        "oude-essink-2010"
+      ],
+      "curvature": 0.1,
+      "ask actors": [
+        {
+          "actor": "waterschap-scheldestromen",
+          "for": "How fast the island's polders subside, per area: the board changes a level in soil prone to settling by no more than the land has subsided since (Waterschap Scheldestromen, 2021b, p. 50).",
+          "through": [
+            "DCC",
+            "Living Lab"
+          ]
+        }
+      ]
     }
   ],
   "loops": [

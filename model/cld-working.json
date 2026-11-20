@@ -3930,29 +3930,6 @@
   ],
   "changes": [
     {
-      "change": "Draw the ditch level: a Stock *Ditch level (NAP)* set by the *Water board's plans to raise ditch levels*, *Polder drainage depth* the surface minus the level, and *Saline seepage (kwel)* driven by the level",
-      "argument": "The audit's confirmed findings on Land subsidence and its two links, one point, fail three conditions of the rule “Simplify only where the conclusion survives”: as drawn, every fall of the land raised the seepage at once, as if the board always lowered the ditch level after the land, while under a level held the falling land shrinks the drainage depth instead; the board's choice to lower the level after the land or to hold it was in words only; and the years a new plan takes sat on a link without a delay. The board defines the drainage depth on the difference between the surface and the ditch level (Waterschap Scheldestromen, 2021a, p. 40); where the land subsides under a level held the depth shrinks until a new plan lowers the level (Waterschap Scheldestromen, 2025, p. 13), and on the island the board holds Schouwen's summer levels high to limit peat compaction and changes a level in settling soil by no more than the land has subsided since (Waterschap Scheldestromen, 2021b, pp. 45, 50). So the level is its own Stock, set by the plans (+, delay, the plan's description moved onto the link), the depth an Auxiliary of the surface (+) and the level (−), and the seepage driven by the level (−, the depth's seepage link moved onto it). The link from the surface to the seepage goes: it rested on a lower polder having a lower ditch level (2021a, p. 40), which the level now carries, and kept, it would count the same level twice; its evidence on where the seepage is strongest moves onto the level's link. Every named loop keeps its polarity: B3, R2, B11 and R8 run from the plans through the level to the seepage (+ then −, where − then + ran before), B4 and B12 from the plans through the level to the depth (+ then −). A new balancing loop is drawn, unnamed: deeper drainage, faster subsidence, a lower surface and less depth under the level held, which the board's depth test (B12) undoes by lowering the level after a plan. C2's and C10's descriptions and B12's now name the level where the seepage is concerned. Rejected: only a link from the surface to the depth, which leaves the depth standing for two quantities, its depth below the fields and, for the seepage, the level in NAP. For the group: D2D can vary the ditch level itself, and the drainage depth is no longer a Stock.",
-      "items": [
-        "ditch-level-nap",
-        "polder-drainage-depth",
-        "plans-to-raise-ditch-levels -> polder-drainage-depth",
-        "plans-to-raise-ditch-levels -> ditch-level-nap",
-        "ditch-level-nap -> polder-drainage-depth",
-        "polder-surface-elevation-nap -> polder-drainage-depth",
-        "polder-drainage-depth -> saline-seepage-kwel",
-        "ditch-level-nap -> saline-seepage-kwel",
-        "polder-surface-elevation-nap -> saline-seepage-kwel",
-        "B3",
-        "B4",
-        "R2",
-        "B11",
-        "B12",
-        "R8",
-        "C2",
-        "C10"
-      ]
-    },
-    {
       "change": "*Winter rain drained away* counts the low polders' drained rain only, and *Polder drainage depth* acts on *Freshwater lens thickness under creek ridges and dunes* by a link of its own",
       "argument": "The audit's confirmed finding on Winter rain drained away → the lens fails two conditions of the rule “Simplify only where the conclusion survives”: the variable was read for the whole island while its only lens link goes to the low polders' rainwater lens, so it measured two quantities, and the drainage depth's effect on the creek ridge lens, the one farmers pump, was in words only, on Polder drainage depth → Winter rain drained away. Winter rain drained away now counts the low polders' share, the island-wide source of the link into it read for them (Kaandorp et al., 2022, p. 54), and a new link Polder drainage depth → Freshwater lens thickness under creek ridges and dunes (−, delay) carries the creek ridge sentence: where the winter depth is over 1.5 m in large parts, the drains and ditches carry the excess rain off fast, and a higher winter level might raise the groundwater and with it the recharge (Kaandorp et al., 2022, pp. 42–43), which the source gives as a possibility, so the link's description says so. The pumping costs' simplification names the creek ridges' drained rain it leaves out, which rises with the same drainage depth, and the drivers the ditch level now gives the seepage. Rejected: keeping the island total and adding Winter rain drained away → the creek ridge lens, which keeps one quantity per variable less plainly. For the group: a lever on the ditch levels now reaches both lenses, where D2D credited its whole effect on the drained rain to the low polders' lens.",
       "items": [

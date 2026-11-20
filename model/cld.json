@@ -558,14 +558,31 @@
       "y": -249
     },
     {
-      "id": "polder-drainage-depth",
-      "label": "Polder drainage depth",
+      "id": "ditch-level-nap",
+      "label": "Ditch level (NAP)",
       "element type": "Stock",
       "adaptive practice": false,
       "sets domain": "Technological",
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
-      "description": "How far below the surface the water board holds the ditch levels in the island's polders (the drooglegging), as its water level plans set them: Duiveland's plan sets a target level for each of its level areas, from 0.8 to 2.7 m below NAP, in most the summer level higher than the winter one, against nature's order, to prevent water damage in winter and drying in summer (Waterschap Scheldestromen, 2021a, pp. 37, 64–65). It moves from the winter level to the summer one in steps in March and April, as the weather and the farmers' soil work allow (p. 66). On a creek ridge studied for water storage the depth is over 1.5 m in winter in large parts (Kaandorp et al., 2022, p. 42). The depth holds until the board carries out a new plan: Duiveland's study of 2021 drew up a new plan to replace the one in force since 1982 (Waterschap Scheldestromen, 2021a, pp. 5, 24), and the board checks each plan every three years and renews it at 17 years or once it no longer fits (Waterschap Scheldestromen, 2025, pp. 16–17), so a Stock. Where the land subsides under a level held, the depth shrinks until a new plan lowers the level, as the board's policy describes for peat (2025, p. 13).",
+      "description": "The water level Waterschap Scheldestromen holds in the island's ditches, relative to NAP, as its water level plans set it: Duiveland's plan sets a target level for each of its level areas, from 0.8 to 2.7 m below NAP, in most the summer level higher than the winter one, against nature's order, to prevent water damage in winter and drying in summer (Waterschap Scheldestromen, 2021a, pp. 37, 64–65). It moves from the winter level to the summer one in steps in March and April, as the weather and the farmers' soil work allow (p. 66). The level holds until the board carries out a new plan: Duiveland's study of 2021 drew up a new plan to replace the one in force since 1982 (pp. 5, 24), and the board checks each plan every three years and renews it at 17 years or once it no longer fits (Waterschap Scheldestromen, 2025, pp. 16–17), so a Stock. On the island the board holds Schouwen's summer levels high on purpose to limit subsidence by peat compaction (Waterschap Scheldestromen, 2021b, p. 45), and changes a level in soil prone to settling by no more than the land has subsided since (p. 50).",
+      "sources": [
+        "scheldestromen-2021-hor-duiveland",
+        "scheldestromen-2025-nota-peilbesluiten",
+        "scheldestromen-2021-hor-schouwen"
+      ],
+      "x": -1950,
+      "y": -850
+    },
+    {
+      "id": "polder-drainage-depth",
+      "label": "Polder drainage depth",
+      "element type": "Auxiliary",
+      "adaptive practice": false,
+      "sets domain": "Technological",
+      "subsystem": "Water and soil",
+      "subquestion": "SQ2",
+      "description": "How far below the surface the ditch levels lie in the island's polders (the drooglegging): the surface's elevation minus the ditch level, the difference on which the board defines its optimum (Waterschap Scheldestromen, 2021a, p. 40). On a creek ridge studied for water storage the depth is over 1.5 m in winter in large parts (Kaandorp et al., 2022, p. 42). It follows the ditch level and the surface within the year, so an Auxiliary: where the land subsides under a level held, the depth shrinks until a new plan lowers the level, as the board's policy describes for peat (Waterschap Scheldestromen, 2025, p. 13).",
       "sources": [
         "scheldestromen-2021-hor-duiveland",
         "kaandorp-2022",
@@ -1149,19 +1166,6 @@
       "curvature": -0.28
     },
     {
-      "from": "polder-surface-elevation-nap",
-      "to": "saline-seepage-kwel",
-      "polarity": "-",
-      "delay": false,
-      "description": "The lower a polder lies, the more salt groundwater seeps up into it: on the island the eastern polders lie somewhat higher than the western ones and so have no or far less seepage pressure (Kaandorp et al., 2022, p. 28), and comparing the island's elevation with a regional groundwater model, seepage occurs in the polders below sea level and rain soaks in on the dunes, the creek ridges and the polders above it, the two strongly correlated (de Louw et al., 2011, pp. 3661, 3673). The optimal drainage depth is the difference between the surface and the ditch level (Waterschap Scheldestromen, 2021a, p. 40), so at the same depth a lower polder has a lower ditch level, and a lower level lowers the counter-pressure on the salt groundwater (p. 37). Within the year: the seepage follows the water pressures (de Louw et al., 2011, p. 3675).",
-      "sources": [
-        "kaandorp-2022",
-        "de-louw-2011",
-        "scheldestromen-2021-hor-duiveland"
-      ],
-      "curvature": -0.14
-    },
-    {
       "from": "root-zone-salinity",
       "to": "soil-structure-usability",
       "polarity": "-",
@@ -1564,11 +1568,11 @@
       "curvature": 0.15
     },
     {
-      "from": "polder-drainage-depth",
+      "from": "ditch-level-nap",
       "to": "saline-seepage-kwel",
-      "polarity": "+",
+      "polarity": "-",
       "delay": false,
-      "description": "Lower ditch levels lower the counter-pressure on the salt groundwater, so the seepage pressure rises; a higher level lowers it (Waterschap Scheldestromen, 2021a, p. 37, the board's analysis for Duiveland's water level plan). The seepage is driven by the higher water pressure at greater depth, in the first aquifer below the polders' clay (Kaandorp et al., 2022, pp. 10–11, 28). A raise in one level area can also lift the head in the shared first aquifer around it, so seepage can rise on the land next to it: in a model of a 110 km2 low-lying polder inundated in 2100, seepage in the polder fell but rose in the adjacent areas, a net cut of only 9% of the polder's salt load (Oude Essink et al., 2010, pp. 8–9, 13–14, modelled in the western Netherlands). On Schouwen's south coast a seepage ditch rings the raised nature area so that its higher level does not add seepage on the land around it (van Haperen et al., 2006, p. 3, Staatsbosbeheer, which manages part of the area, an account without data). Within the year: the water pressures in the top layer change constantly with recharge and drainage (de Louw et al., 2011, p. 3675).",
+      "description": "A higher ditch level raises the counter-pressure on the salt groundwater, so the seepage pressure falls; a lower level lowers it, so the seepage pressure rises (Waterschap Scheldestromen, 2021a, p. 37, the board's analysis for Duiveland's water level plan). The seepage is driven by the higher water pressure at greater depth, in the first aquifer below the polders' clay (Kaandorp et al., 2022, pp. 10–11, 28), and at the same drainage depth a lower polder has a lower ditch level (Waterschap Scheldestromen, 2021a, p. 40), so the lowest polders get the most: on the island the eastern polders lie somewhat higher than the western ones and so have no or far less seepage pressure (Kaandorp et al., 2022, p. 28), and comparing the island's elevation with a regional groundwater model, seepage occurs in the polders below sea level and rain soaks in on the dunes, the creek ridges and the polders above it, the two strongly correlated (de Louw et al., 2011, pp. 3661, 3673). A raise in one level area can also lift the head in the shared first aquifer around it, so seepage can rise on the land next to it: in a model of a 110 km2 low-lying polder inundated in 2100, seepage in the polder fell but rose in the adjacent areas, a net cut of only 9% of the polder's salt load (Oude Essink et al., 2010, pp. 8–9, 13–14, modelled in the western Netherlands). On Schouwen's south coast a seepage ditch rings the raised nature area so that its higher level does not add seepage on the land around it (van Haperen et al., 2006, p. 3, Staatsbosbeheer, which manages part of the area, an account without data). Within the year: the water pressures in the top layer change constantly with recharge and drainage (de Louw et al., 2011, p. 3675).",
       "sources": [
         "scheldestromen-2021-hor-duiveland",
         "kaandorp-2022",
@@ -1576,7 +1580,7 @@
         "oude-essink-2010",
         "van-haperen-2006"
       ],
-      "curvature": 0.1
+      "curvature": -0.3
     },
     {
       "from": "polder-drainage-depth",
@@ -1592,8 +1596,8 @@
     },
     {
       "from": "plans-to-raise-ditch-levels",
-      "to": "polder-drainage-depth",
-      "polarity": "-",
+      "to": "ditch-level-nap",
+      "polarity": "+",
       "delay": true,
       "description": "A water level plan sets the levels the board pursues and maintains in normal circumstances (Waterschap Scheldestromen, 2021d, 2022), after its procedure: the executive board adopts a draft, open to views for six weeks; the general board adopts the plan; appeal is open for six weeks (Waterschap Scheldestromen, 2025, pp. 17–18), for Duiveland from February to August 2021 (2021a, p. 53; 2021d). Its levels take effect on a date the plan sets, which depends partly on the works they need (2025, p. 18): Duiveland's plan proposed studying a raise in 14 level areas, most possible only once the discharge capacity is enlarged (2021a, p. 69), and the works for that were still being put to the island in March 2026 (Waterschap Scheldestromen, 2026a). In summer the levels a plan sets may not hold: the board's own study for Duiveland says that in many areas, where the winter level is low and the summer level set well above it, the higher summer level can usually be held for a few weeks and then sinks slowly into the soil, depending on location and soil, and that without water supply, which the island lacks (Kaandorp et al., 2022, p. 8), the summer level may not be maintainable in a rainfall deficit (Waterschap Scheldestromen, 2021a, pp. 37, 66). Years, so a delay.",
       "sources": [
@@ -1605,6 +1609,29 @@
         "kaandorp-2022"
       ],
       "curvature": -0.1
+    },
+    {
+      "from": "ditch-level-nap",
+      "to": "polder-drainage-depth",
+      "polarity": "-",
+      "delay": false,
+      "description": "Polder drainage depth is the surface minus the ditch level, the difference on which the board defines its optimum (Waterschap Scheldestromen, 2021a, p. 40), so the higher the board holds the level, the less depth the fields have above it. Within the year.",
+      "sources": [
+        "scheldestromen-2021-hor-duiveland"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "polder-surface-elevation-nap",
+      "to": "polder-drainage-depth",
+      "polarity": "+",
+      "delay": false,
+      "description": "Polder drainage depth is the surface minus the ditch level, the difference on which the board defines its optimum (Waterschap Scheldestromen, 2021a, p. 40), so where the land subsides under a level held, the depth shrinks until a new plan lowers the level, as the board's policy describes for peat (2025, p. 13). Within the year: the depth follows the surface, and the slowness sits in the surface's fall (Polder drainage depth → Polder surface elevation (NAP)).",
+      "sources": [
+        "scheldestromen-2021-hor-duiveland",
+        "scheldestromen-2025-nota-peilbesluiten"
+      ],
+      "curvature": 0.35
     },
     {
       "from": "demand-for-deep-polder-drainage",
@@ -2746,7 +2773,7 @@
         "agricultural-land-value",
         "farmland-leaving-arable-use",
         "plans-to-raise-ditch-levels",
-        "polder-drainage-depth",
+        "ditch-level-nap",
         "saline-seepage-kwel",
         "freshwater-lens-thickness"
       ],
@@ -2758,6 +2785,7 @@
       "path": [
         "demand-for-deep-polder-drainage",
         "plans-to-raise-ditch-levels",
+        "ditch-level-nap",
         "polder-drainage-depth",
         "spring-workability-of-the-fields"
       ],
@@ -2774,7 +2802,7 @@
         "dependence-on-high-margin-salt-sensitive-crops",
         "demand-for-deep-polder-drainage",
         "plans-to-raise-ditch-levels",
-        "polder-drainage-depth",
+        "ditch-level-nap",
         "saline-seepage-kwel",
         "freshwater-lens-thickness",
         "root-zone-salinity",
@@ -2918,7 +2946,7 @@
       "id": "B11",
       "name": "The water board raises levels against seepage",
       "path": [
-        "polder-drainage-depth",
+        "ditch-level-nap",
         "saline-seepage-kwel",
         "plans-to-raise-ditch-levels"
       ],
@@ -2929,9 +2957,10 @@
       "name": "The board tests the drainage depth",
       "path": [
         "polder-drainage-depth",
-        "plans-to-raise-ditch-levels"
+        "plans-to-raise-ditch-levels",
+        "ditch-level-nap"
       ],
-      "description": "The water board tests each level area's drainage depth against the optimum for its use and soil: where little of the area is too wet a raise is considered, where much of it is the target level is lowered or the discharge's bottlenecks solved. Carried out over years, the depth moves back towards that optimum, which the board sets by its own rules. It touches adoption only through the seepage and salt the depth sets."
+      "description": "The water board tests each level area's drainage depth against the optimum for its use and soil: where little of the area is too wet a raise is considered, where much of it is the target level is lowered or the discharge's bottlenecks solved. Carried out over years, the depth moves back towards that optimum, which the board sets by its own rules. It touches adoption only through the seepage and salt the ditch level sets."
     },
     {
       "id": "B13",
@@ -2949,7 +2978,7 @@
         "agricultural-land-value",
         "policy-resistance-legal-delays",
         "plans-to-raise-ditch-levels",
-        "polder-drainage-depth",
+        "ditch-level-nap",
         "saline-seepage-kwel",
         "freshwater-lens-thickness",
         "root-zone-salinity",
@@ -2993,65 +3022,65 @@
       "places": {
         "root-zone-salinity": [
           0,
-          -527
+          493
         ],
         "harvest-lost-to-salt": [
-          554,
-          -423
+          -520,
+          395
         ],
         "farm-revenue": [
-          889,
-          -154
+          -831,
+          146
         ],
         "agricultural-land-value": [
-          840,
-          227
+          -790,
+          -207
         ],
         "farmland-leaving-arable-use": [
-          372,
-          483
+          -353,
+          -451
         ],
         "plans-to-raise-ditch-levels": [
-          -281,
-          502
+          264,
+          -470
         ],
-        "polder-drainage-depth": [
-          -780,
-          287
+        "ditch-level-nap": [
+          732,
+          -267
         ],
         "saline-seepage-kwel": [
-          -923,
-          -62
+          864,
+          56
         ],
         "freshwater-lens-thickness": [
-          -600,
-          -403
+          565,
+          375
         ],
         "soil-structure-usability": [
-          -353,
-          -795
+          337,
+          771
         ],
         "salt-tolerant-crop-adoption": [
-          1914,
-          -424
+          -1880,
+          387
         ],
         "tolerant-varieties-adoption": [
-          700,
-          -1251
+          -671,
+          1222
         ]
       },
       "bends": {
         "root-zone-salinity -> harvest-lost-to-salt": 0.1,
-        "harvest-lost-to-salt -> farm-revenue": 0.166,
-        "farm-revenue -> agricultural-land-value": 0.327,
-        "agricultural-land-value -> farmland-leaving-arable-use": 0.152,
-        "farmland-leaving-arable-use -> plans-to-raise-ditch-levels": 0.103,
-        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0.131,
-        "polder-drainage-depth -> saline-seepage-kwel": 0.279,
-        "saline-seepage-kwel -> freshwater-lens-thickness": 0.227,
-        "freshwater-lens-thickness -> root-zone-salinity": 0.109,
-        "root-zone-salinity -> soil-structure-usability": -0.491,
-        "soil-structure-usability -> freshwater-lens-thickness": -0.513,
+        "harvest-lost-to-salt -> farm-revenue": 0.164,
+        "farm-revenue -> agricultural-land-value": 0.325,
+        "agricultural-land-value -> farmland-leaving-arable-use": 0.155,
+        "farmland-leaving-arable-use -> plans-to-raise-ditch-levels": 0.104,
+        "plans-to-raise-ditch-levels -> ditch-level-nap": 0.132,
+        "ditch-level-nap -> saline-seepage-kwel": 0.275,
+        "saline-seepage-kwel -> freshwater-lens-thickness": 0.229,
+        "freshwater-lens-thickness -> root-zone-salinity": 0.11,
+        "root-zone-salinity -> soil-structure-usability": -0.521,
+        "soil-structure-usability -> freshwater-lens-thickness": -0.546,
         "harvest-lost-to-salt -> salt-tolerant-crop-adoption": -0.147,
         "salt-tolerant-crop-adoption -> harvest-lost-to-salt": -0.147,
         "harvest-lost-to-salt -> tolerant-varieties-adoption": -0.595,
@@ -3059,16 +3088,16 @@
       },
       "marks": {
         "B1": [
-          627,
-          -837
+          -595,
+          809
         ],
         "B2": [
-          1234,
-          -424
+          -1200,
+          391
         ],
         "R1": [
-          -337,
-          -645
+          321,
+          617
         ],
         "B3": [
           0,
@@ -3083,98 +3112,103 @@
         "B4",
         "R2"
       ],
-      "description": "A greater *Polder drainage depth* (lower ditch levels) raises the *Spring workability of the fields* within the season, so *Farmers' demand for deep polder drainage* eases (B4). The same depth raises *Saline seepage (kwel)*, which over years lowers the *Rainwater lens thickness in the low polders*. *Root zone salinity* and *Harvest lost to salt* rise, *Farm income* and *Agricultural land value* fall. *Financial leverage*, *Banks' risk assessment of farm loans*, the *Risk premium on farm loans* and *Debt payments* rise, and thus the farm's *Dependence on high-margin salt-sensitive crops*, which in spring needs deep drainage, grows: the demand returns higher (R2). The relief comes first and the extra demand years later, also known as the “Fixes that fail” archetype (Kim, 2000, p. 16). The link from *Debt payments* to *Dependence on high-margin salt-sensitive crops* is a hypothesis for the group model building session.",
+      "description": "A lower *Ditch level (NAP)* gives a greater *Polder drainage depth*, which raises the *Spring workability of the fields* within the season, so *Farmers' demand for deep polder drainage* eases (B4). The same lower level raises *Saline seepage (kwel)*, which over years lowers the *Rainwater lens thickness in the low polders*. *Root zone salinity* and *Harvest lost to salt* rise, *Farm income* and *Agricultural land value* fall. *Financial leverage*, *Banks' risk assessment of farm loans*, the *Risk premium on farm loans* and *Debt payments* rise, and thus the farm's *Dependence on high-margin salt-sensitive crops*, which in spring needs deep drainage, grows: the demand returns higher (R2). The relief comes first and the extra demand years later, also known as the “Fixes that fail” archetype (Kim, 2000, p. 16). The link from *Debt payments* to *Dependence on high-margin salt-sensitive crops* is a hypothesis for the group model building session.",
       "sources": [
         "kim-2000"
       ],
       "places": {
-        "plans-to-raise-ditch-levels": [
-          -4,
+        "demand-for-deep-polder-drainage": [
+          -479,
           0
         ],
-        "polder-drainage-depth": [
-          493,
+        "plans-to-raise-ditch-levels": [
+          11,
+          0
+        ],
+        "ditch-level-nap": [
+          479,
           0
         ],
         "saline-seepage-kwel": [
-          800,
-          229
+          787,
+          226
         ],
         "freshwater-lens-thickness": [
-          978,
-          560
+          968,
+          554
         ],
         "root-zone-salinity": [
-          976,
-          927
+          969,
+          919
         ],
         "harvest-lost-to-salt": [
-          810,
-          1238
+          806,
+          1229
         ],
         "farm-revenue": [
-          508,
-          1472
+          506,
+          1463
         ],
         "agricultural-land-value": [
-          60,
-          1588
+          61,
+          1579
         ],
         "mortgage-debt-financial-leverage": [
-          -407,
-          1516
+          -405,
+          1508
         ],
         "banks-risk-assessment": [
-          -756,
-          1296
+          -751,
+          1288
         ],
         "bank-credit-freeze-risk-premiums": [
-          -962,
-          973
+          -955,
+          966
         ],
         "debt-payments": [
-          -990,
-          619
+          -981,
+          613
         ],
         "dependence-on-high-margin-salt-sensitive-crops": [
-          -836,
-          273
+          -824,
+          269
         ],
-        "demand-for-deep-polder-drainage": [
-          -493,
-          0
+        "polder-drainage-depth": [
+          268,
+          -364
         ],
         "spring-workability-of-the-fields": [
-          6,
-          -314
+          -226,
+          -386
         ]
       },
       "bends": {
+        "plans-to-raise-ditch-levels -> ditch-level-nap": 0,
         "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": 0,
-        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0,
-        "polder-drainage-depth -> spring-workability-of-the-fields": -0.312,
-        "spring-workability-of-the-fields -> demand-for-deep-polder-drainage": -0.317,
+        "ditch-level-nap -> saline-seepage-kwel": 0.1,
+        "saline-seepage-kwel -> freshwater-lens-thickness": 0.12,
+        "freshwater-lens-thickness -> root-zone-salinity": 0.129,
+        "root-zone-salinity -> harvest-lost-to-salt": 0.113,
+        "harvest-lost-to-salt -> farm-revenue": 0.101,
+        "farm-revenue -> agricultural-land-value": 0.104,
+        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.104,
         "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.104,
         "banks-risk-assessment -> bank-credit-freeze-risk-premiums": 0.119,
         "bank-credit-freeze-risk-premiums -> debt-payments": 0.124,
         "debt-payments -> dependence-on-high-margin-salt-sensitive-crops": 0.124,
-        "dependence-on-high-margin-salt-sensitive-crops -> demand-for-deep-polder-drainage": 0.116,
-        "polder-drainage-depth -> saline-seepage-kwel": 0.1,
-        "saline-seepage-kwel -> freshwater-lens-thickness": 0.119,
-        "freshwater-lens-thickness -> root-zone-salinity": 0.128,
-        "root-zone-salinity -> harvest-lost-to-salt": 0.112,
-        "harvest-lost-to-salt -> farm-revenue": 0.101,
-        "farm-revenue -> agricultural-land-value": 0.103,
-        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.103
+        "dependence-on-high-margin-salt-sensitive-crops -> demand-for-deep-polder-drainage": 0.117,
+        "ditch-level-nap -> polder-drainage-depth": -0.291,
+        "polder-drainage-depth -> spring-workability-of-the-fields": -0.236,
+        "spring-workability-of-the-fields -> demand-for-deep-polder-drainage": -0.317
       },
       "marks": {
         "B4": [
           0,
-          -172
+          -232
         ],
         "R2": [
           0,
-          810
+          806
         ]
       }
     },
@@ -3199,7 +3233,7 @@
           -1114,
           -315
         ],
-        "polder-drainage-depth": [
+        "ditch-level-nap": [
           -1369,
           -640
         ],
@@ -3257,20 +3291,20 @@
         ]
       },
       "bends": {
-        "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.212,
-        "banks-risk-assessment -> bank-credit-freeze-risk-premiums": 0.139,
-        "bank-credit-freeze-risk-premiums -> debt-payments": 0.1,
-        "debt-payments -> dependence-on-high-margin-salt-sensitive-crops": 0.1,
         "dependence-on-high-margin-salt-sensitive-crops -> demand-for-deep-polder-drainage": 0.1,
         "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": 0.1,
-        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0.149,
-        "polder-drainage-depth -> saline-seepage-kwel": 0.204,
+        "plans-to-raise-ditch-levels -> ditch-level-nap": 0.149,
+        "ditch-level-nap -> saline-seepage-kwel": 0.204,
         "saline-seepage-kwel -> freshwater-lens-thickness": 0.138,
         "freshwater-lens-thickness -> root-zone-salinity": 0.1,
         "root-zone-salinity -> harvest-lost-to-salt": 0.1,
         "harvest-lost-to-salt -> farm-revenue": 0.1,
         "farm-revenue -> agricultural-land-value": 0.1,
         "agricultural-land-value -> mortgage-debt-financial-leverage": 0.143,
+        "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.212,
+        "banks-risk-assessment -> bank-credit-freeze-risk-premiums": 0.139,
+        "bank-credit-freeze-risk-premiums -> debt-payments": 0.1,
+        "debt-payments -> dependence-on-high-margin-salt-sensitive-crops": 0.1,
         "dependence-on-high-margin-salt-sensitive-crops -> spending-on-keeping-current-crops": 0.351,
         "spending-on-keeping-current-crops -> machines-and-storage-for-current-crops": 0.36,
         "machines-and-storage-for-current-crops -> capital-lost-on-switching": 0.36,
@@ -3640,18 +3674,23 @@
         "policy-resistance-legal-delays": [
           -1123,
           -279
+        ],
+        "ditch-level-nap": [
+          0,
+          0
         ]
       },
       "bends": {
         "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": 0.51,
-        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0,
         "polder-drainage-depth -> spring-workability-of-the-fields": 0.496,
         "spring-workability-of-the-fields -> demand-for-deep-polder-drainage": 0.34,
-        "polder-drainage-depth -> saline-seepage-kwel": 0.363,
         "saline-seepage-kwel -> plans-to-raise-ditch-levels": 0.37,
         "polder-drainage-depth -> plans-to-raise-ditch-levels": -0.728,
         "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": -0.4,
-        "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": -0.4
+        "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": -0.4,
+        "plans-to-raise-ditch-levels -> ditch-level-nap": 0,
+        "ditch-level-nap -> polder-drainage-depth": 0,
+        "ditch-level-nap -> saline-seepage-kwel": 0
       },
       "marks": {
         "B12": [
@@ -3663,8 +3702,8 @@
           -139
         ],
         "B11": [
-          0,
-          155
+          -125,
+          95
         ],
         "B4": [
           0,
@@ -3683,9 +3722,9 @@
       ],
       "description": "*Objections to land-use plans* delay, change or stop a plan (B13). Two things follow: The ditch levels keep up the *Saline seepage (kwel)* and *Root zone salinity* that lower *Agricultural land value*, and a lower value may bring more objections (R8). Plans changed or dropped, and *Expropriation of farmland*, lower *Farmers' trust in government*, which may bring more objections to the next plan (R9, B14). Whether objections settle at a plan the owners accept or keep growing is a question for the group model building session: three of its links are hypotheses, from *Agricultural land value* to *Objections to land-use plans*, from *Objections to land-use plans* to *Farmers' trust in government*, and from *Objections to land-use plans* to *Farmland planned for other uses*.",
       "places": {
-        "agricultural-land-value": [
-          -659,
-          358
+        "farmers-trust-in-government": [
+          -1561,
+          0
         ],
         "policy-resistance-legal-delays": [
           -744,
@@ -3695,7 +3734,15 @@
           1561,
           0
         ],
-        "polder-drainage-depth": [
+        "municipality-plans-for-farmland": [
+          -929,
+          -344
+        ],
+        "expropriation-of-farmland": [
+          -1375,
+          -344
+        ],
+        "ditch-level-nap": [
           1482,
           345
         ],
@@ -3719,35 +3766,27 @@
           -438,
           654
         ],
-        "municipality-plans-for-farmland": [
-          -929,
-          -344
-        ],
-        "expropriation-of-farmland": [
-          -1375,
-          -344
-        ],
-        "farmers-trust-in-government": [
-          -1561,
-          0
+        "agricultural-land-value": [
+          -659,
+          358
         ]
       },
       "bends": {
-        "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": -0.148,
+        "farmers-trust-in-government -> policy-resistance-legal-delays": 0,
         "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": 0,
-        "agricultural-land-value -> policy-resistance-legal-delays": 0.109,
-        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0.105,
-        "polder-drainage-depth -> saline-seepage-kwel": 0.1,
+        "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": -0.148,
+        "policy-resistance-legal-delays -> farmers-trust-in-government": 0.52,
+        "policy-resistance-legal-delays -> municipality-plans-for-farmland": -0.323,
+        "municipality-plans-for-farmland -> expropriation-of-farmland": -0.249,
+        "expropriation-of-farmland -> farmers-trust-in-government": -0.323,
+        "plans-to-raise-ditch-levels -> ditch-level-nap": 0.105,
+        "ditch-level-nap -> saline-seepage-kwel": 0.1,
         "saline-seepage-kwel -> freshwater-lens-thickness": 0.1,
         "freshwater-lens-thickness -> root-zone-salinity": 0.103,
         "root-zone-salinity -> harvest-lost-to-salt": 0.1,
         "harvest-lost-to-salt -> farm-revenue": 0.1,
         "farm-revenue -> agricultural-land-value": 0.1,
-        "policy-resistance-legal-delays -> farmers-trust-in-government": 0.52,
-        "farmers-trust-in-government -> policy-resistance-legal-delays": 0,
-        "municipality-plans-for-farmland -> expropriation-of-farmland": -0.249,
-        "expropriation-of-farmland -> farmers-trust-in-government": -0.323,
-        "policy-resistance-legal-delays -> municipality-plans-for-farmland": -0.323
+        "agricultural-land-value -> policy-resistance-legal-delays": 0.109
       },
       "marks": {
         "B13": [
@@ -3776,11 +3815,47 @@
         "R8",
         "B3"
       ],
-      "description": "The three loops share the chain from the *Water board's plans to raise ditch levels* through *Polder drainage depth*, *Saline seepage (kwel)*, *Rainwater lens thickness in the low polders*, *Root zone salinity* and *Harvest lost to salt* to *Farm income* and *Agricultural land value*, and part ways there. As land loses value, *Financial leverage* and *Debt payments* lead farmers to ask for deep drainage (R2), and owners may object harder to raises (R8, a hypothesis): both keep the ditch levels low and the salt coming. Where arable farming stops paying, *Arable land in the polders* falls, the board has more reason to raise the levels, and the salt falls back (B3). The same fall in value sends the water board opposite signals; which is stronger decides whether the decline persists or stops.",
+      "description": "The three loops share the chain from the *Water board's plans to raise ditch levels* through *Ditch level (NAP)*, *Saline seepage (kwel)*, *Rainwater lens thickness in the low polders*, *Root zone salinity* and *Harvest lost to salt* to *Farm income* and *Agricultural land value*, and part ways there. As land loses value, *Financial leverage* and *Debt payments* lead farmers to ask for deep drainage (R2), and owners may object harder to raises (R8, a hypothesis): both keep the ditch levels low and the salt coming. Where arable farming stops paying, *Arable land in the polders* falls, the board has more reason to raise the levels, and the salt falls back (B3). The same fall in value sends the water board opposite signals; which is stronger decides whether the decline persists or stops.",
       "places": {
+        "plans-to-raise-ditch-levels": [
+          0,
+          -1283
+        ],
+        "ditch-level-nap": [
+          0,
+          -914
+        ],
+        "saline-seepage-kwel": [
+          0,
+          -562
+        ],
+        "freshwater-lens-thickness": [
+          0,
+          -176
+        ],
+        "root-zone-salinity": [
+          0,
+          210
+        ],
+        "harvest-lost-to-salt": [
+          0,
+          562
+        ],
+        "farm-revenue": [
+          0,
+          914
+        ],
         "agricultural-land-value": [
           0,
           1283
+        ],
+        "farmland-leaving-arable-use": [
+          -722,
+          0
+        ],
+        "policy-resistance-legal-delays": [
+          782,
+          0
         ],
         "mortgage-debt-financial-leverage": [
           -644,
@@ -3805,63 +3880,27 @@
         "demand-for-deep-polder-drainage": [
           -674,
           -1228
-        ],
-        "plans-to-raise-ditch-levels": [
-          0,
-          -1283
-        ],
-        "polder-drainage-depth": [
-          0,
-          -914
-        ],
-        "saline-seepage-kwel": [
-          0,
-          -562
-        ],
-        "freshwater-lens-thickness": [
-          0,
-          -176
-        ],
-        "root-zone-salinity": [
-          0,
-          210
-        ],
-        "harvest-lost-to-salt": [
-          0,
-          562
-        ],
-        "farm-revenue": [
-          0,
-          914
-        ],
-        "policy-resistance-legal-delays": [
-          782,
-          0
-        ],
-        "farmland-leaving-arable-use": [
-          -722,
-          0
         ]
       },
       "bends": {
+        "root-zone-salinity -> harvest-lost-to-salt": 0,
+        "farm-revenue -> agricultural-land-value": 0,
+        "ditch-level-nap -> saline-seepage-kwel": 0,
+        "plans-to-raise-ditch-levels -> ditch-level-nap": 0,
+        "saline-seepage-kwel -> freshwater-lens-thickness": 0,
+        "freshwater-lens-thickness -> root-zone-salinity": 0,
+        "harvest-lost-to-salt -> farm-revenue": 0,
+        "agricultural-land-value -> farmland-leaving-arable-use": 0.28,
+        "farmland-leaving-arable-use -> plans-to-raise-ditch-levels": 0.28,
+        "agricultural-land-value -> policy-resistance-legal-delays": -0.302,
+        "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": -0.302,
+        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.172,
         "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.133,
         "banks-risk-assessment -> bank-credit-freeze-risk-premiums": 0.107,
         "bank-credit-freeze-risk-premiums -> debt-payments": 0.1,
         "debt-payments -> dependence-on-high-margin-salt-sensitive-crops": 0.105,
         "dependence-on-high-margin-salt-sensitive-crops -> demand-for-deep-polder-drainage": 0.139,
-        "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": 0.181,
-        "plans-to-raise-ditch-levels -> polder-drainage-depth": 0,
-        "polder-drainage-depth -> saline-seepage-kwel": 0,
-        "saline-seepage-kwel -> freshwater-lens-thickness": 0,
-        "freshwater-lens-thickness -> root-zone-salinity": 0,
-        "root-zone-salinity -> harvest-lost-to-salt": 0,
-        "harvest-lost-to-salt -> farm-revenue": 0,
-        "farm-revenue -> agricultural-land-value": 0,
-        "agricultural-land-value -> mortgage-debt-financial-leverage": 0.172,
-        "agricultural-land-value -> policy-resistance-legal-delays": -0.302,
-        "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": -0.302,
-        "agricultural-land-value -> farmland-leaving-arable-use": 0.28,
-        "farmland-leaving-arable-use -> plans-to-raise-ditch-levels": 0.28
+        "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": 0.181
       },
       "marks": {
         "R2": [

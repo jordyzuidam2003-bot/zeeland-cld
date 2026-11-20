@@ -991,16 +991,31 @@
       }
     },
     {
-      "_id": "elem-polder-drainage-depth",
+      "_id": "elem-ditch-level-nap",
       "attributes": {
-        "label": "Polder drainage depth",
+        "label": "Ditch level (NAP)",
         "element type": "Stock",
         "adaptive practice": "no",
         "sets domain": "Technological",
         "subsystem": "Water and soil",
         "subquestion": "SQ2",
-        "description": "How far below the surface the water board holds the ditch levels in the island's polders (the drooglegging), as its water level plans set them: Duiveland's plan sets a target level for each of its level areas, from 0.8 to 2.7 m below NAP, in most the summer level higher than the winter one, against nature's order, to prevent water damage in winter and drying in summer (Waterschap Scheldestromen, 2021a, pp. 37, 64–65). It moves from the winter level to the summer one in steps in March and April, as the weather and the farmers' soil work allow (p. 66). On a creek ridge studied for water storage the depth is over 1.5 m in winter in large parts (Kaandorp et al., 2022, p. 42). The depth holds until the board carries out a new plan: Duiveland's study of 2021 drew up a new plan to replace the one in force since 1982 (Waterschap Scheldestromen, 2021a, pp. 5, 24), and the board checks each plan every three years and renews it at 17 years or once it no longer fits (Waterschap Scheldestromen, 2025, pp. 16–17), so a Stock. Where the land subsides under a level held, the depth shrinks until a new plan lowers the level, as the board's policy describes for peat (2025, p. 13).",
+        "description": "The water level Waterschap Scheldestromen holds in the island's ditches, relative to NAP, as its water level plans set it: Duiveland's plan sets a target level for each of its level areas, from 0.8 to 2.7 m below NAP, in most the summer level higher than the winter one, against nature's order, to prevent water damage in winter and drying in summer (Waterschap Scheldestromen, 2021a, pp. 37, 64–65). It moves from the winter level to the summer one in steps in March and April, as the weather and the farmers' soil work allow (p. 66). The level holds until the board carries out a new plan: Duiveland's study of 2021 drew up a new plan to replace the one in force since 1982 (pp. 5, 24), and the board checks each plan every three years and renews it at 17 years or once it no longer fits (Waterschap Scheldestromen, 2025, pp. 16–17), so a Stock. On the island the board holds Schouwen's summer levels high on purpose to limit subsidence by peat compaction (Waterschap Scheldestromen, 2021b, p. 45), and changes a level in soil prone to settling by no more than the land has subsided since (p. 50).",
         "actors": "Waterschap Scheldestromen",
+        "sources": "Waterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nWaterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nWaterschap Scheldestromen. (2021b). Hydrologisch onderzoeksrapport Schouwen. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch_onderzoeksrapport_Schouwen.pdf",
+        "sourced": "yes"
+      }
+    },
+    {
+      "_id": "elem-polder-drainage-depth",
+      "attributes": {
+        "label": "Polder drainage depth",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Technological",
+        "subsystem": "Water and soil",
+        "subquestion": "SQ2",
+        "description": "How far below the surface the ditch levels lie in the island's polders (the drooglegging): the surface's elevation minus the ditch level, the difference on which the board defines its optimum (Waterschap Scheldestromen, 2021a, p. 40). On a creek ridge studied for water storage the depth is over 1.5 m in winter in large parts (Kaandorp et al., 2022, p. 42). It follows the ditch level and the surface within the year, so an Auxiliary: where the land subsides under a level held, the depth shrinks until a new plan lowers the level, as the board's policy describes for peat (Waterschap Scheldestromen, 2025, p. 13).",
+        "actors": "",
         "sources": "Waterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nWaterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf",
         "sourced": "yes"
       }
@@ -1815,26 +1830,6 @@
       "to": "elem-freshwater-availability-for-crops"
     },
     {
-      "_id": "conn-polder-surface-elevation-nap--saline-seepage-kwel",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "−",
-        "polarity": "negative",
-        "delay": "no",
-        "description": "The lower a polder lies, the more salt groundwater seeps up into it: on the island the eastern polders lie somewhat higher than the western ones and so have no or far less seepage pressure (Kaandorp et al., 2022, p. 28), and comparing the island's elevation with a regional groundwater model, seepage occurs in the polders below sea level and rain soaks in on the dunes, the creek ridges and the polders above it, the two strongly correlated (de Louw et al., 2011, pp. 3661, 3673). The optimal drainage depth is the difference between the surface and the ditch level (Waterschap Scheldestromen, 2021a, p. 40), so at the same depth a lower polder has a lower ditch level, and a lower level lowers the counter-pressure on the salt groundwater (p. 37). Within the year: the seepage follows the water pressures (de Louw et al., 2011, p. 3675).",
-        "sets link": "Within E",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nde Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf",
-        "sourced": "yes",
-        "connection type": "-"
-      },
-      "from": "elem-polder-surface-elevation-nap",
-      "to": "elem-saline-seepage-kwel"
-    },
-    {
       "_id": "conn-root-zone-salinity--soil-structure-usability",
       "direction": "directed",
       "delayed": true,
@@ -2479,23 +2474,23 @@
       "to": "elem-demand-for-deep-polder-drainage"
     },
     {
-      "_id": "conn-polder-drainage-depth--saline-seepage-kwel",
+      "_id": "conn-ditch-level-nap--saline-seepage-kwel",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
       "attributes": {
-        "label": "+",
-        "polarity": "positive",
+        "label": "−",
+        "polarity": "negative",
         "delay": "no",
-        "description": "Lower ditch levels lower the counter-pressure on the salt groundwater, so the seepage pressure rises; a higher level lowers it (Waterschap Scheldestromen, 2021a, p. 37, the board's analysis for Duiveland's water level plan). The seepage is driven by the higher water pressure at greater depth, in the first aquifer below the polders' clay (Kaandorp et al., 2022, pp. 10–11, 28). A raise in one level area can also lift the head in the shared first aquifer around it, so seepage can rise on the land next to it: in a model of a 110 km2 low-lying polder inundated in 2100, seepage in the polder fell but rose in the adjacent areas, a net cut of only 9% of the polder's salt load (Oude Essink et al., 2010, pp. 8–9, 13–14, modelled in the western Netherlands). On Schouwen's south coast a seepage ditch rings the raised nature area so that its higher level does not add seepage on the land around it (van Haperen et al., 2006, p. 3, Staatsbosbeheer, which manages part of the area, an account without data). Within the year: the water pressures in the top layer change constantly with recharge and drainage (de Louw et al., 2011, p. 3675).",
+        "description": "A higher ditch level raises the counter-pressure on the salt groundwater, so the seepage pressure falls; a lower level lowers it, so the seepage pressure rises (Waterschap Scheldestromen, 2021a, p. 37, the board's analysis for Duiveland's water level plan). The seepage is driven by the higher water pressure at greater depth, in the first aquifer below the polders' clay (Kaandorp et al., 2022, pp. 10–11, 28), and at the same drainage depth a lower polder has a lower ditch level (Waterschap Scheldestromen, 2021a, p. 40), so the lowest polders get the most: on the island the eastern polders lie somewhat higher than the western ones and so have no or far less seepage pressure (Kaandorp et al., 2022, p. 28), and comparing the island's elevation with a regional groundwater model, seepage occurs in the polders below sea level and rain soaks in on the dunes, the creek ridges and the polders above it, the two strongly correlated (de Louw et al., 2011, pp. 3661, 3673). A raise in one level area can also lift the head in the shared first aquifer around it, so seepage can rise on the land next to it: in a model of a 110 km2 low-lying polder inundated in 2100, seepage in the polder fell but rose in the adjacent areas, a net cut of only 9% of the polder's salt load (Oude Essink et al., 2010, pp. 8–9, 13–14, modelled in the western Netherlands). On Schouwen's south coast a seepage ditch rings the raised nature area so that its higher level does not add seepage on the land around it (van Haperen et al., 2006, p. 3, Staatsbosbeheer, which manages part of the area, an account without data). Within the year: the water pressures in the top layer change constantly with recharge and drainage (de Louw et al., 2011, p. 3675).",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
         "sources": "Waterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nde Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nOude Essink, G. H. P., van Baaren, E. S., & de Louw, P. G. B. (2010). Effects of climate change on coastal groundwater systems: A modeling study in the Netherlands. Water Resources Research, 46, W00F04. https://doi.org/10.1029/2009WR008719\nvan Haperen, A., Hekhuis, H., & Sluiter, H. (2006, November). Plan Tureluur: Zeeuwse vogelboulevard. Retrieved November 14, 2026, from https://edepot.wur.nl/114545",
         "sourced": "yes",
-        "connection type": "+"
+        "connection type": "-"
       },
-      "from": "elem-polder-drainage-depth",
+      "from": "elem-ditch-level-nap",
       "to": "elem-saline-seepage-kwel"
     },
     {
@@ -2519,13 +2514,13 @@
       "to": "elem-winter-rain-drained-away"
     },
     {
-      "_id": "conn-plans-to-raise-ditch-levels--polder-drainage-depth",
+      "_id": "conn-plans-to-raise-ditch-levels--ditch-level-nap",
       "direction": "directed",
       "delayed": true,
       "reversed": false,
       "attributes": {
-        "label": "−",
-        "polarity": "negative",
+        "label": "+",
+        "polarity": "positive",
         "delay": "yes",
         "description": "A water level plan sets the levels the board pursues and maintains in normal circumstances (Waterschap Scheldestromen, 2021d, 2022), after its procedure: the executive board adopts a draft, open to views for six weeks; the general board adopts the plan; appeal is open for six weeks (Waterschap Scheldestromen, 2025, pp. 17–18), for Duiveland from February to August 2021 (2021a, p. 53; 2021d). Its levels take effect on a date the plan sets, which depends partly on the works they need (2025, p. 18): Duiveland's plan proposed studying a raise in 14 level areas, most possible only once the discharge capacity is enlarged (2021a, p. 69), and the works for that were still being put to the island in March 2026 (Waterschap Scheldestromen, 2026a). In summer the levels a plan sets may not hold: the board's own study for Duiveland says that in many areas, where the winter level is low and the summer level set well above it, the higher summer level can usually be held for a few weeks and then sinks slowly into the soil, depending on location and soil, and that without water supply, which the island lacks (Kaandorp et al., 2022, p. 8), the summer level may not be maintainable in a rainfall deficit (Waterschap Scheldestromen, 2021a, pp. 37, 66). Years, so a delay.",
         "sets link": "S to T",
@@ -2533,9 +2528,49 @@
         "hypothesis": "no",
         "sources": "Waterschap Scheldestromen. (2021d, July 12). Peilbesluit Duiveland ter inzage (Waterschapsblad 2021, nr. 8486). https://zoek.officielebekendmakingen.nl/wsb-2021-8486.pdf\nWaterschap Scheldestromen. (2022, January 3). Peilbesluit Schouwen ter inzage (Waterschapsblad 2022, nr. 10). https://zoek.officielebekendmakingen.nl/wsb-2022-10.pdf\nWaterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nWaterschap Scheldestromen. (2026a, March 25). Maatregelen Duiveland: Informatiebijeenkomst 25 maart 2026 [Presentation slides]. https://scheldestromen.nl/sites/default/files/2026-03/Presentatie%20informatieavond%20Duiveland%2025%20maart%202026.pdf\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
         "sourced": "yes",
-        "connection type": "-"
+        "connection type": "+"
       },
       "from": "elem-plans-to-raise-ditch-levels",
+      "to": "elem-ditch-level-nap"
+    },
+    {
+      "_id": "conn-ditch-level-nap--polder-drainage-depth",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "description": "Polder drainage depth is the surface minus the ditch level, the difference on which the board defines its optimum (Waterschap Scheldestromen, 2021a, p. 40), so the higher the board holds the level, the less depth the fields have above it. Within the year.",
+        "sets link": "Within T",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "sources": "Waterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf",
+        "sourced": "yes",
+        "connection type": "-"
+      },
+      "from": "elem-ditch-level-nap",
+      "to": "elem-polder-drainage-depth"
+    },
+    {
+      "_id": "conn-polder-surface-elevation-nap--polder-drainage-depth",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "Polder drainage depth is the surface minus the ditch level, the difference on which the board defines its optimum (Waterschap Scheldestromen, 2021a, p. 40), so where the land subsides under a level held, the depth shrinks until a new plan lowers the level, as the board's policy describes for peat (2025, p. 13). Within the year: the depth follows the surface, and the slowness sits in the surface's fall (Polder drainage depth → Polder surface elevation (NAP)).",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "sources": "Waterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nWaterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-polder-surface-elevation-nap",
       "to": "elem-polder-drainage-depth"
     },
     {
@@ -4812,8 +4847,8 @@
         "conn-farm-revenue--agricultural-land-value",
         "conn-agricultural-land-value--farmland-leaving-arable-use",
         "conn-farmland-leaving-arable-use--plans-to-raise-ditch-levels",
-        "conn-plans-to-raise-ditch-levels--polder-drainage-depth",
-        "conn-polder-drainage-depth--saline-seepage-kwel",
+        "conn-plans-to-raise-ditch-levels--ditch-level-nap",
+        "conn-ditch-level-nap--saline-seepage-kwel",
         "conn-saline-seepage-kwel--freshwater-lens-thickness",
         "conn-freshwater-lens-thickness--root-zone-salinity"
       ]
@@ -4826,7 +4861,8 @@
       },
       "connections": [
         "conn-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels",
-        "conn-plans-to-raise-ditch-levels--polder-drainage-depth",
+        "conn-plans-to-raise-ditch-levels--ditch-level-nap",
+        "conn-ditch-level-nap--polder-drainage-depth",
         "conn-polder-drainage-depth--spring-workability-of-the-fields",
         "conn-spring-workability-of-the-fields--demand-for-deep-polder-drainage"
       ]
@@ -4844,8 +4880,8 @@
         "conn-debt-payments--dependence-on-high-margin-salt-sensitive-crops",
         "conn-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage",
         "conn-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels",
-        "conn-plans-to-raise-ditch-levels--polder-drainage-depth",
-        "conn-polder-drainage-depth--saline-seepage-kwel",
+        "conn-plans-to-raise-ditch-levels--ditch-level-nap",
+        "conn-ditch-level-nap--saline-seepage-kwel",
         "conn-saline-seepage-kwel--freshwater-lens-thickness",
         "conn-freshwater-lens-thickness--root-zone-salinity",
         "conn-root-zone-salinity--harvest-lost-to-salt",
@@ -5013,20 +5049,21 @@
         "description": "Lower ditch levels raise the saline seepage. The water board names the salinisation a concern and aims to keep or enlarge the lenses, so over years more seepage gives it more reason to plan raises; once carried out, the levels rise and the seepage falls. It seeks the fresh water in the soil the board wants to keep; how far seepage weighs against drought in its plans, no source read shows. On the island the board's accounts read give the loop little support: the board raises levels on Schouwen to limit drought damage, with larger fresh water stocks in the soil as the effect (Waterschap Scheldestromen, 2021b, p. 53), and its 2025 framework for level plans names neither seepage nor the lenses among its criteria (2025, pp. 9, 12), so of the accounts read only the Duiveland report names the lenses among its reasons for a raise (2021a, p. 37). It touches adoption only through the salt it lowers (B2, B1)."
       },
       "connections": [
-        "conn-polder-drainage-depth--saline-seepage-kwel",
+        "conn-ditch-level-nap--saline-seepage-kwel",
         "conn-saline-seepage-kwel--plans-to-raise-ditch-levels",
-        "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+        "conn-plans-to-raise-ditch-levels--ditch-level-nap"
       ]
     },
     {
       "_id": "loop-B12",
       "attributes": {
         "label": "B12 The board tests the drainage depth",
-        "description": "The water board tests each level area's drainage depth against the optimum for its use and soil: where little of the area is too wet a raise is considered, where much of it is the target level is lowered or the discharge's bottlenecks solved. Carried out over years, the depth moves back towards that optimum, which the board sets by its own rules. It touches adoption only through the seepage and salt the depth sets."
+        "description": "The water board tests each level area's drainage depth against the optimum for its use and soil: where little of the area is too wet a raise is considered, where much of it is the target level is lowered or the discharge's bottlenecks solved. Carried out over years, the depth moves back towards that optimum, which the board sets by its own rules. It touches adoption only through the seepage and salt the ditch level sets."
       },
       "connections": [
         "conn-polder-drainage-depth--plans-to-raise-ditch-levels",
-        "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+        "conn-plans-to-raise-ditch-levels--ditch-level-nap",
+        "conn-ditch-level-nap--polder-drainage-depth"
       ]
     },
     {
@@ -5049,8 +5086,8 @@
       "connections": [
         "conn-agricultural-land-value--policy-resistance-legal-delays",
         "conn-policy-resistance-legal-delays--plans-to-raise-ditch-levels",
-        "conn-plans-to-raise-ditch-levels--polder-drainage-depth",
-        "conn-polder-drainage-depth--saline-seepage-kwel",
+        "conn-plans-to-raise-ditch-levels--ditch-level-nap",
+        "conn-ditch-level-nap--saline-seepage-kwel",
         "conn-saline-seepage-kwel--freshwater-lens-thickness",
         "conn-freshwater-lens-thickness--root-zone-salinity",
         "conn-root-zone-salinity--harvest-lost-to-salt",
@@ -5418,6 +5455,16 @@
           "element": "elem-spring-workability-of-the-fields"
         },
         {
+          "_id": "node-ditch-level-nap",
+          "position": {
+            "x": -1950,
+            "y": -850
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-ditch-level-nap"
+        },
+        {
           "_id": "node-polder-drainage-depth",
           "position": {
             "x": -1718,
@@ -5740,12 +5787,6 @@
           "connection": "conn-freshwater-lens-thickness--freshwater-availability-for-crops"
         },
         {
-          "_id": "edge-polder-surface-elevation-nap--saline-seepage-kwel",
-          "curvature": -0.14,
-          "style": {},
-          "connection": "conn-polder-surface-elevation-nap--saline-seepage-kwel"
-        },
-        {
           "_id": "edge-root-zone-salinity--soil-structure-usability",
           "curvature": 0.14,
           "style": {},
@@ -5938,10 +5979,10 @@
           "connection": "conn-spring-workability-of-the-fields--demand-for-deep-polder-drainage"
         },
         {
-          "_id": "edge-polder-drainage-depth--saline-seepage-kwel",
-          "curvature": 0.1,
+          "_id": "edge-ditch-level-nap--saline-seepage-kwel",
+          "curvature": -0.3,
           "style": {},
-          "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
+          "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         },
         {
           "_id": "edge-polder-drainage-depth--winter-rain-drained-away",
@@ -5950,10 +5991,22 @@
           "connection": "conn-polder-drainage-depth--winter-rain-drained-away"
         },
         {
-          "_id": "edge-plans-to-raise-ditch-levels--polder-drainage-depth",
+          "_id": "edge-plans-to-raise-ditch-levels--ditch-level-nap",
           "curvature": -0.1,
           "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
+        },
+        {
+          "_id": "edge-ditch-level-nap--polder-drainage-depth",
+          "curvature": 0.15,
+          "style": {},
+          "connection": "conn-ditch-level-nap--polder-drainage-depth"
+        },
+        {
+          "_id": "edge-polder-surface-elevation-nap--polder-drainage-depth",
+          "curvature": 0.35,
+          "style": {},
+          "connection": "conn-polder-surface-elevation-nap--polder-drainage-depth"
         },
         {
           "_id": "edge-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels",
@@ -6505,8 +6558,8 @@
           "loop": "loop-B3",
           "style": {},
           "position": {
-            "x": -793,
-            "y": -91
+            "x": -819,
+            "y": -139
           }
         },
         {
@@ -6514,8 +6567,8 @@
           "loop": "loop-B4",
           "style": {},
           "position": {
-            "x": -1148,
-            "y": -738
+            "x": -1309,
+            "y": -760
           }
         },
         {
@@ -6523,8 +6576,8 @@
           "loop": "loop-R2",
           "style": {},
           "position": {
-            "x": 14,
-            "y": -331
+            "x": -2,
+            "y": -362
           }
         },
         {
@@ -6631,8 +6684,8 @@
           "loop": "loop-B11",
           "style": {},
           "position": {
-            "x": -1679,
-            "y": -443
+            "x": -1757,
+            "y": -587
           }
         },
         {
@@ -6640,8 +6693,8 @@
           "loop": "loop-B12",
           "style": {},
           "position": {
-            "x": -1476,
-            "y": -774
+            "x": -1634,
+            "y": -799
           }
         },
         {
@@ -6658,8 +6711,8 @@
           "loop": "loop-R8",
           "style": {},
           "position": {
-            "x": -780,
-            "y": -180
+            "x": -805,
+            "y": -228
           }
         },
         {
@@ -7119,7 +7172,7 @@
           "_id": "node-group-C1-root-zone-salinity",
           "position": {
             "x": 0,
-            "y": -527
+            "y": 493
           },
           "pinned": true,
           "style": {},
@@ -7128,8 +7181,8 @@
         {
           "_id": "node-group-C1-harvest-lost-to-salt",
           "position": {
-            "x": 554,
-            "y": -423
+            "x": -520,
+            "y": 395
           },
           "pinned": true,
           "style": {},
@@ -7138,8 +7191,8 @@
         {
           "_id": "node-group-C1-farm-revenue",
           "position": {
-            "x": 889,
-            "y": -154
+            "x": -831,
+            "y": 146
           },
           "pinned": true,
           "style": {},
@@ -7148,8 +7201,8 @@
         {
           "_id": "node-group-C1-agricultural-land-value",
           "position": {
-            "x": 840,
-            "y": 227
+            "x": -790,
+            "y": -207
           },
           "pinned": true,
           "style": {},
@@ -7158,8 +7211,8 @@
         {
           "_id": "node-group-C1-farmland-leaving-arable-use",
           "position": {
-            "x": 372,
-            "y": 483
+            "x": -353,
+            "y": -451
           },
           "pinned": true,
           "style": {},
@@ -7168,28 +7221,28 @@
         {
           "_id": "node-group-C1-plans-to-raise-ditch-levels",
           "position": {
-            "x": -281,
-            "y": 502
+            "x": 264,
+            "y": -470
           },
           "pinned": true,
           "style": {},
           "element": "elem-plans-to-raise-ditch-levels"
         },
         {
-          "_id": "node-group-C1-polder-drainage-depth",
+          "_id": "node-group-C1-ditch-level-nap",
           "position": {
-            "x": -780,
-            "y": 287
+            "x": 732,
+            "y": -267
           },
           "pinned": true,
           "style": {},
-          "element": "elem-polder-drainage-depth"
+          "element": "elem-ditch-level-nap"
         },
         {
           "_id": "node-group-C1-saline-seepage-kwel",
           "position": {
-            "x": -923,
-            "y": -62
+            "x": 864,
+            "y": 56
           },
           "pinned": true,
           "style": {},
@@ -7198,8 +7251,8 @@
         {
           "_id": "node-group-C1-freshwater-lens-thickness",
           "position": {
-            "x": -600,
-            "y": -403
+            "x": 565,
+            "y": 375
           },
           "pinned": true,
           "style": {},
@@ -7208,8 +7261,8 @@
         {
           "_id": "node-group-C1-soil-structure-usability",
           "position": {
-            "x": -353,
-            "y": -795
+            "x": 337,
+            "y": 771
           },
           "pinned": true,
           "style": {},
@@ -7218,8 +7271,8 @@
         {
           "_id": "node-group-C1-salt-tolerant-crop-adoption",
           "position": {
-            "x": 1914,
-            "y": -424
+            "x": -1880,
+            "y": 387
           },
           "pinned": true,
           "style": {},
@@ -7228,8 +7281,8 @@
         {
           "_id": "node-group-C1-tolerant-varieties-adoption",
           "position": {
-            "x": 700,
-            "y": -1251
+            "x": -671,
+            "y": 1222
           },
           "pinned": true,
           "style": {},
@@ -7245,61 +7298,61 @@
         },
         {
           "_id": "edge-group-C1-harvest-lost-to-salt--farm-revenue",
-          "curvature": 0.166,
+          "curvature": 0.164,
           "style": {},
           "connection": "conn-harvest-lost-to-salt--farm-revenue"
         },
         {
           "_id": "edge-group-C1-farm-revenue--agricultural-land-value",
-          "curvature": 0.327,
+          "curvature": 0.325,
           "style": {},
           "connection": "conn-farm-revenue--agricultural-land-value"
         },
         {
           "_id": "edge-group-C1-agricultural-land-value--farmland-leaving-arable-use",
-          "curvature": 0.152,
+          "curvature": 0.155,
           "style": {},
           "connection": "conn-agricultural-land-value--farmland-leaving-arable-use"
         },
         {
           "_id": "edge-group-C1-farmland-leaving-arable-use--plans-to-raise-ditch-levels",
-          "curvature": 0.103,
+          "curvature": 0.104,
           "style": {},
           "connection": "conn-farmland-leaving-arable-use--plans-to-raise-ditch-levels"
         },
         {
-          "_id": "edge-group-C1-plans-to-raise-ditch-levels--polder-drainage-depth",
-          "curvature": 0.131,
+          "_id": "edge-group-C1-plans-to-raise-ditch-levels--ditch-level-nap",
+          "curvature": 0.132,
           "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
         },
         {
-          "_id": "edge-group-C1-polder-drainage-depth--saline-seepage-kwel",
-          "curvature": 0.279,
+          "_id": "edge-group-C1-ditch-level-nap--saline-seepage-kwel",
+          "curvature": 0.275,
           "style": {},
-          "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
+          "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         },
         {
           "_id": "edge-group-C1-saline-seepage-kwel--freshwater-lens-thickness",
-          "curvature": 0.227,
+          "curvature": 0.229,
           "style": {},
           "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
         },
         {
           "_id": "edge-group-C1-freshwater-lens-thickness--root-zone-salinity",
-          "curvature": 0.109,
+          "curvature": 0.11,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
         },
         {
           "_id": "edge-group-C1-root-zone-salinity--soil-structure-usability",
-          "curvature": -0.491,
+          "curvature": -0.521,
           "style": {},
           "connection": "conn-root-zone-salinity--soil-structure-usability"
         },
         {
           "_id": "edge-group-C1-soil-structure-usability--freshwater-lens-thickness",
-          "curvature": -0.513,
+          "curvature": -0.546,
           "style": {},
           "connection": "conn-soil-structure-usability--freshwater-lens-thickness"
         },
@@ -7335,8 +7388,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": -337,
-            "y": -645
+            "x": 321,
+            "y": 617
           }
         },
         {
@@ -7345,8 +7398,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 627,
-            "y": -837
+            "x": -595,
+            "y": 809
           }
         },
         {
@@ -7355,8 +7408,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 1234,
-            "y": -424
+            "x": -1200,
+            "y": 391
           }
         },
         {
@@ -7374,7 +7427,7 @@
     {
       "_id": "map-group-C2",
       "name": "04 C2 Low ditch levels: workable fields now, more demand later",
-      "description": "A greater *Polder drainage depth* (lower ditch levels) raises the *Spring workability of the fields* within the season, so *Farmers' demand for deep polder drainage* eases (B4). The same depth raises *Saline seepage (kwel)*, which over years lowers the *Rainwater lens thickness in the low polders*. *Root zone salinity* and *Harvest lost to salt* rise, *Farm income* and *Agricultural land value* fall. *Financial leverage*, *Banks' risk assessment of farm loans*, the *Risk premium on farm loans* and *Debt payments* rise, and thus the farm's *Dependence on high-margin salt-sensitive crops*, which in spring needs deep drainage, grows: the demand returns higher (R2). The relief comes first and the extra demand years later, also known as the “Fixes that fail” archetype (Kim, 2000, p. 16). The link from *Debt payments* to *Dependence on high-margin salt-sensitive crops* is a hypothesis for the group model building session.",
+      "description": "A lower *Ditch level (NAP)* gives a greater *Polder drainage depth*, which raises the *Spring workability of the fields* within the season, so *Farmers' demand for deep polder drainage* eases (B4). The same lower level raises *Saline seepage (kwel)*, which over years lowers the *Rainwater lens thickness in the low polders*. *Root zone salinity* and *Harvest lost to salt* rise, *Farm income* and *Agricultural land value* fall. *Financial leverage*, *Banks' risk assessment of farm loans*, the *Risk premium on farm loans* and *Debt payments* rise, and thus the farm's *Dependence on high-margin salt-sensitive crops*, which in spring needs deep drainage, grows: the demand returns higher (R2). The relief comes first and the extra demand years later, also known as the “Fixes that fail” archetype (Kim, 2000, p. 16). The link from *Debt payments* to *Dependence on high-margin salt-sensitive crops* is a hypothesis for the group model building session.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -7385,9 +7438,19 @@
       "defaultConnectionDirection": "directed",
       "elements": [
         {
+          "_id": "node-group-C2-demand-for-deep-polder-drainage",
+          "position": {
+            "x": -479,
+            "y": 0
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-demand-for-deep-polder-drainage"
+        },
+        {
           "_id": "node-group-C2-plans-to-raise-ditch-levels",
           "position": {
-            "x": -4,
+            "x": 11,
             "y": 0
           },
           "pinned": true,
@@ -7395,20 +7458,20 @@
           "element": "elem-plans-to-raise-ditch-levels"
         },
         {
-          "_id": "node-group-C2-polder-drainage-depth",
+          "_id": "node-group-C2-ditch-level-nap",
           "position": {
-            "x": 493,
+            "x": 479,
             "y": 0
           },
           "pinned": true,
           "style": {},
-          "element": "elem-polder-drainage-depth"
+          "element": "elem-ditch-level-nap"
         },
         {
           "_id": "node-group-C2-saline-seepage-kwel",
           "position": {
-            "x": 800,
-            "y": 229
+            "x": 787,
+            "y": 226
           },
           "pinned": true,
           "style": {},
@@ -7417,8 +7480,8 @@
         {
           "_id": "node-group-C2-freshwater-lens-thickness",
           "position": {
-            "x": 978,
-            "y": 560
+            "x": 968,
+            "y": 554
           },
           "pinned": true,
           "style": {},
@@ -7427,8 +7490,8 @@
         {
           "_id": "node-group-C2-root-zone-salinity",
           "position": {
-            "x": 976,
-            "y": 927
+            "x": 969,
+            "y": 919
           },
           "pinned": true,
           "style": {},
@@ -7437,8 +7500,8 @@
         {
           "_id": "node-group-C2-harvest-lost-to-salt",
           "position": {
-            "x": 810,
-            "y": 1238
+            "x": 806,
+            "y": 1229
           },
           "pinned": true,
           "style": {},
@@ -7447,8 +7510,8 @@
         {
           "_id": "node-group-C2-farm-revenue",
           "position": {
-            "x": 508,
-            "y": 1472
+            "x": 506,
+            "y": 1463
           },
           "pinned": true,
           "style": {},
@@ -7457,8 +7520,8 @@
         {
           "_id": "node-group-C2-agricultural-land-value",
           "position": {
-            "x": 60,
-            "y": 1588
+            "x": 61,
+            "y": 1579
           },
           "pinned": true,
           "style": {},
@@ -7467,8 +7530,8 @@
         {
           "_id": "node-group-C2-mortgage-debt-financial-leverage",
           "position": {
-            "x": -407,
-            "y": 1516
+            "x": -405,
+            "y": 1508
           },
           "pinned": true,
           "style": {},
@@ -7477,8 +7540,8 @@
         {
           "_id": "node-group-C2-banks-risk-assessment",
           "position": {
-            "x": -756,
-            "y": 1296
+            "x": -751,
+            "y": 1288
           },
           "pinned": true,
           "style": {},
@@ -7487,8 +7550,8 @@
         {
           "_id": "node-group-C2-bank-credit-freeze-risk-premiums",
           "position": {
-            "x": -962,
-            "y": 973
+            "x": -955,
+            "y": 966
           },
           "pinned": true,
           "style": {},
@@ -7497,8 +7560,8 @@
         {
           "_id": "node-group-C2-debt-payments",
           "position": {
-            "x": -990,
-            "y": 619
+            "x": -981,
+            "y": 613
           },
           "pinned": true,
           "style": {},
@@ -7507,28 +7570,28 @@
         {
           "_id": "node-group-C2-dependence-on-high-margin-salt-sensitive-crops",
           "position": {
-            "x": -836,
-            "y": 273
+            "x": -824,
+            "y": 269
           },
           "pinned": true,
           "style": {},
           "element": "elem-dependence-on-high-margin-salt-sensitive-crops"
         },
         {
-          "_id": "node-group-C2-demand-for-deep-polder-drainage",
+          "_id": "node-group-C2-polder-drainage-depth",
           "position": {
-            "x": -493,
-            "y": 0
+            "x": 268,
+            "y": -364
           },
           "pinned": true,
           "style": {},
-          "element": "elem-demand-for-deep-polder-drainage"
+          "element": "elem-polder-drainage-depth"
         },
         {
           "_id": "node-group-C2-spring-workability-of-the-fields",
           "position": {
-            "x": 6,
-            "y": -314
+            "x": -226,
+            "y": -386
           },
           "pinned": true,
           "style": {},
@@ -7537,28 +7600,58 @@
       ],
       "connections": [
         {
+          "_id": "edge-group-C2-plans-to-raise-ditch-levels--ditch-level-nap",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
+        },
+        {
           "_id": "edge-group-C2-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels",
           "curvature": 0,
           "style": {},
           "connection": "conn-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels"
         },
         {
-          "_id": "edge-group-C2-plans-to-raise-ditch-levels--polder-drainage-depth",
-          "curvature": 0,
+          "_id": "edge-group-C2-ditch-level-nap--saline-seepage-kwel",
+          "curvature": 0.1,
           "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+          "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         },
         {
-          "_id": "edge-group-C2-polder-drainage-depth--spring-workability-of-the-fields",
-          "curvature": -0.312,
+          "_id": "edge-group-C2-saline-seepage-kwel--freshwater-lens-thickness",
+          "curvature": 0.12,
           "style": {},
-          "connection": "conn-polder-drainage-depth--spring-workability-of-the-fields"
+          "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
         },
         {
-          "_id": "edge-group-C2-spring-workability-of-the-fields--demand-for-deep-polder-drainage",
-          "curvature": -0.317,
+          "_id": "edge-group-C2-freshwater-lens-thickness--root-zone-salinity",
+          "curvature": 0.129,
           "style": {},
-          "connection": "conn-spring-workability-of-the-fields--demand-for-deep-polder-drainage"
+          "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
+        },
+        {
+          "_id": "edge-group-C2-root-zone-salinity--harvest-lost-to-salt",
+          "curvature": 0.113,
+          "style": {},
+          "connection": "conn-root-zone-salinity--harvest-lost-to-salt"
+        },
+        {
+          "_id": "edge-group-C2-harvest-lost-to-salt--farm-revenue",
+          "curvature": 0.101,
+          "style": {},
+          "connection": "conn-harvest-lost-to-salt--farm-revenue"
+        },
+        {
+          "_id": "edge-group-C2-farm-revenue--agricultural-land-value",
+          "curvature": 0.104,
+          "style": {},
+          "connection": "conn-farm-revenue--agricultural-land-value"
+        },
+        {
+          "_id": "edge-group-C2-agricultural-land-value--mortgage-debt-financial-leverage",
+          "curvature": 0.104,
+          "style": {},
+          "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
         },
         {
           "_id": "edge-group-C2-mortgage-debt-financial-leverage--banks-risk-assessment",
@@ -7586,51 +7679,27 @@
         },
         {
           "_id": "edge-group-C2-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage",
-          "curvature": 0.116,
+          "curvature": 0.117,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage"
         },
         {
-          "_id": "edge-group-C2-polder-drainage-depth--saline-seepage-kwel",
-          "curvature": 0.1,
+          "_id": "edge-group-C2-ditch-level-nap--polder-drainage-depth",
+          "curvature": -0.291,
           "style": {},
-          "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
+          "connection": "conn-ditch-level-nap--polder-drainage-depth"
         },
         {
-          "_id": "edge-group-C2-saline-seepage-kwel--freshwater-lens-thickness",
-          "curvature": 0.119,
+          "_id": "edge-group-C2-polder-drainage-depth--spring-workability-of-the-fields",
+          "curvature": -0.236,
           "style": {},
-          "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
+          "connection": "conn-polder-drainage-depth--spring-workability-of-the-fields"
         },
         {
-          "_id": "edge-group-C2-freshwater-lens-thickness--root-zone-salinity",
-          "curvature": 0.128,
+          "_id": "edge-group-C2-spring-workability-of-the-fields--demand-for-deep-polder-drainage",
+          "curvature": -0.317,
           "style": {},
-          "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
-        },
-        {
-          "_id": "edge-group-C2-root-zone-salinity--harvest-lost-to-salt",
-          "curvature": 0.112,
-          "style": {},
-          "connection": "conn-root-zone-salinity--harvest-lost-to-salt"
-        },
-        {
-          "_id": "edge-group-C2-harvest-lost-to-salt--farm-revenue",
-          "curvature": 0.101,
-          "style": {},
-          "connection": "conn-harvest-lost-to-salt--farm-revenue"
-        },
-        {
-          "_id": "edge-group-C2-farm-revenue--agricultural-land-value",
-          "curvature": 0.103,
-          "style": {},
-          "connection": "conn-farm-revenue--agricultural-land-value"
-        },
-        {
-          "_id": "edge-group-C2-agricultural-land-value--mortgage-debt-financial-leverage",
-          "curvature": 0.103,
-          "style": {},
-          "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
+          "connection": "conn-spring-workability-of-the-fields--demand-for-deep-polder-drainage"
         }
       ],
       "loops": [
@@ -7641,7 +7710,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": -172
+            "y": -232
           }
         },
         {
@@ -7651,7 +7720,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 810
+            "y": 806
           }
         }
       ]
@@ -7700,14 +7769,14 @@
           "element": "elem-plans-to-raise-ditch-levels"
         },
         {
-          "_id": "node-group-C3-polder-drainage-depth",
+          "_id": "node-group-C3-ditch-level-nap",
           "position": {
             "x": -1369,
             "y": -640
           },
           "pinned": true,
           "style": {},
-          "element": "elem-polder-drainage-depth"
+          "element": "elem-ditch-level-nap"
         },
         {
           "_id": "node-group-C3-saline-seepage-kwel",
@@ -7842,30 +7911,6 @@
       ],
       "connections": [
         {
-          "_id": "edge-group-C3-mortgage-debt-financial-leverage--banks-risk-assessment",
-          "curvature": 0.212,
-          "style": {},
-          "connection": "conn-mortgage-debt-financial-leverage--banks-risk-assessment"
-        },
-        {
-          "_id": "edge-group-C3-banks-risk-assessment--bank-credit-freeze-risk-premiums",
-          "curvature": 0.139,
-          "style": {},
-          "connection": "conn-banks-risk-assessment--bank-credit-freeze-risk-premiums"
-        },
-        {
-          "_id": "edge-group-C3-bank-credit-freeze-risk-premiums--debt-payments",
-          "curvature": 0.1,
-          "style": {},
-          "connection": "conn-bank-credit-freeze-risk-premiums--debt-payments"
-        },
-        {
-          "_id": "edge-group-C3-debt-payments--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": 0.1,
-          "style": {},
-          "connection": "conn-debt-payments--dependence-on-high-margin-salt-sensitive-crops"
-        },
-        {
           "_id": "edge-group-C3-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage",
           "curvature": 0.1,
           "style": {},
@@ -7878,16 +7923,16 @@
           "connection": "conn-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels"
         },
         {
-          "_id": "edge-group-C3-plans-to-raise-ditch-levels--polder-drainage-depth",
+          "_id": "edge-group-C3-plans-to-raise-ditch-levels--ditch-level-nap",
           "curvature": 0.149,
           "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
         },
         {
-          "_id": "edge-group-C3-polder-drainage-depth--saline-seepage-kwel",
+          "_id": "edge-group-C3-ditch-level-nap--saline-seepage-kwel",
           "curvature": 0.204,
           "style": {},
-          "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
+          "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         },
         {
           "_id": "edge-group-C3-saline-seepage-kwel--freshwater-lens-thickness",
@@ -7924,6 +7969,30 @@
           "curvature": 0.143,
           "style": {},
           "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
+        },
+        {
+          "_id": "edge-group-C3-mortgage-debt-financial-leverage--banks-risk-assessment",
+          "curvature": 0.212,
+          "style": {},
+          "connection": "conn-mortgage-debt-financial-leverage--banks-risk-assessment"
+        },
+        {
+          "_id": "edge-group-C3-banks-risk-assessment--bank-credit-freeze-risk-premiums",
+          "curvature": 0.139,
+          "style": {},
+          "connection": "conn-banks-risk-assessment--bank-credit-freeze-risk-premiums"
+        },
+        {
+          "_id": "edge-group-C3-bank-credit-freeze-risk-premiums--debt-payments",
+          "curvature": 0.1,
+          "style": {},
+          "connection": "conn-bank-credit-freeze-risk-premiums--debt-payments"
+        },
+        {
+          "_id": "edge-group-C3-debt-payments--dependence-on-high-margin-salt-sensitive-crops",
+          "curvature": 0.1,
+          "style": {},
+          "connection": "conn-debt-payments--dependence-on-high-margin-salt-sensitive-crops"
         },
         {
           "_id": "edge-group-C3-dependence-on-high-margin-salt-sensitive-crops--spending-on-keeping-current-crops",
@@ -8913,6 +8982,16 @@
           "pinned": true,
           "style": {},
           "element": "elem-policy-resistance-legal-delays"
+        },
+        {
+          "_id": "node-group-C8-ditch-level-nap",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-ditch-level-nap"
         }
       ],
       "connections": [
@@ -8921,12 +9000,6 @@
           "curvature": 0.51,
           "style": {},
           "connection": "conn-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels"
-        },
-        {
-          "_id": "edge-group-C8-plans-to-raise-ditch-levels--polder-drainage-depth",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
         },
         {
           "_id": "edge-group-C8-polder-drainage-depth--spring-workability-of-the-fields",
@@ -8939,12 +9012,6 @@
           "curvature": 0.34,
           "style": {},
           "connection": "conn-spring-workability-of-the-fields--demand-for-deep-polder-drainage"
-        },
-        {
-          "_id": "edge-group-C8-polder-drainage-depth--saline-seepage-kwel",
-          "curvature": 0.363,
-          "style": {},
-          "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
         },
         {
           "_id": "edge-group-C8-saline-seepage-kwel--plans-to-raise-ditch-levels",
@@ -8969,6 +9036,24 @@
           "curvature": -0.4,
           "style": {},
           "connection": "conn-policy-resistance-legal-delays--plans-to-raise-ditch-levels"
+        },
+        {
+          "_id": "edge-group-C8-plans-to-raise-ditch-levels--ditch-level-nap",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
+        },
+        {
+          "_id": "edge-group-C8-ditch-level-nap--polder-drainage-depth",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-ditch-level-nap--polder-drainage-depth"
+        },
+        {
+          "_id": "edge-group-C8-ditch-level-nap--saline-seepage-kwel",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         }
       ],
       "loops": [
@@ -8988,8 +9073,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 0,
-            "y": 155
+            "x": -125,
+            "y": 95
           }
         },
         {
@@ -9028,14 +9113,14 @@
       "defaultConnectionDirection": "directed",
       "elements": [
         {
-          "_id": "node-group-C9-agricultural-land-value",
+          "_id": "node-group-C9-farmers-trust-in-government",
           "position": {
-            "x": -659,
-            "y": 358
+            "x": -1561,
+            "y": 0
           },
           "pinned": true,
           "style": {},
-          "element": "elem-agricultural-land-value"
+          "element": "elem-farmers-trust-in-government"
         },
         {
           "_id": "node-group-C9-policy-resistance-legal-delays",
@@ -9058,14 +9143,34 @@
           "element": "elem-plans-to-raise-ditch-levels"
         },
         {
-          "_id": "node-group-C9-polder-drainage-depth",
+          "_id": "node-group-C9-municipality-plans-for-farmland",
+          "position": {
+            "x": -929,
+            "y": -344
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-municipality-plans-for-farmland"
+        },
+        {
+          "_id": "node-group-C9-expropriation-of-farmland",
+          "position": {
+            "x": -1375,
+            "y": -344
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-expropriation-of-farmland"
+        },
+        {
+          "_id": "node-group-C9-ditch-level-nap",
           "position": {
             "x": 1482,
             "y": 345
           },
           "pinned": true,
           "style": {},
-          "element": "elem-polder-drainage-depth"
+          "element": "elem-ditch-level-nap"
         },
         {
           "_id": "node-group-C9-saline-seepage-kwel",
@@ -9118,42 +9223,22 @@
           "element": "elem-farm-revenue"
         },
         {
-          "_id": "node-group-C9-municipality-plans-for-farmland",
+          "_id": "node-group-C9-agricultural-land-value",
           "position": {
-            "x": -929,
-            "y": -344
+            "x": -659,
+            "y": 358
           },
           "pinned": true,
           "style": {},
-          "element": "elem-municipality-plans-for-farmland"
-        },
-        {
-          "_id": "node-group-C9-expropriation-of-farmland",
-          "position": {
-            "x": -1375,
-            "y": -344
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-expropriation-of-farmland"
-        },
-        {
-          "_id": "node-group-C9-farmers-trust-in-government",
-          "position": {
-            "x": -1561,
-            "y": 0
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-farmers-trust-in-government"
+          "element": "elem-agricultural-land-value"
         }
       ],
       "connections": [
         {
-          "_id": "edge-group-C9-plans-to-raise-ditch-levels--policy-resistance-legal-delays",
-          "curvature": -0.148,
+          "_id": "edge-group-C9-farmers-trust-in-government--policy-resistance-legal-delays",
+          "curvature": 0,
           "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--policy-resistance-legal-delays"
+          "connection": "conn-farmers-trust-in-government--policy-resistance-legal-delays"
         },
         {
           "_id": "edge-group-C9-policy-resistance-legal-delays--plans-to-raise-ditch-levels",
@@ -9162,22 +9247,46 @@
           "connection": "conn-policy-resistance-legal-delays--plans-to-raise-ditch-levels"
         },
         {
-          "_id": "edge-group-C9-agricultural-land-value--policy-resistance-legal-delays",
-          "curvature": 0.109,
+          "_id": "edge-group-C9-plans-to-raise-ditch-levels--policy-resistance-legal-delays",
+          "curvature": -0.148,
           "style": {},
-          "connection": "conn-agricultural-land-value--policy-resistance-legal-delays"
+          "connection": "conn-plans-to-raise-ditch-levels--policy-resistance-legal-delays"
         },
         {
-          "_id": "edge-group-C9-plans-to-raise-ditch-levels--polder-drainage-depth",
+          "_id": "edge-group-C9-policy-resistance-legal-delays--farmers-trust-in-government",
+          "curvature": 0.52,
+          "style": {},
+          "connection": "conn-policy-resistance-legal-delays--farmers-trust-in-government"
+        },
+        {
+          "_id": "edge-group-C9-policy-resistance-legal-delays--municipality-plans-for-farmland",
+          "curvature": -0.323,
+          "style": {},
+          "connection": "conn-policy-resistance-legal-delays--municipality-plans-for-farmland"
+        },
+        {
+          "_id": "edge-group-C9-municipality-plans-for-farmland--expropriation-of-farmland",
+          "curvature": -0.249,
+          "style": {},
+          "connection": "conn-municipality-plans-for-farmland--expropriation-of-farmland"
+        },
+        {
+          "_id": "edge-group-C9-expropriation-of-farmland--farmers-trust-in-government",
+          "curvature": -0.323,
+          "style": {},
+          "connection": "conn-expropriation-of-farmland--farmers-trust-in-government"
+        },
+        {
+          "_id": "edge-group-C9-plans-to-raise-ditch-levels--ditch-level-nap",
           "curvature": 0.105,
           "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
         },
         {
-          "_id": "edge-group-C9-polder-drainage-depth--saline-seepage-kwel",
+          "_id": "edge-group-C9-ditch-level-nap--saline-seepage-kwel",
           "curvature": 0.1,
           "style": {},
-          "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
+          "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         },
         {
           "_id": "edge-group-C9-saline-seepage-kwel--freshwater-lens-thickness",
@@ -9210,34 +9319,10 @@
           "connection": "conn-farm-revenue--agricultural-land-value"
         },
         {
-          "_id": "edge-group-C9-policy-resistance-legal-delays--farmers-trust-in-government",
-          "curvature": 0.52,
+          "_id": "edge-group-C9-agricultural-land-value--policy-resistance-legal-delays",
+          "curvature": 0.109,
           "style": {},
-          "connection": "conn-policy-resistance-legal-delays--farmers-trust-in-government"
-        },
-        {
-          "_id": "edge-group-C9-farmers-trust-in-government--policy-resistance-legal-delays",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-farmers-trust-in-government--policy-resistance-legal-delays"
-        },
-        {
-          "_id": "edge-group-C9-municipality-plans-for-farmland--expropriation-of-farmland",
-          "curvature": -0.249,
-          "style": {},
-          "connection": "conn-municipality-plans-for-farmland--expropriation-of-farmland"
-        },
-        {
-          "_id": "edge-group-C9-expropriation-of-farmland--farmers-trust-in-government",
-          "curvature": -0.323,
-          "style": {},
-          "connection": "conn-expropriation-of-farmland--farmers-trust-in-government"
-        },
-        {
-          "_id": "edge-group-C9-policy-resistance-legal-delays--municipality-plans-for-farmland",
-          "curvature": -0.323,
-          "style": {},
-          "connection": "conn-policy-resistance-legal-delays--municipality-plans-for-farmland"
+          "connection": "conn-agricultural-land-value--policy-resistance-legal-delays"
         }
       ],
       "loops": [
@@ -9286,7 +9371,7 @@
     {
       "_id": "map-group-C10",
       "name": "12 C10 Falling land value: levels held, or land leaving arable",
-      "description": "The three loops share the chain from the *Water board's plans to raise ditch levels* through *Polder drainage depth*, *Saline seepage (kwel)*, *Rainwater lens thickness in the low polders*, *Root zone salinity* and *Harvest lost to salt* to *Farm income* and *Agricultural land value*, and part ways there. As land loses value, *Financial leverage* and *Debt payments* lead farmers to ask for deep drainage (R2), and owners may object harder to raises (R8, a hypothesis): both keep the ditch levels low and the salt coming. Where arable farming stops paying, *Arable land in the polders* falls, the board has more reason to raise the levels, and the salt falls back (B3). The same fall in value sends the water board opposite signals; which is stronger decides whether the decline persists or stops.",
+      "description": "The three loops share the chain from the *Water board's plans to raise ditch levels* through *Ditch level (NAP)*, *Saline seepage (kwel)*, *Rainwater lens thickness in the low polders*, *Root zone salinity* and *Harvest lost to salt* to *Farm income* and *Agricultural land value*, and part ways there. As land loses value, *Financial leverage* and *Debt payments* lead farmers to ask for deep drainage (R2), and owners may object harder to raises (R8, a hypothesis): both keep the ditch levels low and the salt coming. Where arable farming stops paying, *Arable land in the polders* falls, the board has more reason to raise the levels, and the salt falls back (B3). The same fall in value sends the water board opposite signals; which is stronger decides whether the decline persists or stops.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -9297,6 +9382,76 @@
       "defaultConnectionDirection": "directed",
       "elements": [
         {
+          "_id": "node-group-C10-plans-to-raise-ditch-levels",
+          "position": {
+            "x": 0,
+            "y": -1283
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-plans-to-raise-ditch-levels"
+        },
+        {
+          "_id": "node-group-C10-ditch-level-nap",
+          "position": {
+            "x": 0,
+            "y": -914
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-ditch-level-nap"
+        },
+        {
+          "_id": "node-group-C10-saline-seepage-kwel",
+          "position": {
+            "x": 0,
+            "y": -562
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-saline-seepage-kwel"
+        },
+        {
+          "_id": "node-group-C10-freshwater-lens-thickness",
+          "position": {
+            "x": 0,
+            "y": -176
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-freshwater-lens-thickness"
+        },
+        {
+          "_id": "node-group-C10-root-zone-salinity",
+          "position": {
+            "x": 0,
+            "y": 210
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-root-zone-salinity"
+        },
+        {
+          "_id": "node-group-C10-harvest-lost-to-salt",
+          "position": {
+            "x": 0,
+            "y": 562
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-harvest-lost-to-salt"
+        },
+        {
+          "_id": "node-group-C10-farm-revenue",
+          "position": {
+            "x": 0,
+            "y": 914
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-farm-revenue"
+        },
+        {
           "_id": "node-group-C10-agricultural-land-value",
           "position": {
             "x": 0,
@@ -9305,6 +9460,26 @@
           "pinned": true,
           "style": {},
           "element": "elem-agricultural-land-value"
+        },
+        {
+          "_id": "node-group-C10-farmland-leaving-arable-use",
+          "position": {
+            "x": -722,
+            "y": 0
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-farmland-leaving-arable-use"
+        },
+        {
+          "_id": "node-group-C10-policy-resistance-legal-delays",
+          "position": {
+            "x": 782,
+            "y": 0
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-policy-resistance-legal-delays"
         },
         {
           "_id": "node-group-C10-mortgage-debt-financial-leverage",
@@ -9365,99 +9540,81 @@
           "pinned": true,
           "style": {},
           "element": "elem-demand-for-deep-polder-drainage"
-        },
-        {
-          "_id": "node-group-C10-plans-to-raise-ditch-levels",
-          "position": {
-            "x": 0,
-            "y": -1283
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-plans-to-raise-ditch-levels"
-        },
-        {
-          "_id": "node-group-C10-polder-drainage-depth",
-          "position": {
-            "x": 0,
-            "y": -914
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-polder-drainage-depth"
-        },
-        {
-          "_id": "node-group-C10-saline-seepage-kwel",
-          "position": {
-            "x": 0,
-            "y": -562
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-saline-seepage-kwel"
-        },
-        {
-          "_id": "node-group-C10-freshwater-lens-thickness",
-          "position": {
-            "x": 0,
-            "y": -176
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-freshwater-lens-thickness"
-        },
-        {
-          "_id": "node-group-C10-root-zone-salinity",
-          "position": {
-            "x": 0,
-            "y": 210
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-root-zone-salinity"
-        },
-        {
-          "_id": "node-group-C10-harvest-lost-to-salt",
-          "position": {
-            "x": 0,
-            "y": 562
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-harvest-lost-to-salt"
-        },
-        {
-          "_id": "node-group-C10-farm-revenue",
-          "position": {
-            "x": 0,
-            "y": 914
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-farm-revenue"
-        },
-        {
-          "_id": "node-group-C10-policy-resistance-legal-delays",
-          "position": {
-            "x": 782,
-            "y": 0
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-policy-resistance-legal-delays"
-        },
-        {
-          "_id": "node-group-C10-farmland-leaving-arable-use",
-          "position": {
-            "x": -722,
-            "y": 0
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-farmland-leaving-arable-use"
         }
       ],
       "connections": [
+        {
+          "_id": "edge-group-C10-root-zone-salinity--harvest-lost-to-salt",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-root-zone-salinity--harvest-lost-to-salt"
+        },
+        {
+          "_id": "edge-group-C10-farm-revenue--agricultural-land-value",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-farm-revenue--agricultural-land-value"
+        },
+        {
+          "_id": "edge-group-C10-ditch-level-nap--saline-seepage-kwel",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-ditch-level-nap--saline-seepage-kwel"
+        },
+        {
+          "_id": "edge-group-C10-plans-to-raise-ditch-levels--ditch-level-nap",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
+        },
+        {
+          "_id": "edge-group-C10-saline-seepage-kwel--freshwater-lens-thickness",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
+        },
+        {
+          "_id": "edge-group-C10-freshwater-lens-thickness--root-zone-salinity",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
+        },
+        {
+          "_id": "edge-group-C10-harvest-lost-to-salt--farm-revenue",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-harvest-lost-to-salt--farm-revenue"
+        },
+        {
+          "_id": "edge-group-C10-agricultural-land-value--farmland-leaving-arable-use",
+          "curvature": 0.28,
+          "style": {},
+          "connection": "conn-agricultural-land-value--farmland-leaving-arable-use"
+        },
+        {
+          "_id": "edge-group-C10-farmland-leaving-arable-use--plans-to-raise-ditch-levels",
+          "curvature": 0.28,
+          "style": {},
+          "connection": "conn-farmland-leaving-arable-use--plans-to-raise-ditch-levels"
+        },
+        {
+          "_id": "edge-group-C10-agricultural-land-value--policy-resistance-legal-delays",
+          "curvature": -0.302,
+          "style": {},
+          "connection": "conn-agricultural-land-value--policy-resistance-legal-delays"
+        },
+        {
+          "_id": "edge-group-C10-policy-resistance-legal-delays--plans-to-raise-ditch-levels",
+          "curvature": -0.302,
+          "style": {},
+          "connection": "conn-policy-resistance-legal-delays--plans-to-raise-ditch-levels"
+        },
+        {
+          "_id": "edge-group-C10-agricultural-land-value--mortgage-debt-financial-leverage",
+          "curvature": 0.172,
+          "style": {},
+          "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
+        },
         {
           "_id": "edge-group-C10-mortgage-debt-financial-leverage--banks-risk-assessment",
           "curvature": 0.133,
@@ -9493,78 +9650,6 @@
           "curvature": 0.181,
           "style": {},
           "connection": "conn-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels"
-        },
-        {
-          "_id": "edge-group-C10-plans-to-raise-ditch-levels--polder-drainage-depth",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
-        },
-        {
-          "_id": "edge-group-C10-polder-drainage-depth--saline-seepage-kwel",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
-        },
-        {
-          "_id": "edge-group-C10-saline-seepage-kwel--freshwater-lens-thickness",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
-        },
-        {
-          "_id": "edge-group-C10-freshwater-lens-thickness--root-zone-salinity",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
-        },
-        {
-          "_id": "edge-group-C10-root-zone-salinity--harvest-lost-to-salt",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-root-zone-salinity--harvest-lost-to-salt"
-        },
-        {
-          "_id": "edge-group-C10-harvest-lost-to-salt--farm-revenue",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-harvest-lost-to-salt--farm-revenue"
-        },
-        {
-          "_id": "edge-group-C10-farm-revenue--agricultural-land-value",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-farm-revenue--agricultural-land-value"
-        },
-        {
-          "_id": "edge-group-C10-agricultural-land-value--mortgage-debt-financial-leverage",
-          "curvature": 0.172,
-          "style": {},
-          "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
-        },
-        {
-          "_id": "edge-group-C10-agricultural-land-value--policy-resistance-legal-delays",
-          "curvature": -0.302,
-          "style": {},
-          "connection": "conn-agricultural-land-value--policy-resistance-legal-delays"
-        },
-        {
-          "_id": "edge-group-C10-policy-resistance-legal-delays--plans-to-raise-ditch-levels",
-          "curvature": -0.302,
-          "style": {},
-          "connection": "conn-policy-resistance-legal-delays--plans-to-raise-ditch-levels"
-        },
-        {
-          "_id": "edge-group-C10-agricultural-land-value--farmland-leaving-arable-use",
-          "curvature": 0.28,
-          "style": {},
-          "connection": "conn-agricultural-land-value--farmland-leaving-arable-use"
-        },
-        {
-          "_id": "edge-group-C10-farmland-leaving-arable-use--plans-to-raise-ditch-levels",
-          "curvature": 0.28,
-          "style": {},
-          "connection": "conn-farmland-leaving-arable-use--plans-to-raise-ditch-levels"
         }
       ],
       "loops": [
@@ -9873,14 +9958,14 @@
           "element": "elem-plans-to-raise-ditch-levels"
         },
         {
-          "_id": "node-loop-B3-polder-drainage-depth",
+          "_id": "node-loop-B3-ditch-level-nap",
           "position": {
             "x": -540,
             "y": 387
           },
           "pinned": true,
           "style": {},
-          "element": "elem-polder-drainage-depth"
+          "element": "elem-ditch-level-nap"
         },
         {
           "_id": "node-loop-B3-saline-seepage-kwel",
@@ -9935,16 +10020,16 @@
           "connection": "conn-farmland-leaving-arable-use--plans-to-raise-ditch-levels"
         },
         {
-          "_id": "edge-loop-B3-plans-to-raise-ditch-levels--polder-drainage-depth",
+          "_id": "edge-loop-B3-plans-to-raise-ditch-levels--ditch-level-nap",
           "curvature": 0.104,
           "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
         },
         {
-          "_id": "edge-loop-B3-polder-drainage-depth--saline-seepage-kwel",
+          "_id": "edge-loop-B3-ditch-level-nap--saline-seepage-kwel",
           "curvature": 0.176,
           "style": {},
-          "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
+          "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         },
         {
           "_id": "edge-loop-B3-saline-seepage-kwel--freshwater-lens-thickness",
@@ -9988,8 +10073,8 @@
         {
           "_id": "node-loop-B4-demand-for-deep-polder-drainage",
           "position": {
-            "x": -276,
-            "y": -156
+            "x": -300,
+            "y": -234
           },
           "pinned": true,
           "style": {},
@@ -9998,18 +10083,28 @@
         {
           "_id": "node-loop-B4-plans-to-raise-ditch-levels",
           "position": {
-            "x": 230,
-            "y": -179
+            "x": 263,
+            "y": -248
           },
           "pinned": true,
           "style": {},
           "element": "elem-plans-to-raise-ditch-levels"
         },
         {
+          "_id": "node-loop-B4-ditch-level-nap",
+          "position": {
+            "x": 488,
+            "y": 84
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-ditch-level-nap"
+        },
+        {
           "_id": "node-loop-B4-polder-drainage-depth",
           "position": {
-            "x": 286,
-            "y": 150
+            "x": 30,
+            "y": 288
           },
           "pinned": true,
           "style": {},
@@ -10018,8 +10113,8 @@
         {
           "_id": "node-loop-B4-spring-workability-of-the-fields",
           "position": {
-            "x": -205,
-            "y": 188
+            "x": -464,
+            "y": 120
           },
           "pinned": true,
           "style": {},
@@ -10029,25 +10124,31 @@
       "connections": [
         {
           "_id": "edge-loop-B4-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels",
-          "curvature": 0.21,
+          "curvature": 0.171,
           "style": {},
           "connection": "conn-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels"
         },
         {
-          "_id": "edge-loop-B4-plans-to-raise-ditch-levels--polder-drainage-depth",
-          "curvature": 0.777,
+          "_id": "edge-loop-B4-plans-to-raise-ditch-levels--ditch-level-nap",
+          "curvature": 0.477,
           "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
+        },
+        {
+          "_id": "edge-loop-B4-ditch-level-nap--polder-drainage-depth",
+          "curvature": 0.24,
+          "style": {},
+          "connection": "conn-ditch-level-nap--polder-drainage-depth"
         },
         {
           "_id": "edge-loop-B4-polder-drainage-depth--spring-workability-of-the-fields",
-          "curvature": 0.206,
+          "curvature": 0.215,
           "style": {},
           "connection": "conn-polder-drainage-depth--spring-workability-of-the-fields"
         },
         {
           "_id": "edge-loop-B4-spring-workability-of-the-fields--demand-for-deep-polder-drainage",
-          "curvature": 0.83,
+          "curvature": 0.553,
           "style": {},
           "connection": "conn-spring-workability-of-the-fields--demand-for-deep-polder-drainage"
         }
@@ -10081,8 +10182,8 @@
         {
           "_id": "node-loop-R2-mortgage-debt-financial-leverage",
           "position": {
-            "x": -280,
-            "y": -696
+            "x": -284,
+            "y": -704
           },
           "pinned": true,
           "style": {},
@@ -10091,8 +10192,8 @@
         {
           "_id": "node-loop-R2-banks-risk-assessment",
           "position": {
-            "x": 296,
-            "y": -694
+            "x": 301,
+            "y": -702
           },
           "pinned": true,
           "style": {},
@@ -10101,8 +10202,8 @@
         {
           "_id": "node-loop-R2-bank-credit-freeze-risk-premiums",
           "position": {
-            "x": 807,
-            "y": -548
+            "x": 819,
+            "y": -554
           },
           "pinned": true,
           "style": {},
@@ -10111,7 +10212,7 @@
         {
           "_id": "node-loop-R2-debt-payments",
           "position": {
-            "x": 1133,
+            "x": 1149,
             "y": -313
           },
           "pinned": true,
@@ -10121,8 +10222,8 @@
         {
           "_id": "node-loop-R2-dependence-on-high-margin-salt-sensitive-crops",
           "position": {
-            "x": 1260,
-            "y": 4
+            "x": 1275,
+            "y": 11
           },
           "pinned": true,
           "style": {},
@@ -10131,8 +10232,8 @@
         {
           "_id": "node-loop-R2-demand-for-deep-polder-drainage",
           "position": {
-            "x": 1117,
-            "y": 331
+            "x": 1123,
+            "y": 342
           },
           "pinned": true,
           "style": {},
@@ -10141,28 +10242,28 @@
         {
           "_id": "node-loop-R2-plans-to-raise-ditch-levels",
           "position": {
-            "x": 765,
-            "y": 567
+            "x": 760,
+            "y": 580
           },
           "pinned": true,
           "style": {},
           "element": "elem-plans-to-raise-ditch-levels"
         },
         {
-          "_id": "node-loop-R2-polder-drainage-depth",
+          "_id": "node-loop-R2-ditch-level-nap",
           "position": {
-            "x": 251,
-            "y": 700
+            "x": 256,
+            "y": 708
           },
           "pinned": true,
           "style": {},
-          "element": "elem-polder-drainage-depth"
+          "element": "elem-ditch-level-nap"
         },
         {
           "_id": "node-loop-R2-saline-seepage-kwel",
           "position": {
-            "x": -334,
-            "y": 688
+            "x": -318,
+            "y": 700
           },
           "pinned": true,
           "style": {},
@@ -10171,8 +10272,8 @@
         {
           "_id": "node-loop-R2-freshwater-lens-thickness",
           "position": {
-            "x": -854,
-            "y": 525
+            "x": -850,
+            "y": 538
           },
           "pinned": true,
           "style": {},
@@ -10181,8 +10282,8 @@
         {
           "_id": "node-loop-R2-root-zone-salinity",
           "position": {
-            "x": -1175,
-            "y": 257
+            "x": -1183,
+            "y": 269
           },
           "pinned": true,
           "style": {},
@@ -10191,8 +10292,8 @@
         {
           "_id": "node-loop-R2-harvest-lost-to-salt",
           "position": {
-            "x": -1257,
-            "y": -48
+            "x": -1273,
+            "y": -42
           },
           "pinned": true,
           "style": {},
@@ -10201,8 +10302,8 @@
         {
           "_id": "node-loop-R2-farm-revenue",
           "position": {
-            "x": -1114,
-            "y": -334
+            "x": -1129,
+            "y": -335
           },
           "pinned": true,
           "style": {},
@@ -10211,8 +10312,8 @@
         {
           "_id": "node-loop-R2-agricultural-land-value",
           "position": {
-            "x": -777,
-            "y": -562
+            "x": -788,
+            "y": -568
           },
           "pinned": true,
           "style": {},
@@ -10234,39 +10335,39 @@
         },
         {
           "_id": "edge-loop-R2-bank-credit-freeze-risk-premiums--debt-payments",
-          "curvature": 0.104,
+          "curvature": 0.105,
           "style": {},
           "connection": "conn-bank-credit-freeze-risk-premiums--debt-payments"
         },
         {
           "_id": "edge-loop-R2-debt-payments--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": 0.184,
+          "curvature": 0.187,
           "style": {},
           "connection": "conn-debt-payments--dependence-on-high-margin-salt-sensitive-crops"
         },
         {
           "_id": "edge-loop-R2-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage",
-          "curvature": 0.188,
+          "curvature": 0.187,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage"
         },
         {
           "_id": "edge-loop-R2-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels",
-          "curvature": 0.103,
+          "curvature": 0.102,
           "style": {},
           "connection": "conn-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels"
         },
         {
-          "_id": "edge-loop-R2-plans-to-raise-ditch-levels--polder-drainage-depth",
+          "_id": "edge-loop-R2-plans-to-raise-ditch-levels--ditch-level-nap",
           "curvature": 0.1,
           "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
         },
         {
-          "_id": "edge-loop-R2-polder-drainage-depth--saline-seepage-kwel",
+          "_id": "edge-loop-R2-ditch-level-nap--saline-seepage-kwel",
           "curvature": 0.1,
           "style": {},
-          "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
+          "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         },
         {
           "_id": "edge-loop-R2-saline-seepage-kwel--freshwater-lens-thickness",
@@ -10276,7 +10377,7 @@
         },
         {
           "_id": "edge-loop-R2-freshwater-lens-thickness--root-zone-salinity",
-          "curvature": 0.121,
+          "curvature": 0.12,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
         },
@@ -10288,7 +10389,7 @@
         },
         {
           "_id": "edge-loop-R2-harvest-lost-to-salt--farm-revenue",
-          "curvature": 0.161,
+          "curvature": 0.164,
           "style": {},
           "connection": "conn-harvest-lost-to-salt--farm-revenue"
         },
@@ -11499,20 +11600,20 @@
       "defaultConnectionDirection": "directed",
       "elements": [
         {
-          "_id": "node-loop-B11-polder-drainage-depth",
+          "_id": "node-loop-B11-ditch-level-nap",
           "position": {
-            "x": -377,
-            "y": -123
+            "x": -364,
+            "y": -119
           },
           "pinned": true,
           "style": {},
-          "element": "elem-polder-drainage-depth"
+          "element": "elem-ditch-level-nap"
         },
         {
           "_id": "node-loop-B11-saline-seepage-kwel",
           "position": {
-            "x": 279,
-            "y": -189
+            "x": 267,
+            "y": -183
           },
           "pinned": true,
           "style": {},
@@ -11521,8 +11622,8 @@
         {
           "_id": "node-loop-B11-plans-to-raise-ditch-levels",
           "position": {
-            "x": 51,
-            "y": 245
+            "x": 50,
+            "y": 236
           },
           "pinned": true,
           "style": {},
@@ -11531,22 +11632,22 @@
       ],
       "connections": [
         {
-          "_id": "edge-loop-B11-polder-drainage-depth--saline-seepage-kwel",
+          "_id": "edge-loop-B11-ditch-level-nap--saline-seepage-kwel",
           "curvature": 0.269,
           "style": {},
-          "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
+          "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         },
         {
           "_id": "edge-loop-B11-saline-seepage-kwel--plans-to-raise-ditch-levels",
-          "curvature": 0.991,
+          "curvature": 0.997,
           "style": {},
           "connection": "conn-saline-seepage-kwel--plans-to-raise-ditch-levels"
         },
         {
-          "_id": "edge-loop-B11-plans-to-raise-ditch-levels--polder-drainage-depth",
+          "_id": "edge-loop-B11-plans-to-raise-ditch-levels--ditch-level-nap",
           "curvature": 0.664,
           "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
         }
       ],
       "loops": [
@@ -11565,7 +11666,7 @@
     {
       "_id": "map-loop-B12",
       "name": "31 B12 The board tests the drainage depth",
-      "description": "The water board tests each level area's drainage depth against the optimum for its use and soil: where little of the area is too wet a raise is considered, where much of it is the target level is lowered or the discharge's bottlenecks solved. Carried out over years, the depth moves back towards that optimum, which the board sets by its own rules. It touches adoption only through the seepage and salt the depth sets.",
+      "description": "The water board tests each level area's drainage depth against the optimum for its use and soil: where little of the area is too wet a raise is considered, where much of it is the target level is lowered or the discharge's bottlenecks solved. Carried out over years, the depth moves back towards that optimum, which the board sets by its own rules. It touches adoption only through the seepage and salt the ditch level sets.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -11578,8 +11679,8 @@
         {
           "_id": "node-loop-B12-polder-drainage-depth",
           "position": {
-            "x": -405,
-            "y": 0
+            "x": -364,
+            "y": -119
           },
           "pinned": true,
           "style": {},
@@ -11588,26 +11689,42 @@
         {
           "_id": "node-loop-B12-plans-to-raise-ditch-levels",
           "position": {
-            "x": 405,
-            "y": 0
+            "x": 289,
+            "y": -173
           },
           "pinned": true,
           "style": {},
           "element": "elem-plans-to-raise-ditch-levels"
+        },
+        {
+          "_id": "node-loop-B12-ditch-level-nap",
+          "position": {
+            "x": 27,
+            "y": 237
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-ditch-level-nap"
         }
       ],
       "connections": [
         {
           "_id": "edge-loop-B12-polder-drainage-depth--plans-to-raise-ditch-levels",
-          "curvature": 0.567,
+          "curvature": 0.279,
           "style": {},
           "connection": "conn-polder-drainage-depth--plans-to-raise-ditch-levels"
         },
         {
-          "_id": "edge-loop-B12-plans-to-raise-ditch-levels--polder-drainage-depth",
-          "curvature": 0.567,
+          "_id": "edge-loop-B12-plans-to-raise-ditch-levels--ditch-level-nap",
+          "curvature": 0.927,
           "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
+        },
+        {
+          "_id": "edge-loop-B12-ditch-level-nap--polder-drainage-depth",
+          "curvature": 0.665,
+          "style": {},
+          "connection": "conn-ditch-level-nap--polder-drainage-depth"
         }
       ],
       "loops": [
@@ -11728,14 +11845,14 @@
           "element": "elem-plans-to-raise-ditch-levels"
         },
         {
-          "_id": "node-loop-R8-polder-drainage-depth",
+          "_id": "node-loop-R8-ditch-level-nap",
           "position": {
             "x": 734,
             "y": 149
           },
           "pinned": true,
           "style": {},
-          "element": "elem-polder-drainage-depth"
+          "element": "elem-ditch-level-nap"
         },
         {
           "_id": "node-loop-R8-saline-seepage-kwel",
@@ -11802,16 +11919,16 @@
           "connection": "conn-policy-resistance-legal-delays--plans-to-raise-ditch-levels"
         },
         {
-          "_id": "edge-loop-R8-plans-to-raise-ditch-levels--polder-drainage-depth",
+          "_id": "edge-loop-R8-plans-to-raise-ditch-levels--ditch-level-nap",
           "curvature": 0.331,
           "style": {},
-          "connection": "conn-plans-to-raise-ditch-levels--polder-drainage-depth"
+          "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
         },
         {
-          "_id": "edge-loop-R8-polder-drainage-depth--saline-seepage-kwel",
+          "_id": "edge-loop-R8-ditch-level-nap--saline-seepage-kwel",
           "curvature": 0.156,
           "style": {},
-          "connection": "conn-polder-drainage-depth--saline-seepage-kwel"
+          "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         },
         {
           "_id": "edge-loop-R8-saline-seepage-kwel--freshwater-lens-thickness",
@@ -12016,7 +12133,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n"
     },
     {
       "_id": "pers-actors",
@@ -12026,7 +12143,7 @@
     {
       "_id": "pers-loops",
       "name": "Loops",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
     }
   ]
 }

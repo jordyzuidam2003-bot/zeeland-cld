@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1435 -1202 2868 2421" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1425 -1202 2868 2421" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
 <defs>
 <marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
 <marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
 <marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
 </defs>
-<rect x="-1435" y="-1202" width="2868" height="2421" fill="white"/>
+<rect x="-1425" y="-1202" width="2868" height="2421" fill="white"/>
 <g class="links">
 <g class="link" data-from="mortgage-debt-financial-leverage" data-to="banks-risk-assessment" data-sign="+" data-delay="false" data-curvature="0.212">
 <path class="link-path" d="M 1159.0 -254.3 Q 1184.1 -168.8 1157.8 -83.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -32,15 +32,15 @@
 <path class="delay-cut" d="M -762.2 246.2 L -744.9 201.4 M -777.1 240.4 L -759.8 195.6" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -762.2 246.2 L -744.9 201.4 M -777.1 240.4 L -759.8 195.6" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="0.149">
-<path class="link-path" d="M -1004.7 92.5 Q -1082.8 35.2 -1134.6 -46.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-1105.9" y="-5.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="ditch-level-nap" data-sign="+" data-delay="true" data-curvature="0.149">
+<path class="link-path" d="M -1004.7 92.5 Q -1082.8 35.2 -1134.6 -46.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-1105.9" y="-5.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M -1081.4 58.3 L -1046.9 24.9 M -1092.6 46.8 L -1058.1 13.4" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -1081.4 58.3 L -1046.9 24.9 M -1092.6 46.8 L -1058.1 13.4" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="polder-drainage-depth" data-to="saline-seepage-kwel" data-sign="+" data-delay="false" data-curvature="0.204">
-<path class="link-path" d="M -1157.2 -98.7 Q -1178.2 -190.8 -1142.1 -278.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-1157.4" y="-230.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<g class="link" data-from="ditch-level-nap" data-to="saline-seepage-kwel" data-sign="-" data-delay="false" data-curvature="0.204">
+<path class="link-path" d="M -1157.2 -98.7 Q -1178.2 -190.8 -1142.1 -278.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-1157.4" y="-230.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="saline-seepage-kwel" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="0.138">
 <path class="link-path" d="M -1109.7 -330.0 Q -1053.7 -398.6 -980.6 -448.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -106,9 +106,9 @@
 <text x="-935.2" y="127.0" text-anchor="middle">Water board's plans to</text>
 <text x="-935.2" y="161.0" text-anchor="middle">raise ditch levels</text>
 </g>
-<g class="element" data-id="polder-drainage-depth" data-domain="Technological" data-type="Stock" data-adaptive="false">
-<rect x="-1319.8" y="-98.7" width="339.6" height="52.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
-<text x="-1150.0" y="-64.2" text-anchor="middle">Polder drainage depth</text>
+<g class="element" data-id="ditch-level-nap" data-domain="Technological" data-type="Stock" data-adaptive="false">
+<rect x="-1290.1" y="-98.7" width="280.3" height="52.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="-1150.0" y="-64.2" text-anchor="middle">Ditch level (NAP)</text>
 </g>
 <g class="element" data-id="saline-seepage-kwel" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
 <rect x="-1299.6" y="-330.0" width="339.6" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>

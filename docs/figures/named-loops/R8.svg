@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1015 -540 2001 1123" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1015 -540 1993 1123" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
 <defs>
 <marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
 <marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
 <marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
 </defs>
-<rect x="-1015" y="-540" width="2001" height="1123" fill="white"/>
+<rect x="-1015" y="-540" width="1993" height="1123" fill="white"/>
 <g class="links">
 <g class="link" data-from="freshwater-lens-thickness" data-to="root-zone-salinity" data-sign="-" data-delay="false" data-curvature="0.1">
 <path class="link-path" d="M -220.0 424.1 Q -361.7 400.5 -478.3 349.1" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -26,13 +26,13 @@
 <path class="delay-cut" d="M -552.9 -339.4 L -530.3 -297.1 M -538.8 -347.0 L -516.2 -304.6" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -552.9 -339.4 L -530.3 -297.1 M -538.8 -347.0 L -516.2 -304.6" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="polder-drainage-depth" data-to="saline-seepage-kwel" data-sign="+" data-delay="false" data-curvature="0.1">
-<path class="link-path" d="M 716.0 175.3 Q 642.1 272.2 498.9 339.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="543.5" y="317.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<g class="link" data-from="ditch-level-nap" data-to="saline-seepage-kwel" data-sign="-" data-delay="false" data-curvature="-0.3">
+<path class="link-path" d="M 716.0 175.3 Q 642.1 272.2 498.9 339.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="543.5" y="317.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="-0.1">
-<path class="link-path" d="M 746.5 -128.1 Q 813.6 -2.6 749.0 123.3" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="768.3" y="77.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="ditch-level-nap" data-sign="+" data-delay="true" data-curvature="-0.1">
+<path class="link-path" d="M 746.5 -128.1 Q 813.6 -2.6 749.0 123.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="768.3" y="77.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M 804.6 -10.7 L 756.6 -10.2 M 804.8 5.3 L 756.8 5.8" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 804.6 -10.7 L 756.6 -10.2 M 804.8 5.3 L 756.8 5.8" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
@@ -65,9 +65,9 @@
 <text x="719.2" y="-179.6" text-anchor="middle">Water board's plans to</text>
 <text x="719.2" y="-145.6" text-anchor="middle">raise ditch levels</text>
 </g>
-<g class="element" data-id="polder-drainage-depth" data-domain="Technological" data-type="Stock" data-adaptive="false">
-<rect x="564.3" y="123.3" width="339.6" height="52.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
-<text x="734.1" y="157.8" text-anchor="middle">Polder drainage depth</text>
+<g class="element" data-id="ditch-level-nap" data-domain="Technological" data-type="Stock" data-adaptive="false">
+<rect x="594.0" y="123.3" width="280.3" height="52.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="734.1" y="157.8" text-anchor="middle">Ditch level (NAP)</text>
 </g>
 <g class="element" data-id="saline-seepage-kwel" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
 <rect x="268.1" y="339.7" width="339.6" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>

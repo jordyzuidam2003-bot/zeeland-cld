@@ -3928,13 +3928,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "De Louw et al. (2011) named again where batch 3 made bare pages read as de Louw et al. (2015)",
-      "argument": "Batch 3 cited de Louw et al. (2015, p. 12) at the end of the first sentence, so the next sentence's bare pages (pp. 3662, 3674–3675), which are de Louw et al. (2011)'s, read as the 2015 article's; naming the author and year restores what the sentence cited. No claim changes.",
-      "items": [
-        "winter-rain-drained-away -> freshwater-lens-thickness"
-      ]
-    }
-  ]
+  "changes": []
 }

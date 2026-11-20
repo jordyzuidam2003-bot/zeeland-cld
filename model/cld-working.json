@@ -46,22 +46,6 @@
       "y": 32
     },
     {
-      "id": "freshwater-lens-recharge",
-      "label": "Rainwater lens recharge in the low polders",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Ecological",
-      "subsystem": "Water and soil",
-      "subquestion": "SQ1",
-      "description": "The rain that soaks in and refills the rainwater lenses of the low polders: mostly the winter's rain surplus, since in summer most of the rain evaporates (van Beekom et al., 1953a, p. 155, for the Netherlands). On Schouwen-Duiveland upward saline seepage keeps it within the clay and peat top layer of the low polders (de Louw et al., 2011, pp. 3662, 3674–3675), and tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (p. 3661); recharge, seepage and drainage depth together set the lens's thickness, by measurements on the island and a model built from them (pp. 3662, 3673–3675).",
-      "sources": [
-        "van-beekom-1953-salt",
-        "de-louw-2011"
-      ],
-      "x": -1593,
-      "y": 337
-    },
-    {
       "id": "freshwater-lens-thickness",
       "label": "Rainwater lens thickness in the low polders",
       "element type": "Stock",
@@ -69,39 +53,12 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "The thickness of the fresh rainwater lenses on top of the saline groundwater in the island's low polders, from the surface to the middle of the mixing zone between them: about 2 m on average in the low-lying polders with saline seepage, under 2 m over more than half of the 56 km² surveyed (de Louw et al., 2011, pp. 3667, 3672–3673, 3675, measured on the island from a helicopter and on the ground). These lenses keep salt out of the root zone and reach only the crop on their own field. A Stock: a year's recharge barely moves it (Rainwater lens recharge in the low polders → Rainwater lens thickness in the low polders).",
+      "description": "The thickness of the fresh rainwater lenses on top of the saline groundwater in the island's low polders, from the surface to the middle of the mixing zone between them: about 2 m on average in the low-lying polders with saline seepage, under 2 m over more than half of the 56 km² surveyed (de Louw et al., 2011, pp. 3667, 3672–3673, 3675, measured on the island from a helicopter and on the ground). These lenses keep salt out of the root zone and reach only the crop on their own field. A Stock: a year's recharge barely moves it (the links into it from Hotter, drier summers, Wetter winters, Soil structure and Winter rain drained away).",
       "sources": [
         "de-louw-2011"
       ],
       "x": -1892,
       "y": 610
-    },
-    {
-      "id": "land-subsidence",
-      "label": "Land subsidence",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Ecological",
-      "subsystem": "Water and soil",
-      "subquestion": "SQ1",
-      "description": "How fast the land surface of the island's polders falls. Peat above the groundwater compacts and its organic matter oxidises as it is drained (Waterschap Scheldestromen, 2025, p. 13, the board's rules for its whole area), and the fall adds up in Polder surface elevation. The island's low polders lie on peat: in Schouwen's low polder salt-marsh soils alternate with basin clay with peat (Waterschap Scheldestromen, 2021b, p. 23), and under Duiveland a peat layer lies almost everywhere at −1.6 to −3.4 m NAP, under calcareous sand or light clay (2021a, p. 20), often within a metre of the surface in its low south and middle (p. 19). Drained by ditches, the polders have sunk over several hundred years as the peat compacted and the clay ripened (2021b, pp. 20, 22; 2021a, p. 18). No source read gives the rate on the island. The rate follows the drainage within the year, so an Auxiliary; what builds up slowly is the elevation, a Stock.",
-      "sources": [
-        "scheldestromen-2025-nota-peilbesluiten",
-        "scheldestromen-2021-hor-schouwen",
-        "scheldestromen-2021-hor-duiveland"
-      ],
-      "ask actors": [
-        {
-          "actor": "waterschap-scheldestromen",
-          "for": "How fast the island's polders subside, per area: the board changes a level in soil prone to settling by no more than the land has subsided since (Waterschap Scheldestromen, 2021b, p. 50).",
-          "through": [
-            "DCC",
-            "Living Lab"
-          ]
-        }
-      ],
-      "x": -2024,
-      "y": -844
     },
     {
       "id": "polder-surface-elevation-nap",
@@ -743,23 +700,6 @@
       ]
     },
     {
-      "id": "harvest-of-new-crops-to-process",
-      "label": "Harvest of new crops to process",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Technological",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ2",
-      "description": "The volume of new salt-tolerant crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere. Quinoa has been grown in Zeeland since 2016, on one to four parcels a year at six locations in all (Bogers et al., 2025, pp. 28, 38), its map showing one of them on the island, while the growers who sell to GreenFood50 in the Netherlands farm about 200 hectares for 600 tonnes a year (DutchNews.nl, 2026); samphire, from Zeeland and France, is by far the main product of a Zeeland trader in sea vegetables (FreshPlaza, 2018).",
-      "sources": [
-        "bogers-2025",
-        "dutchnews-2026",
-        "freshplaza-2018"
-      ],
-      "x": 247,
-      "y": 1566
-    },
-    {
       "id": "net-price-for-new-crops",
       "label": "Net price for new crops after transport",
       "element type": "Auxiliary",
@@ -1148,17 +1088,6 @@
   ],
   "connections": [
     {
-      "from": "hotter-drier-summers",
-      "to": "freshwater-lens-recharge",
-      "polarity": "-",
-      "delay": false,
-      "description": "Summers with less rain and more evaporation lower the year's rain surplus, which is what recharges the lens. In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation: in the year it used, summer evaporation (440 mm) outweighed summer rain (425 mm), so the winter did the recharging, and a smaller surplus gave a thinner lens (de Louw et al., 2011, pp. 3665, 3671, 3674). Within the year.",
-      "sources": [
-        "de-louw-2011"
-      ],
-      "curvature": 0.0
-    },
-    {
       "from": "sea-level-rise",
       "to": "saline-seepage-kwel",
       "polarity": "+",
@@ -1173,18 +1102,6 @@
     },
     {
       "from": "wetter-winters",
-      "to": "freshwater-lens-recharge",
-      "polarity": "+",
-      "delay": false,
-      "description": "More winter rain raises the winter's rain surplus, which recharges the lens. In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation, and from October to March of the year it used 397 mm of rain fell against 108 mm of evaporation (de Louw et al., 2011, p. 3665). Kaandorp et al. (2022, p. 11) expect the changing rain to raise the island's winter groundwater levels in part. Within the year.",
-      "sources": [
-        "de-louw-2011",
-        "kaandorp-2022"
-      ],
-      "curvature": 0.0
-    },
-    {
-      "from": "wetter-winters",
       "to": "winter-rain-drained-away",
       "polarity": "+",
       "delay": false,
@@ -1194,19 +1111,6 @@
         "kaandorp-2022"
       ],
       "curvature": 0.0
-    },
-    {
-      "from": "freshwater-lens-recharge",
-      "to": "freshwater-lens-thickness",
-      "polarity": "+",
-      "delay": true,
-      "description": "Rainwater infiltration builds up the floating freshwater lens, but slowly: the lens is a stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673). So a change in recharge takes years to show in the lens. The drains cap how much of a wetter winter reaches the lens: model calculations show that the extra winter water of wetter winters leaves through the intensive tile drainage and does not feed the lens, while higher summer evaporation shrinks it (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens).",
-      "sources": [
-        "de-louw-2011",
-        "de-louw-2015"
-      ],
-      "curvature": -0.39,
-      "delay at": 0.4
     },
     {
       "from": "freshwater-lens-thickness",
@@ -1243,17 +1147,6 @@
         "kaandorp-2022"
       ],
       "curvature": -0.28
-    },
-    {
-      "from": "land-subsidence",
-      "to": "polder-surface-elevation-nap",
-      "polarity": "-",
-      "delay": true,
-      "description": "Peat oxidation and clay settling lower the land surface relative to NAP at millimetres a year, so a decimetre takes decades: Dutch land below sea level is still subsiding up to 1 m per century, fastest in peat areas (Oude Essink et al., 2010, pp. 1, 3, 8–9). A rate for Schouwen-Duiveland's clay polders is not yet sourced.",
-      "sources": [
-        "oude-essink-2010"
-      ],
-      "curvature": -0.14
     },
     {
       "from": "polder-surface-elevation-nap",
@@ -1293,20 +1186,6 @@
         "kaandorp-2022"
       ],
       "curvature": 0.1
-    },
-    {
-      "from": "soil-structure-usability",
-      "to": "freshwater-lens-recharge",
-      "polarity": "+",
-      "delay": false,
-      "description": "Rain recharges the lens only once it has soaked into the soil. Before the floods, Zeeland's well-drained clay let the winter's rain surplus soak through almost completely; once sodium had broken down the structure of the topsoil, it became impervious and sticky when wet, part of the rain ran off over the surface and pools stood on the land, the more so the heavier the clay (van Beekom et al., 1953a, p. 157; 1953b, pp. 230, 233, 236, measured in the flooded polders of Zeeland, by R1's own mechanism). Even so, in most of the well-drained soils at least 150 mm still seeped through in winter, and less in badly drained soils of low permeability, against a Dutch annual rain surplus of about 200 mm, most of it in winter (van Beekom et al., 1953a, pp. 155, 157). In model computations of wetter winters, the extra winter water drained off effectively through the intensive drainage without feeding the thin rain lenses of the saline seepage areas the authors studied in Zeeland, among them a tile-drained field on the island, so more rain soaking in may add little to the lens (de Louw et al., 2015, pp. 6, 11, 12, by authors who report on the GO-FRESH project, which developed a drainage system to grow the lens). Within the year: the structure a soil has in a winter sets how much of that winter's rain soaks in. How thick a lens the recharge builds is also set by the drainage depth and the seepage (de Louw et al., 2011, p. 3674).",
-      "sources": [
-        "van-beekom-1953-salt",
-        "van-beekom-1953",
-        "de-louw-2011",
-        "de-louw-2015"
-      ],
-      "curvature": -0.22
     },
     {
       "from": "soil-structure-usability",
@@ -1382,17 +1261,6 @@
         "kaandorp-2022"
       ],
       "curvature": 0.22
-    },
-    {
-      "from": "winter-rain-drained-away",
-      "to": "freshwater-lens-recharge",
-      "polarity": "-",
-      "delay": false,
-      "description": "Rain the drains carry off does not refill the lens: tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (de Louw et al., 2011, p. 3661), and recharge, seepage and drainage depth together set the lens's thickness, by measurements on the island and a model built from them (pp. 3662, 3673–3675). In a conceptual 2-D model of a tile-drained field with saline seepage, built from field measurements in Zeeland and a 3-D model of a field on the island, how readily the drains run (a drainage resistance of 0.5 to 7.5 days) changed the lens's depth and width by less than 0.1 m; across the model's parameters the lens's depth moved more between the drains than at them, where the centre of the mixing zone stayed within 0.1 m of drain depth (de Louw et al., 2011, pp. 3662, 3664–3666, 3671). Within the year.",
-      "sources": [
-        "de-louw-2011"
-      ],
-      "curvature": -0.15
     },
     {
       "from": "crop-yield",
@@ -1694,19 +1562,6 @@
         "scheldestromen-2021-hor-duiveland"
       ],
       "curvature": 0.15
-    },
-    {
-      "from": "polder-drainage-depth",
-      "to": "land-subsidence",
-      "polarity": "+",
-      "delay": false,
-      "description": "The deeper the ditch levels lie below the fields, the more peat lies above the groundwater, where it compacts and oxidises, so the land falls faster: by the water board's rules for its whole area, peat soil above the groundwater subsides in response to drainage, and where the soil is prone to settling the board changes levels with restraint to limit it (Waterschap Scheldestromen, 2025, p. 13). On the island it holds Schouwen's summer levels high on purpose to limit subsidence by peat compaction, which leaves the salt-marsh soils between too little drainage depth (Waterschap Scheldestromen, 2021b, p. 45), and changes a level in soil prone to settling by no more than the land has subsided since (p. 50); Duiveland's plan changed levels with great care where peat lies below (2021a, p. 67). Within the year: the board weighs the risk by the summer groundwater level against the ditch level and the depth of the peat (2021b, p. 50). No source read gives how much faster the land falls per decimetre of drainage.",
-      "sources": [
-        "scheldestromen-2025-nota-peilbesluiten",
-        "scheldestromen-2021-hor-schouwen",
-        "scheldestromen-2021-hor-duiveland"
-      ],
-      "curvature": -0.25
     },
     {
       "from": "polder-drainage-depth",
@@ -2083,45 +1938,6 @@
         "van-loo-2023"
       ],
       "curvature": 0
-    },
-    {
-      "from": "salt-tolerant-crop-adoption",
-      "to": "harvest-of-new-crops-to-process",
-      "polarity": "+",
-      "delay": false,
-      "description": "More hectares of new crops on the island, more harvest to process. Quinoa yields about 2,000 kg a hectare on average in Europe (van Loo, 2023, p. 79), and its yield varies from under 500 to over 4,000 kg (p. 76), harvested in August of the year it is sown (p. 75): within the year.",
-      "sources": [
-        "van-loo-2023"
-      ],
-      "curvature": -0.1
-    },
-    {
-      "from": "growers-of-new-crops-elsewhere",
-      "to": "harvest-of-new-crops-to-process",
-      "polarity": "+",
-      "delay": false,
-      "description": "A plant draws its harvest from every grower within reach, on the island or off it: GreenFood50 has its quinoa grown in the Netherlands and Belgium, close to its processing facilities, to cut transport (GreenFood50, n.d.), by its growers, most of the Dutch ones, working about 200 hectares for 600 tonnes a year (DutchNews.nl, 2026). Within the year: a season's harvest.",
-      "sources": [
-        "greenfood50-nd",
-        "dutchnews-2026"
-      ],
-      "curvature": 0.0
-    },
-    {
-      "from": "harvest-of-new-crops-to-process",
-      "to": "processing-capacity-for-alternative-crops",
-      "polarity": "+",
-      "delay": true,
-      "description": "More harvest within reach makes a plant or chain nearby more worthwhile, so buyers and processors build or keep capacity on or near the island rather than handle the crops elsewhere. In France, the firms that store, process and sell crops specialised in a few dominant ones for economies of scale, and their logistics are not adapted to sorting pulses out of mixed crops (Magrini et al., 2018, pp. 3, 9), and a small volume spread out or far from its users costs more to collect and to source (Meynard et al., 2018, pp. 7–8): the economies of scale hold wherever a chain is built, so the mechanism transfers. In the Netherlands, on Terschelling's saline field, producers of processed products are more concerned about volumes than the restaurants are, and stakeholders describe a chicken and egg: a producer needs a market, and a reliable market needs ample supply (ten Dam et al., 2023, pp. 10, 14); for quinoa, one expert says efforts only work with concentrated investments and high volumes (de Wit et al., 2022, p. 270). Years: a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a): a delay.",
-      "simplification": "Folds Attractiveness of processing new crops locally, which gathered the drivers of this decision: each driver now points at Local processing capacity for new crops itself, whose description says that buyers and processors weigh it against processing the crops elsewhere. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
-      "sources": [
-        "magrini-2018",
-        "meynard-2018",
-        "de-vriend-2024",
-        "ten-dam-2023",
-        "de-wit-2022"
-      ],
-      "curvature": -0.31
     },
     {
       "from": "market-demand-for-alternative-crops",
@@ -2768,6 +2584,126 @@
         "kamphorst-2025"
       ],
       "curvature": 0.1
+    },
+    {
+      "from": "hotter-drier-summers",
+      "to": "freshwater-lens-thickness",
+      "polarity": "-",
+      "delay": true,
+      "description": "Summers with less rain and more evaporation lower the year's rain surplus, which is what refills the lens, so the lens thins. The lens is refilled mostly by the winter's rain surplus, since in summer most of the rain evaporates (van Beekom et al., 1953a, p. 155, for the Netherlands). In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation: in the year it used, summer evaporation (440 mm) outweighed summer rain (425 mm), so the winter did the recharging, and a smaller surplus gave a thinner lens (de Louw et al., 2011, pp. 3665, 3671, 3674). Model calculations show that higher summer evaporation shrinks the lens (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens). Years, so a delay: the lens is a Stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673), so a change in recharge takes years to show in the lens.",
+      "simplification": "Folds Rainwater lens recharge in the low polders, the rain that soaks in and refills the lens, between the two: Hotter, drier summers moves the recharge (-), and the recharge builds the lens over years (+). The sign is the product of the two steps, so no loop through the link changes, and the lens's slowness, which sat on the recharge -> thickness link, is this link's delay. Recharge is no actor's decision: the decisions that reach it, the farmers' storage measures and the water board's ditch levels, act on Winter rain drained away, which stays drawn, so no decision leaves the drawing. Hotter, drier summers is a Constant, so no loop runs through this link.",
+      "sources": [
+        "de-louw-2011",
+        "de-louw-2015",
+        "van-beekom-1953-salt"
+      ],
+      "curvature": 0.0
+    },
+    {
+      "from": "wetter-winters",
+      "to": "freshwater-lens-thickness",
+      "polarity": "+",
+      "delay": true,
+      "description": "More winter rain raises the winter's rain surplus, which soaks in and refills the lens. In a model of a drained field over saline seepage, built from measurements on the island, the recharge is each day's rain minus evaporation, and from October to March of the year it used 397 mm of rain fell against 108 mm of evaporation (de Louw et al., 2011, p. 3665). Kaandorp et al. (2022, p. 11) expect the changing rain to raise the island's winter groundwater levels in part. The drains cap how much of a wetter winter reaches the lens: model calculations show that the extra winter water of wetter winters leaves through the intensive tile drainage and does not feed the lens (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens); that part is drawn as Wetter winters -> Winter rain drained away. Years, so a delay: the lens is a Stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673), so a change in recharge takes years to show in the lens.",
+      "simplification": "Folds Rainwater lens recharge in the low polders, the rain that soaks in and refills the lens, between the two: Wetter winters moves the recharge (+), and the recharge builds the lens over years (+). The sign is the product of the two steps, so no loop through the link changes, and the lens's slowness, which sat on the recharge -> thickness link, is this link's delay. Recharge is no actor's decision: the decisions that reach it, the farmers' storage measures and the water board's ditch levels, act on Winter rain drained away, which stays drawn, so no decision leaves the drawing. Wetter winters is a Constant, so no loop runs through this link.",
+      "sources": [
+        "de-louw-2011",
+        "de-louw-2015",
+        "kaandorp-2022"
+      ],
+      "curvature": 0.0
+    },
+    {
+      "from": "soil-structure-usability",
+      "to": "freshwater-lens-thickness",
+      "polarity": "+",
+      "delay": true,
+      "description": "Rain refills the lens only once it has soaked into the soil. Before the floods, Zeeland's well-drained clay let the winter's rain surplus soak through almost completely; once sodium had broken down the structure of the topsoil, it became impervious and sticky when wet, part of the rain ran off over the surface and pools stood on the land, the more so the heavier the clay (van Beekom et al., 1953a, p. 157; 1953b, pp. 230, 233, 236, measured in the flooded polders of Zeeland, by R1's own mechanism). Even so, in most of the well-drained soils at least 150 mm still seeped through in winter, and less in badly drained soils of low permeability, against a Dutch annual rain surplus of about 200 mm, most of it in winter (van Beekom et al., 1953a, pp. 155, 157). In model computations of wetter winters, the extra winter water drained off effectively through the intensive drainage without feeding the thin rain lenses of the saline seepage areas the authors studied in Zeeland, among them a tile-drained field on the island, so more rain soaking in may add little to the lens (de Louw et al., 2015, pp. 6, 11, 12, by authors who report on the GO-FRESH project, which developed a drainage system to grow the lens). The structure a soil has in a winter sets how much of that winter's rain soaks in, within the year; the slowness sits in the lens. Years, so a delay: the lens is a Stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673), so a change in recharge takes years to show in the lens. How thick a lens the recharge builds is also set by the drainage depth and the seepage (de Louw et al., 2011, p. 3674).",
+      "simplification": "Folds Rainwater lens recharge in the low polders, the rain that soaks in and refills the lens, between the two: Soil structure moves the recharge (+), and the recharge builds the lens over years (+). The sign is the product of the two steps, so no loop through the link changes, and the lens's slowness, which sat on the recharge -> thickness link, is this link's delay. Recharge is no actor's decision: the decisions that reach it, the farmers' storage measures and the water board's ditch levels, act on Winter rain drained away, which stays drawn, so no decision leaves the drawing. R1 runs through it: Root zone salinity -(-, delay)-> Soil structure -(+, delay)-> Rainwater lens thickness -(-)-> Root zone salinity, two minus signs, reinforcing as before, and its mechanism, salty soil taking in less rain so the lens thins over years, is this link's description.",
+      "sources": [
+        "van-beekom-1953-salt",
+        "van-beekom-1953",
+        "de-louw-2011",
+        "de-louw-2015"
+      ],
+      "curvature": -0.1
+    },
+    {
+      "from": "winter-rain-drained-away",
+      "to": "freshwater-lens-thickness",
+      "polarity": "-",
+      "delay": true,
+      "description": "Rain the drains carry off does not refill the lens, so the lens thins: tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (de Louw et al., 2011, p. 3661). On Schouwen-Duiveland upward saline seepage keeps the recharge within the clay and peat top layer of the low polders (pp. 3662, 3674–3675), and recharge, seepage and drainage depth together set the lens's thickness, by measurements on the island and a model built from them (pp. 3662, 3673–3675). In a conceptual 2-D model of a tile-drained field with saline seepage, built from field measurements in Zeeland and a 3-D model of a field on the island, how readily the drains run (a drainage resistance of 0.5 to 7.5 days) changed the lens's depth and width by less than 0.1 m; across the model's parameters the lens's depth moved more between the drains than at them, where the centre of the mixing zone stayed within 0.1 m of drain depth (de Louw et al., 2011, pp. 3662, 3664–3666, 3671). The rain drained away follows each rain within the year; the slowness sits in the lens. Years, so a delay: the lens is a Stock that a year's recharge barely moves. In a model of a drained field over saline seepage, built from measurements on the island, the centre of the mixing zone moves at most 0.1 m in a year as the recharge swings with the seasons, the vertical flow at most 1.2 mm a day, and every run settled from saline groundwater to a stationary lens within 30 years (de Louw et al., 2011, pp. 3665, 3673), so a change in recharge takes years to show in the lens. The drains cap how much of a wetter winter reaches the lens: model calculations show that the extra winter water of wetter winters leaves through the intensive tile drainage and does not feed the lens (de Louw et al., 2015, p. 12, in an article on the island's seepage fields, by researchers who then present Drains2buffer, a drainage design developed in the GO-FRESH project, as a way to grow the lens).",
+      "simplification": "Folds Rainwater lens recharge in the low polders, the rain that soaks in and refills the lens, between the two: Winter rain drained away moves the recharge (-), and the recharge builds the lens over years (+). The sign is the product of the two steps, so no loop through the link changes, and the lens's slowness, which sat on the recharge -> thickness link, is this link's delay. Recharge is no actor's decision: the decisions that reach it, the farmers' storage measures and the water board's ditch levels, act on Winter rain drained away, which stays drawn, so no decision leaves the drawing. B6 and R4 run through it, with every other loop through the chain: Freshwater storage measures -(-)-> Winter rain drained away -(-, delay)-> Rainwater lens thickness keeps the farmers' storage acting on the lens by the rain kept in the field, B6 balancing and R4 reinforcing as before.",
+      "sources": [
+        "de-louw-2011",
+        "de-louw-2015"
+      ],
+      "curvature": 0.2
+    },
+    {
+      "from": "polder-drainage-depth",
+      "to": "polder-surface-elevation-nap",
+      "polarity": "-",
+      "delay": true,
+      "description": "The deeper the ditch levels lie below the fields, the more peat lies above the groundwater, where it compacts and oxidises, so the land surface falls faster relative to NAP: by the water board's rules for its whole area, peat soil above the groundwater subsides in response to drainage, and where the soil is prone to settling the board changes levels with restraint to limit it (Waterschap Scheldestromen, 2025, p. 13). The island's low polders lie on peat: in Schouwen's low polder salt-marsh soils alternate with basin clay with peat (Waterschap Scheldestromen, 2021b, p. 23), and under Duiveland a peat layer lies almost everywhere at −1.6 to −3.4 m NAP, under calcareous sand or light clay (2021a, p. 20), often within a metre of the surface in its low south and middle (p. 19); drained by ditches, the polders have sunk over several hundred years as the peat compacted and the clay ripened (2021b, pp. 20, 22; 2021a, p. 18). On the island the board holds Schouwen's summer levels high on purpose to limit subsidence by peat compaction, which leaves the salt-marsh soils between too little drainage depth (2021b, p. 45), and changes a level in soil prone to settling by no more than the land has subsided since (p. 50); Duiveland's plan changed levels with great care where peat lies below (2021a, p. 67). The rate of the fall follows the drainage within the year (the board weighs the risk by the summer groundwater level against the ditch level and the depth of the peat, 2021b, p. 50); the delay sits in the elevation, which the fall lowers at millimetres a year, so a decimetre takes decades: Dutch land below sea level is still subsiding up to 1 m per century, fastest in peat areas (Oude Essink et al., 2010, pp. 1, 3, 8–9). No source read gives how much faster the land falls per decimetre of drainage, nor a rate for Schouwen-Duiveland's clay polders.",
+      "simplification": "Folds Land subsidence, the rate at which the polders' surface falls, into the link: the sign is the product of the two steps (+, then −), so no loop through the link changes R or B, and each keeps its mechanism, drained peat compacting and oxidising and the land falling. The rate follows the drainage within the year and is no actor's decision; its slowness lies in the elevation, a Stock, which stays drawn, so the delay sits on this link. The link also holds the rate's response to the drainage as if the peat above the groundwater lasted to 2050: its organic matter oxidises as it is drained, which uses it up, but no source read gives how much peat is left on the island or how long it lasts. Drawn, the dwindling peat would only weaken the link, in a balancing loop of its own, never reverse it, so every loop through it keeps its polarity and its mechanism. The link also counts the drainage depth and the fall of the land as totals for the island, though how fast drainage makes the land fall differs by area with where peat lies above the groundwater: in Schouwen's low polder salt-marsh soils alternate with basin clay with peat (Waterschap Scheldestromen, 2021b, p. 23), and under Duiveland the peat lies often within a metre of the surface in its low south and middle (2021a, p. 19), so the board sets its levels by the soil (2021b, p. 45). Deeper drainage lowers the land wherever it acts, so the link stays − and every loop through it keeps its polarity, and those loops run on through the seepage of the low polders, where the peat lies, so they keep their mechanism. What it leaves out: how strong the link is per area, which no source read gives for the island.",
+      "sources": [
+        "scheldestromen-2025-nota-peilbesluiten",
+        "scheldestromen-2021-hor-schouwen",
+        "scheldestromen-2021-hor-duiveland",
+        "oude-essink-2010"
+      ],
+      "curvature": 0.1,
+      "ask actors": [
+        {
+          "actor": "waterschap-scheldestromen",
+          "for": "How fast the island's polders subside, per area: the board changes a level in soil prone to settling by no more than the land has subsided since (Waterschap Scheldestromen, 2021b, p. 50).",
+          "through": [
+            "DCC",
+            "Living Lab"
+          ]
+        }
+      ]
+    },
+    {
+      "from": "salt-tolerant-crop-adoption",
+      "to": "processing-capacity-for-alternative-crops",
+      "polarity": "+",
+      "delay": true,
+      "description": "More hectares of new crops on the island give more harvest within reach of a processor or trader on or near the island, and that volume draws capacity. Quinoa has been grown in Zeeland since 2016, on one to four parcels a year at six locations in all (Bogers et al., 2025, pp. 28, 38), its map showing one of them on the island. Quinoa yields about 2,000 kg a hectare on average in Europe (van Loo, 2023, p. 79), and its yield varies from under 500 to over 4,000 kg (p. 76), harvested in August of the year it is sown (p. 75). More harvest within reach makes a plant or chain nearby more worthwhile, so buyers and processors build or keep capacity on or near the island rather than handle the crops elsewhere. In France, the firms that store, process and sell crops specialised in a few dominant ones for economies of scale, and their logistics are not adapted to sorting pulses out of mixed crops (Magrini et al., 2018, pp. 3, 9), and a small volume spread out or far from its users costs more to collect and to source (Meynard et al., 2018, pp. 7–8): the economies of scale hold wherever a chain is built, so the mechanism transfers. In the Netherlands, on Terschelling's saline field, producers of processed products are more concerned about volumes than the restaurants are, and stakeholders describe a chicken and egg: a producer needs a market, and a reliable market needs ample supply (ten Dam et al., 2023, pp. 10, 14); for quinoa, one expert says efforts only work with concentrated investments and high volumes (de Wit et al., 2022, p. 270). Years: a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a): the delay sits in building the chain, not in the harvest, which follows within the year.",
+      "simplification": "Folds Harvest of new crops to process, the volume of new crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere, and before it Attractiveness of processing new crops locally: the harvest is now the step in words between the hectares (or the growers elsewhere) and the capacity they draw. It was an auxiliary no actor decides, with one link out; both steps into it are + and its link out is +, so each folded link is + and keeps the delay of building the chain. R7 runs Adoption of new salt-tolerant crops (+, delay) Local processing capacity for new crops (+) Net price for new crops after transport (+) Adoption: reinforcing as before, on the same mechanism, volume within reach drawing a chain nearby that cuts transport; every other loop through the harvest runs through this link too and keeps its sign. The harvest within reach counts every new crop as one volume, although its crops go to separate chains: quinoa to buyers such as GreenFood50 (DutchNews.nl, 2026), samphire to a Zeeland trader in sea vegetables (FreshPlaza, 2018); read per crop, the loops run the same way, and what this leaves out is that the volume a chain needs is reached crop by crop; summed, the link overstates how soon several small crops together make a plant worthwhile.",
+      "sources": [
+        "van-loo-2023",
+        "bogers-2025",
+        "magrini-2018",
+        "meynard-2018",
+        "ten-dam-2023",
+        "de-wit-2022",
+        "de-vriend-2024",
+        "dutchnews-2026",
+        "freshplaza-2018"
+      ],
+      "curvature": -0.4
+    },
+    {
+      "from": "growers-of-new-crops-elsewhere",
+      "to": "processing-capacity-for-alternative-crops",
+      "polarity": "+",
+      "delay": true,
+      "description": "A plant draws its harvest from every grower within reach, on the island or off it, so growers elsewhere add to the volume that draws capacity near the island: GreenFood50 has its quinoa grown in the Netherlands and Belgium, close to its processing facilities, to cut transport (GreenFood50, n.d.), by its growers, most of the Dutch ones, working about 200 hectares for 600 tonnes a year (DutchNews.nl, 2026). More harvest within reach makes a plant or chain nearby more worthwhile, so buyers and processors build or keep capacity on or near the island rather than handle the crops elsewhere. In France, the firms that store, process and sell crops specialised in a few dominant ones for economies of scale, and their logistics are not adapted to sorting pulses out of mixed crops (Magrini et al., 2018, pp. 3, 9), and a small volume spread out or far from its users costs more to collect and to source (Meynard et al., 2018, pp. 7–8): the economies of scale hold wherever a chain is built, so the mechanism transfers. In the Netherlands, on Terschelling's saline field, producers of processed products are more concerned about volumes than the restaurants are, and stakeholders describe a chicken and egg: a producer needs a market, and a reliable market needs ample supply (ten Dam et al., 2023, pp. 10, 14); for quinoa, one expert says efforts only work with concentrated investments and high volumes (de Wit et al., 2022, p. 270). Years: a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a): the delay sits in building the chain, not in the harvest, which follows within the year.",
+      "simplification": "Folds Harvest of new crops to process, the volume of new crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere, and before it Attractiveness of processing new crops locally: the harvest is now the step in words between the growers elsewhere and the capacity they draw. Both steps are +, so the link is + and keeps the delay of building the chain; no loop runs through it, since Growers of new crops elsewhere is a constant. What it adds to Local processing capacity for new crops is the off-island part of the volume within reach, which the link from Adoption of new salt-tolerant crops adds the island's part to; counted as one volume over crops, although quinoa and samphire go to separate chains (DutchNews.nl, 2026; FreshPlaza, 2018). It also treats the growers of new crops off the island as fixed, while GreenFood50 has its quinoa grown close to its processing facilities, to cut transport (GreenFood50, n.d.), so a plant on or near the island could also draw growers from nearby off the island. That response would close a loop of two links, from Local processing capacity for new crops back to Growers of new crops elsewhere and through this link back to the capacity, with no minus sign, reinforcing beside R7, so leaving it out changes no drawn loop's polarity or mechanism; what it leaves out is how much of a nearby plant's harvest would come from growers off the island rather than the island's own.",
+      "sources": [
+        "greenfood50-nd",
+        "dutchnews-2026",
+        "magrini-2018",
+        "meynard-2018",
+        "ten-dam-2023",
+        "de-wit-2022",
+        "de-vriend-2024",
+        "freshplaza-2018"
+      ],
+      "curvature": 0.0
     }
   ],
   "loops": [
@@ -2777,7 +2713,6 @@
       "path": [
         "root-zone-salinity",
         "soil-structure-usability",
-        "freshwater-lens-recharge",
         "freshwater-lens-thickness"
       ],
       "description": "Salt in the root zone puts sodium on the clay; once fresh water washes the salt out, the soil's structure collapses and recovers only over years. Less rain soaks in, less recharges the rainwater lens, the lens thins over years and saline groundwater comes closer to the roots: more salt. It runs in the low polders. The mechanism was measured after seawater floods; how much sodium the island's seepage puts on its clay, no source read shows. R1 may be weak on tile-drained fields such as the one measured on the island: in model computations extra winter water leaves through the intensive drainage without feeding the lens (de Louw et al., 2015, pp. 11, 12), and after a seawater flood most well-drained soils still let at least 150 mm through in winter (van Beekom et al., 1953a, p. 157). No practice is on it: the salt it adds drives tolerant crops and varieties (B2, B1)."
@@ -2876,7 +2811,6 @@
         "crop-yield",
         "freshwater-storage-measures",
         "winter-rain-drained-away",
-        "freshwater-lens-recharge",
         "freshwater-lens-thickness",
         "freshwater-availability-for-crops",
         "crop-water-shortfall"
@@ -2912,7 +2846,6 @@
         "farmers-capacity-to-invest",
         "freshwater-storage-measures",
         "winter-rain-drained-away",
-        "freshwater-lens-recharge",
         "freshwater-lens-thickness",
         "freshwater-availability-for-crops",
         "crop-water-shortfall",
@@ -2975,7 +2908,6 @@
       "name": "Growers draw a plant, and a plant draws growers",
       "path": [
         "salt-tolerant-crop-adoption",
-        "harvest-of-new-crops-to-process",
         "processing-capacity-for-alternative-crops",
         "net-price-for-new-crops"
       ],
@@ -3056,7 +2988,7 @@
         "B2",
         "B3"
       ],
-      "description": "*Root zone salinity* damages the *Soil structure*, so less rain soaks in: *Rainwater lens recharge in the low polders* falls, the *Rainwater lens thickness in the low polders* falls over years and *Root zone salinity* rises further (R1). As *Harvest lost to salt* rises, farmers respond in different ways, and at different speeds: *Adoption of salt-tolerant varieties* of their current crops, with the same machines and storage (B1); *Adoption of new salt-tolerant crops*, new to the island's rotations, after a delay (B2); and, over decades, less *Arable land in the polders* where arable farming stops paying, which raises the *Water board's plans to raise ditch levels*, since its levels follow the land's use (B3). The first two lower the *Harvest lost to salt* and leave the salt in the soil; only the third lowers the salt. The order is a reading of the delays and costs, and the links from *Harvest lost to salt* to *Adoption of salt-tolerant varieties* and from *Agricultural land value* to *Arable land in the polders* are hypotheses for the group model building session.",
+      "description": "*Root zone salinity* damages the *Soil structure*, so less rain soaks in to refill the lens: the *Rainwater lens thickness in the low polders* falls over years and *Root zone salinity* rises further (R1). As *Harvest lost to salt* rises, farmers respond in different ways, and at different speeds: *Adoption of salt-tolerant varieties* of their current crops, with the same machines and storage (B1); *Adoption of new salt-tolerant crops*, new to the island's rotations, after a delay (B2); and, over decades, less *Arable land in the polders* where arable farming stops paying, which raises the *Water board's plans to raise ditch levels*, since its levels follow the land's use (B3). The first two lower the *Harvest lost to salt* and leave the salt in the soil; only the third lowers the salt. The order is a reading of the delays and costs, and the links from *Harvest lost to salt* to *Adoption of salt-tolerant varieties* and from *Agricultural land value* to *Arable land in the polders* are hypotheses for the group model building session.",
       "places": {
         "root-zone-salinity": [
           0,
@@ -3095,31 +3027,19 @@
           -403
         ],
         "soil-structure-usability": [
-          -94,
-          -990
-        ],
-        "freshwater-lens-recharge": [
-          -642,
-          -929
+          -353,
+          -795
         ],
         "salt-tolerant-crop-adoption": [
-          1794,
-          -456
+          1914,
+          -424
         ],
         "tolerant-varieties-adoption": [
-          530,
-          -1343
+          700,
+          -1251
         ]
       },
       "bends": {
-        "root-zone-salinity -> soil-structure-usability": -0.453,
-        "soil-structure-usability -> freshwater-lens-recharge": -0.326,
-        "freshwater-lens-recharge -> freshwater-lens-thickness": -0.526,
-        "freshwater-lens-thickness -> root-zone-salinity": 0.109,
-        "harvest-lost-to-salt -> tolerant-varieties-adoption": -0.543,
-        "tolerant-varieties-adoption -> harvest-lost-to-salt": -0.543,
-        "harvest-lost-to-salt -> salt-tolerant-crop-adoption": -0.161,
-        "salt-tolerant-crop-adoption -> harvest-lost-to-salt": -0.161,
         "root-zone-salinity -> harvest-lost-to-salt": 0.1,
         "harvest-lost-to-salt -> farm-revenue": 0.166,
         "farm-revenue -> agricultural-land-value": 0.327,
@@ -3127,20 +3047,27 @@
         "farmland-leaving-arable-use -> plans-to-raise-ditch-levels": 0.103,
         "plans-to-raise-ditch-levels -> polder-drainage-depth": 0.131,
         "polder-drainage-depth -> saline-seepage-kwel": 0.279,
-        "saline-seepage-kwel -> freshwater-lens-thickness": 0.227
+        "saline-seepage-kwel -> freshwater-lens-thickness": 0.227,
+        "freshwater-lens-thickness -> root-zone-salinity": 0.109,
+        "root-zone-salinity -> soil-structure-usability": -0.491,
+        "soil-structure-usability -> freshwater-lens-thickness": -0.513,
+        "harvest-lost-to-salt -> salt-tolerant-crop-adoption": -0.147,
+        "salt-tolerant-crop-adoption -> harvest-lost-to-salt": -0.147,
+        "harvest-lost-to-salt -> tolerant-varieties-adoption": -0.595,
+        "tolerant-varieties-adoption -> harvest-lost-to-salt": -0.595
       },
       "marks": {
         "B1": [
-          542,
-          -883
+          627,
+          -837
         ],
         "B2": [
-          1174,
-          -440
+          1234,
+          -424
         ],
         "R1": [
-          -363,
-          -770
+          -337,
+          -645
         ],
         "B3": [
           0,
@@ -3383,24 +3310,20 @@
           0
         ],
         "crop-yield": [
-          837,
-          452
+          826,
+          562
         ],
         "freshwater-storage-measures": [
-          776,
-          1128
+          487,
+          1261
         ],
         "winter-rain-drained-away": [
-          70,
-          1502
-        ],
-        "freshwater-lens-recharge": [
-          -701,
-          1221
+          -390,
+          1312
         ],
         "freshwater-lens-thickness": [
-          -865,
-          521
+          -836,
+          632
         ],
         "freshwater-supply-route": [
           12,
@@ -3415,12 +3338,12 @@
           -314
         ],
         "creek-ridge-lens-thickness": [
-          -228,
+          -227,
           -894
         ],
         "pumping-the-water-board-allows": [
-          238,
-          -884
+          239,
+          -883
         ],
         "zlto-call-for-supply-route": [
           395,
@@ -3428,22 +3351,21 @@
         ]
       },
       "bends": {
-        "crop-water-shortfall -> groundwater-extraction-for-irrigation": -0.56,
-        "groundwater-extraction-for-irrigation -> freshwater-availability-for-crops": -0.572,
         "freshwater-availability-for-crops -> crop-water-shortfall": 0,
-        "crop-yield -> freshwater-storage-measures": 0.274,
-        "freshwater-storage-measures -> winter-rain-drained-away": 0.225,
-        "winter-rain-drained-away -> freshwater-lens-recharge": 0.219,
-        "freshwater-lens-recharge -> freshwater-lens-thickness": 0.286,
-        "freshwater-lens-thickness -> freshwater-availability-for-crops": 0.254,
-        "crop-water-shortfall -> crop-yield": 0.226,
+        "crop-water-shortfall -> zlto-call-for-supply-route": 0.335,
+        "zlto-call-for-supply-route -> freshwater-supply-route": 0.324,
         "freshwater-supply-route -> external-freshwater-supply": 0.317,
         "external-freshwater-supply -> freshwater-availability-for-crops": 0.358,
-        "creek-ridge-lens-thickness -> pumping-the-water-board-allows": 0.711,
-        "pumping-the-water-board-allows -> groundwater-extraction-for-irrigation": 0.364,
+        "crop-water-shortfall -> groundwater-extraction-for-irrigation": -0.56,
+        "groundwater-extraction-for-irrigation -> freshwater-availability-for-crops": -0.572,
+        "crop-water-shortfall -> crop-yield": 0.286,
+        "crop-yield -> freshwater-storage-measures": 0.32,
+        "freshwater-storage-measures -> winter-rain-drained-away": 0.241,
+        "winter-rain-drained-away -> freshwater-lens-thickness": 0.321,
+        "freshwater-lens-thickness -> freshwater-availability-for-crops": 0.318,
         "groundwater-extraction-for-irrigation -> creek-ridge-lens-thickness": 0.375,
-        "crop-water-shortfall -> zlto-call-for-supply-route": 0.335,
-        "zlto-call-for-supply-route -> freshwater-supply-route": 0.324
+        "creek-ridge-lens-thickness -> pumping-the-water-board-allows": 0.711,
+        "pumping-the-water-board-allows -> groundwater-extraction-for-irrigation": 0.364
       },
       "marks": {
         "B8": [
@@ -3460,7 +3382,7 @@
         ],
         "B6": [
           0,
-          1077
+          1022
         ]
       }
     },
@@ -3471,65 +3393,60 @@
         "R4",
         "B6"
       ],
-      "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so *Rainwater lens recharge in the low polders* and, over years, the *Rainwater lens thickness in the low polders* rise; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A lower *Crop yield* makes storing more worthwhile to a farmer (B6), and leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same harvest pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The links from *Crop yield* and from *Farmers' capacity to invest* to *Freshwater storage measures* are both hypotheses for the group model building session.",
+      "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so more rain refills the lens and, over years, the *Rainwater lens thickness in the low polders* rises; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A lower *Crop yield* makes storing more worthwhile to a farmer (B6), and leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same harvest pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The links from *Crop yield* and from *Farmers' capacity to invest* to *Freshwater storage measures* are both hypotheses for the group model building session.",
       "places": {
         "farmers-capacity-to-invest": [
-          -585,
-          -314
+          -457,
+          546
         ],
         "freshwater-storage-measures": [
-          0,
-          -716
+          -1212,
+          0
         ],
         "winter-rain-drained-away": [
-          0,
-          -480
-        ],
-        "freshwater-lens-recharge": [
-          0,
-          -228
+          -735,
+          0
         ],
         "freshwater-lens-thickness": [
-          0,
-          42
+          -242,
+          0
         ],
         "freshwater-availability-for-crops": [
-          0,
-          296
+          272,
+          0
         ],
         "crop-water-shortfall": [
-          0,
-          514
+          787,
+          0
         ],
         "crop-yield": [
-          0,
-          716
+          1212,
+          0
         ],
         "farm-revenue": [
-          -562,
-          363
+          517,
+          527
         ]
       },
       "bends": {
-        "farmers-capacity-to-invest -> freshwater-storage-measures": 0.325,
-        "freshwater-storage-measures -> winter-rain-drained-away": 0,
-        "winter-rain-drained-away -> freshwater-lens-recharge": 0,
-        "freshwater-lens-recharge -> freshwater-lens-thickness": 0,
+        "crop-water-shortfall -> crop-yield": 0,
         "freshwater-lens-thickness -> freshwater-availability-for-crops": 0,
         "freshwater-availability-for-crops -> crop-water-shortfall": 0,
-        "crop-water-shortfall -> crop-yield": 0,
-        "crop-yield -> farm-revenue": 0.306,
-        "farm-revenue -> farmers-capacity-to-invest": 0.213,
-        "crop-yield -> freshwater-storage-measures": -0.842
+        "winter-rain-drained-away -> freshwater-lens-thickness": 0,
+        "freshwater-storage-measures -> winter-rain-drained-away": 0,
+        "crop-yield -> farm-revenue": 0.168,
+        "farm-revenue -> farmers-capacity-to-invest": 0.155,
+        "farmers-capacity-to-invest -> freshwater-storage-measures": 0.179,
+        "crop-yield -> freshwater-storage-measures": -0.505
       },
       "marks": {
         "B6": [
-          359,
-          0
+          0,
+          -327
         ],
         "R4": [
-          -380,
-          0
+          0,
+          327
         ]
       }
     },
@@ -3621,7 +3538,7 @@
         "R7",
         "B10"
       ],
-      "description": "With few hectares of *Adoption of new salt-tolerant crops* there is little *Harvest of new crops to process*, no *Local processing capacity for new crops*, and transport keeps the *Net price for new crops after transport* low (R7). Every field that starts being used for new crops raises the *Margin given up on high-margin crops*, which *Farm income* and *Bank credit to farms* must carry (B10): adoption stays low. With enough hectares a local plant becomes worthwhile, the net price rises and more farmers grow the crop. How many hectares that takes is unclear from the literature and thus not clear in the CLD.",
+      "description": "With few hectares of *Adoption of new salt-tolerant crops* there is little harvest for a plant to process, no *Local processing capacity for new crops*, and transport keeps the *Net price for new crops after transport* low (R7). Every field that starts being used for new crops raises the *Margin given up on high-margin crops*, which *Farm income* and *Bank credit to farms* must carry (B10): adoption stays low. With enough hectares a local plant becomes worthwhile, the net price rises and more farmers grow the crop. How many hectares that takes is unclear from the literature and thus not clear in the CLD.",
       "places": {
         "salt-tolerant-crop-adoption": [
           0,
@@ -3655,37 +3572,32 @@
           483,
           -112
         ],
-        "harvest-of-new-crops-to-process": [
-          435,
-          239
-        ],
         "processing-capacity-for-alternative-crops": [
-          0,
-          493
+          315,
+          373
         ],
         "net-price-for-new-crops": [
-          -435,
-          239
+          -315,
+          373
         ]
       },
       "bends": {
-        "salt-tolerant-crop-adoption -> harvest-of-new-crops-to-process": 0.342,
-        "harvest-of-new-crops-to-process -> processing-capacity-for-alternative-crops": 0.369,
-        "processing-capacity-for-alternative-crops -> net-price-for-new-crops": 0.369,
-        "net-price-for-new-crops -> salt-tolerant-crop-adoption": 0.342,
+        "salt-tolerant-crop-adoption -> margin-given-up-on-high-margin-crops": 0.123,
+        "margin-given-up-on-high-margin-crops -> farm-revenue": 0.272,
+        "farm-revenue -> agricultural-land-value": 0.269,
         "agricultural-land-value -> mortgage-debt-financial-leverage": 0.122,
         "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.122,
         "banks-risk-assessment -> bank-credit-to-farms": 0.269,
         "bank-credit-to-farms -> farmers-capacity-to-invest": 0.272,
         "farmers-capacity-to-invest -> salt-tolerant-crop-adoption": 0.123,
-        "salt-tolerant-crop-adoption -> margin-given-up-on-high-margin-crops": 0.123,
-        "margin-given-up-on-high-margin-crops -> farm-revenue": 0.272,
-        "farm-revenue -> agricultural-land-value": 0.269
+        "salt-tolerant-crop-adoption -> processing-capacity-for-alternative-crops": 0.798,
+        "processing-capacity-for-alternative-crops -> net-price-for-new-crops": 0.271,
+        "net-price-for-new-crops -> salt-tolerant-crop-adoption": 0.798
       },
       "marks": {
         "R7": [
           0,
-          246
+          230
         ],
         "B10": [
           0,
@@ -3966,5 +3878,52 @@
       }
     }
   ],
-  "changes": []
+  "changes": [
+    {
+      "change": "Fold Rainwater lens recharge in the low polders into the links around it",
+      "argument": "Fold by the rule \"Simplify only where the conclusion survives\" and the method's question \"Can A → X → D become A → D?\": Rainwater lens recharge in the low polders is an auxiliary no actor decides, with one link out, so four links replace five and none merges with a link already drawn. Each new sign is the product of its two steps; the one delay, the lens's slowness, moves onto all four new links, each description saying it sits in the lens. Traced with and without it: R1 reinforcing, B6 balancing, R4 reinforcing, and the shortest unnamed loop through Winter rain drained away balancing, each with the same mechanism; the decisions that reach the recharge (the farmers' storage measures, the water board's ditch levels) act on Winter rain drained away, which stays drawn. The CLD already draws the creek ridge lens at this grain (Wetter winters → Creek ridge lens thickness). Confirmed by a second, independent AI check, which corrected the text: no variable is called a lever, and rain the drains carry off 'does not refill the lens' (de Louw et al., 2011, p. 3661). For the group: D2D can no longer vary or read the recharge itself, and each of the four links into the lens gets its own sampled strength. Open, unchanged by the fold and for Jordy and Lenne: drainage depth's direct effect on the lens's base, and Winter rain drained away read island-wide while its only lens link goes to the low polders.",
+      "items": [
+        "freshwater-lens-recharge",
+        "hotter-drier-summers -> freshwater-lens-recharge",
+        "wetter-winters -> freshwater-lens-recharge",
+        "freshwater-lens-recharge -> freshwater-lens-thickness",
+        "soil-structure-usability -> freshwater-lens-recharge",
+        "winter-rain-drained-away -> freshwater-lens-recharge",
+        "hotter-drier-summers -> freshwater-lens-thickness",
+        "wetter-winters -> freshwater-lens-thickness",
+        "soil-structure-usability -> freshwater-lens-thickness",
+        "winter-rain-drained-away -> freshwater-lens-thickness",
+        "R1",
+        "B6",
+        "R4",
+        "freshwater-lens-thickness",
+        "C1",
+        "C5"
+      ]
+    },
+    {
+      "change": "Fold Land subsidence into the links around it",
+      "argument": "Fold by the rule \"Simplify only where the conclusion survives\" and the method's question \"Can A → X → D become A → D?\": Land subsidence is a rate no actor decides, with one link in and one out, so one link replaces two. The sign is the product (+, then −); the delay, the elevation's fall of millimetres a year, moves onto the new link. Removing it instead would cut the drainage depth from the elevation, so it is folded, not removed. Traced with and without it: the balancing loops through Saline seepage and the water board's plans to raise ditch levels (with and without its pumping costs) and the reinforcing loop through the rainwater lens, root zone salinity, soil structure, spring workability and the farmers' demand for deep drainage keep their sign and mechanism. Confirmed by a second, independent AI check, which put the simplification in the present tense. The audit's two 'state it' findings are on the new link: the peat treated as lasting to 2050, and the drainage depth's effect counted as an island total though it differs by where the peat lies (Waterschap Scheldestromen, 2021a, p. 19; 2021b, pp. 23, 45). The question to the water board on how fast each area subsides moves onto the link. For the group: D2D can no longer put an intervention on the rate apart from the drainage depth, nor rank by it. Open, unchanged by the fold and for Jordy and Lenne: the falling land shrinking the drainage depth under a level held, and the board's choice to lower the level after it or hold it on peat.",
+      "items": [
+        "land-subsidence",
+        "land-subsidence -> polder-surface-elevation-nap",
+        "polder-drainage-depth -> land-subsidence",
+        "polder-drainage-depth -> polder-surface-elevation-nap"
+      ]
+    },
+    {
+      "change": "Fold Harvest of new crops to process into the links around it",
+      "argument": "Fold by the rule \"Simplify only where the conclusion survives\" and the method's question \"Can A → X → D become A → D?\": Harvest of new crops to process is an auxiliary no actor decides, with one link out, so two links replace three and none merges. Both new links are + (+ times +) and keep the delay of building a chain (De Vriend, 2024a). Traced with and without it: R7 reinforcing, its shortest unnamed loop through the margin given up reinforcing, and a balancing one through farms with a successor and storage measures, each with the same mechanism, volume within reach drawing a chain nearby that cuts transport; the farmers' adoption and the processors' capacity stay drawn. Confirmed by a second, independent AI check, which carried Bogers et al. (2025, pp. 28, 38) onto the adoption link and limited the delay to building the chain. The audit's 'state it' findings are on the new links: the new crops counted as one volume though they go to separate chains (DutchNews.nl, 2026; FreshPlaza, 2018), and the growers off the island held fixed though a plant draws growers near it (GreenFood50, n.d.). For the group: D2D can no longer vary the harvest apart from the hectares (yield per hectare, pooling the island's and off-island harvest) nor a chain per crop.",
+      "items": [
+        "harvest-of-new-crops-to-process",
+        "salt-tolerant-crop-adoption -> harvest-of-new-crops-to-process",
+        "growers-of-new-crops-elsewhere -> harvest-of-new-crops-to-process",
+        "harvest-of-new-crops-to-process -> processing-capacity-for-alternative-crops",
+        "salt-tolerant-crop-adoption -> processing-capacity-for-alternative-crops",
+        "growers-of-new-crops-elsewhere -> processing-capacity-for-alternative-crops",
+        "R7",
+        "C7"
+      ]
+    }
+  ]
 }

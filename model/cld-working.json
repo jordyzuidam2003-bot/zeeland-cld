@@ -27,8 +27,8 @@
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],
-      "x": -2242,
-      "y": 424
+      "x": -2266,
+      "y": 407
     },
     {
       "id": "wetter-winters",
@@ -42,8 +42,8 @@
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],
-      "x": -1673,
-      "y": 32
+      "x": -1696,
+      "y": 30
     },
     {
       "id": "freshwater-lens-thickness",
@@ -57,8 +57,8 @@
       "sources": [
         "de-louw-2011"
       ],
-      "x": -1892,
-      "y": 610
+      "x": -1803,
+      "y": 524
     },
     {
       "id": "polder-surface-elevation-nap",
@@ -77,8 +77,8 @@
         "scheldestromen-2021-hor-schouwen",
         "de-louw-2011"
       ],
-      "x": -2202,
-      "y": -307
+      "x": -1974,
+      "y": -189
     },
     {
       "id": "root-zone-salinity",
@@ -571,8 +571,8 @@
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-schouwen"
       ],
-      "x": -1950,
-      "y": -850
+      "x": -2247,
+      "y": -668
     },
     {
       "id": "polder-drainage-depth",
@@ -747,8 +747,8 @@
         "dutchnews-2026",
         "greenfood50-nd"
       ],
-      "x": 249,
-      "y": 1765
+      "x": 342,
+      "y": 1698
     },
     {
       "id": "processing-of-new-crops-elsewhere",
@@ -763,8 +763,8 @@
         "greenfood50-nd",
         "dutchnews-2026"
       ],
-      "x": 1292,
-      "y": 1180
+      "x": 1344,
+      "y": 1175
     },
     {
       "id": "tolerant-varieties-adoption",
@@ -1177,7 +1177,7 @@
         "eeman-2017",
         "knol-2025"
       ],
-      "curvature": 0.14
+      "curvature": 0.27
     },
     {
       "from": "saline-seepage-kwel",
@@ -1200,7 +1200,7 @@
       "sources": [
         "van-beekom-1953"
       ],
-      "curvature": -0.22
+      "curvature": -0.15
     },
     {
       "from": "external-freshwater-supply",
@@ -1339,7 +1339,7 @@
       "delay": false,
       "description": "A farm that relies on high margins can give fewer hectares to lower-margin new crops.",
       "sources": [],
-      "curvature": -0.19,
+      "curvature": -0.17,
       "hypothesis": true
     },
     {
@@ -1580,7 +1580,7 @@
         "oude-essink-2010",
         "van-haperen-2006"
       ],
-      "curvature": -0.3
+      "curvature": -0.31
     },
     {
       "from": "polder-drainage-depth",
@@ -1618,7 +1618,7 @@
         "scheldestromen-2026-informatieavond-duiveland",
         "kaandorp-2022"
       ],
-      "curvature": -0.1
+      "curvature": -0.3
     },
     {
       "from": "ditch-level-nap",
@@ -1629,7 +1629,7 @@
       "sources": [
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": 0.15
+      "curvature": 0.43
     },
     {
       "from": "polder-surface-elevation-nap",
@@ -1641,7 +1641,7 @@
         "scheldestromen-2021-hor-duiveland",
         "scheldestromen-2025-nota-peilbesluiten"
       ],
-      "curvature": 0.35
+      "curvature": 0.55
     },
     {
       "from": "demand-for-deep-polder-drainage",
@@ -1666,7 +1666,7 @@
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-schouwen"
       ],
-      "curvature": 0.37
+      "curvature": 0.42
     },
     {
       "from": "water-board-pumping-costs",
@@ -1784,7 +1784,7 @@
         "beauchampet-2022",
         "kaandorp-2022"
       ],
-      "curvature": -0.37
+      "curvature": -0.29
     },
     {
       "from": "tolerant-varieties-adoption",
@@ -1914,7 +1914,7 @@
         "kaandorp-2022",
         "raat-2026"
       ],
-      "curvature": 0.1
+      "curvature": 0.13
     },
     {
       "from": "market-demand-for-alternative-crops",
@@ -2114,7 +2114,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": -0.15,
+      "curvature": -0.14,
       "simplification": "Stands for the whole effect on pumping of a farm's dependence on its current crops, the direct link from Dependence on high-margin salt-sensitive crops folded into this chain: the high-value crops' need for water in a dry spell is in words here. The sign is the chain's (+, then +), so no loop changes its polarity. What it leaves out: a farm that already has wells can irrigate more of a thirsty crop within the year, while the chain runs through the delay on Dependence on high-margin salt-sensitive crops → Spending on keeping the current crops."
     },
     {
@@ -2544,7 +2544,7 @@
         "scheldestromen-2021-hor-duiveland",
         "scheldestromen-2021-hor-schouwen"
       ],
-      "curvature": 0.26
+      "curvature": 0.14
     },
     {
       "from": "farmland-leaving-arable-use",
@@ -2663,7 +2663,7 @@
         "de-louw-2011",
         "de-louw-2015"
       ],
-      "curvature": -0.1
+      "curvature": -0.11
     },
     {
       "from": "winter-rain-drained-away",
@@ -2677,7 +2677,7 @@
         "de-louw-2015",
         "kaandorp-2022"
       ],
-      "curvature": 0.2
+      "curvature": -0.11
     },
     {
       "from": "polder-drainage-depth",
@@ -2692,7 +2692,7 @@
         "scheldestromen-2021-hor-duiveland",
         "oude-essink-2010"
       ],
-      "curvature": 0.1,
+      "curvature": 0.17,
       "ask actors": [
         {
           "actor": "waterschap-scheldestromen",

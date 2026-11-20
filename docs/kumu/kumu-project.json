@@ -5167,8 +5167,8 @@
         {
           "_id": "node-sea-level-rise",
           "position": {
-            "x": -2242,
-            "y": 424
+            "x": -2266,
+            "y": 407
           },
           "pinned": true,
           "style": {},
@@ -5177,8 +5177,8 @@
         {
           "_id": "node-wetter-winters",
           "position": {
-            "x": -1673,
-            "y": 32
+            "x": -1696,
+            "y": 30
           },
           "pinned": true,
           "style": {},
@@ -5187,8 +5187,8 @@
         {
           "_id": "node-freshwater-lens-thickness",
           "position": {
-            "x": -1892,
-            "y": 610
+            "x": -1803,
+            "y": 524
           },
           "pinned": true,
           "style": {},
@@ -5197,8 +5197,8 @@
         {
           "_id": "node-polder-surface-elevation-nap",
           "position": {
-            "x": -2202,
-            "y": -307
+            "x": -1974,
+            "y": -189
           },
           "pinned": true,
           "style": {},
@@ -5477,8 +5477,8 @@
         {
           "_id": "node-ditch-level-nap",
           "position": {
-            "x": -1950,
-            "y": -850
+            "x": -2247,
+            "y": -668
           },
           "pinned": true,
           "style": {},
@@ -5567,8 +5567,8 @@
         {
           "_id": "node-growers-of-new-crops-elsewhere",
           "position": {
-            "x": 249,
-            "y": 1765
+            "x": 342,
+            "y": 1698
           },
           "pinned": true,
           "style": {},
@@ -5577,8 +5577,8 @@
         {
           "_id": "node-processing-of-new-crops-elsewhere",
           "position": {
-            "x": 1292,
-            "y": 1180
+            "x": 1344,
+            "y": 1175
           },
           "pinned": true,
           "style": {},
@@ -5808,7 +5808,7 @@
         },
         {
           "_id": "edge-root-zone-salinity--soil-structure-usability",
-          "curvature": 0.14,
+          "curvature": 0.27,
           "style": {},
           "connection": "conn-root-zone-salinity--soil-structure-usability"
         },
@@ -5820,7 +5820,7 @@
         },
         {
           "_id": "edge-soil-structure-usability--crop-yield",
-          "curvature": -0.22,
+          "curvature": -0.15,
           "style": {},
           "connection": "conn-soil-structure-usability--crop-yield"
         },
@@ -5886,7 +5886,7 @@
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption",
-          "curvature": -0.19,
+          "curvature": -0.17,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption"
         },
@@ -6000,7 +6000,7 @@
         },
         {
           "_id": "edge-ditch-level-nap--saline-seepage-kwel",
-          "curvature": -0.3,
+          "curvature": -0.31,
           "style": {},
           "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         },
@@ -6018,19 +6018,19 @@
         },
         {
           "_id": "edge-plans-to-raise-ditch-levels--ditch-level-nap",
-          "curvature": -0.1,
+          "curvature": -0.3,
           "style": {},
           "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
         },
         {
           "_id": "edge-ditch-level-nap--polder-drainage-depth",
-          "curvature": 0.15,
+          "curvature": 0.43,
           "style": {},
           "connection": "conn-ditch-level-nap--polder-drainage-depth"
         },
         {
           "_id": "edge-polder-surface-elevation-nap--polder-drainage-depth",
-          "curvature": 0.35,
+          "curvature": 0.55,
           "style": {},
           "connection": "conn-polder-surface-elevation-nap--polder-drainage-depth"
         },
@@ -6042,7 +6042,7 @@
         },
         {
           "_id": "edge-saline-seepage-kwel--plans-to-raise-ditch-levels",
-          "curvature": 0.37,
+          "curvature": 0.42,
           "style": {},
           "connection": "conn-saline-seepage-kwel--plans-to-raise-ditch-levels"
         },
@@ -6096,7 +6096,7 @@
         },
         {
           "_id": "edge-salt-tolerant-crop-adoption--harvest-lost-to-salt",
-          "curvature": -0.37,
+          "curvature": -0.29,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt"
         },
@@ -6162,7 +6162,7 @@
         },
         {
           "_id": "edge-harvest-lost-to-salt--salt-tolerant-crop-adoption",
-          "curvature": 0.1,
+          "curvature": 0.13,
           "style": {},
           "connection": "conn-harvest-lost-to-salt--salt-tolerant-crop-adoption"
         },
@@ -6258,7 +6258,7 @@
         },
         {
           "_id": "edge-spending-on-keeping-current-crops--groundwater-extraction-for-irrigation",
-          "curvature": -0.15,
+          "curvature": -0.14,
           "style": {},
           "connection": "conn-spending-on-keeping-current-crops--groundwater-extraction-for-irrigation"
         },
@@ -6468,7 +6468,7 @@
         },
         {
           "_id": "edge-polder-drainage-depth--plans-to-raise-ditch-levels",
-          "curvature": 0.26,
+          "curvature": 0.14,
           "style": {},
           "connection": "conn-polder-drainage-depth--plans-to-raise-ditch-levels"
         },
@@ -6522,19 +6522,19 @@
         },
         {
           "_id": "edge-soil-structure-usability--freshwater-lens-thickness",
-          "curvature": -0.1,
+          "curvature": -0.11,
           "style": {},
           "connection": "conn-soil-structure-usability--freshwater-lens-thickness"
         },
         {
           "_id": "edge-winter-rain-drained-away--freshwater-lens-thickness",
-          "curvature": 0.2,
+          "curvature": -0.11,
           "style": {},
           "connection": "conn-winter-rain-drained-away--freshwater-lens-thickness"
         },
         {
           "_id": "edge-polder-drainage-depth--polder-surface-elevation-nap",
-          "curvature": 0.1,
+          "curvature": 0.17,
           "style": {},
           "connection": "conn-polder-drainage-depth--polder-surface-elevation-nap"
         },
@@ -6557,8 +6557,8 @@
           "loop": "loop-R1",
           "style": {},
           "position": {
-            "x": -1035,
-            "y": 387
+            "x": -1005,
+            "y": 359
           }
         },
         {
@@ -6584,8 +6584,8 @@
           "loop": "loop-B3",
           "style": {},
           "position": {
-            "x": -819,
-            "y": -139
+            "x": -842,
+            "y": -129
           }
         },
         {
@@ -6593,8 +6593,8 @@
           "loop": "loop-B4",
           "style": {},
           "position": {
-            "x": -1309,
-            "y": -760
+            "x": -1368,
+            "y": -724
           }
         },
         {
@@ -6602,8 +6602,8 @@
           "loop": "loop-R2",
           "style": {},
           "position": {
-            "x": -2,
-            "y": -362
+            "x": -17,
+            "y": -355
           }
         },
         {
@@ -6629,8 +6629,8 @@
           "loop": "loop-B6",
           "style": {},
           "position": {
-            "x": -1215,
-            "y": 550
+            "x": -1200,
+            "y": 536
           }
         },
         {
@@ -6656,8 +6656,8 @@
           "loop": "loop-R4",
           "style": {},
           "position": {
-            "x": -756,
-            "y": 396
+            "x": -745,
+            "y": 385
           }
         },
         {
@@ -6710,8 +6710,8 @@
           "loop": "loop-B11",
           "style": {},
           "position": {
-            "x": -1757,
-            "y": -587
+            "x": -1856,
+            "y": -526
           }
         },
         {
@@ -6719,8 +6719,8 @@
           "loop": "loop-B12",
           "style": {},
           "position": {
-            "x": -1634,
-            "y": -799
+            "x": -1733,
+            "y": -739
           }
         },
         {
@@ -6737,8 +6737,8 @@
           "loop": "loop-R8",
           "style": {},
           "position": {
-            "x": -805,
-            "y": -228
+            "x": -829,
+            "y": -217
           }
         },
         {

@@ -6,17 +6,17 @@
 </defs>
 <rect x="-616" y="-320" width="1164" height="666" fill="white"/>
 <g class="links">
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="ditch-level-nap" data-sign="+" data-delay="true" data-curvature="-0.1">
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="ditch-level-nap" data-sign="+" data-delay="true" data-curvature="-0.3">
 <path class="link-path" d="M 352.3 -129.6 Q 420.4 -70.1 420.0 0.7 Q 419.6 71.6 350.9 130.8 Q 282.1 190.0 167.4 218.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="215.4" y="204.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M 408.8 104.0 L 371.0 74.4 M 399.0 116.6 L 361.1 87.0" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 408.8 104.0 L 371.0 74.4 M 399.0 116.6 L 361.1 87.0" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="ditch-level-nap" data-to="polder-drainage-depth" data-sign="-" data-delay="false" data-curvature="0.15">
+<g class="link" data-from="ditch-level-nap" data-to="polder-drainage-depth" data-sign="-" data-delay="false" data-curvature="0.43">
 <path class="link-path" d="M -112.9 229.2 Q -230.7 210.6 -312.4 159.1 Q -394.2 107.5 -414.3 39.2 Q -434.4 -29.2 -386.6 -93.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-411.1" y="-49.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="polder-drainage-depth" data-to="plans-to-raise-ditch-levels" data-sign="+" data-delay="true" data-curvature="0.26">
+<g class="link" data-from="polder-drainage-depth" data-to="plans-to-raise-ditch-levels" data-sign="+" data-delay="true" data-curvature="0.14">
 <path class="link-path" d="M -333.1 -145.0 Q -243.0 -211.4 -99.5 -231.2 Q 44.1 -251.1 178.0 -215.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="129.2" y="-226.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M -95.9 -256.0 L -90.2 -208.3 M -80.0 -257.9 L -74.3 -210.2" stroke="white" stroke-width="11" fill="none"/>

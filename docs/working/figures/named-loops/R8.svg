@@ -26,11 +26,11 @@
 <path class="delay-cut" d="M -552.9 -339.4 L -530.3 -297.1 M -538.8 -347.0 L -516.2 -304.6" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -552.9 -339.4 L -530.3 -297.1 M -538.8 -347.0 L -516.2 -304.6" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="ditch-level-nap" data-to="saline-seepage-kwel" data-sign="-" data-delay="false" data-curvature="-0.3">
+<g class="link" data-from="ditch-level-nap" data-to="saline-seepage-kwel" data-sign="-" data-delay="false" data-curvature="-0.31">
 <path class="link-path" d="M 716.0 175.3 Q 642.1 272.2 498.9 339.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="543.5" y="317.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="ditch-level-nap" data-sign="+" data-delay="true" data-curvature="-0.1">
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="ditch-level-nap" data-sign="+" data-delay="true" data-curvature="-0.3">
 <path class="link-path" d="M 746.5 -128.1 Q 813.6 -2.6 749.0 123.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="768.3" y="77.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M 804.6 -10.7 L 756.6 -10.2 M 804.8 5.3 L 756.8 5.8" stroke="white" stroke-width="11" fill="none"/>

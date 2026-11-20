@@ -6,11 +6,11 @@
 </defs>
 <rect x="-649" y="-311" width="1291" height="623" fill="white"/>
 <g class="links">
-<g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.37">
+<g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.29">
 <path class="link-path" d="M 397.8 43.0 Q 369.7 126.6 252.3 179.5 Q 134.8 232.5 -15.2 229.3 Q -165.2 226.2 -275.3 168.3 Q -385.4 110.5 -402.4 26.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-384.7" y="72.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="harvest-lost-to-salt" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="true" data-curvature="0.1">
+<g class="link" data-from="harvest-lost-to-salt" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="true" data-curvature="0.13">
 <path class="link-path" d="M -402.4 -26.0 Q -385.4 -110.5 -275.3 -168.3 Q -165.2 -226.2 -15.2 -229.3 Q 134.8 -232.5 252.3 -179.5 Q 369.7 -126.6 397.8 -43.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="375.0" y="-87.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M -16.0 -253.4 L -15.4 -205.4 M 0.0 -253.6 L 0.6 -205.6" stroke="white" stroke-width="11" fill="none"/>

@@ -3928,18 +3928,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "The citations the Use notes' readers failed, fixed",
-      "argument": "Each sentence now says only what its source carries at the page cited, as a fresh reader of each source found (CitationCheck/723f39b8/readers/out/): a page corrected, a qualifier the source gives kept, a claim the source does not make moved to the source that does or marked as the model's own inference.",
-      "items": [
-        "winter-rain-drained-away -> freshwater-lens-thickness",
-        "ditch-level-nap -> saline-seepage-kwel",
-        "polder-drainage-depth -> creek-ridge-lens-thickness",
-        "polder-drainage-depth -> polder-surface-elevation-nap",
-        "hotter-drier-summers -> freshwater-lens-thickness",
-        "salt-tolerant-crop-adoption -> processing-capacity-for-alternative-crops"
-      ]
-    }
-  ]
+  "changes": []
 }

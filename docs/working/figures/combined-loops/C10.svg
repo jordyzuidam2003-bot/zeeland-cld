@@ -32,15 +32,15 @@
 <path class="delay-cut" d="M -384.7 -1336.5 L -379.2 -1288.8 M -368.8 -1338.3 L -363.3 -1290.6" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -384.7 -1336.5 L -379.2 -1288.8 M -368.8 -1338.3 L -363.3 -1290.6" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="0">
-<path class="link-path" d="M 0.0 -1240.0 Q 0.0 -1090.0 0.0 -940.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="0.0" y="-990.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="ditch-level-nap" data-sign="+" data-delay="true" data-curvature="0">
+<path class="link-path" d="M 0.0 -1240.0 Q 0.0 -1090.0 0.0 -940.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="0.0" y="-990.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M 24.0 -1098.0 L -24.0 -1098.0 M 24.0 -1082.0 L -24.0 -1082.0" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 24.0 -1098.0 L -24.0 -1098.0 M 24.0 -1082.0 L -24.0 -1082.0" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="polder-drainage-depth" data-to="saline-seepage-kwel" data-sign="+" data-delay="false" data-curvature="0">
-<path class="link-path" d="M 0.0 -888.0 Q 0.0 -738.0 0.0 -588.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="0.0" y="-638.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<g class="link" data-from="ditch-level-nap" data-to="saline-seepage-kwel" data-sign="-" data-delay="false" data-curvature="0">
+<path class="link-path" d="M 0.0 -888.0 Q 0.0 -738.0 0.0 -588.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="0.0" y="-638.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="saline-seepage-kwel" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="0">
 <path class="link-path" d="M 0.0 -536.0 Q 0.0 -386.0 0.0 -236.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -92,10 +92,51 @@
 </g>
 </g>
 <g class="elements">
+<g class="element" data-id="plans-to-raise-ditch-levels" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="-177.2" y="-1326.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="0.0" y="-1291.5" text-anchor="middle">Water board's plans to</text>
+<text x="0.0" y="-1257.5" text-anchor="middle">raise ditch levels</text>
+</g>
+<g class="element" data-id="ditch-level-nap" data-domain="Technological" data-type="Stock" data-adaptive="false">
+<rect x="-140.1" y="-940.0" width="280.3" height="52.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="0.0" y="-905.5" text-anchor="middle">Ditch level (NAP)</text>
+</g>
+<g class="element" data-id="saline-seepage-kwel" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
+<rect x="-169.8" y="-588.0" width="339.6" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="0.0" y="-553.5" text-anchor="middle">Saline seepage (kwel)</text>
+</g>
+<g class="element" data-id="freshwater-lens-thickness" data-domain="Ecological" data-type="Stock" data-adaptive="false">
+<rect x="-162.4" y="-236.0" width="324.8" height="120.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="0.0" y="-201.5" text-anchor="middle">Rainwater lens</text>
+<text x="0.0" y="-167.5" text-anchor="middle">thickness in the low</text>
+<text x="0.0" y="-133.5" text-anchor="middle">polders</text>
+</g>
+<g class="element" data-id="root-zone-salinity" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
+<rect x="-147.6" y="184.0" width="295.1" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="0.0" y="218.5" text-anchor="middle">Root zone salinity</text>
+</g>
+<g class="element" data-id="harvest-lost-to-salt" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
+<rect x="-162.4" y="536.0" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="0.0" y="570.5" text-anchor="middle">Harvest lost to salt</text>
+</g>
+<g class="element" data-id="farm-revenue" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
+<rect x="-95.6" y="888.0" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="0.0" y="922.5" text-anchor="middle">Farm income</text>
+</g>
 <g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Stock" data-adaptive="false">
 <rect x="-140.1" y="1240.0" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="0.0" y="1274.5" text-anchor="middle">Agricultural land</text>
 <text x="0.0" y="1308.5" text-anchor="middle">value</text>
+</g>
+<g class="element" data-id="farmland-leaving-arable-use" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="-869.6" y="-43.0" width="295.1" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-722.0" y="-8.5" text-anchor="middle">Arable land in the</text>
+<text x="-722.0" y="25.5" text-anchor="middle">polders</text>
+</g>
+<g class="element" data-id="policy-resistance-legal-delays" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="604.8" y="-43.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="782.0" y="-8.5" text-anchor="middle">Objections to land-use</text>
+<text x="782.0" y="25.5" text-anchor="middle">plans</text>
 </g>
 <g class="element" data-id="mortgage-debt-financial-leverage" data-domain="Social" data-type="Stock" data-adaptive="false">
 <rect x="-791.6" y="1216.0" width="295.1" height="52.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
@@ -125,47 +166,6 @@
 <rect x="-836.4" y="-1271.0" width="324.8" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-674.0" y="-1236.5" text-anchor="middle">Farmers' demand for</text>
 <text x="-674.0" y="-1202.5" text-anchor="middle">deep polder drainage</text>
-</g>
-<g class="element" data-id="plans-to-raise-ditch-levels" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-177.2" y="-1326.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="0.0" y="-1291.5" text-anchor="middle">Water board's plans to</text>
-<text x="0.0" y="-1257.5" text-anchor="middle">raise ditch levels</text>
-</g>
-<g class="element" data-id="polder-drainage-depth" data-domain="Technological" data-type="Stock" data-adaptive="false">
-<rect x="-169.8" y="-940.0" width="339.6" height="52.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
-<text x="0.0" y="-905.5" text-anchor="middle">Polder drainage depth</text>
-</g>
-<g class="element" data-id="saline-seepage-kwel" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-169.8" y="-588.0" width="339.6" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="0.0" y="-553.5" text-anchor="middle">Saline seepage (kwel)</text>
-</g>
-<g class="element" data-id="freshwater-lens-thickness" data-domain="Ecological" data-type="Stock" data-adaptive="false">
-<rect x="-162.4" y="-236.0" width="324.8" height="120.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="0.0" y="-201.5" text-anchor="middle">Rainwater lens</text>
-<text x="0.0" y="-167.5" text-anchor="middle">thickness in the low</text>
-<text x="0.0" y="-133.5" text-anchor="middle">polders</text>
-</g>
-<g class="element" data-id="root-zone-salinity" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-147.6" y="184.0" width="295.1" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="0.0" y="218.5" text-anchor="middle">Root zone salinity</text>
-</g>
-<g class="element" data-id="harvest-lost-to-salt" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-162.4" y="536.0" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="0.0" y="570.5" text-anchor="middle">Harvest lost to salt</text>
-</g>
-<g class="element" data-id="farm-revenue" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-95.6" y="888.0" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="0.0" y="922.5" text-anchor="middle">Farm income</text>
-</g>
-<g class="element" data-id="policy-resistance-legal-delays" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="604.8" y="-43.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="782.0" y="-8.5" text-anchor="middle">Objections to land-use</text>
-<text x="782.0" y="25.5" text-anchor="middle">plans</text>
-</g>
-<g class="element" data-id="farmland-leaving-arable-use" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-869.6" y="-43.0" width="295.1" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-722.0" y="-8.5" text-anchor="middle">Arable land in the</text>
-<text x="-722.0" y="25.5" text-anchor="middle">polders</text>
 </g>
 </g>
 <g class="loop" data-id="R2">

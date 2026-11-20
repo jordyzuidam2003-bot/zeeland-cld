@@ -13,6 +13,7 @@ spreadsheet.
 ```text
 build.py        checks the model and writes docs/: every route runs python3 build.py from here
 changes.py      lists what the working version changes against the CLD, for Lenne
+record.py       reads back from the commits each agreed change since the proposal, for the report
 model/          what the group edits: the CLD, the Actor Map, their sources and the model texts
 src/            what build.py uses: the drawing code, and the templates and views it fills
   templates/    the pages around the drawings, copied or filled into docs/
@@ -26,7 +27,7 @@ docs/           built by build.py and never edited; GitHub Pages publishes it, a
   tables/       the CLD's and the actors' tables, for Google Sheets and the report, and the sources to ask the actors
   kumu/         the Kumu project export
   working/      the working version's page and its loops' figures, while model/cld-working.json exists
-hooks/          the pre-commit check
+hooks/          the commit-msg check
 ```
 
 The files sit in folders by what they are for, and their names say which model each belongs to
@@ -50,11 +51,12 @@ the repository's root or `docs/`. `docs/index.html` and `docs/actors.html` stay 
 | `src/templates/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `map.js` (moving and zooming, the bar and the menu, for both pages), `move.js` (Move mode, for both pages), `style.css` | yes |
 | `build.py` | checks the model and the actors and writes `docs/` (how: its docstring) | — |
 | `changes.py` | lists what the working version changes against `model/cld.json`, each change with its argument, as markdown for the group's Drive (how: its docstring) | — |
+| `record.py` | reads each agreed change since the tag `proposal` from the commits' messages, for the report's appendix of changes, and names what no commit explains (how: its docstring) | — |
 | `src/draw_cld.py` | draws the CLD's SVG, imported by `build.py` | — |
 | `src/draw_actor_map.py` | draws the Actor Map and lays out its table, imported by `build.py` | — |
 | `src/write_xlsx.py` | writes the table as an `.xlsx` with the standard library | — |
 | `src/write_tex.py` | writes the report's tables as LaTeX rows, imported by `build.py` | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `actors.html`; `assets/` (`app.js`, `actors.js`, `map.js`, `move.js`, `style.css`); `figures/` (`cld.svg`, `actor-map.svg`, `named-loops/<id>.svg`, `combined-loops/<id>.svg`, `report-panels/<id>.svg`); `tables/` (`cld-table.xlsx`, `actor-map-table.xlsx`, `sources-to-ask.xlsx`, `cld-combined-loops.tex`, `cld-elements.tex`, `actor-map-inside.tex`); `kumu/` (`kumu-project.json`); `working/` (`index.html`, `figures/named-loops/`, `figures/combined-loops/`), while the working version exists | never: `build.py` writes it |
+| `docs/` | what GitHub Pages serves: `index.html`, `actors.html`; `assets/` (`app.js`, `actors.js`, `map.js`, `move.js`, `style.css`); `figures/` (`cld.svg`, `actor-map.svg`, `named-loops/<id>.svg`, `combined-loops/<id>.svg`, `report-panels/<id>.svg`); `tables/` (`cld-table.xlsx`, `actor-map-table.xlsx`, `sources-to-ask.xlsx`, `cld-combined-loops.tex`, `cld-elements.tex`, `actor-map-inside.tex`, `cld-changes.tex`); `kumu/` (`kumu-project.json`); `working/` (`index.html`, `figures/named-loops/`, `figures/combined-loops/`), while the working version exists | never: `build.py` writes it |
 
 ## Version 1
 
@@ -63,8 +65,25 @@ chose whole as the final CLD before the group model building session. Version 1,
 approved first, is kept only by the git tag `v1` (`git show v1:cld.json`: the tag keeps it at the root), with no published
 page.
 
-The version the Research Proposal shows is the tag `proposal`: what changed since is
-`git diff proposal -- model/`, and why, each commit's message (`git log proposal.. -- model/`).
+The version the Research Proposal shows is the tag `proposal`, and the final report defends each
+difference from it, so git is the only record of why the CLD changed (rejected: a changelog beside
+git, which drifts; a list typed into the report). A commit that changes what `model/cld.json` or
+`model/cld-texts.md` says, layout aside, ends its message in three lines, one change per commit:
+
+```text
+Change: <what it does>
+Argument: <a source, or the rule's conditions it meets>
+Agreed: Jordy and Lenne, <YYYY-MM-DD>
+```
+
+made only once both agreed. `record.py` reads them back, and `build.py` writes from them
+`docs/tables/cld-changes.tex`, the rows of the report's appendix of changes; a citation in a line is
+written as the model writes it, so the report cites it. `build.py --check` stops on each element,
+link, loop or section of the model texts that differs from `proposal` while a commit since changed
+it without its lines; a commit made without them gets them from a later commit, whose message ends
+in one block per commit it explains, each after a line `Commit: <sha>`. The check runs in the
+`commit-msg` hook, the only one that sees the message: write the message to a file, `python3
+build.py --message FILE`, so the table holds its row, then `git commit -F FILE`.
 
 ## The working version
 
@@ -91,8 +110,8 @@ that hold the same model print nothing.
 
 A batch goes into the working version, is built, committed and pushed, and its list goes to Jordy
 and Lenne. A change they reject is undone in the working version, its entry with it; what both
-agree is copied into `model/cld.json` without its entry, in a commit whose message carries the
-argument and their agreement, then the Drive's two tables and the throwaway Kumu project are
+agree is copied into `model/cld.json` without its entry, in a commit whose message ends in its
+`Change:`, `Argument:` and `Agreed:` lines (Version 1), then the Drive's two tables and the throwaway Kumu project are
 replaced from the build's files (The table, Kumu). Once no change waits, the working version goes:
 `model/cld-working.json` is deleted and the next build removes `docs/working/`.
 
@@ -114,8 +133,8 @@ builds and pushes, so nobody else needs git or Python.
    a named loop whose own links cross, a link under a region's name, a loop's figure with no
    room inside the loop for its mark, a link through a box it does not connect, two links or
    relations between the same two boxes bowed alike (`bow alike:`, Kumu).
-3. Commit, `docs/` included, and push: the push publishes the page. The pre-commit hook refuses
-   a commit whose `docs/` is out of date.
+3. Commit, `docs/` included, and push: the push publishes the page. The commit-msg hook refuses
+   a commit whose `docs/` is out of date, or that changes what the CLD says without its lines (Version 1).
 
 Layout tuning happens in Kumu, read back by `build.py --kumu` (Kumu, below). The page keeps its Move mode: on the CLD's page, turn on "Move": drag an element to move it, drag
 a delay mark to shift it along its own line, a link to bend it (its middle follows the pointer; within 0.03 of straight a Constant's link snaps to
@@ -200,12 +219,13 @@ in order, the description), the Combined loops sheet once `model/cld.json` holds
 References sheet. The sources are in-text citations, the letter after a year the one
 `year-suffix` sets.
 
-`docs/tables/cld-combined-loops.tex`, `cld-elements.tex` and `actor-map-inside.tex` are the report's
+`docs/tables/cld-combined-loops.tex`, `cld-elements.tex`, `actor-map-inside.tex` and `cld-changes.tex` are the report's
 tables as LaTeX rows (`report_tables()`, `src/write_tex.py`), from the model as it stands, every row
 (rejected: short names and influence phrases kept for the report alone): each
 combined loop with its loops and its description as the mechanism; every element by label with its
 type, SETS domain, the actor that decides it and the combined loops it is in; each actor inside the
-scale with its type, the variables it decides and its influence score. A file holds rows alone, so
+scale with its type, the variables it decides and its influence score. `cld-changes.tex` is each
+agreed change since the proposal, its argument and the day it was agreed (Version 1). A file holds rows alone, so
 the report keeps each table's caption, columns and header and `\input`s the rows. A session copies
 them, with each figure as a PDF, into the group's Overleaf project, so a change to them is made
 here, never there.
@@ -478,7 +498,7 @@ guidelines do not ask for it (Jordy).
 
 ## Setup after cloning
 
-`git config core.hooksPath hooks` turns on the pre-commit check. The scripts need only Python 3.
+`git config core.hooksPath hooks` turns on the commit-msg check. The scripts need only Python 3.
 
 ## Kumu
 

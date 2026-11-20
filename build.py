@@ -1,7 +1,10 @@
 """Check the CLD and build docs/, the files GitHub Pages serves.
 
     python3 build.py                  # check, write docs/, print the report
-    python3 build.py --check          # fail if docs/ is out of date (the pre-commit hook runs this)
+    python3 build.py --check          # fail if docs/ is out of date or record.py names a problem
+    python3 build.py --message FILE   # build or --check with FILE the message of the commit being
+                                      # made, whose Change: lines the report's table of changes
+                                      # holds (the commit-msg hook runs --check --message)
     python3 build.py --layout FILE    # write the positions and curvatures of FILE (layout.json,
                                       # downloaded from a page's Move mode) into the model it
                                       # names (cld.json, cld-working.json or actor-map.json), then build
@@ -44,7 +47,8 @@ edit docs/, which this script writes:
                        over one shared frame, every panel one size (draw_cld.report_panels())
     docs/tables/<name>.tex  the report's tables as LaTeX rows (report_tables(), src/write_tex.py),
                        which a session copies into the group's Overleaf project: cld-combined-loops,
-                       cld-elements and actor-map-inside
+                       cld-elements, actor-map-inside, and cld-changes, each agreed change since the
+                       tag proposal with its argument, read back from the commits (record.py)
     docs/figures/actor-map.svg  the Actor Map's network on its own, the picture for the report
     docs/tables/cld-table.xlsx  the table that explains the CLD (table_sheets()), which Jordy
                        imports into Google Drive as a Google Sheet: the Elements, Links, Named
@@ -83,6 +87,7 @@ sys.path.insert(0, str(ROOT / "src"))
 import backdrop  # noqa: E402
 import changes  # noqa: E402
 import draw_actor_map  # noqa: E402
+import record  # noqa: E402
 import draw_cld  # noqa: E402
 import write_tex  # noqa: E402
 import write_xlsx  # noqa: E402
@@ -923,12 +928,14 @@ def table_sheets(cld, refs, actors):
     return sheets
 
 
-def report_tables(cld, refs, actors):
+def report_tables(cld, refs, actors, agreed):
     """{path in docs/: rows}: the report's tables as LaTeX rows (write_tex.rows()), which a session
     copies into the group's Overleaf project: the combined loops with their mechanisms, every
-    element with its role, and the actors inside the scale with the variables each decides. From
-    the model as it stands, every row, the actors named in full and their influence as its score
-    (rejected: short names and influence phrases kept for the report alone)."""
+    element with its role, the actors inside the scale with the variables each decides, and the
+    changes since the proposal, agreed (record.read()), each with its argument and the day it was
+    agreed, a citation in either as biblatex-apa's. From the model as it stands, every row, the
+    actors named in full and their influence as its score (rejected: short names and influence
+    phrases kept for the report alone)."""
     els = {e["id"]: e for e in cld["elements"]}
     label = {a["id"]: a["label"] for a in actors["actors"]}
     paths = {loop["id"]: loop["path"] for loop in cld["loops"]}
@@ -937,6 +944,13 @@ def report_tables(cld, refs, actors):
     groups_of = {i: [g["id"] for g in groups if any(i in paths[m] for m in g["loops"])] for i in els}
     decides = decisions(cld, actors)
     t = write_tex.text
+    every = draw_actor_map.citations(sorted(refs), refs)
+
+    def said(s):
+        try:
+            return t(s, sorted(refs), every)
+        except ValueError as e:
+            sys.exit(f"record.py: a commit's Change: or Argument: line has {e}: cite as the model does")
     return {
         "tables/cld-combined-loops.tex": write_tex.rows(
             ["Combined loop", "Loops", "Mechanism"],
@@ -951,6 +965,10 @@ def report_tables(cld, refs, actors):
             ["Actor", "Type", "Variables it decides", "Influence"],
             [[t(a["label"]), t(a["type"]), "; ".join(t(els[i]["label"]) for i in decides[a["id"]]),
               str(a["influence score"] or "—")] for a in actors["actors"] if a["scale"] == "inside"]),
+        "tables/cld-changes.tex": write_tex.rows(
+            ["Change", "Argument", "Agreed"],
+            [[said(r["change"]), said(r["argument"]), f"{r['date'].day} {MONTHS[r['date'].month - 1]} {r['date'].year}"]
+             for r in agreed]),
     }
 
 
@@ -1366,7 +1384,8 @@ def cld_bows(cld):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    parser.add_argument("--check", action="store_true", help="fail if docs/ is out of date")
+    parser.add_argument("--check", action="store_true", help="fail if docs/ is out of date or record.py names a problem")
+    parser.add_argument("--message", metavar="FILE", help="the message of the commit being made, whose Change:, Argument: and Agreed: lines explain what the model on disk changes against HEAD (record.py)")
     parser.add_argument("--group-layout", nargs="+", metavar="ID", help="lay out these combined loops anew, each loop its own area (draw_cld.group_layout()), into cld.json, then build")
     parser.add_argument("--working", action="store_true", help="with --group-layout: lay out the working version's groups, in cld-working.json")
     parser.add_argument("--kumu", metavar="FILE", help="write the places and bends set by hand in Kumu, from its JSON export FILE, into cld.json and actor-map.json, then build")
@@ -1392,6 +1411,8 @@ def main():
         errors.append(changes.AGREED)
     if errors or actor_errors or ref_errors:
         sys.exit("cld.json, actor-map.json or references.json has errors:\n  " + "\n  ".join(ref_errors + actor_errors + errors))
+    # each agreed change since the tag proposal, and what no commit explains (record.py)
+    agreed, unexplained = record.read(Path(args.message).read_text() if args.message else None)
     if working is not None:
         w_errors, w_warnings = check(working, refs, actors)
         w_errors += [p for p in changes.problems(cld, working) if p != changes.AGREED]
@@ -1424,7 +1445,7 @@ def main():
         **{f"figures/named-loops/{loop['id']}.svg": draw_cld.loop_figure(cld, loop) for loop in cld["loops"]},
         **{f"figures/combined-loops/{g['id']}.svg": draw_cld.group_figure(cld, g) for g in cld.get("groups", [])},
         **{f"figures/report-panels/{i}.svg": svg for i, svg in draw_cld.report_panels(cld).items()},
-        **report_tables(cld, refs, actors),
+        **report_tables(cld, refs, actors, agreed),
     }
     if working is not None:
         # its page and its loops' figures only: the tables, the report's files and Kumu stay cld.json's
@@ -1448,7 +1469,12 @@ def main():
         stale = [name for name, out in outputs.items() if not (DOCS / name).exists()
                  or ((DOCS / name).read_bytes() if isinstance(out, bytes) else (DOCS / name).read_text()) != out]
         if stale or extra:
-            sys.exit(f"docs/ is out of date ({', '.join(stale + extra)}): run build.py and commit docs/")
+            sys.exit(f"docs/ is out of date ({', '.join(stale + extra)}): run build.py"
+                     + (" --message FILE, FILE this commit's message," if "tables/cld-changes.tex" in stale else "")
+                     + " and commit docs/")
+        if unexplained:
+            sys.exit("record.py: a change since the tag proposal without its lines (README's Version 1):\n  "
+                     + "\n  ".join(unexplained))
         return
 
     for name in extra:
@@ -1489,6 +1515,7 @@ def main():
     warnings += [f"cld-texts.md: the section {h!r} is still empty" for h, body in
                  re.findall(r"^## (.+)\n((?:(?!## ).*\n?)*)", re.sub(r"<!--.*?-->", "", TEXTS.read_text(), flags=re.S), re.M)
                  if not body.strip()]
+    warnings += [f"record: {p}" for p in unexplained]
     if warnings:
         print("warnings:\n  " + "\n  ".join(warnings))
     # each at the line's start, so a check counts them (grep "^bow alike:")

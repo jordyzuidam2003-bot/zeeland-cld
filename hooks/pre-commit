@@ -1,3 +1,0 @@
-#!/bin/sh
-# GitHub Pages serves docs/ from the repository, so a commit whose docs/ does not match the source publishes stale data
-exec python3 build.py --check

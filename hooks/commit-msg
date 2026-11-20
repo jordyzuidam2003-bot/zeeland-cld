@@ -1,0 +1,5 @@
+#!/bin/sh
+# GitHub Pages serves docs/ from the repository, so a commit whose docs/ does not match the source publishes stale data;
+# and a commit that changes what the CLD says carries its Change:, Argument: and Agreed: lines (record.py), which only
+# this hook sees: pre-commit runs before the message exists
+exec python3 build.py --check --message "$1"

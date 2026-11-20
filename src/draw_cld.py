@@ -1142,7 +1142,13 @@ PETAL_HALF = pi / 3  # a petal's links at its one shared element: within this of
 # half its length (Kumu's curvature), so it reads as round as the rest (chosen between rendered versions of C8's B13;
 # rejected: the narrowest that holds its label, which stuck out, and 0.57, the ovals' proportion, whose link into
 # Objections arrived over its top edge). Where no layout has room for it, the narrowest that holds its label (C1).
+# A group named in LENS_WIDE_IN draws its lenses that wide instead: C8's B13 at 0.55 (chosen between rendered versions
+# of C8; rejected: 0.4 and 0.7), its wall laid as long as that lens needs.
 LENS_WIDE = 0.4
+LENS_WIDE_IN = {"C8": 0.55}
+# Groups group_layout() lays across whichever frame is nearer a square: C8, whose 0.55 lens needs a wall of 1844
+# upright against 1017 across, a figure twice the area (chosen between rendered versions; rejected: upright)
+ACROSS = {"C8"}
 
 
 def theta(cld, names):
@@ -1189,18 +1195,22 @@ def group_layout(cld, group, stacked=None):
     (kumu_label_half()); None for a group it cannot lay out. stacked lays the figure's spine
     across, False upright, None whichever of the two gives the frame nearer a square, so the
     report's panels of one size waste the least room, but first one with no link bowing past a
-    semicircle.
+    semicircle, and a group in ACROSS across.
 
     Two loops sharing one element: each its own oval as oval() lays out a named loop, the two
     touching at that element, both clockwise, each mark at its oval's centre (ring_layout()).
 
     Two pairs of loops whose shared chains join end to end: one straight wall (wall_layout()).
 
-    Otherwise its spine is the most loops sharing one chain (theta()), the chain on a straight wall
-    and each loop's route an arc from the chain's end back to its start (theta_layout()); the
-    group's other loops then join it where they meet it (join_loop()); where they find no room, the
+    Otherwise its spine is loops sharing one chain (theta()), the most loops first, then those each
+    coming back by a route of their own, then the most elements, the chain on a straight wall and each
+    loop's route an arc from the chain's end back to its start (theta_layout()); the group's other
+    loops then join it where they meet it (join_loop()), one wrapping a loop whose links it shares all
+    but that loop's way back (C8's B4 round B12); the first spine on which they find room, else the
     largest loop as an oval, the rest joining it (ring_first())."""
     paths = {loop["id"]: loop["path"] for loop in cld["loops"]}
+    if stacked is None and group["id"] in ACROSS:
+        return group_layout(cld, group, True)
     if stacked is None:
         def squareness(lay):
             x0, y0, x1, y1 = group_frame(cld, {**group, "places": lay[0], "bends": lay[1], "marks": lay[2]})
@@ -1220,24 +1230,30 @@ def group_layout(cld, group, stacked=None):
         if len(names) == 2 and len(set(paths[names[0]]) & set(paths[names[1]])) == 1:
             return ring_layout(cld, group, stacked)
         return None
-    # the most loops, then the most elements
-    core, (chain, routes) = max(spines, key=lambda s: (len(s[0]), len({x for n in s[0] for x in paths[n]})))
-    # the spine's layouts from the least cost (theta_layout()), the first on which every other loop
-    # of the group finds room (join_loop())
-    for lay in theta_layout(cld, group, chain, routes, stacked)[:SPINE_TRIES]:
-        lay = dict(lay)
-        left = [n for n in names if n not in lay["marks"]]
-        while left:
-            if not any(join_loop(cld, lay, n, paths[n]) for n in left):
-                break
-            left = [n for n in left if n not in lay["marks"]]
-        if not left:
-            break
-    else:
-        # no spine leaves the other loops room: the largest loop as an oval, the rest joining it
-        # (ring_first(), the same either way up)
-        return ring_first(cld, group)
-    return to_page(lay, turn)
+    # the spines with the most loops, then those whose loops each come back by a route of their own,
+    # then the most elements, first; of each, its layouts from the least cost (theta_layout()), the
+    # first on which every other loop of the group finds room (join_loop()). A loop with no route
+    # comes back from the chain's end by one link alone and shares the rest with the other, so that
+    # one wraps it and a third loop on the chain lies beside it: C8's B12 (depth -> plans), wrapped by
+    # B4 on the spine B11 and B12 (cld-drawing.md; rejected: the spine B4 and B12, where B4 wraps B11).
+    # C8's spine B4 and B11 leaves B12 no room: it would lie inside B4
+    spines.sort(key=lambda s: (-len(s[0]), not all(s[1][1].values()), -len({x for n in s[0] for x in paths[n]})))
+    # a group whose lenses are wider (LENS_WIDE_IN) tries every layout of a spine, its wall longer each
+    # time, until its lens fits: C8's at a wall of 1017 between centres, where the 8 least ones are too short
+    tries = None if group["id"] in LENS_WIDE_IN else SPINE_TRIES
+    for core, (chain, routes) in spines:
+        for lay in (theta_layout(cld, group, chain, routes, stacked) or [])[:tries]:
+            lay = dict(lay)
+            left = [n for n in names if n not in lay["marks"]]
+            while left:
+                if not any(join_loop(cld, lay, n, paths[n]) for n in left):
+                    break
+                left = [n for n in left if n not in lay["marks"]]
+            if not left:
+                return to_page(lay, turn)
+    # no spine leaves the other loops room: the largest loop as an oval, the rest joining it
+    # (ring_first(), the same either way up)
+    return ring_first(cld, group)
 
 
 def to_page(lay, turn):
@@ -1425,7 +1441,7 @@ def theta_layout(cld, group, chain, routes, stacked):
         out = {"at": at, "half": half, "mid": {l: None for l in wall_links}, "marks": {}, "arcs": {}, "stacked": stacked,
                # each label's half size along u and v
                "label": {n: kumu_label_half(loops[n])[::1 if stacked else -1] for n in names}, "paths": paths,
-               "names": names}
+               "names": names, "lens": LENS_WIDE_IN.get(group["id"], LENS_WIDE)}
         if not clear(out, set(chain)):
             return None
         # inner arcs first, then each side's routes inside out
@@ -1473,15 +1489,15 @@ def loop_area(lay, path):
     return [q for x, y in zip(path, path[1:] + path[:1]) for q in kumu_curve(lay["at"], x, y, lay["mid"][x, y])[:-1]]
 
 
-def place(lay, name, path, half, trial_at, mids, mark):
+def place(lay, name, path, half, trial_at, mids, mark, wraps=None):
     """Loop name into the layout with its new places trial_at, its links' middles mids and its mark,
-    True once placed: its label fits, its area holds no other mark and its mark lies in no other area,
-    and clear() passes."""
+    True once placed: its label fits, its area holds no other mark but that of the loop it wraps,
+    which it holds, and its mark lies in no other area, and clear() passes."""
     trial = {**lay, "at": {**lay["at"], **trial_at}, "half": half, "mid": {**lay["mid"], **mids}}
     if not label_room(trial, name, mark):
         return False
     mine = loop_area(trial, path)
-    if any(in_polygon(m, mine) for m in lay["marks"].values()) or any(
+    if any(in_polygon(m, mine) != (n == wraps) for n, m in lay["marks"].items()) or any(
             in_polygon(mark, loop_area(trial, lay["paths"][n])) for n in lay["marks"]):
         return False
     if clear(trial, set(trial_at) | {x for k in mids for x in k}):
@@ -1493,8 +1509,9 @@ def place(lay, name, path, half, trial_at, mids, mark):
 
 def lens_at(cld, lay, name, s, phi, length, wide):
     """Loop name, two elements meeting the layout at s alone, as a lens from s in direction phi, its
-    other element length out, True once placed into lay (place()): LENS_WIDE as wide as it is long,
-    or, not wide, its two links bowing apart just enough for its label between them."""
+    other element length out, True once placed into lay (place()): as wide as it is long as the
+    layout's lens (LENS_WIDE, or its group's in LENS_WIDE_IN), or, not wide, its two links bowing
+    apart just enough for its label between them."""
     p = lay["paths"][name]
     k = p.index(s)
     p = p[k:] + p[:k]
@@ -1503,7 +1520,7 @@ def lens_at(cld, lay, name, s, phi, length, wide):
     e, n = (cos(phi), sin(phi)), (-sin(phi), cos(phi))
     far = (at[s][0] + length * e[0], at[s][1] + length * e[1])
     mid = ((at[s][0] + far[0]) / 2, (at[s][1] + far[1]) / 2)
-    for h in [LENS_WIDE * length / 2] if wide else range(40, length // 2, 30):
+    for h in [lay.get("lens", LENS_WIDE) * length / 2] if wide else range(40, length // 2, 30):
         mids = {(p[0], p[1]): (mid[0] + h * n[0], mid[1] + h * n[1]), (p[1], p[0]): (mid[0] - h * n[0], mid[1] - h * n[1])}
         if place(lay, name, lay["paths"][name], half, {p[1]: far}, mids, mid):
             return True
@@ -1555,7 +1572,9 @@ def lens_fan(cld, lay, s, names, out, wide):
 
 def join_loop(cld, lay, name, path):
     """Add loop name to the layout where it meets it, True once placed: an arc of its own over the
-    drawn links it shares (a lens on the drawing's outer side), or, meeting it at one element, a
+    drawn links it shares (a lens on the drawing's outer side), or, where none has room, round the
+    way back of a drawn loop whose links it shares all but that way back, which holds fewer elements
+    than its own route, wrapping that loop (C8's B4 round B12); or, meeting it at one element, a
     teardrop out from there, pointing away from the drawing (a petal); each just large enough that its
     boxes keep OVAL_GAP from every other box, its links cross none and its label fits. Other loops of
     two meeting it at that one element alone are placed with it (lens_fan()), so a caller drops every
@@ -1566,8 +1585,8 @@ def join_loop(cld, lay, name, path):
     new_ids = [x for x in path if x not in at]
     half = {**lay["half"], **(halves(cld, new_ids, lay["stacked"]) if new_ids else {})}
 
-    def accept(trial_at, mids, mark):
-        return place(lay, name, path, half, trial_at, mids, mark)
+    def accept(trial_at, mids, mark, wraps=None):
+        return place(lay, name, path, half, trial_at, mids, mark, wraps)
 
     if drawn:
         # the shared run: its links in the loop's order, from its first element to its last
@@ -1609,6 +1628,32 @@ def join_loop(cld, lay, name, path):
                 mark = ((cm[0] + top[0]) / 2, (cm[1] + top[1]) / 2)
                 if accept(trial_at, mids, mark):
                     return True
+        # no arc over the run has room: round a drawn loop that runs the whole run and comes back from
+        # its end to its start by fewer elements than this loop's own route, outside that way back, so
+        # this loop wraps it, its mark in the band between its arc's top and that way back (cld-drawing.md:
+        # three loops on one chain, C8's B4 sharing B12's plans -> level -> depth)
+        left = ((a[1] - b[1]) / c, -(a[0] - b[0]) / c)  # arc_at(b, a, s) bows s to the left of b -> a
+        for other in lay["marks"]:
+            q = lay["paths"][other]
+            if run[0] not in q:
+                continue
+            k = q.index(run[0])
+            q = q[k:] + q[:k]
+            if q[:len(run)] != run or len(q) - len(run) >= len(own):
+                continue
+            back = [run[-1], *q[len(run):], run[0]]
+            # how far that way back reaches from the chord, and to which side: its links' middles and its boxes
+            reach = [lay["mid"][x, y] or lerp(at[x], at[y], 0.5) for x, y in zip(back, back[1:])] + [at[x] for x in back[1:-1]]
+            off = max(((p[0] - mid[0]) * left[0] + (p[1] - mid[1]) * left[1] for p in reach), key=abs)
+            sgn = 1 if off >= 0 else -1
+            inside = [p for x, y in zip(back, back[1:]) for p in kumu_curve(at, x, y, lay["mid"][x, y])]
+            for h in range(int(abs(off)) + 60, 4000, 10):
+                arc = flat_arc(b, a, sgn * h)
+                trial_at, mids = spaced(arc, [run[-1], *own, run[0]], half)
+                top = arc(0.5)
+                near = min(inside, key=lambda p: hypot(p[0] - top[0], p[1] - top[1]))
+                if accept(trial_at, mids, ((near[0] + top[0]) / 2, (near[1] + top[1]) / 2), other):
+                    return True
         return False
     shared = [x for x in path if x in at]
     if len(shared) != 1:
@@ -1622,9 +1667,10 @@ def join_loop(cld, lay, name, path):
     fan = [n for n in lay["names"] if n == name or (n not in lay["marks"] and set(lay["paths"][n]) & set(at) == {s})]
     fan = sorted(set(fan) | set(lay.setdefault("petals", {}).get(s, [])), key=lay["names"].index)
     wide = not lay.get("narrow")
-    # a lens LENS_WIDE wide leaves s 2 atan(LENS_WIDE) either side of its direction, so the fan's
-    # directions lie twice that apart and a little more
-    pref = (fan.index(name) - (len(fan) - 1) / 2) * (4 * atan2(LENS_WIDE, 1) * 180 / pi + 10 if wide and len(p) == 2 else 90)
+    # a lens w wide leaves s 2 atan(w) either side of its direction, so the fan's directions lie
+    # twice that apart and a little more
+    pref = (fan.index(name) - (len(fan) - 1) / 2) * (4 * atan2(lay.get("lens", LENS_WIDE), 1) * 180 / pi + 10
+                                                     if wide and len(p) == 2 else 90)
     turns = ((0, 10, -10, 20, -20, 30, -30, 40, -40, 50, -50, 60, -60, 80, -80, 100, -100, 120, -120) if wide and len(p) == 2
              else (0, 20, -20, 40, -40, 60, -60, 80, -80, 100, -100, 120, -120, 140, -140))
 

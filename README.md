@@ -349,13 +349,16 @@ working version): two loops
 sharing one element as two ovals touching at it; two pairs of loops, each pair sharing a chain, the
 chains joined end to end, on one straight wall, each pair over its own stretch, one loop each side,
 the pairs' larger loops on opposite sides, each stretch as long as its own loops need (C9,
-`joined_wall()`, `wall_layout()`); otherwise the most loops sharing one chain on a
-straight wall, an even gap between its boxes, each loop's route an arc from the chain's end back to
-its start, one each side of the wall and a third round one of those, a loop arcing over part of the
-wall between the wall and that side's route; then each other loop where it meets those, an arc over
-the links it shares, a teardrop out from its one shared element, its two links there within
-`draw_cld.PETAL_HALF` of its direction, or, a loop of two, a lens out from it `LENS_WIDE` as wide as
-it is long. Where no spine leaves the other loops room (C1), the largest loop is an oval and the rest
+`joined_wall()`, `wall_layout()`); otherwise loops sharing one chain on a straight wall (the spine:
+the most loops first, then those each coming back by a route of their own, then the most elements,
+the first on which the other loops find room), an even gap between its boxes, each loop's route an
+arc from the chain's end back to its start, one each side of the wall and a third round one of
+those, a loop arcing over part of the wall between the wall and that side's route; then each other
+loop where it meets those, an arc over the links it shares or, where that finds no room, round the
+way back of a loop whose links it shares all but that way back, wrapping it (C8's B4 round B12), a
+teardrop out from its one shared element, its two links there within `draw_cld.PETAL_HALF` of its
+direction, or, a loop of two, a lens out from it `LENS_WIDE` as wide as it is long, a group in
+`LENS_WIDE_IN` its own width, its wall as long as that lens needs (C8's B13 0.55). Where no spine leaves the other loops room (C1), the largest loop is an oval and the rest
 join it (`ring_first()`), each lens the narrowest that holds its label where none fits that wide, the
 lenses at one element laid out together, the longer of them as short as fits (`lens_fan()`). Each
 arc and oval is an ellipse at `draw_cld.ARC_FLAT` of a circle's bulge, each arc over a wall of more
@@ -366,7 +369,9 @@ medium of three settings, chosen between rendered versions; rejected: circles wi
 centres, too round and symmetrical); each mark has room for its loop's label as Kumu draws it
 (`draw_cld.kumu_label_half()`), the figure stacked or upright, whichever
 frame is nearer a square (Jordy, chosen between rendered versions of C2, C3, C5 and C7), but first
-the one with no link bowing past a semicircle, which Kumu draws as a round bulge (C6's B9 upright). Jordy's hand in Kumu then
+the one with no link bowing past a semicircle, which Kumu draws as a round bulge (C6's B9 upright),
+and C8 across (`draw_cld.ACROSS`; rejected: upright, where its 0.55 lens needs a wall 1.8 times as
+long, a figure twice the area). Jordy's hand in Kumu then
 adjusts it as any group's (Kumu, below). The figure draws each link as Kumu does, a circular arc
 from box centre to box centre (`draw_cld.group_pieces()`), so it shows what Kumu's map shows (Jordy,
 chosen between rendered versions; rejected: the full drawing's curve between ends spread along the

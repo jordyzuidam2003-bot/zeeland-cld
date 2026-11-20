@@ -1317,7 +1317,9 @@ def apply_kumu(path):
             key = f"{a} -> {b}"
             if key not in g["bends"]:
                 sys.exit(f"--kumu: group {g['id']}'s map holds {key}, not one of its bends")
-            if g["bends"][key] != k:  # an unchanged value keeps its spelling
+            # an unchanged value keeps its spelling: compared in hundredths, as k is, since
+            # group_layout() writes thousandths
+            if kumu_bend(g["bends"][key]) != k:
                 g["bends"][key] = k
         for ml in m.get("loops", []):
             g["marks"][ml["loop"].removeprefix("loop-")] = [round(ml["position"]["x"]), round(ml["position"]["y"])]

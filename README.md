@@ -210,7 +210,9 @@ tables lost their columns pasted into Google Docs). Each update goes into the sa
 stays: in the Sheet, File → Import → Upload → the new `.xlsx` → "Replace spreadsheet", which
 overwrites every tab, so the Sheet itself is never edited (Jordy; rejected: a new file per update,
 whose link changes, and a Sheet that pulls the table from the page with `IMPORTDATA`, whose formula
-shows the page's address to anyone who views it). `build.py` writes it from `model/cld.json`, so it
+shows the page's address to anyone who views it). Until the Research Proposal's grade is in, both
+Sheets stay as the proposal links them, as `cbp1` does (Kumu, below): replacing them would change a
+submitted assignment. `build.py` writes it from `model/cld.json`, so it
 never drifts from the drawing: the Elements sheet (by subsystem, then by label: type, SETS
 domain, subsystem, description, simplification, the actor that decides it, the actors that
 decide or shape it, sources, the facts to ask the actors), the Links sheet (by their ends: polarity, delay,

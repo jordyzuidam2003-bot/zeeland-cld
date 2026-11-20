@@ -17,6 +17,8 @@ the keys the group's Zotero items carry in Extra. A citation it cannot key raise
     '(B7; \\\\cite[section 2]{kim-2000})'
     >>> text("(Kim, 2000; Kaandorp et al., 2022, p. 3) and *Saline seepage (kwel)*", list(cites), cites)
     '\\\\parencites{kim-2000}[p.~3]{kaandorp-2022} and \\\\emph{Saline seepage (kwel)}'
+    >>> text("The sign is the product (+, then −)")
+    'The sign is the product (+, then $-$)'
     >>> text("No sources (R2, a hypothesis)")
     'No sources (R2, a hypothesis)'
     >>> text("as (Kim, 2001) says", ["kim-2000"], cites)
@@ -28,7 +30,8 @@ the keys the group's Zotero items carry in Extra. A citation it cannot key raise
 import re
 
 SPECIAL = {"\\": r"\textbackslash{}", "&": r"\&", "%": r"\%", "$": r"\$", "#": r"\#", "_": r"\_",
-           "{": r"\{", "}": r"\}", "~": r"\textasciitilde{}", "^": r"\textasciicircum{}", "→": r"$\rightarrow$"}
+           "{": r"\{", "}": r"\}", "~": r"\textasciitilde{}", "^": r"\textasciicircum{}", "→": r"$\rightarrow$",
+           "−": "$-$"}  # pdflatex's utf8 reads no U+2212
 YEAR = r"(?:1[89]\d\d|20\d\d)[a-z]?|n\.d\.(?:-[a-z])?"
 
 

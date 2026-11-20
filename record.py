@@ -14,7 +14,10 @@ ends its message in three lines,
 
 one change per commit. A commit made before this record existed gets its lines from a later
 commit, whose message ends in one block per commit it explains, each after a line `Commit: <sha>`
-(rejected: rewriting pushed history to add them).
+(rejected: rewriting pushed history to add them). A block whose words a later check finds wrong
+(an argument stronger than its source) is replaced the same way, after a line `Corrects: <sha>`,
+once per commit, its Agreed: the day both agreed the correction; the record shows the corrected
+block in the commit's place.
 
 read() gives the agreed changes, oldest first (a block carried for an earlier commit in that
 commit's place), from which build.py writes the report's appendix of changes
@@ -40,7 +43,7 @@ ROOT = Path(__file__).resolve().parent
 TAG = "proposal"
 FILES = ("model/cld.json", "model/cld-texts.md")
 KEYS = ("Change", "Argument", "Agreed")
-LINE = re.compile(r"(Commit|Change|Argument|Agreed): ?(.*)")
+LINE = re.compile(r"(Commit|Corrects|Change|Argument|Agreed): ?(.*)")
 AGREED = re.compile(r"Jordy and Lenne, (\d{4}-\d{2}-\d{2})")
 SCISSORS = "# ------------------------ >8 ------------------------"  # git commit -v: the diff below it
 PENDING = "the commit being made"
@@ -51,8 +54,9 @@ def git(*args):
 
 
 def blocks(message):
-    """[(sha named by Commit:, or None for the commit's own, {Change, Argument, Agreed, date})] of a
-    message's closing blocks; ValueError where they are not as the module's docstring says.
+    """[(sha named by Commit: or Corrects:, or None for the commit's own, {Change, Argument, Agreed,
+    date, corrects})] of a message's closing blocks; ValueError where they are not as the module's
+    docstring says.
 
     >>> blocks("Fix a typo")
     []
@@ -60,6 +64,8 @@ def blocks(message):
     [(None, 'X folded', datetime.date(2026, 11, 20))]
     >>> [s for s, _ in blocks("Lines\\n\\nCommit: 4da3bba\\nChange: a\\nArgument: b\\nAgreed: Jordy and Lenne, 2026-11-20\\nCommit: 7782c35\\nChange: c\\nArgument: d\\nAgreed: Jordy and Lenne, 2026-11-20")]
     ['4da3bba', '7782c35']
+    >>> [(s, b["corrects"]) for s, b in blocks("Lines\\n\\nCorrects: 513adb3\\nChange: a\\nArgument: b\\nAgreed: Jordy and Lenne, 2026-11-21")]
+    [('513adb3', True)]
     >>> blocks("Change: a\\nAgreed: Jordy and Lenne, 2026-11-20")
     Traceback (most recent call last):
     ...
@@ -87,14 +93,14 @@ def blocks(message):
         raise ValueError("the Change:, Argument: and Agreed: lines end the message")
     out, i = [], 0
     while i < len(tail):
-        sha = None
-        if tail[i].startswith("Commit:"):
+        sha, corrects = None, tail[i].startswith("Corrects:")
+        if tail[i].startswith(("Commit:", "Corrects:")):
             sha = LINE.fullmatch(tail[i])[2].strip()
             i += 1
         group = [LINE.fullmatch(line) for line in tail[i:i + 3]]
         if [m[1] for m in group] != list(KEYS) or not all(m[2].strip() for m in group):
             raise ValueError("a block needs Change:, Argument: and Agreed:, in that order, each in words")
-        block = {m[1]: m[2].strip() for m in group}
+        block = {**{m[1]: m[2].strip() for m in group}, "corrects": corrects}
         m = AGREED.fullmatch(block["Agreed"])
         try:
             block["date"] = datetime.date.fromisoformat(m[1]) if m else None
@@ -135,7 +141,7 @@ def read(message=None):
         commits.append([PENDING, PENDING, message])
     subject = {sha: s for sha, s, _ in commits}
     short = lambda sha: sha if sha == PENDING else f"{sha[:7]} ({subject[sha][:60]})"
-    own, carried = {}, {}
+    own, carried, corrected = {}, {}, {}
     for sha, _, body in commits:
         try:
             found = blocks(body)
@@ -147,8 +153,14 @@ def read(message=None):
                 own[sha] = block
                 continue
             full = next((c for c, _, _ in commits if c != PENDING and c.startswith(target)), None) if len(target) >= 7 else None
+            word = "Corrects" if block["corrects"] else "Commit"
             if full is None:
-                problems.append(f"{short(sha)}: Commit: {target} names no commit since the tag {TAG}")
+                problems.append(f"{short(sha)}: {word}: {target} names no commit since the tag {TAG}")
+            elif block["corrects"]:
+                if full in corrected:
+                    problems.append(f"{short(sha)}: {full[:7]} is corrected already")
+                else:
+                    corrected[full] = (sha, block)
             elif full in carried:
                 problems.append(f"{short(sha)}: {full[:7]} has its block already")
             else:
@@ -162,6 +174,10 @@ def read(message=None):
     if pending:
         changed[PENDING] = pending
 
+    for full, (by, _) in corrected.items():
+        if full not in own and full not in carried:
+            problems.append(f"{short(by)}: Corrects: {full[:7]}, which has no block to correct")
+
     rows = []
     for sha, _, _ in commits:
         mine = [b for b in (own.get(sha), carried.get(sha)) if b]
@@ -169,6 +185,8 @@ def read(message=None):
             problems.append(f"{short(sha)}: carries its own block and has one carried for it: one change, one block")
         if mine and not changed.get(sha):
             problems.append(f"{short(sha)}: its block explains nothing, since it changes nothing the model says")
+        if mine and sha in corrected:
+            mine = [corrected[sha][1]]
         rows += [{"change": b["Change"], "argument": b["Argument"], "date": b["date"]} for b in mine[:1]]
 
     explained = {sha for sha in changed if sha in own or sha in carried}

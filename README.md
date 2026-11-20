@@ -81,7 +81,9 @@ made only once both agreed. `record.py` reads them back, and `build.py` writes f
 written as the model writes it, so the report cites it. `build.py --check` stops on each element,
 link, loop or section of the model texts that differs from `proposal` while a commit since changed
 it without its lines; a commit made without them gets them from a later commit, whose message ends
-in one block per commit it explains, each after a line `Commit: <sha>`. The check runs in the
+in one block per commit it explains, each after a line `Commit: <sha>`, and a block whose words
+prove wrong (an argument stronger than its source) is replaced by a later commit's block after a
+line `Corrects: <sha>`, once per commit, agreed as any change is. The check runs in the
 `commit-msg` hook, the only one that sees the message: write the message to a file, `python3
 build.py --message FILE`, so the table holds its row, then `git commit -F FILE`.
 

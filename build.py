@@ -3,13 +3,21 @@
     python3 build.py                  # check, write docs/, print the report
     python3 build.py --check          # fail if docs/ is out of date (the pre-commit hook runs this)
     python3 build.py --layout FILE    # write the positions and curvatures of FILE (layout.json,
-                                      # downloaded from a page's Move mode) into cld.json, or the
-                                      # Actor Map's into actor-map.json, then build
+                                      # downloaded from a page's Move mode) into the model it
+                                      # names (cld.json, cld-working.json or actor-map.json), then build
     python3 build.py --kumu FILE      # write the places and bends Jordy set in Kumu (FILE, the
                                       # project's JSON export) into the model, then build
     python3 build.py --group-layout C2 C3  # lay out these combined loops anew, each loop its own
                                       # area (draw_cld.group_layout()), into cld.json, then build
+    python3 build.py --working --group-layout C2  # the same into the working version
     python3 -m doctest build.py       # the tests written in its docstrings (bows_alike())
+
+The working version, model/cld-working.json, a copy of cld.json that holds the changes tried before
+they enter it (README's "The working version"), is checked as cld.json is and built into docs/working/
+while the file exists: its page and its loops' figures, nothing else, since the tables, the report's
+files and the Kumu export stay cld.json's. Each change carries its argument in the file's `changes`
+list, and the build stops on a change without one (changes.py, which lists them for Lenne). A
+layout downloaded from the working page's Move mode names cld-working.json, so --layout writes it there.
 
 Sources, edited by hand: in model/, cld.json (elements, connections, named loops, layout and
 link curvature), actor-map.json (the Actor Map's actors, their relations and places, the one list
@@ -56,6 +64,8 @@ edit docs/, which this script writes:
                        bands (backgrounds/, src/backdrop.py) as background images inside the file
                        (an element showing a data URL of the PNG); no version, so the link to each map stays the same from one
                        copy to the next
+    docs/working/      the working version's page (index.html) and figures/named-loops/,
+                       figures/combined-loops/, while model/cld-working.json exists
 """
 
 import argparse
@@ -71,6 +81,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
 
 import backdrop  # noqa: E402
+import changes  # noqa: E402
 import draw_actor_map  # noqa: E402
 import draw_cld  # noqa: E402
 import write_tex  # noqa: E402
@@ -82,6 +93,7 @@ TEMPLATES = ROOT / "src" / "templates"
 KUMU = ROOT / "src" / "kumu"
 TEXTS = MODEL / "cld-texts.md"
 CLD = MODEL / "cld.json"
+WORKING = MODEL / "cld-working.json"  # the changes tried before they enter cld.json, while it exists
 ACTORS = MODEL / "actor-map.json"
 REFERENCES = MODEL / "references.json"
 
@@ -732,8 +744,9 @@ def blueprint(cld, refs, actors):
     return {"elements": elements, "connections": connections}
 
 
-def page_data(cld, refs, actors, version):
-    """What the page shows per element and link: the blueprint without the drawing's numbers."""
+def page_data(cld, refs, actors, version, model="cld.json"):
+    """What the page shows per element and link: the blueprint without the drawing's numbers; model
+    names the file, which Move mode's layout.json carries, so --layout writes it there."""
     bp = blueprint(cld, refs, actors)
     drop = {"x", "y", "curvature"}
     return {
@@ -743,6 +756,7 @@ def page_data(cld, refs, actors, version):
         # the figure's numbers stay out, as the drawing's do
         "groups": [{k: g[k] for k in ("id", "name", "loops", "description")} for g in cld.get("groups", [])],
         "version": version,
+        "model": model,
     }
 
 
@@ -812,13 +826,29 @@ def model_texts(cld, loops):
     return "\n".join(html[:first]), "\n".join(html[first:])
 
 
-def page(cld, refs, actors, version, loops):
+def page(cld, refs, actors, version, loops, model="cld.json"):
     """docs/index.html: the template with the drawing inline, the model texts and the data as
-    JSON."""
+    JSON. The working version's, docs/working/index.html, names itself, reaches the shared assets
+    and the Actor Map one folder up, and links the CLD's page in place of the tables, which are
+    cld.json's."""
     template = (TEMPLATES / "index.html").read_text()
+    if model != "cld.json":
+        for old, new in [
+                ("<title>Zeeland CLD</title>", "<title>Zeeland CLD, working version</title>"),
+                ("☰</span> Zeeland CLD</button>", "☰</span> Zeeland CLD, working version</button>"),
+                ("the causal loop diagram of our Challenge Based Project.</p>",
+                 "the causal loop diagram of our Challenge Based Project. This is its working version: the "
+                 "changes tried here enter the CLD once Jordy and Lenne agree.</p>"),
+                ('<a href="tables/cld-table.xlsx" download>The table of elements, links and loops (.xlsx) ↓</a>'
+                 '<a href="tables/sources-to-ask.xlsx" download>The sources to ask the actors (.xlsx) ↓</a>'
+                 '<a href="actors.html">Actor Map →</a>',
+                 '<a href="../">The CLD as agreed →</a><a href="../actors.html">Actor Map →</a>')]:
+            assert template.count(old) == 1, f"src/templates/index.html must hold {old!r} once"
+            template = template.replace(old, new)
+        template = template.replace('href="assets/', 'href="../assets/').replace('src="assets/', 'src="../assets/')
     svg = draw_cld.svg(cld)
     # "</" inside a <script> would end it early; "<\/" is the same string to JSON
-    data = json.dumps(page_data(cld, refs, actors, version), ensure_ascii=False).replace("</", "<\\/")
+    data = json.dumps(page_data(cld, refs, actors, version, model), ensure_ascii=False).replace("</", "<\\/")
     facts, texts = model_texts(cld, loops)
     for marker in ("<!-- SVG -->", "<!-- DATA -->", "<!-- FACTS -->", "<!-- TEXTS -->"):
         assert template.count(marker) == 1, f"src/templates/index.html must hold {marker} once"
@@ -1166,8 +1196,10 @@ def kumu_project(cld_part, actors_part):
 
 def apply_layout(path):
     """Write a layout.json from a page's Move mode into its model, in the model's own formatting. The
-    CLD's ({id: {x, y}, "curvature": {"from->to": k}, "delay": {"from->to": t}}) goes into cld.json:
-    each element's place, each link's curvature, each dragged delay mark. The Actor Map's ({"model":
+    CLD's ({"model": "cld.json", id: {x, y}, "curvature": {"from->to": k}, "delay": {"from->to": t}})
+    goes into the file it names, cld.json or, from the working version's page, cld-working.json (one
+    without "model" into cld.json): each element's place, each link's curvature, each dragged delay
+    mark. The Actor Map's ({"model":
     "actor-map.json", id: {x, y}, "curvature": {"from->to kind": k}}) goes into actor-map.json: each
     actor's place and each relation's curvature, a relation named by its two actors and its kind,
     since two actors can hold two relations. A file without "curvature" moves the boxes only."""
@@ -1178,10 +1210,12 @@ def place(layout, flag):
     """Write a layout (apply_layout()) into its model; flag names the option in an error."""
     target = layout.pop("model", "cld.json")
     curvature = layout.pop("curvature", {})
-    if target == "cld.json":
-        file, what = CLD, "element or link"
+    if target in ("cld.json", "cld-working.json"):
+        file, what = MODEL / target, "element or link"
+        if not file.exists():
+            sys.exit(f"{flag}: the layout is of {target}, which does not exist")
         delay_at = layout.pop("delay", {})
-        model = json.loads(CLD.read_text())
+        model = json.loads(file.read_text())
         boxes = model["elements"]
         links = [(f'{c["from"]}->{c["to"]}', c) for c in model["connections"]]
     elif target == "actor-map.json":
@@ -1190,7 +1224,7 @@ def place(layout, flag):
         boxes = model["actors"]
         links = [(f'{a["id"]}->{r["to"]} {r["kind"]}', r) for a in boxes for r in a.get("relations", [])]
     else:
-        sys.exit(f"{flag}: model {target!r} is neither cld.json nor actor-map.json")
+        sys.exit(f"{flag}: model {target!r} is not cld.json, cld-working.json or actor-map.json")
     by_id = {b["id"]: b for b in boxes}
     by_link = dict(links)
     unknown = [i for i in layout if i not in by_id] + [k for k in list(curvature) + list(delay_at) if k not in by_link]
@@ -1284,15 +1318,17 @@ def apply_kumu(path):
                   + ", ".join([f"{i} moved" for i in moved] + [f"{k} bent" for k in bent]))
 
 
-def apply_group_layout(ids):
+def apply_group_layout(ids, file=CLD):
     """Write draw_cld.group_layout()'s places, bends and marks into each group named in ids, in the
-    order cld.json already holds them, so a diff shows only what moved; Jordy's hand in Kumu then
-    adjusts them as any group's (apply_kumu())."""
-    cld = json.loads(CLD.read_text())
+    order file (cld.json, or the working version) already holds them, so a diff shows only what
+    moved; Jordy's hand in Kumu then adjusts them as any group's (apply_kumu())."""
+    if not file.exists():
+        sys.exit(f"--group-layout: {file.name} does not exist")
+    cld = json.loads(file.read_text())
     groups = {g["id"]: g for g in cld.get("groups", [])}
     for i in ids:
         if i not in groups:
-            sys.exit(f"--group-layout: no group {i} in cld.json")
+            sys.exit(f"--group-layout: no group {i} in {file.name}")
         g = groups[i]
         lay = draw_cld.group_layout(cld, g)
         if lay is None:
@@ -1300,31 +1336,67 @@ def apply_group_layout(ids):
                      "share one chain or one element, or a loop finds no room where it meets the others")
         for field, new in zip(("places", "bends", "marks"), lay):
             g[field] = {k: new[k] for k in g[field]} if set(g[field]) == set(new) else new
-    CLD.write_text(json.dumps(cld, indent=2, ensure_ascii=False) + "\n")
+    file.write_text(json.dumps(cld, indent=2, ensure_ascii=False) + "\n")
+
+
+def summary(cld, loops):
+    """The report's lines on a CLD's numbers and layout, and its links through a box as warnings."""
+    n_el, n_conn = len(cld["elements"]), len(cld["connections"])
+    hypotheses = sum(bool(c.get("hypothesis")) for c in cld["connections"])
+    sourced = sum(bool(c["sources"]) for c in cld["connections"])
+    # the layout's measure: the eye found crossings and links over boxes that no warning named
+    crossings, through = draw_cld.tangles(cld)
+    return [f"{n_el} elements, {n_conn} connections, {len(cld['loops'])} named loops",
+            f"sourced: {sum(bool(e['sources']) for e in cld['elements'])}/{n_el} elements, "
+            f"{sourced}/{n_conn} connections; {hypotheses} connections are hypotheses, "
+            f"{n_conn - sourced - hypotheses} have neither",
+            f"feedback loops in the diagram: {len(loops)} "
+            f"({sum(k == 'R' for k, _ in loops)} R, {sum(k == 'B' for k, _ in loops)} B), "
+            f"shortest {min((len(p) for _, p in loops), default=0)} links",
+            f"layout: {len(crossings)} crossings between links, "
+            f"{len(through)} links through a box they do not connect"], \
+        [f"link through a box: {a} -> {b} passes through {e}" for (a, b), e in through]
+
+
+def cld_bows(cld):
+    """bows_alike() over a CLD's links."""
+    return bows_alike([(f"{c['from']} -> {c['to']}", c["from"], c["to"], c["curvature"]) for c in cld["connections"]],
+                      {e["id"]: (e["x"], e["y"]) for e in cld["elements"]})
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--check", action="store_true", help="fail if docs/ is out of date")
     parser.add_argument("--group-layout", nargs="+", metavar="ID", help="lay out these combined loops anew, each loop its own area (draw_cld.group_layout()), into cld.json, then build")
+    parser.add_argument("--working", action="store_true", help="with --group-layout: lay out the working version's groups, in cld-working.json")
     parser.add_argument("--kumu", metavar="FILE", help="write the places and bends set by hand in Kumu, from its JSON export FILE, into cld.json and actor-map.json, then build")
-    parser.add_argument("--layout", metavar="FILE", help="write the x, y and curvatures of FILE (layout.json from a page) into cld.json, or the Actor Map's into actor-map.json, then build")
+    parser.add_argument("--layout", metavar="FILE", help="write the x, y and curvatures of FILE (layout.json from a page) into the model it names (cld.json, cld-working.json or actor-map.json), then build")
     args = parser.parse_args()
+    if args.working and not args.group_layout:
+        sys.exit("--working goes with --group-layout")
 
     if args.layout:
         apply_layout(Path(args.layout))
     if args.kumu:
         apply_kumu(Path(args.kumu))
     if args.group_layout:
-        apply_group_layout(args.group_layout)
+        apply_group_layout(args.group_layout, WORKING if args.working else CLD)
     cld = json.loads(CLD.read_text())
+    working = json.loads(WORKING.read_text()) if WORKING.exists() else None
     refs, ref_errors = references()
     actors = json.loads(ACTORS.read_text())
     template = (KUMU / "cld-view.scss").read_text()
     actor_errors, empty = check_actors(actors, refs)
     errors, warnings = check(cld, refs, actors)
+    if "changes" in cld:
+        errors.append(changes.AGREED)
     if errors or actor_errors or ref_errors:
         sys.exit("cld.json, actor-map.json or references.json has errors:\n  " + "\n  ".join(ref_errors + actor_errors + errors))
+    if working is not None:
+        w_errors, w_warnings = check(working, refs, actors)
+        w_errors += [p for p in changes.problems(cld, working) if p != changes.AGREED]
+        if w_errors:
+            sys.exit("cld-working.json has errors:\n  " + "\n  ".join(w_errors))
 
     # the model version teammates compare: the first seven characters of cld.json's SHA-256
     version = hashlib.sha256(CLD.read_bytes()).hexdigest()[:7]
@@ -1354,10 +1426,22 @@ def main():
         **{f"figures/report-panels/{i}.svg": svg for i, svg in draw_cld.report_panels(cld).items()},
         **report_tables(cld, refs, actors),
     }
-    # a figure whose loop is gone or renamed would stay published
+    if working is not None:
+        # its page and its loops' figures only: the tables, the report's files and Kumu stay cld.json's
+        w_version = hashlib.sha256(WORKING.read_bytes()).hexdigest()[:7]
+        w_loops = cycles(working)
+        outputs.update({
+            "working/index.html": page(working, refs, actors, w_version, w_loops, WORKING.name),
+            **{f"working/figures/named-loops/{loop['id']}.svg": draw_cld.loop_figure(working, loop) for loop in working["loops"]},
+            **{f"working/figures/combined-loops/{g['id']}.svg": draw_cld.group_figure(working, g) for g in working.get("groups", [])},
+        })
+    # a figure whose loop is gone or renamed would stay published, and the working version's page
+    # once its file is gone
     extra = sorted(f"{d}/{f.name}" for d in ("figures/named-loops", "figures/combined-loops", "figures/report-panels")
                    if (DOCS / d).is_dir()
                    for f in (DOCS / d).glob("*") if f"{d}/{f.name}" not in outputs)
+    extra += sorted(f.relative_to(DOCS).as_posix() for f in (DOCS / "working").rglob("*")
+                    if f.is_file() and f.relative_to(DOCS).as_posix() not in outputs)
 
     if args.check:
         # the table is bytes, every other file text
@@ -1369,25 +1453,18 @@ def main():
 
     for name in extra:
         (DOCS / name).unlink()
+    # the folders a gone working version leaves empty, the deepest first
+    for d in sorted((p for p in (DOCS / "working").rglob("*") if p.is_dir()), key=lambda p: -len(p.parts)) \
+            + ([DOCS / "working"] if (DOCS / "working").is_dir() else []):
+        if not any(d.iterdir()):
+            d.rmdir()
     for name, out in outputs.items():
         (DOCS / name).parent.mkdir(parents=True, exist_ok=True)
         (DOCS / name).write_bytes(out) if isinstance(out, bytes) else (DOCS / name).write_text(out)
 
-    n_el, n_conn = len(cld["elements"]), len(cld["connections"])
-    print(f"{n_el} elements, {n_conn} connections, {len(cld['loops'])} named loops")
-    hypotheses = sum(bool(c.get("hypothesis")) for c in cld["connections"])
-    sourced = sum(bool(c["sources"]) for c in cld["connections"])
-    print(f"sourced: {sum(bool(e['sources']) for e in cld['elements'])}/{n_el} elements, "
-          f"{sourced}/{n_conn} connections; {hypotheses} connections are hypotheses, "
-          f"{n_conn - sourced - hypotheses} have neither")
-    print(f"feedback loops in the diagram: {len(loops)} "
-          f"({sum(k == 'R' for k, _ in loops)} R, {sum(k == 'B' for k, _ in loops)} B), "
-          f"shortest {min((len(p) for _, p in loops), default=0)} links")
-    # the layout's measure: the eye found crossings and links over boxes that no warning named
-    crossings, through = draw_cld.tangles(cld)
-    print(f"layout: {len(crossings)} crossings between links, "
-          f"{len(through)} links through a box they do not connect")
-    warnings += [f"link through a box: {a} -> {b} passes through {e}" for (a, b), e in through]
+    lines, through = summary(cld, loops)
+    print("\n".join(lines))
+    warnings += through
     a_crossings, a_through = draw_actor_map.tangles(actors)
     print(f"actor map: {len(a_crossings)} crossings between relations, "
           f"{len(a_through)} relations through a box they do not connect")
@@ -1399,11 +1476,13 @@ def main():
     if empty:
         print("actor fields still empty:\n  " + "\n  ".join(f"{i}: {', '.join(ks)}" for i, ks in empty.items()))
     # an element no decision variable drives and no source names an outside actor for
-    shaped = element_actors(cld, actors)
-    no_actors = [i for i, s in shaped.items() if not s]
+    no_actors = [i for i, s in element_actors(cld, actors).items() if not s]
     if no_actors:
         print(f"elements no actor decides or shapes directly ({len(no_actors)}): {', '.join(no_actors)}")
-    cited = {k for item in cld["elements"] + cld["connections"] + cld.get("groups", []) + actors["actors"] for k in item.get("sources", [])}
+    # a source only the working version cites is not cited nowhere
+    cited = {k for m in [cld] + ([working] if working else [])
+             for item in m["elements"] + m["connections"] + m.get("groups", []) for k in item.get("sources", [])}
+    cited |= {k for a in actors["actors"] for k in a.get("sources", [])}
     cited |= {k for a in actors["actors"] for r in a.get("relations", []) for k in r.get("sources", [])}
     warnings += [f"reference {k!r} is cited nowhere" for k in refs if k not in cited]
     # a section the page would show with nothing under its heading
@@ -1413,8 +1492,7 @@ def main():
     if warnings:
         print("warnings:\n  " + "\n  ".join(warnings))
     # each at the line's start, so a check counts them (grep "^bow alike:")
-    bows = (bows_alike([(f"{c['from']} -> {c['to']}", c["from"], c["to"], c["curvature"]) for c in cld["connections"]],
-                       {e["id"]: (e["x"], e["y"]) for e in cld["elements"]})
+    bows = (cld_bows(cld)
             + bows_alike([(f"{r['from']} {r['kind']} {r['to']}", r["from"], r["to"], r["curvature"]) for r in rel],
                          {a["id"]: (a["x"], a["y"]) for a in actors["actors"]}, "actor map: "))
     if bows:
@@ -1423,6 +1501,18 @@ def main():
     heads = kumu_arrowheads(cld, actors)
     if heads:
         print("\n".join(heads))
+
+    if working is not None:
+        # what the working version would add to this report once it is cld.json, which the step that
+        # moves it in accepts or fixes ("no new warning or one Jordy accepts")
+        print(f"\nworking version ({WORKING.relative_to(ROOT)}, model version {w_version}, docs/working/):")
+        lines, w_through = summary(working, w_loops)
+        print("  " + "\n  ".join(lines))
+        w_no_actors = [i for i, s in element_actors(working, actors).items() if not s]
+        before = set(warnings + bows + heads + [f"elements no actor decides or shapes directly: {i}" for i in no_actors])
+        new = [n for n in w_warnings + w_through + cld_bows(working) + kumu_arrowheads(working, actors)
+               + [f"elements no actor decides or shapes directly: {i}" for i in w_no_actors] if n not in before]
+        print("  new against cld.json: " + ("none" if not new else "\n    " + "\n    ".join(new)))
 
 
 if __name__ == "__main__":

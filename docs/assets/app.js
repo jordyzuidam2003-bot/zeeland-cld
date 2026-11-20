@@ -232,7 +232,8 @@ const mover = moveMode(svg, {
       return true;
     };
   },
-  extra: () => ({ delay: Object.fromEntries(links.filter(g => g.dataset.delayMoved).map(g => [`${g.dataset.from}->${g.dataset.to}`, +g.dataset.delayT])) }),
+  // the file the page was built from (cld.json or the working version), where --layout writes it
+  extra: () => ({ model: data.model, delay: Object.fromEntries(links.filter(g => g.dataset.delayMoved).map(g => [`${g.dataset.from}->${g.dataset.to}`, +g.dataset.delayT])) }),
 });
 
 // --- moving and zooming: map.js; a press in Move mode is move.js's ----------------------------

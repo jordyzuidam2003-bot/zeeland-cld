@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-520 -304 1058 617" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<defs>
+<marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
+<marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
+<marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
+</defs>
+<rect x="-520" y="-304" width="1058" height="617" fill="white"/>
+<g class="links">
+<g class="link" data-from="polder-drainage-depth" data-to="spring-workability-of-the-fields" data-sign="+" data-delay="false" data-curvature="0.14">
+<path class="link-path" d="M 235.4 176.2 Q 114.9 227.9 -35.5 220.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="14.5" y="221.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="spring-workability-of-the-fields" data-to="demand-for-deep-polder-drainage" data-sign="-" data-delay="false" data-curvature="0.15">
+<path class="link-path" d="M -294.5 144.9 Q -377.3 90.8 -388.5 19.5 Q -399.6 -51.8 -334.9 -113.3" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-367.2" y="-75.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+</g>
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="polder-drainage-depth" data-sign="-" data-delay="true" data-curvature="-0.1">
+<path class="link-path" d="M 307.9 -135.6 Q 385.7 -78.9 389.8 -7.1 Q 393.9 64.8 322.6 124.2" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="357.6" y="88.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M 413.0 -18.9 L 365.2 -15.5 M 414.2 -3.0 L 366.3 0.5" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 413.0 -18.9 L 365.2 -15.5 M 414.2 -3.0 L 366.3 0.5" stroke="#444444" stroke-width="5" fill="none"/>
+</g>
+<g class="link" data-from="demand-for-deep-polder-drainage" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="true" data-curvature="0.32">
+<path class="link-path" d="M -168.6 -199.3 Q -63.3 -227.9 52.4 -219.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="2.4" y="-221.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M -70.8 -241.7 L -66.6 -193.9 M -54.9 -243.1 L -50.6 -195.3" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -70.8 -241.7 L -66.6 -193.9 M -54.9 -243.1 L -50.6 -195.3" stroke="#444444" stroke-width="5" fill="none"/>
+</g>
+</g>
+<g class="elements">
+<g class="element" data-id="demand-for-deep-polder-drainage" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
+<rect x="-438.2" y="-199.3" width="324.8" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-275.8" y="-164.8" text-anchor="middle">Farmers' demand for</text>
+<text x="-275.8" y="-130.8" text-anchor="middle">deep polder drainage</text>
+</g>
+<g class="element" data-id="plans-to-raise-ditch-levels" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="52.4" y="-221.6" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="229.6" y="-187.1" text-anchor="middle">Water board's plans to</text>
+<text x="229.6" y="-153.1" text-anchor="middle">raise ditch levels</text>
+</g>
+<g class="element" data-id="polder-drainage-depth" data-domain="Technological" data-type="Stock" data-adaptive="false">
+<rect x="116.2" y="124.2" width="339.6" height="52.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="286.0" y="158.7" text-anchor="middle">Polder drainage depth</text>
+</g>
+<g class="element" data-id="spring-workability-of-the-fields" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
+<rect x="-375.1" y="144.9" width="339.6" height="86.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="-205.3" y="179.4" text-anchor="middle">Spring workability of</text>
+<text x="-205.3" y="213.4" text-anchor="middle">the fields</text>
+</g>
+</g>
+<g class="loop" data-id="B4">
+<path d="M 0.0 -48.0 A 48 48 0 1 1 -48.0 0.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="0.0" y="0.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B4</text>
+</g>
+</svg>

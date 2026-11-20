@@ -12,6 +12,7 @@ spreadsheet.
 
 ```text
 build.py        checks the model and writes docs/: every route runs python3 build.py from here
+changes.py      lists what the working version changes against the CLD, for Lenne
 model/          what the group edits: the CLD, the Actor Map, their sources and the model texts
 src/            what build.py uses: the drawing code, and the templates and views it fills
   templates/    the pages around the drawings, copied or filled into docs/
@@ -24,6 +25,7 @@ docs/           built by build.py and never edited; GitHub Pages publishes it, a
     report-panels/   each group of named loops again, as the report's panels
   tables/       the CLD's and the actors' tables, for Google Sheets and the report, and the sources to ask the actors
   kumu/         the Kumu project export
+  working/      the working version's page and its loops' figures, while model/cld-working.json exists
 hooks/          the pre-commit check
 ```
 
@@ -37,6 +39,7 @@ the repository's root or `docs/`. `docs/index.html` and `docs/actors.html` stay 
 | File | What it holds | Edit? |
 | --- | --- | --- |
 | `model/cld.json` | the elements, connections, named loops, layout (x, y) and link curvature | yes |
+| `model/cld-working.json` | the working version: `model/cld.json` with the changes tried before they enter it, and each change's argument (The working version, below); only while changes are being tried | yes |
 | `model/actor-map.json` | the Actor Map: the actors, their columns, their relations and places, the one list of actors the CLD names | yes |
 | `model/references.json` | the sources, as CSL JSON, from which `build.py` writes each APA reference | yes |
 | `model/references.zotero.json` | the Use note in Zotero that `push` wrote for each source, with a fingerprint of its text, so a push never replaces a note somebody changed | never: `push` writes it |
@@ -46,11 +49,12 @@ the repository's root or `docs/`. `docs/index.html` and `docs/actors.html` stay 
 | `src/backdrop.py` | places each drawing at its frame for the page and Kumu, imported by `build.py` | — |
 | `src/templates/` | the pages around the drawings: `index.html` and `actors.html` (templates), `app.js`, `actors.js`, `map.js` (moving and zooming, the bar and the menu, for both pages), `move.js` (Move mode, for both pages), `style.css` | yes |
 | `build.py` | checks the model and the actors and writes `docs/` (how: its docstring) | — |
+| `changes.py` | lists what the working version changes against `model/cld.json`, each change with its argument, as markdown for the group's Drive (how: its docstring) | — |
 | `src/draw_cld.py` | draws the CLD's SVG, imported by `build.py` | — |
 | `src/draw_actor_map.py` | draws the Actor Map and lays out its table, imported by `build.py` | — |
 | `src/write_xlsx.py` | writes the table as an `.xlsx` with the standard library | — |
 | `src/write_tex.py` | writes the report's tables as LaTeX rows, imported by `build.py` | — |
-| `docs/` | what GitHub Pages serves: `index.html`, `actors.html`; `assets/` (`app.js`, `actors.js`, `map.js`, `move.js`, `style.css`); `figures/` (`cld.svg`, `actor-map.svg`, `named-loops/<id>.svg`, `combined-loops/<id>.svg`, `report-panels/<id>.svg`); `tables/` (`cld-table.xlsx`, `actor-map-table.xlsx`, `sources-to-ask.xlsx`, `cld-combined-loops.tex`, `cld-elements.tex`, `actor-map-inside.tex`); `kumu/` (`kumu-project.json`) | never: `build.py` writes it |
+| `docs/` | what GitHub Pages serves: `index.html`, `actors.html`; `assets/` (`app.js`, `actors.js`, `map.js`, `move.js`, `style.css`); `figures/` (`cld.svg`, `actor-map.svg`, `named-loops/<id>.svg`, `combined-loops/<id>.svg`, `report-panels/<id>.svg`); `tables/` (`cld-table.xlsx`, `actor-map-table.xlsx`, `sources-to-ask.xlsx`, `cld-combined-loops.tex`, `cld-elements.tex`, `actor-map-inside.tex`); `kumu/` (`kumu-project.json`); `working/` (`index.html`, `figures/named-loops/`, `figures/combined-loops/`), while the working version exists | never: `build.py` writes it |
 
 ## Version 1
 
@@ -61,6 +65,36 @@ page.
 
 The version the Research Proposal shows is the tag `proposal`: what changed since is
 `git diff proposal -- model/`, and why, each commit's message (`git log proposal.. -- model/`).
+
+## The working version
+
+A change to the CLD's content is tried in a working version before it enters `model/cld.json`, as
+version 2 stood beside version 1, so each is built and drawn before Lenne sees it, and
+`model/cld.json` changes only once she and Jordy agree (rejected: a git branch, which gives Lenne no
+page; a change straight into `model/cld.json` once she agrees, untried). While
+`model/cld-working.json` exists, `build.py` checks it as it checks `model/cld.json` and builds its page
+into `docs/working/`, <https://jordyzuidam2003-bot.github.io/zeeland-cld/working/>, for Jordy and Lenne
+only, like the rest of the Pages: its drawing, its loops' figures and its model texts, its model
+version in the menu. The tables, the report's files and the Kumu export stay `model/cld.json`'s, so
+nothing anyone outside the group reads changes before the two agree. After the CLD's own report,
+`build.py` prints the working version's numbers and each warning it would add to that report
+(`new against cld.json`).
+
+The file holds, beside the model, a list `changes`: each change's few words, its argument, and the
+items it touches (an element or loop by its id, a link as `from-id -> to-id`). `build.py` stops on an
+item that changes without a change naming it, a change naming an item that does not, an item in two
+changes, and a `changes` list in `model/cld.json`. Layout alone (a place, a bend, a combined loop's
+figure) needs none. `python3 changes.py` prints each change with its argument and what it does to
+each item, labels for ids and in-text citations for sources, as markdown Jordy pastes into a Google
+Doc for Lenne (Extra → Voorkeuren → Markdown inschakelen, then Plakken vanuit Markdown); two files
+that hold the same model print nothing.
+
+A batch goes into the working version, is built, committed and pushed, and its list goes to Jordy
+and Lenne. A change they reject is undone in the working version, its entry with it; what both
+agree is copied into `model/cld.json` without its entry, in a commit whose message carries the
+argument and their agreement, then the Drive's two tables and the throwaway Kumu project are
+replaced from the build's files (The table, Kumu). Once no change waits, the working version goes:
+`model/cld-working.json` is deleted and the next build removes `docs/working/`.
 
 ## Working on the diagram
 
@@ -86,9 +120,10 @@ builds and pushes, so nobody else needs git or Python.
 Layout tuning happens in Kumu, read back by `build.py --kumu` (Kumu, below). The page keeps its Move mode: on the CLD's page, turn on "Move": drag an element to move it, drag
 a delay mark to shift it along its own line, a link to bend it (its middle follows the pointer; within 0.03 of straight a Constant's link snaps to
 straight and any other keeps that bend), then "Download layout" saves `layout.json`
-with every element's position, every link's curvature and each delay mark that was dragged.
-`python3 build.py --layout ~/Downloads/layout.json` writes both into `model/cld.json` and rebuilds; it
-fails on an id or a link that is not in `model/cld.json`. Dragging redraws the links but not the
+with every element's position, every link's curvature and each delay mark that was dragged, and
+the model the page was built from. `python3 build.py --layout ~/Downloads/layout.json` writes them
+into that model, `model/cld.json` or, from the working version's page, `model/cld-working.json`, and
+rebuilds; it fails on an id or a link that is not in it. Dragging redraws the links but not the
 regions, Jordy's drawing (`backgrounds/`), which stays where it is: after a move a session checks
 each box against it (Kumu, below). Each link has its own bow, chosen
 so a reader can follow every connection: every arrowhead and sign clear, each crossing at a wide
@@ -287,7 +322,8 @@ drawn inside another puts the outer loop's mark inside the inner one), but where
 chain, which a flat map cannot draw each beside it: one wraps one other, its mark in the band that is
 its own. `build.py` warns of a mark outside its own loop's area or inside another's it does not wrap,
 and of a loop's label, as Kumu draws it at the mark, on a box or a link. `python3 build.py
---group-layout C2 C5` lays out groups anew (`draw_cld.group_layout()`) and writes them in: two loops
+--group-layout C2 C5` lays out groups anew (`draw_cld.group_layout()`) and writes them in (with `--working`, into the
+working version): two loops
 sharing one element as two ovals touching at it; two pairs of loops, each pair sharing a chain, the
 chains joined end to end, on one straight wall, each pair over its own stretch, one loop each side,
 the pairs' larger loops on opposite sides, each stretch as long as its own loops need (C9,

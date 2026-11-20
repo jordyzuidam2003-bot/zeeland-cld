@@ -3928,17 +3928,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "*Winter rain drained away* counts the low polders' drained rain only, and *Polder drainage depth* acts on *Freshwater lens thickness under creek ridges and dunes* by a link of its own",
-      "argument": "The audit's confirmed finding on Winter rain drained away → the lens fails two conditions of the rule “Simplify only where the conclusion survives”: the variable was read for the whole island while its only lens link goes to the low polders' rainwater lens, so it measured two quantities, and the drainage depth's effect on the creek ridge lens, the one farmers pump, was in words only, on Polder drainage depth → Winter rain drained away. Winter rain drained away now counts the low polders' share, the island-wide source of the link into it read for them (Kaandorp et al., 2022, p. 54), and a new link Polder drainage depth → Freshwater lens thickness under creek ridges and dunes (−, delay) carries the creek ridge sentence: where the winter depth is over 1.5 m in large parts, the drains and ditches carry the excess rain off fast, and a higher winter level might raise the groundwater and with it the recharge (Kaandorp et al., 2022, pp. 42–43), which the source gives as a possibility, so the link's description says so. The pumping costs' simplification names the creek ridges' drained rain it leaves out, which rises with the same drainage depth, and the drivers the ditch level now gives the seepage. Rejected: keeping the island total and adding Winter rain drained away → the creek ridge lens, which keeps one quantity per variable less plainly. For the group: a lever on the ditch levels now reaches both lenses, where D2D credited its whole effect on the drained rain to the low polders' lens.",
-      "items": [
-        "winter-rain-drained-away",
-        "wetter-winters -> winter-rain-drained-away",
-        "polder-drainage-depth -> winter-rain-drained-away",
-        "polder-drainage-depth -> creek-ridge-lens-thickness",
-        "water-board-pumping-costs"
-      ]
-    }
-  ]
+  "changes": []
 }

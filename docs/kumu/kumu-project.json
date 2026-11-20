@@ -736,7 +736,7 @@
         "sets domain": "Technological",
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
-        "description": "Rain in winter that field drains carry off instead of refilling the rainwater lens: tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (de Louw et al., 2011, p. 3661), and on Schouwen-Duiveland a large part of the year's rain is drained away in the wet season (Kaandorp et al., 2022, p. 54). It follows each rain, within the year: an Auxiliary.",
+        "description": "Rain in winter that field drains carry off in the island's low polders instead of refilling their rainwater lens: tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (de Louw et al., 2011, p. 3661), and on Schouwen-Duiveland a large part of the year's rain is drained away in the wet season (Kaandorp et al., 2022, p. 54), a figure for the whole island, of which this counts the low polders' share. What the drains carry off the creek ridges and dunes acts on their own lens instead (Polder drainage depth → Freshwater lens thickness under creek ridges and dunes). It follows each rain, within the year: an Auxiliary.",
         "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "de Louw, P. G. B., Eeman, S., Siemon, B., Voortman, B. R., Gunnink, J., van Baaren, E. S., & Oude Essink, G. H. P. (2011). Shallow rainwater lenses in deltaic areas with saline seepage. Hydrology and Earth System Sciences, 15(12), 3659–3678. https://doi.org/10.5194/hess-15-3659-2011\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
         "sourced": "yes"
@@ -1047,7 +1047,7 @@
         "subsystem": "Water and soil",
         "subquestion": "SQ1",
         "description": "What Waterschap Scheldestromen spends on electricity for the pumping stations that hold the polders' ditch levels, by pumping out the water that reaches the ditches. Every polder on the island is pumped: on Schouwen all water flows to two pumping stations, which pump it over the dike into the Oosterschelde and the Grevelingen (Waterschap Scheldestromen, 2021b, p. 24); low-lying Duiveland has a pumping station for each of its five drainage areas (2021a, p. 21). Across the board's area the cost follows the water pumped: in the dry year 2025 its water systems spent €1.1 million less on electricity than budgeted, for the drought (2026e, p. 18), and for 2026 it budgets about €4.8 million for the electricity of its sewage and polder pumping stations together, which extreme rain can raise by up to 25% (p. 55). No source read gives the island's share. A year's spending: an Auxiliary.",
-        "simplification": "Draws only the water coming in: Saline seepage and Winter rain drained away, which Polder drainage depth and Polder surface elevation already drive with the same sign, so every loop keeps its polarity. What it leaves out: how high the water is lifted, on which no source read shows the costs depending.",
+        "simplification": "Draws only the water coming in: Saline seepage and Winter rain drained away, which Ditch level (NAP) and Polder drainage depth already drive with the same sign, so every loop keeps its polarity; the rain the drains carry off the creek ridges and dunes, which Winter rain drained away leaves out, reaches the same pumping stations and rises with the same drainage depth, so drawing it would change no sign. What it leaves out: how high the water is lifted, on which no source read shows the costs depending.",
         "ask actors": "Waterschap Scheldestromen, through DCC or Living Lab: What its pumping stations on the island use in electricity a year, how much of the water they pump is seepage and how much rain, and how far the cost depends on how high they lift it: on Duiveland it measures the discharge at each pumping station (Waterschap Scheldestromen, 2021a, p. 24).",
         "actors": "",
         "sources": "Waterschap Scheldestromen. (2021b). Hydrologisch onderzoeksrapport Schouwen. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch_onderzoeksrapport_Schouwen.pdf\nWaterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nWaterschap Scheldestromen. (2026e). Jaarverslaggeving 2025. https://scheldestromen.begrotingsapp.nl/Data/d1712ddb-6ca4-4e01-97c7-14c9adaca31c/Public/jaarverslaggeving-2025.pdf",
@@ -1758,7 +1758,7 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "More winter rain gives the drains more to carry off: tile drains usually discharge the shallow groundwater quickly during rain, as other studies found (de Louw et al., 2011, p. 3661), and on Schouwen-Duiveland enough rain falls over the year, but a large part of it is drained away in the wet season (Kaandorp et al., 2022, p. 54). Within the year.",
+        "description": "More winter rain gives the drains more to carry off: tile drains usually discharge the shallow groundwater quickly during rain, as other studies found (de Louw et al., 2011, p. 3661), and on Schouwen-Duiveland enough rain falls over the year, but a large part of it is drained away in the wet season (Kaandorp et al., 2022, p. 54), a figure for the whole island, which the link reads for the low polders, whose drained rain the variable counts. Within the year.",
         "sets link": "E to T",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
@@ -2502,16 +2502,36 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "The board holds the ditch levels lower in winter than in summer to prevent water damage in winter, and a higher winter level would keep the groundwater from sinking as deep (Waterschap Scheldestromen, 2021a, p. 37, its analysis for Duiveland): the deeper the ditches stand in winter, the more of the rain they and the drains carry off. On a creek ridge studied for water storage, where the winter depth is over 1.5 m in large parts, the drains and ditches carry the excess rain off fast, and a higher winter level might raise the groundwater and with it the recharge (Kaandorp et al., 2022, pp. 42–43). Within the year.",
+        "description": "The board holds the ditch levels lower in winter than in summer to prevent water damage in winter, and a higher winter level would keep the groundwater from sinking as deep (Waterschap Scheldestromen, 2021a, p. 37, its analysis for Duiveland): the deeper the ditches stand in winter, the more of the rain they and the drains carry off. Within the year.",
         "sets link": "Within T",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "sources": "Waterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sources": "Waterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf",
         "sourced": "yes",
         "connection type": "+"
       },
       "from": "elem-polder-drainage-depth",
       "to": "elem-winter-rain-drained-away"
+    },
+    {
+      "_id": "conn-polder-drainage-depth--creek-ridge-lens-thickness",
+      "direction": "directed",
+      "delayed": true,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "yes",
+        "description": "On a creek ridge studied for water storage, where the winter depth is over 1.5 m in large parts, the drains and ditches carry the excess rain off fast, and a higher winter level might raise the groundwater and with it the recharge (Kaandorp et al., 2022, pp. 42–43): so the deeper the drainage, the less of the winter's rain refills the lens, which the source gives as a possibility, not a measurement. Years, so a delay: the lens is a Stock, which on the island's own creek ridge thickened by up to 3.5 m in ten years under infiltration with controlled drainage (p. 44, a groundwater model of 2020–2050).",
+        "sets link": "T to E",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
+        "connection type": "-"
+      },
+      "from": "elem-polder-drainage-depth",
+      "to": "elem-creek-ridge-lens-thickness"
     },
     {
       "_id": "conn-plans-to-raise-ditch-levels--ditch-level-nap",
@@ -5989,6 +6009,12 @@
           "curvature": 0.1,
           "style": {},
           "connection": "conn-polder-drainage-depth--winter-rain-drained-away"
+        },
+        {
+          "_id": "edge-polder-drainage-depth--creek-ridge-lens-thickness",
+          "curvature": -0.15,
+          "style": {},
+          "connection": "conn-polder-drainage-depth--creek-ridge-lens-thickness"
         },
         {
           "_id": "edge-plans-to-raise-ditch-levels--ditch-level-nap",

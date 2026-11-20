@@ -265,7 +265,7 @@
       "sets domain": "Technological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "Rain in winter that field drains carry off instead of refilling the rainwater lens: tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (de Louw et al., 2011, p. 3661), and on Schouwen-Duiveland a large part of the year's rain is drained away in the wet season (Kaandorp et al., 2022, p. 54). It follows each rain, within the year: an Auxiliary.",
+      "description": "Rain in winter that field drains carry off in the island's low polders instead of refilling their rainwater lens: tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (de Louw et al., 2011, p. 3661), and on Schouwen-Duiveland a large part of the year's rain is drained away in the wet season (Kaandorp et al., 2022, p. 54), a figure for the whole island, of which this counts the low polders' share. What the drains carry off the creek ridges and dunes acts on their own lens instead (Polder drainage depth → Freshwater lens thickness under creek ridges and dunes). It follows each rain, within the year: an Auxiliary.",
       "sources": [
         "de-louw-2011",
         "kaandorp-2022"
@@ -627,7 +627,7 @@
       ],
       "x": -1241,
       "y": -745,
-      "simplification": "Draws only the water coming in: Saline seepage and Winter rain drained away, which Polder drainage depth and Polder surface elevation already drive with the same sign, so every loop keeps its polarity. What it leaves out: how high the water is lifted, on which no source read shows the costs depending.",
+      "simplification": "Draws only the water coming in: Saline seepage and Winter rain drained away, which Ditch level (NAP) and Polder drainage depth already drive with the same sign, so every loop keeps its polarity; the rain the drains carry off the creek ridges and dunes, which Winter rain drained away leaves out, reaches the same pumping stations and rises with the same drainage depth, so drawing it would change no sign. What it leaves out: how high the water is lifted, on which no source read shows the costs depending.",
       "ask actors": [
         {
           "actor": "waterschap-scheldestromen",
@@ -1122,7 +1122,7 @@
       "to": "winter-rain-drained-away",
       "polarity": "+",
       "delay": false,
-      "description": "More winter rain gives the drains more to carry off: tile drains usually discharge the shallow groundwater quickly during rain, as other studies found (de Louw et al., 2011, p. 3661), and on Schouwen-Duiveland enough rain falls over the year, but a large part of it is drained away in the wet season (Kaandorp et al., 2022, p. 54). Within the year.",
+      "description": "More winter rain gives the drains more to carry off: tile drains usually discharge the shallow groundwater quickly during rain, as other studies found (de Louw et al., 2011, p. 3661), and on Schouwen-Duiveland enough rain falls over the year, but a large part of it is drained away in the wet season (Kaandorp et al., 2022, p. 54), a figure for the whole island, which the link reads for the low polders, whose drained rain the variable counts. Within the year.",
       "sources": [
         "de-louw-2011",
         "kaandorp-2022"
@@ -1587,12 +1587,22 @@
       "to": "winter-rain-drained-away",
       "polarity": "+",
       "delay": false,
-      "description": "The board holds the ditch levels lower in winter than in summer to prevent water damage in winter, and a higher winter level would keep the groundwater from sinking as deep (Waterschap Scheldestromen, 2021a, p. 37, its analysis for Duiveland): the deeper the ditches stand in winter, the more of the rain they and the drains carry off. On a creek ridge studied for water storage, where the winter depth is over 1.5 m in large parts, the drains and ditches carry the excess rain off fast, and a higher winter level might raise the groundwater and with it the recharge (Kaandorp et al., 2022, pp. 42–43). Within the year.",
+      "description": "The board holds the ditch levels lower in winter than in summer to prevent water damage in winter, and a higher winter level would keep the groundwater from sinking as deep (Waterschap Scheldestromen, 2021a, p. 37, its analysis for Duiveland): the deeper the ditches stand in winter, the more of the rain they and the drains carry off. Within the year.",
       "sources": [
-        "scheldestromen-2021-hor-duiveland",
-        "kaandorp-2022"
+        "scheldestromen-2021-hor-duiveland"
       ],
       "curvature": 0.1
+    },
+    {
+      "from": "polder-drainage-depth",
+      "to": "creek-ridge-lens-thickness",
+      "polarity": "-",
+      "delay": true,
+      "description": "On a creek ridge studied for water storage, where the winter depth is over 1.5 m in large parts, the drains and ditches carry the excess rain off fast, and a higher winter level might raise the groundwater and with it the recharge (Kaandorp et al., 2022, pp. 42–43): so the deeper the drainage, the less of the winter's rain refills the lens, which the source gives as a possibility, not a measurement. Years, so a delay: the lens is a Stock, which on the island's own creek ridge thickened by up to 3.5 m in ten years under infiltration with controlled drainage (p. 44, a groundwater model of 2020–2050).",
+      "sources": [
+        "kaandorp-2022"
+      ],
+      "curvature": -0.15
     },
     {
       "from": "plans-to-raise-ditch-levels",

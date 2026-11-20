@@ -8952,7 +8952,7 @@
         {
           "_id": "node-group-C8-plans-to-raise-ditch-levels",
           "position": {
-            "x": -374,
+            "x": -509,
             "y": 0
           },
           "pinned": true,
@@ -8962,8 +8962,8 @@
         {
           "_id": "node-group-C8-polder-drainage-depth",
           "position": {
-            "x": 374,
-            "y": 0
+            "x": 7,
+            "y": -255
           },
           "pinned": true,
           "style": {},
@@ -8972,8 +8972,8 @@
         {
           "_id": "node-group-C8-spring-workability-of-the-fields",
           "position": {
-            "x": 381,
-            "y": 657
+            "x": -204,
+            "y": -792
           },
           "pinned": true,
           "style": {},
@@ -8982,8 +8982,8 @@
         {
           "_id": "node-group-C8-demand-for-deep-polder-drainage",
           "position": {
-            "x": -364,
-            "y": 670
+            "x": -796,
+            "y": -519
           },
           "pinned": true,
           "style": {},
@@ -8992,8 +8992,8 @@
         {
           "_id": "node-group-C8-saline-seepage-kwel",
           "position": {
-            "x": 6,
-            "y": 280
+            "x": 7,
+            "y": 255
           },
           "pinned": true,
           "style": {},
@@ -9002,8 +9002,8 @@
         {
           "_id": "node-group-C8-policy-resistance-legal-delays",
           "position": {
-            "x": -1123,
-            "y": -279
+            "x": -1083,
+            "y": 364
           },
           "pinned": true,
           "style": {},
@@ -9012,7 +9012,7 @@
         {
           "_id": "node-group-C8-ditch-level-nap",
           "position": {
-            "x": 0,
+            "x": 509,
             "y": 0
           },
           "pinned": true,
@@ -9023,43 +9023,43 @@
       "connections": [
         {
           "_id": "edge-group-C8-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels",
-          "curvature": 0.51,
+          "curvature": -0.538,
           "style": {},
           "connection": "conn-demand-for-deep-polder-drainage--plans-to-raise-ditch-levels"
         },
         {
           "_id": "edge-group-C8-polder-drainage-depth--spring-workability-of-the-fields",
-          "curvature": 0.496,
+          "curvature": -0.515,
           "style": {},
           "connection": "conn-polder-drainage-depth--spring-workability-of-the-fields"
         },
         {
           "_id": "edge-group-C8-spring-workability-of-the-fields--demand-for-deep-polder-drainage",
-          "curvature": 0.34,
+          "curvature": -0.352,
           "style": {},
           "connection": "conn-spring-workability-of-the-fields--demand-for-deep-polder-drainage"
         },
         {
           "_id": "edge-group-C8-saline-seepage-kwel--plans-to-raise-ditch-levels",
-          "curvature": 0.37,
+          "curvature": 0.252,
           "style": {},
           "connection": "conn-saline-seepage-kwel--plans-to-raise-ditch-levels"
         },
         {
           "_id": "edge-group-C8-polder-drainage-depth--plans-to-raise-ditch-levels",
-          "curvature": -0.728,
+          "curvature": -0.252,
           "style": {},
           "connection": "conn-polder-drainage-depth--plans-to-raise-ditch-levels"
         },
         {
           "_id": "edge-group-C8-plans-to-raise-ditch-levels--policy-resistance-legal-delays",
-          "curvature": -0.4,
+          "curvature": -0.55,
           "style": {},
           "connection": "conn-plans-to-raise-ditch-levels--policy-resistance-legal-delays"
         },
         {
           "_id": "edge-group-C8-policy-resistance-legal-delays--plans-to-raise-ditch-levels",
-          "curvature": -0.4,
+          "curvature": -0.55,
           "style": {},
           "connection": "conn-policy-resistance-legal-delays--plans-to-raise-ditch-levels"
         },
@@ -9071,13 +9071,13 @@
         },
         {
           "_id": "edge-group-C8-ditch-level-nap--polder-drainage-depth",
-          "curvature": 0,
+          "curvature": -0.247,
           "style": {},
           "connection": "conn-ditch-level-nap--polder-drainage-depth"
         },
         {
           "_id": "edge-group-C8-ditch-level-nap--saline-seepage-kwel",
-          "curvature": 0,
+          "curvature": 0.247,
           "style": {},
           "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         }
@@ -9089,8 +9089,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 0,
-            "y": 545
+            "x": -422,
+            "y": -473
           }
         },
         {
@@ -9099,8 +9099,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": -125,
-            "y": 95
+            "x": 0,
+            "y": 128
           }
         },
         {
@@ -9110,7 +9110,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": -151
+            "y": -128
           }
         },
         {
@@ -9119,8 +9119,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": -748,
-            "y": -139
+            "x": -796,
+            "y": 182
           }
         }
       ]

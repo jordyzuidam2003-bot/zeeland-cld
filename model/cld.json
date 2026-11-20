@@ -3662,62 +3662,62 @@
       "description": "Four balancing loops act on the *Water board's plans to raise ditch levels*, each towards its own goal. Fields dry enough for heavy machinery in spring (*Spring workability of the fields*, B4); the fresh water lenses the board wants to keep as a measure against *Saline seepage (kwel)* (B11); the optimum Polder drainage depth the board's norms aim at for each use and soil type (B12); and a plan the objecting owners can accept (*Objections to land-use plans*, B13). The goals cannot all be met at once, so the level settles where those pressures balance. How far seepage weighs against the other goals in the board's plans, cannot be determined from the literature found.",
       "places": {
         "plans-to-raise-ditch-levels": [
-          -374,
+          -509,
           0
         ],
         "polder-drainage-depth": [
-          374,
-          0
+          7,
+          -255
         ],
         "spring-workability-of-the-fields": [
-          381,
-          657
+          -204,
+          -792
         ],
         "demand-for-deep-polder-drainage": [
-          -364,
-          670
+          -796,
+          -519
         ],
         "saline-seepage-kwel": [
-          6,
-          280
+          7,
+          255
         ],
         "policy-resistance-legal-delays": [
-          -1123,
-          -279
+          -1083,
+          364
         ],
         "ditch-level-nap": [
-          0,
+          509,
           0
         ]
       },
       "bends": {
-        "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": 0.51,
-        "polder-drainage-depth -> spring-workability-of-the-fields": 0.496,
-        "spring-workability-of-the-fields -> demand-for-deep-polder-drainage": 0.34,
-        "saline-seepage-kwel -> plans-to-raise-ditch-levels": 0.37,
-        "polder-drainage-depth -> plans-to-raise-ditch-levels": -0.728,
-        "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": -0.4,
-        "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": -0.4,
+        "demand-for-deep-polder-drainage -> plans-to-raise-ditch-levels": -0.538,
+        "polder-drainage-depth -> spring-workability-of-the-fields": -0.515,
+        "spring-workability-of-the-fields -> demand-for-deep-polder-drainage": -0.352,
+        "saline-seepage-kwel -> plans-to-raise-ditch-levels": 0.252,
+        "polder-drainage-depth -> plans-to-raise-ditch-levels": -0.252,
+        "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": -0.55,
+        "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": -0.55,
         "plans-to-raise-ditch-levels -> ditch-level-nap": 0,
-        "ditch-level-nap -> polder-drainage-depth": 0,
-        "ditch-level-nap -> saline-seepage-kwel": 0
+        "ditch-level-nap -> polder-drainage-depth": -0.247,
+        "ditch-level-nap -> saline-seepage-kwel": 0.247
       },
       "marks": {
         "B12": [
           0,
-          -151
+          -128
         ],
         "B13": [
-          -748,
-          -139
+          -796,
+          182
         ],
         "B11": [
-          -125,
-          95
+          0,
+          128
         ],
         "B4": [
-          0,
-          545
+          -422,
+          -473
         ]
       }
     },

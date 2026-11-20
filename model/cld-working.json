@@ -3879,20 +3879,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Fold Harvest of new crops to process into the links around it",
-      "argument": "Fold by the rule \"Simplify only where the conclusion survives\" and the method's question \"Can A → X → D become A → D?\": Harvest of new crops to process is an auxiliary no actor decides, with one link out, so two links replace three and none merges. Both new links are + (+ times +) and keep the delay of building a chain (De Vriend, 2024a). Traced with and without it: R7 reinforcing, its shortest unnamed loop through the margin given up reinforcing, and a balancing one through farms with a successor and storage measures, each with the same mechanism, volume within reach drawing a chain nearby that cuts transport; the farmers' adoption and the processors' capacity stay drawn. Confirmed by a second, independent AI check, which carried Bogers et al. (2025, pp. 28, 38) onto the adoption link and limited the delay to building the chain. The audit's 'state it' findings are on the new links: the new crops counted as one volume though they go to separate chains (DutchNews.nl, 2026; FreshPlaza, 2018), and the growers off the island held fixed though a plant draws growers near it (GreenFood50, n.d.). For the group: D2D can no longer vary the harvest apart from the hectares (yield per hectare, pooling the island's and off-island harvest) nor a chain per crop.",
-      "items": [
-        "harvest-of-new-crops-to-process",
-        "salt-tolerant-crop-adoption -> harvest-of-new-crops-to-process",
-        "growers-of-new-crops-elsewhere -> harvest-of-new-crops-to-process",
-        "harvest-of-new-crops-to-process -> processing-capacity-for-alternative-crops",
-        "salt-tolerant-crop-adoption -> processing-capacity-for-alternative-crops",
-        "growers-of-new-crops-elsewhere -> processing-capacity-for-alternative-crops",
-        "R7",
-        "C7"
-      ]
-    }
-  ]
+  "changes": []
 }

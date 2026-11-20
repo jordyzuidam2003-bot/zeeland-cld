@@ -137,6 +137,7 @@
         "",
         "Arable farmers on Schouwen-Duiveland",
         "Arable farmers on Schouwen-Duiveland, Banks lending to the island's farmers",
+        "Arable farmers on Schouwen-Duiveland, Buyers and processors of the island's crops",
         "Arable farmers on Schouwen-Duiveland, EU, Deltares, Acacia Water, Delphy",
         "Arable farmers on Schouwen-Duiveland, EU, Deltares, KWR, Acacia Water, Delphy",
         "Arable farmers on Schouwen-Duiveland, Waterschap Scheldestromen",
@@ -783,7 +784,7 @@
         "subquestion": "SQ2",
         "description": "Plants and supply chains on or near the island that store, process or sell new salt-tolerant crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer. No source read shows a new crop processed on the island. Sea vegetables are sorted and packed, mostly by hand, by a grower and trader at Nieuw- en Sint Joosland, who in 2018 shipped most of his sea fennel, seaweed and sea spaghetti to organic shops and was investing, with a colleague from Schouwen-Duiveland, in growing new sea greens in greenhouses to supply international restaurants and supermarkets directly (FreshPlaza, 2018); at Colijnsplaat an arable farmer and a trader of sea vegetables founded a company, NZZT, to grow sea crops and set up their supply chain, in a project of 2020–2021 (EU CAP Network, 2023). GreenFood50 runs its quinoa chain, from grower to customer, from Wageningen, and has its quinoa grown close to its processing facilities (GreenFood50, n.d.), and a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a). Buyers and processors build or keep it where they find it worthwhile against processing the crops elsewhere.",
         "actor": "Buyers and processors of the island's crops",
-        "actors": "Buyers and processors of the island's crops",
+        "actors": "Arable farmers on Schouwen-Duiveland, Buyers and processors of the island's crops",
         "sources": "FreshPlaza. (2018, June 22). Elenbaas invests in new salty Zeeland productions in greenhouses. https://www.freshplaza.com/north-america/article/2196870/elenbaas-invests-in-new-salty-zeeland-productions-in-greenhouses/\nEU CAP Network. (2023). 'Zeeland's roots for new crops': Growing sea bananas and sea fennel on saline land thanks to LEADER climate adaptation support [Good practice report]. European Commission. https://eu-cap-network.ec.europa.eu/sites/default/files/2023-07/Zeeland%E2%80%99s%20roots%20for%20new%20crops.pdf\nGreenFood50. (n.d.). The specialist in quinoa ingredients [Home page and About us]. Retrieved November 7, 2026, from https://www.greenfood50.com/\nDe Vriend, E. (2024a, October 12). Toekomst van voedsel in Zeeland: Wat eten we morgen? Stal & Akker. https://sterke-erven.nl/artikel/528976-toekomst-van-voedsel-in-zeeland-wat-eten-we-morgen/",
         "sourced": "yes"
       }
@@ -1097,21 +1098,6 @@
         "ask actors": "ZLTO, through DCC or Living Lab: How many arable farmers on the island over 50 have a successor.",
         "actors": "",
         "sources": "Agrimatie. (2024, December 20). Hoger opvolgingspercentage en meer bedrijven met een opvolger. Agrimatie. https://agrimatie.nl/ThemaResultaat.aspx?subpubID=2232&themaID=7202",
-        "sourced": "yes"
-      }
-    },
-    {
-      "_id": "elem-harvest-of-new-crops-to-process",
-      "attributes": {
-        "label": "Harvest of new crops  to process",
-        "element type": "Auxiliary",
-        "adaptive practice": "no",
-        "sets domain": "Technological",
-        "subsystem": "Agricultural economy",
-        "subquestion": "SQ2",
-        "description": "The volume of new salt-tolerant crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere. Quinoa has been grown in Zeeland since 2016, on one to four parcels a year at six locations in all (Bogers et al., 2025, pp. 28, 38), its map showing one of them on the island, while the growers who sell to GreenFood50 in the Netherlands farm about 200 hectares for 600 tonnes a year (DutchNews.nl, 2026); samphire, from Zeeland and France, is by far the main product of a Zeeland trader in sea vegetables (FreshPlaza, 2018).",
-        "actors": "Arable farmers on Schouwen-Duiveland",
-        "sources": "Bogers, R., van Loenen, E., Hoogenboom, M., Mensink, E., & Vos, R. (2025). Where to grow protein-rich crops? A land use suitability analysis in Zeeland [Student report, Wageningen University, for HZ University of Applied Sciences].\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983\nFreshPlaza. (2018, June 22). Elenbaas invests in new salty Zeeland productions in greenhouses. https://www.freshplaza.com/north-america/article/2196870/elenbaas-invests-in-new-salty-zeeland-productions-in-greenhouses/",
         "sourced": "yes"
       }
     },
@@ -3102,67 +3088,6 @@
       "to": "elem-farmers-capacity-to-invest"
     },
     {
-      "_id": "conn-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "More hectares of new crops on the island, more harvest to process. Quinoa yields about 2,000 kg a hectare on average in Europe (van Loo, 2023, p. 79), and its yield varies from under 500 to over 4,000 kg (p. 76), harvested in August of the year it is sown (p. 75): within the year.",
-        "sets link": "Within T",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "van Loo, R. (2023). Quinoa: A new protein source. In S. Pyett, W. Jenkins, B. van Mierlo, L. M. Trindade, D. Welch, & H. van Zanten (Eds.), Our future proteins: A diversity of perspectives (pp. 74–81). VU University Press. https://vuuniversitypress.com/p/uploads/OurFutureProteinsOA.pdf",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-salt-tolerant-crop-adoption",
-      "to": "elem-harvest-of-new-crops-to-process"
-    },
-    {
-      "_id": "conn-growers-of-new-crops-elsewhere--harvest-of-new-crops-to-process",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "A plant draws its harvest from every grower within reach, on the island or off it: GreenFood50 has its quinoa grown in the Netherlands and Belgium, close to its processing facilities, to cut transport (GreenFood50, n.d.), by its growers, most of the Dutch ones, working about 200 hectares for 600 tonnes a year (DutchNews.nl, 2026). Within the year: a season's harvest.",
-        "sets link": "S to T",
-        "sets scope": "Cross-domain",
-        "hypothesis": "no",
-        "sources": "GreenFood50. (n.d.). The specialist in quinoa ingredients [Home page and About us]. Retrieved November 7, 2026, from https://www.greenfood50.com/\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-growers-of-new-crops-elsewhere",
-      "to": "elem-harvest-of-new-crops-to-process"
-    },
-    {
-      "_id": "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
-      "direction": "directed",
-      "delayed": true,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "yes",
-        "description": "More harvest within reach makes a plant or chain nearby more worthwhile, so buyers and processors build or keep capacity on or near the island rather than handle the crops elsewhere. In France, the firms that store, process and sell crops specialised in a few dominant ones for economies of scale, and their logistics are not adapted to sorting pulses out of mixed crops (Magrini et al., 2018, pp. 3, 9), and a small volume spread out or far from its users costs more to collect and to source (Meynard et al., 2018, pp. 7–8): the economies of scale hold wherever a chain is built, so the mechanism transfers. In the Netherlands, on Terschelling's saline field, producers of processed products are more concerned about volumes than the restaurants are, and stakeholders describe a chicken and egg: a producer needs a market, and a reliable market needs ample supply (ten Dam et al., 2023, pp. 10, 14); for quinoa, one expert says efforts only work with concentrated investments and high volumes (de Wit et al., 2022, p. 270). Years: a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a): a delay.",
-        "sets link": "Within T",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "simplification": "Folds Attractiveness of processing new crops locally, which gathered the drivers of this decision: each driver now points at Local processing capacity for new crops itself, whose description says that buyers and processors weigh it against processing the crops elsewhere. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
-        "sources": "Magrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nMeynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nDe Vriend, E. (2024a, October 12). Toekomst van voedsel in Zeeland: Wat eten we morgen? Stal & Akker. https://sterke-erven.nl/artikel/528976-toekomst-van-voedsel-in-zeeland-wat-eten-we-morgen/\nten Dam, R., Vellinga, P., & Negacz, K. (2023). From experiment to market development: A case study of prospects and value chain of saline agriculture in Terschelling, the Netherlands. NJAS: Impact in Agricultural and Life Sciences, 95(1), 2211541. https://doi.org/10.1080/27685241.2023.2211541\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-harvest-of-new-crops-to-process",
-      "to": "elem-processing-capacity-for-alternative-crops"
-    },
-    {
       "_id": "conn-market-demand-for-alternative-crops--processing-capacity-for-alternative-crops",
       "direction": "directed",
       "delayed": false,
@@ -4317,6 +4242,48 @@
       "to": "elem-polder-surface-elevation-nap"
     },
     {
+      "_id": "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
+      "direction": "directed",
+      "delayed": true,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "yes",
+        "description": "More hectares of new crops on the island give more harvest within reach of a processor or trader on or near the island, and that volume draws capacity. Quinoa has been grown in Zeeland since 2016, on one to four parcels a year at six locations in all (Bogers et al., 2025, pp. 28, 38), its map showing one of them on the island. Quinoa yields about 2,000 kg a hectare on average in Europe (van Loo, 2023, p. 79), and its yield varies from under 500 to over 4,000 kg (p. 76), harvested in August of the year it is sown (p. 75). More harvest within reach makes a plant or chain nearby more worthwhile, so buyers and processors build or keep capacity on or near the island rather than handle the crops elsewhere. In France, the firms that store, process and sell crops specialised in a few dominant ones for economies of scale, and their logistics are not adapted to sorting pulses out of mixed crops (Magrini et al., 2018, pp. 3, 9), and a small volume spread out or far from its users costs more to collect and to source (Meynard et al., 2018, pp. 7–8): the economies of scale hold wherever a chain is built, so the mechanism transfers. In the Netherlands, on Terschelling's saline field, producers of processed products are more concerned about volumes than the restaurants are, and stakeholders describe a chicken and egg: a producer needs a market, and a reliable market needs ample supply (ten Dam et al., 2023, pp. 10, 14); for quinoa, one expert says efforts only work with concentrated investments and high volumes (de Wit et al., 2022, p. 270). Years: a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a): the delay sits in building the chain, not in the harvest, which follows within the year.",
+        "sets link": "Within T",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "simplification": "Folds Harvest of new crops to process, the volume of new crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere, and before it Attractiveness of processing new crops locally: the harvest is now the step in words between the hectares (or the growers elsewhere) and the capacity they draw. It was an auxiliary no actor decides, with one link out; both steps into it are + and its link out is +, so each folded link is + and keeps the delay of building the chain. R7 runs Adoption of new salt-tolerant crops (+, delay) Local processing capacity for new crops (+) Net price for new crops after transport (+) Adoption: reinforcing as before, on the same mechanism, volume within reach drawing a chain nearby that cuts transport; every other loop through the harvest runs through this link too and keeps its sign. The harvest within reach counts every new crop as one volume, although its crops go to separate chains: quinoa to buyers such as GreenFood50 (DutchNews.nl, 2026), samphire to a Zeeland trader in sea vegetables (FreshPlaza, 2018); read per crop, the loops run the same way, and what this leaves out is that the volume a chain needs is reached crop by crop; summed, the link overstates how soon several small crops together make a plant worthwhile.",
+        "sources": "van Loo, R. (2023). Quinoa: A new protein source. In S. Pyett, W. Jenkins, B. van Mierlo, L. M. Trindade, D. Welch, & H. van Zanten (Eds.), Our future proteins: A diversity of perspectives (pp. 74–81). VU University Press. https://vuuniversitypress.com/p/uploads/OurFutureProteinsOA.pdf\nBogers, R., van Loenen, E., Hoogenboom, M., Mensink, E., & Vos, R. (2025). Where to grow protein-rich crops? A land use suitability analysis in Zeeland [Student report, Wageningen University, for HZ University of Applied Sciences].\nMagrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nMeynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nten Dam, R., Vellinga, P., & Negacz, K. (2023). From experiment to market development: A case study of prospects and value chain of saline agriculture in Terschelling, the Netherlands. NJAS: Impact in Agricultural and Life Sciences, 95(1), 2211541. https://doi.org/10.1080/27685241.2023.2211541\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16\nDe Vriend, E. (2024a, October 12). Toekomst van voedsel in Zeeland: Wat eten we morgen? Stal & Akker. https://sterke-erven.nl/artikel/528976-toekomst-van-voedsel-in-zeeland-wat-eten-we-morgen/\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983\nFreshPlaza. (2018, June 22). Elenbaas invests in new salty Zeeland productions in greenhouses. https://www.freshplaza.com/north-america/article/2196870/elenbaas-invests-in-new-salty-zeeland-productions-in-greenhouses/",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-salt-tolerant-crop-adoption",
+      "to": "elem-processing-capacity-for-alternative-crops"
+    },
+    {
+      "_id": "conn-growers-of-new-crops-elsewhere--processing-capacity-for-alternative-crops",
+      "direction": "directed",
+      "delayed": true,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "yes",
+        "description": "A plant draws its harvest from every grower within reach, on the island or off it, so growers elsewhere add to the volume that draws capacity near the island: GreenFood50 has its quinoa grown in the Netherlands and Belgium, close to its processing facilities, to cut transport (GreenFood50, n.d.), by its growers, most of the Dutch ones, working about 200 hectares for 600 tonnes a year (DutchNews.nl, 2026). More harvest within reach makes a plant or chain nearby more worthwhile, so buyers and processors build or keep capacity on or near the island rather than handle the crops elsewhere. In France, the firms that store, process and sell crops specialised in a few dominant ones for economies of scale, and their logistics are not adapted to sorting pulses out of mixed crops (Magrini et al., 2018, pp. 3, 9), and a small volume spread out or far from its users costs more to collect and to source (Meynard et al., 2018, pp. 7–8): the economies of scale hold wherever a chain is built, so the mechanism transfers. In the Netherlands, on Terschelling's saline field, producers of processed products are more concerned about volumes than the restaurants are, and stakeholders describe a chicken and egg: a producer needs a market, and a reliable market needs ample supply (ten Dam et al., 2023, pp. 10, 14); for quinoa, one expert says efforts only work with concentrated investments and high volumes (de Wit et al., 2022, p. 270). Years: a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a): the delay sits in building the chain, not in the harvest, which follows within the year.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "simplification": "Folds Harvest of new crops to process, the volume of new crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere, and before it Attractiveness of processing new crops locally: the harvest is now the step in words between the growers elsewhere and the capacity they draw. Both steps are +, so the link is + and keeps the delay of building the chain; no loop runs through it, since Growers of new crops elsewhere is a constant. What it adds to Local processing capacity for new crops is the off-island part of the volume within reach, which the link from Adoption of new salt-tolerant crops adds the island's part to; counted as one volume over crops, although quinoa and samphire go to separate chains (DutchNews.nl, 2026; FreshPlaza, 2018). It also treats the growers of new crops off the island as fixed, while GreenFood50 has its quinoa grown close to its processing facilities, to cut transport (GreenFood50, n.d.), so a plant on or near the island could also draw growers from nearby off the island. That response would close a loop of two links, from Local processing capacity for new crops back to Growers of new crops elsewhere and through this link back to the capacity, with no minus sign, reinforcing beside R7, so leaving it out changes no drawn loop's polarity or mechanism; what it leaves out is how much of a nearby plant's harvest would come from growers off the island rather than the island's own.",
+        "sources": "GreenFood50. (n.d.). The specialist in quinoa ingredients [Home page and About us]. Retrieved November 7, 2026, from https://www.greenfood50.com/\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983\nMagrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nMeynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nten Dam, R., Vellinga, P., & Negacz, K. (2023). From experiment to market development: A case study of prospects and value chain of saline agriculture in Terschelling, the Netherlands. NJAS: Impact in Agricultural and Life Sciences, 95(1), 2211541. https://doi.org/10.1080/27685241.2023.2211541\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16\nDe Vriend, E. (2024a, October 12). Toekomst van voedsel in Zeeland: Wat eten we morgen? Stal & Akker. https://sterke-erven.nl/artikel/528976-toekomst-van-voedsel-in-zeeland-wat-eten-we-morgen/\nFreshPlaza. (2018, June 22). Elenbaas invests in new salty Zeeland productions in greenhouses. https://www.freshplaza.com/north-america/article/2196870/elenbaas-invests-in-new-salty-zeeland-productions-in-greenhouses/",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-growers-of-new-crops-elsewhere",
+      "to": "elem-processing-capacity-for-alternative-crops"
+    },
+    {
       "_id": "conn-0",
       "direction": "directed",
       "delayed": false,
@@ -5034,8 +5001,7 @@
         "description": "More hectares under new salt-tolerant crops give more harvest within reach of a plant, which makes a local plant more worthwhile to buyers and processors. A plant nearby cuts transport, farmers keep more of the price, the crop is worth more and more farmers grow it. Run backwards, few hectares leave no reason for a plant and transport keeps the price low. It drives new crops once enough is grown and holds them back while too little is. Where a new crop is sold under contract to one buyer, as Dutch quinoa is in interviews published in 2022, that buyer purchases a pre-agreed amount and no other buyer competes (de Wit et al., 2022, pp. 266, 268), which means a nearby plant draws more growers only as fast as the demand that buyer supplies grows."
       },
       "connections": [
-        "conn-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process",
-        "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
+        "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
         "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops",
         "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
       ]
@@ -5520,16 +5486,6 @@
           "pinned": true,
           "style": {},
           "element": "elem-farms-with-a-successor"
-        },
-        {
-          "_id": "node-harvest-of-new-crops-to-process",
-          "position": {
-            "x": 247,
-            "y": 1566
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-harvest-of-new-crops-to-process"
         },
         {
           "_id": "node-net-price-for-new-crops",
@@ -6162,24 +6118,6 @@
           "connection": "conn-salt-tolerant-crop-adoption--farmers-capacity-to-invest"
         },
         {
-          "_id": "edge-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process",
-          "curvature": -0.1,
-          "style": {},
-          "connection": "conn-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process"
-        },
-        {
-          "_id": "edge-growers-of-new-crops-elsewhere--harvest-of-new-crops-to-process",
-          "curvature": 0.0,
-          "style": {},
-          "connection": "conn-growers-of-new-crops-elsewhere--harvest-of-new-crops-to-process"
-        },
-        {
-          "_id": "edge-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
-          "curvature": -0.31,
-          "style": {},
-          "connection": "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops"
-        },
-        {
           "_id": "edge-market-demand-for-alternative-crops--processing-capacity-for-alternative-crops",
           "curvature": 0.0,
           "style": {},
@@ -6520,6 +6458,18 @@
           "curvature": 0.1,
           "style": {},
           "connection": "conn-polder-drainage-depth--polder-surface-elevation-nap"
+        },
+        {
+          "_id": "edge-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
+          "curvature": -0.4,
+          "style": {},
+          "connection": "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops"
+        },
+        {
+          "_id": "edge-growers-of-new-crops-elsewhere--processing-capacity-for-alternative-crops",
+          "curvature": 0.0,
+          "style": {},
+          "connection": "conn-growers-of-new-crops-elsewhere--processing-capacity-for-alternative-crops"
         }
       ],
       "loops": [
@@ -6672,8 +6622,8 @@
           "loop": "loop-R7",
           "style": {},
           "position": {
-            "x": 632,
-            "y": 1173
+            "x": 760,
+            "y": 1042
           }
         },
         {
@@ -8689,7 +8639,7 @@
     {
       "_id": "map-group-C7",
       "name": "09 C7 New crops stay stuck or take off",
-      "description": "With few hectares of *Adoption of new salt-tolerant crops* there is little *Harvest of new crops to process*, no *Local processing capacity for new crops*, and transport keeps the *Net price for new crops after transport* low (R7). Every field that starts being used for new crops raises the *Margin given up on high-margin crops*, which *Farm income* and *Bank credit to farms* must carry (B10): adoption stays low. With enough hectares a local plant becomes worthwhile, the net price rises and more farmers grow the crop. How many hectares that takes is unclear from the literature and thus not clear in the CLD.",
+      "description": "With few hectares of *Adoption of new salt-tolerant crops* there is little harvest for a plant to process, no *Local processing capacity for new crops*, and transport keeps the *Net price for new crops after transport* low (R7). Every field that starts being used for new crops raises the *Margin given up on high-margin crops*, which *Farm income* and *Bank credit to farms* must carry (B10): adoption stays low. With enough hectares a local plant becomes worthwhile, the net price rises and more farmers grow the crop. How many hectares that takes is unclear from the literature and thus not clear in the CLD.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -8780,20 +8730,10 @@
           "element": "elem-farmers-capacity-to-invest"
         },
         {
-          "_id": "node-group-C7-harvest-of-new-crops-to-process",
-          "position": {
-            "x": 435,
-            "y": 239
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-harvest-of-new-crops-to-process"
-        },
-        {
           "_id": "node-group-C7-processing-capacity-for-alternative-crops",
           "position": {
-            "x": 0,
-            "y": 493
+            "x": 315,
+            "y": 373
           },
           "pinned": true,
           "style": {},
@@ -8802,8 +8742,8 @@
         {
           "_id": "node-group-C7-net-price-for-new-crops",
           "position": {
-            "x": -435,
-            "y": 239
+            "x": -315,
+            "y": 373
           },
           "pinned": true,
           "style": {},
@@ -8812,28 +8752,22 @@
       ],
       "connections": [
         {
-          "_id": "edge-group-C7-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process",
-          "curvature": 0.342,
+          "_id": "edge-group-C7-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops",
+          "curvature": 0.123,
           "style": {},
-          "connection": "conn-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process"
+          "connection": "conn-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops"
         },
         {
-          "_id": "edge-group-C7-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
-          "curvature": 0.369,
+          "_id": "edge-group-C7-margin-given-up-on-high-margin-crops--farm-revenue",
+          "curvature": 0.272,
           "style": {},
-          "connection": "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops"
+          "connection": "conn-margin-given-up-on-high-margin-crops--farm-revenue"
         },
         {
-          "_id": "edge-group-C7-processing-capacity-for-alternative-crops--net-price-for-new-crops",
-          "curvature": 0.369,
+          "_id": "edge-group-C7-farm-revenue--agricultural-land-value",
+          "curvature": 0.269,
           "style": {},
-          "connection": "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops"
-        },
-        {
-          "_id": "edge-group-C7-net-price-for-new-crops--salt-tolerant-crop-adoption",
-          "curvature": 0.342,
-          "style": {},
-          "connection": "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
+          "connection": "conn-farm-revenue--agricultural-land-value"
         },
         {
           "_id": "edge-group-C7-agricultural-land-value--mortgage-debt-financial-leverage",
@@ -8866,22 +8800,22 @@
           "connection": "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption"
         },
         {
-          "_id": "edge-group-C7-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops",
-          "curvature": 0.123,
+          "_id": "edge-group-C7-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
+          "curvature": 0.798,
           "style": {},
-          "connection": "conn-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops"
+          "connection": "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops"
         },
         {
-          "_id": "edge-group-C7-margin-given-up-on-high-margin-crops--farm-revenue",
-          "curvature": 0.272,
+          "_id": "edge-group-C7-processing-capacity-for-alternative-crops--net-price-for-new-crops",
+          "curvature": 0.271,
           "style": {},
-          "connection": "conn-margin-given-up-on-high-margin-crops--farm-revenue"
+          "connection": "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops"
         },
         {
-          "_id": "edge-group-C7-farm-revenue--agricultural-land-value",
-          "curvature": 0.269,
+          "_id": "edge-group-C7-net-price-for-new-crops--salt-tolerant-crop-adoption",
+          "curvature": 0.798,
           "style": {},
-          "connection": "conn-farm-revenue--agricultural-land-value"
+          "connection": "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
         }
       ],
       "loops": [
@@ -8892,7 +8826,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 246
+            "y": 230
           }
         },
         {
@@ -11490,28 +11424,18 @@
         {
           "_id": "node-loop-R7-salt-tolerant-crop-adoption",
           "position": {
-            "x": -276,
-            "y": -156
+            "x": -377,
+            "y": -123
           },
           "pinned": true,
           "style": {},
           "element": "elem-salt-tolerant-crop-adoption"
         },
         {
-          "_id": "node-loop-R7-harvest-of-new-crops-to-process",
-          "position": {
-            "x": 223,
-            "y": -181
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-harvest-of-new-crops-to-process"
-        },
-        {
           "_id": "node-loop-R7-processing-capacity-for-alternative-crops",
           "position": {
-            "x": 276,
-            "y": 156
+            "x": 294,
+            "y": -182
           },
           "pinned": true,
           "style": {},
@@ -11520,8 +11444,8 @@
         {
           "_id": "node-loop-R7-net-price-for-new-crops",
           "position": {
-            "x": -223,
-            "y": 181
+            "x": 40,
+            "y": 245
           },
           "pinned": true,
           "style": {},
@@ -11530,26 +11454,20 @@
       ],
       "connections": [
         {
-          "_id": "edge-loop-R7-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process",
-          "curvature": 0.207,
+          "_id": "edge-loop-R7-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
+          "curvature": 0.276,
           "style": {},
-          "connection": "conn-salt-tolerant-crop-adoption--harvest-of-new-crops-to-process"
-        },
-        {
-          "_id": "edge-loop-R7-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops",
-          "curvature": 0.811,
-          "style": {},
-          "connection": "conn-harvest-of-new-crops-to-process--processing-capacity-for-alternative-crops"
+          "connection": "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops"
         },
         {
           "_id": "edge-loop-R7-processing-capacity-for-alternative-crops--net-price-for-new-crops",
-          "curvature": 0.207,
+          "curvature": 0.945,
           "style": {},
           "connection": "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops"
         },
         {
           "_id": "edge-loop-R7-net-price-for-new-crops--salt-tolerant-crop-adoption",
-          "curvature": 0.811,
+          "curvature": 0.665,
           "style": {},
           "connection": "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
         }
@@ -12098,7 +12016,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n"
     },
     {
       "_id": "pers-actors",
@@ -12108,7 +12026,7 @@
     {
       "_id": "pers-loops",
       "name": "Loops",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-harvest-of-new-crops-to-process { width: 325; height: 86; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
     }
   ]
 }

@@ -700,23 +700,6 @@
       ]
     },
     {
-      "id": "harvest-of-new-crops-to-process",
-      "label": "Harvest of new crops to process",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Technological",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ2",
-      "description": "The volume of new salt-tolerant crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere. Quinoa has been grown in Zeeland since 2016, on one to four parcels a year at six locations in all (Bogers et al., 2025, pp. 28, 38), its map showing one of them on the island, while the growers who sell to GreenFood50 in the Netherlands farm about 200 hectares for 600 tonnes a year (DutchNews.nl, 2026); samphire, from Zeeland and France, is by far the main product of a Zeeland trader in sea vegetables (FreshPlaza, 2018).",
-      "sources": [
-        "bogers-2025",
-        "dutchnews-2026",
-        "freshplaza-2018"
-      ],
-      "x": 247,
-      "y": 1566
-    },
-    {
       "id": "net-price-for-new-crops",
       "label": "Net price for new crops after transport",
       "element type": "Auxiliary",
@@ -1957,45 +1940,6 @@
       "curvature": 0
     },
     {
-      "from": "salt-tolerant-crop-adoption",
-      "to": "harvest-of-new-crops-to-process",
-      "polarity": "+",
-      "delay": false,
-      "description": "More hectares of new crops on the island, more harvest to process. Quinoa yields about 2,000 kg a hectare on average in Europe (van Loo, 2023, p. 79), and its yield varies from under 500 to over 4,000 kg (p. 76), harvested in August of the year it is sown (p. 75): within the year.",
-      "sources": [
-        "van-loo-2023"
-      ],
-      "curvature": -0.1
-    },
-    {
-      "from": "growers-of-new-crops-elsewhere",
-      "to": "harvest-of-new-crops-to-process",
-      "polarity": "+",
-      "delay": false,
-      "description": "A plant draws its harvest from every grower within reach, on the island or off it: GreenFood50 has its quinoa grown in the Netherlands and Belgium, close to its processing facilities, to cut transport (GreenFood50, n.d.), by its growers, most of the Dutch ones, working about 200 hectares for 600 tonnes a year (DutchNews.nl, 2026). Within the year: a season's harvest.",
-      "sources": [
-        "greenfood50-nd",
-        "dutchnews-2026"
-      ],
-      "curvature": 0.0
-    },
-    {
-      "from": "harvest-of-new-crops-to-process",
-      "to": "processing-capacity-for-alternative-crops",
-      "polarity": "+",
-      "delay": true,
-      "description": "More harvest within reach makes a plant or chain nearby more worthwhile, so buyers and processors build or keep capacity on or near the island rather than handle the crops elsewhere. In France, the firms that store, process and sell crops specialised in a few dominant ones for economies of scale, and their logistics are not adapted to sorting pulses out of mixed crops (Magrini et al., 2018, pp. 3, 9), and a small volume spread out or far from its users costs more to collect and to source (Meynard et al., 2018, pp. 7–8): the economies of scale hold wherever a chain is built, so the mechanism transfers. In the Netherlands, on Terschelling's saline field, producers of processed products are more concerned about volumes than the restaurants are, and stakeholders describe a chicken and egg: a producer needs a market, and a reliable market needs ample supply (ten Dam et al., 2023, pp. 10, 14); for quinoa, one expert says efforts only work with concentrated investments and high volumes (de Wit et al., 2022, p. 270). Years: a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a): a delay.",
-      "simplification": "Folds Attractiveness of processing new crops locally, which gathered the drivers of this decision: each driver now points at Local processing capacity for new crops itself, whose description says that buyers and processors weigh it against processing the crops elsewhere. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
-      "sources": [
-        "magrini-2018",
-        "meynard-2018",
-        "de-vriend-2024",
-        "ten-dam-2023",
-        "de-wit-2022"
-      ],
-      "curvature": -0.31
-    },
-    {
       "from": "market-demand-for-alternative-crops",
       "to": "processing-capacity-for-alternative-crops",
       "polarity": "+",
@@ -2722,6 +2666,45 @@
           ]
         }
       ]
+    },
+    {
+      "from": "salt-tolerant-crop-adoption",
+      "to": "processing-capacity-for-alternative-crops",
+      "polarity": "+",
+      "delay": true,
+      "description": "More hectares of new crops on the island give more harvest within reach of a processor or trader on or near the island, and that volume draws capacity. Quinoa has been grown in Zeeland since 2016, on one to four parcels a year at six locations in all (Bogers et al., 2025, pp. 28, 38), its map showing one of them on the island. Quinoa yields about 2,000 kg a hectare on average in Europe (van Loo, 2023, p. 79), and its yield varies from under 500 to over 4,000 kg (p. 76), harvested in August of the year it is sown (p. 75). More harvest within reach makes a plant or chain nearby more worthwhile, so buyers and processors build or keep capacity on or near the island rather than handle the crops elsewhere. In France, the firms that store, process and sell crops specialised in a few dominant ones for economies of scale, and their logistics are not adapted to sorting pulses out of mixed crops (Magrini et al., 2018, pp. 3, 9), and a small volume spread out or far from its users costs more to collect and to source (Meynard et al., 2018, pp. 7–8): the economies of scale hold wherever a chain is built, so the mechanism transfers. In the Netherlands, on Terschelling's saline field, producers of processed products are more concerned about volumes than the restaurants are, and stakeholders describe a chicken and egg: a producer needs a market, and a reliable market needs ample supply (ten Dam et al., 2023, pp. 10, 14); for quinoa, one expert says efforts only work with concentrated investments and high volumes (de Wit et al., 2022, p. 270). Years: a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a): the delay sits in building the chain, not in the harvest, which follows within the year.",
+      "simplification": "Folds Harvest of new crops to process, the volume of new crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere, and before it Attractiveness of processing new crops locally: the harvest is now the step in words between the hectares (or the growers elsewhere) and the capacity they draw. It was an auxiliary no actor decides, with one link out; both steps into it are + and its link out is +, so each folded link is + and keeps the delay of building the chain. R7 runs Adoption of new salt-tolerant crops (+, delay) Local processing capacity for new crops (+) Net price for new crops after transport (+) Adoption: reinforcing as before, on the same mechanism, volume within reach drawing a chain nearby that cuts transport; every other loop through the harvest runs through this link too and keeps its sign. The harvest within reach counts every new crop as one volume, although its crops go to separate chains: quinoa to buyers such as GreenFood50 (DutchNews.nl, 2026), samphire to a Zeeland trader in sea vegetables (FreshPlaza, 2018); read per crop, the loops run the same way, and what this leaves out is that the volume a chain needs is reached crop by crop; summed, the link overstates how soon several small crops together make a plant worthwhile.",
+      "sources": [
+        "van-loo-2023",
+        "bogers-2025",
+        "magrini-2018",
+        "meynard-2018",
+        "ten-dam-2023",
+        "de-wit-2022",
+        "de-vriend-2024",
+        "dutchnews-2026",
+        "freshplaza-2018"
+      ],
+      "curvature": -0.4
+    },
+    {
+      "from": "growers-of-new-crops-elsewhere",
+      "to": "processing-capacity-for-alternative-crops",
+      "polarity": "+",
+      "delay": true,
+      "description": "A plant draws its harvest from every grower within reach, on the island or off it, so growers elsewhere add to the volume that draws capacity near the island: GreenFood50 has its quinoa grown in the Netherlands and Belgium, close to its processing facilities, to cut transport (GreenFood50, n.d.), by its growers, most of the Dutch ones, working about 200 hectares for 600 tonnes a year (DutchNews.nl, 2026). More harvest within reach makes a plant or chain nearby more worthwhile, so buyers and processors build or keep capacity on or near the island rather than handle the crops elsewhere. In France, the firms that store, process and sell crops specialised in a few dominant ones for economies of scale, and their logistics are not adapted to sorting pulses out of mixed crops (Magrini et al., 2018, pp. 3, 9), and a small volume spread out or far from its users costs more to collect and to source (Meynard et al., 2018, pp. 7–8): the economies of scale hold wherever a chain is built, so the mechanism transfers. In the Netherlands, on Terschelling's saline field, producers of processed products are more concerned about volumes than the restaurants are, and stakeholders describe a chicken and egg: a producer needs a market, and a reliable market needs ample supply (ten Dam et al., 2023, pp. 10, 14); for quinoa, one expert says efforts only work with concentrated investments and high volumes (de Wit et al., 2022, p. 270). Years: a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a): the delay sits in building the chain, not in the harvest, which follows within the year.",
+      "simplification": "Folds Harvest of new crops to process, the volume of new crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere, and before it Attractiveness of processing new crops locally: the harvest is now the step in words between the growers elsewhere and the capacity they draw. Both steps are +, so the link is + and keeps the delay of building the chain; no loop runs through it, since Growers of new crops elsewhere is a constant. What it adds to Local processing capacity for new crops is the off-island part of the volume within reach, which the link from Adoption of new salt-tolerant crops adds the island's part to; counted as one volume over crops, although quinoa and samphire go to separate chains (DutchNews.nl, 2026; FreshPlaza, 2018). It also treats the growers of new crops off the island as fixed, while GreenFood50 has its quinoa grown close to its processing facilities, to cut transport (GreenFood50, n.d.), so a plant on or near the island could also draw growers from nearby off the island. That response would close a loop of two links, from Local processing capacity for new crops back to Growers of new crops elsewhere and through this link back to the capacity, with no minus sign, reinforcing beside R7, so leaving it out changes no drawn loop's polarity or mechanism; what it leaves out is how much of a nearby plant's harvest would come from growers off the island rather than the island's own.",
+      "sources": [
+        "greenfood50-nd",
+        "dutchnews-2026",
+        "magrini-2018",
+        "meynard-2018",
+        "ten-dam-2023",
+        "de-wit-2022",
+        "de-vriend-2024",
+        "freshplaza-2018"
+      ],
+      "curvature": 0.0
     }
   ],
   "loops": [
@@ -2926,7 +2909,6 @@
       "name": "Growers draw a plant, and a plant draws growers",
       "path": [
         "salt-tolerant-crop-adoption",
-        "harvest-of-new-crops-to-process",
         "processing-capacity-for-alternative-crops",
         "net-price-for-new-crops"
       ],
@@ -3557,7 +3539,7 @@
         "R7",
         "B10"
       ],
-      "description": "With few hectares of *Adoption of new salt-tolerant crops* there is little *Harvest of new crops to process*, no *Local processing capacity for new crops*, and transport keeps the *Net price for new crops after transport* low (R7). Every field that starts being used for new crops raises the *Margin given up on high-margin crops*, which *Farm income* and *Bank credit to farms* must carry (B10): adoption stays low. With enough hectares a local plant becomes worthwhile, the net price rises and more farmers grow the crop. How many hectares that takes is unclear from the literature and thus not clear in the CLD.",
+      "description": "With few hectares of *Adoption of new salt-tolerant crops* there is little harvest for a plant to process, no *Local processing capacity for new crops*, and transport keeps the *Net price for new crops after transport* low (R7). Every field that starts being used for new crops raises the *Margin given up on high-margin crops*, which *Farm income* and *Bank credit to farms* must carry (B10): adoption stays low. With enough hectares a local plant becomes worthwhile, the net price rises and more farmers grow the crop. How many hectares that takes is unclear from the literature and thus not clear in the CLD.",
       "places": {
         "salt-tolerant-crop-adoption": [
           0,
@@ -3591,37 +3573,32 @@
           483,
           -112
         ],
-        "harvest-of-new-crops-to-process": [
-          435,
-          239
-        ],
         "processing-capacity-for-alternative-crops": [
-          0,
-          493
+          315,
+          373
         ],
         "net-price-for-new-crops": [
-          -435,
-          239
+          -315,
+          373
         ]
       },
       "bends": {
-        "salt-tolerant-crop-adoption -> harvest-of-new-crops-to-process": 0.342,
-        "harvest-of-new-crops-to-process -> processing-capacity-for-alternative-crops": 0.369,
-        "processing-capacity-for-alternative-crops -> net-price-for-new-crops": 0.369,
-        "net-price-for-new-crops -> salt-tolerant-crop-adoption": 0.342,
+        "salt-tolerant-crop-adoption -> margin-given-up-on-high-margin-crops": 0.123,
+        "margin-given-up-on-high-margin-crops -> farm-revenue": 0.272,
+        "farm-revenue -> agricultural-land-value": 0.269,
         "agricultural-land-value -> mortgage-debt-financial-leverage": 0.122,
         "mortgage-debt-financial-leverage -> banks-risk-assessment": 0.122,
         "banks-risk-assessment -> bank-credit-to-farms": 0.269,
         "bank-credit-to-farms -> farmers-capacity-to-invest": 0.272,
         "farmers-capacity-to-invest -> salt-tolerant-crop-adoption": 0.123,
-        "salt-tolerant-crop-adoption -> margin-given-up-on-high-margin-crops": 0.123,
-        "margin-given-up-on-high-margin-crops -> farm-revenue": 0.272,
-        "farm-revenue -> agricultural-land-value": 0.269
+        "salt-tolerant-crop-adoption -> processing-capacity-for-alternative-crops": 0.798,
+        "processing-capacity-for-alternative-crops -> net-price-for-new-crops": 0.271,
+        "net-price-for-new-crops -> salt-tolerant-crop-adoption": 0.798
       },
       "marks": {
         "R7": [
           0,
-          246
+          230
         ],
         "B10": [
           0,

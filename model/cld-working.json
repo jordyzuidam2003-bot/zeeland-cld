@@ -3929,14 +3929,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "The water board's groundwater figures cited from the rules in force",
-      "argument": "The 15 m threshold of a fresh groundwater body, the 800 m³ per hectare a year, and the 8,000 m³ a year and 60 m³ an hour per extraction without a permit are rules in force, so they cite the regulation that holds them now, the Waterschapsverordening in force from 1 June 2026 (arts. 1.1, 2.9 and 4.8), instead of the water board's policy note of 2019 (p. 18), which gave the same figures; the note stays for the revision of the map of fresh bodies (p. 20), which the regulation does not address and no newer note replaces: a claim about what holds now cites its source's current version.",
-      "items": [
-        "creek-ridge-lens-thickness -> pumping-the-water-board-allows",
-        "B8"
-      ]
-    }
-  ]
+  "changes": []
 }

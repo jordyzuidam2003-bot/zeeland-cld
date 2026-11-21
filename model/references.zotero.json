@@ -751,7 +751,7 @@
   ]
  },
  "omgevingswet-2026": {
-  "digest": "3624f6c5c989",
+  "digest": "a7ecad5506b8",
   "note": "4FPXFMAI",
   "placed": [
    "Actor Map",
@@ -767,7 +767,7 @@
   ]
  },
  "omroep-zeeland-2026-aardappeloogst": {
-  "digest": "1d2ec9289e4d",
+  "digest": "6b4f9b669447",
   "note": "DMCZNK7A",
   "placed": [
    "Actor Map",
@@ -817,7 +817,7 @@
   ]
  },
  "provincie-zeeland-2025-rwp": {
-  "digest": "8e80e831c4eb",
+  "digest": "6d6740320d48",
   "note": "IBKNU34R",
   "placed": [
    "Actor Map"
@@ -860,7 +860,7 @@
   ]
  },
  "reglement-scheldestromen-2025": {
-  "digest": "8c76339d380b",
+  "digest": "7de3c8662e2b",
   "note": "KWSJTC9W",
   "placed": [
    "Actor Map",
@@ -954,7 +954,7 @@
   ]
  },
  "scheldestromen-2019-nota-grondwater": {
-  "digest": "5264fabe790f",
+  "digest": "2c2450daf6b9",
   "note": "HCUW2MDZ",
   "placed": [
    "CLD"
@@ -983,7 +983,7 @@
   ]
  },
  "scheldestromen-2021-wbp": {
-  "digest": "3015b980dfde",
+  "digest": "9694969addca",
   "note": "SF72FMHC",
   "placed": [
    "Actor Map",
@@ -1007,7 +1007,7 @@
   ]
  },
  "scheldestromen-2026-grondwater": {
-  "digest": "a0c38e769248",
+  "digest": "a30883d4199e",
   "note": "MT7QA2GF",
   "placed": [
    "Actor Map",
@@ -1029,19 +1029,34 @@
   ]
  },
  "scheldestromen-2026-kostentoedeling": {
-  "digest": "8485149110c4",
+  "digest": "03a3cabca948",
   "note": "IMV7F7D3",
   "placed": [
    "Actor Map",
    "CLD"
   ]
  },
+ "scheldestromen-2026-waterschapsverordening": {
+  "placed": [
+   "CLD"
+  ]
+ },
  "scheldestromen-2026-watersysteemheffing": {
-  "digest": "401e2143d7a6",
+  "digest": "3491265663b3",
   "note": "F93HUD6V",
   "placed": [
    "Actor Map",
    "CLD"
+  ]
+ },
+ "scheldestromen-nd-algemene-vergadering": {
+  "placed": [
+   "Actor Map"
+  ]
+ },
+ "scheldestromen-nd-dagelijks-bestuur": {
+  "placed": [
+   "Actor Map"
   ]
  },
  "schipper-2014": {
@@ -1250,7 +1265,7 @@
   ]
  },
  "waterschapswet-2026": {
-  "digest": "2396ca52d48e",
+  "digest": "1d121b338fe9",
   "note": "IKRICD8U",
   "placed": [
    "Actor Map",
@@ -1258,7 +1273,7 @@
   ]
  },
  "wiepkema-2023-zoetwaterbehoefte": {
-  "digest": "ff32fe74c8ff",
+  "digest": "c70f4fbb8137",
   "note": "3UN9ZC2H",
   "placed": [
    "Actor Map"
@@ -1273,14 +1288,14 @@
   ]
  },
  "zlto-afdelingen": {
-  "digest": "30b74e2ff5ae",
+  "digest": "bc167ee5f040",
   "note": "SFBD354D",
   "placed": [
    "Actor Map"
   ]
  },
  "zlto-over-zlto": {
-  "digest": "e45608f73a95",
+  "digest": "b669da10d948",
   "note": "BMNUV85X",
   "placed": [
    "Actor Map"

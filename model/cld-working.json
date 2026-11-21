@@ -3929,13 +3929,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "What the water board's rules allow on a lens, as the rules in force say it",
-      "argument": "The Waterschapsverordening in force from 1 June 2026 lets farms pump without a permit only where its map shows a fresh groundwater body, one of 15 m or more or one reaching the geohydrological base, and caps each extraction also at 3,000 m³ a quarter (arts. 1.1, 2.9 and 4.8 b), so a lens crossing 15 m opens pumping only once the map shows it; and the explanation of art. 2.9 (2026) has a new notification outside the bodies then fixed not allowed under the general rule, though a permit with conditions may be granted, while the board's power to forbid a harmful extraction (art. 2.9 lid 4) rests on the harm, not on a revision of the map. A fresh reader of each source found the sentences stronger than the rules: a claim about the present says what the source in force says, no more.",
-      "items": [
-        "creek-ridge-lens-thickness -> pumping-the-water-board-allows"
-      ]
-    }
-  ]
+  "changes": []
 }

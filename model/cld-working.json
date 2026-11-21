@@ -3939,25 +3939,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "The water board's pumping rule cited as in force, and claimed only as far as its text carries",
-      "argument": "A claim about the present cites the source's current version (zotero-library.md). Thirteen sentences cited Kaandorp et al. (2022, p. 26) or Oude Essink et al. (2018, p. 1) for the rule that wells are allowed only in fresh groundwater more than 15 m thick; the Waterschapsverordening in force since 1 June 2026 (2026f) defines the fresh bodies as at least 15 m thick or reaching the geohydrological base (art. 1.1, Bijlage I), frees irrigation above 10 m³ an hour from a permit on the bodies its map shows outside the vulnerable areas (art. 4.8 b), and asks a horizontal well there (art. 2.9 lid 2 h), but its art. 4.8 d and e, as written, also free extractions outside the fresh bodies, so no sentence says \"only\" any more, and batch 7's \"a new well needs one\" outside the bodies, which fresh readers found stronger than art. 4.8 (CitationCheck/1856958/readers/), becomes the open question it is, named in the link's simplification. The 2022 well cost is dated, infiltrating cites art. 4.5 lid 2, and the 800 m³ cap's aim cites the 2026 explanation of art. 2.9.",
-      "items": [
-        "freshwater-storage-measures",
-        "spending-on-keeping-current-crops",
-        "creek-ridge-lens-thickness",
-        "pumping-the-water-board-allows",
-        "upconing-of-salt-groundwater",
-        "creek-ridge-lens-thickness -> upconing-of-salt-groundwater",
-        "freshwater-lens-thickness -> freshwater-availability-for-crops",
-        "freshwater-storage-measures -> creek-ridge-lens-thickness",
-        "crop-water-shortfall -> groundwater-extraction-for-irrigation",
-        "spending-on-keeping-current-crops -> farmers-capacity-to-invest",
-        "spending-on-keeping-current-crops -> groundwater-extraction-for-irrigation",
-        "creek-ridge-lens-thickness -> pumping-the-water-board-allows",
-        "C4"
-      ]
-    }
-  ]
+  "changes": []
 }

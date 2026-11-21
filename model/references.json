@@ -2447,6 +2447,69 @@
     "URL": "https://scheldestromen.begrotingsapp.nl/Data/d1712ddb-6ca4-4e01-97c7-14c9adaca31c/Public/jaarverslaggeving-2025.pdf"
   },
   {
+    "id": "scheldestromen-2026-waterschapsverordening",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          1
+        ]
+      ]
+    },
+    "year-suffix": "f",
+    "title": "Waterschapsverordening waterschap Scheldestromen",
+    "URL": "https://lokaleregelgeving.overheid.nl/CVDR704423/6"
+  },
+  {
+    "id": "scheldestromen-nd-algemene-vergadering",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "year-suffix": "a",
+    "title": "Algemene vergadering",
+    "URL": "https://scheldestromen.nl/bestuur/algemene-vergadering",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          21
+        ]
+      ]
+    }
+  },
+  {
+    "id": "scheldestromen-nd-dagelijks-bestuur",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Waterschap Scheldestromen"
+      }
+    ],
+    "year-suffix": "b",
+    "title": "Dagelijks bestuur",
+    "URL": "https://scheldestromen.nl/bestuur/dagelijks-bestuur",
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          11,
+          21
+        ]
+      ]
+    }
+  },
+  {
     "id": "reimerswaal-2025-intentieovereenkomst",
     "type": "report",
     "author": [

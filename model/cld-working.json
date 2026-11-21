@@ -2456,11 +2456,12 @@
       "to": "pumping-the-water-board-allows",
       "polarity": "+",
       "delay": false,
-      "description": "A new well is judged on the fresh groundwater bodies established when it is notified (Waterschap Scheldestromen, 2026b, art. 2.9 and its explanation), and in Zeeland pumping is allowed only from bodies of more than 15 m of fresh water (Kaandorp et al., 2022, p. 26), so the thicker the lens, the more pumping the rules allow. The rules allow the same 800 m³ per hectare a year on any fresh groundwater body of 15 m or more, so outside the vulnerable areas a lens crossing 15 m opens pumping without a permit, under the general rules and within 8,000 m³ a year and 60 m³ an hour per extraction, but one thickening beyond it adds none (Waterschap Scheldestromen, 2019, p. 18, the water board's own policy note). The map of fresh bodies is revised periodically, and wells in use that a revision leaves outside them may still be used while new ones are refused (p. 20), so a thinning lens lowers the allowance once a revision leaves it outside the fresh bodies: through new wells refused or the board forbidding an extraction that harms, or threatens to harm, the interests of groundwater management (Waterschap Scheldestromen, 2026b, art. 2.9 lid 4 and its explanation). No delay: no source read shows how often those bodies are updated.",
+      "description": "A new well is judged on the fresh groundwater bodies established when it is notified (Waterschap Scheldestromen, 2026b, art. 2.9 and its explanation), and in Zeeland pumping is allowed only from bodies of more than 15 m of fresh water (Kaandorp et al., 2022, p. 26), so the thicker the lens, the more pumping the rules allow. The rules allow the same 800 m³ per hectare a year on any fresh groundwater body of 15 m or more, so outside the vulnerable areas a lens crossing 15 m opens pumping without a permit, under the general rules and within 8,000 m³ a year and 60 m³ an hour per extraction, but one thickening beyond it adds none (Waterschap Scheldestromen, 2026f, arts. 1.1, 2.9 and 4.8). The map of fresh bodies is revised periodically, and wells in use that a revision leaves outside them may still be used while new ones are refused (Waterschap Scheldestromen, 2019, p. 20, the water board's own policy note), so a thinning lens lowers the allowance once a revision leaves it outside the fresh bodies: through new wells refused or the board forbidding an extraction that harms, or threatens to harm, the interests of groundwater management (Waterschap Scheldestromen, 2026b, art. 2.9 lid 4 and its explanation). No delay: no source read shows how often those bodies are updated.",
       "sources": [
         "scheldestromen-2026-grondwater",
         "kaandorp-2022",
-        "scheldestromen-2019-nota-grondwater"
+        "scheldestromen-2019-nota-grondwater",
+        "scheldestromen-2026-waterschapsverordening"
       ],
       "curvature": 0.14
     },
@@ -2876,7 +2877,7 @@
         "pumping-the-water-board-allows",
         "groundwater-extraction-for-irrigation"
       ],
-      "description": "Under the creek ridges and dunes, the thicker the fresh groundwater, the more pumping the water board's rules allow. Farmers pump within that, and what they pump beyond what the rain puts back thins the lens. It seeks the balance between recharge and extraction on which the board set its limit. On the island the rules answer the lens at the 15 m threshold, not along it: a lens that thins while still at 15 m or more keeps the same 800 m³ per hectare (Waterschap Scheldestromen, 2019, p. 18), and after a map revision leaves wells outside the fresh bodies, those in use may still be used and only new ones are refused (p. 20). It shows an unintended consequence of the pumping in B5: a thinner lens, which reaches crops only through wells, so it comes back only through what the rules allow. For storage on the creek ridges, what infiltration adds to this lens is what wells can pump."
+      "description": "Under the creek ridges and dunes, the thicker the fresh groundwater, the more pumping the water board's rules allow. Farmers pump within that, and what they pump beyond what the rain puts back thins the lens. It seeks the balance between recharge and extraction on which the board set its limit. On the island the rules answer the lens at the 15 m threshold, not along it: a lens that thins while still at 15 m or more keeps the same 800 m³ per hectare (Waterschap Scheldestromen, 2026f, arts. 1.1 and 2.9), and after a map revision leaves wells outside the fresh bodies, those in use may still be used and only new ones are refused (Waterschap Scheldestromen, 2019, p. 20). It shows an unintended consequence of the pumping in B5: a thinner lens, which reaches crops only through wells, so it comes back only through what the rules allow. For storage on the creek ridges, what infiltration adds to this lens is what wells can pump."
     },
     {
       "id": "R4",
@@ -3928,5 +3929,14 @@
       }
     }
   ],
-  "changes": []
+  "changes": [
+    {
+      "change": "The water board's groundwater figures cited from the rules in force",
+      "argument": "The 15 m threshold of a fresh groundwater body, the 800 m³ per hectare a year, and the 8,000 m³ a year and 60 m³ an hour per extraction without a permit are rules in force, so they cite the regulation that holds them now, the Waterschapsverordening in force from 1 June 2026 (arts. 1.1, 2.9 and 4.8), instead of the water board's policy note of 2019 (p. 18), which gave the same figures; the note stays for the revision of the map of fresh bodies (p. 20), which the regulation does not address and no newer note replaces: a claim about what holds now cites its source's current version.",
+      "items": [
+        "creek-ridge-lens-thickness -> pumping-the-water-board-allows",
+        "B8"
+      ]
+    }
+  ]
 }

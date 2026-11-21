@@ -2456,7 +2456,7 @@
       "to": "pumping-the-water-board-allows",
       "polarity": "+",
       "delay": false,
-      "description": "A new well is judged on the fresh groundwater bodies established when it is notified (Waterschap Scheldestromen, 2026b, art. 2.9 and its explanation), and in Zeeland pumping is allowed only from bodies of more than 15 m of fresh water (Kaandorp et al., 2022, p. 26), so the thicker the lens, the more pumping the rules allow. The rules allow the same 800 m³ per hectare a year on any fresh groundwater body the board's map shows, one of 15 m or more or one reaching the geohydrological base, so outside the vulnerable areas a lens the map shows may be pumped without a permit, under the general rules and within 8,000 m³ a year, 3,000 m³ a quarter and 60 m³ an hour per extraction, but one thickening beyond it adds none (Waterschap Scheldestromen, 2026f, arts. 1.1, 2.9 and 4.8). The map of fresh bodies is revised periodically, and wells in use that a revision leaves outside them may still be used while new ones are no longer allowed (Waterschap Scheldestromen, 2019, p. 20, the water board's own policy note), so a thinning lens lowers the allowance once a revision leaves it outside the fresh bodies: a new notification there is judged against the bodies then fixed and is not allowed under the general rule, though a permit with conditions may be granted (Waterschap Scheldestromen, 2026b, art. 2.9 and its explanation). Apart from any revision, the board can forbid an extraction that harms, or threatens to harm, the interests of groundwater management (Waterschap Scheldestromen, 2026b, art. 2.9 lid 4). No delay: no source read shows how often those bodies are updated.",
+      "description": "A new well is judged on the fresh groundwater bodies established when it is notified (Waterschap Scheldestromen, 2026b, art. 2.9 and its explanation), and in Zeeland pumping is allowed only from bodies of more than 15 m of fresh water (Kaandorp et al., 2022, p. 26), so the thicker the lens, the more pumping the rules allow. The rules allow the same 800 m³ per hectare a year on any fresh groundwater body the board's map shows outside its vulnerable areas, one of 15 m or more or one reaching the geohydrological base, so a lens the map shows there may be pumped without a permit, under the general rules and within 8,000 m³ a year, 3,000 m³ a quarter and 60 m³ an hour per extraction, but one thickening beyond it adds none (Waterschap Scheldestromen, 2026f, arts. 1.1, 2.9 and 4.8). The map of fresh bodies is revised periodically, and wells in use that a revision leaves outside them may still be used while new ones are no longer allowed (Waterschap Scheldestromen, 2019, p. 20, the water board's own policy note), so a thinning lens lowers the allowance once a revision leaves it outside the fresh bodies: there, pumping for irrigation of more than 10 m³ an hour fits none of the extractions the rules free from a permit (Waterschap Scheldestromen, 2026f, art. 4.8 b and c), so a new well needs one (art. 4.5). Apart from any revision, the board can forbid an extraction that harms, or threatens to harm, the interests of groundwater management (Waterschap Scheldestromen, 2026b, art. 2.9 lid 4). No delay: no source read shows how often those bodies are updated.",
       "sources": [
         "scheldestromen-2026-grondwater",
         "kaandorp-2022",
@@ -3929,5 +3929,13 @@
       }
     }
   ],
-  "changes": []
+  "changes": [
+    {
+      "change": "Which lenses the 800 m³ per hectare covers, and why a new well outside the fresh bodies needs a permit",
+      "argument": "The Waterschapsverordening in force sets the 800 m³ per hectare a year (art. 2.9 lid 2) only for the fresh groundwater bodies its map shows outside the vulnerable areas (art. 4.8 b), so the limit to those areas moves to the cap itself; and outside the bodies the map shows, pumping for irrigation of more than 10 m³ an hour fits none of the extractions art. 4.8 frees from a permit (b covers only the mapped bodies, c names no irrigation), so a new well there needs a permit (art. 4.5). The explanation of art. 2.9 (2026), cited for that step before, judges a lapsed notification anew against the bodies then fixed, not a well a revision leaves outside them. Fresh readers of batch 6 found both sentences stronger than their sources: a claim about the present says what the source in force says, no more.",
+      "items": [
+        "creek-ridge-lens-thickness -> pumping-the-water-board-allows"
+      ]
+    }
+  ]
 }

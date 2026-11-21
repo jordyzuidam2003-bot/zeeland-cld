@@ -6985,8 +6985,8 @@
         {
           "_id": "node-seed-potato-breeders-and-trading-houses",
           "position": {
-            "x": 1360,
-            "y": 720
+            "x": 1320,
+            "y": 670
           },
           "pinned": true,
           "style": {},
@@ -6995,8 +6995,8 @@
         {
           "_id": "node-nature-managers",
           "position": {
-            "x": 1540,
-            "y": 1600
+            "x": 1500,
+            "y": 1650
           },
           "pinned": true,
           "style": {},

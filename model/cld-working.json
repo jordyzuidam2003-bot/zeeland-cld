@@ -3944,13 +3944,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "The breeders and trading houses of seed potatoes named as the outside actor that shapes Salt-tolerant varieties on offer",
-      "argument": "LVVN's comment on the plan: the suppliers of seed could be relevant. The element's description already says what they offer (van Straten et al., 2021, pp. 2, 11; de Wit et al., 2022, pp. 271–272); the actor is new in the Actor Map, outside the CLD's scale, so it enters through this constant and no variable of its own. The suppliers of other inputs stay out: no source read shows them acting on salt or drought on the island.",
-      "items": [
-        "tolerant-varieties-on-offer"
-      ]
-    }
-  ]
+  "changes": []
 }

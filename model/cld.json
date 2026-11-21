@@ -804,7 +804,10 @@
         "van-den-burg-2024"
       ],
       "x": -269,
-      "y": 1397
+      "y": 1397,
+      "actors": [
+        "seed-potato-breeders-and-trading-houses"
+      ]
     },
     {
       "id": "machines-and-storage-for-current-crops",

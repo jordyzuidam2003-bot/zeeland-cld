@@ -143,6 +143,7 @@
         "Arable farmers on Schouwen-Duiveland, EU, Deltares, KWR, Acacia Water, Delphy",
         "Arable farmers on Schouwen-Duiveland, Waterschap Scheldestromen",
         "Banks lending to the island's farmers",
+        "Breeders and trading houses of seed potatoes",
         "Buyers and processors of the island's crops",
         "EU",
         "Gemeente Schouwen-Duiveland",
@@ -1189,7 +1190,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "Salt-tolerant varieties of the current crops that breeders bring to market, and their yield; breeding lies outside the CLD's scale. Dutch breeders and suppliers sell potato cultivars that differ in salt tolerance: of 13 bought from them and tested in the field on Texel, Rivola, Elgar and '927' were more tolerant than the others on sandy soil (van Straten et al., 2021, pp. 2, 11). With no official label for salt tolerance, trading houses claim it for no variety and only say which suit saline soils best and worst, and salt tolerance is not yet among the ten traits their salespeople rank most important for a new variety (de Wit et al., 2022, pp. 271–272); stakeholders interviewed in the Dutch potato industry say the salt-tolerant seed potatoes bred in the Netherlands are mostly for export to arid countries such as Egypt and Morocco (Aldrich et al., 2023, pp. 38, 40). Tolerant varieties yield relatively little against common high-yielding ones without salt or under mild salt, and conventional breeding typically takes 10 to 15 years (van den Burg et al., 2024, pp. 3, 6). Measured in interviews across the Dutch potato chain and in field trials on Texel; none on the island.",
-        "actors": "",
+        "actors": "Breeders and trading houses of seed potatoes",
         "sources": "van Straten, G., Bruning, B., de Vos, A. C., Parra González, A., Rozema, J., & van Bodegom, P. M. (2021). Estimating cultivar-specific salt tolerance model parameters from multi-annual field tests for identification of salt tolerant potato cultivars. Agricultural Water Management, 252, 106902. https://doi.org/10.1016/j.agwat.2021.106902\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16\nAldrich, Z., van Tongeren, P., & Negacz, K. (2023). Stakeholder mapping for the Dutch potato industry. Institute for Environmental Studies, VU Amsterdam. https://doi.org/10.17605/OSF.IO/YZRV3\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118",
         "sourced": "yes"
       }

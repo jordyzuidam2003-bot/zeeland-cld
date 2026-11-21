@@ -155,12 +155,14 @@
       "sets domain": "Social",
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
-      "description": "Farmers' wish for low ditch levels, so that their fields drain: dry enough for heavy machinery to work them, which holding water back for dry times sometimes makes hard (Waterschap Scheldestromen, 2021c, p. 44), and free of water damage after heavy rain, which farmers in the island's western low polders often find a bigger problem than drought (Kaandorp et al., 2022, p. 27). They put it to the water board as it prepares its water level plans, which it does with interest groups such as farming, and in views on a draft (Waterschap Scheldestromen, 2025, p. 17): on Duiveland's draft of 2021, four views feared that a raise the plan proposed to study would bring more flooding in extreme rain (Waterschap Scheldestromen, 2021a, p. 53). Within the year, so an Auxiliary.",
+      "description": "Farmers' wish for low ditch levels, so that their fields drain: dry enough for heavy machinery to work them, which holding water back for dry times sometimes makes hard (Waterschap Scheldestromen, 2021c, p. 44), and free of water damage after heavy rain, which farmers in the island's western low polders often find a bigger problem than drought (Kaandorp et al., 2022, p. 27). They put it to the water board as it prepares its water level plans, which it does with interest groups such as farming, and in views on a draft (Waterschap Scheldestromen, 2025, p. 17): on Duiveland's draft of 2021, four views feared that a raise the plan proposed to study would bring more flooding in extreme rain (Waterschap Scheldestromen, 2021a, p. 53). Heavier summer downpours have no variable of their own and enter here: around 2050 the hour of summer rain exceeded once a year, 16 mm now, is 4 to 11% heavier in the four KNMI'23 scenarios (ranges 2 to 16%), with fewer light showers and more heavy ones, measured nationally (KNMI, 2023, pp. 4, 26), and many of the island's farmers still rate the risk of waterlogging above that of drought, since it can make or break a harvest in a short time (Raat et al., 2026, p. 23). Within the year, so an Auxiliary.",
       "sources": [
         "scheldestromen-2021-wbp",
         "kaandorp-2022",
         "scheldestromen-2025-nota-peilbesluiten",
-        "scheldestromen-2021-hor-duiveland"
+        "scheldestromen-2021-hor-duiveland",
+        "knmi-2023-klimaatscenarios",
+        "raat-2026"
       ],
       "x": -590,
       "y": -1153,

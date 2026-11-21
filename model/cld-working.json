@@ -3929,13 +3929,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Which lenses the 800 m³ per hectare covers, and why a new well outside the fresh bodies needs a permit",
-      "argument": "The Waterschapsverordening in force sets the 800 m³ per hectare a year (art. 2.9 lid 2) only for the fresh groundwater bodies its map shows outside the vulnerable areas (art. 4.8 b), so the limit to those areas moves to the cap itself; and outside the bodies the map shows, pumping for irrigation of more than 10 m³ an hour fits none of the extractions art. 4.8 frees from a permit (b covers only the mapped bodies, c names no irrigation), so a new well there needs a permit (art. 4.5). The explanation of art. 2.9 (2026), cited for that step before, judges a lapsed notification anew against the bodies then fixed, not a well a revision leaves outside them. Fresh readers of batch 6 found both sentences stronger than their sources: a claim about the present says what the source in force says, no more.",
-      "items": [
-        "creek-ridge-lens-thickness -> pumping-the-water-board-allows"
-      ]
-    }
-  ]
+  "changes": []
 }

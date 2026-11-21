@@ -39,6 +39,7 @@
         "Financial institution",
         "Government",
         "Knowledge institution",
+        "Nature organisation",
         "Stock",
         "Water management"
       ],
@@ -391,6 +392,7 @@
         "Food processing",
         "Government",
         "Knowledge institution",
+        "Nature preservation",
         "Water management"
       ],
       "sort": false,
@@ -1718,6 +1720,40 @@
         "client": "no",
         "decides in the CLD": "",
         "sources": "Delphy. (n.d.). Delphy [Home page]. Retrieved November 6, 2026, from https://delphy.nl/\nDelphy. (n.d.). Over Delphy. Retrieved November 6, 2026, from https://werkenbij.delphy.nl/over-delphy/\nLiving Lab Schouwen-Duiveland. (n.d.). Partners. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/over-living-lab/partners\nLiving Lab Schouwen-Duiveland. (n.d.-b). Samenwerken voor Zoetwater: Innovatieve drainage demonstreren, monitoren en evalueren. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/projecten/samenwerken-voor-zoetwater-innovatieve-drainage-demonstreren-monitoren-en-evalueren\nDelphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf\nWiepkema, F. (2023, May 31). Zonder meer zoet water wordt agrarisch ondernemen op Schouwen Duiveland onmogelijk. Akkerwijzer. https://www.akkerwijzer.nl/artikel/750772-zonder-meer-zoet-water-wordt-agrarisch-ondernemen-op-schouwen-duiveland-onmogelijk/\nOmroep Zeeland. (2023, May 31). Sombere toekomst voor boeren op Schouwen-Duiveland door tekort aan zoet water. https://www.omroepzeeland.nl/nieuws/15614167/sombere-toekomst-voor-boeren-op-schouwen-duiveland-door-tekort-aan-zoet-water"
+      }
+    },
+    {
+      "_id": "elem-seed-potato-breeders-and-trading-houses",
+      "attributes": {
+        "label": "Breeders and trading  houses of seed  potatoes",
+        "element type": "Business in the food chain",
+        "level": "National",
+        "sector": "Arable Farming",
+        "interest": "New varieties with the traits their salespeople find most important: the trading houses ask them once a year for the ten most important aspects of a new variety, and salt tolerance is not yet among them; many in the Dutch seed potato chain want an official label for salt tolerance, whose absence leads to unsubstantiated claims (interviews, about 2020). The salt-tolerant seed potatoes bred in the Netherlands are mostly for export to arid countries such as Egypt and Morocco, stakeholders in the Dutch potato industry say.",
+        "influence": "Decide which potato varieties reach the island's farmers, and so the CLD's Salt-tolerant varieties on offer: Dutch breeders and suppliers sell cultivars that differ in salt tolerance, measured in field trials on Texel (2012–2018); with no official label for it, trading houses claim salt tolerance for no variety and only say which suit saline soils best and worst. Conventional breeding typically takes 10 to 15 years. Measured nationally. Score 3: they shape the farms' choice of variety directly, binding none; no source read shows the island's farms growing a salt-tolerant variety.",
+        "affected": "No source read traces an effect on them to salinisation on the island.",
+        "influence score": 3,
+        "client": "no",
+        "decides in the CLD": "",
+        "no relations": "No source read shows their trade with an actor on this map: the sources read show their cultivars tested on Texel and their trading houses' view of salt tolerance, measured nationally.",
+        "sources": "van Straten, G., Bruning, B., de Vos, A. C., Parra González, A., Rozema, J., & van Bodegom, P. M. (2021). Estimating cultivar-specific salt tolerance model parameters from multi-annual field tests for identification of salt tolerant potato cultivars. Agricultural Water Management, 252, 106902. https://doi.org/10.1016/j.agwat.2021.106902\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16\nAldrich, Z., van Tongeren, P., & Negacz, K. (2023). Stakeholder mapping for the Dutch potato industry. Institute for Environmental Studies, VU Amsterdam. https://doi.org/10.17605/OSF.IO/YZRV3\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118"
+      }
+    },
+    {
+      "_id": "elem-nature-managers",
+      "attributes": {
+        "label": "Nature managers on the  island  (Natuurmonumenten,  Staatsbosbeheer)",
+        "element type": "Nature organisation",
+        "level": "Local / Provincial / Regional",
+        "sector": "Nature preservation",
+        "interest": "More water in their nature areas, and more of it held there: in Natuurmonumenten's words (2023), the longer dry periods from spring into summer now cause the problems, and it raised the thought of freshwater buffers of 5 to 10 ha, at pumping stations for example, for the next ten years, where the demand of farming, recreation and nature could come together.",
+        "influence": "The largest managers of the island's nature areas (2023). On its south coast, in Plan Tureluur, Staatsbosbeheer manages the western Prunje areas and the eastern ones towards Zierikzee were to come to Natuurmonumenten; a seepage ditch rings the whole area, so that its higher water level does not add seepage on the land around it (2006). Both were interviewed as the island's nature managers for KWR's exploration of a climate- and water-robust island (2023). Score 2: their areas border the farmland, and their wish for more water held there bears on the island's fresh water; no source read shows them deciding a measure for the farms.",
+        "affected": "Drought: in the summer of 2022 the island's thousands of breeding pairs raised almost no young, in Natuurmonumenten's words (2023).",
+        "influence score": 2,
+        "client": "no",
+        "decides in the CLD": "",
+        "no relations": "No source read shows a relation with another actor on this map: Natuurmonumenten's shared buffers are a thought (2023), and the source on the seepage ditch (2006) names no actor that keeps it.",
+        "sources": "Delphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf\nvan Haperen, A., Hekhuis, H., & Sluiter, H. (2006, November). Plan Tureluur: Zeeuwse vogelboulevard. Retrieved November 14, 2026, from https://edepot.wur.nl/114545\nRaat, K., van Aalderen, N., & Krajenbrink, H. (2026). Laag Nederland 2050: Een verkenning naar een klimaat- en waterrobuuste inrichting voor Schouwen-Duiveland (KWR 2026.037). KWR Water Research Institute. https://api2.kwrwater.nl/uploads/KWR%202026.037%20Laag%20Nederland%202050.%20Een%20verkenning%20naar%20een%20klimaat-%20en%20waterrobuuste%20inrichting%20voor%20Schouwen-Duiveland.pdf"
       }
     },
     {
@@ -6946,6 +6982,26 @@
           "element": "elem-delphy"
         },
         {
+          "_id": "node-seed-potato-breeders-and-trading-houses",
+          "position": {
+            "x": 1360,
+            "y": 720
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-seed-potato-breeders-and-trading-houses"
+        },
+        {
+          "_id": "node-nature-managers",
+          "position": {
+            "x": 1540,
+            "y": 1600
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-nature-managers"
+        },
+        {
           "_id": "node-actors-background",
           "position": {
             "x": 1773.0,
@@ -12165,7 +12221,7 @@
     {
       "_id": "pers-actors",
       "name": "Actor Map",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Bands** = level: Global, International, National, Local / Provincial / Regional<br>**Links** = relation, read from the actor at the tail: authority over (dark), finances (orange), buys from (orange, dashed), advises (violet, dashed), represents (violet), works with (green, dashed)\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  color: #FFFFFF;\n  border-color: #444444;\n  border-width: 2;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n#background-actor {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 4;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n}\n\n[\"connection type\"=\"authority over\"] { color: #333333; style: solid; }\n[\"connection type\"=\"finances\"] { color: #EB6834; style: solid; }\n[\"connection type\"=\"buys from\"] { color: #EB6834; style: dashed; }\n[\"connection type\"=\"advises\"] { color: #6250D6; style: dashed; }\n[\"connection type\"=\"represents\"] { color: #6250D6; style: solid; }\n[\"connection type\"=\"works with\"] { color: #1BAF7A; style: dashed; }\n#elem-arable-farmers { width: 295; height: 86; }\n#elem-waterschap-scheldestromen { width: 236; height: 86; }\n#elem-gemeente-schouwen-duiveland { width: 295; height: 86; }\n#elem-provincie-zeeland { width: 280; height: 52; }\n#elem-banks { width: 325; height: 86; }\n#elem-buyers-and-processors { width: 340; height: 86; }\n#elem-zlto { width: 87; height: 52; }\n#elem-consumers { width: 162; height: 52; }\n#elem-eu { width: 58; height: 52; }\n#elem-lvvn { width: 87; height: 52; }\n#elem-ienw { width: 87; height: 52; }\n#elem-rijkswaterstaat { width: 251; height: 52; }\n#elem-dcc { width: 325; height: 52; }\n#elem-deltares { width: 147; height: 52; }\n#elem-kwr { width: 73; height: 52; }\n#elem-acacia-water { width: 206; height: 52; }\n#elem-delphy { width: 117; height: 52; }\n#background-actor { width: 2435; height: 1756; }\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Bands** = level: Global, International, National, Local / Provincial / Regional<br>**Links** = relation, read from the actor at the tail: authority over (dark), finances (orange), buys from (orange, dashed), advises (violet, dashed), represents (violet), works with (green, dashed)\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  color: #FFFFFF;\n  border-color: #444444;\n  border-width: 2;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n#background-actor {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 4;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n}\n\n[\"connection type\"=\"authority over\"] { color: #333333; style: solid; }\n[\"connection type\"=\"finances\"] { color: #EB6834; style: solid; }\n[\"connection type\"=\"buys from\"] { color: #EB6834; style: dashed; }\n[\"connection type\"=\"advises\"] { color: #6250D6; style: dashed; }\n[\"connection type\"=\"represents\"] { color: #6250D6; style: solid; }\n[\"connection type\"=\"works with\"] { color: #1BAF7A; style: dashed; }\n#elem-arable-farmers { width: 295; height: 86; }\n#elem-waterschap-scheldestromen { width: 236; height: 86; }\n#elem-gemeente-schouwen-duiveland { width: 295; height: 86; }\n#elem-provincie-zeeland { width: 280; height: 52; }\n#elem-banks { width: 325; height: 86; }\n#elem-buyers-and-processors { width: 340; height: 86; }\n#elem-zlto { width: 87; height: 52; }\n#elem-consumers { width: 162; height: 52; }\n#elem-eu { width: 58; height: 52; }\n#elem-lvvn { width: 87; height: 52; }\n#elem-ienw { width: 87; height: 52; }\n#elem-rijkswaterstaat { width: 251; height: 52; }\n#elem-dcc { width: 325; height: 52; }\n#elem-deltares { width: 147; height: 52; }\n#elem-kwr { width: 73; height: 52; }\n#elem-acacia-water { width: 206; height: 52; }\n#elem-delphy { width: 117; height: 52; }\n#elem-seed-potato-breeders-and-trading-houses { width: 325; height: 120; }\n#elem-nature-managers { width: 354; height: 154; }\n#background-actor { width: 2435; height: 1756; }\n"
     },
     {
       "_id": "pers-loops",

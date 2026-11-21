@@ -155,12 +155,14 @@
       "sets domain": "Social",
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
-      "description": "Farmers' wish for low ditch levels, so that their fields drain: dry enough for heavy machinery to work them, which holding water back for dry times sometimes makes hard (Waterschap Scheldestromen, 2021c, p. 44), and free of water damage after heavy rain, which farmers in the island's western low polders often find a bigger problem than drought (Kaandorp et al., 2022, p. 27). They put it to the water board as it prepares its water level plans, which it does with interest groups such as farming, and in views on a draft (Waterschap Scheldestromen, 2025, p. 17): on Duiveland's draft of 2021, four views feared that a raise the plan proposed to study would bring more flooding in extreme rain (Waterschap Scheldestromen, 2021a, p. 53). Within the year, so an Auxiliary.",
+      "description": "Farmers' wish for low ditch levels, so that their fields drain: dry enough for heavy machinery to work them, which holding water back for dry times sometimes makes hard (Waterschap Scheldestromen, 2021c, p. 44), and free of water damage after heavy rain, which farmers in the island's western low polders often find a bigger problem than drought (Kaandorp et al., 2022, p. 27). They put it to the water board as it prepares its water level plans, which it does with interest groups such as farming, and in views on a draft (Waterschap Scheldestromen, 2025, p. 17): on Duiveland's draft of 2021, four views feared that a raise the plan proposed to study would bring more flooding in extreme rain (Waterschap Scheldestromen, 2021a, p. 53). Heavier summer downpours have no variable of their own and enter here: around 2050 the hour of summer rain exceeded once a year, 16 mm now, is 4 to 11% heavier in the four KNMI'23 scenarios (ranges 2 to 16%), with fewer light showers and more heavy ones, measured nationally (KNMI, 2023, pp. 4, 26), and many of the island's farmers still rate the risk of waterlogging above that of drought, since it can make or break a harvest in a short time (Raat et al., 2026, p. 23). Within the year, so an Auxiliary.",
       "sources": [
         "scheldestromen-2021-wbp",
         "kaandorp-2022",
         "scheldestromen-2025-nota-peilbesluiten",
-        "scheldestromen-2021-hor-duiveland"
+        "scheldestromen-2021-hor-duiveland",
+        "knmi-2023-klimaatscenarios",
+        "raat-2026"
       ],
       "x": -590,
       "y": -1153,
@@ -802,7 +804,10 @@
         "van-den-burg-2024"
       ],
       "x": -269,
-      "y": 1397
+      "y": 1397,
+      "actors": [
+        "seed-potato-breeders-and-trading-houses"
+      ]
     },
     {
       "id": "machines-and-storage-for-current-crops",
@@ -3939,5 +3944,20 @@
       }
     }
   ],
-  "changes": []
+  "changes": [
+    {
+      "change": "Heavier summer downpours carried in the description of Farmers' demand for deep polder drainage",
+      "argument": "LVVN's comment on the plan: summer downpours beside drought. Around 2050 the hourly summer rain exceeded once a year is 4 to 11% heavier (KNMI, 2023, pp. 4, 26), and many of the island's farmers rate waterlogging above drought (Raat et al., 2026, p. 23). No variable of their own: one would add no feedback loop, no actor's decision and no delay.",
+      "items": [
+        "demand-for-deep-polder-drainage"
+      ]
+    },
+    {
+      "change": "The breeders and trading houses of seed potatoes named as the outside actor that shapes Salt-tolerant varieties on offer",
+      "argument": "LVVN's comment on the plan: the suppliers of seed could be relevant. The element's description already says what they offer (van Straten et al., 2021, pp. 2, 11; de Wit et al., 2022, pp. 271–272); the actor is new in the Actor Map, outside the CLD's scale, so it enters through this constant and no variable of its own. The suppliers of other inputs stay out: no source read shows them acting on salt or drought on the island.",
+      "items": [
+        "tolerant-varieties-on-offer"
+      ]
+    }
+  ]
 }

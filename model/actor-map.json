@@ -816,6 +816,49 @@
       ],
       "x": 1395,
       "y": 1059
+    },
+    {
+      "id": "seed-potato-breeders-and-trading-houses",
+      "label": "Breeders and trading houses of seed potatoes",
+      "scale": "outside",
+      "type": "Business in the food chain",
+      "level": "National",
+      "sector": "Arable Farming",
+      "interest": "New varieties with the traits their salespeople find most important: the trading houses ask them once a year for the ten most important aspects of a new variety, and salt tolerance is not yet among them; many in the Dutch seed potato chain want an official label for salt tolerance, whose absence leads to unsubstantiated claims (interviews, about 2020). The salt-tolerant seed potatoes bred in the Netherlands are mostly for export to arid countries such as Egypt and Morocco, stakeholders in the Dutch potato industry say.",
+      "influence": "Decide which potato varieties reach the island's farmers, and so the CLD's Salt-tolerant varieties on offer: Dutch breeders and suppliers sell cultivars that differ in salt tolerance, measured in field trials on Texel (2012–2018); with no official label for it, trading houses claim salt tolerance for no variety and only say which suit saline soils best and worst. Conventional breeding typically takes 10 to 15 years. Measured nationally. Score 3: they shape the farms' choice of variety directly, binding none; no source read shows the island's farms growing a salt-tolerant variety.",
+      "affected": "No source read traces an effect on them to salinisation on the island.",
+      "influence score": 3,
+      "client": "no",
+      "no relations": "No source read shows their trade with an actor on this map: the sources read show their cultivars tested on Texel and their trading houses' view of salt tolerance, measured nationally.",
+      "sources": [
+        "van-straten-2021",
+        "de-wit-2022",
+        "aldrich-2023",
+        "van-den-burg-2024"
+      ],
+      "x": 1360,
+      "y": 720
+    },
+    {
+      "id": "nature-managers",
+      "label": "Nature managers on the island (Natuurmonumenten, Staatsbosbeheer)",
+      "scale": "outside",
+      "type": "Nature organisation",
+      "level": "Local / Provincial / Regional",
+      "sector": "Nature preservation",
+      "interest": "More water in their nature areas, and more of it held there: in Natuurmonumenten's words (2023), the longer dry periods from spring into summer now cause the problems, and it raised the thought of freshwater buffers of 5 to 10 ha, at pumping stations for example, for the next ten years, where the demand of farming, recreation and nature could come together.",
+      "influence": "The largest managers of the island's nature areas (2023). On its south coast, in Plan Tureluur, Staatsbosbeheer manages the western Prunje areas and the eastern ones towards Zierikzee were to come to Natuurmonumenten; a seepage ditch rings the whole area, so that its higher water level does not add seepage on the land around it (2006). Both were interviewed as the island's nature managers for KWR's exploration of a climate- and water-robust island (2023). Score 2: their areas border the farmland, and their wish for more water held there bears on the island's fresh water; no source read shows them deciding a measure for the farms.",
+      "affected": "Drought: in the summer of 2022 the island's thousands of breeding pairs raised almost no young, in Natuurmonumenten's words (2023).",
+      "influence score": 2,
+      "client": "no",
+      "no relations": "No source read shows a relation with another actor on this map: Natuurmonumenten's shared buffers are a thought (2023), and the source on the seepage ditch (2006) names no actor that keeps it.",
+      "sources": [
+        "delphy-2023-dorsd",
+        "van-haperen-2006",
+        "raat-2026"
+      ],
+      "x": 1540,
+      "y": 1600
     }
   ]
 }

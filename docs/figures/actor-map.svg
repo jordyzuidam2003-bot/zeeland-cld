@@ -124,6 +124,19 @@
 <rect x="1336.5" y="1033.0" width="117.0" height="52.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
 <text x="1395.0" y="1067.5" text-anchor="middle">Delphy</text>
 </g>
+<g class="actor" data-id="seed-potato-breeders-and-trading-houses"><title>Breeders and trading houses of seed potatoes</title>
+<rect x="1197.6" y="660.0" width="324.8" height="120.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="1360.0" y="694.5" text-anchor="middle">Breeders and trading</text>
+<text x="1360.0" y="728.5" text-anchor="middle">houses of seed</text>
+<text x="1360.0" y="762.5" text-anchor="middle">potatoes</text>
+</g>
+<g class="actor" data-id="nature-managers"><title>Nature managers on the island (Natuurmonumenten, Staatsbosbeheer)</title>
+<rect x="1362.8" y="1523.0" width="354.5" height="154.0" rx="18" fill="white" stroke="#444444" stroke-width="2"/>
+<text x="1540.0" y="1557.5" text-anchor="middle">Nature managers on the</text>
+<text x="1540.0" y="1591.5" text-anchor="middle">island</text>
+<text x="1540.0" y="1625.5" text-anchor="middle">(Natuurmonumenten,</text>
+<text x="1540.0" y="1659.5" text-anchor="middle">Staatsbosbeheer)</text>
+</g>
 </g>
 <g class="legend">
 <text x="555.5" y="1890.0" font-size="40" font-weight="bold" dominant-baseline="central">Relations</text>

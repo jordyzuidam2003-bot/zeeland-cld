@@ -796,7 +796,7 @@
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Salt-tolerant varieties of the current crops that breeders bring to market, and their yield; breeding lies outside the CLD's scale. Dutch breeders and suppliers sell potato cultivars that differ in salt tolerance: of 13 bought from them and tested in the field on Texel, Rivola, Elgar and '927' were more tolerant than the others on sandy soil (van Straten et al., 2021, pp. 2, 11). With no official label for salt tolerance, trading houses claim it for no variety and only say which suit saline soils best and worst, and salt tolerance is not yet among the ten traits that the salespeople of one trading house, endorsed by another, rank most important for a new variety (de Wit et al., 2022, pp. 271–272); stakeholders interviewed in the Dutch potato industry say the salt-tolerant seed potatoes bred in the Netherlands are mostly for export to arid countries such as Egypt and Morocco (Aldrich et al., 2023, pp. 38, 40). Tolerant varieties yield relatively little against common high-yielding ones without salt or under mild salt, and conventional breeding typically takes 10 to 15 years (van den Burg et al., 2024, pp. 3, 6). Measured in interviews across the Dutch potato chain and in field trials on Texel; none on the island.",
+      "description": "Salt-tolerant varieties of the current crops that breeders bring to market, and their yield; breeding lies outside the CLD's scale. Dutch breeders and suppliers sell potato cultivars that differ in salt tolerance: of 13 bought from them and tested in the field on Texel, Rivola, Elgar and '927' were more tolerant than the others on sandy soil (van Straten et al., 2021, pp. 2, 11). With no official label for salt tolerance, trading houses claim it for no variety, one of them saying only which suit saline soils best and worst, and salt tolerance is not yet among the ten traits that the salespeople of one trading house, endorsed by another, rank most important for a new variety (de Wit et al., 2022, pp. 271–272); stakeholders interviewed in the Dutch potato industry say the salt-tolerant seed potatoes bred in the Netherlands are mostly for export to arid countries such as Egypt and Morocco (Aldrich et al., 2023, pp. 38, 40). Tolerant varieties yield relatively little against common high-yielding ones without salt or under mild salt, and conventional breeding typically takes 10 to 15 years (van den Burg et al., 2024, pp. 3, 6). Measured in interviews across the Dutch potato chain and in field trials on Texel; none on the island.",
       "sources": [
         "van-straten-2021",
         "de-wit-2022",
@@ -3946,8 +3946,8 @@
   ],
   "changes": [
     {
-      "change": "Salt-tolerant varieties on offer: the top ten of a new variety's traits named as one trading house's practice, endorsed by another",
-      "argument": "The fresh readers on batch 9 found the Actor Map's same claim stronger than its source: the top ten is trading house 2's practice, endorsed by trading house 3, not every trading house's (de Wit et al., 2022, p. 272).",
+      "change": "Salt-tolerant varieties on offer: the top ten of a new variety's traits named as one trading house's practice, endorsed by another, and saying which varieties suit saline soils best and worst as one trading house's",
+      "argument": "The fresh readers on batch 9 and on its fixes found both claims stronger than their source when said of every trading house: the top ten is trading house 2's practice, endorsed by trading house 3 (de Wit et al., 2022, p. 272), and saying only which varieties suit saline soils best and worst is trading house 1's (p. 271).",
       "items": [
         "tolerant-varieties-on-offer"
       ]

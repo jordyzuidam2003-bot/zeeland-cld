@@ -63,9 +63,10 @@
   ]
  },
  "aldrich-2023": {
-  "digest": "eb368def024c",
+  "digest": "f5de3bdd32c3",
   "note": "H8SA3EM8",
   "placed": [
+   "Actor Map",
    "CLD"
   ]
  },
@@ -233,7 +234,7 @@
   ]
  },
  "de-louw-2011": {
-  "digest": "38a0340b9e70",
+  "digest": "cc2700de9631",
   "note": "PFVBHFHI",
   "placed": [
    "CLD"
@@ -275,14 +276,15 @@
   ]
  },
  "de-wit-2022": {
-  "digest": "3578e1640c8a",
+  "digest": "cef3baf6f797",
   "note": "X74I6MP3",
   "placed": [
+   "Actor Map",
    "CLD"
   ]
  },
  "delphy-2023-dorsd": {
-  "digest": "012c29371864",
+  "digest": "e408269fb67b",
   "note": "VPEP6PXN",
   "placed": [
    "Actor Map",
@@ -504,7 +506,7 @@
   ]
  },
  "kaandorp-2022": {
-  "digest": "8aa14f76253e",
+  "digest": "0805a7f5d102",
   "note": "UCUZ55BX",
   "placed": [
    "Actor Map",
@@ -531,7 +533,7 @@
   "placed": []
  },
  "knmi-2023-klimaatscenarios": {
-  "digest": "90d888290e62",
+  "digest": "dff05281f5ca",
   "note": "27EPJ3KD",
   "placed": [
    "CLD"
@@ -775,14 +777,14 @@
   ]
  },
  "oude-essink-2010": {
-  "digest": "170e0ca3c672",
+  "digest": "b8d391e1ffbb",
   "note": "7TJXEUNE",
   "placed": [
    "CLD"
   ]
  },
  "oude-essink-2018": {
-  "digest": "461442c211a1",
+  "digest": "604282a2ffd1",
   "note": "RBU5JMXG",
   "placed": [
    "CLD"
@@ -831,9 +833,10 @@
   ]
  },
  "raat-2026": {
-  "digest": "db5f8e1a205d",
+  "digest": "51e470b2f730",
   "note": "H25EG7M9",
   "placed": [
+   "Actor Map",
    "CLD"
   ]
  },
@@ -961,7 +964,7 @@
   ]
  },
  "scheldestromen-2021-hor-duiveland": {
-  "digest": "a740f582c8c2",
+  "digest": "3620c2478a4f",
   "note": "QUFF4FFH",
   "placed": [
    "CLD"
@@ -1037,7 +1040,7 @@
   ]
  },
  "scheldestromen-2026-waterschapsverordening": {
-  "digest": "84e90267c08b",
+  "digest": "8038043942ad",
   "note": "AZV8FWF7",
   "placed": [
    "CLD"
@@ -1179,9 +1182,10 @@
   ]
  },
  "van-den-burg-2024": {
-  "digest": "0324fd3d3912",
+  "digest": "287187666a65",
   "note": "U9WN39JA",
   "placed": [
+   "Actor Map",
    "CLD"
   ]
  },
@@ -1222,9 +1226,10 @@
   ]
  },
  "van-haperen-2006": {
-  "digest": "502bfa9df0e3",
+  "digest": "50eca342d917",
   "note": "AR3U3IEI",
   "placed": [
+   "Actor Map",
    "CLD"
   ]
  },
@@ -1250,9 +1255,10 @@
   ]
  },
  "van-straten-2021": {
-  "digest": "f5c581ffd9c6",
+  "digest": "68b62549efd4",
   "note": "QAGSV9NC",
   "placed": [
+   "Actor Map",
    "CLD"
   ]
  },

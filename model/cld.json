@@ -9,6 +9,7 @@
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
       "description": "Summers with less rain and more evaporation. Around 2050 (2036–2065), against 1991–2020, every KNMI'23 scenario has 2 to 13% less summer rain, 6 to 11% more potential evaporation in summer and a largest precipitation deficit of April to September 13 to 35% larger, and the great rivers carry less water in summer (KNMI, 2023, pp. 4, 42). Measured as national averages, evaporation over five stations, Vlissingen among them (p. 5): this report gives no rain or deficit number for Zeeland, which appears only on maps of the whole country, West Europe or Europe, in colour classes, for the present and around 2100 (pp. 15, 24, 27). Set outside the island: a Constant.",
+      "simplification": "Counts the summer's dryness on the island and in the great rivers as one driver: the summer rain and evaporation that the rainwater lens and the crops' water need follow, and the rivers' summer discharge that Fresh water supplied to the island depends on. Around 2050 summer rain falls and evaporation rises in every KNMI'23 scenario, and the great rivers carry less water in summer (KNMI, 2023, pp. 4, 42), so each link out keeps its sign; a summer dry on the island with the rivers still full, or the reverse, cannot be drawn. A Constant has no link in, so no loop runs through it.",
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],

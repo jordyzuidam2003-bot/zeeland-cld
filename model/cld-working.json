@@ -4000,13 +4000,6 @@
   ],
   "changes": [
     {
-      "change": "Hotter, drier summers as one driver for the island and the rivers stated",
-      "argument": "The simplification audit found one Constant standing for the island's summer weather and the great rivers' summer discharge, which its links read apart, unstated (CitationCheck/65810420/simplify/hotter-drier-summers.json, finding 1, confirmed by a fresh agent, who limited \"every scenario\" to the rain and evaporation).",
-      "items": [
-        "hotter-drier-summers"
-      ]
-    },
-    {
       "change": "The growers off the island held fixed stated",
       "argument": "The simplification audit found the growers off the island held constant, cutting a reinforcing loop beside R7 at the system boundary, unstated (CitationCheck/65810420/simplify/growers-of-new-crops-elsewhere.json, finding 2, confirmed by a fresh agent).",
       "items": [

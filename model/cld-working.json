@@ -4000,13 +4000,6 @@
   ],
   "changes": [
     {
-      "change": "Soil structure's one driver stated",
-      "argument": "The simplification audit found the salt drawn as Soil structure's only driver, while Spring workability of the fields names compaction by soil worked too wet, unstated (CitationCheck/65810420/simplify/soil-structure-usability.json, finding 3, confirmed by a fresh agent).",
-      "items": [
-        "soil-structure-usability"
-      ]
-    },
-    {
       "change": "Hotter, drier summers as one driver for the island and the rivers stated",
       "argument": "The simplification audit found one Constant standing for the island's summer weather and the great rivers' summer discharge, which its links read apart, unstated (CitationCheck/65810420/simplify/hotter-drier-summers.json, finding 1, confirmed by a fresh agent, who limited \"every scenario\" to the rain and evaporation).",
       "items": [

@@ -122,6 +122,7 @@
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
       "description": "The soil's aggregates and pores, which set how fast water soaks in: well-drained clay with its structure intact let the winter's rain surplus soak through almost completely, while clay whose structure sodium had broken down became impervious and sticky when wet (van Beekom et al., 1953a, p. 157; 1953b, pp. 230, 233, measured after the floods in Zeeland). A Stock: once broken down, it recovers over years (Root zone salinity → Soil structure). Workability, which structure and wetness both shape, is Spring workability of the fields.",
+      "simplification": "Draws the salt as the only driver of Soil structure. It leaves out the smearing and compaction of soil worked too wet, which Spring workability of the fields describes, because that damage comes from when and how the soil is worked, not from the salt or the fresh water, and no source on this element shows how much it adds on the island. Leaving it out removes an inflow and folds no step: every drawn link keeps its sign, and R1 stays reinforcing. A feedback from poor workability back to structure, if farmers work the soil while it is still wet, is not drawn.",
       "sources": [
         "van-beekom-1953-salt",
         "van-beekom-1953"

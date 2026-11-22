@@ -4000,33 +4000,6 @@
   ],
   "changes": [
     {
-      "change": "The switch to new salt-tolerant crops drawn apart from the hectares under them, and the new crops summed as one area stated",
-      "argument": "The simplification audit found the link Adoption of new salt-tolerant crops → Farmers' capacity to invest reading a one-off cost \"in the year a field changes crop\" from a Stock of hectares held, so every hectare kept would drain capacity every year; the flow was folded into its stock, failing the rule's conditions \"every variable still measures one quantity\" and \"keeps its mechanism\" (CitationCheck/65810420/simplify/salt-tolerant-crop-adoption.json, finding 2, confirmed by a fresh agent). Jordy chose to draw the flow: Fields moved to new salt-tolerant crops, the farmers' decision, takes the six links in and the cost link, and flows into the Stock (+), so B2, R6, B10 and R7 pass through it with their polarity kept. The simplification audit found the new crops counted as one area, which makes R7 a single chain for all of them, unstated (CitationCheck/65810420/simplify/salt-tolerant-crop-adoption.json, finding 1, confirmed by a fresh agent, who narrowed it to R7).",
-      "items": [
-        "fields-moved-to-new-salt-tolerant-crops",
-        "salt-tolerant-crop-adoption",
-        "fields-moved-to-new-salt-tolerant-crops -> salt-tolerant-crop-adoption",
-        "fields-moved-to-new-salt-tolerant-crops -> farmers-capacity-to-invest",
-        "salt-tolerant-crop-adoption -> farmers-capacity-to-invest",
-        "dependence-on-high-margin-salt-sensitive-crops -> fields-moved-to-new-salt-tolerant-crops",
-        "farmers-capacity-to-invest -> fields-moved-to-new-salt-tolerant-crops",
-        "harvest-lost-to-salt -> fields-moved-to-new-salt-tolerant-crops",
-        "market-demand-for-alternative-crops -> fields-moved-to-new-salt-tolerant-crops",
-        "net-price-for-new-crops -> fields-moved-to-new-salt-tolerant-crops",
-        "knowledge-of-new-crops -> fields-moved-to-new-salt-tolerant-crops",
-        "dependence-on-high-margin-salt-sensitive-crops -> salt-tolerant-crop-adoption",
-        "farmers-capacity-to-invest -> salt-tolerant-crop-adoption",
-        "harvest-lost-to-salt -> salt-tolerant-crop-adoption",
-        "market-demand-for-alternative-crops -> salt-tolerant-crop-adoption",
-        "net-price-for-new-crops -> salt-tolerant-crop-adoption",
-        "knowledge-of-new-crops -> salt-tolerant-crop-adoption",
-        "B2",
-        "R6",
-        "B10",
-        "R7"
-      ]
-    },
-    {
       "change": "Local processing capacity for new crops is Zeeland's, processing elsewhere outside it",
       "argument": "The simplification audit found Local processing capacity (\"on or near the island\") and Processing of new crops elsewhere (\"off the island\") overlapping, a plant at Colijnsplaat fitting both, so the capacity measured no definite quantity (CitationCheck/65810420/simplify/processing-capacity-for-alternative-crops.json, finding 2, confirmed by a fresh agent). Jordy set the border at Zeeland's: the chains the description names at Colijnsplaat and Nieuw- en Sint Joosland stay local, GreenFood50 at Wageningen elsewhere; the island alone would leave the capacity with no example, no source showing a new crop processed on it. The simplification audit found two unstated simplifications on the capacity: the chains of every kind of new crop counted as one, and public support for setting up a chain left out (CitationCheck/65810420/simplify/processing-capacity-for-alternative-crops.json, findings 1 and 3, confirmed by a fresh agent, who struck the audit's structure change for 3: the funder's decision was never drawn, so no condition fails).",
       "items": [

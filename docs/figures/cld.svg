@@ -87,9 +87,9 @@
 <path class="link-path" d="M 1782.9 -818.0 Q 769.6 -1733.0 -485.7 -1196.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-439.6" y="-1215.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="salt-tolerant-crop-adoption" data-sign="-" data-delay="false" data-curvature="-0.17">
-<path class="link-path" d="M 1753.2 -698.0 Q 904.6 -176.6 549.6 754.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="567.8" y="707.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="-" data-delay="false" data-curvature="-0.17">
+<path class="link-path" d="M 1768.9 -698.0 Q 1119.4 -218.8 896.6 557.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="910.9" y="509.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="true" data-curvature="-0.14" data-delay-t="0.56">
 <path class="link-path" d="M 492.6 94.0 Q 468.7 -266.4 261.1 -562.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -101,13 +101,13 @@
 <path class="link-path" d="M 560.6 94.0 Q 685.9 -39.4 743.6 -213.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="726.5" y="-166.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
+<g class="link" data-from="farmers-capacity-to-invest" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="false" data-curvature="0.29">
+<path class="link-path" d="M 811.6 -213.0 Q 1094.4 137.5 930.6 557.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="947.6" y="510.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
 <g class="link" data-from="farmers-capacity-to-invest" data-to="freshwater-storage-measures" data-sign="+" data-delay="false" data-curvature="0.1">
 <path class="link-path" d="M 602.6 -232.4 Q 80.8 -145.1 -434.4 -265.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-385.6" y="-254.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-</g>
-<g class="link" data-from="farmers-capacity-to-invest" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.29">
-<path class="link-path" d="M 811.6 -213.0 Q 978.1 336.6 583.6 754.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="617.3" y="717.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="hotter-drier-summers" data-to="crop-water-shortfall" data-sign="+" data-delay="false" data-curvature="0.0">
 <path class="link-path" d="M -1300.8 765.0 Q -1119.5 879.5 -938.2 994.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -240,8 +240,8 @@
 <text class="sign" x="413.4" y="181.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.29">
-<path class="link-path" d="M 465.3 754.0 Q 268.3 510.8 -40.6 561.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="9.0" y="554.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M 462.8 754.0 Q 267.1 511.5 -40.6 561.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="9.0" y="554.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="tolerant-varieties-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.66">
 <path class="link-path" d="M -179.5 1112.0 Q 167.9 872.6 -156.7 603.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -275,6 +275,24 @@
 <path class="link-path" d="M -505.8 -339.0 Q 109.3 -704.5 698.8 -299.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="657.1" y="-326.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
+<g class="link" data-from="harvest-lost-to-salt" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="true" data-curvature="0.13" data-delay-t="0.84">
+<path class="link-path" d="M -76.9 551.0 Q 311.2 458.7 695.0 567.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="646.7" y="554.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 568.9 512.4 L 559.6 559.5 M 584.6 515.5 L 575.3 562.6" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 568.9 512.4 L 559.6 559.5 M 584.6 515.5 L 575.3 562.6" stroke="#444444" stroke-width="5" fill="none"/>
+</g>
+<g class="link" data-from="market-demand-for-alternative-crops" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="false" data-curvature="0.0">
+<path class="link-path" d="M 627.7 1003.0 Q 737.0 823.0 846.3 643.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="820.4" y="685.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="net-price-for-new-crops" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="false" data-curvature="0.3">
+<path class="link-path" d="M 1022.1 877.0 Q 881.0 802.5 880.3 643.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="884.3" y="692.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="knowledge-of-new-crops" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="false" data-curvature="-0.26">
+<path class="link-path" d="M 1047.1 678.0 Q 986.3 569.5 862.6 557.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="911.7" y="566.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
 <g class="link" data-from="harvest-lost-to-salt" data-to="tolerant-varieties-adoption" data-sign="+" data-delay="false" data-curvature="0.32">
 <path class="link-path" d="M -190.7 603.0 Q -44.2 868.0 -223.6 1112.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-195.6" y="1070.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
@@ -283,31 +301,13 @@
 <path class="link-path" d="M -268.6 1354.0 Q -268.1 1293.0 -267.5 1232.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-268.0" y="1282.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="harvest-lost-to-salt" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="true" data-curvature="0.13" data-delay-t="0.48">
-<path class="link-path" d="M -40.6 593.0 Q 216.3 612.2 431.3 754.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="388.9" y="727.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M 196.3 614.4 L 181.2 659.9 M 211.5 619.4 L 196.4 665.0" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 196.3 614.4 L 181.2 659.9 M 211.5 619.4 L 196.4 665.0" stroke="#444444" stroke-width="5" fill="none"/>
-</g>
-<g class="link" data-from="market-demand-for-alternative-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.0">
-<path class="link-path" d="M 586.9 1003.0 Q 566.6 921.5 546.3 840.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="558.4" y="888.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-</g>
-<g class="link" data-from="net-price-for-new-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.3">
-<path class="link-path" d="M 942.2 953.0 Q 727.3 1005.1 580.3 840.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="615.5" y="875.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-</g>
-<g class="link" data-from="knowledge-of-new-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="-0.26">
-<path class="link-path" d="M 913.2 688.0 Q 748.2 644.2 617.6 754.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="657.9" y="724.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-</g>
 <g class="link" data-from="salt-tolerant-crop-adoption" data-to="knowledge-of-new-crops" data-sign="+" data-delay="false" data-curvature="-0.28">
 <path class="link-path" d="M 660.0 830.0 Q 857.8 897.4 1018.6 764.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="978.5" y="793.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="salt-tolerant-crop-adoption" data-to="farmers-capacity-to-invest" data-sign="-" data-delay="false" data-curvature="0">
-<path class="link-path" d="M 515.6 754.0 Q 646.6 270.5 777.6 -213.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="764.5" y="-164.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<g class="link" data-from="fields-moved-to-new-salt-tolerant-crops" data-to="farmers-capacity-to-invest" data-sign="-" data-delay="false" data-curvature="0.2">
+<path class="link-path" d="M 828.6 557.0 Q 649.1 182.2 777.6 -213.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="763.2" y="-165.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="market-demand-for-alternative-crops" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="false" data-curvature="0.0">
 <path class="link-path" d="M 610.9 1089.0 Q 633.0 1227.5 655.1 1366.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -338,10 +338,10 @@
 <text class="sign" x="1644.2" y="362.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="spending-on-keeping-current-crops" data-sign="+" data-delay="true" data-curvature="0.1" data-delay-t="0.60">
-<path class="link-path" d="M 1862.8 -698.0 Q 1953.0 -155.5 1827.6 380.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="1838.5" y="331.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M 1917.9 -55.7 L 1870.0 -59.2 M 1916.8 -39.8 L 1868.9 -43.3" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 1917.9 -55.7 L 1870.0 -59.2 M 1916.8 -39.8 L 1868.9 -43.3" stroke="#444444" stroke-width="5" fill="none"/>
+<path class="link-path" d="M 1870.9 -698.0 Q 1957.0 -154.7 1827.6 380.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="1838.9" y="331.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 1921.2 -55.2 L 1873.4 -59.0 M 1919.9 -39.2 L 1872.1 -43.1" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 1921.2 -55.2 L 1873.4 -59.0 M 1919.9 -39.2 L 1872.1 -43.1" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="spending-on-keeping-current-crops" data-to="farmers-capacity-to-invest" data-sign="-" data-delay="false" data-curvature="-0.1">
 <path class="link-path" d="M 1772.8 380.0 Q 1385.5 -5.8 879.6 -213.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -513,17 +513,17 @@
 <path class="delay-cut" d="M -900.5 -824.5 L -876.1 -865.8 M -914.3 -832.7 L -889.8 -874.0" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -900.5 -824.5 L -876.1 -865.8 M -914.3 -832.7 L -889.8 -874.0" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="root-zone-salinity" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="-" data-delay="true" data-curvature="-0.17" data-delay-t="0.12">
-<path class="link-path" d="M -371.4 476.0 Q 911.2 257.3 1794.8 -698.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="1760.6" y="-661.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-<path class="delay-cut" d="M -82.9 391.5 L -71.3 438.1 M -67.4 387.7 L -55.8 434.3" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -82.9 391.5 L -71.3 438.1 M -67.4 387.7 L -55.8 434.3" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="root-zone-salinity" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="-" data-delay="true" data-curvature="-0.17" data-delay-t="0.52">
+<path class="link-path" d="M -371.4 476.0 Q 915.3 258.6 1802.9 -698.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="1768.6" y="-661.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M 840.1 33.0 L 863.5 74.9 M 854.1 25.2 L 877.5 67.1" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 840.1 33.0 L 863.5 74.9 M 854.1 25.2 L 877.5 67.1" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="freshwater-availability-for-crops" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="true" data-curvature="-0.15" data-delay-t="0.40">
-<path class="link-path" d="M -2027.6 1723.0 Q 263.7 1091.0 1828.8 -698.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="1795.7" y="-660.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M -329.3 1015.0 L -306.2 1057.2 M -315.2 1007.4 L -292.2 1049.5" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -329.3 1015.0 L -306.2 1057.2 M -315.2 1007.4 L -292.2 1049.5" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="freshwater-availability-for-crops" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="true" data-curvature="-0.15" data-delay-t="0.52">
+<path class="link-path" d="M -2027.6 1723.0 Q 267.8 1092.2 1836.9 -698.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="1803.8" y="-660.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 143.5 737.6 L 169.5 778.0 M 156.9 728.9 L 182.9 769.3" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 143.5 737.6 L 169.5 778.0 M 156.9 728.9 L 182.9 769.3" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="net-price-for-new-crops" data-to="margin-given-up-on-high-margin-crops" data-sign="-" data-delay="false" data-curvature="0.45">
 <path class="link-path" d="M 1071.7 963.0 Q 718.6 1371.4 275.4 1063.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -580,6 +580,10 @@
 <text class="sign" x="577.3" y="1485.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M 475.5 1545.1 L 507.7 1580.7 M 487.4 1534.4 L 519.5 1570.0" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 475.5 1545.1 L 507.7 1580.7 M 487.4 1534.4 L 519.5 1570.0" stroke="#444444" stroke-width="5" fill="none"/>
+</g>
+<g class="link" data-from="fields-moved-to-new-salt-tolerant-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.2">
+<path class="link-path" d="M 812.3 643.0 Q 753.4 731.0 650.0 754.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="697.7" y="738.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 </g>
 <g class="elements">
@@ -671,6 +675,11 @@
 <rect x="484.8" y="1366.0" width="354.5" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
 <text x="662.0" y="1400.5" text-anchor="middle">Local processing</text>
 <text x="662.0" y="1434.5" text-anchor="middle">capacity for new crops</text>
+</g>
+<g class="element" data-id="fields-moved-to-new-salt-tolerant-crops" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
+<rect x="695.0" y="557.0" width="310.0" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="850.0" y="591.5" text-anchor="middle">Fields moved to new</text>
+<text x="850.0" y="625.5" text-anchor="middle">salt-tolerant crops</text>
 </g>
 <g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Stock" data-adaptive="true">
 <rect x="350.0" y="754.0" width="310.0" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>

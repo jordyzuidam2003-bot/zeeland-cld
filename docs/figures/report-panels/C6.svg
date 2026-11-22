@@ -1,87 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1365 -1156 2790 2421" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1365 -1168 2790 2421" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
 <defs>
 <marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
 <marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
 <marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
 </defs>
-<rect x="-1365" y="-1156" width="2790" height="2421" fill="white"/>
+<rect x="-1365" y="-1168" width="2790" height="2421" fill="white"/>
 <g class="links">
-<g class="link" data-from="harvest-lost-to-salt" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="true" data-curvature="-0.677">
-<path class="link-path" d="M 30.1 701.0 Q 265.8 861.7 547.7 817.8 Q 829.5 773.9 1005.2 549.1 Q 1180.8 324.3 1155.2 40.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="1158.1" y="90.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M 786.1 710.8 L 810.6 752.1 M 799.9 702.6 L 824.4 743.9" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 786.1 710.8 L 810.6 752.1 M 799.9 702.6 L 824.4 743.9" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="harvest-lost-to-salt" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="true" data-curvature="-0.677">
+<path class="link-path" d="M -58.0 701.0 Q 169.0 841.4 430.9 789.5 Q 692.8 737.7 849.3 521.4 Q 1005.7 305.1 973.0 40.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="977.5" y="90.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 646.7 680.7 L 672.6 721.1 M 660.2 672.1 L 686.1 712.5" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 646.7 680.7 L 672.6 721.1 M 660.2 672.1 L 686.1 712.5" stroke="#444444" stroke-width="5" fill="none"/>
+</g>
+<g class="link" data-from="fields-moved-to-new-salt-tolerant-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0">
+<path class="link-path" d="M 1058.1 -2.8 Q 1058.1 -2.8 1058.1 -2.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="1058.1" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="0.253">
-<path class="link-path" d="M 1122.9 40.2 Q 958.3 291.0 705.8 452.9 Q 453.4 614.9 156.8 659.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="206.1" y="651.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M 1120.9 40.2 Q 936.5 302.9 660.4 466.5 Q 384.3 630.1 65.4 665.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="115.0" y="659.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="agricultural-land-value" data-to="mortgage-debt-financial-leverage" data-sign="-" data-delay="false" data-curvature="0">
-<path class="link-path" d="M -681.6 -2.8 Q -641.0 -2.8 -600.4 -2.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-650.4" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M -707.8 -2.8 Q -682.0 -2.8 -656.1 -2.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-706.1" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="mortgage-debt-financial-leverage" data-to="banks-risk-assessment" data-sign="+" data-delay="false" data-curvature="0">
-<path class="link-path" d="M -305.3 -2.8 Q -268.0 -2.8 -230.7 -2.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-280.7" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -360.9 -2.8 Q -339.6 -2.8 -318.3 -2.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-360.9" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="banks-risk-assessment" data-to="bank-credit-to-farms" data-sign="-" data-delay="false" data-curvature="0">
-<path class="link-path" d="M 123.7 -2.8 Q 159.6 -2.8 195.4 -2.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="145.4" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M 36.2 -2.8 Q 55.6 -2.8 74.9 -2.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="36.2" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="bank-credit-to-farms" data-to="farmers-capacity-to-invest" data-sign="+" data-delay="false" data-curvature="0">
-<path class="link-path" d="M 520.2 -2.8 Q 557.4 -2.8 594.7 -2.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="544.7" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M 399.7 -2.8 Q 421.1 -2.8 442.4 -2.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="399.7" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="farmers-capacity-to-invest" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0">
-<path class="link-path" d="M 919.5 -2.8 Q 957.3 -2.8 995.0 -2.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="945.0" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<g class="link" data-from="farmers-capacity-to-invest" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="false" data-curvature="0">
+<path class="link-path" d="M 767.2 -2.8 Q 789.2 -2.8 811.3 -2.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="767.2" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="harvest-lost-to-salt" data-to="farm-revenue" data-sign="-" data-delay="false" data-curvature="0.251">
-<path class="link-path" d="M -168.0 658.6 Q -466.5 610.7 -719.1 444.6 Q -971.7 278.4 -1133.9 23.2" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-1106.3" y="64.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M -259.4 651.8 Q -535.2 594.8 -764.1 430.5 Q -992.9 266.3 -1135.2 23.2" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-1109.1" y="65.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="farm-revenue" data-to="agricultural-land-value" data-sign="+" data-delay="true" data-curvature="0">
-<path class="link-path" d="M -1054.4 -2.8 Q -1008.1 -2.8 -961.9 -2.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-1011.9" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M -1016.1 -26.8 L -1016.1 21.2 M -1000.1 -26.8 L -1000.1 21.2" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -1016.1 -26.8 L -1016.1 21.2 M -1000.1 -26.8 L -1000.1 21.2" stroke="#444444" stroke-width="5" fill="none"/>
+<path class="link-path" d="M -1054.4 -2.8 Q -1021.3 -2.8 -988.1 -2.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-1038.1" y="-2.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -1029.3 -26.8 L -1029.3 21.2 M -1013.3 -26.8 L -1013.3 21.2" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -1029.3 -26.8 L -1029.3 21.2 M -1013.3 -26.8 L -1013.3 21.2" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="bank-credit-to-farms" data-to="mortgage-debt-financial-leverage" data-sign="+" data-delay="false" data-curvature="0.503">
-<path class="link-path" d="M 337.1 23.2 Q 240.0 137.5 96.2 180.2 Q -47.5 222.9 -191.3 180.2 Q -335.0 137.5 -432.1 23.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-398.0" y="59.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M 216.6 23.2 Q 127.2 127.1 -4.2 165.8 Q -135.6 204.6 -267.0 165.8 Q -398.4 127.1 -487.7 23.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-453.2" y="59.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="salt-tolerant-crop-adoption" data-to="margin-given-up-on-high-margin-crops" data-sign="+" data-delay="false" data-curvature="-0.251">
-<path class="link-path" d="M 1122.4 -45.8 Q 954.4 -297.7 698.1 -458.8 Q 441.8 -619.9 142.0 -662.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="191.4" y="-654.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M 1120.5 -45.8 Q 932.5 -309.4 652.6 -472.0 Q 372.7 -634.7 50.6 -667.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="100.2" y="-661.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="margin-given-up-on-high-margin-crops" data-to="farm-revenue" data-sign="-" data-delay="false" data-curvature="-0.249">
-<path class="link-path" d="M -153.2 -660.9 Q -455.0 -615.9 -711.5 -450.6 Q -968.1 -285.2 -1133.6 -28.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-1105.8" y="-70.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M -244.6 -654.8 Q -523.8 -600.5 -756.6 -436.9 Q -989.3 -273.2 -1134.9 -28.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-1108.6" y="-71.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 </g>
 <g class="elements">
 <g class="element" data-id="agricultural-land-value" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-961.9" y="-45.8" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-821.8" y="-11.3" text-anchor="middle">Agricultural land</text>
-<text x="-821.8" y="22.7" text-anchor="middle">value</text>
+<rect x="-988.1" y="-45.8" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-848.0" y="-11.3" text-anchor="middle">Agricultural land</text>
+<text x="-848.0" y="22.7" text-anchor="middle">value</text>
 </g>
 <g class="element" data-id="mortgage-debt-financial-leverage" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-600.4" y="-28.8" width="295.1" height="52.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-452.8" y="5.7" text-anchor="middle">Financial leverage</text>
+<rect x="-656.1" y="-28.8" width="295.1" height="52.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-508.5" y="5.7" text-anchor="middle">Financial leverage</text>
 </g>
 <g class="element" data-id="banks-risk-assessment" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-230.7" y="-45.8" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-53.5" y="-11.3" text-anchor="middle">Banks' risk assessment</text>
-<text x="-53.5" y="22.7" text-anchor="middle">of farm loans</text>
+<rect x="-318.3" y="-45.8" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-141.1" y="-11.3" text-anchor="middle">Banks' risk assessment</text>
+<text x="-141.1" y="22.7" text-anchor="middle">of farm loans</text>
 </g>
 <g class="element" data-id="bank-credit-to-farms" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="195.4" y="-28.8" width="324.8" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="357.8" y="5.7" text-anchor="middle">Bank credit to farms</text>
+<rect x="74.9" y="-28.8" width="324.8" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="237.3" y="5.7" text-anchor="middle">Bank credit to farms</text>
 </g>
 <g class="element" data-id="farmers-capacity-to-invest" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="594.7" y="-45.8" width="324.8" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="757.1" y="-11.3" text-anchor="middle">Farmers' capacity to</text>
-<text x="757.1" y="22.7" text-anchor="middle">invest</text>
+<rect x="442.4" y="-45.8" width="324.8" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="604.8" y="-11.3" text-anchor="middle">Farmers' capacity to</text>
+<text x="604.8" y="22.7" text-anchor="middle">invest</text>
 </g>
 <g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Stock" data-adaptive="true">
 <rect x="995.0" y="-45.8" width="310.0" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
@@ -89,33 +93,38 @@
 <text x="1150.0" y="22.7" text-anchor="middle">salt-tolerant crops</text>
 </g>
 <g class="element" data-id="harvest-lost-to-salt" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-168.0" y="649.0" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="-5.6" y="683.5" text-anchor="middle">Harvest lost to salt</text>
+<rect x="-259.4" y="649.0" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="-97.0" y="683.5" text-anchor="middle">Harvest lost to salt</text>
 </g>
 <g class="element" data-id="farm-revenue" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
 <rect x="-1245.6" y="-28.8" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-1150.0" y="5.7" text-anchor="middle">Farm income</text>
 </g>
 <g class="element" data-id="margin-given-up-on-high-margin-crops" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-153.2" y="-718.0" width="295.1" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-5.6" y="-683.5" text-anchor="middle">Margin given up on</text>
-<text x="-5.6" y="-649.5" text-anchor="middle">high-margin crops</text>
+<rect x="-244.6" y="-718.0" width="295.1" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-97.0" y="-683.5" text-anchor="middle">Margin given up on</text>
+<text x="-97.0" y="-649.5" text-anchor="middle">high-margin crops</text>
+</g>
+<g class="element" data-id="fields-moved-to-new-salt-tolerant-crops" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
+<rect x="811.3" y="-45.8" width="310.0" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="966.3" y="-11.3" text-anchor="middle">Fields moved to new</text>
+<text x="966.3" y="22.7" text-anchor="middle">salt-tolerant crops</text>
 </g>
 </g>
 <g class="loop" data-id="B2">
-<path d="M 701.2 604.7 A 48 48 0 1 0 749.2 652.7" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="701.2" y="652.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B2</text>
+<path d="M 553.3 604.7 A 48 48 0 1 0 601.3 652.7" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="553.3" y="652.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B2</text>
 </g>
 <g class="loop" data-id="R6">
-<path d="M 0.0 405.4 A 48 48 0 1 1 -48.0 453.4" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="0.0" y="453.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R6</text>
+<path d="M -91.9 405.4 A 48 48 0 1 1 -139.9 453.4" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="-91.9" y="453.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R6</text>
 </g>
 <g class="loop" data-id="B9">
-<path d="M -47.1 82.3 A 48 48 0 1 1 -95.1 130.3" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="-47.1" y="130.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B9</text>
+<path d="M -135.2 82.3 A 48 48 0 1 1 -183.2 130.3" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="-135.2" y="130.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B9</text>
 </g>
 <g class="loop" data-id="B10">
-<path d="M 0.0 -400.9 A 48 48 0 1 0 48.0 -352.9" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
-<text class="loop-id" x="0.0" y="-352.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B10</text>
+<path d="M -91.9 -400.9 A 48 48 0 1 0 -43.9 -352.9" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="-91.9" y="-352.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B10</text>
 </g>
 </svg>

@@ -796,6 +796,22 @@
       }
     },
     {
+      "_id": "elem-fields-moved-to-new-salt-tolerant-crops",
+      "attributes": {
+        "label": "Fields moved to new  salt-tolerant crops",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Technological",
+        "subsystem": "Agricultural economy",
+        "subquestion": "SQ2",
+        "description": "Hectares the island's farmers move from their current crops to new salt-tolerant crops in a year. The farmers decide it field by field: they move a field where they find a new crop worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them. Switching to salt- or drought-resistant crop types is among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013. What a switch costs falls in the year a field moves (Fields moved to new salt-tolerant crops → Farmers' capacity to invest); the field then stays under its new crop in Adoption of new salt-tolerant crops. An Auxiliary: a year's flow into that Stock.",
+        "actor": "Arable farmers on Schouwen-Duiveland",
+        "actors": "Arable farmers on Schouwen-Duiveland",
+        "sources": "van Duinen, R., Filatova, T., Geurts, P., & van der Veen, A. (2015a). Coping with drought risk: Empirical analysis of farmers’ drought adaptation in the south-west Netherlands. Regional Environmental Change, 15(6), 1081–1093. https://doi.org/10.1007/s10113-014-0692-y",
+        "sourced": "yes"
+      }
+    },
+    {
       "_id": "elem-salt-tolerant-crop-adoption",
       "attributes": {
         "label": "Adoption of new  salt-tolerant crops",
@@ -804,7 +820,8 @@
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Hectares under crops new to the island's rotations that tolerate salt. On the parcels studied in the island's low polders the rotations hold potato, onion, sugar beet, cereals and grass seed (Kaandorp et al., 2022, p. 30), and no source read shows a new crop grown on the island. Elsewhere in Zeeland, most still experimental and small (Deolu-Ajayi et al., 2024, p. 57): samphire and sea aster, irrigated with saline water on the edges of salt marshes at Emmadorp, Waterdunen and Wolphaarsdijk, labour intensive and seasonal, their sales low (van den Burg et al., 2024, p. 6); sea fennel and sea banana on an arable farm at Colijnsplaat, where a new company worked out how to grow them, in fields and greenhouses, and set up their supply chain (EU CAP Network, 2023). Quinoa grows to maturity on irrigation water of more than 250 mM NaCl (van Loo, 2023, p. 77) and is sown with standard equipment and harvested with a combine, but needs a fine seed bed and weed control set by its row distance (p. 75). Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them. Switching to salt- or drought-resistant crop types is among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013. A Stock: a field keeps its crop through the season, and farmers move fields to a new crop over years, as they come to see the damage over dry summers (Harvest lost to salt → Adoption of new salt-tolerant crops).",
+        "description": "Hectares under crops new to the island's rotations that tolerate salt. On the parcels studied in the island's low polders the rotations hold potato, onion, sugar beet, cereals and grass seed (Kaandorp et al., 2022, p. 30), and no source read shows a new crop grown on the island. Elsewhere in Zeeland, most still experimental and small (Deolu-Ajayi et al., 2024, p. 57): samphire and sea aster, irrigated with saline water on the edges of salt marshes at Emmadorp, Waterdunen and Wolphaarsdijk, labour intensive and seasonal, their sales low (van den Burg et al., 2024, p. 6); sea fennel and sea banana on an arable farm at Colijnsplaat, where a new company worked out how to grow them, in fields and greenhouses, and set up their supply chain (EU CAP Network, 2023). Quinoa grows to maturity on irrigation water of more than 250 mM NaCl (van Loo, 2023, p. 77) and is sown with standard equipment and harvested with a combine, but needs a fine seed bed and weed control set by its row distance (p. 75). Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them. Switching to salt- or drought-resistant crop types is among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013. A Stock: a field keeps its crop through the season, and farmers move fields to a new crop over years (Fields moved to new salt-tolerant crops), as they come to see the damage over dry summers (Harvest lost to salt → Fields moved to new salt-tolerant crops).",
+        "simplification": "Counts the hectares of every new salt-tolerant crop in the island's rotations as one area and lets them act alike on each link out, while the crops differ: quinoa is sown with standard equipment and harvested with a combine (van Loo, 2023, p. 75), sea fennel and sea banana are grown in fields and greenhouses with a supply chain of their own (EU CAP Network, 2023), and samphire and sea aster are labour intensive, their sales low (van den Burg et al., 2024, p. 6). It abstracts in summing the hectares and idealizes in R7, where one crop's harvest draws a chain that raises every new crop's net price, while a chain for one crop raises only that crop's price. No crop reverses a sign, so B2, R6, B10 and R7 keep their polarity and their mechanism, each running crop by crop; what it leaves out is how hard each crop pulls in each loop.",
         "actor": "Arable farmers on Schouwen-Duiveland",
         "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nDeolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nEU CAP Network. (2023). 'Zeeland's roots for new crops': Growing sea bananas and sea fennel on saline land thanks to LEADER climate adaptation support [Good practice report]. European Commission. https://eu-cap-network.ec.europa.eu/sites/default/files/2023-07/Zeeland%E2%80%99s%20roots%20for%20new%20crops.pdf\nvan Loo, R. (2023). Quinoa: A new protein source. In S. Pyett, W. Jenkins, B. van Mierlo, L. M. Trindade, D. Welch, & H. van Zanten (Eds.), Our future proteins: A diversity of perspectives (pp. 74–81). VU University Press. https://vuuniversitypress.com/p/uploads/OurFutureProteinsOA.pdf\nvan Duinen, R., Filatova, T., Geurts, P., & van der Veen, A. (2015a). Coping with drought risk: Empirical analysis of farmers’ drought adaptation in the south-west Netherlands. Regional Environmental Change, 15(6), 1081–1093. https://doi.org/10.1007/s10113-014-0692-y",
@@ -1466,7 +1483,7 @@
         "affected": "Their farms depend wholly on rain and on the fresh groundwater under the dunes, the creek ridges and the thin rainwater lenses of the low polders: the island has no link to the main freshwater system, so in dry periods no water can be brought in and no ditches flushed, its shallow groundwater and ditches carry much salt, and the farms run short of water; drought in the growing season, subsidence and sea level rise make this worse, and the dry years 2018–2020 showed the farms vulnerable. Delphy's report on the island's freshwater demand (2023) finds farming on the island impossible without more fresh water; in 2026 a potato grower at Nieuwerkerk lost a fifth of his harvest to drought, had stopped growing onions for want of fresh water, and found ditch water at times nearly as salt as the Oosterschelde. Adapting is uncertain for them: the measures that store fresh water in the subsoil are not yet fitted to the island's conditions, their costs, risks and gain in yield unknown, so many farmers find the investment too risky to make alone.",
         "influence score": 5,
         "client": "no",
-        "decides in the CLD": "Farmers' demand for deep polder drainage\nFreshwater storage measures\nGroundwater extraction for irrigation\nAdoption of new salt-tolerant crops\nDependence on high-margin salt-sensitive crops\nAdoption of salt-tolerant varieties\nSpending on keeping the current crops",
+        "decides in the CLD": "Farmers' demand for deep polder drainage\nFreshwater storage measures\nGroundwater extraction for irrigation\nFields moved to new salt-tolerant crops\nAdoption of new salt-tolerant crops\nDependence on high-margin salt-sensitive crops\nAdoption of salt-tolerant varieties\nSpending on keeping the current crops",
         "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nCBS. (2026, March 30). Landbouw; gewassen, dieren en grondgebruik naar gemeente (StatLine table 80781ned, final figures for 2025) [Data set]. https://opendata.cbs.nl/statline/#/CBS/nl/dataset/80781ned\nOmroep Zeeland. (2023, May 31). Sombere toekomst voor boeren op Schouwen-Duiveland door tekort aan zoet water. https://www.omroepzeeland.nl/nieuws/15614167/sombere-toekomst-voor-boeren-op-schouwen-duiveland-door-tekort-aan-zoet-water\nvan Essen, C. (2026, October 15). Aardappeloogst valt flink tegen door droogte: 'We missen 20 procent'. Omroep Zeeland. https://www.omroepzeeland.nl/nieuws/18862756/aardappeloogst-valt-flink-tegen-door-droogte-we-missen-20-procent\nWiepkema, F. (2023, May 31). Zonder meer zoet water wordt agrarisch ondernemen op Schouwen Duiveland onmogelijk. Akkerwijzer. https://www.akkerwijzer.nl/artikel/750772-zonder-meer-zoet-water-wordt-agrarisch-ondernemen-op-schouwen-duiveland-onmogelijk/\nWaterschapswet (version in force from 1 January 2026). https://wetten.overheid.nl/BWBR0005108/2026-01-01\nWaterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf"
       }
     },
@@ -2135,7 +2152,7 @@
       "to": "elem-demand-for-deep-polder-drainage"
     },
     {
-      "_id": "conn-dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption",
+      "_id": "conn-dependence-on-high-margin-salt-sensitive-crops--fields-moved-to-new-salt-tolerant-crops",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -2152,7 +2169,7 @@
         "connection type": "-"
       },
       "from": "elem-dependence-on-high-margin-salt-sensitive-crops",
-      "to": "elem-salt-tolerant-crop-adoption"
+      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
     },
     {
       "_id": "conn-farm-revenue--agricultural-land-value",
@@ -2195,6 +2212,26 @@
       "to": "elem-farmers-capacity-to-invest"
     },
     {
+      "_id": "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "Capacity to invest decides whether a farm can pay for the switch (new machines, the first years of a new crop), not whether it wants to. The costs of salt-tolerant seed and soil amendments may not make up for the yield and income salt takes in the first years, when setting up costs most, and the benefits are not always obvious in the short term (Deolu-Ajayi et al., 2024, p. 60); farms whose financial buffers shrank in the corona crisis were expected to be less willing to invest, slowing their modernisation and sustainability, and banks often count financing a new concept whose returns are not yet proven as a risk (van der Meulen et al., 2020, p. 6). For samphire and sea aster the outlet, not only capacity to invest, limits adoption: their food market is small and easily saturated, in the authors' judgement (van den Burg et al., 2024, p. 6), and growers in Zeeland's saline cultivation, eight in all, say there is little room for new entrants, and that making room would also take strong growth of the market for saline vegetables (Delphy, 2023, p. 49, a consultancy report commissioned by Agrarisch Schouwen Duiveland that argues for a freshwater supply, p. 50). Delphy adds that cheaper imports compete and that few of Zeeland's soils suit these crops, but sees openings in high-end restaurants and retail if the season can be lengthened, and in other saline crops less grown abroad (p. 49). Within the year: the crop is chosen each season.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nvan der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nDelphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-farmers-capacity-to-invest",
+      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
+    },
+    {
       "_id": "conn-farmers-capacity-to-invest--freshwater-storage-measures",
       "direction": "directed",
       "delayed": false,
@@ -2213,26 +2250,6 @@
       },
       "from": "elem-farmers-capacity-to-invest",
       "to": "elem-freshwater-storage-measures"
-    },
-    {
-      "_id": "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "Capacity to invest decides whether a farm can pay for the switch (new machines, the first years of a new crop), not whether it wants to. The costs of salt-tolerant seed and soil amendments may not make up for the yield and income salt takes in the first years, when setting up costs most, and the benefits are not always obvious in the short term (Deolu-Ajayi et al., 2024, p. 60); farms whose financial buffers shrank in the corona crisis were expected to be less willing to invest, slowing their modernisation and sustainability, and banks often count financing a new concept whose returns are not yet proven as a risk (van der Meulen et al., 2020, p. 6). For samphire and sea aster the outlet, not only capacity to invest, limits adoption: their food market is small and easily saturated, in the authors' judgement (van den Burg et al., 2024, p. 6), and growers in Zeeland's saline cultivation, eight in all, say there is little room for new entrants, and that making room would also take strong growth of the market for saline vegetables (Delphy, 2023, p. 49, a consultancy report commissioned by Agrarisch Schouwen Duiveland that argues for a freshwater supply, p. 50). Delphy adds that cheaper imports compete and that few of Zeeland's soils suit these crops, but sees openings in high-end restaurants and retail if the season can be lengthened, and in other saline crops less grown abroad (p. 49). Within the year: the crop is chosen each season.",
-        "sets link": "S to T",
-        "sets scope": "Cross-domain",
-        "hypothesis": "no",
-        "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nvan der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nDelphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-farmers-capacity-to-invest",
-      "to": "elem-salt-tolerant-crop-adoption"
     },
     {
       "_id": "conn-hotter-drier-summers--crop-water-shortfall",
@@ -3020,6 +3037,90 @@
       "to": "elem-farmers-capacity-to-invest"
     },
     {
+      "_id": "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
+      "direction": "directed",
+      "delayed": true,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "yes",
+        "description": "The more of the current crops' harvest salt takes, the more a new salt-tolerant crop is worth against them, so the more farmers grow it, but only past a threshold: Dutch farmers in salinised areas mostly hold back from saline agriculture unless salt severely hits their production (Deolu-Ajayi et al., 2024, p. 57). In interviews across the salinisation-prone provinces, Zeeland among them, salt in a field was largely invisible and seldom measured, a lower yield hard to put down to salt alone, and the damage not yet significant enough to make it urgent; it would take more dry summers like 2018 (Beauchampet, 2022, p. 216). Nearly all interviewees did not see halophytes as part of the answer, for lack of markets, the soils' intolerance of salt and the hand work they take (p. 221). In Zeeland most farmers still grow the common salt-sensitive crops (van den Burg et al., 2024, p. 6), and on the island the response a source shows is giving up a sensitive crop, sown onions (Kaandorp et al., 2022, p. 31), not taking up a new one. The shift the island's farmers do show is to a crop they already grow, from onions to cereals, which the source puts down to drought (Raat et al., 2026, p. 49); the island grows proportionally fewer potatoes and vegetables, mainly onions, and more cereals, which tolerate salt better, than Goeree-Overflakkee, which is connected to the main water system and so can take in fresh water (p. 34, which names no data source or year). Many of the interviewees across the provinces see research on the salt tolerance of cash crops, especially of cultivars already on the market, as contributing to resilience to salt (Beauchampet, 2022, p. 221). Years, as farmers come to see the damage over dry summers: a delay.",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description. Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what salt takes.",
+        "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nRaat, K., van Aalderen, N., & Krajenbrink, H. (2026). Laag Nederland 2050: Een verkenning naar een klimaat- en waterrobuuste inrichting voor Schouwen-Duiveland (KWR 2026.037). KWR Water Research Institute. https://api2.kwrwater.nl/uploads/KWR%202026.037%20Laag%20Nederland%202050.%20Een%20verkenning%20naar%20een%20klimaat-%20en%20waterrobuuste%20inrichting%20voor%20Schouwen-Duiveland.pdf",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-harvest-lost-to-salt",
+      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
+    },
+    {
+      "_id": "conn-market-demand-for-alternative-crops--fields-moved-to-new-salt-tolerant-crops",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "Assured offtake lowers the risk of a new crop, so more farmers grow it.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "yes",
+        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-market-demand-for-alternative-crops",
+      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
+    },
+    {
+      "_id": "conn-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "A better price after transport makes a new crop more worthwhile against the current crops, so more farmers grow it. In France, the prices of pulses are reported not high enough against major crops such as wheat, so more price incentives are needed for farmers to grow them, and most stakeholders want outlets of higher value (Magrini et al., 2018, p. 9); a specific incentive to farmers in 2010 doubled the area of pulses in its first year, and it fell back the next, downstream actors not particularly interested in them (Meynard et al., 2018, p. 10); in the Netherlands' salinising provinces, Zeeland among them, nearly all interviewees did not see halophytes as part of the answer, mostly for lack of markets, the soils' intolerance and the hand work they take (Beauchampet, 2022, p. 221). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276). The same interviews, conducted as a contribution to the EU's North Sea Region SalFar project, find Dutch quinoa grown under contract for one distributor, which buys a pre-agreed amount at a fixed price and manages supply according to demand, a dependency interviewees name as hampering its uptake (de Wit et al., 2022, pp. 266, 268, 277). Where a crop is sold this way and no other buyer competes, as none had for quinoa (p. 268), that means a better price raises the hectares only as far as the buyer contracts more. Within the year: the crop is chosen each season.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
+        "sources": "Magrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nMeynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-net-price-for-new-crops",
+      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
+    },
+    {
+      "_id": "conn-knowledge-of-new-crops--fields-moved-to-new-salt-tolerant-crops",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "Farmers who know how to grow and sell a new crop find it less risky, so more of them grow it.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "yes",
+        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-knowledge-of-new-crops",
+      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
+    },
+    {
       "_id": "conn-harvest-lost-to-salt--tolerant-varieties-adoption",
       "direction": "directed",
       "delayed": false,
@@ -3062,90 +3163,6 @@
       "to": "elem-tolerant-varieties-adoption"
     },
     {
-      "_id": "conn-harvest-lost-to-salt--salt-tolerant-crop-adoption",
-      "direction": "directed",
-      "delayed": true,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "yes",
-        "description": "The more of the current crops' harvest salt takes, the more a new salt-tolerant crop is worth against them, so the more farmers grow it, but only past a threshold: Dutch farmers in salinised areas mostly hold back from saline agriculture unless salt severely hits their production (Deolu-Ajayi et al., 2024, p. 57). In interviews across the salinisation-prone provinces, Zeeland among them, salt in a field was largely invisible and seldom measured, a lower yield hard to put down to salt alone, and the damage not yet significant enough to make it urgent; it would take more dry summers like 2018 (Beauchampet, 2022, p. 216). Nearly all interviewees did not see halophytes as part of the answer, for lack of markets, the soils' intolerance of salt and the hand work they take (p. 221). In Zeeland most farmers still grow the common salt-sensitive crops (van den Burg et al., 2024, p. 6), and on the island the response a source shows is giving up a sensitive crop, sown onions (Kaandorp et al., 2022, p. 31), not taking up a new one. The shift the island's farmers do show is to a crop they already grow, from onions to cereals, which the source puts down to drought (Raat et al., 2026, p. 49); the island grows proportionally fewer potatoes and vegetables, mainly onions, and more cereals, which tolerate salt better, than Goeree-Overflakkee, which is connected to the main water system and so can take in fresh water (p. 34, which names no data source or year). Many of the interviewees across the provinces see research on the salt tolerance of cash crops, especially of cultivars already on the market, as contributing to resilience to salt (Beauchampet, 2022, p. 221). Years, as farmers come to see the damage over dry summers: a delay.",
-        "sets link": "E to T",
-        "sets scope": "Cross-domain",
-        "hypothesis": "no",
-        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description. Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what salt takes.",
-        "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nRaat, K., van Aalderen, N., & Krajenbrink, H. (2026). Laag Nederland 2050: Een verkenning naar een klimaat- en waterrobuuste inrichting voor Schouwen-Duiveland (KWR 2026.037). KWR Water Research Institute. https://api2.kwrwater.nl/uploads/KWR%202026.037%20Laag%20Nederland%202050.%20Een%20verkenning%20naar%20een%20klimaat-%20en%20waterrobuuste%20inrichting%20voor%20Schouwen-Duiveland.pdf",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-harvest-lost-to-salt",
-      "to": "elem-salt-tolerant-crop-adoption"
-    },
-    {
-      "_id": "conn-market-demand-for-alternative-crops--salt-tolerant-crop-adoption",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "Assured offtake lowers the risk of a new crop, so more farmers grow it.",
-        "sets link": "S to T",
-        "sets scope": "Cross-domain",
-        "hypothesis": "yes",
-        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "+"
-      },
-      "from": "elem-market-demand-for-alternative-crops",
-      "to": "elem-salt-tolerant-crop-adoption"
-    },
-    {
-      "_id": "conn-net-price-for-new-crops--salt-tolerant-crop-adoption",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "A better price after transport makes a new crop more worthwhile against the current crops, so more farmers grow it. In France, the prices of pulses are reported not high enough against major crops such as wheat, so more price incentives are needed for farmers to grow them, and most stakeholders want outlets of higher value (Magrini et al., 2018, p. 9); a specific incentive to farmers in 2010 doubled the area of pulses in its first year, and it fell back the next, downstream actors not particularly interested in them (Meynard et al., 2018, p. 10); in the Netherlands' salinising provinces, Zeeland among them, nearly all interviewees did not see halophytes as part of the answer, mostly for lack of markets, the soils' intolerance and the hand work they take (Beauchampet, 2022, p. 221). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276). The same interviews, conducted as a contribution to the EU's North Sea Region SalFar project, find Dutch quinoa grown under contract for one distributor, which buys a pre-agreed amount at a fixed price and manages supply according to demand, a dependency interviewees name as hampering its uptake (de Wit et al., 2022, pp. 266, 268, 277). Where a crop is sold this way and no other buyer competes, as none had for quinoa (p. 268), that means a better price raises the hectares only as far as the buyer contracts more. Within the year: the crop is chosen each season.",
-        "sets link": "S to T",
-        "sets scope": "Cross-domain",
-        "hypothesis": "no",
-        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
-        "sources": "Magrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nMeynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-net-price-for-new-crops",
-      "to": "elem-salt-tolerant-crop-adoption"
-    },
-    {
-      "_id": "conn-knowledge-of-new-crops--salt-tolerant-crop-adoption",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "Farmers who know how to grow and sell a new crop find it less risky, so more of them grow it.",
-        "sets link": "S to T",
-        "sets scope": "Cross-domain",
-        "hypothesis": "yes",
-        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "+"
-      },
-      "from": "elem-knowledge-of-new-crops",
-      "to": "elem-salt-tolerant-crop-adoption"
-    },
-    {
       "_id": "conn-salt-tolerant-crop-adoption--knowledge-of-new-crops",
       "direction": "directed",
       "delayed": false,
@@ -3166,7 +3183,7 @@
       "to": "elem-knowledge-of-new-crops"
     },
     {
-      "_id": "conn-salt-tolerant-crop-adoption--farmers-capacity-to-invest",
+      "_id": "conn-fields-moved-to-new-salt-tolerant-crops--farmers-capacity-to-invest",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -3182,7 +3199,7 @@
         "sourced": "yes",
         "connection type": "-"
       },
-      "from": "elem-salt-tolerant-crop-adoption",
+      "from": "elem-fields-moved-to-new-salt-tolerant-crops",
       "to": "elem-farmers-capacity-to-invest"
     },
     {
@@ -4383,6 +4400,26 @@
       "to": "elem-processing-capacity-for-alternative-crops"
     },
     {
+      "_id": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "Each hectare moved adds to the hectares under new crops, where it stays while the farm grows the crop: the switch is the Stock's yearly inflow, a farmers' measure that van Duinen et al. (2015a, p. 1085) list among those for drought in the south-west Netherlands. Within the year.",
+        "sets link": "Within T",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "sources": "van Duinen, R., Filatova, T., Geurts, P., & van der Veen, A. (2015a). Coping with drought risk: Empirical analysis of farmers’ drought adaptation in the south-west Netherlands. Regional Environmental Change, 15(6), 1081–1093. https://doi.org/10.1007/s10113-014-0692-y",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-fields-moved-to-new-salt-tolerant-crops",
+      "to": "elem-salt-tolerant-crop-adoption"
+    },
+    {
       "_id": "conn-0",
       "direction": "directed",
       "delayed": false,
@@ -4908,7 +4945,8 @@
         "description": "The more harvest salt takes, the more a new salt-tolerant crop is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches: that farmers hold back until salt severely hits their production rests on sources, what sets each farmer's threshold, through their crops, margins, buyers and bank, is a hypothesis for the group model building session. On the island no source read shows B2 at work: the shift its farmers show is from onions to cereals, a crop they already grow and no new one, which the source puts down to drought (Raat et al., 2026, p. 49). With B1 and B3 it is a way out of the same salt: switching keeps the land arable, B3 is arable farming ending. It drives new crops."
       },
       "connections": [
-        "conn-harvest-lost-to-salt--salt-tolerant-crop-adoption",
+        "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
+        "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
         "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt"
       ]
     },
@@ -5072,7 +5110,8 @@
         "conn-mortgage-debt-financial-leverage--banks-risk-assessment",
         "conn-banks-risk-assessment--bank-credit-to-farms",
         "conn-bank-credit-to-farms--farmers-capacity-to-invest",
-        "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
+        "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
+        "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
         "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt",
         "conn-harvest-lost-to-salt--farm-revenue",
         "conn-farm-revenue--agricultural-land-value"
@@ -5101,7 +5140,8 @@
         "conn-mortgage-debt-financial-leverage--banks-risk-assessment",
         "conn-banks-risk-assessment--bank-credit-to-farms",
         "conn-bank-credit-to-farms--farmers-capacity-to-invest",
-        "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
+        "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
+        "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
         "conn-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops",
         "conn-margin-given-up-on-high-margin-crops--farm-revenue",
         "conn-farm-revenue--agricultural-land-value"
@@ -5116,7 +5156,8 @@
       "connections": [
         "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
         "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops",
-        "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
+        "conn-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops",
+        "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
       ]
     },
     {
@@ -5400,6 +5441,16 @@
           "pinned": true,
           "style": {},
           "element": "elem-processing-capacity-for-alternative-crops"
+        },
+        {
+          "_id": "node-fields-moved-to-new-salt-tolerant-crops",
+          "position": {
+            "x": 850,
+            "y": 600
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fields-moved-to-new-salt-tolerant-crops"
         },
         {
           "_id": "node-salt-tolerant-crop-adoption",
@@ -5942,10 +5993,10 @@
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage"
         },
         {
-          "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption",
+          "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--fields-moved-to-new-salt-tolerant-crops",
           "curvature": -0.17,
           "style": {},
-          "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--salt-tolerant-crop-adoption"
+          "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--fields-moved-to-new-salt-tolerant-crops"
         },
         {
           "_id": "edge-farm-revenue--agricultural-land-value",
@@ -5960,16 +6011,16 @@
           "connection": "conn-farm-revenue--farmers-capacity-to-invest"
         },
         {
+          "_id": "edge-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.29,
+          "style": {},
+          "connection": "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
           "_id": "edge-farmers-capacity-to-invest--freshwater-storage-measures",
           "curvature": 0.1,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--freshwater-storage-measures"
-        },
-        {
-          "_id": "edge-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
-          "curvature": 0.29,
-          "style": {},
-          "connection": "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption"
         },
         {
           "_id": "edge-hotter-drier-summers--crop-water-shortfall",
@@ -6206,6 +6257,30 @@
           "connection": "conn-freshwater-storage-measures--farmers-capacity-to-invest"
         },
         {
+          "_id": "edge-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.13,
+          "style": {},
+          "connection": "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
+          "_id": "edge-market-demand-for-alternative-crops--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.0,
+          "style": {},
+          "connection": "conn-market-demand-for-alternative-crops--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
+          "_id": "edge-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.3,
+          "style": {},
+          "connection": "conn-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
+          "_id": "edge-knowledge-of-new-crops--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": -0.26,
+          "style": {},
+          "connection": "conn-knowledge-of-new-crops--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
           "_id": "edge-harvest-lost-to-salt--tolerant-varieties-adoption",
           "curvature": 0.32,
           "style": {},
@@ -6218,40 +6293,16 @@
           "connection": "conn-tolerant-varieties-on-offer--tolerant-varieties-adoption"
         },
         {
-          "_id": "edge-harvest-lost-to-salt--salt-tolerant-crop-adoption",
-          "curvature": 0.13,
-          "style": {},
-          "connection": "conn-harvest-lost-to-salt--salt-tolerant-crop-adoption"
-        },
-        {
-          "_id": "edge-market-demand-for-alternative-crops--salt-tolerant-crop-adoption",
-          "curvature": 0.0,
-          "style": {},
-          "connection": "conn-market-demand-for-alternative-crops--salt-tolerant-crop-adoption"
-        },
-        {
-          "_id": "edge-net-price-for-new-crops--salt-tolerant-crop-adoption",
-          "curvature": 0.3,
-          "style": {},
-          "connection": "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
-        },
-        {
-          "_id": "edge-knowledge-of-new-crops--salt-tolerant-crop-adoption",
-          "curvature": -0.26,
-          "style": {},
-          "connection": "conn-knowledge-of-new-crops--salt-tolerant-crop-adoption"
-        },
-        {
           "_id": "edge-salt-tolerant-crop-adoption--knowledge-of-new-crops",
           "curvature": -0.28,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--knowledge-of-new-crops"
         },
         {
-          "_id": "edge-salt-tolerant-crop-adoption--farmers-capacity-to-invest",
-          "curvature": 0,
+          "_id": "edge-fields-moved-to-new-salt-tolerant-crops--farmers-capacity-to-invest",
+          "curvature": 0.2,
           "style": {},
-          "connection": "conn-salt-tolerant-crop-adoption--farmers-capacity-to-invest"
+          "connection": "conn-fields-moved-to-new-salt-tolerant-crops--farmers-capacity-to-invest"
         },
         {
           "_id": "edge-market-demand-for-alternative-crops--processing-capacity-for-alternative-crops",
@@ -6606,6 +6657,12 @@
           "curvature": 0.0,
           "style": {},
           "connection": "conn-growers-of-new-crops-elsewhere--processing-capacity-for-alternative-crops"
+        },
+        {
+          "_id": "edge-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
+          "curvature": 0.2,
+          "style": {},
+          "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
         }
       ],
       "loops": [
@@ -6632,8 +6689,8 @@
           "loop": "loop-B2",
           "style": {},
           "position": {
-            "x": 151,
-            "y": 687
+            "x": 384,
+            "y": 658
           }
         },
         {
@@ -6731,8 +6788,8 @@
           "loop": "loop-R6",
           "style": {},
           "position": {
-            "x": 615,
-            "y": -242
+            "x": 641,
+            "y": -149
           }
         },
         {
@@ -6749,8 +6806,8 @@
           "loop": "loop-B10",
           "style": {},
           "position": {
-            "x": 667,
-            "y": -187
+            "x": 687,
+            "y": -100
           }
         },
         {
@@ -6758,8 +6815,8 @@
           "loop": "loop-R7",
           "style": {},
           "position": {
-            "x": 760,
-            "y": 1042
+            "x": 782,
+            "y": 932
           }
         },
         {
@@ -7396,6 +7453,16 @@
           "pinned": true,
           "style": {},
           "element": "elem-tolerant-varieties-adoption"
+        },
+        {
+          "_id": "node-group-C1-fields-moved-to-new-salt-tolerant-crops",
+          "position": {
+            "x": -1200,
+            "y": 200
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fields-moved-to-new-salt-tolerant-crops"
         }
       ],
       "connections": [
@@ -7466,12 +7533,6 @@
           "connection": "conn-soil-structure-usability--freshwater-lens-thickness"
         },
         {
-          "_id": "edge-group-C1-harvest-lost-to-salt--salt-tolerant-crop-adoption",
-          "curvature": -0.147,
-          "style": {},
-          "connection": "conn-harvest-lost-to-salt--salt-tolerant-crop-adoption"
-        },
-        {
           "_id": "edge-group-C1-salt-tolerant-crop-adoption--harvest-lost-to-salt",
           "curvature": -0.147,
           "style": {},
@@ -7488,6 +7549,18 @@
           "curvature": -0.595,
           "style": {},
           "connection": "conn-tolerant-varieties-adoption--harvest-lost-to-salt"
+        },
+        {
+          "_id": "edge-group-C1-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
+          "_id": "edge-group-C1-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
         }
       ],
       "loops": [
@@ -8659,7 +8732,7 @@
         {
           "_id": "node-group-C6-salt-tolerant-crop-adoption",
           "position": {
-            "x": 1440,
+            "x": 1690,
             "y": 0
           },
           "pinned": true,
@@ -8695,15 +8768,19 @@
           "pinned": true,
           "style": {},
           "element": "elem-margin-given-up-on-high-margin-crops"
+        },
+        {
+          "_id": "node-group-C6-fields-moved-to-new-salt-tolerant-crops",
+          "position": {
+            "x": 1440,
+            "y": 0
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fields-moved-to-new-salt-tolerant-crops"
         }
       ],
       "connections": [
-        {
-          "_id": "edge-group-C6-harvest-lost-to-salt--salt-tolerant-crop-adoption",
-          "curvature": -0.677,
-          "style": {},
-          "connection": "conn-harvest-lost-to-salt--salt-tolerant-crop-adoption"
-        },
         {
           "_id": "edge-group-C6-salt-tolerant-crop-adoption--harvest-lost-to-salt",
           "curvature": 0.253,
@@ -8735,12 +8812,6 @@
           "connection": "conn-bank-credit-to-farms--farmers-capacity-to-invest"
         },
         {
-          "_id": "edge-group-C6-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
-          "curvature": 0,
-          "style": {},
-          "connection": "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption"
-        },
-        {
           "_id": "edge-group-C6-harvest-lost-to-salt--farm-revenue",
           "curvature": 0.251,
           "style": {},
@@ -8769,6 +8840,24 @@
           "curvature": 0.503,
           "style": {},
           "connection": "conn-bank-credit-to-farms--mortgage-debt-financial-leverage"
+        },
+        {
+          "_id": "edge-group-C6-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": -0.677,
+          "style": {},
+          "connection": "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
+          "_id": "edge-group-C6-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
+          "_id": "edge-group-C6-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
         }
       ],
       "loops": [
@@ -8828,9 +8917,19 @@
       "defaultConnectionDirection": "directed",
       "elements": [
         {
+          "_id": "node-group-C7-fields-moved-to-new-salt-tolerant-crops",
+          "position": {
+            "x": -230,
+            "y": 0
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
           "_id": "node-group-C7-salt-tolerant-crop-adoption",
           "position": {
-            "x": 0,
+            "x": 230,
             "y": 0
           },
           "pinned": true,
@@ -8840,8 +8939,8 @@
         {
           "_id": "node-group-C7-margin-given-up-on-high-margin-crops",
           "position": {
-            "x": -483,
-            "y": -112
+            "x": 622,
+            "y": 285
           },
           "pinned": true,
           "style": {},
@@ -8850,8 +8949,8 @@
         {
           "_id": "node-group-C7-farm-revenue",
           "position": {
-            "x": -690,
-            "y": -393
+            "x": 695,
+            "y": 665
           },
           "pinned": true,
           "style": {},
@@ -8860,8 +8959,8 @@
         {
           "_id": "node-group-C7-agricultural-land-value",
           "position": {
-            "x": -479,
-            "y": -672
+            "x": 477,
+            "y": 1007
           },
           "pinned": true,
           "style": {},
@@ -8871,7 +8970,7 @@
           "_id": "node-group-C7-mortgage-debt-financial-leverage",
           "position": {
             "x": 0,
-            "y": -782
+            "y": 1164
           },
           "pinned": true,
           "style": {},
@@ -8880,8 +8979,8 @@
         {
           "_id": "node-group-C7-banks-risk-assessment",
           "position": {
-            "x": 479,
-            "y": -672
+            "x": -477,
+            "y": 1007
           },
           "pinned": true,
           "style": {},
@@ -8890,8 +8989,8 @@
         {
           "_id": "node-group-C7-bank-credit-to-farms",
           "position": {
-            "x": 690,
-            "y": -393
+            "x": -695,
+            "y": 665
           },
           "pinned": true,
           "style": {},
@@ -8900,8 +8999,8 @@
         {
           "_id": "node-group-C7-farmers-capacity-to-invest",
           "position": {
-            "x": 483,
-            "y": -112
+            "x": -622,
+            "y": 285
           },
           "pinned": true,
           "style": {},
@@ -8910,8 +9009,8 @@
         {
           "_id": "node-group-C7-processing-capacity-for-alternative-crops",
           "position": {
-            "x": 315,
-            "y": 373
+            "x": 249,
+            "y": -450
           },
           "pinned": true,
           "style": {},
@@ -8920,8 +9019,8 @@
         {
           "_id": "node-group-C7-net-price-for-new-crops",
           "position": {
-            "x": -315,
-            "y": 373
+            "x": -249,
+            "y": -450
           },
           "pinned": true,
           "style": {},
@@ -8930,70 +9029,76 @@
       ],
       "connections": [
         {
+          "_id": "edge-group-C7-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
+          "curvature": 0,
+          "style": {},
+          "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
+        },
+        {
           "_id": "edge-group-C7-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops",
-          "curvature": 0.123,
+          "curvature": 0.183,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops"
         },
         {
           "_id": "edge-group-C7-margin-given-up-on-high-margin-crops--farm-revenue",
-          "curvature": 0.272,
+          "curvature": 0.192,
           "style": {},
           "connection": "conn-margin-given-up-on-high-margin-crops--farm-revenue"
         },
         {
           "_id": "edge-group-C7-farm-revenue--agricultural-land-value",
-          "curvature": 0.269,
+          "curvature": 0.18,
           "style": {},
           "connection": "conn-farm-revenue--agricultural-land-value"
         },
         {
           "_id": "edge-group-C7-agricultural-land-value--mortgage-debt-financial-leverage",
-          "curvature": 0.122,
+          "curvature": 0.166,
           "style": {},
           "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
         },
         {
           "_id": "edge-group-C7-mortgage-debt-financial-leverage--banks-risk-assessment",
-          "curvature": 0.122,
+          "curvature": 0.166,
           "style": {},
           "connection": "conn-mortgage-debt-financial-leverage--banks-risk-assessment"
         },
         {
           "_id": "edge-group-C7-banks-risk-assessment--bank-credit-to-farms",
-          "curvature": 0.269,
+          "curvature": 0.18,
           "style": {},
           "connection": "conn-banks-risk-assessment--bank-credit-to-farms"
         },
         {
           "_id": "edge-group-C7-bank-credit-to-farms--farmers-capacity-to-invest",
-          "curvature": 0.272,
+          "curvature": 0.192,
           "style": {},
           "connection": "conn-bank-credit-to-farms--farmers-capacity-to-invest"
         },
         {
-          "_id": "edge-group-C7-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
-          "curvature": 0.123,
+          "_id": "edge-group-C7-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.183,
           "style": {},
-          "connection": "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption"
+          "connection": "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops"
         },
         {
           "_id": "edge-group-C7-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
-          "curvature": 0.798,
+          "curvature": -0.522,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops"
         },
         {
           "_id": "edge-group-C7-processing-capacity-for-alternative-crops--net-price-for-new-crops",
-          "curvature": 0.271,
+          "curvature": -0.345,
           "style": {},
           "connection": "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops"
         },
         {
-          "_id": "edge-group-C7-net-price-for-new-crops--salt-tolerant-crop-adoption",
-          "curvature": 0.798,
+          "_id": "edge-group-C7-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": -0.522,
           "style": {},
-          "connection": "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
+          "connection": "conn-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops"
         }
       ],
       "loops": [
@@ -9004,7 +9109,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 230
+            "y": -283
           }
         },
         {
@@ -9014,7 +9119,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": -391
+            "y": 597
           }
         }
       ]
@@ -9948,18 +10053,28 @@
         {
           "_id": "node-loop-B2-harvest-lost-to-salt",
           "position": {
-            "x": -405,
-            "y": 0
+            "x": -377,
+            "y": -123
           },
           "pinned": true,
           "style": {},
           "element": "elem-harvest-lost-to-salt"
         },
         {
+          "_id": "node-loop-B2-fields-moved-to-new-salt-tolerant-crops",
+          "position": {
+            "x": 295,
+            "y": -181
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
           "_id": "node-loop-B2-salt-tolerant-crop-adoption",
           "position": {
-            "x": 405,
-            "y": 0
+            "x": 31,
+            "y": 246
           },
           "pinned": true,
           "style": {},
@@ -9968,14 +10083,20 @@
       ],
       "connections": [
         {
-          "_id": "edge-loop-B2-harvest-lost-to-salt--salt-tolerant-crop-adoption",
-          "curvature": 0.567,
+          "_id": "edge-loop-B2-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.277,
           "style": {},
-          "connection": "conn-harvest-lost-to-salt--salt-tolerant-crop-adoption"
+          "connection": "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
+          "_id": "edge-loop-B2-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
+          "curvature": 0.942,
+          "style": {},
+          "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
         },
         {
           "_id": "edge-loop-B2-salt-tolerant-crop-adoption--harvest-lost-to-salt",
-          "curvature": 0.567,
+          "curvature": 0.665,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt"
         }
@@ -11243,8 +11364,8 @@
         {
           "_id": "node-loop-R6-agricultural-land-value",
           "position": {
-            "x": -298,
-            "y": -408
+            "x": -313,
+            "y": -487
           },
           "pinned": true,
           "style": {},
@@ -11253,8 +11374,8 @@
         {
           "_id": "node-loop-R6-mortgage-debt-financial-leverage",
           "position": {
-            "x": 277,
-            "y": -413
+            "x": 300,
+            "y": -490
           },
           "pinned": true,
           "style": {},
@@ -11263,8 +11384,8 @@
         {
           "_id": "node-loop-R6-banks-risk-assessment",
           "position": {
-            "x": 702,
-            "y": -193
+            "x": 780,
+            "y": -271
           },
           "pinned": true,
           "style": {},
@@ -11273,8 +11394,8 @@
         {
           "_id": "node-loop-R6-bank-credit-to-farms",
           "position": {
-            "x": 728,
-            "y": 159
+            "x": 898,
+            "y": 99
           },
           "pinned": true,
           "style": {},
@@ -11283,7 +11404,7 @@
         {
           "_id": "node-loop-R6-farmers-capacity-to-invest",
           "position": {
-            "x": 307,
+            "x": 570,
             "y": 406
           },
           "pinned": true,
@@ -11291,10 +11412,20 @@
           "element": "elem-farmers-capacity-to-invest"
         },
         {
+          "_id": "node-loop-R6-fields-moved-to-new-salt-tolerant-crops",
+          "position": {
+            "x": -11,
+            "y": 518
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
           "_id": "node-loop-R6-salt-tolerant-crop-adoption",
           "position": {
-            "x": -309,
-            "y": 406
+            "x": -588,
+            "y": 397
           },
           "pinned": true,
           "style": {},
@@ -11303,8 +11434,8 @@
         {
           "_id": "node-loop-R6-harvest-lost-to-salt",
           "position": {
-            "x": -726,
-            "y": 161
+            "x": -903,
+            "y": 83
           },
           "pinned": true,
           "style": {},
@@ -11313,8 +11444,8 @@
         {
           "_id": "node-loop-R6-farm-revenue",
           "position": {
-            "x": -714,
-            "y": -178
+            "x": -781,
+            "y": -270
           },
           "pinned": true,
           "style": {},
@@ -11324,49 +11455,55 @@
       "connections": [
         {
           "_id": "edge-loop-R6-agricultural-land-value--mortgage-debt-financial-leverage",
-          "curvature": 0.108,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
         },
         {
           "_id": "edge-loop-R6-mortgage-debt-financial-leverage--banks-risk-assessment",
-          "curvature": 0.157,
+          "curvature": 0.134,
           "style": {},
           "connection": "conn-mortgage-debt-financial-leverage--banks-risk-assessment"
         },
         {
           "_id": "edge-loop-R6-banks-risk-assessment--bank-credit-to-farms",
-          "curvature": 0.365,
+          "curvature": 0.311,
           "style": {},
           "connection": "conn-banks-risk-assessment--bank-credit-to-farms"
         },
         {
           "_id": "edge-loop-R6-bank-credit-to-farms--farmers-capacity-to-invest",
-          "curvature": 0.177,
+          "curvature": 0.201,
           "style": {},
           "connection": "conn-bank-credit-to-farms--farmers-capacity-to-invest"
         },
         {
-          "_id": "edge-loop-R6-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
-          "curvature": 0.116,
+          "_id": "edge-loop-R6-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.106,
           "style": {},
-          "connection": "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption"
+          "connection": "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
+          "_id": "edge-loop-R6-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
+          "curvature": 0.107,
+          "style": {},
+          "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
         },
         {
           "_id": "edge-loop-R6-salt-tolerant-crop-adoption--harvest-lost-to-salt",
-          "curvature": 0.175,
+          "curvature": 0.209,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt"
         },
         {
           "_id": "edge-loop-R6-harvest-lost-to-salt--farm-revenue",
-          "curvature": 0.352,
+          "curvature": 0.294,
           "style": {},
           "connection": "conn-harvest-lost-to-salt--farm-revenue"
         },
         {
           "_id": "edge-loop-R6-farm-revenue--agricultural-land-value",
-          "curvature": 0.164,
+          "curvature": 0.132,
           "style": {},
           "connection": "conn-farm-revenue--agricultural-land-value"
         }
@@ -11477,8 +11614,8 @@
         {
           "_id": "node-loop-B10-agricultural-land-value",
           "position": {
-            "x": -304,
-            "y": -416
+            "x": -313,
+            "y": -487
           },
           "pinned": true,
           "style": {},
@@ -11487,8 +11624,8 @@
         {
           "_id": "node-loop-B10-mortgage-debt-financial-leverage",
           "position": {
-            "x": 278,
-            "y": -422
+            "x": 298,
+            "y": -490
           },
           "pinned": true,
           "style": {},
@@ -11497,8 +11634,8 @@
         {
           "_id": "node-loop-B10-banks-risk-assessment",
           "position": {
-            "x": 711,
-            "y": -202
+            "x": 777,
+            "y": -274
           },
           "pinned": true,
           "style": {},
@@ -11507,8 +11644,8 @@
         {
           "_id": "node-loop-B10-bank-credit-to-farms",
           "position": {
-            "x": 747,
-            "y": 154
+            "x": 900,
+            "y": 92
           },
           "pinned": true,
           "style": {},
@@ -11517,18 +11654,28 @@
         {
           "_id": "node-loop-B10-farmers-capacity-to-invest",
           "position": {
-            "x": 325,
-            "y": 411
+            "x": 582,
+            "y": 400
           },
           "pinned": true,
           "style": {},
           "element": "elem-farmers-capacity-to-invest"
         },
         {
+          "_id": "node-loop-B10-fields-moved-to-new-salt-tolerant-crops",
+          "position": {
+            "x": 7,
+            "y": 518
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
           "_id": "node-loop-B10-salt-tolerant-crop-adoption",
           "position": {
-            "x": -296,
-            "y": 418
+            "x": -571,
+            "y": 405
           },
           "pinned": true,
           "style": {},
@@ -11537,8 +11684,8 @@
         {
           "_id": "node-loop-B10-margin-given-up-on-high-margin-crops",
           "position": {
-            "x": -735,
-            "y": 172
+            "x": -901,
+            "y": 89
           },
           "pinned": true,
           "style": {},
@@ -11547,8 +11694,8 @@
         {
           "_id": "node-loop-B10-farm-revenue",
           "position": {
-            "x": -725,
-            "y": -184
+            "x": -779,
+            "y": -272
           },
           "pinned": true,
           "style": {},
@@ -11558,49 +11705,55 @@
       "connections": [
         {
           "_id": "edge-loop-B10-agricultural-land-value--mortgage-debt-financial-leverage",
-          "curvature": 0.108,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-agricultural-land-value--mortgage-debt-financial-leverage"
         },
         {
           "_id": "edge-loop-B10-mortgage-debt-financial-leverage--banks-risk-assessment",
-          "curvature": 0.154,
+          "curvature": 0.132,
           "style": {},
           "connection": "conn-mortgage-debt-financial-leverage--banks-risk-assessment"
         },
         {
           "_id": "edge-loop-B10-banks-risk-assessment--bank-credit-to-farms",
-          "curvature": 0.362,
+          "curvature": 0.305,
           "style": {},
           "connection": "conn-banks-risk-assessment--bank-credit-to-farms"
         },
         {
           "_id": "edge-loop-B10-bank-credit-to-farms--farmers-capacity-to-invest",
-          "curvature": 0.18,
+          "curvature": 0.203,
           "style": {},
           "connection": "conn-bank-credit-to-farms--farmers-capacity-to-invest"
         },
         {
-          "_id": "edge-loop-B10-farmers-capacity-to-invest--salt-tolerant-crop-adoption",
-          "curvature": 0.115,
+          "_id": "edge-loop-B10-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.106,
           "style": {},
-          "connection": "conn-farmers-capacity-to-invest--salt-tolerant-crop-adoption"
+          "connection": "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
+          "_id": "edge-loop-B10-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
+          "curvature": 0.105,
+          "style": {},
+          "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
         },
         {
           "_id": "edge-loop-B10-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops",
-          "curvature": 0.173,
+          "curvature": 0.208,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops"
         },
         {
           "_id": "edge-loop-B10-margin-given-up-on-high-margin-crops--farm-revenue",
-          "curvature": 0.364,
+          "curvature": 0.301,
           "style": {},
           "connection": "conn-margin-given-up-on-high-margin-crops--farm-revenue"
         },
         {
           "_id": "edge-loop-B10-farm-revenue--agricultural-land-value",
-          "curvature": 0.162,
+          "curvature": 0.131,
           "style": {},
           "connection": "conn-farm-revenue--agricultural-land-value"
         }
@@ -11634,8 +11787,8 @@
         {
           "_id": "node-loop-R7-salt-tolerant-crop-adoption",
           "position": {
-            "x": -377,
-            "y": -123
+            "x": -276,
+            "y": -156
           },
           "pinned": true,
           "style": {},
@@ -11644,8 +11797,8 @@
         {
           "_id": "node-loop-R7-processing-capacity-for-alternative-crops",
           "position": {
-            "x": 294,
-            "y": -182
+            "x": 223,
+            "y": -181
           },
           "pinned": true,
           "style": {},
@@ -11654,32 +11807,48 @@
         {
           "_id": "node-loop-R7-net-price-for-new-crops",
           "position": {
-            "x": 40,
-            "y": 245
+            "x": 276,
+            "y": 156
           },
           "pinned": true,
           "style": {},
           "element": "elem-net-price-for-new-crops"
+        },
+        {
+          "_id": "node-loop-R7-fields-moved-to-new-salt-tolerant-crops",
+          "position": {
+            "x": -223,
+            "y": 181
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fields-moved-to-new-salt-tolerant-crops"
         }
       ],
       "connections": [
         {
           "_id": "edge-loop-R7-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
-          "curvature": 0.276,
+          "curvature": 0.207,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops"
         },
         {
           "_id": "edge-loop-R7-processing-capacity-for-alternative-crops--net-price-for-new-crops",
-          "curvature": 0.945,
+          "curvature": 0.811,
           "style": {},
           "connection": "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops"
         },
         {
-          "_id": "edge-loop-R7-net-price-for-new-crops--salt-tolerant-crop-adoption",
-          "curvature": 0.665,
+          "_id": "edge-loop-R7-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.207,
           "style": {},
-          "connection": "conn-net-price-for-new-crops--salt-tolerant-crop-adoption"
+          "connection": "conn-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
+          "_id": "edge-loop-R7-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
+          "curvature": 0.811,
+          "style": {},
+          "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
         }
       ],
       "loops": [
@@ -12242,7 +12411,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n"
     },
     {
       "_id": "pers-actors",
@@ -12252,7 +12421,7 @@
     {
       "_id": "pers-loops",
       "name": "Loops",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-basel-iv-capital-requirements { width: 265; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 280; height: 86; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
     }
   ]
 }

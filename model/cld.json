@@ -570,10 +570,12 @@
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
       "description": "The water level Waterschap Scheldestromen holds in the island's ditches, relative to NAP, as its water level plans set it: Duiveland's plan sets a target level for each of its level areas, from 0.8 to 2.7 m below NAP, in most the summer level higher than the winter one, against nature's order, to prevent water damage in winter and drying in summer (Waterschap Scheldestromen, 2021a, pp. 37, 64–65). It moves from the winter level to the summer one in steps in March and April, as the weather and the farmers' soil work allow (p. 66). The level holds until the board carries out a new plan: Duiveland's study of 2021 drew up a new plan to replace the one in force since 1982 (pp. 5, 24), and the board checks each plan every three years and renews it at 17 years or once it no longer fits (Waterschap Scheldestromen, 2025, pp. 16–17), so a Stock. On the island the board holds Schouwen's summer levels high on purpose to limit subsidence by peat compaction (Waterschap Scheldestromen, 2021b, p. 45), and changes a level in soil prone to settling by no more than the land has subsided since (p. 50).",
+      "simplification": "One level for the year stands for the winter and summer levels a plan sets, in most of Duiveland's level areas the summer level the higher (Waterschap Scheldestromen, 2021a, pp. 64–65): spring workability and winter rain drained away follow the winter level through Polder drainage depth, held until the steps of March and April (p. 66), and seepage the level of either season. A raise of either level moves each link out the same way or leaves it unmoved, so B3, B4, R2, B11, B12 and R8 keep their polarity and mechanism. What it leaves out: a plan that raises only the summer level would, by inference, ease seepage without costing spring workability, which one level cannot show. The level is also taken as held, while in many areas where the summer level is set well above a low winter level it can usually be held only a few weeks before it sinks slowly into the soil, and without water supply, which the island lacks (Kaandorp et al., 2022, p. 8), it may not be maintainable in a rainfall deficit (Waterschap Scheldestromen, 2021a, pp. 37, 66), so in a dry summer the level lies lower than set and, by inference, seepage is higher. That push comes from the weather, outside every named loop, so the same six loops keep their polarity and mechanism.",
       "sources": [
         "scheldestromen-2021-hor-duiveland",
         "scheldestromen-2025-nota-peilbesluiten",
-        "scheldestromen-2021-hor-schouwen"
+        "scheldestromen-2021-hor-schouwen",
+        "kaandorp-2022"
       ],
       "x": -2247,
       "y": -668

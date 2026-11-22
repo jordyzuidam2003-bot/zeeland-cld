@@ -4000,13 +4000,6 @@
   ],
   "changes": [
     {
-      "change": "The ditch level's seasons and its sinking in a dry summer stated",
-      "argument": "The simplification audit found on Polder drainage depth, then the variable the plans set, two simplifications no text stated: one value for the year stands for a plan's winter and summer levels, which its links read by season, and the level is taken as held though a high summer level may sink into the soil without water supply (CitationCheck/65810420/simplify/polder-drainage-depth.json, findings 1 and 4, confirmed by a fresh agent). Since choice A the plans set Ditch level (NAP), through which all six loops run, so the sentences are stated there.",
-      "items": [
-        "ditch-level-nap"
-      ]
-    },
-    {
       "change": "Winter rain drained away's two-way split stated",
       "argument": "The simplification audit found the element splitting winter rain into drained away or refilling the lens, which reads double drainage's caught water as recharge, unstated (CitationCheck/65810420/simplify/winter-rain-drained-away.json, finding 2, confirmed by a fresh agent); the sentence names it, Rainwater lens recharge being folded into the lens since batch 1.",
       "items": [

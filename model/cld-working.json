@@ -9,6 +9,7 @@
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
       "description": "Summers with less rain and more evaporation. Around 2050 (2036–2065), against 1991–2020, every KNMI'23 scenario has 2 to 13% less summer rain, 6 to 11% more potential evaporation in summer and a largest precipitation deficit of April to September 13 to 35% larger, and the great rivers carry less water in summer (KNMI, 2023, pp. 4, 42). Measured as national averages, evaporation over five stations, Vlissingen among them (p. 5): this report gives no rain or deficit number for Zeeland, which appears only on maps of the whole country, West Europe or Europe, in colour classes, for the present and around 2100 (pp. 15, 24, 27). Set outside the island: a Constant.",
+      "simplification": "Counts the summer's dryness on the island and in the great rivers as one driver: the summer rain and evaporation that the rainwater lens and the crops' water need follow, and the rivers' summer discharge that Fresh water supplied to the island depends on. Around 2050 summer rain falls and evaporation rises in every KNMI'23 scenario, and the great rivers carry less water in summer (KNMI, 2023, pp. 4, 42), so each link out keeps its sign; a summer dry on the island with the rivers still full, or the reverse, cannot be drawn. A Constant has no link in, so no loop runs through it.",
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],
@@ -122,6 +123,7 @@
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
       "description": "The soil's aggregates and pores, which set how fast water soaks in: well-drained clay with its structure intact let the winter's rain surplus soak through almost completely, while clay whose structure sodium had broken down became impervious and sticky when wet (van Beekom et al., 1953a, p. 157; 1953b, pp. 230, 233, measured after the floods in Zeeland). A Stock: once broken down, it recovers over years (Root zone salinity → Soil structure). Workability, which structure and wetness both shape, is Spring workability of the fields.",
+      "simplification": "Draws the salt as the only driver of Soil structure. It leaves out the smearing and compaction of soil worked too wet, which Spring workability of the fields describes, because that damage comes from when and how the soil is worked, not from the salt or the fresh water, and no source on this element shows how much it adds on the island. Leaving it out removes an inflow and folds no step: every drawn link keeps its sign, and R1 stays reinforcing. A feedback from poor workability back to structure, if farmers work the soil while it is still wet, is not drawn.",
       "sources": [
         "van-beekom-1953-salt",
         "van-beekom-1953"
@@ -270,6 +272,7 @@
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
       "description": "Rain in winter that field drains carry off in the island's low polders instead of refilling their rainwater lens: tile drains usually discharge shallow groundwater rapidly during rain, as other studies found (de Louw et al., 2011, p. 3661), and on Schouwen-Duiveland a large part of the year's rain is drained away in the wet season (Kaandorp et al., 2022, p. 54), a figure for the whole island, of which this counts the low polders' share. What the drains carry off the creek ridges and dunes acts on their own lens instead (Polder drainage depth → Freshwater lens thickness under creek ridges and dunes). It follows each rain, within the year: an Auxiliary.",
+      "simplification": "Counts as drained away the winter rain the drains carry off the farm toward the ditches and the pumping stations, and reads every drop less of it as rain that refills the rainwater lens. That holds for the measures that keep water in the field's soil, but not for double drainage, whose shallow drains collect fresh drain water into a basin (Kaandorp et al., 2022, p. 23): that water neither leaves the farm nor refills the lens, so the link from Freshwater storage measures overstates what refills the lens for that share, while the water itself reaches crops by Freshwater storage measures' own link to Freshwater availability for crops. B6 and R4 keep their polarity, since a measure that catches water raises the water crops get either way, and their mechanism, which runs through the measures that keep rain in the field.",
       "sources": [
         "de-louw-2011",
         "kaandorp-2022"
@@ -320,6 +323,7 @@
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
       "description": "Plants and supply chains on or near the island that store, process or sell new salt-tolerant crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer. No source read shows a new crop processed on the island. Sea vegetables are sorted and packed, mostly by hand, by a grower and trader at Nieuw- en Sint Joosland, who in 2018 shipped most of his sea fennel, seaweed and sea spaghetti to organic shops and was investing, with a colleague from Schouwen-Duiveland, in growing new sea greens in greenhouses to supply international restaurants and supermarkets directly (FreshPlaza, 2018); at Colijnsplaat an arable farmer and a trader of sea vegetables founded a company, NZZT, to grow sea crops and set up their supply chain, in a project of 2020–2021 (EU CAP Network, 2023). GreenFood50 runs its quinoa chain, from grower to customer, from Wageningen, and has its quinoa grown close to its processing facilities (GreenFood50, n.d.), and a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a). Buyers and processors build or keep it where they find it worthwhile against processing the crops elsewhere.",
+      "simplification": "Counts the chains of every new salt-tolerant crop as one capacity, though each is built for one kind of crop, sea vegetables (FreshPlaza, 2018) or quinoa (GreenFood50, n.d.): it leaves out that a crop's harvest makes only a chain for its own kind worthwhile and that a chain cuts the haul only for the crops it takes. Per kind of crop the loop R7 runs through the same positive links, so it stays reinforcing with the same mechanism; the total makes R7 look easier to start where farms spread their hectares over crops that no single chain takes. It also draws the capacity as answering only to the harvest within reach and market demand, and leaves out public support for setting up a chain, such as the LEADER climate adaptation support for the project in which NZZT at Colijnsplaat set up its chain for sea crops (EU CAP Network, 2023). Such support would enter as one more positive driver beside the link from the harvest and closes no loop, so R7 keeps its sign and its mechanism.",
       "sources": [
         "freshplaza-2018",
         "eu-cap-network-2023",
@@ -339,6 +343,7 @@
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
       "description": "Hectares under crops new to the island's rotations that tolerate salt. On the parcels studied in the island's low polders the rotations hold potato, onion, sugar beet, cereals and grass seed (Kaandorp et al., 2022, p. 30), and no source read shows a new crop grown on the island. Elsewhere in Zeeland, most still experimental and small (Deolu-Ajayi et al., 2024, p. 57): samphire and sea aster, irrigated with saline water on the edges of salt marshes at Emmadorp, Waterdunen and Wolphaarsdijk, labour intensive and seasonal, their sales low (van den Burg et al., 2024, p. 6); sea fennel and sea banana on an arable farm at Colijnsplaat, where a new company worked out how to grow them, in fields and greenhouses, and set up their supply chain (EU CAP Network, 2023). Quinoa grows to maturity on irrigation water of more than 250 mM NaCl (van Loo, 2023, p. 77) and is sown with standard equipment and harvested with a combine, but needs a fine seed bed and weed control set by its row distance (p. 75). Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them. Switching to salt- or drought-resistant crop types is among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013. A Stock: a field keeps its crop through the season, and farmers move fields to a new crop over years, as they come to see the damage over dry summers (Harvest lost to salt → Adoption of new salt-tolerant crops).",
+      "simplification": "Counts the hectares of every new salt-tolerant crop in the island's rotations as one area and lets them act alike on each link out, while the crops differ: quinoa is sown with standard equipment and harvested with a combine (van Loo, 2023, p. 75), sea fennel and sea banana are grown in fields and greenhouses with a supply chain of their own (EU CAP Network, 2023), and samphire and sea aster are labour intensive, their sales low (van den Burg et al., 2024, p. 6). It abstracts in summing the hectares and idealizes in R7, where one crop's harvest draws a chain that raises every new crop's net price, while a chain for one crop raises only that crop's price. No crop reverses a sign, so B2, R6, B10 and R7 keep their polarity and their mechanism, each running crop by crop; what it leaves out is how hard each crop pulls in each loop.",
       "sources": [
         "kaandorp-2022",
         "deolu-ajayi-2024",
@@ -570,10 +575,12 @@
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
       "description": "The water level Waterschap Scheldestromen holds in the island's ditches, relative to NAP, as its water level plans set it: Duiveland's plan sets a target level for each of its level areas, from 0.8 to 2.7 m below NAP, in most the summer level higher than the winter one, against nature's order, to prevent water damage in winter and drying in summer (Waterschap Scheldestromen, 2021a, pp. 37, 64–65). It moves from the winter level to the summer one in steps in March and April, as the weather and the farmers' soil work allow (p. 66). The level holds until the board carries out a new plan: Duiveland's study of 2021 drew up a new plan to replace the one in force since 1982 (pp. 5, 24), and the board checks each plan every three years and renews it at 17 years or once it no longer fits (Waterschap Scheldestromen, 2025, pp. 16–17), so a Stock. On the island the board holds Schouwen's summer levels high on purpose to limit subsidence by peat compaction (Waterschap Scheldestromen, 2021b, p. 45), and changes a level in soil prone to settling by no more than the land has subsided since (p. 50).",
+      "simplification": "One level for the year stands for the winter and summer levels a plan sets, in most of Duiveland's level areas the summer level the higher (Waterschap Scheldestromen, 2021a, pp. 64–65): spring workability and winter rain drained away follow the winter level through Polder drainage depth, held until the steps of March and April (p. 66), and seepage the level of either season. A raise of either level moves each link out the same way or leaves it unmoved, so B3, B4, R2, B11, B12 and R8 keep their polarity and mechanism. What it leaves out: a plan that raises only the summer level would, by inference, ease seepage without costing spring workability, which one level cannot show. The level is also taken as held, while in many areas where the summer level is set well above a low winter level it can usually be held only a few weeks before it sinks slowly into the soil, and without water supply, which the island lacks (Kaandorp et al., 2022, p. 8), it may not be maintainable in a rainfall deficit (Waterschap Scheldestromen, 2021a, pp. 37, 66), so in a dry summer the level lies lower than set and, by inference, seepage is higher. That push comes from the weather, outside every named loop, so the same six loops keep their polarity and mechanism.",
       "sources": [
         "scheldestromen-2021-hor-duiveland",
         "scheldestromen-2025-nota-peilbesluiten",
-        "scheldestromen-2021-hor-schouwen"
+        "scheldestromen-2021-hor-schouwen",
+        "kaandorp-2022"
       ],
       "x": -2247,
       "y": -668
@@ -747,6 +754,7 @@
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
       "description": "Farmers off the island growing the same new crops, whose harvest a local plant could also process. More than two dozen farmers in the Netherlands grow quinoa, one of them at Vierhuizen in Groningen: most under contract with GreenFood50, its growers working about 200 hectares for 600 tonnes a year, and a few independently (DutchNews.nl, 2026); GreenFood50, founded in 2014, has had quinoa grown in the Netherlands since 2019 and in Belgium since 2021 (GreenFood50, n.d.).",
+      "simplification": "Holds the growers off the island fixed, though a plant on or near the island could draw growers near it off the island as it draws the island's own: GreenFood50 has its quinoa grown close to its processing facilities, to cut transport (GreenFood50, n.d.), and no source read shows whether a plant here would. The loop this leaves out, a local plant raising what nearby growers off the island get and so the harvest within its reach, has no minus sign and runs by R7's mechanism, so R7 and C7 keep their polarity and their story; leaving it out means that, in the CLD, a local plant reaches its volume from the island's own hectares alone.",
       "sources": [
         "dutchnews-2026",
         "greenfood50-nd"
@@ -3958,6 +3966,55 @@
         "creek-ridge-lens-thickness -> pumping-the-water-board-allows",
         "freshwater-storage-measures -> creek-ridge-lens-thickness",
         "C4"
+      ]
+    },
+    {
+      "change": "The ditch level's seasons and its sinking in a dry summer stated",
+      "argument": "The simplification audit found on Polder drainage depth, then the variable the plans set, two simplifications no text stated: one value for the year stands for a plan's winter and summer levels, which its links read by season, and the level is taken as held though a high summer level may sink into the soil without water supply (CitationCheck/65810420/simplify/polder-drainage-depth.json, findings 1 and 4, confirmed by a fresh agent). Since choice A the plans set Ditch level (NAP), through which all six loops run, so the sentences are stated there.",
+      "items": [
+        "ditch-level-nap"
+      ]
+    },
+    {
+      "change": "Winter rain drained away's two-way split stated",
+      "argument": "The simplification audit found the element splitting winter rain into drained away or refilling the lens, which reads double drainage's caught water as recharge, unstated (CitationCheck/65810420/simplify/winter-rain-drained-away.json, finding 2, confirmed by a fresh agent); the sentence names it, Rainwater lens recharge being folded into the lens since batch 1.",
+      "items": [
+        "winter-rain-drained-away"
+      ]
+    },
+    {
+      "change": "Soil structure's one driver stated",
+      "argument": "The simplification audit found the salt drawn as Soil structure's only driver, while Spring workability of the fields names compaction by soil worked too wet, unstated (CitationCheck/65810420/simplify/soil-structure-usability.json, finding 3, confirmed by a fresh agent).",
+      "items": [
+        "soil-structure-usability"
+      ]
+    },
+    {
+      "change": "Hotter, drier summers as one driver for the island and the rivers stated",
+      "argument": "The simplification audit found one Constant standing for the island's summer weather and the great rivers' summer discharge, which its links read apart, unstated (CitationCheck/65810420/simplify/hotter-drier-summers.json, finding 1, confirmed by a fresh agent, who limited \"every scenario\" to the rain and evaporation).",
+      "items": [
+        "hotter-drier-summers"
+      ]
+    },
+    {
+      "change": "The new crops summed as one area stated",
+      "argument": "The simplification audit found the new crops counted as one area, which makes R7 a single chain for all of them, unstated (CitationCheck/65810420/simplify/salt-tolerant-crop-adoption.json, finding 1, confirmed by a fresh agent, who narrowed it to R7).",
+      "items": [
+        "salt-tolerant-crop-adoption"
+      ]
+    },
+    {
+      "change": "The new crops' chains summed as one capacity, and public support for them left out, stated",
+      "argument": "The simplification audit found two unstated simplifications on the capacity: the chains of every kind of new crop counted as one, and public support for setting up a chain left out (CitationCheck/65810420/simplify/processing-capacity-for-alternative-crops.json, findings 1 and 3, confirmed by a fresh agent, who struck the audit's structure change for 3: the funder's decision was never drawn, so no condition fails).",
+      "items": [
+        "processing-capacity-for-alternative-crops"
+      ]
+    },
+    {
+      "change": "The growers off the island held fixed stated",
+      "argument": "The simplification audit found the growers off the island held constant, cutting a reinforcing loop beside R7 at the system boundary, unstated (CitationCheck/65810420/simplify/growers-of-new-crops-elsewhere.json, finding 2, confirmed by a fresh agent).",
+      "items": [
+        "growers-of-new-crops-elsewhere"
       ]
     }
   ]

@@ -19,7 +19,7 @@ The working version, model/cld-working.json, a copy of cld.json that holds the c
 they enter it (README's "The working version"), is checked as cld.json is and built into docs/working/
 while the file exists: its page and its loops' figures, nothing else, since the tables, the report's
 files and the Kumu export stay cld.json's. Each change carries its argument in the file's `changes`
-list, and the build stops on a change without one (changes.py, which lists them for Lenne). A
+list, and the build stops on a change without one (changes.py, which lists them for Jordy). A
 layout downloaded from the working page's Move mode names cld-working.json, so --layout writes it there.
 
 Sources, edited by hand: in model/, cld.json (elements, connections, named loops, layout and

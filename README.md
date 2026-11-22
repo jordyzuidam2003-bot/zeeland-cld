@@ -12,7 +12,7 @@ spreadsheet.
 
 ```text
 build.py        checks the model and writes docs/: every route runs python3 build.py from here
-changes.py      lists what the working version changes against the CLD, for Lenne
+changes.py      lists what the working version changes against the CLD, for Jordy
 record.py       reads back from the commits each agreed change since the proposal, for the report
 model/          what the group edits: the CLD, the Actor Map, their sources and the model texts
 src/            what build.py uses: the drawing code, and the templates and views it fills
@@ -76,7 +76,7 @@ Argument: <a source, or the rule's conditions it meets>
 Agreed: Jordy and Lenne, <YYYY-MM-DD>
 ```
 
-made only once both agreed. `record.py` reads them back, and `build.py` writes from them
+made once Jordy agreed, Lenne agreeing the final CLD. `record.py` reads them back, and `build.py` writes from them
 `docs/tables/cld-changes.tex`, the rows of the report's appendix of changes; a citation in a line is
 written as the model writes it, so the report cites it. `build.py --check` stops on each element,
 link, loop or section of the model texts that differs from `proposal` while a commit since changed
@@ -90,14 +90,15 @@ build.py --message FILE`, so the table holds its row, then `git commit -F FILE`.
 ## The working version
 
 A change to the CLD's content is tried in a working version before it enters `model/cld.json`, as
-version 2 stood beside version 1, so each is built and drawn before Lenne sees it, and
-`model/cld.json` changes only once she and Jordy agree (rejected: a git branch, which gives Lenne no
-page; a change straight into `model/cld.json` once she agrees, untried). While
+version 2 stood beside version 1, so each is built and drawn before Jordy judges it, and
+`model/cld.json` changes only once he agrees; Lenne agrees the final CLD
+(`.claude/rules/cld-model.md` in the Study project). Rejected: a git branch, which gives no page; a
+change straight into `model/cld.json` once he agrees, untried. While
 `model/cld-working.json` exists, `build.py` checks it as it checks `model/cld.json` and builds its page
 into `docs/working/`, <https://jordyzuidam2003-bot.github.io/zeeland-cld/working/>, for Jordy and Lenne
 only, like the rest of the Pages: its drawing, its loops' figures and its model texts, its model
 version in the menu. The tables, the report's files and the Kumu export stay `model/cld.json`'s, so
-nothing anyone outside the group reads changes before the two agree. After the CLD's own report,
+nothing anyone outside the group reads changes before Jordy agrees. After the CLD's own report,
 `build.py` prints the working version's numbers and each warning it would add to that report
 (`new against cld.json`).
 
@@ -106,13 +107,11 @@ items it touches (an element or loop by its id, a link as `from-id -> to-id`). `
 item that changes without a change naming it, a change naming an item that does not, an item in two
 changes, and a `changes` list in `model/cld.json`. Layout alone (a place, a bend, a combined loop's
 figure) needs none. `python3 changes.py` prints each change with its argument and what it does to
-each item, labels for ids and in-text citations for sources, as markdown Jordy pastes into a Google
-Doc for Lenne (Extra → Voorkeuren → Markdown inschakelen, then Plakken vanuit Markdown); two files
+each item, labels for ids and in-text citations for sources, as markdown for Jordy; two files
 that hold the same model print nothing.
 
-A batch goes into the working version, is built, committed and pushed, and its list goes to Jordy
-and Lenne. A change they reject is undone in the working version, its entry with it; what both
-agree is copied into `model/cld.json` without its entry, in a commit whose message ends in its
+A batch goes into the working version, is built, committed and pushed, and its list goes to Jordy.
+A change he rejects is undone in the working version, its entry with it; what he agrees is copied into `model/cld.json` without its entry, in a commit whose message ends in its
 `Change:`, `Argument:` and `Agreed:` lines (Version 1), then the Drive's two tables and the throwaway Kumu project are
 replaced from the build's files (The table, Kumu). Once no change waits, the working version goes:
 `model/cld-working.json` is deleted and the next build removes `docs/working/`.

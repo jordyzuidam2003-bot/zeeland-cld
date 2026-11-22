@@ -16,7 +16,7 @@ one change per commit. A commit made before this record existed gets its lines f
 commit, whose message ends in one block per commit it explains, each after a line `Commit: <sha>`
 (rejected: rewriting pushed history to add them). A block whose words a later check finds wrong
 (an argument stronger than its source) is replaced the same way, after a line `Corrects: <sha>`,
-once per commit, its Agreed: the day both agreed the correction; the record shows the corrected
+once per commit, its Agreed: the day Jordy agreed the correction; the record shows the corrected
 block in the commit's place.
 
 read() gives the agreed changes, oldest first (a block carried for an earlier commit in that

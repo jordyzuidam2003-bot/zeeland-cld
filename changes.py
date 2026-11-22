@@ -11,8 +11,7 @@ tried before they enter model/cld.json, and in its top-level list `changes` each
 an item named as model/cld.json names it: an element or a named or combined loop by its id, a link
 as "from-id -> to-id". The list prints each change with its argument, then what it does to each of
 its items (gone, new, or each field changed, was and now), labels for ids and in-text citations for
-sources, as markdown Jordy pastes into a Google Doc for Lenne (the Study router's "What the group
-shares"). Layout alone (a place, a bend, a delay mark, a combined loop's figure) is no change to
+sources, as markdown for Jordy. Layout alone (a place, a bend, a delay mark, a combined loop's figure) is no change to
 decide: it is counted in one line at the end. Two files that hold the same model print nothing.
 
 problems() is what build.py stops on: an item that changes without a change naming it, a change
@@ -148,7 +147,7 @@ def listing(old, new, actor_map, cites):
     actors = {a["id"]: a["label"] for a in actor_map["actors"]}
     lines = ["# The working version against the CLD", "",
              "Each change with its argument, then what it does in the CLD. A change enters the CLD once "
-             "Jordy and Lenne both agree; a change rejected is undone in the working version."]
+             "Jordy agrees; a change rejected is undone in the working version."]
     done = set()
     for n, c in enumerate(new.get("changes", []) if isinstance(new.get("changes"), list) else [], 1):
         if not isinstance(c, dict):

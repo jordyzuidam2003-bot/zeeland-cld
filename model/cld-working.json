@@ -4000,21 +4000,6 @@
   ],
   "changes": [
     {
-      "change": "Batch 8's sentences claimed only as far as their sources carry",
-      "argument": "Fresh readers failed 12 of the 37 citations batch 8 reset (CitationCheck/a9b58e7/readers/), each fix read again in its source. The Waterschapsverordening in force (2026f) frees irrigation from a permit only up to 60 m³ an hour, 3,000 m³ a quarter and 8,000 m³ a year (art. 4.8 b 2°), notified at least four weeks ahead (art. 4.8 f), and only outside the vulnerable areas, which C4 left out. Kaandorp et al. (2022) price a horizontal well for brackish water, not for fresh irrigation water (pp. 48–49), see some farmers with a deep drain and one livestock farm irrigating from two (pp. 38, 40), not farmers in general pumping the lens, and name the rules a bottleneck for infiltration at pp. 54–55; the p. 44 model result is theirs, not the regulation's. The 2026 explanation of art. 2.9 (2026b) judges anew a notification renewed after a lapsed one, not every new well.",
-      "items": [
-        "spending-on-keeping-current-crops",
-        "pumping-the-water-board-allows",
-        "creek-ridge-lens-thickness",
-        "freshwater-lens-thickness -> freshwater-availability-for-crops",
-        "spending-on-keeping-current-crops -> groundwater-extraction-for-irrigation",
-        "spending-on-keeping-current-crops -> farmers-capacity-to-invest",
-        "creek-ridge-lens-thickness -> pumping-the-water-board-allows",
-        "freshwater-storage-measures -> creek-ridge-lens-thickness",
-        "C4"
-      ]
-    },
-    {
       "change": "The ditch level's seasons and its sinking in a dry summer stated",
       "argument": "The simplification audit found on Polder drainage depth, then the variable the plans set, two simplifications no text stated: one value for the year stands for a plan's winter and summer levels, which its links read by season, and the level is taken as held though a high summer level may sink into the soil without water supply (CitationCheck/65810420/simplify/polder-drainage-depth.json, findings 1 and 4, confirmed by a fresh agent). Since choice A the plans set Ditch level (NAP), through which all six loops run, so the sentences are stated there.",
       "items": [

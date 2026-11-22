@@ -80,6 +80,16 @@
             "scheldestromen-2021-wbp"
           ],
           "curvature": 0.24
+        },
+        {
+          "to": "nature-managers",
+          "kind": "authority over",
+          "description": "Sets the water levels of the island's nature areas in its water level plans, agreed with the site managers, on Duiveland with Staatsbosbeheer for Dijkwater and the Ouwerkerkse Kreek; there its study for the plan (2021) finds that a lower level in Dijkwater would do the nature area disproportionate drought damage, and proposes coupling the farm parcel in its level area to the lower one beside it instead. On Schouwen, in consultation with the site managers, it can hold water in the nature areas in extreme rain, relieving the polder system.",
+          "sources": [
+            "scheldestromen-2021-hor-duiveland",
+            "scheldestromen-2021-hor-schouwen"
+          ],
+          "curvature": 0.2
         }
       ],
       "sources": [
@@ -851,14 +861,24 @@
       "affected": "Drought: in the summer of 2022 the island's thousands of breeding pairs raised almost no young, in Natuurmonumenten's words (2023).",
       "influence score": 2,
       "client": "no",
-      "no relations": "No source read shows a relation with another actor on this map: Natuurmonumenten's shared buffers are a thought (2023), and the source on the seepage ditch (2006) names no actor that keeps it.",
+      "no relations": "No source read shows a relation it holds toward another actor on this map: Natuurmonumenten's shared buffers are a thought (2023), and the source on the seepage ditch (2006) names no actor that keeps it. The water levels in their areas, which the water board sets agreed with them, are the water board's relation.",
       "sources": [
         "delphy-2023-dorsd",
         "van-haperen-2006",
         "raat-2026"
       ],
       "x": 1500,
-      "y": 1650
+      "y": 1650,
+      "ask actors": [
+        {
+          "actor": "nature-managers",
+          "for": "Whether the province pays Natuurmonumenten and Staatsbosbeheer for managing their areas on the island through its nature subsidies, and whether that money sets the water levels those areas need.",
+          "through": [
+            "DCC",
+            "Living Lab"
+          ]
+        }
+      ]
     }
   ]
 }

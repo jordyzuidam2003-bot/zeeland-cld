@@ -1753,7 +1753,8 @@
         "influence score": 2,
         "client": "no",
         "decides in the CLD": "",
-        "no relations": "No source read shows a relation with another actor on this map: Natuurmonumenten's shared buffers are a thought (2023), and the source on the seepage ditch (2006) names no actor that keeps it.",
+        "ask actors": "Nature managers on the island (Natuurmonumenten, Staatsbosbeheer), through DCC or Living Lab: Whether the province pays Natuurmonumenten and Staatsbosbeheer for managing their areas on the island through its nature subsidies, and whether that money sets the water levels those areas need.",
+        "no relations": "No source read shows a relation it holds toward another actor on this map: Natuurmonumenten's shared buffers are a thought (2023), and the source on the seepage ditch (2006) names no actor that keeps it. The water levels in their areas, which the water board sets agreed with them, are the water board's relation.",
         "sources": "Delphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf\nvan Haperen, A., Hekhuis, H., & Sluiter, H. (2006, November). Plan Tureluur: Zeeuwse vogelboulevard. Retrieved November 14, 2026, from https://edepot.wur.nl/114545\nRaat, K., van Aalderen, N., & Krajenbrink, H. (2026). Laag Nederland 2050: Een verkenning naar een klimaat- en waterrobuuste inrichting voor Schouwen-Duiveland (KWR 2026.037). KWR Water Research Institute. https://api2.kwrwater.nl/uploads/KWR%202026.037%20Laag%20Nederland%202050.%20Een%20verkenning%20naar%20een%20klimaat-%20en%20waterrobuuste%20inrichting%20voor%20Schouwen-Duiveland.pdf"
       }
     },
@@ -4422,6 +4423,19 @@
       "reversed": false,
       "attributes": {
         "connection type": "authority over",
+        "description": "Sets the water levels of the island's nature areas in its water level plans, agreed with the site managers, on Duiveland with Staatsbosbeheer for Dijkwater and the Ouwerkerkse Kreek; there its study for the plan (2021) finds that a lower level in Dijkwater would do the nature area disproportionate drought damage, and proposes coupling the farm parcel in its level area to the lower one beside it instead. On Schouwen, in consultation with the site managers, it can hold water in the nature areas in extreme rain, relieving the polder system.",
+        "sources": "Waterschap Scheldestromen. (2021a). Hydrologisch onderzoeksrapport Duiveland. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch%20onderzoeksrapport%20Duiveland_S_2021016945_3.pdf\nWaterschap Scheldestromen. (2021b). Hydrologisch onderzoeksrapport Schouwen. https://scheldestromen.nl/sites/default/files/2023-10/Hydrologisch_onderzoeksrapport_Schouwen.pdf"
+      },
+      "from": "elem-waterschap-scheldestromen",
+      "to": "elem-nature-managers"
+    },
+    {
+      "_id": "conn-4",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "authority over",
         "description": "Sets in its omgevingsplan what the island's farmland and farm buildings may be used for, and in its policy rules where a farm may build a water basin outside its building plot.",
         "sources": "Omgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01\nGemeente Schouwen-Duiveland. (n.d.). Omgevingsplan. Retrieved November 6, 2026, from https://www.schouwen-duiveland.nl/bouwen-verbouwen-en-slopen/bestemmingsplan\nGemeente Schouwen-Duiveland. (2024, September 5). Beleidsregels waterbassins bouwwerken zijnde buiten bouwvlak gemeente Schouwen-Duiveland 2024 (Gemeenteblad 2024, nr. 380475). https://zoek.officielebekendmakingen.nl/gmb-2024-380475.pdf"
       },
@@ -4429,7 +4443,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-4",
+      "_id": "conn-5",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4442,7 +4456,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-5",
+      "_id": "conn-6",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4455,7 +4469,7 @@
       "to": "elem-waterschap-scheldestromen"
     },
     {
-      "_id": "conn-6",
+      "_id": "conn-7",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4468,7 +4482,7 @@
       "to": "elem-provincie-zeeland"
     },
     {
-      "_id": "conn-7",
+      "_id": "conn-8",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4481,7 +4495,7 @@
       "to": "elem-zlto"
     },
     {
-      "_id": "conn-8",
+      "_id": "conn-9",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4494,7 +4508,7 @@
       "to": "elem-deltares"
     },
     {
-      "_id": "conn-9",
+      "_id": "conn-10",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4507,7 +4521,7 @@
       "to": "elem-kwr"
     },
     {
-      "_id": "conn-10",
+      "_id": "conn-11",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4520,7 +4534,7 @@
       "to": "elem-acacia-water"
     },
     {
-      "_id": "conn-11",
+      "_id": "conn-12",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4533,7 +4547,7 @@
       "to": "elem-delphy"
     },
     {
-      "_id": "conn-12",
+      "_id": "conn-13",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4546,7 +4560,7 @@
       "to": "elem-waterschap-scheldestromen"
     },
     {
-      "_id": "conn-13",
+      "_id": "conn-14",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4559,7 +4573,7 @@
       "to": "elem-gemeente-schouwen-duiveland"
     },
     {
-      "_id": "conn-14",
+      "_id": "conn-15",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4572,7 +4586,7 @@
       "to": "elem-gemeente-schouwen-duiveland"
     },
     {
-      "_id": "conn-15",
+      "_id": "conn-16",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4585,7 +4599,7 @@
       "to": "elem-dcc"
     },
     {
-      "_id": "conn-16",
+      "_id": "conn-17",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4598,7 +4612,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-17",
+      "_id": "conn-18",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4611,7 +4625,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-18",
+      "_id": "conn-19",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4624,7 +4638,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-19",
+      "_id": "conn-20",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4637,7 +4651,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-20",
+      "_id": "conn-21",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4650,7 +4664,7 @@
       "to": "elem-waterschap-scheldestromen"
     },
     {
-      "_id": "conn-21",
+      "_id": "conn-22",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4663,7 +4677,7 @@
       "to": "elem-provincie-zeeland"
     },
     {
-      "_id": "conn-22",
+      "_id": "conn-23",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4676,7 +4690,7 @@
       "to": "elem-buyers-and-processors"
     },
     {
-      "_id": "conn-23",
+      "_id": "conn-24",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4689,7 +4703,7 @@
       "to": "elem-lvvn"
     },
     {
-      "_id": "conn-24",
+      "_id": "conn-25",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4702,7 +4716,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-25",
+      "_id": "conn-26",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4715,7 +4729,7 @@
       "to": "elem-banks"
     },
     {
-      "_id": "conn-26",
+      "_id": "conn-27",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4728,7 +4742,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-27",
+      "_id": "conn-28",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4741,7 +4755,7 @@
       "to": "elem-rijkswaterstaat"
     },
     {
-      "_id": "conn-28",
+      "_id": "conn-29",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4754,7 +4768,7 @@
       "to": "elem-waterschap-scheldestromen"
     },
     {
-      "_id": "conn-29",
+      "_id": "conn-30",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4767,7 +4781,7 @@
       "to": "elem-provincie-zeeland"
     },
     {
-      "_id": "conn-30",
+      "_id": "conn-31",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4780,7 +4794,7 @@
       "to": "elem-lvvn"
     },
     {
-      "_id": "conn-31",
+      "_id": "conn-32",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4793,7 +4807,7 @@
       "to": "elem-waterschap-scheldestromen"
     },
     {
-      "_id": "conn-32",
+      "_id": "conn-33",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4806,7 +4820,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-33",
+      "_id": "conn-34",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4819,7 +4833,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-34",
+      "_id": "conn-35",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4832,7 +4846,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-35",
+      "_id": "conn-36",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -4845,7 +4859,7 @@
       "to": "elem-arable-farmers"
     },
     {
-      "_id": "conn-36",
+      "_id": "conn-37",
       "direction": "directed",
       "delayed": false,
       "reversed": false,
@@ -7034,103 +7048,103 @@
         },
         {
           "_id": "edge-3",
-          "curvature": 0.1,
+          "curvature": 0.2,
           "style": {},
           "connection": "conn-3"
         },
         {
           "_id": "edge-4",
-          "curvature": 0.3,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-4"
         },
         {
           "_id": "edge-5",
-          "curvature": -0.24,
+          "curvature": 0.3,
           "style": {},
           "connection": "conn-5"
         },
         {
           "_id": "edge-6",
-          "curvature": -0.11,
+          "curvature": -0.24,
           "style": {},
           "connection": "conn-6"
         },
         {
           "_id": "edge-7",
-          "curvature": 0.2,
+          "curvature": -0.11,
           "style": {},
           "connection": "conn-7"
         },
         {
           "_id": "edge-8",
-          "curvature": 0.24,
+          "curvature": 0.2,
           "style": {},
           "connection": "conn-8"
         },
         {
           "_id": "edge-9",
-          "curvature": -0.14,
+          "curvature": 0.24,
           "style": {},
           "connection": "conn-9"
         },
         {
           "_id": "edge-10",
-          "curvature": -0.11,
+          "curvature": -0.14,
           "style": {},
           "connection": "conn-10"
         },
         {
           "_id": "edge-11",
-          "curvature": -0.1,
+          "curvature": -0.11,
           "style": {},
           "connection": "conn-11"
         },
         {
           "_id": "edge-12",
-          "curvature": 0.18,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-12"
         },
         {
           "_id": "edge-13",
-          "curvature": 0.53,
+          "curvature": 0.18,
           "style": {},
           "connection": "conn-13"
         },
         {
           "_id": "edge-14",
-          "curvature": 0.22,
+          "curvature": 0.53,
           "style": {},
           "connection": "conn-14"
         },
         {
           "_id": "edge-15",
-          "curvature": 0.18,
+          "curvature": 0.22,
           "style": {},
           "connection": "conn-15"
         },
         {
           "_id": "edge-16",
-          "curvature": -0.13,
+          "curvature": 0.18,
           "style": {},
           "connection": "conn-16"
         },
         {
           "_id": "edge-17",
-          "curvature": 0.1,
+          "curvature": -0.13,
           "style": {},
           "connection": "conn-17"
         },
         {
           "_id": "edge-18",
-          "curvature": 0.25,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-18"
         },
         {
           "_id": "edge-19",
-          "curvature": -0.1,
+          "curvature": 0.25,
           "style": {},
           "connection": "conn-19"
         },
@@ -7142,61 +7156,61 @@
         },
         {
           "_id": "edge-21",
-          "curvature": 0.14,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-21"
         },
         {
           "_id": "edge-22",
-          "curvature": -0.1,
+          "curvature": 0.14,
           "style": {},
           "connection": "conn-22"
         },
         {
           "_id": "edge-23",
-          "curvature": 0.1,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-23"
         },
         {
           "_id": "edge-24",
-          "curvature": -0.11,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-24"
         },
         {
           "_id": "edge-25",
-          "curvature": 0.1,
+          "curvature": -0.11,
           "style": {},
           "connection": "conn-25"
         },
         {
           "_id": "edge-26",
-          "curvature": -0.1,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-26"
         },
         {
           "_id": "edge-27",
-          "curvature": 0.1,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-27"
         },
         {
           "_id": "edge-28",
-          "curvature": -0.1,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-28"
         },
         {
           "_id": "edge-29",
-          "curvature": 0.24,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-29"
         },
         {
           "_id": "edge-30",
-          "curvature": -0.1,
+          "curvature": 0.24,
           "style": {},
           "connection": "conn-30"
         },
@@ -7208,33 +7222,39 @@
         },
         {
           "_id": "edge-32",
-          "curvature": 0.23,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-32"
         },
         {
           "_id": "edge-33",
-          "curvature": 0.11,
+          "curvature": 0.23,
           "style": {},
           "connection": "conn-33"
         },
         {
           "_id": "edge-34",
-          "curvature": -0.25,
+          "curvature": 0.11,
           "style": {},
           "connection": "conn-34"
         },
         {
           "_id": "edge-35",
-          "curvature": 0.11,
+          "curvature": -0.25,
           "style": {},
           "connection": "conn-35"
         },
         {
           "_id": "edge-36",
-          "curvature": 0.1,
+          "curvature": 0.11,
           "style": {},
           "connection": "conn-36"
+        },
+        {
+          "_id": "edge-37",
+          "curvature": 0.1,
+          "style": {},
+          "connection": "conn-37"
         }
       ],
       "loops": []

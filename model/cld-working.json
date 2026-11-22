@@ -3998,15 +3998,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Local processing capacity for new crops is Zeeland's, processing elsewhere outside it",
-      "argument": "The simplification audit found Local processing capacity (\"on or near the island\") and Processing of new crops elsewhere (\"off the island\") overlapping, a plant at Colijnsplaat fitting both, so the capacity measured no definite quantity (CitationCheck/65810420/simplify/processing-capacity-for-alternative-crops.json, finding 2, confirmed by a fresh agent). Jordy set the border at Zeeland's: the chains the description names at Colijnsplaat and Nieuw- en Sint Joosland stay local, GreenFood50 at Wageningen elsewhere; the island alone would leave the capacity with no example, no source showing a new crop processed on it. The simplification audit found two unstated simplifications on the capacity: the chains of every kind of new crop counted as one, and public support for setting up a chain left out (CitationCheck/65810420/simplify/processing-capacity-for-alternative-crops.json, findings 1 and 3, confirmed by a fresh agent, who struck the audit's structure change for 3: the funder's decision was never drawn, so no condition fails).",
-      "items": [
-        "processing-capacity-for-alternative-crops",
-        "processing-of-new-crops-elsewhere",
-        "processing-of-new-crops-elsewhere -> net-price-for-new-crops"
-      ]
-    }
-  ]
+  "changes": []
 }

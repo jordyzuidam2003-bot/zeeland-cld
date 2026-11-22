@@ -4000,13 +4000,6 @@
   ],
   "changes": [
     {
-      "change": "The growers off the island held fixed stated",
-      "argument": "The simplification audit found the growers off the island held constant, cutting a reinforcing loop beside R7 at the system boundary, unstated (CitationCheck/65810420/simplify/growers-of-new-crops-elsewhere.json, finding 2, confirmed by a fresh agent).",
-      "items": [
-        "growers-of-new-crops-elsewhere"
-      ]
-    },
-    {
       "change": "The switch to new salt-tolerant crops drawn apart from the hectares under them, and the new crops summed as one area stated",
       "argument": "The simplification audit found the link Adoption of new salt-tolerant crops → Farmers' capacity to invest reading a one-off cost \"in the year a field changes crop\" from a Stock of hectares held, so every hectare kept would drain capacity every year; the flow was folded into its stock, failing the rule's conditions \"every variable still measures one quantity\" and \"keeps its mechanism\" (CitationCheck/65810420/simplify/salt-tolerant-crop-adoption.json, finding 2, confirmed by a fresh agent). Jordy chose to draw the flow: Fields moved to new salt-tolerant crops, the farmers' decision, takes the six links in and the cost link, and flows into the Stock (+), so B2, R6, B10 and R7 pass through it with their polarity kept. The simplification audit found the new crops counted as one area, which makes R7 a single chain for all of them, unstated (CitationCheck/65810420/simplify/salt-tolerant-crop-adoption.json, finding 1, confirmed by a fresh agent, who narrowed it to R7).",
       "items": [

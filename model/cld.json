@@ -752,6 +752,7 @@
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
       "description": "Farmers off the island growing the same new crops, whose harvest a local plant could also process. More than two dozen farmers in the Netherlands grow quinoa, one of them at Vierhuizen in Groningen: most under contract with GreenFood50, its growers working about 200 hectares for 600 tonnes a year, and a few independently (DutchNews.nl, 2026); GreenFood50, founded in 2014, has had quinoa grown in the Netherlands since 2019 and in Belgium since 2021 (GreenFood50, n.d.).",
+      "simplification": "Holds the growers off the island fixed, though a plant on or near the island could draw growers near it off the island as it draws the island's own: GreenFood50 has its quinoa grown close to its processing facilities, to cut transport (GreenFood50, n.d.), and no source read shows whether a plant here would. The loop this leaves out, a local plant raising what nearby growers off the island get and so the harvest within its reach, has no minus sign and runs by R7's mechanism, so R7 and C7 keep their polarity and their story; leaving it out means that, in the CLD, a local plant reaches its volume from the island's own hectares alone.",
       "sources": [
         "dutchnews-2026",
         "greenfood50-nd"

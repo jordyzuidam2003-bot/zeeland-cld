@@ -4000,13 +4000,6 @@
   ],
   "changes": [
     {
-      "change": "Winter rain drained away's two-way split stated",
-      "argument": "The simplification audit found the element splitting winter rain into drained away or refilling the lens, which reads double drainage's caught water as recharge, unstated (CitationCheck/65810420/simplify/winter-rain-drained-away.json, finding 2, confirmed by a fresh agent); the sentence names it, Rainwater lens recharge being folded into the lens since batch 1.",
-      "items": [
-        "winter-rain-drained-away"
-      ]
-    },
-    {
       "change": "Soil structure's one driver stated",
       "argument": "The simplification audit found the salt drawn as Soil structure's only driver, while Spring workability of the fields names compaction by soil worked too wet, unstated (CitationCheck/65810420/simplify/soil-structure-usability.json, finding 3, confirmed by a fresh agent).",
       "items": [

@@ -284,7 +284,7 @@
   ]
  },
  "delphy-2023-dorsd": {
-  "digest": "f46692c20050",
+  "digest": "7148fdd49687",
   "note": "VPEP6PXN",
   "placed": [
    "Actor Map",
@@ -964,16 +964,18 @@
   ]
  },
  "scheldestromen-2021-hor-duiveland": {
-  "digest": "3620c2478a4f",
+  "digest": "5a9067eb27cb",
   "note": "QUFF4FFH",
   "placed": [
+   "Actor Map",
    "CLD"
   ]
  },
  "scheldestromen-2021-hor-schouwen": {
-  "digest": "f195cf62b660",
+  "digest": "92de30c6baf5",
   "note": "WX6WV3N8",
   "placed": [
+   "Actor Map",
    "CLD"
   ]
  },
@@ -1226,7 +1228,7 @@
   ]
  },
  "van-haperen-2006": {
-  "digest": "50eca342d917",
+  "digest": "8355634c7b9e",
   "note": "AR3U3IEI",
   "placed": [
    "Actor Map",

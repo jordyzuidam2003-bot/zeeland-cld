@@ -8,7 +8,7 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "Summers with less rain and more evaporation. Around 2050 (2036–2065), against 1991–2020, every KNMI'23 scenario has 2 to 13% less summer rain, 6 to 11% more potential evaporation in summer and a largest precipitation deficit of April to September 13 to 35% larger, and the great rivers carry less water in summer (KNMI, 2023, pp. 4, 42). Measured as national averages, evaporation over five stations, Vlissingen among them (p. 5): this report gives no rain or deficit number for Zeeland, which appears only on maps of the whole country, West Europe or Europe, in colour classes, for the present and around 2100 (pp. 15, 24, 27). Set outside the island: a Constant.",
+      "description": "Summers with less rain and more evaporation. Around 2050 (2036–2065), against 1991–2020, every KNMI'23 scenario has 2 to 13% less summer rain, 6 to 11% more potential evaporation in summer and a largest precipitation deficit of April to September 13 to 35% larger (KNMI, 2023, p. 4), and lower summer discharges of the great rivers are among the risks for this century it gives from the earlier risk assessment (p. 42). Measured as national averages, evaporation over five stations, Vlissingen among them (p. 5): this report gives no rain or deficit number for Zeeland, which appears only on maps of the whole country, West Europe or Europe, in colour classes, for the present and around 2100 (pp. 15, 24, 27). Set outside the island: a Constant.",
       "simplification": "Counts the summer's dryness on the island and in the great rivers as one driver: the summer rain and evaporation that the rainwater lens and the crops' water need follow, and the rivers' summer discharge that Fresh water supplied to the island depends on. Around 2050 summer rain falls and evaporation rises in every KNMI'23 scenario (KNMI, 2023, p. 4), and lower summer discharges of the great rivers are among the risks for this century it gives from the earlier risk assessment (p. 42), so each link out keeps its sign; a summer dry on the island with the rivers still full, or the reverse, cannot be drawn. A Constant has no link in, so no loop runs through it.",
       "sources": [
         "knmi-2023-klimaatscenarios"
@@ -3998,15 +3998,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Three sentences claimed only as far as their sources carry, after the fresh readers on batches 10 to 12",
-      "argument": "Fresh readers failed three of the CLD's citations that batches 10 to 12 left short (CitationCheck/9ba1ec0/readers/), each fix read again in its source. EU CAP Network (2023, pp. 1–2) reports one pilot at Colijnsplaat that grew sea fennel and sea banana in test fields and greenhouses and set up a food supply chain, not how the two crops are grown. KNMI (2023) gives the summer rain and evaporation around 2050 per scenario (p. 4), the great rivers' lower summer discharges only as a risk for this century from the earlier risk assessment, in line with KNMI'23 (p. 42). The Waterschapsverordening in force (2026f) frees irrigation from a permit only up to 60 m³ an hour, 3,000 m³ a quarter and 8,000 m³ a year (art. 4.8 b 2°), notified at least four weeks ahead (art. 4.8 f), as C4 says.",
-      "items": [
-        "salt-tolerant-crop-adoption",
-        "hotter-drier-summers",
-        "creek-ridge-lens-thickness"
-      ]
-    }
-  ]
+  "changes": []
 }

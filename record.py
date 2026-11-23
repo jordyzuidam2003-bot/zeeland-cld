@@ -16,8 +16,9 @@ one change per commit. A commit made before this record existed gets its lines f
 commit, whose message ends in one block per commit it explains, each after a line `Commit: <sha>`
 (rejected: rewriting pushed history to add them). A block whose words a later check finds wrong
 (an argument stronger than its source) is replaced the same way, after a line `Corrects: <sha>`,
-once per commit, its Agreed: the day Jordy agreed the correction; the record shows the corrected
-block in the commit's place.
+its Agreed: the day Jordy agreed the correction; the record shows the latest correction in the
+commit's place, since a later check can find a corrected block wrong too, and a message corrects a
+commit at most once.
 
 read() gives the agreed changes, oldest first (a block carried for an earlier commit in that
 commit's place), from which build.py writes the report's appendix of changes
@@ -157,10 +158,10 @@ def read(message=None):
             if full is None:
                 problems.append(f"{short(sha)}: {word}: {target} names no commit since the tag {TAG}")
             elif block["corrects"]:
-                if full in corrected:
-                    problems.append(f"{short(sha)}: {full[:7]} is corrected already")
+                if corrected.get(full, (None,))[0] == sha:
+                    problems.append(f"{short(sha)}: corrects {full[:7]} twice")
                 else:
-                    corrected[full] = (sha, block)
+                    corrected[full] = (sha, block)  # commits run oldest first: the latest correction holds
             elif full in carried:
                 problems.append(f"{short(sha)}: {full[:7]} has its block already")
             else:

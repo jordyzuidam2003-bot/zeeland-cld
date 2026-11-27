@@ -4060,14 +4060,6 @@
   ],
   "changes": [
     {
-      "change": "The crop mix reaches the harvest salt takes and the farm's income",
-      "argument": "The vision: the crops that earn the most need the most water and stand salt the least. As drawn, Harvest lost to salt reads a fixed crop mix, so the island's one observed response to salt, giving up sown onions (Kaandorp et al., 2022, p. 31), lowers no loss, and a lever that raises the share of sensitive crops misses the fields it exposes to salt. Both sides go in together, the loss (Allen et al., 1998, Table 23) and the margin (Janssens et al., 2020, p. 14), so a move off onions is no pure gain: the loss side alone closes a reinforcing loop through income, land value, leverage, the risk premium and debt payments back to the crop mix, with no counterweight.",
-      "items": [
-        "dependence-on-high-margin-salt-sensitive-crops -> harvest-lost-to-salt",
-        "dependence-on-high-margin-salt-sensitive-crops -> farm-revenue"
-      ]
-    },
-    {
       "change": "Adoption of salt-tolerant varieties → Dependence on high-margin salt-sensitive crops, a hypothesis for the group model building session",
       "argument": "A tolerant potato's point is keeping potatoes on a field turned salty, yet as drawn the varieties lower the harvest lost but never reach the crop mix, so the analysis would show them with no effect on the demand for deep drainage. The link closes a reinforcing loop through that demand, the ditch levels, the seepage, the lens and the root zone's salt. Whether a variety makes a farmer keep a crop is why an actor decides, with no source: a hypothesis, and a question to farmers on the session's cards (cld-model.md, 'A behavioural claim may be a hypothesis').",
       "items": [

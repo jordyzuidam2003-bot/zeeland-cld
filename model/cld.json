@@ -2835,6 +2835,31 @@
       "sources": [],
       "hypothesis": true,
       "curvature": -0.47
+    },
+    {
+      "from": "dependence-on-high-margin-salt-sensitive-crops",
+      "to": "harvest-lost-to-salt",
+      "polarity": "+",
+      "delay": false,
+      "curvature": 0.15,
+      "description": "The larger the share of the rotation under the crops salt harms most, the more of the harvest salt takes at the same root zone salinity: onions lose 16% of their yield per dS/m above 1.2 dS/m and potatoes 12% above 1.7, against 5.9% above 7.0 for sugar beet and 7.1% above 6.0 for wheat (Allen et al., 1998, ch. 8, Table 23), lines that give the sign on the island but not the size of the loss (Root zone salinity → Harvest lost to salt). On the island, farms where the seepage pressure is high and the surface water salty all year have stopped growing sensitive crops such as sown onions (Kaandorp et al., 2022, p. 31), which lowers what salt can take. The link counts the shift among the current crops; a field moved to a new crop leaves the loss by Adoption of new crops → Harvest lost to salt. Within the season.",
+      "sources": [
+        "allen-1998",
+        "kaandorp-2022"
+      ]
+    },
+    {
+      "from": "dependence-on-high-margin-salt-sensitive-crops",
+      "to": "farm-revenue",
+      "polarity": "+",
+      "delay": false,
+      "curvature": 0.12,
+      "description": "The crops that stand salt the least are the ones that earn the most: potatoes are financially attractive, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12), and on specialised arable farms on clay growing ware potatoes they bring in, on average over the years, 55% of the arable revenue, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14); in Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). So a farm that keeps more of them earns more in a year, less what salt takes, which Dependence on high-margin salt-sensitive crops → Harvest lost to salt counts. No source read sizes the net effect of the crop mix on the island's incomes. Within the year.",
+      "sources": [
+        "verhagen-2018",
+        "janssens-2020",
+        "economic-board-zeeland-2023"
+      ]
     }
   ],
   "loops": [

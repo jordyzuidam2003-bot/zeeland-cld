@@ -4026,13 +4026,6 @@
   ],
   "changes": [
     {
-      "change": "Crop water shortfall → Fields moved to new crops (+, delay), a hypothesis for the group model building session",
-      "argument": "Whether a farm short of water moves fields to a new crop that copes with little water is a claim about why the farmers decide, and no source read shows it on the island: a hypothesis (cld-model.md, 'A behavioural claim may be a hypothesis'). The delay is the one the parallel decision carries (Harvest lost to salt → Fields moved to new crops; Crop water shortfall → Dependence on high-margin salt-sensitive crops).",
-      "items": [
-        "crop-water-shortfall -> fields-moved-to-new-salt-tolerant-crops"
-      ]
-    },
-    {
       "change": "Water demand of the crop mix: no link from the new crops, judged again for the widened crops",
       "argument": "The variable sums what the rotation uses when it has enough water (Allen et al., 1998). The sources read show quinoa coping with little water (van Loo, 2023, p. 75), not needing less than the crop it replaces when both have enough, and the crops often suggested as less sensitive to drought need water too (Delphy, 2023, p. 48), so a link Adoption of new crops → Water demand of the crop mix (−) would rest on no source.",
       "items": [

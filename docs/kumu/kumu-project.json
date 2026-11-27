@@ -4487,6 +4487,26 @@
       "to": "elem-farmland-leaving-arable-use"
     },
     {
+      "_id": "conn-crop-water-shortfall--fields-moved-to-new-salt-tolerant-crops",
+      "direction": "directed",
+      "delayed": true,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "yes",
+        "description": "Does a farm short of water move fields to a new crop that copes with little water, as one losing harvest to salt moves them to a crop that copes with salt (Harvest lost to salt → Fields moved to new crops)? A hypothesis for the group model building session: under drought, the response a source shows on the island is to a crop the farms already grow, cereals (Crop water shortfall → Dependence on high-margin salt-sensitive crops), so the question to farmers is whether a shortfall moves them to a new crop at all, and to which. Years, if it holds, as farms respond to the dry seasons they have had, as in that link, along which the island's sown onions fell from 2015 to 2022: a delay.",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "yes",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-crop-water-shortfall",
+      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
+    },
+    {
       "_id": "conn-0",
       "direction": "directed",
       "delayed": false,
@@ -6804,6 +6824,12 @@
           "curvature": 0.45,
           "style": {},
           "connection": "conn-farms-with-a-successor--farmland-leaving-arable-use"
+        },
+        {
+          "_id": "edge-crop-water-shortfall--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": -0.47,
+          "style": {},
+          "connection": "conn-crop-water-shortfall--fields-moved-to-new-salt-tolerant-crops"
         }
       ],
       "loops": [

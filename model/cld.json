@@ -128,8 +128,8 @@
         "van-beekom-1953-salt",
         "van-beekom-1953"
       ],
-      "x": -704,
-      "y": 50
+      "x": -734,
+      "y": 40
     },
     {
       "id": "upconing-of-salt-groundwater",
@@ -146,8 +146,8 @@
         "provincie-zeeland-2021-grondwateronttrekkingen",
         "scheldestromen-2026-grondwater"
       ],
-      "x": -1099,
-      "y": 611
+      "x": -1093,
+      "y": 629
     },
     {
       "id": "demand-for-deep-polder-drainage",
@@ -185,8 +185,8 @@
       "actors": [
         "rijkswaterstaat"
       ],
-      "x": -1374,
-      "y": 1004
+      "x": -1411,
+      "y": 981
     },
     {
       "id": "freshwater-availability-for-crops",
@@ -294,7 +294,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "x": -472,
+      "x": -438,
       "y": 264
     },
     {
@@ -512,8 +512,8 @@
         "allen-1998",
         "kaandorp-2022"
       ],
-      "x": -897,
-      "y": 1020
+      "x": -881,
+      "y": 1042
     },
     {
       "id": "zlto-call-for-supply-route",
@@ -529,8 +529,8 @@
         "omroep-zeeland-2026-aardappeloogst",
         "delphy-2023-dorsd"
       ],
-      "x": -1214,
-      "y": 1185,
+      "x": -1285,
+      "y": 1188,
       "actor": "agrarisch-schouwen-duiveland"
     },
     {
@@ -554,8 +554,8 @@
       "actors": [
         "ienw"
       ],
-      "x": -1530,
-      "y": 1382,
+      "x": -1625,
+      "y": 1426,
       "actor": "provincie-zeeland"
     },
     {
@@ -1114,8 +1114,8 @@
         "acacia-water",
         "delphy"
       ],
-      "x": 1172,
-      "y": 408
+      "x": 1135,
+      "y": 413
     },
     {
       "id": "perceived-risk-of-switching",
@@ -1594,7 +1594,7 @@
       "sources": [
         "verstand-2021"
       ],
-      "curvature": -0.32
+      "curvature": -0.38
     },
     {
       "from": "spring-workability-of-the-fields",
@@ -1897,7 +1897,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": 0.14
+      "curvature": 0.2
     },
     {
       "from": "farms-with-a-successor",
@@ -2683,7 +2683,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": -0.1
+      "curvature": 0.26
     },
     {
       "from": "dependence-on-high-margin-salt-sensitive-crops",
@@ -2757,7 +2757,7 @@
         "witteveen-bos-2021",
         "omroep-zeeland-2023-zoet-water"
       ],
-      "curvature": -0.15
+      "curvature": -0.25
     },
     {
       "from": "perceived-risk-of-switching",

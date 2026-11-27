@@ -5448,8 +5448,8 @@
         {
           "_id": "node-soil-structure-usability",
           "position": {
-            "x": -704,
-            "y": 50
+            "x": -734,
+            "y": 40
           },
           "pinned": true,
           "style": {},
@@ -5458,8 +5458,8 @@
         {
           "_id": "node-upconing-of-salt-groundwater",
           "position": {
-            "x": -1099,
-            "y": 611
+            "x": -1093,
+            "y": 629
           },
           "pinned": true,
           "style": {},
@@ -5478,8 +5478,8 @@
         {
           "_id": "node-external-freshwater-supply",
           "position": {
-            "x": -1374,
-            "y": 1004
+            "x": -1411,
+            "y": 981
           },
           "pinned": true,
           "style": {},
@@ -5538,7 +5538,7 @@
         {
           "_id": "node-crop-yield",
           "position": {
-            "x": -472,
+            "x": -438,
             "y": 264
           },
           "pinned": true,
@@ -5658,8 +5658,8 @@
         {
           "_id": "node-crop-water-shortfall",
           "position": {
-            "x": -897,
-            "y": 1020
+            "x": -881,
+            "y": 1042
           },
           "pinned": true,
           "style": {},
@@ -5668,8 +5668,8 @@
         {
           "_id": "node-zlto-call-for-supply-route",
           "position": {
-            "x": -1214,
-            "y": 1185
+            "x": -1285,
+            "y": 1188
           },
           "pinned": true,
           "style": {},
@@ -5678,8 +5678,8 @@
         {
           "_id": "node-freshwater-supply-route",
           "position": {
-            "x": -1530,
-            "y": 1382
+            "x": -1625,
+            "y": 1426
           },
           "pinned": true,
           "style": {},
@@ -5978,8 +5978,8 @@
         {
           "_id": "node-trials-and-pilots-on-the-island",
           "position": {
-            "x": 1172,
-            "y": 408
+            "x": 1135,
+            "y": 413
           },
           "pinned": true,
           "style": {},
@@ -6223,7 +6223,7 @@
         },
         {
           "_id": "edge-spring-workability-of-the-fields--crop-yield",
-          "curvature": -0.32,
+          "curvature": -0.38,
           "style": {},
           "connection": "conn-spring-workability-of-the-fields--crop-yield"
         },
@@ -6367,7 +6367,7 @@
         },
         {
           "_id": "edge-crop-yield--freshwater-storage-measures",
-          "curvature": 0.14,
+          "curvature": 0.2,
           "style": {},
           "connection": "conn-crop-yield--freshwater-storage-measures"
         },
@@ -6727,7 +6727,7 @@
         },
         {
           "_id": "edge-salt-in-ditch-water--freshwater-storage-measures",
-          "curvature": -0.1,
+          "curvature": 0.26,
           "style": {},
           "connection": "conn-salt-in-ditch-water--freshwater-storage-measures"
         },
@@ -6763,7 +6763,7 @@
         },
         {
           "_id": "edge-zlto-call-for-supply-route--freshwater-storage-measures",
-          "curvature": -0.15,
+          "curvature": -0.25,
           "style": {},
           "connection": "conn-zlto-call-for-supply-route--freshwater-storage-measures"
         },
@@ -6804,8 +6804,8 @@
           "loop": "loop-R1",
           "style": {},
           "position": {
-            "x": -1005,
-            "y": 359
+            "x": -1015,
+            "y": 355
           }
         },
         {
@@ -6867,8 +6867,8 @@
           "loop": "loop-B5",
           "style": {},
           "position": {
-            "x": -1218,
-            "y": 1218
+            "x": -1213,
+            "y": 1225
           }
         },
         {
@@ -6876,8 +6876,8 @@
           "loop": "loop-B6",
           "style": {},
           "position": {
-            "x": -1200,
-            "y": 536
+            "x": -1192,
+            "y": 540
           }
         },
         {
@@ -6885,8 +6885,8 @@
           "loop": "loop-B7",
           "style": {},
           "position": {
-            "x": -1439,
-            "y": 1271
+            "x": -1476,
+            "y": 1281
           }
         },
         {
@@ -6903,8 +6903,8 @@
           "loop": "loop-R4",
           "style": {},
           "position": {
-            "x": -745,
-            "y": 385
+            "x": -739,
+            "y": 388
           }
         },
         {
@@ -7002,8 +7002,8 @@
           "loop": "loop-B15",
           "style": {},
           "position": {
-            "x": 36,
-            "y": 569
+            "x": 42,
+            "y": 577
           }
         }
       ]

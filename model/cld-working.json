@@ -2006,8 +2006,8 @@
       "from": "market-demand-for-alternative-crops",
       "to": "processing-capacity-for-alternative-crops",
       "polarity": "+",
-      "delay": false,
-      "description": "Stable demand makes investing in processing more worthwhile.",
+      "delay": true,
+      "description": "More demand for a new crop makes a plant or chain for it more worthwhile to build or keep. Years: building a plant or chain takes years, as the stock's other two links in carry, the delay sitting in the building, not in the demand.",
       "simplification": "Folds Attractiveness of processing new crops locally, which gathered the drivers of this decision: each driver now points at Local processing capacity for new crops itself, whose description says that buyers and processors weigh it against processing the crops elsewhere. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. It also takes the demand for every new crop as one total that raises the capacity of every chain alike, though the markets in Market demand for alternative crops go different ways and each chain in Local processing capacity for new crops serves one kind of crop. Per crop the link keeps its sign, and no loop runs through it, Market demand for alternative crops being a Constant.",
       "sources": [],
       "hypothesis": true,
@@ -4015,14 +4015,7 @@
   ],
   "changes": [
     {
-      "change": "The new crops' knowledge as one stock stated",
-      "argument": "The simplification audit found it unstated (CitationCheck/65810420/simplify/knowledge-of-new-crops.json, finding 1, confirmed by a fresh agent); the sentence states it.",
-      "items": [
-        "knowledge-of-new-crops"
-      ]
-    },
-    {
-      "change": "Demand for every new crop raising every chain alike stated",
+      "change": "Demand for every new crop raising every chain alike stated, with the link's delay and its quantity",
       "argument": "The simplification audit found it unstated (CitationCheck/65810420/simplify/market-demand-for-alternative-crops->processing-capacity-for-alternative-crops.json, finding 3, confirmed by a fresh agent); the sentence states it.",
       "items": [
         "market-demand-for-alternative-crops -> processing-capacity-for-alternative-crops"

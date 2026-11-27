@@ -4023,13 +4023,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Crop water shortfall → Dependence on high-margin salt-sensitive crops: the sown onions given up for salt leave its evidence",
-      "argument": "In the area studied the farmers stopped growing sown onions because of the high seepage pressure and surface water salt all year (Kaandorp et al., 2022, p. 31), a salt response, not a response to a shortfall of water. The link keeps the openness to other crops with more fresh water (p. 30) and the onions' fall on the island and in Zeeland (Delphy, 2023, p. 15; De Vriend, 2024b).",
-      "items": [
-        "crop-water-shortfall -> dependence-on-high-margin-salt-sensitive-crops"
-      ]
-    }
-  ]
+  "changes": []
 }

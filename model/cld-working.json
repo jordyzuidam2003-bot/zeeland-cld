@@ -4007,17 +4007,6 @@
   ],
   "changes": [
     {
-      "change": "Buyer contracts for new crops drawn, the buyers' decision, lowering the perceived risk",
-      "argument": "Kitty's points (7) and (12): contracts were in the CLD only as words, in the Constant Market demand and in link descriptions, so no actor could move them, while a buyer offers one. What a contract moves is read in Janssens et al. (2020, pp. 11–12, 14–15): the price and sales risk, not the yield risk; for the new crops de Wit et al. (2022, pp. 266, 268, 277), DutchNews.nl (2026) and Delphy (2023, p. 49). Market demand → Fields moved (a hypothesis reading 'Assured offtake lowers the risk of a new crop') goes, since demand now reaches the fields through the contracts and the risk and both would count one effect twice; it is on no named loop. Market demand stays a Constant, its description stating the open question whether demand or processing is the barrier.",
-      "items": [
-        "buyer-contracts-for-new-crops",
-        "market-demand-for-alternative-crops -> buyer-contracts-for-new-crops",
-        "buyer-contracts-for-new-crops -> perceived-risk-of-switching",
-        "market-demand-for-alternative-crops -> fields-moved-to-new-salt-tolerant-crops",
-        "market-demand-for-alternative-crops"
-      ]
-    },
-    {
       "change": "Basel IV capital requirements folded into the risk premium's description",
       "argument": "A Constant on no loop with one link; the system boundary already puts it outside and no actor in the analysis can move it: context for a link, not a mechanism (decided by Jordy). Its sources (European Commission, 2023; European Banking Authority, 2023) and the EU as the actor that shapes it move onto the premium; the banks' entry on the Actor Map already says the Basel rules steer them. cld-model.md's 'Simplify only where the conclusion survives': no loop through it, no decision lost, no delay lost.",
       "items": [

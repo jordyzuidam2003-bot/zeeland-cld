@@ -305,7 +305,7 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Consumer demand and offtake contracts for novel salt-tolerant or alternative crops (e.g. protein crops). For quinoa the market is small: in Flanders it is sold under contract at €1,100 a tonne on a local market still very limited, with no forecast yet of how demand for local quinoa will grow (Cloet et al., 2024, pp. 2–3); in the Netherlands a supermarket has its own-brand quinoa from 12 Dutch farmers under a three-year contract, Dutch quinoa costing more to buy in than imported (DutchNews.nl, 2026). For protein crops, Rabobank expects demand for plant-based meat and dairy alternatives to grow towards 2030, while yields lower than in other countries and a quality that often misses food standards, which keeps the price low, limit what they earn (Polman et al., 2026, p. 8). For halophytes such as samphire and sea aster, grown in a few places in Zeeland, the food market is small and easily saturated, and offers farmers no lasting market potential (van den Burg et al., 2024, p. 6). Measured in Flanders, the Netherlands and Zeeland, none on the island.",
+      "description": "Consumer demand for novel salt-tolerant or alternative crops (e.g. protein crops); the contracts buyers offer for them are drawn apart (Buyer contracts for new crops). For quinoa the market is small: in Flanders it is sold under contract at €1,100 a tonne on a local market still very limited, with no forecast yet of how demand for local quinoa will grow (Cloet et al., 2024, pp. 2–3); in the Netherlands a supermarket has its own-brand quinoa from 12 Dutch farmers under a three-year contract, Dutch quinoa costing more to buy in than imported (DutchNews.nl, 2026). For protein crops, Rabobank expects demand for plant-based meat and dairy alternatives to grow towards 2030, while yields lower than in other countries and a quality that often misses food standards, which keeps the price low, limit what they earn (Polman et al., 2026, p. 8). For halophytes such as samphire and sea aster, grown in a few places in Zeeland, the food market is small and easily saturated, and offers farmers no lasting market potential (van den Burg et al., 2024, p. 6). Measured in Flanders, the Netherlands and Zeeland, none on the island. Whether demand, rather than local processing capacity, is what holds the new crops back on the island is open: no source read weighs the two. A Constant: the island's farmers cannot move it.",
       "sources": [
         "cloet-2024",
         "dutchnews-2026",
@@ -1213,6 +1213,25 @@
       ],
       "x": 1250,
       "y": 480
+    },
+    {
+      "id": "buyer-contracts-for-new-crops",
+      "label": "Buyer contracts for new crops",
+      "element type": "Auxiliary",
+      "adaptive practice": false,
+      "sets domain": "Social",
+      "subsystem": "Agricultural economy",
+      "subquestion": "SQ2",
+      "description": "Hectares of new salt-tolerant or alternative crops that buyers contract with the island's farmers before the season. A contract takes risk off the farmer as far as its terms go, measured for potatoes nationally: a fixed-price contract guarantees the price for the agreed quantity, a day-price or volume contract only the sale, the price risk staying with grower and buyer both (Janssens et al., 2020, pp. 11–12); the contracted part carries an offtake duty, while potatoes beyond a hectare contract's volume mostly go at the day price, with none unless agreed (p. 12); contracts let a farmer hedge against price swings (p. 14), and a grower who sells free bears a loss alone (p. 15). So a contract moves the price and the sales risk, not the yield risk. For the new crops, Dutch quinoa is grown under contract for one distributor, which buys a pre-agreed amount at a fixed price and manages supply according to demand (de Wit et al., 2022, pp. 266, 268), a supermarket buys its own-brand quinoa from 12 Dutch farmers under a three-year contract (DutchNews.nl, 2026), and for saline crops in Zeeland the market is hard, with little room for new growers (Delphy, 2023, p. 49). No source read shows a buyer contracting a new crop on the island. An Auxiliary: set season by season.",
+      "sources": [
+        "janssens-2020",
+        "de-wit-2022",
+        "dutchnews-2026",
+        "delphy-2023-dorsd"
+      ],
+      "x": 960,
+      "y": 1300,
+      "actor": "buyers-and-processors"
     }
   ],
   "connections": [
@@ -2010,17 +2029,6 @@
         "raat-2026"
       ],
       "curvature": 0.13
-    },
-    {
-      "from": "market-demand-for-alternative-crops",
-      "to": "fields-moved-to-new-salt-tolerant-crops",
-      "polarity": "+",
-      "delay": false,
-      "description": "Assured offtake lowers the risk of a new crop, so more farmers grow it.",
-      "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
-      "sources": [],
-      "hypothesis": true,
-      "curvature": 0.0
     },
     {
       "from": "net-price-for-new-crops",
@@ -2979,6 +2987,30 @@
       "description": "Farmers who know how to grow and sell a new crop see less risk in it: in a survey of farmers in the south-west Netherlands, their trust in their own competence to carry out a measure raised their adaptation, the strongest such factor for measures at farm level (van Duinen et al., 2015a, pp. 1089, 1091). Measured for drought measures, not for new crops. Within the year.",
       "sources": [
         "van-duinen-2015-coping"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "market-demand-for-alternative-crops",
+      "to": "buyer-contracts-for-new-crops",
+      "polarity": "+",
+      "delay": false,
+      "description": "The more demand for a new crop, the more of it buyers contract: Dutch quinoa's one distributor buys a pre-agreed amount and manages supply according to demand (de Wit et al., 2022, p. 268), and for saline crops in Zeeland sales would have to grow strongly before new growers find room (Delphy, 2023, p. 49). Measured in the Netherlands and in Zeeland. Within the year.",
+      "sources": [
+        "de-wit-2022",
+        "delphy-2023-dorsd"
+      ],
+      "curvature": 0
+    },
+    {
+      "from": "buyer-contracts-for-new-crops",
+      "to": "perceived-risk-of-switching",
+      "polarity": "-",
+      "delay": false,
+      "description": "A contract takes the price and sales risk of a crop off the farmer as far as its terms go: a fixed-price contract guarantees the price for the agreed quantity and a volume contract the sale, the contracted part carrying an offtake duty (Janssens et al., 2020, pp. 11–12), while a grower who sells free bears a loss alone (p. 15); it moves no yield risk. Measured for potatoes nationally. With one buyer the farmer keeps that buyer's risk: Dutch quinoa growers depend on one distributor, which interviewees name as hampering its uptake (de Wit et al., 2022, p. 277). Within the year.",
+      "sources": [
+        "janssens-2020",
+        "de-wit-2022"
       ],
       "curvature": 0.15
     }

@@ -1167,6 +1167,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "Plants outside Zeeland that buy and process new salt-tolerant crops: where the island's growers can sell a new crop now, beside a local plant. For Dutch quinoa the sources read show one main buyer, GreenFood50 at Wageningen, which runs the chain from grower to customer and has its quinoa grown close to its processing facilities, which it does not locate (GreenFood50, n.d.), most Dutch growers under contract with it (DutchNews.nl, 2026).",
+        "simplification": "Counts the plants outside Zeeland that buy any new salt-tolerant crop as one, while the sources in the description show a buyer outside Zeeland for quinoa alone; for the sea vegetables, Local processing capacity for new crops shows a grower and trader in Zeeland who sorts, packs and sells them. A Constant has no link in and lies on no loop, so no loop depends on the sum; what it leaves out is for which new crops a buyer outside Zeeland exists at all.",
         "actors": "",
         "sources": "GreenFood50. (n.d.). The specialist in quinoa ingredients [Home page and About us]. Retrieved November 7, 2026, from https://www.greenfood50.com/\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983",
         "sourced": "yes"

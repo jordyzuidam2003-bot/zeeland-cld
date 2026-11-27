@@ -4015,13 +4015,6 @@
   ],
   "changes": [
     {
-      "change": "One net price for every new crop stated",
-      "argument": "The simplification audit found it unstated (CitationCheck/65810420/simplify/net-price-for-new-crops.json, finding 1, confirmed by a fresh agent); the sentence states it.",
-      "items": [
-        "net-price-for-new-crops"
-      ]
-    },
-    {
       "change": "A chain raising every new crop's price stated",
       "argument": "The simplification audit found it unstated (CitationCheck/65810420/simplify/processing-capacity-for-alternative-crops->net-price-for-new-crops.json, finding 2, confirmed by a fresh agent); the sentence states it.",
       "items": [

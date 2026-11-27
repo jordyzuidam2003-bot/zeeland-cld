@@ -743,6 +743,7 @@
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
       "description": "What farmers on the island get for new salt-tolerant crops once transport to the processor is paid, set by processors on and off the island. No source read gives what quinoa fetches: its cost price at the farm gate is 0.70 to 1.25 euro a kilo (van Loo, 2023, p. 79), most Dutch growers selling it under contract to one buyer (DutchNews.nl, 2026). The food market for halophytes is small and easily saturated (van den Burg et al., 2024, p. 6), a Zeeland trader noting surpluses (FreshPlaza, 2018); no source read gives their price.",
+      "simplification": "Counts one net price for every new salt-tolerant crop, though the description shows them sold differently: most Dutch quinoa growers selling under contract to one buyer, halophytes on a small food market that saturates easily. It assumes each crop's price rises alike with a plant nearby or more processing elsewhere. Per crop R7 runs through the same positive links, so it keeps its polarity and its mechanism; what the total leaves out is a price that rises for one crop and not another, which the semi-quantitative analysis cannot vary apart.",
       "sources": [
         "van-loo-2023",
         "dutchnews-2026",

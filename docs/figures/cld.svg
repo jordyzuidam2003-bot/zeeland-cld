@@ -259,10 +259,6 @@
 <path class="link-path" d="M 200.6 205.0 Q 295.0 175.5 389.4 146.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="341.7" y="160.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="crop-yield" data-to="freshwater-storage-measures" data-sign="-" data-delay="false" data-curvature="0.2">
-<path class="link-path" d="M -456.3 238.0 Q -616.6 17.3 -580.4 -253.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-585.5" y="-203.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-</g>
 <g class="link" data-from="farms-with-a-successor" data-to="freshwater-storage-measures" data-sign="+" data-delay="false" data-curvature="0.15">
 <path class="link-path" d="M -59.2 -90.8 Q -276.2 -114.1 -444.4 -253.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-404.9" y="-222.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
@@ -602,6 +598,10 @@
 <g class="link" data-from="tolerant-varieties-adoption" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="0.1">
 <path class="link-path" d="M -200.5 1112.0 Q 595.7 11.6 1753.9 -698.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="1711.4" y="-671.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="crop-water-shortfall" data-to="freshwater-storage-measures" data-sign="+" data-delay="false" data-curvature="-0.1">
+<path class="link-path" d="M -852.7 1016.0 Q -589.7 408.7 -580.4 -253.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-581.5" y="-203.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 </g>
 <g class="elements">

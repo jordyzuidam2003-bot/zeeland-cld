@@ -3021,27 +3021,6 @@
       "to": "elem-farm-revenue"
     },
     {
-      "_id": "conn-crop-yield--freshwater-storage-measures",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "−",
-        "polarity": "negative",
-        "delay": "no",
-        "description": "As harvests get worse, farmers find storing water more worthwhile, and those who can pay for it store more. On the island the attention to drought and to waterlogging swings with dry and wet years, and the study names this swinging urgency among the barriers to scaling up storage (Kaandorp et al., 2022, p. 12): a wet year lifts the harvest and the push to store fades.",
-        "sets link": "E to T",
-        "sets scope": "Cross-domain",
-        "hypothesis": "no",
-        "simplification": "Folds Relative attractiveness of storing water, which gathered the drivers of this decision: each driver now points at Freshwater storage measures itself, whose description says how farmers weigh storing against their other ways through a dry summer. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to store, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
-        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
-        "sourced": "yes",
-        "connection type": "-"
-      },
-      "from": "elem-crop-yield",
-      "to": "elem-freshwater-storage-measures"
-    },
-    {
       "_id": "conn-farms-with-a-successor--freshwater-storage-measures",
       "direction": "directed",
       "delayed": false,
@@ -4567,6 +4546,27 @@
       "to": "elem-dependence-on-high-margin-salt-sensitive-crops"
     },
     {
+      "_id": "conn-crop-water-shortfall--freshwater-storage-measures",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "The more the water falls short of what crops need, the more worthwhile farmers find storing it, and those who can pay for it store more. On the island the attention to drought and to waterlogging swings with dry and wet years, and the study names this swinging urgency among the barriers to scaling up storage (Kaandorp et al., 2022, p. 12): a dry year raises the push to store, a wet one lets it fade. In the island's western low polders, farmers find the winter's rain surplus enough to prevent the drought damage, holding or storing it being the limiting factor (p. 27). The shortfall is the gap farmers' water decisions respond to, as for pumping and the call for a supply route. No delay drawn: how quickly a dry summer turns into a measure built, no source read shows.",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "simplification": "Folds Relative attractiveness of storing water, which gathered the drivers of this decision: each driver now points at Freshwater storage measures itself, whose description says how farmers weigh storing against their other ways through a dry summer. The shortfall raised the attractiveness and the attractiveness the decision, so the link keeps the sign of the steps it folds and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to store, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-crop-water-shortfall",
+      "to": "elem-freshwater-storage-measures"
+    },
+    {
       "_id": "conn-0",
       "direction": "directed",
       "delayed": false,
@@ -5245,16 +5245,15 @@
     {
       "_id": "loop-B6",
       "attributes": {
-        "label": "B6 Farms store water when harvests fall",
-        "description": "As harvests get worse, farmers find storing water more worthwhile and those who can pay for it store more. Less winter rain drains away, the rainwater lens thickens over years, crops on that field have more fresh water, the shortfall shrinks and yields recover. It seeks the harvest at which storing stops being worth its cost, which each farmer sets against their other ways through a dry summer. On the island's two trials of the lens-growing measures the lens's growth was not clearly shown: at Kerkwerve freshening was measured at 3 of 5 locations and the effect 'lijkt daarmee beperkt' (Oude Essink et al., 2018, p. 97), and near Dreischor its growth was '(nog) niet aangetoond' over the measuring period, perhaps because of height differences within the plot or because the fresh-salt system responds slowly (van Hateren et al., 2025, p. 59). It drives storage, slowly, the lens taking years to respond."
+        "label": "B6 Farms store water when water falls short",
+        "description": "As the water falls short of what crops need, farmers find storing it more worthwhile and those who can pay for it store more. Less winter rain drains away, the rainwater lens thickens over years, crops on that field have more fresh water and the shortfall shrinks. It seeks the shortfall at which storing stops being worth its cost, which each farmer sets against their other ways through a dry summer. On the island's two trials of the lens-growing measures the lens's growth was not clearly shown: at Kerkwerve freshening was measured at 3 of 5 locations and the effect 'lijkt daarmee beperkt' (Oude Essink et al., 2018, p. 97), and near Dreischor its growth was '(nog) niet aangetoond' over the measuring period, perhaps because of height differences within the plot or because the fresh-salt system responds slowly (van Hateren et al., 2025, p. 59). It drives storage, slowly, the lens taking years to respond."
       },
       "connections": [
-        "conn-crop-yield--freshwater-storage-measures",
+        "conn-crop-water-shortfall--freshwater-storage-measures",
         "conn-freshwater-storage-measures--winter-rain-drained-away",
         "conn-winter-rain-drained-away--freshwater-lens-thickness",
         "conn-freshwater-lens-thickness--freshwater-availability-for-crops",
-        "conn-freshwater-availability-for-crops--crop-water-shortfall",
-        "conn-crop-water-shortfall--crop-yield"
+        "conn-freshwater-availability-for-crops--crop-water-shortfall"
       ]
     },
     {
@@ -6454,12 +6453,6 @@
           "connection": "conn-world-prices-of-conventional-crops--farm-revenue"
         },
         {
-          "_id": "edge-crop-yield--freshwater-storage-measures",
-          "curvature": 0.2,
-          "style": {},
-          "connection": "conn-crop-yield--freshwater-storage-measures"
-        },
-        {
           "_id": "edge-farms-with-a-successor--freshwater-storage-measures",
           "curvature": 0.15,
           "style": {},
@@ -6908,6 +6901,12 @@
           "curvature": 0.1,
           "style": {},
           "connection": "conn-tolerant-varieties-adoption--dependence-on-high-margin-salt-sensitive-crops"
+        },
+        {
+          "_id": "edge-crop-water-shortfall--freshwater-storage-measures",
+          "curvature": -0.1,
+          "style": {},
+          "connection": "conn-crop-water-shortfall--freshwater-storage-measures"
         }
       ],
       "loops": [
@@ -6988,8 +6987,8 @@
           "loop": "loop-B6",
           "style": {},
           "position": {
-            "x": -1192,
-            "y": 540
+            "x": -1343,
+            "y": 595
           }
         },
         {
@@ -8545,7 +8544,7 @@
         {
           "_id": "node-group-C4-crop-water-shortfall",
           "position": {
-            "x": 245,
+            "x": 395,
             "y": 0
           },
           "pinned": true,
@@ -8555,7 +8554,7 @@
         {
           "_id": "node-group-C4-freshwater-availability-for-crops",
           "position": {
-            "x": -245,
+            "x": -395,
             "y": 0
           },
           "pinned": true,
@@ -8563,20 +8562,10 @@
           "element": "elem-freshwater-availability-for-crops"
         },
         {
-          "_id": "node-group-C4-crop-yield",
-          "position": {
-            "x": 826,
-            "y": 562
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-crop-yield"
-        },
-        {
           "_id": "node-group-C4-freshwater-storage-measures",
           "position": {
-            "x": 487,
-            "y": 1261
+            "x": 745,
+            "y": 704
           },
           "pinned": true,
           "style": {},
@@ -8585,8 +8574,8 @@
         {
           "_id": "node-group-C4-winter-rain-drained-away",
           "position": {
-            "x": -390,
-            "y": 1312
+            "x": 26,
+            "y": 1207
           },
           "pinned": true,
           "style": {},
@@ -8595,8 +8584,8 @@
         {
           "_id": "node-group-C4-freshwater-lens-thickness",
           "position": {
-            "x": -836,
-            "y": 632
+            "x": -733,
+            "y": 742
           },
           "pinned": true,
           "style": {},
@@ -8605,8 +8594,8 @@
         {
           "_id": "node-group-C4-freshwater-supply-route",
           "position": {
-            "x": 12,
-            "y": 620
+            "x": -20,
+            "y": 671
           },
           "pinned": true,
           "style": {},
@@ -8615,8 +8604,8 @@
         {
           "_id": "node-group-C4-external-freshwater-supply",
           "position": {
-            "x": -388,
-            "y": 377
+            "x": -455,
+            "y": 416
           },
           "pinned": true,
           "style": {},
@@ -8625,8 +8614,8 @@
         {
           "_id": "node-group-C4-groundwater-extraction-for-irrigation",
           "position": {
-            "x": 7,
-            "y": -314
+            "x": 6,
+            "y": -289
           },
           "pinned": true,
           "style": {},
@@ -8635,8 +8624,8 @@
         {
           "_id": "node-group-C4-creek-ridge-lens-thickness",
           "position": {
-            "x": -227,
-            "y": -894
+            "x": -221,
+            "y": -870
           },
           "pinned": true,
           "style": {},
@@ -8645,8 +8634,8 @@
         {
           "_id": "node-group-C4-pumping-the-water-board-allows",
           "position": {
-            "x": 239,
-            "y": -883
+            "x": 245,
+            "y": -856
           },
           "pinned": true,
           "style": {},
@@ -8655,8 +8644,8 @@
         {
           "_id": "node-group-C4-zlto-call-for-supply-route",
           "position": {
-            "x": 395,
-            "y": 355
+            "x": 449,
+            "y": 426
           },
           "pinned": true,
           "style": {},
@@ -8672,55 +8661,43 @@
         },
         {
           "_id": "edge-group-C4-crop-water-shortfall--zlto-call-for-supply-route",
-          "curvature": 0.335,
+          "curvature": 0.321,
           "style": {},
           "connection": "conn-crop-water-shortfall--zlto-call-for-supply-route"
         },
         {
           "_id": "edge-group-C4-zlto-call-for-supply-route--freshwater-supply-route",
-          "curvature": 0.324,
+          "curvature": 0.28,
           "style": {},
           "connection": "conn-zlto-call-for-supply-route--freshwater-supply-route"
         },
         {
           "_id": "edge-group-C4-freshwater-supply-route--external-freshwater-supply",
-          "curvature": 0.317,
+          "curvature": 0.271,
           "style": {},
           "connection": "conn-freshwater-supply-route--external-freshwater-supply"
         },
         {
           "_id": "edge-group-C4-external-freshwater-supply--freshwater-availability-for-crops",
-          "curvature": 0.358,
+          "curvature": 0.313,
           "style": {},
           "connection": "conn-external-freshwater-supply--freshwater-availability-for-crops"
         },
         {
           "_id": "edge-group-C4-crop-water-shortfall--groundwater-extraction-for-irrigation",
-          "curvature": -0.56,
+          "curvature": -0.355,
           "style": {},
           "connection": "conn-crop-water-shortfall--groundwater-extraction-for-irrigation"
         },
         {
           "_id": "edge-group-C4-groundwater-extraction-for-irrigation--freshwater-availability-for-crops",
-          "curvature": -0.572,
+          "curvature": -0.361,
           "style": {},
           "connection": "conn-groundwater-extraction-for-irrigation--freshwater-availability-for-crops"
         },
         {
-          "_id": "edge-group-C4-crop-water-shortfall--crop-yield",
-          "curvature": 0.286,
-          "style": {},
-          "connection": "conn-crop-water-shortfall--crop-yield"
-        },
-        {
-          "_id": "edge-group-C4-crop-yield--freshwater-storage-measures",
-          "curvature": 0.32,
-          "style": {},
-          "connection": "conn-crop-yield--freshwater-storage-measures"
-        },
-        {
           "_id": "edge-group-C4-freshwater-storage-measures--winter-rain-drained-away",
-          "curvature": 0.241,
+          "curvature": 0.325,
           "style": {},
           "connection": "conn-freshwater-storage-measures--winter-rain-drained-away"
         },
@@ -8732,7 +8709,7 @@
         },
         {
           "_id": "edge-group-C4-freshwater-lens-thickness--freshwater-availability-for-crops",
-          "curvature": 0.318,
+          "curvature": 0.383,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--freshwater-availability-for-crops"
         },
@@ -8753,6 +8730,12 @@
           "curvature": 0.364,
           "style": {},
           "connection": "conn-pumping-the-water-board-allows--groundwater-extraction-for-irrigation"
+        },
+        {
+          "_id": "edge-group-C4-crop-water-shortfall--freshwater-storage-measures",
+          "curvature": 0.361,
+          "style": {},
+          "connection": "conn-crop-water-shortfall--freshwater-storage-measures"
         }
       ],
       "loops": [
@@ -8763,7 +8746,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": -172
+            "y": -144
           }
         },
         {
@@ -8773,7 +8756,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 1022
+            "y": 954
           }
         },
         {
@@ -8783,7 +8766,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 325
+            "y": 351
           }
         },
         {
@@ -8792,8 +8775,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 4,
-            "y": -711
+            "x": 8,
+            "y": -685
           }
         }
       ]
@@ -8801,7 +8784,7 @@
     {
       "_id": "map-group-C5",
       "name": "07 C5 Storing: more worthwhile, harder to pay for",
-      "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so more rain refills the lens and, over years, the *Rainwater lens thickness in the low polders* rises; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A lower *Crop yield* makes storing more worthwhile to a farmer (B6), and leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same harvest pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The link from *Farmers' capacity to invest* to *Freshwater storage measures* is a hypothesis for the group model building session.",
+      "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so more rain refills the lens and, over years, the *Rainwater lens thickness in the low polders* rises; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A larger *Crop water shortfall* makes storing more worthwhile to a farmer (B6), and through a lower *Crop yield* leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same dry year pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The link from *Farmers' capacity to invest* to *Freshwater storage measures* is a hypothesis for the group model building session.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -8814,8 +8797,8 @@
         {
           "_id": "node-group-C5-farmers-capacity-to-invest",
           "position": {
-            "x": -457,
-            "y": 546
+            "x": -566,
+            "y": 374
           },
           "pinned": true,
           "style": {},
@@ -8824,7 +8807,7 @@
         {
           "_id": "node-group-C5-freshwater-storage-measures",
           "position": {
-            "x": -1212,
+            "x": -1000,
             "y": 0
           },
           "pinned": true,
@@ -8834,7 +8817,7 @@
         {
           "_id": "node-group-C5-winter-rain-drained-away",
           "position": {
-            "x": -735,
+            "x": -522,
             "y": 0
           },
           "pinned": true,
@@ -8844,7 +8827,7 @@
         {
           "_id": "node-group-C5-freshwater-lens-thickness",
           "position": {
-            "x": -242,
+            "x": -30,
             "y": 0
           },
           "pinned": true,
@@ -8854,7 +8837,7 @@
         {
           "_id": "node-group-C5-freshwater-availability-for-crops",
           "position": {
-            "x": 272,
+            "x": 485,
             "y": 0
           },
           "pinned": true,
@@ -8864,7 +8847,7 @@
         {
           "_id": "node-group-C5-crop-water-shortfall",
           "position": {
-            "x": 787,
+            "x": 1000,
             "y": 0
           },
           "pinned": true,
@@ -8874,8 +8857,8 @@
         {
           "_id": "node-group-C5-crop-yield",
           "position": {
-            "x": 1212,
-            "y": 0
+            "x": 605,
+            "y": 354
           },
           "pinned": true,
           "style": {},
@@ -8884,8 +8867,8 @@
         {
           "_id": "node-group-C5-farm-revenue",
           "position": {
-            "x": 517,
-            "y": 527
+            "x": 37,
+            "y": 501
           },
           "pinned": true,
           "style": {},
@@ -8895,7 +8878,7 @@
       "connections": [
         {
           "_id": "edge-group-C5-crop-water-shortfall--crop-yield",
-          "curvature": 0,
+          "curvature": 0.127,
           "style": {},
           "connection": "conn-crop-water-shortfall--crop-yield"
         },
@@ -8925,27 +8908,27 @@
         },
         {
           "_id": "edge-group-C5-crop-yield--farm-revenue",
-          "curvature": 0.168,
+          "curvature": 0.115,
           "style": {},
           "connection": "conn-crop-yield--farm-revenue"
         },
         {
           "_id": "edge-group-C5-farm-revenue--farmers-capacity-to-invest",
-          "curvature": 0.155,
+          "curvature": 0.12,
           "style": {},
           "connection": "conn-farm-revenue--farmers-capacity-to-invest"
         },
         {
           "_id": "edge-group-C5-farmers-capacity-to-invest--freshwater-storage-measures",
-          "curvature": 0.179,
+          "curvature": 0.136,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--freshwater-storage-measures"
         },
         {
-          "_id": "edge-group-C5-crop-yield--freshwater-storage-measures",
-          "curvature": -0.505,
+          "_id": "edge-group-C5-crop-water-shortfall--freshwater-storage-measures",
+          "curvature": -0.502,
           "style": {},
-          "connection": "conn-crop-yield--freshwater-storage-measures"
+          "connection": "conn-crop-water-shortfall--freshwater-storage-measures"
         }
       ],
       "loops": [
@@ -8956,7 +8939,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 327
+            "y": 272
           }
         },
         {
@@ -8966,7 +8949,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": -327
+            "y": -272
           }
         }
       ]
@@ -11078,8 +11061,8 @@
     },
     {
       "_id": "map-loop-B6",
-      "name": "21 B6 Farms store water when harvests fall",
-      "description": "As harvests get worse, farmers find storing water more worthwhile and those who can pay for it store more. Less winter rain drains away, the rainwater lens thickens over years, crops on that field have more fresh water, the shortfall shrinks and yields recover. It seeks the harvest at which storing stops being worth its cost, which each farmer sets against their other ways through a dry summer. On the island's two trials of the lens-growing measures the lens's growth was not clearly shown: at Kerkwerve freshening was measured at 3 of 5 locations and the effect 'lijkt daarmee beperkt' (Oude Essink et al., 2018, p. 97), and near Dreischor its growth was '(nog) niet aangetoond' over the measuring period, perhaps because of height differences within the plot or because the fresh-salt system responds slowly (van Hateren et al., 2025, p. 59). It drives storage, slowly, the lens taking years to respond.",
+      "name": "21 B6 Farms store water when water falls short",
+      "description": "As the water falls short of what crops need, farmers find storing it more worthwhile and those who can pay for it store more. Less winter rain drains away, the rainwater lens thickens over years, crops on that field have more fresh water and the shortfall shrinks. It seeks the shortfall at which storing stops being worth its cost, which each farmer sets against their other ways through a dry summer. On the island's two trials of the lens-growing measures the lens's growth was not clearly shown: at Kerkwerve freshening was measured at 3 of 5 locations and the effect 'lijkt daarmee beperkt' (Oude Essink et al., 2018, p. 97), and near Dreischor its growth was '(nog) niet aangetoond' over the measuring period, perhaps because of height differences within the plot or because the fresh-salt system responds slowly (van Hateren et al., 2025, p. 59). It drives storage, slowly, the lens taking years to respond.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -11090,20 +11073,20 @@
       "defaultConnectionDirection": "directed",
       "elements": [
         {
-          "_id": "node-loop-B6-crop-yield",
+          "_id": "node-loop-B6-crop-water-shortfall",
           "position": {
-            "x": -247,
-            "y": -243
+            "x": -309,
+            "y": -241
           },
           "pinned": true,
           "style": {},
-          "element": "elem-crop-yield"
+          "element": "elem-crop-water-shortfall"
         },
         {
           "_id": "node-loop-B6-freshwater-storage-measures",
           "position": {
-            "x": 214,
-            "y": -253
+            "x": 254,
+            "y": -260
           },
           "pinned": true,
           "style": {},
@@ -11112,8 +11095,8 @@
         {
           "_id": "node-loop-B6-winter-rain-drained-away",
           "position": {
-            "x": 495,
-            "y": -5
+            "x": 496,
+            "y": 97
           },
           "pinned": true,
           "style": {},
@@ -11122,8 +11105,8 @@
         {
           "_id": "node-loop-B6-freshwater-lens-thickness",
           "position": {
-            "x": 213,
-            "y": 253
+            "x": 3,
+            "y": 297
           },
           "pinned": true,
           "style": {},
@@ -11132,60 +11115,44 @@
         {
           "_id": "node-loop-B6-freshwater-availability-for-crops",
           "position": {
-            "x": -281,
-            "y": 231
+            "x": -493,
+            "y": 102
           },
           "pinned": true,
           "style": {},
           "element": "elem-freshwater-availability-for-crops"
-        },
-        {
-          "_id": "node-loop-B6-crop-water-shortfall",
-          "position": {
-            "x": -492,
-            "y": -30
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-crop-water-shortfall"
         }
       ],
       "connections": [
         {
-          "_id": "edge-loop-B6-crop-yield--freshwater-storage-measures",
-          "curvature": 0.14,
+          "_id": "edge-loop-B6-crop-water-shortfall--freshwater-storage-measures",
+          "curvature": 0.166,
           "style": {},
-          "connection": "conn-crop-yield--freshwater-storage-measures"
+          "connection": "conn-crop-water-shortfall--freshwater-storage-measures"
         },
         {
           "_id": "edge-loop-B6-freshwater-storage-measures--winter-rain-drained-away",
-          "curvature": 0.31,
+          "curvature": 0.507,
           "style": {},
           "connection": "conn-freshwater-storage-measures--winter-rain-drained-away"
         },
         {
           "_id": "edge-loop-B6-winter-rain-drained-away--freshwater-lens-thickness",
-          "curvature": 0.327,
+          "curvature": 0.234,
           "style": {},
           "connection": "conn-winter-rain-drained-away--freshwater-lens-thickness"
         },
         {
           "_id": "edge-loop-B6-freshwater-lens-thickness--freshwater-availability-for-crops",
-          "curvature": 0.153,
+          "curvature": 0.231,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--freshwater-availability-for-crops"
         },
         {
           "_id": "edge-loop-B6-freshwater-availability-for-crops--crop-water-shortfall",
-          "curvature": 0.355,
+          "curvature": 0.5,
           "style": {},
           "connection": "conn-freshwater-availability-for-crops--crop-water-shortfall"
-        },
-        {
-          "_id": "edge-loop-B6-crop-water-shortfall--crop-yield",
-          "curvature": 0.259,
-          "style": {},
-          "connection": "conn-crop-water-shortfall--crop-yield"
         }
       ],
       "loops": [

@@ -4063,16 +4063,6 @@
   ],
   "changes": [
     {
-      "change": "Freshwater storage measures respond to the water shortfall, not to the yield",
-      "argument": "The vision: crops need more water than there is, and storage is small against the gap. The source the link stands on ties the urgency of storing to dry and wet years (Kaandorp et al., 2022, p. 12), the water; from Crop yield, a total over its causes, a harvest lost to a wet spring or poor soil raised storage too, though in wet years the attention goes to waterlogging. The shortfall is the gap farmers' water decisions respond to, as pumping (B5) and the call for a supply route (B7) already start from it, so B6 now meets them there, as C4 describes. B6 stays balancing; C5's two loops part at the shortfall: the same dry year pushes storage up (B6) and, through the yield and the income, down (R4).",
-      "items": [
-        "crop-yield -> freshwater-storage-measures",
-        "crop-water-shortfall -> freshwater-storage-measures",
-        "B6",
-        "C5"
-      ]
-    },
-    {
       "change": "Harvest lost to salt → Freshwater storage measures, a hypothesis for the group model building session",
       "argument": "The vision: salt and scarcity are one system, two sides. The measures of the study's first class counter salt on the parcel (Kaandorp et al., 2022, p. 16), yet as drawn only water drives the storage decision. The link closes a balancing loop: salt takes harvest, farmers store, less rain drains away, the lens thickens, less salt reaches the root zone. Whether salt damage makes a farmer store is why an actor decides, with no source: a hypothesis, and a question to farmers on the session's cards (cld-model.md, 'A behavioural claim may be a hypothesis').",
       "items": [

@@ -4025,13 +4025,6 @@
   ],
   "changes": [
     {
-      "change": "Farmers' knowledge of new crops → Perceived risk of switching a hypothesis for the group model building session",
-      "argument": "Its one source, a survey of farmers in the south-west Netherlands, shows trust in their own competence raising their adaptation to drought (van Duinen et al., 2015a, p. 1089), and measures no perceived risk of a measure or crop. Why a farmer sees risk in a crop is a claim about why an actor decides, so with no source it is a hypothesis (cld-model.md, 'A behavioural claim may be a hypothesis'); the link and its sign stay.",
-      "items": [
-        "knowledge-of-new-crops -> perceived-risk-of-switching"
-      ]
-    },
-    {
       "change": "Crop water shortfall → Dependence on high-margin salt-sensitive crops: the sown onions given up for salt leave its evidence",
       "argument": "In the area studied the farmers stopped growing sown onions because of the high seepage pressure and surface water salt all year (Kaandorp et al., 2022, p. 31), a salt response, not a response to a shortfall of water. The link keeps the openness to other crops with more fresh water (p. 30) and the onions' fall on the island and in Zeeland (Delphy, 2023, p. 15; De Vriend, 2024b).",
       "items": [

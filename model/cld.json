@@ -2785,11 +2785,10 @@
       "to": "perceived-risk-of-switching",
       "polarity": "-",
       "delay": false,
-      "description": "Farmers who know how to grow and sell a new crop see less risk in it: in a survey of farmers in the south-west Netherlands, their trust in their own competence to carry out a measure raised their adaptation, the strongest such factor for measures at farm level (van Duinen et al., 2015a, pp. 1089, 1091). Measured for drought measures, not for new crops. Within the year.",
-      "sources": [
-        "van-duinen-2015-coping"
-      ],
-      "curvature": 0.14
+      "description": "Do farmers who know how to grow and sell a new crop see less risk in switching to it? A hypothesis for the group model building session: no source read measures the risk farmers see in a new crop against what they know of it, so the question to farmers is whether knowing a crop lowers the risk they see in it. Within the year, if it holds.",
+      "sources": [],
+      "curvature": 0.14,
+      "hypothesis": true
     },
     {
       "from": "market-demand-for-alternative-crops",

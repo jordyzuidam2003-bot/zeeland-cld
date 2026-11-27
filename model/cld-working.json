@@ -4076,15 +4076,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Harvest lost to salt → Adoption of salt-tolerant varieties delayed, as farmers come to notice the damage",
-      "argument": "No delay lost: its sibling to Fields moved to new crops folds Farmers' experience of damage into its delay, salt in a field being hard to see and a lower yield hard to put down to salt (Beauchampet, 2022, p. 216), and that noticing comes before a change of variety as much as of crop. The link stays a hypothesis, its delay part of it, and its question goes on the session's cards. B1 stays balancing, now with a delay; C1 orders B1 before B2 by their costs, no longer by a delay B1 lacked.",
-      "items": [
-        "harvest-lost-to-salt -> tolerant-varieties-adoption",
-        "B1",
-        "C1"
-      ]
-    }
-  ]
+  "changes": []
 }

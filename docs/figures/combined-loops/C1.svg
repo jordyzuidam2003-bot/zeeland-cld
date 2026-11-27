@@ -22,9 +22,11 @@
 <path class="link-path" d="M 406.1 435.0 Q 279.4 473.8 147.6 486.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="197.2" y="480.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="harvest-lost-to-salt" data-to="tolerant-varieties-adoption" data-sign="+" data-delay="false" data-curvature="-0.595">
+<g class="link" data-from="harvest-lost-to-salt" data-to="tolerant-varieties-adoption" data-sign="+" data-delay="true" data-curvature="-0.595">
 <path class="link-path" d="M -583.5 421.0 Q -717.8 487.6 -790.1 619.0 Q -862.3 750.3 -846.7 899.4 Q -831.0 1048.5 -733.1 1162.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-763.9" y="1122.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -815.6 753.0 L -862.6 743.6 M -818.7 768.7 L -865.7 759.3" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -815.6 753.0 L -862.6 743.6 M -818.7 768.7 L -865.7 759.3" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="tolerant-varieties-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.595">
 <path class="link-path" d="M -560.5 1169.3 Q -435.7 1088.7 -378.5 951.5 Q -321.3 814.3 -352.0 668.9 Q -382.6 523.4 -490.3 421.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>

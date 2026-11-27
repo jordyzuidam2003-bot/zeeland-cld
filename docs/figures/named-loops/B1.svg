@@ -10,9 +10,11 @@
 <path class="link-path" d="M 390.9 60.0 Q 352.8 139.7 233.8 187.4 Q 114.8 235.1 -30.5 228.8 Q -175.9 222.6 -280.9 165.3 Q -385.9 108.1 -402.4 26.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-384.7" y="72.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="harvest-lost-to-salt" data-to="tolerant-varieties-adoption" data-sign="+" data-delay="false" data-curvature="0.32">
+<g class="link" data-from="harvest-lost-to-salt" data-to="tolerant-varieties-adoption" data-sign="+" data-delay="true" data-curvature="0.32">
 <path class="link-path" d="M -402.4 -26.0 Q -385.9 -108.1 -280.9 -165.3 Q -175.9 -222.6 -30.5 -228.8 Q 114.8 -235.1 233.8 -187.4 Q 352.8 -139.7 390.9 -60.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="363.5" y="-101.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -26.1 -253.1 L -24.9 -205.1 M -10.2 -253.5 L -8.9 -205.5" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -26.1 -253.1 L -24.9 -205.1 M -10.2 -253.5 L -8.9 -205.5" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 </g>
 <g class="elements">

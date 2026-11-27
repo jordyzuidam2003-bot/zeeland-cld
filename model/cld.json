@@ -13,8 +13,8 @@
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],
-      "x": -1342,
-      "y": 739
+      "x": -1359,
+      "y": 785
     },
     {
       "id": "sea-level-rise",
@@ -28,8 +28,8 @@
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],
-      "x": -2266,
-      "y": 407
+      "x": -2299,
+      "y": 400
     },
     {
       "id": "wetter-winters",
@@ -146,8 +146,8 @@
         "provincie-zeeland-2021-grondwateronttrekkingen",
         "scheldestromen-2026-grondwater"
       ],
-      "x": -1141,
-      "y": 585
+      "x": -1099,
+      "y": 611
     },
     {
       "id": "demand-for-deep-polder-drainage",
@@ -312,8 +312,8 @@
         "polman-2026",
         "van-den-burg-2024"
       ],
-      "x": 604,
-      "y": 1046
+      "x": 737,
+      "y": 1024
     },
     {
       "id": "processing-capacity-for-alternative-crops",
@@ -407,8 +407,8 @@
         "ec-2023-banking-package",
         "eba-2023-basel-iii-monitoring"
       ],
-      "x": 1692,
-      "y": -277,
+      "x": 1679,
+      "y": -135,
       "actor": "banks",
       "simplification": "Folds Basel IV capital requirements, a Constant on no loop with one link, into this description: the capital rules are context for the premium, set by the EU outside the CLD's scale, and no actor in the CLD can move them. No loop runs through it, no actor inside the scale loses a decision and no delay is lost; what it leaves out is a change in the rules as a driver the semi-quantitative analysis could vary.",
       "actors": [
@@ -766,8 +766,8 @@
         "dutchnews-2026",
         "greenfood50-nd"
       ],
-      "x": 342,
-      "y": 1698
+      "x": 545,
+      "y": 1695
     },
     {
       "id": "processing-of-new-crops-elsewhere",
@@ -782,8 +782,8 @@
         "greenfood50-nd",
         "dutchnews-2026"
       ],
-      "x": 1344,
-      "y": 1175
+      "x": 1301,
+      "y": 1133
     },
     {
       "id": "tolerant-varieties-adoption",
@@ -857,8 +857,8 @@
         "bonnet-2025",
         "van-loo-2023"
       ],
-      "x": 1741,
-      "y": -1233
+      "x": 1863,
+      "y": -1226
     },
     {
       "id": "knowledge-of-new-crops",
@@ -873,8 +873,8 @@
         "de-wit-2022",
         "van-den-burg-2024"
       ],
-      "x": 1083,
-      "y": 721
+      "x": 1122,
+      "y": 729
     },
     {
       "id": "spending-on-keeping-current-crops",
@@ -890,8 +890,8 @@
         "kaandorp-2022",
         "scheldestromen-2026-waterschapsverordening"
       ],
-      "x": 1818,
-      "y": 423,
+      "x": 1813,
+      "y": 524,
       "actor": "arable-farmers"
     },
     {
@@ -940,8 +940,8 @@
         "van-der-meulen-2020",
         "abn-amro-nd-kosten-krediet"
       ],
-      "x": 2133,
-      "y": -328
+      "x": 2185,
+      "y": -212
     },
     {
       "id": "world-prices-of-conventional-crops",
@@ -958,8 +958,8 @@
         "janssens-2020",
         "bogosavac-2018"
       ],
-      "x": 87,
-      "y": 179
+      "x": 53,
+      "y": 238
     },
     {
       "id": "farmers-trust-in-government",
@@ -994,8 +994,8 @@
         "luijt-2007",
         "holtslag-broekhof-2016"
       ],
-      "x": 344,
-      "y": -1108
+      "x": -205,
+      "y": -1736
     },
     {
       "id": "creek-ridge-lens-thickness",
@@ -1029,8 +1029,8 @@
         "scheldestromen-2026-waterschapsverordening"
       ],
       "actor": "waterschap-scheldestromen",
-      "x": -574,
-      "y": 646
+      "x": -550,
+      "y": 648
     },
     {
       "id": "knowledge-of-storage",
@@ -1071,8 +1071,8 @@
         "scheldestromen-2021-hor-duiveland",
         "kaandorp-2022"
       ],
-      "x": -1375,
-      "y": 400
+      "x": -1368,
+      "y": 544
     },
     {
       "id": "water-demand-of-the-crop-mix",
@@ -1087,8 +1087,8 @@
         "allen-1998",
         "delphy-2023-dorsd"
       ],
-      "x": -1025,
-      "y": 1650
+      "x": -846,
+      "y": 1446
     },
     {
       "id": "trials-and-pilots-on-the-island",
@@ -1114,8 +1114,8 @@
         "acacia-water",
         "delphy"
       ],
-      "x": 1125,
-      "y": 350
+      "x": 1172,
+      "y": 408
     },
     {
       "id": "perceived-risk-of-switching",
@@ -1130,8 +1130,8 @@
         "delphy-2023-dorsd",
         "van-duinen-2015-coping"
       ],
-      "x": 1650,
-      "y": 880
+      "x": 1684,
+      "y": 934
     },
     {
       "id": "buyer-contracts-for-new-crops",
@@ -1305,7 +1305,7 @@
         "provincie-zeeland-2021-grondwateronttrekkingen",
         "acacia-water-nd-kleine-zoetwaterlenzen"
       ],
-      "curvature": 0.32
+      "curvature": 0.26
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -1380,7 +1380,7 @@
       "delay": false,
       "description": "A farm that relies on high margins can give fewer hectares to lower-margin new crops.",
       "sources": [],
-      "curvature": -0.17,
+      "curvature": -0.39,
       "hypothesis": true
     },
     {
@@ -1430,7 +1430,7 @@
         "van-den-burg-2024",
         "delphy-2023-dorsd"
       ],
-      "curvature": 0.29
+      "curvature": 0.3
     },
     {
       "from": "hotter-drier-summers",
@@ -1485,7 +1485,7 @@
         "krajenbrink-2023",
         "acacia-water-2020"
       ],
-      "curvature": 0.32
+      "curvature": 0.27
     },
     {
       "from": "crop-water-shortfall",
@@ -1499,7 +1499,7 @@
         "omroep-zeeland-2026-aardappeloogst",
         "delphy-2023-dorsd"
       ],
-      "curvature": 0.4
+      "curvature": 0.46
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -1981,7 +1981,7 @@
       "delay": false,
       "description": "Growing a new crop, on their own fields or their neighbours', teaches farmers how.",
       "sources": [],
-      "curvature": -0.28,
+      "curvature": -0.3,
       "hypothesis": true
     },
     {
@@ -2382,7 +2382,7 @@
         "scheldestromen-2019-nota-grondwater",
         "scheldestromen-2026-waterschapsverordening"
       ],
-      "curvature": 0.14,
+      "curvature": -0.15,
       "simplification": "The link reads the rules in force as letting a lens be pumped without a permit only where the board's map shows a fresh body, as the water board's 2019 policy note says; the regulation's art. 4.8 e, as written, frees outside the fresh bodies too an extraction with a pump of more than 5 m³ an hour or of at most 12,000 m³ a year, while art. 4.9 frees from notification a pump of not more than 5 m³ an hour, which suggests a drafting error (Waterschap Scheldestromen, 2026f, arts. 4.8 e and 4.9). Which reading the board applies is a question for the water board."
     },
     {
@@ -2394,7 +2394,7 @@
       "sources": [
         "scheldestromen-2026-grondwater"
       ],
-      "curvature": -0.14
+      "curvature": -0.13
     },
     {
       "from": "pumping-the-water-board-allows",
@@ -2418,7 +2418,7 @@
         "kaandorp-2022",
         "delphy-2023-dorsd"
       ],
-      "curvature": -0.19
+      "curvature": -0.2
     },
     {
       "from": "knowledge-of-storage",
@@ -2661,7 +2661,7 @@
         "scheldestromen-2021-hor-duiveland",
         "kaandorp-2022"
       ],
-      "curvature": 0.2
+      "curvature": 0.25
     },
     {
       "from": "hotter-drier-summers",
@@ -2694,7 +2694,7 @@
       "sources": [
         "delphy-2023-dorsd"
       ],
-      "curvature": 0.1
+      "curvature": 0
     },
     {
       "from": "water-demand-of-the-crop-mix",
@@ -2720,7 +2720,7 @@
         "de-vriend-2024-gewassen"
       ],
       "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
-      "curvature": -0.1
+      "curvature": -0.26
     },
     {
       "from": "trials-and-pilots-on-the-island",
@@ -2769,7 +2769,7 @@
         "delphy-2023-dorsd",
         "van-duinen-2015-coping"
       ],
-      "curvature": -0.15
+      "curvature": -0.23
     },
     {
       "from": "knowledge-of-new-crops",
@@ -2780,7 +2780,7 @@
       "sources": [
         "van-duinen-2015-coping"
       ],
-      "curvature": 0.1
+      "curvature": 0.14
     },
     {
       "from": "market-demand-for-alternative-crops",

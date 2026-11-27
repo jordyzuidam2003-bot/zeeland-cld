@@ -160,7 +160,7 @@
           "sources": [
             "living-lab-partners"
           ],
-          "curvature": 0.1
+          "curvature": 0.2
         }
       ],
       "sources": [
@@ -171,8 +171,8 @@
         "living-lab-partners",
         "living-lab-2025-programma"
       ],
-      "x": 1688,
-      "y": 1476
+      "x": 1644,
+      "y": 1530
     },
     {
       "id": "provincie-zeeland",
@@ -207,7 +207,7 @@
             "omgevingswet-2026",
             "schouwen-duiveland-2024-waterbassins"
           ],
-          "curvature": 0.53
+          "curvature": 0.3
         },
         {
           "to": "gemeente-schouwen-duiveland",
@@ -304,7 +304,7 @@
           "sources": [
             "cosun-sustainable-beet-production"
           ],
-          "curvature": 0.25
+          "curvature": 0.3
         }
       ],
       "sources": [
@@ -378,8 +378,8 @@
         "scheldestromen-nd-algemene-vergadering",
         "scheldestromen-nd-dagelijks-bestuur"
       ],
-      "x": 2053,
-      "y": 1365
+      "x": 2026,
+      "y": 1338
     },
     {
       "id": "consumers",
@@ -583,7 +583,7 @@
           "sources": [
             "rws-2026-waterakkoord-vzm"
           ],
-          "curvature": -0.1
+          "curvature": -0.23
         }
       ],
       "sources": [
@@ -620,8 +620,8 @@
         "dcc-flexible-deltas",
         "nioz-2023-dcc"
       ],
-      "x": 2627,
-      "y": 1614,
+      "x": 2647,
+      "y": 1606,
       "ask actors": [
         {
           "actor": "dcc",
@@ -770,7 +770,7 @@
             "delphy-2023-dorsd",
             "wiepkema-2023-zoetwaterbehoefte"
           ],
-          "curvature": 0.1
+          "curvature": 0.27
         }
       ],
       "sources": [
@@ -825,8 +825,8 @@
         "van-haperen-2006",
         "raat-2026"
       ],
-      "x": 1500,
-      "y": 1650,
+      "x": 1416,
+      "y": 1698,
       "ask actors": [
         {
           "actor": "nature-managers",
@@ -858,7 +858,7 @@
           "sources": [
             "living-lab-partners"
           ],
-          "curvature": -0.24
+          "curvature": -0.25
         },
         {
           "to": "provincie-zeeland",
@@ -867,7 +867,7 @@
           "sources": [
             "living-lab-partners"
           ],
-          "curvature": -0.11
+          "curvature": -0.15
         },
         {
           "to": "agrarisch-schouwen-duiveland",
@@ -877,7 +877,7 @@
             "living-lab-partners",
             "living-lab-samenwerken-voor-zoet-water"
           ],
-          "curvature": 0.2
+          "curvature": 0.27
         },
         {
           "to": "deltares",
@@ -896,7 +896,7 @@
           "sources": [
             "living-lab-samenwerken-voor-zoet-water"
           ],
-          "curvature": -0.14
+          "curvature": -0.4
         },
         {
           "to": "acacia-water",
@@ -916,7 +916,7 @@
             "living-lab-partners",
             "living-lab-innovatieve-drainage"
           ],
-          "curvature": -0.1
+          "curvature": -0.16
         },
         {
           "to": "rusthoeve",
@@ -947,8 +947,8 @@
         "living-lab-2023-dreischor",
         "living-lab-2025-programma"
       ],
-      "x": 1350,
-      "y": 1330
+      "x": 1416,
+      "y": 1335
     },
     {
       "id": "rusthoeve",
@@ -968,8 +968,8 @@
         "living-lab-innovatieve-drainage",
         "living-lab-partners"
       ],
-      "x": 1050,
-      "y": 1480
+      "x": 1223,
+      "y": 1493
     },
     {
       "id": "agrarisch-schouwen-duiveland",
@@ -993,7 +993,7 @@
             "omroep-zeeland-2026-aardappeloogst",
             "omroep-zeeland-2023-zoet-water"
           ],
-          "curvature": 0.15
+          "curvature": -0.22
         }
       ],
       "sources": [
@@ -1004,8 +1004,8 @@
         "living-lab-partners",
         "living-lab-samenwerken-voor-zoet-water"
       ],
-      "x": 2250,
-      "y": 1560
+      "x": 2146,
+      "y": 1723
     }
   ]
 }

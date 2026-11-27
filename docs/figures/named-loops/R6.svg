@@ -16,7 +16,7 @@
 <path class="delay-cut" d="M -635.5 -400.6 L -613.4 -357.9 M -621.3 -407.9 L -599.2 -365.3" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -635.5 -400.6 L -613.4 -357.9 M -621.3 -407.9 L -599.2 -365.3" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="farmers-capacity-to-invest" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="false" data-curvature="0.29">
+<g class="link" data-from="farmers-capacity-to-invest" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="false" data-curvature="0.3">
 <path class="link-path" d="M 458.8 448.6 Q 311.5 497.0 143.5 512.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="193.2" y="506.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

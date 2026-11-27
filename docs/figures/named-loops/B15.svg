@@ -6,7 +6,7 @@
 </defs>
 <rect x="-621" y="-329" width="1159" height="682" fill="white"/>
 <g class="links">
-<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="water-demand-of-the-crop-mix" data-sign="+" data-delay="false" data-curvature="0.1">
+<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="water-demand-of-the-crop-mix" data-sign="+" data-delay="false" data-curvature="0">
 <path class="link-path" d="M -290.9 -183.2 Q -191.5 -233.9 -59.0 -244.2 Q 73.5 -254.5 193.4 -220.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="144.8" y="-232.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
@@ -14,7 +14,7 @@
 <path class="link-path" d="M 364.2 -134.8 Q 432.3 -75.7 434.9 -5.1 Q 437.5 65.5 373.7 126.2 Q 309.9 186.8 199.1 219.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="246.5" y="203.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="crop-water-shortfall" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="-" data-delay="true" data-curvature="-0.1">
+<g class="link" data-from="crop-water-shortfall" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="-" data-delay="true" data-curvature="-0.26">
 <path class="link-path" d="M -117.2 237.4 Q -289.1 210.1 -377.7 122.3 Q -466.2 34.5 -420.4 -63.3" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-434.9" y="-15.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 <path class="delay-cut" d="M -354.3 173.6 L -325.3 135.4 M -367.1 163.9 L -338.0 125.7" stroke="white" stroke-width="11" fill="none"/>

@@ -4005,13 +4005,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "The national contribution to regional freshwater measures stopped, in the supply route's description",
-      "argument": "Kitty: the new budget puts old infrastructure first, which lowers the chance of national money for a supply route to the island. The letter of 16 October 2026 (Kamerstukken II 2026/27, 37 020 A, nr. 14, Table 9) keeps the Delta Programme Freshwater at 50% for the main water system and stops its contributions and subsidies for the regional water system, the Delta Fund contribution a regional measure could claim (Algemene Rekenkamer, 2026, p. 32), and Witteveen+Bos (2021, p. 51) names that programme as a possible payer of the route. In words, no Constant: the route already has IenW among its actors and no payer (decided by Jordy).",
-      "items": [
-        "freshwater-supply-route"
-      ]
-    }
-  ]
+  "changes": []
 }

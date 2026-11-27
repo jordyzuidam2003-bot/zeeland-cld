@@ -2870,6 +2870,16 @@
       "sources": [
         "kaandorp-2022"
       ]
+    },
+    {
+      "from": "harvest-lost-to-salt",
+      "to": "freshwater-storage-measures",
+      "polarity": "+",
+      "delay": false,
+      "curvature": 0.3,
+      "hypothesis": true,
+      "description": "Does the harvest salt takes make farmers store more fresh water in their fields? In the low polders the measures keep the thin rainwater lens against salt (Freshwater storage measures), so a farm losing harvest to salt has a reason to take them up beside the shortfall. A hypothesis for the group model building session: no source read shows a farmer storing because of salt damage, so the question to farmers is whether salt on their fields makes them consider such measures. No delay drawn: how quickly salt damage turns into a measure built, no source read shows.",
+      "sources": []
     }
   ],
   "loops": [

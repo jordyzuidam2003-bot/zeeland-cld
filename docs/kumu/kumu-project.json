@@ -4567,6 +4567,26 @@
       "to": "elem-freshwater-storage-measures"
     },
     {
+      "_id": "conn-harvest-lost-to-salt--freshwater-storage-measures",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "Does the harvest salt takes make farmers store more fresh water in their fields? In the low polders the measures keep the thin rainwater lens against salt (Freshwater storage measures), so a farm losing harvest to salt has a reason to take them up beside the shortfall. A hypothesis for the group model building session: no source read shows a farmer storing because of salt damage, so the question to farmers is whether salt on their fields makes them consider such measures. No delay drawn: how quickly salt damage turns into a measure built, no source read shows.",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "yes",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-harvest-lost-to-salt",
+      "to": "elem-freshwater-storage-measures"
+    },
+    {
       "_id": "conn-0",
       "direction": "directed",
       "delayed": false,
@@ -6907,6 +6927,12 @@
           "curvature": -0.1,
           "style": {},
           "connection": "conn-crop-water-shortfall--freshwater-storage-measures"
+        },
+        {
+          "_id": "edge-harvest-lost-to-salt--freshwater-storage-measures",
+          "curvature": 0.3,
+          "style": {},
+          "connection": "conn-harvest-lost-to-salt--freshwater-storage-measures"
         }
       ],
       "loops": [

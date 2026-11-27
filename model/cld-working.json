@@ -4063,13 +4063,6 @@
   ],
   "changes": [
     {
-      "change": "Harvest lost to salt → Freshwater storage measures, a hypothesis for the group model building session",
-      "argument": "The vision: salt and scarcity are one system, two sides. The measures of the study's first class counter salt on the parcel (Kaandorp et al., 2022, p. 16), yet as drawn only water drives the storage decision. The link closes a balancing loop: salt takes harvest, farmers store, less rain drains away, the lens thickens, less salt reaches the root zone. Whether salt damage makes a farmer store is why an actor decides, with no source: a hypothesis, and a question to farmers on the session's cards (cld-model.md, 'A behavioural claim may be a hypothesis').",
-      "items": [
-        "harvest-lost-to-salt -> freshwater-storage-measures"
-      ]
-    },
-    {
       "change": "Crop yield counts the yield that sells",
       "argument": "One quantity per variable: Crop yield was physical weight while its link to Farm income read the kilograms paid for, which for seed potatoes differ (Delphy, 2023, p. 44). As the yield that sells, every link in and out reads one quantity, and the seed potatoes' size grades move to where the shortfall lowers that yield. No link, sign or delay changes.",
       "items": [

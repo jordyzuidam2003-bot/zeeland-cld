@@ -112,7 +112,7 @@ that hold the same model print nothing.
 
 A batch goes into the working version, is built, committed and pushed, and its list goes to Jordy.
 A change he rejects is undone in the working version, its entry with it; what he agrees is copied into `model/cld.json` without its entry, in a commit whose message ends in its
-`Change:`, `Argument:` and `Agreed:` lines (Version 1), then the Drive's two tables and the throwaway Kumu project are
+`Change:`, `Argument:` and `Agreed:` lines (Version 1), then the Drive's two tables and the Kumu project `cbp1` are
 replaced from the build's files (The table, Kumu). Once no change waits, the working version goes:
 `model/cld-working.json` is deleted and the next build removes `docs/working/`.
 
@@ -212,9 +212,7 @@ tables lost their columns pasted into Google Docs). Each update goes into the sa
 stays: in the Sheet, File → Import → Upload → the new `.xlsx` → "Replace spreadsheet", which
 overwrites every tab, so the Sheet itself is never edited (Jordy; rejected: a new file per update,
 whose link changes, and a Sheet that pulls the table from the page with `IMPORTDATA`, whose formula
-shows the page's address to anyone who views it). Until the Research Proposal's grade is in, both
-Sheets stay as the proposal links them, as `cbp1` does (Kumu, below): replacing them would change a
-submitted assignment. `build.py` writes it from `model/cld.json`, so it
+shows the page's address to anyone who views it). `build.py` writes it from `model/cld.json`, so it
 never drifts from the drawing: the Elements sheet (by subsystem, then by label: type, SETS
 domain, subsystem, description, simplification, the actor that decides it, the actors that
 decide or shape it, sources, the facts to ask the actors), the Links sheet (by their ends: polarity, delay,
@@ -512,9 +510,9 @@ guidelines do not ask for it (Jordy).
 
 ## Kumu
 
-Kumu holds a copy for milestones, at <https://kumu.io/JordyZuidam/cbp1>, public and never
-edited (the places and bends Jordy sets by hand in Kumu are set in a throwaway project and read
-back into the model, below): the one place outsiders see the model, so nothing in it links to the page or this
+Kumu holds the model at <https://kumu.io/JordyZuidam/cbp1>, public, replaced from the build each
+time the model changes (the places and bends Jordy sets by hand there are read back into the model
+before the next restore, below): the one place outsiders see the model, so nothing in it links to the page or this
 repository (Jordy). One project, `cbp1`, holds every map, each picked from Kumu's map list, with
 no showcase buttons, so its name names no single map (Jordy; rejected: `cbp-cld`, the name of the
 CLD's own project before the Actor Map joined it):
@@ -553,10 +551,8 @@ New Project → its name, public → the next screen → "restore backup" (the l
 `docs/kumu/kumu-project.json`, once: the file holds every map with its view and both background
 images, so nothing is uploaded after it. Only a brand-new project restores a project export; the
 green `+` → Import route brings in the elements and connections alone. The restore sets the
-project's name, which the export sets to `cbp1`. Until the Research Proposal's grade is in, `cbp1`
-stays as it is (the examiners may be reading it through the proposal's links;
-rejected: replacing it during the examination): an update goes into a throwaway project instead,
-restored from a copy of the export with `name` set to the throwaway's, so it cannot become `cbp1`.
+project's name, which the export sets to `cbp1`. Every update goes into `cbp1` itself (Jordy; rejected: a throwaway project beside it, kept only
+while the Research Proposal was graded).
 
 The view follows the page's look as far as Kumu can: boxes tinted by SETS domain with the label
 inside, square corners for a stock and rounded ones for the others, an italic label for a
@@ -575,7 +571,7 @@ such a pair is set apart by bowing its outer link further out where it reads unc
 (Kumu's drawing is fixed in the build where it can be, by hand only for the
 rest; a pair that reads clearly stays, whatever its distance).
 
-Jordy sets the places and bends by hand in a throwaway project, and the build reads them back
+Jordy sets the places and bends by hand in `cbp1`, and the build reads them back before the next restore replaces it
 (Kumu is what the report's readers see, and only Kumu shows what Kumu draws, as it
 aims each link at its box's centre and places its own arrowheads and signs, which the page draws
 apart, so a fix made on the page misses Kumu's problems; rejected: the page's Move mode, a view on

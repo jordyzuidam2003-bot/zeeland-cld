@@ -4007,15 +4007,6 @@
   ],
   "changes": [
     {
-      "change": "Storage's size against the gap, and no measure or crop enough alone, in the descriptions",
-      "argument": "Kitty's points (1) and (3): a link's sign carries no strength, so the size goes into words. Delphy (2023) assumes the innovative measures cover 10% of the farms' water need, the rest 314 basins of 10,000 m³ (p. 41), a deep drain capped at 6,000 m³ a growing season (p. 40); the current measures supply too little, are no one-size-fits-all solution and fit only part of the island (p. 50), custom work everywhere (p. 40); and a new crop still needs water, flax too (p. 48).",
-      "items": [
-        "freshwater-storage-measures -> freshwater-availability-for-crops",
-        "freshwater-storage-measures",
-        "fields-moved-to-new-salt-tolerant-crops"
-      ]
-    },
-    {
       "change": "Trials and pilots on the island drawn, a Constant feeding both kinds of knowledge",
       "argument": "Saskia (DCC) misses R&D in the CLD: knowledge of storage had one link in, from storage itself (R5), while its own description names the pilots and the quickscans. The trials are made by the Living Lab (Kaandorp et al., 2022, p. 8; Living Lab Schouwen-Duiveland, n.d.-a, n.d.-b, 2023), Rusthoeve and Delphy (Delphy, 2023, pp. 9, 19, 49), and give farmers and advisers tools (Kaandorp et al., 2022, pp. 55–56) after years (Delphy, 2023, p. 40). A Constant, its actors outside the scale, since no source shows the farms' choices moving the trials; not one variable 'innovation', which measures no single quantity (decided by Jordy). The link to knowledge of new crops cites research in Zeeland, not on the island.",
       "items": [

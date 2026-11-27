@@ -980,32 +980,6 @@
       "y": -1555
     },
     {
-      "id": "expropriation-of-farmland",
-      "label": "Expropriation of farmland",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ3",
-      "description": "Hectares of the island's farmland that a public body takes in a year for a use its plan sets, with full compensation, by an order a court must confirm. The municipal council, the water board for its water tasks, the Provincial Council and the minister can each give the order (Omgevingswet, 2026, art. 11.4), and only for a use an adopted plan, a permit or a project decision allows, after a reasonable attempt to buy the land and with a start likely within three years (arts. 11.5–11.7, 11.11). On the island the State sought expropriation, in a draft decree, for a roundabout on the N59, of plots the decree does not say are farmland (Besluit rotonde N59, 2020, p. 3), and the municipal council gave an order, published in 2026 and still to be confirmed by the court, for a high-voltage station on a plan area wholly in agricultural use in 2023 (Gemeente Schouwen-Duiveland, 2026, p. 1; Braat, 2023, blad 9); no source read shows it there for water or nature, and the Province buys land for nature on a voluntary basis (Provincie Zeeland, Jaarstukken 2022, p. 4). Few cases reach a court, in the Krimpenerwaard 6 of 69 files (Kamphorst et al., 2025, pp. 10–11), since the threat mostly makes owners sell (Holtslag-Broekhof et al., 2016, section Context of the Study).",
-      "simplification": "Counts every order as the municipality's, while the municipal council, the water board, the Provincial Council and the minister can each give one (Omgevingswet, 2026, art. 11.4). Of the two orders read on the island, the municipal council gave the one for the high-voltage station (Gemeente Schouwen-Duiveland, 2026, p. 1); the one for the N59 roundabout came at the request of the Minister of Infrastructure and Water Management, under the law before the Omgevingswet, and carried out the municipality's land-use plan for the road (Besluit rotonde N59, 2020, p. 1). The CLD draws only the municipality's plans as what an order carries out (Farmland planned for other uses → Expropriation of farmland), so B14, the one named loop through it, keeps its polarity and its mechanism; what it leaves out is an order by another body for a plan of its own, which would lower trust the same way but close the loop through a plan the CLD does not draw.",
-      "sources": [
-        "omgevingswet-2026",
-        "n59-rotonde-2020",
-        "schouwen-duiveland-2026-onteigening",
-        "antea-2023-zierikzee",
-        "provincie-zeeland-jaarstukken-2022",
-        "kamphorst-2025",
-        "holtslag-broekhof-2016"
-      ],
-      "actors": [
-        "ienw"
-      ],
-      "x": 879,
-      "y": -1699,
-      "actor": "gemeente-schouwen-duiveland"
-    },
-    {
       "id": "farmers-wish-to-keep-their-land",
       "label": "Farmers' wish to keep their land",
       "element type": "Constant",
@@ -2368,19 +2342,6 @@
       "curvature": 0.0
     },
     {
-      "from": "expropriation-of-farmland",
-      "to": "farmland-changing-hands",
-      "polarity": "+",
-      "delay": true,
-      "description": "Expropriated land passes to the body that expropriates it when a notary's deed of expropriation is entered in the public registers (Omgevingswet, 2026, art. 11.18), which can be drawn up only once the expropriation order and the plan it carries out are irrevocable and the provisional compensation is paid (art. 11.16); on the island, the order for the high-voltage station takes effect only once the court has confirmed it (Gemeente Schouwen-Duiveland, 2026, p. 1). Years, so a delay: in the Krimpenerwaard, under the law before the Omgevingswet, the order of October 2020 left two years before the owners still without an agreement had to be summoned to court, by October 2022 (Kamphorst et al., 2025, pp. 26, 45), and the process of the owners expropriated by the court ran more than 61 months on average (p. 67), with continued use of the land until it was handed over (p. 41).",
-      "sources": [
-        "omgevingswet-2026",
-        "schouwen-duiveland-2026-onteigening",
-        "kamphorst-2025"
-      ],
-      "curvature": 0.2
-    },
-    {
       "from": "farmland-changing-hands",
       "to": "farmland-leaving-arable-use",
       "polarity": "-",
@@ -2482,21 +2443,6 @@
       "sources": [],
       "hypothesis": true,
       "curvature": 0.22
-    },
-    {
-      "from": "expropriation-of-farmland",
-      "to": "farmers-trust-in-government",
-      "polarity": "-",
-      "delay": false,
-      "description": "Land taken against its owner's wish lowers how far farmers expect public bodies to keep their commitments, the more so where they do not count the purpose as a public interest and where voluntary purchase was promised. Of 14 owners interviewed in the Krimpenerwaard, in a process of 2015–2023 with expropriation for nature as its last step, most experienced it as negative, and they often named an inequality of power; the municipal council had feared for trust between government and farming (Kamphorst et al., 2025, pp. 10, 15, 55). In interviews in the Netherlands, owners who did not count the plan as a public interest, nature development for one, were more often negative about expropriation in itself than those who did, as for roads (Holtslag-Broekhof et al., 2016, p. 180), and the chair of LTO held large-scale use against reliable government, farmers having been told that purchases would be voluntary (Neefjes, 2008, p. 3). The pressure starts before any order: the possibility of one weighs heavily on the process and on the owners' lives (Kamphorst et al., 2025, p. 55). No source read measures trust before and after, or on the island, where the purposes used so far are a road and the grid, those owners accept most. A tenant may gain (Adviescommissie Natuurherstel Westerschelde, n.d., p. 11). How negatively owners judge an expropriation afterwards seems to depend on its outcome and process: in the same Krimpenerwaard evaluation, paid for by the Province and municipality that ran the process and by the agriculture ministry, most of the owners interviewed were satisfied with their end situation, though half of those who sold rather than make the nature themselves were very dissatisfied, and satisfaction with the end result regularly contributed to a milder judgement of the whole process afterwards (Kamphorst et al., 2025, pp. 9, 13, 53), and Holtslag-Broekhof et al. (2016, p. 183) conclude that expropriation need not be feared in itself where its public purpose is clearly communicated, the process is open and takes owners' interests seriously, and the owner ends in the same economic position as before. Within the year: trust can be destroyed in an instant, its recovery, slower, is in the element (Slovic, 1993, p. 677).",
-      "sources": [
-        "kamphorst-2025",
-        "holtslag-broekhof-2016",
-        "neefjes-2008",
-        "adviescommissie-westerschelde",
-        "slovic-1993"
-      ],
-      "curvature": -0.22
     },
     {
       "from": "policy-resistance-legal-delays",
@@ -2689,18 +2635,6 @@
         "farjon-2013"
       ],
       "curvature": 0.26
-    },
-    {
-      "from": "municipality-plans-for-farmland",
-      "to": "expropriation-of-farmland",
-      "polarity": "+",
-      "delay": true,
-      "description": "A public body can expropriate only for a use made possible in an adopted plan, a permit or a project decision (Omgevingswet, 2026, art. 11.6), and only after a reasonable attempt to buy has failed (art. 11.7), so the more farmland planned for other uses, the more farmland within reach of an order. Only part of it comes within reach: the need to expropriate lapses where the owner shows they are willing and able to realise the planned use themselves, has concrete plans for it made known to the authority, and will realise it in the way the authority intends (art. 11.7(2)), and land the legger lists as a bergingsgebied can stay with its owner, who must tolerate flooding and the temporary storage of surface water on it (art. 10.3(4); annex, bergingsgebied). Of 481 ha inside and outside the nature boundary in the 69 files studied, 24 owners agreed to realise nature on 171 ha of their own land and 92 ha went through the court (Kamphorst et al., 2025, pp. 10–11, measured in the Krimpenerwaard, a Zuid-Holland peat polder, in an evaluation commissioned by the Programmabureau Veenweiden Krimpenerwaard that ran it with the Province, and funded by the Province of Zuid-Holland, the municipality and the agriculture ministry). Years, so a delay: the attempt to buy and the order follow the adopted plan.",
-      "sources": [
-        "omgevingswet-2026",
-        "kamphorst-2025"
-      ],
-      "curvature": 0.1
     },
     {
       "from": "hotter-drier-summers",
@@ -3255,17 +3189,6 @@
         "farmers-trust-in-government"
       ],
       "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. The step from objections to trust is a hypothesis for the group model building session; the step from trust back to objections rests on sources. It reinforces where farmers' objections are passed over, or through the conflict itself; where a body takes them up, the step may turn positive and the loop balancing. It holds back storage, a long investment that a change of rules can strand, as trust falls."
-    },
-    {
-      "id": "B14",
-      "name": "Expropriation makes the next plan harder",
-      "path": [
-        "municipality-plans-for-farmland",
-        "expropriation-of-farmland",
-        "farmers-trust-in-government",
-        "policy-resistance-legal-delays"
-      ],
-      "description": "The more farmland the municipality plans for other uses, the more lies within reach of an expropriation order, after the attempt to buy has failed, over years. Expropriation lowers farmers' trust in government, farmers who trust less object more, and objections delay, change or stop the next plan, so less farmland is planned. It shows an unintended consequence of expropriating for a plan: the next plan becomes harder to adopt. It seeks the planned area the island's farmers will accept. The steps through trust rest on sources; that objections lower the farmland planned is a hypothesis for the group model building session. On the island the orders sought so far are for a road and the grid, not nature (Besluit rotonde N59, 2020, p. 3; Gemeente Schouwen-Duiveland, 2026, p. 1); road infrastructure is the study's example of a use designated a public interest, nature development its example of a plan some owners disputed served one, and owners who disputed it were more often negative about expropriation (Holtslag-Broekhof et al., 2016, p. 180), a study that does not cover the grid, and in the Krimpenerwaard owners' satisfaction with their end result regularly contributed to a milder judgment of the whole process afterwards (Kamphorst et al., 2025, p. 13), so the step through trust may be weak there; no source read measures it on the island. Through the trust it lowers it holds back storage."
     },
     {
       "id": "B15",
@@ -4002,93 +3925,77 @@
       "loops": [
         "B13",
         "R8",
-        "R9",
-        "B14"
+        "R9"
       ],
-      "description": "*Objections to land-use plans* delay, change or stop a plan (B13). Two things follow: The ditch levels keep up the *Saline seepage (kwel)* and *Root zone salinity* that lower *Agricultural land value*, and a lower value may bring more objections (R8). Plans changed or dropped, and *Expropriation of farmland*, lower *Farmers' trust in government*, which may bring more objections to the next plan (R9, B14). Whether objections settle at a plan the owners accept or keep growing is a question for the group model building session: three of its links are hypotheses, from *Agricultural land value* to *Objections to land-use plans*, from *Objections to land-use plans* to *Farmers' trust in government*, and from *Objections to land-use plans* to *Farmland planned for other uses*.",
+      "description": "*Objections to land-use plans* delay, change or stop a plan (B13). Two things follow: The ditch levels keep up the *Saline seepage (kwel)* and *Root zone salinity* that lower *Agricultural land value*, and a lower value may bring more objections (R8). Plans changed or dropped lower *Farmers' trust in government*, which may bring more objections to the next plan (R9). Whether objections settle at a plan the owners accept or keep growing is a question for the group model building session: two of its links are hypotheses, from *Agricultural land value* to *Objections to land-use plans* and from *Objections to land-use plans* to *Farmers' trust in government*.",
       "places": {
         "farmers-trust-in-government": [
-          -1561,
-          0
+          -1057,
+          -274
         ],
         "policy-resistance-legal-delays": [
-          -744,
+          -327,
           0
         ],
         "plans-to-raise-ditch-levels": [
-          1561,
+          327,
           0
         ],
-        "municipality-plans-for-farmland": [
-          -929,
-          -344
-        ],
-        "expropriation-of-farmland": [
-          -1375,
-          -344
-        ],
         "ditch-level-nap": [
-          1482,
-          345
+          661,
+          292
         ],
         "saline-seepage-kwel": [
-          1275,
-          636
+          717,
+          664
         ],
         "freshwater-lens-thickness": [
-          887,
-          881
+          477,
+          1022
         ],
         "root-zone-salinity": [
-          353,
-          968
+          -28,
+          1173
         ],
         "harvest-lost-to-salt": [
-          -108,
-          865
+          -489,
+          1013
         ],
         "farm-revenue": [
-          -438,
-          654
+          -711,
+          690
         ],
         "agricultural-land-value": [
-          -659,
-          358
+          -667,
+          304
         ]
       },
       "bends": {
-        "farmers-trust-in-government -> policy-resistance-legal-delays": 0,
+        "farmers-trust-in-government -> policy-resistance-legal-delays": -0.4,
         "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": 0,
-        "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": -0.148,
-        "policy-resistance-legal-delays -> farmers-trust-in-government": 0.52,
-        "policy-resistance-legal-delays -> municipality-plans-for-farmland": -0.323,
-        "municipality-plans-for-farmland -> expropriation-of-farmland": -0.249,
-        "expropriation-of-farmland -> farmers-trust-in-government": -0.323,
-        "plans-to-raise-ditch-levels -> ditch-level-nap": 0.105,
-        "ditch-level-nap -> saline-seepage-kwel": 0.1,
-        "saline-seepage-kwel -> freshwater-lens-thickness": 0.1,
-        "freshwater-lens-thickness -> root-zone-salinity": 0.103,
-        "root-zone-salinity -> harvest-lost-to-salt": 0.1,
-        "harvest-lost-to-salt -> farm-revenue": 0.1,
-        "farm-revenue -> agricultural-land-value": 0.1,
-        "agricultural-land-value -> policy-resistance-legal-delays": 0.109
+        "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": -0.909,
+        "policy-resistance-legal-delays -> farmers-trust-in-government": -0.4,
+        "plans-to-raise-ditch-levels -> ditch-level-nap": 0.168,
+        "ditch-level-nap -> saline-seepage-kwel": 0.181,
+        "saline-seepage-kwel -> freshwater-lens-thickness": 0.184,
+        "freshwater-lens-thickness -> root-zone-salinity": 0.167,
+        "root-zone-salinity -> harvest-lost-to-salt": 0.156,
+        "harvest-lost-to-salt -> farm-revenue": 0.166,
+        "farm-revenue -> agricultural-land-value": 0.188,
+        "agricultural-land-value -> policy-resistance-legal-delays": 0.174
       },
       "marks": {
         "B13": [
-          409,
-          -85
+          0,
+          -164
         ],
         "R9": [
-          -1152,
-          106
-        ],
-        "B14": [
-          -1152,
-          -200
+          -692,
+          -137
         ],
         "R8": [
-          409,
-          484
+          0,
+          602
         ]
       }
     },

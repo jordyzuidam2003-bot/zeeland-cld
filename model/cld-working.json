@@ -4007,18 +4007,6 @@
   ],
   "changes": [
     {
-      "change": "Expropriation of farmland removed, B14 with it; C9 keeps B13, R8 and R9",
-      "argument": "On the island expropriation is used only for a roundabout on the N59 and a high-voltage station, neither about salt or water (its description's sources), so it is not part of the barrier story there (decided by Jordy). Of the named loops only B14 runs through it. C9 stays a behaviour, objections to one plan, through land value and trust, shaping the next, its description without B14 and its figure laid out again; trust keeps its link from the objections (R9).",
-      "items": [
-        "expropriation-of-farmland",
-        "expropriation-of-farmland -> farmland-changing-hands",
-        "expropriation-of-farmland -> farmers-trust-in-government",
-        "municipality-plans-for-farmland -> expropriation-of-farmland",
-        "B14",
-        "C9"
-      ]
-    },
-    {
       "change": "Farmland planned for other uses removed",
       "argument": "On no named loop once B14 is gone, its hectares given by no source and its effect measured in the Krimpenerwaard (decided by Jordy). The municipality's room for water basins stays a session card: its rules only set conditions (Gemeente Schouwen-Duiveland, 2024, pp. 1–2), and nothing shows them holding storage back. The simplification of Objections → Farmers' trust in government no longer names it.",
       "items": [

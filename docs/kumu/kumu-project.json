@@ -162,8 +162,6 @@
         "Buyers and processors of the island's crops",
         "Deltares, KWR, Acacia Water, Delphy, Living Lab Schouwen-Duiveland, Trial farm Rusthoeve",
         "Gemeente Schouwen-Duiveland",
-        "Gemeente Schouwen-Duiveland, Banks lending to the island's farmers",
-        "Gemeente Schouwen-Duiveland, IenW",
         "Provincie Zeeland, IenW, Agrarisch Schouwen-Duiveland",
         "Provincie Zeeland, Rijkswaterstaat",
         "Waterschap Scheldestromen",
@@ -1339,25 +1337,8 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
         "description": "How far the island's farmers expect the public bodies that plan for its water and land to keep their commitments (compensation, their say over their land). Trust is typically created slowly and can be destroyed in an instant, and once lost may take a long time to rebuild (Slovic, 1993, p. 677, as a long-known quality of trust; Remkes, 2022, p. 19). No source read measures it on the island: in 2013, 141 farmers in the south-west Netherlands, 16 of the survey's 142 on Schouwen-Duiveland, averaged 2.64 on a seven-point scale of trust in their water board on drought (van Duinen et al., 2015b, pp. 745–749), and one submission to the Province in 2021, by an engineer (Ir.) arguing for a fresh Grevelingen lake, says the island's farmers no longer trust the Province, which it says still appears unwilling to act adequately on salinisation and is dragging its feet on fresh-water supply (Lases, 2021, p. 2). From outside the island's scale comes national policy changed or dropped: plans announced and then changed, postponed or stopped, which the National Ombudsman, from interviews with 32 farmers across the country, concludes has left the government unreliable for them (Nationale ombudsman, 2026, pp. 8, 15, 40), and a gap of trust with 'The Hague' (Remkes, 2022, p. 13). The same farmers feel that decisions about their farm, land or future are prepared elsewhere, that they can react only late or to a limited extent, and that policymakers ignore their input; the Ombudsman concludes that this leads to a lack of trust in government (Nationale ombudsman, 2026, pp. 24–25). Whether the island's farmers carry that over to the water board, the Province and the municipality, no source read shows: a question for the group model building session.",
-        "actors": "Gemeente Schouwen-Duiveland",
+        "actors": "",
         "sources": "Slovic, P. (1993). Perceived risk, trust, and democracy. Risk Analysis, 13(6), 675–682. https://doi.org/10.1111/j.1539-6924.1993.tb01329.x\nRemkes, J. (2022, October 5). Wat wel kan: Uit de impasse en een aanzet voor perspectief. https://eerstekamer.nl/9370000/1/j4nvgs5kjg27kof_j9vvkyblr2b3ny8/vlwzf4m6utyb\nvan Duinen, R., Filatova, T., Geurts, P., & van der Veen, A. (2015b). Empirical analysis of farmers' drought risk perception: Objective factors, personal circumstances, and social influence. Risk Analysis, 35(4), 741–755. https://doi.org/10.1111/risa.12299\nLases, W. B. P. M. (2021, June). Een blijvende keuze van Zeeland voor een zout Grevelingenmeer leidt tot gerichte onleefbaarheid op Schouwen-Duiveland [Submission to the Province of Zeeland's committee Ruimte]. https://www.zeeland.nl/sites/default/files/digitaalarchief/IB21_8a686d4a.pdf\nNationale ombudsman. (2026). Een boer met kiespijn lacht niet: Ervaringen van boeren met veranderlijk overheidsbeleid (Rapport 2026/120). https://www.nationaleombudsman.nl/system/files/onderzoek/20260120-een-boer-met-kiespijn-lacht-niet.pdf",
-        "sourced": "yes"
-      }
-    },
-    {
-      "_id": "elem-expropriation-of-farmland",
-      "attributes": {
-        "label": "Expropriation of  farmland",
-        "element type": "Auxiliary",
-        "adaptive practice": "no",
-        "sets domain": "Social",
-        "subsystem": "Agricultural economy",
-        "subquestion": "SQ3",
-        "description": "Hectares of the island's farmland that a public body takes in a year for a use its plan sets, with full compensation, by an order a court must confirm. The municipal council, the water board for its water tasks, the Provincial Council and the minister can each give the order (Omgevingswet, 2026, art. 11.4), and only for a use an adopted plan, a permit or a project decision allows, after a reasonable attempt to buy the land and with a start likely within three years (arts. 11.5–11.7, 11.11). On the island the State sought expropriation, in a draft decree, for a roundabout on the N59, of plots the decree does not say are farmland (Besluit rotonde N59, 2020, p. 3), and the municipal council gave an order, published in 2026 and still to be confirmed by the court, for a high-voltage station on a plan area wholly in agricultural use in 2023 (Gemeente Schouwen-Duiveland, 2026, p. 1; Braat, 2023, blad 9); no source read shows it there for water or nature, and the Province buys land for nature on a voluntary basis (Provincie Zeeland, Jaarstukken 2022, p. 4). Few cases reach a court, in the Krimpenerwaard 6 of 69 files (Kamphorst et al., 2025, pp. 10–11), since the threat mostly makes owners sell (Holtslag-Broekhof et al., 2016, section Context of the Study).",
-        "simplification": "Counts every order as the municipality's, while the municipal council, the water board, the Provincial Council and the minister can each give one (Omgevingswet, 2026, art. 11.4). Of the two orders read on the island, the municipal council gave the one for the high-voltage station (Gemeente Schouwen-Duiveland, 2026, p. 1); the one for the N59 roundabout came at the request of the Minister of Infrastructure and Water Management, under the law before the Omgevingswet, and carried out the municipality's land-use plan for the road (Besluit rotonde N59, 2020, p. 1). The CLD draws only the municipality's plans as what an order carries out (Farmland planned for other uses → Expropriation of farmland), so B14, the one named loop through it, keeps its polarity and its mechanism; what it leaves out is an order by another body for a plan of its own, which would lower trust the same way but close the loop through a plan the CLD does not draw.",
-        "actors": "Gemeente Schouwen-Duiveland, IenW",
-        "actor": "Gemeente Schouwen-Duiveland",
-        "sources": "Omgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01\nBesluit rotonde N59. (2020). Besluit tot aanwijzing van onroerende zaken ter onteigening in de gemeente Schouwen-Duiveland krachtens artikel 72a van de onteigeningswet (rotonde N59) (Draft decree put to the Council of State W17.20.0068). https://www.raadvanstate.nl/publish/pages/118662/w_17_20_0068.pdf\nGemeente Schouwen-Duiveland. (2026, February 24). Kennisgeving onteigeningsbeschikking. Gemeenteblad, 2026, 78752. https://zoek.officielebekendmakingen.nl/gmb-2026-78752.pdf\nBraat, E. (2023, September 12). Aanmeldnotitie vormvrije m.e.r.-beoordeling Hoogspanningsstation Zierikzee + herziening buitengebied (kabeltracés). Antea Group, for TenneT TSO B.V. https://www.ruimtelijkeplannen.nl/documents/NL.IMRO.1676.00377BphZZ-VA01/b_NL.IMRO.1676.00377BphZZ-VA01_tb3.pdf\nProvincie Zeeland. (n.d.). Jaarstukken 2022: Programma Balans in landelijk gebied. https://pcportal.zeeland.nl/Data/6be7416d-f63c-4ce1-84d5-7854448ebab4/Public/jaarstukken-2022-provincie-zeeland%20-%203-programma-balans-in-landelijk-gebied.pdf\nKamphorst, D. A., Nieuwenhuizen, W., & Langers, F. (2025). Nieuwe natuur in de polder: tussen zelfrealisatie en onteigening (Rapport 3464). Wageningen Environmental Research. https://edepot.wur.nl/703340\nHoltslag-Broekhof, S. M., van Marwijk, R., Beunen, R., & Wiskerke, J. S. C. (2016). Perceived (in)justice of public land acquisition. Journal of Agricultural and Environmental Ethics, 29(2), 167–184. https://doi.org/10.1007/s10806-015-9594-3",
         "sourced": "yes"
       }
     },
@@ -1386,7 +1367,7 @@
         "subsystem": "Agricultural economy",
         "subquestion": "SQ3",
         "description": "Hectares of the island's farmland sold, expropriated or passed on to a new holder in a year. Supply and demand come mainly from farmers, those who need land to expand and those who shed it as they downsize or end the farm, and together they set how much land is traded, its mobility, and at what price (Silvis & Voskuilen, 2017, p. 2). Over the long term the number of Dutch farms falls by 2 to 3% a year, mainly as farms end at the change of generation, the lack of a successor and a less favourable income outlook among the reasons (p. 2). Measured nationally; no source read gives the island's land sales.",
-        "actors": "Gemeente Schouwen-Duiveland, Banks lending to the island's farmers",
+        "actors": "Banks lending to the island's farmers",
         "sources": "Silvis, H., & Voskuilen, M. (2017). Betaalbaarheid en financierbaarheid van landbouwgrond (Notitie 2017-098). Wageningen Economic Research. https://edepot.wur.nl/426065",
         "sourced": "yes"
       }
@@ -1581,7 +1562,7 @@
         "affected": "Salinisation, subsidence and extreme weather put pressure on farming, one of the island's main economic pillars, and with it on the vital and liveable countryside the municipality seeks to keep. It budgets €1.1 million for a new Living Lab programme (2025), so that the farm sector stays diverse and resilient; its subsidy for farms' advice, research and machines for fresh water opens on 1 October 2026. The water basins farms build against drought damage have a spatial impact on the landscape, so the municipality sets how a basin outside a building plot is fitted into it.",
         "influence score": 5,
         "client": "no",
-        "decides in the CLD": "Expropriation of farmland\nFarmland planned for other uses",
+        "decides in the CLD": "Farmland planned for other uses",
         "sources": "Omgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01\nGemeente Schouwen-Duiveland. (n.d.). Omgevingsplan. Retrieved November 6, 2026, from https://www.schouwen-duiveland.nl/bouwen-verbouwen-en-slopen/bestemmingsplan\nGemeente Schouwen-Duiveland. (2024, September 5). Beleidsregels waterbassins bouwwerken zijnde buiten bouwvlak gemeente Schouwen-Duiveland 2024 (Gemeenteblad 2024, nr. 380475). https://zoek.officielebekendmakingen.nl/gmb-2024-380475.pdf\nGemeente Schouwen-Duiveland. (n.d.). Subsidie Zoet Water en Klimaatbestendige Landbouw. Retrieved November 6, 2026, from https://www.schouwen-duiveland.nl/ondernemen/financiele-hulp-voor-ondernemers/subsidies/subsidie-zoet-water-en-klimaatbestendige-landbouw\nLiving Lab Schouwen-Duiveland. (n.d.). Partners. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/over-living-lab/partners\nLiving Lab Schouwen-Duiveland. (2025, November 5). Gemeente Schouwen-Duiveland investeert 1,1 miljoen in nieuw programma Living Lab. https://livinglabschouwen-duiveland.nl/nieuws/gemeente-schouwen-duiveland-investeert-11-miljoen-nieuw-programma-living-lab"
       }
     },
@@ -3740,26 +3721,6 @@
       "to": "elem-farmland-changing-hands"
     },
     {
-      "_id": "conn-expropriation-of-farmland--farmland-changing-hands",
-      "direction": "directed",
-      "delayed": true,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "yes",
-        "description": "Expropriated land passes to the body that expropriates it when a notary's deed of expropriation is entered in the public registers (Omgevingswet, 2026, art. 11.18), which can be drawn up only once the expropriation order and the plan it carries out are irrevocable and the provisional compensation is paid (art. 11.16); on the island, the order for the high-voltage station takes effect only once the court has confirmed it (Gemeente Schouwen-Duiveland, 2026, p. 1). Years, so a delay: in the Krimpenerwaard, under the law before the Omgevingswet, the order of October 2020 left two years before the owners still without an agreement had to be summoned to court, by October 2022 (Kamphorst et al., 2025, pp. 26, 45), and the process of the owners expropriated by the court ran more than 61 months on average (p. 67), with continued use of the land until it was handed over (p. 41).",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "Omgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01\nGemeente Schouwen-Duiveland. (2026, February 24). Kennisgeving onteigeningsbeschikking. Gemeenteblad, 2026, 78752. https://zoek.officielebekendmakingen.nl/gmb-2026-78752.pdf\nKamphorst, D. A., Nieuwenhuizen, W., & Langers, F. (2025). Nieuwe natuur in de polder: tussen zelfrealisatie en onteigening (Rapport 3464). Wageningen Environmental Research. https://edepot.wur.nl/703340",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-expropriation-of-farmland",
-      "to": "elem-farmland-changing-hands"
-    },
-    {
       "_id": "conn-farmland-changing-hands--farmland-leaving-arable-use",
       "direction": "directed",
       "delayed": false,
@@ -3919,26 +3880,6 @@
         "connection type": "-"
       },
       "from": "elem-policy-resistance-legal-delays",
-      "to": "elem-farmers-trust-in-government"
-    },
-    {
-      "_id": "conn-expropriation-of-farmland--farmers-trust-in-government",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "−",
-        "polarity": "negative",
-        "delay": "no",
-        "description": "Land taken against its owner's wish lowers how far farmers expect public bodies to keep their commitments, the more so where they do not count the purpose as a public interest and where voluntary purchase was promised. Of 14 owners interviewed in the Krimpenerwaard, in a process of 2015–2023 with expropriation for nature as its last step, most experienced it as negative, and they often named an inequality of power; the municipal council had feared for trust between government and farming (Kamphorst et al., 2025, pp. 10, 15, 55). In interviews in the Netherlands, owners who did not count the plan as a public interest, nature development for one, were more often negative about expropriation in itself than those who did, as for roads (Holtslag-Broekhof et al., 2016, p. 180), and the chair of LTO held large-scale use against reliable government, farmers having been told that purchases would be voluntary (Neefjes, 2008, p. 3). The pressure starts before any order: the possibility of one weighs heavily on the process and on the owners' lives (Kamphorst et al., 2025, p. 55). No source read measures trust before and after, or on the island, where the purposes used so far are a road and the grid, those owners accept most. A tenant may gain (Adviescommissie Natuurherstel Westerschelde, n.d., p. 11). How negatively owners judge an expropriation afterwards seems to depend on its outcome and process: in the same Krimpenerwaard evaluation, paid for by the Province and municipality that ran the process and by the agriculture ministry, most of the owners interviewed were satisfied with their end situation, though half of those who sold rather than make the nature themselves were very dissatisfied, and satisfaction with the end result regularly contributed to a milder judgement of the whole process afterwards (Kamphorst et al., 2025, pp. 9, 13, 53), and Holtslag-Broekhof et al. (2016, p. 183) conclude that expropriation need not be feared in itself where its public purpose is clearly communicated, the process is open and takes owners' interests seriously, and the owner ends in the same economic position as before. Within the year: trust can be destroyed in an instant, its recovery, slower, is in the element (Slovic, 1993, p. 677).",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "Kamphorst, D. A., Nieuwenhuizen, W., & Langers, F. (2025). Nieuwe natuur in de polder: tussen zelfrealisatie en onteigening (Rapport 3464). Wageningen Environmental Research. https://edepot.wur.nl/703340\nHoltslag-Broekhof, S. M., van Marwijk, R., Beunen, R., & Wiskerke, J. S. C. (2016). Perceived (in)justice of public land acquisition. Journal of Agricultural and Environmental Ethics, 29(2), 167–184. https://doi.org/10.1007/s10806-015-9594-3\nNeefjes, M. (2008, January). Onteigening voor natuur: bittere noodzaak of niet aan beginnen? [pp. 2–5; the journal is not named in the copy read]. https://edepot.wur.nl/114625\nAdviescommissie Natuurherstel Westerschelde. (n.d.). Wennen aan de Westerschelde. https://www.vliz.be/imisdocs/publications/ocrd/144313.pdf\nSlovic, P. (1993). Perceived risk, trust, and democracy. Risk Analysis, 13(6), 675–682. https://doi.org/10.1111/j.1539-6924.1993.tb01329.x",
-        "sourced": "yes",
-        "connection type": "-"
-      },
-      "from": "elem-expropriation-of-farmland",
       "to": "elem-farmers-trust-in-government"
     },
     {
@@ -4262,26 +4203,6 @@
       },
       "from": "elem-farm-revenue",
       "to": "elem-banks-risk-assessment"
-    },
-    {
-      "_id": "conn-municipality-plans-for-farmland--expropriation-of-farmland",
-      "direction": "directed",
-      "delayed": true,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "yes",
-        "description": "A public body can expropriate only for a use made possible in an adopted plan, a permit or a project decision (Omgevingswet, 2026, art. 11.6), and only after a reasonable attempt to buy has failed (art. 11.7), so the more farmland planned for other uses, the more farmland within reach of an order. Only part of it comes within reach: the need to expropriate lapses where the owner shows they are willing and able to realise the planned use themselves, has concrete plans for it made known to the authority, and will realise it in the way the authority intends (art. 11.7(2)), and land the legger lists as a bergingsgebied can stay with its owner, who must tolerate flooding and the temporary storage of surface water on it (art. 10.3(4); annex, bergingsgebied). Of 481 ha inside and outside the nature boundary in the 69 files studied, 24 owners agreed to realise nature on 171 ha of their own land and 92 ha went through the court (Kamphorst et al., 2025, pp. 10–11, measured in the Krimpenerwaard, a Zuid-Holland peat polder, in an evaluation commissioned by the Programmabureau Veenweiden Krimpenerwaard that ran it with the Province, and funded by the Province of Zuid-Holland, the municipality and the agriculture ministry). Years, so a delay: the attempt to buy and the order follow the adopted plan.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "Omgevingswet (version in force from 1 July 2026). https://wetten.overheid.nl/BWBR0037885/2026-07-01\nKamphorst, D. A., Nieuwenhuizen, W., & Langers, F. (2025). Nieuwe natuur in de polder: tussen zelfrealisatie en onteigening (Rapport 3464). Wageningen Environmental Research. https://edepot.wur.nl/703340",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-municipality-plans-for-farmland",
-      "to": "elem-expropriation-of-farmland"
     },
     {
       "_id": "conn-hotter-drier-summers--freshwater-lens-thickness",
@@ -5583,19 +5504,6 @@
       ]
     },
     {
-      "_id": "loop-B14",
-      "attributes": {
-        "label": "B14 Expropriation makes the next plan harder",
-        "description": "The more farmland the municipality plans for other uses, the more lies within reach of an expropriation order, after the attempt to buy has failed, over years. Expropriation lowers farmers' trust in government, farmers who trust less object more, and objections delay, change or stop the next plan, so less farmland is planned. It shows an unintended consequence of expropriating for a plan: the next plan becomes harder to adopt. It seeks the planned area the island's farmers will accept. The steps through trust rest on sources; that objections lower the farmland planned is a hypothesis for the group model building session. On the island the orders sought so far are for a road and the grid, not nature (Besluit rotonde N59, 2020, p. 3; Gemeente Schouwen-Duiveland, 2026, p. 1); road infrastructure is the study's example of a use designated a public interest, nature development its example of a plan some owners disputed served one, and owners who disputed it were more often negative about expropriation (Holtslag-Broekhof et al., 2016, p. 180), a study that does not cover the grid, and in the Krimpenerwaard owners' satisfaction with their end result regularly contributed to a milder judgment of the whole process afterwards (Kamphorst et al., 2025, p. 13), so the step through trust may be weak there; no source read measures it on the island. Through the trust it lowers it holds back storage."
-      },
-      "connections": [
-        "conn-municipality-plans-for-farmland--expropriation-of-farmland",
-        "conn-expropriation-of-farmland--farmers-trust-in-government",
-        "conn-farmers-trust-in-government--policy-resistance-legal-delays",
-        "conn-policy-resistance-legal-delays--municipality-plans-for-farmland"
-      ]
-    },
-    {
       "_id": "loop-B15",
       "attributes": {
         "label": "B15 The water sets the crops",
@@ -6161,16 +6069,6 @@
           "pinned": true,
           "style": {},
           "element": "elem-farmers-trust-in-government"
-        },
-        {
-          "_id": "node-expropriation-of-farmland",
-          "position": {
-            "x": 879,
-            "y": -1699
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-expropriation-of-farmland"
         },
         {
           "_id": "node-farmers-wish-to-keep-their-land",
@@ -6841,12 +6739,6 @@
           "connection": "conn-farmers-wish-to-keep-their-land--farmland-changing-hands"
         },
         {
-          "_id": "edge-expropriation-of-farmland--farmland-changing-hands",
-          "curvature": 0.2,
-          "style": {},
-          "connection": "conn-expropriation-of-farmland--farmland-changing-hands"
-        },
-        {
           "_id": "edge-farmland-changing-hands--farmland-leaving-arable-use",
           "curvature": 0.14,
           "style": {},
@@ -6893,12 +6785,6 @@
           "curvature": 0.22,
           "style": {},
           "connection": "conn-policy-resistance-legal-delays--farmers-trust-in-government"
-        },
-        {
-          "_id": "edge-expropriation-of-farmland--farmers-trust-in-government",
-          "curvature": -0.22,
-          "style": {},
-          "connection": "conn-expropriation-of-farmland--farmers-trust-in-government"
         },
         {
           "_id": "edge-policy-resistance-legal-delays--municipality-plans-for-farmland",
@@ -6995,12 +6881,6 @@
           "curvature": 0.26,
           "style": {},
           "connection": "conn-farm-revenue--banks-risk-assessment"
-        },
-        {
-          "_id": "edge-municipality-plans-for-farmland--expropriation-of-farmland",
-          "curvature": 0.1,
-          "style": {},
-          "connection": "conn-municipality-plans-for-farmland--expropriation-of-farmland"
         },
         {
           "_id": "edge-hotter-drier-summers--freshwater-lens-thickness",
@@ -7326,15 +7206,6 @@
           "position": {
             "x": 244,
             "y": -1524
-          }
-        },
-        {
-          "_id": "mloop-B14",
-          "loop": "loop-B14",
-          "style": {},
-          "position": {
-            "x": 214,
-            "y": -1622
           }
         },
         {
@@ -9849,7 +9720,7 @@
     {
       "_id": "map-group-C9",
       "name": "11 C9 Objections to one plan shape the next",
-      "description": "*Objections to land-use plans* delay, change or stop a plan (B13). Two things follow: The ditch levels keep up the *Saline seepage (kwel)* and *Root zone salinity* that lower *Agricultural land value*, and a lower value may bring more objections (R8). Plans changed or dropped, and *Expropriation of farmland*, lower *Farmers' trust in government*, which may bring more objections to the next plan (R9, B14). Whether objections settle at a plan the owners accept or keep growing is a question for the group model building session: three of its links are hypotheses, from *Agricultural land value* to *Objections to land-use plans*, from *Objections to land-use plans* to *Farmers' trust in government*, and from *Objections to land-use plans* to *Farmland planned for other uses*.",
+      "description": "*Objections to land-use plans* delay, change or stop a plan (B13). Two things follow: The ditch levels keep up the *Saline seepage (kwel)* and *Root zone salinity* that lower *Agricultural land value*, and a lower value may bring more objections (R8). Plans changed or dropped lower *Farmers' trust in government*, which may bring more objections to the next plan (R9). Whether objections settle at a plan the owners accept or keep growing is a question for the group model building session: two of its links are hypotheses, from *Agricultural land value* to *Objections to land-use plans* and from *Objections to land-use plans* to *Farmers' trust in government*.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -9862,8 +9733,8 @@
         {
           "_id": "node-group-C9-farmers-trust-in-government",
           "position": {
-            "x": -1561,
-            "y": 0
+            "x": -1057,
+            "y": -274
           },
           "pinned": true,
           "style": {},
@@ -9872,7 +9743,7 @@
         {
           "_id": "node-group-C9-policy-resistance-legal-delays",
           "position": {
-            "x": -744,
+            "x": -327,
             "y": 0
           },
           "pinned": true,
@@ -9882,7 +9753,7 @@
         {
           "_id": "node-group-C9-plans-to-raise-ditch-levels",
           "position": {
-            "x": 1561,
+            "x": 327,
             "y": 0
           },
           "pinned": true,
@@ -9890,30 +9761,10 @@
           "element": "elem-plans-to-raise-ditch-levels"
         },
         {
-          "_id": "node-group-C9-municipality-plans-for-farmland",
-          "position": {
-            "x": -929,
-            "y": -344
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-municipality-plans-for-farmland"
-        },
-        {
-          "_id": "node-group-C9-expropriation-of-farmland",
-          "position": {
-            "x": -1375,
-            "y": -344
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-expropriation-of-farmland"
-        },
-        {
           "_id": "node-group-C9-ditch-level-nap",
           "position": {
-            "x": 1482,
-            "y": 345
+            "x": 661,
+            "y": 292
           },
           "pinned": true,
           "style": {},
@@ -9922,8 +9773,8 @@
         {
           "_id": "node-group-C9-saline-seepage-kwel",
           "position": {
-            "x": 1275,
-            "y": 636
+            "x": 717,
+            "y": 664
           },
           "pinned": true,
           "style": {},
@@ -9932,8 +9783,8 @@
         {
           "_id": "node-group-C9-freshwater-lens-thickness",
           "position": {
-            "x": 887,
-            "y": 881
+            "x": 477,
+            "y": 1022
           },
           "pinned": true,
           "style": {},
@@ -9942,8 +9793,8 @@
         {
           "_id": "node-group-C9-root-zone-salinity",
           "position": {
-            "x": 353,
-            "y": 968
+            "x": -28,
+            "y": 1173
           },
           "pinned": true,
           "style": {},
@@ -9952,8 +9803,8 @@
         {
           "_id": "node-group-C9-harvest-lost-to-salt",
           "position": {
-            "x": -108,
-            "y": 865
+            "x": -489,
+            "y": 1013
           },
           "pinned": true,
           "style": {},
@@ -9962,8 +9813,8 @@
         {
           "_id": "node-group-C9-farm-revenue",
           "position": {
-            "x": -438,
-            "y": 654
+            "x": -711,
+            "y": 690
           },
           "pinned": true,
           "style": {},
@@ -9972,8 +9823,8 @@
         {
           "_id": "node-group-C9-agricultural-land-value",
           "position": {
-            "x": -659,
-            "y": 358
+            "x": -667,
+            "y": 304
           },
           "pinned": true,
           "style": {},
@@ -9983,7 +9834,7 @@
       "connections": [
         {
           "_id": "edge-group-C9-farmers-trust-in-government--policy-resistance-legal-delays",
-          "curvature": 0,
+          "curvature": -0.4,
           "style": {},
           "connection": "conn-farmers-trust-in-government--policy-resistance-legal-delays"
         },
@@ -9995,79 +9846,61 @@
         },
         {
           "_id": "edge-group-C9-plans-to-raise-ditch-levels--policy-resistance-legal-delays",
-          "curvature": -0.148,
+          "curvature": -0.909,
           "style": {},
           "connection": "conn-plans-to-raise-ditch-levels--policy-resistance-legal-delays"
         },
         {
           "_id": "edge-group-C9-policy-resistance-legal-delays--farmers-trust-in-government",
-          "curvature": 0.52,
+          "curvature": -0.4,
           "style": {},
           "connection": "conn-policy-resistance-legal-delays--farmers-trust-in-government"
         },
         {
-          "_id": "edge-group-C9-policy-resistance-legal-delays--municipality-plans-for-farmland",
-          "curvature": -0.323,
-          "style": {},
-          "connection": "conn-policy-resistance-legal-delays--municipality-plans-for-farmland"
-        },
-        {
-          "_id": "edge-group-C9-municipality-plans-for-farmland--expropriation-of-farmland",
-          "curvature": -0.249,
-          "style": {},
-          "connection": "conn-municipality-plans-for-farmland--expropriation-of-farmland"
-        },
-        {
-          "_id": "edge-group-C9-expropriation-of-farmland--farmers-trust-in-government",
-          "curvature": -0.323,
-          "style": {},
-          "connection": "conn-expropriation-of-farmland--farmers-trust-in-government"
-        },
-        {
           "_id": "edge-group-C9-plans-to-raise-ditch-levels--ditch-level-nap",
-          "curvature": 0.105,
+          "curvature": 0.168,
           "style": {},
           "connection": "conn-plans-to-raise-ditch-levels--ditch-level-nap"
         },
         {
           "_id": "edge-group-C9-ditch-level-nap--saline-seepage-kwel",
-          "curvature": 0.1,
+          "curvature": 0.181,
           "style": {},
           "connection": "conn-ditch-level-nap--saline-seepage-kwel"
         },
         {
           "_id": "edge-group-C9-saline-seepage-kwel--freshwater-lens-thickness",
-          "curvature": 0.1,
+          "curvature": 0.184,
           "style": {},
           "connection": "conn-saline-seepage-kwel--freshwater-lens-thickness"
         },
         {
           "_id": "edge-group-C9-freshwater-lens-thickness--root-zone-salinity",
-          "curvature": 0.103,
+          "curvature": 0.167,
           "style": {},
           "connection": "conn-freshwater-lens-thickness--root-zone-salinity"
         },
         {
           "_id": "edge-group-C9-root-zone-salinity--harvest-lost-to-salt",
-          "curvature": 0.1,
+          "curvature": 0.156,
           "style": {},
           "connection": "conn-root-zone-salinity--harvest-lost-to-salt"
         },
         {
           "_id": "edge-group-C9-harvest-lost-to-salt--farm-revenue",
-          "curvature": 0.1,
+          "curvature": 0.166,
           "style": {},
           "connection": "conn-harvest-lost-to-salt--farm-revenue"
         },
         {
           "_id": "edge-group-C9-farm-revenue--agricultural-land-value",
-          "curvature": 0.1,
+          "curvature": 0.188,
           "style": {},
           "connection": "conn-farm-revenue--agricultural-land-value"
         },
         {
           "_id": "edge-group-C9-agricultural-land-value--policy-resistance-legal-delays",
-          "curvature": 0.109,
+          "curvature": 0.174,
           "style": {},
           "connection": "conn-agricultural-land-value--policy-resistance-legal-delays"
         }
@@ -10079,8 +9912,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 409,
-            "y": -85
+            "x": 0,
+            "y": -164
           }
         },
         {
@@ -10089,8 +9922,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 409,
-            "y": 484
+            "x": 0,
+            "y": 602
           }
         },
         {
@@ -10099,18 +9932,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": -1152,
-            "y": 106
-          }
-        },
-        {
-          "_id": "mloop-group-C9-B14",
-          "loop": "loop-B14",
-          "style": {},
-          "pinned": true,
-          "position": {
-            "x": -1152,
-            "y": -200
+            "x": -692,
+            "y": -137
           }
         }
       ]
@@ -12847,101 +12670,8 @@
       ]
     },
     {
-      "_id": "map-loop-B14",
-      "name": "35 B14 Expropriation makes the next plan harder",
-      "description": "The more farmland the municipality plans for other uses, the more lies within reach of an expropriation order, after the attempt to buy has failed, over years. Expropriation lowers farmers' trust in government, farmers who trust less object more, and objections delay, change or stop the next plan, so less farmland is planned. It shows an unintended consequence of expropriating for a plan: the next plan becomes harder to adopt. It seeks the planned area the island's farmers will accept. The steps through trust rest on sources; that objections lower the farmland planned is a hypothesis for the group model building session. On the island the orders sought so far are for a road and the grid, not nature (Besluit rotonde N59, 2020, p. 3; Gemeente Schouwen-Duiveland, 2026, p. 1); road infrastructure is the study's example of a use designated a public interest, nature development its example of a plan some owners disputed served one, and owners who disputed it were more often negative about expropriation (Holtslag-Broekhof et al., 2016, p. 180), a study that does not cover the grid, and in the Krimpenerwaard owners' satisfaction with their end result regularly contributed to a milder judgment of the whole process afterwards (Kamphorst et al., 2025, p. 13), so the step through trust may be weak there; no source read measures it on the island. Through the trust it lowers it holds back storage.",
-      "scale": 1,
-      "center": {
-        "x": 0,
-        "y": 0
-      },
-      "defaultPerspective": "pers-loops",
-      "defaultElementBehavior": "fixed",
-      "defaultConnectionDirection": "directed",
-      "elements": [
-        {
-          "_id": "node-loop-B14-municipality-plans-for-farmland",
-          "position": {
-            "x": -265,
-            "y": -150
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-municipality-plans-for-farmland"
-        },
-        {
-          "_id": "node-loop-B14-expropriation-of-farmland",
-          "position": {
-            "x": 215,
-            "y": -174
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-expropriation-of-farmland"
-        },
-        {
-          "_id": "node-loop-B14-farmers-trust-in-government",
-          "position": {
-            "x": 265,
-            "y": 150
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-farmers-trust-in-government"
-        },
-        {
-          "_id": "node-loop-B14-policy-resistance-legal-delays",
-          "position": {
-            "x": -215,
-            "y": 174
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-policy-resistance-legal-delays"
-        }
-      ],
-      "connections": [
-        {
-          "_id": "edge-loop-B14-municipality-plans-for-farmland--expropriation-of-farmland",
-          "curvature": 0.207,
-          "style": {},
-          "connection": "conn-municipality-plans-for-farmland--expropriation-of-farmland"
-        },
-        {
-          "_id": "edge-loop-B14-expropriation-of-farmland--farmers-trust-in-government",
-          "curvature": 0.811,
-          "style": {},
-          "connection": "conn-expropriation-of-farmland--farmers-trust-in-government"
-        },
-        {
-          "_id": "edge-loop-B14-farmers-trust-in-government--policy-resistance-legal-delays",
-          "curvature": 0.207,
-          "style": {},
-          "connection": "conn-farmers-trust-in-government--policy-resistance-legal-delays"
-        },
-        {
-          "_id": "edge-loop-B14-policy-resistance-legal-delays--municipality-plans-for-farmland",
-          "curvature": 0.811,
-          "style": {},
-          "connection": "conn-policy-resistance-legal-delays--municipality-plans-for-farmland"
-        }
-      ],
-      "loops": [
-        {
-          "_id": "mloop-loop-B14-B14",
-          "loop": "loop-B14",
-          "style": {},
-          "pinned": true,
-          "position": {
-            "x": 0,
-            "y": 0
-          }
-        }
-      ]
-    },
-    {
       "_id": "map-loop-B15",
-      "name": "36 B15 The water sets the crops",
+      "name": "35 B15 The water sets the crops",
       "description": "The more of the rotation is under the high-margin crops, the more water the crop plan needs and, with the water the island has, the larger the shortfall; over years, farms short of water move off those crops, sown onions first, and the shortfall shrinks. It seeks a crop plan the island's water can carry: the water is a limit farmers fit their crops to, as much as the salt. On the island the sown onions fell from 1,214 ha in 2015 to 791 ha in 2022 (Delphy, 2023, p. 15). It holds back the income the high-margin crops bring, so where a farm adapts this way it adapts by earning less.",
       "scale": 1,
       "center": {
@@ -13021,7 +12751,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#background { width: 5418; height: 3913; }\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#background { width: 5418; height: 3913; }\n"
     },
     {
       "_id": "pers-actors",
@@ -13031,7 +12761,7 @@
     {
       "_id": "pers-loops",
       "name": "Loops",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-expropriation-of-farmland { width: 265; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-municipality-plans-for-farmland { width: 325; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
     }
   ]
 }

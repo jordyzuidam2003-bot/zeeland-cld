@@ -395,12 +395,6 @@
 <path class="link-path" d="M 366.5 -1065.0 Q 414.0 -974.0 461.5 -883.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="438.4" y="-927.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="expropriation-of-farmland" data-to="farmland-changing-hands" data-sign="+" data-delay="true" data-curvature="0.2" data-delay-t="0.68">
-<path class="link-path" d="M 876.2 -1656.0 Q 856.4 -1199.7 527.4 -883.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="562.8" y="-918.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M 730.9 -1093.9 L 690.4 -1119.6 M 722.3 -1080.4 L 681.8 -1106.1" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 730.9 -1093.9 L 690.4 -1119.6 M 722.3 -1080.4 L 681.8 -1106.1" stroke="#444444" stroke-width="5" fill="none"/>
-</g>
 <g class="link" data-from="farmland-changing-hands" data-to="farmland-leaving-arable-use" data-sign="-" data-delay="false" data-curvature="0.14">
 <path class="link-path" d="M 393.4 -797.0 Q 182.9 -682.6 -56.4 -694.1" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-6.5" y="-693.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
@@ -435,13 +429,9 @@
 <path class="link-path" d="M 4.9 -1537.0 Q 206.1 -1656.0 429.9 -1588.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="381.5" y="-1600.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="expropriation-of-farmland" data-to="farmers-trust-in-government" data-sign="-" data-delay="false" data-curvature="-0.22">
-<path class="link-path" d="M 746.3 -1676.2 Q 662.4 -1666.5 612.8 -1598.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="646.8" y="-1634.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-</g>
 <g class="link" data-from="policy-resistance-legal-delays" data-to="municipality-plans-for-farmland" data-sign="-" data-delay="false" data-curvature="-0.38">
-<path class="link-path" d="M -103.2 -1537.0 Q -153.1 -1727.0 -349.6 -1729.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-299.8" y="-1725.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M -103.2 -1537.0 Q -150.8 -1730.1 -349.6 -1735.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-299.8" y="-1731.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="municipality-plans-for-farmland" data-to="policy-resistance-legal-delays" data-sign="+" data-delay="false" data-curvature="-0.1">
 <path class="link-path" d="M -447.4 -1697.0 Q -336.8 -1591.7 -194.1 -1537.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -514,12 +504,6 @@
 <g class="link" data-from="farm-revenue" data-to="banks-risk-assessment" data-sign="-" data-delay="false" data-curvature="0.26">
 <path class="link-path" d="M 526.6 94.0 Q 454.9 -616.9 995.6 -1084.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="958.3" y="-1050.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-</g>
-<g class="link" data-from="municipality-plans-for-farmland" data-to="expropriation-of-farmland" data-sign="+" data-delay="true" data-curvature="0.1" data-delay-t="0.48">
-<path class="link-path" d="M -349.6 -1763.8 Q 202.0 -1855.0 746.3 -1727.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="697.5" y="-1738.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M 170.9 -1825.1 L 169.6 -1777.1 M 186.9 -1824.7 L 185.6 -1776.7" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 170.9 -1825.1 L 169.6 -1777.1 M 186.9 -1824.7 L 185.6 -1776.7" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="hotter-drier-summers" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="0.0" data-delay-t="0.48">
 <path class="link-path" d="M -1397.7 713.0 Q -1536.0 648.5 -1674.3 584.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -885,11 +869,6 @@
 <rect x="429.9" y="-1598.0" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="570.0" y="-1563.5" text-anchor="middle">Farmers' trust in</text>
 <text x="570.0" y="-1529.5" text-anchor="middle">government</text>
-</g>
-<g class="element" data-id="expropriation-of-farmland" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="746.3" y="-1742.0" width="265.4" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="879.0" y="-1707.5" text-anchor="middle">Expropriation of</text>
-<text x="879.0" y="-1673.5" text-anchor="middle">farmland</text>
 </g>
 <g class="element" data-id="farmers-wish-to-keep-their-land" data-domain="Social" data-type="Constant" data-adaptive="false">
 <rect x="174.2" y="-1151.0" width="339.6" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5" stroke-dasharray="8 5"/>

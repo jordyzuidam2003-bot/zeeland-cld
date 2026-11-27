@@ -3878,13 +3878,13 @@
     {
       "_id": "conn-freshwater-storage-measures--knowledge-of-storage",
       "direction": "directed",
-      "delayed": false,
+      "delayed": true,
       "reversed": false,
       "attributes": {
         "label": "+",
         "polarity": "positive",
-        "delay": "no",
-        "description": "Where farms do not invest in measures, the techniques are not refined or adapted, nothing is learned from building them and their effects cannot be monitored, so no knowledge base forms at agricultural advisers and contractors (Kaandorp et al., 2022, pp. 11–12). One measure built and monitored on the island taught what limited it, but left uncertain whether it freshened the rainwater lens: at the Drains2Buffer trial at Kerkwerve, built in 2013, a ditch level 10–40 cm above the deep drains' outlet limited them, while the measuring plots had freshened for a reason other than the measure, discovered only on the last measuring day (Oude Essink et al., 2018, pp. 73, 96–97, the trial researchers' own report). The farmer must also gain experience operating controlled drainage, and in a 2009 survey the systems laid in Zeeland at the end of 2008 had, partly because 2009 was dry, given no experience of storing water yet (Stuyt et al., 2012, p. 51, four farms in Zeeland, for STOWA, the regional water managers' knowledge centre). How long this takes, no source read shows.",
+        "delay": "yes",
+        "description": "Where farms do not invest in measures, the techniques are not refined or adapted, nothing is learned from building them and their effects cannot be monitored, so no knowledge base forms at agricultural advisers and contractors (Kaandorp et al., 2022, pp. 11–12). One measure built and monitored on the island taught what limited it, but left uncertain whether it freshened the rainwater lens: at the Drains2Buffer trial at Kerkwerve, built in 2013, a ditch level 10–40 cm above the deep drains' outlet limited them, while the measuring plots had freshened for a reason other than the measure, discovered only on the last measuring day (Oude Essink et al., 2018, pp. 73, 96–97, the trial researchers' own report). The farmer must also gain experience operating controlled drainage, and in a 2009 survey the systems laid in Zeeland at the end of 2008 had, partly because 2009 was dry, given no experience of storing water yet (Stuyt et al., 2012, p. 51, four farms in Zeeland, for STOWA, the regional water managers' knowledge centre). So a delay: a measure teaches only once a season has tested it, and a trial's lesson can surface only at the end of its monitoring; how long in all, no source read shows.",
         "sets link": "T to S",
         "sets scope": "Cross-domain",
         "hypothesis": "no",

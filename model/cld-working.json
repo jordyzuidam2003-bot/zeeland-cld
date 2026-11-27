@@ -4079,13 +4079,6 @@
   ],
   "changes": [
     {
-      "change": "Freshwater storage measures → Knowledge of how storage works on the island delayed, as a measure teaches only once a season has tested it",
-      "argument": "No delay lost: the link's own sources show a measure teaching only after a season and its monitoring, the systems laid in Zeeland at the end of 2008 having given no experience of storing water in the dry 2009 (Stuyt et al., 2012, p. 51), and at Kerkwerve why the plots freshened found only on the last measuring day (Oude Essink et al., 2018, pp. 96–97). Its sibling from Trials and pilots on the island is a delay, and R5's claim that it holds storage back while few measures are built rests on the slowness. R5 stays reinforcing, now with a delay; no source shows how long in all.",
-      "items": [
-        "freshwater-storage-measures -> knowledge-of-storage"
-      ]
-    },
-    {
       "change": "Underground storage under a clay layer moved off the creek-ridge lens onto Freshwater storage measures → Freshwater availability for crops",
       "argument": "One quantity per variable: the lens is the fresh groundwater under the creek ridges and dunes, while underground storage injects fresh water into a brackish or saline sand layer under the clay (Kaandorp et al., 2022, p. 21), a body of water no lens's thickness, and the lens's other links (Wetter winters, Polder drainage depth, the water board's 15 m rule for its map of fresh bodies) do not hold for it. Pumped back when needed, it reaches crops by the link that carries double drainage; the creek-ridge infiltration system and the Freshmaker, which grow a lens on the ridges (pp. 20, 22, 38), stay on the lens. No box added: the storage element's simplification already has each kind reach crops by its own link out. Every loop keeps its sign, storage → availability for crops (+) → shortfall (−) → storage (+) balancing as through the lens. The Freshmaker in the low ground between dunes and ridge (p. 24) is stated in the lens link's simplification. Rejected: widening the lens to sand layers under the clay, which made three of its links partly untrue; a box of its own, worth it only for D2D to vary the measure apart.",
       "items": [

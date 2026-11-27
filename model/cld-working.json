@@ -4061,15 +4061,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Crop yield counts the yield that sells",
-      "argument": "One quantity per variable: Crop yield was physical weight while its link to Farm income read the kilograms paid for, which for seed potatoes differ (Delphy, 2023, p. 44). As the yield that sells, every link in and out reads one quantity, and the seed potatoes' size grades move to where the shortfall lowers that yield. No link, sign or delay changes.",
-      "items": [
-        "crop-yield",
-        "crop-yield -> farm-revenue",
-        "crop-water-shortfall -> crop-yield"
-      ]
-    }
-  ]
+  "changes": []
 }

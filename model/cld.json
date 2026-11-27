@@ -1151,6 +1151,22 @@
       ],
       "x": -1420,
       "y": 360
+    },
+    {
+      "id": "water-demand-of-the-crop-mix",
+      "label": "Water demand of the crop mix",
+      "element type": "Auxiliary",
+      "adaptive practice": false,
+      "sets domain": "Ecological",
+      "subsystem": "Water and soil",
+      "subquestion": "SQ1",
+      "description": "The fresh water the island's crops need in the growing season, summed over the crop plan: what the rotation uses when it has enough water, its evapotranspiration, set by the weather and by each crop and its stage of growth (Allen et al., 1998, FAO-56, a guide to crop water use that holds wherever the crop grows). The crops that earn the most also have the greatest water need and often a limited root system (Delphy, 2023, p. 48), and for the island's farms Delphy puts the total water need at about 3.5 million m³ (p. 41). No link comes from the new crops: fibre crops and legumes may replace winter wheat, and flax needs water too (p. 48). It follows the rotation, set each year: an Auxiliary. The farmers decide the crop mix, so it has no actor of its own.",
+      "sources": [
+        "allen-1998",
+        "delphy-2023-dorsd"
+      ],
+      "x": -900,
+      "y": 1350
     }
   ],
   "connections": [
@@ -2632,19 +2648,6 @@
       "curvature": -0.17
     },
     {
-      "from": "freshwater-availability-for-crops",
-      "to": "dependence-on-high-margin-salt-sensitive-crops",
-      "polarity": "+",
-      "delay": true,
-      "description": "With more fresh water a farm may keep or take on the crops that need it: on the island's low polders, with more fresh water available the farmer is open to more profitable crops, a more varied rotation, or both (Kaandorp et al., 2022, p. 30). In Zeeland the area of sown onions halved from 4,705 ha in 2019 to 2,579 ha in 2024, the article naming the dry summers, the poor harvests and the lack of fresh water, four in five arable farmers having none, as farmers preferred less risky crops, while elsewhere the area grew (De Vriend, 2024b, for Zeeland). Years, so a delay: farmers respond to the seasons they have had, and the fall ran over five years of dry summers.",
-      "sources": [
-        "kaandorp-2022",
-        "de-vriend-2024-gewassen"
-      ],
-      "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
-      "curvature": -0.15
-    },
-    {
       "from": "net-price-for-new-crops",
       "to": "margin-given-up-on-high-margin-crops",
       "polarity": "-",
@@ -2844,6 +2847,43 @@
         "kaandorp-2022"
       ],
       "curvature": -0.15
+    },
+    {
+      "from": "dependence-on-high-margin-salt-sensitive-crops",
+      "to": "water-demand-of-the-crop-mix",
+      "polarity": "+",
+      "delay": false,
+      "description": "The more of the rotation is under potatoes and onions, the more water the crop plan needs: on the island the crops that earn the most also have the greatest water need and often a limited root system (Delphy, 2023, p. 48). Within the year, as the rotation is set.",
+      "sources": [
+        "delphy-2023-dorsd"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "water-demand-of-the-crop-mix",
+      "to": "crop-water-shortfall",
+      "polarity": "+",
+      "delay": false,
+      "description": "The shortfall is what crops need beyond the water they get, so with the water available unchanged a crop plan that needs more water leaves a larger gap: a crop's need is the water it uses when it has enough (Allen et al., 1998). On the island the farms' total need is put at about 3.5 million m³, beyond what the current sources give (Delphy, 2023, pp. 41, 50). Within the season.",
+      "sources": [
+        "allen-1998",
+        "delphy-2023-dorsd"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "crop-water-shortfall",
+      "to": "dependence-on-high-margin-salt-sensitive-crops",
+      "polarity": "-",
+      "delay": true,
+      "description": "A farm short of water moves off the crops that need it most: on the island's low polders the farmers have stopped growing sensitive crops such as sown onions, and with more fresh water they would be open to more profitable crops, a more varied rotation, or both (Kaandorp et al., 2022, pp. 30–31). On the island the sown onions fell from 1,214 ha in 2015 to 791 ha in 2022 (Delphy, 2023, p. 15), and without fresh water they leave the model farm's crop plan for 2030 (p. 44); in Zeeland they halved from 4,705 ha in 2019 to 2,579 ha in 2024, the article naming the dry summers, the poor harvests and the lack of fresh water, four in five arable farmers having none, as farmers preferred less risky crops (De Vriend, 2024b, for Zeeland). Years, so a delay: farmers respond to the seasons they have had, and the fall ran over five years of dry summers.",
+      "sources": [
+        "kaandorp-2022",
+        "delphy-2023-dorsd",
+        "de-vriend-2024-gewassen"
+      ],
+      "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
+      "curvature": 0.15
     }
   ],
   "loops": [
@@ -3122,6 +3162,16 @@
         "policy-resistance-legal-delays"
       ],
       "description": "The more farmland the municipality plans for other uses, the more lies within reach of an expropriation order, after the attempt to buy has failed, over years. Expropriation lowers farmers' trust in government, farmers who trust less object more, and objections delay, change or stop the next plan, so less farmland is planned. It shows an unintended consequence of expropriating for a plan: the next plan becomes harder to adopt. It seeks the planned area the island's farmers will accept. The steps through trust rest on sources; that objections lower the farmland planned is a hypothesis for the group model building session. On the island the orders sought so far are for a road and the grid, not nature (Besluit rotonde N59, 2020, p. 3; Gemeente Schouwen-Duiveland, 2026, p. 1); road infrastructure is the study's example of a use designated a public interest, nature development its example of a plan some owners disputed served one, and owners who disputed it were more often negative about expropriation (Holtslag-Broekhof et al., 2016, p. 180), a study that does not cover the grid, and in the Krimpenerwaard owners' satisfaction with their end result regularly contributed to a milder judgment of the whole process afterwards (Kamphorst et al., 2025, p. 13), so the step through trust may be weak there; no source read measures it on the island. Through the trust it lowers it holds back storage."
+    },
+    {
+      "id": "B15",
+      "name": "The water sets the crops",
+      "path": [
+        "dependence-on-high-margin-salt-sensitive-crops",
+        "water-demand-of-the-crop-mix",
+        "crop-water-shortfall"
+      ],
+      "description": "The more of the rotation is under the high-margin crops, the more water the crop plan needs and, with the water the island has, the larger the shortfall; over years, farms short of water move off those crops, sown onions first, and the shortfall shrinks. It seeks a crop plan the island's water can carry: the water is a limit farmers fit their crops to, as much as the salt. On the island the sown onions fell from 1,214 ha in 2015 to 791 ha in 2022 (Delphy, 2023, p. 15). It holds back the income the high-margin crops bring, so where a farm adapts this way it adapts by earning less."
     }
   ],
   "groups": [

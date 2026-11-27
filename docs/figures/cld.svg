@@ -429,20 +429,6 @@
 <path class="link-path" d="M 4.9 -1537.0 Q 206.1 -1656.0 429.9 -1588.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="381.5" y="-1600.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="policy-resistance-legal-delays" data-to="municipality-plans-for-farmland" data-sign="-" data-delay="false" data-curvature="-0.38">
-<path class="link-path" d="M -103.2 -1537.0 Q -150.8 -1730.1 -349.6 -1735.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-299.8" y="-1731.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-</g>
-<g class="link" data-from="municipality-plans-for-farmland" data-to="policy-resistance-legal-delays" data-sign="+" data-delay="false" data-curvature="-0.1">
-<path class="link-path" d="M -447.4 -1697.0 Q -336.8 -1591.7 -194.1 -1537.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-240.2" y="-1556.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-</g>
-<g class="link" data-from="municipality-plans-for-farmland" data-to="farmland-leaving-arable-use" data-sign="-" data-delay="true" data-curvature="0.18" data-delay-t="0.60">
-<path class="link-path" d="M -481.4 -1697.0 Q -163.6 -1270.3 -190.7 -739.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-188.9" y="-789.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-<path class="delay-cut" d="M -202.6 -1160.4 L -249.4 -1149.8 M -199.0 -1144.8 L -245.9 -1134.2" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -202.6 -1160.4 L -249.4 -1149.8 M -199.0 -1144.8 L -245.9 -1134.2" stroke="#444444" stroke-width="5" fill="none"/>
-</g>
 <g class="link" data-from="wetter-winters" data-to="creek-ridge-lens-thickness" data-sign="+" data-delay="true" data-curvature="0.0" data-delay-t="0.37">
 <path class="link-path" d="M -1632.5 56.0 Q -1367.5 164.5 -1102.5 273.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-1148.8" y="254.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
@@ -879,11 +865,6 @@
 <rect x="343.9" y="-883.0" width="280.3" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="484.0" y="-848.5" text-anchor="middle">Farmland changing</text>
 <text x="484.0" y="-814.5" text-anchor="middle">hands</text>
-</g>
-<g class="element" data-id="municipality-plans-for-farmland" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-674.4" y="-1783.0" width="324.8" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-512.0" y="-1748.5" text-anchor="middle">Farmland planned for</text>
-<text x="-512.0" y="-1714.5" text-anchor="middle">other uses</text>
 </g>
 <g class="element" data-id="creek-ridge-lens-thickness" data-domain="Ecological" data-type="Stock" data-adaptive="false">
 <rect x="-1125.8" y="273.0" width="339.6" height="120.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>

@@ -1012,34 +1012,6 @@
       "y": -840
     },
     {
-      "id": "municipality-plans-for-farmland",
-      "label": "Farmland planned for other uses",
-      "element type": "Stock",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ2",
-      "description": "Hectares of the island's farmland that Gemeente Schouwen-Duiveland's land-use plan (its omgevingsplan, with the changes it drafts to it) designates for a use other than arable farming, such as nature, water storage, housing or recreation. The municipal council adopts one omgevingsplan for the whole municipality, holding the rules a balanced allocation of functions to locations needs (Omgevingswet, 2026, arts. 2.4, 4.2); on the island all land-use plans of before merged into it when the law took effect on 1 January 2024, and in some cases the municipality can change it at the request of someone whose plan does not fit it (Gemeente Schouwen-Duiveland, n.d.). How many hectares it designates for other uses, no source read gives. In the Krimpenerwaard, a municipal plan designating farmland for nature took from its preliminary draft in spring 2018 to irrevocable in October 2021, fifteen appeals against it reaching the Council of State (Kamphorst et al., 2025, p. 25). A Stock: the hectares stay designated until the council changes the plan, which takes years, and leave as the plan is carried out on them (Farmland planned for other uses → Arable land in the polders).",
-      "sources": [
-        "omgevingswet-2026",
-        "schouwen-duiveland-omgevingsplan",
-        "kamphorst-2025"
-      ],
-      "x": -512,
-      "y": -1740,
-      "actor": "gemeente-schouwen-duiveland",
-      "ask actors": [
-        {
-          "actor": "gemeente-schouwen-duiveland",
-          "for": "How many hectares of the island's farmland the omgevingsplan designates for a use other than arable farming, and which changes to it the municipality is drafting.",
-          "through": [
-            "DCC",
-            "Living Lab"
-          ]
-        }
-      ]
-    },
-    {
       "id": "creek-ridge-lens-thickness",
       "label": "Freshwater lens thickness under creek ridges and dunes",
       "element type": "Stock",
@@ -2439,41 +2411,10 @@
       "polarity": "-",
       "delay": false,
       "description": "Hypothesis, with two mechanisms for the group model building session: the conflict over a plan itself may lower trust, and a plan delayed, changed or dropped after objections may teach farmers not to count on the next one. Farmers do name changing plans as a reason to distrust public bodies (Farmers' trust in government), but no source read shows a plan changed because of objections costing trust, and where a body takes up an objection those who objected may trust it more: farmers feel their input is ignored, which the Ombudsman concludes leads to distrust (Farmers' trust in government), but no source read shows input taken up raising trust, so the sign is part of the question. Within the year once a plan changes: trust can be destroyed in an instant; its recovery, slower, is in the element.",
-      "simplification": "Folds Plans changed or dropped. The sign is the product of the two steps (+, then −), so no loop through the link changes. It assumes that a plan changed after objections costs trust as a plan changed for other reasons does, which no source read shows. The public bodies' decisions on their plans stay drawn, on the links from Objections to land-use plans into Water board's plans to raise ditch levels and Farmland planned for other uses.",
+      "simplification": "Folds Plans changed or dropped. The sign is the product of the two steps (+, then −), so no loop through the link changes. It assumes that a plan changed after objections costs trust as a plan changed for other reasons does, which no source read shows. The water board's decision on its plans stays drawn, on the link from Objections to land-use plans into Water board's plans to raise ditch levels.",
       "sources": [],
       "hypothesis": true,
       "curvature": 0.22
-    },
-    {
-      "from": "policy-resistance-legal-delays",
-      "to": "municipality-plans-for-farmland",
-      "polarity": "-",
-      "delay": false,
-      "description": "Objections delay, change or stop a plan in which the municipality designates farmland for another use, while it is pending; with none pending, they change nothing.",
-      "sources": [],
-      "curvature": -0.38,
-      "hypothesis": true
-    },
-    {
-      "from": "municipality-plans-for-farmland",
-      "to": "policy-resistance-legal-delays",
-      "polarity": "+",
-      "delay": false,
-      "description": "A plan that designates farmland for another use leads its owners and the farmers who work it to object, appeal and lobby against it.",
-      "sources": [],
-      "curvature": -0.1,
-      "hypothesis": true
-    },
-    {
-      "from": "municipality-plans-for-farmland",
-      "to": "farmland-leaving-arable-use",
-      "polarity": "-",
-      "delay": true,
-      "description": "Farmland the plan designates for another use leaves arable farming as the plan is carried out on it: the plan does not end the farming by itself. In the Krimpenerwaard, where the land-use plan designating farmland for nature became irrevocable in October 2021 (Kamphorst et al., 2025, p. 25), of the land of owners who settled by agreement without converting it themselves most was sold to the province, 152 hectares, or exchanged, 59 (p. 41), and 24 agreements were made for owners to turn land into nature themselves, on 171 hectares of their own and 274 leased from the province (p. 67), the largest area (p. 41), an amicable purchase or exchange being the most common outcome, closely followed by the owners' own conversion (p. 36); voluntary sale and the owners' own conversion alone had not completed it in earlier periods (p. 10). Years, so a delay: the sales took more than 30 months on average, the owners' own conversion more than 61 (p. 67). Expropriation is drawn apart (Farmland planned for other uses → Expropriation of farmland). Measured for nature in the peat meadows of South Holland; the procedure is national law, and how long it takes on the island no source read gives.",
-      "sources": [
-        "kamphorst-2025"
-      ],
-      "curvature": 0.18
     },
     {
       "from": "wetter-winters",

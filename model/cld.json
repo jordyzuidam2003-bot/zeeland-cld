@@ -1169,6 +1169,33 @@
       ],
       "x": -900,
       "y": 1350
+    },
+    {
+      "id": "trials-and-pilots-on-the-island",
+      "label": "Trials and pilots on the island",
+      "element type": "Constant",
+      "adaptive practice": false,
+      "sets domain": "Social",
+      "subsystem": "Agricultural economy",
+      "subquestion": "SQ2",
+      "description": "The trials, pilots and demonstrations that parties beside the farmers run on the island and for its farms, each showing what a measure or a crop does under the island's conditions. The Living Lab Schouwen-Duiveland started officially in January 2019 as a place for parties who want to innovate together, to speed up the island's move to self-sufficient water management (Kaandorp et al., 2022, p. 8); its project Samenwerken voor Zoet Water (2020–2022), carried out with Deltares, KWR, Acacia Water, Agrarisch Schouwen-Duiveland and the municipality (Living Lab Schouwen-Duiveland, n.d.-a), made quickscans for 13 farmers (Kaandorp et al., 2022, p. 9), and a later one, of Acacia Water, Deltares, Delphy, the trial farm Rusthoeve, three farms and the municipality, demonstrated and monitored new drainage on the island (Living Lab Schouwen-Duiveland, n.d.-b), laid at Kerkwerve and Dreischor (Living Lab Schouwen-Duiveland, 2023). For crops, Delphy, with ZLTO and Saeftinghe Zilt, researched saline cultivation in Zeeland in 2014–2018 (Delphy, 2023, p. 49), and the trial farm Rusthoeve, at Colijnsplaat on Noord-Beveland, has experimented with crops since 2014 and laid out irrigation trials since 2018 (pp. 9, 19). A Constant: no source read shows the farms' choices moving the trials, so whether the trials answer what farmers do or ask for is a question for the group model building session.",
+      "sources": [
+        "kaandorp-2022",
+        "living-lab-samenwerken-voor-zoet-water",
+        "living-lab-innovatieve-drainage",
+        "living-lab-2023-dreischor",
+        "delphy-2023-dorsd"
+      ],
+      "actors": [
+        "living-lab-schouwen-duiveland",
+        "rusthoeve",
+        "deltares",
+        "kwr",
+        "acacia-water",
+        "delphy"
+      ],
+      "x": -50,
+      "y": 300
     }
   ],
   "connections": [
@@ -2887,6 +2914,30 @@
       ],
       "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
       "curvature": 0.15
+    },
+    {
+      "from": "trials-and-pilots-on-the-island",
+      "to": "knowledge-of-storage",
+      "polarity": "+",
+      "delay": true,
+      "description": "Trials and pilots give farmers and advisers what a measure does on the island: the quickscans and feasibility studies of Samenwerken voor Zoet Water made methods, maps and tools with which farmers and advisers can go on by themselves (Kaandorp et al., 2022, p. 55), and its authors recommend pilots with monitoring, since farmers are sooner willing to invest in a solution whose working has been shown in practice somewhere (p. 56); the demonstration on three farms monitored new drainage for figures and guidelines on building, managing and maintaining it (Living Lab Schouwen-Duiveland, n.d.-b). Years, so a delay: many studies have started or are running, and a picture of their result comes only after years (Delphy, 2023, p. 40).",
+      "sources": [
+        "kaandorp-2022",
+        "living-lab-innovatieve-drainage",
+        "delphy-2023-dorsd"
+      ],
+      "curvature": 0
+    },
+    {
+      "from": "trials-and-pilots-on-the-island",
+      "to": "knowledge-of-new-crops",
+      "polarity": "+",
+      "delay": true,
+      "description": "Trials of new crops give farmers knowledge of growing and selling them: in Zeeland Delphy, with ZLTO and Saeftinghe Zilt, researched saline cultivation in 2014–2018, and eight growers grow saline crops there now, samphire most (Delphy, 2023, p. 49); the trial farm Rusthoeve has experimented with crops for biobased raw materials since 2014 (p. 9). Measured in Zeeland: no source read shows a trial raising what the island's own farmers know. Years, so a delay, as for the water measures, whose results show only after years (p. 40).",
+      "sources": [
+        "delphy-2023-dorsd"
+      ],
+      "curvature": 0
     }
   ],
   "loops": [

@@ -4007,15 +4007,6 @@
   ],
   "changes": [
     {
-      "change": "Trials and pilots on the island drawn, a Constant feeding both kinds of knowledge",
-      "argument": "Saskia (DCC) misses R&D in the CLD: knowledge of storage had one link in, from storage itself (R5), while its own description names the pilots and the quickscans. The trials are made by the Living Lab (Kaandorp et al., 2022, p. 8; Living Lab Schouwen-Duiveland, n.d.-a, n.d.-b, 2023), Rusthoeve and Delphy (Delphy, 2023, pp. 9, 19, 49), and give farmers and advisers tools (Kaandorp et al., 2022, pp. 55–56) after years (Delphy, 2023, p. 40). A Constant, its actors outside the scale, since no source shows the farms' choices moving the trials; not one variable 'innovation', which measures no single quantity (decided by Jordy). The link to knowledge of new crops cites research in Zeeland, not on the island.",
-      "items": [
-        "trials-and-pilots-on-the-island",
-        "trials-and-pilots-on-the-island -> knowledge-of-storage",
-        "trials-and-pilots-on-the-island -> knowledge-of-new-crops"
-      ]
-    },
-    {
       "change": "Two barriers to storage: the call for a supply route holds storage back, and the urgency swings with the years",
       "argument": "Kaandorp et al. (2022, p. 12) name both on the island: farmers hold back on investing while parties argue the answer is a supply route, with no route decided, its payer and management open (Witteveen+Bos, 2021, p. 51), which links B7 to storage; and the attention to drought swings with dry and wet years, which is how B6 behaves, so no new variable. The second gives Crop yield → Freshwater storage measures its source, so the link loses its hypothesis mark (cld-model.md: a behavioural claim takes a source where one exists) and C5's description, which called it one, changes with it.",
       "items": [

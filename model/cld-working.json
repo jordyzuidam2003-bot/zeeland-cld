@@ -4025,25 +4025,6 @@
   ],
   "changes": [
     {
-      "change": "Sentences as strong as their sources and at their printed pages, as the fresh readers of batches 14 to 16 found them",
-      "argument": "A citation says what its source says at the page cited, no more strongly ('Every Use note correct'): each rewrite puts back the hedge, condition or place the source gives, or the page the passage is on (CitationCheck/69438da/readers/out/). No link, sign or delay changes.",
-      "items": [
-        "buyer-contracts-for-new-crops",
-        "buyer-contracts-for-new-crops -> perceived-risk-of-switching",
-        "dependence-on-high-margin-salt-sensitive-crops -> demand-for-deep-polder-drainage",
-        "fields-moved-to-new-salt-tolerant-crops",
-        "freshwater-supply-route",
-        "hotter-drier-summers -> salt-in-ditch-water",
-        "market-demand-for-alternative-crops -> buyer-contracts-for-new-crops",
-        "salt-in-ditch-water",
-        "salt-in-ditch-water -> freshwater-storage-measures",
-        "salt-tolerant-crop-adoption",
-        "trials-and-pilots-on-the-island",
-        "trials-and-pilots-on-the-island -> knowledge-of-new-crops",
-        "water-demand-of-the-crop-mix -> crop-water-shortfall"
-      ]
-    },
-    {
       "change": "Farmers' knowledge of new crops → Perceived risk of switching a hypothesis for the group model building session",
       "argument": "Its one source, a survey of farmers in the south-west Netherlands, shows trust in their own competence raising their adaptation to drought (van Duinen et al., 2015a, p. 1089), and measures no perceived risk of a measure or crop. Why a farmer sees risk in a crop is a claim about why an actor decides, so with no source it is a hypothesis (cld-model.md, 'A behavioural claim may be a hypothesis'); the link and its sign stay.",
       "items": [

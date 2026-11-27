@@ -771,7 +771,7 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Consumer demand for novel salt-tolerant or alternative crops (e.g. protein crops); the contracts buyers offer for them are drawn apart (Buyer contracts for new crops). For quinoa the market is small: in Flanders it is sold under contract at €1,100 a tonne on a local market still very limited, with no forecast yet of how demand for local quinoa will grow (Cloet et al., 2024, pp. 2–3); in the Netherlands a supermarket has its own-brand quinoa from 12 Dutch farmers under a three-year contract, Dutch quinoa costing more to buy in than imported (DutchNews.nl, 2026). For protein crops, Rabobank expects demand for plant-based meat and dairy alternatives to grow towards 2030, while yields lower than in other countries and a quality that often misses food standards, which keeps the price low, limit what they earn (Polman et al., 2026, p. 8). For halophytes such as samphire and sea aster, grown in a few places in Zeeland, the food market is small and easily saturated, and offers farmers no lasting market potential (van den Burg et al., 2024, p. 6). Measured in Flanders, the Netherlands and Zeeland, none on the island. Whether demand, rather than local processing capacity, is what holds the new crops back on the island is open: no source read weighs the two. A Constant: the island's farmers cannot move it.",
+        "description": "Consumer demand for new or alternative crops (e.g. protein crops); the contracts buyers offer for them are drawn apart (Buyer contracts for new crops). For quinoa the market is small: in Flanders it is sold under contract at €1,100 a tonne on a local market still very limited, with no forecast yet of how demand for local quinoa will grow (Cloet et al., 2024, pp. 2–3); in the Netherlands a supermarket has its own-brand quinoa from 12 Dutch farmers under a three-year contract, Dutch quinoa costing more to buy in than imported (DutchNews.nl, 2026). For protein crops, Rabobank expects demand for plant-based meat and dairy alternatives to grow towards 2030, while yields lower than in other countries and a quality that often misses food standards, which keeps the price low, limit what they earn (Polman et al., 2026, p. 8). For halophytes such as samphire and sea aster, grown in a few places in Zeeland, the food market is small and easily saturated, and offers farmers no lasting market potential (van den Burg et al., 2024, p. 6). Measured in Flanders, the Netherlands and Zeeland, none on the island. Whether demand, rather than local processing capacity, is what holds the new crops back on the island is open: no source read weighs the two. A Constant: the island's farmers cannot move it.",
         "actors": "",
         "sources": "Cloet, T., Van Meensel, J., De Boever, M., & Cnops, G. (2024). Rendabiliteit van de quinoateelt in Vlaanderen (Version September 2024). ILVO. https://ilvo.vlaanderen.be/uploads/documents/Projecten/Rendabiliteit-van-de-quinoateelt-in-Vlaanderen_sept2024.pdf\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983\nPolman, N., Kisters, T., Manshanden, M., & van Ruiten, C. (2026). PPS slimme verdienmodellen in de akkerbouw: Niet-toegerekende kosten eiwitgewassen [Achtergrondnotitie]. Wageningen Social & Economic Research. https://edepot.wur.nl/708091\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118",
         "sourced": "yes"
@@ -786,8 +786,8 @@
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Plants and supply chains in Zeeland, on the island or near it, that store, process or sell new salt-tolerant crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer. No source read shows a new crop processed on the island. Sea vegetables are sorted and packed, mostly by hand, by a grower and trader at Nieuw- en Sint Joosland, who in 2018 shipped most of his sea fennel, seaweed and sea spaghetti to organic shops and was investing, with a colleague from Schouwen-Duiveland, in growing new sea greens in greenhouses to supply international restaurants and supermarkets directly (FreshPlaza, 2018); at Colijnsplaat an arable farmer and a trader of sea vegetables founded a company, NZZT, to grow sea crops and set up their supply chain, in a project of 2020–2021 (EU CAP Network, 2023). GreenFood50 runs its quinoa chain, from grower to customer, from Wageningen, and has its quinoa grown close to its processing facilities (GreenFood50, n.d.), and a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a). Buyers and processors build or keep it where they find it worthwhile against processing the crops elsewhere.",
-        "simplification": "Counts the chains of every new salt-tolerant crop as one capacity, though each is built for one kind of crop, sea vegetables (FreshPlaza, 2018) or quinoa (GreenFood50, n.d.): it leaves out that a crop's harvest makes only a chain for its own kind worthwhile and that a chain cuts the haul only for the crops it takes. Per kind of crop the loop R7 runs through the same positive links, so it stays reinforcing with the same mechanism; the total makes R7 look easier to start where farms spread their hectares over crops that no single chain takes. It also draws the capacity as answering only to the harvest within reach and market demand, and leaves out public support for setting up a chain, such as the LEADER climate adaptation support for the project in which NZZT at Colijnsplaat set up its chain for sea crops (EU CAP Network, 2023). Such support would enter as one more positive driver beside the link from the harvest and closes no loop, so R7 keeps its sign and its mechanism. It splits the plants and chains that take new crops by distance into this variable, those in Zeeland, and Processing of new crops elsewhere, those outside it, and leaves out that the haul, and with it the net price, still changes with distance within each side. More capacity on the near side still cuts the haul, so R7 keeps its sign and its mechanism.",
+        "description": "Plants and supply chains in Zeeland, on the island or near it, that store, process or sell new crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer. No source read shows a new crop processed on the island. Sea vegetables are sorted and packed, mostly by hand, by a grower and trader at Nieuw- en Sint Joosland, who in 2018 shipped most of his sea fennel, seaweed and sea spaghetti to organic shops and was investing, with a colleague from Schouwen-Duiveland, in growing new sea greens in greenhouses to supply international restaurants and supermarkets directly (FreshPlaza, 2018); at Colijnsplaat an arable farmer and a trader of sea vegetables founded a company, NZZT, to grow sea crops and set up their supply chain, in a project of 2020–2021 (EU CAP Network, 2023). GreenFood50 runs its quinoa chain, from grower to customer, from Wageningen, and has its quinoa grown close to its processing facilities (GreenFood50, n.d.), and a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a). Buyers and processors build or keep it where they find it worthwhile against processing the crops elsewhere.",
+        "simplification": "Counts the chains of every new crop as one capacity, though each is built for one kind of crop, sea vegetables (FreshPlaza, 2018) or quinoa (GreenFood50, n.d.): it leaves out that a crop's harvest makes only a chain for its own kind worthwhile and that a chain cuts the haul only for the crops it takes. Per kind of crop the loop R7 runs through the same positive links, so it stays reinforcing with the same mechanism; the total makes R7 look easier to start where farms spread their hectares over crops that no single chain takes. It also draws the capacity as answering only to the harvest within reach and market demand, and leaves out public support for setting up a chain, such as the LEADER climate adaptation support for the project in which NZZT at Colijnsplaat set up its chain for sea crops (EU CAP Network, 2023). Such support would enter as one more positive driver beside the link from the harvest and closes no loop, so R7 keeps its sign and its mechanism. It splits the plants and chains that take new crops by distance into this variable, those in Zeeland, and Processing of new crops elsewhere, those outside it, and leaves out that the haul, and with it the net price, still changes with distance within each side. More capacity on the near side still cuts the haul, so R7 keeps its sign and its mechanism.",
         "actor": "Buyers and processors of the island's crops",
         "actors": "Arable farmers on Schouwen-Duiveland, Buyers and processors of the island's crops",
         "sources": "FreshPlaza. (2018, June 22). Elenbaas invests in new salty Zeeland productions in greenhouses. https://www.freshplaza.com/north-america/article/2196870/elenbaas-invests-in-new-salty-zeeland-productions-in-greenhouses/\nEU CAP Network. (2023). 'Zeeland's roots for new crops': Growing sea bananas and sea fennel on saline land thanks to LEADER climate adaptation support [Good practice report]. European Commission. https://eu-cap-network.ec.europa.eu/sites/default/files/2023-07/Zeeland%E2%80%99s%20roots%20for%20new%20crops.pdf\nGreenFood50. (n.d.). The specialist in quinoa ingredients [Home page and About us]. Retrieved November 7, 2026, from https://www.greenfood50.com/\nDe Vriend, E. (2024a, October 12). Toekomst van voedsel in Zeeland: Wat eten we morgen? Stal & Akker. https://sterke-erven.nl/artikel/528976-toekomst-van-voedsel-in-zeeland-wat-eten-we-morgen/",
@@ -797,13 +797,13 @@
     {
       "_id": "elem-fields-moved-to-new-salt-tolerant-crops",
       "attributes": {
-        "label": "Fields moved to new  salt-tolerant crops",
+        "label": "Fields moved to new  crops",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Hectares the island's farmers move from their current crops to new salt-tolerant crops in a year. The farmers decide it field by field: they move a field where they find a new crop worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them. Switching to salt- or drought-resistant crop types is among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013. What a switch costs falls in the year a field moves (Fields moved to new salt-tolerant crops → Farmers' capacity to invest); the field then stays under its new crop in Adoption of new salt-tolerant crops. A new crop does not lift the water limit: fibre crops and legumes such as hemp, flax and field beans earn about what winter wheat does or less, sown in spring they carry more risk, and flax needs water too, so the crops for a biobased economy will shift the crop plans a little but solve no water problem (Delphy, 2023, p. 48). An Auxiliary: a year's flow into that Stock.",
+        "description": "Hectares the island's farmers move from their current crops to new crops, which cope with salt or with little fresh water, in a year. The farmers decide it field by field: they move a field where they find a new crop worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them. Switching to salt- or drought-resistant crop types is among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013. What a switch costs falls in the year a field moves (Fields moved to new crops → Farmers' capacity to invest); the field then stays under its new crop in Adoption of new crops. Not every new crop eases the water limit: the crops often suggested as less sensitive to drought, fibre crops and legumes such as hemp, flax and field beans, earn about what winter wheat does or less, sown in spring they carry more risk, and flax needs water too, so the crops for a biobased economy will shift the crop plans a little but solve no water problem (Delphy, 2023, p. 48); quinoa copes with little water (Adoption of new crops). An Auxiliary: a year's flow into that Stock.",
         "actor": "Arable farmers on Schouwen-Duiveland",
         "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "van Duinen, R., Filatova, T., Geurts, P., & van der Veen, A. (2015a). Coping with drought risk: Empirical analysis of farmers’ drought adaptation in the south-west Netherlands. Regional Environmental Change, 15(6), 1081–1093. https://doi.org/10.1007/s10113-014-0692-y\nDelphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf",
@@ -813,14 +813,14 @@
     {
       "_id": "elem-salt-tolerant-crop-adoption",
       "attributes": {
-        "label": "Adoption of new  salt-tolerant crops",
+        "label": "Adoption of new crops",
         "element type": "Stock",
         "adaptive practice": "yes",
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Hectares under crops new to the island's rotations that tolerate salt. On the parcels studied in the island's low polders the rotations hold potato, onion, sugar beet, cereals and grass seed (Kaandorp et al., 2022, p. 30), and no source read shows a new crop grown on the island. Elsewhere in Zeeland, most still experimental and small (Deolu-Ajayi et al., 2024, p. 57): samphire and sea aster, irrigated with saline water on the edges of salt marshes at Emmadorp, Waterdunen and Wolphaarsdijk, labour intensive and seasonal, their sales low (van den Burg et al., 2024, p. 6); sea fennel and sea banana on an arable farm at Colijnsplaat, where a new company worked out how to grow them, in fields and greenhouses, and set up their supply chain (EU CAP Network, 2023). Quinoa grows to maturity on irrigation water of more than 250 mM NaCl (van Loo, 2023, p. 77) and is sown with standard equipment and harvested with a combine, but needs a fine seed bed and weed control set by its row distance (p. 75). Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them. Switching to salt- or drought-resistant crop types is among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013. A Stock: a field keeps its crop through the season, and farmers move fields to a new crop over years (Fields moved to new salt-tolerant crops), as they come to see the damage over dry summers (Harvest lost to salt → Fields moved to new salt-tolerant crops).",
-        "simplification": "Counts the hectares of every new salt-tolerant crop in the island's rotations as one area and lets them act alike on each link out, while the crops differ: quinoa is sown with standard equipment and harvested with a combine (van Loo, 2023, p. 75), sea fennel and sea banana were grown in a pilot at Colijnsplaat, in test fields and greenhouses, with a food supply chain set up for them (EU CAP Network, 2023, pp. 1–2), and samphire and sea aster are labour intensive, their sales low (van den Burg et al., 2024, p. 6). It abstracts in summing the hectares and idealizes in R7, where one crop's harvest draws a chain that raises every new crop's net price, while a chain for one crop raises only that crop's price. No crop reverses a sign, so B2, R6, B10 and R7 keep their polarity and their mechanism, each running crop by crop; what it leaves out is how hard each crop pulls in each loop.",
+        "description": "Hectares under crops new to the island's rotations that cope with salt or with little fresh water. On the parcels studied in the island's low polders the rotations hold potato, onion, sugar beet, cereals and grass seed (Kaandorp et al., 2022, p. 30), and no source read shows a new crop grown on the island. Elsewhere in Zeeland, most still experimental and small (Deolu-Ajayi et al., 2024, p. 57): samphire and sea aster, irrigated with saline water on the edges of salt marshes at Emmadorp, Waterdunen and Wolphaarsdijk, labour intensive and seasonal, their sales low (van den Burg et al., 2024, p. 6); sea fennel and sea banana on an arable farm at Colijnsplaat, where a new company worked out how to grow them, in fields and greenhouses, and set up their supply chain (EU CAP Network, 2023). Quinoa copes with both: it grows to maturity on irrigation water of more than 250 mM NaCl (van Loo, 2023, p. 77), has a moderate need for water and still yields 2,000 kg of grain a hectare on 270 mm of available water (p. 75, from Çolak et al., 2021), and keeps drawing water from the soil under long drought (p. 77); it is sown with standard equipment and harvested with a combine, but needs a fine seed bed and weed control set by its row distance (p. 75). Farmers grow one where they find it worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them. Switching to salt- or drought-resistant crop types is among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013. A Stock: a field keeps its crop through the season, and farmers move fields to a new crop over years (Fields moved to new crops), as they come to see the damage over dry summers (Harvest lost to salt → Fields moved to new crops) and, a hypothesis, as their crops fall short of water (Crop water shortfall → Fields moved to new crops).",
+        "simplification": "Counts the hectares of every new crop in the island's rotations as one area, those that cope with salt and those that cope with little fresh water, and lets them act alike on each link out, while the crops differ: quinoa is sown with standard equipment and harvested with a combine (van Loo, 2023, p. 75), sea fennel and sea banana were grown in a pilot at Colijnsplaat, in test fields and greenhouses, with a food supply chain set up for them (EU CAP Network, 2023, pp. 1–2), and samphire and sea aster are labour intensive, their sales low (van den Burg et al., 2024, p. 6). It abstracts in summing the hectares and idealizes in R7, where one crop's harvest draws a chain that raises every new crop's net price, while a chain for one crop raises only that crop's price. Salt losses move fields to a crop that copes with salt (B2), a shortfall of water, a hypothesis, to one that copes with little water, and a crop that copes with both, as quinoa does (van Loo, 2023, pp. 75, 77), answers both. No crop reverses a sign, so B2, R6, B10 and R7 keep their polarity and their mechanism, each running crop by crop; what it leaves out is how hard each crop pulls in each loop.",
         "actor": "Arable farmers on Schouwen-Duiveland",
         "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nDeolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nEU CAP Network. (2023). 'Zeeland's roots for new crops': Growing sea bananas and sea fennel on saline land thanks to LEADER climate adaptation support [Good practice report]. European Commission. https://eu-cap-network.ec.europa.eu/sites/default/files/2023-07/Zeeland%E2%80%99s%20roots%20for%20new%20crops.pdf\nvan Loo, R. (2023). Quinoa: A new protein source. In S. Pyett, W. Jenkins, B. van Mierlo, L. M. Trindade, D. Welch, & H. van Zanten (Eds.), Our future proteins: A diversity of perspectives (pp. 74–81). VU University Press. https://vuuniversitypress.com/p/uploads/OurFutureProteinsOA.pdf\nvan Duinen, R., Filatova, T., Geurts, P., & van der Veen, A. (2015a). Coping with drought risk: Empirical analysis of farmers’ drought adaptation in the south-west Netherlands. Regional Environmental Change, 15(6), 1081–1093. https://doi.org/10.1007/s10113-014-0692-y",
@@ -1103,7 +1103,7 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "On the hectares a farm moves from its high-margin current crops, potatoes and sown onions, to new salt-tolerant crops or to salt-tolerant varieties of the current crops: what the current crop would earn without salt less what the new crop or variety earns, a margin being revenue minus the crop's variable costs (Cloet et al., 2024, p. 1). What salt takes is Harvest lost to salt, so it is not counted here. Potatoes, beets, onions and field vegetables are the high-margin crops; the margin of protein crops is comparable to that of cereals and cannot compete with most other crops (Polman et al., 2026, p. 9); quinoa, in a study for Flanders, yields about 3 tonnes a hectare, sold at €1,100 a tonne under contract on a market still very small, against cultivation costs under contract of about €1,470 a hectare, storage and marketing left out (Cloet et al., 2024, p. 2). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276), and on Terschelling food grown on salt-affected soil costs more to produce than food grown with fresh water, the project relying on volunteers and, at its start, on subsidies (ten Dam et al., 2023, pp. 10, 13, 16). A season's crop: within the year.",
+        "description": "On the hectares a farm moves from its high-margin current crops, potatoes and sown onions, to new crops or to salt-tolerant varieties of the current crops: what the current crop would earn without salt less what the new crop or variety earns, a margin being revenue minus the crop's variable costs (Cloet et al., 2024, p. 1). What salt takes is Harvest lost to salt, so it is not counted here. Potatoes, beets, onions and field vegetables are the high-margin crops; the margin of protein crops is comparable to that of cereals and cannot compete with most other crops (Polman et al., 2026, p. 9); quinoa, in a study for Flanders, yields about 3 tonnes a hectare, sold at €1,100 a tonne under contract on a market still very small, against cultivation costs under contract of about €1,470 a hectare, storage and marketing left out (Cloet et al., 2024, p. 2). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276), and on Terschelling food grown on salt-affected soil costs more to produce than food grown with fresh water, the project relying on volunteers and, at its start, on subsidies (ten Dam et al., 2023, pp. 10, 13, 16). A season's crop: within the year.",
         "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "Cloet, T., Van Meensel, J., De Boever, M., & Cnops, G. (2024). Rendabiliteit van de quinoateelt in Vlaanderen (Version September 2024). ILVO. https://ilvo.vlaanderen.be/uploads/documents/Projecten/Rendabiliteit-van-de-quinoateelt-in-Vlaanderen_sept2024.pdf\nPolman, N., Kisters, T., Manshanden, M., & van Ruiten, C. (2026). PPS slimme verdienmodellen in de akkerbouw: Niet-toegerekende kosten eiwitgewassen [Achtergrondnotitie]. Wageningen Social & Economic Research. https://edepot.wur.nl/708091\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16\nten Dam, R., Vellinga, P., & Negacz, K. (2023). From experiment to market development: A case study of prospects and value chain of saline agriculture in Terschelling, the Netherlands. NJAS: Impact in Agricultural and Life Sciences, 95(1), 2211541. https://doi.org/10.1080/27685241.2023.2211541",
         "sourced": "yes"
@@ -1134,8 +1134,8 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "What farmers on the island get for new salt-tolerant crops once transport to the processor is paid, set by processors on and off the island. No source read gives what quinoa fetches: its cost price at the farm gate is 0.70 to 1.25 euro a kilo (van Loo, 2023, p. 79), most Dutch growers selling it under contract to one buyer (DutchNews.nl, 2026). The food market for halophytes is small and easily saturated (van den Burg et al., 2024, p. 6), a Zeeland trader noting surpluses (FreshPlaza, 2018); no source read gives their price.",
-        "simplification": "Counts one net price for every new salt-tolerant crop, though the description shows them sold differently: most Dutch quinoa growers selling under contract to one buyer, halophytes on a small food market that saturates easily. It assumes each crop's price rises alike with a plant nearby or more processing elsewhere. Per crop R7 runs through the same positive links, so it keeps its polarity and its mechanism; what the total leaves out is a price that rises for one crop and not another, which the semi-quantitative analysis cannot vary apart.",
+        "description": "What farmers on the island get for new crops once transport to the processor is paid, set by processors on and off the island. No source read gives what quinoa fetches: its cost price at the farm gate is 0.70 to 1.25 euro a kilo (van Loo, 2023, p. 79), most Dutch growers selling it under contract to one buyer (DutchNews.nl, 2026). The food market for halophytes is small and easily saturated (van den Burg et al., 2024, p. 6), a Zeeland trader noting surpluses (FreshPlaza, 2018); no source read gives their price.",
+        "simplification": "Counts one net price for every new crop, though the description shows them sold differently: most Dutch quinoa growers selling under contract to one buyer, halophytes on a small food market that saturates easily. It assumes each crop's price rises alike with a plant nearby or more processing elsewhere. Per crop R7 runs through the same positive links, so it keeps its polarity and its mechanism; what the total leaves out is a price that rises for one crop and not another, which the semi-quantitative analysis cannot vary apart.",
         "actors": "Buyers and processors of the island's crops",
         "sources": "van Loo, R. (2023). Quinoa: A new protein source. In S. Pyett, W. Jenkins, B. van Mierlo, L. M. Trindade, D. Welch, & H. van Zanten (Eds.), Our future proteins: A diversity of perspectives (pp. 74–81). VU University Press. https://vuuniversitypress.com/p/uploads/OurFutureProteinsOA.pdf\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nFreshPlaza. (2018, June 22). Elenbaas invests in new salty Zeeland productions in greenhouses. https://www.freshplaza.com/north-america/article/2196870/elenbaas-invests-in-new-salty-zeeland-productions-in-greenhouses/",
         "sourced": "yes"
@@ -1166,8 +1166,8 @@
         "sets domain": "Technological",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Plants outside Zeeland that buy and process new salt-tolerant crops: where the island's growers can sell a new crop now, beside a local plant. For Dutch quinoa the sources read show one main buyer, GreenFood50 at Wageningen, which runs the chain from grower to customer and has its quinoa grown close to its processing facilities, which it does not locate (GreenFood50, n.d.), most Dutch growers under contract with it (DutchNews.nl, 2026).",
-        "simplification": "Counts the plants outside Zeeland that buy any new salt-tolerant crop as one, while the sources in the description show a buyer outside Zeeland for quinoa alone; for the sea vegetables, Local processing capacity for new crops shows a grower and trader in Zeeland who sorts, packs and sells them. A Constant has no link in and lies on no loop, so no loop depends on the sum; what it leaves out is for which new crops a buyer outside Zeeland exists at all.",
+        "description": "Plants outside Zeeland that buy and process new crops: where the island's growers can sell a new crop now, beside a local plant. For Dutch quinoa the sources read show one main buyer, GreenFood50 at Wageningen, which runs the chain from grower to customer and has its quinoa grown close to its processing facilities, which it does not locate (GreenFood50, n.d.), most Dutch growers under contract with it (DutchNews.nl, 2026).",
+        "simplification": "Counts the plants outside Zeeland that buy any new crop as one, while the sources in the description show a buyer outside Zeeland for quinoa alone; for the sea vegetables, Local processing capacity for new crops shows a grower and trader in Zeeland who sorts, packs and sells them. A Constant has no link in and lies on no loop, so no loop depends on the sum; what it leaves out is for which new crops a buyer outside Zeeland exists at all.",
         "actors": "",
         "sources": "GreenFood50. (n.d.). The specialist in quinoa ingredients [Home page and About us]. Retrieved November 7, 2026, from https://www.greenfood50.com/\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983",
         "sourced": "yes"
@@ -1244,8 +1244,8 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "What the island's farmers know about growing and selling new salt-tolerant crops, from their own fields, their neighbours' and advisers. For quinoa this knowledge is still thin in the Netherlands: research on growing it is relatively underdeveloped, and a grower harvested 2,000 kg from 4 hectares one year and 2,500 kg the next without knowing why, multiple interviewees agreeing that too little is known (de Wit et al., 2022, p. 269); what Dutch consumers want from it is under-researched (p. 270). Knowing that crops must cope with salt is a separate matter: most of Zeeland's farmers know it, yet still grow common salt-sensitive crops such as potato and wheat (Stuyt et al., 2016, as cited in van den Burg et al., 2024, p. 6). Measured in 32 interviews, 29 of them in the Netherlands and seven with farmers (de Wit et al., 2022, p. 266), and across Zeeland; none on the island.",
-        "simplification": "Counts what the island's farmers know of every new salt-tolerant crop as one stock, as Adoption of new salt-tolerant crops counts their hectares as one area, while the evidence in the description on knowing how to grow and sell them is for quinoa alone: it assumes that growing one new crop lowers the risk a farmer sees in all of them, which no source read shows. Per crop the loop through it stays reinforcing with the same mechanism, growing a crop teaching how to grow it and so lowering the risk seen in moving the next field to it; by inference the total makes that loop look stronger where farms spread their fields over new crops that teach little about each other.",
+        "description": "What the island's farmers know about growing and selling new crops, from their own fields, their neighbours' and advisers. For quinoa this knowledge is still thin in the Netherlands: research on growing it is relatively underdeveloped, and a grower harvested 2,000 kg from 4 hectares one year and 2,500 kg the next without knowing why, multiple interviewees agreeing that too little is known (de Wit et al., 2022, p. 269); what Dutch consumers want from it is under-researched (p. 270). Knowing that crops must cope with salt is a separate matter: most of Zeeland's farmers know it, yet still grow common salt-sensitive crops such as potato and wheat (Stuyt et al., 2016, as cited in van den Burg et al., 2024, p. 6). Measured in 32 interviews, 29 of them in the Netherlands and seven with farmers (de Wit et al., 2022, p. 266), and across Zeeland; none on the island.",
+        "simplification": "Counts what the island's farmers know of every new crop as one stock, as Adoption of new crops counts their hectares as one area, while the evidence in the description on knowing how to grow and sell them is for quinoa alone: it assumes that growing one new crop lowers the risk a farmer sees in all of them, which no source read shows. Per crop the loop through it stays reinforcing with the same mechanism, growing a crop teaching how to grow it and so lowering the risk seen in moving the next field to it; by inference the total makes that loop look stronger where farms spread their fields over new crops that teach little about each other.",
         "actors": "Arable farmers on Schouwen-Duiveland",
         "sources": "de Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118",
         "sourced": "yes"
@@ -1473,7 +1473,7 @@
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "Hectares of new salt-tolerant or alternative crops that buyers contract with the island's farmers before the season. A contract takes risk off the farmer as far as its terms go, measured for potatoes nationally: a fixed-price contract guarantees the price for the agreed quantity, a day-price or volume contract only the sale, the price risk staying with grower and buyer both (Janssens et al., 2020, pp. 11–12); the contracted part carries an offtake duty, while potatoes beyond a hectare contract's volume mostly go at the day price, with none unless agreed (p. 12); contracts let a farmer hedge against price swings (p. 14), and a grower who sells free bears a loss alone (p. 15). So a contract moves the price and the sales risk, not the yield risk. For the new crops, Dutch quinoa is grown under contract for one distributor, which buys a pre-agreed amount at a fixed price and manages supply according to demand (de Wit et al., 2022, pp. 266, 268), a supermarket buys its own-brand quinoa from 12 Dutch farmers under a three-year contract (DutchNews.nl, 2026), and for saline crops in Zeeland the market is hard, with little room for new growers (Delphy, 2023, p. 49). No source read shows a buyer contracting a new crop on the island. An Auxiliary: set season by season.",
+        "description": "Hectares of new or alternative crops that buyers contract with the island's farmers before the season. A contract takes risk off the farmer as far as its terms go, measured for potatoes nationally: a fixed-price contract guarantees the price for the agreed quantity, a day-price or volume contract only the sale, the price risk staying with grower and buyer both (Janssens et al., 2020, pp. 11–12); the contracted part carries an offtake duty, while potatoes beyond a hectare contract's volume mostly go at the day price, with none unless agreed (p. 12); contracts let a farmer hedge against price swings (p. 14), and a grower who sells free bears a loss alone (p. 15). So a contract moves the price and the sales risk, not the yield risk. For the new crops, Dutch quinoa is grown under contract for one distributor, which buys a pre-agreed amount at a fixed price and manages supply according to demand (de Wit et al., 2022, pp. 266, 268), a supermarket buys its own-brand quinoa from 12 Dutch farmers under a three-year contract (DutchNews.nl, 2026), and for saline crops in Zeeland the market is hard, with little room for new growers (Delphy, 2023, p. 49). No source read shows a buyer contracting a new crop on the island. An Auxiliary: set season by season.",
         "actor": "Buyers and processors of the island's crops",
         "actors": "Buyers and processors of the island's crops",
         "sources": "Janssens, B., van der Meer, R., & Smit, B. (2020). Gevolgen van de coronacrisis voor de aardappelsector. Wageningen Economic Research. https://edepot.wur.nl/523096\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983\nDelphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf",
@@ -1499,7 +1499,7 @@
         "affected": "Their farms depend wholly on rain and on the fresh groundwater under the dunes, the creek ridges and the thin rainwater lenses of the low polders: the island has no link to the main freshwater system, so in dry periods no water can be brought in and no ditches flushed, its shallow groundwater and ditches carry much salt, and the farms run short of water; drought in the growing season, subsidence and sea level rise make this worse, and the dry years 2018–2020 showed the farms vulnerable. Delphy's report on the island's freshwater demand (2023) finds farming on the island impossible without more fresh water; in 2026 a potato grower at Nieuwerkerk lost a fifth of his harvest to drought, had stopped growing onions for want of fresh water, and found ditch water at times nearly as salt as the Oosterschelde. Adapting is uncertain for them: the measures that store fresh water in the subsoil are not yet fitted to the island's conditions, their costs, risks and gain in yield unknown, so many farmers find the investment too risky to make alone. Delphy's study of the island (2023) finds the cost of innovative solutions lying mainly with the farmer while they are not yet proven, so investing carries a risk, and the farms with little room to invest; no relation on the map shares that risk with them.",
         "influence score": 5,
         "client": "no",
-        "decides in the CLD": "Farmers' demand for deep polder drainage\nFreshwater storage measures\nGroundwater extraction for irrigation\nFields moved to new salt-tolerant crops\nAdoption of new salt-tolerant crops\nDependence on high-margin salt-sensitive crops\nAdoption of salt-tolerant varieties\nSpending on keeping the current crops",
+        "decides in the CLD": "Farmers' demand for deep polder drainage\nFreshwater storage measures\nGroundwater extraction for irrigation\nFields moved to new crops\nAdoption of new crops\nDependence on high-margin salt-sensitive crops\nAdoption of salt-tolerant varieties\nSpending on keeping the current crops",
         "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nCBS. (2026, March 30). Landbouw; gewassen, dieren en grondgebruik naar gemeente (StatLine table 80781ned, final figures for 2025) [Data set]. https://opendata.cbs.nl/statline/#/CBS/nl/dataset/80781ned\nOmroep Zeeland. (2023, May 31). Sombere toekomst voor boeren op Schouwen-Duiveland door tekort aan zoet water. https://www.omroepzeeland.nl/nieuws/15614167/sombere-toekomst-voor-boeren-op-schouwen-duiveland-door-tekort-aan-zoet-water\nvan Essen, C. (2026, October 15). Aardappeloogst valt flink tegen door droogte: 'We missen 20 procent'. Omroep Zeeland. https://www.omroepzeeland.nl/nieuws/18862756/aardappeloogst-valt-flink-tegen-door-droogte-we-missen-20-procent\nWiepkema, F. (2023, May 31). Zonder meer zoet water wordt agrarisch ondernemen op Schouwen Duiveland onmogelijk. Akkerwijzer. https://www.akkerwijzer.nl/artikel/750772-zonder-meer-zoet-water-wordt-agrarisch-ondernemen-op-schouwen-duiveland-onmogelijk/\nWaterschapswet (version in force from 1 January 2026). https://wetten.overheid.nl/BWBR0005108/2026-01-01\nWaterschap Scheldestromen. (2025). Nota Peilbesluiten 2025: Kaders voor het opstellen en uitvoeren van peilbesluiten. https://scheldestromen.nl/sites/default/files/2025-05/Nota%20Peilbesluiten%202025.pdf\nDelphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf"
       }
     },
@@ -2185,7 +2185,7 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "Soil work for potatoes should not be done when the soil is too wet, which can smear and compact it; for onions, too-wet soil work can keep a well-crumbled seedbed from forming, and in March and April, as the scenarios' rain rises, unfavourable conditions for it may become more likely; where blight cannot be well controlled, as in organic farming, a potato crop is best planted early where the soil allows (Verstand et al., 2021, pp. 25, 27, for the Netherlands, from a cultivation guide, a crop study and an expert). So, by inference from that guide, the more of the rotation they take, the more farmers need fields that dry early in spring. Holding water back longer, as a buffer for dry times, is sometimes hard for farmers who want onto the land with heavy machinery (Waterschap Scheldestromen, 2021c, p. 44); on Duiveland the board moves to the higher summer level in March and April as the soil work allows (2021a, p. 66). No source read shows how much spring soil work the new crops need: the sign rests on their needing less. Quinoa, a salt-tolerant crop, also needs soil work in spring: in the Netherlands it is sown from the end of March to the end of April and needs a fine seed bed (van Loo, 2023, pp. 75, 77, by a Wageningen breeder whose group develops quinoa varieties), so the sign holds where the share moves to crops sown in autumn or winter, such as winter wheat, sown from mid-September to early February (Verstand et al., 2021, p. 29), less clearly where it moves to quinoa; and on clay and zavel, the main topsoil of the island's western low polders (Kaandorp et al., 2022, p. 27), the main soil work for potatoes is often done before winter (Verstand et al., 2021, p. 25). Within the year.",
+        "description": "Soil work for potatoes should not be done when the soil is too wet, which can smear and compact it; for onions, too-wet soil work can keep a well-crumbled seedbed from forming, and in March and April, as the scenarios' rain rises, unfavourable conditions for it may become more likely; where blight cannot be well controlled, as in organic farming, a potato crop is best planted early where the soil allows (Verstand et al., 2021, pp. 25, 27, for the Netherlands, from a cultivation guide, a crop study and an expert). So, by inference from that guide, the more of the rotation they take, the more farmers need fields that dry early in spring. Holding water back longer, as a buffer for dry times, is sometimes hard for farmers who want onto the land with heavy machinery (Waterschap Scheldestromen, 2021c, p. 44); on Duiveland the board moves to the higher summer level in March and April as the soil work allows (2021a, p. 66). No source read shows how much spring soil work the new crops need: the sign rests on their needing less. Quinoa, one of the new crops, also needs soil work in spring: in the Netherlands it is sown from the end of March to the end of April and needs a fine seed bed (van Loo, 2023, pp. 75, 77, by a Wageningen breeder whose group develops quinoa varieties), so the sign holds where the share moves to crops sown in autumn or winter, such as winter wheat, sown from mid-September to early February (Verstand et al., 2021, p. 29), less clearly where it moves to quinoa; and on clay and zavel, the main topsoil of the island's western low polders (Kaandorp et al., 2022, p. 27), the main soil work for potatoes is often done before winter (Verstand et al., 2021, p. 25). Within the year.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
@@ -2907,7 +2907,7 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "A field moved from a current crop to a new salt-tolerant one no longer has a conventional harvest for salt to take: the link holds by what Harvest lost to salt counts, the fields still under the current crops. The new crops lose less to salt, not nothing: 10 to 19 of the 50 experts and stakeholders interviewed across the Netherlands' salinisation-prone provinces say that, in general, salts affect the soil's structure and so lower yields even where a crop is or becomes more tolerant, and that the salt level at which cultivation on clay stops being effective is largely uncertain (Beauchampet, 2022, pp. 213–214, 221, interviews, not measurements); the island's polders generally have clayey soils (Kaandorp et al., 2022, p. 10). Within the year, from the next season's crop.",
+        "description": "A field moved from a current crop to a new one no longer has a conventional harvest for salt to take: the link holds by what Harvest lost to salt counts, the fields still under the current crops. The new crops that cope with salt lose less to it, not nothing: 10 to 19 of the 50 experts and stakeholders interviewed across the Netherlands' salinisation-prone provinces say that, in general, salts affect the soil's structure and so lower yields even where a crop is or becomes more tolerant, and that the salt level at which cultivation on clay stops being effective is largely uncertain (Beauchampet, 2022, pp. 213–214, 221, interviews, not measurements); the island's polders generally have clayey soils (Kaandorp et al., 2022, p. 10). A new crop that copes only with little water may lose as much to salt as the crop it replaced, which the link leaves out, since Harvest lost to salt counts the current crops alone. Within the year, from the next season's crop.",
         "sets link": "T to E",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
@@ -3133,11 +3133,11 @@
         "label": "+",
         "polarity": "positive",
         "delay": "yes",
-        "description": "The more of the current crops' harvest salt takes, the more a new salt-tolerant crop is worth against them, so the more farmers grow it, but only past a threshold: Dutch farmers in salinised areas mostly hold back from saline agriculture unless salt severely hits their production (Deolu-Ajayi et al., 2024, p. 57). In interviews across the salinisation-prone provinces, Zeeland among them, salt in a field was largely invisible and seldom measured, a lower yield hard to put down to salt alone, and the damage not yet significant enough to make it urgent; it would take more dry summers like 2018 (Beauchampet, 2022, p. 216). Nearly all interviewees did not see halophytes as part of the answer, for lack of markets, the soils' intolerance of salt and the hand work they take (p. 221). In Zeeland most farmers still grow the common salt-sensitive crops (van den Burg et al., 2024, p. 6), and on the island the response a source shows is giving up a sensitive crop, sown onions (Kaandorp et al., 2022, p. 31), not taking up a new one. The shift the island's farmers do show is to a crop they already grow, from onions to cereals, which the source puts down to drought (Raat et al., 2026, p. 49); the island grows proportionally fewer potatoes and vegetables, mainly onions, and more cereals, which tolerate salt better, than Goeree-Overflakkee, which is connected to the main water system and so can take in fresh water (p. 34, which names no data source or year). Many of the interviewees across the provinces see research on the salt tolerance of cash crops, especially of cultivars already on the market, as contributing to resilience to salt (Beauchampet, 2022, p. 221). Years, as farmers come to see the damage over dry summers: a delay.",
+        "description": "The more of the current crops' harvest salt takes, the more a new crop that copes with salt is worth against them, so the more farmers grow it, but only past a threshold: Dutch farmers in salinised areas mostly hold back from saline agriculture unless salt severely hits their production (Deolu-Ajayi et al., 2024, p. 57). In interviews across the salinisation-prone provinces, Zeeland among them, salt in a field was largely invisible and seldom measured, a lower yield hard to put down to salt alone, and the damage not yet significant enough to make it urgent; it would take more dry summers like 2018 (Beauchampet, 2022, p. 216). Nearly all interviewees did not see halophytes as part of the answer, for lack of markets, the soils' intolerance of salt and the hand work they take (p. 221). In Zeeland most farmers still grow the common salt-sensitive crops (van den Burg et al., 2024, p. 6), and on the island the response a source shows is giving up a sensitive crop, sown onions (Kaandorp et al., 2022, p. 31), not taking up a new one. The shift the island's farmers do show is to a crop they already grow, from onions to cereals, which the source puts down to drought (Raat et al., 2026, p. 49); the island grows proportionally fewer potatoes and vegetables, mainly onions, and more cereals, which tolerate salt better, than Goeree-Overflakkee, which is connected to the main water system and so can take in fresh water (p. 34, which names no data source or year). Many of the interviewees across the provinces see research on the salt tolerance of cash crops, especially of cultivars already on the market, as contributing to resilience to salt (Beauchampet, 2022, p. 221). Years, as farmers come to see the damage over dry summers: a delay.",
         "sets link": "E to T",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description. Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what salt takes.",
+        "simplification": "Folds Relative attractiveness of new crops, which gathered the drivers of this decision: each driver now points at Adoption of new crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description. Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what salt takes.",
         "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nRaat, K., van Aalderen, N., & Krajenbrink, H. (2026). Laag Nederland 2050: Een verkenning naar een klimaat- en waterrobuuste inrichting voor Schouwen-Duiveland (KWR 2026.037). KWR Water Research Institute. https://api2.kwrwater.nl/uploads/KWR%202026.037%20Laag%20Nederland%202050.%20Een%20verkenning%20naar%20een%20klimaat-%20en%20waterrobuuste%20inrichting%20voor%20Schouwen-Duiveland.pdf",
         "sourced": "yes",
         "connection type": "+"
@@ -3158,7 +3158,7 @@
         "sets link": "S to T",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
+        "simplification": "Folds Relative attractiveness of new crops, which gathered the drivers of this decision: each driver now points at Adoption of new crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
         "sources": "Magrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nMeynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16",
         "sourced": "yes",
         "connection type": "+"
@@ -3262,7 +3262,7 @@
         "sets scope": "Cross-domain",
         "hypothesis": "no",
         "simplification": "Counts every new crop as one, while the sources on this link show only quinoa, which most Dutch growers sell under contract to one buyer outside Zeeland: for a new crop no plant outside Zeeland takes, the link carries nothing. That weakens it without turning its sign, and no loop runs through it, Processing of new crops elsewhere being a Constant.",
-        "ask actors": "Buyers and processors of the island's crops, through DCC or Living Lab: How processors set the price they pay for new salt-tolerant crops, and whether a second buyer or a plant nearer the island raises it",
+        "ask actors": "Buyers and processors of the island's crops, through DCC or Living Lab: How processors set the price they pay for new crops, and whether a second buyer or a plant nearer the island raises it",
         "sources": "DutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983\nGreenFood50. (n.d.). The specialist in quinoa ingredients [Home page and About us]. Retrieved November 7, 2026, from https://www.greenfood50.com/",
         "sourced": "yes",
         "connection type": "+"
@@ -4156,7 +4156,7 @@
         "sets link": "Within T",
         "sets scope": "Within domain",
         "hypothesis": "no",
-        "simplification": "Folds Harvest of new crops to process, the volume of new crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere, and before it Attractiveness of processing new crops locally: the harvest is now the step in words between the hectares (or the growers elsewhere) and the capacity they draw. It was an auxiliary no actor decides, with one link out; both steps into it are + and its link out is +, so each folded link is + and keeps the delay of building the chain. R7 runs Adoption of new salt-tolerant crops (+, delay) Local processing capacity for new crops (+) Net price for new crops after transport (+) Adoption: reinforcing as before, on the same mechanism, volume within reach drawing a chain nearby that cuts transport; every other loop through the harvest runs through this link too and keeps its sign. The harvest within reach counts every new crop as one volume, although its crops go to separate chains: quinoa to buyers such as GreenFood50 (DutchNews.nl, 2026), samphire to a Zeeland trader in sea vegetables (FreshPlaza, 2018); read per crop, the loops run the same way, and what this leaves out is that the volume a chain needs is reached crop by crop; summed, the link overstates how soon several small crops together make a plant worthwhile.",
+        "simplification": "Folds Harvest of new crops to process, the volume of new crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere, and before it Attractiveness of processing new crops locally: the harvest is now the step in words between the hectares (or the growers elsewhere) and the capacity they draw. It was an auxiliary no actor decides, with one link out; both steps into it are + and its link out is +, so each folded link is + and keeps the delay of building the chain. R7 runs Adoption of new crops (+, delay) Local processing capacity for new crops (+) Net price for new crops after transport (+) Adoption: reinforcing as before, on the same mechanism, volume within reach drawing a chain nearby that cuts transport; every other loop through the harvest runs through this link too and keeps its sign. The harvest within reach counts every new crop as one volume, although its crops go to separate chains: quinoa to buyers such as GreenFood50 (DutchNews.nl, 2026), samphire to a Zeeland trader in sea vegetables (FreshPlaza, 2018); read per crop, the loops run the same way, and what this leaves out is that the volume a chain needs is reached crop by crop; summed, the link overstates how soon several small crops together make a plant worthwhile.",
         "sources": "van Loo, R. (2023). Quinoa: A new protein source. In S. Pyett, W. Jenkins, B. van Mierlo, L. M. Trindade, D. Welch, & H. van Zanten (Eds.), Our future proteins: A diversity of perspectives (pp. 74–81). VU University Press. https://vuuniversitypress.com/p/uploads/OurFutureProteinsOA.pdf\nBogers, R., van Loenen, E., Hoogenboom, M., Mensink, E., & Vos, R. (2025). Where to grow protein-rich crops? A land use suitability analysis in Zeeland [Student report, Wageningen University, for HZ University of Applied Sciences].\nMagrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nMeynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nten Dam, R., Vellinga, P., & Negacz, K. (2023). From experiment to market development: A case study of prospects and value chain of saline agriculture in Terschelling, the Netherlands. NJAS: Impact in Agricultural and Life Sciences, 95(1), 2211541. https://doi.org/10.1080/27685241.2023.2211541\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16\nDe Vriend, E. (2024a, October 12). Toekomst van voedsel in Zeeland: Wat eten we morgen? Stal & Akker. https://sterke-erven.nl/artikel/528976-toekomst-van-voedsel-in-zeeland-wat-eten-we-morgen/\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983\nFreshPlaza. (2018, June 22). Elenbaas invests in new salty Zeeland productions in greenhouses. https://www.freshplaza.com/north-america/article/2196870/elenbaas-invests-in-new-salty-zeeland-productions-in-greenhouses/",
         "sourced": "yes",
         "connection type": "+"
@@ -4177,7 +4177,7 @@
         "sets link": "S to T",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
-        "simplification": "Folds Harvest of new crops to process, the volume of new crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere, and before it Attractiveness of processing new crops locally: the harvest is now the step in words between the growers elsewhere and the capacity they draw. Both steps are +, so the link is + and keeps the delay of building the chain; no loop runs through it, since Growers of new crops elsewhere is a constant. What it adds to Local processing capacity for new crops is the off-island part of the volume within reach, which the link from Adoption of new salt-tolerant crops adds the island's part to; counted as one volume over crops, although quinoa and samphire go to separate chains (DutchNews.nl, 2026; FreshPlaza, 2018). It also treats the growers of new crops off the island as fixed, while GreenFood50 has its quinoa grown close to its processing facilities, to cut transport (GreenFood50, n.d.), so a plant on or near the island could also draw growers from nearby off the island. That response would close a loop of two links, from Local processing capacity for new crops back to Growers of new crops elsewhere and through this link back to the capacity, with no minus sign, reinforcing beside R7, so leaving it out changes no drawn loop's polarity or mechanism; what it leaves out is how much of a nearby plant's harvest would come from growers off the island rather than the island's own.",
+        "simplification": "Folds Harvest of new crops to process, the volume of new crops harvested in a year within reach of a processor or trader on or near the island, from the island's growers and from growers elsewhere, and before it Attractiveness of processing new crops locally: the harvest is now the step in words between the growers elsewhere and the capacity they draw. Both steps are +, so the link is + and keeps the delay of building the chain; no loop runs through it, since Growers of new crops elsewhere is a constant. What it adds to Local processing capacity for new crops is the off-island part of the volume within reach, which the link from Adoption of new crops adds the island's part to; counted as one volume over crops, although quinoa and samphire go to separate chains (DutchNews.nl, 2026; FreshPlaza, 2018). It also treats the growers of new crops off the island as fixed, while GreenFood50 has its quinoa grown close to its processing facilities, to cut transport (GreenFood50, n.d.), so a plant on or near the island could also draw growers from nearby off the island. That response would close a loop of two links, from Local processing capacity for new crops back to Growers of new crops elsewhere and through this link back to the capacity, with no minus sign, reinforcing beside R7, so leaving it out changes no drawn loop's polarity or mechanism; what it leaves out is how much of a nearby plant's harvest would come from growers off the island rather than the island's own.",
         "sources": "GreenFood50. (n.d.). The specialist in quinoa ingredients [Home page and About us]. Retrieved November 7, 2026, from https://www.greenfood50.com/\nDutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983\nMagrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nMeynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nten Dam, R., Vellinga, P., & Negacz, K. (2023). From experiment to market development: A case study of prospects and value chain of saline agriculture in Terschelling, the Netherlands. NJAS: Impact in Agricultural and Life Sciences, 95(1), 2211541. https://doi.org/10.1080/27685241.2023.2211541\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16\nDe Vriend, E. (2024a, October 12). Toekomst van voedsel in Zeeland: Wat eten we morgen? Stal & Akker. https://sterke-erven.nl/artikel/528976-toekomst-van-voedsel-in-zeeland-wat-eten-we-morgen/\nFreshPlaza. (2018, June 22). Elenbaas invests in new salty Zeeland productions in greenhouses. https://www.freshplaza.com/north-america/article/2196870/elenbaas-invests-in-new-salty-zeeland-productions-in-greenhouses/",
         "sourced": "yes",
         "connection type": "+"
@@ -5074,7 +5074,7 @@
       "_id": "loop-B2",
       "attributes": {
         "label": "B2 Salt losses move fields to new crops",
-        "description": "The more harvest salt takes, the more a new salt-tolerant crop is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches: that farmers hold back until salt severely hits their production rests on sources, what sets each farmer's threshold, through their crops, margins, buyers and bank, is a hypothesis for the group model building session. On the island no source read shows B2 at work: the shift its farmers show is from onions to cereals, a crop they already grow and no new one, which the source puts down to drought (Raat et al., 2026, p. 49). With B1 and B3 it is a way out of the same salt: switching keeps the land arable, B3 is arable farming ending. It drives new crops."
+        "description": "The more harvest salt takes, the more a new crop that copes with salt is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches: that farmers hold back until salt severely hits their production rests on sources, what sets each farmer's threshold, through their crops, margins, buyers and bank, is a hypothesis for the group model building session. On the island no source read shows B2 at work: the shift its farmers show is from onions to cereals, a crop they already grow and no new one, which the source puts down to drought (Raat et al., 2026, p. 49). With B1 and B3 it is a way out of the same salt: switching keeps the land arable, B3 is arable farming ending. It drives new crops."
       },
       "connections": [
         "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
@@ -5235,7 +5235,7 @@
       "_id": "loop-R6",
       "attributes": {
         "label": "R6 Falling land value cuts the credit to switch",
-        "description": "When farmland loses value, the same mortgage is more debt against the farm's assets, so banks see more risk and lend less. The farm has less to invest and moves fewer fields to new salt-tolerant crops, more of its conventional harvest stays exposed to salt, income falls and the land loses more value. It runs for farms that own their land. Dutch arable farms' solvency was generally high, 81% in 2018, owing to rising land values (van der Meulen et al., 2020, p. 21), against the 30% Dutch banks in general require (fi-compass, 2020, p. 26), so on many island farms a fall in land value may cut credit little. It shows an unintended consequence of the banks' response in B9: a bank limits its lending to protect itself, and farms that get less credit adapt less, which lowers the collateral further. It holds back new crops where land loses value and supports them where land keeps it."
+        "description": "When farmland loses value, the same mortgage is more debt against the farm's assets, so banks see more risk and lend less. The farm has less to invest and moves fewer fields to new crops, more of its conventional harvest stays exposed to salt, income falls and the land loses more value. It runs for farms that own their land. Dutch arable farms' solvency was generally high, 81% in 2018, owing to rising land values (van der Meulen et al., 2020, p. 21), against the 30% Dutch banks in general require (fi-compass, 2020, p. 26), so on many island farms a fall in land value may cut credit little. It shows an unintended consequence of the banks' response in B9: a bank limits its lending to protect itself, and farms that get less credit adapt less, which lowers the collateral further. It holds back new crops where land loses value and supports them where land keeps it."
       },
       "connections": [
         "conn-agricultural-land-value--mortgage-debt-financial-leverage",
@@ -5265,7 +5265,7 @@
       "_id": "loop-B10",
       "attributes": {
         "label": "B10 Switching gives up margin",
-        "description": "Moving a field to a new salt-tolerant crop gives up the current crop's margin, most on fresh land where the current crops still do well. Income and land value fall, leverage and the bank's risk rise, credit falls and the farm has less to invest, so fewer fields move. It seeks the share of new crops that a farm's income and credit can carry. It shares its chain with R6, where the switch saves harvest instead; a sign cannot say which pulls harder, so that is a question for the group. It holds back new crops."
+        "description": "Moving a field to a new crop gives up the current crop's margin, most on fresh land where the current crops still do well. Income and land value fall, leverage and the bank's risk rise, credit falls and the farm has less to invest, so fewer fields move. It seeks the share of new crops that a farm's income and credit can carry. It shares its chain with R6, where the switch saves harvest instead; a sign cannot say which pulls harder, so that is a question for the group. It holds back new crops."
       },
       "connections": [
         "conn-agricultural-land-value--mortgage-debt-financial-leverage",
@@ -5283,7 +5283,7 @@
       "_id": "loop-R7",
       "attributes": {
         "label": "R7 Growers draw a plant, and a plant draws growers",
-        "description": "More hectares under new salt-tolerant crops give more harvest within reach of a plant, which makes a local plant more worthwhile to buyers and processors. A plant nearby cuts transport, farmers keep more of the price, the crop is worth more and more farmers grow it. Run backwards, few hectares leave no reason for a plant and transport keeps the price low. It drives new crops once enough is grown and holds them back while too little is. Where a new crop is sold under contract to one buyer, as Dutch quinoa is in interviews published in 2022, that buyer purchases a pre-agreed amount and no other buyer competes (de Wit et al., 2022, pp. 266, 268), which means a nearby plant draws more growers only as fast as the demand that buyer supplies grows."
+        "description": "More hectares under new crops give more harvest within reach of a plant, which makes a local plant more worthwhile to buyers and processors. A plant nearby cuts transport, farmers keep more of the price, the crop is worth more and more farmers grow it. Run backwards, few hectares leave no reason for a plant and transport keeps the price low. It drives new crops once enough is grown and holds them back while too little is. Where a new crop is sold under contract to one buyer, as Dutch quinoa is in interviews published in 2022, that buyer purchases a pre-agreed amount and no other buyer competes (de Wit et al., 2022, pp. 266, 268), which means a nearby plant draws more growers only as fast as the demand that buyer supplies grows."
       },
       "connections": [
         "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
@@ -7525,7 +7525,7 @@
     {
       "_id": "map-group-C1",
       "name": "03 C1 Salt builds, and farms respond in steps",
-      "description": "*Root zone salinity* damages the *Soil structure*, so less rain soaks in to refill the lens: the *Rainwater lens thickness in the low polders* falls over years and *Root zone salinity* rises further (R1). As *Harvest lost to salt* rises, farmers respond in different ways, and at different speeds: *Adoption of salt-tolerant varieties* of their current crops, with the same machines and storage (B1); *Adoption of new salt-tolerant crops*, new to the island's rotations, after a delay (B2); and, over decades, less *Arable land in the polders* where arable farming stops paying, which raises the *Water board's plans to raise ditch levels*, since its levels follow the land's use (B3). The first two lower the *Harvest lost to salt* and leave the salt in the soil; only the third lowers the salt. The order is a reading of the delays and costs, and the links from *Harvest lost to salt* to *Adoption of salt-tolerant varieties* and from *Agricultural land value* to *Arable land in the polders* are hypotheses for the group model building session.",
+      "description": "*Root zone salinity* damages the *Soil structure*, so less rain soaks in to refill the lens: the *Rainwater lens thickness in the low polders* falls over years and *Root zone salinity* rises further (R1). As *Harvest lost to salt* rises, farmers respond in different ways, and at different speeds: *Adoption of salt-tolerant varieties* of their current crops, with the same machines and storage (B1); *Adoption of new crops*, new to the island's rotations, after a delay (B2); and, over decades, less *Arable land in the polders* where arable farming stops paying, which raises the *Water board's plans to raise ditch levels*, since its levels follow the land's use (B3). The first two lower the *Harvest lost to salt* and leave the salt in the soil; only the third lowers the salt. The order is a reading of the delays and costs, and the links from *Harvest lost to salt* to *Adoption of salt-tolerant varieties* and from *Agricultural land value* to *Arable land in the polders* are hypotheses for the group model building session.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -8870,7 +8870,7 @@
     {
       "_id": "map-group-C6",
       "name": "08 C6 Salt losses raise the wish to switch and cut the means",
-      "description": "A higher *Harvest lost to salt* makes *Adoption of new salt-tolerant crops* more worthwhile, after a delay (B2). The same losses lower *Farm income* and *Agricultural land value*, so *Financial leverage* and the *Banks' risk assessment of farm loans* rise, *Bank credit to farms* falls and the *Farmers' capacity to invest* in the switch falls (R6); less credit keeps leverage down (B9). A field that moves saves harvest from salt (R6) and raises the *Margin given up on high-margin crops* (B10). The level of salt in the soil of the farmland decides whether switching is economically beneficial or not.",
+      "description": "A higher *Harvest lost to salt* makes *Adoption of new crops* more worthwhile, after a delay (B2). The same losses lower *Farm income* and *Agricultural land value*, so *Financial leverage* and the *Banks' risk assessment of farm loans* rise, *Bank credit to farms* falls and the *Farmers' capacity to invest* in the switch falls (R6); less credit keeps leverage down (B9). A field that moves saves harvest from salt (R6) and raises the *Margin given up on high-margin crops* (B10). The level of salt in the soil of the farmland decides whether switching is economically beneficial or not.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -9026,7 +9026,7 @@
         },
         {
           "_id": "edge-group-C6-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops",
-          "curvature": -0.251,
+          "curvature": -0.28,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops"
         },
@@ -9107,7 +9107,7 @@
     {
       "_id": "map-group-C7",
       "name": "09 C7 New crops stay stuck or take off",
-      "description": "With few hectares of *Adoption of new salt-tolerant crops* there is little harvest for a plant to process, no *Local processing capacity for new crops*, and transport keeps the *Net price for new crops after transport* low (R7). Every field that starts being used for new crops raises the *Margin given up on high-margin crops*, which *Farm income* and *Bank credit to farms* must carry (B10): adoption stays low. With enough hectares a local plant becomes worthwhile, the net price rises and more farmers grow the crop. How many hectares that takes is unclear from the literature and thus not clear in the CLD.",
+      "description": "With few hectares of *Adoption of new crops* there is little harvest for a plant to process, no *Local processing capacity for new crops*, and transport keeps the *Net price for new crops after transport* low (R7). Every field that starts being used for new crops raises the *Margin given up on high-margin crops*, which *Farm income* and *Bank credit to farms* must carry (B10): adoption stays low. With enough hectares a local plant becomes worthwhile, the net price rises and more farmers grow the crop. How many hectares that takes is unclear from the literature and thus not clear in the CLD.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -10193,7 +10193,7 @@
     {
       "_id": "map-loop-B2",
       "name": "15 B2 Salt losses move fields to new crops",
-      "description": "The more harvest salt takes, the more a new salt-tolerant crop is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches: that farmers hold back until salt severely hits their production rests on sources, what sets each farmer's threshold, through their crops, margins, buyers and bank, is a hypothesis for the group model building session. On the island no source read shows B2 at work: the shift its farmers show is from onions to cereals, a crop they already grow and no new one, which the source puts down to drought (Raat et al., 2026, p. 49). With B1 and B3 it is a way out of the same salt: switching keeps the land arable, B3 is arable farming ending. It drives new crops.",
+      "description": "The more harvest salt takes, the more a new crop that copes with salt is worth against the current crops, so after the dry summers that bring the damage to notice, and perhaps only past a threshold, more farmers grow it. A field moved no longer has a conventional harvest for salt to take, so the harvest lost falls; the salt stays in the soil. It seeks the loss at which a farmer switches: that farmers hold back until salt severely hits their production rests on sources, what sets each farmer's threshold, through their crops, margins, buyers and bank, is a hypothesis for the group model building session. On the island no source read shows B2 at work: the shift its farmers show is from onions to cereals, a crop they already grow and no new one, which the source puts down to drought (Raat et al., 2026, p. 49). With B1 and B3 it is a way out of the same salt: switching keeps the land arable, B3 is arable farming ending. It drives new crops.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -10216,8 +10216,8 @@
         {
           "_id": "node-loop-B2-fields-moved-to-new-salt-tolerant-crops",
           "position": {
-            "x": 295,
-            "y": -181
+            "x": 289,
+            "y": -184
           },
           "pinned": true,
           "style": {},
@@ -10226,7 +10226,7 @@
         {
           "_id": "node-loop-B2-salt-tolerant-crop-adoption",
           "position": {
-            "x": 31,
+            "x": 33,
             "y": 246
           },
           "pinned": true,
@@ -10237,13 +10237,13 @@
       "connections": [
         {
           "_id": "edge-loop-B2-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
-          "curvature": 0.277,
+          "curvature": 0.274,
           "style": {},
           "connection": "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops"
         },
         {
           "_id": "edge-loop-B2-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
-          "curvature": 0.942,
+          "curvature": 0.96,
           "style": {},
           "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
         },
@@ -11504,7 +11504,7 @@
     {
       "_id": "map-loop-R6",
       "name": "26 R6 Falling land value cuts the credit to switch",
-      "description": "When farmland loses value, the same mortgage is more debt against the farm's assets, so banks see more risk and lend less. The farm has less to invest and moves fewer fields to new salt-tolerant crops, more of its conventional harvest stays exposed to salt, income falls and the land loses more value. It runs for farms that own their land. Dutch arable farms' solvency was generally high, 81% in 2018, owing to rising land values (van der Meulen et al., 2020, p. 21), against the 30% Dutch banks in general require (fi-compass, 2020, p. 26), so on many island farms a fall in land value may cut credit little. It shows an unintended consequence of the banks' response in B9: a bank limits its lending to protect itself, and farms that get less credit adapt less, which lowers the collateral further. It holds back new crops where land loses value and supports them where land keeps it.",
+      "description": "When farmland loses value, the same mortgage is more debt against the farm's assets, so banks see more risk and lend less. The farm has less to invest and moves fewer fields to new crops, more of its conventional harvest stays exposed to salt, income falls and the land loses more value. It runs for farms that own their land. Dutch arable farms' solvency was generally high, 81% in 2018, owing to rising land values (van der Meulen et al., 2020, p. 21), against the 30% Dutch banks in general require (fi-compass, 2020, p. 26), so on many island farms a fall in land value may cut credit little. It shows an unintended consequence of the banks' response in B9: a bank limits its lending to protect itself, and farms that get less credit adapt less, which lowers the collateral further. It holds back new crops where land loses value and supports them where land keeps it.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -11517,8 +11517,8 @@
         {
           "_id": "node-loop-R6-agricultural-land-value",
           "position": {
-            "x": -313,
-            "y": -487
+            "x": -308,
+            "y": -479
           },
           "pinned": true,
           "style": {},
@@ -11527,8 +11527,8 @@
         {
           "_id": "node-loop-R6-mortgage-debt-financial-leverage",
           "position": {
-            "x": 300,
-            "y": -490
+            "x": 301,
+            "y": -481
           },
           "pinned": true,
           "style": {},
@@ -11537,8 +11537,8 @@
         {
           "_id": "node-loop-R6-banks-risk-assessment",
           "position": {
-            "x": 780,
-            "y": -271
+            "x": 774,
+            "y": -261
           },
           "pinned": true,
           "style": {},
@@ -11547,8 +11547,8 @@
         {
           "_id": "node-loop-R6-bank-credit-to-farms",
           "position": {
-            "x": 898,
-            "y": 99
+            "x": 879,
+            "y": 110
           },
           "pinned": true,
           "style": {},
@@ -11557,8 +11557,8 @@
         {
           "_id": "node-loop-R6-farmers-capacity-to-invest",
           "position": {
-            "x": 570,
-            "y": 406
+            "x": 539,
+            "y": 408
           },
           "pinned": true,
           "style": {},
@@ -11567,8 +11567,8 @@
         {
           "_id": "node-loop-R6-fields-moved-to-new-salt-tolerant-crops",
           "position": {
-            "x": -11,
-            "y": 518
+            "x": -46,
+            "y": 509
           },
           "pinned": true,
           "style": {},
@@ -11577,8 +11577,8 @@
         {
           "_id": "node-loop-R6-salt-tolerant-crop-adoption",
           "position": {
-            "x": -588,
-            "y": 397
+            "x": -590,
+            "y": 385
           },
           "pinned": true,
           "style": {},
@@ -11587,8 +11587,8 @@
         {
           "_id": "node-loop-R6-harvest-lost-to-salt",
           "position": {
-            "x": -903,
-            "y": 83
+            "x": -885,
+            "y": 92
           },
           "pinned": true,
           "style": {},
@@ -11597,8 +11597,8 @@
         {
           "_id": "node-loop-R6-farm-revenue",
           "position": {
-            "x": -781,
-            "y": -270
+            "x": -772,
+            "y": -262
           },
           "pinned": true,
           "style": {},
@@ -11614,49 +11614,49 @@
         },
         {
           "_id": "edge-loop-R6-mortgage-debt-financial-leverage--banks-risk-assessment",
-          "curvature": 0.134,
+          "curvature": 0.137,
           "style": {},
           "connection": "conn-mortgage-debt-financial-leverage--banks-risk-assessment"
         },
         {
           "_id": "edge-loop-R6-banks-risk-assessment--bank-credit-to-farms",
-          "curvature": 0.311,
+          "curvature": 0.32,
           "style": {},
           "connection": "conn-banks-risk-assessment--bank-credit-to-farms"
         },
         {
           "_id": "edge-loop-R6-bank-credit-to-farms--farmers-capacity-to-invest",
-          "curvature": 0.201,
+          "curvature": 0.195,
           "style": {},
           "connection": "conn-bank-credit-to-farms--farmers-capacity-to-invest"
         },
         {
           "_id": "edge-loop-R6-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
-          "curvature": 0.106,
+          "curvature": 0.105,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops"
         },
         {
           "_id": "edge-loop-R6-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
-          "curvature": 0.107,
+          "curvature": 0.105,
           "style": {},
           "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
         },
         {
           "_id": "edge-loop-R6-salt-tolerant-crop-adoption--harvest-lost-to-salt",
-          "curvature": 0.209,
+          "curvature": 0.198,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--harvest-lost-to-salt"
         },
         {
           "_id": "edge-loop-R6-harvest-lost-to-salt--farm-revenue",
-          "curvature": 0.294,
+          "curvature": 0.301,
           "style": {},
           "connection": "conn-harvest-lost-to-salt--farm-revenue"
         },
         {
           "_id": "edge-loop-R6-farm-revenue--agricultural-land-value",
-          "curvature": 0.132,
+          "curvature": 0.135,
           "style": {},
           "connection": "conn-farm-revenue--agricultural-land-value"
         }
@@ -11754,7 +11754,7 @@
     {
       "_id": "map-loop-B10",
       "name": "28 B10 Switching gives up margin",
-      "description": "Moving a field to a new salt-tolerant crop gives up the current crop's margin, most on fresh land where the current crops still do well. Income and land value fall, leverage and the bank's risk rise, credit falls and the farm has less to invest, so fewer fields move. It seeks the share of new crops that a farm's income and credit can carry. It shares its chain with R6, where the switch saves harvest instead; a sign cannot say which pulls harder, so that is a question for the group. It holds back new crops.",
+      "description": "Moving a field to a new crop gives up the current crop's margin, most on fresh land where the current crops still do well. Income and land value fall, leverage and the bank's risk rise, credit falls and the farm has less to invest, so fewer fields move. It seeks the share of new crops that a farm's income and credit can carry. It shares its chain with R6, where the switch saves harvest instead; a sign cannot say which pulls harder, so that is a question for the group. It holds back new crops.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -11777,8 +11777,8 @@
         {
           "_id": "node-loop-B10-mortgage-debt-financial-leverage",
           "position": {
-            "x": 298,
-            "y": -490
+            "x": 302,
+            "y": -489
           },
           "pinned": true,
           "style": {},
@@ -11787,8 +11787,8 @@
         {
           "_id": "node-loop-B10-banks-risk-assessment",
           "position": {
-            "x": 777,
-            "y": -274
+            "x": 783,
+            "y": -268
           },
           "pinned": true,
           "style": {},
@@ -11797,8 +11797,8 @@
         {
           "_id": "node-loop-B10-bank-credit-to-farms",
           "position": {
-            "x": 900,
-            "y": 92
+            "x": 896,
+            "y": 106
           },
           "pinned": true,
           "style": {},
@@ -11807,8 +11807,8 @@
         {
           "_id": "node-loop-B10-farmers-capacity-to-invest",
           "position": {
-            "x": 582,
-            "y": 400
+            "x": 559,
+            "y": 410
           },
           "pinned": true,
           "style": {},
@@ -11817,7 +11817,7 @@
         {
           "_id": "node-loop-B10-fields-moved-to-new-salt-tolerant-crops",
           "position": {
-            "x": 7,
+            "x": -28,
             "y": 518
           },
           "pinned": true,
@@ -11827,8 +11827,8 @@
         {
           "_id": "node-loop-B10-salt-tolerant-crop-adoption",
           "position": {
-            "x": -571,
-            "y": 405
+            "x": -581,
+            "y": 400
           },
           "pinned": true,
           "style": {},
@@ -11837,8 +11837,8 @@
         {
           "_id": "node-loop-B10-margin-given-up-on-high-margin-crops",
           "position": {
-            "x": -901,
-            "y": 89
+            "x": -897,
+            "y": 101
           },
           "pinned": true,
           "style": {},
@@ -11847,8 +11847,8 @@
         {
           "_id": "node-loop-B10-farm-revenue",
           "position": {
-            "x": -779,
-            "y": -272
+            "x": -783,
+            "y": -268
           },
           "pinned": true,
           "style": {},
@@ -11864,49 +11864,49 @@
         },
         {
           "_id": "edge-loop-B10-mortgage-debt-financial-leverage--banks-risk-assessment",
-          "curvature": 0.132,
+          "curvature": 0.135,
           "style": {},
           "connection": "conn-mortgage-debt-financial-leverage--banks-risk-assessment"
         },
         {
           "_id": "edge-loop-B10-banks-risk-assessment--bank-credit-to-farms",
-          "curvature": 0.305,
+          "curvature": 0.315,
           "style": {},
           "connection": "conn-banks-risk-assessment--bank-credit-to-farms"
         },
         {
           "_id": "edge-loop-B10-bank-credit-to-farms--farmers-capacity-to-invest",
-          "curvature": 0.203,
+          "curvature": 0.198,
           "style": {},
           "connection": "conn-bank-credit-to-farms--farmers-capacity-to-invest"
         },
         {
           "_id": "edge-loop-B10-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
-          "curvature": 0.106,
+          "curvature": 0.105,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops"
         },
         {
           "_id": "edge-loop-B10-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
-          "curvature": 0.105,
+          "curvature": 0.103,
           "style": {},
           "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
         },
         {
           "_id": "edge-loop-B10-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops",
-          "curvature": 0.208,
+          "curvature": 0.196,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--margin-given-up-on-high-margin-crops"
         },
         {
           "_id": "edge-loop-B10-margin-given-up-on-high-margin-crops--farm-revenue",
-          "curvature": 0.301,
+          "curvature": 0.311,
           "style": {},
           "connection": "conn-margin-given-up-on-high-margin-crops--farm-revenue"
         },
         {
           "_id": "edge-loop-B10-farm-revenue--agricultural-land-value",
-          "curvature": 0.131,
+          "curvature": 0.133,
           "style": {},
           "connection": "conn-farm-revenue--agricultural-land-value"
         }
@@ -11927,7 +11927,7 @@
     {
       "_id": "map-loop-R7",
       "name": "29 R7 Growers draw a plant, and a plant draws growers",
-      "description": "More hectares under new salt-tolerant crops give more harvest within reach of a plant, which makes a local plant more worthwhile to buyers and processors. A plant nearby cuts transport, farmers keep more of the price, the crop is worth more and more farmers grow it. Run backwards, few hectares leave no reason for a plant and transport keeps the price low. It drives new crops once enough is grown and holds them back while too little is. Where a new crop is sold under contract to one buyer, as Dutch quinoa is in interviews published in 2022, that buyer purchases a pre-agreed amount and no other buyer competes (de Wit et al., 2022, pp. 266, 268), which means a nearby plant draws more growers only as fast as the demand that buyer supplies grows.",
+      "description": "More hectares under new crops give more harvest within reach of a plant, which makes a local plant more worthwhile to buyers and processors. A plant nearby cuts transport, farmers keep more of the price, the crop is worth more and more farmers grow it. Run backwards, few hectares leave no reason for a plant and transport keeps the price low. It drives new crops once enough is grown and holds them back while too little is. Where a new crop is sold under contract to one buyer, as Dutch quinoa is in interviews published in 2022, that buyer purchases a pre-agreed amount and no other buyer competes (de Wit et al., 2022, pp. 266, 268), which means a nearby plant draws more growers only as fast as the demand that buyer supplies grows.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -11940,8 +11940,8 @@
         {
           "_id": "node-loop-R7-salt-tolerant-crop-adoption",
           "position": {
-            "x": -276,
-            "y": -156
+            "x": -286,
+            "y": -162
           },
           "pinned": true,
           "style": {},
@@ -11950,8 +11950,8 @@
         {
           "_id": "node-loop-R7-processing-capacity-for-alternative-crops",
           "position": {
-            "x": 223,
-            "y": -181
+            "x": 224,
+            "y": -191
           },
           "pinned": true,
           "style": {},
@@ -11960,8 +11960,8 @@
         {
           "_id": "node-loop-R7-net-price-for-new-crops",
           "position": {
-            "x": 276,
-            "y": 156
+            "x": 277,
+            "y": 168
           },
           "pinned": true,
           "style": {},
@@ -11970,7 +11970,7 @@
         {
           "_id": "node-loop-R7-fields-moved-to-new-salt-tolerant-crops",
           "position": {
-            "x": -223,
+            "x": -249,
             "y": 181
           },
           "pinned": true,
@@ -11981,25 +11981,25 @@
       "connections": [
         {
           "_id": "edge-loop-R7-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops",
-          "curvature": 0.207,
+          "curvature": 0.204,
           "style": {},
           "connection": "conn-salt-tolerant-crop-adoption--processing-capacity-for-alternative-crops"
         },
         {
           "_id": "edge-loop-R7-processing-capacity-for-alternative-crops--net-price-for-new-crops",
-          "curvature": 0.811,
+          "curvature": 0.842,
           "style": {},
           "connection": "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops"
         },
         {
           "_id": "edge-loop-R7-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops",
-          "curvature": 0.207,
+          "curvature": 0.21,
           "style": {},
           "connection": "conn-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops"
         },
         {
           "_id": "edge-loop-R7-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
-          "curvature": 0.811,
+          "curvature": 0.789,
           "style": {},
           "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
         }
@@ -12548,7 +12548,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#background { width: 5418; height: 3913; }\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 340; height: 52; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#background { width: 5418; height: 3913; }\n"
     },
     {
       "_id": "pers-actors",
@@ -12558,7 +12558,7 @@
     {
       "_id": "pers-loops",
       "name": "Loops",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 340; height: 52; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
     }
   ]
 }

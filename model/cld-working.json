@@ -4026,35 +4026,6 @@
   ],
   "changes": [
     {
-      "change": "The new crops widened to crops new to the island's rotations that cope with salt or with little fresh water, the ids kept",
-      "argument": "Salt and scarcity are one system, two sides (the vision): counting only salt-tolerant crops as new crops kept every loop's sign yet left a farm moving to a crop for its low water need out of the switching story (cld-simplifying.md, 'Does it keep the vision's picture?'). Switching to salt- or drought-resistant crop types is among the drought adaptation measures listed for farmers in the south-west Netherlands (van Duinen et al., 2015a, p. 1085), and quinoa, in the model for its salt tolerance, copes with little water too (van Loo, 2023, pp. 75, 77). No link or sign changes: B2, R6, B10 and R7 keep their polarity and their mechanism, each running crop by crop, as Adoption of new crops' simplification states.",
-      "items": [
-        "B10",
-        "B2",
-        "C1",
-        "C6",
-        "C7",
-        "R6",
-        "R7",
-        "buyer-contracts-for-new-crops",
-        "dependence-on-high-margin-salt-sensitive-crops -> demand-for-deep-polder-drainage",
-        "fields-moved-to-new-salt-tolerant-crops",
-        "growers-of-new-crops-elsewhere -> processing-capacity-for-alternative-crops",
-        "harvest-lost-to-salt -> fields-moved-to-new-salt-tolerant-crops",
-        "knowledge-of-new-crops",
-        "margin-given-up-on-high-margin-crops",
-        "market-demand-for-alternative-crops",
-        "net-price-for-new-crops",
-        "net-price-for-new-crops -> fields-moved-to-new-salt-tolerant-crops",
-        "processing-capacity-for-alternative-crops",
-        "processing-of-new-crops-elsewhere",
-        "processing-of-new-crops-elsewhere -> net-price-for-new-crops",
-        "salt-tolerant-crop-adoption",
-        "salt-tolerant-crop-adoption -> harvest-lost-to-salt",
-        "salt-tolerant-crop-adoption -> processing-capacity-for-alternative-crops"
-      ]
-    },
-    {
       "change": "Crop water shortfall → Fields moved to new crops (+, delay), a hypothesis for the group model building session",
       "argument": "Whether a farm short of water moves fields to a new crop that copes with little water is a claim about why the farmers decide, and no source read shows it on the island: a hypothesis (cld-model.md, 'A behavioural claim may be a hypothesis'). The delay is the one the parallel decision carries (Harvest lost to salt → Fields moved to new crops; Crop water shortfall → Dependence on high-margin salt-sensitive crops).",
       "items": [

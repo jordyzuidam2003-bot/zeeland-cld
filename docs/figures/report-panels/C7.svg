@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1428 -1269 2790 2421" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1435 -1269 2804 2421" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
 <defs>
 <marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
 <marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
 <marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
 </defs>
-<rect x="-1428" y="-1269" width="2790" height="2421" fill="white"/>
+<rect x="-1435" y="-1269" width="2804" height="2421" fill="white"/>
 <g class="links">
 <g class="link" data-from="salt-tolerant-crop-adoption" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="true" data-curvature="-0.522">
-<path class="link-path" d="M 434.3 -341.6 Q 489.9 -401.8 494.9 -483.6 Q 499.9 -565.4 452.1 -632.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<path class="link-path" d="M 416.8 -324.6 Q 483.7 -383.2 493.8 -471.5 Q 504.0 -559.8 452.1 -632.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="477.0" y="-588.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M 470.5 -477.1 L 518.4 -474.2 M 471.4 -493.1 L 519.3 -490.1" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 470.5 -477.1 L 518.4 -474.2 M 471.4 -493.1 L 519.3 -490.1" stroke="#444444" stroke-width="5" fill="none"/>
+<path class="delay-cut" d="M 469.1 -466.3 L 516.8 -460.8 M 470.9 -482.2 L 518.6 -476.7" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 469.1 -466.3 L 516.8 -460.8 M 470.9 -482.2 L 518.6 -476.7" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="processing-capacity-for-alternative-crops" data-to="net-price-for-new-crops" data-sign="+" data-delay="false" data-curvature="-0.345">
 <path class="link-path" d="M 350.2 -718.0 Q 189.2 -817.1 0.0 -817.1 Q -189.2 -817.1 -350.2 -718.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -21,8 +21,8 @@
 <text class="sign" x="-464.2" y="-381.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="fields-moved-to-new-salt-tolerant-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0">
-<path class="link-path" d="M -225.6 -298.6 Q -0.0 -298.6 225.6 -298.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="175.6" y="-298.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -225.6 -298.6 Q -7.4 -298.6 210.8 -298.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="160.8" y="-298.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="agricultural-land-value" data-to="mortgage-debt-financial-leverage" data-sign="-" data-delay="false" data-curvature="0.166">
 <path class="link-path" d="M 701.2 586.7 Q 436.5 703.2 147.6 690.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -45,7 +45,7 @@
 <text class="sign" x="-584.8" y="-279.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="salt-tolerant-crop-adoption" data-to="margin-given-up-on-high-margin-crops" data-sign="+" data-delay="false" data-curvature="0.183">
-<path class="link-path" d="M 535.6 -287.8 Q 779.0 -251.1 975.9 -103.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<path class="link-path" d="M 550.4 -285.4 Q 785.4 -246.3 975.9 -103.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="935.2" y="-132.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="margin-given-up-on-high-margin-crops" data-to="farm-revenue" data-sign="-" data-delay="false" data-curvature="0.192">
@@ -63,12 +63,11 @@
 <g class="element" data-id="fields-moved-to-new-salt-tolerant-crops" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
 <rect x="-535.6" y="-341.6" width="310.0" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
 <text x="-380.6" y="-307.1" text-anchor="middle">Fields moved to new</text>
-<text x="-380.6" y="-273.1" text-anchor="middle">salt-tolerant crops</text>
+<text x="-380.6" y="-273.1" text-anchor="middle">crops</text>
 </g>
 <g class="element" data-id="salt-tolerant-crop-adoption" data-domain="Technological" data-type="Stock" data-adaptive="true">
-<rect x="225.6" y="-341.6" width="310.0" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
-<text x="380.6" y="-307.1" text-anchor="middle">Adoption of new</text>
-<text x="380.6" y="-273.1" text-anchor="middle">salt-tolerant crops</text>
+<rect x="210.8" y="-324.6" width="339.6" height="52.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<text x="380.6" y="-290.1" text-anchor="middle">Adoption of new crops</text>
 </g>
 <g class="element" data-id="margin-given-up-on-high-margin-crops" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
 <rect x="881.6" y="-103.2" width="295.1" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>

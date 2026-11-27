@@ -419,8 +419,9 @@ Then `actors`, each:
 - `relations`: each `{"to": <actor id>, "kind": …, "description": …, "sources": […]}`, read
   as "this actor *kind* that one", so the actor holding it influences `to` by it; the kinds are
   the ones a source names, listed in `build.py`: authority over, finances, buys from, advises,
-  represents, works with. A cooperation runs both ways, so "works with" is recorded once, on the
-  actor that leads it (the municipality for the Living Lab Schouwen-Duiveland), and the table
+  represents, works with, owns. A cooperation runs both ways, so "works with" is recorded once, on the
+  actor that leads it (the Living Lab Schouwen-Duiveland for its projects' partners, the municipality
+  for the Living Lab), and the table
   shows the other side as influenced by it (Jordy; rejected: on both actors, which draws every
   such pair twice). A cooperation whose sources name no leader stays in each actor's
   `influence` and is not drawn (Jordy), such as the knowledge programme on salt that LVVN, IenW,

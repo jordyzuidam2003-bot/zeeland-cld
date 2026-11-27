@@ -21,7 +21,7 @@
       "sector": "Arable Farming",
       "interest": "Enough fresh water when their crops need it, above all as they germinate, to lower their farms' risk or to raise production. Many want to invest in measures that hold fresh water, once the technique, its costs, its risks and its gain in yield are known for the island's conditions; while supply from outside and measures on the island are both still debated, they hold back.",
       "influence": "Decide what the island's farmland grows and how each field is drained, irrigated and supplied with water: in 2025, 200 farms registered on the island grew arable crops on 9,094 ha, of the 13,752 ha of farmland of its 240 farms. A measure in the subsoil can serve several neighbouring farms, which collect and tap its water together; the study of the island's farms explored measures for clusters of one to three. As owners of farmland they decide whether the water board may charge them more for a water supply project: at least half must respond and two thirds of those be in favour. On a draft water level plan they can send views within six weeks and, if affected, appeal at the court for six weeks after the decision. Score 5: they decide the adaptation itself.",
-      "affected": "Their farms depend wholly on rain and on the fresh groundwater under the dunes, the creek ridges and the thin rainwater lenses of the low polders: the island has no link to the main freshwater system, so in dry periods no water can be brought in and no ditches flushed, its shallow groundwater and ditches carry much salt, and the farms run short of water; drought in the growing season, subsidence and sea level rise make this worse, and the dry years 2018–2020 showed the farms vulnerable. Delphy's report on the island's freshwater demand (2023) finds farming on the island impossible without more fresh water; in 2026 a potato grower at Nieuwerkerk lost a fifth of his harvest to drought, had stopped growing onions for want of fresh water, and found ditch water at times nearly as salt as the Oosterschelde. Adapting is uncertain for them: the measures that store fresh water in the subsoil are not yet fitted to the island's conditions, their costs, risks and gain in yield unknown, so many farmers find the investment too risky to make alone.",
+      "affected": "Their farms depend wholly on rain and on the fresh groundwater under the dunes, the creek ridges and the thin rainwater lenses of the low polders: the island has no link to the main freshwater system, so in dry periods no water can be brought in and no ditches flushed, its shallow groundwater and ditches carry much salt, and the farms run short of water; drought in the growing season, subsidence and sea level rise make this worse, and the dry years 2018–2020 showed the farms vulnerable. Delphy's report on the island's freshwater demand (2023) finds farming on the island impossible without more fresh water; in 2026 a potato grower at Nieuwerkerk lost a fifth of his harvest to drought, had stopped growing onions for want of fresh water, and found ditch water at times nearly as salt as the Oosterschelde. Adapting is uncertain for them: the measures that store fresh water in the subsoil are not yet fitted to the island's conditions, their costs, risks and gain in yield unknown, so many farmers find the investment too risky to make alone. Delphy's study of the island (2023) finds the cost of innovative solutions lying mainly with the farmer while they are not yet proven, so investing carries a risk, and the farms with little room to invest; no relation on the map shares that risk with them.",
       "influence score": 5,
       "client": "no",
       "relations": [
@@ -33,6 +33,17 @@
             "waterschapswet-2026"
           ],
           "curvature": 0.3
+        },
+        {
+          "to": "buyers-and-processors",
+          "kind": "owns",
+          "description": "The sugar beet growers own Royal Cosun, a cooperative of 8,000 sugar beet growers whose business groups include Cosun Beet Company, which processes all sugar beet grown in the Netherlands, and the potato processor Aviko.",
+          "sources": [
+            "cosun-royal-cosun",
+            "cosun-history",
+            "kamerstuk-2025-cosun"
+          ],
+          "curvature": -0.2
         }
       ],
       "sources": [
@@ -42,7 +53,8 @@
         "omroep-zeeland-2026-aardappeloogst",
         "wiepkema-2023-zoetwaterbehoefte",
         "waterschapswet-2026",
-        "scheldestromen-2025-nota-peilbesluiten"
+        "scheldestromen-2025-nota-peilbesluiten",
+        "delphy-2023-dorsd"
       ],
       "x": 2048,
       "y": 1200
@@ -142,67 +154,13 @@
           "curvature": 0.3
         },
         {
-          "to": "waterschap-scheldestromen",
+          "to": "living-lab-schouwen-duiveland",
           "kind": "works with",
-          "description": "Leads the Living Lab Schouwen-Duiveland, in which the water board is a core partner.",
+          "description": "Leads the Living Lab Schouwen-Duiveland, a network with a light organisation, its project leader one of the municipality's staff.",
           "sources": [
             "living-lab-partners"
           ],
-          "curvature": -0.24
-        },
-        {
-          "to": "provincie-zeeland",
-          "kind": "works with",
-          "description": "Leads the Living Lab Schouwen-Duiveland, in which the province is a core partner.",
-          "sources": [
-            "living-lab-partners"
-          ],
-          "curvature": -0.11
-        },
-        {
-          "to": "zlto",
-          "kind": "works with",
-          "description": "Leads the Living Lab Schouwen-Duiveland, in which ZLTO and its island branch, Agrarisch Schouwen-Duiveland, are core partners.",
-          "sources": [
-            "living-lab-partners"
-          ],
-          "curvature": 0.2
-        },
-        {
-          "to": "deltares",
-          "kind": "works with",
-          "description": "Carried out with Deltares the Living Lab's project Samenwerken voor Zoet Water (2020–2022), on storing fresh water.",
-          "sources": [
-            "living-lab-samenwerken-voor-zoet-water"
-          ],
-          "curvature": 0.24
-        },
-        {
-          "to": "kwr",
-          "kind": "works with",
-          "description": "Carried out with KWR the Living Lab's project Samenwerken voor Zoet Water (2020–2022), on storing fresh water.",
-          "sources": [
-            "living-lab-samenwerken-voor-zoet-water"
-          ],
-          "curvature": -0.14
-        },
-        {
-          "to": "acacia-water",
-          "kind": "works with",
-          "description": "Carried out with Acacia Water the Living Lab's project Samenwerken voor Zoet Water (2020–2022), on storing fresh water.",
-          "sources": [
-            "living-lab-samenwerken-voor-zoet-water"
-          ],
-          "curvature": -0.11
-        },
-        {
-          "to": "delphy",
-          "kind": "works with",
-          "description": "Leads the Living Lab Schouwen-Duiveland, in which Delphy is among the partners.",
-          "sources": [
-            "living-lab-partners"
-          ],
-          "curvature": -0.1
+          "curvature": 0.1
         }
       ],
       "sources": [
@@ -805,7 +763,7 @@
       "client": "no",
       "relations": [
         {
-          "to": "zlto",
+          "to": "agrarisch-schouwen-duiveland",
           "kind": "advises",
           "description": "Carried out the study of the island's freshwater demand (2023) for ZLTO's island branch, Agrarisch Schouwen-Duiveland, which commissioned and paid for it: farming on the island becomes impossible without more fresh water, so a supply of fresh water stays needed and more rain must be stored; the branch draws from it that a supply of fresh water is unavoidable.",
           "sources": [
@@ -879,6 +837,175 @@
           ]
         }
       ]
+    },
+    {
+      "id": "living-lab-schouwen-duiveland",
+      "label": "Living Lab Schouwen-Duiveland",
+      "scale": "outside",
+      "type": "Knowledge institution",
+      "level": "Local / Provincial / Regional",
+      "sector": "Knowledge institution",
+      "interest": "Parties innovating together, so that the island's move to climate-adaptive, self-sufficient (ground)water management goes faster; in the municipality's new programme (2025), a farm sector that stays diverse and resilient.",
+      "influence": "A network with a light organisation, led by the municipality, which started officially in January 2019 as a place for parties who want to innovate together; the water board, the province and Agrarisch Schouwen-Duiveland are among its initiators and core partners, Delphy and the trial farm Rusthoeve among its partners. Its project Samenwerken voor Zoet Water (2020–2022), carried out with Deltares, KWR, Acacia Water, Agrarisch Schouwen-Duiveland and the municipality and paid by the EU's rural development fund, the province and the municipality, made quickscans for 13 farmers and feasibility studies for groups of farms; a later project demonstrated and monitored new drainage on three of the island's farms, at Kerkwerve and Dreischor (2022–2024), half paid by the EU. The municipality budgets €1.1 million for its new programme (2025). Score 3: its projects shape the farms' storage decisions directly, through advice and demonstrations on their land, binding none.",
+      "affected": "It was set up for the question: the island's move to a climate-adaptive water system can only happen with the municipality, the water board, farmers, advisers, experts and knowledge institutions working together, and the Living Lab was set up to help speed it up.",
+      "influence score": 3,
+      "client": "no",
+      "relations": [
+        {
+          "to": "waterschap-scheldestromen",
+          "kind": "works with",
+          "description": "The water board is one of its initiators and core partners.",
+          "sources": [
+            "living-lab-partners"
+          ],
+          "curvature": -0.24
+        },
+        {
+          "to": "provincie-zeeland",
+          "kind": "works with",
+          "description": "The province is one of its initiators and core partners.",
+          "sources": [
+            "living-lab-partners"
+          ],
+          "curvature": -0.11
+        },
+        {
+          "to": "agrarisch-schouwen-duiveland",
+          "kind": "works with",
+          "description": "Agrarisch Schouwen-Duiveland, ZLTO's island branch, is one of its initiators and core partners, and carried out its project Samenwerken voor Zoet Water (2020–2022) with Deltares, KWR, Acacia Water and the municipality.",
+          "sources": [
+            "living-lab-partners",
+            "living-lab-samenwerken-voor-zoet-water"
+          ],
+          "curvature": 0.2
+        },
+        {
+          "to": "deltares",
+          "kind": "works with",
+          "description": "Its project Samenwerken voor Zoet Water (2020–2022), on storing fresh water, was carried out with Deltares; Deltares also demonstrated and monitored new drainage on three of the island's farms in its later project (2022–2024).",
+          "sources": [
+            "living-lab-samenwerken-voor-zoet-water",
+            "living-lab-innovatieve-drainage"
+          ],
+          "curvature": 0.24
+        },
+        {
+          "to": "kwr",
+          "kind": "works with",
+          "description": "Its project Samenwerken voor Zoet Water (2020–2022), on storing fresh water, was carried out with KWR.",
+          "sources": [
+            "living-lab-samenwerken-voor-zoet-water"
+          ],
+          "curvature": -0.14
+        },
+        {
+          "to": "acacia-water",
+          "kind": "works with",
+          "description": "Its project Samenwerken voor Zoet Water (2020–2022), on storing fresh water, was carried out with Acacia Water; Acacia Water also demonstrated and monitored new drainage on three of the island's farms in its later project (2022–2024).",
+          "sources": [
+            "living-lab-samenwerken-voor-zoet-water",
+            "living-lab-innovatieve-drainage"
+          ],
+          "curvature": -0.11
+        },
+        {
+          "to": "delphy",
+          "kind": "works with",
+          "description": "Delphy is among its partners, and demonstrated and monitored new drainage on three of the island's farms in its project of 2022–2024.",
+          "sources": [
+            "living-lab-partners",
+            "living-lab-innovatieve-drainage"
+          ],
+          "curvature": -0.1
+        },
+        {
+          "to": "rusthoeve",
+          "kind": "works with",
+          "description": "Its project of 2022–2024 demonstrated and monitored new drainage on three of the island's farms with the trial farm Rusthoeve, among Acacia Water, Deltares, Delphy and the municipality.",
+          "sources": [
+            "living-lab-innovatieve-drainage",
+            "living-lab-partners"
+          ],
+          "curvature": 0.15
+        },
+        {
+          "to": "arable-farmers",
+          "kind": "works with",
+          "description": "Its project of 2022–2024 laid double drainage on two test plots at Kerkwerve and anti-salinisation drainage on one at Dreischor, on three of the island's farms, each with a board about the project on site.",
+          "sources": [
+            "living-lab-2023-dreischor",
+            "living-lab-innovatieve-drainage"
+          ],
+          "curvature": 0.15
+        }
+      ],
+      "sources": [
+        "kaandorp-2022",
+        "living-lab-partners",
+        "living-lab-samenwerken-voor-zoet-water",
+        "living-lab-innovatieve-drainage",
+        "living-lab-2023-dreischor",
+        "living-lab-2025-programma"
+      ],
+      "x": 1350,
+      "y": 1330
+    },
+    {
+      "id": "rusthoeve",
+      "label": "Trial farm Rusthoeve",
+      "scale": "outside",
+      "type": "Knowledge institution",
+      "level": "Local / Provincial / Regional",
+      "sector": "Arable Farming",
+      "interest": "",
+      "influence": "A trial farm at Colijnsplaat, on Noord-Beveland, which has experimented with crops for biobased raw materials since 2014 and laid out irrigation trials since 2018, in 2022 with Delphy on water for potatoes; with Delphy it forms the onion knowledge centre UIKC, recognised as a knowledge institution by RVO, and its trial data were among those Delphy's study of the island's freshwater demand (2023) drew on. On the island it took part, with Acacia Water, Deltares, Delphy and the municipality, in the Living Lab's demonstration of new drainage on three farms (2022–2024), and it is among the Living Lab's partners. Score 2: its trials inform the island's farmers and their advisers; no source read shows it advising farms on the island.",
+      "affected": "It took part in drainage demonstrations on three of the island's farms (2022–2024), the EU paying half of their cost. No source read shows how salinisation on the island, or its farms' adaptation, affects it otherwise.",
+      "influence score": 2,
+      "client": "no",
+      "no relations": "Its sources name none it holds toward an actor on this map: the Living Lab's project page names it among the parties of the drainage demonstration, which is the Living Lab's relation, and Delphy's study (2023) names its onion knowledge centre with Delphy without a leader, so that cooperation stays in its influence.",
+      "sources": [
+        "delphy-2023-dorsd",
+        "living-lab-innovatieve-drainage",
+        "living-lab-partners"
+      ],
+      "x": 1050,
+      "y": 1480
+    },
+    {
+      "id": "agrarisch-schouwen-duiveland",
+      "label": "Agrarisch Schouwen-Duiveland",
+      "scale": "inside",
+      "type": "Farmers' organisation",
+      "level": "Local / Provincial / Regional",
+      "sector": "Farmers organisation",
+      "interest": "More fresh water for the island's farms: in its words (2023), catching more rain and a collective system that brings fresh water to the island, a pipeline from the Haringvliet shared among the farmers.",
+      "influence": "ZLTO's branch on the island, one of its 44 local branches that speak for their members to the municipality and the water board, with a board of its own and an arable farmer as its chair. It commissioned and paid for Delphy's study of the island's freshwater demand (2023), whose interim results were presented to its members, and after it called a pipeline from the Haringvliet the one solution (2023); its chair looks for more fresh water with the municipality and the province (2026). It is one of the Living Lab's initiators and core partners, and carried out its project Samenwerken voor Zoet Water (2020–2022) with Deltares, KWR, Acacia Water and the municipality. Score 3: it shapes the municipality's, the province's and the water board's decisions directly by representing the island's farmers, binding none.",
+      "affected": "Its members' farms bear the losses: the study it commissioned finds farming on the island impossible without more fresh water (2023), and in 2026 its chair, a potato grower, lost a fifth of his harvest to drought and had stopped growing onions for want of fresh water.",
+      "influence score": 3,
+      "client": "no",
+      "relations": [
+        {
+          "to": "arable-farmers",
+          "kind": "represents",
+          "description": "Speaks for its members among the island's farmers to the municipality and the province, looking with them for more fresh water, and asks for a supply route to the island.",
+          "sources": [
+            "zlto-afdelingen",
+            "omroep-zeeland-2026-aardappeloogst",
+            "omroep-zeeland-2023-zoet-water"
+          ],
+          "curvature": 0.15
+        }
+      ],
+      "sources": [
+        "zlto-afdelingen",
+        "delphy-2023-dorsd",
+        "omroep-zeeland-2023-zoet-water",
+        "omroep-zeeland-2026-aardappeloogst",
+        "living-lab-partners",
+        "living-lab-samenwerken-voor-zoet-water"
+      ],
+      "x": 2250,
+      "y": 1560
     }
   ]
 }

@@ -28,7 +28,7 @@ import draw_cld
 
 FONT_SIZE = draw_cld.FONT_SIZE
 REL_WIDTH = 4
-# Each kind its colour and dash: colour alone cannot tell six kinds apart (at most three hues pass
+# Each kind its colour and dash: colour alone cannot tell seven kinds apart (at most three hues pass
 # the dataviz skill's validator for marks that can sit side by side), so a kind sharing a hue with
 # another differs from it by its dash. Orange, violet and aqua pass all pairs; aqua is under 3:1 on
 # white, relieved by the legend and the table. Ink for authority, which none of them is mistaken for.
@@ -39,6 +39,7 @@ KIND = {
     "advises": ("#6250D6", "14 9"),
     "represents": ("#6250D6", ""),
     "works with": ("#1BAF7A", "14 9"),
+    "owns": ("#333333", "14 9"),
 }
 LEVELS = ["Global", "International", "National", "Local / Provincial / Regional"]  # top to bottom
 MARGIN = 40
@@ -138,7 +139,7 @@ BANDS_NOTE = ["The level at which an actor works, from global at the top to loca
 
 
 def legend_svg(x, y):
-    """The legend, two rows of three kinds, its first row's middle at y, then what the bands mean;
+    """The legend, rows of three kinds, its first row's middle at y, then what the bands mean;
     returns (svg, width, height)."""
     f = LEGEND_SIZE
     sw = f * 2.6
@@ -150,9 +151,10 @@ def legend_svg(x, y):
         items.append(f'<path d="M {xx:.1f} {yy:.1f} L {xx + sw - draw_cld.ARROW:.1f} {yy:.1f}" stroke="{colour}" stroke-width="{REL_WIDTH}"{dash} '
                      f'fill="none" marker-end="url(#arrow-{kind.replace(" ", "-")})"/>')
         items.append(f'<text x="{xx + sw + f * 0.4:.1f}" y="{yy:.1f}" font-size="{f}" dominant-baseline="central">{kind}</text>')
-    width, height = f * 5 + 3 * col, 2 * f * 1.5
+    rows = -(-len(KIND) // 3)
+    width, height = f * 5 + 3 * col, rows * f * 1.5
     if BANDS_NOTE:
-        top = y + f * 3.2
+        top = y + f * (rows * 1.5 + 0.2)
         items.append(f'<text x="{x:.1f}" y="{top:.1f}" font-size="{f}" font-weight="bold" dominant-baseline="central">Bands</text>')
         for i, line in enumerate(BANDS_NOTE):
             items.append(f'<text x="{x + f * 5:.1f}" y="{top + i * f * 1.5:.1f}" font-size="{f}" dominant-baseline="central">{esc(line)}</text>')
@@ -267,7 +269,7 @@ COLUMNS = [  # (name, width in characters, what it holds): the Columns sheet exp
                             "effect on the island's adaptation by 2050."),
     ("Client", 8, "yes for the project's partners."),
     ("Influences", 40, "The actors it influences, by the kind of relation: authority over, finances, buys from, advises, "
-                       "represents, works with (a cooperation recorded once, on the actor that leads it); for an "
+                       "represents, works with (a cooperation recorded once, on the actor that leads it), owns; for an "
                        "actor whose sources show it holds none, the reason."),
     ("Influenced by", 40, "The actors that influence it, by the kind of relation."),
     ("Decides in the CLD", 36, "The CLD's variables it decides."),

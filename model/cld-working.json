@@ -212,14 +212,15 @@
       "sets domain": "Technological",
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
-      "description": "The fresh water a year that the measures in place on the island's farms keep, store or collect for the growing season. They work three ways (Kaandorp et al., 2022, pp. 16–23, 53, for the island): in the low polders, controlled drainage and anti-salinisation drainage (Drains2Buffer) keep the thin rainwater lens against salt, their water staying in the field's own soil, where it cannot be pumped (pp. 33, 53), and weirs in ditches keep the lens in flat areas drained by ditches with a moderate to large drooglegging (pp. 16, 19); on the creek ridges, the dunes and where a sand layer lies under the clay, the creek-ridge infiltration system, the Freshmaker and underground storage under a clay layer infiltrate winter water to pump in summer (pp. 20–22, 38); and double drainage, a concept the study shows only in model simulations, not yet tested in practice, would collect fresh drain water into a basin to irrigate from (pp. 23, 29, 32). An adaptive practice: measures to keep more fresh water in the ground as drought and salinisation increase (p. 4). The study set out from their being not yet fitted to the island and too risky for many farms to invest in alone (pp. 4, 11), and concluded that more is possible than the farmers first thought (pp. 5, 55). A Stock: a measure, once built, lasts 15 to 30 years (pp. 17–22, 34). The farm decides a measure; infiltrating water needs the water board's permit (Waterschap Scheldestromen, 2026f, art. 4.5 lid 2), a weir the neighbours' consent, and raising a ditch's level the water board's cooperation (Kaandorp et al., 2022, pp. 26, 44–45). Whether a farm wants to store weighs storing against its other ways through a dry summer (pumping, other crops), where capacity to invest is whether it can. Stored water pays back over years, which suits a farm that owns its land more than one on a short lease; and where stored water spreads under the neighbours, one farm pays and others gain. Whether either holds a farm back is a question for the group model building session. Beside the farms, Acacia Water, Deltares and Delphy shape it: in a demonstration with the trial farm Rusthoeve and the municipality, double drainage was laid on two test plots at Kerkwerve and anti-salinisation drainage on one at Dreischor, on three of the island's farms (Living Lab Schouwen-Duiveland, 2023), the EU's rural development programme paying half of the cost and the knowledge parties a part of it (Living Lab Schouwen-Duiveland, n.d.-b). Measures of these kinds are among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013: drains set deeper or regulated, a deep drain for salt, a storage basin, extraction from creek ridges and injection into a deep aquifer.",
+      "description": "The fresh water a year that the measures in place on the island's farms keep, store or collect for the growing season. They work three ways (Kaandorp et al., 2022, pp. 16–23, 53, for the island): in the low polders, controlled drainage and anti-salinisation drainage (Drains2Buffer) keep the thin rainwater lens against salt, their water staying in the field's own soil, where it cannot be pumped (pp. 33, 53), and weirs in ditches keep the lens in flat areas drained by ditches with a moderate to large drooglegging (pp. 16, 19); on the creek ridges, the dunes and where a sand layer lies under the clay, the creek-ridge infiltration system, the Freshmaker and underground storage under a clay layer infiltrate winter water to pump in summer (pp. 20–22, 38); and double drainage, a concept the study shows only in model simulations, not yet tested in practice, would collect fresh drain water into a basin to irrigate from (pp. 23, 29, 32). An adaptive practice: measures to keep more fresh water in the ground as drought and salinisation increase (p. 4). The study set out from their being not yet fitted to the island and too risky for many farms to invest in alone (pp. 4, 11), and concluded that more is possible than the farmers first thought (pp. 5, 55). A Stock: a measure, once built, lasts 15 to 30 years (pp. 17–22, 34). The farm decides a measure; infiltrating water needs the water board's permit (Waterschap Scheldestromen, 2026f, art. 4.5 lid 2), a weir the neighbours' consent, and raising a ditch's level the water board's cooperation (Kaandorp et al., 2022, pp. 26, 44–45). Whether a farm wants to store weighs storing against its other ways through a dry summer (pumping, other crops), where capacity to invest is whether it can. Stored water pays back over years, which suits a farm that owns its land more than one on a short lease; and where stored water spreads under the neighbours, one farm pays and others gain. Whether either holds a farm back is a question for the group model building session. No measure is enough alone: on the island the current freshwater measures and innovations supply too little, are no one-size-fits-all solution, fit only a limited part of it, have not yet proven their value and are costly (Delphy, 2023, p. 50), each is custom work, and not every farmer takes them up (p. 40). Beside the farms, Acacia Water, Deltares and Delphy shape it: in a demonstration with the trial farm Rusthoeve and the municipality, double drainage was laid on two test plots at Kerkwerve and anti-salinisation drainage on one at Dreischor, on three of the island's farms (Living Lab Schouwen-Duiveland, 2023), the EU's rural development programme paying half of the cost and the knowledge parties a part of it (Living Lab Schouwen-Duiveland, n.d.-b). Measures of these kinds are among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013: drains set deeper or regulated, a deep drain for salt, a storage basin, extraction from creek ridges and injection into a deep aquifer.",
       "simplification": "Counts the measures of three kinds as one quantity, the fresh water a year they keep, store or collect, each kind reaching crops by its own link out: to Winter rain drained away, to Freshwater lens thickness under creek ridges and dunes, and to Freshwater availability for crops. It assumes every kind responds alike to the drivers into this element. Every loop through it keeps its polarity and its mechanism; what it leaves out is that a rise in one kind need not be a rise in another, so the semi-quantitative analysis cannot vary them apart.",
       "sources": [
         "kaandorp-2022",
         "living-lab-2023-dreischor",
         "living-lab-innovatieve-drainage",
         "van-duinen-2015-coping",
-        "scheldestromen-2026-waterschapsverordening"
+        "scheldestromen-2026-waterschapsverordening",
+        "delphy-2023-dorsd"
       ],
       "actors": [
         "eu",
@@ -304,7 +305,7 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Consumer demand and offtake contracts for novel salt-tolerant or alternative crops (e.g. protein crops). For quinoa the market is small: in Flanders it is sold under contract at €1,100 a tonne on a local market still very limited, with no forecast yet of how demand for local quinoa will grow (Cloet et al., 2024, pp. 2–3); in the Netherlands a supermarket has its own-brand quinoa from 12 Dutch farmers under a three-year contract, Dutch quinoa costing more to buy in than imported (DutchNews.nl, 2026). For protein crops, Rabobank expects demand for plant-based meat and dairy alternatives to grow towards 2030, while yields lower than in other countries and a quality that often misses food standards, which keeps the price low, limit what they earn (Polman et al., 2026, p. 8). For halophytes such as samphire and sea aster, grown in a few places in Zeeland, the food market is small and easily saturated, and offers farmers no lasting market potential (van den Burg et al., 2024, p. 6). Measured in Flanders, the Netherlands and Zeeland, none on the island.",
+      "description": "Consumer demand for novel salt-tolerant or alternative crops (e.g. protein crops); the contracts buyers offer for them are drawn apart (Buyer contracts for new crops). For quinoa the market is small: in Flanders it is sold under contract at €1,100 a tonne on a local market still very limited, with no forecast yet of how demand for local quinoa will grow (Cloet et al., 2024, pp. 2–3); in the Netherlands a supermarket has its own-brand quinoa from 12 Dutch farmers under a three-year contract, Dutch quinoa costing more to buy in than imported (DutchNews.nl, 2026). For protein crops, Rabobank expects demand for plant-based meat and dairy alternatives to grow towards 2030, while yields lower than in other countries and a quality that often misses food standards, which keeps the price low, limit what they earn (Polman et al., 2026, p. 8). For halophytes such as samphire and sea aster, grown in a few places in Zeeland, the food market is small and easily saturated, and offers farmers no lasting market potential (van den Burg et al., 2024, p. 6). Measured in Flanders, the Netherlands and Zeeland, none on the island. Whether demand, rather than local processing capacity, is what holds the new crops back on the island is open: no source read weighs the two. A Constant: the island's farmers cannot move it.",
       "sources": [
         "cloet-2024",
         "dutchnews-2026",
@@ -342,9 +343,10 @@
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Hectares the island's farmers move from their current crops to new salt-tolerant crops in a year. The farmers decide it field by field: they move a field where they find a new crop worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them. Switching to salt- or drought-resistant crop types is among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013. What a switch costs falls in the year a field moves (Fields moved to new salt-tolerant crops → Farmers' capacity to invest); the field then stays under its new crop in Adoption of new salt-tolerant crops. An Auxiliary: a year's flow into that Stock.",
+      "description": "Hectares the island's farmers move from their current crops to new salt-tolerant crops in a year. The farmers decide it field by field: they move a field where they find a new crop worthwhile against their current crops; capacity to invest is whether they can, and dependence on the current crops what holds them. Switching to salt- or drought-resistant crop types is among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013. What a switch costs falls in the year a field moves (Fields moved to new salt-tolerant crops → Farmers' capacity to invest); the field then stays under its new crop in Adoption of new salt-tolerant crops. A new crop does not lift the water limit: fibre crops and legumes such as hemp, flax and field beans earn about what winter wheat does or less, sown in spring they carry more risk, and flax needs water too, so the crops for a biobased economy will shift the crop plans a little but solve no water problem (Delphy, 2023, p. 48). An Auxiliary: a year's flow into that Stock.",
       "sources": [
-        "van-duinen-2015-coping"
+        "van-duinen-2015-coping",
+        "delphy-2023-dorsd"
       ],
       "x": 850,
       "y": 600,
@@ -398,33 +400,20 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "The part of a farm loan's interest that differs between clients: the specific premium a bank charges above the base rate, which banks also call the credit or risk premium. The loan's risk sets it for a large part: the interest holds, per client, the bank's expected losses on the loan and the cost of the capital the banks' solvency rules require it to hold against it, both higher the higher the credit risk the bank sees; on a loan with a fixed rate it may be part of one total rate (ABN AMRO, n.d.-a, n.d.-b). No source read gives the premiums banks charge the island's farms.",
+      "description": "The part of a farm loan's interest that differs between clients: the specific premium a bank charges above the base rate, which banks also call the credit or risk premium. The loan's risk sets it for a large part: the interest holds, per client, the bank's expected losses on the loan and the cost of the capital the banks' solvency rules require it to hold against it, both higher the higher the credit risk the bank sees; on a loan with a fixed rate it may be part of one total rate (ABN AMRO, n.d.-a, n.d.-b). The capital those rules require is set by the EU: its banking package puts the final Basel III standards into EU law, the new rules of the Capital Requirements Regulation applying from 1 January 2025 (European Commission, Directorate-General for Financial Stability, Financial Services and Capital Markets Union, 2023), and by the EBA's estimate EU banks' minimum Tier 1 capital requirement is 9.0% higher at full implementation in 2028 (European Banking Authority, 2023); no source read shows climate or salinisation risk in the risk weights of farm loans. No source read gives the premiums banks charge the island's farms.",
       "sources": [
         "abn-amro-nd-kosten-krediet",
-        "abn-amro-nd-uitleg-rente"
-      ],
-      "x": 1692,
-      "y": -277,
-      "actor": "banks"
-    },
-    {
-      "id": "basel-iv-capital-requirements",
-      "label": "Basel IV capital requirements",
-      "element type": "Constant",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ2",
-      "description": "The capital European rules require banks to hold against their loans, by the final Basel III standards. The EU sets them: its banking package (CRR III/CRD VI) puts the final elements of the Basel III standards of 2017 into EU law, the new rules of the Capital Requirements Regulation applying from 1 January 2025, those of the directive once each member state has transposed them; its output floor sets a lower limit on the capital requirements banks calculate with their own models; and environmental, social and governance risks enter the banks' handling of risk, the supervisors' annual review and disclosure (European Commission, Directorate-General for Financial Stability, Financial Services and Capital Markets Union, 2023). By the EBA's estimate, EU banks' minimum Tier 1 capital requirement is 9.0% higher at full implementation in 2028, the output floor and credit risk contributing most (European Banking Authority, 2023). No source read shows climate or salinisation risk in the risk weights of farm loans.",
-      "sources": [
+        "abn-amro-nd-uitleg-rente",
         "ec-2023-banking-package",
         "eba-2023-basel-iii-monitoring"
       ],
+      "x": 1692,
+      "y": -277,
+      "actor": "banks",
+      "simplification": "Folds Basel IV capital requirements, a Constant on no loop with one link, into this description: the capital rules are context for the premium, set by the EU outside the CLD's scale, and no actor in the CLD can move them. No loop runs through it, no actor inside the scale loses a decision and no delay is lost; what it leaves out is a change in the rules as a driver the semi-quantitative analysis could vary.",
       "actors": [
         "eu"
-      ],
-      "x": 1525,
-      "y": -108
+      ]
     },
     {
       "id": "dependence-on-high-margin-salt-sensitive-crops",
@@ -528,20 +517,21 @@
     },
     {
       "id": "zlto-call-for-supply-route",
-      "label": "ZLTO's call for a supply route",
+      "label": "Agrarisch Schouwen-Duiveland's call for a supply route",
       "element type": "Auxiliary",
       "adaptive practice": false,
       "sets domain": "Social",
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
-      "description": "How firmly ZLTO asks the province, the municipality and the water board for a route bringing fresh water to the island. After a report on the island's freshwater demand, its branch there called a pipeline from the Haringvliet the one solution (Omroep Zeeland, 2023), and its chair looks for more fresh water with the municipality and the province (van Essen, 2026). An Auxiliary: it follows the shortfall farmers report and holds nothing of its own.",
+      "description": "How firmly Agrarisch Schouwen-Duiveland, ZLTO's branch on the island, asks the province, the municipality and the water board for a route bringing fresh water to the island. After a report on the island's freshwater demand, which it commissioned and paid for (Delphy, 2023, p. 1), it called a pipeline from the Haringvliet the one solution (Omroep Zeeland, 2023), and its chair, an arable farmer, looks for more fresh water with the municipality and the province (van Essen, 2026). An Auxiliary: it follows the shortfall farmers report and holds nothing of its own.",
       "sources": [
         "omroep-zeeland-2023-zoet-water",
-        "omroep-zeeland-2026-aardappeloogst"
+        "omroep-zeeland-2026-aardappeloogst",
+        "delphy-2023-dorsd"
       ],
       "x": -1214,
       "y": 1185,
-      "actor": "zlto"
+      "actor": "agrarisch-schouwen-duiveland"
     },
     {
       "id": "freshwater-supply-route",
@@ -990,32 +980,6 @@
       "y": -1555
     },
     {
-      "id": "expropriation-of-farmland",
-      "label": "Expropriation of farmland",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ3",
-      "description": "Hectares of the island's farmland that a public body takes in a year for a use its plan sets, with full compensation, by an order a court must confirm. The municipal council, the water board for its water tasks, the Provincial Council and the minister can each give the order (Omgevingswet, 2026, art. 11.4), and only for a use an adopted plan, a permit or a project decision allows, after a reasonable attempt to buy the land and with a start likely within three years (arts. 11.5–11.7, 11.11). On the island the State sought expropriation, in a draft decree, for a roundabout on the N59, of plots the decree does not say are farmland (Besluit rotonde N59, 2020, p. 3), and the municipal council gave an order, published in 2026 and still to be confirmed by the court, for a high-voltage station on a plan area wholly in agricultural use in 2023 (Gemeente Schouwen-Duiveland, 2026, p. 1; Braat, 2023, blad 9); no source read shows it there for water or nature, and the Province buys land for nature on a voluntary basis (Provincie Zeeland, Jaarstukken 2022, p. 4). Few cases reach a court, in the Krimpenerwaard 6 of 69 files (Kamphorst et al., 2025, pp. 10–11), since the threat mostly makes owners sell (Holtslag-Broekhof et al., 2016, section Context of the Study).",
-      "simplification": "Counts every order as the municipality's, while the municipal council, the water board, the Provincial Council and the minister can each give one (Omgevingswet, 2026, art. 11.4). Of the two orders read on the island, the municipal council gave the one for the high-voltage station (Gemeente Schouwen-Duiveland, 2026, p. 1); the one for the N59 roundabout came at the request of the Minister of Infrastructure and Water Management, under the law before the Omgevingswet, and carried out the municipality's land-use plan for the road (Besluit rotonde N59, 2020, p. 1). The CLD draws only the municipality's plans as what an order carries out (Farmland planned for other uses → Expropriation of farmland), so B14, the one named loop through it, keeps its polarity and its mechanism; what it leaves out is an order by another body for a plan of its own, which would lower trust the same way but close the loop through a plan the CLD does not draw.",
-      "sources": [
-        "omgevingswet-2026",
-        "n59-rotonde-2020",
-        "schouwen-duiveland-2026-onteigening",
-        "antea-2023-zierikzee",
-        "provincie-zeeland-jaarstukken-2022",
-        "kamphorst-2025",
-        "holtslag-broekhof-2016"
-      ],
-      "actors": [
-        "ienw"
-      ],
-      "x": 879,
-      "y": -1699,
-      "actor": "gemeente-schouwen-duiveland"
-    },
-    {
       "id": "farmers-wish-to-keep-their-land",
       "label": "Farmers' wish to keep their land",
       "element type": "Constant",
@@ -1031,49 +995,6 @@
       ],
       "x": 344,
       "y": -1108
-    },
-    {
-      "id": "farmland-changing-hands",
-      "label": "Farmland changing hands",
-      "element type": "Auxiliary",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ3",
-      "description": "Hectares of the island's farmland sold, expropriated or passed on to a new holder in a year. Supply and demand come mainly from farmers, those who need land to expand and those who shed it as they downsize or end the farm, and together they set how much land is traded, its mobility, and at what price (Silvis & Voskuilen, 2017, p. 2). Over the long term the number of Dutch farms falls by 2 to 3% a year, mainly as farms end at the change of generation, the lack of a successor and a less favourable income outlook among the reasons (p. 2). Measured nationally; no source read gives the island's land sales.",
-      "sources": [
-        "silvis-2017"
-      ],
-      "x": 484,
-      "y": -840
-    },
-    {
-      "id": "municipality-plans-for-farmland",
-      "label": "Farmland planned for other uses",
-      "element type": "Stock",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ2",
-      "description": "Hectares of the island's farmland that Gemeente Schouwen-Duiveland's land-use plan (its omgevingsplan, with the changes it drafts to it) designates for a use other than arable farming, such as nature, water storage, housing or recreation. The municipal council adopts one omgevingsplan for the whole municipality, holding the rules a balanced allocation of functions to locations needs (Omgevingswet, 2026, arts. 2.4, 4.2); on the island all land-use plans of before merged into it when the law took effect on 1 January 2024, and in some cases the municipality can change it at the request of someone whose plan does not fit it (Gemeente Schouwen-Duiveland, n.d.). How many hectares it designates for other uses, no source read gives. In the Krimpenerwaard, a municipal plan designating farmland for nature took from its preliminary draft in spring 2018 to irrevocable in October 2021, fifteen appeals against it reaching the Council of State (Kamphorst et al., 2025, p. 25). A Stock: the hectares stay designated until the council changes the plan, which takes years, and leave as the plan is carried out on them (Farmland planned for other uses → Arable land in the polders).",
-      "sources": [
-        "omgevingswet-2026",
-        "schouwen-duiveland-omgevingsplan",
-        "kamphorst-2025"
-      ],
-      "x": -512,
-      "y": -1740,
-      "actor": "gemeente-schouwen-duiveland",
-      "ask actors": [
-        {
-          "actor": "gemeente-schouwen-duiveland",
-          "for": "How many hectares of the island's farmland the omgevingsplan designates for a use other than arable farming, and which changes to it the municipality is drafting.",
-          "through": [
-            "DCC",
-            "Living Lab"
-          ]
-        }
-      ]
     },
     {
       "id": "creek-ridge-lens-thickness",
@@ -1134,6 +1055,101 @@
       ],
       "x": -382,
       "y": -21
+    },
+    {
+      "id": "salt-in-ditch-water",
+      "label": "Salt in the ditch water",
+      "element type": "Auxiliary",
+      "adaptive practice": false,
+      "sets domain": "Ecological",
+      "subsystem": "Water and soil",
+      "subquestion": "SQ1",
+      "description": "The salinity of the water in the island's ditches, the water a farm would irrigate with or infiltrate. All water on Schouwen runs through the water board's main ditches and capillaries to its two pumping stations, which pump it into the Oosterschelde and the Grevelingenmeer (Waterschap Scheldestromen, 2021b, p. 24), and in most of Duiveland the ditches catch the salt or brackish seepage from below (2021a, p. 20). In the low polders of the island's west the surface water is brackish to salt (Kaandorp et al., 2022, p. 27); in one area studied, the main ditches measured 5 to 15 mS/cm and the secondary ditches round the fields 1 to 5, the main ditches less brackish after rain, as drained rain mixes in, and in dry periods partly salted by salt surface water brought in from elsewhere (p. 42). The CLD draws salt taking fresh water away by amount, the lenses thinning, and here by quality. An Auxiliary: it follows the seepage and the rain within the season. No actor decides it: the water board reaches it through the ditch level and the seepage (Ditch level (NAP) → Saline seepage (kwel)), as it reaches the lens.",
+      "sources": [
+        "scheldestromen-2021-hor-schouwen",
+        "scheldestromen-2021-hor-duiveland",
+        "kaandorp-2022"
+      ],
+      "x": -1420,
+      "y": 360
+    },
+    {
+      "id": "water-demand-of-the-crop-mix",
+      "label": "Water demand of the crop mix",
+      "element type": "Auxiliary",
+      "adaptive practice": false,
+      "sets domain": "Ecological",
+      "subsystem": "Water and soil",
+      "subquestion": "SQ1",
+      "description": "The fresh water the island's crops need in the growing season, summed over the crop plan: what the rotation uses when it has enough water, its evapotranspiration, set by the weather and by each crop and its stage of growth (Allen et al., 1998, FAO-56, a guide to crop water use that holds wherever the crop grows). The crops that earn the most also have the greatest water need and often a limited root system (Delphy, 2023, p. 48), and for the island's farms Delphy puts the total water need at about 3.5 million m³ (p. 41). No link comes from the new crops: fibre crops and legumes may replace winter wheat, and flax needs water too (p. 48). It follows the rotation, set each year: an Auxiliary. The farmers decide the crop mix, so it has no actor of its own.",
+      "sources": [
+        "allen-1998",
+        "delphy-2023-dorsd"
+      ],
+      "x": -900,
+      "y": 1350
+    },
+    {
+      "id": "trials-and-pilots-on-the-island",
+      "label": "Trials and pilots on the island",
+      "element type": "Constant",
+      "adaptive practice": false,
+      "sets domain": "Social",
+      "subsystem": "Agricultural economy",
+      "subquestion": "SQ2",
+      "description": "The trials, pilots and demonstrations that parties beside the farmers run on the island and for its farms, each showing what a measure or a crop does under the island's conditions. The Living Lab Schouwen-Duiveland started officially in January 2019 as a place for parties who want to innovate together, to speed up the island's move to self-sufficient water management (Kaandorp et al., 2022, p. 8); its project Samenwerken voor Zoet Water (2020–2022), carried out with Deltares, KWR, Acacia Water, Agrarisch Schouwen-Duiveland and the municipality (Living Lab Schouwen-Duiveland, n.d.-a), made quickscans for 13 farmers (Kaandorp et al., 2022, p. 9), and a later one, of Acacia Water, Deltares, Delphy, the trial farm Rusthoeve, three farms and the municipality, demonstrated and monitored new drainage on the island (Living Lab Schouwen-Duiveland, n.d.-b), laid at Kerkwerve and Dreischor (Living Lab Schouwen-Duiveland, 2023). For crops, Delphy, with ZLTO and Saeftinghe Zilt, researched saline cultivation in Zeeland in 2014–2018 (Delphy, 2023, p. 49), and the trial farm Rusthoeve, at Colijnsplaat on Noord-Beveland, has experimented with crops since 2014 and laid out irrigation trials since 2018 (pp. 9, 19). A Constant: no source read shows the farms' choices moving the trials, so whether the trials answer what farmers do or ask for is a question for the group model building session.",
+      "sources": [
+        "kaandorp-2022",
+        "living-lab-samenwerken-voor-zoet-water",
+        "living-lab-innovatieve-drainage",
+        "living-lab-2023-dreischor",
+        "delphy-2023-dorsd"
+      ],
+      "actors": [
+        "living-lab-schouwen-duiveland",
+        "rusthoeve",
+        "deltares",
+        "kwr",
+        "acacia-water",
+        "delphy"
+      ],
+      "x": -50,
+      "y": 300
+    },
+    {
+      "id": "perceived-risk-of-switching",
+      "label": "Perceived risk of switching",
+      "element type": "Auxiliary",
+      "adaptive practice": false,
+      "sets domain": "Social",
+      "subsystem": "Agricultural economy",
+      "subquestion": "SQ2",
+      "description": "How much a farmer expects to lose by moving a field to a new crop, before moving it: a failed yield, no buyer, a low price, too little water, carried by the farm. It drives the decision before a switch, where Margin given up on high-margin crops is the outcome after it; Farmers' knowledge of new crops is whether a farmer knows how, this who pays when it fails. On the island, larger business risks slow innovation (Delphy, 2023, p. 6), crops grow so costly that they may not fail (p. 13), and the cost of innovative solutions lies mainly with the farmer while they are not yet proven, so investing carries a risk (p. 50). In a survey of farmers in the south-west Netherlands (2013), a higher perceived cost of drought measures lowered their adaptation and trust in their own competence raised it, both parts of how farmers appraise their ability to cope (van Duinen et al., 2015a, pp. 1089, 1091). Whether it runs through others' successes and failures is a question for the group model building session. An Auxiliary: it follows what farmers know and the contracts on offer. No actor: a perception, not a decision.",
+      "sources": [
+        "delphy-2023-dorsd",
+        "van-duinen-2015-coping"
+      ],
+      "x": 1250,
+      "y": 480
+    },
+    {
+      "id": "buyer-contracts-for-new-crops",
+      "label": "Buyer contracts for new crops",
+      "element type": "Auxiliary",
+      "adaptive practice": false,
+      "sets domain": "Social",
+      "subsystem": "Agricultural economy",
+      "subquestion": "SQ2",
+      "description": "Hectares of new salt-tolerant or alternative crops that buyers contract with the island's farmers before the season. A contract takes risk off the farmer as far as its terms go, measured for potatoes nationally: a fixed-price contract guarantees the price for the agreed quantity, a day-price or volume contract only the sale, the price risk staying with grower and buyer both (Janssens et al., 2020, pp. 11–12); the contracted part carries an offtake duty, while potatoes beyond a hectare contract's volume mostly go at the day price, with none unless agreed (p. 12); contracts let a farmer hedge against price swings (p. 14), and a grower who sells free bears a loss alone (p. 15). So a contract moves the price and the sales risk, not the yield risk. For the new crops, Dutch quinoa is grown under contract for one distributor, which buys a pre-agreed amount at a fixed price and manages supply according to demand (de Wit et al., 2022, pp. 266, 268), a supermarket buys its own-brand quinoa from 12 Dutch farmers under a three-year contract (DutchNews.nl, 2026), and for saline crops in Zeeland the market is hard, with little room for new growers (Delphy, 2023, p. 49). No source read shows a buyer contracting a new crop on the island. An Auxiliary: set season by season.",
+      "sources": [
+        "janssens-2020",
+        "de-wit-2022",
+        "dutchnews-2026",
+        "delphy-2023-dorsd"
+      ],
+      "x": 960,
+      "y": 1300,
+      "actor": "buyers-and-processors"
     }
   ],
   "connections": [
@@ -1340,18 +1356,6 @@
         "silvis-2017-economische-ontwikkeling"
       ],
       "curvature": -0.22
-    },
-    {
-      "from": "basel-iv-capital-requirements",
-      "to": "bank-credit-freeze-risk-premiums",
-      "polarity": "+",
-      "delay": false,
-      "description": "For every loan a bank must hold capital, as the law on banks' solvency sets, the more the higher the credit risk, and the cost of that capital, the return its shareholders require, is part of the interest each client pays (ABN AMRO, n.d.-a). The final Basel III standards raise that capital, EU banks' minimum Tier 1 capital requirement by an estimated 9.0% at full implementation in 2028 (European Banking Authority, 2023). Together the two make stricter capital rules raise what a bank charges for a loan. Measured across EU banks: no source read gives the change for Dutch farm loans. Within the year: the bank prices the capital with each loan.",
-      "sources": [
-        "abn-amro-nd-kosten-krediet",
-        "eba-2023-basel-iii-monitoring"
-      ],
-      "curvature": 0.0
     },
     {
       "from": "dependence-on-high-margin-salt-sensitive-crops",
@@ -1887,10 +1891,11 @@
       "to": "freshwater-storage-measures",
       "polarity": "-",
       "delay": false,
-      "description": "As harvests get worse, farmers find storing water more worthwhile, and those who can pay for it store more.",
+      "description": "As harvests get worse, farmers find storing water more worthwhile, and those who can pay for it store more. On the island the attention to drought and to waterlogging swings with dry and wet years, and the study names this swinging urgency among the barriers to scaling up storage (Kaandorp et al., 2022, p. 12): a wet year lifts the harvest and the push to store fades.",
       "simplification": "Folds Relative attractiveness of storing water, which gathered the drivers of this decision: each driver now points at Freshwater storage measures itself, whose description says how farmers weigh storing against their other ways through a dry summer. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to store, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
-      "sources": [],
-      "hypothesis": true,
+      "sources": [
+        "kaandorp-2022"
+      ],
       "curvature": 0.14
     },
     {
@@ -1954,17 +1959,6 @@
       "curvature": 0.13
     },
     {
-      "from": "market-demand-for-alternative-crops",
-      "to": "fields-moved-to-new-salt-tolerant-crops",
-      "polarity": "+",
-      "delay": false,
-      "description": "Assured offtake lowers the risk of a new crop, so more farmers grow it.",
-      "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
-      "sources": [],
-      "hypothesis": true,
-      "curvature": 0.0
-    },
-    {
       "from": "net-price-for-new-crops",
       "to": "fields-moved-to-new-salt-tolerant-crops",
       "polarity": "+",
@@ -1978,17 +1972,6 @@
         "de-wit-2022"
       ],
       "curvature": 0.3
-    },
-    {
-      "from": "knowledge-of-new-crops",
-      "to": "fields-moved-to-new-salt-tolerant-crops",
-      "polarity": "+",
-      "delay": false,
-      "description": "Farmers who know how to grow and sell a new crop find it less risky, so more of them grow it.",
-      "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
-      "sources": [],
-      "hypothesis": true,
-      "curvature": -0.26
     },
     {
       "from": "salt-tolerant-crop-adoption",
@@ -2282,63 +2265,6 @@
       "hypothesis": true
     },
     {
-      "from": "bank-credit-to-farms",
-      "to": "farmland-changing-hands",
-      "polarity": "+",
-      "delay": false,
-      "description": "With more bank credit more farmland is bought, and with less, less: the land a farm can acquire depends on its income and expected income together with its financing (Silvis & Voskuilen, 2017, p. 2); with arable returns swinging, banks want larger buffers, which leave less room to finance land, and with a land loan calculated over at most 30 years with repayment, financing land has grown ever harder, which loosens the tie between owning land and using it, while younger farmers, by Rabobank's account, care less about expanding by purchase and are open to lease (pp. 3–4). The route the other way, a farm refused credit selling up, no source read shows: few Dutch farms go bankrupt, 45 in 2016, a large part of farm bankruptcies being in greenhouse horticulture, and a farm short of cash first saves on its spending or uses its savings, and only where that is not enough can ask its bank to defer part of its interest and repayments or for more credit, the bank weighing its continuity over the long term (Verhagen et al., 2018, p. 28). Measured nationally. Within the year: a purchase follows its financing.",
-      "sources": [
-        "silvis-2017",
-        "verhagen-2018"
-      ],
-      "curvature": -0.14
-    },
-    {
-      "from": "farms-with-a-successor",
-      "to": "farmland-changing-hands",
-      "polarity": "-",
-      "delay": false,
-      "description": "A farm without a successor is more likely to end when its farmer stops, its land then coming onto the market: over the long term the number of Dutch farms falls by 2 to 3% a year, mainly as farms end at the change of generation, the lack of a successor among the reasons, and the farmers who downsize or end their farm mainly set the supply of land (Silvis & Voskuilen, 2017, p. 2). Measured nationally. The land changes hands as the farm ends.",
-      "sources": [
-        "silvis-2017"
-      ],
-      "curvature": -0.14
-    },
-    {
-      "from": "farmers-wish-to-keep-their-land",
-      "to": "farmland-changing-hands",
-      "polarity": "-",
-      "delay": false,
-      "description": "Owners attached to their land keep it rather than sell it. In the Krimpenerwaard, the wish not to lose their land, from an emotional bond with it, was an important reason owners chose to turn it into nature themselves rather than sell it, and for one farm its bond with the land weighed more than moving (Kamphorst et al., 2025, pp. 11, 49, 68). Measured where a plan for nature, with expropriation as its last step, left owners only those choices; no source read measures it on the island's land market. Within the year: it acts when an owner decides whether to sell.",
-      "sources": [
-        "kamphorst-2025"
-      ],
-      "curvature": 0.0
-    },
-    {
-      "from": "expropriation-of-farmland",
-      "to": "farmland-changing-hands",
-      "polarity": "+",
-      "delay": true,
-      "description": "Expropriated land passes to the body that expropriates it when a notary's deed of expropriation is entered in the public registers (Omgevingswet, 2026, art. 11.18), which can be drawn up only once the expropriation order and the plan it carries out are irrevocable and the provisional compensation is paid (art. 11.16); on the island, the order for the high-voltage station takes effect only once the court has confirmed it (Gemeente Schouwen-Duiveland, 2026, p. 1). Years, so a delay: in the Krimpenerwaard, under the law before the Omgevingswet, the order of October 2020 left two years before the owners still without an agreement had to be summoned to court, by October 2022 (Kamphorst et al., 2025, pp. 26, 45), and the process of the owners expropriated by the court ran more than 61 months on average (p. 67), with continued use of the land until it was handed over (p. 41).",
-      "sources": [
-        "omgevingswet-2026",
-        "schouwen-duiveland-2026-onteigening",
-        "kamphorst-2025"
-      ],
-      "curvature": 0.2
-    },
-    {
-      "from": "farmland-changing-hands",
-      "to": "farmland-leaving-arable-use",
-      "polarity": "-",
-      "delay": false,
-      "description": "Land that changes hands leaves arable farming when its next holder does not farm it.",
-      "sources": [],
-      "curvature": 0.14,
-      "hypothesis": true
-    },
-    {
       "from": "agricultural-land-value",
       "to": "farmland-leaving-arable-use",
       "polarity": "+",
@@ -2426,56 +2352,10 @@
       "polarity": "-",
       "delay": false,
       "description": "Hypothesis, with two mechanisms for the group model building session: the conflict over a plan itself may lower trust, and a plan delayed, changed or dropped after objections may teach farmers not to count on the next one. Farmers do name changing plans as a reason to distrust public bodies (Farmers' trust in government), but no source read shows a plan changed because of objections costing trust, and where a body takes up an objection those who objected may trust it more: farmers feel their input is ignored, which the Ombudsman concludes leads to distrust (Farmers' trust in government), but no source read shows input taken up raising trust, so the sign is part of the question. Within the year once a plan changes: trust can be destroyed in an instant; its recovery, slower, is in the element.",
-      "simplification": "Folds Plans changed or dropped. The sign is the product of the two steps (+, then −), so no loop through the link changes. It assumes that a plan changed after objections costs trust as a plan changed for other reasons does, which no source read shows. The public bodies' decisions on their plans stay drawn, on the links from Objections to land-use plans into Water board's plans to raise ditch levels and Farmland planned for other uses.",
+      "simplification": "Folds Plans changed or dropped. The sign is the product of the two steps (+, then −), so no loop through the link changes. It assumes that a plan changed after objections costs trust as a plan changed for other reasons does, which no source read shows. The water board's decision on its plans stays drawn, on the link from Objections to land-use plans into Water board's plans to raise ditch levels.",
       "sources": [],
       "hypothesis": true,
       "curvature": 0.22
-    },
-    {
-      "from": "expropriation-of-farmland",
-      "to": "farmers-trust-in-government",
-      "polarity": "-",
-      "delay": false,
-      "description": "Land taken against its owner's wish lowers how far farmers expect public bodies to keep their commitments, the more so where they do not count the purpose as a public interest and where voluntary purchase was promised. Of 14 owners interviewed in the Krimpenerwaard, in a process of 2015–2023 with expropriation for nature as its last step, most experienced it as negative, and they often named an inequality of power; the municipal council had feared for trust between government and farming (Kamphorst et al., 2025, pp. 10, 15, 55). In interviews in the Netherlands, owners who did not count the plan as a public interest, nature development for one, were more often negative about expropriation in itself than those who did, as for roads (Holtslag-Broekhof et al., 2016, p. 180), and the chair of LTO held large-scale use against reliable government, farmers having been told that purchases would be voluntary (Neefjes, 2008, p. 3). The pressure starts before any order: the possibility of one weighs heavily on the process and on the owners' lives (Kamphorst et al., 2025, p. 55). No source read measures trust before and after, or on the island, where the purposes used so far are a road and the grid, those owners accept most. A tenant may gain (Adviescommissie Natuurherstel Westerschelde, n.d., p. 11). How negatively owners judge an expropriation afterwards seems to depend on its outcome and process: in the same Krimpenerwaard evaluation, paid for by the Province and municipality that ran the process and by the agriculture ministry, most of the owners interviewed were satisfied with their end situation, though half of those who sold rather than make the nature themselves were very dissatisfied, and satisfaction with the end result regularly contributed to a milder judgement of the whole process afterwards (Kamphorst et al., 2025, pp. 9, 13, 53), and Holtslag-Broekhof et al. (2016, p. 183) conclude that expropriation need not be feared in itself where its public purpose is clearly communicated, the process is open and takes owners' interests seriously, and the owner ends in the same economic position as before. Within the year: trust can be destroyed in an instant, its recovery, slower, is in the element (Slovic, 1993, p. 677).",
-      "sources": [
-        "kamphorst-2025",
-        "holtslag-broekhof-2016",
-        "neefjes-2008",
-        "adviescommissie-westerschelde",
-        "slovic-1993"
-      ],
-      "curvature": -0.22
-    },
-    {
-      "from": "policy-resistance-legal-delays",
-      "to": "municipality-plans-for-farmland",
-      "polarity": "-",
-      "delay": false,
-      "description": "Objections delay, change or stop a plan in which the municipality designates farmland for another use, while it is pending; with none pending, they change nothing.",
-      "sources": [],
-      "curvature": -0.38,
-      "hypothesis": true
-    },
-    {
-      "from": "municipality-plans-for-farmland",
-      "to": "policy-resistance-legal-delays",
-      "polarity": "+",
-      "delay": false,
-      "description": "A plan that designates farmland for another use leads its owners and the farmers who work it to object, appeal and lobby against it.",
-      "sources": [],
-      "curvature": -0.1,
-      "hypothesis": true
-    },
-    {
-      "from": "municipality-plans-for-farmland",
-      "to": "farmland-leaving-arable-use",
-      "polarity": "-",
-      "delay": true,
-      "description": "Farmland the plan designates for another use leaves arable farming as the plan is carried out on it: the plan does not end the farming by itself. In the Krimpenerwaard, where the land-use plan designating farmland for nature became irrevocable in October 2021 (Kamphorst et al., 2025, p. 25), of the land of owners who settled by agreement without converting it themselves most was sold to the province, 152 hectares, or exchanged, 59 (p. 41), and 24 agreements were made for owners to turn land into nature themselves, on 171 hectares of their own and 274 leased from the province (p. 67), the largest area (p. 41), an amicable purchase or exchange being the most common outcome, closely followed by the owners' own conversion (p. 36); voluntary sale and the owners' own conversion alone had not completed it in earlier periods (p. 10). Years, so a delay: the sales took more than 30 months on average, the owners' own conversion more than 61 (p. 67). Expropriation is drawn apart (Farmland planned for other uses → Expropriation of farmland). Measured for nature in the peat meadows of South Holland; the procedure is national law, and how long it takes on the island no source read gives.",
-      "sources": [
-        "kamphorst-2025"
-      ],
-      "curvature": 0.18
     },
     {
       "from": "wetter-winters",
@@ -2532,9 +2412,10 @@
       "to": "freshwater-availability-for-crops",
       "polarity": "+",
       "delay": false,
-      "description": "Double drainage would collect fresh drain water into a basin, from which a farm could irrigate that season, a system that works in concept but has not yet been tested in practice (Kaandorp et al., 2022, pp. 23, 29, 32–33, for the island). What the other measures keep reaches crops through the lenses. Within the year.",
+      "description": "Double drainage would collect fresh drain water into a basin, from which a farm could irrigate that season, a system that works in concept but has not yet been tested in practice (Kaandorp et al., 2022, pp. 23, 29, 32–33, for the island). What the other measures keep reaches crops through the lenses. Against the gap all of them together are small: Delphy, after consulting several parties, assumes the innovative measures cover 10% of the island farms' total water need, about 0.35 of 3.5 million m³, the rest equal to 314 basins of 10,000 m³ (Delphy, 2023, p. 41), and the provincial rules cap a deep drain's extraction at 8,000 m³ a year and 3,000 m³ a quarter, 6,000 m³ a growing season (p. 40). Within the year.",
       "sources": [
-        "kaandorp-2022"
+        "kaandorp-2022",
+        "delphy-2023-dorsd"
       ],
       "curvature": -0.19
     },
@@ -2615,19 +2496,6 @@
       "curvature": -0.17
     },
     {
-      "from": "freshwater-availability-for-crops",
-      "to": "dependence-on-high-margin-salt-sensitive-crops",
-      "polarity": "+",
-      "delay": true,
-      "description": "With more fresh water a farm may keep or take on the crops that need it: on the island's low polders, with more fresh water available the farmer is open to more profitable crops, a more varied rotation, or both (Kaandorp et al., 2022, p. 30). In Zeeland the area of sown onions halved from 4,705 ha in 2019 to 2,579 ha in 2024, the article naming the dry summers, the poor harvests and the lack of fresh water, four in five arable farmers having none, as farmers preferred less risky crops, while elsewhere the area grew (De Vriend, 2024b, for Zeeland). Years, so a delay: farmers respond to the seasons they have had, and the fall ran over five years of dry summers.",
-      "sources": [
-        "kaandorp-2022",
-        "de-vriend-2024-gewassen"
-      ],
-      "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
-      "curvature": -0.15
-    },
-    {
       "from": "net-price-for-new-crops",
       "to": "margin-given-up-on-high-margin-crops",
       "polarity": "-",
@@ -2649,18 +2517,6 @@
         "farjon-2013"
       ],
       "curvature": 0.26
-    },
-    {
-      "from": "municipality-plans-for-farmland",
-      "to": "expropriation-of-farmland",
-      "polarity": "+",
-      "delay": true,
-      "description": "A public body can expropriate only for a use made possible in an adopted plan, a permit or a project decision (Omgevingswet, 2026, art. 11.6), and only after a reasonable attempt to buy has failed (art. 11.7), so the more farmland planned for other uses, the more farmland within reach of an order. Only part of it comes within reach: the need to expropriate lapses where the owner shows they are willing and able to realise the planned use themselves, has concrete plans for it made known to the authority, and will realise it in the way the authority intends (art. 11.7(2)), and land the legger lists as a bergingsgebied can stay with its owner, who must tolerate flooding and the temporary storage of surface water on it (art. 10.3(4); annex, bergingsgebied). Of 481 ha inside and outside the nature boundary in the 69 files studied, 24 owners agreed to realise nature on 171 ha of their own land and 92 ha went through the court (Kamphorst et al., 2025, pp. 10–11, measured in the Krimpenerwaard, a Zuid-Holland peat polder, in an evaluation commissioned by the Programmabureau Veenweiden Krimpenerwaard that ran it with the Province, and funded by the Province of Zuid-Holland, the municipality and the agriculture ministry). Years, so a delay: the attempt to buy and the order follow the adopted plan.",
-      "sources": [
-        "omgevingswet-2026",
-        "kamphorst-2025"
-      ],
-      "curvature": 0.1
     },
     {
       "from": "hotter-drier-summers",
@@ -2793,6 +2649,173 @@
         "van-duinen-2015-coping"
       ],
       "curvature": 0.2
+    },
+    {
+      "from": "saline-seepage-kwel",
+      "to": "salt-in-ditch-water",
+      "polarity": "+",
+      "delay": false,
+      "description": "The more salt or brackish seepage wells up, the saltier the ditches that catch it: in most of Duiveland the ditches catch the salt or brackish seepage from below (Waterschap Scheldestromen, 2021a, p. 20), and in the low polders of the island's west, where salt groundwater lies at a small depth, the surface water is brackish to salt (Kaandorp et al., 2022, p. 27). Within the season.",
+      "sources": [
+        "scheldestromen-2021-hor-duiveland",
+        "kaandorp-2022"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "hotter-drier-summers",
+      "to": "salt-in-ditch-water",
+      "polarity": "+",
+      "delay": false,
+      "description": "In a dry period less rain drains into the ditches to dilute their salt: in one area studied on the island, the main ditches were less brackish after periods of rain, as drained rain mixed in, and in dry periods their salt seemed partly to come from salt surface water brought in from elsewhere (Kaandorp et al., 2022, p. 42). Measured in one area of the island. Within the season.",
+      "sources": [
+        "kaandorp-2022"
+      ],
+      "curvature": 0
+    },
+    {
+      "from": "salt-in-ditch-water",
+      "to": "freshwater-storage-measures",
+      "polarity": "-",
+      "delay": false,
+      "description": "Salt ditch water cannot fill a measure that infiltrates water: in one area studied on the island the main ditches carry water all year, but brackish to salt and with iron and turbidity that clog wells, so it is unsuited for infiltration into the deeper subsoil (Kaandorp et al., 2022, p. 43), and the fresh water infiltration needs is a bottleneck at most of the island's locations, which, beside the rules, limits the large-scale roll-out of the infiltration solutions (p. 55). So it limits how far the measures that infiltrate spread, not what one measure delivers. No delay drawn: no source read gives how fast the roll-out answers the salt.",
+      "sources": [
+        "kaandorp-2022"
+      ],
+      "curvature": -0.15
+    },
+    {
+      "from": "dependence-on-high-margin-salt-sensitive-crops",
+      "to": "water-demand-of-the-crop-mix",
+      "polarity": "+",
+      "delay": false,
+      "description": "The more of the rotation is under potatoes and onions, the more water the crop plan needs: on the island the crops that earn the most also have the greatest water need and often a limited root system (Delphy, 2023, p. 48). Within the year, as the rotation is set.",
+      "sources": [
+        "delphy-2023-dorsd"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "water-demand-of-the-crop-mix",
+      "to": "crop-water-shortfall",
+      "polarity": "+",
+      "delay": false,
+      "description": "The shortfall is what crops need beyond the water they get, so with the water available unchanged a crop plan that needs more water leaves a larger gap: a crop's need is the water it uses when it has enough (Allen et al., 1998). On the island the farms' total need is put at about 3.5 million m³, beyond what the current sources give (Delphy, 2023, pp. 41, 50). Within the season.",
+      "sources": [
+        "allen-1998",
+        "delphy-2023-dorsd"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "crop-water-shortfall",
+      "to": "dependence-on-high-margin-salt-sensitive-crops",
+      "polarity": "-",
+      "delay": true,
+      "description": "A farm short of water moves off the crops that need it most: on the island's low polders the farmers have stopped growing sensitive crops such as sown onions, and with more fresh water they would be open to more profitable crops, a more varied rotation, or both (Kaandorp et al., 2022, pp. 30–31). On the island the sown onions fell from 1,214 ha in 2015 to 791 ha in 2022 (Delphy, 2023, p. 15), and without fresh water they leave the model farm's crop plan for 2030 (p. 44); in Zeeland they halved from 4,705 ha in 2019 to 2,579 ha in 2024, the article naming the dry summers, the poor harvests and the lack of fresh water, four in five arable farmers having none, as farmers preferred less risky crops (De Vriend, 2024b, for Zeeland). Years, so a delay: farmers respond to the seasons they have had, and the fall ran over five years of dry summers.",
+      "sources": [
+        "kaandorp-2022",
+        "delphy-2023-dorsd",
+        "de-vriend-2024-gewassen"
+      ],
+      "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
+      "curvature": 0.15
+    },
+    {
+      "from": "trials-and-pilots-on-the-island",
+      "to": "knowledge-of-storage",
+      "polarity": "+",
+      "delay": true,
+      "description": "Trials and pilots give farmers and advisers what a measure does on the island: the quickscans and feasibility studies of Samenwerken voor Zoet Water made methods, maps and tools with which farmers and advisers can go on by themselves (Kaandorp et al., 2022, p. 55), and its authors recommend pilots with monitoring, since farmers are sooner willing to invest in a solution whose working has been shown in practice somewhere (p. 56); the demonstration on three farms monitored new drainage for figures and guidelines on building, managing and maintaining it (Living Lab Schouwen-Duiveland, n.d.-b). Years, so a delay: many studies have started or are running, and a picture of their result comes only after years (Delphy, 2023, p. 40).",
+      "sources": [
+        "kaandorp-2022",
+        "living-lab-innovatieve-drainage",
+        "delphy-2023-dorsd"
+      ],
+      "curvature": 0
+    },
+    {
+      "from": "trials-and-pilots-on-the-island",
+      "to": "knowledge-of-new-crops",
+      "polarity": "+",
+      "delay": true,
+      "description": "Trials of new crops give farmers knowledge of growing and selling them: in Zeeland Delphy, with ZLTO and Saeftinghe Zilt, researched saline cultivation in 2014–2018, and eight growers grow saline crops there now, samphire most (Delphy, 2023, p. 49); the trial farm Rusthoeve has experimented with crops for biobased raw materials since 2014 (p. 9). Measured in Zeeland: no source read shows a trial raising what the island's own farmers know. Years, so a delay, as for the water measures, whose results show only after years (p. 40).",
+      "sources": [
+        "delphy-2023-dorsd"
+      ],
+      "curvature": 0
+    },
+    {
+      "from": "zlto-call-for-supply-route",
+      "to": "freshwater-storage-measures",
+      "polarity": "-",
+      "delay": false,
+      "description": "The more firmly a supply route is asked for, the more farmers hold back from storing on their own farm: on the island some parties hold that the answer to drought damage lies either in a supply from outside or in local measures, and through this ongoing discussion farmers hold back from investing, while the one need not exclude the other and can strengthen it (Kaandorp et al., 2022, p. 12). No route is decided: a study of the options leaves who pays what, and how a supply would be managed, for later steps (Witteveen+Bos, 2021, p. 51). The branch also asks to catch more rain, beside a collective supply (Omroep Zeeland, 2023). No delay drawn: no source read gives how fast the farmers' hesitation follows the call.",
+      "sources": [
+        "kaandorp-2022",
+        "witteveen-bos-2021",
+        "omroep-zeeland-2023-zoet-water"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "perceived-risk-of-switching",
+      "to": "fields-moved-to-new-salt-tolerant-crops",
+      "polarity": "-",
+      "delay": false,
+      "description": "The more a farmer expects to lose on a new crop, the fewer fields move to it. On the island the cost of unproven innovations lies mainly with the farmer, so investing carries a risk (Delphy, 2023, p. 50); in the south-west Netherlands, farmers who saw a higher cost in drought measures took fewer of them (van Duinen et al., 2015a, p. 1089). Measured for the island's water measures and for drought measures in the south-west, not for a crop switch: that it holds for a switch too is an assumption. Within the year.",
+      "sources": [
+        "delphy-2023-dorsd",
+        "van-duinen-2015-coping"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "knowledge-of-new-crops",
+      "to": "perceived-risk-of-switching",
+      "polarity": "-",
+      "delay": false,
+      "description": "Farmers who know how to grow and sell a new crop see less risk in it: in a survey of farmers in the south-west Netherlands, their trust in their own competence to carry out a measure raised their adaptation, the strongest such factor for measures at farm level (van Duinen et al., 2015a, pp. 1089, 1091). Measured for drought measures, not for new crops. Within the year.",
+      "sources": [
+        "van-duinen-2015-coping"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "market-demand-for-alternative-crops",
+      "to": "buyer-contracts-for-new-crops",
+      "polarity": "+",
+      "delay": false,
+      "description": "The more demand for a new crop, the more of it buyers contract: Dutch quinoa's one distributor buys a pre-agreed amount and manages supply according to demand (de Wit et al., 2022, p. 268), and for saline crops in Zeeland sales would have to grow strongly before new growers find room (Delphy, 2023, p. 49). Measured in the Netherlands and in Zeeland. Within the year.",
+      "sources": [
+        "de-wit-2022",
+        "delphy-2023-dorsd"
+      ],
+      "curvature": 0
+    },
+    {
+      "from": "buyer-contracts-for-new-crops",
+      "to": "perceived-risk-of-switching",
+      "polarity": "-",
+      "delay": false,
+      "description": "A contract takes the price and sales risk of a crop off the farmer as far as its terms go: a fixed-price contract guarantees the price for the agreed quantity and a volume contract the sale, the contracted part carrying an offtake duty (Janssens et al., 2020, pp. 11–12), while a grower who sells free bears a loss alone (p. 15); it moves no yield risk. Measured for potatoes nationally. With one buyer the farmer keeps that buyer's risk: Dutch quinoa growers depend on one distributor, which interviewees name as hampering its uptake (de Wit et al., 2022, p. 277). Within the year.",
+      "sources": [
+        "janssens-2020",
+        "de-wit-2022"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "farms-with-a-successor",
+      "to": "farmland-leaving-arable-use",
+      "polarity": "+",
+      "delay": false,
+      "description": "A farm without a successor stops sooner: on the island, Delphy expects farms caught in a downward spiral to decide, without a successor, to stop, with more scale and more extensive farming following (Delphy, 2023, p. 50), and since 2000 the island's arable area fell 21% while its grassland and forage crops grew 52% (p. 14). Nationally, farms end mainly at the change of generation, the lack of a successor among the reasons, while the land's buyers and sellers are mainly farmers (Silvis & Voskuilen, 2017, p. 2), so most land of a farm that stops stays arable: the link is weak, and no source read gives how much of a stopped farm's land leaves arable farming on the island. Within the year the farm stops.",
+      "sources": [
+        "delphy-2023-dorsd",
+        "silvis-2017"
+      ],
+      "curvature": 0.15
     }
   ],
   "loops": [
@@ -2918,7 +2941,7 @@
         "external-freshwater-supply",
         "freshwater-availability-for-crops"
       ],
-      "description": "The shorter of water the farms, the more firmly ZLTO asks for a supply route, and the deciding body weighs that call over the years a route takes to decide, pay for and build. A route would carry fresh water to the island, crops would have more to draw on and the shortfall would shrink. A route drawing on the Volkerak-Zoommeer would ease the shortfall little late in the season, when algae closed such inlets on Tholen in most years 2003–2011 (Schipper et al., 2014, p. 36); the Haringvliet source with a ring pipeline gives the best water but the highest costs (Witteveen+Bos, 2021, p. 50). None exists, so the loop has not run yet; a study has left open who pays and who would run one. It seeks a shortfall the deciding body finds acceptable. Where it eased the shortfall it would ease the worse harvests that make storing worthwhile (B6)."
+      "description": "The shorter of water the farms, the more firmly Agrarisch Schouwen-Duiveland asks for a supply route, and the deciding body weighs that call over the years a route takes to decide, pay for and build. A route would carry fresh water to the island, crops would have more to draw on and the shortfall would shrink. A route drawing on the Volkerak-Zoommeer would ease the shortfall little late in the season, when algae closed such inlets on Tholen in most years 2003–2011 (Schipper et al., 2014, p. 36); the Haringvliet source with a ring pipeline gives the best water but the highest costs (Witteveen+Bos, 2021, p. 50). None exists, so the loop has not run yet; a study has left open who pays and who would run one. It seeks a shortfall the deciding body finds acceptable. Where it eased the shortfall it would ease the worse harvests that make storing worthwhile (B6)."
     },
     {
       "id": "B8",
@@ -3062,15 +3085,14 @@
       "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. The step from objections to trust is a hypothesis for the group model building session; the step from trust back to objections rests on sources. It reinforces where farmers' objections are passed over, or through the conflict itself; where a body takes them up, the step may turn positive and the loop balancing. It holds back storage, a long investment that a change of rules can strand, as trust falls."
     },
     {
-      "id": "B14",
-      "name": "Expropriation makes the next plan harder",
+      "id": "B15",
+      "name": "The water sets the crops",
       "path": [
-        "municipality-plans-for-farmland",
-        "expropriation-of-farmland",
-        "farmers-trust-in-government",
-        "policy-resistance-legal-delays"
+        "dependence-on-high-margin-salt-sensitive-crops",
+        "water-demand-of-the-crop-mix",
+        "crop-water-shortfall"
       ],
-      "description": "The more farmland the municipality plans for other uses, the more lies within reach of an expropriation order, after the attempt to buy has failed, over years. Expropriation lowers farmers' trust in government, farmers who trust less object more, and objections delay, change or stop the next plan, so less farmland is planned. It shows an unintended consequence of expropriating for a plan: the next plan becomes harder to adopt. It seeks the planned area the island's farmers will accept. The steps through trust rest on sources; that objections lower the farmland planned is a hypothesis for the group model building session. On the island the orders sought so far are for a road and the grid, not nature (Besluit rotonde N59, 2020, p. 3; Gemeente Schouwen-Duiveland, 2026, p. 1); road infrastructure is the study's example of a use designated a public interest, nature development its example of a plan some owners disputed served one, and owners who disputed it were more often negative about expropriation (Holtslag-Broekhof et al., 2016, p. 180), a study that does not cover the grid, and in the Krimpenerwaard owners' satisfaction with their end result regularly contributed to a milder judgment of the whole process afterwards (Kamphorst et al., 2025, p. 13), so the step through trust may be weak there; no source read measures it on the island. Through the trust it lowers it holds back storage."
+      "description": "The more of the rotation is under the high-margin crops, the more water the crop plan needs and, with the water the island has, the larger the shortfall; over years, farms short of water move off those crops, sown onions first, and the shortfall shrinks. It seeks a crop plan the island's water can carry: the water is a limit farmers fit their crops to, as much as the salt. On the island the sown onions fell from 1,214 ha in 2015 to 791 ha in 2022 (Delphy, 2023, p. 15). It holds back the income the high-margin crops bring, so where a farm adapts this way it adapts by earning less."
     }
   ],
   "groups": [
@@ -3498,7 +3520,7 @@
         "R4",
         "B6"
       ],
-      "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so more rain refills the lens and, over years, the *Rainwater lens thickness in the low polders* rises; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A lower *Crop yield* makes storing more worthwhile to a farmer (B6), and leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same harvest pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The links from *Crop yield* and from *Farmers' capacity to invest* to *Freshwater storage measures* are both hypotheses for the group model building session.",
+      "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so more rain refills the lens and, over years, the *Rainwater lens thickness in the low polders* rises; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A lower *Crop yield* makes storing more worthwhile to a farmer (B6), and leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same harvest pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The link from *Farmers' capacity to invest* to *Freshwater storage measures* is a hypothesis for the group model building session.",
       "places": {
         "farmers-capacity-to-invest": [
           -457,
@@ -3797,93 +3819,77 @@
       "loops": [
         "B13",
         "R8",
-        "R9",
-        "B14"
+        "R9"
       ],
-      "description": "*Objections to land-use plans* delay, change or stop a plan (B13). Two things follow: The ditch levels keep up the *Saline seepage (kwel)* and *Root zone salinity* that lower *Agricultural land value*, and a lower value may bring more objections (R8). Plans changed or dropped, and *Expropriation of farmland*, lower *Farmers' trust in government*, which may bring more objections to the next plan (R9, B14). Whether objections settle at a plan the owners accept or keep growing is a question for the group model building session: three of its links are hypotheses, from *Agricultural land value* to *Objections to land-use plans*, from *Objections to land-use plans* to *Farmers' trust in government*, and from *Objections to land-use plans* to *Farmland planned for other uses*.",
+      "description": "*Objections to land-use plans* delay, change or stop a plan (B13). Two things follow: The ditch levels keep up the *Saline seepage (kwel)* and *Root zone salinity* that lower *Agricultural land value*, and a lower value may bring more objections (R8). Plans changed or dropped lower *Farmers' trust in government*, which may bring more objections to the next plan (R9). Whether objections settle at a plan the owners accept or keep growing is a question for the group model building session: two of its links are hypotheses, from *Agricultural land value* to *Objections to land-use plans* and from *Objections to land-use plans* to *Farmers' trust in government*.",
       "places": {
         "farmers-trust-in-government": [
-          -1561,
-          0
+          -1057,
+          -274
         ],
         "policy-resistance-legal-delays": [
-          -744,
+          -327,
           0
         ],
         "plans-to-raise-ditch-levels": [
-          1561,
+          327,
           0
         ],
-        "municipality-plans-for-farmland": [
-          -929,
-          -344
-        ],
-        "expropriation-of-farmland": [
-          -1375,
-          -344
-        ],
         "ditch-level-nap": [
-          1482,
-          345
+          661,
+          292
         ],
         "saline-seepage-kwel": [
-          1275,
-          636
+          717,
+          664
         ],
         "freshwater-lens-thickness": [
-          887,
-          881
+          477,
+          1022
         ],
         "root-zone-salinity": [
-          353,
-          968
+          -28,
+          1173
         ],
         "harvest-lost-to-salt": [
-          -108,
-          865
+          -489,
+          1013
         ],
         "farm-revenue": [
-          -438,
-          654
+          -711,
+          690
         ],
         "agricultural-land-value": [
-          -659,
-          358
+          -667,
+          304
         ]
       },
       "bends": {
-        "farmers-trust-in-government -> policy-resistance-legal-delays": 0,
+        "farmers-trust-in-government -> policy-resistance-legal-delays": -0.4,
         "policy-resistance-legal-delays -> plans-to-raise-ditch-levels": 0,
-        "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": -0.148,
-        "policy-resistance-legal-delays -> farmers-trust-in-government": 0.52,
-        "policy-resistance-legal-delays -> municipality-plans-for-farmland": -0.323,
-        "municipality-plans-for-farmland -> expropriation-of-farmland": -0.249,
-        "expropriation-of-farmland -> farmers-trust-in-government": -0.323,
-        "plans-to-raise-ditch-levels -> ditch-level-nap": 0.105,
-        "ditch-level-nap -> saline-seepage-kwel": 0.1,
-        "saline-seepage-kwel -> freshwater-lens-thickness": 0.1,
-        "freshwater-lens-thickness -> root-zone-salinity": 0.103,
-        "root-zone-salinity -> harvest-lost-to-salt": 0.1,
-        "harvest-lost-to-salt -> farm-revenue": 0.1,
-        "farm-revenue -> agricultural-land-value": 0.1,
-        "agricultural-land-value -> policy-resistance-legal-delays": 0.109
+        "plans-to-raise-ditch-levels -> policy-resistance-legal-delays": -0.909,
+        "policy-resistance-legal-delays -> farmers-trust-in-government": -0.4,
+        "plans-to-raise-ditch-levels -> ditch-level-nap": 0.168,
+        "ditch-level-nap -> saline-seepage-kwel": 0.181,
+        "saline-seepage-kwel -> freshwater-lens-thickness": 0.184,
+        "freshwater-lens-thickness -> root-zone-salinity": 0.167,
+        "root-zone-salinity -> harvest-lost-to-salt": 0.156,
+        "harvest-lost-to-salt -> farm-revenue": 0.166,
+        "farm-revenue -> agricultural-land-value": 0.188,
+        "agricultural-land-value -> policy-resistance-legal-delays": 0.174
       },
       "marks": {
         "B13": [
-          409,
-          -85
+          0,
+          -164
         ],
         "R9": [
-          -1152,
-          106
-        ],
-        "B14": [
-          -1152,
-          -200
+          -692,
+          -137
         ],
         "R8": [
-          409,
-          484
+          0,
+          602
         ]
       }
     },
@@ -3998,5 +4004,128 @@
       }
     }
   ],
-  "changes": []
+  "changes": [
+    {
+      "change": "The salt in the ditch water drawn, from the seepage and dry summers, limiting storage",
+      "argument": "Kitty's point (6): the CLD draws salt taking fresh water away by amount (the lenses thin), not by quality. On the island all water runs through the board's ditches to its pumping stations (Waterschap Scheldestromen, 2021b, p. 24), the ditches catch salt or brackish seepage (2021a, p. 20), the low polders' surface water is brackish to salt (Kaandorp et al., 2022, p. 27), less brackish after rain and saltier in dry periods (p. 42), unsuited for infiltration (p. 43), and fresh infiltration water is a bottleneck at most locations, limiting the roll-out (p. 55). No actor, since the board reaches it through the ditch level and the seepage. The route north to south stays a session card until the board's report shows it (decided by Jordy).",
+      "items": [
+        "salt-in-ditch-water",
+        "saline-seepage-kwel -> salt-in-ditch-water",
+        "hotter-drier-summers -> salt-in-ditch-water",
+        "salt-in-ditch-water -> freshwater-storage-measures"
+      ]
+    },
+    {
+      "change": "Water demand of the crop mix drawn, closing B15, The water sets the crops",
+      "argument": "Kitty's points (2), (5) and (9): the CLD weighs a crop by its salt tolerance only, while the water a crop needs limits it as much. The crops that earn the most need the most water (Delphy, 2023, p. 48), a crop's need is its water use with enough water (Allen et al., 1998), and farms short of water drop the thirsty crops (Kaandorp et al., 2022, pp. 30–31; Delphy, 2023, pp. 15, 44; De Vriend, 2024b). Freshwater availability → Dependence is removed, its sources and its simplification moved onto Crop water shortfall → Dependence, since availability already reaches the shortfall and both would count one effect twice; it is on no named loop. No link from the new crops: flax needs water too (p. 48). B15 is named, since it runs through the farmers' crop mix and the water a practice answers to (decided by Jordy).",
+      "items": [
+        "water-demand-of-the-crop-mix",
+        "dependence-on-high-margin-salt-sensitive-crops -> water-demand-of-the-crop-mix",
+        "water-demand-of-the-crop-mix -> crop-water-shortfall",
+        "crop-water-shortfall -> dependence-on-high-margin-salt-sensitive-crops",
+        "freshwater-availability-for-crops -> dependence-on-high-margin-salt-sensitive-crops",
+        "B15"
+      ]
+    },
+    {
+      "change": "Storage's size against the gap, and no measure or crop enough alone, in the descriptions",
+      "argument": "Kitty's points (1) and (3): a link's sign carries no strength, so the size goes into words. Delphy (2023) assumes the innovative measures cover 10% of the farms' water need, the rest 314 basins of 10,000 m³ (p. 41), a deep drain capped at 6,000 m³ a growing season (p. 40); the current measures supply too little, are no one-size-fits-all solution and fit only part of the island (p. 50), custom work everywhere (p. 40); and a new crop still needs water, flax too (p. 48).",
+      "items": [
+        "freshwater-storage-measures -> freshwater-availability-for-crops",
+        "freshwater-storage-measures",
+        "fields-moved-to-new-salt-tolerant-crops"
+      ]
+    },
+    {
+      "change": "Trials and pilots on the island drawn, a Constant feeding both kinds of knowledge",
+      "argument": "Saskia (DCC) misses R&D in the CLD: knowledge of storage had one link in, from storage itself (R5), while its own description names the pilots and the quickscans. The trials are made by the Living Lab (Kaandorp et al., 2022, p. 8; Living Lab Schouwen-Duiveland, n.d.-a, n.d.-b, 2023), Rusthoeve and Delphy (Delphy, 2023, pp. 9, 19, 49), and give farmers and advisers tools (Kaandorp et al., 2022, pp. 55–56) after years (Delphy, 2023, p. 40). A Constant, its actors outside the scale, since no source shows the farms' choices moving the trials; not one variable 'innovation', which measures no single quantity (decided by Jordy). The link to knowledge of new crops cites research in Zeeland, not on the island.",
+      "items": [
+        "trials-and-pilots-on-the-island",
+        "trials-and-pilots-on-the-island -> knowledge-of-storage",
+        "trials-and-pilots-on-the-island -> knowledge-of-new-crops"
+      ]
+    },
+    {
+      "change": "Two barriers to storage: the call for a supply route holds storage back, and the urgency swings with the years",
+      "argument": "Kaandorp et al. (2022, p. 12) name both on the island: farmers hold back on investing while parties argue the answer is a supply route, with no route decided, its payer and management open (Witteveen+Bos, 2021, p. 51), which links B7 to storage; and the attention to drought swings with dry and wet years, which is how B6 behaves, so no new variable. The second gives Crop yield → Freshwater storage measures its source, so the link loses its hypothesis mark (cld-model.md: a behavioural claim takes a source where one exists) and C5's description, which called it one, changes with it.",
+      "items": [
+        "zlto-call-for-supply-route -> freshwater-storage-measures",
+        "crop-yield -> freshwater-storage-measures",
+        "C5"
+      ]
+    },
+    {
+      "change": "The call for a supply route is Agrarisch Schouwen-Duiveland's, ZLTO's branch on the island",
+      "argument": "The call's island evidence is the branch's own (Omroep Zeeland, 2023; 2026), and the branch commissioned and paid for Delphy's report (Delphy, 2023, p. 1), so it decides the variable and enters the CLD through it, ZLTO acting on the island through its branch and its two seats on the water board (decided by Jordy). B7's description names it.",
+      "items": [
+        "zlto-call-for-supply-route",
+        "B7"
+      ]
+    },
+    {
+      "change": "Perceived risk of switching drawn, between what farmers know and the fields they move",
+      "argument": "Kitty's point (8), with (3): Margin given up is the outcome after a switch, the perceived risk what drives the decision before it, and where the vision's 'the risk of moving lands on the single farmer' shows (Delphy, 2023, pp. 6, 13, 50; van Duinen et al., 2015a, pp. 1089, 1091). Farmers' knowledge of new crops → Fields moved (a hypothesis whose description read 'find it less risky') moves onto the risk, since both would count one effect twice; it is on no named loop, and the learning loop fields moved → adoption → knowledge → risk → fields moved stays reinforcing. No actor: a perception (decided by Jordy).",
+      "items": [
+        "perceived-risk-of-switching",
+        "perceived-risk-of-switching -> fields-moved-to-new-salt-tolerant-crops",
+        "knowledge-of-new-crops -> perceived-risk-of-switching",
+        "knowledge-of-new-crops -> fields-moved-to-new-salt-tolerant-crops"
+      ]
+    },
+    {
+      "change": "Buyer contracts for new crops drawn, the buyers' decision, lowering the perceived risk",
+      "argument": "Kitty's points (7) and (12): contracts were in the CLD only as words, in the Constant Market demand and in link descriptions, so no actor could move them, while a buyer offers one. What a contract moves is read in Janssens et al. (2020, pp. 11–12, 14–15): the price and sales risk, not the yield risk; for the new crops de Wit et al. (2022, pp. 266, 268, 277), DutchNews.nl (2026) and Delphy (2023, p. 49). Market demand → Fields moved (a hypothesis reading 'Assured offtake lowers the risk of a new crop') goes, since demand now reaches the fields through the contracts and the risk and both would count one effect twice; it is on no named loop. Market demand stays a Constant, its description stating the open question whether demand or processing is the barrier.",
+      "items": [
+        "buyer-contracts-for-new-crops",
+        "market-demand-for-alternative-crops -> buyer-contracts-for-new-crops",
+        "buyer-contracts-for-new-crops -> perceived-risk-of-switching",
+        "market-demand-for-alternative-crops -> fields-moved-to-new-salt-tolerant-crops",
+        "market-demand-for-alternative-crops"
+      ]
+    },
+    {
+      "change": "Basel IV capital requirements folded into the risk premium's description",
+      "argument": "A Constant on no loop with one link; the system boundary already puts it outside and no actor in the analysis can move it: context for a link, not a mechanism (decided by Jordy). Its sources (European Commission, 2023; European Banking Authority, 2023) and the EU as the actor that shapes it move onto the premium; the banks' entry on the Actor Map already says the Basel rules steer them. cld-model.md's 'Simplify only where the conclusion survives': no loop through it, no decision lost, no delay lost.",
+      "items": [
+        "basel-iv-capital-requirements",
+        "basel-iv-capital-requirements -> bank-credit-freeze-risk-premiums",
+        "bank-credit-freeze-risk-premiums"
+      ]
+    },
+    {
+      "change": "Expropriation of farmland removed, B14 with it; C9 keeps B13, R8 and R9",
+      "argument": "On the island expropriation is used only for a roundabout on the N59 and a high-voltage station, neither about salt or water (its description's sources), so it is not part of the barrier story there (decided by Jordy). Of the named loops only B14 runs through it. C9 stays a behaviour, objections to one plan, through land value and trust, shaping the next, its description without B14 and its figure laid out again; trust keeps its link from the objections (R9).",
+      "items": [
+        "expropriation-of-farmland",
+        "expropriation-of-farmland -> farmland-changing-hands",
+        "expropriation-of-farmland -> farmers-trust-in-government",
+        "municipality-plans-for-farmland -> expropriation-of-farmland",
+        "B14",
+        "C9"
+      ]
+    },
+    {
+      "change": "Farmland planned for other uses removed",
+      "argument": "On no named loop once B14 is gone, its hectares given by no source and its effect measured in the Krimpenerwaard (decided by Jordy). The municipality's room for water basins stays a session card: its rules only set conditions (Gemeente Schouwen-Duiveland, 2024, pp. 1–2), and nothing shows them holding storage back. The simplification of Objections → Farmers' trust in government no longer names it.",
+      "items": [
+        "municipality-plans-for-farmland",
+        "policy-resistance-legal-delays -> municipality-plans-for-farmland",
+        "municipality-plans-for-farmland -> policy-resistance-legal-delays",
+        "municipality-plans-for-farmland -> farmland-leaving-arable-use",
+        "policy-resistance-legal-delays -> farmers-trust-in-government"
+      ]
+    },
+    {
+      "change": "Farmland changing hands removed, Farms with a successor drawn straight into Arable land in the polders",
+      "argument": "Its one link out said land leaves arable farming when its next holder does not farm it, a hypothesis, while its own source has the land's buyers and sellers mainly farmers (Silvis & Voskuilen, 2017, p. 2), so most land that changes hands stays arable. The successor's effect is kept on Delphy (2023, p. 50: farms without a successor stop; p. 14: the island's arable area fell 21% since 2000). The links from Bank credit to farms and from Farmers' wish to keep their land rest on that step and go; the wish stays a Constant through its link to the objections. On no named loop. Rejected: the fold, which would draw all three straight into the arable land (decided by Jordy).",
+      "items": [
+        "farmland-changing-hands",
+        "bank-credit-to-farms -> farmland-changing-hands",
+        "farms-with-a-successor -> farmland-changing-hands",
+        "farmers-wish-to-keep-their-land -> farmland-changing-hands",
+        "farmland-changing-hands -> farmland-leaving-arable-use",
+        "farms-with-a-successor -> farmland-leaving-arable-use"
+      ]
+    }
+  ]
 }

@@ -120,7 +120,7 @@ ACTOR_SECTORS = ["Aquaculture", "Arable Farming", "Export/distribution", "Extern
                  "Farmers organisation", "Finance", "Food processing", "Fruit Cultivation", "Government",
                  "Greenhouse Horticulture", "Knowledge institution", "Livestock Farming", "Nature preservation",
                  "Onion Cultivation & Processing", "Water management"]
-RELATION_KINDS = ["authority over", "finances", "buys from", "advises", "represents", "works with"]
+RELATION_KINDS = ["authority over", "finances", "buys from", "advises", "represents", "works with", "owns"]
 # references.json is CSL JSON, as Zotero imports it, and apa() writes each APA line from it, so
 # the page, the table and Zotero's copy hold one record; a type joins once apa() writes it
 REF_TYPES = ["article-journal", "article-newspaper", "chapter", "dataset", "legislation", "report", "webpage"]

@@ -4773,5 +4773,30 @@
     "issue": "2",
     "page": "613–644",
     "DOI": "10.1111/ajae.12239"
+  },
+  {
+    "id": "ienw-2026-prioritering",
+    "type": "report",
+    "author": [
+      {
+        "literal": "Minister van Infrastructuur en Waterstaat"
+      },
+      {
+        "literal": "Staatssecretaris van Infrastructuur en Waterstaat"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          16
+        ]
+      ]
+    },
+    "title": "Prioritering en perspectief Mobiliteits- en Deltafonds",
+    "collection-title": "Kamerstukken II",
+    "collection-number": "2026/27, 37 020 A, nr. 14",
+    "URL": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z22564&did=2026D51852"
   }
 ]

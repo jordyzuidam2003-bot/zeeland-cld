@@ -4078,16 +4078,6 @@
   ],
   "changes": [
     {
-      "change": "Salt-tolerant varieties on offer measures their yield, which lowers the margin a hectare gives up",
-      "argument": "One quantity per variable: the element held the varieties on offer and their yield, and its one link out read 'better' as either. Tolerance and yield trade off (Deolu-Ajayi et al., 2024, p. 30), so a variable holding both has no one sign into Margin given up on high-margin crops; as the yield, it reads one quantity, the one where the sources show tolerant varieties falling short (van den Burg et al., 2024, p. 6), and lowers what each hectare under a tolerant variety gives up by the margin's definition (Cloet et al., 2024, p. 1), as Net price for new crops after transport does for new crops: one grain for both responses. The tolerance is held at what is on offer now, stated. The element has no links in, so no loop changes. The link into adoption stays a hypothesis, a question to farmers on the session's cards. For the group: D2D can vary breeding that closes the yield gap, with the offsetting path.",
-      "items": [
-        "tolerant-varieties-on-offer",
-        "tolerant-varieties-on-offer -> tolerant-varieties-adoption",
-        "tolerant-varieties-on-offer -> margin-given-up-on-high-margin-crops",
-        "processing-capacity-for-alternative-crops"
-      ]
-    },
-    {
       "change": "Harvest lost to salt → Adoption of salt-tolerant varieties delayed, as farmers come to notice the damage",
       "argument": "No delay lost: its sibling to Fields moved to new crops folds Farmers' experience of damage into its delay, salt in a field being hard to see and a lower yield hard to put down to salt (Beauchampet, 2022, p. 216), and that noticing comes before a change of variety as much as of crop. The link stays a hypothesis, its delay part of it, and its question goes on the session's cards. B1 stays balancing, now with a delay; C1 orders B1 before B2 by their costs, no longer by a delay B1 lacked.",
       "items": [

@@ -323,7 +323,7 @@
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Plants and supply chains in Zeeland, on the island or near it, that store, process or sell new crops. Breeding of tolerant varieties is Salt-tolerant varieties on offer. No source read shows a new crop processed on the island. Sea vegetables are sorted and packed, mostly by hand, by a grower and trader at Nieuw- en Sint Joosland, who in 2018 shipped most of his sea fennel, seaweed and sea spaghetti to organic shops and was investing, with a colleague from Schouwen-Duiveland, in growing new sea greens in greenhouses to supply international restaurants and supermarkets directly (FreshPlaza, 2018); at Colijnsplaat an arable farmer and a trader of sea vegetables founded a company, NZZT, to grow sea crops and set up their supply chain, in a project of 2020–2021 (EU CAP Network, 2023). GreenFood50 runs its quinoa chain, from grower to customer, from Wageningen, and has its quinoa grown close to its processing facilities (GreenFood50, n.d.), and a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a). Buyers and processors build or keep it where they find it worthwhile against processing the crops elsewhere.",
+      "description": "Plants and supply chains in Zeeland, on the island or near it, that store, process or sell new crops. Breeding of tolerant varieties is Yield of salt-tolerant varieties on offer. No source read shows a new crop processed on the island. Sea vegetables are sorted and packed, mostly by hand, by a grower and trader at Nieuw- en Sint Joosland, who in 2018 shipped most of his sea fennel, seaweed and sea spaghetti to organic shops and was investing, with a colleague from Schouwen-Duiveland, in growing new sea greens in greenhouses to supply international restaurants and supermarkets directly (FreshPlaza, 2018); at Colijnsplaat an arable farmer and a trader of sea vegetables founded a company, NZZT, to grow sea crops and set up their supply chain, in a project of 2020–2021 (EU CAP Network, 2023). GreenFood50 runs its quinoa chain, from grower to customer, from Wageningen, and has its quinoa grown close to its processing facilities (GreenFood50, n.d.), and a Zeeland quinoa chain was a project from 2021 to 2024 (De Vriend, 2024a). Buyers and processors build or keep it where they find it worthwhile against processing the crops elsewhere.",
       "simplification": "Counts the chains of every new crop as one capacity, though each is built for one kind of crop, sea vegetables (FreshPlaza, 2018) or quinoa (GreenFood50, n.d.): it leaves out that a crop's harvest makes only a chain for its own kind worthwhile and that a chain cuts the haul only for the crops it takes. Per kind of crop the loop R7 runs through the same positive links, so it stays reinforcing with the same mechanism; the total makes R7 look easier to start where farms spread their hectares over crops that no single chain takes. It also draws the capacity as answering only to the harvest within reach and market demand, and leaves out public support for setting up a chain, such as the LEADER climate adaptation support for the project in which NZZT at Colijnsplaat set up its chain for sea crops (EU CAP Network, 2023). Such support would enter as one more positive driver beside the link from the harvest and closes no loop, so R7 keeps its sign and its mechanism. It splits the plants and chains that take new crops by distance into this variable, those in Zeeland, and Processing of new crops elsewhere, those outside it, and leaves out that the haul, and with it the net price, still changes with distance within each side. More capacity on the near side still cuts the haul, so R7 keeps its sign and its mechanism.",
       "sources": [
         "freshplaza-2018",
@@ -807,13 +807,13 @@
     },
     {
       "id": "tolerant-varieties-on-offer",
-      "label": "Salt-tolerant varieties on offer",
+      "label": "Yield of salt-tolerant varieties on offer",
       "element type": "Constant",
       "adaptive practice": false,
       "sets domain": "Technological",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "Salt-tolerant varieties of the current crops that breeders bring to market, and their yield; breeding lies outside the CLD's scale. Dutch breeders and suppliers sell potato cultivars that differ in salt tolerance: of 13 bought from them and tested in the field on Texel, Rivola, Elgar and '927' were more tolerant than the others on sandy soil (van Straten et al., 2021, pp. 2, 11). With no official label for salt tolerance, trading houses claim it for no variety, one of them saying only which suit saline soils best and worst, and salt tolerance is not yet among the ten traits that the salespeople of one trading house, endorsed by another, rank most important for a new variety (de Wit et al., 2022, pp. 271–272); stakeholders interviewed in the Dutch potato industry say the salt-tolerant seed potatoes bred in the Netherlands are mostly for export to arid countries such as Egypt and Morocco (Aldrich et al., 2023, pp. 38, 40). Tolerant varieties yield relatively little against common high-yielding ones without salt or under mild salt, and conventional breeding typically takes 10 to 15 years (van den Burg et al., 2024, pp. 3, 6). Measured in interviews across the Dutch potato chain and in field trials on Texel; none on the island.",
+      "description": "The yield of the salt-tolerant varieties of the current crops that breeders bring to market, where salt does not limit the crop, against the high-yielding varieties grown now; breeding lies outside the CLD's scale. Dutch breeders and suppliers sell potato cultivars that differ in salt tolerance: of 13 bought from them and tested in the field on Texel, Rivola, Elgar and '927' were more tolerant than the others on sandy soil (van Straten et al., 2021, pp. 2, 11). With no official label for salt tolerance, trading houses claim it for no variety, one of them saying only which suit saline soils best and worst, and salt tolerance is not yet among the ten traits that the salespeople of one trading house, endorsed by another, rank most important for a new variety (de Wit et al., 2022, pp. 271–272); stakeholders interviewed in the Dutch potato industry say the salt-tolerant seed potatoes bred in the Netherlands are mostly for export to arid countries such as Egypt and Morocco (Aldrich et al., 2023, pp. 38, 40). Tolerant varieties yield relatively little against common high-yielding ones without salt or under mild salt, and conventional breeding typically takes 10 to 15 years (van den Burg et al., 2024, pp. 3, 6). Measured in interviews across the Dutch potato chain and in field trials on Texel; none on the island.",
       "sources": [
         "van-straten-2021",
         "de-wit-2022",
@@ -824,7 +824,8 @@
       "y": 1397,
       "actors": [
         "seed-potato-breeders-and-trading-houses"
-      ]
+      ],
+      "simplification": "Holds the salt tolerance of the varieties on offer at that of the cultivars the description names, so only their yield varies. A variable holding both would have no one sign into Margin given up on high-margin crops, since tolerance and yield trade off (Adoption of salt-tolerant varieties → Margin given up on high-margin crops): a more tolerant variety that yields less raises what a hectare gives up, one that yields more lowers it. The yield is where the description shows tolerant varieties falling short of the high-yielding ones. What it leaves out: a more tolerant variety on offer losing less on each hectare at the same salinity, a strength of Adoption of salt-tolerant varieties → Harvest lost to salt, no variable. The element has no links in and is on no loop, so no loop changes."
     },
     {
       "id": "machines-and-storage-for-current-crops",
@@ -1866,7 +1867,7 @@
       "sources": [
         "deolu-ajayi-2024"
       ],
-      "curvature": -0.23
+      "curvature": -0.1
     },
     {
       "from": "margin-given-up-on-high-margin-crops",
@@ -1930,7 +1931,7 @@
       "to": "tolerant-varieties-adoption",
       "polarity": "+",
       "delay": false,
-      "description": "Better tolerant varieties on the market make switching more worthwhile, so more farmers grow them.",
+      "description": "Does a tolerant variety that yields closer to the one grown now make farmers grow it? The less a tolerant variety yields below the current one, the less a farm gives up on each field it moves to it, so the more worthwhile the switch. A hypothesis for the group model building session: no source read shows a tolerant variety grown on the island, nor how its yield weighs in a farmer's choice, so the question to farmers is whether a tolerant variety that yields as much as theirs would make them grow it. Within the season: the variety is chosen each season.",
       "simplification": "Folds Relative attractiveness of salt-tolerant varieties, which gathered the drivers of this decision: each driver now points at Adoption of salt-tolerant varieties itself, whose description says that farmers weigh a tolerant variety against the one they grow now. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
       "sources": [],
       "hypothesis": true,
@@ -2879,6 +2880,20 @@
       "hypothesis": true,
       "description": "Does the harvest salt takes make farmers store more fresh water in their fields? In the low polders the measures keep the thin rainwater lens against salt (Freshwater storage measures), so a farm losing harvest to salt has a reason to take them up beside the shortfall. A hypothesis for the group model building session: no source read shows a farmer storing because of salt damage, so the question to farmers is whether salt on their fields makes them consider such measures. No delay drawn: how quickly salt damage turns into a measure built, no source read shows.",
       "sources": []
+    },
+    {
+      "from": "tolerant-varieties-on-offer",
+      "to": "margin-given-up-on-high-margin-crops",
+      "polarity": "-",
+      "delay": false,
+      "curvature": 0.0,
+      "description": "The margin given up is net of what the tolerant variety earns, a margin being revenue minus the crop's variable costs (Cloet et al., 2024, p. 1), so the better the tolerant varieties on offer yield, the less a farm gives up on each hectare it moves to one. Tolerant varieties yield relatively little against common high-yielding ones without salt or under mild salt (van den Burg et al., 2024, p. 6), high-yielding varieties being sensitive to stress through a trade-off between tolerance and yield (Deolu-Ajayi et al., 2024, p. 30); in greenhouse pots at Wageningen in 2024, a salt-tolerant potato variety netted about €1,800 a hectare on fresh water with the soil amendment that served it best, against about €2,300 for the sensitive, high-yielding variety grown as usual (pp. 51–52). Within the season: the variety is chosen each season.",
+      "simplification": "Draws the yield as lowering the margin given up by the same amount whatever the adoption, though it acts only on the hectares already under a tolerant variety, not on those moved to new crops, which the element also counts: while few fields grow a tolerant variety, a better yield changes the total little, and while none do, nothing. The effect weakens but never reverses, so the link keeps its sign, and it closes no loop, since the varieties on offer have no links in. What one strength leaves out is that the yield and the hectares under tolerant varieties act together.",
+      "sources": [
+        "cloet-2024",
+        "van-den-burg-2024",
+        "deolu-ajayi-2024"
+      ]
     }
   ],
   "loops": [

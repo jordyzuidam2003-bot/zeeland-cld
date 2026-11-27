@@ -247,9 +247,9 @@
 <path class="link-path" d="M 489.6 823.0 Q 441.7 936.0 326.0 977.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="371.7" y="956.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="tolerant-varieties-adoption" data-to="margin-given-up-on-high-margin-crops" data-sign="+" data-delay="false" data-curvature="-0.23">
-<path class="link-path" d="M -156.5 1176.6 Q 27.3 1192.4 159.0 1063.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="121.5" y="1096.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<g class="link" data-from="tolerant-varieties-adoption" data-to="margin-given-up-on-high-margin-crops" data-sign="+" data-delay="false" data-curvature="-0.1">
+<path class="link-path" d="M -156.5 1154.9 Q -6.0 1137.2 126.1 1063.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="81.8" y="1086.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="margin-given-up-on-high-margin-crops" data-to="farm-revenue" data-sign="-" data-delay="false" data-curvature="-0.1">
 <path class="link-path" d="M 233.0 977.0 Q 458.0 589.9 516.8 146.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -607,6 +607,10 @@
 <path class="link-path" d="M -238.0 551.0 Q -658.9 256.8 -597.3 -253.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-602.2" y="-203.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
+<g class="link" data-from="tolerant-varieties-on-offer" data-to="margin-given-up-on-high-margin-crops" data-sign="-" data-delay="false" data-curvature="0.0">
+<path class="link-path" d="M -214.3 1354.0 Q -27.1 1208.5 160.1 1063.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="120.7" y="1093.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+</g>
 </g>
 <g class="elements">
 <g class="element" data-id="hotter-drier-summers" data-domain="Ecological" data-type="Constant" data-adaptive="false">
@@ -820,8 +824,8 @@
 <text x="-267.0" y="1214.5" text-anchor="middle">varieties</text>
 </g>
 <g class="element" data-id="tolerant-varieties-on-offer" data-domain="Technological" data-type="Constant" data-adaptive="false">
-<rect x="-416.6" y="1354.0" width="295.1" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5" stroke-dasharray="8 5"/>
-<text x="-269.0" y="1388.5" text-anchor="middle">Salt-tolerant</text>
+<rect x="-446.2" y="1354.0" width="354.5" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5" stroke-dasharray="8 5"/>
+<text x="-269.0" y="1388.5" text-anchor="middle">Yield of salt-tolerant</text>
 <text x="-269.0" y="1422.5" text-anchor="middle">varieties on offer</text>
 </g>
 <g class="element" data-id="machines-and-storage-for-current-crops" data-domain="Technological" data-type="Stock" data-adaptive="false">

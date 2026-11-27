@@ -5958,8 +5958,8 @@
         {
           "_id": "node-salt-in-ditch-water",
           "position": {
-            "x": -1420,
-            "y": 360
+            "x": -1375,
+            "y": 400
           },
           "pinned": true,
           "style": {},
@@ -5968,8 +5968,8 @@
         {
           "_id": "node-water-demand-of-the-crop-mix",
           "position": {
-            "x": -900,
-            "y": 1350
+            "x": -1025,
+            "y": 1650
           },
           "pinned": true,
           "style": {},
@@ -5978,8 +5978,8 @@
         {
           "_id": "node-trials-and-pilots-on-the-island",
           "position": {
-            "x": -50,
-            "y": 300
+            "x": 1125,
+            "y": 350
           },
           "pinned": true,
           "style": {},
@@ -5988,8 +5988,8 @@
         {
           "_id": "node-perceived-risk-of-switching",
           "position": {
-            "x": 1250,
-            "y": 480
+            "x": 1650,
+            "y": 880
           },
           "pinned": true,
           "style": {},
@@ -5998,8 +5998,8 @@
         {
           "_id": "node-buyer-contracts-for-new-crops",
           "position": {
-            "x": 960,
-            "y": 1300
+            "x": 1210,
+            "y": 1350
           },
           "pinned": true,
           "style": {},
@@ -6157,7 +6157,7 @@
         },
         {
           "_id": "edge-freshwater-availability-for-crops--crop-water-shortfall",
-          "curvature": -0.28,
+          "curvature": -0.3,
           "style": {},
           "connection": "conn-freshwater-availability-for-crops--crop-water-shortfall"
         },
@@ -6169,7 +6169,7 @@
         },
         {
           "_id": "edge-groundwater-extraction-for-irrigation--freshwater-availability-for-crops",
-          "curvature": 0.32,
+          "curvature": 0.3,
           "style": {},
           "connection": "conn-groundwater-extraction-for-irrigation--freshwater-availability-for-crops"
         },
@@ -6427,7 +6427,7 @@
         },
         {
           "_id": "edge-processing-capacity-for-alternative-crops--net-price-for-new-crops",
-          "curvature": -0.14,
+          "curvature": -0.15,
           "style": {},
           "connection": "conn-processing-capacity-for-alternative-crops--net-price-for-new-crops"
         },
@@ -6613,7 +6613,7 @@
         },
         {
           "_id": "edge-freshwater-storage-measures--freshwater-availability-for-crops",
-          "curvature": -0.19,
+          "curvature": -0.2,
           "style": {},
           "connection": "conn-freshwater-storage-measures--freshwater-availability-for-crops"
         },
@@ -6679,7 +6679,7 @@
         },
         {
           "_id": "edge-soil-structure-usability--freshwater-lens-thickness",
-          "curvature": -0.11,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-soil-structure-usability--freshwater-lens-thickness"
         },
@@ -6715,7 +6715,7 @@
         },
         {
           "_id": "edge-saline-seepage-kwel--salt-in-ditch-water",
-          "curvature": 0.15,
+          "curvature": 0.2,
           "style": {},
           "connection": "conn-saline-seepage-kwel--salt-in-ditch-water"
         },
@@ -6727,25 +6727,25 @@
         },
         {
           "_id": "edge-salt-in-ditch-water--freshwater-storage-measures",
-          "curvature": -0.15,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-salt-in-ditch-water--freshwater-storage-measures"
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--water-demand-of-the-crop-mix",
-          "curvature": 0.15,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--water-demand-of-the-crop-mix"
         },
         {
           "_id": "edge-water-demand-of-the-crop-mix--crop-water-shortfall",
-          "curvature": 0.15,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-water-demand-of-the-crop-mix--crop-water-shortfall"
         },
         {
           "_id": "edge-crop-water-shortfall--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": 0.15,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-crop-water-shortfall--dependence-on-high-margin-salt-sensitive-crops"
         },
@@ -6763,19 +6763,19 @@
         },
         {
           "_id": "edge-zlto-call-for-supply-route--freshwater-storage-measures",
-          "curvature": 0.15,
+          "curvature": -0.15,
           "style": {},
           "connection": "conn-zlto-call-for-supply-route--freshwater-storage-measures"
         },
         {
           "_id": "edge-perceived-risk-of-switching--fields-moved-to-new-salt-tolerant-crops",
-          "curvature": 0.15,
+          "curvature": -0.15,
           "style": {},
           "connection": "conn-perceived-risk-of-switching--fields-moved-to-new-salt-tolerant-crops"
         },
         {
           "_id": "edge-knowledge-of-new-crops--perceived-risk-of-switching",
-          "curvature": 0.15,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-knowledge-of-new-crops--perceived-risk-of-switching"
         },
@@ -6787,13 +6787,13 @@
         },
         {
           "_id": "edge-buyer-contracts-for-new-crops--perceived-risk-of-switching",
-          "curvature": 0.15,
+          "curvature": -0.35,
           "style": {},
           "connection": "conn-buyer-contracts-for-new-crops--perceived-risk-of-switching"
         },
         {
           "_id": "edge-farms-with-a-successor--farmland-leaving-arable-use",
-          "curvature": 0.15,
+          "curvature": 0.45,
           "style": {},
           "connection": "conn-farms-with-a-successor--farmland-leaving-arable-use"
         }
@@ -7002,8 +7002,8 @@
           "loop": "loop-B15",
           "style": {},
           "position": {
-            "x": 18,
-            "y": 537
+            "x": -23,
+            "y": 637
           }
         }
       ]

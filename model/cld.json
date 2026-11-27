@@ -1071,8 +1071,8 @@
         "scheldestromen-2021-hor-duiveland",
         "kaandorp-2022"
       ],
-      "x": -1420,
-      "y": 360
+      "x": -1375,
+      "y": 400
     },
     {
       "id": "water-demand-of-the-crop-mix",
@@ -1087,8 +1087,8 @@
         "allen-1998",
         "delphy-2023-dorsd"
       ],
-      "x": -900,
-      "y": 1350
+      "x": -1025,
+      "y": 1650
     },
     {
       "id": "trials-and-pilots-on-the-island",
@@ -1114,8 +1114,8 @@
         "acacia-water",
         "delphy"
       ],
-      "x": -50,
-      "y": 300
+      "x": 1125,
+      "y": 350
     },
     {
       "id": "perceived-risk-of-switching",
@@ -1130,8 +1130,8 @@
         "delphy-2023-dorsd",
         "van-duinen-2015-coping"
       ],
-      "x": 1250,
-      "y": 480
+      "x": 1650,
+      "y": 880
     },
     {
       "id": "buyer-contracts-for-new-crops",
@@ -1148,8 +1148,8 @@
         "dutchnews-2026",
         "delphy-2023-dorsd"
       ],
-      "x": 960,
-      "y": 1300,
+      "x": 1210,
+      "y": 1350,
       "actor": "buyers-and-processors"
     }
   ],
@@ -1457,7 +1457,7 @@
         "delphy-2023-dorsd",
         "terink-2023"
       ],
-      "curvature": -0.28
+      "curvature": -0.3
     },
     {
       "from": "crop-water-shortfall",
@@ -1485,7 +1485,7 @@
         "krajenbrink-2023",
         "acacia-water-2020"
       ],
-      "curvature": 0.32
+      "curvature": 0.3
     },
     {
       "from": "crop-water-shortfall",
@@ -2018,7 +2018,7 @@
         "meynard-2018",
         "jung-2022"
       ],
-      "curvature": -0.14
+      "curvature": -0.15
     },
     {
       "from": "processing-of-new-crops-elsewhere",
@@ -2418,7 +2418,7 @@
         "kaandorp-2022",
         "delphy-2023-dorsd"
       ],
-      "curvature": -0.19
+      "curvature": -0.2
     },
     {
       "from": "knowledge-of-storage",
@@ -2560,7 +2560,7 @@
         "de-louw-2011",
         "de-louw-2015"
       ],
-      "curvature": -0.11
+      "curvature": -0.1
     },
     {
       "from": "winter-rain-drained-away",
@@ -2661,7 +2661,7 @@
         "scheldestromen-2021-hor-duiveland",
         "kaandorp-2022"
       ],
-      "curvature": 0.15
+      "curvature": 0.2
     },
     {
       "from": "hotter-drier-summers",
@@ -2683,7 +2683,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": -0.15
+      "curvature": -0.1
     },
     {
       "from": "dependence-on-high-margin-salt-sensitive-crops",
@@ -2694,7 +2694,7 @@
       "sources": [
         "delphy-2023-dorsd"
       ],
-      "curvature": 0.15
+      "curvature": 0.1
     },
     {
       "from": "water-demand-of-the-crop-mix",
@@ -2706,7 +2706,7 @@
         "allen-1998",
         "delphy-2023-dorsd"
       ],
-      "curvature": 0.15
+      "curvature": -0.1
     },
     {
       "from": "crop-water-shortfall",
@@ -2720,7 +2720,7 @@
         "de-vriend-2024-gewassen"
       ],
       "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
-      "curvature": 0.15
+      "curvature": -0.1
     },
     {
       "from": "trials-and-pilots-on-the-island",
@@ -2757,7 +2757,7 @@
         "witteveen-bos-2021",
         "omroep-zeeland-2023-zoet-water"
       ],
-      "curvature": 0.15
+      "curvature": -0.15
     },
     {
       "from": "perceived-risk-of-switching",
@@ -2769,7 +2769,7 @@
         "delphy-2023-dorsd",
         "van-duinen-2015-coping"
       ],
-      "curvature": 0.15
+      "curvature": -0.15
     },
     {
       "from": "knowledge-of-new-crops",
@@ -2780,7 +2780,7 @@
       "sources": [
         "van-duinen-2015-coping"
       ],
-      "curvature": 0.15
+      "curvature": 0.1
     },
     {
       "from": "market-demand-for-alternative-crops",
@@ -2804,7 +2804,7 @@
         "janssens-2020",
         "de-wit-2022"
       ],
-      "curvature": 0.15
+      "curvature": -0.35
     },
     {
       "from": "farms-with-a-successor",
@@ -2816,7 +2816,7 @@
         "delphy-2023-dorsd",
         "silvis-2017"
       ],
-      "curvature": 0.15
+      "curvature": 0.45
     }
   ],
   "loops": [

@@ -1134,6 +1134,23 @@
       ],
       "x": -382,
       "y": -21
+    },
+    {
+      "id": "salt-in-ditch-water",
+      "label": "Salt in the ditch water",
+      "element type": "Auxiliary",
+      "adaptive practice": false,
+      "sets domain": "Ecological",
+      "subsystem": "Water and soil",
+      "subquestion": "SQ1",
+      "description": "The salinity of the water in the island's ditches, the water a farm would irrigate with or infiltrate. All water on Schouwen runs through the water board's main ditches and capillaries to its two pumping stations, which pump it into the Oosterschelde and the Grevelingenmeer (Waterschap Scheldestromen, 2021b, p. 24), and in most of Duiveland the ditches catch the salt or brackish seepage from below (2021a, p. 20). In the low polders of the island's west the surface water is brackish to salt (Kaandorp et al., 2022, p. 27); in one area studied, the main ditches measured 5 to 15 mS/cm and the secondary ditches round the fields 1 to 5, the main ditches less brackish after rain, as drained rain mixes in, and in dry periods partly salted by salt surface water brought in from elsewhere (p. 42). The CLD draws salt taking fresh water away by amount, the lenses thinning, and here by quality. An Auxiliary: it follows the seepage and the rain within the season. No actor decides it: the water board reaches it through the ditch level and the seepage (Ditch level (NAP) → Saline seepage (kwel)), as it reaches the lens.",
+      "sources": [
+        "scheldestromen-2021-hor-schouwen",
+        "scheldestromen-2021-hor-duiveland",
+        "kaandorp-2022"
+      ],
+      "x": -1420,
+      "y": 360
     }
   ],
   "connections": [
@@ -2793,6 +2810,40 @@
         "van-duinen-2015-coping"
       ],
       "curvature": 0.2
+    },
+    {
+      "from": "saline-seepage-kwel",
+      "to": "salt-in-ditch-water",
+      "polarity": "+",
+      "delay": false,
+      "description": "The more salt or brackish seepage wells up, the saltier the ditches that catch it: in most of Duiveland the ditches catch the salt or brackish seepage from below (Waterschap Scheldestromen, 2021a, p. 20), and in the low polders of the island's west, where salt groundwater lies at a small depth, the surface water is brackish to salt (Kaandorp et al., 2022, p. 27). Within the season.",
+      "sources": [
+        "scheldestromen-2021-hor-duiveland",
+        "kaandorp-2022"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "hotter-drier-summers",
+      "to": "salt-in-ditch-water",
+      "polarity": "+",
+      "delay": false,
+      "description": "In a dry period less rain drains into the ditches to dilute their salt: in one area studied on the island, the main ditches were less brackish after periods of rain, as drained rain mixed in, and in dry periods their salt seemed partly to come from salt surface water brought in from elsewhere (Kaandorp et al., 2022, p. 42). Measured in one area of the island. Within the season.",
+      "sources": [
+        "kaandorp-2022"
+      ],
+      "curvature": 0
+    },
+    {
+      "from": "salt-in-ditch-water",
+      "to": "freshwater-storage-measures",
+      "polarity": "-",
+      "delay": false,
+      "description": "Salt ditch water cannot fill a measure that infiltrates water: in one area studied on the island the main ditches carry water all year, but brackish to salt and with iron and turbidity that clog wells, so it is unsuited for infiltration into the deeper subsoil (Kaandorp et al., 2022, p. 43), and the fresh water infiltration needs is a bottleneck at most of the island's locations, which, beside the rules, limits the large-scale roll-out of the infiltration solutions (p. 55). So it limits how far the measures that infiltrate spread, not what one measure delivers. No delay drawn: no source read gives how fast the roll-out answers the salt.",
+      "sources": [
+        "kaandorp-2022"
+      ],
+      "curvature": -0.15
     }
   ],
   "loops": [

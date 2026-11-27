@@ -530,20 +530,21 @@
     },
     {
       "id": "zlto-call-for-supply-route",
-      "label": "ZLTO's call for a supply route",
+      "label": "Agrarisch Schouwen-Duiveland's call for a supply route",
       "element type": "Auxiliary",
       "adaptive practice": false,
       "sets domain": "Social",
       "subsystem": "Water and soil",
       "subquestion": "SQ2",
-      "description": "How firmly ZLTO asks the province, the municipality and the water board for a route bringing fresh water to the island. After a report on the island's freshwater demand, its branch there called a pipeline from the Haringvliet the one solution (Omroep Zeeland, 2023), and its chair looks for more fresh water with the municipality and the province (van Essen, 2026). An Auxiliary: it follows the shortfall farmers report and holds nothing of its own.",
+      "description": "How firmly Agrarisch Schouwen-Duiveland, ZLTO's branch on the island, asks the province, the municipality and the water board for a route bringing fresh water to the island. After a report on the island's freshwater demand, which it commissioned and paid for (Delphy, 2023, p. 1), it called a pipeline from the Haringvliet the one solution (Omroep Zeeland, 2023), and its chair, an arable farmer, looks for more fresh water with the municipality and the province (van Essen, 2026). An Auxiliary: it follows the shortfall farmers report and holds nothing of its own.",
       "sources": [
         "omroep-zeeland-2023-zoet-water",
-        "omroep-zeeland-2026-aardappeloogst"
+        "omroep-zeeland-2026-aardappeloogst",
+        "delphy-2023-dorsd"
       ],
       "x": -1214,
       "y": 1185,
-      "actor": "zlto"
+      "actor": "agrarisch-schouwen-duiveland"
     },
     {
       "id": "freshwater-supply-route",
@@ -3077,7 +3078,7 @@
         "external-freshwater-supply",
         "freshwater-availability-for-crops"
       ],
-      "description": "The shorter of water the farms, the more firmly ZLTO asks for a supply route, and the deciding body weighs that call over the years a route takes to decide, pay for and build. A route would carry fresh water to the island, crops would have more to draw on and the shortfall would shrink. A route drawing on the Volkerak-Zoommeer would ease the shortfall little late in the season, when algae closed such inlets on Tholen in most years 2003–2011 (Schipper et al., 2014, p. 36); the Haringvliet source with a ring pipeline gives the best water but the highest costs (Witteveen+Bos, 2021, p. 50). None exists, so the loop has not run yet; a study has left open who pays and who would run one. It seeks a shortfall the deciding body finds acceptable. Where it eased the shortfall it would ease the worse harvests that make storing worthwhile (B6)."
+      "description": "The shorter of water the farms, the more firmly Agrarisch Schouwen-Duiveland asks for a supply route, and the deciding body weighs that call over the years a route takes to decide, pay for and build. A route would carry fresh water to the island, crops would have more to draw on and the shortfall would shrink. A route drawing on the Volkerak-Zoommeer would ease the shortfall little late in the season, when algae closed such inlets on Tholen in most years 2003–2011 (Schipper et al., 2014, p. 36); the Haringvliet source with a ring pipeline gives the best water but the highest costs (Witteveen+Bos, 2021, p. 50). None exists, so the loop has not run yet; a study has left open who pays and who would run one. It seeks a shortfall the deciding body finds acceptable. Where it eased the shortfall it would ease the worse harvests that make storing worthwhile (B6)."
     },
     {
       "id": "B8",

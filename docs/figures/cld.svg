@@ -142,14 +142,14 @@
 <text class="sign" x="-1362.8" y="911.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="crop-water-shortfall" data-to="zlto-call-for-supply-route" data-sign="+" data-delay="false" data-curvature="0.2">
-<path class="link-path" d="M -920.9 1046.0 Q -976.2 1129.6 -1073.9 1152.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-1026.4" y="1136.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -920.9 1046.0 Q -967.3 1119.4 -1051.6 1140.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-1004.7" y="1123.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="zlto-call-for-supply-route" data-to="freshwater-supply-route" data-sign="+" data-delay="true" data-curvature="0.32" data-delay-t="0.44">
-<path class="link-path" d="M -1237.4 1228.0 Q -1266.3 1334.3 -1375.0 1352.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-1327.0" y="1338.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M -1255.4 1315.2 L -1290.2 1282.2 M -1266.4 1326.8 L -1301.2 1293.8" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -1255.4 1315.2 L -1290.2 1282.2 M -1266.4 1326.8 L -1301.2 1293.8" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="zlto-call-for-supply-route" data-to="freshwater-supply-route" data-sign="+" data-delay="true" data-curvature="0.32" data-delay-t="0.28">
+<path class="link-path" d="M -1261.1 1262.0 Q -1289.1 1343.7 -1375.0 1352.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-1326.7" y="1339.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -1257.2 1309.6 L -1296.1 1281.5 M -1266.5 1322.6 L -1305.4 1294.5" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -1257.2 1309.6 L -1296.1 1281.5 M -1266.5 1322.6 L -1305.4 1294.5" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="soil-structure-usability" data-to="spring-workability-of-the-fields" data-sign="+" data-delay="false" data-curvature="0.1">
 <path class="link-path" d="M -748.0 24.0 Q -899.4 -65.3 -1004.7 -206.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -618,8 +618,8 @@
 <path class="delay" d="M 246.9 384.7 L 230.2 429.7 M 261.9 390.3 L 245.2 435.3" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="zlto-call-for-supply-route" data-to="freshwater-storage-measures" data-sign="-" data-delay="false" data-curvature="0.15">
-<path class="link-path" d="M -1208.9 1142.0 Q -1120.9 355.3 -614.4 -253.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-646.1" y="-214.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M -1204.3 1108.0 Q -1113.5 339.0 -614.4 -253.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-646.3" y="-214.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 </g>
 <g class="elements">
@@ -766,9 +766,11 @@
 <text x="-897.0" y="1028.5" text-anchor="middle">Crop water shortfall</text>
 </g>
 <g class="element" data-id="zlto-call-for-supply-route" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-1354.1" y="1142.0" width="280.3" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-1214.0" y="1176.5" text-anchor="middle">ZLTO's call for a</text>
-<text x="-1214.0" y="1210.5" text-anchor="middle">supply route</text>
+<rect x="-1376.4" y="1108.0" width="324.8" height="154.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-1214.0" y="1142.5" text-anchor="middle">Agrarisch</text>
+<text x="-1214.0" y="1176.5" text-anchor="middle">Schouwen-Duiveland's</text>
+<text x="-1214.0" y="1210.5" text-anchor="middle">call for a supply</text>
+<text x="-1214.0" y="1244.5" text-anchor="middle">route</text>
 </g>
 <g class="element" data-id="freshwater-supply-route" data-domain="Technological" data-type="Stock" data-adaptive="false">
 <rect x="-1685.0" y="1339.0" width="310.0" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>

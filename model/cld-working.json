@@ -4015,13 +4015,6 @@
   ],
   "changes": [
     {
-      "change": "Demand for every new crop raising every chain alike stated, with the link's delay and its quantity",
-      "argument": "The simplification audit found it unstated (CitationCheck/65810420/simplify/market-demand-for-alternative-crops->processing-capacity-for-alternative-crops.json, finding 3, confirmed by a fresh agent); the sentence states it.",
-      "items": [
-        "market-demand-for-alternative-crops -> processing-capacity-for-alternative-crops"
-      ]
-    },
-    {
       "change": "One net price for every new crop stated",
       "argument": "The simplification audit found it unstated (CitationCheck/65810420/simplify/net-price-for-new-crops.json, finding 1, confirmed by a fresh agent); the sentence states it.",
       "items": [

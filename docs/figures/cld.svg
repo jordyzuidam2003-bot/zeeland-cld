@@ -297,9 +297,11 @@
 <path class="link-path" d="M 828.6 557.0 Q 649.1 182.2 777.6 -213.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="763.2" y="-165.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="market-demand-for-alternative-crops" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="false" data-curvature="0.0">
+<g class="link" data-from="market-demand-for-alternative-crops" data-to="processing-capacity-for-alternative-crops" data-sign="+" data-delay="true" data-curvature="0.0" data-delay-t="0.12">
 <path class="link-path" d="M 728.6 1067.0 Q 699.5 1216.5 670.4 1366.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="679.9" y="1316.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 746.7 1099.6 L 699.6 1090.4 M 743.7 1115.3 L 696.5 1106.1" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 746.7 1099.6 L 699.6 1090.4 M 743.7 1115.3 L 696.5 1106.1" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="processing-capacity-for-alternative-crops" data-to="net-price-for-new-crops" data-sign="+" data-delay="false" data-curvature="-0.14">
 <path class="link-path" d="M 727.1 1366.0 Q 972.8 1217.5 1105.7 963.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>

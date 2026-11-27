@@ -2952,6 +2952,7 @@
         "sets link": "T to S",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
+        "simplification": "Treats every hectare moved as giving up margin alike, while the description shows it differing by the crop replaced and the farm's fresh water: on the island without extra fresh water sown onions earn less a hectare than grain, so a field moved from drought-hit onions gives up little. The link assumes the hectares moved on the island give up margin on the whole, as each hectare moved from potatoes does, so it stays positive and B10 stays balancing; where fields move from drought-hit onions B10 runs weakly or not at all, which one strength for the island cannot show, and no source read prices a new crop on the island.",
         "sources": "Polman, N., Kisters, T., Manshanden, M., & van Ruiten, C. (2026). PPS slimme verdienmodellen in de akkerbouw: Niet-toegerekende kosten eiwitgewassen [Achtergrondnotitie]. Wageningen Social & Economic Research. https://edepot.wur.nl/708091\nCloet, T., Van Meensel, J., De Boever, M., & Cnops, G. (2024). Rendabiliteit van de quinoateelt in Vlaanderen (Version September 2024). ILVO. https://ilvo.vlaanderen.be/uploads/documents/Projecten/Rendabiliteit-van-de-quinoateelt-in-Vlaanderen_sept2024.pdf\nDelphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf",
         "sourced": "yes",
         "connection type": "+"

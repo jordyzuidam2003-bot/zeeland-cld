@@ -4013,13 +4013,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "One margin given up for every hectare moved stated",
-      "argument": "The simplification audit found it unstated (CitationCheck/65810420/simplify/salt-tolerant-crop-adoption->margin-given-up-on-high-margin-crops.json, finding 2, confirmed by a fresh agent); the sentence states it.",
-      "items": [
-        "salt-tolerant-crop-adoption -> margin-given-up-on-high-margin-crops"
-      ]
-    }
-  ]
+  "changes": []
 }

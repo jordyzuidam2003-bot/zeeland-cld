@@ -2860,6 +2860,16 @@
         "janssens-2020",
         "economic-board-zeeland-2023"
       ]
+    },
+    {
+      "from": "tolerant-varieties-adoption",
+      "to": "dependence-on-high-margin-salt-sensitive-crops",
+      "polarity": "+",
+      "delay": false,
+      "curvature": 0.1,
+      "hypothesis": true,
+      "description": "Does a salt-tolerant variety of potato or onion let a farm keep those crops on a field that salt would otherwise take them off? A hypothesis for the group model building session: a tolerant variety uses the same machines, storage and know-how as the variety it replaces (Adoption of salt-tolerant varieties), but no source read shows one grown on the island, nor a farm keeping its potatoes because of one, so the question to farmers is whether a tolerant variety would make them keep those crops. Within the year, if it holds.",
+      "sources": []
     }
   ],
   "loops": [

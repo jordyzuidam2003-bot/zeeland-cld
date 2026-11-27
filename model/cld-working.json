@@ -4058,13 +4058,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Adoption of salt-tolerant varieties → Dependence on high-margin salt-sensitive crops, a hypothesis for the group model building session",
-      "argument": "A tolerant potato's point is keeping potatoes on a field turned salty, yet as drawn the varieties lower the harvest lost but never reach the crop mix, so the analysis would show them with no effect on the demand for deep drainage. The link closes a reinforcing loop through that demand, the ditch levels, the seepage, the lens and the root zone's salt. Whether a variety makes a farmer keep a crop is why an actor decides, with no source: a hypothesis, and a question to farmers on the session's cards (cld-model.md, 'A behavioural claim may be a hypothesis').",
-      "items": [
-        "tolerant-varieties-adoption -> dependence-on-high-margin-salt-sensitive-crops"
-      ]
-    }
-  ]
+  "changes": []
 }

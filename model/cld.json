@@ -1485,7 +1485,7 @@
         "krajenbrink-2023",
         "acacia-water-2020"
       ],
-      "curvature": 0.3
+      "curvature": 0.32
     },
     {
       "from": "crop-water-shortfall",
@@ -2018,7 +2018,7 @@
         "meynard-2018",
         "jung-2022"
       ],
-      "curvature": -0.15
+      "curvature": -0.14
     },
     {
       "from": "processing-of-new-crops-elsewhere",
@@ -2418,7 +2418,7 @@
         "kaandorp-2022",
         "delphy-2023-dorsd"
       ],
-      "curvature": -0.2
+      "curvature": -0.19
     },
     {
       "from": "knowledge-of-storage",
@@ -2560,7 +2560,7 @@
         "de-louw-2011",
         "de-louw-2015"
       ],
-      "curvature": -0.1
+      "curvature": -0.11
     },
     {
       "from": "winter-rain-drained-away",

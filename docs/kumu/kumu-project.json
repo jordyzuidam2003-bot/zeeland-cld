@@ -152,9 +152,9 @@
         "Arable farmers on Schouwen-Duiveland",
         "Arable farmers on Schouwen-Duiveland, Banks lending to the island's farmers",
         "Arable farmers on Schouwen-Duiveland, Buyers and processors of the island's crops",
-        "Arable farmers on Schouwen-Duiveland, EU, Deltares, Acacia Water, Delphy",
         "Arable farmers on Schouwen-Duiveland, EU, Deltares, KWR, Acacia Water, Delphy",
         "Arable farmers on Schouwen-Duiveland, Waterschap Scheldestromen",
+        "Arable farmers on Schouwen-Duiveland, ZLTO, EU, Deltares, Acacia Water, Delphy",
         "Banks lending to the island's farmers",
         "Breeders and trading houses of seed potatoes",
         "Buyers and processors of the island's crops",
@@ -698,7 +698,7 @@
         "subquestion": "SQ2",
         "description": "The fresh water a year that the measures in place on the island's farms keep, store or collect for the growing season. They work three ways (Kaandorp et al., 2022, pp. 16–23, 53, for the island): in the low polders, controlled drainage and anti-salinisation drainage (Drains2Buffer) keep the thin rainwater lens against salt, their water staying in the field's own soil, where it cannot be pumped (pp. 33, 53), and weirs in ditches keep the lens in flat areas drained by ditches with a moderate to large drooglegging (pp. 16, 19); on the creek ridges, the dunes and where a sand layer lies under the clay, the creek-ridge infiltration system, the Freshmaker and underground storage under a clay layer infiltrate winter water to pump in summer (pp. 20–22, 38); and double drainage, a concept the study shows only in model simulations, not yet tested in practice, would collect fresh drain water into a basin to irrigate from (pp. 23, 29, 32). An adaptive practice: measures to keep more fresh water in the ground as drought and salinisation increase (p. 4). The study set out from their being not yet fitted to the island and too risky for many farms to invest in alone (pp. 4, 11), and concluded that more is possible than the farmers first thought (pp. 5, 55). A Stock: a measure, once built, lasts 15 to 30 years (pp. 17–22, 34). The farm decides a measure; infiltrating water needs the water board's permit (Waterschap Scheldestromen, 2026f, art. 4.5 lid 2), a weir the neighbours' consent, and raising a ditch's level the water board's cooperation (Kaandorp et al., 2022, pp. 26, 44–45). Whether a farm wants to store weighs storing against its other ways through a dry summer (pumping, other crops), where capacity to invest is whether it can. Stored water pays back over years, which suits a farm that owns its land more than one on a short lease; and where stored water spreads under the neighbours, one farm pays and others gain. Whether either holds a farm back is a question for the group model building session. No measure is enough alone: on the island the current freshwater measures and innovations supply too little, are no one-size-fits-all solution, fit only a limited part of it, have not yet proven their value and are costly (Delphy, 2023, p. 50), each is custom work, and not every farmer takes them up (p. 40). Beside the farms, Acacia Water, Deltares and Delphy shape it: in a demonstration with the trial farm Rusthoeve and the municipality, double drainage was laid on two test plots at Kerkwerve and anti-salinisation drainage on one at Dreischor, on three of the island's farms (Living Lab Schouwen-Duiveland, 2023), the EU's rural development programme paying half of the cost and the knowledge parties a part of it (Living Lab Schouwen-Duiveland, n.d.-b). Measures of these kinds are among the drought adaptation measures van Duinen et al. (2015a, p. 1085) list for farmers in the south-west Netherlands, from a survey of 2013: drains set deeper or regulated, a deep drain for salt, a storage basin, extraction from creek ridges and injection into a deep aquifer.",
         "simplification": "Counts the measures of three kinds as one quantity, the fresh water a year they keep, store or collect, each kind reaching crops by its own link out: to Winter rain drained away, to Freshwater lens thickness under creek ridges and dunes, and to Freshwater availability for crops. It assumes every kind responds alike to the drivers into this element. Every loop through it keeps its polarity and its mechanism; what it leaves out is that a rise in one kind need not be a rise in another, so the semi-quantitative analysis cannot vary them apart.",
-        "actors": "Arable farmers on Schouwen-Duiveland, EU, Deltares, Acacia Water, Delphy",
+        "actors": "Arable farmers on Schouwen-Duiveland, ZLTO, EU, Deltares, Acacia Water, Delphy",
         "actor": "Arable farmers on Schouwen-Duiveland",
         "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nLiving Lab Schouwen-Duiveland. (2023, May 9). Anti-verziltingsdrainage in Dreischor. Retrieved November 8, 2026, from https://livinglabschouwen-duiveland.nl/nieuws/anti-verziltingsdrainage-dreischor\nLiving Lab Schouwen-Duiveland. (n.d.-b). Samenwerken voor Zoetwater: Innovatieve drainage demonstreren, monitoren en evalueren. Retrieved November 6, 2026, from https://livinglabschouwen-duiveland.nl/projecten/samenwerken-voor-zoetwater-innovatieve-drainage-demonstreren-monitoren-en-evalueren\nvan Duinen, R., Filatova, T., Geurts, P., & van der Veen, A. (2015a). Coping with drought risk: Empirical analysis of farmers’ drought adaptation in the south-west Netherlands. Regional Environmental Change, 15(6), 1081–1093. https://doi.org/10.1007/s10113-014-0692-y\nWaterschap Scheldestromen. (2026f, June 1). Waterschapsverordening waterschap Scheldestromen. https://lokaleregelgeving.overheid.nl/CVDR704423/6\nDelphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf",
         "sourced": "yes"
@@ -3081,13 +3081,13 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "As harvests get worse, farmers find storing water more worthwhile, and those who can pay for it store more.",
+        "description": "As harvests get worse, farmers find storing water more worthwhile, and those who can pay for it store more. On the island the attention to drought and to waterlogging swings with dry and wet years, and the study names this swinging urgency among the barriers to scaling up storage (Kaandorp et al., 2022, p. 12): a wet year lifts the harvest and the push to store fades.",
         "sets link": "E to T",
         "sets scope": "Cross-domain",
-        "hypothesis": "yes",
+        "hypothesis": "no",
         "simplification": "Folds Relative attractiveness of storing water, which gathered the drivers of this decision: each driver now points at Freshwater storage measures itself, whose description says how farmers weigh storing against their other ways through a dry summer. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to store, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
-        "sources": "",
-        "sourced": "no",
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF",
+        "sourced": "yes",
         "connection type": "-"
       },
       "from": "elem-crop-yield",
@@ -4656,6 +4656,26 @@
       },
       "from": "elem-trials-and-pilots-on-the-island",
       "to": "elem-knowledge-of-new-crops"
+    },
+    {
+      "_id": "conn-zlto-call-for-supply-route--freshwater-storage-measures",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "description": "The more firmly a supply route is asked for, the more farmers hold back from storing on their own farm: on the island some parties hold that the answer to drought damage lies either in a supply from outside or in local measures, and through this ongoing discussion farmers hold back from investing, while the one need not exclude the other and can strengthen it (Kaandorp et al., 2022, p. 12). No route is decided: a study of the options leaves who pays what, and how a supply would be managed, for later steps (Witteveen+Bos, 2021, p. 51). The branch also asks to catch more rain, beside a collective supply (Omroep Zeeland, 2023). No delay drawn: no source read gives how fast the farmers' hesitation follows the call.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "sources": "Kaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nWitteveen+Bos. (2021). Zoetwateraanvoer Schouwen-Duiveland: Verkenning (12460/21-002.663). https://acpt.deltaexpertise.hz.nl/images/c/c5/Verkenning_externe_aanvoer_Schouwen-Duiveland.pdf\nOmroep Zeeland. (2023, May 31). Sombere toekomst voor boeren op Schouwen-Duiveland door tekort aan zoet water. https://www.omroepzeeland.nl/nieuws/15614167/sombere-toekomst-voor-boeren-op-schouwen-duiveland-door-tekort-aan-zoet-water",
+        "sourced": "yes",
+        "connection type": "-"
+      },
+      "from": "elem-zlto-call-for-supply-route",
+      "to": "elem-freshwater-storage-measures"
     },
     {
       "_id": "conn-0",
@@ -7050,6 +7070,12 @@
           "curvature": 0,
           "style": {},
           "connection": "conn-trials-and-pilots-on-the-island--knowledge-of-new-crops"
+        },
+        {
+          "_id": "edge-zlto-call-for-supply-route--freshwater-storage-measures",
+          "curvature": 0.15,
+          "style": {},
+          "connection": "conn-zlto-call-for-supply-route--freshwater-storage-measures"
         }
       ],
       "loops": [
@@ -8952,7 +8978,7 @@
     {
       "_id": "map-group-C5",
       "name": "07 C5 Storing: more worthwhile, harder to pay for",
-      "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so more rain refills the lens and, over years, the *Rainwater lens thickness in the low polders* rises; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A lower *Crop yield* makes storing more worthwhile to a farmer (B6), and leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same harvest pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The links from *Crop yield* and from *Farmers' capacity to invest* to *Freshwater storage measures* are both hypotheses for the group model building session.",
+      "description": "*Freshwater storage measures* lower the *Winter rain drained away*, so more rain refills the lens and, over years, the *Rainwater lens thickness in the low polders* rises; *Freshwater availability for crops* rises, the *Crop water shortfall* falls and *Crop yield* rises. There the two loops part. A lower *Crop yield* makes storing more worthwhile to a farmer (B6), and leaves less *Farm income* and less *Farmers' capacity to invest* (R4), so the same harvest pushes storage up and down. Farms with the means store and farms without may not; which pull is stronger differs per farm. The link from *Farmers' capacity to invest* to *Freshwater storage measures* is a hypothesis for the group model building session.",
       "scale": 1,
       "center": {
         "x": 0,

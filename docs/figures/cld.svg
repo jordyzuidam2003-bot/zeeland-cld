@@ -49,15 +49,15 @@
 <path class="link-path" d="M -1440.5 1047.0 Q -1847.8 1317.1 -2119.9 1723.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-2091.6" y="1681.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="freshwater-storage-measures" data-to="creek-ridge-lens-thickness" data-sign="+" data-delay="true" data-curvature="-0.2" data-delay-t="0.32">
-<path class="link-path" d="M -614.4 -253.0 Q -884.9 -56.1 -944.9 273.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-934.6" y="224.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M -742.5 -104.0 L -779.1 -135.1 M -752.8 -91.8 L -789.4 -122.9" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -742.5 -104.0 L -779.1 -135.1 M -752.8 -91.8 L -789.4 -122.9" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="freshwater-storage-measures" data-to="creek-ridge-lens-thickness" data-sign="+" data-delay="true" data-curvature="-0.2" data-delay-t="0.36">
+<path class="link-path" d="M -648.4 -253.0 Q -901.9 -49.3 -944.9 273.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-936.9" y="223.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -779.5 -83.4 L -818.4 -111.5 M -788.8 -70.4 L -827.8 -98.5" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -779.5 -83.4 L -818.4 -111.5 M -788.8 -70.4 L -827.8 -98.5" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="freshwater-storage-measures" data-to="winter-rain-drained-away" data-sign="-" data-delay="false" data-curvature="0.14">
-<path class="link-path" d="M -648.4 -253.0 Q -857.5 -101.1 -1115.0 -79.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-1065.3" y="-85.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M -682.4 -253.0 Q -874.5 -105.9 -1115.0 -79.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-1065.5" y="-86.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="groundwater-extraction-for-irrigation" data-to="creek-ridge-lens-thickness" data-sign="-" data-delay="false" data-curvature="0.32">
 <path class="link-path" d="M -667.3 825.0 Q -937.3 693.3 -930.8 393.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -486,8 +486,8 @@
 <text class="sign" x="-553.9" y="776.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="freshwater-storage-measures" data-to="freshwater-availability-for-crops" data-sign="+" data-delay="false" data-curvature="-0.19">
-<path class="link-path" d="M -682.4 -253.0 Q -1793.6 455.4 -2153.9 1723.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-2139.9" y="1675.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -716.4 -253.0 Q -1810.6 461.9 -2153.9 1723.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-2140.4" y="1674.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="knowledge-of-storage" data-to="freshwater-storage-measures" data-sign="+" data-delay="false" data-curvature="-0.15">
 <path class="link-path" d="M -406.6 -81.0 Q -416.7 -177.8 -478.4 -253.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -545,11 +545,11 @@
 <path class="delay-cut" d="M -1733.0 314.4 L -1780.0 304.2 M -1736.4 330.0 L -1783.3 319.9" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -1733.0 314.4 L -1780.0 304.2 M -1736.4 330.0 L -1783.3 319.9" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="soil-structure-usability" data-to="freshwater-lens-thickness" data-sign="+" data-delay="true" data-curvature="-0.11" data-delay-t="0.28">
+<g class="link" data-from="soil-structure-usability" data-to="freshwater-lens-thickness" data-sign="+" data-delay="true" data-curvature="-0.11" data-delay-t="0.32">
 <path class="link-path" d="M -821.9 66.0 Q -1312.9 166.6 -1716.3 464.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-1675.8" y="434.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M -1074.8 158.0 L -1090.0 112.5 M -1090.0 163.1 L -1105.2 117.5" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -1074.8 158.0 L -1090.0 112.5 M -1090.0 163.1 L -1105.2 117.5" stroke="#444444" stroke-width="5" fill="none"/>
+<path class="delay-cut" d="M -1111.6 170.5 L -1127.6 125.2 M -1126.7 175.8 L -1142.7 130.6" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -1111.6 170.5 L -1127.6 125.2 M -1126.7 175.8 L -1142.7 130.6" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="winter-rain-drained-away" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="-0.11" data-delay-t="0.48">
 <path class="link-path" d="M -1328.3 -20.0 Q -1595.4 174.9 -1756.0 464.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -616,6 +616,10 @@
 <text class="sign" x="920.4" y="660.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M 246.9 384.7 L 230.2 429.7 M 261.9 390.3 L 245.2 435.3" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 246.9 384.7 L 230.2 429.7 M 261.9 390.3 L 245.2 435.3" stroke="#444444" stroke-width="5" fill="none"/>
+</g>
+<g class="link" data-from="zlto-call-for-supply-route" data-to="freshwater-storage-measures" data-sign="-" data-delay="false" data-curvature="0.15">
+<path class="link-path" d="M -1208.9 1142.0 Q -1120.9 355.3 -614.4 -253.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-646.1" y="-214.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 </g>
 <g class="elements">

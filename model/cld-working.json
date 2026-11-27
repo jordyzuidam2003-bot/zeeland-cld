@@ -4007,15 +4007,6 @@
   ],
   "changes": [
     {
-      "change": "Two barriers to storage: the call for a supply route holds storage back, and the urgency swings with the years",
-      "argument": "Kaandorp et al. (2022, p. 12) name both on the island: farmers hold back on investing while parties argue the answer is a supply route, with no route decided, its payer and management open (Witteveen+Bos, 2021, p. 51), which links B7 to storage; and the attention to drought swings with dry and wet years, which is how B6 behaves, so no new variable. The second gives Crop yield → Freshwater storage measures its source, so the link loses its hypothesis mark (cld-model.md: a behavioural claim takes a source where one exists) and C5's description, which called it one, changes with it.",
-      "items": [
-        "zlto-call-for-supply-route -> freshwater-storage-measures",
-        "crop-yield -> freshwater-storage-measures",
-        "C5"
-      ]
-    },
-    {
       "change": "The call for a supply route is Agrarisch Schouwen-Duiveland's, ZLTO's branch on the island",
       "argument": "The call's island evidence is the branch's own (Omroep Zeeland, 2023; 2026), and the branch commissioned and paid for Delphy's report (Delphy, 2023, p. 1), so it decides the variable and enters the CLD through it, ZLTO acting on the island through its branch and its two seats on the water board (decided by Jordy). B7's description names it.",
       "items": [

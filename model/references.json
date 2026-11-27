@@ -3254,82 +3254,6 @@
     "DOI": "10.18174/660393"
   },
   {
-    "id": "n59-rotonde-2020",
-    "type": "report",
-    "author": [
-      {
-        "literal": "Besluit rotonde N59"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2020
-        ]
-      ]
-    },
-    "title": "Besluit tot aanwijzing van onroerende zaken ter onteigening in de gemeente Schouwen-Duiveland krachtens artikel 72a van de onteigeningswet (rotonde N59)",
-    "genre": "Draft decree put to the Council of State",
-    "number": "W17.20.0068",
-    "URL": "https://www.raadvanstate.nl/publish/pages/118662/w_17_20_0068.pdf"
-  },
-  {
-    "id": "schouwen-duiveland-2026-onteigening",
-    "type": "article-journal",
-    "author": [
-      {
-        "literal": "Gemeente Schouwen-Duiveland"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2026,
-          2,
-          24
-        ]
-      ]
-    },
-    "title": "Kennisgeving onteigeningsbeschikking",
-    "container-title": "Gemeenteblad",
-    "volume": "2026",
-    "page": "78752",
-    "URL": "https://zoek.officielebekendmakingen.nl/gmb-2026-78752.pdf"
-  },
-  {
-    "id": "antea-2023-zierikzee",
-    "type": "report",
-    "author": [
-      {
-        "family": "Braat",
-        "given": "E."
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2023,
-          9,
-          12
-        ]
-      ]
-    },
-    "title": "Aanmeldnotitie vormvrije m.e.r.-beoordeling Hoogspanningsstation Zierikzee + herziening buitengebied (kabeltracés)",
-    "publisher": "Antea Group, for TenneT TSO B.V.",
-    "URL": "https://www.ruimtelijkeplannen.nl/documents/NL.IMRO.1676.00377BphZZ-VA01/b_NL.IMRO.1676.00377BphZZ-VA01_tb3.pdf"
-  },
-  {
-    "id": "provincie-zeeland-jaarstukken-2022",
-    "type": "report",
-    "author": [
-      {
-        "literal": "Provincie Zeeland"
-      }
-    ],
-    "title": "Jaarstukken 2022: Programma Balans in landelijk gebied",
-    "URL": "https://pcportal.zeeland.nl/Data/6be7416d-f63c-4ce1-84d5-7854448ebab4/Public/jaarstukken-2022-provincie-zeeland%20-%203-programma-balans-in-landelijk-gebied.pdf"
-  },
-  {
     "id": "kamphorst-2025",
     "type": "report",
     "author": [
@@ -3626,38 +3550,6 @@
     "title": "Origins and consequences of public trust: Towards an understanding of public acceptance of carbon dioxide capture and storage",
     "genre": "Doctoral dissertation, Leiden University",
     "URL": "https://hdl.handle.net/1887/13805"
-  },
-  {
-    "id": "neefjes-2008",
-    "type": "report",
-    "author": [
-      {
-        "family": "Neefjes",
-        "given": "M."
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2008,
-          1
-        ]
-      ]
-    },
-    "title": "Onteigening voor natuur: bittere noodzaak of niet aan beginnen?",
-    "genre": "pp. 2–5; the journal is not named in the copy read",
-    "URL": "https://edepot.wur.nl/114625"
-  },
-  {
-    "id": "adviescommissie-westerschelde",
-    "type": "report",
-    "author": [
-      {
-        "literal": "Adviescommissie Natuurherstel Westerschelde"
-      }
-    ],
-    "title": "Wennen aan de Westerschelde",
-    "URL": "https://www.vliz.be/imisdocs/publications/ocrd/144313.pdf"
   },
   {
     "id": "rivierenland-2019-lek-linge",

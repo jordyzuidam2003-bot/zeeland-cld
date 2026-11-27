@@ -1355,21 +1355,6 @@
       }
     },
     {
-      "_id": "elem-farmland-changing-hands",
-      "attributes": {
-        "label": "Farmland changing  hands",
-        "element type": "Auxiliary",
-        "adaptive practice": "no",
-        "sets domain": "Social",
-        "subsystem": "Agricultural economy",
-        "subquestion": "SQ3",
-        "description": "Hectares of the island's farmland sold, expropriated or passed on to a new holder in a year. Supply and demand come mainly from farmers, those who need land to expand and those who shed it as they downsize or end the farm, and together they set how much land is traded, its mobility, and at what price (Silvis & Voskuilen, 2017, p. 2). Over the long term the number of Dutch farms falls by 2 to 3% a year, mainly as farms end at the change of generation, the lack of a successor and a less favourable income outlook among the reasons (p. 2). Measured nationally; no source read gives the island's land sales.",
-        "actors": "Banks lending to the island's farmers",
-        "sources": "Silvis, H., & Voskuilen, M. (2017). Betaalbaarheid en financierbaarheid van landbouwgrond (Notitie 2017-098). Wageningen Economic Research. https://edepot.wur.nl/426065",
-        "sourced": "yes"
-      }
-    },
-    {
       "_id": "elem-creek-ridge-lens-thickness",
       "attributes": {
         "label": "Freshwater lens  thickness under creek  ridges and dunes",
@@ -3641,86 +3626,6 @@
       "to": "elem-dependence-on-high-margin-salt-sensitive-crops"
     },
     {
-      "_id": "conn-bank-credit-to-farms--farmland-changing-hands",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "With more bank credit more farmland is bought, and with less, less: the land a farm can acquire depends on its income and expected income together with its financing (Silvis & Voskuilen, 2017, p. 2); with arable returns swinging, banks want larger buffers, which leave less room to finance land, and with a land loan calculated over at most 30 years with repayment, financing land has grown ever harder, which loosens the tie between owning land and using it, while younger farmers, by Rabobank's account, care less about expanding by purchase and are open to lease (pp. 3–4). The route the other way, a farm refused credit selling up, no source read shows: few Dutch farms go bankrupt, 45 in 2016, a large part of farm bankruptcies being in greenhouse horticulture, and a farm short of cash first saves on its spending or uses its savings, and only where that is not enough can ask its bank to defer part of its interest and repayments or for more credit, the bank weighing its continuity over the long term (Verhagen et al., 2018, p. 28). Measured nationally. Within the year: a purchase follows its financing.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "Silvis, H., & Voskuilen, M. (2017). Betaalbaarheid en financierbaarheid van landbouwgrond (Notitie 2017-098). Wageningen Economic Research. https://edepot.wur.nl/426065\nVerhagen, J., van Asseldonk, M., & Pronk, A. A. (2018). Open teelten en klimaatadaptatie in relatie tot de financiële weerbaarheid (Rapport WPR-755). Wageningen Research. https://klimaatadaptatienederland.nl/publish/pages/220072/2018_wur_open_teelten_en_klimaatadaptatie_in_relatie_tot_de_financiele_weerbaarheid.pdf",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-bank-credit-to-farms",
-      "to": "elem-farmland-changing-hands"
-    },
-    {
-      "_id": "conn-farms-with-a-successor--farmland-changing-hands",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "−",
-        "polarity": "negative",
-        "delay": "no",
-        "description": "A farm without a successor is more likely to end when its farmer stops, its land then coming onto the market: over the long term the number of Dutch farms falls by 2 to 3% a year, mainly as farms end at the change of generation, the lack of a successor among the reasons, and the farmers who downsize or end their farm mainly set the supply of land (Silvis & Voskuilen, 2017, p. 2). Measured nationally. The land changes hands as the farm ends.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "Silvis, H., & Voskuilen, M. (2017). Betaalbaarheid en financierbaarheid van landbouwgrond (Notitie 2017-098). Wageningen Economic Research. https://edepot.wur.nl/426065",
-        "sourced": "yes",
-        "connection type": "-"
-      },
-      "from": "elem-farms-with-a-successor",
-      "to": "elem-farmland-changing-hands"
-    },
-    {
-      "_id": "conn-farmers-wish-to-keep-their-land--farmland-changing-hands",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "−",
-        "polarity": "negative",
-        "delay": "no",
-        "description": "Owners attached to their land keep it rather than sell it. In the Krimpenerwaard, the wish not to lose their land, from an emotional bond with it, was an important reason owners chose to turn it into nature themselves rather than sell it, and for one farm its bond with the land weighed more than moving (Kamphorst et al., 2025, pp. 11, 49, 68). Measured where a plan for nature, with expropriation as its last step, left owners only those choices; no source read measures it on the island's land market. Within the year: it acts when an owner decides whether to sell.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "no",
-        "sources": "Kamphorst, D. A., Nieuwenhuizen, W., & Langers, F. (2025). Nieuwe natuur in de polder: tussen zelfrealisatie en onteigening (Rapport 3464). Wageningen Environmental Research. https://edepot.wur.nl/703340",
-        "sourced": "yes",
-        "connection type": "-"
-      },
-      "from": "elem-farmers-wish-to-keep-their-land",
-      "to": "elem-farmland-changing-hands"
-    },
-    {
-      "_id": "conn-farmland-changing-hands--farmland-leaving-arable-use",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "−",
-        "polarity": "negative",
-        "delay": "no",
-        "description": "Land that changes hands leaves arable farming when its next holder does not farm it.",
-        "sets link": "Within S",
-        "sets scope": "Within domain",
-        "hypothesis": "yes",
-        "sources": "",
-        "sourced": "no",
-        "connection type": "-"
-      },
-      "from": "elem-farmland-changing-hands",
-      "to": "elem-farmland-leaving-arable-use"
-    },
-    {
       "_id": "conn-agricultural-land-value--farmland-leaving-arable-use",
       "direction": "directed",
       "delayed": true,
@@ -4552,6 +4457,26 @@
       },
       "from": "elem-buyer-contracts-for-new-crops",
       "to": "elem-perceived-risk-of-switching"
+    },
+    {
+      "_id": "conn-farms-with-a-successor--farmland-leaving-arable-use",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "A farm without a successor stops sooner: on the island, Delphy expects farms caught in a downward spiral to decide, without a successor, to stop, with more scale and more extensive farming following (Delphy, 2023, p. 50), and since 2000 the island's arable area fell 21% while its grassland and forage crops grew 52% (p. 14). Nationally, farms end mainly at the change of generation, the lack of a successor among the reasons, while the land's buyers and sellers are mainly farmers (Silvis & Voskuilen, 2017, p. 2), so most land of a farm that stops stays arable: the link is weak, and no source read gives how much of a stopped farm's land leaves arable farming on the island. Within the year the farm stops.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "sources": "Delphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf\nSilvis, H., & Voskuilen, M. (2017). Betaalbaarheid en financierbaarheid van landbouwgrond (Notitie 2017-098). Wageningen Economic Research. https://edepot.wur.nl/426065",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-farms-with-a-successor",
+      "to": "elem-farmland-leaving-arable-use"
     },
     {
       "_id": "conn-0",
@@ -6001,16 +5926,6 @@
           "element": "elem-farmers-wish-to-keep-their-land"
         },
         {
-          "_id": "node-farmland-changing-hands",
-          "position": {
-            "x": 484,
-            "y": -840
-          },
-          "pinned": true,
-          "style": {},
-          "element": "elem-farmland-changing-hands"
-        },
-        {
           "_id": "node-creek-ridge-lens-thickness",
           "position": {
             "x": -956,
@@ -6631,30 +6546,6 @@
           "connection": "conn-debt-payments--dependence-on-high-margin-salt-sensitive-crops"
         },
         {
-          "_id": "edge-bank-credit-to-farms--farmland-changing-hands",
-          "curvature": -0.14,
-          "style": {},
-          "connection": "conn-bank-credit-to-farms--farmland-changing-hands"
-        },
-        {
-          "_id": "edge-farms-with-a-successor--farmland-changing-hands",
-          "curvature": -0.14,
-          "style": {},
-          "connection": "conn-farms-with-a-successor--farmland-changing-hands"
-        },
-        {
-          "_id": "edge-farmers-wish-to-keep-their-land--farmland-changing-hands",
-          "curvature": 0.0,
-          "style": {},
-          "connection": "conn-farmers-wish-to-keep-their-land--farmland-changing-hands"
-        },
-        {
-          "_id": "edge-farmland-changing-hands--farmland-leaving-arable-use",
-          "curvature": 0.14,
-          "style": {},
-          "connection": "conn-farmland-changing-hands--farmland-leaving-arable-use"
-        },
-        {
           "_id": "edge-agricultural-land-value--farmland-leaving-arable-use",
           "curvature": 0.1,
           "style": {},
@@ -6899,6 +6790,12 @@
           "curvature": 0.15,
           "style": {},
           "connection": "conn-buyer-contracts-for-new-crops--perceived-risk-of-switching"
+        },
+        {
+          "_id": "edge-farms-with-a-successor--farmland-leaving-arable-use",
+          "curvature": 0.15,
+          "style": {},
+          "connection": "conn-farms-with-a-successor--farmland-leaving-arable-use"
         }
       ],
       "loops": [
@@ -12643,7 +12540,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#background { width: 5418; height: 3913; }\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#background { width: 5418; height: 3913; }\n"
     },
     {
       "_id": "pers-actors",
@@ -12653,7 +12550,7 @@
     {
       "_id": "pers-loops",
       "name": "Loops",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-farmland-changing-hands { width: 280; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 310; height: 86; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 295; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
     }
   ]
 }

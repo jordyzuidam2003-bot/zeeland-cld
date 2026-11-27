@@ -4007,18 +4007,6 @@
   ],
   "changes": [
     {
-      "change": "Farmland changing hands removed, Farms with a successor drawn straight into Arable land in the polders",
-      "argument": "Its one link out said land leaves arable farming when its next holder does not farm it, a hypothesis, while its own source has the land's buyers and sellers mainly farmers (Silvis & Voskuilen, 2017, p. 2), so most land that changes hands stays arable. The successor's effect is kept on Delphy (2023, p. 50: farms without a successor stop; p. 14: the island's arable area fell 21% since 2000). The links from Bank credit to farms and from Farmers' wish to keep their land rest on that step and go; the wish stays a Constant through its link to the objections. On no named loop. Rejected: the fold, which would draw all three straight into the arable land (decided by Jordy).",
-      "items": [
-        "farmland-changing-hands",
-        "bank-credit-to-farms -> farmland-changing-hands",
-        "farms-with-a-successor -> farmland-changing-hands",
-        "farmers-wish-to-keep-their-land -> farmland-changing-hands",
-        "farmland-changing-hands -> farmland-leaving-arable-use",
-        "farms-with-a-successor -> farmland-leaving-arable-use"
-      ]
-    },
-    {
       "change": "The national contribution to regional freshwater measures stopped, in the supply route's description",
       "argument": "Kitty: the new budget puts old infrastructure first, which lowers the chance of national money for a supply route to the island. The letter of 16 October 2026 (Kamerstukken II 2026/27, 37 020 A, nr. 14, Table 9) keeps the Delta Programme Freshwater at 50% for the main water system and stops its contributions and subsidies for the regional water system, the Delta Fund contribution a regional measure could claim (Algemene Rekenkamer, 2026, p. 32), and Witteveen+Bos (2021, p. 51) names that programme as a possible payer of the route. In words, no Constant: the route already has IenW among its actors and no payer (decided by Jordy).",
       "items": [

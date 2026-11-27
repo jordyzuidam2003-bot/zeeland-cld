@@ -3259,6 +3259,7 @@
         "sets link": "T to S",
         "sets scope": "Cross-domain",
         "hypothesis": "no",
+        "simplification": "Counts every new crop as one, while the sources on this link show only quinoa, which most Dutch growers sell under contract to one buyer outside Zeeland: for a new crop no plant outside Zeeland takes, the link carries nothing. That weakens it without turning its sign, and no loop runs through it, Processing of new crops elsewhere being a Constant.",
         "ask actors": "Buyers and processors of the island's crops, through DCC or Living Lab: How processors set the price they pay for new salt-tolerant crops, and whether a second buyer or a plant nearer the island raises it",
         "sources": "DutchNews.nl. (2026, August 3). Jumbo's quinoa now comes from Groningen, not Peru. https://www.dutchnews.nl/?p=270983\nGreenFood50. (n.d.). The specialist in quinoa ingredients [Home page and About us]. Retrieved November 7, 2026, from https://www.greenfood50.com/",
         "sourced": "yes",

@@ -2030,6 +2030,7 @@
       "polarity": "+",
       "delay": false,
       "description": "Plants outside Zeeland are where the island's growers can sell a new crop now, at the plant's price less the haul: most Dutch quinoa growers have contracts with GreenFood50 (DutchNews.nl, 2026), based in Wageningen, which has its quinoa grown close to its processing facilities, to cut transport (GreenFood50, n.d.). That more processing elsewhere raises that price, by processors competing for the harvest or by a plant nearer the island, no source read shows. Within the year: the price is set each season or contract.",
+      "simplification": "Counts every new crop as one, while the sources on this link show only quinoa, which most Dutch growers sell under contract to one buyer outside Zeeland: for a new crop no plant outside Zeeland takes, the link carries nothing. That weakens it without turning its sign, and no loop runs through it, Processing of new crops elsewhere being a Constant.",
       "sources": [
         "dutchnews-2026",
         "greenfood50-nd"

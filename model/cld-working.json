@@ -4015,13 +4015,6 @@
   ],
   "changes": [
     {
-      "change": "Processing elsewhere raising every new crop's price stated",
-      "argument": "The simplification audit found it unstated (CitationCheck/65810420/simplify/processing-of-new-crops-elsewhere->net-price-for-new-crops.json, finding 3, confirmed by a fresh agent); the sentence states it.",
-      "items": [
-        "processing-of-new-crops-elsewhere -> net-price-for-new-crops"
-      ]
-    },
-    {
       "change": "The capital lost as one value for every new crop stated",
       "argument": "The simplification audit found it unstated (CitationCheck/65810420/simplify/capital-lost-on-switching.json, finding 1, confirmed by a fresh agent); the sentence states it.",
       "items": [

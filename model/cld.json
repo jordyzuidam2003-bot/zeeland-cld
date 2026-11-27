@@ -1086,10 +1086,11 @@
       "sets domain": "Ecological",
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
-      "description": "The fresh water the island's crops need in the growing season, summed over the crop plan: what the rotation uses when it has enough water, its evapotranspiration, set by the weather and by each crop and its stage of growth (Allen et al., 1998, FAO-56, a guide to crop water use that holds wherever the crop grows). The crops that earn the most also have the greatest water need and often a limited root system (Delphy, 2023, p. 48), and for the island's farms Delphy puts the total water need at about 3.5 million m³ (p. 41). No link comes from the new crops: fibre crops and legumes may replace winter wheat, and flax needs water too (p. 48). It follows the rotation, set each year: an Auxiliary. The farmers decide the crop mix, so it has no actor of its own.",
+      "description": "The fresh water the island's crops need in the growing season, summed over the crop plan: what the rotation uses when it has enough water, its evapotranspiration, set by the weather and by each crop and its stage of growth (Allen et al., 1998, FAO-56, a guide to crop water use that holds wherever the crop grows). The crops that earn the most also have the greatest water need and often a limited root system (Delphy, 2023, p. 48), and for the island's farms Delphy puts the total water need at about 3.5 million m³ (p. 41). No link comes from the new crops: no source read shows one needing less water than the crop it replaces when both have enough, the need this variable sums. Quinoa copes with little water, still yielding grain on 270 mm (van Loo, 2023, p. 75), which acts in the farmers' choice (Crop water shortfall → Fields moved to new crops), not here; fibre crops and legumes may replace winter wheat, and flax needs water too (Delphy, 2023, p. 48). It follows the rotation, set each year: an Auxiliary. The farmers decide the crop mix, so it has no actor of its own.",
       "sources": [
         "allen-1998",
-        "delphy-2023-dorsd"
+        "delphy-2023-dorsd",
+        "van-loo-2023"
       ],
       "x": -846,
       "y": 1446

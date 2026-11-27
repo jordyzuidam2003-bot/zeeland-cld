@@ -1410,6 +1410,16 @@
     },
     {
       "from": "farmers-capacity-to-invest",
+      "to": "freshwater-storage-measures",
+      "polarity": "+",
+      "delay": false,
+      "description": "Capacity to invest decides whether a farm can pay for a storage measure, not whether it wants to.",
+      "sources": [],
+      "hypothesis": true,
+      "curvature": 0.1
+    },
+    {
+      "from": "farmers-capacity-to-invest",
       "to": "fields-moved-to-new-salt-tolerant-crops",
       "polarity": "+",
       "delay": false,
@@ -1421,16 +1431,6 @@
         "delphy-2023-dorsd"
       ],
       "curvature": 0.29
-    },
-    {
-      "from": "farmers-capacity-to-invest",
-      "to": "freshwater-storage-measures",
-      "polarity": "+",
-      "delay": false,
-      "description": "Capacity to invest decides whether a farm can pay for a storage measure, not whether it wants to.",
-      "sources": [],
-      "hypothesis": true,
-      "curvature": 0.1
     },
     {
       "from": "hotter-drier-summers",
@@ -1923,6 +1923,28 @@
     },
     {
       "from": "harvest-lost-to-salt",
+      "to": "tolerant-varieties-adoption",
+      "polarity": "+",
+      "delay": false,
+      "description": "The more harvest salt takes, the more a tolerant variety is worth against the current one, so the more farmers grow it, perhaps only past a threshold.",
+      "simplification": "Folds Relative attractiveness of salt-tolerant varieties, which gathered the drivers of this decision: each driver now points at Adoption of salt-tolerant varieties itself, whose description says that farmers weigh a tolerant variety against the one they grow now. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
+      "sources": [],
+      "hypothesis": true,
+      "curvature": 0.32
+    },
+    {
+      "from": "tolerant-varieties-on-offer",
+      "to": "tolerant-varieties-adoption",
+      "polarity": "+",
+      "delay": false,
+      "description": "Better tolerant varieties on the market make switching more worthwhile, so more farmers grow them.",
+      "simplification": "Folds Relative attractiveness of salt-tolerant varieties, which gathered the drivers of this decision: each driver now points at Adoption of salt-tolerant varieties itself, whose description says that farmers weigh a tolerant variety against the one they grow now. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
+      "sources": [],
+      "hypothesis": true,
+      "curvature": 0.0
+    },
+    {
+      "from": "harvest-lost-to-salt",
       "to": "fields-moved-to-new-salt-tolerant-crops",
       "polarity": "+",
       "delay": true,
@@ -1951,28 +1973,6 @@
         "de-wit-2022"
       ],
       "curvature": 0.3
-    },
-    {
-      "from": "harvest-lost-to-salt",
-      "to": "tolerant-varieties-adoption",
-      "polarity": "+",
-      "delay": false,
-      "description": "The more harvest salt takes, the more a tolerant variety is worth against the current one, so the more farmers grow it, perhaps only past a threshold.",
-      "simplification": "Folds Relative attractiveness of salt-tolerant varieties, which gathered the drivers of this decision: each driver now points at Adoption of salt-tolerant varieties itself, whose description says that farmers weigh a tolerant variety against the one they grow now. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
-      "sources": [],
-      "hypothesis": true,
-      "curvature": 0.32
-    },
-    {
-      "from": "tolerant-varieties-on-offer",
-      "to": "tolerant-varieties-adoption",
-      "polarity": "+",
-      "delay": false,
-      "description": "Better tolerant varieties on the market make switching more worthwhile, so more farmers grow them.",
-      "simplification": "Folds Relative attractiveness of salt-tolerant varieties, which gathered the drivers of this decision: each driver now points at Adoption of salt-tolerant varieties itself, whose description says that farmers weigh a tolerant variety against the one they grow now. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own.",
-      "sources": [],
-      "hypothesis": true,
-      "curvature": 0.0
     },
     {
       "from": "salt-tolerant-crop-adoption",

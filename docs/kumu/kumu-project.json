@@ -2253,26 +2253,6 @@
       "to": "elem-farmers-capacity-to-invest"
     },
     {
-      "_id": "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "Capacity to invest decides whether a farm can pay for the switch (new machines, the first years of a new crop), not whether it wants to. The costs of salt-tolerant seed and soil amendments may not make up for the yield and income salt takes in the first years, when setting up costs most, and the benefits are not always obvious in the short term (Deolu-Ajayi et al., 2024, p. 60); farms whose financial buffers shrank in the corona crisis were expected to be less willing to invest, slowing their modernisation and sustainability, and banks often count financing a new concept whose returns are not yet proven as a risk (van der Meulen et al., 2020, p. 6). For samphire and sea aster the outlet, not only capacity to invest, limits adoption: their food market is small and easily saturated, in the authors' judgement (van den Burg et al., 2024, p. 6), and growers in Zeeland's saline cultivation, eight in all, say there is little room for new entrants, and that making room would also take strong growth of the market for saline vegetables (Delphy, 2023, p. 49, a consultancy report commissioned by Agrarisch Schouwen Duiveland that argues for a freshwater supply, p. 50). Delphy adds that cheaper imports compete and that few of Zeeland's soils suit these crops, but sees openings in high-end restaurants and retail if the season can be lengthened, and in other saline crops less grown abroad (p. 49). Within the year: the crop is chosen each season.",
-        "sets link": "S to T",
-        "sets scope": "Cross-domain",
-        "hypothesis": "no",
-        "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nvan der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nDelphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-farmers-capacity-to-invest",
-      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
-    },
-    {
       "_id": "conn-farmers-capacity-to-invest--freshwater-storage-measures",
       "direction": "directed",
       "delayed": false,
@@ -2291,6 +2271,26 @@
       },
       "from": "elem-farmers-capacity-to-invest",
       "to": "elem-freshwater-storage-measures"
+    },
+    {
+      "_id": "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "Capacity to invest decides whether a farm can pay for the switch (new machines, the first years of a new crop), not whether it wants to. The costs of salt-tolerant seed and soil amendments may not make up for the yield and income salt takes in the first years, when setting up costs most, and the benefits are not always obvious in the short term (Deolu-Ajayi et al., 2024, p. 60); farms whose financial buffers shrank in the corona crisis were expected to be less willing to invest, slowing their modernisation and sustainability, and banks often count financing a new concept whose returns are not yet proven as a risk (van der Meulen et al., 2020, p. 6). For samphire and sea aster the outlet, not only capacity to invest, limits adoption: their food market is small and easily saturated, in the authors' judgement (van den Burg et al., 2024, p. 6), and growers in Zeeland's saline cultivation, eight in all, say there is little room for new entrants, and that making room would also take strong growth of the market for saline vegetables (Delphy, 2023, p. 49, a consultancy report commissioned by Agrarisch Schouwen Duiveland that argues for a freshwater supply, p. 50). Delphy adds that cheaper imports compete and that few of Zeeland's soils suit these crops, but sees openings in high-end restaurants and retail if the season can be lengthened, and in other saline crops less grown abroad (p. 49). Within the year: the crop is chosen each season.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nvan der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nDelphy. (2023, May 20). DORSD: Droogte Oplossingen Regio Schouwen Duiveland. https://www.boerderij.nl/app/uploads/2023/06/Verslag-Zoetwaterbehoefte-Schouwen-Duiveland.pdf",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-farmers-capacity-to-invest",
+      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
     },
     {
       "_id": "conn-hotter-drier-summers--crop-water-shortfall",
@@ -3078,48 +3078,6 @@
       "to": "elem-farmers-capacity-to-invest"
     },
     {
-      "_id": "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
-      "direction": "directed",
-      "delayed": true,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "yes",
-        "description": "The more of the current crops' harvest salt takes, the more a new salt-tolerant crop is worth against them, so the more farmers grow it, but only past a threshold: Dutch farmers in salinised areas mostly hold back from saline agriculture unless salt severely hits their production (Deolu-Ajayi et al., 2024, p. 57). In interviews across the salinisation-prone provinces, Zeeland among them, salt in a field was largely invisible and seldom measured, a lower yield hard to put down to salt alone, and the damage not yet significant enough to make it urgent; it would take more dry summers like 2018 (Beauchampet, 2022, p. 216). Nearly all interviewees did not see halophytes as part of the answer, for lack of markets, the soils' intolerance of salt and the hand work they take (p. 221). In Zeeland most farmers still grow the common salt-sensitive crops (van den Burg et al., 2024, p. 6), and on the island the response a source shows is giving up a sensitive crop, sown onions (Kaandorp et al., 2022, p. 31), not taking up a new one. The shift the island's farmers do show is to a crop they already grow, from onions to cereals, which the source puts down to drought (Raat et al., 2026, p. 49); the island grows proportionally fewer potatoes and vegetables, mainly onions, and more cereals, which tolerate salt better, than Goeree-Overflakkee, which is connected to the main water system and so can take in fresh water (p. 34, which names no data source or year). Many of the interviewees across the provinces see research on the salt tolerance of cash crops, especially of cultivars already on the market, as contributing to resilience to salt (Beauchampet, 2022, p. 221). Years, as farmers come to see the damage over dry summers: a delay.",
-        "sets link": "E to T",
-        "sets scope": "Cross-domain",
-        "hypothesis": "no",
-        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description. Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what salt takes.",
-        "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nRaat, K., van Aalderen, N., & Krajenbrink, H. (2026). Laag Nederland 2050: Een verkenning naar een klimaat- en waterrobuuste inrichting voor Schouwen-Duiveland (KWR 2026.037). KWR Water Research Institute. https://api2.kwrwater.nl/uploads/KWR%202026.037%20Laag%20Nederland%202050.%20Een%20verkenning%20naar%20een%20klimaat-%20en%20waterrobuuste%20inrichting%20voor%20Schouwen-Duiveland.pdf",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-harvest-lost-to-salt",
-      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
-    },
-    {
-      "_id": "conn-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops",
-      "direction": "directed",
-      "delayed": false,
-      "reversed": false,
-      "attributes": {
-        "label": "+",
-        "polarity": "positive",
-        "delay": "no",
-        "description": "A better price after transport makes a new crop more worthwhile against the current crops, so more farmers grow it. In France, the prices of pulses are reported not high enough against major crops such as wheat, so more price incentives are needed for farmers to grow them, and most stakeholders want outlets of higher value (Magrini et al., 2018, p. 9); a specific incentive to farmers in 2010 doubled the area of pulses in its first year, and it fell back the next, downstream actors not particularly interested in them (Meynard et al., 2018, p. 10); in the Netherlands' salinising provinces, Zeeland among them, nearly all interviewees did not see halophytes as part of the answer, mostly for lack of markets, the soils' intolerance and the hand work they take (Beauchampet, 2022, p. 221). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276). The same interviews, conducted as a contribution to the EU's North Sea Region SalFar project, find Dutch quinoa grown under contract for one distributor, which buys a pre-agreed amount at a fixed price and manages supply according to demand, a dependency interviewees name as hampering its uptake (de Wit et al., 2022, pp. 266, 268, 277). Where a crop is sold this way and no other buyer competes, as none had for quinoa (p. 268), that means a better price raises the hectares only as far as the buyer contracts more. Within the year: the crop is chosen each season.",
-        "sets link": "S to T",
-        "sets scope": "Cross-domain",
-        "hypothesis": "no",
-        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
-        "sources": "Magrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nMeynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16",
-        "sourced": "yes",
-        "connection type": "+"
-      },
-      "from": "elem-net-price-for-new-crops",
-      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
-    },
-    {
       "_id": "conn-harvest-lost-to-salt--tolerant-varieties-adoption",
       "direction": "directed",
       "delayed": false,
@@ -3160,6 +3118,48 @@
       },
       "from": "elem-tolerant-varieties-on-offer",
       "to": "elem-tolerant-varieties-adoption"
+    },
+    {
+      "_id": "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
+      "direction": "directed",
+      "delayed": true,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "yes",
+        "description": "The more of the current crops' harvest salt takes, the more a new salt-tolerant crop is worth against them, so the more farmers grow it, but only past a threshold: Dutch farmers in salinised areas mostly hold back from saline agriculture unless salt severely hits their production (Deolu-Ajayi et al., 2024, p. 57). In interviews across the salinisation-prone provinces, Zeeland among them, salt in a field was largely invisible and seldom measured, a lower yield hard to put down to salt alone, and the damage not yet significant enough to make it urgent; it would take more dry summers like 2018 (Beauchampet, 2022, p. 216). Nearly all interviewees did not see halophytes as part of the answer, for lack of markets, the soils' intolerance of salt and the hand work they take (p. 221). In Zeeland most farmers still grow the common salt-sensitive crops (van den Burg et al., 2024, p. 6), and on the island the response a source shows is giving up a sensitive crop, sown onions (Kaandorp et al., 2022, p. 31), not taking up a new one. The shift the island's farmers do show is to a crop they already grow, from onions to cereals, which the source puts down to drought (Raat et al., 2026, p. 49); the island grows proportionally fewer potatoes and vegetables, mainly onions, and more cereals, which tolerate salt better, than Goeree-Overflakkee, which is connected to the main water system and so can take in fresh water (p. 34, which names no data source or year). Many of the interviewees across the provinces see research on the salt tolerance of cash crops, especially of cultivars already on the market, as contributing to resilience to salt (Beauchampet, 2022, p. 221). Years, as farmers come to see the damage over dry summers: a delay.",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description. Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what salt takes.",
+        "sources": "Deolu-Ajayi, A. O., Snethlage, J., Wilbers, G.-J., Poelman, M., Velilla, E., de Visser, W., Pasaribu, D. W., Krijnse Locker, C., Walma, K., Terwisscha van Scheltinga, C., van der Werf, A., & van der Meer, I. M. (2024). Adapting to salty conditions in the Netherlands: A joint report on activities from the 'Dealing with Salinization' project (2023–2024) (Report WPR-1387). Wageningen Plant Research. https://doi.org/10.18174/674509\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13\nvan den Burg, S., Deolu-Ajayi, A. O., Nauta, R., Cervi, W. R., van der Werf, A., Poelman, M., Wilbers, G.-J., Snethlage, J., van Alphen, M., & van der Meer, I. M. (2024). Knowledge gaps on how to adapt crop production under changing saline circumstances in the Netherlands. Science of the Total Environment, 915, 170118. https://doi.org/10.1016/j.scitotenv.2024.170118\nKaandorp, V. P., Davids, T., de Louw, P. G. B., Roelandse, A., Noordegraaf, I., Krajenbrink, H. J., Schout, G., Raat, K. J., & van Veelen, P. C. (2022). Samenwerken voor zoet water Schouwen-Duiveland – van pilots naar grootschalige toepassing: Eindrapport (11205909-000-BGS-0003). Deltares. https://livinglabschouwen-duiveland.nl/sites/default/files/2022-07/112059~1.PDF\nRaat, K., van Aalderen, N., & Krajenbrink, H. (2026). Laag Nederland 2050: Een verkenning naar een klimaat- en waterrobuuste inrichting voor Schouwen-Duiveland (KWR 2026.037). KWR Water Research Institute. https://api2.kwrwater.nl/uploads/KWR%202026.037%20Laag%20Nederland%202050.%20Een%20verkenning%20naar%20een%20klimaat-%20en%20waterrobuuste%20inrichting%20voor%20Schouwen-Duiveland.pdf",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-harvest-lost-to-salt",
+      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
+    },
+    {
+      "_id": "conn-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "A better price after transport makes a new crop more worthwhile against the current crops, so more farmers grow it. In France, the prices of pulses are reported not high enough against major crops such as wheat, so more price incentives are needed for farmers to grow them, and most stakeholders want outlets of higher value (Magrini et al., 2018, p. 9); a specific incentive to farmers in 2010 doubled the area of pulses in its first year, and it fell back the next, downstream actors not particularly interested in them (Meynard et al., 2018, p. 10); in the Netherlands' salinising provinces, Zeeland among them, nearly all interviewees did not see halophytes as part of the answer, mostly for lack of markets, the soils' intolerance and the hand work they take (Beauchampet, 2022, p. 221). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276). The same interviews, conducted as a contribution to the EU's North Sea Region SalFar project, find Dutch quinoa grown under contract for one distributor, which buys a pre-agreed amount at a fixed price and manages supply according to demand, a dependency interviewees name as hampering its uptake (de Wit et al., 2022, pp. 266, 268, 277). Where a crop is sold this way and no other buyer competes, as none had for quinoa (p. 268), that means a better price raises the hectares only as far as the buyer contracts more. Within the year: the crop is chosen each season.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "no",
+        "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
+        "sources": "Magrini, M.-B., Anton, M., Chardigny, J.-M., Duc, G., Duru, M., Jeuffroy, M.-H., Meynard, J.-M., Micard, V., & Walrand, S. (2018). Pulses for sustainability: Breaking agriculture and food sectors out of lock-in. Frontiers in Sustainable Food Systems, 2, 64. https://doi.org/10.3389/fsufs.2018.00064\nMeynard, J.-M., Charrier, F., Fares, M., Le Bail, M., Magrini, M.-B., Charlier, A., & Messéan, A. (2018). Socio-technical lock-in hinders crop diversification in France. Agronomy for Sustainable Development, 38, 54. https://doi.org/10.1007/s13593-018-0535-1\nBeauchampet, I. C. (2022). Stakeholder perspectives on the issue of salinization in agriculture in the Netherlands. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 207–230). CRC Press. https://doi.org/10.1201/9781003112327-13\nde Wit, M. A., Vellinga, P., & Negacz, K. (2022). Viability of the saline farming of quinoa and seed potatoes in the Netherlands: An assessment supported by a value chain analysis of both products. In K. Negacz, P. Vellinga, E. Barrett-Lennard, R. Choukr-Allah, & T. Elzenga (Eds.), Future of sustainable agriculture in saline environments (pp. 263–278). CRC Press. https://doi.org/10.1201/9781003112327-16",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-net-price-for-new-crops",
+      "to": "elem-fields-moved-to-new-salt-tolerant-crops"
     },
     {
       "_id": "conn-salt-tolerant-crop-adoption--knowledge-of-new-crops",
@@ -6138,16 +6138,16 @@
           "connection": "conn-farm-revenue--farmers-capacity-to-invest"
         },
         {
-          "_id": "edge-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
-          "curvature": 0.29,
-          "style": {},
-          "connection": "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops"
-        },
-        {
           "_id": "edge-farmers-capacity-to-invest--freshwater-storage-measures",
           "curvature": 0.1,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--freshwater-storage-measures"
+        },
+        {
+          "_id": "edge-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.29,
+          "style": {},
+          "connection": "conn-farmers-capacity-to-invest--fields-moved-to-new-salt-tolerant-crops"
         },
         {
           "_id": "edge-hotter-drier-summers--crop-water-shortfall",
@@ -6384,18 +6384,6 @@
           "connection": "conn-freshwater-storage-measures--farmers-capacity-to-invest"
         },
         {
-          "_id": "edge-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
-          "curvature": 0.13,
-          "style": {},
-          "connection": "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops"
-        },
-        {
-          "_id": "edge-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops",
-          "curvature": 0.3,
-          "style": {},
-          "connection": "conn-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops"
-        },
-        {
           "_id": "edge-harvest-lost-to-salt--tolerant-varieties-adoption",
           "curvature": 0.32,
           "style": {},
@@ -6406,6 +6394,18 @@
           "curvature": 0.0,
           "style": {},
           "connection": "conn-tolerant-varieties-on-offer--tolerant-varieties-adoption"
+        },
+        {
+          "_id": "edge-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.13,
+          "style": {},
+          "connection": "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
+          "_id": "edge-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.3,
+          "style": {},
+          "connection": "conn-net-price-for-new-crops--fields-moved-to-new-salt-tolerant-crops"
         },
         {
           "_id": "edge-salt-tolerant-crop-adoption--knowledge-of-new-crops",

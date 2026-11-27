@@ -4015,13 +4015,6 @@
   ],
   "changes": [
     {
-      "change": "The price acting on the margin only through the hectares moved stated",
-      "argument": "The simplification audit found it unstated (CitationCheck/65810420/simplify/net-price-for-new-crops->margin-given-up-on-high-margin-crops.json, finding 2, confirmed by a fresh agent); the sentence states it.",
-      "items": [
-        "net-price-for-new-crops -> margin-given-up-on-high-margin-crops"
-      ]
-    },
-    {
       "change": "One margin given up for every hectare moved stated",
       "argument": "The simplification audit found it unstated (CitationCheck/65810420/simplify/salt-tolerant-crop-adoption->margin-given-up-on-high-margin-crops.json, finding 2, confirmed by a fresh agent); the sentence states it.",
       "items": [

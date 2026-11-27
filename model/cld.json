@@ -2508,6 +2508,7 @@
       "polarity": "-",
       "delay": false,
       "description": "The margin given up is net of what the new crop earns, a margin being revenue minus the crop's variable costs (Cloet et al., 2024, p. 1), so the better a new crop pays the less a farm gives up on each hectare it moves to it. Quinoa, in a study for Flanders, yields about 3 tonnes a hectare, sold at €1,100 a tonne under contract on a market still very small (pp. 2–3). Within the year: the crop is chosen each season.",
+      "simplification": "Draws the price as lowering the margin given up by the same amount whatever the adoption, though it acts only on the hectares already moved to new crops, not on those under tolerant varieties, which the element also counts: while few fields grow a new crop, a better price changes the total little, and while none do, nothing. The effect weakens but never reverses, so the link keeps its sign and every loop through it keeps its polarity: the shortest, a better price lifting Farm income, Farmers' capacity to invest and the harvest that draws a local plant, stays reinforcing. What one strength leaves out is that the price and the hectares moved act together.",
       "sources": [
         "cloet-2024"
       ],

@@ -4007,15 +4007,6 @@
   ],
   "changes": [
     {
-      "change": "Basel IV capital requirements folded into the risk premium's description",
-      "argument": "A Constant on no loop with one link; the system boundary already puts it outside and no actor in the analysis can move it: context for a link, not a mechanism (decided by Jordy). Its sources (European Commission, 2023; European Banking Authority, 2023) and the EU as the actor that shapes it move onto the premium; the banks' entry on the Actor Map already says the Basel rules steer them. cld-model.md's 'Simplify only where the conclusion survives': no loop through it, no decision lost, no delay lost.",
-      "items": [
-        "basel-iv-capital-requirements",
-        "basel-iv-capital-requirements -> bank-credit-freeze-risk-premiums",
-        "bank-credit-freeze-risk-premiums"
-      ]
-    },
-    {
       "change": "Expropriation of farmland removed, B14 with it; C9 keeps B13, R8 and R9",
       "argument": "On the island expropriation is used only for a roundabout on the N59 and a high-voltage station, neither about salt or water (its description's sources), so it is not part of the barrier story there (decided by Jordy). Of the named loops only B14 runs through it. C9 stays a behaviour, objections to one plan, through land value and trust, shaping the next, its description without B14 and its figure laid out again; trust keeps its link from the objections (R9).",
       "items": [

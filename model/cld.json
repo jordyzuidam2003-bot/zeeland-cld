@@ -400,33 +400,20 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "The part of a farm loan's interest that differs between clients: the specific premium a bank charges above the base rate, which banks also call the credit or risk premium. The loan's risk sets it for a large part: the interest holds, per client, the bank's expected losses on the loan and the cost of the capital the banks' solvency rules require it to hold against it, both higher the higher the credit risk the bank sees; on a loan with a fixed rate it may be part of one total rate (ABN AMRO, n.d.-a, n.d.-b). No source read gives the premiums banks charge the island's farms.",
+      "description": "The part of a farm loan's interest that differs between clients: the specific premium a bank charges above the base rate, which banks also call the credit or risk premium. The loan's risk sets it for a large part: the interest holds, per client, the bank's expected losses on the loan and the cost of the capital the banks' solvency rules require it to hold against it, both higher the higher the credit risk the bank sees; on a loan with a fixed rate it may be part of one total rate (ABN AMRO, n.d.-a, n.d.-b). The capital those rules require is set by the EU: its banking package puts the final Basel III standards into EU law, the new rules of the Capital Requirements Regulation applying from 1 January 2025 (European Commission, Directorate-General for Financial Stability, Financial Services and Capital Markets Union, 2023), and by the EBA's estimate EU banks' minimum Tier 1 capital requirement is 9.0% higher at full implementation in 2028 (European Banking Authority, 2023); no source read shows climate or salinisation risk in the risk weights of farm loans. No source read gives the premiums banks charge the island's farms.",
       "sources": [
         "abn-amro-nd-kosten-krediet",
-        "abn-amro-nd-uitleg-rente"
-      ],
-      "x": 1692,
-      "y": -277,
-      "actor": "banks"
-    },
-    {
-      "id": "basel-iv-capital-requirements",
-      "label": "Basel IV capital requirements",
-      "element type": "Constant",
-      "adaptive practice": false,
-      "sets domain": "Social",
-      "subsystem": "Agricultural economy",
-      "subquestion": "SQ2",
-      "description": "The capital European rules require banks to hold against their loans, by the final Basel III standards. The EU sets them: its banking package (CRR III/CRD VI) puts the final elements of the Basel III standards of 2017 into EU law, the new rules of the Capital Requirements Regulation applying from 1 January 2025, those of the directive once each member state has transposed them; its output floor sets a lower limit on the capital requirements banks calculate with their own models; and environmental, social and governance risks enter the banks' handling of risk, the supervisors' annual review and disclosure (European Commission, Directorate-General for Financial Stability, Financial Services and Capital Markets Union, 2023). By the EBA's estimate, EU banks' minimum Tier 1 capital requirement is 9.0% higher at full implementation in 2028, the output floor and credit risk contributing most (European Banking Authority, 2023). No source read shows climate or salinisation risk in the risk weights of farm loans.",
-      "sources": [
+        "abn-amro-nd-uitleg-rente",
         "ec-2023-banking-package",
         "eba-2023-basel-iii-monitoring"
       ],
+      "x": 1692,
+      "y": -277,
+      "actor": "banks",
+      "simplification": "Folds Basel IV capital requirements, a Constant on no loop with one link, into this description: the capital rules are context for the premium, set by the EU outside the CLD's scale, and no actor in the CLD can move them. No loop runs through it, no actor inside the scale loses a decision and no delay is lost; what it leaves out is a change in the rules as a driver the semi-quantitative analysis could vary.",
       "actors": [
         "eu"
-      ],
-      "x": 1525,
-      "y": -108
+      ]
     },
     {
       "id": "dependence-on-high-margin-salt-sensitive-crops",
@@ -1438,18 +1425,6 @@
         "silvis-2017-economische-ontwikkeling"
       ],
       "curvature": -0.22
-    },
-    {
-      "from": "basel-iv-capital-requirements",
-      "to": "bank-credit-freeze-risk-premiums",
-      "polarity": "+",
-      "delay": false,
-      "description": "For every loan a bank must hold capital, as the law on banks' solvency sets, the more the higher the credit risk, and the cost of that capital, the return its shareholders require, is part of the interest each client pays (ABN AMRO, n.d.-a). The final Basel III standards raise that capital, EU banks' minimum Tier 1 capital requirement by an estimated 9.0% at full implementation in 2028 (European Banking Authority, 2023). Together the two make stricter capital rules raise what a bank charges for a loan. Measured across EU banks: no source read gives the change for Dutch farm loans. Within the year: the bank prices the capital with each loan.",
-      "sources": [
-        "abn-amro-nd-kosten-krediet",
-        "eba-2023-basel-iii-monitoring"
-      ],
-      "curvature": 0.0
     },
     {
       "from": "dependence-on-high-margin-salt-sensitive-crops",

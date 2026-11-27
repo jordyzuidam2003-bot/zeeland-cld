@@ -4077,14 +4077,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Underground storage under a clay layer moved off the creek-ridge lens onto Freshwater storage measures → Freshwater availability for crops",
-      "argument": "One quantity per variable: the lens is the fresh groundwater under the creek ridges and dunes, while underground storage injects fresh water into a brackish or saline sand layer under the clay (Kaandorp et al., 2022, p. 21), a body of water no lens's thickness, and the lens's other links (Wetter winters, Polder drainage depth, the water board's 15 m rule for its map of fresh bodies) do not hold for it. Pumped back when needed, it reaches crops by the link that carries double drainage; the creek-ridge infiltration system and the Freshmaker, which grow a lens on the ridges (pp. 20, 22, 38), stay on the lens. No box added: the storage element's simplification already has each kind reach crops by its own link out. Every loop keeps its sign, storage → availability for crops (+) → shortfall (−) → storage (+) balancing as through the lens. The Freshmaker in the low ground between dunes and ridge (p. 24) is stated in the lens link's simplification. Rejected: widening the lens to sand layers under the clay, which made three of its links partly untrue; a box of its own, worth it only for D2D to vary the measure apart.",
-      "items": [
-        "freshwater-storage-measures -> creek-ridge-lens-thickness",
-        "freshwater-storage-measures -> freshwater-availability-for-crops"
-      ]
-    }
-  ]
+  "changes": []
 }

@@ -132,7 +132,7 @@ builds and pushes, so nobody else needs git or Python.
    from box centre to box centre (`draw_cld.group_pieces()`), on the CLD and the Actor Map alike, and any warnings: a model
    text still empty, an element without links, two boxes that overlap, a link and its reverse
    drawn on one curve, an element on the wrong side of the border between the two subsystems,
-   a named loop whose own links cross, a link under a region's name, a loop's figure with no
+   a link under a region's name, a loop's figure with no
    room inside the loop for its mark, a link through a box it does not connect, two links or
    relations between the same two boxes bowed alike (`bow alike:`, Kumu).
 3. Commit, `docs/` included, and push: the push publishes the page. The commit-msg hook refuses
@@ -152,8 +152,8 @@ angle and away from the arrowheads and signs (how links cross matters more than 
 two links running close side by side, a named loop leaving each element about the way it
 arrived, the whole drawing readable on one A4 page, no link through
 an element it does not connect, which would read as if that element
-mediates it, and no named loop whose links cross each other, a figure eight that cannot be
-followed round; `build.py` warns on the last. A Constant's links run straight, and `build.py`
+mediates it. A named loop may cross itself here, since each is read on its own map and
+figure. A Constant's links run straight, and `build.py`
 warns on a bent one; every other link has some bend but where a straight line reads more clearly (overall links bend, and an exception is judged by eye), and it warns on a straight one. A
 Constant sits beside what it drives, its box at most 400 units from each box it drives
 (Jordy), and `build.py` warns on one further away.

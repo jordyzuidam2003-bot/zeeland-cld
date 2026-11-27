@@ -2012,7 +2012,8 @@ def tangles(cld):
 
 def overlaps(cld):
     """Pairs of element boxes that intersect, a link and its reverse drawn on one curve, an
-    element on the wrong side of the regions' border, and a named loop whose own links cross."""
+    element on the wrong side of the regions' border. A named loop may cross itself in the full
+    drawing, since each is read on its own map and figure (cld-drawing.md)."""
     bxs = boxes(cld)
     ids = [e["id"] for e in cld["elements"]]
     out = []
@@ -2053,15 +2054,4 @@ def overlaps(cld):
         hit = lambda p: nb[0] < p[0] < nb[2] and nb[1] < p[1] < nb[3]
         out += [f"region name {n!r} over the link {a} -> {b}" for (a, b), p in paths.items()
                 if any(hit(bezier(*p, t / 40)) for t in range(41))]
-    # a named loop whose own links cross reads as a figure eight, which cannot be followed round;
-    # each link sampled at 30 points, every pair of the loop's links tested segment by segment
-    pts = {k: [bezier(*p, i / 30) for i in range(31)] for k, p in paths.items()}
-    for loop in cld["loops"]:
-        path = loop["path"]
-        steps = [(path[i], path[(i + 1) % len(path)]) for i in range(len(path))]
-        for i, a in enumerate(steps):
-            for b in steps[i + 1:]:
-                p, q = pts[a], pts[b]
-                if any(meet(p[u], p[u + 1], q[v], q[v + 1]) for u in range(30) for v in range(30)):
-                    out.append(f"loop crosses itself: {loop['id']}, {a[0]} -> {a[1]} and {b[0]} -> {b[1]}")
     return out

@@ -123,7 +123,7 @@
     {
       "id": "gemeente-schouwen-duiveland",
       "label": "Gemeente Schouwen-Duiveland",
-      "scale": "inside",
+      "scale": "outside",
       "type": "Government",
       "level": "Local / Provincial / Regional",
       "sector": "Government",
@@ -325,7 +325,7 @@
     {
       "id": "zlto",
       "label": "ZLTO",
-      "scale": "inside",
+      "scale": "outside",
       "type": "Farmers' organisation",
       "level": "Local / Provincial / Regional",
       "sector": "Farmers organisation",

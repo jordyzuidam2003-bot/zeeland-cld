@@ -1197,6 +1197,22 @@
       ],
       "x": -50,
       "y": 300
+    },
+    {
+      "id": "perceived-risk-of-switching",
+      "label": "Perceived risk of switching",
+      "element type": "Auxiliary",
+      "adaptive practice": false,
+      "sets domain": "Social",
+      "subsystem": "Agricultural economy",
+      "subquestion": "SQ2",
+      "description": "How much a farmer expects to lose by moving a field to a new crop, before moving it: a failed yield, no buyer, a low price, too little water, carried by the farm. It drives the decision before a switch, where Margin given up on high-margin crops is the outcome after it; Farmers' knowledge of new crops is whether a farmer knows how, this who pays when it fails. On the island, larger business risks slow innovation (Delphy, 2023, p. 6), crops grow so costly that they may not fail (p. 13), and the cost of innovative solutions lies mainly with the farmer while they are not yet proven, so investing carries a risk (p. 50). In a survey of farmers in the south-west Netherlands (2013), a higher perceived cost of drought measures lowered their adaptation and trust in their own competence raised it, both parts of how farmers appraise their ability to cope (van Duinen et al., 2015a, pp. 1089, 1091). Whether it runs through others' successes and failures is a question for the group model building session. An Auxiliary: it follows what farmers know and the contracts on offer. No actor: a perception, not a decision.",
+      "sources": [
+        "delphy-2023-dorsd",
+        "van-duinen-2015-coping"
+      ],
+      "x": 1250,
+      "y": 480
     }
   ],
   "connections": [
@@ -2020,17 +2036,6 @@
         "de-wit-2022"
       ],
       "curvature": 0.3
-    },
-    {
-      "from": "knowledge-of-new-crops",
-      "to": "fields-moved-to-new-salt-tolerant-crops",
-      "polarity": "+",
-      "delay": false,
-      "description": "Farmers who know how to grow and sell a new crop find it less risky, so more of them grow it.",
-      "simplification": "Folds Relative attractiveness of new salt-tolerant crops, which gathered the drivers of this decision: each driver now points at Adoption of new salt-tolerant crops itself, whose description says that farmers weigh a new crop against their current crops. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to switch, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
-      "sources": [],
-      "hypothesis": true,
-      "curvature": -0.26
     },
     {
       "from": "harvest-lost-to-salt",
@@ -2951,6 +2956,29 @@
         "kaandorp-2022",
         "witteveen-bos-2021",
         "omroep-zeeland-2023-zoet-water"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "perceived-risk-of-switching",
+      "to": "fields-moved-to-new-salt-tolerant-crops",
+      "polarity": "-",
+      "delay": false,
+      "description": "The more a farmer expects to lose on a new crop, the fewer fields move to it. On the island the cost of unproven innovations lies mainly with the farmer, so investing carries a risk (Delphy, 2023, p. 50); in the south-west Netherlands, farmers who saw a higher cost in drought measures took fewer of them (van Duinen et al., 2015a, p. 1089). Measured for the island's water measures and for drought measures in the south-west, not for a crop switch: that it holds for a switch too is an assumption. Within the year.",
+      "sources": [
+        "delphy-2023-dorsd",
+        "van-duinen-2015-coping"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "knowledge-of-new-crops",
+      "to": "perceived-risk-of-switching",
+      "polarity": "-",
+      "delay": false,
+      "description": "Farmers who know how to grow and sell a new crop see less risk in it: in a survey of farmers in the south-west Netherlands, their trust in their own competence to carry out a measure raised their adaptation, the strongest such factor for measures at farm level (van Duinen et al., 2015a, pp. 1089, 1091). Measured for drought measures, not for new crops. Within the year.",
+      "sources": [
+        "van-duinen-2015-coping"
       ],
       "curvature": 0.15
     }

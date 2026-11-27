@@ -4007,16 +4007,6 @@
   ],
   "changes": [
     {
-      "change": "Perceived risk of switching drawn, between what farmers know and the fields they move",
-      "argument": "Kitty's point (8), with (3): Margin given up is the outcome after a switch, the perceived risk what drives the decision before it, and where the vision's 'the risk of moving lands on the single farmer' shows (Delphy, 2023, pp. 6, 13, 50; van Duinen et al., 2015a, pp. 1089, 1091). Farmers' knowledge of new crops → Fields moved (a hypothesis whose description read 'find it less risky') moves onto the risk, since both would count one effect twice; it is on no named loop, and the learning loop fields moved → adoption → knowledge → risk → fields moved stays reinforcing. No actor: a perception (decided by Jordy).",
-      "items": [
-        "perceived-risk-of-switching",
-        "perceived-risk-of-switching -> fields-moved-to-new-salt-tolerant-crops",
-        "knowledge-of-new-crops -> perceived-risk-of-switching",
-        "knowledge-of-new-crops -> fields-moved-to-new-salt-tolerant-crops"
-      ]
-    },
-    {
       "change": "Buyer contracts for new crops drawn, the buyers' decision, lowering the perceived risk",
       "argument": "Kitty's points (7) and (12): contracts were in the CLD only as words, in the Constant Market demand and in link descriptions, so no actor could move them, while a buyer offers one. What a contract moves is read in Janssens et al. (2020, pp. 11–12, 14–15): the price and sales risk, not the yield risk; for the new crops de Wit et al. (2022, pp. 266, 268, 277), DutchNews.nl (2026) and Delphy (2023, p. 49). Market demand → Fields moved (a hypothesis reading 'Assured offtake lowers the risk of a new crop') goes, since demand now reaches the fields through the contracts and the risk and both would count one effect twice; it is on no named loop. Market demand stays a Constant, its description stating the open question whether demand or processing is the barrier.",
       "items": [

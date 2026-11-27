@@ -28,8 +28,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 LAYOUT = {"x", "y", "curvature", "delay at", "places", "bends", "marks"}  # drawing, not content
 KINDS = [("elements", "element"), ("connections", "link"), ("loops", "named loop"), ("groups", "combined loop")]
-AGREED = ("model/cld.json holds changes: their arguments belong in the working version until Jordy and "
-          "Lenne agree, then in the commit that moves them")
+AGREED = ("model/cld.json holds changes: their arguments belong in the working version until Jordy "
+          "agrees, then in the commit that moves them")
 
 
 def key(kind, item):

@@ -843,7 +843,7 @@ def page(cld, refs, actors, version, loops, model="cld.json"):
                 ("☰</span> Zeeland CLD</button>", "☰</span> Zeeland CLD, working version</button>"),
                 ("the causal loop diagram of our Challenge Based Project.</p>",
                  "the causal loop diagram of our Challenge Based Project. This is its working version: the "
-                 "changes tried here enter the CLD once Jordy and Lenne agree.</p>"),
+                 "changes tried here enter the CLD once Jordy agrees.</p>"),
                 ('<a href="tables/cld-table.xlsx" download>The table of elements, links and loops (.xlsx) ↓</a>'
                  '<a href="tables/sources-to-ask.xlsx" download>The sources to ask the actors (.xlsx) ↓</a>'
                  '<a href="actors.html">Actor Map →</a>',

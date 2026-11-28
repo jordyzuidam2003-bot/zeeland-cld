@@ -2010,12 +2010,22 @@ def tangles(cld):
     return crossings, through
 
 
+def boxes_overlapping(sub):
+    """[(a, b)]: each pair of element boxes that intersect in sub, a drawing in cld.json's shape:
+    the full drawing, a group's figure or report panel (group_cld()), a named loop's oval. A
+    crossing count misses one box on another (C6's Fields moved once lay on Adoption, counted only
+    as one crossing), so build.py warns of each (Jordy)."""
+    bxs = boxes(sub)
+    ids = [e["id"] for e in sub["elements"]]
+    return [(a, b) for i, a in enumerate(ids) for b in ids[i + 1:]
+            if bxs[a][0] < bxs[b][2] and bxs[b][0] < bxs[a][2] and bxs[a][1] < bxs[b][3] and bxs[b][1] < bxs[a][3]]
+
+
 def overlaps(cld):
     """Pairs of element boxes that intersect, a link and its reverse drawn on one curve, an
     element on the wrong side of the regions' border. A named loop may cross itself in the full
     drawing, since each is read on its own map and figure (cld-drawing.md)."""
     bxs = boxes(cld)
-    ids = [e["id"] for e in cld["elements"]]
     out = []
     # the regions' border needs room between the two subsystems in every row: an element of the
     # first subsystem right of one of the second, at about the same height, leaves it none
@@ -2027,11 +2037,7 @@ def overlaps(cld):
         for b, q in right:
             if p[1] - pad < q[3] + pad and q[1] - pad < p[3] + pad and p[2] + pad > q[0] - pad:
                 out.append(f"regions: {a} ({names[0]}) is not left of {b} ({names[1]}) with room for the border")
-    for i, a in enumerate(ids):
-        for b in ids[i + 1:]:
-            p, q = bxs[a], bxs[b]
-            if p[0] < q[2] and q[0] < p[2] and p[1] < q[3] and q[1] < p[3]:
-                out.append(f"boxes overlap: {a} and {b}")
+    out += [f"boxes overlap: {a} and {b}" for a, b in boxes_overlapping(cld)]
     # a -> b at curvature k and b -> a at -k share one curve, so the loop reads as one line with
     # two arrowheads; they read as two once their middles lie a sign's height apart
     paths = link_paths(cld, bxs)

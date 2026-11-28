@@ -671,8 +671,14 @@ def check(cld, refs, actors):
             crossings, through = draw_cld.group_tangles(cld, draw_cld.spread_group(group))
             if crossings or through:
                 warnings.append(f"group {group['id']}: its report panel has {len(crossings)} crossings and {len(through)} links through a box")
+            for where, g in (("figure", group), ("report panel", draw_cld.spread_group(group))):
+                warnings += [f"group {group['id']}: its {where} has {a} and {b} overlapping"
+                             for a, b in draw_cld.boxes_overlapping(draw_cld.group_cld(cld, g))]
             # each loop its own area, its mark at its centre (cld-drawing.md)
             warnings += draw_cld.marks_astray(cld, group)
+        for loop in cld["loops"]:
+            warnings += [f"loop {loop['id']}: its oval has {a} and {b} overlapping"
+                         for a, b in draw_cld.boxes_overlapping({"elements": draw_cld.oval(cld, loop)[0]})]
         # The CLD describes mechanisms and is shaped for no lever set, so no element, link or loop names one.
         warnings += [f"{item.get('id') or item['from'] + ' -> ' + item['to']}: names a policy lever"
                      for item in cld["elements"] + cld["connections"] + cld["loops"] + cld.get("groups", [])

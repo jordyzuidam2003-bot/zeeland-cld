@@ -130,7 +130,8 @@ builds and pushes, so nobody else needs git or Python.
    R/B does not match its polarities, a feedback loop with no stock) and prints the source coverage, hypotheses apart, the layout's
    crossings between links and links through a box they do not connect, each link measured as Kumu draws it,
    from box centre to box centre (`draw_cld.group_pieces()`), on the CLD and the Actor Map alike, and any warnings: a model
-   text still empty, an element without links, two boxes that overlap, a link and its reverse
+   text still empty, an element without links, two boxes that overlap (in the full drawing, a
+   combined loop's figure or report panel, or a named loop's oval), a link and its reverse
    drawn on one curve, an element on the wrong side of the border between the two subsystems,
    a link under a region's name, a loop's figure with no
    room inside the loop for its mark, a link through a box it does not connect, two links or
@@ -338,7 +339,7 @@ Combined loops sheet and a Kumu map of its own show each group. `places` (`{"ele
 (`{"from-id -> to-id": curvature}`) and `marks` (`{"R3": [x, y]}`) lay out its figure,
 `docs/figures/combined-loops/<id>.svg`: its own, never the full drawing's, on the same axes and signs as `x`, `y` and
 `curvature`. Each must hold exactly the group's elements, links and loops, so `build.py` stops when a
-loop's path changes, and it warns of a crossing or a link through a box in a figure; `--check` names a
+loop's path changes, and it warns of a crossing, a link through a box or two boxes overlapping in a figure; `--check` names a
 stale or orphaned one. Each loop is its own area, never one inside another (a loop
 drawn inside another puts the outer loop's mark inside the inner one), but where three loops share one
 chain, which a flat map cannot draw each beside it: one wraps one other, its mark in the band that is

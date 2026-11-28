@@ -6,25 +6,25 @@
 </defs>
 <rect x="-716" y="-373" width="1426" height="769" fill="white"/>
 <g class="links">
-<g class="link" data-from="polder-drainage-depth" data-to="spring-workability-of-the-fields" data-sign="+" data-delay="false" data-curvature="0.14">
+<g class="link" data-from="polder-drainage-depth" data-to="spring-workability-of-the-fields" data-sign="+" data-delay="false" data-curvature="-0.34">
 <path class="link-path" d="M -139.5 278.0 Q -317.4 249.3 -421.5 162.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-381.2" y="192.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="spring-workability-of-the-fields" data-to="demand-for-deep-polder-drainage" data-sign="-" data-delay="false" data-curvature="0.15">
+<g class="link" data-from="spring-workability-of-the-fields" data-to="demand-for-deep-polder-drainage" data-sign="-" data-delay="false" data-curvature="-0.5">
 <path class="link-path" d="M -491.7 76.7 Q -525.9 6.3 -497.0 -64.8 Q -468.1 -136.0 -383.0 -190.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-423.4" y="-161.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="ditch-level-nap" data-sign="+" data-delay="true" data-curvature="-0.3">
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="ditch-level-nap" data-sign="+" data-delay="true" data-curvature="-0.8">
 <path class="link-path" d="M 360.4 -204.5 Q 451.5 -153.0 488.5 -83.1 Q 525.5 -13.2 499.5 58.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="509.9" y="9.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M 496.7 -116.4 L 455.9 -91.0 M 505.1 -102.8 L 464.4 -77.4" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 496.7 -116.4 L 455.9 -91.0 M 505.1 -102.8 L 464.4 -77.4" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="ditch-level-nap" data-to="polder-drainage-depth" data-sign="-" data-delay="false" data-curvature="0.43">
+<g class="link" data-from="ditch-level-nap" data-to="polder-drainage-depth" data-sign="-" data-delay="false" data-curvature="-0.9">
 <path class="link-path" d="M 471.4 110.3 Q 391.9 219.5 200.1 265.8" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="248.4" y="252.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="demand-for-deep-polder-drainage" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="true" data-curvature="0.32">
+<g class="link" data-from="demand-for-deep-polder-drainage" data-to="plans-to-raise-ditch-levels" data-sign="-" data-delay="true" data-curvature="-0.22">
 <path class="link-path" d="M -146.6 -276.8 Q -31.9 -296.3 86.1 -284.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="36.2" y="-288.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 <path class="delay-cut" d="M -39.9 -312.3 L -38.3 -264.3 M -23.9 -312.8 L -22.3 -264.9" stroke="white" stroke-width="11" fill="none"/>

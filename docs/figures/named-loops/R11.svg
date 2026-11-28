@@ -6,19 +6,19 @@
 </defs>
 <rect x="-534" y="-320" width="1116" height="649" fill="white"/>
 <g class="links">
-<g class="link" data-from="salt-tolerant-crop-adoption" data-to="knowledge-of-new-crops" data-sign="+" data-delay="false" data-curvature="-0.3">
+<g class="link" data-from="salt-tolerant-crop-adoption" data-to="knowledge-of-new-crops" data-sign="+" data-delay="false" data-curvature="0.14">
 <path class="link-path" d="M 285.7 -174.5 Q 387.4 -121.0 412.9 -43.6 Q 438.3 33.7 377.4 104.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="405.4" y="63.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="fields-moved-to-new-salt-tolerant-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.2">
+<g class="link" data-from="fields-moved-to-new-salt-tolerant-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="-0.34">
 <path class="link-path" d="M -193.3 -211.3 Q -118.6 -233.2 -34.8 -237.2 Q 49.1 -241.1 129.1 -226.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="79.6" y="-233.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="perceived-risk-of-switching" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="-" data-delay="false" data-curvature="-0.23">
+<g class="link" data-from="perceived-risk-of-switching" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="-" data-delay="false" data-curvature="-0.3">
 <path class="link-path" d="M -310.1 160.5 Q -405.1 101.6 -418.2 22.1 Q -431.3 -57.4 -357.1 -125.3" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-390.5" y="-88.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="knowledge-of-new-crops" data-to="perceived-risk-of-switching" data-sign="-" data-delay="false" data-curvature="0.14">
+<g class="link" data-from="knowledge-of-new-crops" data-to="perceived-risk-of-switching" data-sign="-" data-delay="false" data-curvature="0.9">
 <path class="link-path" d="M 251.9 190.4 Q 181.3 220.4 95.3 231.8 Q 9.2 243.1 -77.6 233.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-27.7" y="237.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>

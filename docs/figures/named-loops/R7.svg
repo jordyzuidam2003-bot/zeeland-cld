@@ -6,11 +6,11 @@
 </defs>
 <rect x="-538" y="-316" width="1067" height="628" fill="white"/>
 <g class="links">
-<g class="link" data-from="net-price-for-new-crops" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="false" data-curvature="0.3">
+<g class="link" data-from="net-price-for-new-crops" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="false" data-curvature="-0.5">
 <path class="link-path" d="M 160.9 210.6 Q 37.0 241.0 -94.2 223.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-44.5" y="228.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="processing-capacity-for-alternative-crops" data-to="net-price-for-new-crops" data-sign="+" data-delay="false" data-curvature="-0.14">
+<g class="link" data-from="processing-capacity-for-alternative-crops" data-to="net-price-for-new-crops" data-sign="+" data-delay="false" data-curvature="-0.9">
 <path class="link-path" d="M 309.4 -148.1 Q 395.7 -90.2 404.2 -14.6 Q 412.7 61.0 340.1 124.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="374.3" y="88.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
@@ -20,7 +20,7 @@
 <path class="delay-cut" d="M -110.2 -245.7 L -103.5 -198.2 M -94.4 -248.0 L -87.6 -200.4" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -110.2 -245.7 L -103.5 -198.2 M -94.4 -248.0 L -87.6 -200.4" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="fields-moved-to-new-salt-tolerant-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.2">
+<g class="link" data-from="fields-moved-to-new-salt-tolerant-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="-0.34">
 <path class="link-path" d="M -323.7 137.9 Q -404.4 77.1 -405.0 1.0 Q -405.6 -75.1 -325.9 -136.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-362.7" y="-102.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

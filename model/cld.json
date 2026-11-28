@@ -13,8 +13,8 @@
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],
-      "x": -1359,
-      "y": 785
+      "x": -2287,
+      "y": 762
     },
     {
       "id": "sea-level-rise",
@@ -28,8 +28,8 @@
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],
-      "x": -2299,
-      "y": 400
+      "x": -2197,
+      "y": -100
     },
     {
       "id": "wetter-winters",
@@ -43,8 +43,8 @@
       "sources": [
         "knmi-2023-klimaatscenarios"
       ],
-      "x": -1696,
-      "y": 30
+      "x": -1648,
+      "y": -56
     },
     {
       "id": "freshwater-lens-thickness",
@@ -58,8 +58,8 @@
       "sources": [
         "de-louw-2011"
       ],
-      "x": -1803,
-      "y": 524
+      "x": -1786,
+      "y": 228
     },
     {
       "id": "polder-surface-elevation-nap",
@@ -78,8 +78,8 @@
         "scheldestromen-2021-hor-schouwen",
         "de-louw-2011"
       ],
-      "x": -1974,
-      "y": -189
+      "x": -1413,
+      "y": -830
     },
     {
       "id": "root-zone-salinity",
@@ -94,8 +94,8 @@
         "munns-tester-2008",
         "van-beekom-1953-salt"
       ],
-      "x": -509,
-      "y": 502
+      "x": -625,
+      "y": 471
     },
     {
       "id": "saline-seepage-kwel",
@@ -111,8 +111,8 @@
         "kaandorp-2022",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "x": -2086,
-      "y": 218
+      "x": -1986,
+      "y": -381
     },
     {
       "id": "soil-structure-usability",
@@ -128,8 +128,8 @@
         "van-beekom-1953-salt",
         "van-beekom-1953"
       ],
-      "x": -734,
-      "y": 40
+      "x": -1152,
+      "y": -26
     },
     {
       "id": "upconing-of-salt-groundwater",
@@ -146,8 +146,8 @@
         "provincie-zeeland-2021-grondwateronttrekkingen",
         "scheldestromen-2026-grondwater"
       ],
-      "x": -1093,
-      "y": 629
+      "x": -1211,
+      "y": 812
     },
     {
       "id": "demand-for-deep-polder-drainage",
@@ -166,8 +166,8 @@
         "knmi-2023-klimaatscenarios",
         "raat-2026"
       ],
-      "x": -590,
-      "y": -1153,
+      "x": -471,
+      "y": -217,
       "actor": "arable-farmers"
     },
     {
@@ -185,8 +185,8 @@
       "actors": [
         "rijkswaterstaat"
       ],
-      "x": -1411,
-      "y": 981
+      "x": -2119,
+      "y": 1112
     },
     {
       "id": "freshwater-availability-for-crops",
@@ -201,8 +201,8 @@
         "kaandorp-2022",
         "allen-1998"
       ],
-      "x": -2179,
-      "y": 1766
+      "x": -1712,
+      "y": 763
     },
     {
       "id": "freshwater-storage-measures",
@@ -228,8 +228,8 @@
         "acacia-water",
         "delphy"
       ],
-      "x": -582,
-      "y": -296,
+      "x": -768,
+      "y": 240,
       "actor": "arable-farmers"
     },
     {
@@ -245,8 +245,8 @@
         "provincie-zeeland-2021-grondwateronttrekkingen",
         "van-duinen-2015-coping"
       ],
-      "x": -578,
-      "y": 868,
+      "x": -629,
+      "y": 853,
       "actor": "arable-farmers"
     },
     {
@@ -261,8 +261,8 @@
       "sources": [
         "scheldestromen-2025-nota-peilbesluiten"
       ],
-      "x": -83,
-      "y": -1494
+      "x": -173,
+      "y": -1336
     },
     {
       "id": "winter-rain-drained-away",
@@ -278,8 +278,8 @@
         "de-louw-2011",
         "kaandorp-2022"
       ],
-      "x": -1270,
-      "y": -63
+      "x": -1406,
+      "y": -350
     },
     {
       "id": "crop-yield",
@@ -294,8 +294,8 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "x": -388,
-      "y": 264
+      "x": -423,
+      "y": 241
     },
     {
       "id": "market-demand-for-alternative-crops",
@@ -312,8 +312,8 @@
         "polman-2026",
         "van-den-burg-2024"
       ],
-      "x": 737,
-      "y": 1024
+      "x": 1393,
+      "y": 1839
     },
     {
       "id": "processing-capacity-for-alternative-crops",
@@ -331,8 +331,8 @@
         "greenfood50-nd",
         "de-vriend-2024"
       ],
-      "x": 662,
-      "y": 1409,
+      "x": 892,
+      "y": 1537,
       "actor": "buyers-and-processors"
     },
     {
@@ -349,8 +349,8 @@
         "delphy-2023-dorsd",
         "cloet-2024"
       ],
-      "x": 850,
-      "y": 600,
+      "x": 581,
+      "y": 748,
       "actor": "arable-farmers"
     },
     {
@@ -371,8 +371,8 @@
         "van-loo-2023",
         "van-duinen-2015-coping"
       ],
-      "x": 505,
-      "y": 797,
+      "x": 562,
+      "y": 988,
       "actor": "arable-farmers"
     },
     {
@@ -389,8 +389,8 @@
         "farjon-2013",
         "kuiper-2023"
       ],
-      "x": 233,
-      "y": -605,
+      "x": 304,
+      "y": -527,
       "simplification": "A soil's structure enters the land's value only through what the land earns (Soil structure → Crop yield → Farm income → this element), the sign the same, since buyers price what they expect it to earn. What it leaves out: any value a buyer gives good soil beyond its income."
     },
     {
@@ -408,8 +408,8 @@
         "ec-2023-banking-package",
         "eba-2023-basel-iii-monitoring"
       ],
-      "x": 1679,
-      "y": -135,
+      "x": 1038,
+      "y": -1126,
       "actor": "banks",
       "simplification": "Folds Basel IV capital requirements, a Constant on no loop with one link, into this description: the capital rules are context for the premium, set by the EU outside the CLD's scale, and no actor in the CLD can move them. No loop runs through it, no actor inside the scale loses a decision and no delay is lost; what it leaves out is a change in the rules as a driver the semi-quantitative analysis could vary.",
       "actors": [
@@ -435,8 +435,8 @@
         "polman-2026",
         "raat-2026"
       ],
-      "x": 1316,
-      "y": -113,
+      "x": 530,
+      "y": 440,
       "actor": "arable-farmers",
       "simplification": "Counts potatoes, sown onions and the other field vegetables as one group, as if salt and fresh water moved them alike, while in Zeeland the sown onions halved after dry summers and a lack of fresh water as potatoes held at about 19,000 ha (De Vriend, 2024b), and on the island's salty low-polder parcels farmers have stopped sown onions while potato stays in the rotation (Kaandorp et al., 2022, pp. 30–31): the links from Root zone salinity and Crop water shortfall move mainly the onions, which bring in less of the arable revenue than potatoes on Dutch clay farms (Janssens et al., 2020, p. 14). Every loop through it keeps its polarity and its mechanism, since the crops are kept for their margin, take a store and need soil work that too-wet soil spoils; what it leaves out is which crop gives way first, and so how far salt alone moves the part that carries most of the revenue. It counts hectares while Farm income is a hectare's: each link out reads a hectare more under these crops as one less under the other current crops, at the arable land as it stands, which shifts over decades and from every group about alike (Arable land in the polders)."
     },
@@ -453,8 +453,8 @@
         "verhagen-2018",
         "van-der-meulen-2025"
       ],
-      "x": 475,
-      "y": 120
+      "x": 231,
+      "y": 32
     },
     {
       "id": "farmers-capacity-to-invest",
@@ -469,8 +469,8 @@
         "verhagen-2018",
         "van-der-meulen-2020"
       ],
-      "x": 765,
-      "y": -256
+      "x": 784,
+      "y": 61
     },
     {
       "id": "mortgage-debt-financial-leverage",
@@ -485,8 +485,8 @@
         "van-der-meulen-2020",
         "silvis-2017"
       ],
-      "x": 996,
-      "y": -863
+      "x": 711,
+      "y": -815
     },
     {
       "id": "farmland-leaving-arable-use",
@@ -502,8 +502,8 @@
         "luijt-2007",
         "delphy-2023-dorsd"
       ],
-      "x": -204,
-      "y": -696
+      "x": -240,
+      "y": -729
     },
     {
       "id": "crop-water-shortfall",
@@ -518,8 +518,8 @@
         "allen-1998",
         "kaandorp-2022"
       ],
-      "x": -881,
-      "y": 1042
+      "x": -1493,
+      "y": 1126
     },
     {
       "id": "zlto-call-for-supply-route",
@@ -535,8 +535,8 @@
         "omroep-zeeland-2026-aardappeloogst",
         "delphy-2023-dorsd"
       ],
-      "x": -1285,
-      "y": 1188,
+      "x": -1473,
+      "y": 1448,
       "actor": "agrarisch-schouwen-duiveland"
     },
     {
@@ -560,8 +560,8 @@
       "actors": [
         "ienw"
       ],
-      "x": -1625,
-      "y": 1426,
+      "x": -2061,
+      "y": 1428,
       "actor": "provincie-zeeland"
     },
     {
@@ -576,8 +576,8 @@
       "sources": [
         "verstand-2021"
       ],
-      "x": -1052,
-      "y": -249
+      "x": -861,
+      "y": -413
     },
     {
       "id": "ditch-level-nap",
@@ -595,8 +595,8 @@
         "scheldestromen-2021-hor-schouwen",
         "kaandorp-2022"
       ],
-      "x": -2247,
-      "y": -668
+      "x": -1448,
+      "y": -1134
     },
     {
       "id": "polder-drainage-depth",
@@ -612,8 +612,8 @@
         "kaandorp-2022",
         "scheldestromen-2025-nota-peilbesluiten"
       ],
-      "x": -1718,
-      "y": -419
+      "x": -1512,
+      "y": -653
     },
     {
       "id": "plans-to-raise-ditch-levels",
@@ -631,8 +631,8 @@
         "scheldestromen-2021-wbp",
         "reglement-scheldestromen-2025"
       ],
-      "x": -1234,
-      "y": -1129,
+      "x": -808,
+      "y": -1112,
       "actor": "waterschap-scheldestromen"
     },
     {
@@ -649,8 +649,8 @@
         "scheldestromen-2021-hor-duiveland",
         "scheldestromen-2026-jaarverslaggeving"
       ],
-      "x": -1241,
-      "y": -745,
+      "x": -878,
+      "y": -756,
       "simplification": "Draws only the water coming in: Saline seepage and Winter rain drained away, which Ditch level (NAP) and Polder drainage depth already drive with the same sign, so every loop keeps its polarity; the rain the drains carry off the creek ridges and dunes, which Winter rain drained away leaves out, reaches the same pumping stations and rises with the same drainage depth, so drawing it would change no sign. What it leaves out: how high the water is lifted, on which no source read shows the costs depending.",
       "ask actors": [
         {
@@ -676,8 +676,8 @@
         "waterschapswet-2026",
         "scheldestromen-2026-watersysteemheffing"
       ],
-      "x": -18,
-      "y": -343,
+      "x": -179,
+      "y": -530,
       "actor": "waterschap-scheldestromen"
     },
     {
@@ -694,8 +694,8 @@
         "deolu-ajayi-2024",
         "allen-1998"
       ],
-      "x": -203,
-      "y": 577
+      "x": -140,
+      "y": 597
     },
     {
       "id": "margin-given-up-on-high-margin-crops",
@@ -713,8 +713,8 @@
         "ten-dam-2023",
         "delphy-2023-dorsd"
       ],
-      "x": 211,
-      "y": 1020,
+      "x": 381,
+      "y": 1218,
       "simplification": "Holds the prices of the crops replaced fixed: World prices of conventional crops, sugar beet's among them, reach Farm income but not this element, though a higher price for the crop a new one replaces raises what a farm gives up on each hectare it moves, and the cereals' and grass seed's prices are in no variable. The world prices are outside the island's reach and no loop runs through them, so B10 and every other loop through the element keep their polarity and mechanism; what is left out is how those prices change how hard B10 holds back a switch."
     },
     {
@@ -729,8 +729,8 @@
       "sources": [
         "agrimatie-2024-bedrijfsopvolging"
       ],
-      "x": 118,
-      "y": -77,
+      "x": 160,
+      "y": -197,
       "ask actors": [
         {
           "actor": "zlto",
@@ -758,8 +758,8 @@
         "van-den-burg-2024",
         "freshplaza-2018"
       ],
-      "x": 1112,
-      "y": 920
+      "x": 961,
+      "y": 1273
     },
     {
       "id": "growers-of-new-crops-elsewhere",
@@ -775,8 +775,8 @@
         "dutchnews-2026",
         "greenfood50-nd"
       ],
-      "x": 545,
-      "y": 1695
+      "x": 780,
+      "y": 1839
     },
     {
       "id": "processing-of-new-crops-elsewhere",
@@ -792,8 +792,8 @@
         "greenfood50-nd",
         "dutchnews-2026"
       ],
-      "x": 1301,
-      "y": 1133
+      "x": 1097,
+      "y": 971
     },
     {
       "id": "tolerant-varieties-adoption",
@@ -809,8 +809,8 @@
         "aldrich-2023",
         "van-duinen-2015-coping"
       ],
-      "x": -267,
-      "y": 1172,
+      "x": -46,
+      "y": 1115,
       "actor": "arable-farmers"
     },
     {
@@ -828,8 +828,8 @@
         "aldrich-2023",
         "van-den-burg-2024"
       ],
-      "x": -269,
-      "y": 1397,
+      "x": -94,
+      "y": 1502,
       "actors": [
         "seed-potato-breeders-and-trading-houses"
       ],
@@ -851,8 +851,8 @@
         "van-der-meulen-2020",
         "dijkshoorn-dekker-2024"
       ],
-      "x": 2384,
-      "y": -603
+      "x": 1369,
+      "y": -156
     },
     {
       "id": "capital-lost-on-switching",
@@ -869,8 +869,8 @@
         "bonnet-2025",
         "van-loo-2023"
       ],
-      "x": 1863,
-      "y": -1226
+      "x": 1047,
+      "y": 375
     },
     {
       "id": "knowledge-of-new-crops",
@@ -886,8 +886,8 @@
         "de-wit-2022",
         "van-den-burg-2024"
       ],
-      "x": 1122,
-      "y": 729
+      "x": 1640,
+      "y": 891
     },
     {
       "id": "spending-on-keeping-current-crops",
@@ -903,8 +903,8 @@
         "kaandorp-2022",
         "scheldestromen-2026-waterschapsverordening"
       ],
-      "x": 1813,
-      "y": 524,
+      "x": 818,
+      "y": -263,
       "actor": "arable-farmers"
     },
     {
@@ -921,8 +921,8 @@
         "farjon-2013",
         "rabobank-2025-annual-report"
       ],
-      "x": 1049,
-      "y": -1127
+      "x": 483,
+      "y": -1084
     },
     {
       "id": "bank-credit-to-farms",
@@ -936,8 +936,8 @@
       "sources": [
         "van-der-meulen-2020"
       ],
-      "x": 1102,
-      "y": -583,
+      "x": 1308,
+      "y": -692,
       "actor": "banks"
     },
     {
@@ -953,8 +953,8 @@
         "van-der-meulen-2020",
         "abn-amro-nd-kosten-krediet"
       ],
-      "x": 2185,
-      "y": -212
+      "x": 771,
+      "y": -551
     },
     {
       "id": "world-prices-of-conventional-crops",
@@ -971,8 +971,8 @@
         "janssens-2020",
         "bogosavac-2018"
       ],
-      "x": 53,
-      "y": 238
+      "x": 121,
+      "y": 289
     },
     {
       "id": "farmers-trust-in-government",
@@ -990,8 +990,8 @@
         "lases-2021",
         "nationale-ombudsman-2026"
       ],
-      "x": 570,
-      "y": -1555
+      "x": -105,
+      "y": -1000
     },
     {
       "id": "farmers-wish-to-keep-their-land",
@@ -1007,8 +1007,8 @@
         "luijt-2007",
         "holtslag-broekhof-2016"
       ],
-      "x": -205,
-      "y": -1736
+      "x": -182,
+      "y": -1679
     },
     {
       "id": "creek-ridge-lens-thickness",
@@ -1024,8 +1024,8 @@
         "kaandorp-2022",
         "scheldestromen-2026-waterschapsverordening"
       ],
-      "x": -956,
-      "y": 333
+      "x": -1276,
+      "y": 321
     },
     {
       "id": "pumping-the-water-board-allows",
@@ -1042,8 +1042,8 @@
         "scheldestromen-2026-waterschapsverordening"
       ],
       "actor": "waterschap-scheldestromen",
-      "x": -550,
-      "y": 648
+      "x": -1157,
+      "y": 539
     },
     {
       "id": "knowledge-of-storage",
@@ -1067,8 +1067,8 @@
         "acacia-water",
         "delphy"
       ],
-      "x": -382,
-      "y": -21
+      "x": -447,
+      "y": -65
     },
     {
       "id": "salt-in-ditch-water",
@@ -1084,8 +1084,8 @@
         "scheldestromen-2021-hor-duiveland",
         "kaandorp-2022"
       ],
-      "x": -1368,
-      "y": 544
+      "x": -2309,
+      "y": 410
     },
     {
       "id": "water-demand-of-the-crop-mix",
@@ -1101,8 +1101,8 @@
         "delphy-2023-dorsd",
         "van-loo-2023"
       ],
-      "x": -846,
-      "y": 1446
+      "x": -848,
+      "y": 1156
     },
     {
       "id": "trials-and-pilots-on-the-island",
@@ -1128,8 +1128,8 @@
         "acacia-water",
         "delphy"
       ],
-      "x": 1135,
-      "y": 413
+      "x": 1145,
+      "y": 570
     },
     {
       "id": "perceived-risk-of-switching",
@@ -1144,8 +1144,8 @@
         "delphy-2023-dorsd",
         "van-duinen-2015-coping"
       ],
-      "x": 1684,
-      "y": 934
+      "x": 1593,
+      "y": 1211
     },
     {
       "id": "buyer-contracts-for-new-crops",
@@ -1162,8 +1162,8 @@
         "dutchnews-2026",
         "delphy-2023-dorsd"
       ],
-      "x": 1210,
-      "y": 1350,
+      "x": 1532,
+      "y": 1514,
       "actor": "buyers-and-processors"
     },
     {
@@ -1179,8 +1179,8 @@
         "abn-amro-nd-kosten-krediet",
         "van-der-meulen-2020"
       ],
-      "x": 2520,
-      "y": 280,
+      "x": 1764,
+      "y": 490,
       "actor": "banks"
     },
     {
@@ -1197,8 +1197,8 @@
         "van-der-meulen-2020",
         "cbs-2024-vreemd-vermogen"
       ],
-      "x": 2100,
-      "y": -20
+      "x": 1338,
+      "y": -418
     },
     {
       "id": "repayments-on-farm-loans",
@@ -1213,8 +1213,8 @@
         "abn-amro-nd-kosten-krediet",
         "verhagen-2018"
       ],
-      "x": 2520,
-      "y": 0
+      "x": 1593,
+      "y": 129
     }
   ],
   "connections": [
@@ -1254,7 +1254,7 @@
         "kaandorp-2022",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": 0.1
+      "curvature": -0.42
     },
     {
       "from": "creek-ridge-lens-thickness",
@@ -1267,7 +1267,7 @@
         "kaandorp-2022",
         "scheldestromen-2026-waterschapsverordening"
       ],
-      "curvature": 0.32
+      "curvature": -0.9
     },
     {
       "from": "freshwater-lens-thickness",
@@ -1279,7 +1279,7 @@
         "kaandorp-2022",
         "scheldestromen-2026-waterschapsverordening"
       ],
-      "curvature": -0.28
+      "curvature": -0.42
     },
     {
       "from": "root-zone-salinity",
@@ -1293,7 +1293,7 @@
         "eeman-2017",
         "knol-2025"
       ],
-      "curvature": 0.27
+      "curvature": 0.18
     },
     {
       "from": "saline-seepage-kwel",
@@ -1305,7 +1305,7 @@
         "de-louw-2011",
         "kaandorp-2022"
       ],
-      "curvature": 0.1
+      "curvature": -0.42
     },
     {
       "from": "soil-structure-usability",
@@ -1316,7 +1316,7 @@
       "sources": [
         "van-beekom-1953"
       ],
-      "curvature": -0.15
+      "curvature": 0.14
     },
     {
       "from": "external-freshwater-supply",
@@ -1328,7 +1328,7 @@
         "kaandorp-2022",
         "witteveen-bos-2021"
       ],
-      "curvature": -0.1
+      "curvature": 0.8
     },
     {
       "from": "freshwater-storage-measures",
@@ -1342,7 +1342,7 @@
         "de-louw-2011",
         "scheldestromen-2026-waterschapsverordening"
       ],
-      "curvature": -0.24,
+      "curvature": -0.46,
       "simplification": "Counts a Freshmaker in the low ground between the dunes and the creek ridge, which the study also finds promising where a suitable sand layer lies in the subsoil (Kaandorp et al., 2022, p. 24), as thickness of this lens: there too it infiltrates winter water above the brackish water it pumps away (p. 22), though off the creek ridges and dunes the element measures. Every loop through the link keeps its polarity and its mechanism, water infiltrated in winter and pumped in summer; what it leaves out is that such a lens lies off the ridges and dunes the element's other links are written for."
     },
     {
@@ -1356,7 +1356,7 @@
         "oude-essink-2018",
         "van-hateren-2025"
       ],
-      "curvature": 0.14
+      "curvature": -0.38
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -1370,7 +1370,7 @@
         "provincie-zeeland-2021-grondwateronttrekkingen",
         "acacia-water-nd-kleine-zoetwaterlenzen"
       ],
-      "curvature": 0.26
+      "curvature": -0.42
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -1382,7 +1382,7 @@
         "oude-essink-2018",
         "kaandorp-2022"
       ],
-      "curvature": 0.22
+      "curvature": -0.26
     },
     {
       "from": "crop-yield",
@@ -1397,7 +1397,7 @@
         "dutchnews-2018-potato-processors",
         "kaandorp-2022"
       ],
-      "curvature": 0.32
+      "curvature": 0.3
     },
     {
       "from": "agricultural-land-value",
@@ -1407,7 +1407,7 @@
       "description": "A fall in the land's value that has happened, through salt in R8: does a farm whose land lost value object harder to the next plan? Through its solvency, yes (−); where compensation pays more than the land would fetch on the market, the concern may fall instead (+). A hypothesis for the group model building session, with both signs as the question to farmers.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.11,
+      "curvature": -0.46,
       "simplification": "Folds Owners' concern about their land's value, which gathered the reasons for objecting: a fall in the land's value, and a plan that would lower it, raised landowning farmers' concern, and the concern raised their objections. The sign is the product of the two steps, so R8 keeps its polarity, and the concern was no actor's decision of its own. A tenant's concern, losing the lease, was never part of it. What it leaves out: why owners object is no variable on the drawing, a question for the group model building session."
     },
     {
@@ -1447,7 +1447,7 @@
         "polman-2026",
         "delphy-2023-dorsd"
       ],
-      "curvature": 0.8
+      "curvature": -0.22
     },
     {
       "from": "farm-revenue",
@@ -1460,7 +1460,7 @@
         "silvis-2017",
         "boere-2015"
       ],
-      "curvature": -0.14
+      "curvature": -0.3
     },
     {
       "from": "farm-revenue",
@@ -1472,7 +1472,7 @@
         "verhagen-2018",
         "lamkowsky-2023"
       ],
-      "curvature": -0.11
+      "curvature": 0.38
     },
     {
       "from": "farmers-capacity-to-invest",
@@ -1482,7 +1482,7 @@
       "description": "Capacity to invest decides whether a farm can pay for a storage measure, not whether it wants to.",
       "sources": [],
       "hypothesis": true,
-      "curvature": 0.1
+      "curvature": 0.42
     },
     {
       "from": "farmers-capacity-to-invest",
@@ -1496,7 +1496,7 @@
         "van-den-burg-2024",
         "delphy-2023-dorsd"
       ],
-      "curvature": 0.3
+      "curvature": 0.26
     },
     {
       "from": "hotter-drier-summers",
@@ -1523,7 +1523,7 @@
         "delphy-2023-dorsd",
         "terink-2023"
       ],
-      "curvature": -0.3
+      "curvature": -0.22
     },
     {
       "from": "crop-water-shortfall",
@@ -1538,7 +1538,7 @@
         "pauw-2015",
         "scheldestromen-2026-waterschapsverordening"
       ],
-      "curvature": -0.27
+      "curvature": -0.18
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -1551,7 +1551,7 @@
         "krajenbrink-2023",
         "acacia-water-2020"
       ],
-      "curvature": 0.27
+      "curvature": 0.14
     },
     {
       "from": "crop-water-shortfall",
@@ -1565,7 +1565,7 @@
         "omroep-zeeland-2026-aardappeloogst",
         "delphy-2023-dorsd"
       ],
-      "curvature": 0.46
+      "curvature": -0.9
     },
     {
       "from": "groundwater-extraction-for-irrigation",
@@ -1577,7 +1577,7 @@
         "verhagen-2018",
         "kaandorp-2022"
       ],
-      "curvature": -0.25
+      "curvature": 0.1
     },
     {
       "from": "freshwater-supply-route",
@@ -1591,7 +1591,7 @@
         "schipper-2014",
         "brabantse-delta-2026"
       ],
-      "curvature": 0.11
+      "curvature": 0.26
     },
     {
       "from": "hotter-drier-summers",
@@ -1615,7 +1615,7 @@
         "witteveen-bos-2021",
         "omroep-zeeland-2023-zoet-water"
       ],
-      "curvature": 0.2
+      "curvature": -0.3
     },
     {
       "from": "zlto-call-for-supply-route",
@@ -1624,7 +1624,7 @@
       "delay": true,
       "description": "The body deciding on a route weighs the call; so far a study has followed and no route has been decided on (Freshwater supply route to the island). Years, so a delay: a route has to be decided on and paid for, and implementing its pipeline alone is expected to take about 3 to 10 years (Freshwater supply route to the island).",
       "sources": [],
-      "curvature": 0.32,
+      "curvature": 0.9,
       "hypothesis": true
     },
     {
@@ -1649,7 +1649,7 @@
         "scheldestromen-2021-hor-duiveland",
         "schipper-2015"
       ],
-      "curvature": 0.14
+      "curvature": -0.34
     },
     {
       "from": "spring-workability-of-the-fields",
@@ -1660,7 +1660,7 @@
       "sources": [
         "verstand-2021"
       ],
-      "curvature": -0.38
+      "curvature": -0.18
     },
     {
       "from": "spring-workability-of-the-fields",
@@ -1673,7 +1673,7 @@
         "scheldestromen-2021-hor-schouwen",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": 0.15
+      "curvature": -0.5
     },
     {
       "from": "ditch-level-nap",
@@ -1688,7 +1688,7 @@
         "oude-essink-2010",
         "van-haperen-2006"
       ],
-      "curvature": -0.31
+      "curvature": -0.9
     },
     {
       "from": "polder-drainage-depth",
@@ -1710,7 +1710,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": -0.15
+      "curvature": -0.3
     },
     {
       "from": "plans-to-raise-ditch-levels",
@@ -1726,7 +1726,7 @@
         "scheldestromen-2026-informatieavond-duiveland",
         "kaandorp-2022"
       ],
-      "curvature": -0.3
+      "curvature": -0.8
     },
     {
       "from": "ditch-level-nap",
@@ -1737,7 +1737,7 @@
       "sources": [
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": 0.43
+      "curvature": -0.9
     },
     {
       "from": "polder-surface-elevation-nap",
@@ -1749,7 +1749,7 @@
         "scheldestromen-2021-hor-duiveland",
         "scheldestromen-2025-nota-peilbesluiten"
       ],
-      "curvature": 0.55
+      "curvature": 0.1
     },
     {
       "from": "demand-for-deep-polder-drainage",
@@ -1761,7 +1761,7 @@
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-duiveland"
       ],
-      "curvature": 0.32
+      "curvature": -0.22
     },
     {
       "from": "saline-seepage-kwel",
@@ -1774,7 +1774,7 @@
         "scheldestromen-2025-nota-peilbesluiten",
         "scheldestromen-2021-hor-schouwen"
       ],
-      "curvature": 0.42
+      "curvature": 0.3
     },
     {
       "from": "water-board-pumping-costs",
@@ -1783,7 +1783,7 @@
       "delay": false,
       "description": "Rising pumping costs give the water board a reason to raise the levels.",
       "sources": [],
-      "curvature": -0.32,
+      "curvature": -0.22,
       "hypothesis": true
     },
     {
@@ -1798,7 +1798,7 @@
         "scheldestromen-2021-hor-schouwen",
         "scheldestromen-2015-braakman"
       ],
-      "curvature": -0.15
+      "curvature": 0.1
     },
     {
       "from": "saline-seepage-kwel",
@@ -1812,7 +1812,7 @@
         "kaandorp-2022",
         "scheldestromen-2026-jaarverslaggeving"
       ],
-      "curvature": -0.11
+      "curvature": -0.14
     },
     {
       "from": "winter-rain-drained-away",
@@ -1825,7 +1825,7 @@
         "scheldestromen-2021-hor-duiveland",
         "scheldestromen-2026-jaarverslaggeving"
       ],
-      "curvature": 0.1
+      "curvature": -0.38
     },
     {
       "from": "water-board-pumping-costs",
@@ -1850,7 +1850,7 @@
         "scheldestromen-2026-watersysteemheffing",
         "verhagen-2018"
       ],
-      "curvature": 0.14
+      "curvature": -0.3
     },
     {
       "from": "root-zone-salinity",
@@ -1865,7 +1865,7 @@
         "de-vos-2016",
         "van-bakel-2018"
       ],
-      "curvature": 0.63
+      "curvature": -0.36
     },
     {
       "from": "harvest-lost-to-salt",
@@ -1877,7 +1877,7 @@
         "deolu-ajayi-2024",
         "janssens-2020"
       ],
-      "curvature": -0.1
+      "curvature": 0.6
     },
     {
       "from": "salt-tolerant-crop-adoption",
@@ -1892,7 +1892,7 @@
         "beauchampet-2022",
         "kaandorp-2022"
       ],
-      "curvature": -0.29
+      "curvature": 0.6
     },
     {
       "from": "tolerant-varieties-adoption",
@@ -1903,7 +1903,7 @@
       "sources": [
         "van-straten-2021"
       ],
-      "curvature": -0.66
+      "curvature": 0.8
     },
     {
       "from": "salt-tolerant-crop-adoption",
@@ -1917,7 +1917,7 @@
         "polman-2026",
         "cloet-2024"
       ],
-      "curvature": 0.22
+      "curvature": 0.14
     },
     {
       "from": "tolerant-varieties-adoption",
@@ -1963,7 +1963,7 @@
       "simplification": "Folds Relative attractiveness of storing water, which gathered the drivers of this decision: each driver now points at Freshwater storage measures itself, whose description says how farmers weigh storing against their other ways through a dry summer. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to store, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
       "sources": [],
       "hypothesis": true,
-      "curvature": 0.15
+      "curvature": 0.14
     },
     {
       "from": "freshwater-storage-measures",
@@ -1974,7 +1974,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": 0.32
+      "curvature": -0.3
     },
     {
       "from": "harvest-lost-to-salt",
@@ -1985,7 +1985,7 @@
       "simplification": "Folds Relative attractiveness of salt-tolerant varieties, which gathered the drivers of this decision: each driver now points at Adoption of salt-tolerant varieties itself, whose description says that farmers weigh a tolerant variety against the one they grow now. The attractiveness raised the decision (+), so the link keeps the sign of the step into it and no loop through it changes; the attractiveness was no actor's decision of its own. Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay, as on Harvest lost to salt → Fields moved to new crops: farmers respond to the damage they come to notice, not to the state of the soil. B1 keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what salt takes.",
       "sources": [],
       "hypothesis": true,
-      "curvature": 0.32
+      "curvature": 0.6
     },
     {
       "from": "tolerant-varieties-on-offer",
@@ -2012,7 +2012,7 @@
         "kaandorp-2022",
         "raat-2026"
       ],
-      "curvature": 0.13
+      "curvature": 0.18
     },
     {
       "from": "net-price-for-new-crops",
@@ -2027,7 +2027,7 @@
         "beauchampet-2022",
         "de-wit-2022"
       ],
-      "curvature": 0.3
+      "curvature": -0.5
     },
     {
       "from": "salt-tolerant-crop-adoption",
@@ -2036,7 +2036,7 @@
       "delay": false,
       "description": "Growing a new crop, on their own fields or their neighbours', teaches farmers how.",
       "sources": [],
-      "curvature": -0.3,
+      "curvature": 0.14,
       "hypothesis": true
     },
     {
@@ -2050,7 +2050,7 @@
         "polman-2026",
         "van-loo-2023"
       ],
-      "curvature": 0.14
+      "curvature": -0.22
     },
     {
       "from": "market-demand-for-alternative-crops",
@@ -2074,7 +2074,7 @@
         "meynard-2018",
         "jung-2022"
       ],
-      "curvature": -0.14
+      "curvature": -0.9
     },
     {
       "from": "processing-of-new-crops-elsewhere",
@@ -2108,7 +2108,7 @@
       "simplification": "Folds Know-how of the high-margin crops, a stock that builds over years of growing, storing and selling them, into this link's delay: the more land the crops take, the more know-how leaving them would leave unused. The sign is the product of the two steps (+, then +), so the one feedback through the link, back through Capital lost on leaving the high-margin crops to Land under high-margin crops, stays reinforcing with its mechanism, know-how is no actor's decision, and the delay is kept. What one link distorts: the know-how builds up over the seasons the crops are grown and fades over the seasons they are not, while the link draws one delay for both.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.1
+      "curvature": 0.1
     },
     {
       "from": "machines-and-storage-for-current-crops",
@@ -2120,7 +2120,7 @@
         "polman-2026",
         "bonnet-2025"
       ],
-      "curvature": -0.22
+      "curvature": 0.7
     },
     {
       "from": "capital-lost-on-switching",
@@ -2134,7 +2134,7 @@
         "kaandorp-2022",
         "raat-2026"
       ],
-      "curvature": -0.1
+      "curvature": 0.3
     },
     {
       "from": "farmers-capacity-to-invest",
@@ -2143,7 +2143,7 @@
       "delay": false,
       "description": "Money left to invest can go to carrying on: wells, irrigation, drains, a new harvester.",
       "sources": [],
-      "curvature": -0.14,
+      "curvature": 0.18,
       "hypothesis": true
     },
     {
@@ -2157,7 +2157,7 @@
         "magrini-2018",
         "janssens-2020"
       ],
-      "curvature": 0.1
+      "curvature": 0.22
     },
     {
       "from": "spending-on-keeping-current-crops",
@@ -2170,7 +2170,7 @@
         "verhagen-2018",
         "scheldestromen-2026-waterschapsverordening"
       ],
-      "curvature": -0.1
+      "curvature": 0.46
     },
     {
       "from": "spending-on-keeping-current-crops",
@@ -2182,7 +2182,7 @@
         "van-der-meulen-2020",
         "janssens-2020"
       ],
-      "curvature": -0.32
+      "curvature": 0.38
     },
     {
       "from": "spending-on-keeping-current-crops",
@@ -2194,7 +2194,7 @@
         "kaandorp-2022",
         "scheldestromen-2026-waterschapsverordening"
       ],
-      "curvature": -0.14,
+      "curvature": -0.3,
       "simplification": "Folds the wells and deep drains a farm has in place, a stock between the two, into this link's delay: a well keeps pumping after the spending that paid for it, so a cut in spending leaves the wells in place pumping. Every loop through the link keeps its polarity and its mechanism (spending → wells → pumping is +, then +), and the delay is kept; what it leaves out is the wells as a variable of their own, which D2D could vary apart from a year's spending."
     },
     {
@@ -2210,7 +2210,7 @@
         "banken-nl-2019",
         "lamkowsky-2023"
       ],
-      "curvature": -0.22
+      "curvature": 0.18
     },
     {
       "from": "plans-to-raise-ditch-levels",
@@ -2222,7 +2222,7 @@
         "rabobank-2023-annual-report",
         "rabobank-2025-annual-report"
       ],
-      "curvature": 0.11
+      "curvature": -0.3
     },
     {
       "from": "banks-risk-assessment",
@@ -2234,7 +2234,7 @@
         "van-der-meulen-2020",
         "banken-nl-2019"
       ],
-      "curvature": 0.47
+      "curvature": 0.9
     },
     {
       "from": "banks-risk-assessment",
@@ -2247,7 +2247,7 @@
         "abn-amro-nd-uitleg-rente",
         "fi-compass-2020"
       ],
-      "curvature": 0.14
+      "curvature": 0.3
     },
     {
       "from": "bank-credit-to-farms",
@@ -2261,7 +2261,7 @@
         "lamkowsky-2023",
         "fi-compass-2020"
       ],
-      "curvature": 0.1
+      "curvature": 0.18
     },
     {
       "from": "bank-credit-freeze-risk-premiums",
@@ -2274,7 +2274,7 @@
         "van-der-meulen-2020",
         "nvb-2023"
       ],
-      "curvature": -0.1
+      "curvature": 0.3
     },
     {
       "from": "debt-payments",
@@ -2285,7 +2285,7 @@
       "sources": [
         "verhagen-2018"
       ],
-      "curvature": 0.22
+      "curvature": 0.1
     },
     {
       "from": "debt-payments",
@@ -2294,7 +2294,7 @@
       "delay": false,
       "description": "A farm paying more interest keeps its lucrative but salt-sensitive crops to meet it, as it does to meet its repayments (Repayments on farm loans → Land under high-margin crops). No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
       "sources": [],
-      "curvature": -0.22,
+      "curvature": -0.14,
       "hypothesis": true
     },
     {
@@ -2304,7 +2304,7 @@
       "delay": true,
       "description": "Where arable farming still pays, its holder, present or next, keeps the land arable, while what arable farming earns, not what other uses would bid, sets the land's price. A decade or more: land leaves arable use only when a holder gives it up, and just over 1.5% of Zeeland's farmland is sold in a year (Agricultural land value).",
       "sources": [],
-      "curvature": 0.1,
+      "curvature": -0.42,
       "hypothesis": true
     },
     {
@@ -2347,7 +2347,7 @@
         "scheldestromen-2025-nota-peilbesluiten",
         "beauchampet-2022"
       ],
-      "curvature": 0.33,
+      "curvature": 0.9,
       "simplification": "Folds Owners' concern about their land's value, which gathered the reasons for objecting: a fall in the land's value, and a plan that would lower it, raised landowning farmers' concern, and the concern raised their objections. The sign is the product of the two steps, so B13 keeps its polarity, and the concern was no actor's decision of its own. A tenant's concern, losing the lease, was never part of it. What it leaves out: why owners object is no variable on the drawing, a question for the group model building session."
     },
     {
@@ -2367,7 +2367,7 @@
         "scheldestromen-2021-hor-schouwen",
         "scheldestromen-2025-nota-peilbesluiten"
       ],
-      "curvature": 0.14
+      "curvature": 0.9
     },
     {
       "from": "farmers-wish-to-keep-their-land",
@@ -2388,7 +2388,7 @@
       "simplification": "Folds Plans changed or dropped. The sign is the product of the two steps (+, then −), so no loop through the link changes. It assumes that a plan changed after objections costs trust as a plan changed for other reasons does, which no source read shows. The water board's decision on its plans stays drawn, on the link from Objections to land-use plans into Water board's plans to raise ditch levels.",
       "sources": [],
       "hypothesis": true,
-      "curvature": 0.22
+      "curvature": 0.9
     },
     {
       "from": "wetter-winters",
@@ -2414,7 +2414,7 @@
         "scheldestromen-2019-nota-grondwater",
         "scheldestromen-2026-waterschapsverordening"
       ],
-      "curvature": -0.15,
+      "curvature": -0.9,
       "simplification": "The link reads the rules in force as letting a lens be pumped without a permit only where the board's map shows a fresh body, as the water board's 2019 policy note says; the regulation's art. 4.8 e, as written, frees outside the fresh bodies too an extraction with a pump of more than 5 m³ an hour or of at most 12,000 m³ a year, while art. 4.9 frees from notification a pump of not more than 5 m³ an hour, which suggests a drafting error (Waterschap Scheldestromen, 2026f, arts. 4.8 e and 4.9). Which reading the board applies is a question for the water board."
     },
     {
@@ -2438,7 +2438,7 @@
         "scheldestromen-2026-grondwater",
         "scheldestromen-2019-nota-grondwater"
       ],
-      "curvature": 0.17
+      "curvature": 0.1
     },
     {
       "from": "freshwater-storage-measures",
@@ -2450,7 +2450,7 @@
         "kaandorp-2022",
         "delphy-2023-dorsd"
       ],
-      "curvature": -0.2
+      "curvature": -0.7
     },
     {
       "from": "knowledge-of-storage",
@@ -2462,7 +2462,7 @@
         "kaandorp-2022",
         "oude-essink-2018"
       ],
-      "curvature": -0.15
+      "curvature": -0.36
     },
     {
       "from": "freshwater-storage-measures",
@@ -2475,7 +2475,7 @@
         "oude-essink-2018",
         "stuyt-2012"
       ],
-      "curvature": -0.22
+      "curvature": -0.42
     },
     {
       "from": "farmers-trust-in-government",
@@ -2485,7 +2485,7 @@
       "description": "Hypothesis: storing water is a long investment that a change of rules can strand, so the less farmers expect public bodies to keep their commitments on water and land, the less they store. A question for the group model building session.",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.24
+      "curvature": -0.3
     },
     {
       "from": "polder-drainage-depth",
@@ -2498,7 +2498,7 @@
         "scheldestromen-2021-hor-duiveland",
         "scheldestromen-2021-hor-schouwen"
       ],
-      "curvature": 0.14
+      "curvature": -0.26
     },
     {
       "from": "farmland-leaving-arable-use",
@@ -2512,7 +2512,7 @@
         "scheldestromen-2026-informatieavond-duiveland",
         "provincie-zeeland-2024"
       ],
-      "curvature": 0.22,
+      "curvature": 0.1,
       "delay at": 0.61
     },
     {
@@ -2526,7 +2526,7 @@
         "beauchampet-2022"
       ],
       "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
-      "curvature": 0.24
+      "curvature": -0.18
     },
     {
       "from": "net-price-for-new-crops",
@@ -2538,7 +2538,7 @@
       "sources": [
         "cloet-2024"
       ],
-      "curvature": 0.45
+      "curvature": -0.38
     },
     {
       "from": "farm-revenue",
@@ -2550,7 +2550,7 @@
         "van-der-meulen-2020",
         "farjon-2013"
       ],
-      "curvature": 0.26
+      "curvature": -0.3
     },
     {
       "from": "hotter-drier-summers",
@@ -2593,7 +2593,7 @@
         "de-louw-2011",
         "de-louw-2015"
       ],
-      "curvature": -0.11
+      "curvature": -0.24
     },
     {
       "from": "winter-rain-drained-away",
@@ -2607,7 +2607,7 @@
         "de-louw-2015",
         "kaandorp-2022"
       ],
-      "curvature": -0.11
+      "curvature": -0.8
     },
     {
       "from": "polder-drainage-depth",
@@ -2622,7 +2622,7 @@
         "scheldestromen-2021-hor-duiveland",
         "oude-essink-2010"
       ],
-      "curvature": 0.17,
+      "curvature": 0.9,
       "ask actors": [
         {
           "actor": "waterschap-scheldestromen",
@@ -2682,7 +2682,7 @@
       "sources": [
         "van-duinen-2015-coping"
       ],
-      "curvature": 0.2
+      "curvature": -0.34
     },
     {
       "from": "saline-seepage-kwel",
@@ -2694,7 +2694,7 @@
         "scheldestromen-2021-hor-duiveland",
         "kaandorp-2022"
       ],
-      "curvature": 0.25
+      "curvature": -0.9
     },
     {
       "from": "hotter-drier-summers",
@@ -2705,7 +2705,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": 0
+      "curvature": 0.0
     },
     {
       "from": "salt-in-ditch-water",
@@ -2716,7 +2716,7 @@
       "sources": [
         "kaandorp-2022"
       ],
-      "curvature": 0.26
+      "curvature": 0.7
     },
     {
       "from": "dependence-on-high-margin-salt-sensitive-crops",
@@ -2727,7 +2727,7 @@
       "sources": [
         "delphy-2023-dorsd"
       ],
-      "curvature": -0.1
+      "curvature": 0.3
     },
     {
       "from": "water-demand-of-the-crop-mix",
@@ -2739,7 +2739,7 @@
         "allen-1998",
         "delphy-2023-dorsd"
       ],
-      "curvature": -0.1
+      "curvature": 0.26
     },
     {
       "from": "crop-water-shortfall",
@@ -2753,7 +2753,7 @@
         "de-vriend-2024-gewassen"
       ],
       "simplification": "Folds Farmers' experience of damage, a stock that builds over dry summers, into this link's delay: farmers respond to the damage they come to notice, not to the state of the soil. Every loop through the link keeps its polarity and its mechanism, and the delay is kept; what it leaves out is how far what farmers notice differs from what the soil shows.",
-      "curvature": -0.16
+      "curvature": -0.18
     },
     {
       "from": "trials-and-pilots-on-the-island",
@@ -2766,7 +2766,7 @@
         "living-lab-innovatieve-drainage",
         "delphy-2023-dorsd"
       ],
-      "curvature": 0
+      "curvature": 0.0
     },
     {
       "from": "trials-and-pilots-on-the-island",
@@ -2777,7 +2777,7 @@
       "sources": [
         "delphy-2023-dorsd"
       ],
-      "curvature": 0
+      "curvature": 0.0
     },
     {
       "from": "zlto-call-for-supply-route",
@@ -2790,7 +2790,7 @@
         "witteveen-bos-2021",
         "omroep-zeeland-2023-zoet-water"
       ],
-      "curvature": -0.25
+      "curvature": -0.3
     },
     {
       "from": "perceived-risk-of-switching",
@@ -2802,7 +2802,7 @@
         "delphy-2023-dorsd",
         "van-duinen-2015-coping"
       ],
-      "curvature": -0.23
+      "curvature": -0.3
     },
     {
       "from": "knowledge-of-new-crops",
@@ -2811,7 +2811,7 @@
       "delay": false,
       "description": "Do farmers who know how to grow and sell a new crop see less risk in switching to it? A hypothesis for the group model building session: no source read measures the risk farmers see in a new crop against what they know of it, so the question to farmers is whether knowing a crop lowers the risk they see in it. Within the year, if it holds.",
       "sources": [],
-      "curvature": 0.14,
+      "curvature": 0.9,
       "hypothesis": true
     },
     {
@@ -2824,7 +2824,7 @@
         "de-wit-2022",
         "delphy-2023-dorsd"
       ],
-      "curvature": 0
+      "curvature": 0.0
     },
     {
       "from": "buyer-contracts-for-new-crops",
@@ -2848,7 +2848,7 @@
         "delphy-2023-dorsd",
         "silvis-2017"
       ],
-      "curvature": 0.45
+      "curvature": -0.5
     },
     {
       "from": "crop-water-shortfall",
@@ -2858,7 +2858,7 @@
       "description": "Does a farm short of water move fields to a new crop that copes with little water, as one losing harvest to salt moves them to a crop that copes with salt (Harvest lost to salt → Fields moved to new crops)? A hypothesis for the group model building session: under drought, the response a source shows on the island is to a crop the farms already grow, cereals (Crop water shortfall → Land under high-margin crops), so the question to farmers is whether a shortfall moves them to a new crop at all, and to which. Years, if it holds, as farms respond to the dry seasons they have had, as in that link, along which the island's sown onions fell from 2015 to 2022: a delay. Where it holds, the field leaves a cereal, sugar beet or grass seed (Fields moved to new crops), so on the map the farm gains no water by it: no source read shows a new crop needing less than the crop it replaces (Water demand of the crop mix). What a farm short of water gains on the map is leaving its thirsty crops (B15).",
       "sources": [],
       "hypothesis": true,
-      "curvature": -0.46
+      "curvature": -0.38
     },
     {
       "from": "dependence-on-high-margin-salt-sensitive-crops",
@@ -2877,7 +2877,7 @@
       "to": "farm-revenue",
       "polarity": "+",
       "delay": false,
-      "curvature": -0.1,
+      "curvature": -0.26,
       "description": "The crops that stand salt the least are the ones that earn the most: potatoes are financially attractive, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12), and on specialised arable farms on clay growing ware potatoes they bring in, on average over the years, 55% of the arable revenue, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14); in Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). So a farm that keeps more of them, and fewer cereals, sugar beet or grass seed, earns more a hectare in a year: on the island without extra fresh water a model farm's potatoes earn a margin of €6,635 a hectare against its grain's €1,348 (Delphy, 2023, p. 43), less what salt takes, which Land under high-margin crops → Harvest lost to salt counts. No source read sizes the net effect of the crop mix on the island's incomes. Within the year.",
       "sources": [
         "verhagen-2018",
@@ -2891,7 +2891,7 @@
       "to": "dependence-on-high-margin-salt-sensitive-crops",
       "polarity": "+",
       "delay": false,
-      "curvature": 0.12,
+      "curvature": -0.18,
       "hypothesis": true,
       "description": "Does a salt-tolerant variety of potato or onion let a farm keep those crops on a field that salt would otherwise take them off? A hypothesis for the group model building session: a tolerant variety uses the same machines, storage and know-how as the variety it replaces (Adoption of salt-tolerant varieties), but no source read shows one grown on the island, nor a farm keeping its potatoes because of one, so the question to farmers is whether a tolerant variety would make them keep those crops. Within the year, if it holds.",
       "sources": []
@@ -2901,7 +2901,7 @@
       "to": "freshwater-storage-measures",
       "polarity": "+",
       "delay": false,
-      "curvature": -0.14,
+      "curvature": -0.34,
       "description": "The more the water falls short of what crops need, the more worthwhile farmers find storing it, and those who can pay for it store more. On the island the attention to drought and to waterlogging swings with dry and wet years, and the study names this swinging urgency among the barriers to scaling up storage (Kaandorp et al., 2022, p. 12): a dry year raises the push to store, a wet one lets it fade. In the island's western low polders, farmers find the winter's rain surplus enough to prevent the drought damage, holding or storing it being the limiting factor (p. 27). The shortfall is the gap farmers' water decisions respond to, as for pumping and the call for a supply route. No delay drawn: how quickly a dry summer turns into a measure built, no source read shows.",
       "simplification": "Folds Relative attractiveness of storing water, which gathered the drivers of this decision: each driver now points at Freshwater storage measures itself, whose description says how farmers weigh storing against their other ways through a dry summer. The shortfall raised the attractiveness and the attractiveness the decision, so the link keeps the sign of the steps it folds and no loop through it changes; the attractiveness was no actor's decision of its own. What it leaves out: whether farmers want to store, apart from whether they can (Farmers' capacity to invest), is no variable on the drawing, only in the description.",
       "sources": [
@@ -2913,7 +2913,7 @@
       "to": "freshwater-storage-measures",
       "polarity": "+",
       "delay": false,
-      "curvature": 0.36,
+      "curvature": -0.3,
       "hypothesis": true,
       "description": "Does the harvest salt takes make farmers store more fresh water in their fields? In the low polders the measures keep the thin rainwater lens against salt (Freshwater storage measures), so a farm losing harvest to salt has a reason to take them up beside the shortfall. A hypothesis for the group model building session: no source read shows a farmer storing because of salt damage, so the question to farmers is whether salt on their fields makes them consider such measures. No delay drawn: how quickly salt damage turns into a measure built, no source read shows.",
       "sources": []
@@ -2927,7 +2927,7 @@
       "sources": [
         "abn-amro-nd-kosten-krediet"
       ],
-      "curvature": 0.24
+      "curvature": 0.8
     },
     {
       "from": "farm-debt",
@@ -2941,7 +2941,7 @@
         "silvis-2017-economische-ontwikkeling",
         "cbs-2024-vreemd-vermogen"
       ],
-      "curvature": -0.24
+      "curvature": 0.14
     },
     {
       "from": "farm-debt",
@@ -2952,7 +2952,7 @@
       "sources": [
         "abn-amro-nd-kosten-krediet"
       ],
-      "curvature": -0.1
+      "curvature": 0.1
     },
     {
       "from": "tolerant-varieties-on-offer",
@@ -2978,7 +2978,7 @@
         "verhagen-2018",
         "banken-nl-2019"
       ],
-      "curvature": 0.34
+      "curvature": -0.14
     },
     {
       "from": "repayment-required-on-farm-loans",
@@ -2990,7 +2990,7 @@
         "abn-amro-nd-kosten-krediet",
         "van-der-meulen-2020"
       ],
-      "curvature": 0
+      "curvature": 0.0
     },
     {
       "from": "farm-debt",
@@ -3001,7 +3001,7 @@
       "sources": [
         "abn-amro-nd-kosten-krediet"
       ],
-      "curvature": 0.36
+      "curvature": 0.3
     },
     {
       "from": "repayments-on-farm-loans",
@@ -3013,7 +3013,7 @@
         "abn-amro-nd-kosten-krediet",
         "van-der-meulen-2020"
       ],
-      "curvature": 0.12
+      "curvature": -0.34
     },
     {
       "from": "repayments-on-farm-loans",
@@ -3024,7 +3024,7 @@
       "sources": [
         "verhagen-2018"
       ],
-      "curvature": 0.28
+      "curvature": -0.34
     },
     {
       "from": "repayments-on-farm-loans",
@@ -3036,7 +3036,7 @@
         "van-der-meulen-2020",
         "farjon-2013"
       ],
-      "curvature": -0.85
+      "curvature": -0.9
     },
     {
       "from": "repayments-on-farm-loans",
@@ -3045,7 +3045,7 @@
       "delay": false,
       "description": "A farm with high repayments keeps its lucrative but salt-sensitive crops to meet them, as it does to meet its interest (Interest on farm loans → Land under high-margin crops). No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
       "sources": [],
-      "curvature": 0.12,
+      "curvature": 0.8,
       "hypothesis": true
     },
     {
@@ -3058,7 +3058,7 @@
         "silvis-2017",
         "farjon-2013"
       ],
-      "curvature": -0.1
+      "curvature": 0.1
     }
   ],
   "loops": [

@@ -6,17 +6,17 @@
 </defs>
 <rect x="-621" y="-329" width="1147" height="683" fill="white"/>
 <g class="links">
-<g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="-0.29">
+<g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="0.6">
 <path class="link-path" d="M -136.8 234.0 Q -253.8 212.0 -333.1 158.6 Q -412.3 105.1 -430.3 36.0 Q -448.3 -33.1 -399.7 -97.3" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-424.7" y="-53.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="harvest-lost-to-salt" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="true" data-curvature="0.13">
+<g class="link" data-from="harvest-lost-to-salt" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="true" data-curvature="0.18">
 <path class="link-path" d="M -346.2 -149.2 Q -256.0 -216.5 -112.0 -238.2 Q 32.0 -259.9 169.3 -227.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="120.3" y="-237.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M -107.2 -263.2 L -101.0 -215.6 M -91.3 -265.3 L -85.1 -217.7" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -107.2 -263.2 L -101.0 -215.6 M -91.3 -265.3 L -85.1 -217.7" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="fields-moved-to-new-salt-tolerant-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="0.2">
+<g class="link" data-from="fields-moved-to-new-salt-tolerant-crops" data-to="salt-tolerant-crop-adoption" data-sign="+" data-delay="false" data-curvature="-0.34">
 <path class="link-path" d="M 356.7 -141.1 Q 429.7 -81.8 434.7 -9.7 Q 439.7 62.5 375.1 124.8 Q 310.6 187.1 196.9 219.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="244.4" y="204.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

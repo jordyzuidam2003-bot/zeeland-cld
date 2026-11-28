@@ -3275,6 +3275,17 @@
       "description": "More hectares under new crops give more harvest within reach of a plant, which makes a local plant more worthwhile to buyers and processors. A plant nearby cuts transport, farmers keep more of the price, the crop is worth more and more farmers grow it. Run backwards, few hectares leave no reason for a plant and transport keeps the price low. It drives new crops once enough is grown and holds them back while too little is. Where a new crop is sold under contract to one buyer, as Dutch quinoa is in interviews published in 2022, that buyer purchases a pre-agreed amount and no other buyer competes (de Wit et al., 2022, pp. 266, 268), which means a nearby plant draws more growers only as fast as the demand that buyer supplies grows."
     },
     {
+      "id": "R11",
+      "name": "Growing new crops lowers the risk seen in them",
+      "path": [
+        "fields-moved-to-new-salt-tolerant-crops",
+        "salt-tolerant-crop-adoption",
+        "knowledge-of-new-crops",
+        "perceived-risk-of-switching"
+      ],
+      "description": "The more fields farmers move to new crops, the more of them they grow, and the more they and their neighbours learn of growing and selling them; knowing a crop, a farmer sees less risk in moving the next field to it, so more fields move. Run backwards, while few farms grow a new crop little is learned and the risk seen stays high. It is where the risk of moving lands on the single farm: the cost of solutions not yet proven lies mainly with the farmer (Delphy, 2023, p. 50), and a buyer's contract takes only the price and sales risk off it (Buyer contracts for new crops → Perceived risk of switching). It closes only through two hypotheses for the group model building session, Adoption of new crops → Farmers' knowledge of new crops and Farmers' knowledge of new crops → Perceived risk of switching, which no source read tests, and whether it runs through others' successes and failures is a question for that session too; trials in Zeeland add knowledge from outside the loop (Trials and pilots on the island → Farmers' knowledge of new crops). It drives new crops once some farms grow them and holds them back while none do, as R5 does storage."
+    },
+    {
       "id": "B11",
       "name": "The water board raises levels against seepage",
       "path": [

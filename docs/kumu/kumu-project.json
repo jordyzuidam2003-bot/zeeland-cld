@@ -5656,6 +5656,19 @@
       ]
     },
     {
+      "_id": "loop-R11",
+      "attributes": {
+        "label": "R11 Growing new crops lowers the risk seen in them",
+        "description": "The more fields farmers move to new crops, the more of them they grow, and the more they and their neighbours learn of growing and selling them; knowing a crop, a farmer sees less risk in moving the next field to it, so more fields move. Run backwards, while few farms grow a new crop little is learned and the risk seen stays high. It is where the risk of moving lands on the single farm: the cost of solutions not yet proven lies mainly with the farmer (Delphy, 2023, p. 50), and a buyer's contract takes only the price and sales risk off it (Buyer contracts for new crops → Perceived risk of switching). It closes only through two hypotheses for the group model building session, Adoption of new crops → Farmers' knowledge of new crops and Farmers' knowledge of new crops → Perceived risk of switching, which no source read tests, and whether it runs through others' successes and failures is a question for that session too; trials in Zeeland add knowledge from outside the loop (Trials and pilots on the island → Farmers' knowledge of new crops). It drives new crops once some farms grow them and holds them back while none do, as R5 does storage."
+      },
+      "connections": [
+        "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
+        "conn-salt-tolerant-crop-adoption--knowledge-of-new-crops",
+        "conn-knowledge-of-new-crops--perceived-risk-of-switching",
+        "conn-perceived-risk-of-switching--fields-moved-to-new-salt-tolerant-crops"
+      ]
+    },
+    {
       "_id": "loop-B11",
       "attributes": {
         "label": "B11 The water board raises levels against seepage",
@@ -7450,6 +7463,15 @@
           "position": {
             "x": 782,
             "y": 932
+          }
+        },
+        {
+          "_id": "mloop-R11",
+          "loop": "loop-R11",
+          "style": {},
+          "position": {
+            "x": 1040,
+            "y": 765
           }
         },
         {
@@ -12635,8 +12657,101 @@
       ]
     },
     {
+      "_id": "map-loop-R11",
+      "name": "31 R11 Growing new crops lowers the risk seen in them",
+      "description": "The more fields farmers move to new crops, the more of them they grow, and the more they and their neighbours learn of growing and selling them; knowing a crop, a farmer sees less risk in moving the next field to it, so more fields move. Run backwards, while few farms grow a new crop little is learned and the risk seen stays high. It is where the risk of moving lands on the single farm: the cost of solutions not yet proven lies mainly with the farmer (Delphy, 2023, p. 50), and a buyer's contract takes only the price and sales risk off it (Buyer contracts for new crops → Perceived risk of switching). It closes only through two hypotheses for the group model building session, Adoption of new crops → Farmers' knowledge of new crops and Farmers' knowledge of new crops → Perceived risk of switching, which no source read tests, and whether it runs through others' successes and failures is a question for that session too; trials in Zeeland add knowledge from outside the loop (Trials and pilots on the island → Farmers' knowledge of new crops). It drives new crops once some farms grow them and holds them back while none do, as R5 does storage.",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "defaultPerspective": "pers-loops",
+      "defaultElementBehavior": "fixed",
+      "defaultConnectionDirection": "directed",
+      "elements": [
+        {
+          "_id": "node-loop-R11-fields-moved-to-new-salt-tolerant-crops",
+          "position": {
+            "x": -297,
+            "y": -168
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fields-moved-to-new-salt-tolerant-crops"
+        },
+        {
+          "_id": "node-loop-R11-salt-tolerant-crop-adoption",
+          "position": {
+            "x": 226,
+            "y": -200
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-salt-tolerant-crop-adoption"
+        },
+        {
+          "_id": "node-loop-R11-knowledge-of-new-crops",
+          "position": {
+            "x": 330,
+            "y": 147
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-knowledge-of-new-crops"
+        },
+        {
+          "_id": "node-loop-R11-perceived-risk-of-switching",
+          "position": {
+            "x": -218,
+            "y": 204
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-perceived-risk-of-switching"
+        }
+      ],
+      "connections": [
+        {
+          "_id": "edge-loop-R11-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption",
+          "curvature": 0.201,
+          "style": {},
+          "connection": "conn-fields-moved-to-new-salt-tolerant-crops--salt-tolerant-crop-adoption"
+        },
+        {
+          "_id": "edge-loop-R11-salt-tolerant-crop-adoption--knowledge-of-new-crops",
+          "curvature": 0.739,
+          "style": {},
+          "connection": "conn-salt-tolerant-crop-adoption--knowledge-of-new-crops"
+        },
+        {
+          "_id": "edge-loop-R11-knowledge-of-new-crops--perceived-risk-of-switching",
+          "curvature": 0.219,
+          "style": {},
+          "connection": "conn-knowledge-of-new-crops--perceived-risk-of-switching"
+        },
+        {
+          "_id": "edge-loop-R11-perceived-risk-of-switching--fields-moved-to-new-salt-tolerant-crops",
+          "curvature": 0.833,
+          "style": {},
+          "connection": "conn-perceived-risk-of-switching--fields-moved-to-new-salt-tolerant-crops"
+        }
+      ],
+      "loops": [
+        {
+          "_id": "mloop-loop-R11-R11",
+          "loop": "loop-R11",
+          "style": {},
+          "pinned": true,
+          "position": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
       "_id": "map-loop-B11",
-      "name": "31 B11 The water board raises levels against seepage",
+      "name": "32 B11 The water board raises levels against seepage",
       "description": "Lower ditch levels raise the saline seepage. The water board names the salinisation a concern and aims to keep or enlarge the lenses, so over years more seepage gives it more reason to plan raises; once carried out, the levels rise and the seepage falls. It seeks the fresh water in the soil the board wants to keep; how far seepage weighs against drought in its plans, no source read shows. On the island the board's accounts read give the loop little support: the board raises levels on Schouwen to limit drought damage, with larger fresh water stocks in the soil as the effect (Waterschap Scheldestromen, 2021b, p. 53), and its 2025 framework for level plans names neither seepage nor the lenses among its criteria (2025, pp. 9, 12), so of the accounts read only the Duiveland report names the lenses among its reasons for a raise (2021a, p. 37). It touches adoption only through the salt it lowers (B2, B1).",
       "scale": 1,
       "center": {
@@ -12713,7 +12828,7 @@
     },
     {
       "_id": "map-loop-B12",
-      "name": "32 B12 The board tests the drainage depth",
+      "name": "33 B12 The board tests the drainage depth",
       "description": "The water board tests each level area's drainage depth against the optimum for its use and soil: where little of the area is too wet a raise is considered, where much of it is the target level is lowered or the discharge's bottlenecks solved. Carried out over years, the depth moves back towards that optimum, which the board sets by its own rules. It touches adoption only through the seepage and salt the ditch level sets.",
       "scale": 1,
       "center": {
@@ -12790,7 +12905,7 @@
     },
     {
       "_id": "map-loop-B13",
-      "name": "33 B13 Objections hold back plans",
+      "name": "34 B13 Objections hold back plans",
       "description": "A plan to raise ditch levels brings objections, appeals and lobbying from landowning farmers who expect it to lower their land's value; whether that is their reason is a question for the group model building session. Objections can delay, change or stop the plan while it is pending, so fewer raises stay planned. On the island the views changed neither 2021 level plan, as the board summarises them, not Schouwen's raise in ten level areas nor Duiveland's proposed study of a raise (Waterschap Scheldestromen, 2021b, pp. 8, 53; 2021a, p. 53), so no source read shows objections holding back a raise there. It is the objectors' intended loop, protecting their land, and seeks a plan they can accept. It touches adoption only through the levels it holds, and through R8 and R9.",
       "scale": 1,
       "center": {
@@ -12851,7 +12966,7 @@
     },
     {
       "_id": "map-loop-R8",
-      "name": "34 R8 Falling land value brings objections that keep salt high",
+      "name": "35 R8 Falling land value brings objections that keep salt high",
       "description": "When farmland loses value, its owners may object harder to the next plan to raise ditch levels; whether they do is a hypothesis for the group model building session, the sign possibly opposite where compensation pays more than the land would fetch. Objections can hold today's level while a plan is pending, and never deepen it. Seepage stays higher, the rainwater lens stays thin, salt takes more of the harvest, income falls and the land loses more value. It shows an unintended consequence of the objections in B13: owners object to protect their land, and the levels held keep up the seepage and salt that lower its value. It touches adoption through the salt it keeps up (B2, B1).",
       "scale": 1,
       "center": {
@@ -13024,7 +13139,7 @@
     },
     {
       "_id": "map-loop-R9",
-      "name": "35 R9 Changed plans erode trust",
+      "name": "36 R9 Changed plans erode trust",
       "description": "Objections and appeals delay, change or stop plans after public bodies have announced them. Plans changed or dropped teach farmers not to count on the next one, their trust in government falls, and farmers who trust less object more. The step from objections to trust is a hypothesis for the group model building session; the step from trust back to objections rests on sources. It reinforces where farmers' objections are passed over, or through the conflict itself; where a body takes them up, the step may turn positive and the loop balancing. It holds back storage, a long investment that a change of rules can strand, as trust falls.",
       "scale": 1,
       "center": {
@@ -13085,7 +13200,7 @@
     },
     {
       "_id": "map-loop-B15",
-      "name": "36 B15 The water sets the crops",
+      "name": "37 B15 The water sets the crops",
       "description": "The more of the rotation is under the high-margin crops, the more water the crop plan needs and, with the water the island has, the larger the shortfall; over years, farms short of water move off those crops, sown onions first, and the shortfall shrinks. It seeks a crop plan the island's water can carry: the water is a limit farmers fit their crops to, as much as the salt. On the island the sown onions fell from 1,214 ha in 2015 to 791 ha in 2022 (Delphy, 2023, p. 15). It holds back the income the high-margin crops bring, so where a farm adapts this way it adapts by earning less.",
       "scale": 1,
       "center": {

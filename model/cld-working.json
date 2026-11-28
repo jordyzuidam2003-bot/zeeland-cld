@@ -3567,7 +3567,7 @@
         "R2",
         "R3"
       ],
-      "description": "*Interest on farm loans* raises the farm's *Dependence on high-margin crops* (R2, a hypothesis, as its repayments do), and so does the *Capital lost on switching to new crops* (R3, on sources). Each loop raises the variable that drives the other: more dependence brings more *Spending on keeping the current crops*, so more *Machines and storage for the current crops* and more capital a switch would write off (R3). This causes more *Farmers' demand for deep polder drainage* (R2). Dependence on current crops holds back the adaptation of new crops. Salt, on its own, lowers that dependence over the years as the current crops yield worse harvests due to increasing root-zone salinity.",
+      "description": "*Interest on farm loans* raises the farm's *Dependence on high-margin crops* (R2, a hypothesis, as its repayments do), and so does the *Capital lost on switching to new crops* (R3, on sources). Each loop raises the variable that drives the other: more dependence brings more *Spending on keeping the current crops*, so more *Machines and storage for the current crops* and more capital a switch would write off (R3). This causes more *Farmers' demand for deep polder drainage* (R2). Dependence on current crops holds back the adoption of new crops. Salt, on its own, lowers that dependence over the years as the current crops yield worse harvests due to increasing root-zone salinity.",
       "places": {
         "dependence-on-high-margin-salt-sensitive-crops": [
           0,
@@ -4268,14 +4268,7 @@
   ],
   "changes": [
     {
-      "change": "R11 named, Growing new crops lowers the risk seen in them: Fields moved to new crops → Adoption of new crops → Farmers' knowledge of new crops → Perceived risk of switching → Fields moved",
-      "argument": "The loop was drawn and unnamed. It meets the named loops' rule in the model texts, running through a practice itself so that its uptake speeds up or slows down, as R5 does for storage, and it is where the vision's 'the risk of moving lands on the single farmer' runs on the map (Delphy, 2023, p. 50). No link changes; its two hypotheses are named in its description.",
-      "items": [
-        "R11"
-      ]
-    },
-    {
-      "change": "Dependence on high-margin salt-sensitive crops relabelled Dependence on high-margin crops, its description naming the crops' water need beside their salt sensitivity",
+      "change": "Dependence on high-margin salt-sensitive crops relabelled Dependence on high-margin crops, its description naming the crops' water need beside their salt sensitivity; C3's \"adaptation of new crops\" read \"adoption\"",
       "argument": "The vision has the crops that earn the most need the most water and stand salt the least, and B15 runs through this element as the thirsty crops, while the label named salt alone; the quantity, the share of the rotation under potatoes and sown onions, is unchanged. Delphy (2023, p. 48): the crops that earn the most also have the greatest water need.",
       "items": [
         "dependence-on-high-margin-salt-sensitive-crops",

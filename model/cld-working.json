@@ -4361,14 +4361,6 @@
   ],
   "changes": [
     {
-      "change": "What drives soil care, two hypotheses for the session: Soil structure → Soil care (−) and Farmers' capacity to invest → Soil care (+)",
-      "argument": "Every actor enters through its decisions with the drivers it responds to (cld-model.md); why farmers choose soil care is behavioural and no source read shows it on the island, so each is a hypothesis for the group model building session (\"A behavioural claim may be a hypothesis\"): a farmer who sees the structure suffer cares for it more, the card on gypsum and green manure already asking it; capacity to invest decides whether a farm can pay, as for storage. Rejected (Jordy): Farms with a successor and Crop water shortfall as drivers, the first with no source on the island, the second resting on 4 of 142 farmers (van Duinen et al., 2015a, p. 1084) and on the soil's water holding, which the boundary leaves out.",
-      "items": [
-        "soil-structure-usability -> soil-care",
-        "farmers-capacity-to-invest -> soil-care"
-      ]
-    },
-    {
       "change": "B16 named, Soil care repairs the structure farmers see decline: Soil structure → Soil care on the farms → Soil structure",
       "argument": "The named loops' selection rule (cld-texts.md): it runs through a practice itself, so its own uptake slows as the structure recovers. Balancing: structure falls, care rises (−), structure recovers (+). A loop for the session to test, since it closes through a hypothesis.",
       "items": [

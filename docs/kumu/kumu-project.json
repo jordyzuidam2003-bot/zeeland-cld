@@ -4895,6 +4895,46 @@
       "to": "elem-farmers-capacity-to-invest"
     },
     {
+      "_id": "conn-soil-structure-usability--soil-care",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "description": "A farm that sees its clay's structure suffer, the soil slaking, staying wet into spring or hard to work, cares for it more: a hypothesis for the group model building session, whose card asks whether farmers see the structure of their clay suffer, from salt or otherwise, and what they do about it. Within the year: a farmer meets the structure when working the soil.",
+        "sets link": "E to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "yes",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "-"
+      },
+      "from": "elem-soil-structure-usability",
+      "to": "elem-soil-care"
+    },
+    {
+      "_id": "conn-farmers-capacity-to-invest--soil-care",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "Capacity to invest decides whether a farm can pay for soil care, compost brought in or a change of machines, not whether it wants to: a hypothesis for the group model building session.",
+        "sets link": "S to T",
+        "sets scope": "Cross-domain",
+        "hypothesis": "yes",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-farmers-capacity-to-invest",
+      "to": "elem-soil-care"
+    },
+    {
       "_id": "conn-0",
       "direction": "directed",
       "delayed": false,
@@ -7381,6 +7421,18 @@
           "curvature": 0.15,
           "style": {},
           "connection": "conn-soil-care--farmers-capacity-to-invest"
+        },
+        {
+          "_id": "edge-soil-structure-usability--soil-care",
+          "curvature": 0.15,
+          "style": {},
+          "connection": "conn-soil-structure-usability--soil-care"
+        },
+        {
+          "_id": "edge-farmers-capacity-to-invest--soil-care",
+          "curvature": 0.3,
+          "style": {},
+          "connection": "conn-farmers-capacity-to-invest--soil-care"
         }
       ],
       "loops": [

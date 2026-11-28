@@ -341,11 +341,11 @@
 <path class="link-path" d="M 930.9 -306.0 Q 1169.6 -403.0 1327.1 -199.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="1294.6" y="-237.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="spending-on-keeping-current-crops" data-to="groundwater-extraction-for-irrigation" data-sign="+" data-delay="true" data-curvature="-0.3" data-delay-t="0.56">
+<g class="link" data-from="spending-on-keeping-current-crops" data-to="groundwater-extraction-for-irrigation" data-sign="+" data-delay="true" data-curvature="-0.3" data-delay-t="0.52">
 <path class="link-path" d="M 663.0 -239.5 Q -285.3 -94.8 -603.9 810.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-586.8" y="763.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M -179.2 172.7 L -212.4 138.0 M -190.8 183.8 L -224.0 149.1" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -179.2 172.7 L -212.4 138.0 M -190.8 183.8 L -224.0 149.1" stroke="#444444" stroke-width="5" fill="none"/>
+<path class="delay-cut" d="M -131.2 129.3 L -162.7 93.1 M -143.3 139.8 L -174.7 103.6" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -131.2 129.3 L -162.7 93.1 M -143.3 139.8 L -174.7 103.6" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="mortgage-debt-financial-leverage" data-to="banks-risk-assessment" data-sign="+" data-delay="false" data-curvature="0.18">
 <path class="link-path" d="M 670.0 -841.0 Q 564.2 -915.9 530.5 -1041.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -670,6 +670,14 @@
 <g class="link" data-from="soil-care" data-to="farmers-capacity-to-invest" data-sign="-" data-delay="false" data-curvature="0.15">
 <path class="link-path" d="M -759.2 -133.6 Q -18.1 -273.3 677.5 18.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="631.2" y="-0.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+</g>
+<g class="link" data-from="soil-structure-usability" data-to="soil-care" data-sign="-" data-delay="false" data-curvature="0.15">
+<path class="link-path" d="M -1105.2 -52.0 Q -1022.3 -110.9 -920.8 -114.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-970.5" y="-109.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+</g>
+<g class="link" data-from="farmers-capacity-to-invest" data-to="soil-care" data-sign="+" data-delay="false" data-curvature="0.3">
+<path class="link-path" d="M 683.2 104.0 Q -120.4 451.5 -805.2 -94.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-765.7" y="-63.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 </g>
 <g class="elements">

@@ -3101,6 +3101,26 @@
         "delphy-2023-dorsd"
       ],
       "curvature": 0.15
+    },
+    {
+      "from": "soil-structure-usability",
+      "to": "soil-care",
+      "polarity": "-",
+      "delay": false,
+      "sources": [],
+      "hypothesis": true,
+      "description": "A farm that sees its clay's structure suffer, the soil slaking, staying wet into spring or hard to work, cares for it more: a hypothesis for the group model building session, whose card asks whether farmers see the structure of their clay suffer, from salt or otherwise, and what they do about it. Within the year: a farmer meets the structure when working the soil.",
+      "curvature": 0.15
+    },
+    {
+      "from": "farmers-capacity-to-invest",
+      "to": "soil-care",
+      "polarity": "+",
+      "delay": false,
+      "sources": [],
+      "hypothesis": true,
+      "description": "Capacity to invest decides whether a farm can pay for soil care, compost brought in or a change of machines, not whether it wants to: a hypothesis for the group model building session.",
+      "curvature": 0.3
     }
   ],
   "loops": [

@@ -699,21 +699,23 @@
     },
     {
       "id": "margin-given-up-on-high-margin-crops",
-      "label": "Margin given up on high-margin crops",
+      "label": "Margin given up on switching",
       "element type": "Auxiliary",
       "adaptive practice": false,
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "On the hectares a farm moves from its high-margin current crops, potatoes and sown onions, to new crops or to salt-tolerant varieties of the current crops: what the current crop would earn without salt less what the new crop or variety earns, a margin being revenue minus the crop's variable costs (Cloet et al., 2024, p. 1). What salt takes is Harvest lost to salt, so it is not counted here. Potatoes, beets, onions and field vegetables are the high-margin crops; the margin of protein crops is comparable to that of cereals and cannot compete with most other crops (Polman et al., 2026, p. 9); quinoa, in a study for Flanders, yields about 3 tonnes a hectare, sold at €1,100 a tonne under contract on a market still very small, against cultivation costs under contract of about €1,470 a hectare, storage and marketing left out (Cloet et al., 2024, p. 2). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276), and on Terschelling food grown on salt-affected soil costs more to produce than food grown with fresh water, the project relying on volunteers and, at its start, on subsidies (ten Dam et al., 2023, pp. 10, 13, 16). A season's crop: within the year.",
+      "description": "On the hectares a farm moves to new crops, from cereals, sugar beet or grass seed (Fields moved to new crops), and on those it sows to salt-tolerant varieties of its high-margin crops: what the crop or variety replaced would earn without salt less what the new one earns, a margin being revenue minus the crop's variable costs (Cloet et al., 2024, p. 1). What salt takes is Harvest lost to salt, so it is not counted here, and what leaving the high-margin crops gives up is in Land under high-margin crops → Farm income. Against the crops a new crop replaces, little is given up: fibre crops and legumes earn about what winter wheat does or less (Delphy, 2023, p. 48), the margin of protein crops is comparable to that of cereals (Polman et al., 2026, p. 9), and on the island without extra fresh water a model farm's grain earns €1,348 a hectare (Delphy, 2023, p. 43). Quinoa, in a study for Flanders, yields about 3 tonnes a hectare, sold at €1,100 a tonne under contract on a market still very small, against cultivation costs under contract of about €1,470 a hectare, storage and marketing left out (Cloet et al., 2024, p. 2), and can pay on many farms, the market left to grow with it (p. 3). In the Netherlands, interviews on quinoa and seed potatoes on saline soil found the lack of economic benefits the main constraint on scaling them (de Wit et al., 2022, p. 276), and on Terschelling food grown on salt-affected soil costs more to produce than food grown with fresh water, the project relying on volunteers and, at its start, on subsidies (ten Dam et al., 2023, pp. 10, 13, 16). A season's crop: within the year.",
       "sources": [
         "cloet-2024",
         "polman-2026",
         "de-wit-2022",
-        "ten-dam-2023"
+        "ten-dam-2023",
+        "delphy-2023-dorsd"
       ],
       "x": 211,
-      "y": 1020
+      "y": 1020,
+      "simplification": "Holds the prices of the crops replaced fixed: World prices of conventional crops, sugar beet's among them, reach Farm income but not this element, though a higher price for the crop a new one replaces raises what a farm gives up on each hectare it moves, and the cereals' and grass seed's prices are in no variable. The world prices are outside the island's reach and no loop runs through them, so B10 and every other loop through the element keep their polarity and mechanism; what is left out is how those prices change how hard B10 holds back a switch."
     },
     {
       "id": "farms-with-a-successor",
@@ -831,7 +833,7 @@
       "actors": [
         "seed-potato-breeders-and-trading-houses"
       ],
-      "simplification": "Holds the salt tolerance of the varieties on offer at that of the cultivars the description names, so only their yield varies. A variable holding both would have no one sign into Margin given up on high-margin crops, since tolerance and yield trade off (Adoption of salt-tolerant varieties → Margin given up on high-margin crops): a more tolerant variety that yields less raises what a hectare gives up, one that yields more lowers it. The yield is where the description shows tolerant varieties falling short of the high-yielding ones. What it leaves out: a more tolerant variety on offer losing less on each hectare at the same salinity, a strength of Adoption of salt-tolerant varieties → Harvest lost to salt, no variable. The element has no links in and is on no loop, so no loop changes."
+      "simplification": "Holds the salt tolerance of the varieties on offer at that of the cultivars the description names, so only their yield varies. A variable holding both would have no one sign into Margin given up on switching, since tolerance and yield trade off (Adoption of salt-tolerant varieties → Margin given up on switching): a more tolerant variety that yields less raises what a hectare gives up, one that yields more lowers it. The yield is where the description shows tolerant varieties falling short of the high-yielding ones. What it leaves out: a more tolerant variety on offer losing less on each hectare at the same salinity, a strength of Adoption of salt-tolerant varieties → Harvest lost to salt, no variable. The element has no links in and is on no loop, so no loop changes."
     },
     {
       "id": "machines-and-storage-for-current-crops",
@@ -1137,7 +1139,7 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "How much a farmer expects to lose by moving a field to a new crop, before moving it: a failed yield, no buyer, a low price, too little water, carried by the farm. It drives the decision before a switch, where Margin given up on high-margin crops is the outcome after it; Farmers' knowledge of new crops is whether a farmer knows how, this who pays when it fails. On the island, larger business risks slow innovation (Delphy, 2023, p. 6), crops grow so costly that they may not fail (p. 13), and the cost of innovative solutions lies mainly with the farmer while they are not yet proven, so investing carries a risk (p. 50). In a survey of farmers in the south-west Netherlands (2013), a higher perceived cost of drought measures lowered their adaptation and trust in their own competence raised it, both parts of how farmers appraise their ability to cope (van Duinen et al., 2015a, pp. 1089, 1091). Whether it runs through others' successes and failures is a question for the group model building session. An Auxiliary: it follows what farmers know and the contracts on offer. No actor: a perception, not a decision.",
+      "description": "How much a farmer expects to lose by moving a field to a new crop, before moving it: a failed yield, no buyer, a low price, too little water, carried by the farm. It drives the decision before a switch, where Margin given up on switching is the outcome after it; Farmers' knowledge of new crops is whether a farmer knows how, this who pays when it fails. On the island, larger business risks slow innovation (Delphy, 2023, p. 6), crops grow so costly that they may not fail (p. 13), and the cost of innovative solutions lies mainly with the farmer while they are not yet proven, so investing carries a risk (p. 50). In a survey of farmers in the south-west Netherlands (2013), a higher perceived cost of drought measures lowered their adaptation and trust in their own competence raised it, both parts of how farmers appraise their ability to cope (van Duinen et al., 2015a, pp. 1089, 1091). Whether it runs through others' successes and failures is a question for the group model building session. An Auxiliary: it follows what farmers know and the contracts on offer. No actor: a perception, not a decision.",
       "sources": [
         "delphy-2023-dorsd",
         "van-duinen-2015-coping"
@@ -1908,12 +1910,12 @@
       "to": "margin-given-up-on-high-margin-crops",
       "polarity": "+",
       "delay": false,
-      "description": "A hectare moved from a high-margin current crop to a new one earns the new crop's margin instead, and the margin of protein crops cannot compete with most other crops (Polman et al., 2026, p. 9). The link holds by what the element counts, the hectares taken from the high-margin crops: the area of protein crops, rarely a farm's main crop, likely depends on the room left in the rotation (Polman et al., 2026, p. 17), and in a simulation for Flanders quinoa mostly took the place of maize and winter wheat (Cloet et al., 2024, p. 3). On the island without extra fresh water, a scenario calculation for a model 100 ha farm with prices held fixed, in a report commissioned and co-financed by the island's farmers' association Agrarisch Schouwen Duiveland, puts the margin of sown onions in the 2022 crop plan at €1,197 a hectare, at 25 tonnes against 60 with enough fresh water, below grain's €1,348 and far below the €6,635 of potatoes for processing, and expects onions to shrink or leave the island by 2030 (Delphy, 2023, pp. 1, 3, 42–45). A field moved from onions then gives up little, drought losses being counted in the current crop's margin. Within the year: the crop is chosen each season.",
-      "simplification": "Treats every hectare moved as giving up margin alike, while the description shows it differing by the crop replaced and the farm's fresh water: on the island without extra fresh water sown onions earn less a hectare than grain, so a field moved from drought-hit onions gives up little. The link assumes the hectares moved on the island give up margin on the whole, as each hectare moved from potatoes does, so it stays positive and B10 stays balancing; where fields move from drought-hit onions B10 runs weakly or not at all, which one strength for the island cannot show, and no source read prices a new crop on the island.",
+      "description": "A hectare moved to a new crop earns the new crop's margin instead of the margin of the cereal, sugar beet or grass seed it replaces (Fields moved to new crops): fibre crops and legumes earn about what winter wheat does or less (Delphy, 2023, p. 48), and the margin of protein crops is comparable to that of cereals (Polman et al., 2026, p. 9), so a field moved gives up a little margin, or none. The sign may not hold for every new crop: quinoa, in a study for Flanders, can pay on many farms (Cloet et al., 2024, p. 3), and a hectare moved to a crop that earns more than the one it replaces gains margin. Within the year: the crop is chosen each season.",
+      "simplification": "Takes the new crops to earn less than the crops they replace, as fibre crops, legumes and protein crops do (Delphy, 2023, p. 48; Polman et al., 2026, p. 9), so the link stays positive and B10 balancing, weakly: a field moved from a cereal gives up far less than one moved from potatoes would, that margin being in Land under high-margin crops → Farm income. Where a new crop pays better than the crop it replaces, as quinoa may in Flanders (Cloet et al., 2024, p. 3), the hectare gains margin and B10 runs the other way for it, which one sign for the island cannot show; no source read prices a new crop on the island.",
       "sources": [
+        "delphy-2023-dorsd",
         "polman-2026",
-        "cloet-2024",
-        "delphy-2023-dorsd"
+        "cloet-2024"
       ],
       "curvature": 0.22
     },
@@ -3258,7 +3260,7 @@
         "margin-given-up-on-high-margin-crops",
         "farm-revenue"
       ],
-      "description": "Moving a field to a new crop gives up the current crop's margin, most on fresh land where the current crops still do well. Income and land value fall, leverage and the bank's risk rise, credit falls and the farm has less to invest, so fewer fields move. It seeks the share of new crops that a farm's income and credit can carry. It shares its chain with R6, where the switch saves harvest instead; a sign cannot say which pulls harder, so that is a question for the group. It holds back new crops."
+      "description": "Moving a field to a new crop gives up the margin of the cereal, sugar beet or grass seed it replaces, so far as the new crop earns less. Income and land value fall, leverage and the bank's risk rise, credit falls and the farm has less to invest, so fewer fields move. It seeks the share of new crops that a farm's income and credit can carry. It is weak: the crops a new crop replaces earn about what the new crops do (Margin given up on switching), and where a new crop pays better B10 runs the other way. It shares its chain with R6, where the switch saves harvest instead; a sign cannot say which pulls harder, so that is a question for the group. It holds back new crops."
     },
     {
       "id": "R10",
@@ -3846,7 +3848,7 @@
         "B10",
         "R10"
       ],
-      "description": "A higher *Harvest lost to salt* makes *Adoption of new crops* more worthwhile, after a delay (B2). The same losses lower *Farm income* and *Agricultural land value*, so *Financial leverage* and the *Banks' risk assessment of farm loans* rise, *Bank credit to farms* falls and the *Farmers' capacity to invest* in the switch falls (R6); less credit adds less to *Farm debt* and keeps leverage down (B9), while it leaves farms less to bid for land, so *Agricultural land value* falls further and leverage rises (R10); which pulls harder, a sign cannot say. A field that moves saves harvest from salt (R6) and raises the *Margin given up on high-margin crops* (B10). Whether switching pays depends on what the current crops still earn on the field, which salt and a lack of fresh water both lower.",
+      "description": "A higher *Harvest lost to salt* makes *Adoption of new crops* more worthwhile, after a delay (B2). The same losses lower *Farm income* and *Agricultural land value*, so *Financial leverage* and the *Banks' risk assessment of farm loans* rise, *Bank credit to farms* falls and the *Farmers' capacity to invest* in the switch falls (R6); less credit adds less to *Farm debt* and keeps leverage down (B9), while it leaves farms less to bid for land, so *Agricultural land value* falls further and leverage rises (R10); which pulls harder, a sign cannot say. A field that moves saves harvest from salt (R6) and raises the *Margin given up on switching* (B10), a little, since it leaves a cereal, sugar beet or grass seed. Whether switching pays depends on what the crop it replaces still earns on the field, which salt and a lack of fresh water both lower.",
       "places": {
         "agricultural-land-value": [
           -1029,
@@ -3940,7 +3942,7 @@
         "R7",
         "B10"
       ],
-      "description": "With few hectares of *Adoption of new crops* there is little harvest for a plant to process, no *Local processing capacity for new crops*, and transport keeps the *Net price for new crops after transport* low (R7). Every field that starts being used for new crops raises the *Margin given up on high-margin crops*, which *Farm income* and *Bank credit to farms* must carry (B10): adoption stays low. With enough hectares a local plant becomes worthwhile, the net price rises and more farmers grow the crop. How many hectares that takes is unclear from the literature and thus not clear in the CLD.",
+      "description": "With few hectares of *Adoption of new crops* there is little harvest for a plant to process, no *Local processing capacity for new crops*, and transport keeps the *Net price for new crops after transport* low (R7). Every field that starts being used for new crops raises the *Margin given up on switching*, which *Farm income* and *Bank credit to farms* must carry (B10), little as it is against the cereals the new crops replace: adoption stays low. With enough hectares a local plant becomes worthwhile, the net price rises and more farmers grow the crop. How many hectares that takes is unclear from the literature and thus not clear in the CLD.",
       "places": {
         "fields-moved-to-new-salt-tolerant-crops": [
           -230,

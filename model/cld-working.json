@@ -4278,19 +4278,6 @@
   ],
   "changes": [
     {
-      "change": "Margin given up on high-margin crops relabelled Margin given up on switching: on the hectares moved to new crops it is the margin of the cereal, sugar beet or grass seed replaced, so B10 stays balancing but weak, and may run the other way for a new crop that pays better",
-      "argument": "Fibre crops and legumes earn about what winter wheat does or less (Delphy, 2023, p. 48), protein crops' margin is comparable to cereals' (Polman et al., 2026, p. 9), while quinoa can pay on many farms in a study for Flanders (Cloet et al., 2024, p. 3): cld-method.md's \"Does its sign hold in every condition?\", the sign kept on the island's sources and its condition stated. The potatoes' margin is in Land under high-margin crops → Farm income. Settles the audit's finding that the element held the replaced crop's prices fixed, by stating it.",
-      "items": [
-        "margin-given-up-on-high-margin-crops",
-        "salt-tolerant-crop-adoption -> margin-given-up-on-high-margin-crops",
-        "B10",
-        "C6",
-        "C7",
-        "tolerant-varieties-on-offer",
-        "perceived-risk-of-switching"
-      ]
-    },
-    {
       "change": "Capital lost on switching to new crops relabelled Capital lost on leaving the high-margin crops: it is lost whatever follows, a cereal or a new crop, so R3 holds farms in the high-margin crops; Land under high-margin crops → Capital lost delayed, the know-how it folds building up over years",
       "argument": "The fields leaving the high-margin crops go to cereals (Raat et al., 2026, p. 49), and the machines suited to one or a few crops and the stores serve neither cereals nor quinoa (Bonnet & Tiktak, 2025, p. 45; van Loo, 2023, p. 75; Polman et al., 2026, pp. 4, 15, 17). The delay: the audit's finding that a folded stock's slowness sat only in words (`cld-simplifying.md`'s \"Can A → X → D become A → D?\"); the link stays a hypothesis. R3 keeps its polarity.",
       "items": [

@@ -110,7 +110,7 @@
 <g class="element" data-id="margin-given-up-on-high-margin-crops" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
 <rect x="-322.4" y="-718.0" width="295.1" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-174.9" y="-683.5" text-anchor="middle">Margin given up on</text>
-<text x="-174.9" y="-649.5" text-anchor="middle">high-margin crops</text>
+<text x="-174.9" y="-649.5" text-anchor="middle">switching</text>
 </g>
 <g class="element" data-id="fields-moved-to-new-salt-tolerant-crops" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
 <rect x="654.8" y="108.7" width="310.0" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>

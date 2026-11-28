@@ -81,7 +81,7 @@
 <g class="element" data-id="margin-given-up-on-high-margin-crops" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
 <rect x="-1045.0" y="58.0" width="295.1" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-897.5" y="92.5" text-anchor="middle">Margin given up on</text>
-<text x="-897.5" y="126.5" text-anchor="middle">high-margin crops</text>
+<text x="-897.5" y="126.5" text-anchor="middle">switching</text>
 </g>
 <g class="element" data-id="farm-revenue" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
 <rect x="-878.5" y="-294.4" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>

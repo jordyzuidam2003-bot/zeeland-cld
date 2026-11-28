@@ -417,19 +417,20 @@
     },
     {
       "id": "dependence-on-high-margin-salt-sensitive-crops",
-      "label": "Dependence on high-margin salt-sensitive crops",
+      "label": "Dependence on high-margin crops",
       "element type": "Stock",
       "adaptive practice": false,
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "The share of the rotation under the high-value cash crops salt harms most, seed and ware potatoes and sown onions (Root zone salinity → Harvest lost to salt). Potatoes are financially attractive and sensitive to the climate, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12): on specialised arable farms on clay growing ware potatoes they bring in, on average over the years, 55% of the arable revenue, ware potatoes 32% and seed potatoes 23%, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14). In Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). The guideline is potatoes on a field at most one year in three, against potato cyst nematode (one in two for starch potatoes), so a farm growing more of them rents or swaps land (Janssens et al., 2020, p. 4). On the parcels studied in the island's low polders, where the seepage pressure is high and the surface water salty all year, the rotations hold potato, onion, sugar beet, cereals and grass seed, the farmers have stopped growing sensitive crops such as sown onions, and with more fresh water they would be open to more profitable crops (Kaandorp et al., 2022, pp. 30–31). In Zeeland the sown onions halved from 4,705 ha in 2019 to 2,579 in 2024 after dry summers, poor harvests and a lack of fresh water, which four in five arable farmers have no access to, while potatoes held at about 19,000 ha (De Vriend, 2024b). A Stock: the share holds through the season and shifts over years (Root zone salinity → Dependence on high-margin salt-sensitive crops).",
+      "description": "The share of the rotation under the high-value cash crops, seed and ware potatoes and sown onions, which salt harms most (Root zone salinity → Harvest lost to salt) and which need the most water: on the island the crops that earn the most also have the greatest water need and often a limited root system (Delphy, 2023, p. 48). Potatoes are financially attractive and sensitive to the climate, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12): on specialised arable farms on clay growing ware potatoes they bring in, on average over the years, 55% of the arable revenue, ware potatoes 32% and seed potatoes 23%, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14). In Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). The guideline is potatoes on a field at most one year in three, against potato cyst nematode (one in two for starch potatoes), so a farm growing more of them rents or swaps land (Janssens et al., 2020, p. 4). On the parcels studied in the island's low polders, where the seepage pressure is high and the surface water salty all year, the rotations hold potato, onion, sugar beet, cereals and grass seed, the farmers have stopped growing sensitive crops such as sown onions, and with more fresh water they would be open to more profitable crops (Kaandorp et al., 2022, pp. 30–31). In Zeeland the sown onions halved from 4,705 ha in 2019 to 2,579 in 2024 after dry summers, poor harvests and a lack of fresh water, which four in five arable farmers have no access to, while potatoes held at about 19,000 ha (De Vriend, 2024b). A Stock: the share holds through the season and shifts over years (Root zone salinity → Dependence on high-margin crops).",
       "sources": [
         "verhagen-2018",
         "janssens-2020",
         "economic-board-zeeland-2023",
         "kaandorp-2022",
-        "de-vriend-2024-gewassen"
+        "de-vriend-2024-gewassen",
+        "delphy-2023-dorsd"
       ],
       "x": 1316,
       "y": -113,
@@ -2282,7 +2283,7 @@
       "to": "dependence-on-high-margin-salt-sensitive-crops",
       "polarity": "+",
       "delay": false,
-      "description": "A farm paying more interest keeps its lucrative but salt-sensitive crops to meet it, as it does to meet its repayments (Repayments on farm loans → Dependence on high-margin salt-sensitive crops). No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
+      "description": "A farm paying more interest keeps its lucrative but salt-sensitive crops to meet it, as it does to meet its repayments (Repayments on farm loans → Dependence on high-margin crops). No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
       "sources": [],
       "curvature": -0.22,
       "hypothesis": true
@@ -2845,7 +2846,7 @@
       "to": "fields-moved-to-new-salt-tolerant-crops",
       "polarity": "+",
       "delay": true,
-      "description": "Does a farm short of water move fields to a new crop that copes with little water, as one losing harvest to salt moves them to a crop that copes with salt (Harvest lost to salt → Fields moved to new crops)? A hypothesis for the group model building session: under drought, the response a source shows on the island is to a crop the farms already grow, cereals (Crop water shortfall → Dependence on high-margin salt-sensitive crops), so the question to farmers is whether a shortfall moves them to a new crop at all, and to which. Years, if it holds, as farms respond to the dry seasons they have had, as in that link, along which the island's sown onions fell from 2015 to 2022: a delay.",
+      "description": "Does a farm short of water move fields to a new crop that copes with little water, as one losing harvest to salt moves them to a crop that copes with salt (Harvest lost to salt → Fields moved to new crops)? A hypothesis for the group model building session: under drought, the response a source shows on the island is to a crop the farms already grow, cereals (Crop water shortfall → Dependence on high-margin crops), so the question to farmers is whether a shortfall moves them to a new crop at all, and to which. Years, if it holds, as farms respond to the dry seasons they have had, as in that link, along which the island's sown onions fell from 2015 to 2022: a delay.",
       "sources": [],
       "hypothesis": true,
       "curvature": -0.46
@@ -2868,7 +2869,7 @@
       "polarity": "+",
       "delay": false,
       "curvature": -0.1,
-      "description": "The crops that stand salt the least are the ones that earn the most: potatoes are financially attractive, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12), and on specialised arable farms on clay growing ware potatoes they bring in, on average over the years, 55% of the arable revenue, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14); in Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). So a farm that keeps more of them earns more in a year, less what salt takes, which Dependence on high-margin salt-sensitive crops → Harvest lost to salt counts. No source read sizes the net effect of the crop mix on the island's incomes. Within the year.",
+      "description": "The crops that stand salt the least are the ones that earn the most: potatoes are financially attractive, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12), and on specialised arable farms on clay growing ware potatoes they bring in, on average over the years, 55% of the arable revenue, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14); in Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). So a farm that keeps more of them earns more in a year, less what salt takes, which Dependence on high-margin crops → Harvest lost to salt counts. No source read sizes the net effect of the crop mix on the island's incomes. Within the year.",
       "sources": [
         "verhagen-2018",
         "janssens-2020",
@@ -3032,7 +3033,7 @@
       "to": "dependence-on-high-margin-salt-sensitive-crops",
       "polarity": "+",
       "delay": false,
-      "description": "A farm with high repayments keeps its lucrative but salt-sensitive crops to meet them, as it does to meet its interest (Interest on farm loans → Dependence on high-margin salt-sensitive crops). No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
+      "description": "A farm with high repayments keeps its lucrative but salt-sensitive crops to meet them, as it does to meet its interest (Interest on farm loans → Dependence on high-margin crops). No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
       "sources": [],
       "curvature": 0.12,
       "hypothesis": true
@@ -3127,7 +3128,7 @@
         "farm-revenue",
         "agricultural-land-value"
       ],
-      "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its interest rises. To meet the interest it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It closes only through a hypothesis, Interest on farm loans → Dependence on high-margin salt-sensitive crops, which no source read tests; where indebted farms choose less risky crops instead, the loop breaks there. It shows an unintended consequence of the deep drainage in B4: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B2, B1)."
+      "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its interest rises. To meet the interest it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It closes only through a hypothesis, Interest on farm loans → Dependence on high-margin crops, which no source read tests; where indebted farms choose less risky crops instead, the loop breaks there. It shows an unintended consequence of the deep drainage in B4: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B2, B1)."
     },
     {
       "id": "R3",
@@ -3459,7 +3460,7 @@
         "B4",
         "R2"
       ],
-      "description": "A lower *Ditch level (NAP)* gives a greater *Polder drainage depth*, which raises the *Spring workability of the fields* within the season, so *Farmers' demand for deep polder drainage* eases (B4). The same lower level raises *Saline seepage (kwel)*, which over years lowers the *Rainwater lens thickness in the low polders*. *Root zone salinity* and *Harvest lost to salt* rise, *Farm income* and *Agricultural land value* fall. *Financial leverage*, *Banks' risk assessment of farm loans*, the *Risk premium on farm loans* and *Interest on farm loans* rise, and thus the farm's *Dependence on high-margin salt-sensitive crops*, which in spring needs deep drainage, grows: the demand returns higher (R2). The relief comes first and the extra demand years later, also known as the “Fixes that fail” archetype (Kim, 2000, p. 16). The link from *Interest on farm loans* to *Dependence on high-margin salt-sensitive crops* is a hypothesis for the group model building session.",
+      "description": "A lower *Ditch level (NAP)* gives a greater *Polder drainage depth*, which raises the *Spring workability of the fields* within the season, so *Farmers' demand for deep polder drainage* eases (B4). The same lower level raises *Saline seepage (kwel)*, which over years lowers the *Rainwater lens thickness in the low polders*. *Root zone salinity* and *Harvest lost to salt* rise, *Farm income* and *Agricultural land value* fall. *Financial leverage*, *Banks' risk assessment of farm loans*, the *Risk premium on farm loans* and *Interest on farm loans* rise, and thus the farm's *Dependence on high-margin crops*, which in spring needs deep drainage, grows: the demand returns higher (R2). The relief comes first and the extra demand years later, also known as the “Fixes that fail” archetype (Kim, 2000, p. 16). The link from *Interest on farm loans* to *Dependence on high-margin crops* is a hypothesis for the group model building session.",
       "sources": [
         "kim-2000"
       ],
@@ -3566,7 +3567,7 @@
         "R2",
         "R3"
       ],
-      "description": "*Interest on farm loans* raises the farm's *Dependence on high-margin salt-sensitive crops* (R2, a hypothesis, as its repayments do), and so does the *Capital lost on switching to new crops* (R3, on sources). Each loop raises the variable that drives the other: more dependence brings more *Spending on keeping the current crops*, so more *Machines and storage for the current crops* and more capital a switch would write off (R3). This causes more *Farmers' demand for deep polder drainage* (R2). Dependence on current crops holds back the adaptation of new crops. Salt, on its own, lowers that dependence over the years as the current crops yield worse harvests due to increasing root-zone salinity.",
+      "description": "*Interest on farm loans* raises the farm's *Dependence on high-margin crops* (R2, a hypothesis, as its repayments do), and so does the *Capital lost on switching to new crops* (R3, on sources). Each loop raises the variable that drives the other: more dependence brings more *Spending on keeping the current crops*, so more *Machines and storage for the current crops* and more capital a switch would write off (R3). This causes more *Farmers' demand for deep polder drainage* (R2). Dependence on current crops holds back the adoption of new crops. Salt, on its own, lowers that dependence over the years as the current crops yield worse harvests due to increasing root-zone salinity.",
       "places": {
         "dependence-on-high-margin-salt-sensitive-crops": [
           0,

@@ -45,11 +45,11 @@
 <path class="delay" d="M -1171.3 153.6 L -1123.8 146.8 M -1173.6 137.7 L -1126.1 131.0" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="debt-payments" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="0.124">
-<path class="link-path" d="M -1137.7 -14.7 Q -1096.0 -97.9 -1031.5 -165.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-1064.7" y="-127.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -1137.7 -14.7 Q -1090.5 -108.9 -1014.6 -182.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-1049.2" y="-145.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="demand-for-deep-polder-drainage" data-sign="+" data-delay="false" data-curvature="0.117">
-<path class="link-path" d="M -878.0 -285.0 Q -798.1 -334.0 -710.2 -366.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<path class="link-path" d="M -904.7 -268.0 Q -813.1 -328.4 -710.2 -366.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-756.6" y="-348.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="ditch-level-nap" data-to="saline-seepage-kwel" data-sign="-" data-delay="false" data-curvature="0.1">
@@ -146,10 +146,9 @@
 <text x="-1150.0" y="19.8" text-anchor="middle">Interest on farm loans</text>
 </g>
 <g class="element" data-id="dependence-on-high-margin-salt-sensitive-crops" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-1127.2" y="-285.0" width="324.8" height="120.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-964.8" y="-250.5" text-anchor="middle">Dependence on</text>
-<text x="-964.8" y="-216.5" text-anchor="middle">high-margin</text>
-<text x="-964.8" y="-182.5" text-anchor="middle">salt-sensitive crops</text>
+<rect x="-1105.0" y="-268.0" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-964.8" y="-233.5" text-anchor="middle">Dependence on</text>
+<text x="-964.8" y="-199.5" text-anchor="middle">high-margin crops</text>
 </g>
 <g class="element" data-id="polder-drainage-depth" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
 <rect x="153.4" y="-685.9" width="339.6" height="52.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>

@@ -4268,20 +4268,6 @@
   ],
   "changes": [
     {
-      "change": "Dependence on high-margin salt-sensitive crops relabelled Dependence on high-margin crops, its description naming the crops' water need beside their salt sensitivity; C3's \"adaptation of new crops\" read \"adoption\"",
-      "argument": "The vision has the crops that earn the most need the most water and stand salt the least, and B15 runs through this element as the thirsty crops, while the label named salt alone; the quantity, the share of the rotation under potatoes and sown onions, is unchanged. Delphy (2023, p. 48): the crops that earn the most also have the greatest water need.",
-      "items": [
-        "dependence-on-high-margin-salt-sensitive-crops",
-        "debt-payments -> dependence-on-high-margin-salt-sensitive-crops",
-        "crop-water-shortfall -> fields-moved-to-new-salt-tolerant-crops",
-        "dependence-on-high-margin-salt-sensitive-crops -> farm-revenue",
-        "repayments-on-farm-loans -> dependence-on-high-margin-salt-sensitive-crops",
-        "R2",
-        "C2",
-        "C3"
-      ]
-    },
-    {
       "change": "Soil structure → Spring workability of the fields names the link that carries the sodium, not a variable no longer on the map",
       "argument": "Clay dispersion & sodification is folded into Root zone salinity → Soil structure.",
       "items": [

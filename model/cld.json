@@ -3036,6 +3036,18 @@
       "sources": [],
       "curvature": -0.14,
       "hypothesis": true
+    },
+    {
+      "from": "farmers-capacity-to-invest",
+      "to": "agricultural-land-value",
+      "polarity": "+",
+      "delay": false,
+      "description": "What farms can put into an investment, their savings and the credit a bank will give them, sets what they can bid for land: a farm's room to acquire land depends on its income and expected income combined with what it can borrow, more financing still takes a contribution of the farm's own, and buying land is harder for capital-intensive farms for that reason (Silvis & Voskuilen, 2017, pp. 2–3); farms' expansion is likely to stay financed by banks, topped up with family capital (Farjon et al., 2013, section Financiering van bedrijfsuitbreiding). So limits on banks' financing of land press the price down (Silvis & Voskuilen, 2017, p. 1). The link runs from what a farm can invest, not from Bank credit to farms, which also counts the credit a farm short of cash asks for (Farmers' capacity to invest → Bank credit to farms) and which buys no land. The + holds all else equal: in the decade before 2017 the average price about doubled while financing land grew harder, the buffers that swinging returns require and repayment within at most 30 years leaving less room for it, with scale enlargement and low interest holding the price up (pp. 1, 3–4). Within the year: a buyer bids with what it can put in at the sale.",
+      "sources": [
+        "silvis-2017",
+        "farjon-2013"
+      ],
+      "curvature": -0.2
     }
   ],
   "loops": [
@@ -3238,6 +3250,18 @@
         "farm-revenue"
       ],
       "description": "Moving a field to a new crop gives up the current crop's margin, most on fresh land where the current crops still do well. Income and land value fall, leverage and the bank's risk rise, credit falls and the farm has less to invest, so fewer fields move. It seeks the share of new crops that a farm's income and credit can carry. It shares its chain with R6, where the switch saves harvest instead; a sign cannot say which pulls harder, so that is a question for the group. It holds back new crops."
+    },
+    {
+      "id": "R10",
+      "name": "Falling land value cuts the credit to buy land",
+      "path": [
+        "agricultural-land-value",
+        "mortgage-debt-financial-leverage",
+        "banks-risk-assessment",
+        "bank-credit-to-farms",
+        "farmers-capacity-to-invest"
+      ],
+      "description": "When farmland loses value, the same debt is more against the farm's assets, so banks see more risk and lend less; farms have less to put into buying land, bid less, and the land loses more value. Rising land value runs it the other way. It runs for farms that own their land and borrow against it, and may be weak on the island: Dutch arable farms' solvency was 81% in 2018 (van der Meulen et al., 2020, p. 21), and in a simulation of banks' credit checks on Dutch dairy farms solvency limited a new loan in only 1.2% of observations, net cash flow in almost all (Lamkowsky, 2023, pp. 51, 56, 101); in the decade before 2017 the price about doubled while financing land grew harder (Silvis & Voskuilen, 2017, pp. 1, 3–4). It shows an unintended consequence of the banks' response in B9, through the land market: a bank limits its lending to protect itself, and less lending lowers the collateral it lends against. On the same chain as B9 it pulls leverage the other way, less credit adding less debt there and lowering the land's value here; a sign cannot say which pulls harder, so that is a question for the group. It holds back what a farm can invest in new crops and storage where land loses value."
     },
     {
       "id": "R7",
@@ -3799,9 +3823,10 @@
         "B2",
         "R6",
         "B9",
-        "B10"
+        "B10",
+        "R10"
       ],
-      "description": "A higher *Harvest lost to salt* makes *Adoption of new crops* more worthwhile, after a delay (B2). The same losses lower *Farm income* and *Agricultural land value*, so *Financial leverage* and the *Banks' risk assessment of farm loans* rise, *Bank credit to farms* falls and the *Farmers' capacity to invest* in the switch falls (R6); less credit adds less to *Farm debt* and keeps leverage down (B9). A field that moves saves harvest from salt (R6) and raises the *Margin given up on high-margin crops* (B10). The level of salt in the soil of the farmland decides whether switching is economically beneficial or not.",
+      "description": "A higher *Harvest lost to salt* makes *Adoption of new crops* more worthwhile, after a delay (B2). The same losses lower *Farm income* and *Agricultural land value*, so *Financial leverage* and the *Banks' risk assessment of farm loans* rise, *Bank credit to farms* falls and the *Farmers' capacity to invest* in the switch falls (R6); less credit adds less to *Farm debt* and keeps leverage down (B9), while it leaves farms less to bid for land, so *Agricultural land value* falls further and leverage rises (R10); which pulls harder, a sign cannot say. A field that moves saves harvest from salt (R6) and raises the *Margin given up on high-margin crops* (B10). The level of salt in the soil of the farmland decides whether switching is economically beneficial or not.",
       "places": {
         "agricultural-land-value": [
           -1029,
@@ -3837,7 +3862,7 @@
         ],
         "margin-given-up-on-high-margin-crops": [
           -7,
-          -722
+          -1000
         ],
         "fields-moved-to-new-salt-tolerant-crops": [
           1440,
@@ -3862,7 +3887,8 @@
         "farmers-capacity-to-invest -> fields-moved-to-new-salt-tolerant-crops": 0,
         "fields-moved-to-new-salt-tolerant-crops -> salt-tolerant-crop-adoption": 0,
         "bank-credit-to-farms -> farm-debt": 0,
-        "farm-debt -> mortgage-debt-financial-leverage": 0
+        "farm-debt -> mortgage-debt-financial-leverage": 0,
+        "farmers-capacity-to-invest -> agricultural-land-value": -0.5
       },
       "marks": {
         "B2": [
@@ -3875,11 +3901,15 @@
         ],
         "B10": [
           0,
-          -376
+          -700
         ],
         "R6": [
           0,
           490
+        ],
+        "R10": [
+          0,
+          -250
         ]
       }
     },

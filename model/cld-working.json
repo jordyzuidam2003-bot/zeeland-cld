@@ -4254,15 +4254,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Farmers' capacity to invest → Agricultural land value drawn: what farms can put in, savings and credit, sets what they bid for land; R10 named, in C6",
-      "argument": "Polarity and mechanism kept (farm-revenue->agricultural-land-value#3): the price is set by what buyers earn on extra land combined with what they can borrow, limits on banks' financing of land pressing it down (Silvis & Voskuilen, 2017, pp. 1–3; Farjon et al., 2013), while the banks' credit reached the price only through the debt's interest and Farm income, so the loop land value → leverage → the banks' risk → credit → land value was balancing where the source makes it reinforcing, a sign no sentence can correct. From what a farm can invest, not from Bank credit to farms as the audit proposed: that credit also counts what a farm short of cash asks for (batch 23), which buys no land, and 8,327 of the 13,471 loops the credit's link would close pass that request, reading a cash shortfall as raising the price; none of the capacity's does. The loop it closes, R10, meets the named loops' rule, running through the money a farm has to adapt with, and pulls leverage against B9 on one chain, so it joins C6. The loop through the interest stays, the later cost of the debt to the farms that buy; Farm income → Agricultural land value stays, a sentence for phase 8 saying it reads what buyers expect from what the island's farms, mainly the buyers, earn after interest, beside their means drawn here. Rejected: the link from the credit; Risk premium on farm loans → Agricultural land value beside it, since the source's rate is the capital-market rate no actor on the island moves (p. 3) and the premium reaches the price through the interest already; a sentence only.",
-      "items": [
-        "farmers-capacity-to-invest -> agricultural-land-value",
-        "R10",
-        "C6"
-      ]
-    }
-  ]
+  "changes": []
 }

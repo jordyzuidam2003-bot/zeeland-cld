@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-498 -306 1025 613" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<defs>
+<marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
+<marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
+<marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
+</defs>
+<rect x="-498" y="-306" width="1025" height="613" fill="white"/>
+<g class="links">
+<g class="link" data-from="machines-and-storage-for-current-crops" data-to="capital-lost-on-switching" data-sign="+" data-delay="false" data-curvature="-0.22">
+<path class="link-path" d="M 168.6 199.3 Q 66.5 227.0 -45.8 219.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="4.1" y="221.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="capital-lost-on-switching" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="-0.1">
+<path class="link-path" d="M -304.2 138.3 Q -380.7 84.3 -389.1 15.2 Q -397.5 -53.8 -334.9 -113.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-367.1" y="-75.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="spending-on-keeping-current-crops" data-sign="+" data-delay="true" data-curvature="0.1">
+<path class="link-path" d="M -168.6 -199.3 Q -55.5 -230.0 68.1 -217.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="18.2" y="-220.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -62.7 -242.5 L -59.0 -194.7 M -46.8 -243.8 L -43.0 -195.9" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -62.7 -242.5 L -59.0 -194.7 M -46.8 -243.8 L -43.0 -195.9" stroke="#444444" stroke-width="5" fill="none"/>
+</g>
+<g class="link" data-from="spending-on-keeping-current-crops" data-to="machines-and-storage-for-current-crops" data-sign="+" data-delay="false" data-curvature="-0.32">
+<path class="link-path" d="M 304.2 -138.3 Q 380.7 -84.3 389.1 -15.2 Q 397.5 53.8 334.9 113.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="367.1" y="75.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+</g>
+<g class="elements">
+<g class="element" data-id="dependence-on-high-margin-salt-sensitive-crops" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="-415.9" y="-199.3" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-275.8" y="-164.8" text-anchor="middle">Dependence on</text>
+<text x="-275.8" y="-130.8" text-anchor="middle">high-margin crops</text>
+</g>
+<g class="element" data-id="spending-on-keeping-current-crops" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
+<rect x="68.1" y="-224.3" width="310.0" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="223.1" y="-189.8" text-anchor="middle">Spending on keeping</text>
+<text x="223.1" y="-155.8" text-anchor="middle">the current crops</text>
+</g>
+<g class="element" data-id="machines-and-storage-for-current-crops" data-domain="Technological" data-type="Stock" data-adaptive="false">
+<rect x="105.9" y="113.3" width="339.6" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="275.7" y="147.8" text-anchor="middle">Machines and storage</text>
+<text x="275.7" y="181.8" text-anchor="middle">for the current crops</text>
+</g>
+<g class="element" data-id="capital-lost-on-switching" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
+<rect x="-400.3" y="138.3" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-223.1" y="172.8" text-anchor="middle">Capital lost on</text>
+<text x="-223.1" y="206.8" text-anchor="middle">switching to new crops</text>
+</g>
+</g>
+<g class="loop" data-id="R3">
+<path d="M 0.0 -48.0 A 48 48 0 1 1 -48.0 0.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="0.0" y="0.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R3</text>
+</g>
+</svg>

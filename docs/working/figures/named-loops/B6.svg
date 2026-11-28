@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-753 -385 1486 825" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<defs>
+<marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
+<marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
+<marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
+</defs>
+<rect x="-753" y="-385" width="1486" height="825" fill="white"/>
+<g class="links">
+<g class="link" data-from="freshwater-lens-thickness" data-to="freshwater-availability-for-crops" data-sign="+" data-delay="false" data-curvature="-0.28">
+<path class="link-path" d="M -159.5 283.4 Q -357.6 247.6 -458.8 144.7" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-421.4" y="177.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="freshwater-storage-measures" data-to="winter-rain-drained-away" data-sign="-" data-delay="false" data-curvature="0.14">
+<path class="link-path" d="M 358.7 -217.2 Q 456.9 -165.2 498.8 -92.8 Q 540.7 -20.4 516.1 54.5" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="525.1" y="5.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+</g>
+<g class="link" data-from="freshwater-availability-for-crops" data-to="crop-water-shortfall" data-sign="-" data-delay="false" data-curvature="-0.3">
+<path class="link-path" d="M -514.7 58.7 Q -541.3 -16.2 -501.0 -89.0 Q -460.7 -161.8 -363.5 -214.7" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-406.1" y="-188.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+</g>
+<g class="link" data-from="winter-rain-drained-away" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="-0.11">
+<path class="link-path" d="M 462.8 140.5 Q 363.9 245.0 165.3 282.4" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="214.1" y="271.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M 356.5 246.5 L 335.9 203.1 M 342.1 253.3 L 321.4 210.0" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 356.5 246.5 L 335.9 203.1 M 342.1 253.3 L 321.4 210.0" stroke="#444444" stroke-width="5" fill="none"/>
+</g>
+<g class="link" data-from="crop-water-shortfall" data-to="freshwater-storage-measures" data-sign="+" data-delay="false" data-curvature="-0.14">
+<path class="link-path" d="M -232.7 -266.7 Q -70.4 -312.1 106.8 -291.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="57.0" y="-295.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+</g>
+<g class="elements">
+<g class="element" data-id="crop-water-shortfall" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
+<rect x="-471.0" y="-266.7" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="-308.6" y="-232.2" text-anchor="middle">Crop water shortfall</text>
+</g>
+<g class="element" data-id="freshwater-storage-measures" data-domain="Technological" data-type="Stock" data-adaptive="true">
+<rect x="106.8" y="-303.2" width="295.1" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<text x="254.4" y="-268.7" text-anchor="middle">Freshwater storage</text>
+<text x="254.4" y="-234.7" text-anchor="middle">measures</text>
+</g>
+<g class="element" data-id="winter-rain-drained-away" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
+<rect x="341.0" y="54.5" width="310.0" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="496.0" y="89.0" text-anchor="middle">Winter rain drained</text>
+<text x="496.0" y="123.0" text-anchor="middle">away</text>
+</g>
+<g class="element" data-id="freshwater-lens-thickness" data-domain="Ecological" data-type="Stock" data-adaptive="false">
+<rect x="-159.5" y="237.5" width="324.8" height="120.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="2.9" y="272.0" text-anchor="middle">Rainwater lens</text>
+<text x="2.9" y="306.0" text-anchor="middle">thickness in the low</text>
+<text x="2.9" y="340.0" text-anchor="middle">polders</text>
+</g>
+<g class="element" data-id="freshwater-availability-for-crops" data-domain="Ecological" data-type="Stock" data-adaptive="false">
+<rect x="-670.6" y="58.7" width="354.5" height="86.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="-493.4" y="93.2" text-anchor="middle">Freshwater</text>
+<text x="-493.4" y="127.2" text-anchor="middle">availability for crops</text>
+</g>
+</g>
+<g class="loop" data-id="B6">
+<path d="M 0.0 -48.0 A 48 48 0 1 1 -48.0 0.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="0.0" y="0.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B6</text>
+</g>
+</svg>

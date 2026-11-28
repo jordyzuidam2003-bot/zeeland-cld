@@ -125,8 +125,8 @@
 <text x="61.0" y="1570.5" text-anchor="middle">Agricultural land</text>
 <text x="61.0" y="1604.5" text-anchor="middle">value</text>
 </g>
-<g class="element" data-id="mortgage-debt-financial-leverage" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-552.6" y="1482.0" width="295.1" height="52.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="mortgage-debt-financial-leverage" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
+<rect x="-552.6" y="1482.0" width="295.1" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-405.0" y="1516.5" text-anchor="middle">Financial leverage</text>
 </g>
 <g class="element" data-id="banks-risk-assessment" data-domain="Social" data-type="Stock" data-adaptive="false">

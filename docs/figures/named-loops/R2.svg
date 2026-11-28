@@ -72,8 +72,8 @@
 </g>
 </g>
 <g class="elements">
-<g class="element" data-id="mortgage-debt-financial-leverage" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-431.3" y="-730.4" width="295.1" height="52.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<g class="element" data-id="mortgage-debt-financial-leverage" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
+<rect x="-431.3" y="-730.4" width="295.1" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="-283.7" y="-695.9" text-anchor="middle">Financial leverage</text>
 </g>
 <g class="element" data-id="banks-risk-assessment" data-domain="Social" data-type="Stock" data-adaptive="false">

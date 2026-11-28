@@ -4226,22 +4226,6 @@
   ],
   "changes": [
     {
-      "change": "Farm debt drawn, a Stock between the credit and the interest: new credit adds to it, Financial leverage its ratio to the assets",
-      "argument": "No delay lost: interest and repayment fall due on what is still owed, over each loan's term, up to forty years on ABN AMRO's new farmland financing (van der Meulen et al., 2020, p. 47), while Bank credit to farms → Debt payments drew this year's new money as setting this year's payments, so a loan raised them in its year only. Marking that link delayed would misstate the onset, which is within the year; the slowness is the stock's. Bank credit to farms → Financial leverage moves onto the debt, which becomes the stock, Financial leverage an Auxiliary, the ratio of that debt to the assets. B9 runs through the debt and stays balancing; every named loop keeps its sign. The vision's \"the farm's debts ... hold it to its current crops\" gets a variable that stays, and D2D a debt it can vary (for the group). Rejected: the fold stated, which the rule does not allow while a condition fails.",
-      "items": [
-        "farm-debt",
-        "bank-credit-to-farms -> farm-debt",
-        "farm-debt -> mortgage-debt-financial-leverage",
-        "farm-debt -> debt-payments",
-        "bank-credit-to-farms -> mortgage-debt-financial-leverage",
-        "bank-credit-to-farms -> debt-payments",
-        "mortgage-debt-financial-leverage",
-        "bank-credit-to-farms",
-        "B9",
-        "C6"
-      ]
-    },
-    {
       "change": "Debt payments split: Interest on farm loans into Farm income, Repayments on farm loans into what a farm can invest, the bank's risk and the debt",
       "argument": "One quantity per variable: Farm income counts interest but not repayments (Verhagen et al., 2018, p. 21), which come out after it, on the way to Farmers' capacity to invest (pp. 23, 25), so Debt payments → Farm income took repayments off twice and carried them on into land value, successors and the bank's risk, paths no source shows. Since batch 23 two drawn causes move different parts: the premium only the interest, Repayment required on farm loans only the repayments, so one variable sent each where the sources put the other. Repayments → Banks' risk assessment keeps the bank's test of interest and repayment (van der Meulen et al., 2020, p. 19; Farjon et al., 2013), which reached it through income; Repayments → Dependence carries R2's hypothesis on, one session card. New unnamed loops: credit → debt → repayments → capacity → credit (R), the borrowing spiral, through income until now; debt → repayments → debt (B), the debt paid off; credit → debt → repayments → the bank's risk → credit (B). Rejected: Debt payments kept whole, its link to income narrowed in words, since a link drawn from the whole variable still carries both parts; the fold stated.",
       "items": [

@@ -470,12 +470,12 @@
     {
       "id": "mortgage-debt-financial-leverage",
       "label": "Financial leverage",
-      "element type": "Stock",
+      "element type": "Auxiliary",
       "adaptive practice": false,
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "The farm's debt relative to the value of its assets, the inverse of its solvency (equity as a share of total capital). Land is 70% of an arable farm's balance sheet (van der Meulen et al., 2020, p. 13), so the ratio moves with the land price: arable farms' solvency was 81% in 2018 because their land had risen in value, while their long-term debt had tripled since 2001 to 770,000 euro per farm, and it differs widely between farms (p. 21). Farms that expanded recently have a lower solvency, and large arable farms, of about 190 ha on average in 2015, about 70% against 80% for arable farming as a whole in 2010–2015 (Silvis & Voskuilen, 2017, p. 3); farms that own little of their land gain little from a rising land price but owe much less (van der Meulen et al., 2020, p. 26).",
+      "description": "Farm debt relative to the value of the farm's assets, the inverse of its solvency (equity as a share of total capital): a ratio, so no stock of its own, the debt it counts being the stock. Land is 70% of an arable farm's balance sheet (van der Meulen et al., 2020, p. 13), so the ratio moves with the land price: arable farms' solvency was 81% in 2018 because their land had risen in value, while their long-term debt had tripled since 2001 to 770,000 euro per farm, and it differs widely between farms (p. 21). Farms that expanded recently have a lower solvency, and large arable farms, of about 190 ha on average in 2015, about 70% against 80% for arable farming as a whole in 2010–2015 (Silvis & Voskuilen, 2017, p. 3); farms that own little of their land gain little from a rising land price but owe much less (van der Meulen et al., 2020, p. 26).",
       "sources": [
         "van-der-meulen-2020",
         "silvis-2017"
@@ -924,7 +924,7 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "The new money banks lend the island's arable farms in a year, what farms ask for and banks grant, refinancing left out, since it replaces a loan and adds no debt (Bank credit to farms → Financial leverage). Banks supply 90% of Dutch farms' long-term loans (van der Meulen et al., 2020, p. 20), whose total rose from 18 to 33 billion euro between 2001 and 2018, falling slightly in its last years (p. 19); how much of a loan must be repaid each year is Repayment required on farm loans. No source read gives the banks' lending on the island.",
+      "description": "The new money banks lend the island's arable farms in a year, what farms ask for and banks grant, refinancing left out, since it replaces a loan and adds no debt (Bank credit to farms → Farm debt). Banks supply 90% of Dutch farms' long-term loans (van der Meulen et al., 2020, p. 20), what they have lent and is not yet repaid being Farm debt; how much of a loan must be repaid each year is Repayment required on farm loans. No source read gives the banks' lending on the island.",
       "sources": [
         "van-der-meulen-2020"
       ],
@@ -1174,6 +1174,23 @@
       "x": 2440,
       "y": 120,
       "actor": "banks"
+    },
+    {
+      "id": "farm-debt",
+      "label": "Farm debt",
+      "element type": "Stock",
+      "adaptive practice": false,
+      "sets domain": "Social",
+      "subsystem": "Agricultural economy",
+      "subquestion": "SQ2",
+      "description": "What the island's arable farms owe their banks: the loans still to be repaid, which new credit adds to and repayments pay off, the repayment being the periodic amount that pays a loan back within the agreed term (ABN AMRO, n.d.-a). Dutch farms' long-term loans rose from 18 to 33 billion euro between 2001 and 2018, falling slightly in their last years (van der Meulen et al., 2020, p. 19), and the debt of Dutch arable farms rose 38% between 2010 and 2022 (CBS, 2024). No source read gives the island's farms' debt.",
+      "sources": [
+        "abn-amro-nd-kosten-krediet",
+        "van-der-meulen-2020",
+        "cbs-2024-vreemd-vermogen"
+      ],
+      "x": 2100,
+      "y": -20
     }
   ],
   "connections": [
@@ -2221,31 +2238,6 @@
       "curvature": 0.1
     },
     {
-      "from": "bank-credit-to-farms",
-      "to": "mortgage-debt-financial-leverage",
-      "polarity": "+",
-      "delay": false,
-      "description": "A new loan adds to a farm's debt while its equity stays the same, so its debt rises relative to its assets and its solvency falls, solvency being its equity as a percentage of its total capital minus deferred tax (van der Meulen et al., 2020, p. 19). Refinancing replaces a loan and adds no debt: the link counts the new money. Farms that expanded in recent years have a lower solvency (Silvis & Voskuilen, 2017, p. 3); Dutch farmers under 45 had 68% in 2018 against 76% for those over 65, their higher long-term debt going partly with taking over the farm (van der Meulen et al., 2020, p. 26); on dairy farms heavy investment and poor results together took five points off solvency between 2006 and 2015 (Silvis et al., 2017, p. 2). The sign holds with the assets' value unchanged: the debt of Dutch arable farms rose 38% between 2010 and 2022, yet in 2022 it was 28% of their balance sheet, the smallest share in farming, as equity grows mainly through the rising value of the land (CBS, 2024). Less credit slows the debt's rise; the debt itself falls through repayments. Within the year: a loan is on the balance sheet once it is paid out.",
-      "sources": [
-        "van-der-meulen-2020",
-        "silvis-2017",
-        "silvis-2017-economische-ontwikkeling",
-        "cbs-2024-vreemd-vermogen"
-      ],
-      "curvature": -0.22
-    },
-    {
-      "from": "bank-credit-to-farms",
-      "to": "debt-payments",
-      "polarity": "+",
-      "delay": false,
-      "description": "More credit, more to pay each year: a farm's financing charges are the interest and commission on its loans and the repayment, the periodic amount that pays a loan back within the agreed term (ABN AMRO, n.d.-a), so each new loan adds its interest and repayment to what the farm pays. Within the year, from the loan's payout.",
-      "sources": [
-        "abn-amro-nd-kosten-krediet"
-      ],
-      "curvature": 0.14
-    },
-    {
       "from": "bank-credit-freeze-risk-premiums",
       "to": "debt-payments",
       "polarity": "+",
@@ -2900,6 +2892,42 @@
       "sources": []
     },
     {
+      "from": "bank-credit-to-farms",
+      "to": "farm-debt",
+      "polarity": "+",
+      "delay": false,
+      "description": "A new loan adds to what a farm owes until its repayments, the periodic amounts that pay it back within the agreed term, have paid it off (ABN AMRO, n.d.-a). Refinancing replaces a loan and adds no debt, so the link counts the new money, as Bank credit to farms does. Less credit slows the debt's rise; the debt itself falls through repayments (Repayments on farm loans → Farm debt). Within the year: a loan is owed once it is paid out.",
+      "sources": [
+        "abn-amro-nd-kosten-krediet"
+      ],
+      "curvature": 0.1
+    },
+    {
+      "from": "farm-debt",
+      "to": "mortgage-debt-financial-leverage",
+      "polarity": "+",
+      "delay": false,
+      "description": "With the same assets, more debt is a higher debt relative to them and a lower solvency, solvency being its equity as a percentage of its total capital minus deferred tax (van der Meulen et al., 2020, p. 19). Farms that expanded in recent years have a lower solvency (Silvis & Voskuilen, 2017, p. 3); Dutch farmers under 45 had 68% in 2018 against 76% for those over 65, their higher long-term debt going partly with taking over the farm (van der Meulen et al., 2020, p. 26); on dairy farms heavy investment and poor results together took five points off solvency between 2006 and 2015 (Silvis et al., 2017, p. 2). The sign holds with the assets' value unchanged: the debt of Dutch arable farms rose 38% between 2010 and 2022, yet in 2022 it was 28% of their balance sheet, the smallest share in farming, as equity grows mainly through the rising value of the land (CBS, 2024). Within the year: a loan is on the balance sheet once it is paid out.",
+      "sources": [
+        "van-der-meulen-2020",
+        "silvis-2017",
+        "silvis-2017-economische-ontwikkeling",
+        "cbs-2024-vreemd-vermogen"
+      ],
+      "curvature": -0.22
+    },
+    {
+      "from": "farm-debt",
+      "to": "debt-payments",
+      "polarity": "+",
+      "delay": false,
+      "description": "The more a farm owes, the more interest and commission it pays a year: they are the price of its loans, the repayment paid beside them (ABN AMRO, n.d.-a), so a loan adds to the interest each year for as long as it is owed, not only in the year it is made. Within the year: interest falls due from the loan's payout.",
+      "sources": [
+        "abn-amro-nd-kosten-krediet"
+      ],
+      "curvature": 0.15
+    },
+    {
       "from": "tolerant-varieties-on-offer",
       "to": "margin-given-up-on-high-margin-crops",
       "polarity": "-",
@@ -3118,7 +3146,8 @@
       "path": [
         "mortgage-debt-financial-leverage",
         "banks-risk-assessment",
-        "bank-credit-to-farms"
+        "bank-credit-to-farms",
+        "farm-debt"
       ],
       "description": "A farm with higher leverage is a riskier loan, so banks lend it less, less new debt is added and its leverage stops rising. It seeks the leverage a bank accepts, and is the banks' intended loop: they limit their exposure. By limiting credit it holds back what a farm can invest in new crops and storage; R6 shows what that can do in turn."
     },
@@ -3700,7 +3729,7 @@
         "B9",
         "B10"
       ],
-      "description": "A higher *Harvest lost to salt* makes *Adoption of new crops* more worthwhile, after a delay (B2). The same losses lower *Farm income* and *Agricultural land value*, so *Financial leverage* and the *Banks' risk assessment of farm loans* rise, *Bank credit to farms* falls and the *Farmers' capacity to invest* in the switch falls (R6); less credit keeps leverage down (B9). A field that moves saves harvest from salt (R6) and raises the *Margin given up on high-margin crops* (B10). The level of salt in the soil of the farmland decides whether switching is economically beneficial or not.",
+      "description": "A higher *Harvest lost to salt* makes *Adoption of new crops* more worthwhile, after a delay (B2). The same losses lower *Farm income* and *Agricultural land value*, so *Financial leverage* and the *Banks' risk assessment of farm loans* rise, *Bank credit to farms* falls and the *Farmers' capacity to invest* in the switch falls (R6); less credit adds less to *Farm debt* and keeps leverage down (B9). A field that moves saves harvest from salt (R6) and raises the *Margin given up on high-margin crops* (B10). The level of salt in the soil of the farmland decides whether switching is economically beneficial or not.",
       "places": {
         "agricultural-land-value": [
           -1029,
@@ -3741,6 +3770,10 @@
         "fields-moved-to-new-salt-tolerant-crops": [
           1440,
           0
+        ],
+        "farm-debt": [
+          -59,
+          280
         ]
       },
       "bends": {
@@ -3753,10 +3786,11 @@
         "farm-revenue -> agricultural-land-value": 0,
         "salt-tolerant-crop-adoption -> margin-given-up-on-high-margin-crops": -0.28,
         "margin-given-up-on-high-margin-crops -> farm-revenue": -0.249,
-        "bank-credit-to-farms -> mortgage-debt-financial-leverage": 0.503,
         "harvest-lost-to-salt -> fields-moved-to-new-salt-tolerant-crops": -0.677,
         "farmers-capacity-to-invest -> fields-moved-to-new-salt-tolerant-crops": 0,
-        "fields-moved-to-new-salt-tolerant-crops -> salt-tolerant-crop-adoption": 0
+        "fields-moved-to-new-salt-tolerant-crops -> salt-tolerant-crop-adoption": 0,
+        "bank-credit-to-farms -> farm-debt": 0,
+        "farm-debt -> mortgage-debt-financial-leverage": 0
       },
       "marks": {
         "B2": [

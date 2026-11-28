@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1230 -585 2474 1194" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="black">
+<defs>
+<marker id="arrow-plus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2166AC"/></marker>
+<marker id="arrow-minus" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B2182B"/></marker>
+<marker id="arrow-grey" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="22" markerHeight="22" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>
+</defs>
+<rect x="-1230" y="-585" width="2474" height="1194" fill="white"/>
+<g class="links">
+<g class="link" data-from="farmers-capacity-to-invest" data-to="freshwater-storage-measures" data-sign="+" data-delay="false" data-curvature="0.136">
+<path class="link-path" d="M -647.8 331.0 Q -838.4 220.1 -969.7 43.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-939.0" y="82.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="freshwater-storage-measures" data-to="winter-rain-drained-away" data-sign="-" data-delay="false" data-curvature="0">
+<path class="link-path" d="M -852.4 0.0 Q -764.7 0.0 -677.0 0.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-727.0" y="0.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+</g>
+<g class="link" data-from="winter-rain-drained-away" data-to="freshwater-lens-thickness" data-sign="-" data-delay="true" data-curvature="0">
+<path class="link-path" d="M -367.0 0.0 Q -279.7 0.0 -192.4 0.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-242.4" y="0.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="delay-cut" d="M -305.4 -24.0 L -305.4 24.0 M -289.4 -24.0 L -289.4 24.0" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -305.4 -24.0 L -305.4 24.0 M -289.4 -24.0 L -289.4 24.0" stroke="#444444" stroke-width="5" fill="none"/>
+</g>
+<g class="link" data-from="freshwater-lens-thickness" data-to="freshwater-availability-for-crops" data-sign="+" data-delay="false" data-curvature="0">
+<path class="link-path" d="M 132.4 0.0 Q 220.1 0.0 307.8 0.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="257.8" y="0.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="freshwater-availability-for-crops" data-to="crop-water-shortfall" data-sign="-" data-delay="false" data-curvature="0">
+<path class="link-path" d="M 662.2 0.0 Q 749.9 0.0 837.6 0.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="787.6" y="0.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+</g>
+<g class="link" data-from="crop-water-shortfall" data-to="crop-yield" data-sign="-" data-delay="false" data-curvature="0.127">
+<path class="link-path" d="M 982.1 26.0 Q 849.7 212.6 652.2 328.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="694.8" y="301.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+</g>
+<g class="link" data-from="crop-yield" data-to="farm-revenue" data-sign="+" data-delay="false" data-curvature="0.115">
+<path class="link-path" d="M 552.5 380.0 Q 352.4 473.4 132.6 495.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="182.3" y="489.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="farm-revenue" data-to="farmers-capacity-to-invest" data-sign="+" data-delay="false" data-curvature="0.12">
+<path class="link-path" d="M -58.6 500.5 Q -268.8 491.6 -465.6 417.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-418.5" y="433.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+<g class="link" data-from="crop-water-shortfall" data-to="freshwater-storage-measures" data-sign="+" data-delay="false" data-curvature="-0.502">
+<path class="link-path" d="M 980.1 -26.0 Q 742.9 -327.6 377.1 -443.6 Q 11.4 -559.6 -356.3 -450.0 Q -724.0 -340.4 -966.5 -43.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-934.2" y="-81.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+</g>
+</g>
+<g class="elements">
+<g class="element" data-id="farmers-capacity-to-invest" data-domain="Social" data-type="Stock" data-adaptive="false">
+<rect x="-728.4" y="331.0" width="324.8" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-566.0" y="365.5" text-anchor="middle">Farmers' capacity to</text>
+<text x="-566.0" y="399.5" text-anchor="middle">invest</text>
+</g>
+<g class="element" data-id="freshwater-storage-measures" data-domain="Technological" data-type="Stock" data-adaptive="true">
+<rect x="-1147.6" y="-43.0" width="295.1" height="86.0" rx="0" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<text x="-1000.0" y="-8.5" text-anchor="middle">Freshwater storage</text>
+<text x="-1000.0" y="25.5" text-anchor="middle">measures</text>
+</g>
+<g class="element" data-id="winter-rain-drained-away" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
+<rect x="-677.0" y="-43.0" width="310.0" height="86.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>
+<text x="-522.0" y="-8.5" text-anchor="middle">Winter rain drained</text>
+<text x="-522.0" y="25.5" text-anchor="middle">away</text>
+</g>
+<g class="element" data-id="freshwater-lens-thickness" data-domain="Ecological" data-type="Stock" data-adaptive="false">
+<rect x="-192.4" y="-60.0" width="324.8" height="120.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="-30.0" y="-25.5" text-anchor="middle">Rainwater lens</text>
+<text x="-30.0" y="8.5" text-anchor="middle">thickness in the low</text>
+<text x="-30.0" y="42.5" text-anchor="middle">polders</text>
+</g>
+<g class="element" data-id="freshwater-availability-for-crops" data-domain="Ecological" data-type="Stock" data-adaptive="false">
+<rect x="307.8" y="-43.0" width="354.5" height="86.0" rx="0" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="485.0" y="-8.5" text-anchor="middle">Freshwater</text>
+<text x="485.0" y="25.5" text-anchor="middle">availability for crops</text>
+</g>
+<g class="element" data-id="crop-water-shortfall" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
+<rect x="837.6" y="-26.0" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="1000.0" y="8.5" text-anchor="middle">Crop water shortfall</text>
+</g>
+<g class="element" data-id="crop-yield" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
+<rect x="516.8" y="328.0" width="176.4" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="605.0" y="362.5" text-anchor="middle">Crop yield</text>
+</g>
+<g class="element" data-id="farm-revenue" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
+<rect x="-58.6" y="475.0" width="191.2" height="52.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="37.0" y="509.5" text-anchor="middle">Farm income</text>
+</g>
+</g>
+<g class="loop" data-id="R4">
+<path d="M 0.0 224.0 A 48 48 0 1 1 -48.0 272.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="0.0" y="272.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">R4</text>
+</g>
+<g class="loop" data-id="B6">
+<path d="M 0.0 -320.0 A 48 48 0 1 0 48.0 -272.0" fill="none" stroke="#444444" stroke-width="2.5" marker-end="url(#arrow-grey)"/>
+<text class="loop-id" x="0.0" y="-272.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold">B6</text>
+</g>
+</svg>

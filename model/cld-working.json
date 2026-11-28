@@ -4278,24 +4278,6 @@
   ],
   "changes": [
     {
-      "change": "The crop account: Dependence on high-margin crops counts hectares of the island's arable land, relabelled Land under high-margin crops, the other field vegetables counted with potatoes and sown onions; the arable land divided into three groups by how their crops act in the loops, the other current crops (cereals, sugar beet, grass seed) the remainder with no box, and each link out read as a hectare more under the high-margin crops and one less under the other current crops",
-      "argument": "A share of the rotation drawn as a Stock while Financial leverage, a ratio, is an Auxiliary: every crop variable now counts in one account (Jordy's principle). The share made an Auxiliary would leave B15 without a stock, which D2D cannot run, so the variable counts the hectares, the Stock its delays hold. Leaving these crops lands in cereals on the island (Raat et al., 2026, p. 49; Delphy, 2023, pp. 15, 44); field vegetables are high-margin crops (Polman et al., 2026, p. 9); the groups fell about alike as the arable land fell (Delphy, 2023, p. 15), so no link from the arable land to the groups. No loop changes its polarity.",
-      "items": [
-        "dependence-on-high-margin-salt-sensitive-crops",
-        "farmland-leaving-arable-use",
-        "debt-payments -> dependence-on-high-margin-salt-sensitive-crops",
-        "repayments-on-farm-loans -> dependence-on-high-margin-salt-sensitive-crops",
-        "R2",
-        "dependence-on-high-margin-salt-sensitive-crops -> demand-for-deep-polder-drainage",
-        "dependence-on-high-margin-salt-sensitive-crops -> spending-on-keeping-current-crops",
-        "dependence-on-high-margin-salt-sensitive-crops -> water-demand-of-the-crop-mix",
-        "dependence-on-high-margin-salt-sensitive-crops -> harvest-lost-to-salt",
-        "dependence-on-high-margin-salt-sensitive-crops -> farm-revenue",
-        "C2",
-        "B15"
-      ]
-    },
-    {
       "change": "A field moved to a new crop leaves the other current crops, cereals, sugar beet or grass seed, the room the high-margin crops leave in the rotation: Land under high-margin crops → Fields moved to new crops sourced and no longer a hypothesis; Adoption of salt-tolerant varieties a part of the high-margin crops",
       "argument": "Fibre crops and legumes could replace winter wheat on the island (Delphy, 2023, p. 48); the area of protein crops depends on the room left in the rotation, and a larger share of them is not always wanted with many potatoes and beets (Polman et al., 2026, pp. 8, 17); quinoa in a model for Flanders mostly took the place of maize and winter wheat (Cloet et al., 2024, p. 3). No source read shows it on the island, where no new crop is grown: a session card. Salt counted once, since a moved field leaves the high-margin crops' hectares as they were. No loop changes its polarity.",
       "items": [

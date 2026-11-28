@@ -417,24 +417,27 @@
     },
     {
       "id": "dependence-on-high-margin-salt-sensitive-crops",
-      "label": "Dependence on high-margin crops",
+      "label": "Land under high-margin crops",
       "element type": "Stock",
       "adaptive practice": false,
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "The share of the rotation under the high-value cash crops, seed and ware potatoes and sown onions, which salt harms most (Root zone salinity → Harvest lost to salt) and which need the most water: on the island the crops that earn the most also have the greatest water need and often a limited root system (Delphy, 2023, p. 48). Potatoes are financially attractive and sensitive to the climate, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12): on specialised arable farms on clay growing ware potatoes they bring in, on average over the years, 55% of the arable revenue, ware potatoes 32% and seed potatoes 23%, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14). In Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). The guideline is potatoes on a field at most one year in three, against potato cyst nematode (one in two for starch potatoes), so a farm growing more of them rents or swaps land (Janssens et al., 2020, p. 4). On the parcels studied in the island's low polders, where the seepage pressure is high and the surface water salty all year, the rotations hold potato, onion, sugar beet, cereals and grass seed, the farmers have stopped growing sensitive crops such as sown onions, and with more fresh water they would be open to more profitable crops (Kaandorp et al., 2022, pp. 30–31). In Zeeland the sown onions halved from 4,705 ha in 2019 to 2,579 in 2024 after dry summers, poor harvests and a lack of fresh water, which four in five arable farmers have no access to, while potatoes held at about 19,000 ha (De Vriend, 2024b). A Stock: the share holds through the season and shifts over years (Root zone salinity → Dependence on high-margin crops).",
+      "description": "Hectares of the island's arable land under the high-value cash crops, seed and ware potatoes, sown onions and the other field vegetables, which salt harms most (Root zone salinity → Harvest lost to salt) and which need the most water: on the island the crops that earn the most also have the greatest water need and often a limited root system (Delphy, 2023, p. 48). A study of Dutch farm accounts counts potatoes, onions and field vegetables among the high-margin crops (Polman et al., 2026, p. 9), and in 2022 the island grew 2,308 ha of potatoes and 1,240 ha of field vegetables, 791 ha of them sown onions, on its 9,002 ha of arable land (Delphy, 2023, p. 15). Potatoes are financially attractive and sensitive to the climate, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12): on specialised arable farms on clay growing ware potatoes they bring in, on average over the years, 55% of the arable revenue, ware potatoes 32% and seed potatoes 23%, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14). In Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). The guideline is potatoes on a field at most one year in three, against potato cyst nematode (one in two for starch potatoes), so a farm growing more of them rents or swaps land (Janssens et al., 2020, p. 4). On the parcels studied in the island's low polders, where the seepage pressure is high and the surface water salty all year, the rotations hold potato, onion, sugar beet, cereals and grass seed, the farmers have stopped growing sensitive crops such as sown onions, and with more fresh water they would be open to more profitable crops (Kaandorp et al., 2022, pp. 30–31). In Zeeland the sown onions halved from 4,705 ha in 2019 to 2,579 in 2024 after dry summers, poor harvests and a lack of fresh water, which four in five arable farmers have no access to, while potatoes held at about 19,000 ha (De Vriend, 2024b). The arable land (Arable land in the polders) is counted in three groups, each hectare in one, by how their crops act in the loops: these crops; the new crops (Adoption of new crops); and the other current crops, cereals, sugar beet, grass seed and the rest, which have no box of their own, so a hectare more under these crops is one less under them. Sugar beet, which the same study counts among the high-margin crops, goes with the other current crops, since it loses far less to salt (Land under high-margin crops → Harvest lost to salt). Fields leaving these crops go to cereals: an exploration of the island sees a clear shift to less intensive crops in response to drought, fewer onions and more cereals (Raat et al., 2026, p. 49); the sown onions fell by 389 ha from 2020 to 2022 as the cereals rose by 433 ha (Delphy, 2023, p. 15); and in a scenario for a model farm on the island without extra fresh water, the onions' 10 ha go to grain (p. 44). A field sown to a salt-tolerant variety of potato or onion stays in this group (Adoption of salt-tolerant varieties). A Stock: the hectares hold through the season and shift over years (Root zone salinity → Land under high-margin crops).",
       "sources": [
         "verhagen-2018",
         "janssens-2020",
         "economic-board-zeeland-2023",
         "kaandorp-2022",
         "de-vriend-2024-gewassen",
-        "delphy-2023-dorsd"
+        "delphy-2023-dorsd",
+        "polman-2026",
+        "raat-2026"
       ],
       "x": 1316,
       "y": -113,
-      "actor": "arable-farmers"
+      "actor": "arable-farmers",
+      "simplification": "Counts potatoes, sown onions and the other field vegetables as one group, as if salt and fresh water moved them alike, while in Zeeland the sown onions halved after dry summers and a lack of fresh water as potatoes held at about 19,000 ha (De Vriend, 2024b), and on the island's salty low-polder parcels farmers have stopped sown onions while potato stays in the rotation (Kaandorp et al., 2022, pp. 30–31): the links from Root zone salinity and Crop water shortfall move mainly the onions, which bring in less of the arable revenue than potatoes on Dutch clay farms (Janssens et al., 2020, p. 14). Every loop through it keeps its polarity and its mechanism, since the crops are kept for their margin, take a store and need soil work that too-wet soil spoils; what it leaves out is which crop gives way first, and so how far salt alone moves the part that carries most of the revenue. It counts hectares while Farm income is a hectare's: each link out reads a hectare more under these crops as one less under the other current crops, at the arable land as it stands, which shifts over decades and from every group about alike (Arable land in the polders)."
     },
     {
       "id": "farm-revenue",
@@ -492,10 +495,11 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ3",
-      "description": "Hectares of the island's land under arable crops, the census's akkerbouw, conventional or salt-tolerant and fallow included, whoever owns it: 9,094 ha in 2025 against 11,395 ha in 2000, on farms whose main seat is on the island (CBS, 2026). The farms growing them halved over those years, from 402 to 200, so the hectares per farm rose from 28 to 45: land from a farm that stops mostly goes in parts to neighbouring farms that are expanding, which can pay the most for it (Luijt, 2007, p. 25, nationally). The fall in hectares is net, the census's farmland 906 ha smaller and its grass and forage crops 1,431 ha larger (CBS, 2026). It falls when the land's holder, present or next, stops growing arable crops on it; what the land becomes then (nature, grassland, water storage) is outside the system boundary.",
+      "description": "Hectares of the island's land under arable crops, the census's akkerbouw, current or new, fallow included, whoever owns it: 9,094 ha in 2025 against 11,395 ha in 2000, on farms whose main seat is on the island (CBS, 2026). The farms growing them halved over those years, from 402 to 200, so the hectares per farm rose from 28 to 45: land from a farm that stops mostly goes in parts to neighbouring farms that are expanding, which can pay the most for it (Luijt, 2007, p. 25, nationally). The fall in hectares is net, the census's farmland 906 ha smaller and its grass and forage crops 1,431 ha larger (CBS, 2026). It falls when the land's holder, present or next, stops growing arable crops on it; what the land becomes then (nature, grassland, water storage) is outside the system boundary. Every crop variable counts in its hectares, each hectare in one of three groups by how its crops act in the loops: Land under high-margin crops, Adoption of new crops, and the other current crops, cereals, sugar beet, grass seed and the rest, the remainder, with no box. As the arable land fell 21% from 2000 to 2022, most groups fell about alike: the potatoes 17%, the field vegetables 19%, the cereals 21% and sugar beet 32% (Delphy, 2023, p. 15). So no link runs from it to the groups: their shares hold as land leaves, and the links out of them read them at the arable land as it stands.",
       "sources": [
         "cbs-2026-landbouw-gemeente",
-        "luijt-2007"
+        "luijt-2007",
+        "delphy-2023-dorsd"
       ],
       "x": -204,
       "y": -696
@@ -1420,7 +1424,7 @@
       "to": "demand-for-deep-polder-drainage",
       "polarity": "+",
       "delay": false,
-      "description": "Soil work for potatoes should not be done when the soil is too wet, which can smear and compact it; for onions, too-wet soil work can keep a well-crumbled seedbed from forming, and in March and April, as the scenarios' rain rises, unfavourable conditions for it may become more likely; where blight cannot be well controlled, as in organic farming, a potato crop is best planted early where the soil allows (Verstand et al., 2021, pp. 25, 27, for the Netherlands, from a cultivation guide, a crop study and an expert). So, by inference from that guide, the more of the rotation they take, the more farmers need fields that dry early in spring. Holding water back longer, as a buffer for dry times, is sometimes hard for farmers who want onto the land with heavy machinery (Waterschap Scheldestromen, 2021c, p. 44); on Duiveland the board moves to the higher summer level in March and April as the soil work allows (2021a, p. 66). No source read shows how much spring soil work the new crops need: the sign rests on their needing less. Quinoa, one of the new crops, also needs soil work in spring: in the Netherlands it is sown from the end of March to the end of April and needs a fine seed bed (van Loo, 2023, p. 75, by a Wageningen breeder whose group develops quinoa varieties), so the sign holds where the share moves to crops sown in autumn or winter, such as winter wheat, sown from mid-September to early February (Verstand et al., 2021, p. 29), less clearly where it moves to quinoa; and on clay and zavel, the main topsoil of the island's western low polders (Kaandorp et al., 2022, p. 27), the main soil work for potatoes is often done before winter (Verstand et al., 2021, p. 25). Within the year.",
+      "description": "Soil work for potatoes should not be done when the soil is too wet, which can smear and compact it; for onions, too-wet soil work can keep a well-crumbled seedbed from forming, and in March and April, as the scenarios' rain rises, unfavourable conditions for it may become more likely; where blight cannot be well controlled, as in organic farming, a potato crop is best planted early where the soil allows (Verstand et al., 2021, pp. 25, 27, for the Netherlands, from a cultivation guide, a crop study and an expert). So, by inference from that guide, the more of the arable land they take, the more farmers need fields that dry early in spring. Holding water back longer, as a buffer for dry times, is sometimes hard for farmers who want onto the land with heavy machinery (Waterschap Scheldestromen, 2021c, p. 44); on Duiveland the board moves to the higher summer level in March and April as the soil work allows (2021a, p. 66). A hectare more under these crops is one less under the other current crops, the fields leaving them going to cereals (Land under high-margin crops), so the sign holds where they go to a crop sown in autumn or winter, such as winter wheat, sown from mid-September to early February (Verstand et al., 2021, p. 29); a field moved on to a new crop such as quinoa, sown from the end of March to the end of April into a fine seed bed (van Loo, 2023, p. 75, by a Wageningen breeder whose group develops quinoa varieties), needs spring work again, which this link leaves out (Fields moved to new crops); and on clay and zavel, the main topsoil of the island's western low polders (Kaandorp et al., 2022, p. 27), the main soil work for potatoes is often done before winter (Verstand et al., 2021, p. 25). Within the year.",
       "sources": [
         "verstand-2021",
         "scheldestromen-2021-wbp",
@@ -2142,7 +2146,7 @@
       "to": "spending-on-keeping-current-crops",
       "polarity": "+",
       "delay": true,
-      "description": "The more of the rotation is potatoes and onions, the more a farm spends on what they need: in farm accounts across the Netherlands from 2014 to 2022 a larger share of ware potatoes, seed potatoes, onions and winter carrots goes with significantly higher costs that no crop is charged with, buildings and machines among them, and storing these crops takes a store (Polman et al., 2026, pp. 5, 11, 15). The authors estimate the crops' effect with a random-effects model whose assumption they call very strong and probably untrue: they limit the bias with control variables, but call the results less reliable (Polman et al., 2026, pp. 5, 12–13). In France, specialising in a few crops is explained in part by writing off the equipment (Magrini et al., 2018, p. 3). The differences lie mostly between farms, less in how one farm changes over the years (Polman et al., 2026, p. 4): machines are written off at 8.2% a year and buildings at 3%, about 12 and 33 years if written off evenly (Janssens et al., 2020, p. 13). Years, so a delay.",
+      "description": "The more of the arable land is under potatoes and onions, the more a farm spends on what they need: in farm accounts across the Netherlands from 2014 to 2022 a larger share of ware potatoes, seed potatoes, onions and winter carrots goes with significantly higher costs that no crop is charged with, buildings and machines among them, and storing these crops takes a store (Polman et al., 2026, pp. 5, 11, 15). The authors estimate the crops' effect with a random-effects model whose assumption they call very strong and probably untrue: they limit the bias with control variables, but call the results less reliable (Polman et al., 2026, pp. 5, 12–13). In France, specialising in a few crops is explained in part by writing off the equipment (Magrini et al., 2018, p. 3). The differences lie mostly between farms, less in how one farm changes over the years (Polman et al., 2026, p. 4): machines are written off at 8.2% a year and buildings at 3%, about 12 and 33 years if written off evenly (Janssens et al., 2020, p. 13). Years, so a delay.",
       "sources": [
         "polman-2026",
         "magrini-2018",
@@ -2283,7 +2287,7 @@
       "to": "dependence-on-high-margin-salt-sensitive-crops",
       "polarity": "+",
       "delay": false,
-      "description": "A farm paying more interest keeps its lucrative but salt-sensitive crops to meet it, as it does to meet its repayments (Repayments on farm loans → Dependence on high-margin crops). No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
+      "description": "A farm paying more interest keeps its lucrative but salt-sensitive crops to meet it, as it does to meet its repayments (Repayments on farm loans → Land under high-margin crops). No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
       "sources": [],
       "curvature": -0.22,
       "hypothesis": true
@@ -2714,7 +2718,7 @@
       "to": "water-demand-of-the-crop-mix",
       "polarity": "+",
       "delay": false,
-      "description": "The more of the rotation is under potatoes and onions, the more water the crop plan needs: on the island the crops that earn the most also have the greatest water need and often a limited root system (Delphy, 2023, p. 48). Within the year, as the rotation is set.",
+      "description": "The more of the arable land is under potatoes and onions, and so the less under the other current crops, the more water the crop plan needs: on the island the crops that earn the most also have the greatest water need and often a limited root system (Delphy, 2023, p. 48). Within the year, as the rotation is set.",
       "sources": [
         "delphy-2023-dorsd"
       ],
@@ -2857,7 +2861,7 @@
       "polarity": "+",
       "delay": false,
       "curvature": 0.1,
-      "description": "The larger the share of the rotation under the crops salt harms most, the more of the harvest salt takes at the same root zone salinity: onions lose 16% of their yield per dS/m above 1.2 dS/m and potatoes 12% above 1.7, against 5.9% above 7.0 for sugar beet and 7.1% above 6.0 for wheat (Allen et al., 1998, ch. 8, Table 23), lines that give the sign on the island but not the size of the loss (Root zone salinity → Harvest lost to salt). On the island, farms where the seepage pressure is high and the surface water salty all year have stopped growing sensitive crops such as sown onions (Kaandorp et al., 2022, p. 31), which lowers what salt can take. The link counts the shift among the current crops; a field moved to a new crop leaves the loss by Adoption of new crops → Harvest lost to salt. Within the season.",
+      "description": "The more of the arable land is under the crops salt harms most, and so the less under the other current crops, the more of the harvest salt takes at the same root zone salinity: onions lose 16% of their yield per dS/m above 1.2 dS/m and potatoes 12% above 1.7, against 5.9% above 7.0 for sugar beet and 7.1% above 6.0 for wheat (Allen et al., 1998, ch. 8, Table 23), lines that give the sign on the island but not the size of the loss (Root zone salinity → Harvest lost to salt). On the island, farms where the seepage pressure is high and the surface water salty all year have stopped growing sensitive crops such as sown onions (Kaandorp et al., 2022, p. 31), which lowers what salt can take. The link counts the shift among the current crops; a field moved to a new crop leaves the loss by Adoption of new crops → Harvest lost to salt. Within the season.",
       "sources": [
         "allen-1998",
         "kaandorp-2022"
@@ -2869,11 +2873,12 @@
       "polarity": "+",
       "delay": false,
       "curvature": -0.1,
-      "description": "The crops that stand salt the least are the ones that earn the most: potatoes are financially attractive, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12), and on specialised arable farms on clay growing ware potatoes they bring in, on average over the years, 55% of the arable revenue, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14); in Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). So a farm that keeps more of them earns more in a year, less what salt takes, which Dependence on high-margin crops → Harvest lost to salt counts. No source read sizes the net effect of the crop mix on the island's incomes. Within the year.",
+      "description": "The crops that stand salt the least are the ones that earn the most: potatoes are financially attractive, the most important crop of Dutch arable farming (Verhagen et al., 2018, p. 12), and on specialised arable farms on clay growing ware potatoes they bring in, on average over the years, 55% of the arable revenue, against 14% for onions and 11% for sugar beet (Janssens et al., 2020, p. 14); in Zeeland, a manager of the cooperative CZAV says, a farmer earns his money not with rotation crops but with onions, beets and potatoes (Economic Board Zeeland, 2023, p. 19). So a farm that keeps more of them, and fewer cereals, sugar beet or grass seed, earns more a hectare in a year: on the island without extra fresh water a model farm's potatoes earn a margin of €6,635 a hectare against its grain's €1,348 (Delphy, 2023, p. 43), less what salt takes, which Land under high-margin crops → Harvest lost to salt counts. No source read sizes the net effect of the crop mix on the island's incomes. Within the year.",
       "sources": [
         "verhagen-2018",
         "janssens-2020",
-        "economic-board-zeeland-2023"
+        "economic-board-zeeland-2023",
+        "delphy-2023-dorsd"
       ]
     },
     {
@@ -3033,7 +3038,7 @@
       "to": "dependence-on-high-margin-salt-sensitive-crops",
       "polarity": "+",
       "delay": false,
-      "description": "A farm with high repayments keeps its lucrative but salt-sensitive crops to meet them, as it does to meet its interest (Interest on farm loans → Dependence on high-margin crops). No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
+      "description": "A farm with high repayments keeps its lucrative but salt-sensitive crops to meet them, as it does to meet its interest (Interest on farm loans → Land under high-margin crops). No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
       "sources": [],
       "curvature": 0.12,
       "hypothesis": true
@@ -3128,7 +3133,7 @@
         "farm-revenue",
         "agricultural-land-value"
       ],
-      "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its interest rises. To meet the interest it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It closes only through a hypothesis, Interest on farm loans → Dependence on high-margin crops, which no source read tests; where indebted farms choose less risky crops instead, the loop breaks there. It shows an unintended consequence of the deep drainage in B4: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B2, B1)."
+      "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its interest rises. To meet the interest it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It closes only through a hypothesis, Interest on farm loans → Land under high-margin crops, which no source read tests; where indebted farms choose less risky crops instead, the loop breaks there. It shows an unintended consequence of the deep drainage in B4: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B2, B1)."
     },
     {
       "id": "R3",
@@ -3348,7 +3353,7 @@
         "water-demand-of-the-crop-mix",
         "crop-water-shortfall"
       ],
-      "description": "The more of the rotation is under the high-margin crops, the more water the crop plan needs and, with the water the island has, the larger the shortfall; over years, farms short of water move off those crops, sown onions first, and the shortfall shrinks. It seeks a crop plan the island's water can carry: the water is a limit farmers fit their crops to, as much as the salt. On the island the sown onions fell from 1,214 ha in 2015 to 791 ha in 2022 (Delphy, 2023, p. 15). It holds back the income the high-margin crops bring, so where a farm adapts this way it adapts by earning less."
+      "description": "The more of the arable land is under the high-margin crops, the more water the crop plan needs and, with the water the island has, the larger the shortfall; over years, farms short of water move off those crops, sown onions first, to cereals, and the shortfall shrinks. It seeks a crop plan the island's water can carry: the water is a limit farmers fit their crops to, as much as the salt. On the island the sown onions fell from 1,214 ha in 2015 to 791 ha in 2022 (Delphy, 2023, p. 15). It holds back the income the high-margin crops bring, so where a farm adapts this way it adapts by earning less."
     }
   ],
   "groups": [
@@ -3460,7 +3465,7 @@
         "B4",
         "R2"
       ],
-      "description": "A lower *Ditch level (NAP)* gives a greater *Polder drainage depth*, which raises the *Spring workability of the fields* within the season, so *Farmers' demand for deep polder drainage* eases (B4). The same lower level raises *Saline seepage (kwel)*, which over years lowers the *Rainwater lens thickness in the low polders*. *Root zone salinity* and *Harvest lost to salt* rise, *Farm income* and *Agricultural land value* fall. *Financial leverage*, *Banks' risk assessment of farm loans*, the *Risk premium on farm loans* and *Interest on farm loans* rise, and thus the farm's *Dependence on high-margin crops*, which in spring needs deep drainage, grows: the demand returns higher (R2). The relief comes first and the extra demand years later, also known as the “Fixes that fail” archetype (Kim, 2000, p. 16). The link from *Interest on farm loans* to *Dependence on high-margin crops* is a hypothesis for the group model building session.",
+      "description": "A lower *Ditch level (NAP)* gives a greater *Polder drainage depth*, which raises the *Spring workability of the fields* within the season, so *Farmers' demand for deep polder drainage* eases (B4). The same lower level raises *Saline seepage (kwel)*, which over years lowers the *Rainwater lens thickness in the low polders*. *Root zone salinity* and *Harvest lost to salt* rise, *Farm income* and *Agricultural land value* fall. *Financial leverage*, *Banks' risk assessment of farm loans*, the *Risk premium on farm loans* and *Interest on farm loans* rise, and thus *Land under high-margin crops*, which in spring needs deep drainage, grows: the demand returns higher (R2). The relief comes first and the extra demand years later, also known as the “Fixes that fail” archetype (Kim, 2000, p. 16). The link from *Interest on farm loans* to *Land under high-margin crops* is a hypothesis for the group model building session.",
       "sources": [
         "kim-2000"
       ],
@@ -3567,7 +3572,7 @@
         "R2",
         "R3"
       ],
-      "description": "*Interest on farm loans* raises the farm's *Dependence on high-margin crops* (R2, a hypothesis, as its repayments do), and so does the *Capital lost on switching to new crops* (R3, on sources). Each loop raises the variable that drives the other: more dependence brings more *Spending on keeping the current crops*, so more *Machines and storage for the current crops* and more capital a switch would write off (R3). This causes more *Farmers' demand for deep polder drainage* (R2). Dependence on current crops holds back the adoption of new crops. Salt, on its own, lowers that dependence over the years as the current crops yield worse harvests due to increasing root-zone salinity.",
+      "description": "*Interest on farm loans* raises the farm's *Land under high-margin crops* (R2, a hypothesis, as its repayments do), and so does the *Capital lost on switching to new crops* (R3, on sources). Each loop raises the variable that drives the other: more dependence brings more *Spending on keeping the current crops*, so more *Machines and storage for the current crops* and more capital a switch would write off (R3). This causes more *Farmers' demand for deep polder drainage* (R2). Dependence on current crops holds back the adoption of new crops. Salt, on its own, lowers that dependence over the years as the current crops yield worse harvests due to increasing root-zone salinity.",
       "places": {
         "dependence-on-high-margin-salt-sensitive-crops": [
           0,

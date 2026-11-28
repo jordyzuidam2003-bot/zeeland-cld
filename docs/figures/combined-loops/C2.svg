@@ -146,9 +146,9 @@
 <text x="-981.0" y="621.5" text-anchor="middle">Interest on farm loans</text>
 </g>
 <g class="element" data-id="dependence-on-high-margin-salt-sensitive-crops" data-domain="Social" data-type="Stock" data-adaptive="false">
-<rect x="-964.1" y="226.0" width="280.3" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-824.0" y="260.5" text-anchor="middle">Dependence on</text>
-<text x="-824.0" y="294.5" text-anchor="middle">high-margin crops</text>
+<rect x="-1001.2" y="226.0" width="354.5" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-824.0" y="260.5" text-anchor="middle">Land under high-margin</text>
+<text x="-824.0" y="294.5" text-anchor="middle">crops</text>
 </g>
 <g class="element" data-id="polder-drainage-depth" data-domain="Technological" data-type="Auxiliary" data-adaptive="false">
 <rect x="98.2" y="-390.0" width="339.6" height="52.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="1.5"/>

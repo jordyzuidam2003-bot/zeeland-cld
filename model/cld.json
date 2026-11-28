@@ -924,7 +924,7 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "New loans and refinancing that banks grant the island's arable farms in a year. Banks supply 90% of Dutch farms' long-term loans (van der Meulen et al., 2020, p. 20), whose total rose from 18 to 33 billion euro between 2001 and 2018, falling slightly in its last years (p. 19), and they have raised the repayments on land loans, ABN AMRO cutting the longest term for new farmland financing from fifty to forty years, a repayment of at least 2.5% a year (p. 47). No source read gives the banks' lending on the island.",
+      "description": "The new money banks lend the island's arable farms in a year, what farms ask for and banks grant, refinancing left out, since it replaces a loan and adds no debt (Bank credit to farms → Financial leverage). Banks supply 90% of Dutch farms' long-term loans (van der Meulen et al., 2020, p. 20), whose total rose from 18 to 33 billion euro between 2001 and 2018, falling slightly in its last years (p. 19); how much of a loan must be repaid each year is Repayment required on farm loans. No source read gives the banks' lending on the island.",
       "sources": [
         "van-der-meulen-2020"
       ],

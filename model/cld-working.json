@@ -4118,13 +4118,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Bank credit to farms the new money banks lend a year, refinancing left out",
-      "argument": "One quantity per variable: the description counted refinancing, while Bank credit to farms → Financial leverage counts the new money only, refinancing adding no debt. The sentence on the repayment terms moves to Repayment required on farm loans. No link changes.",
-      "items": [
-        "bank-credit-to-farms"
-      ]
-    }
-  ]
+  "changes": []
 }

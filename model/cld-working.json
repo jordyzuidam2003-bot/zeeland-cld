@@ -4268,13 +4268,6 @@
   ],
   "changes": [
     {
-      "change": "Soil structure → Spring workability of the fields names the link that carries the sodium, not a variable no longer on the map",
-      "argument": "Clay dispersion & sodification is folded into Root zone salinity → Soil structure.",
-      "items": [
-        "soil-structure-usability -> spring-workability-of-the-fields"
-      ]
-    },
-    {
       "change": "Arable land in the polders: what the land becomes after arable use is outside the system boundary",
       "argument": "The model texts' boundary has decided it: what the land becomes afterwards is not in the model.",
       "items": [

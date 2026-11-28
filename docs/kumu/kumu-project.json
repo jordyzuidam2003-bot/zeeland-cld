@@ -6134,8 +6134,8 @@
         {
           "_id": "node-harvest-lost-to-salt",
           "position": {
-            "x": -140,
-            "y": 597
+            "x": -104,
+            "y": 608
           },
           "pinned": true,
           "style": {},
@@ -6741,7 +6741,7 @@
         },
         {
           "_id": "edge-harvest-lost-to-salt--farm-revenue",
-          "curvature": 0.6,
+          "curvature": 0.48,
           "style": {},
           "connection": "conn-harvest-lost-to-salt--farm-revenue"
         },
@@ -7191,7 +7191,7 @@
         },
         {
           "_id": "edge-farms-with-a-successor--farmland-leaving-arable-use",
-          "curvature": -0.5,
+          "curvature": -0.33,
           "style": {},
           "connection": "conn-farms-with-a-successor--farmland-leaving-arable-use"
         },
@@ -7319,8 +7319,8 @@
           "loop": "loop-B1",
           "style": {},
           "position": {
-            "x": -93,
-            "y": 856
+            "x": -75,
+            "y": 862
           }
         },
         {
@@ -7328,8 +7328,8 @@
           "loop": "loop-B2",
           "style": {},
           "position": {
-            "x": 352,
-            "y": 776
+            "x": 364,
+            "y": 780
           }
         },
         {
@@ -7337,8 +7337,8 @@
           "loop": "loop-B3",
           "style": {},
           "position": {
-            "x": -717,
-            "y": -288
+            "x": -713,
+            "y": -287
           }
         },
         {
@@ -7355,7 +7355,7 @@
           "loop": "loop-R2",
           "style": {},
           "position": {
-            "x": -229,
+            "x": -226,
             "y": -362
           }
         },
@@ -7427,8 +7427,8 @@
           "loop": "loop-R6",
           "style": {},
           "position": {
-            "x": 556,
-            "y": -89
+            "x": 560,
+            "y": -87
           }
         },
         {
@@ -7508,8 +7508,8 @@
           "loop": "loop-R8",
           "style": {},
           "position": {
-            "x": -715,
-            "y": -351
+            "x": -711,
+            "y": -350
           }
         },
         {

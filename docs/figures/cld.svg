@@ -228,20 +228,20 @@
 <text class="sign" x="130.0" y="-15.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="root-zone-salinity" data-to="harvest-lost-to-salt" data-sign="+" data-delay="false" data-curvature="-0.56">
-<path class="link-path" d="M -611.0 497.0 Q -467.1 800.1 -182.2 623.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-225.7" y="647.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -611.1 497.0 Q -455.4 825.8 -146.2 634.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-189.6" y="658.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="harvest-lost-to-salt" data-to="farm-revenue" data-sign="-" data-delay="false" data-curvature="0.6">
-<path class="link-path" d="M -121.2 571.0 Q -306.7 155.5 135.4 48.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="87.2" y="61.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<g class="link" data-from="harvest-lost-to-salt" data-to="farm-revenue" data-sign="-" data-delay="false" data-curvature="0.48">
+<path class="link-path" d="M -85.6 582.0 Q -217.2 204.9 154.3 58.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="108.4" y="77.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="salt-tolerant-crop-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="0.16">
-<path class="link-path" d="M 490.1 958.0 Q 151.5 881.7 -79.9 623.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-45.8" y="659.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M 495.1 958.0 Q 173.6 882.3 -44.2 634.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-10.4" y="670.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="tolerant-varieties-adoption" data-to="harvest-lost-to-salt" data-sign="-" data-delay="false" data-curvature="0.27">
-<path class="link-path" d="M -88.9 1055.0 Q -235.0 855.0 -147.9 623.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
-<text class="sign" x="-163.4" y="670.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+<path class="link-path" d="M -83.2 1055.0 Q -211.4 852.3 -112.2 634.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="-130.8" y="680.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
 <g class="link" data-from="salt-tolerant-crop-adoption" data-to="margin-given-up-on-high-margin-crops" data-sign="+" data-delay="false" data-curvature="0.14">
 <path class="link-path" d="M 596.2 1010.0 Q 532.4 1117.9 421.8 1177.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -267,21 +267,21 @@
 <path class="link-path" d="M -665.7 283.0 Q 83.8 611.0 725.9 104.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="686.3" y="134.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="harvest-lost-to-salt" data-to="tolerant-varieties-adoption" data-sign="+" data-delay="true" data-curvature="0.19" data-delay-t="0.32">
-<path class="link-path" d="M -113.9 623.0 Q 6.6 824.4 -37.1 1055.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-29.6" y="1005.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M -33.2 739.9 L -78.9 754.6 M -28.3 755.1 L -74.0 769.9" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M -33.2 739.9 L -78.9 754.6 M -28.3 755.1 L -74.0 769.9" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="harvest-lost-to-salt" data-to="tolerant-varieties-adoption" data-sign="+" data-delay="true" data-curvature="0.19" data-delay-t="0.28">
+<path class="link-path" d="M -78.2 634.0 Q 24.3 835.9 -33.2 1055.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-22.3" y="1006.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -12.4 734.3 L -58.6 747.2 M -8.1 749.7 L -54.3 762.6" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -12.4 734.3 L -58.6 747.2 M -8.1 749.7 L -54.3 762.6" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="tolerant-varieties-on-offer" data-to="tolerant-varieties-adoption" data-sign="+" data-delay="false" data-curvature="0.0">
 <path class="link-path" d="M 74.9 1402.0 Q 27.1 1288.5 -20.7 1175.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-1.3" y="1221.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="harvest-lost-to-salt" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="true" data-curvature="0.13" data-delay-t="0.36">
-<path class="link-path" d="M 22.4 613.0 Q 266.4 598.7 486.5 705.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="440.9" y="684.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
-<path class="delay-cut" d="M 190.0 593.5 L 184.1 641.2 M 205.9 595.5 L 200.0 643.1" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 190.0 593.5 L 184.1 641.2 M 205.9 595.5 L 200.0 643.1" stroke="#444444" stroke-width="5" fill="none"/>
+<g class="link" data-from="harvest-lost-to-salt" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="true" data-curvature="0.13" data-delay-t="0.32">
+<path class="link-path" d="M 58.4 624.0 Q 282.1 609.1 484.7 705.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="438.9" y="684.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 193.7 601.2 L 189.2 648.9 M 209.6 602.7 L 205.1 650.5" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 193.7 601.2 L 189.2 648.9 M 209.6 602.7 L 205.1 650.5" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="net-price-for-new-crops" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="false" data-curvature="-0.5">
 <path class="link-path" d="M 966.8 1230.0 Q 1075.9 890.1 736.0 781.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -463,11 +463,11 @@
 <path class="delay-cut" d="M -600.2 -920.1 L -571.9 -958.9 M -613.1 -929.6 L -584.8 -968.3" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M -600.2 -920.1 L -571.9 -958.9 M -613.1 -929.6 L -584.8 -968.3" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="root-zone-salinity" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="-" data-delay="true" data-curvature="-0.13" data-delay-t="0.72">
+<g class="link" data-from="root-zone-salinity" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="-" data-delay="true" data-curvature="-0.13" data-delay-t="0.24">
 <path class="link-path" d="M -497.1 497.0 Q -65.4 601.8 362.8 483.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="314.4" y="495.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
-<path class="delay-cut" d="M 111.7 509.2 L 117.9 556.8 M 127.5 507.2 L 133.8 554.7" stroke="white" stroke-width="11" fill="none"/>
-<path class="delay" d="M 111.7 509.2 L 117.9 556.8 M 127.5 507.2 L 133.8 554.7" stroke="#444444" stroke-width="5" fill="none"/>
+<path class="delay-cut" d="M -295.2 509.6 L -300.8 557.3 M -279.3 511.5 L -285.0 559.2" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -295.2 509.6 L -300.8 557.3 M -279.3 511.5 L -285.0 559.2" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="net-price-for-new-crops" data-to="margin-given-up-on-high-margin-crops" data-sign="-" data-delay="false" data-curvature="-0.29">
 <path class="link-path" d="M 892.3 1230.0 Q 691.4 1078.0 459.7 1177.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
@@ -581,9 +581,9 @@
 <path class="link-path" d="M 1570.5 1471.0 Q 1665.5 1375.9 1608.7 1254.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="1625.2" y="1301.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="farms-with-a-successor" data-to="farmland-leaving-arable-use" data-sign="+" data-delay="false" data-curvature="-0.5">
-<path class="link-path" d="M 165.6 -223.0 Q 301.6 -589.9 -65.3 -726.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-19.0" y="-707.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<g class="link" data-from="farms-with-a-successor" data-to="farmland-leaving-arable-use" data-sign="+" data-delay="false" data-curvature="-0.33">
+<path class="link-path" d="M 160.2 -223.0 Q 187.6 -566.0 -117.1 -726.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-73.6" y="-701.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="crop-water-shortfall" data-to="fields-moved-to-new-salt-tolerant-crops" data-sign="+" data-delay="true" data-curvature="-0.4" data-delay-t="0.48">
 <path class="link-path" d="M -1443.6 1152.0 Q -306.0 1766.0 542.8 791.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -592,8 +592,8 @@
 <path class="delay" d="M -429.5 1352.8 L -422.4 1400.3 M -413.6 1350.4 L -406.6 1397.9" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="harvest-lost-to-salt" data-sign="+" data-delay="false" data-curvature="0.1">
-<path class="link-path" d="M 427.4 483.0 Q 234.7 572.5 22.4 581.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="72.3" y="577.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M 435.3 483.0 Q 257.7 575.2 58.4 592.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="108.1" y="586.6" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="farm-revenue" data-sign="+" data-delay="false" data-curvature="-0.1">
 <path class="link-path" d="M 519.5 397.0 Q 440.0 204.8 292.7 58.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -608,8 +608,8 @@
 <text class="sign" x="-809.8" y="328.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="harvest-lost-to-salt" data-to="freshwater-storage-measures" data-sign="+" data-delay="false" data-curvature="-0.3">
-<path class="link-path" d="M -155.2 571.0 Q -291.3 270.5 -620.4 249.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-570.7" y="254.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -119.6 582.0 Q -269.5 264.1 -620.4 246.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-570.6" y="250.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="bank-credit-to-farms" data-to="farm-debt" data-sign="+" data-delay="false" data-curvature="0.57">
 <path class="link-path" d="M 1491.7 -767.0 Q 1699.3 -661.0 1567.2 -469.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -839,8 +839,8 @@
 <text x="-179.0" y="-504.5" text-anchor="middle">farmland</text>
 </g>
 <g class="element" data-id="harvest-lost-to-salt" data-domain="Ecological" data-type="Auxiliary" data-adaptive="false">
-<rect x="-302.4" y="571.0" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
-<text x="-140.0" y="605.5" text-anchor="middle">Harvest lost to salt</text>
+<rect x="-266.4" y="582.0" width="324.8" height="52.0" rx="18" fill="#9DD9AC" stroke="#444444" stroke-width="1.5"/>
+<text x="-104.0" y="616.5" text-anchor="middle">Harvest lost to salt</text>
 </g>
 <g class="element" data-id="margin-given-up-on-high-margin-crops" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
 <rect x="197.4" y="1177.0" width="295.1" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>

@@ -694,8 +694,8 @@
         "deolu-ajayi-2024",
         "allen-1998"
       ],
-      "x": -140,
-      "y": 597
+      "x": -104,
+      "y": 608
     },
     {
       "id": "margin-given-up-on-high-margin-crops",
@@ -1877,7 +1877,7 @@
         "deolu-ajayi-2024",
         "janssens-2020"
       ],
-      "curvature": 0.6
+      "curvature": 0.48
     },
     {
       "from": "salt-tolerant-crop-adoption",
@@ -2848,7 +2848,7 @@
         "delphy-2023-dorsd",
         "silvis-2017"
       ],
-      "curvature": -0.5
+      "curvature": -0.33
     },
     {
       "from": "crop-water-shortfall",

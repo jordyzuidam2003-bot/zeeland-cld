@@ -2895,6 +2895,18 @@
         "van-den-burg-2024",
         "deolu-ajayi-2024"
       ]
+    },
+    {
+      "from": "farmers-capacity-to-invest",
+      "to": "bank-credit-to-farms",
+      "polarity": "-",
+      "delay": false,
+      "description": "A farm short of cash first cuts maintenance and private spending or draws on its savings, and if that is not enough can ask its bank to defer part of its interest and repayments or for more credit (Verhagen et al., 2018, p. 28), so the less a farm has of its own to spend, the more credit it asks for, the bank weighing the request (Banks' risk assessment of farm loans → Bank credit to farms). The source describes credit asked to bridge a cash shortfall; no source read shows how the island's farms borrow to invest. Farmers also hold back: Rabobank's outstanding agricultural loans fell between 2010 and 2018 largely because farmers asked for less credit amid uncertainty over future environmental and climate rules (Banken.nl, 2019, for the Netherlands as a whole and all farm types), a driver no variable carries. Why the island's farmers ask or hold back is a question for the group model building session. Within the year: a farm asks when it runs short.",
+      "sources": [
+        "verhagen-2018",
+        "banken-nl-2019"
+      ],
+      "curvature": 0.4
     }
   ],
   "loops": [

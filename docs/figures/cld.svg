@@ -619,6 +619,10 @@
 <path class="link-path" d="M -214.3 1354.0 Q -27.1 1208.5 160.1 1063.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="120.7" y="1093.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
+<g class="link" data-from="farmers-capacity-to-invest" data-to="bank-credit-to-farms" data-sign="-" data-delay="false" data-curvature="0.4">
+<path class="link-path" d="M 772.1 -299.0 Q 773.9 -512.0 982.1 -557.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="934.0" y="-543.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+</g>
 </g>
 <g class="elements">
 <g class="element" data-id="hotter-drier-summers" data-domain="Ecological" data-type="Constant" data-adaptive="false">

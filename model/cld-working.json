@@ -4120,13 +4120,6 @@
   ],
   "changes": [
     {
-      "change": "Farmers' capacity to invest → Bank credit to farms (−) drawn: a farm short of cash asks its bank for more credit",
-      "argument": "No actor's decision disappears: Bank credit to farms had Banks' risk assessment as its only cause, so every change in it read as a bank's, while its sources show the farmers' asking moving it, a farm short of cash asking for more credit (Verhagen et al., 2018, p. 28) and the fall in Rabobank's farm loans coming largely from farmers asking less (Banken.nl, 2019). It closes a balancing loop (the farm bridges a shortfall by borrowing) and a reinforcing one, the debt spiral: capacity ↓ → credit ↑ → Debt payments ↑ → Farm income ↓ → capacity ↓. Why farmers ask or hold back, a session card (CLDSubsystems.md part 6). Rejected: a box Farmers' demand for credit, on the same sources; the credit as the banks' alone, a fold the rule does not allow.",
-      "items": [
-        "farmers-capacity-to-invest -> bank-credit-to-farms"
-      ]
-    },
-    {
       "change": "Repayment required on farm loans drawn, the banks' decision on the terms, + → Debt payments, delayed",
       "argument": "No actor's decision disappears: the banks' decision on repayment terms, ABN AMRO cutting the longest term on new farmland financing from fifty to forty years (van der Meulen et al., 2020, p. 47), was in words on Bank credit to farms and Debt payments. A Constant, the banks its actor: no source read shows banks setting the terms by a farm's risk. Delayed, since the terms are set for new loans. A bank lever for D2D: a longer term eases the payments that, by R2's hypothesis, hold farms to their crops. Basel IV was folded because no actor in the analysis can move it; the banks move their terms. Rejected: the terms held fixed in a simplification field.",
       "items": [

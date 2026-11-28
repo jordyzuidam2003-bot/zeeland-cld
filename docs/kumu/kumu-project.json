@@ -4610,6 +4610,26 @@
       "to": "elem-margin-given-up-on-high-margin-crops"
     },
     {
+      "_id": "conn-farmers-capacity-to-invest--bank-credit-to-farms",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "description": "A farm short of cash first cuts maintenance and private spending or draws on its savings, and if that is not enough can ask its bank to defer part of its interest and repayments or for more credit (Verhagen et al., 2018, p. 28), so the less a farm has of its own to spend, the more credit it asks for, the bank weighing the request (Banks' risk assessment of farm loans → Bank credit to farms). The source describes credit asked to bridge a cash shortfall; no source read shows how the island's farms borrow to invest. Farmers also hold back: Rabobank's outstanding agricultural loans fell between 2010 and 2018 largely because farmers asked for less credit amid uncertainty over future environmental and climate rules (Banken.nl, 2019, for the Netherlands as a whole and all farm types), a driver no variable carries. Why the island's farmers ask or hold back is a question for the group model building session. Within the year: a farm asks when it runs short.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "sources": "Verhagen, J., van Asseldonk, M., & Pronk, A. A. (2018). Open teelten en klimaatadaptatie in relatie tot de financiële weerbaarheid (Rapport WPR-755). Wageningen Research. https://klimaatadaptatienederland.nl/publish/pages/220072/2018_wur_open_teelten_en_klimaatadaptatie_in_relatie_tot_de_financiele_weerbaarheid.pdf\nBanken.nl. (2019, April 19). Rabobank merkt gestage afname kredietvraag boeren. https://www.banken.nl/nieuws/21601/rabobank-merkt-gestage-afname-kredietvraag-boeren",
+        "sourced": "yes",
+        "connection type": "-"
+      },
+      "from": "elem-farmers-capacity-to-invest",
+      "to": "elem-bank-credit-to-farms"
+    },
+    {
       "_id": "conn-0",
       "direction": "directed",
       "delayed": false,
@@ -6962,6 +6982,12 @@
           "curvature": 0.0,
           "style": {},
           "connection": "conn-tolerant-varieties-on-offer--margin-given-up-on-high-margin-crops"
+        },
+        {
+          "_id": "edge-farmers-capacity-to-invest--bank-credit-to-farms",
+          "curvature": 0.4,
+          "style": {},
+          "connection": "conn-farmers-capacity-to-invest--bank-credit-to-farms"
         }
       ],
       "loops": [

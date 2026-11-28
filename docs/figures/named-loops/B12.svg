@@ -6,7 +6,7 @@
 </defs>
 <rect x="-616" y="-320" width="1164" height="666" fill="white"/>
 <g class="links">
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="ditch-level-nap" data-sign="+" data-delay="true" data-curvature="-0.8">
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="ditch-level-nap" data-sign="+" data-delay="true" data-curvature="-0.65">
 <path class="link-path" d="M 352.3 -129.6 Q 420.4 -70.1 420.0 0.7 Q 419.6 71.6 350.9 130.8 Q 282.1 190.0 167.4 218.3" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="215.4" y="204.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 <path class="delay-cut" d="M 408.8 104.0 L 371.0 74.4 M 399.0 116.6 L 361.1 87.0" stroke="white" stroke-width="11" fill="none"/>

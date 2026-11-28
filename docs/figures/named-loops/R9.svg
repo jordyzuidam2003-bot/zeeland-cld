@@ -6,11 +6,11 @@
 </defs>
 <rect x="-649" y="-303" width="1261" height="606" fill="white"/>
 <g class="links">
-<g class="link" data-from="farmers-trust-in-government" data-to="policy-resistance-legal-delays" data-sign="-" data-delay="false" data-curvature="0.9">
+<g class="link" data-from="farmers-trust-in-government" data-to="policy-resistance-legal-delays" data-sign="-" data-delay="false" data-curvature="0.24">
 <path class="link-path" d="M 382.5 43.0 Q 355.4 120.6 247.5 170.8 Q 139.6 221.0 0.0 221.0 Q -139.6 221.0 -247.5 170.8 Q -355.4 120.6 -382.5 43.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-359.0" y="87.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="policy-resistance-legal-delays" data-to="farmers-trust-in-government" data-sign="-" data-delay="false" data-curvature="0.9">
+<g class="link" data-from="policy-resistance-legal-delays" data-to="farmers-trust-in-government" data-sign="-" data-delay="false" data-curvature="0.52">
 <path class="link-path" d="M -382.5 -43.0 Q -355.4 -120.6 -247.5 -170.8 Q -139.6 -221.0 0.0 -221.0 Q 139.6 -221.0 247.5 -170.8 Q 355.4 -120.6 382.5 -43.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="359.0" y="-87.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>

@@ -10,7 +10,7 @@
 <path class="link-path" d="M 397.8 43.0 Q 370.5 124.2 258.2 176.8 Q 145.8 229.5 -0.0 229.5 Q -145.8 229.5 -258.2 176.8 Q -370.5 124.2 -397.8 43.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-375.0" y="87.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="plans-to-raise-ditch-levels" data-to="policy-resistance-legal-delays" data-sign="+" data-delay="false" data-curvature="0.9">
+<g class="link" data-from="plans-to-raise-ditch-levels" data-to="policy-resistance-legal-delays" data-sign="+" data-delay="false" data-curvature="0.55">
 <path class="link-path" d="M -397.8 -43.0 Q -370.5 -124.2 -258.2 -176.8 Q -145.8 -229.5 0.0 -229.5 Q 145.8 -229.5 258.2 -176.8 Q 370.5 -124.2 397.8 -43.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="375.0" y="-87.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

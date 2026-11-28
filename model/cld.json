@@ -1449,7 +1449,7 @@
         "kaandorp-2022"
       ],
       "curvature": 0.0,
-      "simplification": "Folds Crop water demand, a step between the two with no actor and no decision: hotter, drier summers raise what crops need, and what they need beyond the water they get is the shortfall. The sign is the product of the two steps (+, then +). Hotter, drier summers is a Constant, so no loop runs through the link. What it leaves out: what crops need is no variable of its own, so a crop's own water need, new crops against the current ones, cannot enter; no source read shows whether the new crops need less."
+      "simplification": "Folds the weather's part of what crops need, a step between the two with no actor and no decision: hotter, drier summers raise what crops need, and what they need beyond the water they get is the shortfall. The sign is the product of the two steps (+, then +). Hotter, drier summers is a Constant, so no loop runs through the link. What the crop plan needs is drawn apart, as Water demand of the crop mix; what the link leaves out is that the weather's part runs straight to the shortfall, not through that variable."
     },
     {
       "from": "freshwater-availability-for-crops",

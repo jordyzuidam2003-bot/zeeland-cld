@@ -4077,13 +4077,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Hotter, drier summers → Crop water shortfall's field no longer says a crop's own water need cannot enter",
-      "argument": "Untrue since batch 14 drew Water demand of the crop mix, the crop plan's need, into Crop water shortfall; the field now says the weather's part runs past it. No link changes.",
-      "items": [
-        "hotter-drier-summers -> crop-water-shortfall"
-      ]
-    }
-  ]
+  "changes": []
 }

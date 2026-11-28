@@ -4361,13 +4361,6 @@
   ],
   "changes": [
     {
-      "change": "B16 named, Soil care repairs the structure farmers see decline: Soil structure → Soil care on the farms → Soil structure",
-      "argument": "The named loops' selection rule (cld-texts.md): it runs through a practice itself, so its own uptake slows as the structure recovers. Balancing: structure falls, care rises (−), structure recovers (+). A loop for the session to test, since it closes through a hypothesis.",
-      "items": [
-        "B16"
-      ]
-    },
-    {
       "change": "R12 named, Soil care keeps up the yield that pays for it: Farmers' capacity to invest → Soil care on the farms → Soil structure → Crop yield → Farm income → Farmers' capacity to invest",
       "argument": "The named loops' selection rule (cld-texts.md): it runs through the money a farm has to adopt a practice, as R4 does for storage. Reinforcing: every link +, the structure's gain to the yield sourced (van Beekom et al., 1953b, p. 234), the capacity to pay a hypothesis.",
       "items": [

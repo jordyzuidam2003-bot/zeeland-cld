@@ -3421,6 +3421,15 @@
         "crop-water-shortfall"
       ],
       "description": "The more of the arable land is under the high-margin crops, the more water the crop plan needs and, with the water the island has, the larger the shortfall; over years, farms short of water move off those crops, sown onions first, to cereals, and the shortfall shrinks. It seeks a crop plan the island's water can carry: the water is a limit farmers fit their crops to, as much as the salt. On the island the sown onions fell from 1,214 ha in 2015 to 791 ha in 2022 (Delphy, 2023, p. 15). It holds back the income the high-margin crops bring, so where a farm adapts this way it adapts by earning less."
+    },
+    {
+      "id": "B16",
+      "name": "Soil care repairs the structure farmers see decline",
+      "path": [
+        "soil-structure-usability",
+        "soil-care"
+      ],
+      "description": "Where farmers see the structure of their clay decline, they care for it more, building up organic matter, sparing the soil or adding gypsum, and the structure recovers over years: a balancing loop that seeks the structure a farmer accepts. It runs through a practice itself, and closes through a hypothesis for the group model building session, why farmers choose soil care. How far the care makes up for salt is largely uncertain (Soil care → Soil structure), and organic matter takes five to ten years to build up, so the correction lags the decline."
     }
   ],
   "groups": [

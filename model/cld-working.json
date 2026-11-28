@@ -4224,13 +4224,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Risk premium on farm loans → Interest on farm loans delayed: the fixed-rate share reprices at its reset",
-      "argument": "No delay lost: under the banks' code a higher premium reaches a loan with a fixed rate or a fixed premium only at the next reset, a new loan or a breach (Nederlandse Vereniging van Banken, 2023, p. 15), the link's own description; \"within the year\" for all debt had no source, ABN AMRO (n.d.-b) giving no timing. R2 and the loop premium → interest → income → the bank's risk → premium stay reinforcing. Rejected: the link kept undelayed, stated.",
-      "items": [
-        "bank-credit-freeze-risk-premiums -> debt-payments"
-      ]
-    }
-  ]
+  "changes": []
 }

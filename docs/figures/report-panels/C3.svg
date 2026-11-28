@@ -14,9 +14,11 @@
 <path class="link-path" d="M 1107.7 2.3 Q 1049.5 71.2 973.4 119.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="1014.4" y="90.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="bank-credit-freeze-risk-premiums" data-to="debt-payments" data-sign="+" data-delay="false" data-curvature="0.1">
+<g class="link" data-from="bank-credit-freeze-risk-premiums" data-to="debt-payments" data-sign="+" data-delay="true" data-curvature="0.1">
 <path class="link-path" d="M 807.1 205.4 Q 725.2 242.2 638.3 264.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="686.4" y="251.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 754.3 253.2 L 737.8 208.1 M 739.3 258.7 L 722.8 213.6" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 754.3 253.2 L 737.8 208.1 M 739.3 258.7 L 722.8 213.6" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="debt-payments" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="0.1">
 <path class="link-path" d="M 397.0 316.6 Q 282.6 341.0 165.8 343.9" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>

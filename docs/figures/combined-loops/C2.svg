@@ -38,9 +38,11 @@
 <path class="link-path" d="M -792.3 1245.0 Q -886.1 1139.7 -939.0 1009.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-918.9" y="1054.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="bank-credit-freeze-risk-premiums" data-to="debt-payments" data-sign="+" data-delay="false" data-curvature="0.124">
+<g class="link" data-from="bank-credit-freeze-risk-premiums" data-to="debt-payments" data-sign="+" data-delay="true" data-curvature="0.124">
 <path class="link-path" d="M -967.8 923.0 Q -1004.9 782.7 -985.1 639.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-990.2" y="688.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -1014.1 791.3 L -966.2 788.4 M -1015.1 775.3 L -967.2 772.4" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -1014.1 791.3 L -966.2 788.4 M -1015.1 775.3 L -967.2 772.4" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="debt-payments" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="0.124">
 <path class="link-path" d="M -975.8 587.0 Q -945.3 448.0 -867.5 329.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>

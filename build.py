@@ -105,7 +105,7 @@ REFERENCES = MODEL / "references.json"
 ELEMENT_TYPES = ["Constant", "Auxiliary", "Stock"]
 SUBQUESTIONS = ["SQ1", "SQ2", "SQ3"]
 SETS_LETTER = {"Social": "S", "Ecological": "E", "Technological": "T"}
-CONSTANT_REACH = 400  # the most a Constant's box keeps from a box it drives: about one box's width and a bit
+CONSTANT_REACH = 400  # the most a Constant's box with one link keeps from the box it drives: about one box's width and a bit
 
 # An actor's columns take a value from these lists, the Actor Map's own: they start from the
 # values the group's old Actor Table used, which bind nothing (Jordy: the old table gave the
@@ -648,10 +648,12 @@ def check(cld, refs, actors):
         constant = {e["id"] for e in cld["elements"] if e["element type"] == "Constant"}
         warnings += [f"{c['from']} -> {c['to']}: a Constant's link, yet bent (curvature {c['curvature']})"
                      for c in cld["connections"] if c["from"] in constant and c["curvature"] != 0]
-        # ... and it sits beside what it drives, so its link reads as its own.
+        # ... and one with one link sits beside what it drives, so its link reads as its own; one
+        # driving several sits among them with no limit, as they may belong far apart (Jordy).
         bxs = draw_cld.boxes(cld)
+        single = [c["from"] for c in cld["connections"] if c["from"] in constant]
         for c in cld["connections"]:
-            if c["from"] in constant:
+            if single.count(c["from"]) == 1:
                 a, b = bxs[c["from"]], bxs[c["to"]]
                 gap = math.hypot(max(a[0] - b[2], b[0] - a[2], 0), max(a[1] - b[3], b[1] - a[3], 0))
                 if gap > CONSTANT_REACH:

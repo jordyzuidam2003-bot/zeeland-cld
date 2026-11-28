@@ -156,8 +156,9 @@ an element it does not connect, which would read as if that element
 mediates it. A named loop may cross itself here, since each is read on its own map and
 figure. A Constant's links run straight, and `build.py`
 warns on a bent one; every other link has some bend but where a straight line reads more clearly (overall links bend, and an exception is judged by eye), and it warns on a straight one. A
-Constant sits beside what it drives, its box at most 400 units from each box it drives
-(Jordy), and `build.py` warns on one further away.
+Constant sits beside what it drives, one with a single link its box at most 400 units from the
+box it drives (Jordy), and `build.py` warns on one further away; one driving several sits among
+them, with no limit, since what it drives may belong far apart (Jordy).
 
 The Actor Map's page has the same Move mode: drag an actor to move it, a relation to bend it (its
 middle follows the pointer, with no snapping), then "Download layout" saves `layout.json` with

@@ -4359,13 +4359,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "R12 named, Soil care keeps up the yield that pays for it: Farmers' capacity to invest → Soil care on the farms → Soil structure → Crop yield → Farm income → Farmers' capacity to invest",
-      "argument": "The named loops' selection rule (cld-texts.md): it runs through the money a farm has to adopt a practice, as R4 does for storage. Reinforcing: every link +, the structure's gain to the yield sourced (van Beekom et al., 1953b, p. 234), the capacity to pay a hypothesis.",
-      "items": [
-        "R12"
-      ]
-    }
-  ]
+  "changes": []
 }

@@ -3430,6 +3430,18 @@
         "soil-care"
       ],
       "description": "Where farmers see the structure of their clay decline, they care for it more, building up organic matter, sparing the soil or adding gypsum, and the structure recovers over years: a balancing loop that seeks the structure a farmer accepts. It runs through a practice itself, and closes through a hypothesis for the group model building session, why farmers choose soil care. How far the care makes up for salt is largely uncertain (Soil care → Soil structure), and organic matter takes five to ten years to build up, so the correction lags the decline."
+    },
+    {
+      "id": "R12",
+      "name": "Soil care keeps up the yield that pays for it",
+      "path": [
+        "farmers-capacity-to-invest",
+        "soil-care",
+        "soil-structure-usability",
+        "crop-yield",
+        "farm-revenue"
+      ],
+      "description": "A farm with more left to invest can care more for its soil, the structure improves over years, the crops germinate better and yield more, the income rises and leaves more to invest. It runs through the money a farm has to adopt a practice, as R4 does for storage, and closes through a hypothesis, that capacity to invest decides whether a farm can pay. Read the other way, a farm short of money cares less for its soil and loses yield over years."
     }
   ],
   "groups": [

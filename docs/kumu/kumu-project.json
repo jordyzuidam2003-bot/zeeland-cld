@@ -5853,6 +5853,20 @@
         "conn-soil-structure-usability--soil-care",
         "conn-soil-care--soil-structure-usability"
       ]
+    },
+    {
+      "_id": "loop-R12",
+      "attributes": {
+        "label": "R12 Soil care keeps up the yield that pays for it",
+        "description": "A farm with more left to invest can care more for its soil, the structure improves over years, the crops germinate better and yield more, the income rises and leaves more to invest. It runs through the money a farm has to adopt a practice, as R4 does for storage, and closes through a hypothesis, that capacity to invest decides whether a farm can pay. Read the other way, a farm short of money cares less for its soil and loses yield over years."
+      },
+      "connections": [
+        "conn-farmers-capacity-to-invest--soil-care",
+        "conn-soil-care--soil-structure-usability",
+        "conn-soil-structure-usability--crop-yield",
+        "conn-crop-yield--farm-revenue",
+        "conn-farm-revenue--farmers-capacity-to-invest"
+      ]
     }
   ],
   "maps": [
@@ -7679,6 +7693,15 @@
           "position": {
             "x": -996,
             "y": -73
+          }
+        },
+        {
+          "_id": "mloop-R12",
+          "loop": "loop-R12",
+          "style": {},
+          "position": {
+            "x": -274,
+            "y": 35
           }
         }
       ]
@@ -13480,6 +13503,115 @@
         {
           "_id": "mloop-loop-B16-B16",
           "loop": "loop-B16",
+          "style": {},
+          "pinned": true,
+          "position": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "_id": "map-loop-R12",
+      "name": "39 R12 Soil care keeps up the yield that pays for it",
+      "description": "A farm with more left to invest can care more for its soil, the structure improves over years, the crops germinate better and yield more, the income rises and leaves more to invest. It runs through the money a farm has to adopt a practice, as R4 does for storage, and closes through a hypothesis, that capacity to invest decides whether a farm can pay. Read the other way, a farm short of money cares less for its soil and loses yield over years.",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "defaultPerspective": "pers-loops",
+      "defaultElementBehavior": "fixed",
+      "defaultConnectionDirection": "directed",
+      "elements": [
+        {
+          "_id": "node-loop-R12-farmers-capacity-to-invest",
+          "position": {
+            "x": -247,
+            "y": -193
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-farmers-capacity-to-invest"
+        },
+        {
+          "_id": "node-loop-R12-soil-care",
+          "position": {
+            "x": 226,
+            "y": -201
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-soil-care"
+        },
+        {
+          "_id": "node-loop-R12-soil-structure-usability",
+          "position": {
+            "x": 397,
+            "y": 78
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-soil-structure-usability"
+        },
+        {
+          "_id": "node-loop-R12-crop-yield",
+          "position": {
+            "x": 29,
+            "y": 237
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-crop-yield"
+        },
+        {
+          "_id": "node-loop-R12-farm-revenue",
+          "position": {
+            "x": -364,
+            "y": 118
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-farm-revenue"
+        }
+      ],
+      "connections": [
+        {
+          "_id": "edge-loop-R12-farmers-capacity-to-invest--soil-care",
+          "curvature": 0.175,
+          "style": {},
+          "connection": "conn-farmers-capacity-to-invest--soil-care"
+        },
+        {
+          "_id": "edge-loop-R12-soil-care--soil-structure-usability",
+          "curvature": 0.498,
+          "style": {},
+          "connection": "conn-soil-care--soil-structure-usability"
+        },
+        {
+          "_id": "edge-loop-R12-soil-structure-usability--crop-yield",
+          "curvature": 0.228,
+          "style": {},
+          "connection": "conn-soil-structure-usability--crop-yield"
+        },
+        {
+          "_id": "edge-loop-R12-crop-yield--farm-revenue",
+          "curvature": 0.191,
+          "style": {},
+          "connection": "conn-crop-yield--farm-revenue"
+        },
+        {
+          "_id": "edge-loop-R12-farm-revenue--farmers-capacity-to-invest",
+          "curvature": 0.619,
+          "style": {},
+          "connection": "conn-farm-revenue--farmers-capacity-to-invest"
+        }
+      ],
+      "loops": [
+        {
+          "_id": "mloop-loop-R12-R12",
+          "loop": "loop-R12",
           "style": {},
           "pinned": true,
           "position": {

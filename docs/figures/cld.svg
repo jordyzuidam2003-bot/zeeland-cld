@@ -339,9 +339,11 @@
 <path class="link-path" d="M 1881.9 481.0 Q 2468.0 122.4 2387.8 -560.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="2392.8" y="-510.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="spending-on-keeping-current-crops" data-to="groundwater-extraction-for-irrigation" data-sign="+" data-delay="false" data-curvature="-0.14">
+<g class="link" data-from="spending-on-keeping-current-crops" data-to="groundwater-extraction-for-irrigation" data-sign="+" data-delay="true" data-curvature="-0.14" data-delay-t="0.12">
 <path class="link-path" d="M 1658.0 506.3 Q 545.6 366.7 -477.6 825.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-431.8" y="804.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 1398.8 505.8 L 1401.8 457.9 M 1382.9 504.8 L 1385.8 456.9" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 1398.8 505.8 L 1401.8 457.9 M 1382.9 504.8 L 1385.8 456.9" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="mortgage-debt-financial-leverage" data-to="banks-risk-assessment" data-sign="+" data-delay="false" data-curvature="-0.22">
 <path class="link-path" d="M 1012.8 -889.0 Q 1077.2 -977.0 1055.9 -1084.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>

@@ -4079,14 +4079,6 @@
   ],
   "changes": [
     {
-      "change": "Spending on keeping the current crops → Groundwater extraction for irrigation delayed, the wells and deep drains in place folded into the delay",
-      "argument": "No delay lost: a year's spending links to a year's pumping, while the wells and deep drains it buys stay and pump for years, and Machines and storage for the current crops, the stock the spending fills, holds neither. By cld-method.md a folded stock's slowness becomes the link's delay, as on Root zone salinity → Dependence on high-margin salt-sensitive crops. Every loop keeps its sign (spending → wells → pumping is +, then +). The field's old claim, that the crops' water need in a dry spell was folded here, goes: batch 14 drew it, through Water demand of the crop mix and Crop water shortfall. How long a well lasts, no source read gives. Rejected: the wells as a stock of their own, worth it only for D2D to vary them apart from spending, which no lever does.",
-      "items": [
-        "spending-on-keeping-current-crops -> groundwater-extraction-for-irrigation",
-        "spending-on-keeping-current-crops"
-      ]
-    },
-    {
       "change": "Freshwater lens thickness under creek ridges and dunes → Pumping the water board allows delayed, for the revision of the map of fresh bodies",
       "argument": "No delay lost: the link's own source shows the allowance answering the board's map of fresh bodies, revised periodically, wells in use left pumping after a revision (Waterschap Scheldestromen, 2019, p. 20); 'no source read shows how often' showed the interval unknown, not absent. B8 stays balancing, now with a delay: the lens can thin further than the rules intend before they respond, as its sibling from Upconing of salt groundwater is delayed for the measuring interval.",
       "items": [

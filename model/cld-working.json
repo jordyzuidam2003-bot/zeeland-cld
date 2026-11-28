@@ -4278,19 +4278,6 @@
   ],
   "changes": [
     {
-      "change": "A field moved to a new crop leaves the other current crops, cereals, sugar beet or grass seed, the room the high-margin crops leave in the rotation: Land under high-margin crops → Fields moved to new crops sourced and no longer a hypothesis; Adoption of salt-tolerant varieties a part of the high-margin crops",
-      "argument": "Fibre crops and legumes could replace winter wheat on the island (Delphy, 2023, p. 48); the area of protein crops depends on the room left in the rotation, and a larger share of them is not always wanted with many potatoes and beets (Polman et al., 2026, pp. 8, 17); quinoa in a model for Flanders mostly took the place of maize and winter wheat (Cloet et al., 2024, p. 3). No source read shows it on the island, where no new crop is grown: a session card. Salt counted once, since a moved field leaves the high-margin crops' hectares as they were. No loop changes its polarity.",
-      "items": [
-        "fields-moved-to-new-salt-tolerant-crops",
-        "salt-tolerant-crop-adoption",
-        "tolerant-varieties-adoption",
-        "water-demand-of-the-crop-mix",
-        "dependence-on-high-margin-salt-sensitive-crops -> fields-moved-to-new-salt-tolerant-crops",
-        "salt-tolerant-crop-adoption -> harvest-lost-to-salt",
-        "crop-water-shortfall -> fields-moved-to-new-salt-tolerant-crops"
-      ]
-    },
-    {
       "change": "Margin given up on high-margin crops relabelled Margin given up on switching: on the hectares moved to new crops it is the margin of the cereal, sugar beet or grass seed replaced, so B10 stays balancing but weak, and may run the other way for a new crop that pays better",
       "argument": "Fibre crops and legumes earn about what winter wheat does or less (Delphy, 2023, p. 48), protein crops' margin is comparable to cereals' (Polman et al., 2026, p. 9), while quinoa can pay on many farms in a study for Flanders (Cloet et al., 2024, p. 3): cld-method.md's \"Does its sign hold in every condition?\", the sign kept on the island's sources and its condition stated. The potatoes' margin is in Land under high-margin crops → Farm income. Settles the audit's finding that the element held the replaced crop's prices fixed, by stating it.",
       "items": [

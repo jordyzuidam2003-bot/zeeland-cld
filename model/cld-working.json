@@ -4268,13 +4268,6 @@
   ],
   "changes": [
     {
-      "change": "Arable land in the polders: what the land becomes after arable use is outside the system boundary",
-      "argument": "The model texts' boundary has decided it: what the land becomes afterwards is not in the model.",
-      "items": [
-        "farmland-leaving-arable-use"
-      ]
-    },
-    {
       "change": "C1: some new crops need machines of their own, not all",
       "argument": "Since the new crops include those coping with little fresh water, quinoa among them, which is sown with standard equipment and harvested with a combine (van Loo, 2023, p. 75, in Capital lost on switching to new crops).",
       "items": [

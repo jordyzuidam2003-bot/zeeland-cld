@@ -4079,13 +4079,6 @@
   ],
   "changes": [
     {
-      "change": "Freshwater lens thickness under creek ridges and dunes → Pumping the water board allows delayed, for the revision of the map of fresh bodies",
-      "argument": "No delay lost: the link's own source shows the allowance answering the board's map of fresh bodies, revised periodically, wells in use left pumping after a revision (Waterschap Scheldestromen, 2019, p. 20); 'no source read shows how often' showed the interval unknown, not absent. B8 stays balancing, now with a delay: the lens can thin further than the rules intend before they respond, as its sibling from Upconing of salt groundwater is delayed for the measuring interval.",
-      "items": [
-        "creek-ridge-lens-thickness -> pumping-the-water-board-allows"
-      ]
-    },
-    {
       "change": "Hotter, drier summers → Crop water shortfall's field no longer says a crop's own water need cannot enter",
       "argument": "Untrue since batch 14 drew Water demand of the crop mix, the crop plan's need, into Crop water shortfall; the field now says the weather's part runs past it. No link changes.",
       "items": [

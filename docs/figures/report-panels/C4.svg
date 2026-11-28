@@ -54,9 +54,11 @@
 <path class="link-path" d="M -725.5 117.9 Q -730.5 68.0 -715.9 20.1 Q -701.4 -27.8 -669.6 -66.5" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-697.4" y="-25.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="creek-ridge-lens-thickness" data-to="pumping-the-water-board-allows" data-sign="+" data-delay="false" data-curvature="0.711">
+<g class="link" data-from="creek-ridge-lens-thickness" data-to="pumping-the-water-board-allows" data-sign="+" data-delay="true" data-curvature="0.711">
 <path class="link-path" d="M -325.5 -735.0 Q -253.0 -861.6 -114.8 -908.2 Q 23.5 -954.8 157.8 -897.7 Q 292.1 -840.7 354.6 -708.9" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="330.6" y="-752.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 16.9 -953.1 L 14.9 -905.2 M 32.9 -952.5 L 30.9 -904.5" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 16.9 -953.1 L 14.9 -905.2 M 32.9 -952.5 L 30.9 -904.5" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="pumping-the-water-board-allows" data-to="groundwater-extraction-for-irrigation" data-sign="+" data-delay="false" data-curvature="0.364">
 <path class="link-path" d="M 365.6 -622.9 Q 347.2 -531.4 290.8 -457.1 Q 234.4 -382.7 151.3 -340.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>

@@ -661,6 +661,16 @@
 <path class="link-path" d="M 733.5 18.0 Q 494.1 -195.2 355.1 -484.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="377.5" y="-439.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
+<g class="link" data-from="soil-care" data-to="soil-structure-usability" data-sign="+" data-delay="true" data-curvature="0.15" data-delay-t="0.35">
+<path class="link-path" d="M -883.1 -94.0 Q -950.8 -45.4 -1034.1 -42.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-984.5" y="-48.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M -914.7 -47.2 L -934.4 -90.9 M -929.3 -40.6 L -949.0 -84.3" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M -914.7 -47.2 L -934.4 -90.9 M -929.3 -40.6 L -949.0 -84.3" stroke="#444444" stroke-width="5" fill="none"/>
+</g>
+<g class="link" data-from="soil-care" data-to="farmers-capacity-to-invest" data-sign="-" data-delay="false" data-curvature="0.15">
+<path class="link-path" d="M -759.2 -133.6 Q -18.1 -273.3 677.5 18.0" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
+<text class="sign" x="631.2" y="-0.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
+</g>
 </g>
 <g class="elements">
 <g class="element" data-id="hotter-drier-summers" data-domain="Ecological" data-type="Constant" data-adaptive="false">
@@ -981,6 +991,10 @@
 <rect x="1504.4" y="107.0" width="295.1" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
 <text x="1652.0" y="141.5" text-anchor="middle">Repayments on farm</text>
 <text x="1652.0" y="175.5" text-anchor="middle">loans</text>
+</g>
+<g class="element" data-id="soil-care" data-domain="Technological" data-type="Auxiliary" data-adaptive="true">
+<rect x="-920.8" y="-146.0" width="161.6" height="52.0" rx="18" fill="#FBC07C" stroke="#444444" stroke-width="5"/>
+<text x="-840.0" y="-111.5" text-anchor="middle">Soil care</text>
 </g>
 </g>
 <g class="legend">

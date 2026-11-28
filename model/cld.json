@@ -123,7 +123,7 @@
       "subsystem": "Water and soil",
       "subquestion": "SQ1",
       "description": "The soil's aggregates and pores, which set how fast water soaks in: well-drained clay with its structure intact let the winter's rain surplus soak through almost completely, while clay whose structure sodium had broken down became impervious and sticky when wet (van Beekom et al., 1953a, p. 157; 1953b, pp. 230, 233, measured after the floods in Zeeland). A Stock: once broken down, it recovers over years (Root zone salinity → Soil structure). Workability, which structure and wetness both shape, is Spring workability of the fields.",
-      "simplification": "Draws the salt as the only driver of Soil structure. It leaves out the smearing and compaction of soil worked too wet, which Spring workability of the fields describes, because that damage comes from when and how the soil is worked, not from the salt or the fresh water, and no source on this element shows how much it adds on the island. Leaving it out removes an inflow and folds no step: every drawn link keeps its sign, and R1 stays reinforcing. A feedback from poor workability back to structure, if farmers work the soil while it is still wet, is not drawn.",
+      "simplification": "Draws the salt and Soil care as the drivers of Soil structure. It leaves out the smearing and compaction of soil worked too wet, which Spring workability of the fields describes, because that damage comes from when and how the soil is worked, not from the salt or the fresh water, and no source on this element shows how much it adds on the island. Leaving it out removes an inflow and folds no step: every drawn link keeps its sign, and R1 stays reinforcing. A feedback from poor workability back to structure, if farmers work the soil while it is still wet, is not drawn.",
       "sources": [
         "van-beekom-1953-salt",
         "van-beekom-1953"
@@ -1215,6 +1215,24 @@
       ],
       "x": 1652,
       "y": 150
+    },
+    {
+      "id": "soil-care",
+      "label": "Soil care",
+      "element type": "Auxiliary",
+      "adaptive practice": true,
+      "sets domain": "Technological",
+      "subsystem": "Water and soil",
+      "subquestion": "SQ2",
+      "description": "The hectares a year of the island's arable land on which farms care for their soil's structure: building up organic matter with compost, stable manure or green manure, sparing the soil by non-inversion tillage or by keeping the machines off the land where crops grow (controlled traffic farming), or adding gypsum. The study for the island's farmers calls good care of the soil a must for every arable farmer, on Schouwen-Duiveland or not: organic matter matters for soil life, workability, preventing slaking and a good yield, though good soil care can never replace water (Delphy, 2023, p. 28). Non-inversion tillage stands closer to practice, while controlled traffic asks a considerable change of machines but can pay (pp. 27–28). Raising organic matter by 1% would take an enormous supply of manure, compost or cuttings, which current legislation does not allow, since it brings large amounts of nitrogen and phosphate with it (p. 28). In a survey of 2013 in the south-west Netherlands, 4 of 142 farmers named applying organic matter to hold more moisture in the soil as a drought measure of their own, beyond the twelve the survey listed (van Duinen et al., 2015a, p. 1084). An adaptive practice: farmers caring for the structure that salt, wet working and heavy showers put at risk. A hectare under soil care lies in any crop group, so it counts the arable land on a second axis and moves no hectare between the groups of Arable land in the polders; a rotation with more grass, the fastest way to build up organic matter (p. 28), or with more cereals is the crop account's, not this element's. Whether a farm on a short lease cares for soil it may no longer farm by the time the care pays is a question for the group model building session. Applied season by season, its slowness in the soil: an Auxiliary, its build-up in Soil structure.",
+      "simplification": "Counts the practices as one quantity, the hectares cared for, each reaching the crops through Soil structure. It assumes they act alike on the structure and respond alike to its drivers, while organic matter builds up over years and gypsum works on the sodium. Every loop through it keeps its polarity and its mechanism; what it leaves out is that the semi-quantitative analysis cannot vary them apart. The soil's capacity to hold water is outside the system boundary: 1% more organic matter holds at most 4 mm more water (Delphy, 2023, p. 28).",
+      "sources": [
+        "delphy-2023-dorsd",
+        "van-duinen-2015-coping"
+      ],
+      "x": -840,
+      "y": -120,
+      "actor": "arable-farmers"
     }
   ],
   "connections": [
@@ -3059,6 +3077,30 @@
         "farjon-2013"
       ],
       "curvature": 0.1
+    },
+    {
+      "from": "soil-care",
+      "to": "soil-structure-usability",
+      "polarity": "+",
+      "delay": true,
+      "description": "Soil care builds the structure up over years: keeping up organic matter matters for soil life, workability, preventing slaking and a good yield, and raising it by 1% takes five to ten years or longer for most rotations, compost and old stable manure adding more effective organic matter than crop residues, grass the fastest (Delphy, 2023, p. 28, in the study for the island's farmers). On clay in Zeeland flooded by the sea in 1944–45, gypsum restored the structure sodium had broken down, the soil drying sooner in spring (van Beekom et al., 1953b, pp. 233–234). How far gypsum, green manure or organic matter can make up for salt, below the level at which cultivation on clay stops being effective, is largely uncertain, by many of 50 experts and stakeholders interviewed across the salinisation-prone provinces (Beauchampet, 2022, p. 221), so the + holds while its strength may be small where salt is the cause. Years, so a delay: organic matter builds up over five to ten years.",
+      "sources": [
+        "delphy-2023-dorsd",
+        "van-beekom-1953",
+        "beauchampet-2022"
+      ],
+      "curvature": 0.15
+    },
+    {
+      "from": "soil-care",
+      "to": "farmers-capacity-to-invest",
+      "polarity": "-",
+      "delay": false,
+      "description": "What soil care costs comes out of the money left to invest: controlled traffic farming asks a considerable change of machines, though it can pay (Delphy, 2023, p. 27), and building up organic matter asks compost or stable manure to be brought in (p. 28). What compost, manure, green manure or gypsum cost a farm on the island, no source read gives. Within the year: the cost falls in the year it is paid.",
+      "sources": [
+        "delphy-2023-dorsd"
+      ],
+      "curvature": 0.15
     }
   ],
   "loops": [

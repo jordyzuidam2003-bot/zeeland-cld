@@ -5979,8 +5979,8 @@
         {
           "_id": "node-dependence-on-high-margin-salt-sensitive-crops",
           "position": {
-            "x": 1852,
-            "y": -758
+            "x": 1316,
+            "y": -113
           },
           "pinned": true,
           "style": {},
@@ -6516,13 +6516,13 @@
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage",
-          "curvature": -0.32,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--demand-for-deep-polder-drainage"
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--fields-moved-to-new-salt-tolerant-crops",
-          "curvature": -0.39,
+          "curvature": 0.8,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--fields-moved-to-new-salt-tolerant-crops"
         },
@@ -6810,7 +6810,7 @@
         },
         {
           "_id": "edge-fields-moved-to-new-salt-tolerant-crops--farmers-capacity-to-invest",
-          "curvature": 0.2,
+          "curvature": 0.14,
           "style": {},
           "connection": "conn-fields-moved-to-new-salt-tolerant-crops--farmers-capacity-to-invest"
         },
@@ -6834,7 +6834,7 @@
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--capital-lost-on-switching",
-          "curvature": 0.27,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--capital-lost-on-switching"
         },
@@ -6846,7 +6846,7 @@
         },
         {
           "_id": "edge-capital-lost-on-switching--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": 0.32,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-capital-lost-on-switching--dependence-on-high-margin-salt-sensitive-crops"
         },
@@ -6924,7 +6924,7 @@
         },
         {
           "_id": "edge-debt-payments--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": -0.14,
+          "curvature": -0.22,
           "style": {},
           "connection": "conn-debt-payments--dependence-on-high-margin-salt-sensitive-crops"
         },
@@ -7032,7 +7032,7 @@
         },
         {
           "_id": "edge-root-zone-salinity--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": -0.17,
+          "curvature": 0.24,
           "style": {},
           "connection": "conn-root-zone-salinity--dependence-on-high-margin-salt-sensitive-crops"
         },
@@ -7116,7 +7116,7 @@
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--water-demand-of-the-crop-mix",
-          "curvature": 0,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--water-demand-of-the-crop-mix"
         },
@@ -7128,7 +7128,7 @@
         },
         {
           "_id": "edge-crop-water-shortfall--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": -0.26,
+          "curvature": -0.16,
           "style": {},
           "connection": "conn-crop-water-shortfall--dependence-on-high-margin-salt-sensitive-crops"
         },
@@ -7182,55 +7182,55 @@
         },
         {
           "_id": "edge-crop-water-shortfall--fields-moved-to-new-salt-tolerant-crops",
-          "curvature": -0.47,
+          "curvature": -0.46,
           "style": {},
           "connection": "conn-crop-water-shortfall--fields-moved-to-new-salt-tolerant-crops"
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--harvest-lost-to-salt",
-          "curvature": 0.15,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--harvest-lost-to-salt"
         },
         {
           "_id": "edge-dependence-on-high-margin-salt-sensitive-crops--farm-revenue",
-          "curvature": 0.12,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-dependence-on-high-margin-salt-sensitive-crops--farm-revenue"
         },
         {
           "_id": "edge-tolerant-varieties-adoption--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": 0.1,
+          "curvature": 0.12,
           "style": {},
           "connection": "conn-tolerant-varieties-adoption--dependence-on-high-margin-salt-sensitive-crops"
         },
         {
           "_id": "edge-crop-water-shortfall--freshwater-storage-measures",
-          "curvature": -0.1,
+          "curvature": -0.14,
           "style": {},
           "connection": "conn-crop-water-shortfall--freshwater-storage-measures"
         },
         {
           "_id": "edge-harvest-lost-to-salt--freshwater-storage-measures",
-          "curvature": 0.3,
+          "curvature": 0.36,
           "style": {},
           "connection": "conn-harvest-lost-to-salt--freshwater-storage-measures"
         },
         {
           "_id": "edge-bank-credit-to-farms--farm-debt",
-          "curvature": 0.1,
+          "curvature": 0.24,
           "style": {},
           "connection": "conn-bank-credit-to-farms--farm-debt"
         },
         {
           "_id": "edge-farm-debt--mortgage-debt-financial-leverage",
-          "curvature": -0.22,
+          "curvature": -0.24,
           "style": {},
           "connection": "conn-farm-debt--mortgage-debt-financial-leverage"
         },
         {
           "_id": "edge-farm-debt--debt-payments",
-          "curvature": 0.15,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-farm-debt--debt-payments"
         },
@@ -7242,7 +7242,7 @@
         },
         {
           "_id": "edge-farmers-capacity-to-invest--bank-credit-to-farms",
-          "curvature": 0.4,
+          "curvature": 0.34,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--bank-credit-to-farms"
         },
@@ -7254,37 +7254,37 @@
         },
         {
           "_id": "edge-farm-debt--repayments-on-farm-loans",
-          "curvature": 0.3,
+          "curvature": 0.36,
           "style": {},
           "connection": "conn-farm-debt--repayments-on-farm-loans"
         },
         {
           "_id": "edge-repayments-on-farm-loans--farm-debt",
-          "curvature": 0.3,
+          "curvature": 0.12,
           "style": {},
           "connection": "conn-repayments-on-farm-loans--farm-debt"
         },
         {
           "_id": "edge-repayments-on-farm-loans--farmers-capacity-to-invest",
-          "curvature": 0.35,
+          "curvature": 0.28,
           "style": {},
           "connection": "conn-repayments-on-farm-loans--farmers-capacity-to-invest"
         },
         {
           "_id": "edge-repayments-on-farm-loans--banks-risk-assessment",
-          "curvature": 0.25,
+          "curvature": -0.85,
           "style": {},
           "connection": "conn-repayments-on-farm-loans--banks-risk-assessment"
         },
         {
           "_id": "edge-repayments-on-farm-loans--dependence-on-high-margin-salt-sensitive-crops",
-          "curvature": -0.14,
+          "curvature": 0.12,
           "style": {},
           "connection": "conn-repayments-on-farm-loans--dependence-on-high-margin-salt-sensitive-crops"
         },
         {
           "_id": "edge-farmers-capacity-to-invest--agricultural-land-value",
-          "curvature": -0.2,
+          "curvature": -0.1,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--agricultural-land-value"
         }
@@ -7340,8 +7340,8 @@
           "loop": "loop-R2",
           "style": {},
           "position": {
-            "x": -14,
-            "y": -336
+            "x": -53,
+            "y": -290
           }
         },
         {
@@ -7349,8 +7349,8 @@
           "loop": "loop-R3",
           "style": {},
           "position": {
-            "x": 1978,
-            "y": -516
+            "x": 1844,
+            "y": -354
           }
         },
         {
@@ -7502,8 +7502,8 @@
           "loop": "loop-B15",
           "style": {},
           "position": {
-            "x": 42,
-            "y": 577
+            "x": -137,
+            "y": 792
           }
         }
       ]
@@ -9409,7 +9409,7 @@
         {
           "_id": "node-group-C6-salt-tolerant-crop-adoption",
           "position": {
-            "x": 1690,
+            "x": 1940,
             "y": 0
           },
           "pinned": true,
@@ -9440,7 +9440,7 @@
           "_id": "node-group-C6-margin-given-up-on-high-margin-crops",
           "position": {
             "x": -7,
-            "y": -1000
+            "y": -1150
           },
           "pinned": true,
           "style": {},
@@ -9460,7 +9460,7 @@
           "_id": "node-group-C6-farm-debt",
           "position": {
             "x": -59,
-            "y": 280
+            "y": -280
           },
           "pinned": true,
           "style": {},
@@ -9524,7 +9524,7 @@
         },
         {
           "_id": "edge-group-C6-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops",
-          "curvature": -0.677,
+          "curvature": 0.1,
           "style": {},
           "connection": "conn-harvest-lost-to-salt--fields-moved-to-new-salt-tolerant-crops"
         },
@@ -9554,7 +9554,7 @@
         },
         {
           "_id": "edge-group-C6-farmers-capacity-to-invest--agricultural-land-value",
-          "curvature": -0.5,
+          "curvature": -0.62,
           "style": {},
           "connection": "conn-farmers-capacity-to-invest--agricultural-land-value"
         }
@@ -9566,8 +9566,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 878,
-            "y": 704
+            "x": 1300,
+            "y": 330
           }
         },
         {
@@ -9577,7 +9577,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": 490
+            "y": 400
           }
         },
         {
@@ -9587,7 +9587,7 @@
           "pinned": true,
           "position": {
             "x": -59,
-            "y": 143
+            "y": -143
           }
         },
         {
@@ -9597,7 +9597,7 @@
           "pinned": true,
           "position": {
             "x": 0,
-            "y": -700
+            "y": -820
           }
         },
         {
@@ -9606,8 +9606,8 @@
           "style": {},
           "pinned": true,
           "position": {
-            "x": 0,
-            "y": -250
+            "x": -40,
+            "y": -440
           }
         }
       ]

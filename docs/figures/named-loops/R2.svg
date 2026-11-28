@@ -20,7 +20,7 @@
 <path class="link-path" d="M -680.1 -611.1 Q -562.3 -653.2 -431.3 -679.9" fill="none" stroke="#B2182B" stroke-width="2.5" marker-end="url(#arrow-minus)"/>
 <text class="sign" x="-480.1" y="-669.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#B2182B" stroke="white" stroke-width="10" paint-order="stroke">−</text>
 </g>
-<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="demand-for-deep-polder-drainage" data-sign="+" data-delay="false" data-curvature="-0.32">
+<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="demand-for-deep-polder-drainage" data-sign="+" data-delay="false" data-curvature="-0.1">
 <path class="link-path" d="M 1268.9 70.8 Q 1248.1 190.2 1160.4 299.4" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="1190.2" y="259.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
@@ -68,7 +68,7 @@
 <path class="delay-cut" d="M 1033.4 -453.6 L 1004.2 -415.5 M 1046.1 -443.9 L 1016.9 -405.8" stroke="white" stroke-width="11" fill="none"/>
 <path class="delay" d="M 1033.4 -453.6 L 1004.2 -415.5 M 1046.1 -443.9 L 1016.9 -405.8" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
-<g class="link" data-from="debt-payments" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="-0.14">
+<g class="link" data-from="debt-payments" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="-0.22">
 <path class="link-path" d="M 1170.0 -287.2 Q 1257.1 -173.1 1272.0 -49.2" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="1263.2" y="-98.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

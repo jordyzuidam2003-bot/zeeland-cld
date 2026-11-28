@@ -22,7 +22,7 @@
 <path class="link-path" d="M -117.5 263.7 Q -282.4 240.1 -384.3 163.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-342.7" y="190.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="farmers-capacity-to-invest" data-to="agricultural-land-value" data-sign="+" data-delay="false" data-curvature="-0.2">
+<g class="link" data-from="farmers-capacity-to-invest" data-to="agricultural-land-value" data-sign="+" data-delay="false" data-curvature="-0.1">
 <path class="link-path" d="M -460.4 77.0 Q -494.9 10.7 -469.4 -56.9 Q -443.8 -124.6 -364.4 -177.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-404.2" y="-146.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>

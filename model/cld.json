@@ -940,7 +940,7 @@
       "sets domain": "Social",
       "subsystem": "Agricultural economy",
       "subquestion": "SQ2",
-      "description": "The interest, commission and repayments farms owe their banks in a year. Interest and commission cost Dutch farms about 22,000 euro each in 2018, down from 30,000 in 2014 as interest rates fell (van der Meulen et al., 2020, p. 20); on arable farms interest was 8% of the costs they paid in 2018, against 12% in 2001, 2006 and 2011 (p. 57). The repayment follows mainly from the loan's size, term and schedule (ABN AMRO, n.d.-a), and banks have raised the repayments on land loans, ABN AMRO to at least 2.5% a year on new land loans (van der Meulen et al., 2020, p. 47). No source read gives the island's farms' payments.",
+      "description": "The interest, commission and repayments farms owe their banks in a year. Interest and commission cost Dutch farms about 22,000 euro each in 2018, down from 30,000 in 2014 as interest rates fell (van der Meulen et al., 2020, p. 20); on arable farms interest was 8% of the costs they paid in 2018, against 12% in 2001, 2006 and 2011 (p. 57). The repayment follows mainly from the loan's size, term and schedule (ABN AMRO, n.d.-a), the share to be repaid each year being the banks' decision (Repayment required on farm loans). No source read gives the island's farms' payments.",
       "sources": [
         "van-der-meulen-2020",
         "abn-amro-nd-kosten-krediet"
@@ -1157,6 +1157,23 @@
       "x": 1210,
       "y": 1350,
       "actor": "buyers-and-processors"
+    },
+    {
+      "id": "repayment-required-on-farm-loans",
+      "label": "Repayment required on farm loans",
+      "element type": "Constant",
+      "adaptive practice": false,
+      "sets domain": "Social",
+      "subsystem": "Agricultural economy",
+      "subquestion": "SQ2",
+      "description": "The share of a farm loan banks require repaid each year, set by the loan's term and schedule: the repayment is the periodic amount that pays a loan back within the agreed term (ABN AMRO, n.d.-a), and banks have raised the repayments on land loans, ABN AMRO cutting the longest term for new farmland financing from fifty to forty years, a repayment of at least 2.5% a year (van der Meulen et al., 2020, p. 47). The banks' decision: no source read shows them setting it by a farm's risk, so no link comes in, and a Constant. No source read gives the terms on the island's farms' loans.",
+      "sources": [
+        "abn-amro-nd-kosten-krediet",
+        "van-der-meulen-2020"
+      ],
+      "x": 2440,
+      "y": 120,
+      "actor": "banks"
     }
   ],
   "connections": [
@@ -2907,6 +2924,18 @@
         "banken-nl-2019"
       ],
       "curvature": 0.4
+    },
+    {
+      "from": "repayment-required-on-farm-loans",
+      "to": "debt-payments",
+      "polarity": "+",
+      "delay": true,
+      "description": "The larger the share of a loan to be repaid each year, the more a farm pays its banks a year on the same debt: the repayment pays a loan back within the agreed term (ABN AMRO, n.d.-a), so a shorter term raises it, as ABN AMRO's cut from fifty to forty years on new farmland financing did, to at least 2.5% a year (van der Meulen et al., 2020, p. 47). A delay: the source gives the terms for new loans, so a change reaches the farms' payments as their loans are made or renewed; how fast, no source read gives.",
+      "sources": [
+        "abn-amro-nd-kosten-krediet",
+        "van-der-meulen-2020"
+      ],
+      "curvature": 0
     }
   ],
   "loops": [

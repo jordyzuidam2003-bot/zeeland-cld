@@ -309,17 +309,19 @@
 <path class="link-path" d="M 1262.8 1090.0 Q 1206.5 1026.5 1150.2 963.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="1183.3" y="1000.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
-<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="capital-lost-on-switching" data-sign="+" data-delay="false" data-curvature="-0.1">
-<path class="link-path" d="M 1361.7 -156.0 Q 1715.9 -619.2 1864.6 -1183.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="1851.4" y="-1134.8" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<g class="link" data-from="dependence-on-high-margin-salt-sensitive-crops" data-to="capital-lost-on-switching" data-sign="+" data-delay="true" data-curvature="-0.1" data-delay-t="0.56">
+<path class="link-path" d="M 1361.7 -156.0 Q 1707.9 -612.0 1852.1 -1166.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="1839.1" y="-1117.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="delay-cut" d="M 1660.9 -700.1 L 1704.6 -680.2 M 1667.6 -714.7 L 1711.2 -694.8" stroke="white" stroke-width="11" fill="none"/>
+<path class="delay" d="M 1660.9 -700.1 L 1704.6 -680.2 M 1667.6 -714.7 L 1711.2 -694.8" stroke="#444444" stroke-width="5" fill="none"/>
 </g>
 <g class="link" data-from="machines-and-storage-for-current-crops" data-to="capital-lost-on-switching" data-sign="+" data-delay="false" data-curvature="-0.22">
-<path class="link-path" d="M 2370.7 -646.0 Q 2274.5 -1008.8 1942.0 -1183.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="1985.7" y="-1158.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M 2370.7 -646.0 Q 2284.5 -994.2 1969.5 -1166.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="2012.8" y="-1140.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="capital-lost-on-switching" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="-0.1">
-<path class="link-path" d="M 1830.6 -1183.0 Q 1476.5 -719.8 1327.7 -156.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="1340.9" y="-204.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M 1818.1 -1166.0 Q 1471.9 -710.0 1327.7 -156.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="1340.7" y="-204.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="farmers-capacity-to-invest" data-to="spending-on-keeping-current-crops" data-sign="+" data-delay="false" data-curvature="-0.14">
 <path class="link-path" d="M 845.6 -213.0 Q 1179.7 254.7 1708.0 481.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
@@ -881,9 +883,10 @@
 <text x="2384.0" y="-577.5" text-anchor="middle">for the current crops</text>
 </g>
 <g class="element" data-id="capital-lost-on-switching" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="1685.8" y="-1269.0" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="1863.0" y="-1234.5" text-anchor="middle">Capital lost on</text>
-<text x="1863.0" y="-1200.5" text-anchor="middle">switching to new crops</text>
+<rect x="1722.9" y="-1286.0" width="280.3" height="120.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="1863.0" y="-1251.5" text-anchor="middle">Capital lost on</text>
+<text x="1863.0" y="-1217.5" text-anchor="middle">leaving the</text>
+<text x="1863.0" y="-1183.5" text-anchor="middle">high-margin crops</text>
 </g>
 <g class="element" data-id="knowledge-of-new-crops" data-domain="Social" data-type="Stock" data-adaptive="false">
 <rect x="952.2" y="686.0" width="339.6" height="86.0" rx="0" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>

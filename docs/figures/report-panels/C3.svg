@@ -83,11 +83,11 @@
 <text class="sign" x="221.0" y="664.4" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="machines-and-storage-for-current-crops" data-to="capital-lost-on-switching" data-sign="+" data-delay="false" data-curvature="0.36">
-<path class="link-path" d="M -166.5 679.2 Q -289.2 650.2 -362.4 547.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-330.6" y="586.2" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -166.5 679.2 Q -277.4 653.0 -349.4 564.6" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-315.2" y="601.0" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="capital-lost-on-switching" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="0.351">
-<path class="link-path" d="M -361.0 461.6 Q -289.5 365.9 -173.9 335.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<path class="link-path" d="M -347.4 444.6 Q -277.8 362.9 -173.9 335.8" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
 <text class="sign" x="-221.3" y="351.7" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 </g>
@@ -167,9 +167,10 @@
 <text x="3.4" y="700.5" text-anchor="middle">for the current crops</text>
 </g>
 <g class="element" data-id="capital-lost-on-switching" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-565.6" y="461.6" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-388.4" y="496.1" text-anchor="middle">Capital lost on</text>
-<text x="-388.4" y="530.1" text-anchor="middle">switching to new crops</text>
+<rect x="-528.5" y="444.6" width="280.3" height="120.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-388.4" y="479.1" text-anchor="middle">Capital lost on</text>
+<text x="-388.4" y="513.1" text-anchor="middle">leaving the</text>
+<text x="-388.4" y="547.1" text-anchor="middle">high-margin crops</text>
 </g>
 </g>
 <g class="loop" data-id="R2">

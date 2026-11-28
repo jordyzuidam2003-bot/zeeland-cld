@@ -4276,18 +4276,5 @@
       }
     }
   ],
-  "changes": [
-    {
-      "change": "Capital lost on switching to new crops relabelled Capital lost on leaving the high-margin crops: it is lost whatever follows, a cereal or a new crop, so R3 holds farms in the high-margin crops; Land under high-margin crops → Capital lost delayed, the know-how it folds building up over years",
-      "argument": "The fields leaving the high-margin crops go to cereals (Raat et al., 2026, p. 49), and the machines suited to one or a few crops and the stores serve neither cereals nor quinoa (Bonnet & Tiktak, 2025, p. 45; van Loo, 2023, p. 75; Polman et al., 2026, pp. 4, 15, 17). The delay: the audit's finding that a folded stock's slowness sat only in words (`cld-simplifying.md`'s \"Can A → X → D become A → D?\"); the link stays a hypothesis. R3 keeps its polarity.",
-      "items": [
-        "capital-lost-on-switching",
-        "dependence-on-high-margin-salt-sensitive-crops -> capital-lost-on-switching",
-        "capital-lost-on-switching -> dependence-on-high-margin-salt-sensitive-crops",
-        "machines-and-storage-for-current-crops -> capital-lost-on-switching",
-        "R3",
-        "C3"
-      ]
-    }
-  ]
+  "changes": []
 }

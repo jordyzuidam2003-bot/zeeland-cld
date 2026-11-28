@@ -83,12 +83,12 @@
 <text class="sign" x="217.7" y="507.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="machines-and-storage-for-current-crops" data-to="capital-lost-on-switching" data-sign="+" data-delay="false" data-curvature="0.36">
-<path class="link-path" d="M -169.8 521.6 Q -259.4 500.0 -331.8 443.0 Q -404.1 386.0 -446.0 304.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-420.7" y="347.1" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -169.8 521.6 Q -254.5 501.2 -324.1 448.9 Q -393.7 396.6 -436.8 321.0" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-409.6" y="362.9" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 <g class="link" data-from="capital-lost-on-switching" data-to="dependence-on-high-margin-salt-sensitive-crops" data-sign="+" data-delay="false" data-curvature="0.351">
-<path class="link-path" d="M -444.8 218.0 Q -402.6 140.0 -332.8 85.3 Q -263.0 30.5 -177.2 8.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
-<text class="sign" x="-224.8" y="23.5" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
+<path class="link-path" d="M -435.1 201.0 Q -345.4 52.0 -177.2 8.1" fill="none" stroke="#2166AC" stroke-width="2.5" marker-end="url(#arrow-plus)"/>
+<text class="sign" x="-224.9" y="23.3" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="bold" fill="#2166AC" stroke="white" stroke-width="10" paint-order="stroke">+</text>
 </g>
 </g>
 <g class="elements">
@@ -167,9 +167,10 @@
 <text x="0.0" y="552.5" text-anchor="middle">for the current crops</text>
 </g>
 <g class="element" data-id="capital-lost-on-switching" data-domain="Social" data-type="Auxiliary" data-adaptive="false">
-<rect x="-642.2" y="218.0" width="354.5" height="86.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
-<text x="-465.0" y="252.5" text-anchor="middle">Capital lost on</text>
-<text x="-465.0" y="286.5" text-anchor="middle">switching to new crops</text>
+<rect x="-605.1" y="201.0" width="280.3" height="120.0" rx="18" fill="#ABC9F4" stroke="#444444" stroke-width="1.5"/>
+<text x="-465.0" y="235.5" text-anchor="middle">Capital lost on</text>
+<text x="-465.0" y="269.5" text-anchor="middle">leaving the</text>
+<text x="-465.0" y="303.5" text-anchor="middle">high-margin crops</text>
 </g>
 </g>
 <g class="loop" data-id="R2">

@@ -1302,13 +1302,13 @@
     {
       "_id": "elem-debt-payments",
       "attributes": {
-        "label": "Debt payments",
+        "label": "Interest on farm loans",
         "element type": "Auxiliary",
         "adaptive practice": "no",
         "sets domain": "Social",
         "subsystem": "Agricultural economy",
         "subquestion": "SQ2",
-        "description": "The interest, commission and repayments farms owe their banks in a year. Interest and commission cost Dutch farms about 22,000 euro each in 2018, down from 30,000 in 2014 as interest rates fell (van der Meulen et al., 2020, p. 20); on arable farms interest was 8% of the costs they paid in 2018, against 12% in 2001, 2006 and 2011 (p. 57). The repayment follows mainly from the loan's size, term and schedule (ABN AMRO, n.d.-a), the share to be repaid each year being the banks' decision (Repayment required on farm loans). No source read gives the island's farms' payments.",
+        "description": "The interest and commission farms pay their banks in a year: the price of their loans, the repayment paid beside it (Repayments on farm loans; ABN AMRO, n.d.-a). Interest and commission cost Dutch farms about 22,000 euro each in 2018, down from 30,000 in 2014 as interest rates fell (van der Meulen et al., 2020, p. 20); on arable farms interest was 8% of the costs they paid in 2018, against 12% in 2001, 2006 and 2011 (p. 57). No source read gives the island's farms' interest.",
         "actors": "Banks lending to the island's farmers",
         "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nABN AMRO. (n.d.-a). Kosten van een krediet. Retrieved November 7, 2026, from https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/index.html",
         "sourced": "yes"
@@ -1509,6 +1509,21 @@
         "description": "What the island's arable farms owe their banks: the loans still to be repaid, which new credit adds to and repayments pay off, the repayment being the periodic amount that pays a loan back within the agreed term (ABN AMRO, n.d.-a). Dutch farms' long-term loans rose from 18 to 33 billion euro between 2001 and 2018, falling slightly in their last years (van der Meulen et al., 2020, p. 19), and the debt of Dutch arable farms rose 38% between 2010 and 2022 (CBS, 2024). No source read gives the island's farms' debt.",
         "actors": "Banks lending to the island's farmers",
         "sources": "ABN AMRO. (n.d.-a). Kosten van een krediet. Retrieved November 7, 2026, from https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/index.html\nvan der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nCBS. (2024, November 28). Vreemd vermogen landbouwbedrijven afgenomen, vooral in de glastuinbouw. https://www.cbs.nl/nl-nl/nieuws/2024/48/vreemd-vermogen-landbouwbedrijven-afgenomen-vooral-in-de-glastuinbouw",
+        "sourced": "yes"
+      }
+    },
+    {
+      "_id": "elem-repayments-on-farm-loans",
+      "attributes": {
+        "label": "Repayments on farm  loans",
+        "element type": "Auxiliary",
+        "adaptive practice": "no",
+        "sets domain": "Social",
+        "subsystem": "Agricultural economy",
+        "subquestion": "SQ2",
+        "description": "What farms pay their banks in a year to pay their loans back, beside the interest: the periodic amount that pays a loan back within the agreed term, set mainly by the loan's size, its term and the agreed schedule (ABN AMRO, n.d.-a), the share to be repaid each year being the banks' decision (Repayment required on farm loans). It is no cost in the farm's income as farm accounts measure it, revenue less the costs paid and depreciation (Verhagen et al., 2018, p. 21), but one of the payment obligations met from what the farm earns (p. 23). No source read gives the island's farms' repayments.",
+        "actors": "Banks lending to the island's farmers",
+        "sources": "ABN AMRO. (n.d.-a). Kosten van een krediet. Retrieved November 7, 2026, from https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/index.html\nVerhagen, J., van Asseldonk, M., & Pronk, A. A. (2018). Open teelten en klimaatadaptatie in relatie tot de financiële weerbaarheid (Rapport WPR-755). Wageningen Research. https://klimaatadaptatienederland.nl/publish/pages/220072/2018_wur_open_teelten_en_klimaatadaptatie_in_relatie_tot_de_financiele_weerbaarheid.pdf",
         "sourced": "yes"
       }
     },
@@ -2278,7 +2293,7 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "More income leaves more, after the household's spending and the farm's payment obligations, repayments included, to save for investment; a negative income leaves too little to reserve, and machines then age (Verhagen et al., 2018, pp. 23, 25). A farm with good solvency can probably take up extra credit when its income is negative, the same report judges, and Dutch arable farms averaged close to 80% solvency in 2015, land more than two thirds of their balance sheet (Verhagen et al., 2018, pp. 23, 25; national farm accounts, no figure for the island), so a poor year may shrink what a solvent farm can invest less than its income. A lasting low income is harder to bridge: the bank looks hard at long-term continuity before deferring payments or giving extra credit (Verhagen et al., 2018, p. 28), and in a simulation of banks' credit checks, which base a new loan on the past three years' net cash flow, solvency was the limit in only 1.2% of farm observations and net cash flow in almost all cases (Lamkowsky, 2023, pp. 51–52, 56, 101; Dutch dairy farms, 2009–2017). Within the year: income adds to the savings in the year it is earned.",
+        "description": "More income leaves more, after the household's spending and the farm's payment obligations, repayments included (Repayments on farm loans → Farmers' capacity to invest), to save for investment; a negative income leaves too little to reserve, and machines then age (Verhagen et al., 2018, pp. 23, 25). A farm with good solvency can probably take up extra credit when its income is negative, the same report judges, and Dutch arable farms averaged close to 80% solvency in 2015, land more than two thirds of their balance sheet (Verhagen et al., 2018, pp. 23, 25; national farm accounts, no figure for the island), so a poor year may shrink what a solvent farm can invest less than its income. A lasting low income is harder to bridge: the bank looks hard at long-term continuity before deferring payments or giving extra credit (Verhagen et al., 2018, p. 28), and in a simulation of banks' credit checks, which base a new loan on the past three years' net cash flow, solvency was the limit in only 1.2% of farm observations and net cash flow in almost all cases (Lamkowsky, 2023, pp. 51–52, 56, 101; Dutch dairy farms, 2009–2017). Within the year: income adds to the savings in the year it is earned.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
@@ -3573,7 +3588,7 @@
         "label": "−",
         "polarity": "negative",
         "delay": "no",
-        "description": "Interest is a cost that lowers a farm's income. Income is revenue less the costs paid and depreciation, plus extraordinary items (Verhagen et al., 2018, p. 21), a definition that does not name repayments, yet the arable farms with a positive net cash flow, 55% in 2016, received enough to meet their payment obligations, repayments included, and 3% had a cash flow so low that they may not survive (p. 23): the link joins the two as one assumption, so that repayments reach what a farm can invest through its income, which keeps every loop's polarity.",
+        "description": "Interest is a cost that lowers a farm's income: income is revenue less the costs paid and depreciation, plus extraordinary items (Verhagen et al., 2018, p. 21), a definition that does not name repayments, which come out of what is left after income (Repayments on farm loans → Farmers' capacity to invest). Within the year.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
@@ -3593,7 +3608,7 @@
         "label": "+",
         "polarity": "positive",
         "delay": "no",
-        "description": "A farm with high debt payments keeps its lucrative but salt-sensitive crops to meet them. No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
+        "description": "A farm paying more interest keeps its lucrative but salt-sensitive crops to meet it, as it does to meet its repayments (Repayments on farm loans → Dependence on high-margin salt-sensitive crops). No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "yes",
@@ -4681,7 +4696,7 @@
       "to": "elem-bank-credit-to-farms"
     },
     {
-      "_id": "conn-repayment-required-on-farm-loans--debt-payments",
+      "_id": "conn-repayment-required-on-farm-loans--repayments-on-farm-loans",
       "direction": "directed",
       "delayed": true,
       "reversed": false,
@@ -4689,7 +4704,7 @@
         "label": "+",
         "polarity": "positive",
         "delay": "yes",
-        "description": "The larger the share of a loan to be repaid each year, the more a farm pays its banks a year on the same debt: the repayment pays a loan back within the agreed term (ABN AMRO, n.d.-a), so a shorter term raises it, as ABN AMRO's cut from fifty to forty years on new farmland financing did, to at least 2.5% a year (van der Meulen et al., 2020, p. 47). A delay: the source gives the terms for new loans, so a change reaches the farms' payments as their loans are made or renewed; how fast, no source read gives.",
+        "description": "The larger the share of a loan to be repaid each year, the more a farm repays a year on the same debt: the repayment pays a loan back within the agreed term (ABN AMRO, n.d.-a), so a shorter term raises it, as ABN AMRO's cut from fifty to forty years on new farmland financing did, to at least 2.5% a year (van der Meulen et al., 2020, p. 47). A delay: the source gives the terms for new loans, so a change reaches the farms' payments as their loans are made or renewed; how fast, no source read gives.",
         "sets link": "Within S",
         "sets scope": "Within domain",
         "hypothesis": "no",
@@ -4698,7 +4713,107 @@
         "connection type": "+"
       },
       "from": "elem-repayment-required-on-farm-loans",
-      "to": "elem-debt-payments"
+      "to": "elem-repayments-on-farm-loans"
+    },
+    {
+      "_id": "conn-farm-debt--repayments-on-farm-loans",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "The more a farm owes, the more it repays a year: the loan's size, its term and the agreed schedule set the periodic repayment (ABN AMRO, n.d.-a). Within the year: a loan's repayments fall due over its term.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "sources": "ABN AMRO. (n.d.-a). Kosten van een krediet. Retrieved November 7, 2026, from https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/index.html",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-farm-debt",
+      "to": "elem-repayments-on-farm-loans"
+    },
+    {
+      "_id": "conn-repayments-on-farm-loans--farm-debt",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "description": "What a farm repays comes off what it owes: the repayment is the amount that pays a loan back within the agreed term (ABN AMRO, n.d.-a), so the debt runs off over the loans' terms, up to forty years on ABN AMRO's new farmland financing (van der Meulen et al., 2020, p. 47), as far as new credit does not add to it. With Farm debt → Repayments on farm loans it closes a balancing loop: the debt is paid off, the faster the larger the share the banks require (Repayment required on farm loans). Within the year: a repayment lowers the debt when it is paid.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "sources": "ABN AMRO. (n.d.-a). Kosten van een krediet. Retrieved November 7, 2026, from https://www.abnamro.nl/nl/zakelijk/producten/financieren/informatie/kosten-krediet/index.html\nvan der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092",
+        "sourced": "yes",
+        "connection type": "-"
+      },
+      "from": "elem-repayments-on-farm-loans",
+      "to": "elem-farm-debt"
+    },
+    {
+      "_id": "conn-repayments-on-farm-loans--farmers-capacity-to-invest",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "−",
+        "polarity": "negative",
+        "delay": "no",
+        "description": "What a farm repays is not left to invest: its savings are built from what is left of its income after the household's spending and the farm's payment obligations, repayments included, and a negative income leaves too little to reserve (Verhagen et al., 2018, pp. 23, 25); the arable farms with a positive net cash flow, 55% in 2016, received enough to meet those obligations, repayments included, and 3% had a cash flow so low that they may not survive (p. 23). A farm short of cash can ask its bank to defer part of its interest and repayments (p. 28). Within the year: a repayment falls due in its year.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "sources": "Verhagen, J., van Asseldonk, M., & Pronk, A. A. (2018). Open teelten en klimaatadaptatie in relatie tot de financiële weerbaarheid (Rapport WPR-755). Wageningen Research. https://klimaatadaptatienederland.nl/publish/pages/220072/2018_wur_open_teelten_en_klimaatadaptatie_in_relatie_tot_de_financiele_weerbaarheid.pdf",
+        "sourced": "yes",
+        "connection type": "-"
+      },
+      "from": "elem-repayments-on-farm-loans",
+      "to": "elem-farmers-capacity-to-invest"
+    },
+    {
+      "_id": "conn-repayments-on-farm-loans--banks-risk-assessment",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "The more a farm must repay each year, the more risk its bank sees: banks look more and more at whether a farm's operations earn enough to meet all its financial obligations (van der Meulen et al., 2020, p. 19), judging whether the farmer can generate enough over the longer term for interest and repayment (Farjon et al., 2013, section Financiering van bedrijfsuitbreiding). The interest reaches the bank as a cost in Farm income (Farm income → Banks' risk assessment of farm loans), the repayments, no cost in that income, through this link. Within the year: a bank judges it with each loan.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "hypothesis": "no",
+        "sources": "van der Meulen, H., van der Meer, R., & van Asseldonk, M. (2020). Financiering transitie naar duurzame landbouw: Inzicht in het huidige financieringslandschap en ontwikkelingen (Rapport 2020-097). Wageningen Economic Research. https://edepot.wur.nl/532092\nFarjon, H., Silvis, H., Vader, J., Voskuilen, M., & Agricola, H. (2013, December). Prijs hoger dan de waarde van landbouwgrond. Landwerk. PBL Netherlands Environmental Assessment Agency. https://www.pbl.nl/publicaties/prijs-hoger-dan-de-waarde-van-landbouwgrond",
+        "sourced": "yes",
+        "connection type": "+"
+      },
+      "from": "elem-repayments-on-farm-loans",
+      "to": "elem-banks-risk-assessment"
+    },
+    {
+      "_id": "conn-repayments-on-farm-loans--dependence-on-high-margin-salt-sensitive-crops",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "+",
+        "polarity": "positive",
+        "delay": "no",
+        "description": "A farm with high repayments keeps its lucrative but salt-sensitive crops to meet them, as it does to meet its interest (Interest on farm loans → Dependence on high-margin salt-sensitive crops). No source read tests this, so its sign is the hypothesis's question: a farm with more debt may instead choose less risky crops.",
+        "sets link": "Within S",
+        "sets scope": "Within domain",
+        "hypothesis": "yes",
+        "sources": "",
+        "sourced": "no",
+        "connection type": "+"
+      },
+      "from": "elem-repayments-on-farm-loans",
+      "to": "elem-dependence-on-high-margin-salt-sensitive-crops"
     },
     {
       "_id": "conn-0",
@@ -5332,7 +5447,7 @@
       "_id": "loop-R2",
       "attributes": {
         "label": "R2 Debt and deep drainage feed each other through salt",
-        "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its debt payments rise. To meet them it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It closes only through a hypothesis, Debt payments → Dependence on high-margin salt-sensitive crops, which no source read tests; where indebted farms choose less risky crops instead, the loop breaks there. It shows an unintended consequence of the deep drainage in B4: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B2, B1)."
+        "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its interest rises. To meet the interest it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It closes only through a hypothesis, Interest on farm loans → Dependence on high-margin salt-sensitive crops, which no source read tests; where indebted farms choose less risky crops instead, the loop breaks there. It shows an unintended consequence of the deep drainage in B4: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B2, B1)."
       },
       "connections": [
         "conn-mortgage-debt-financial-leverage--banks-risk-assessment",
@@ -6230,8 +6345,8 @@
         {
           "_id": "node-repayment-required-on-farm-loans",
           "position": {
-            "x": 2440,
-            "y": 120
+            "x": 2520,
+            "y": 280
           },
           "pinned": true,
           "style": {},
@@ -6246,6 +6361,16 @@
           "pinned": true,
           "style": {},
           "element": "elem-farm-debt"
+        },
+        {
+          "_id": "node-repayments-on-farm-loans",
+          "position": {
+            "x": 2520,
+            "y": 0
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-repayments-on-farm-loans"
         },
         {
           "_id": "node-background",
@@ -7088,10 +7213,40 @@
           "connection": "conn-farmers-capacity-to-invest--bank-credit-to-farms"
         },
         {
-          "_id": "edge-repayment-required-on-farm-loans--debt-payments",
+          "_id": "edge-repayment-required-on-farm-loans--repayments-on-farm-loans",
           "curvature": 0,
           "style": {},
-          "connection": "conn-repayment-required-on-farm-loans--debt-payments"
+          "connection": "conn-repayment-required-on-farm-loans--repayments-on-farm-loans"
+        },
+        {
+          "_id": "edge-farm-debt--repayments-on-farm-loans",
+          "curvature": 0.3,
+          "style": {},
+          "connection": "conn-farm-debt--repayments-on-farm-loans"
+        },
+        {
+          "_id": "edge-repayments-on-farm-loans--farm-debt",
+          "curvature": 0.3,
+          "style": {},
+          "connection": "conn-repayments-on-farm-loans--farm-debt"
+        },
+        {
+          "_id": "edge-repayments-on-farm-loans--farmers-capacity-to-invest",
+          "curvature": 0.35,
+          "style": {},
+          "connection": "conn-repayments-on-farm-loans--farmers-capacity-to-invest"
+        },
+        {
+          "_id": "edge-repayments-on-farm-loans--banks-risk-assessment",
+          "curvature": 0.25,
+          "style": {},
+          "connection": "conn-repayments-on-farm-loans--banks-risk-assessment"
+        },
+        {
+          "_id": "edge-repayments-on-farm-loans--dependence-on-high-margin-salt-sensitive-crops",
+          "curvature": -0.14,
+          "style": {},
+          "connection": "conn-repayments-on-farm-loans--dependence-on-high-margin-salt-sensitive-crops"
         }
       ],
       "loops": [
@@ -8098,7 +8253,7 @@
     {
       "_id": "map-group-C2",
       "name": "04 C2 Low ditch levels: workable fields now, more demand later",
-      "description": "A lower *Ditch level (NAP)* gives a greater *Polder drainage depth*, which raises the *Spring workability of the fields* within the season, so *Farmers' demand for deep polder drainage* eases (B4). The same lower level raises *Saline seepage (kwel)*, which over years lowers the *Rainwater lens thickness in the low polders*. *Root zone salinity* and *Harvest lost to salt* rise, *Farm income* and *Agricultural land value* fall. *Financial leverage*, *Banks' risk assessment of farm loans*, the *Risk premium on farm loans* and *Debt payments* rise, and thus the farm's *Dependence on high-margin salt-sensitive crops*, which in spring needs deep drainage, grows: the demand returns higher (R2). The relief comes first and the extra demand years later, also known as the “Fixes that fail” archetype (Kim, 2000, p. 16). The link from *Debt payments* to *Dependence on high-margin salt-sensitive crops* is a hypothesis for the group model building session.",
+      "description": "A lower *Ditch level (NAP)* gives a greater *Polder drainage depth*, which raises the *Spring workability of the fields* within the season, so *Farmers' demand for deep polder drainage* eases (B4). The same lower level raises *Saline seepage (kwel)*, which over years lowers the *Rainwater lens thickness in the low polders*. *Root zone salinity* and *Harvest lost to salt* rise, *Farm income* and *Agricultural land value* fall. *Financial leverage*, *Banks' risk assessment of farm loans*, the *Risk premium on farm loans* and *Interest on farm loans* rise, and thus the farm's *Dependence on high-margin salt-sensitive crops*, which in spring needs deep drainage, grows: the demand returns higher (R2). The relief comes first and the extra demand years later, also known as the “Fixes that fail” archetype (Kim, 2000, p. 16). The link from *Interest on farm loans* to *Dependence on high-margin salt-sensitive crops* is a hypothesis for the group model building session.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -8399,7 +8554,7 @@
     {
       "_id": "map-group-C3",
       "name": "05 C3 Debt and capital together keep a farm in its crops",
-      "description": "*Debt payments* raise the farm's *Dependence on high-margin salt-sensitive crops* (R2, a hypothesis), and so does the *Capital lost on switching to new crops* (R3, on sources). Each loop raises the variable that drives the other: more dependence brings more *Spending on keeping the current crops*, so more *Machines and storage for the current crops* and more capital a switch would write off (R3). This causes more *Farmers' demand for deep polder drainage* (R2). Dependence on current crops holds back the adaptation of new crops. Salt, on its own, lowers that dependence over the years as the current crops yield worse harvests due to increasing root-zone salinity.",
+      "description": "*Interest on farm loans* raises the farm's *Dependence on high-margin salt-sensitive crops* (R2, a hypothesis, as its repayments do), and so does the *Capital lost on switching to new crops* (R3, on sources). Each loop raises the variable that drives the other: more dependence brings more *Spending on keeping the current crops*, so more *Machines and storage for the current crops* and more capital a switch would write off (R3). This causes more *Farmers' demand for deep polder drainage* (R2). Dependence on current crops holds back the adaptation of new crops. Salt, on its own, lowers that dependence over the years as the current crops yield worse harvests due to increasing root-zone salinity.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -10026,7 +10181,7 @@
     {
       "_id": "map-group-C10",
       "name": "12 C10 Falling land value: levels held, or land leaving arable",
-      "description": "The three loops share the chain from the *Water board's plans to raise ditch levels* through *Ditch level (NAP)*, *Saline seepage (kwel)*, *Rainwater lens thickness in the low polders*, *Root zone salinity* and *Harvest lost to salt* to *Farm income* and *Agricultural land value*, and part ways there. As land loses value, *Financial leverage* and *Debt payments* lead farmers to ask for deep drainage (R2), and owners may object harder to raises (R8, a hypothesis): both keep the ditch levels low and the salt coming. Where arable farming stops paying, *Arable land in the polders* falls, the board has more reason to raise the levels, and the salt falls back (B3). The same fall in value sends the water board opposite signals; which is stronger decides whether the decline persists or stops.",
+      "description": "The three loops share the chain from the *Water board's plans to raise ditch levels* through *Ditch level (NAP)*, *Saline seepage (kwel)*, *Rainwater lens thickness in the low polders*, *Root zone salinity* and *Harvest lost to salt* to *Farm income* and *Agricultural land value*, and part ways there. As land loses value, *Financial leverage* and *Interest on farm loans* lead farmers to ask for deep drainage (R2), and owners may object harder to raises (R8, a hypothesis): both keep the ditch levels low and the salt coming. Where arable farming stops paying, *Arable land in the polders* falls, the board has more reason to raise the levels, and the salt falls back (B3). The same fall in value sends the water board opposite signals; which is stronger decides whether the decline persists or stops.",
       "scale": 1,
       "center": {
         "x": 0,
@@ -10840,7 +10995,7 @@
     {
       "_id": "map-loop-R2",
       "name": "18 R2 Debt and deep drainage feed each other through salt",
-      "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its debt payments rise. To meet them it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It closes only through a hypothesis, Debt payments → Dependence on high-margin salt-sensitive crops, which no source read tests; where indebted farms choose less risky crops instead, the loop breaks there. It shows an unintended consequence of the deep drainage in B4: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B2, B1).",
+      "description": "A farm with higher leverage is a riskier loan, so banks charge a higher premium and its interest rises. To meet the interest it keeps its high-margin, salt-sensitive crops, whose spring soil work needs fields that dry early, so farmers ask for low ditch levels and the water board, weighing that against raising them, plans fewer raises. The levels stay low, saline seepage stays higher, the rainwater lens thins over years, salt takes more of the harvest, income and land value fall, and leverage rises. It closes only through a hypothesis, Interest on farm loans → Dependence on high-margin salt-sensitive crops, which no source read tests; where indebted farms choose less risky crops instead, the loop breaks there. It shows an unintended consequence of the deep drainage in B4: the gain comes within the season, the seepage and salt years later. It holds back new crops through the dependence it keeps up, while the salt it adds pushes towards them (B2, B1).",
       "scale": 1,
       "center": {
         "x": 0,
@@ -12836,7 +12991,7 @@
     {
       "_id": "pers-cld",
       "name": "CLD",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 340; height: 52; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 354; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#elem-repayment-required-on-farm-loans { width: 340; height: 86; }\n#elem-farm-debt { width: 162; height: 52; }\n#background { width: 5418; height: 3913; }\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\nloop {\n  label: none;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 340; height: 52; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 354; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 354; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#elem-repayment-required-on-farm-loans { width: 340; height: 86; }\n#elem-farm-debt { width: 162; height: 52; }\n#elem-repayments-on-farm-loans { width: 295; height: 86; }\n#background { width: 5418; height: 3913; }\n"
     },
     {
       "_id": "pers-actors",
@@ -12846,7 +13001,7 @@
     {
       "_id": "pers-loops",
       "name": "Loops",
-      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 340; height: 52; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 354; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 221; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#elem-repayment-required-on-farm-loans { width: 340; height: 86; }\n#elem-farm-debt { width: 162; height: 52; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
+      "style": "@controls {\n  bottom-left {\n    text {\n      value: \"**Tint** = SETS domain: green = Ecological, blue = Social, orange = Technological<br>**Boxes:** square corners = stock, rounded corners = auxiliary, italic label = constant (exogenous), thick border = adaptive practice<br>**Links:** blue = + (same direction), red = − (opposite direction), two strokes across = delay\";\n    }\n  }\n}\n\n@settings {\n  layout: static;\n  theme: light;\n  background-color: #FFFFFF;\n  culling: off;\n}\n\nelement {\n  shape: pill;\n  border-color: #444444;\n  border-width: 1.5;\n  font-size: 42;\n  font-weight: normal;\n  font-color: #000000;\n  text-align: center;\n  text-overflow: manual;\n  shadow-visibility: hidden;\n}\n\n[\"element type\"=\"stock\"] {\n  shape: rectangle;\n}\n\n[\"element type\"=\"constant\"] {\n  font-style: italic;\n}\n\n[\"adaptive practice\"=\"yes\"] {\n  border-width: 5;\n}\n\n#background {\n  layer: background;\n  shape: rectangle;\n  color: transparent;\n  image-size: contain;\n  image-resolution: original;\n  label-visibility: none;\n  border-width: 0;\n}\n\nconnection {\n  size: 2.5;\n  style: solid;\n  arrow-visibility: visible;\n  label: none;\n  font-size: 63;\n  font-weight: bold;\n}\n\n[\"polarity\"=\"positive\"] {\n  color: #2166AC;\n  font-color: #2166AC;\n}\n\n[\"polarity\"=\"negative\"] {\n  color: #B2182B;\n  font-color: #B2182B;\n}\n\n[\"sets domain\"=\"ecological\"] { color: #9DD9AC; }\n[\"sets domain\"=\"social\"] { color: #ABC9F4; }\n[\"sets domain\"=\"technological\"] { color: #FBC07C; }\n#elem-hotter-drier-summers { width: 340; height: 52; }\n#elem-sea-level-rise { width: 236; height: 52; }\n#elem-wetter-winters { width: 236; height: 52; }\n#elem-freshwater-lens-thickness { width: 325; height: 120; }\n#elem-polder-surface-elevation-nap { width: 251; height: 86; }\n#elem-root-zone-salinity { width: 295; height: 52; }\n#elem-saline-seepage-kwel { width: 340; height: 52; }\n#elem-soil-structure-usability { width: 236; height: 52; }\n#elem-upconing-of-salt-groundwater { width: 265; height: 86; }\n#elem-demand-for-deep-polder-drainage { width: 325; height: 86; }\n#elem-external-freshwater-supply { width: 325; height: 86; }\n#elem-freshwater-availability-for-crops { width: 354; height: 86; }\n#elem-freshwater-storage-measures { width: 295; height: 86; }\n#elem-groundwater-extraction-for-irrigation { width: 354; height: 86; }\n#elem-policy-resistance-legal-delays { width: 354; height: 86; }\n#elem-winter-rain-drained-away { width: 310; height: 86; }\n#elem-crop-yield { width: 176; height: 52; }\n#elem-market-demand-for-alternative-crops { width: 280; height: 86; }\n#elem-processing-capacity-for-alternative-crops { width: 354; height: 86; }\n#elem-fields-moved-to-new-salt-tolerant-crops { width: 310; height: 86; }\n#elem-salt-tolerant-crop-adoption { width: 340; height: 52; }\n#elem-agricultural-land-value { width: 280; height: 86; }\n#elem-bank-credit-freeze-risk-premiums { width: 325; height: 86; }\n#elem-dependence-on-high-margin-salt-sensitive-crops { width: 325; height: 120; }\n#elem-farm-revenue { width: 191; height: 52; }\n#elem-farmers-capacity-to-invest { width: 325; height: 86; }\n#elem-mortgage-debt-financial-leverage { width: 295; height: 52; }\n#elem-farmland-leaving-arable-use { width: 295; height: 86; }\n#elem-crop-water-shortfall { width: 325; height: 52; }\n#elem-zlto-call-for-supply-route { width: 325; height: 154; }\n#elem-freshwater-supply-route { width: 310; height: 86; }\n#elem-spring-workability-of-the-fields { width: 340; height: 86; }\n#elem-ditch-level-nap { width: 280; height: 52; }\n#elem-polder-drainage-depth { width: 340; height: 52; }\n#elem-plans-to-raise-ditch-levels { width: 354; height: 86; }\n#elem-water-board-pumping-costs { width: 340; height: 86; }\n#elem-water-board-levy-on-farmland { width: 310; height: 86; }\n#elem-harvest-lost-to-salt { width: 325; height: 52; }\n#elem-margin-given-up-on-high-margin-crops { width: 295; height: 86; }\n#elem-farms-with-a-successor { width: 354; height: 52; }\n#elem-net-price-for-new-crops { width: 340; height: 86; }\n#elem-growers-of-new-crops-elsewhere { width: 325; height: 86; }\n#elem-processing-of-new-crops-elsewhere { width: 280; height: 86; }\n#elem-tolerant-varieties-adoption { width: 221; height: 120; }\n#elem-tolerant-varieties-on-offer { width: 354; height: 86; }\n#elem-machines-and-storage-for-current-crops { width: 340; height: 86; }\n#elem-capital-lost-on-switching { width: 354; height: 86; }\n#elem-knowledge-of-new-crops { width: 340; height: 86; }\n#elem-spending-on-keeping-current-crops { width: 310; height: 86; }\n#elem-banks-risk-assessment { width: 354; height: 86; }\n#elem-bank-credit-to-farms { width: 325; height: 52; }\n#elem-debt-payments { width: 354; height: 52; }\n#elem-world-prices-of-conventional-crops { width: 295; height: 86; }\n#elem-farmers-trust-in-government { width: 280; height: 86; }\n#elem-farmers-wish-to-keep-their-land { width: 340; height: 86; }\n#elem-creek-ridge-lens-thickness { width: 340; height: 120; }\n#elem-pumping-the-water-board-allows { width: 280; height: 86; }\n#elem-knowledge-of-storage { width: 325; height: 120; }\n#elem-salt-in-ditch-water { width: 280; height: 86; }\n#elem-water-demand-of-the-crop-mix { width: 310; height: 86; }\n#elem-trials-and-pilots-on-the-island { width: 325; height: 86; }\n#elem-perceived-risk-of-switching { width: 280; height: 86; }\n#elem-buyer-contracts-for-new-crops { width: 310; height: 86; }\n#elem-repayment-required-on-farm-loans { width: 340; height: 86; }\n#elem-farm-debt { width: 162; height: 52; }\n#elem-repayments-on-farm-loans { width: 295; height: 86; }\n#background { width: 5418; height: 3913; }\n\nloop {\n  font-size: 42;\n}\n"
     }
   ]
 }

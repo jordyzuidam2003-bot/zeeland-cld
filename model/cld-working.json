@@ -4226,28 +4226,6 @@
   ],
   "changes": [
     {
-      "change": "Debt payments split: Interest on farm loans into Farm income, Repayments on farm loans into what a farm can invest, the bank's risk and the debt",
-      "argument": "One quantity per variable: Farm income counts interest but not repayments (Verhagen et al., 2018, p. 21), which come out after it, on the way to Farmers' capacity to invest (pp. 23, 25), so Debt payments → Farm income took repayments off twice and carried them on into land value, successors and the bank's risk, paths no source shows. Since batch 23 two drawn causes move different parts: the premium only the interest, Repayment required on farm loans only the repayments, so one variable sent each where the sources put the other. Repayments → Banks' risk assessment keeps the bank's test of interest and repayment (van der Meulen et al., 2020, p. 19; Farjon et al., 2013), which reached it through income; Repayments → Dependence carries R2's hypothesis on, one session card. New unnamed loops: credit → debt → repayments → capacity → credit (R), the borrowing spiral, through income until now; debt → repayments → debt (B), the debt paid off; credit → debt → repayments → the bank's risk → credit (B). Rejected: Debt payments kept whole, its link to income narrowed in words, since a link drawn from the whole variable still carries both parts; the fold stated.",
-      "items": [
-        "debt-payments",
-        "repayments-on-farm-loans",
-        "repayment-required-on-farm-loans -> debt-payments",
-        "repayment-required-on-farm-loans -> repayments-on-farm-loans",
-        "farm-debt -> repayments-on-farm-loans",
-        "repayments-on-farm-loans -> farm-debt",
-        "repayments-on-farm-loans -> farmers-capacity-to-invest",
-        "repayments-on-farm-loans -> banks-risk-assessment",
-        "repayments-on-farm-loans -> dependence-on-high-margin-salt-sensitive-crops",
-        "debt-payments -> farm-revenue",
-        "debt-payments -> dependence-on-high-margin-salt-sensitive-crops",
-        "farm-revenue -> farmers-capacity-to-invest",
-        "R2",
-        "C2",
-        "C3",
-        "C10"
-      ]
-    },
-    {
       "change": "Risk premium on farm loans → Interest on farm loans delayed: the fixed-rate share reprices at its reset",
       "argument": "No delay lost: under the banks' code a higher premium reaches a loan with a fixed rate or a fixed premium only at the next reset, a new loan or a breach (Nederlandse Vereniging van Banken, 2023, p. 15), the link's own description; \"within the year\" for all debt had no source, ABN AMRO (n.d.-b) giving no timing. R2 and the loop premium → interest → income → the bank's risk → premium stay reinforcing. Rejected: the link kept undelayed, stated.",
       "items": [
